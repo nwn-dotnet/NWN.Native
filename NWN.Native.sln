@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NWN.Core.Native", "NWN.Core.Native\NWN.Core.Native.csproj", "{5574DFB4-8AC1-40B6-9A67-653BCA6CB0E1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator", "Generator\Generator.csproj", "{048BFE81-7BD8-4BCF-98AA-1F721FF8D802}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NWN.Native", "NWN.Native.csproj", "{5574DFB4-8AC1-40B6-9A67-653BCA6CB0E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +12,5 @@ Global
 		{5574DFB4-8AC1-40B6-9A67-653BCA6CB0E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5574DFB4-8AC1-40B6-9A67-653BCA6CB0E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5574DFB4-8AC1-40B6-9A67-653BCA6CB0E1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{048BFE81-7BD8-4BCF-98AA-1F721FF8D802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{048BFE81-7BD8-4BCF-98AA-1F721FF8D802}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{048BFE81-7BD8-4BCF-98AA-1F721FF8D802}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{048BFE81-7BD8-4BCF-98AA-1F721FF8D802}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
