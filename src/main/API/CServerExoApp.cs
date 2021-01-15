@@ -10,10 +10,12 @@
 
 namespace NWN.Native.API {
 
-public class CServerExoApp : CBaseExoApp {
+public class CServerExoApp : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
+  protected bool swigCMemOwn;
 
-  internal CServerExoApp(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CServerExoApp_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CServerExoApp(global::System.IntPtr cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -21,7 +23,16 @@ public class CServerExoApp : CBaseExoApp {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 
-  protected override void Dispose(bool disposing) {
+  ~CServerExoApp() {
+    Dispose(false);
+  }
+
+  public void Dispose() {
+    Dispose(true);
+    global::System.GC.SuppressFinalize(this);
+  }
+
+  protected virtual void Dispose(bool disposing) {
     lock(this) {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
@@ -30,7 +41,6 @@ public class CServerExoApp : CBaseExoApp {
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
-      base.Dispose(disposing);
     }
   }
 
@@ -48,29 +58,29 @@ public class CServerExoApp : CBaseExoApp {
   public CServerExoApp() : this(NWNXLibPINVOKE.new_CServerExoApp(), true) {
   }
 
-  public override int AdmitNetworkAddress(uint nProtocol, CExoString sAddress) {
+  public int AdmitNetworkAddress(uint nProtocol, CExoString sAddress) {
     int ret = NWNXLibPINVOKE.CServerExoApp_AdmitNetworkAddress(swigCPtr, nProtocol, CExoString.getCPtr(sAddress));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public override int SetNetworkAddressBan(uint nProtocol, CExoString sAddress, int bBanPlayer) {
+  public int SetNetworkAddressBan(uint nProtocol, CExoString sAddress, int bBanPlayer) {
     int ret = NWNXLibPINVOKE.CServerExoApp_SetNetworkAddressBan(swigCPtr, nProtocol, CExoString.getCPtr(sAddress), bBanPlayer);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public override int AdmitPlayerName(CExoString sPlayerName) {
+  public int AdmitPlayerName(CExoString sPlayerName) {
     int ret = NWNXLibPINVOKE.CServerExoApp_AdmitPlayerName(swigCPtr, CExoString.getCPtr(sPlayerName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public override void PlayerListChange(uint nPlayerId, int bEnter, int bPrimaryPlayer) {
+  public void PlayerListChange(uint nPlayerId, int bEnter, int bPrimaryPlayer) {
     NWNXLibPINVOKE.CServerExoApp_PlayerListChange__SWIG_0(swigCPtr, nPlayerId, bEnter, bPrimaryPlayer);
   }
 
-  public override void PlayerListChange(uint nPlayerId, int bEnter) {
+  public void PlayerListChange(uint nPlayerId, int bEnter) {
     NWNXLibPINVOKE.CServerExoApp_PlayerListChange__SWIG_1(swigCPtr, nPlayerId, bEnter);
   }
 
@@ -78,7 +88,7 @@ public class CServerExoApp : CBaseExoApp {
     NWNXLibPINVOKE.CServerExoApp_VomitServerOptionsToLog(swigCPtr);
   }
 
-  public override int ContinueMessageProcessing() {
+  public int ContinueMessageProcessing() {
     int ret = NWNXLibPINVOKE.CServerExoApp_ContinueMessageProcessing(swigCPtr);
     return ret;
   }
@@ -99,18 +109,18 @@ public class CServerExoApp : CBaseExoApp {
     NWNXLibPINVOKE.CServerExoApp_SetGameSpyReporting(swigCPtr, bEnabled);
   }
 
-  public override CServerInfo GetServerInfo() {
+  public CServerInfo GetServerInfo() {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoApp_GetServerInfo(swigCPtr);
     CServerInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new CServerInfo(cPtr, false);
     return ret;
   }
 
-  public override CExoLocString GetModuleDescription() {
+  public CExoLocString GetModuleDescription() {
     CExoLocString ret = new CExoLocString(NWNXLibPINVOKE.CServerExoApp_GetModuleDescription(swigCPtr), true);
     return ret;
   }
 
-  public override void GetExtendedServerInfo(CExtendedServerInfo pInfo) {
+  public void GetExtendedServerInfo(CExtendedServerInfo pInfo) {
     NWNXLibPINVOKE.CServerExoApp_GetExtendedServerInfo(swigCPtr, CExtendedServerInfo.getCPtr(pInfo));
   }
 
@@ -386,7 +396,7 @@ public class CServerExoApp : CBaseExoApp {
     return ret;
   }
 
-  public override CNetLayer GetNetLayer() {
+  public CNetLayer GetNetLayer() {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoApp_GetNetLayer(swigCPtr);
     CNetLayer ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNetLayer(cPtr, false);
     return ret;
@@ -442,7 +452,7 @@ public class CServerExoApp : CBaseExoApp {
     return ret;
   }
 
-  public override int HandleMessage(uint nPlayerId, SWIGTYPE_p_unsigned_char pData, uint dwSize, int bRawMessage) {
+  public int HandleMessage(uint nPlayerId, SWIGTYPE_p_unsigned_char pData, uint dwSize, int bRawMessage) {
     int ret = NWNXLibPINVOKE.CServerExoApp_HandleMessage(swigCPtr, nPlayerId, SWIGTYPE_p_unsigned_char.getCPtr(pData), dwSize, bRawMessage);
     return ret;
   }
@@ -628,15 +638,15 @@ public class CServerExoApp : CBaseExoApp {
     NWNXLibPINVOKE.CServerExoApp_InitiateModuleForPlayer(swigCPtr, SWIGTYPE_p_void.getCPtr(pPlayer));
   }
 
-  public override void HandleGameSpyToServerMessage(int nKeyId, SWIGTYPE_p_void pOutBuf, int nIndex) {
+  public void HandleGameSpyToServerMessage(int nKeyId, SWIGTYPE_p_void pOutBuf, int nIndex) {
     NWNXLibPINVOKE.CServerExoApp_HandleGameSpyToServerMessage__SWIG_0(swigCPtr, nKeyId, SWIGTYPE_p_void.getCPtr(pOutBuf), nIndex);
   }
 
-  public override void HandleGameSpyToServerMessage(int nKeyId, SWIGTYPE_p_void pOutBuf) {
+  public void HandleGameSpyToServerMessage(int nKeyId, SWIGTYPE_p_void pOutBuf) {
     NWNXLibPINVOKE.CServerExoApp_HandleGameSpyToServerMessage__SWIG_1(swigCPtr, nKeyId, SWIGTYPE_p_void.getCPtr(pOutBuf));
   }
 
-  public override SWIGTYPE_p_CConnectionLib GetConnectionLib() {
+  public SWIGTYPE_p_CConnectionLib GetConnectionLib() {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoApp_GetConnectionLib(swigCPtr);
     SWIGTYPE_p_CConnectionLib ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CConnectionLib(cPtr, false);
     return ret;
@@ -664,7 +674,7 @@ public class CServerExoApp : CBaseExoApp {
     return ret;
   }
 
-  public override int GetMultiplayerEnabled() {
+  public int GetMultiplayerEnabled() {
     int ret = NWNXLibPINVOKE.CServerExoApp_GetMultiplayerEnabled(swigCPtr);
     return ret;
   }
@@ -687,7 +697,7 @@ public class CServerExoApp : CBaseExoApp {
     NWNXLibPINVOKE.CServerExoApp_AddCharListRequest(swigCPtr, nPlayerId);
   }
 
-  public override uint GetApplicationId() {
+  public uint GetApplicationId() {
     uint ret = NWNXLibPINVOKE.CServerExoApp_GetApplicationId(swigCPtr);
     return ret;
   }
@@ -727,35 +737,35 @@ public class CServerExoApp : CBaseExoApp {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public override int GetIsIPOnBannedList(CExoString sIP) {
+  public int GetIsIPOnBannedList(CExoString sIP) {
     int ret = NWNXLibPINVOKE.CServerExoApp_GetIsIPOnBannedList(swigCPtr, CExoString.getCPtr(sIP));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public override int GetIsPlayerNameOnBannedList(CExoString sPlayerName) {
+  public int GetIsPlayerNameOnBannedList(CExoString sPlayerName) {
     int ret = NWNXLibPINVOKE.CServerExoApp_GetIsPlayerNameOnBannedList(swigCPtr, CExoString.getCPtr(sPlayerName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public override int GetIsCDKeyOnBannedList(CExoString sKey) {
+  public int GetIsCDKeyOnBannedList(CExoString sKey) {
     int ret = NWNXLibPINVOKE.CServerExoApp_GetIsCDKeyOnBannedList(swigCPtr, CExoString.getCPtr(sKey));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public override void HandleOldServerVaultMigration(CExoString sClientCDKey, CExoString sClientLegacyCDKey, CExoString sPlayerName) {
+  public void HandleOldServerVaultMigration(CExoString sClientCDKey, CExoString sClientLegacyCDKey, CExoString sPlayerName) {
     NWNXLibPINVOKE.CServerExoApp_HandleOldServerVaultMigration(swigCPtr, CExoString.getCPtr(sClientCDKey), CExoString.getCPtr(sClientLegacyCDKey), CExoString.getCPtr(sPlayerName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public override int IsPlayerNameSticky() {
+  public int IsPlayerNameSticky() {
     int ret = NWNXLibPINVOKE.CServerExoApp_IsPlayerNameSticky(swigCPtr);
     return ret;
   }
 
-  public override int CheckStickyPlayerNameReserved(CExoString sClientCDKey, CExoString sClientLegacyCDKey, CExoString sPlayerName, int nConnectionType) {
+  public int CheckStickyPlayerNameReserved(CExoString sClientCDKey, CExoString sClientLegacyCDKey, CExoString sPlayerName, int nConnectionType) {
     int ret = NWNXLibPINVOKE.CServerExoApp_CheckStickyPlayerNameReserved(swigCPtr, CExoString.getCPtr(sClientCDKey), CExoString.getCPtr(sClientLegacyCDKey), CExoString.getCPtr(sPlayerName), nConnectionType);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
@@ -771,11 +781,11 @@ public class CServerExoApp : CBaseExoApp {
     return ret;
   }
 
-  public override void PushMessageOverWall(SWIGTYPE_p_unsigned_char pData, uint nMsgLength) {
+  public void PushMessageOverWall(SWIGTYPE_p_unsigned_char pData, uint nMsgLength) {
     NWNXLibPINVOKE.CServerExoApp_PushMessageOverWall(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(pData), nMsgLength);
   }
 
-  public override int GetIsMultiPlayer() {
+  public int GetIsMultiPlayer() {
     int ret = NWNXLibPINVOKE.CServerExoApp_GetIsMultiPlayer(swigCPtr);
     return ret;
   }
