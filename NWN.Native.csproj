@@ -6,6 +6,18 @@
         <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <PackageId>NWN.Native</PackageId>
+        <Authors>NWN.NET</Authors>
+        <PackageTags>Neverwinter Nights;NWN;</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <EnableDynamicLoading>true</EnableDynamicLoading>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <RepositoryUrl>https://github.com/nwn-dotnet/NWN.Native</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>

@@ -1,0 +1,134 @@
+name: Update API Bindings
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    container:
+      image: docker://nwnxee/builder:latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          path: "./repo"
+          ssh-key: ${{ secrets.API_PUSH_KEY }}
+          persist-credentials: true
+          
+      - name: Install Dependencies
+        run: |
+            apt-get update && apt-get install curl jq -y
+
+      - name: Load Revisions
+        id: "revision"
+        run: |
+          NWNX_SHA=$(curl -u "u:${{github.token}}" https://api.github.com/repos/nwnxee/unified/git/ref/heads/master | jq .object.sha | tr -d '"')
+          echo ::set-output name=nwnx_sha::$( echo $NWNX_SHA )
+          echo ::set-output name=nwnx_sha_short::$( echo $NWNX_SHA | cut -c1-8 )
+
+      - name: Checkout NWNX
+        uses: actions/checkout@v2
+        with:
+          path: "./nwnx"
+          repository: "nwnxee/unified"
+          ref: ${{ steps.revision.outputs.nwnx_sha }}
+
+      - name: Set outputs
+        id: vars
+        run: |
+            echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+            echo "/usr/lib/ccache" >> $GITHUB_PATH
+
+      - name: Prepare ccache timestamp
+        id: ccache_cache_timestamp
+        shell: cmake -P {0}
+        run: |
+          string(TIMESTAMP current_date "%Y-%m-%d-%H;%M;%S" UTC)
+          message("::set-output name=timestamp::${current_date}")
+
+      - name: ccache cache files
+        uses: actions/cache@v2
+        with:
+          path: .ccache
+          key: gcc-ccache-${{ steps.ccache_cache_timestamp.outputs.timestamp }}
+          restore-keys: |
+            gcc-ccache-
+
+      - name: Create Build Environment
+        run: cmake -E make_directory ${{runner.workspace}}/build
+
+      - name: Configure CMake
+        shell: cmake -P {0}
+        working-directory: ./nwnx
+        run: |
+          set(ENV{PATH} "$ENV{GITHUB_WORKSPACE}:$ENV{PATH}")
+          execute_process(
+            COMMAND cmake
+              -S .
+              -B build
+              -D CMAKE_BUILD_TYPE=$ENV{BUILD_TYPE}
+              -D CMAKE_C_COMPILER_LAUNCHER=ccache
+              -D CMAKE_CXX_COMPILER_LAUNCHER=ccache
+            RESULT_VARIABLE result
+          )
+          if (NOT result EQUAL 0)
+            message(FATAL_ERROR "Bad exit status")
+          endif()
+
+      - name: Build
+        shell: cmake -P {0}
+        working-directory: ./nwnx
+        run: |
+          execute_process(COMMAND /usr/sbin/update-ccache-symlinks)
+          file(TO_CMAKE_PATH "$ENV{GITHUB_WORKSPACE}" ccache_basedir)
+          set(ENV{CCACHE_BASEDIR} "${ccache_basedir}")
+          set(ENV{CCACHE_DIR} "${ccache_basedir}/.ccache")
+          set(ENV{CCACHE_COMPRESS} "true")
+          set(ENV{CCACHE_COMPRESSLEVEL} "6")
+          set(ENV{CCACHE_MAXSIZE} "400M")
+          execute_process(COMMAND ccache -p)
+          execute_process(COMMAND ccache -z)
+          execute_process(
+            COMMAND cmake --build build --target SWIG_DotNET -j 4
+            RESULT_VARIABLE result
+          )
+          if (NOT result EQUAL 0)
+            message(FATAL_ERROR "Build failed")
+          endif()
+          execute_process(COMMAND ccache -s)
+
+      - name: Copy generated proxy classes
+        run: |
+          rm -rfv "${GITHUB_WORKSPACE}/repo/src/main/API/*"
+          cp -a "${GITHUB_WORKSPACE}/nwnx/Plugins/SWIG/SWIG_DotNET/." "${GITHUB_WORKSPACE}/repo/src/main/API"
+          if [ -z "$(ls -A ${GITHUB_WORKSPACE}/repo/src/main/API)" ]; then
+            exit 1
+          fi
+
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.100
+
+      - name: Test Build
+        run: |
+          cd ${GITHUB_WORKSPACE}/repo
+          dotnet build --configuration Release
+      
+      - name: Load Game Version
+        id: "version"
+        run: |
+          echo "::set-output name=nwn_build::$(grep 'set(TARGET_NWN_BUILD ' ./nwnx/CMakeLists.txt | cut -d' ' -f2 | sed 's/)//')"
+          echo "::set-output name=nwn_build_revision::$(grep 'set(TARGET_NWN_BUILD_REVISION ' ./nwnx/CMakeLists.txt | cut -d' ' -f2 | sed 's/)//')"
+
+      - name: Commit Changes
+        run: |
+          cd ${GITHUB_WORKSPACE}/repo
+          git config user.name Jorteck
+          git config user.email jorteckdev@gmail.com
+          git add -A src/main/API/*
+          git diff-index --quiet HEAD src/main/API/* || git commit -m "Update APIs (NWNX: ${{ steps.revision.outputs.nwnx_sha_short }}, NWN: ${{ steps.version.outputs.nwn_build }}.${{ steps.version.outputs.nwn_build_revision }})." && git push
