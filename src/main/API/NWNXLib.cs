@@ -11,6 +11,55 @@
 namespace NWN.Native.API {
 
 public class NWNXLib {
+  public static uint OBJECT_INVALID {
+    get {
+      uint ret = NWNXLibPINVOKE.OBJECT_INVALID_get();
+      return ret;
+    } 
+  }
+
+  public static uint PLAYERID_ALL_SERVERADMINS {
+    get {
+      uint ret = NWNXLibPINVOKE.PLAYERID_ALL_SERVERADMINS_get();
+      return ret;
+    } 
+  }
+
+  public static uint PLAYERID_ALL_GAMEMASTERS {
+    get {
+      uint ret = NWNXLibPINVOKE.PLAYERID_ALL_GAMEMASTERS_get();
+      return ret;
+    } 
+  }
+
+  public static uint PLAYERID_ALL_PLAYERS {
+    get {
+      uint ret = NWNXLibPINVOKE.PLAYERID_ALL_PLAYERS_get();
+      return ret;
+    } 
+  }
+
+  public static uint PLAYERID_SERVER {
+    get {
+      uint ret = NWNXLibPINVOKE.PLAYERID_SERVER_get();
+      return ret;
+    } 
+  }
+
+  public static uint PLAYERID_INVALIDID {
+    get {
+      uint ret = NWNXLibPINVOKE.PLAYERID_INVALIDID_get();
+      return ret;
+    } 
+  }
+
+  public static uint PLAYERID_ALL_CLIENTS {
+    get {
+      uint ret = NWNXLibPINVOKE.PLAYERID_ALL_CLIENTS_get();
+      return ret;
+    } 
+  }
+
   public static NWNXExportedGlobals ExportedGlobals {
     set {
       NWNXLibPINVOKE.ExportedGlobals_set(NWNXExportedGlobals.getCPtr(value));
@@ -110,55 +159,6 @@ public class NWNXLib {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.ExitProgram();
     SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
     return ret;
-  }
-
-  public static uint OBJECT_INVALID {
-    get {
-      uint ret = NWNXLibPINVOKE.OBJECT_INVALID_get();
-      return ret;
-    } 
-  }
-
-  public static uint PLAYERID_ALL_SERVERADMINS {
-    get {
-      uint ret = NWNXLibPINVOKE.PLAYERID_ALL_SERVERADMINS_get();
-      return ret;
-    } 
-  }
-
-  public static uint PLAYERID_ALL_GAMEMASTERS {
-    get {
-      uint ret = NWNXLibPINVOKE.PLAYERID_ALL_GAMEMASTERS_get();
-      return ret;
-    } 
-  }
-
-  public static uint PLAYERID_ALL_PLAYERS {
-    get {
-      uint ret = NWNXLibPINVOKE.PLAYERID_ALL_PLAYERS_get();
-      return ret;
-    } 
-  }
-
-  public static uint PLAYERID_SERVER {
-    get {
-      uint ret = NWNXLibPINVOKE.PLAYERID_SERVER_get();
-      return ret;
-    } 
-  }
-
-  public static uint PLAYERID_INVALIDID {
-    get {
-      uint ret = NWNXLibPINVOKE.PLAYERID_INVALIDID_get();
-      return ret;
-    } 
-  }
-
-  public static uint PLAYERID_ALL_CLIENTS {
-    get {
-      uint ret = NWNXLibPINVOKE.PLAYERID_ALL_CLIENTS_get();
-      return ret;
-    } 
   }
 
 }
