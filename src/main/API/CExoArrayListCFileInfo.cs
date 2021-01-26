@@ -14,7 +14,7 @@ public class CExoArrayListCFileInfo : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListCFileInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListCFileInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListCFileInfo : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListCFileInfo other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListCFileInfo other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListCFileInfo left, CExoArrayListCFileInfo right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListCFileInfo left, CExoArrayListCFileInfo right) {
+    return !Equals(left, right);
   }
 
   public CFileInfo element {
@@ -85,14 +119,14 @@ public class CExoArrayListCFileInfo : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCFileInfo __Assign(CExoArrayListCFileInfo list) {
-    CExoArrayListCFileInfo ret = new CExoArrayListCFileInfo(NWNXLibPINVOKE.CExoArrayListCFileInfo___Assign(swigCPtr, CExoArrayListCFileInfo.getCPtr(list)), false);
+  public CExoArrayListCFileInfo _OpAssign(CExoArrayListCFileInfo list) {
+    CExoArrayListCFileInfo ret = new CExoArrayListCFileInfo(NWNXLibPINVOKE.CExoArrayListCFileInfo__OpAssign(swigCPtr, CExoArrayListCFileInfo.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CFileInfo __Index(int i) {
-    CFileInfo ret = new CFileInfo(NWNXLibPINVOKE.CExoArrayListCFileInfo___Index(swigCPtr, i), false);
+  public CFileInfo _OpIndex(int i) {
+    CFileInfo ret = new CFileInfo(NWNXLibPINVOKE.CExoArrayListCFileInfo__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -123,13 +157,13 @@ public class CExoArrayListCFileInfo : global::System.IDisposable {
   }
 
   public CFileInfo begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCFileInfo_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCFileInfo_begin(swigCPtr);
     CFileInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new CFileInfo(cPtr, false);
     return ret;
   }
 
   public CFileInfo end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCFileInfo_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCFileInfo_end(swigCPtr);
     CFileInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new CFileInfo(cPtr, false);
     return ret;
   }

@@ -14,7 +14,7 @@ public class CExoArrayListMaterialShaderParam : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListMaterialShaderParam(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListMaterialShaderParam(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListMaterialShaderParam : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListMaterialShaderParam other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListMaterialShaderParam other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListMaterialShaderParam left, CExoArrayListMaterialShaderParam right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListMaterialShaderParam left, CExoArrayListMaterialShaderParam right) {
+    return !Equals(left, right);
   }
 
   public MaterialShaderParam element {
@@ -85,14 +119,14 @@ public class CExoArrayListMaterialShaderParam : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListMaterialShaderParam __Assign(CExoArrayListMaterialShaderParam list) {
-    CExoArrayListMaterialShaderParam ret = new CExoArrayListMaterialShaderParam(NWNXLibPINVOKE.CExoArrayListMaterialShaderParam___Assign(swigCPtr, CExoArrayListMaterialShaderParam.getCPtr(list)), false);
+  public CExoArrayListMaterialShaderParam _OpAssign(CExoArrayListMaterialShaderParam list) {
+    CExoArrayListMaterialShaderParam ret = new CExoArrayListMaterialShaderParam(NWNXLibPINVOKE.CExoArrayListMaterialShaderParam__OpAssign(swigCPtr, CExoArrayListMaterialShaderParam.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public MaterialShaderParam __Index(int i) {
-    MaterialShaderParam ret = new MaterialShaderParam(NWNXLibPINVOKE.CExoArrayListMaterialShaderParam___Index(swigCPtr, i), false);
+  public MaterialShaderParam _OpIndex(int i) {
+    MaterialShaderParam ret = new MaterialShaderParam(NWNXLibPINVOKE.CExoArrayListMaterialShaderParam__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -123,13 +157,13 @@ public class CExoArrayListMaterialShaderParam : global::System.IDisposable {
   }
 
   public MaterialShaderParam begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_begin(swigCPtr);
     MaterialShaderParam ret = (cPtr == global::System.IntPtr.Zero) ? null : new MaterialShaderParam(cPtr, false);
     return ret;
   }
 
   public MaterialShaderParam end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_end(swigCPtr);
     MaterialShaderParam ret = (cPtr == global::System.IntPtr.Zero) ? null : new MaterialShaderParam(cPtr, false);
     return ret;
   }

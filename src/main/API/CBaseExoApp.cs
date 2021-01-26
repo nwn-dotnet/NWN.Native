@@ -14,7 +14,7 @@ public class CBaseExoApp : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CBaseExoApp(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CBaseExoApp(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CBaseExoApp : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CBaseExoApp other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CBaseExoApp other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CBaseExoApp left, CBaseExoApp right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CBaseExoApp left, CBaseExoApp right) {
+    return !Equals(left, right);
   }
 
   public virtual int AdmitNetworkAddress(uint nProtocol, CExoString sAddress) {
@@ -106,12 +140,12 @@ public class CBaseExoApp : global::System.IDisposable {
     return ret;
   }
 
-  public virtual void HandleGameSpyToServerMessage(int nKeyId, SWIGTYPE_p_void pOutBuf, int nIndex) {
-    NWNXLibPINVOKE.CBaseExoApp_HandleGameSpyToServerMessage__SWIG_0(swigCPtr, nKeyId, SWIGTYPE_p_void.getCPtr(pOutBuf), nIndex);
+  public virtual void HandleGameSpyToServerMessage(int nKeyId, System.IntPtr pOutBuf, int nIndex) {
+    NWNXLibPINVOKE.CBaseExoApp_HandleGameSpyToServerMessage__SWIG_0(swigCPtr, nKeyId, pOutBuf, nIndex);
   }
 
-  public virtual void HandleGameSpyToServerMessage(int nKeyId, SWIGTYPE_p_void pOutBuf) {
-    NWNXLibPINVOKE.CBaseExoApp_HandleGameSpyToServerMessage__SWIG_1(swigCPtr, nKeyId, SWIGTYPE_p_void.getCPtr(pOutBuf));
+  public virtual void HandleGameSpyToServerMessage(int nKeyId, System.IntPtr pOutBuf) {
+    NWNXLibPINVOKE.CBaseExoApp_HandleGameSpyToServerMessage__SWIG_1(swigCPtr, nKeyId, pOutBuf);
   }
 
   public virtual SWIGTYPE_p_CConnectionLib GetConnectionLib() {

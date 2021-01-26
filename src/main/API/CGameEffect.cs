@@ -14,7 +14,7 @@ public class CGameEffect : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CGameEffect(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CGameEffect(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CGameEffect : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CGameEffect other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CGameEffect other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CGameEffect left, CGameEffect right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CGameEffect left, CGameEffect right) {
+    return !Equals(left, right);
   }
 
   public ulong m_nID {
@@ -284,8 +318,8 @@ public class CGameEffect : global::System.IDisposable {
   public CGameEffect(CGameEffect pParent) : this(NWNXLibPINVOKE.new_CGameEffect__SWIG_3(CGameEffect.getCPtr(pParent)), true) {
   }
 
-  public CGameEffect __Assign(CGameEffect effect) {
-    CGameEffect ret = new CGameEffect(NWNXLibPINVOKE.CGameEffect___Assign(swigCPtr, CGameEffect.getCPtr(effect)), false);
+  public CGameEffect _OpAssign(CGameEffect effect) {
+    CGameEffect ret = new CGameEffect(NWNXLibPINVOKE.CGameEffect__OpAssign(swigCPtr, CGameEffect.getCPtr(effect)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -354,14 +388,14 @@ public class CGameEffect : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public int __Equals(CGameEffect effect) {
-    int ret = NWNXLibPINVOKE.CGameEffect___Equals(swigCPtr, CGameEffect.getCPtr(effect));
+  public int _OpEquals(CGameEffect effect) {
+    int ret = NWNXLibPINVOKE.CGameEffect__OpEquals(swigCPtr, CGameEffect.getCPtr(effect));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int __NotEquals(CGameEffect effect) {
-    int ret = NWNXLibPINVOKE.CGameEffect___NotEquals(swigCPtr, CGameEffect.getCPtr(effect));
+  public int _OpNotEquals(CGameEffect effect) {
+    int ret = NWNXLibPINVOKE.CGameEffect__OpNotEquals(swigCPtr, CGameEffect.getCPtr(effect));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }

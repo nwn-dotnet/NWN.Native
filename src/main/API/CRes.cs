@@ -14,7 +14,7 @@ public class CRes : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CRes(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CRes(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CRes : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CRes other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CRes other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CRes left, CRes right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CRes left, CRes right) {
+    return !Equals(left, right);
   }
 
   public ushort m_nDemands {
@@ -85,15 +119,15 @@ public class CRes : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_void m_pResource {
+  public System.IntPtr m_pResource {
     set {
-      NWNXLibPINVOKE.CRes_m_pResource_set(swigCPtr, SWIGTYPE_p_void.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CRes_m_pResource_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CRes_m_pResource_get(swigCPtr);
-      SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-      return ret;
+        System.IntPtr cPtr = NWNXLibPINVOKE.CRes_m_pResource_get(swigCPtr); 
+        return cPtr; 
     } 
+
   }
 
   public CKeyTableEntry m_pKeyEntry {
@@ -180,11 +214,10 @@ public class CRes : global::System.IDisposable {
     return ret;
   }
 
-  public SWIGTYPE_p_void Demand() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CRes_Demand(swigCPtr);
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-    return ret;
-  }
+  public System.IntPtr Demand() { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CRes_Demand(swigCPtr);
+    return cPtr;
+    }
 
   public int ReadRaw(int nSize, string pBuffer) {
     int ret = NWNXLibPINVOKE.CRes_ReadRaw(swigCPtr, nSize, pBuffer);
@@ -199,11 +232,10 @@ public class CRes : global::System.IDisposable {
     NWNXLibPINVOKE.CRes_Dump__SWIG_1(swigCPtr);
   }
 
-  public SWIGTYPE_p_void GetData() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CRes_GetData(swigCPtr);
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-    return ret;
-  }
+  public System.IntPtr GetData() { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CRes_GetData(swigCPtr);
+    return cPtr;
+    }
 
   public int GetDemands() {
     int ret = NWNXLibPINVOKE.CRes_GetDemands(swigCPtr);

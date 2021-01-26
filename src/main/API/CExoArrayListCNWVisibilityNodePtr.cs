@@ -14,7 +14,7 @@ public class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListCNWVisibilityNodePtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListCNWVisibilityNodePtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListCNWVisibilityNodePtr other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListCNWVisibilityNodePtr other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListCNWVisibilityNodePtr left, CExoArrayListCNWVisibilityNodePtr right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListCNWVisibilityNodePtr left, CExoArrayListCNWVisibilityNodePtr right) {
+    return !Equals(left, right);
   }
 
   public SWIGTYPE_p_p_CNWVisibilityNode element {
@@ -85,14 +119,14 @@ public class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCNWVisibilityNodePtr __Assign(CExoArrayListCNWVisibilityNodePtr list) {
-    CExoArrayListCNWVisibilityNodePtr ret = new CExoArrayListCNWVisibilityNodePtr(NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr___Assign(swigCPtr, CExoArrayListCNWVisibilityNodePtr.getCPtr(list)), false);
+  public CExoArrayListCNWVisibilityNodePtr _OpAssign(CExoArrayListCNWVisibilityNodePtr list) {
+    CExoArrayListCNWVisibilityNodePtr ret = new CExoArrayListCNWVisibilityNodePtr(NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr__OpAssign(swigCPtr, CExoArrayListCNWVisibilityNodePtr.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public SWIGTYPE_p_p_CNWVisibilityNode __Index(int i) {
-    SWIGTYPE_p_p_CNWVisibilityNode ret = new SWIGTYPE_p_p_CNWVisibilityNode(NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr___Index(swigCPtr, i), false);
+  public SWIGTYPE_p_p_CNWVisibilityNode _OpIndex(int i) {
+    SWIGTYPE_p_p_CNWVisibilityNode ret = new SWIGTYPE_p_p_CNWVisibilityNode(NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -121,13 +155,13 @@ public class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposable {
   }
 
   public SWIGTYPE_p_p_CNWVisibilityNode begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_begin(swigCPtr);
     SWIGTYPE_p_p_CNWVisibilityNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CNWVisibilityNode(cPtr, false);
     return ret;
   }
 
   public SWIGTYPE_p_p_CNWVisibilityNode end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_end(swigCPtr);
     SWIGTYPE_p_p_CNWVisibilityNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CNWVisibilityNode(cPtr, false);
     return ret;
   }

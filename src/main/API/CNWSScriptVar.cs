@@ -14,7 +14,7 @@ public class CNWSScriptVar : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CNWSScriptVar(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CNWSScriptVar(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CNWSScriptVar : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSScriptVar other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSScriptVar other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSScriptVar left, CNWSScriptVar right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSScriptVar left, CNWSScriptVar right) {
+    return !Equals(left, right);
   }
 
   public int m_int {
@@ -103,8 +137,8 @@ public class CNWSScriptVar : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CNWSScriptVar __Assign(CNWSScriptVar arg0) {
-    CNWSScriptVar ret = new CNWSScriptVar(NWNXLibPINVOKE.CNWSScriptVar___Assign(swigCPtr, CNWSScriptVar.getCPtr(arg0)), false);
+  public CNWSScriptVar _OpAssign(CNWSScriptVar arg0) {
+    CNWSScriptVar ret = new CNWSScriptVar(NWNXLibPINVOKE.CNWSScriptVar__OpAssign(swigCPtr, CNWSScriptVar.getCPtr(arg0)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }

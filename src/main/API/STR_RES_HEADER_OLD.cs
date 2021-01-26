@@ -14,7 +14,7 @@ public class STR_RES_HEADER_OLD : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal STR_RES_HEADER_OLD(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public STR_RES_HEADER_OLD(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class STR_RES_HEADER_OLD : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(STR_RES_HEADER_OLD other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is STR_RES_HEADER_OLD other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(STR_RES_HEADER_OLD left, STR_RES_HEADER_OLD right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(STR_RES_HEADER_OLD left, STR_RES_HEADER_OLD right) {
+    return !Equals(left, right);
   }
 
   public uint wFlags {

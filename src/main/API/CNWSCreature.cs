@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CNWSCreature : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CNWSCreature(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSCreature_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CNWSCreature(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSCreature_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CNWSCreature : CNWSObject {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSCreature other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSCreature other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSCreature left, CNWSCreature right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSCreature left, CNWSCreature right) {
+    return !Equals(left, right);
   }
 
   public int m_bPonyRide {
@@ -2730,8 +2764,8 @@ public class CNWSCreature : CNWSObject {
     NWNXLibPINVOKE.CNWSCreature_ResetUpdateTimes(swigCPtr, nCalendarDay, nTimeOfDay);
   }
 
-  public override void EventHandler(uint nEventId, uint nCallerObjectId, SWIGTYPE_p_void pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSCreature_EventHandler(swigCPtr, nEventId, nCallerObjectId, SWIGTYPE_p_void.getCPtr(pScript), nCalendarDay, nTimeOfDay);
+  public override void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSCreature_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
   }
 
   public uint GetItemCount(int bDroppableOnly) {

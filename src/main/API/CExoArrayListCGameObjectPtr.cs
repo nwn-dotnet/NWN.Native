@@ -14,7 +14,7 @@ public class CExoArrayListCGameObjectPtr : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListCGameObjectPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListCGameObjectPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListCGameObjectPtr : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListCGameObjectPtr other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListCGameObjectPtr other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListCGameObjectPtr left, CExoArrayListCGameObjectPtr right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListCGameObjectPtr left, CExoArrayListCGameObjectPtr right) {
+    return !Equals(left, right);
   }
 
   public SWIGTYPE_p_p_CGameObject element {
@@ -85,14 +119,14 @@ public class CExoArrayListCGameObjectPtr : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCGameObjectPtr __Assign(CExoArrayListCGameObjectPtr list) {
-    CExoArrayListCGameObjectPtr ret = new CExoArrayListCGameObjectPtr(NWNXLibPINVOKE.CExoArrayListCGameObjectPtr___Assign(swigCPtr, CExoArrayListCGameObjectPtr.getCPtr(list)), false);
+  public CExoArrayListCGameObjectPtr _OpAssign(CExoArrayListCGameObjectPtr list) {
+    CExoArrayListCGameObjectPtr ret = new CExoArrayListCGameObjectPtr(NWNXLibPINVOKE.CExoArrayListCGameObjectPtr__OpAssign(swigCPtr, CExoArrayListCGameObjectPtr.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public SWIGTYPE_p_p_CGameObject __Index(int i) {
-    SWIGTYPE_p_p_CGameObject ret = new SWIGTYPE_p_p_CGameObject(NWNXLibPINVOKE.CExoArrayListCGameObjectPtr___Index(swigCPtr, i), false);
+  public SWIGTYPE_p_p_CGameObject _OpIndex(int i) {
+    SWIGTYPE_p_p_CGameObject ret = new SWIGTYPE_p_p_CGameObject(NWNXLibPINVOKE.CExoArrayListCGameObjectPtr__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -121,13 +155,13 @@ public class CExoArrayListCGameObjectPtr : global::System.IDisposable {
   }
 
   public SWIGTYPE_p_p_CGameObject begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCGameObjectPtr_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCGameObjectPtr_begin(swigCPtr);
     SWIGTYPE_p_p_CGameObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CGameObject(cPtr, false);
     return ret;
   }
 
   public SWIGTYPE_p_p_CGameObject end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCGameObjectPtr_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCGameObjectPtr_end(swigCPtr);
     SWIGTYPE_p_p_CGameObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CGameObject(cPtr, false);
     return ret;
   }

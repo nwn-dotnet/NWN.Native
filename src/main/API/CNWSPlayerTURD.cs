@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CNWSPlayerTURD : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CNWSPlayerTURD(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlayerTURD_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CNWSPlayerTURD(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlayerTURD_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CNWSPlayerTURD : CNWSObject {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSPlayerTURD other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSPlayerTURD other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSPlayerTURD left, CNWSPlayerTURD right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSPlayerTURD left, CNWSPlayerTURD right) {
+    return !Equals(left, right);
   }
 
   public CExoString m_sCommunityName {
@@ -167,8 +201,8 @@ public class CNWSPlayerTURD : CNWSObject {
     NWNXLibPINVOKE.CNWSPlayerTURD_AIUpdate(swigCPtr);
   }
 
-  public override void EventHandler(uint nEventId, uint nCallerObjectId, SWIGTYPE_p_void pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSPlayerTURD_EventHandler(swigCPtr, nEventId, nCallerObjectId, SWIGTYPE_p_void.getCPtr(pScript), nCalendarDay, nTimeOfDay);
+  public override void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSPlayerTURD_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
   }
 
   public void AddToArea(CNWSArea pArea, int bRunScripts) {

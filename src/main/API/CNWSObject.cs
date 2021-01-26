@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CNWSObject : CGameObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CNWSObject(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSObject_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CNWSObject(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSObject_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CNWSObject : CGameObject {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSObject other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSObject other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSObject left, CNWSObject right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSObject left, CNWSObject right) {
+    return !Equals(left, right);
   }
 
   public CExoLocString m_sForGCC {
@@ -1024,96 +1058,96 @@ public class CNWSObject : CGameObject {
     NWNXLibPINVOKE.CNWSObject_TestActionList(swigCPtr);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9, uint nParamType10, SWIGTYPE_p_void pParameter10, uint nParamType11, SWIGTYPE_p_void pParameter11, uint nParamType12, SWIGTYPE_p_void pParameter12) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_0(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9), nParamType10, SWIGTYPE_p_void.getCPtr(pParameter10), nParamType11, SWIGTYPE_p_void.getCPtr(pParameter11), nParamType12, SWIGTYPE_p_void.getCPtr(pParameter12));
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9, uint nParamType10, System.IntPtr pParameter10, uint nParamType11, System.IntPtr pParameter11, uint nParamType12, System.IntPtr pParameter12) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_0(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9, nParamType10, pParameter10, nParamType11, pParameter11, nParamType12, pParameter12);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9, uint nParamType10, SWIGTYPE_p_void pParameter10, uint nParamType11, SWIGTYPE_p_void pParameter11, uint nParamType12) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_1(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9), nParamType10, SWIGTYPE_p_void.getCPtr(pParameter10), nParamType11, SWIGTYPE_p_void.getCPtr(pParameter11), nParamType12);
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9, uint nParamType10, System.IntPtr pParameter10, uint nParamType11, System.IntPtr pParameter11, uint nParamType12) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_1(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9, nParamType10, pParameter10, nParamType11, pParameter11, nParamType12);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9, uint nParamType10, SWIGTYPE_p_void pParameter10, uint nParamType11, SWIGTYPE_p_void pParameter11) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_2(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9), nParamType10, SWIGTYPE_p_void.getCPtr(pParameter10), nParamType11, SWIGTYPE_p_void.getCPtr(pParameter11));
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9, uint nParamType10, System.IntPtr pParameter10, uint nParamType11, System.IntPtr pParameter11) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_2(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9, nParamType10, pParameter10, nParamType11, pParameter11);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9, uint nParamType10, SWIGTYPE_p_void pParameter10, uint nParamType11) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_3(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9), nParamType10, SWIGTYPE_p_void.getCPtr(pParameter10), nParamType11);
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9, uint nParamType10, System.IntPtr pParameter10, uint nParamType11) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_3(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9, nParamType10, pParameter10, nParamType11);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9, uint nParamType10, SWIGTYPE_p_void pParameter10) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_4(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9), nParamType10, SWIGTYPE_p_void.getCPtr(pParameter10));
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9, uint nParamType10, System.IntPtr pParameter10) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_4(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9, nParamType10, pParameter10);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9, uint nParamType10) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_5(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9), nParamType10);
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9, uint nParamType10) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_5(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9, nParamType10);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_6(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9));
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_6(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_7(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9);
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_7(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_8(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8));
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_8(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_9(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8);
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_9(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_10(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7));
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_10(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_11(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7);
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_11(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_12(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6));
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_12(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_13(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6);
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_13(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_14(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5));
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_14(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_15(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5);
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_15(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_16(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4));
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_16(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_17(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4);
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_17(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_18(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3));
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_18(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_19(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3);
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_19(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_20(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2));
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_20(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_21(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2);
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_21(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2);
   }
 
-  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1) {
-    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_22(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1));
+  public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1) {
+    NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_22(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1);
   }
 
   public void AddAction(uint nActionId, ushort nGroupId, uint nParamType1) {
@@ -1124,96 +1158,96 @@ public class CNWSObject : CGameObject {
     NWNXLibPINVOKE.CNWSObject_AddAction__SWIG_24(swigCPtr, nActionId, nGroupId);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9, uint nParamType10, SWIGTYPE_p_void pParameter10, uint nParamType11, SWIGTYPE_p_void pParameter11, uint nParamType12, SWIGTYPE_p_void pParameter12) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_0(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9), nParamType10, SWIGTYPE_p_void.getCPtr(pParameter10), nParamType11, SWIGTYPE_p_void.getCPtr(pParameter11), nParamType12, SWIGTYPE_p_void.getCPtr(pParameter12));
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9, uint nParamType10, System.IntPtr pParameter10, uint nParamType11, System.IntPtr pParameter11, uint nParamType12, System.IntPtr pParameter12) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_0(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9, nParamType10, pParameter10, nParamType11, pParameter11, nParamType12, pParameter12);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9, uint nParamType10, SWIGTYPE_p_void pParameter10, uint nParamType11, SWIGTYPE_p_void pParameter11, uint nParamType12) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_1(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9), nParamType10, SWIGTYPE_p_void.getCPtr(pParameter10), nParamType11, SWIGTYPE_p_void.getCPtr(pParameter11), nParamType12);
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9, uint nParamType10, System.IntPtr pParameter10, uint nParamType11, System.IntPtr pParameter11, uint nParamType12) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_1(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9, nParamType10, pParameter10, nParamType11, pParameter11, nParamType12);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9, uint nParamType10, SWIGTYPE_p_void pParameter10, uint nParamType11, SWIGTYPE_p_void pParameter11) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_2(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9), nParamType10, SWIGTYPE_p_void.getCPtr(pParameter10), nParamType11, SWIGTYPE_p_void.getCPtr(pParameter11));
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9, uint nParamType10, System.IntPtr pParameter10, uint nParamType11, System.IntPtr pParameter11) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_2(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9, nParamType10, pParameter10, nParamType11, pParameter11);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9, uint nParamType10, SWIGTYPE_p_void pParameter10, uint nParamType11) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_3(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9), nParamType10, SWIGTYPE_p_void.getCPtr(pParameter10), nParamType11);
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9, uint nParamType10, System.IntPtr pParameter10, uint nParamType11) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_3(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9, nParamType10, pParameter10, nParamType11);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9, uint nParamType10, SWIGTYPE_p_void pParameter10) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_4(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9), nParamType10, SWIGTYPE_p_void.getCPtr(pParameter10));
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9, uint nParamType10, System.IntPtr pParameter10) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_4(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9, nParamType10, pParameter10);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9, uint nParamType10) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_5(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9), nParamType10);
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9, uint nParamType10) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_5(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9, nParamType10);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_6(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9));
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_6(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_7(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9);
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_7(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_8(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8));
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_8(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_9(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8);
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_9(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_10(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7));
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_10(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_11(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7);
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_11(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_12(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6));
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_12(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_13(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6);
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_13(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_14(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5));
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_14(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_15(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5);
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_15(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_16(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4));
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_16(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_17(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4);
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_17(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_18(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3));
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_18(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_19(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3);
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_19(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_20(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2));
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_20(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_21(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2);
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_21(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2);
   }
 
-  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1) {
-    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_22(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1));
+  public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1) {
+    NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_22(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1);
   }
 
   public void AddActionToFront(uint nActionId, ushort nGroupId, uint nParamType1) {
@@ -1224,96 +1258,96 @@ public class CNWSObject : CGameObject {
     NWNXLibPINVOKE.CNWSObject_AddActionToFront__SWIG_24(swigCPtr, nActionId, nGroupId);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9, uint nParamType10, SWIGTYPE_p_void pParameter10, uint nParamType11, SWIGTYPE_p_void pParameter11, uint nParamType12, SWIGTYPE_p_void pParameter12) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_0(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9), nParamType10, SWIGTYPE_p_void.getCPtr(pParameter10), nParamType11, SWIGTYPE_p_void.getCPtr(pParameter11), nParamType12, SWIGTYPE_p_void.getCPtr(pParameter12));
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9, uint nParamType10, System.IntPtr pParameter10, uint nParamType11, System.IntPtr pParameter11, uint nParamType12, System.IntPtr pParameter12) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_0(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9, nParamType10, pParameter10, nParamType11, pParameter11, nParamType12, pParameter12);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9, uint nParamType10, SWIGTYPE_p_void pParameter10, uint nParamType11, SWIGTYPE_p_void pParameter11, uint nParamType12) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_1(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9), nParamType10, SWIGTYPE_p_void.getCPtr(pParameter10), nParamType11, SWIGTYPE_p_void.getCPtr(pParameter11), nParamType12);
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9, uint nParamType10, System.IntPtr pParameter10, uint nParamType11, System.IntPtr pParameter11, uint nParamType12) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_1(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9, nParamType10, pParameter10, nParamType11, pParameter11, nParamType12);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9, uint nParamType10, SWIGTYPE_p_void pParameter10, uint nParamType11, SWIGTYPE_p_void pParameter11) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_2(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9), nParamType10, SWIGTYPE_p_void.getCPtr(pParameter10), nParamType11, SWIGTYPE_p_void.getCPtr(pParameter11));
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9, uint nParamType10, System.IntPtr pParameter10, uint nParamType11, System.IntPtr pParameter11) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_2(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9, nParamType10, pParameter10, nParamType11, pParameter11);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9, uint nParamType10, SWIGTYPE_p_void pParameter10, uint nParamType11) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_3(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9), nParamType10, SWIGTYPE_p_void.getCPtr(pParameter10), nParamType11);
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9, uint nParamType10, System.IntPtr pParameter10, uint nParamType11) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_3(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9, nParamType10, pParameter10, nParamType11);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9, uint nParamType10, SWIGTYPE_p_void pParameter10) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_4(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9), nParamType10, SWIGTYPE_p_void.getCPtr(pParameter10));
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9, uint nParamType10, System.IntPtr pParameter10) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_4(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9, nParamType10, pParameter10);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9, uint nParamType10) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_5(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9), nParamType10);
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9, uint nParamType10) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_5(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9, nParamType10);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9, SWIGTYPE_p_void pParameter9) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_6(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9, SWIGTYPE_p_void.getCPtr(pParameter9));
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9, System.IntPtr pParameter9) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_6(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9, pParameter9);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8, uint nParamType9) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_7(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8), nParamType9);
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8, uint nParamType9) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_7(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8, nParamType9);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8, SWIGTYPE_p_void pParameter8) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_8(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8, SWIGTYPE_p_void.getCPtr(pParameter8));
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8, System.IntPtr pParameter8) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_8(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8, pParameter8);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7, uint nParamType8) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_9(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7), nParamType8);
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7, uint nParamType8) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_9(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7, nParamType8);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7, SWIGTYPE_p_void pParameter7) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_10(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7, SWIGTYPE_p_void.getCPtr(pParameter7));
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7, System.IntPtr pParameter7) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_10(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7, pParameter7);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6, uint nParamType7) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_11(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6), nParamType7);
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6, uint nParamType7) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_11(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6, nParamType7);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6, SWIGTYPE_p_void pParameter6) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_12(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6, SWIGTYPE_p_void.getCPtr(pParameter6));
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6, System.IntPtr pParameter6) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_12(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6, pParameter6);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5, uint nParamType6) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_13(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5), nParamType6);
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5, uint nParamType6) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_13(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5, nParamType6);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5, SWIGTYPE_p_void pParameter5) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_14(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5, SWIGTYPE_p_void.getCPtr(pParameter5));
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5, System.IntPtr pParameter5) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_14(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5, pParameter5);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4, uint nParamType5) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_15(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4), nParamType5);
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4, uint nParamType5) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_15(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4, nParamType5);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4, SWIGTYPE_p_void pParameter4) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_16(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4, SWIGTYPE_p_void.getCPtr(pParameter4));
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4, System.IntPtr pParameter4) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_16(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4, pParameter4);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3, uint nParamType4) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_17(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3), nParamType4);
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3, uint nParamType4) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_17(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3, nParamType4);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3, SWIGTYPE_p_void pParameter3) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_18(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3, SWIGTYPE_p_void.getCPtr(pParameter3));
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3, System.IntPtr pParameter3) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_18(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3, pParameter3);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2, uint nParamType3) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_19(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2), nParamType3);
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2, uint nParamType3) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_19(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2, nParamType3);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2, SWIGTYPE_p_void pParameter2) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_20(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2, SWIGTYPE_p_void.getCPtr(pParameter2));
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2, System.IntPtr pParameter2) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_20(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2, pParameter2);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1, uint nParamType2) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_21(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1), nParamType2);
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1, uint nParamType2) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_21(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1, nParamType2);
   }
 
-  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, SWIGTYPE_p_void pParameter1) {
-    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_22(swigCPtr, nActionId, nGroupId, nParamType1, SWIGTYPE_p_void.getCPtr(pParameter1));
+  public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1, System.IntPtr pParameter1) {
+    NWNXLibPINVOKE.CNWSObject_AddActionAfterFront__SWIG_22(swigCPtr, nActionId, nGroupId, nParamType1, pParameter1);
   }
 
   public void AddActionAfterFront(uint nActionId, ushort nGroupId, uint nParamType1) {
@@ -1337,8 +1371,8 @@ public class CNWSObject : CGameObject {
     return ret;
   }
 
-  public int AddDoCommandAction(SWIGTYPE_p_void pScript) {
-    int ret = NWNXLibPINVOKE.CNWSObject_AddDoCommandAction(swigCPtr, SWIGTYPE_p_void.getCPtr(pScript));
+  public int AddDoCommandAction(System.IntPtr pScript) {
+    int ret = NWNXLibPINVOKE.CNWSObject_AddDoCommandAction(swigCPtr, pScript);
     return ret;
   }
 
@@ -1424,8 +1458,8 @@ public class CNWSObject : CGameObject {
     return ret;
   }
 
-  public virtual void EventHandler(uint nEventId, uint nCallerObjectId, SWIGTYPE_p_void pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSObject_EventHandler(swigCPtr, nEventId, nCallerObjectId, SWIGTYPE_p_void.getCPtr(pScript), nCalendarDay, nTimeOfDay);
+  public virtual void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSObject_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
   }
 
   public int GetAcceptableAction(uint nActionId) {
@@ -2047,8 +2081,8 @@ public class CNWSObject : CGameObject {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void AddActionNodeParameter(CNWSObjectActionNode pNode, uint nParameterNumber, uint nParameterType, SWIGTYPE_p_void pParameter) {
-    NWNXLibPINVOKE.CNWSObject_AddActionNodeParameter(swigCPtr, CNWSObjectActionNode.getCPtr(pNode), nParameterNumber, nParameterType, SWIGTYPE_p_void.getCPtr(pParameter));
+  public void AddActionNodeParameter(CNWSObjectActionNode pNode, uint nParameterNumber, uint nParameterType, System.IntPtr pParameter) {
+    NWNXLibPINVOKE.CNWSObject_AddActionNodeParameter(swigCPtr, CNWSObjectActionNode.getCPtr(pNode), nParameterNumber, nParameterType, pParameter);
   }
 
   public void RunActions(uint nCalendarDay, uint nTimeOfDay, ulong nStartOfUpdate) {

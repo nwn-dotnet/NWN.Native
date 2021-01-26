@@ -14,7 +14,7 @@ public class CNWSObjectEventHandler : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CNWSObjectEventHandler(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CNWSObjectEventHandler(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CNWSObjectEventHandler : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSObjectEventHandler other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSObjectEventHandler other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSObjectEventHandler left, CNWSObjectEventHandler right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSObjectEventHandler left, CNWSObjectEventHandler right) {
+    return !Equals(left, right);
   }
 
   public uint m_nEventId {

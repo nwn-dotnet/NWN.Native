@@ -14,7 +14,7 @@ public class CExoArrayListFloat : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListFloat(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListFloat(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListFloat : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListFloat other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListFloat other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListFloat left, CExoArrayListFloat right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListFloat left, CExoArrayListFloat right) {
+    return !Equals(left, right);
   }
 
   public SWIGTYPE_p_float element {
@@ -85,14 +119,14 @@ public class CExoArrayListFloat : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListFloat __Assign(CExoArrayListFloat list) {
-    CExoArrayListFloat ret = new CExoArrayListFloat(NWNXLibPINVOKE.CExoArrayListFloat___Assign(swigCPtr, CExoArrayListFloat.getCPtr(list)), false);
+  public CExoArrayListFloat _OpAssign(CExoArrayListFloat list) {
+    CExoArrayListFloat ret = new CExoArrayListFloat(NWNXLibPINVOKE.CExoArrayListFloat__OpAssign(swigCPtr, CExoArrayListFloat.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public SWIGTYPE_p_float __Index(int i) {
-    SWIGTYPE_p_float ret = new SWIGTYPE_p_float(NWNXLibPINVOKE.CExoArrayListFloat___Index(swigCPtr, i), false);
+  public SWIGTYPE_p_float _OpIndex(int i) {
+    SWIGTYPE_p_float ret = new SWIGTYPE_p_float(NWNXLibPINVOKE.CExoArrayListFloat__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -121,13 +155,13 @@ public class CExoArrayListFloat : global::System.IDisposable {
   }
 
   public SWIGTYPE_p_float begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListFloat_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListFloat_begin(swigCPtr);
     SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
     return ret;
   }
 
   public SWIGTYPE_p_float end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListFloat_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListFloat_end(swigCPtr);
     SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
     return ret;
   }

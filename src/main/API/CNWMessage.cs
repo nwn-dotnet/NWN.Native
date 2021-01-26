@@ -14,7 +14,7 @@ public class CNWMessage : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CNWMessage(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CNWMessage(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CNWMessage : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWMessage other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWMessage other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWMessage left, CNWMessage right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWMessage left, CNWMessage right) {
+    return !Equals(left, right);
   }
 
   public SWIGTYPE_p_unsigned_char m_pnWriteBuffer {
@@ -415,11 +449,10 @@ public class CNWMessage : global::System.IDisposable {
     return ret;
   }
 
-  public SWIGTYPE_p_void ReadVOIDPtr(int nSize) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWMessage_ReadVOIDPtr(swigCPtr, nSize);
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-    return ret;
-  }
+  public System.IntPtr ReadVOIDPtr(int nSize) { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CNWMessage_ReadVOIDPtr(swigCPtr, nSize);
+    return cPtr;
+    }
 
   public int MessageReadOverflow(int bWarn) {
     int ret = NWNXLibPINVOKE.CNWMessage_MessageReadOverflow__SWIG_0(swigCPtr, bWarn);
@@ -582,8 +615,8 @@ public class CNWMessage : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void WriteVOIDPtr(SWIGTYPE_p_void pVoidPtr, int nSize) {
-    NWNXLibPINVOKE.CNWMessage_WriteVOIDPtr(swigCPtr, SWIGTYPE_p_void.getCPtr(pVoidPtr), nSize);
+  public void WriteVOIDPtr(System.IntPtr pVoidPtr, int nSize) {
+    NWNXLibPINVOKE.CNWMessage_WriteVOIDPtr(swigCPtr, pVoidPtr, nSize);
   }
 
   public uint PeekAtWriteMessageSize() {

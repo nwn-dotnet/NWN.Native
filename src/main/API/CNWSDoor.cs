@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CNWSDoor : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CNWSDoor(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSDoor_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CNWSDoor(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSDoor_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CNWSDoor : CNWSObject {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSDoor other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSDoor other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSDoor left, CNWSDoor right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSDoor left, CNWSDoor right) {
+    return !Equals(left, right);
   }
 
   public CExoString m_sScripts {
@@ -580,8 +614,8 @@ public class CNWSDoor : CNWSObject {
     return ret;
   }
 
-  public override void EventHandler(uint nEventId, uint nCallerObjectId, SWIGTYPE_p_void pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSDoor_EventHandler(swigCPtr, nEventId, nCallerObjectId, SWIGTYPE_p_void.getCPtr(pScript), nCalendarDay, nTimeOfDay);
+  public override void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSDoor_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
   }
 
   public int LoadDoor(CResGFF pRes, CResStruct cItemStruct) {

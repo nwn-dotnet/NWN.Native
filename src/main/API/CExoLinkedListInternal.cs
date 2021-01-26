@@ -14,7 +14,7 @@ public class CExoLinkedListInternal : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoLinkedListInternal(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoLinkedListInternal(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoLinkedListInternal : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoLinkedListInternal other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoLinkedListInternal other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoLinkedListInternal left, CExoLinkedListInternal right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoLinkedListInternal left, CExoLinkedListInternal right) {
+    return !Equals(left, right);
   }
 
   public CExoLinkedListNode pHead {
@@ -76,67 +110,61 @@ public class CExoLinkedListInternal : global::System.IDisposable {
     } 
   }
 
-  public CExoLinkedListNode AddHead(SWIGTYPE_p_void Object) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_AddHead(swigCPtr, SWIGTYPE_p_void.getCPtr(Object));
+  public CExoLinkedListNode AddHead(System.IntPtr Object) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_AddHead(swigCPtr, Object);
     CExoLinkedListNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoLinkedListNode(cPtr, false);
     return ret;
   }
 
-  public CExoLinkedListNode AddTail(SWIGTYPE_p_void Object) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_AddTail(swigCPtr, SWIGTYPE_p_void.getCPtr(Object));
+  public CExoLinkedListNode AddTail(System.IntPtr Object) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_AddTail(swigCPtr, Object);
     CExoLinkedListNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoLinkedListNode(cPtr, false);
     return ret;
   }
 
-  public CExoLinkedListNode AddAfter(SWIGTYPE_p_void Object, CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_AddAfter(swigCPtr, SWIGTYPE_p_void.getCPtr(Object), CExoLinkedListNode.getCPtr(Position));
+  public CExoLinkedListNode AddAfter(System.IntPtr Object, CExoLinkedListNode Position) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_AddAfter(swigCPtr, Object, CExoLinkedListNode.getCPtr(Position));
     CExoLinkedListNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoLinkedListNode(cPtr, false);
     return ret;
   }
 
-  public CExoLinkedListNode AddBefore(SWIGTYPE_p_void Object, CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_AddBefore(swigCPtr, SWIGTYPE_p_void.getCPtr(Object), CExoLinkedListNode.getCPtr(Position));
+  public CExoLinkedListNode AddBefore(System.IntPtr Object, CExoLinkedListNode Position) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_AddBefore(swigCPtr, Object, CExoLinkedListNode.getCPtr(Position));
     CExoLinkedListNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoLinkedListNode(cPtr, false);
     return ret;
   }
 
-  public SWIGTYPE_p_void GetAtPos(CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_GetAtPos(swigCPtr, CExoLinkedListNode.getCPtr(Position));
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-    return ret;
-  }
+  public System.IntPtr GetAtPos(CExoLinkedListNode Position) { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_GetAtPos(swigCPtr, CExoLinkedListNode.getCPtr(Position));
+    return cPtr;
+    }
 
-  public SWIGTYPE_p_void GetNext(SWIGTYPE_p_p_CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_GetNext(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
+  public System.IntPtr GetNext(SWIGTYPE_p_p_CExoLinkedListNode Position) { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_GetNext(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
+    return cPtr;
+    }
 
-  public SWIGTYPE_p_void GetPrev(SWIGTYPE_p_p_CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_GetPrev(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
+  public System.IntPtr GetPrev(SWIGTYPE_p_p_CExoLinkedListNode Position) { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_GetPrev(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
+    return cPtr;
+    }
 
-  public SWIGTYPE_p_void RemoveHead() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_RemoveHead(swigCPtr);
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-    return ret;
-  }
+  public System.IntPtr RemoveHead() { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_RemoveHead(swigCPtr);
+    return cPtr;
+    }
 
-  public SWIGTYPE_p_void RemoveTail() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_RemoveTail(swigCPtr);
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-    return ret;
-  }
+  public System.IntPtr RemoveTail() { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_RemoveTail(swigCPtr);
+    return cPtr;
+    }
 
-  public SWIGTYPE_p_void Remove(CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_Remove(swigCPtr, CExoLinkedListNode.getCPtr(Position));
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-    return ret;
-  }
+  public System.IntPtr Remove(CExoLinkedListNode Position) { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListInternal_Remove(swigCPtr, CExoLinkedListNode.getCPtr(Position));
+    return cPtr;
+    }
 
 }
 

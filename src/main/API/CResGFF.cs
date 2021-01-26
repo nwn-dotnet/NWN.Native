@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CResGFF : CRes {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CResGFF(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResGFF_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CResGFF(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResGFF_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CResGFF : CRes {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CResGFF other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CResGFF other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CResGFF left, CResGFF right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CResGFF left, CResGFF right) {
+    return !Equals(left, right);
   }
 
   public uint STRUCT_GROWSIZE {
@@ -374,8 +408,8 @@ public class CResGFF : CRes {
     return ret;
   }
 
-  public int GetDataFromPointer(SWIGTYPE_p_void pData, int nDataSize) {
-    int ret = NWNXLibPINVOKE.CResGFF_GetDataFromPointer(swigCPtr, SWIGTYPE_p_void.getCPtr(pData), nDataSize);
+  public int GetDataFromPointer(System.IntPtr pData, int nDataSize) {
+    int ret = NWNXLibPINVOKE.CResGFF_GetDataFromPointer(swigCPtr, pData, nDataSize);
     return ret;
   }
 
@@ -599,19 +633,17 @@ public class CResGFF : CRes {
     return ret;
   }
 
-  public SWIGTYPE_p_void ReadFieldVOID(CResStruct pStructure, SWIGTYPE_p_void pVariable, uint nSize, string szFieldID, SWIGTYPE_p_int bSuccess, SWIGTYPE_p_void pDefault) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CResGFF_ReadFieldVOID__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), SWIGTYPE_p_void.getCPtr(pVariable), nSize, szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess), SWIGTYPE_p_void.getCPtr(pDefault));
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
+  public System.IntPtr ReadFieldVOID(CResStruct pStructure, System.IntPtr pVariable, uint nSize, string szFieldID, SWIGTYPE_p_int bSuccess, System.IntPtr pDefault) { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CResGFF_ReadFieldVOID__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), pVariable, nSize, szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess), pDefault);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
+    return cPtr;
+    }
 
-  public SWIGTYPE_p_void ReadFieldVOID(CResStruct pStructure, SWIGTYPE_p_void pVariable, uint nSize, string szFieldID, SWIGTYPE_p_int bSuccess) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CResGFF_ReadFieldVOID__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), SWIGTYPE_p_void.getCPtr(pVariable), nSize, szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess));
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
+  public System.IntPtr ReadFieldVOID(CResStruct pStructure, System.IntPtr pVariable, uint nSize, string szFieldID, SWIGTYPE_p_int bSuccess) { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CResGFF_ReadFieldVOID__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), pVariable, nSize, szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
+    return cPtr;
+    }
 
   public int AddList(CResList pList, CResStruct pStructure, string szFieldID) {
     int ret = NWNXLibPINVOKE.CResGFF_AddList(swigCPtr, CResList.getCPtr(pList), CResStruct.getCPtr(pStructure), szFieldID);
@@ -702,8 +734,8 @@ public class CResGFF : CRes {
     return ret;
   }
 
-  public int WriteFieldVOID(CResStruct pStructure, SWIGTYPE_p_void pVariable, uint nSize, string szFieldID) {
-    int ret = NWNXLibPINVOKE.CResGFF_WriteFieldVOID(swigCPtr, CResStruct.getCPtr(pStructure), SWIGTYPE_p_void.getCPtr(pVariable), nSize, szFieldID);
+  public int WriteFieldVOID(CResStruct pStructure, System.IntPtr pVariable, uint nSize, string szFieldID) {
+    int ret = NWNXLibPINVOKE.CResGFF_WriteFieldVOID(swigCPtr, CResStruct.getCPtr(pStructure), pVariable, nSize, szFieldID);
     return ret;
   }
 

@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class STR_RES_HEADER : STR_RES_HEADER_OLD {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal STR_RES_HEADER(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.STR_RES_HEADER_SWIGUpcast(cPtr), cMemoryOwn) {
+  public STR_RES_HEADER(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.STR_RES_HEADER_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class STR_RES_HEADER : STR_RES_HEADER_OLD {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(STR_RES_HEADER other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is STR_RES_HEADER other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(STR_RES_HEADER left, STR_RES_HEADER right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(STR_RES_HEADER left, STR_RES_HEADER right) {
+    return !Equals(left, right);
   }
 
   public float fSoundLength {

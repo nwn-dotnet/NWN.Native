@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CNWSEncounter : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CNWSEncounter(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSEncounter_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CNWSEncounter(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSEncounter_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CNWSEncounter : CNWSObject {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSEncounter other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSEncounter other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSEncounter left, CNWSEncounter right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSEncounter left, CNWSEncounter right) {
+    return !Equals(left, right);
   }
 
   public ushort m_nActivateObjectArrayIndex {
@@ -532,8 +566,8 @@ public class CNWSEncounter : CNWSObject {
     NWNXLibPINVOKE.CNWSEncounter_AIUpdate(swigCPtr);
   }
 
-  public override void EventHandler(uint nEventId, uint nCallerObjectId, SWIGTYPE_p_void pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSEncounter_EventHandler(swigCPtr, nEventId, nCallerObjectId, SWIGTYPE_p_void.getCPtr(pScript), nCalendarDay, nTimeOfDay);
+  public override void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSEncounter_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
   }
 
   public void AddToArea(CNWSArea pArea, float fX, float fY, float fZ, int bRunScripts) {

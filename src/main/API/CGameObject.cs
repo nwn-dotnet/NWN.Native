@@ -14,7 +14,7 @@ public class CGameObject : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CGameObject(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CGameObject(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -44,6 +44,40 @@ public class CGameObject : global::System.IDisposable {
     }
   }
 
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CGameObject other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CGameObject other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CGameObject left, CGameObject right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CGameObject left, CGameObject right) {
+    return !Equals(left, right);
+  }
+
   public uint m_idSelf {
     set {
       NWNXLibPINVOKE.CGameObject_m_idSelf_set(swigCPtr, value);
@@ -64,15 +98,15 @@ public class CGameObject : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_void m_pNwnxData {
+  public System.IntPtr m_pNwnxData {
     set {
-      NWNXLibPINVOKE.CGameObject_m_pNwnxData_set(swigCPtr, SWIGTYPE_p_void.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CGameObject_m_pNwnxData_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CGameObject_m_pNwnxData_get(swigCPtr);
-      SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-      return ret;
+        System.IntPtr cPtr = NWNXLibPINVOKE.CGameObject_m_pNwnxData_get(swigCPtr); 
+        return cPtr; 
     } 
+
   }
 
   public CGameObject(byte nObjectType, uint oidId) : this(NWNXLibPINVOKE.new_CGameObject__SWIG_0(nObjectType, oidId), true) {

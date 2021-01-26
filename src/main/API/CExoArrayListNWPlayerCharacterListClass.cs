@@ -14,7 +14,7 @@ public class CExoArrayListNWPlayerCharacterListClass : global::System.IDisposabl
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListNWPlayerCharacterListClass(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListNWPlayerCharacterListClass(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListNWPlayerCharacterListClass : global::System.IDisposabl
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListNWPlayerCharacterListClass other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListNWPlayerCharacterListClass other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListNWPlayerCharacterListClass left, CExoArrayListNWPlayerCharacterListClass right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListNWPlayerCharacterListClass left, CExoArrayListNWPlayerCharacterListClass right) {
+    return !Equals(left, right);
   }
 
   public NWPlayerCharacterListClass_st element {
@@ -85,14 +119,14 @@ public class CExoArrayListNWPlayerCharacterListClass : global::System.IDisposabl
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListNWPlayerCharacterListClass __Assign(CExoArrayListNWPlayerCharacterListClass list) {
-    CExoArrayListNWPlayerCharacterListClass ret = new CExoArrayListNWPlayerCharacterListClass(NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass___Assign(swigCPtr, CExoArrayListNWPlayerCharacterListClass.getCPtr(list)), false);
+  public CExoArrayListNWPlayerCharacterListClass _OpAssign(CExoArrayListNWPlayerCharacterListClass list) {
+    CExoArrayListNWPlayerCharacterListClass ret = new CExoArrayListNWPlayerCharacterListClass(NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass__OpAssign(swigCPtr, CExoArrayListNWPlayerCharacterListClass.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public NWPlayerCharacterListClass_st __Index(int i) {
-    NWPlayerCharacterListClass_st ret = new NWPlayerCharacterListClass_st(NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass___Index(swigCPtr, i), false);
+  public NWPlayerCharacterListClass_st _OpIndex(int i) {
+    NWPlayerCharacterListClass_st ret = new NWPlayerCharacterListClass_st(NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -123,13 +157,13 @@ public class CExoArrayListNWPlayerCharacterListClass : global::System.IDisposabl
   }
 
   public NWPlayerCharacterListClass_st begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_begin(swigCPtr);
     NWPlayerCharacterListClass_st ret = (cPtr == global::System.IntPtr.Zero) ? null : new NWPlayerCharacterListClass_st(cPtr, false);
     return ret;
   }
 
   public NWPlayerCharacterListClass_st end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_end(swigCPtr);
     NWPlayerCharacterListClass_st ret = (cPtr == global::System.IntPtr.Zero) ? null : new NWPlayerCharacterListClass_st(cPtr, false);
     return ret;
   }

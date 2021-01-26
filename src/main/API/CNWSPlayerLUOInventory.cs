@@ -14,7 +14,7 @@ public class CNWSPlayerLUOInventory : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CNWSPlayerLUOInventory(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CNWSPlayerLUOInventory(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CNWSPlayerLUOInventory : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSPlayerLUOInventory other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSPlayerLUOInventory other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSPlayerLUOInventory left, CNWSPlayerLUOInventory right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSPlayerLUOInventory left, CNWSPlayerLUOInventory right) {
+    return !Equals(left, right);
   }
 
   public SWIGTYPE_p_unsigned_int m_oidInventorySlots {

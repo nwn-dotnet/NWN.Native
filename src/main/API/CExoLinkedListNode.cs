@@ -14,7 +14,7 @@ public class CExoLinkedListNode : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoLinkedListNode(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoLinkedListNode(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -44,6 +44,40 @@ public class CExoLinkedListNode : global::System.IDisposable {
     }
   }
 
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoLinkedListNode other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoLinkedListNode other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoLinkedListNode left, CExoLinkedListNode right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoLinkedListNode left, CExoLinkedListNode right) {
+    return !Equals(left, right);
+  }
+
   public CExoLinkedListNode pPrev {
     set {
       NWNXLibPINVOKE.CExoLinkedListNode_pPrev_set(swigCPtr, CExoLinkedListNode.getCPtr(value));
@@ -66,15 +100,15 @@ public class CExoLinkedListNode : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_void pObject {
+  public System.IntPtr pObject {
     set {
-      NWNXLibPINVOKE.CExoLinkedListNode_pObject_set(swigCPtr, SWIGTYPE_p_void.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoLinkedListNode_pObject_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListNode_pObject_get(swigCPtr);
-      SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-      return ret;
+        System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListNode_pObject_get(swigCPtr); 
+        return cPtr; 
     } 
+
   }
 
 }

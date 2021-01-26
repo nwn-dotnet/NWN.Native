@@ -14,7 +14,7 @@ public class CNWSync : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CNWSync(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CNWSync(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -44,15 +44,49 @@ public class CNWSync : global::System.IDisposable {
     }
   }
 
-  public SWIGTYPE_p_void m_internal {
-    set {
-      NWNXLibPINVOKE.CNWSync_m_internal_set(swigCPtr, SWIGTYPE_p_void.getCPtr(value));
-    } 
+  public System.IntPtr Pointer {
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSync_m_internal_get(swigCPtr);
-      SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-      return ret;
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSync other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSync other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSync left, CNWSync right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSync left, CNWSync right) {
+    return !Equals(left, right);
+  }
+
+  public System.IntPtr m_internal {
+    set {
+      NWNXLibPINVOKE.CNWSync_m_internal_set(swigCPtr, value);
+    }  
+    get {
+        System.IntPtr cPtr = NWNXLibPINVOKE.CNWSync_m_internal_get(swigCPtr); 
+        return cPtr; 
     } 
+
   }
 
 }

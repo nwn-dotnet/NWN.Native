@@ -14,7 +14,7 @@ public class CExoArrayListTextureReplaceInfo : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListTextureReplaceInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListTextureReplaceInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListTextureReplaceInfo : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListTextureReplaceInfo other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListTextureReplaceInfo other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListTextureReplaceInfo left, CExoArrayListTextureReplaceInfo right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListTextureReplaceInfo left, CExoArrayListTextureReplaceInfo right) {
+    return !Equals(left, right);
   }
 
   public TextureReplaceInfo element {
@@ -85,14 +119,14 @@ public class CExoArrayListTextureReplaceInfo : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListTextureReplaceInfo __Assign(CExoArrayListTextureReplaceInfo list) {
-    CExoArrayListTextureReplaceInfo ret = new CExoArrayListTextureReplaceInfo(NWNXLibPINVOKE.CExoArrayListTextureReplaceInfo___Assign(swigCPtr, CExoArrayListTextureReplaceInfo.getCPtr(list)), false);
+  public CExoArrayListTextureReplaceInfo _OpAssign(CExoArrayListTextureReplaceInfo list) {
+    CExoArrayListTextureReplaceInfo ret = new CExoArrayListTextureReplaceInfo(NWNXLibPINVOKE.CExoArrayListTextureReplaceInfo__OpAssign(swigCPtr, CExoArrayListTextureReplaceInfo.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public TextureReplaceInfo __Index(int i) {
-    TextureReplaceInfo ret = new TextureReplaceInfo(NWNXLibPINVOKE.CExoArrayListTextureReplaceInfo___Index(swigCPtr, i), false);
+  public TextureReplaceInfo _OpIndex(int i) {
+    TextureReplaceInfo ret = new TextureReplaceInfo(NWNXLibPINVOKE.CExoArrayListTextureReplaceInfo__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -123,13 +157,13 @@ public class CExoArrayListTextureReplaceInfo : global::System.IDisposable {
   }
 
   public TextureReplaceInfo begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListTextureReplaceInfo_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListTextureReplaceInfo_begin(swigCPtr);
     TextureReplaceInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new TextureReplaceInfo(cPtr, false);
     return ret;
   }
 
   public TextureReplaceInfo end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListTextureReplaceInfo_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListTextureReplaceInfo_end(swigCPtr);
     TextureReplaceInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new TextureReplaceInfo(cPtr, false);
     return ret;
   }

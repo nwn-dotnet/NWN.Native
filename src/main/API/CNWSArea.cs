@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CNWSArea : CGameObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CNWSArea(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSArea_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CNWSArea(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSArea_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CNWSArea : CGameObject {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSArea other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSArea other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSArea left, CNWSArea right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSArea left, CNWSArea right) {
+    return !Equals(left, right);
   }
 
   public int m_nPlayersInArea {
@@ -767,8 +801,8 @@ public class CNWSArea : CGameObject {
     return ret;
   }
 
-  public void EventHandler(uint nEventId, uint nCallerObjectId, SWIGTYPE_p_void pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSArea_EventHandler(swigCPtr, nEventId, nCallerObjectId, SWIGTYPE_p_void.getCPtr(pScript), nCalendarDay, nTimeOfDay);
+  public void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSArea_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
   }
 
   public int GenerateInterTilePath(SWIGTYPE_p_int nInterTileStartDepth, int nInterTileStartTileX, int nInterTileStartTileY, int nInterTileStartRegion) {

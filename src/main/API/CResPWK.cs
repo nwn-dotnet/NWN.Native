@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CResPWK : CRes {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CResPWK(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResPWK_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CResPWK(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResPWK_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CResPWK : CRes {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CResPWK other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CResPWK other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CResPWK left, CResPWK right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CResPWK left, CResPWK right) {
+    return !Equals(left, right);
   }
 
   public int m_bLoaded {

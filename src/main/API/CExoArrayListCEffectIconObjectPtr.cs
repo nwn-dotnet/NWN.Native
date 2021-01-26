@@ -14,7 +14,7 @@ public class CExoArrayListCEffectIconObjectPtr : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListCEffectIconObjectPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListCEffectIconObjectPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListCEffectIconObjectPtr : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListCEffectIconObjectPtr other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListCEffectIconObjectPtr other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListCEffectIconObjectPtr left, CExoArrayListCEffectIconObjectPtr right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListCEffectIconObjectPtr left, CExoArrayListCEffectIconObjectPtr right) {
+    return !Equals(left, right);
   }
 
   public SWIGTYPE_p_p_CEffectIconObject element {
@@ -85,14 +119,14 @@ public class CExoArrayListCEffectIconObjectPtr : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCEffectIconObjectPtr __Assign(CExoArrayListCEffectIconObjectPtr list) {
-    CExoArrayListCEffectIconObjectPtr ret = new CExoArrayListCEffectIconObjectPtr(NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr___Assign(swigCPtr, CExoArrayListCEffectIconObjectPtr.getCPtr(list)), false);
+  public CExoArrayListCEffectIconObjectPtr _OpAssign(CExoArrayListCEffectIconObjectPtr list) {
+    CExoArrayListCEffectIconObjectPtr ret = new CExoArrayListCEffectIconObjectPtr(NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr__OpAssign(swigCPtr, CExoArrayListCEffectIconObjectPtr.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public SWIGTYPE_p_p_CEffectIconObject __Index(int i) {
-    SWIGTYPE_p_p_CEffectIconObject ret = new SWIGTYPE_p_p_CEffectIconObject(NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr___Index(swigCPtr, i), false);
+  public SWIGTYPE_p_p_CEffectIconObject _OpIndex(int i) {
+    SWIGTYPE_p_p_CEffectIconObject ret = new SWIGTYPE_p_p_CEffectIconObject(NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -121,13 +155,13 @@ public class CExoArrayListCEffectIconObjectPtr : global::System.IDisposable {
   }
 
   public SWIGTYPE_p_p_CEffectIconObject begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr_begin(swigCPtr);
     SWIGTYPE_p_p_CEffectIconObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CEffectIconObject(cPtr, false);
     return ret;
   }
 
   public SWIGTYPE_p_p_CEffectIconObject end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr_end(swigCPtr);
     SWIGTYPE_p_p_CEffectIconObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CEffectIconObject(cPtr, false);
     return ret;
   }

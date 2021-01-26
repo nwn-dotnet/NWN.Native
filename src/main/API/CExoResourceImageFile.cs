@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CExoResourceImageFile : CExoPackedFile {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CExoResourceImageFile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CExoResourceImageFile_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CExoResourceImageFile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CExoResourceImageFile_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CExoResourceImageFile : CExoPackedFile {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoResourceImageFile other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoResourceImageFile other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoResourceImageFile left, CExoResourceImageFile right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoResourceImageFile left, CExoResourceImageFile right) {
+    return !Equals(left, right);
   }
 
   public SWIGTYPE_p_unsigned_char m_pResourceImage {
@@ -100,14 +134,14 @@ public class CExoResourceImageFile : CExoPackedFile {
     return ret;
   }
 
-  public override uint ReadResource(RESID nID, SWIGTYPE_p_void pData, uint nSize, uint nDataOffset) {
-    uint ret = NWNXLibPINVOKE.CExoResourceImageFile_ReadResource(swigCPtr, RESID.getCPtr(nID), SWIGTYPE_p_void.getCPtr(pData), nSize, nDataOffset);
+  public override uint ReadResource(RESID nID, System.IntPtr pData, uint nSize, uint nDataOffset) {
+    uint ret = NWNXLibPINVOKE.CExoResourceImageFile_ReadResource(swigCPtr, RESID.getCPtr(nID), pData, nSize, nDataOffset);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public override void ReadResourceAsync(RESID nID, SWIGTYPE_p_void pData, uint nSize, uint nDataOffset) {
-    NWNXLibPINVOKE.CExoResourceImageFile_ReadResourceAsync(swigCPtr, RESID.getCPtr(nID), SWIGTYPE_p_void.getCPtr(pData), nSize, nDataOffset);
+  public override void ReadResourceAsync(RESID nID, System.IntPtr pData, uint nSize, uint nDataOffset) {
+    NWNXLibPINVOKE.CExoResourceImageFile_ReadResourceAsync(swigCPtr, RESID.getCPtr(nID), pData, nSize, nDataOffset);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -126,12 +160,11 @@ public class CExoResourceImageFile : CExoPackedFile {
     return ret;
   }
 
-  public virtual SWIGTYPE_p_void GetResource(RESID nID) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoResourceImageFile_GetResource(swigCPtr, RESID.getCPtr(nID));
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
+  public virtual System.IntPtr GetResource(RESID nID) { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CExoResourceImageFile_GetResource(swigCPtr, RESID.getCPtr(nID));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
+    return cPtr;
+    }
 
   public SWIGTYPE_p_p_ENCAPSULATED_KEYLISTENTRY GetKeyList() {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoResourceImageFile_GetKeyList(swigCPtr);

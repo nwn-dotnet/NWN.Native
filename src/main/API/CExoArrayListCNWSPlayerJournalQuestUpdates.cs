@@ -14,7 +14,7 @@ public class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.IDispos
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListCNWSPlayerJournalQuestUpdates(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListCNWSPlayerJournalQuestUpdates(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.IDispos
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListCNWSPlayerJournalQuestUpdates other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListCNWSPlayerJournalQuestUpdates other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListCNWSPlayerJournalQuestUpdates left, CExoArrayListCNWSPlayerJournalQuestUpdates right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListCNWSPlayerJournalQuestUpdates left, CExoArrayListCNWSPlayerJournalQuestUpdates right) {
+    return !Equals(left, right);
   }
 
   public CNWSPlayerJournalQuestUpdates element {
@@ -85,14 +119,14 @@ public class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.IDispos
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCNWSPlayerJournalQuestUpdates __Assign(CExoArrayListCNWSPlayerJournalQuestUpdates list) {
-    CExoArrayListCNWSPlayerJournalQuestUpdates ret = new CExoArrayListCNWSPlayerJournalQuestUpdates(NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates___Assign(swigCPtr, CExoArrayListCNWSPlayerJournalQuestUpdates.getCPtr(list)), false);
+  public CExoArrayListCNWSPlayerJournalQuestUpdates _OpAssign(CExoArrayListCNWSPlayerJournalQuestUpdates list) {
+    CExoArrayListCNWSPlayerJournalQuestUpdates ret = new CExoArrayListCNWSPlayerJournalQuestUpdates(NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates__OpAssign(swigCPtr, CExoArrayListCNWSPlayerJournalQuestUpdates.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CNWSPlayerJournalQuestUpdates __Index(int i) {
-    CNWSPlayerJournalQuestUpdates ret = new CNWSPlayerJournalQuestUpdates(NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates___Index(swigCPtr, i), false);
+  public CNWSPlayerJournalQuestUpdates _OpIndex(int i) {
+    CNWSPlayerJournalQuestUpdates ret = new CNWSPlayerJournalQuestUpdates(NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -123,13 +157,13 @@ public class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.IDispos
   }
 
   public CNWSPlayerJournalQuestUpdates begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_begin(swigCPtr);
     CNWSPlayerJournalQuestUpdates ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSPlayerJournalQuestUpdates(cPtr, false);
     return ret;
   }
 
   public CNWSPlayerJournalQuestUpdates end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_end(swigCPtr);
     CNWSPlayerJournalQuestUpdates ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSPlayerJournalQuestUpdates(cPtr, false);
     return ret;
   }

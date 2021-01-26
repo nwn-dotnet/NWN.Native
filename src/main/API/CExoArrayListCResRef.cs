@@ -14,7 +14,7 @@ public class CExoArrayListCResRef : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListCResRef(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListCResRef(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListCResRef : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListCResRef other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListCResRef other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListCResRef left, CExoArrayListCResRef right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListCResRef left, CExoArrayListCResRef right) {
+    return !Equals(left, right);
   }
 
   public CResRef element {
@@ -85,14 +119,14 @@ public class CExoArrayListCResRef : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCResRef __Assign(CExoArrayListCResRef list) {
-    CExoArrayListCResRef ret = new CExoArrayListCResRef(NWNXLibPINVOKE.CExoArrayListCResRef___Assign(swigCPtr, CExoArrayListCResRef.getCPtr(list)), false);
+  public CExoArrayListCResRef _OpAssign(CExoArrayListCResRef list) {
+    CExoArrayListCResRef ret = new CExoArrayListCResRef(NWNXLibPINVOKE.CExoArrayListCResRef__OpAssign(swigCPtr, CExoArrayListCResRef.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CResRef __Index(int i) {
-    CResRef ret = new CResRef(NWNXLibPINVOKE.CExoArrayListCResRef___Index(swigCPtr, i), false);
+  public CResRef _OpIndex(int i) {
+    CResRef ret = new CResRef(NWNXLibPINVOKE.CExoArrayListCResRef__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -123,13 +157,13 @@ public class CExoArrayListCResRef : global::System.IDisposable {
   }
 
   public CResRef begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCResRef_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCResRef_begin(swigCPtr);
     CResRef ret = (cPtr == global::System.IntPtr.Zero) ? null : new CResRef(cPtr, false);
     return ret;
   }
 
   public CResRef end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCResRef_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCResRef_end(swigCPtr);
     CResRef ret = (cPtr == global::System.IntPtr.Zero) ? null : new CResRef(cPtr, false);
     return ret;
   }

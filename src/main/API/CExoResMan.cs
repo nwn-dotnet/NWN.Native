@@ -14,7 +14,7 @@ public class CExoResMan : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoResMan(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoResMan(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoResMan : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoResMan other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoResMan other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoResMan left, CExoResMan right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoResMan left, CExoResMan right) {
+    return !Equals(left, right);
   }
 
   public long m_nTotalPhysicalMemory {
@@ -241,15 +275,15 @@ public class CExoResMan : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_void m_pResourceOverrideMap {
+  public System.IntPtr m_pResourceOverrideMap {
     set {
-      NWNXLibPINVOKE.CExoResMan_m_pResourceOverrideMap_set(swigCPtr, SWIGTYPE_p_void.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoResMan_m_pResourceOverrideMap_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoResMan_m_pResourceOverrideMap_get(swigCPtr);
-      SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-      return ret;
+        System.IntPtr cPtr = NWNXLibPINVOKE.CExoResMan_m_pResourceOverrideMap_get(swigCPtr); 
+        return cPtr; 
     } 
+
   }
 
   public CExoResMan() : this(NWNXLibPINVOKE.new_CExoResMan(), true) {
@@ -499,11 +533,10 @@ public class CExoResMan : global::System.IDisposable {
     return ret;
   }
 
-  public SWIGTYPE_p_void Demand(CRes pRes) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoResMan_Demand(swigCPtr, CRes.getCPtr(pRes));
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-    return ret;
-  }
+  public System.IntPtr Demand(CRes pRes) { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CExoResMan_Demand(swigCPtr, CRes.getCPtr(pRes));
+    return cPtr;
+    }
 
   public void Dump(CRes pRes, int bRemove) {
     NWNXLibPINVOKE.CExoResMan_Dump__SWIG_0(swigCPtr, CRes.getCPtr(pRes), bRemove);

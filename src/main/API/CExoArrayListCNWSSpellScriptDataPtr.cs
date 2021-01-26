@@ -14,7 +14,7 @@ public class CExoArrayListCNWSSpellScriptDataPtr : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListCNWSSpellScriptDataPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListCNWSSpellScriptDataPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListCNWSSpellScriptDataPtr : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListCNWSSpellScriptDataPtr other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListCNWSSpellScriptDataPtr other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListCNWSSpellScriptDataPtr left, CExoArrayListCNWSSpellScriptDataPtr right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListCNWSSpellScriptDataPtr left, CExoArrayListCNWSSpellScriptDataPtr right) {
+    return !Equals(left, right);
   }
 
   public SWIGTYPE_p_p_CNWSSpellScriptData element {
@@ -85,14 +119,14 @@ public class CExoArrayListCNWSSpellScriptDataPtr : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCNWSSpellScriptDataPtr __Assign(CExoArrayListCNWSSpellScriptDataPtr list) {
-    CExoArrayListCNWSSpellScriptDataPtr ret = new CExoArrayListCNWSSpellScriptDataPtr(NWNXLibPINVOKE.CExoArrayListCNWSSpellScriptDataPtr___Assign(swigCPtr, CExoArrayListCNWSSpellScriptDataPtr.getCPtr(list)), false);
+  public CExoArrayListCNWSSpellScriptDataPtr _OpAssign(CExoArrayListCNWSSpellScriptDataPtr list) {
+    CExoArrayListCNWSSpellScriptDataPtr ret = new CExoArrayListCNWSSpellScriptDataPtr(NWNXLibPINVOKE.CExoArrayListCNWSSpellScriptDataPtr__OpAssign(swigCPtr, CExoArrayListCNWSSpellScriptDataPtr.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public SWIGTYPE_p_p_CNWSSpellScriptData __Index(int i) {
-    SWIGTYPE_p_p_CNWSSpellScriptData ret = new SWIGTYPE_p_p_CNWSSpellScriptData(NWNXLibPINVOKE.CExoArrayListCNWSSpellScriptDataPtr___Index(swigCPtr, i), false);
+  public SWIGTYPE_p_p_CNWSSpellScriptData _OpIndex(int i) {
+    SWIGTYPE_p_p_CNWSSpellScriptData ret = new SWIGTYPE_p_p_CNWSSpellScriptData(NWNXLibPINVOKE.CExoArrayListCNWSSpellScriptDataPtr__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -121,13 +155,13 @@ public class CExoArrayListCNWSSpellScriptDataPtr : global::System.IDisposable {
   }
 
   public SWIGTYPE_p_p_CNWSSpellScriptData begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSSpellScriptDataPtr_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSSpellScriptDataPtr_begin(swigCPtr);
     SWIGTYPE_p_p_CNWSSpellScriptData ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CNWSSpellScriptData(cPtr, false);
     return ret;
   }
 
   public SWIGTYPE_p_p_CNWSSpellScriptData end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSSpellScriptDataPtr_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSSpellScriptDataPtr_end(swigCPtr);
     SWIGTYPE_p_p_CNWSSpellScriptData ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CNWSSpellScriptData(cPtr, false);
     return ret;
   }

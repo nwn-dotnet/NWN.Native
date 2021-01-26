@@ -14,7 +14,7 @@ public class CPathfindInformation : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CPathfindInformation(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CPathfindInformation(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CPathfindInformation : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CPathfindInformation other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CPathfindInformation other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CPathfindInformation left, CPathfindInformation right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CPathfindInformation left, CPathfindInformation right) {
+    return !Equals(left, right);
   }
 
   public int m_bClientMoving {
@@ -857,15 +891,15 @@ public class CPathfindInformation : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_void m_pGridSearchLastTransTable {
+  public System.IntPtr m_pGridSearchLastTransTable {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_pGridSearchLastTransTable_set(swigCPtr, SWIGTYPE_p_void.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CPathfindInformation_m_pGridSearchLastTransTable_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_pGridSearchLastTransTable_get(swigCPtr);
-      SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-      return ret;
+        System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_pGridSearchLastTransTable_get(swigCPtr); 
+        return cPtr; 
     } 
+
   }
 
   public Vector2 m_vGridSearchStartPoint {

@@ -14,7 +14,7 @@ public class CVirtualMachineCmdImplementer : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CVirtualMachineCmdImplementer(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CVirtualMachineCmdImplementer(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CVirtualMachineCmdImplementer : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CVirtualMachineCmdImplementer other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CVirtualMachineCmdImplementer other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CVirtualMachineCmdImplementer left, CVirtualMachineCmdImplementer right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CVirtualMachineCmdImplementer left, CVirtualMachineCmdImplementer right) {
+    return !Equals(left, right);
   }
 
   public int m_bValidObjectRunScript {
@@ -83,29 +117,27 @@ public class CVirtualMachineCmdImplementer : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public virtual SWIGTYPE_p_void CreateGameDefinedStructure(int nUserDefinedType) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_CreateGameDefinedStructure(swigCPtr, nUserDefinedType);
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
+  public virtual System.IntPtr CreateGameDefinedStructure(int nUserDefinedType) { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_CreateGameDefinedStructure(swigCPtr, nUserDefinedType);
+    return cPtr;
+    }
+
+  public virtual void DestroyGameDefinedStructure(int nUserDefinedType, System.IntPtr pStructureToDelete) {
+    NWNXLibPINVOKE.CVirtualMachineCmdImplementer_DestroyGameDefinedStructure(swigCPtr, nUserDefinedType, pStructureToDelete);
+  }
+
+  public virtual int GetEqualGameDefinedStructure(int nUserDefinedType, System.IntPtr pStructure1, System.IntPtr pStructure2) {
+    int ret = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_GetEqualGameDefinedStructure(swigCPtr, nUserDefinedType, pStructure1, pStructure2);
     return ret;
   }
 
-  public virtual void DestroyGameDefinedStructure(int nUserDefinedType, SWIGTYPE_p_void pStructureToDelete) {
-    NWNXLibPINVOKE.CVirtualMachineCmdImplementer_DestroyGameDefinedStructure(swigCPtr, nUserDefinedType, SWIGTYPE_p_void.getCPtr(pStructureToDelete));
-  }
+  public virtual System.IntPtr CopyGameDefinedStructure(int nUserDefinedType, System.IntPtr pStructureSrc) { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_CopyGameDefinedStructure(swigCPtr, nUserDefinedType, pStructureSrc);
+    return cPtr;
+    }
 
-  public virtual int GetEqualGameDefinedStructure(int nUserDefinedType, SWIGTYPE_p_void pStructure1, SWIGTYPE_p_void pStructure2) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_GetEqualGameDefinedStructure(swigCPtr, nUserDefinedType, SWIGTYPE_p_void.getCPtr(pStructure1), SWIGTYPE_p_void.getCPtr(pStructure2));
-    return ret;
-  }
-
-  public virtual SWIGTYPE_p_void CopyGameDefinedStructure(int nUserDefinedType, SWIGTYPE_p_void pStructureSrc) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_CopyGameDefinedStructure(swigCPtr, nUserDefinedType, SWIGTYPE_p_void.getCPtr(pStructureSrc));
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-    return ret;
-  }
-
-  public virtual int SaveGameDefinedStructure(int nEngineStructure, SWIGTYPE_p_void pStructure, CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_SaveGameDefinedStructure(swigCPtr, nEngineStructure, SWIGTYPE_p_void.getCPtr(pStructure), CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+  public virtual int SaveGameDefinedStructure(int nEngineStructure, System.IntPtr pStructure, CResGFF pRes, CResStruct pStruct) {
+    int ret = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_SaveGameDefinedStructure(swigCPtr, nEngineStructure, pStructure, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
     return ret;
   }
 
@@ -124,8 +156,8 @@ public class CVirtualMachineCmdImplementer : global::System.IDisposable {
     return ret;
   }
 
-  public virtual void GetEngineStructureWatchView(int nEngineStructure, SWIGTYPE_p_void pEngineStructure, SWIGTYPE_p_int nEntries, SWIGTYPE_p_p_CExoString m_ppNames, SWIGTYPE_p_p_CExoString m_ppValues) {
-    NWNXLibPINVOKE.CVirtualMachineCmdImplementer_GetEngineStructureWatchView(swigCPtr, nEngineStructure, SWIGTYPE_p_void.getCPtr(pEngineStructure), SWIGTYPE_p_int.getCPtr(nEntries), SWIGTYPE_p_p_CExoString.getCPtr(m_ppNames), SWIGTYPE_p_p_CExoString.getCPtr(m_ppValues));
+  public virtual void GetEngineStructureWatchView(int nEngineStructure, System.IntPtr pEngineStructure, SWIGTYPE_p_int nEntries, SWIGTYPE_p_p_CExoString m_ppNames, SWIGTYPE_p_p_CExoString m_ppValues) {
+    NWNXLibPINVOKE.CVirtualMachineCmdImplementer_GetEngineStructureWatchView(swigCPtr, nEngineStructure, pEngineStructure, SWIGTYPE_p_int.getCPtr(nEntries), SWIGTYPE_p_p_CExoString.getCPtr(m_ppNames), SWIGTYPE_p_p_CExoString.getCPtr(m_ppValues));
   }
 
   public virtual void GetObjectWatchView(uint oidObject, SWIGTYPE_p_int nEntries, SWIGTYPE_p_p_CExoString m_ppNames, SWIGTYPE_p_p_CExoString m_ppValues) {

@@ -14,7 +14,7 @@ public class CExoArrayListCCombatInformationNodePtr : global::System.IDisposable
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListCCombatInformationNodePtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListCCombatInformationNodePtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListCCombatInformationNodePtr : global::System.IDisposable
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListCCombatInformationNodePtr other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListCCombatInformationNodePtr other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListCCombatInformationNodePtr left, CExoArrayListCCombatInformationNodePtr right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListCCombatInformationNodePtr left, CExoArrayListCCombatInformationNodePtr right) {
+    return !Equals(left, right);
   }
 
   public SWIGTYPE_p_p_CCombatInformationNode element {
@@ -85,14 +119,14 @@ public class CExoArrayListCCombatInformationNodePtr : global::System.IDisposable
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCCombatInformationNodePtr __Assign(CExoArrayListCCombatInformationNodePtr list) {
-    CExoArrayListCCombatInformationNodePtr ret = new CExoArrayListCCombatInformationNodePtr(NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr___Assign(swigCPtr, CExoArrayListCCombatInformationNodePtr.getCPtr(list)), false);
+  public CExoArrayListCCombatInformationNodePtr _OpAssign(CExoArrayListCCombatInformationNodePtr list) {
+    CExoArrayListCCombatInformationNodePtr ret = new CExoArrayListCCombatInformationNodePtr(NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr__OpAssign(swigCPtr, CExoArrayListCCombatInformationNodePtr.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public SWIGTYPE_p_p_CCombatInformationNode __Index(int i) {
-    SWIGTYPE_p_p_CCombatInformationNode ret = new SWIGTYPE_p_p_CCombatInformationNode(NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr___Index(swigCPtr, i), false);
+  public SWIGTYPE_p_p_CCombatInformationNode _OpIndex(int i) {
+    SWIGTYPE_p_p_CCombatInformationNode ret = new SWIGTYPE_p_p_CCombatInformationNode(NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -121,13 +155,13 @@ public class CExoArrayListCCombatInformationNodePtr : global::System.IDisposable
   }
 
   public SWIGTYPE_p_p_CCombatInformationNode begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_begin(swigCPtr);
     SWIGTYPE_p_p_CCombatInformationNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CCombatInformationNode(cPtr, false);
     return ret;
   }
 
   public SWIGTYPE_p_p_CCombatInformationNode end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_end(swigCPtr);
     SWIGTYPE_p_p_CCombatInformationNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CCombatInformationNode(cPtr, false);
     return ret;
   }

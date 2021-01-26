@@ -10,20 +10,20 @@
 
 namespace NWN.Native.API {
 
-public class KeyFileData : global::System.IDisposable {
+public class DataBlock : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public KeyFileData(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public DataBlock(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
-  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(KeyFileData obj) {
+  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(DataBlock obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 
-  ~KeyFileData() {
+  ~DataBlock() {
     Dispose(false);
   }
 
@@ -50,7 +50,7 @@ public class KeyFileData : global::System.IDisposable {
     }
   }
 
-  public bool Equals(KeyFileData other) {
+  public bool Equals(DataBlock other) {
     if (ReferenceEquals(null, other)) {
       return false;
     }
@@ -63,77 +63,57 @@ public class KeyFileData : global::System.IDisposable {
   }
 
   public override bool Equals(object obj) {
-    return ReferenceEquals(this, obj) || obj is KeyFileData other && Equals(other);
+    return ReferenceEquals(this, obj) || obj is DataBlock other && Equals(other);
   }
 
   public override int GetHashCode() {
     return swigCPtr.Handle.GetHashCode();
   }
 
-  public static bool operator ==(KeyFileData left, KeyFileData right) {
+  public static bool operator ==(DataBlock left, DataBlock right) {
     return Equals(left, right);
   }
 
-  public static bool operator !=(KeyFileData left, KeyFileData right) {
+  public static bool operator !=(DataBlock left, DataBlock right) {
     return !Equals(left, right);
   }
 
-  public int month {
+  public string m_data {
     set {
-      NWNXLibPINVOKE.KeyFileData_month_set(swigCPtr, value);
+      NWNXLibPINVOKE.DataBlock_m_data_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.KeyFileData_month_get(swigCPtr);
+      string ret = NWNXLibPINVOKE.DataBlock_m_data_get(swigCPtr);
       return ret;
     } 
   }
 
-  public int day {
+  public uint m_used {
     set {
-      NWNXLibPINVOKE.KeyFileData_day_set(swigCPtr, value);
+      NWNXLibPINVOKE.DataBlock_m_used_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.KeyFileData_day_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.DataBlock_m_used_get(swigCPtr);
       return ret;
     } 
   }
 
-  public int year {
+  public uint m_allocated {
     set {
-      NWNXLibPINVOKE.KeyFileData_year_set(swigCPtr, value);
+      NWNXLibPINVOKE.DataBlock_m_allocated_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.KeyFileData_year_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.DataBlock_m_allocated_get(swigCPtr);
       return ret;
     } 
   }
 
-  public int build {
+  public bool m_owning {
     set {
-      NWNXLibPINVOKE.KeyFileData_build_set(swigCPtr, value);
+      NWNXLibPINVOKE.DataBlock_m_owning_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.KeyFileData_build_get(swigCPtr);
-      return ret;
-    } 
-  }
-
-  public string program {
-    set {
-      NWNXLibPINVOKE.KeyFileData_program_set(swigCPtr, value);
-    } 
-    get {
-      string ret = NWNXLibPINVOKE.KeyFileData_program_get(swigCPtr);
-      return ret;
-    } 
-  }
-
-  public string description {
-    set {
-      NWNXLibPINVOKE.KeyFileData_description_set(swigCPtr, value);
-    } 
-    get {
-      string ret = NWNXLibPINVOKE.KeyFileData_description_get(swigCPtr);
+      bool ret = NWNXLibPINVOKE.DataBlock_m_owning_get(swigCPtr);
       return ret;
     } 
   }

@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CNWSRules : CNWRules {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CNWSRules(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSRules_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CNWSRules(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSRules_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CNWSRules : CNWRules {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSRules other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSRules other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSRules left, CNWSRules right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSRules left, CNWSRules right) {
+    return !Equals(left, right);
   }
 
   public CNWSRules() : this(NWNXLibPINVOKE.new_CNWSRules(), true) {

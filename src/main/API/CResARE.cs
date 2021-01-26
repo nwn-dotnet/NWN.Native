@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CResARE : CResGFF {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CResARE(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResARE_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CResARE(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResARE_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CResARE : CResGFF {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CResARE other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CResARE other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CResARE left, CResARE right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CResARE left, CResARE right) {
+    return !Equals(left, right);
   }
 
 }

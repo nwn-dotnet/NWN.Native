@@ -14,7 +14,7 @@ public class CServerExoAppInternal : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CServerExoAppInternal(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CServerExoAppInternal(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CServerExoAppInternal : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CServerExoAppInternal other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CServerExoAppInternal other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CServerExoAppInternal left, CServerExoAppInternal right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CServerExoAppInternal left, CServerExoAppInternal right) {
+    return !Equals(left, right);
   }
 
   public SWIGTYPE_p_unsigned_char ScratchMessageBuffer {
@@ -983,8 +1017,8 @@ public class CServerExoAppInternal : global::System.IDisposable {
     NWNXLibPINVOKE.CServerExoAppInternal_Shutdown__SWIG_1(swigCPtr, bWarnLocals);
   }
 
-  public int ValidatePlayerLogin(SWIGTYPE_p_void pPlayer) {
-    int ret = NWNXLibPINVOKE.CServerExoAppInternal_ValidatePlayerLogin(swigCPtr, SWIGTYPE_p_void.getCPtr(pPlayer));
+  public int ValidatePlayerLogin(System.IntPtr pPlayer) {
+    int ret = NWNXLibPINVOKE.CServerExoAppInternal_ValidatePlayerLogin(swigCPtr, pPlayer);
     return ret;
   }
 
@@ -1077,19 +1111,19 @@ public class CServerExoAppInternal : global::System.IDisposable {
     return ret;
   }
 
-  public uint ValidateCreateServerCharacter(CNWSPlayer pPlayer, SWIGTYPE_p_void pCharData, uint nSize) {
-    uint ret = NWNXLibPINVOKE.CServerExoAppInternal_ValidateCreateServerCharacter(swigCPtr, CNWSPlayer.getCPtr(pPlayer), SWIGTYPE_p_void.getCPtr(pCharData), nSize);
+  public uint ValidateCreateServerCharacter(CNWSPlayer pPlayer, System.IntPtr pCharData, uint nSize) {
+    uint ret = NWNXLibPINVOKE.CServerExoAppInternal_ValidateCreateServerCharacter(swigCPtr, CNWSPlayer.getCPtr(pPlayer), pCharData, nSize);
     return ret;
   }
 
-  public int LoadCharacterStart(byte nType, CNWSPlayer pPlayer, CResRef cResRef, SWIGTYPE_p_void pCharData, uint nSize) {
-    int ret = NWNXLibPINVOKE.CServerExoAppInternal_LoadCharacterStart__SWIG_0(swigCPtr, nType, CNWSPlayer.getCPtr(pPlayer), CResRef.getCPtr(cResRef), SWIGTYPE_p_void.getCPtr(pCharData), nSize);
+  public int LoadCharacterStart(byte nType, CNWSPlayer pPlayer, CResRef cResRef, System.IntPtr pCharData, uint nSize) {
+    int ret = NWNXLibPINVOKE.CServerExoAppInternal_LoadCharacterStart__SWIG_0(swigCPtr, nType, CNWSPlayer.getCPtr(pPlayer), CResRef.getCPtr(cResRef), pCharData, nSize);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int LoadCharacterStart(byte nType, CNWSPlayer pPlayer, CResRef cResRef, SWIGTYPE_p_void pCharData) {
-    int ret = NWNXLibPINVOKE.CServerExoAppInternal_LoadCharacterStart__SWIG_1(swigCPtr, nType, CNWSPlayer.getCPtr(pPlayer), CResRef.getCPtr(cResRef), SWIGTYPE_p_void.getCPtr(pCharData));
+  public int LoadCharacterStart(byte nType, CNWSPlayer pPlayer, CResRef cResRef, System.IntPtr pCharData) {
+    int ret = NWNXLibPINVOKE.CServerExoAppInternal_LoadCharacterStart__SWIG_1(swigCPtr, nType, CNWSPlayer.getCPtr(pPlayer), CResRef.getCPtr(cResRef), pCharData);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -1253,12 +1287,12 @@ public class CServerExoAppInternal : global::System.IDisposable {
     NWNXLibPINVOKE.CServerExoAppInternal_GetExtendedServerInfo(swigCPtr, CExtendedServerInfo.getCPtr(pInfo));
   }
 
-  public void HandleGameSpyToServerMessage(int nKeyId, SWIGTYPE_p_void pOutBuf, int nIndex) {
-    NWNXLibPINVOKE.CServerExoAppInternal_HandleGameSpyToServerMessage__SWIG_0(swigCPtr, nKeyId, SWIGTYPE_p_void.getCPtr(pOutBuf), nIndex);
+  public void HandleGameSpyToServerMessage(int nKeyId, System.IntPtr pOutBuf, int nIndex) {
+    NWNXLibPINVOKE.CServerExoAppInternal_HandleGameSpyToServerMessage__SWIG_0(swigCPtr, nKeyId, pOutBuf, nIndex);
   }
 
-  public void HandleGameSpyToServerMessage(int nKeyId, SWIGTYPE_p_void pOutBuf) {
-    NWNXLibPINVOKE.CServerExoAppInternal_HandleGameSpyToServerMessage__SWIG_1(swigCPtr, nKeyId, SWIGTYPE_p_void.getCPtr(pOutBuf));
+  public void HandleGameSpyToServerMessage(int nKeyId, System.IntPtr pOutBuf) {
+    NWNXLibPINVOKE.CServerExoAppInternal_HandleGameSpyToServerMessage__SWIG_1(swigCPtr, nKeyId, pOutBuf);
   }
 
   public void UpdateClientsForObject(uint oidObjectToUpdate) {
@@ -1336,12 +1370,12 @@ public class CServerExoAppInternal : global::System.IDisposable {
     return ret;
   }
 
-  public void MovePlayerToArea(SWIGTYPE_p_void pPlayer) {
-    NWNXLibPINVOKE.CServerExoAppInternal_MovePlayerToArea(swigCPtr, SWIGTYPE_p_void.getCPtr(pPlayer));
+  public void MovePlayerToArea(System.IntPtr pPlayer) {
+    NWNXLibPINVOKE.CServerExoAppInternal_MovePlayerToArea(swigCPtr, pPlayer);
   }
 
-  public void InitiateModuleForPlayer(SWIGTYPE_p_void pPlayer) {
-    NWNXLibPINVOKE.CServerExoAppInternal_InitiateModuleForPlayer(swigCPtr, SWIGTYPE_p_void.getCPtr(pPlayer));
+  public void InitiateModuleForPlayer(System.IntPtr pPlayer) {
+    NWNXLibPINVOKE.CServerExoAppInternal_InitiateModuleForPlayer(swigCPtr, pPlayer);
   }
 
   public void UpdateWindowTitle() {
@@ -1555,8 +1589,8 @@ public class CServerExoAppInternal : global::System.IDisposable {
     return ret;
   }
 
-  public void QuarantineInvalidCharacter(SWIGTYPE_p_void pData, uint nSize) {
-    NWNXLibPINVOKE.CServerExoAppInternal_QuarantineInvalidCharacter(swigCPtr, SWIGTYPE_p_void.getCPtr(pData), nSize);
+  public void QuarantineInvalidCharacter(System.IntPtr pData, uint nSize) {
+    NWNXLibPINVOKE.CServerExoAppInternal_QuarantineInvalidCharacter(swigCPtr, pData, nSize);
   }
 
   public void UpdateClientGameObjects(int bForce) {

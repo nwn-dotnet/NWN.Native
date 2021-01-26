@@ -14,7 +14,7 @@ public class CExoArrayListCExoString : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListCExoString(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListCExoString(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListCExoString : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListCExoString other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListCExoString other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListCExoString left, CExoArrayListCExoString right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListCExoString left, CExoArrayListCExoString right) {
+    return !Equals(left, right);
   }
 
   public CExoString element {
@@ -85,14 +119,14 @@ public class CExoArrayListCExoString : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCExoString __Assign(CExoArrayListCExoString list) {
-    CExoArrayListCExoString ret = new CExoArrayListCExoString(NWNXLibPINVOKE.CExoArrayListCExoString___Assign(swigCPtr, CExoArrayListCExoString.getCPtr(list)), false);
+  public CExoArrayListCExoString _OpAssign(CExoArrayListCExoString list) {
+    CExoArrayListCExoString ret = new CExoArrayListCExoString(NWNXLibPINVOKE.CExoArrayListCExoString__OpAssign(swigCPtr, CExoArrayListCExoString.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CExoString __Index(int i) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoArrayListCExoString___Index(swigCPtr, i), false);
+  public CExoString _OpIndex(int i) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoArrayListCExoString__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -123,13 +157,13 @@ public class CExoArrayListCExoString : global::System.IDisposable {
   }
 
   public CExoString begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCExoString_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCExoString_begin(swigCPtr);
     CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
     return ret;
   }
 
   public CExoString end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCExoString_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCExoString_end(swigCPtr);
     CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
     return ret;
   }

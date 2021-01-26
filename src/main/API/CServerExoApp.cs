@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CServerExoApp : CBaseExoApp {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CServerExoApp(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CServerExoApp_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CServerExoApp(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CServerExoApp_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CServerExoApp : CBaseExoApp {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CServerExoApp other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CServerExoApp other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CServerExoApp left, CServerExoApp right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CServerExoApp left, CServerExoApp right) {
+    return !Equals(left, right);
   }
 
   public CServerExoAppInternal m_pcExoAppInternal {
@@ -225,14 +259,14 @@ public class CServerExoApp : CBaseExoApp {
     NWNXLibPINVOKE.CServerExoApp_ClearExportPlayerCharacterRequests(swigCPtr);
   }
 
-  public int LoadCharacterStart(byte nType, CNWSPlayer pPlayer, CResRef cResRef, SWIGTYPE_p_void pCharData, uint nSize) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_LoadCharacterStart__SWIG_0(swigCPtr, nType, CNWSPlayer.getCPtr(pPlayer), CResRef.getCPtr(cResRef), SWIGTYPE_p_void.getCPtr(pCharData), nSize);
+  public int LoadCharacterStart(byte nType, CNWSPlayer pPlayer, CResRef cResRef, System.IntPtr pCharData, uint nSize) {
+    int ret = NWNXLibPINVOKE.CServerExoApp_LoadCharacterStart__SWIG_0(swigCPtr, nType, CNWSPlayer.getCPtr(pPlayer), CResRef.getCPtr(cResRef), pCharData, nSize);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int LoadCharacterStart(byte nType, CNWSPlayer pPlayer, CResRef cResRef, SWIGTYPE_p_void pCharData) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_LoadCharacterStart__SWIG_1(swigCPtr, nType, CNWSPlayer.getCPtr(pPlayer), CResRef.getCPtr(cResRef), SWIGTYPE_p_void.getCPtr(pCharData));
+  public int LoadCharacterStart(byte nType, CNWSPlayer pPlayer, CResRef cResRef, System.IntPtr pCharData) {
+    int ret = NWNXLibPINVOKE.CServerExoApp_LoadCharacterStart__SWIG_1(swigCPtr, nType, CNWSPlayer.getCPtr(pPlayer), CResRef.getCPtr(cResRef), pCharData);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -368,17 +402,15 @@ public class CServerExoApp : CBaseExoApp {
     return ret;
   }
 
-  public SWIGTYPE_p_void GetSysAdminList() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoApp_GetSysAdminList(swigCPtr);
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-    return ret;
-  }
+  public System.IntPtr GetSysAdminList() { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoApp_GetSysAdminList(swigCPtr);
+    return cPtr;
+    }
 
-  public SWIGTYPE_p_void GetPlayerList() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoApp_GetPlayerList(swigCPtr);
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-    return ret;
-  }
+  public System.IntPtr GetPlayerList() { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoApp_GetPlayerList(swigCPtr);
+    return cPtr;
+    }
 
   public CNWSMessage GetNWSMessage() {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoApp_GetNWSMessage(swigCPtr);
@@ -615,25 +647,25 @@ public class CServerExoApp : CBaseExoApp {
     return ret;
   }
 
-  public int ValidatePlayerLogin(SWIGTYPE_p_void pPlayer) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_ValidatePlayerLogin(swigCPtr, SWIGTYPE_p_void.getCPtr(pPlayer));
+  public int ValidatePlayerLogin(System.IntPtr pPlayer) {
+    int ret = NWNXLibPINVOKE.CServerExoApp_ValidatePlayerLogin(swigCPtr, pPlayer);
     return ret;
   }
 
-  public void MovePlayerToArea(SWIGTYPE_p_void pPlayer) {
-    NWNXLibPINVOKE.CServerExoApp_MovePlayerToArea(swigCPtr, SWIGTYPE_p_void.getCPtr(pPlayer));
+  public void MovePlayerToArea(System.IntPtr pPlayer) {
+    NWNXLibPINVOKE.CServerExoApp_MovePlayerToArea(swigCPtr, pPlayer);
   }
 
-  public void InitiateModuleForPlayer(SWIGTYPE_p_void pPlayer) {
-    NWNXLibPINVOKE.CServerExoApp_InitiateModuleForPlayer(swigCPtr, SWIGTYPE_p_void.getCPtr(pPlayer));
+  public void InitiateModuleForPlayer(System.IntPtr pPlayer) {
+    NWNXLibPINVOKE.CServerExoApp_InitiateModuleForPlayer(swigCPtr, pPlayer);
   }
 
-  public override void HandleGameSpyToServerMessage(int nKeyId, SWIGTYPE_p_void pOutBuf, int nIndex) {
-    NWNXLibPINVOKE.CServerExoApp_HandleGameSpyToServerMessage__SWIG_0(swigCPtr, nKeyId, SWIGTYPE_p_void.getCPtr(pOutBuf), nIndex);
+  public override void HandleGameSpyToServerMessage(int nKeyId, System.IntPtr pOutBuf, int nIndex) {
+    NWNXLibPINVOKE.CServerExoApp_HandleGameSpyToServerMessage__SWIG_0(swigCPtr, nKeyId, pOutBuf, nIndex);
   }
 
-  public override void HandleGameSpyToServerMessage(int nKeyId, SWIGTYPE_p_void pOutBuf) {
-    NWNXLibPINVOKE.CServerExoApp_HandleGameSpyToServerMessage__SWIG_1(swigCPtr, nKeyId, SWIGTYPE_p_void.getCPtr(pOutBuf));
+  public override void HandleGameSpyToServerMessage(int nKeyId, System.IntPtr pOutBuf) {
+    NWNXLibPINVOKE.CServerExoApp_HandleGameSpyToServerMessage__SWIG_1(swigCPtr, nKeyId, pOutBuf);
   }
 
   public override SWIGTYPE_p_CConnectionLib GetConnectionLib() {

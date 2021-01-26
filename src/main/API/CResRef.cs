@@ -14,7 +14,7 @@ public class CResRef : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CResRef(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CResRef(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CResRef : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CResRef other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CResRef other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CResRef left, CResRef right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CResRef left, CResRef right) {
+    return !Equals(left, right);
   }
 
   public SWIGTYPE_p_unsigned_char m_resRefLowerCase {
@@ -91,69 +125,69 @@ public class CResRef : global::System.IDisposable {
     NWNXLibPINVOKE.CResRef_CopyToString__SWIG_1(swigCPtr, pStr);
   }
 
-  public int __NotEquals(CResRef cResRef) {
-    int ret = NWNXLibPINVOKE.CResRef___NotEquals__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef));
+  public int _OpNotEquals(CResRef cResRef) {
+    int ret = NWNXLibPINVOKE.CResRef__OpNotEquals__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int __NotEquals(CExoString sName) {
-    int ret = NWNXLibPINVOKE.CResRef___NotEquals__SWIG_1(swigCPtr, CExoString.getCPtr(sName));
+  public int _OpNotEquals(CExoString sName) {
+    int ret = NWNXLibPINVOKE.CResRef__OpNotEquals__SWIG_1(swigCPtr, CExoString.getCPtr(sName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int __NotEquals(string pName) {
-    int ret = NWNXLibPINVOKE.CResRef___NotEquals__SWIG_2(swigCPtr, pName);
+  public int _OpNotEquals(string pName) {
+    int ret = NWNXLibPINVOKE.CResRef__OpNotEquals__SWIG_2(swigCPtr, pName);
     return ret;
   }
 
-  public int __Equals(CResRef cResRef) {
-    int ret = NWNXLibPINVOKE.CResRef___Equals__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef));
+  public int _OpEquals(CResRef cResRef) {
+    int ret = NWNXLibPINVOKE.CResRef__OpEquals__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int __Equals(CExoString sName) {
-    int ret = NWNXLibPINVOKE.CResRef___Equals__SWIG_1(swigCPtr, CExoString.getCPtr(sName));
+  public int _OpEquals(CExoString sName) {
+    int ret = NWNXLibPINVOKE.CResRef__OpEquals__SWIG_1(swigCPtr, CExoString.getCPtr(sName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int __Equals(string name) {
-    int ret = NWNXLibPINVOKE.CResRef___Equals__SWIG_2(swigCPtr, name);
+  public int _OpEquals(string name) {
+    int ret = NWNXLibPINVOKE.CResRef__OpEquals__SWIG_2(swigCPtr, name);
     return ret;
   }
 
-  public int __Not() {
-    int ret = NWNXLibPINVOKE.CResRef___Not(swigCPtr);
+  public int _OpNot() {
+    int ret = NWNXLibPINVOKE.CResRef__OpNot(swigCPtr);
     return ret;
   }
 
-  public CResRef __Assign(CResRef cResRef) {
-    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef___Assign__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef)), true);
+  public CResRef _OpAssign(CResRef cResRef) {
+    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef)), true);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CResRef __Assign(SWIGTYPE_p_unsigned_char resRef) {
-    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef___Assign__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(resRef)), true);
+  public CResRef _OpAssign(SWIGTYPE_p_unsigned_char resRef) {
+    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(resRef)), true);
     return ret;
   }
 
-  public CResRef __Assign(CExoString sName) {
-    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef___Assign__SWIG_2(swigCPtr, CExoString.getCPtr(sName)), true);
+  public CResRef _OpAssign(CExoString sName) {
+    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_2(swigCPtr, CExoString.getCPtr(sName)), true);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CResRef __Assign(string pName) {
-    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef___Assign__SWIG_3(swigCPtr, pName), true);
+  public CResRef _OpAssign(string pName) {
+    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_3(swigCPtr, pName), true);
     return ret;
   }
 
-  public CResRef __Increment(CExoString sName) {
-    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef___Increment(swigCPtr, CExoString.getCPtr(sName)), true);
+  public CResRef _OpIncrement(CExoString sName) {
+    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpIncrement(swigCPtr, CExoString.getCPtr(sName)), true);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }

@@ -14,7 +14,7 @@ public class CExoArrayListCNWSStatsSpellPtr : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListCNWSStatsSpellPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListCNWSStatsSpellPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListCNWSStatsSpellPtr : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListCNWSStatsSpellPtr other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListCNWSStatsSpellPtr other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListCNWSStatsSpellPtr left, CExoArrayListCNWSStatsSpellPtr right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListCNWSStatsSpellPtr left, CExoArrayListCNWSStatsSpellPtr right) {
+    return !Equals(left, right);
   }
 
   public SWIGTYPE_p_p_CNWSStats_Spell element {
@@ -85,14 +119,14 @@ public class CExoArrayListCNWSStatsSpellPtr : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCNWSStatsSpellPtr __Assign(CExoArrayListCNWSStatsSpellPtr list) {
-    CExoArrayListCNWSStatsSpellPtr ret = new CExoArrayListCNWSStatsSpellPtr(NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr___Assign(swigCPtr, CExoArrayListCNWSStatsSpellPtr.getCPtr(list)), false);
+  public CExoArrayListCNWSStatsSpellPtr _OpAssign(CExoArrayListCNWSStatsSpellPtr list) {
+    CExoArrayListCNWSStatsSpellPtr ret = new CExoArrayListCNWSStatsSpellPtr(NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr__OpAssign(swigCPtr, CExoArrayListCNWSStatsSpellPtr.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public SWIGTYPE_p_p_CNWSStats_Spell __Index(int i) {
-    SWIGTYPE_p_p_CNWSStats_Spell ret = new SWIGTYPE_p_p_CNWSStats_Spell(NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr___Index(swigCPtr, i), false);
+  public SWIGTYPE_p_p_CNWSStats_Spell _OpIndex(int i) {
+    SWIGTYPE_p_p_CNWSStats_Spell ret = new SWIGTYPE_p_p_CNWSStats_Spell(NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -121,13 +155,13 @@ public class CExoArrayListCNWSStatsSpellPtr : global::System.IDisposable {
   }
 
   public SWIGTYPE_p_p_CNWSStats_Spell begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr_begin(swigCPtr);
     SWIGTYPE_p_p_CNWSStats_Spell ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CNWSStats_Spell(cPtr, false);
     return ret;
   }
 
   public SWIGTYPE_p_p_CNWSStats_Spell end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr_end(swigCPtr);
     SWIGTYPE_p_p_CNWSStats_Spell ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CNWSStats_Spell(cPtr, false);
     return ret;
   }

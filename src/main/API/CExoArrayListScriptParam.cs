@@ -14,7 +14,7 @@ public class CExoArrayListScriptParam : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListScriptParam(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListScriptParam(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListScriptParam : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListScriptParam other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListScriptParam other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListScriptParam left, CExoArrayListScriptParam right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListScriptParam left, CExoArrayListScriptParam right) {
+    return !Equals(left, right);
   }
 
   public ScriptParam element {
@@ -85,14 +119,14 @@ public class CExoArrayListScriptParam : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListScriptParam __Assign(CExoArrayListScriptParam list) {
-    CExoArrayListScriptParam ret = new CExoArrayListScriptParam(NWNXLibPINVOKE.CExoArrayListScriptParam___Assign(swigCPtr, CExoArrayListScriptParam.getCPtr(list)), false);
+  public CExoArrayListScriptParam _OpAssign(CExoArrayListScriptParam list) {
+    CExoArrayListScriptParam ret = new CExoArrayListScriptParam(NWNXLibPINVOKE.CExoArrayListScriptParam__OpAssign(swigCPtr, CExoArrayListScriptParam.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public ScriptParam __Index(int i) {
-    ScriptParam ret = new ScriptParam(NWNXLibPINVOKE.CExoArrayListScriptParam___Index(swigCPtr, i), false);
+  public ScriptParam _OpIndex(int i) {
+    ScriptParam ret = new ScriptParam(NWNXLibPINVOKE.CExoArrayListScriptParam__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -123,13 +157,13 @@ public class CExoArrayListScriptParam : global::System.IDisposable {
   }
 
   public ScriptParam begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListScriptParam_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListScriptParam_begin(swigCPtr);
     ScriptParam ret = (cPtr == global::System.IntPtr.Zero) ? null : new ScriptParam(cPtr, false);
     return ret;
   }
 
   public ScriptParam end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListScriptParam_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListScriptParam_end(swigCPtr);
     ScriptParam ret = (cPtr == global::System.IntPtr.Zero) ? null : new ScriptParam(cPtr, false);
     return ret;
   }

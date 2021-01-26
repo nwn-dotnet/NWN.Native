@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CExoEncapsulatedFile : CExoPackedFile {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CExoEncapsulatedFile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CExoEncapsulatedFile_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CExoEncapsulatedFile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CExoEncapsulatedFile_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CExoEncapsulatedFile : CExoPackedFile {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoEncapsulatedFile other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoEncapsulatedFile other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoEncapsulatedFile left, CExoEncapsulatedFile right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoEncapsulatedFile left, CExoEncapsulatedFile right) {
+    return !Equals(left, right);
   }
 
   public CExoLocString m_lsDescription {
@@ -132,14 +166,14 @@ public class CExoEncapsulatedFile : CExoPackedFile {
     return ret;
   }
 
-  public override uint ReadResource(RESID nID, SWIGTYPE_p_void pData, uint nSize, uint nDataOffset) {
-    uint ret = NWNXLibPINVOKE.CExoEncapsulatedFile_ReadResource(swigCPtr, RESID.getCPtr(nID), SWIGTYPE_p_void.getCPtr(pData), nSize, nDataOffset);
+  public override uint ReadResource(RESID nID, System.IntPtr pData, uint nSize, uint nDataOffset) {
+    uint ret = NWNXLibPINVOKE.CExoEncapsulatedFile_ReadResource(swigCPtr, RESID.getCPtr(nID), pData, nSize, nDataOffset);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public override void ReadResourceAsync(RESID nID, SWIGTYPE_p_void pData, uint nSize, uint nDataOffset) {
-    NWNXLibPINVOKE.CExoEncapsulatedFile_ReadResourceAsync(swigCPtr, RESID.getCPtr(nID), SWIGTYPE_p_void.getCPtr(pData), nSize, nDataOffset);
+  public override void ReadResourceAsync(RESID nID, System.IntPtr pData, uint nSize, uint nDataOffset) {
+    NWNXLibPINVOKE.CExoEncapsulatedFile_ReadResourceAsync(swigCPtr, RESID.getCPtr(nID), pData, nSize, nDataOffset);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 

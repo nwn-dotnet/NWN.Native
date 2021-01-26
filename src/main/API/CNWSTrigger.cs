@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CNWSTrigger : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CNWSTrigger(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSTrigger_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CNWSTrigger(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSTrigger_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CNWSTrigger : CNWSObject {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSTrigger other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSTrigger other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSTrigger left, CNWSTrigger right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSTrigger left, CNWSTrigger right) {
+    return !Equals(left, right);
   }
 
   public CExoLocString m_sLocalizedName {
@@ -455,8 +489,8 @@ public class CNWSTrigger : CNWSObject {
     NWNXLibPINVOKE.CNWSTrigger_ComputeBoundingBox(swigCPtr, SWIGTYPE_p_float.getCPtr(fXMin), SWIGTYPE_p_float.getCPtr(fYMin), SWIGTYPE_p_float.getCPtr(fXMax), SWIGTYPE_p_float.getCPtr(fYMax));
   }
 
-  public override void EventHandler(uint nEventId, uint nCallerObjectId, SWIGTYPE_p_void pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSTrigger_EventHandler(swigCPtr, nEventId, nCallerObjectId, SWIGTYPE_p_void.getCPtr(pScript), nCalendarDay, nTimeOfDay);
+  public override void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSTrigger_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
   }
 
   public uint GetTargetArea() {

@@ -14,7 +14,7 @@ public class CExoArrayListCNWSInvitationDetails : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListCNWSInvitationDetails(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListCNWSInvitationDetails(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListCNWSInvitationDetails : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListCNWSInvitationDetails other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListCNWSInvitationDetails other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListCNWSInvitationDetails left, CExoArrayListCNWSInvitationDetails right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListCNWSInvitationDetails left, CExoArrayListCNWSInvitationDetails right) {
+    return !Equals(left, right);
   }
 
   public CNWSInvitationDetails element {
@@ -85,14 +119,14 @@ public class CExoArrayListCNWSInvitationDetails : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCNWSInvitationDetails __Assign(CExoArrayListCNWSInvitationDetails list) {
-    CExoArrayListCNWSInvitationDetails ret = new CExoArrayListCNWSInvitationDetails(NWNXLibPINVOKE.CExoArrayListCNWSInvitationDetails___Assign(swigCPtr, CExoArrayListCNWSInvitationDetails.getCPtr(list)), false);
+  public CExoArrayListCNWSInvitationDetails _OpAssign(CExoArrayListCNWSInvitationDetails list) {
+    CExoArrayListCNWSInvitationDetails ret = new CExoArrayListCNWSInvitationDetails(NWNXLibPINVOKE.CExoArrayListCNWSInvitationDetails__OpAssign(swigCPtr, CExoArrayListCNWSInvitationDetails.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CNWSInvitationDetails __Index(int i) {
-    CNWSInvitationDetails ret = new CNWSInvitationDetails(NWNXLibPINVOKE.CExoArrayListCNWSInvitationDetails___Index(swigCPtr, i), false);
+  public CNWSInvitationDetails _OpIndex(int i) {
+    CNWSInvitationDetails ret = new CNWSInvitationDetails(NWNXLibPINVOKE.CExoArrayListCNWSInvitationDetails__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -123,13 +157,13 @@ public class CExoArrayListCNWSInvitationDetails : global::System.IDisposable {
   }
 
   public CNWSInvitationDetails begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSInvitationDetails_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSInvitationDetails_begin(swigCPtr);
     CNWSInvitationDetails ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSInvitationDetails(cPtr, false);
     return ret;
   }
 
   public CNWSInvitationDetails end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSInvitationDetails_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSInvitationDetails_end(swigCPtr);
     CNWSInvitationDetails ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSInvitationDetails(cPtr, false);
     return ret;
   }

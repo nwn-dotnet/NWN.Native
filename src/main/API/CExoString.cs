@@ -14,7 +14,7 @@ public class CExoString : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoString(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoString(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoString : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoString other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoString other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.GetHashCode();
+  }
+
+  public static bool operator ==(CExoString left, CExoString right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoString left, CExoString right) {
+    return !Equals(left, right);
   }
 
   public override string ToString() {
@@ -92,96 +126,96 @@ public class CExoString : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoString __Assign(SWIGTYPE_p_std__string other) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString___Assign__SWIG_0(swigCPtr, SWIGTYPE_p_std__string.getCPtr(other)), false);
+  public CExoString _OpAssign(SWIGTYPE_p_std__string other) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString__OpAssign__SWIG_0(swigCPtr, SWIGTYPE_p_std__string.getCPtr(other)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CExoString __Assign(CExoString string_) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString___Assign__SWIG_1(swigCPtr, CExoString.getCPtr(string_)), false);
+  public CExoString _OpAssign(CExoString string_) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString__OpAssign__SWIG_1(swigCPtr, CExoString.getCPtr(string_)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CExoString __Assign(string string_) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString___Assign__SWIG_2(swigCPtr, string_), false);
+  public CExoString _OpAssign(string string_) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString__OpAssign__SWIG_2(swigCPtr, string_), false);
     return ret;
   }
 
-  public int __Equals(CExoString string_) {
-    int ret = NWNXLibPINVOKE.CExoString___Equals__SWIG_0(swigCPtr, CExoString.getCPtr(string_));
+  public int _OpEquals(CExoString string_) {
+    int ret = NWNXLibPINVOKE.CExoString__OpEquals__SWIG_0(swigCPtr, CExoString.getCPtr(string_));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int __Equals(string string_) {
-    int ret = NWNXLibPINVOKE.CExoString___Equals__SWIG_1(swigCPtr, string_);
+  public int _OpEquals(string string_) {
+    int ret = NWNXLibPINVOKE.CExoString__OpEquals__SWIG_1(swigCPtr, string_);
     return ret;
   }
 
-  public int __NotEquals(CExoString string_) {
-    int ret = NWNXLibPINVOKE.CExoString___NotEquals__SWIG_0(swigCPtr, CExoString.getCPtr(string_));
+  public int _OpNotEquals(CExoString string_) {
+    int ret = NWNXLibPINVOKE.CExoString__OpNotEquals__SWIG_0(swigCPtr, CExoString.getCPtr(string_));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int __NotEquals(string string_) {
-    int ret = NWNXLibPINVOKE.CExoString___NotEquals__SWIG_1(swigCPtr, string_);
+  public int _OpNotEquals(string string_) {
+    int ret = NWNXLibPINVOKE.CExoString__OpNotEquals__SWIG_1(swigCPtr, string_);
     return ret;
   }
 
-  public int __LessThan(CExoString string_) {
-    int ret = NWNXLibPINVOKE.CExoString___LessThan__SWIG_0(swigCPtr, CExoString.getCPtr(string_));
+  public int _OpLessThan(CExoString string_) {
+    int ret = NWNXLibPINVOKE.CExoString__OpLessThan__SWIG_0(swigCPtr, CExoString.getCPtr(string_));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int __LessThan(string string_) {
-    int ret = NWNXLibPINVOKE.CExoString___LessThan__SWIG_1(swigCPtr, string_);
+  public int _OpLessThan(string string_) {
+    int ret = NWNXLibPINVOKE.CExoString__OpLessThan__SWIG_1(swigCPtr, string_);
     return ret;
   }
 
-  public int __GreaterThan(CExoString string_) {
-    int ret = NWNXLibPINVOKE.CExoString___GreaterThan__SWIG_0(swigCPtr, CExoString.getCPtr(string_));
+  public int _OpGreaterThan(CExoString string_) {
+    int ret = NWNXLibPINVOKE.CExoString__OpGreaterThan__SWIG_0(swigCPtr, CExoString.getCPtr(string_));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int __GreaterThan(string string_) {
-    int ret = NWNXLibPINVOKE.CExoString___GreaterThan__SWIG_1(swigCPtr, string_);
+  public int _OpGreaterThan(string string_) {
+    int ret = NWNXLibPINVOKE.CExoString__OpGreaterThan__SWIG_1(swigCPtr, string_);
     return ret;
   }
 
-  public int __LessThanOrEqual(CExoString string_) {
-    int ret = NWNXLibPINVOKE.CExoString___LessThanOrEqual__SWIG_0(swigCPtr, CExoString.getCPtr(string_));
+  public int _OpLessThanOrEqual(CExoString string_) {
+    int ret = NWNXLibPINVOKE.CExoString__OpLessThanOrEqual__SWIG_0(swigCPtr, CExoString.getCPtr(string_));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int __LessThanOrEqual(string string_) {
-    int ret = NWNXLibPINVOKE.CExoString___LessThanOrEqual__SWIG_1(swigCPtr, string_);
+  public int _OpLessThanOrEqual(string string_) {
+    int ret = NWNXLibPINVOKE.CExoString__OpLessThanOrEqual__SWIG_1(swigCPtr, string_);
     return ret;
   }
 
-  public int __GreaterThanOrEqual(CExoString string_) {
-    int ret = NWNXLibPINVOKE.CExoString___GreaterThanOrEqual__SWIG_0(swigCPtr, CExoString.getCPtr(string_));
+  public int _OpGreaterThanOrEqual(CExoString string_) {
+    int ret = NWNXLibPINVOKE.CExoString__OpGreaterThanOrEqual__SWIG_0(swigCPtr, CExoString.getCPtr(string_));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int __GreaterThanOrEqual(string string_) {
-    int ret = NWNXLibPINVOKE.CExoString___GreaterThanOrEqual__SWIG_1(swigCPtr, string_);
+  public int _OpGreaterThanOrEqual(string string_) {
+    int ret = NWNXLibPINVOKE.CExoString__OpGreaterThanOrEqual__SWIG_1(swigCPtr, string_);
     return ret;
   }
 
-  public char __Index(int position) {
-    char ret = NWNXLibPINVOKE.CExoString___Index(swigCPtr, position);
+  public char _OpIndex(int position) {
+    char ret = NWNXLibPINVOKE.CExoString__OpIndex(swigCPtr, position);
     return ret;
   }
 
-  public CExoString __Add(CExoString string_) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString___Add(swigCPtr, CExoString.getCPtr(string_)), true);
+  public CExoString _OpAdd(CExoString string_) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString__OpAdd(swigCPtr, CExoString.getCPtr(string_)), true);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }

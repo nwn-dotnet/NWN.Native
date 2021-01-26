@@ -14,7 +14,7 @@ public class CExoPackedFile : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoPackedFile(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoPackedFile(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoPackedFile : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoPackedFile other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoPackedFile other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoPackedFile left, CExoPackedFile right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoPackedFile left, CExoPackedFile right) {
+    return !Equals(left, right);
   }
 
   public CExoString m_sFileName {
@@ -214,14 +248,14 @@ public class CExoPackedFile : global::System.IDisposable {
     return ret;
   }
 
-  public virtual uint ReadResource(RESID nID, SWIGTYPE_p_void pData, uint nSize, uint nDataOffset) {
-    uint ret = NWNXLibPINVOKE.CExoPackedFile_ReadResource(swigCPtr, RESID.getCPtr(nID), SWIGTYPE_p_void.getCPtr(pData), nSize, nDataOffset);
+  public virtual uint ReadResource(RESID nID, System.IntPtr pData, uint nSize, uint nDataOffset) {
+    uint ret = NWNXLibPINVOKE.CExoPackedFile_ReadResource(swigCPtr, RESID.getCPtr(nID), pData, nSize, nDataOffset);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public virtual void ReadResourceAsync(RESID nID, SWIGTYPE_p_void pData, uint nSize, uint nDataOffset) {
-    NWNXLibPINVOKE.CExoPackedFile_ReadResourceAsync(swigCPtr, RESID.getCPtr(nID), SWIGTYPE_p_void.getCPtr(pData), nSize, nDataOffset);
+  public virtual void ReadResourceAsync(RESID nID, System.IntPtr pData, uint nSize, uint nDataOffset) {
+    NWNXLibPINVOKE.CExoPackedFile_ReadResourceAsync(swigCPtr, RESID.getCPtr(nID), pData, nSize, nDataOffset);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -240,8 +274,8 @@ public class CExoPackedFile : global::System.IDisposable {
     return ret;
   }
 
-  public uint ReadNWCompressedBuffer(SWIGTYPE_p_void outBuffer, uint outBufSize, uint readLength) {
-    uint ret = NWNXLibPINVOKE.CExoPackedFile_ReadNWCompressedBuffer(swigCPtr, SWIGTYPE_p_void.getCPtr(outBuffer), outBufSize, readLength);
+  public uint ReadNWCompressedBuffer(System.IntPtr outBuffer, uint outBufSize, uint readLength) {
+    uint ret = NWNXLibPINVOKE.CExoPackedFile_ReadNWCompressedBuffer(swigCPtr, outBuffer, outBufSize, readLength);
     return ret;
   }
 

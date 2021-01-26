@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CTlkFile : CExoFile {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CTlkFile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CTlkFile_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CTlkFile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CTlkFile_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -34,6 +34,40 @@ public class CTlkFile : CExoFile {
     }
   }
 
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CTlkFile other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CTlkFile other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CTlkFile left, CTlkFile right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CTlkFile left, CTlkFile right) {
+    return !Equals(left, right);
+  }
+
   public TLK_FILE_HEADER m_header {
     set {
       NWNXLibPINVOKE.CTlkFile_m_header_set(swigCPtr, TLK_FILE_HEADER.getCPtr(value));
@@ -49,7 +83,7 @@ public class CTlkFile : CExoFile {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CTlkFile(SWIGTYPE_p_void pMemoryBuffer, int nSize) : this(NWNXLibPINVOKE.new_CTlkFile__SWIG_1(SWIGTYPE_p_void.getCPtr(pMemoryBuffer), nSize), true) {
+  public CTlkFile(System.IntPtr pMemoryBuffer, int nSize) : this(NWNXLibPINVOKE.new_CTlkFile__SWIG_1(pMemoryBuffer, nSize), true) {
   }
 
   public int ReadHeader() {

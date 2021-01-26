@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CNWSSysAdmin : CNWSClient {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CNWSSysAdmin(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSSysAdmin_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CNWSSysAdmin(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSSysAdmin_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CNWSSysAdmin : CNWSClient {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSSysAdmin other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSSysAdmin other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSSysAdmin left, CNWSSysAdmin right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSSysAdmin left, CNWSSysAdmin right) {
+    return !Equals(left, right);
   }
 
   public CNWSSysAdmin(uint nPlayerID) : this(NWNXLibPINVOKE.new_CNWSSysAdmin(nPlayerID), true) {

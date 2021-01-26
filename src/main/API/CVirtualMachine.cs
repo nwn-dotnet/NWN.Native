@@ -14,7 +14,7 @@ public class CVirtualMachine : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CVirtualMachine(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CVirtualMachine(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -44,6 +44,40 @@ public class CVirtualMachine : global::System.IDisposable {
     }
   }
 
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CVirtualMachine other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CVirtualMachine other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CVirtualMachine left, CVirtualMachine right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CVirtualMachine left, CVirtualMachine right) {
+    return !Equals(left, right);
+  }
+
   public CScriptCompiler m_pJitCompiler {
     set {
       NWNXLibPINVOKE.CVirtualMachine_m_pJitCompiler_set(swigCPtr, CScriptCompiler.getCPtr(value));
@@ -65,15 +99,15 @@ public class CVirtualMachine : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_void m_pReturnValue {
+  public System.IntPtr m_pReturnValue {
     set {
-      NWNXLibPINVOKE.CVirtualMachine_m_pReturnValue_set(swigCPtr, SWIGTYPE_p_void.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CVirtualMachine_m_pReturnValue_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachine_m_pReturnValue_get(swigCPtr);
-      SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-      return ret;
+        System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachine_m_pReturnValue_get(swigCPtr); 
+        return cPtr; 
     } 
+
   }
 
   public uint m_nInstructionsExecuted {
@@ -347,13 +381,13 @@ public class CVirtualMachine : global::System.IDisposable {
     return ret;
   }
 
-  public int RunScriptSituation(SWIGTYPE_p_void pScriptSituation, uint oid, int bOidValid) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_RunScriptSituation__SWIG_0(swigCPtr, SWIGTYPE_p_void.getCPtr(pScriptSituation), oid, bOidValid);
+  public int RunScriptSituation(System.IntPtr pScriptSituation, uint oid, int bOidValid) {
+    int ret = NWNXLibPINVOKE.CVirtualMachine_RunScriptSituation__SWIG_0(swigCPtr, pScriptSituation, oid, bOidValid);
     return ret;
   }
 
-  public int RunScriptSituation(SWIGTYPE_p_void pScriptSituation, uint oid) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_RunScriptSituation__SWIG_1(swigCPtr, SWIGTYPE_p_void.getCPtr(pScriptSituation), oid);
+  public int RunScriptSituation(System.IntPtr pScriptSituation, uint oid) {
+    int ret = NWNXLibPINVOKE.CVirtualMachine_RunScriptSituation__SWIG_1(swigCPtr, pScriptSituation, oid);
     return ret;
   }
 
@@ -443,13 +477,13 @@ public class CVirtualMachine : global::System.IDisposable {
     return ret;
   }
 
-  public int StackPushEngineStructure(int nEngineStructure, SWIGTYPE_p_void pEngineStructure) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_StackPushEngineStructure(swigCPtr, nEngineStructure, SWIGTYPE_p_void.getCPtr(pEngineStructure));
+  public int StackPushEngineStructure(int nEngineStructure, System.IntPtr pEngineStructure) {
+    int ret = NWNXLibPINVOKE.CVirtualMachine_StackPushEngineStructure(swigCPtr, nEngineStructure, pEngineStructure);
     return ret;
   }
 
-  public void DeleteScriptSituation(SWIGTYPE_p_void pScript) {
-    NWNXLibPINVOKE.CVirtualMachine_DeleteScriptSituation(swigCPtr, SWIGTYPE_p_void.getCPtr(pScript));
+  public void DeleteScriptSituation(System.IntPtr pScript) {
+    NWNXLibPINVOKE.CVirtualMachine_DeleteScriptSituation(swigCPtr, pScript);
   }
 
   public int ExecuteCode(SWIGTYPE_p_int nInstructionPointer, SWIGTYPE_p_DataBlockRef pCode, CVirtualMachineDebuggingContext pDebugContext) {

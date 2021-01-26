@@ -14,7 +14,7 @@ public class CResStruct : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CResStruct(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CResStruct(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -44,6 +44,40 @@ public class CResStruct : global::System.IDisposable {
     }
   }
 
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CResStruct other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CResStruct other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CResStruct left, CResStruct right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CResStruct left, CResStruct right) {
+    return !Equals(left, right);
+  }
+
   public CResStructHeader m_cHeader {
     set {
       NWNXLibPINVOKE.CResStruct_m_cHeader_set(swigCPtr, CResStructHeader.getCPtr(value));
@@ -66,15 +100,15 @@ public class CResStruct : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_void m_pData {
+  public System.IntPtr m_pData {
     set {
-      NWNXLibPINVOKE.CResStruct_m_pData_set(swigCPtr, SWIGTYPE_p_void.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CResStruct_m_pData_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CResStruct_m_pData_get(swigCPtr);
-      SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-      return ret;
+        System.IntPtr cPtr = NWNXLibPINVOKE.CResStruct_m_pData_get(swigCPtr); 
+        return cPtr; 
     } 
+
   }
 
   public SWIGTYPE_p_CResStructInternal m_pWriteStructInternal {

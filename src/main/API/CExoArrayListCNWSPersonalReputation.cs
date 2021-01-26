@@ -14,7 +14,7 @@ public class CExoArrayListCNWSPersonalReputation : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListCNWSPersonalReputation(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListCNWSPersonalReputation(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListCNWSPersonalReputation : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListCNWSPersonalReputation other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListCNWSPersonalReputation other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListCNWSPersonalReputation left, CExoArrayListCNWSPersonalReputation right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListCNWSPersonalReputation left, CExoArrayListCNWSPersonalReputation right) {
+    return !Equals(left, right);
   }
 
   public CNWSPersonalReputation element {
@@ -85,14 +119,14 @@ public class CExoArrayListCNWSPersonalReputation : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCNWSPersonalReputation __Assign(CExoArrayListCNWSPersonalReputation list) {
-    CExoArrayListCNWSPersonalReputation ret = new CExoArrayListCNWSPersonalReputation(NWNXLibPINVOKE.CExoArrayListCNWSPersonalReputation___Assign(swigCPtr, CExoArrayListCNWSPersonalReputation.getCPtr(list)), false);
+  public CExoArrayListCNWSPersonalReputation _OpAssign(CExoArrayListCNWSPersonalReputation list) {
+    CExoArrayListCNWSPersonalReputation ret = new CExoArrayListCNWSPersonalReputation(NWNXLibPINVOKE.CExoArrayListCNWSPersonalReputation__OpAssign(swigCPtr, CExoArrayListCNWSPersonalReputation.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CNWSPersonalReputation __Index(int i) {
-    CNWSPersonalReputation ret = new CNWSPersonalReputation(NWNXLibPINVOKE.CExoArrayListCNWSPersonalReputation___Index(swigCPtr, i), false);
+  public CNWSPersonalReputation _OpIndex(int i) {
+    CNWSPersonalReputation ret = new CNWSPersonalReputation(NWNXLibPINVOKE.CExoArrayListCNWSPersonalReputation__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -123,13 +157,13 @@ public class CExoArrayListCNWSPersonalReputation : global::System.IDisposable {
   }
 
   public CNWSPersonalReputation begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSPersonalReputation_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSPersonalReputation_begin(swigCPtr);
     CNWSPersonalReputation ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSPersonalReputation(cPtr, false);
     return ret;
   }
 
   public CNWSPersonalReputation end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSPersonalReputation_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSPersonalReputation_end(swigCPtr);
     CNWSPersonalReputation ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSPersonalReputation(cPtr, false);
     return ret;
   }

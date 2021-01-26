@@ -14,7 +14,7 @@ public class ENCAPSULATED_HEADER : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal ENCAPSULATED_HEADER(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public ENCAPSULATED_HEADER(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class ENCAPSULATED_HEADER : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(ENCAPSULATED_HEADER other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is ENCAPSULATED_HEADER other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(ENCAPSULATED_HEADER left, ENCAPSULATED_HEADER right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(ENCAPSULATED_HEADER left, ENCAPSULATED_HEADER right) {
+    return !Equals(left, right);
   }
 
   public uint nFileType {

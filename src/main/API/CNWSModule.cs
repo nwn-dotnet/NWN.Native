@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CNWSModule : CGameObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CNWSModule(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSModule_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CNWSModule(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSModule_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CNWSModule : CGameObject {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSModule other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSModule other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSModule left, CNWSModule right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSModule left, CNWSModule right) {
+    return !Equals(left, right);
   }
 
   public CExoLinkedListNWModuleExpansion m_lstModuleExpansion {
@@ -1009,8 +1043,8 @@ public class CNWSModule : CGameObject {
     return ret;
   }
 
-  public void EventHandler(uint nEventId, uint nCallerObjectId, SWIGTYPE_p_void pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSModule_EventHandler(swigCPtr, nEventId, nCallerObjectId, SWIGTYPE_p_void.getCPtr(pScript), nCalendarDay, nTimeOfDay);
+  public void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSModule_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
   }
 
   public uint GenerateInterAreaDFSSuccessors(int level, CPathfindInformation pcPathfindInformation, SWIGTYPE_p_p_unsigned_int pAreaSuccessors) {

@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CRes2DA : CRes {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CRes2DA(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CRes2DA_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CRes2DA(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CRes2DA_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CRes2DA : CRes {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CRes2DA other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CRes2DA other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CRes2DA left, CRes2DA right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CRes2DA left, CRes2DA right) {
+    return !Equals(left, right);
   }
 
   public int m_bLoaded {

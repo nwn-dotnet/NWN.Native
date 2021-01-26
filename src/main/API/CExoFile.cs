@@ -14,7 +14,7 @@ public class CExoFile : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoFile(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoFile(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -44,6 +44,40 @@ public class CExoFile : global::System.IDisposable {
     }
   }
 
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoFile other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoFile other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoFile left, CExoFile right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoFile left, CExoFile right) {
+    return !Equals(left, right);
+  }
+
   public SWIGTYPE_p_CExoFileInternal m_pcExoFileInternal {
     set {
       NWNXLibPINVOKE.CExoFile_m_pcExoFileInternal_set(swigCPtr, SWIGTYPE_p_CExoFileInternal.getCPtr(value));
@@ -63,11 +97,11 @@ public class CExoFile : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoFile(SWIGTYPE_p_void pBuffer, int nSize) : this(NWNXLibPINVOKE.new_CExoFile__SWIG_2(SWIGTYPE_p_void.getCPtr(pBuffer), nSize), true) {
+  public CExoFile(System.IntPtr pBuffer, int nSize) : this(NWNXLibPINVOKE.new_CExoFile__SWIG_2(pBuffer, nSize), true) {
   }
 
-  public void SetMemoryBuffer(SWIGTYPE_p_void pMemoryBuffer, int nSize) {
-    NWNXLibPINVOKE.CExoFile_SetMemoryBuffer(swigCPtr, SWIGTYPE_p_void.getCPtr(pMemoryBuffer), nSize);
+  public void SetMemoryBuffer(System.IntPtr pMemoryBuffer, int nSize) {
+    NWNXLibPINVOKE.CExoFile_SetMemoryBuffer(swigCPtr, pMemoryBuffer, nSize);
   }
 
   public int IsMemoryBacked() {
@@ -100,8 +134,8 @@ public class CExoFile : global::System.IDisposable {
     return ret;
   }
 
-  public uint Read(SWIGTYPE_p_void ptr, uint size, uint number) {
-    uint ret = NWNXLibPINVOKE.CExoFile_Read__SWIG_0(swigCPtr, SWIGTYPE_p_void.getCPtr(ptr), size, number);
+  public uint Read(System.IntPtr ptr, uint size, uint number) {
+    uint ret = NWNXLibPINVOKE.CExoFile_Read__SWIG_0(swigCPtr, ptr, size, number);
     return ret;
   }
 
@@ -111,8 +145,8 @@ public class CExoFile : global::System.IDisposable {
     return ret;
   }
 
-  public void ReadAsync(SWIGTYPE_p_void ptr, uint size, uint number) {
-    NWNXLibPINVOKE.CExoFile_ReadAsync(swigCPtr, SWIGTYPE_p_void.getCPtr(ptr), size, number);
+  public void ReadAsync(System.IntPtr ptr, uint size, uint number) {
+    NWNXLibPINVOKE.CExoFile_ReadAsync(swigCPtr, ptr, size, number);
   }
 
   public int ReadAsyncComplete() {
@@ -125,8 +159,8 @@ public class CExoFile : global::System.IDisposable {
     return ret;
   }
 
-  public uint Write(SWIGTYPE_p_void ptr, uint size, uint number) {
-    uint ret = NWNXLibPINVOKE.CExoFile_Write__SWIG_0(swigCPtr, SWIGTYPE_p_void.getCPtr(ptr), size, number);
+  public uint Write(System.IntPtr ptr, uint size, uint number) {
+    uint ret = NWNXLibPINVOKE.CExoFile_Write__SWIG_0(swigCPtr, ptr, size, number);
     return ret;
   }
 

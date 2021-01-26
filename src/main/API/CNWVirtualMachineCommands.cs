@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CNWVirtualMachineCommands(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWVirtualMachineCommands_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CNWVirtualMachineCommands(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWVirtualMachineCommands_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWVirtualMachineCommands other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWVirtualMachineCommands other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWVirtualMachineCommands left, CNWVirtualMachineCommands right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWVirtualMachineCommands left, CNWVirtualMachineCommands right) {
+    return !Equals(left, right);
   }
 
   public SWIGTYPE_p_p_f_int_int__int m_pVirtualMachineCommands {
@@ -64,26 +98,24 @@ public class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public override SWIGTYPE_p_void CopyGameDefinedStructure(int nEngineStructure, SWIGTYPE_p_void pStructureSrc) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWVirtualMachineCommands_CopyGameDefinedStructure(swigCPtr, nEngineStructure, SWIGTYPE_p_void.getCPtr(pStructureSrc));
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
+  public override System.IntPtr CopyGameDefinedStructure(int nEngineStructure, System.IntPtr pStructureSrc) { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CNWVirtualMachineCommands_CopyGameDefinedStructure(swigCPtr, nEngineStructure, pStructureSrc);
+    return cPtr;
+    }
+
+  public override int GetEqualGameDefinedStructure(int nEngineStructure, System.IntPtr pStructure1, System.IntPtr pStructure2) {
+    int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_GetEqualGameDefinedStructure(swigCPtr, nEngineStructure, pStructure1, pStructure2);
     return ret;
   }
 
-  public override int GetEqualGameDefinedStructure(int nEngineStructure, SWIGTYPE_p_void pStructure1, SWIGTYPE_p_void pStructure2) {
-    int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_GetEqualGameDefinedStructure(swigCPtr, nEngineStructure, SWIGTYPE_p_void.getCPtr(pStructure1), SWIGTYPE_p_void.getCPtr(pStructure2));
-    return ret;
+  public override void DestroyGameDefinedStructure(int nEngineStructure, System.IntPtr pStructureToDelete) {
+    NWNXLibPINVOKE.CNWVirtualMachineCommands_DestroyGameDefinedStructure(swigCPtr, nEngineStructure, pStructureToDelete);
   }
 
-  public override void DestroyGameDefinedStructure(int nEngineStructure, SWIGTYPE_p_void pStructureToDelete) {
-    NWNXLibPINVOKE.CNWVirtualMachineCommands_DestroyGameDefinedStructure(swigCPtr, nEngineStructure, SWIGTYPE_p_void.getCPtr(pStructureToDelete));
-  }
-
-  public override SWIGTYPE_p_void CreateGameDefinedStructure(int nEngineStructure) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWVirtualMachineCommands_CreateGameDefinedStructure(swigCPtr, nEngineStructure);
-    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-    return ret;
-  }
+  public override System.IntPtr CreateGameDefinedStructure(int nEngineStructure) { 
+    System.IntPtr cPtr = NWNXLibPINVOKE.CNWVirtualMachineCommands_CreateGameDefinedStructure(swigCPtr, nEngineStructure);
+    return cPtr;
+    }
 
   public override CExoString GetGameDefinedStructureName(int nEngineStructure) {
     CExoString ret = new CExoString(NWNXLibPINVOKE.CNWVirtualMachineCommands_GetGameDefinedStructureName(swigCPtr, nEngineStructure), true);
@@ -95,8 +127,8 @@ public class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     return ret;
   }
 
-  public override int SaveGameDefinedStructure(int nEngineStructure, SWIGTYPE_p_void pStructure, CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_SaveGameDefinedStructure(swigCPtr, nEngineStructure, SWIGTYPE_p_void.getCPtr(pStructure), CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+  public override int SaveGameDefinedStructure(int nEngineStructure, System.IntPtr pStructure, CResGFF pRes, CResStruct pStruct) {
+    int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_SaveGameDefinedStructure(swigCPtr, nEngineStructure, pStructure, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
     return ret;
   }
 
@@ -105,8 +137,8 @@ public class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     return ret;
   }
 
-  public override void GetEngineStructureWatchView(int nEngineStructure, SWIGTYPE_p_void pEngineStructure, SWIGTYPE_p_int nEntries, SWIGTYPE_p_p_CExoString m_ppNames, SWIGTYPE_p_p_CExoString m_ppValues) {
-    NWNXLibPINVOKE.CNWVirtualMachineCommands_GetEngineStructureWatchView(swigCPtr, nEngineStructure, SWIGTYPE_p_void.getCPtr(pEngineStructure), SWIGTYPE_p_int.getCPtr(nEntries), SWIGTYPE_p_p_CExoString.getCPtr(m_ppNames), SWIGTYPE_p_p_CExoString.getCPtr(m_ppValues));
+  public override void GetEngineStructureWatchView(int nEngineStructure, System.IntPtr pEngineStructure, SWIGTYPE_p_int nEntries, SWIGTYPE_p_p_CExoString m_ppNames, SWIGTYPE_p_p_CExoString m_ppValues) {
+    NWNXLibPINVOKE.CNWVirtualMachineCommands_GetEngineStructureWatchView(swigCPtr, nEngineStructure, pEngineStructure, SWIGTYPE_p_int.getCPtr(nEntries), SWIGTYPE_p_p_CExoString.getCPtr(m_ppNames), SWIGTYPE_p_p_CExoString.getCPtr(m_ppValues));
   }
 
   public override void GetObjectWatchView(uint oidObject, SWIGTYPE_p_int nEntries, SWIGTYPE_p_p_CExoString m_ppNames, SWIGTYPE_p_p_CExoString m_ppValues) {

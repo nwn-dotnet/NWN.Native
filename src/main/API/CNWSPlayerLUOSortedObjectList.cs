@@ -14,7 +14,7 @@ public class CNWSPlayerLUOSortedObjectList : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CNWSPlayerLUOSortedObjectList(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CNWSPlayerLUOSortedObjectList(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CNWSPlayerLUOSortedObjectList : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSPlayerLUOSortedObjectList other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSPlayerLUOSortedObjectList other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSPlayerLUOSortedObjectList left, CNWSPlayerLUOSortedObjectList right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSPlayerLUOSortedObjectList left, CNWSPlayerLUOSortedObjectList right) {
+    return !Equals(left, right);
   }
 
   public uint oidObject {

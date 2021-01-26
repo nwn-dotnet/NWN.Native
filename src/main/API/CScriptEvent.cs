@@ -14,7 +14,7 @@ public class CScriptEvent : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CScriptEvent(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CScriptEvent(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CScriptEvent : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CScriptEvent other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CScriptEvent other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CScriptEvent left, CScriptEvent right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CScriptEvent left, CScriptEvent right) {
+    return !Equals(left, right);
   }
 
   public ushort m_nType {
@@ -138,14 +172,14 @@ public class CScriptEvent : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public int __Equals(CScriptEvent scriptEvent) {
-    int ret = NWNXLibPINVOKE.CScriptEvent___Equals(swigCPtr, CScriptEvent.getCPtr(scriptEvent));
+  public int _OpEquals(CScriptEvent scriptEvent) {
+    int ret = NWNXLibPINVOKE.CScriptEvent__OpEquals(swigCPtr, CScriptEvent.getCPtr(scriptEvent));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int __NotEquals(CScriptEvent scriptEvent) {
-    int ret = NWNXLibPINVOKE.CScriptEvent___NotEquals(swigCPtr, CScriptEvent.getCPtr(scriptEvent));
+  public int _OpNotEquals(CScriptEvent scriptEvent) {
+    int ret = NWNXLibPINVOKE.CScriptEvent__OpNotEquals(swigCPtr, CScriptEvent.getCPtr(scriptEvent));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }

@@ -14,7 +14,7 @@ public class CExoArrayListCNetLayerPlayerCDKeyInfo : global::System.IDisposable 
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListCNetLayerPlayerCDKeyInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListCNetLayerPlayerCDKeyInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListCNetLayerPlayerCDKeyInfo : global::System.IDisposable 
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListCNetLayerPlayerCDKeyInfo other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListCNetLayerPlayerCDKeyInfo other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListCNetLayerPlayerCDKeyInfo left, CExoArrayListCNetLayerPlayerCDKeyInfo right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListCNetLayerPlayerCDKeyInfo left, CExoArrayListCNetLayerPlayerCDKeyInfo right) {
+    return !Equals(left, right);
   }
 
   public CNetLayerPlayerCDKeyInfo element {
@@ -85,14 +119,14 @@ public class CExoArrayListCNetLayerPlayerCDKeyInfo : global::System.IDisposable 
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCNetLayerPlayerCDKeyInfo __Assign(CExoArrayListCNetLayerPlayerCDKeyInfo list) {
-    CExoArrayListCNetLayerPlayerCDKeyInfo ret = new CExoArrayListCNetLayerPlayerCDKeyInfo(NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo___Assign(swigCPtr, CExoArrayListCNetLayerPlayerCDKeyInfo.getCPtr(list)), false);
+  public CExoArrayListCNetLayerPlayerCDKeyInfo _OpAssign(CExoArrayListCNetLayerPlayerCDKeyInfo list) {
+    CExoArrayListCNetLayerPlayerCDKeyInfo ret = new CExoArrayListCNetLayerPlayerCDKeyInfo(NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo__OpAssign(swigCPtr, CExoArrayListCNetLayerPlayerCDKeyInfo.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CNetLayerPlayerCDKeyInfo __Index(int i) {
-    CNetLayerPlayerCDKeyInfo ret = new CNetLayerPlayerCDKeyInfo(NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo___Index(swigCPtr, i), false);
+  public CNetLayerPlayerCDKeyInfo _OpIndex(int i) {
+    CNetLayerPlayerCDKeyInfo ret = new CNetLayerPlayerCDKeyInfo(NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -123,13 +157,13 @@ public class CExoArrayListCNetLayerPlayerCDKeyInfo : global::System.IDisposable 
   }
 
   public CNetLayerPlayerCDKeyInfo begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_begin(swigCPtr);
     CNetLayerPlayerCDKeyInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNetLayerPlayerCDKeyInfo(cPtr, false);
     return ret;
   }
 
   public CNetLayerPlayerCDKeyInfo end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_end(swigCPtr);
     CNetLayerPlayerCDKeyInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNetLayerPlayerCDKeyInfo(cPtr, false);
     return ret;
   }

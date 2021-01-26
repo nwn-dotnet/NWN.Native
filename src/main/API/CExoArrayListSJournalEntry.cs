@@ -14,7 +14,7 @@ public class CExoArrayListSJournalEntry : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListSJournalEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListSJournalEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListSJournalEntry : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListSJournalEntry other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListSJournalEntry other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListSJournalEntry left, CExoArrayListSJournalEntry right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListSJournalEntry left, CExoArrayListSJournalEntry right) {
+    return !Equals(left, right);
   }
 
   public SJournalEntry element {
@@ -85,14 +119,14 @@ public class CExoArrayListSJournalEntry : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListSJournalEntry __Assign(CExoArrayListSJournalEntry list) {
-    CExoArrayListSJournalEntry ret = new CExoArrayListSJournalEntry(NWNXLibPINVOKE.CExoArrayListSJournalEntry___Assign(swigCPtr, CExoArrayListSJournalEntry.getCPtr(list)), false);
+  public CExoArrayListSJournalEntry _OpAssign(CExoArrayListSJournalEntry list) {
+    CExoArrayListSJournalEntry ret = new CExoArrayListSJournalEntry(NWNXLibPINVOKE.CExoArrayListSJournalEntry__OpAssign(swigCPtr, CExoArrayListSJournalEntry.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public SJournalEntry __Index(int i) {
-    SJournalEntry ret = new SJournalEntry(NWNXLibPINVOKE.CExoArrayListSJournalEntry___Index(swigCPtr, i), false);
+  public SJournalEntry _OpIndex(int i) {
+    SJournalEntry ret = new SJournalEntry(NWNXLibPINVOKE.CExoArrayListSJournalEntry__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -123,13 +157,13 @@ public class CExoArrayListSJournalEntry : global::System.IDisposable {
   }
 
   public SJournalEntry begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListSJournalEntry_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListSJournalEntry_begin(swigCPtr);
     SJournalEntry ret = (cPtr == global::System.IntPtr.Zero) ? null : new SJournalEntry(cPtr, false);
     return ret;
   }
 
   public SJournalEntry end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListSJournalEntry_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListSJournalEntry_end(swigCPtr);
     SJournalEntry ret = (cPtr == global::System.IntPtr.Zero) ? null : new SJournalEntry(cPtr, false);
     return ret;
   }

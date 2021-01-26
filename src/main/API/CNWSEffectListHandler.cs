@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CNWSEffectListHandler : CGameEffectApplierRemover {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CNWSEffectListHandler(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSEffectListHandler_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CNWSEffectListHandler(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSEffectListHandler_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CNWSEffectListHandler : CGameEffectApplierRemover {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSEffectListHandler other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSEffectListHandler other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSEffectListHandler left, CNWSEffectListHandler right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSEffectListHandler left, CNWSEffectListHandler right) {
+    return !Equals(left, right);
   }
 
   public SWIGTYPE_p_p_f_p_CNWSObject_p_CGameEffect_int__int m_pApplyEffectCommands {

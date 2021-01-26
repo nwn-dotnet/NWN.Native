@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CTlkResFile : CTlkFile {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CTlkResFile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CTlkResFile_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CTlkResFile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CTlkResFile_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CTlkResFile : CTlkFile {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CTlkResFile other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CTlkResFile other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CTlkResFile left, CTlkResFile right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CTlkResFile left, CTlkResFile right) {
+    return !Equals(left, right);
   }
 
   public CTlkResFile(CResRef pResRef) : this(NWNXLibPINVOKE.new_CTlkResFile(CResRef.getCPtr(pResRef)), true) {

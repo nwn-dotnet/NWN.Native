@@ -14,7 +14,7 @@ public class CExoArrayListCWorldJournalEntry : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListCWorldJournalEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListCWorldJournalEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListCWorldJournalEntry : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListCWorldJournalEntry other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListCWorldJournalEntry other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListCWorldJournalEntry left, CExoArrayListCWorldJournalEntry right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListCWorldJournalEntry left, CExoArrayListCWorldJournalEntry right) {
+    return !Equals(left, right);
   }
 
   public CWorldJournalEntry element {
@@ -85,14 +119,14 @@ public class CExoArrayListCWorldJournalEntry : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCWorldJournalEntry __Assign(CExoArrayListCWorldJournalEntry list) {
-    CExoArrayListCWorldJournalEntry ret = new CExoArrayListCWorldJournalEntry(NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry___Assign(swigCPtr, CExoArrayListCWorldJournalEntry.getCPtr(list)), false);
+  public CExoArrayListCWorldJournalEntry _OpAssign(CExoArrayListCWorldJournalEntry list) {
+    CExoArrayListCWorldJournalEntry ret = new CExoArrayListCWorldJournalEntry(NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry__OpAssign(swigCPtr, CExoArrayListCWorldJournalEntry.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CWorldJournalEntry __Index(int i) {
-    CWorldJournalEntry ret = new CWorldJournalEntry(NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry___Index(swigCPtr, i), false);
+  public CWorldJournalEntry _OpIndex(int i) {
+    CWorldJournalEntry ret = new CWorldJournalEntry(NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -123,13 +157,13 @@ public class CExoArrayListCWorldJournalEntry : global::System.IDisposable {
   }
 
   public CWorldJournalEntry begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_begin(swigCPtr);
     CWorldJournalEntry ret = (cPtr == global::System.IntPtr.Zero) ? null : new CWorldJournalEntry(cPtr, false);
     return ret;
   }
 
   public CWorldJournalEntry end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_end(swigCPtr);
     CWorldJournalEntry ret = (cPtr == global::System.IntPtr.Zero) ? null : new CWorldJournalEntry(cPtr, false);
     return ret;
   }

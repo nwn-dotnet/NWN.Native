@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CResNDB : CRes {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CResNDB(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResNDB_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CResNDB(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResNDB_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CResNDB : CRes {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CResNDB other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CResNDB other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CResNDB left, CResNDB right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CResNDB left, CResNDB right) {
+    return !Equals(left, right);
   }
 
   public int m_bLoaded {

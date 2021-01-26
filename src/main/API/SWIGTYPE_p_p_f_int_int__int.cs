@@ -24,6 +24,40 @@ public class SWIGTYPE_p_p_f_int_int__int {
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SWIGTYPE_p_p_f_int_int__int obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(SWIGTYPE_p_p_f_int_int__int other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is SWIGTYPE_p_p_f_int_int__int other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(SWIGTYPE_p_p_f_int_int__int left, SWIGTYPE_p_p_f_int_int__int right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(SWIGTYPE_p_p_f_int_int__int left, SWIGTYPE_p_p_f_int_int__int right) {
+    return !Equals(left, right);
+  }
 }
 
 }

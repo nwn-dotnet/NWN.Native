@@ -14,7 +14,7 @@ public class CExoArrayListCNWSTagNode : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListCNWSTagNode(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListCNWSTagNode(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListCNWSTagNode : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListCNWSTagNode other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListCNWSTagNode other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListCNWSTagNode left, CExoArrayListCNWSTagNode right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListCNWSTagNode left, CExoArrayListCNWSTagNode right) {
+    return !Equals(left, right);
   }
 
   public CNWSTagNode element {
@@ -85,14 +119,14 @@ public class CExoArrayListCNWSTagNode : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCNWSTagNode __Assign(CExoArrayListCNWSTagNode list) {
-    CExoArrayListCNWSTagNode ret = new CExoArrayListCNWSTagNode(NWNXLibPINVOKE.CExoArrayListCNWSTagNode___Assign(swigCPtr, CExoArrayListCNWSTagNode.getCPtr(list)), false);
+  public CExoArrayListCNWSTagNode _OpAssign(CExoArrayListCNWSTagNode list) {
+    CExoArrayListCNWSTagNode ret = new CExoArrayListCNWSTagNode(NWNXLibPINVOKE.CExoArrayListCNWSTagNode__OpAssign(swigCPtr, CExoArrayListCNWSTagNode.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CNWSTagNode __Index(int i) {
-    CNWSTagNode ret = new CNWSTagNode(NWNXLibPINVOKE.CExoArrayListCNWSTagNode___Index(swigCPtr, i), false);
+  public CNWSTagNode _OpIndex(int i) {
+    CNWSTagNode ret = new CNWSTagNode(NWNXLibPINVOKE.CExoArrayListCNWSTagNode__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -123,13 +157,13 @@ public class CExoArrayListCNWSTagNode : global::System.IDisposable {
   }
 
   public CNWSTagNode begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSTagNode_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSTagNode_begin(swigCPtr);
     CNWSTagNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSTagNode(cPtr, false);
     return ret;
   }
 
   public CNWSTagNode end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSTagNode_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSTagNode_end(swigCPtr);
     CNWSTagNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSTagNode(cPtr, false);
     return ret;
   }

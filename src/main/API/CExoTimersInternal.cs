@@ -14,7 +14,7 @@ public class CExoTimersInternal : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoTimersInternal(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoTimersInternal(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoTimersInternal : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoTimersInternal other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoTimersInternal other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoTimersInternal left, CExoTimersInternal right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoTimersInternal left, CExoTimersInternal right) {
+    return !Equals(left, right);
   }
 
   public int m_bQPCActive {
@@ -124,15 +158,15 @@ public class CExoTimersInternal : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_void m_pTimerThread {
+  public System.IntPtr m_pTimerThread {
     set {
-      NWNXLibPINVOKE.CExoTimersInternal_m_pTimerThread_set(swigCPtr, SWIGTYPE_p_void.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoTimersInternal_m_pTimerThread_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoTimersInternal_m_pTimerThread_get(swigCPtr);
-      SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-      return ret;
+        System.IntPtr cPtr = NWNXLibPINVOKE.CExoTimersInternal_m_pTimerThread_get(swigCPtr); 
+        return cPtr; 
     } 
+
   }
 
   public CExoTimersInternal() : this(NWNXLibPINVOKE.new_CExoTimersInternal(), true) {

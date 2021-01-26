@@ -14,7 +14,7 @@ public class CNWSpellArray : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CNWSpellArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CNWSpellArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CNWSpellArray : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSpellArray other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSpellArray other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSpellArray left, CNWSpellArray right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSpellArray left, CNWSpellArray right) {
+    return !Equals(left, right);
   }
 
   public int m_nNumSpells {
@@ -78,8 +112,8 @@ public class CNWSpellArray : global::System.IDisposable {
     NWNXLibPINVOKE.CNWSpellArray_Load(swigCPtr);
   }
 
-  public CNWSpell __Index(int position) {
-    CNWSpell ret = new CNWSpell(NWNXLibPINVOKE.CNWSpellArray___Index(swigCPtr, position), true);
+  public CNWSpell _OpIndex(int position) {
+    CNWSpell ret = new CNWSpell(NWNXLibPINVOKE.CNWSpellArray__OpIndex(swigCPtr, position), true);
     return ret;
   }
 

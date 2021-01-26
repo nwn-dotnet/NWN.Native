@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CNWSAmbientSound : CNWAmbientSound {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CNWSAmbientSound(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSAmbientSound_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CNWSAmbientSound(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSAmbientSound_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CNWSAmbientSound : CNWAmbientSound {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSAmbientSound other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSAmbientSound other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSAmbientSound left, CNWSAmbientSound right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSAmbientSound left, CNWSAmbientSound right) {
+    return !Equals(left, right);
   }
 
   public uint m_nArea {

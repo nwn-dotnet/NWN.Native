@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CResLTR : CRes {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CResLTR(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResLTR_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CResLTR(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResLTR_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CResLTR : CRes {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CResLTR other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CResLTR other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CResLTR left, CResLTR right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CResLTR left, CResLTR right) {
+    return !Equals(left, right);
   }
 
   public SWIGTYPE_p_p_p_float m_pStartTripleLetterProb {

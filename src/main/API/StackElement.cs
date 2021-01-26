@@ -14,7 +14,7 @@ public class StackElement : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal StackElement(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public StackElement(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class StackElement : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(StackElement other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is StackElement other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(StackElement left, StackElement right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(StackElement left, StackElement right) {
+    return !Equals(left, right);
   }
 
   public uint m_nStackObjectID {
@@ -74,15 +108,15 @@ public class StackElement : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_void m_pStackPtr {
+  public System.IntPtr m_pStackPtr {
     set {
-      NWNXLibPINVOKE.StackElement_m_pStackPtr_set(swigCPtr, SWIGTYPE_p_void.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.StackElement_m_pStackPtr_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.StackElement_m_pStackPtr_get(swigCPtr);
-      SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
-      return ret;
+        System.IntPtr cPtr = NWNXLibPINVOKE.StackElement_m_pStackPtr_get(swigCPtr); 
+        return cPtr; 
     } 
+
   }
 
 }

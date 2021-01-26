@@ -13,7 +13,7 @@ namespace NWN.Native.API {
 public class CNWSPlayer : CNWSClient {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CNWSPlayer(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlayer_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CNWSPlayer(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlayer_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -32,6 +32,40 @@ public class CNWSPlayer : CNWSClient {
       }
       base.Dispose(disposing);
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CNWSPlayer other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CNWSPlayer other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CNWSPlayer left, CNWSPlayer right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CNWSPlayer left, CNWSPlayer right) {
+    return !Equals(left, right);
   }
 
   public CExoLinkedListCLastUpdateObject m_pActiveObjectsLastUpdate {

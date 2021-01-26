@@ -14,7 +14,7 @@ public class CExoArrayListCFeatUseListEntryPtr : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListCFeatUseListEntryPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListCFeatUseListEntryPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListCFeatUseListEntryPtr : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListCFeatUseListEntryPtr other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListCFeatUseListEntryPtr other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListCFeatUseListEntryPtr left, CExoArrayListCFeatUseListEntryPtr right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListCFeatUseListEntryPtr left, CExoArrayListCFeatUseListEntryPtr right) {
+    return !Equals(left, right);
   }
 
   public SWIGTYPE_p_p_CFeatUseListEntry element {
@@ -85,14 +119,14 @@ public class CExoArrayListCFeatUseListEntryPtr : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCFeatUseListEntryPtr __Assign(CExoArrayListCFeatUseListEntryPtr list) {
-    CExoArrayListCFeatUseListEntryPtr ret = new CExoArrayListCFeatUseListEntryPtr(NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr___Assign(swigCPtr, CExoArrayListCFeatUseListEntryPtr.getCPtr(list)), false);
+  public CExoArrayListCFeatUseListEntryPtr _OpAssign(CExoArrayListCFeatUseListEntryPtr list) {
+    CExoArrayListCFeatUseListEntryPtr ret = new CExoArrayListCFeatUseListEntryPtr(NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr__OpAssign(swigCPtr, CExoArrayListCFeatUseListEntryPtr.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public SWIGTYPE_p_p_CFeatUseListEntry __Index(int i) {
-    SWIGTYPE_p_p_CFeatUseListEntry ret = new SWIGTYPE_p_p_CFeatUseListEntry(NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr___Index(swigCPtr, i), false);
+  public SWIGTYPE_p_p_CFeatUseListEntry _OpIndex(int i) {
+    SWIGTYPE_p_p_CFeatUseListEntry ret = new SWIGTYPE_p_p_CFeatUseListEntry(NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -121,13 +155,13 @@ public class CExoArrayListCFeatUseListEntryPtr : global::System.IDisposable {
   }
 
   public SWIGTYPE_p_p_CFeatUseListEntry begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_begin(swigCPtr);
     SWIGTYPE_p_p_CFeatUseListEntry ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CFeatUseListEntry(cPtr, false);
     return ret;
   }
 
   public SWIGTYPE_p_p_CFeatUseListEntry end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_end(swigCPtr);
     SWIGTYPE_p_p_CFeatUseListEntry ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CFeatUseListEntry(cPtr, false);
     return ret;
   }

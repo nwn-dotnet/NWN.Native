@@ -14,7 +14,7 @@ public class CExoArrayListCNWSStatsSpellLikeAbility : global::System.IDisposable
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CExoArrayListCNWSStatsSpellLikeAbility(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CExoArrayListCNWSStatsSpellLikeAbility(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CExoArrayListCNWSStatsSpellLikeAbility : global::System.IDisposable
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CExoArrayListCNWSStatsSpellLikeAbility other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CExoArrayListCNWSStatsSpellLikeAbility other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CExoArrayListCNWSStatsSpellLikeAbility left, CExoArrayListCNWSStatsSpellLikeAbility right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CExoArrayListCNWSStatsSpellLikeAbility left, CExoArrayListCNWSStatsSpellLikeAbility right) {
+    return !Equals(left, right);
   }
 
   public CNWSStats_SpellLikeAbility element {
@@ -85,14 +119,14 @@ public class CExoArrayListCNWSStatsSpellLikeAbility : global::System.IDisposable
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCNWSStatsSpellLikeAbility __Assign(CExoArrayListCNWSStatsSpellLikeAbility list) {
-    CExoArrayListCNWSStatsSpellLikeAbility ret = new CExoArrayListCNWSStatsSpellLikeAbility(NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility___Assign(swigCPtr, CExoArrayListCNWSStatsSpellLikeAbility.getCPtr(list)), false);
+  public CExoArrayListCNWSStatsSpellLikeAbility _OpAssign(CExoArrayListCNWSStatsSpellLikeAbility list) {
+    CExoArrayListCNWSStatsSpellLikeAbility ret = new CExoArrayListCNWSStatsSpellLikeAbility(NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility__OpAssign(swigCPtr, CExoArrayListCNWSStatsSpellLikeAbility.getCPtr(list)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CNWSStats_SpellLikeAbility __Index(int i) {
-    CNWSStats_SpellLikeAbility ret = new CNWSStats_SpellLikeAbility(NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility___Index(swigCPtr, i), false);
+  public CNWSStats_SpellLikeAbility _OpIndex(int i) {
+    CNWSStats_SpellLikeAbility ret = new CNWSStats_SpellLikeAbility(NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility__OpIndex(swigCPtr, i), false);
     return ret;
   }
 
@@ -123,13 +157,13 @@ public class CExoArrayListCNWSStatsSpellLikeAbility : global::System.IDisposable
   }
 
   public CNWSStats_SpellLikeAbility begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_begin__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_begin(swigCPtr);
     CNWSStats_SpellLikeAbility ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSStats_SpellLikeAbility(cPtr, false);
     return ret;
   }
 
   public CNWSStats_SpellLikeAbility end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_end__SWIG_0(swigCPtr);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_end(swigCPtr);
     CNWSStats_SpellLikeAbility ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSStats_SpellLikeAbility(cPtr, false);
     return ret;
   }

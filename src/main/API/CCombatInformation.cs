@@ -14,7 +14,7 @@ public class CCombatInformation : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CCombatInformation(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CCombatInformation(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
@@ -42,6 +42,40 @@ public class CCombatInformation : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  public System.IntPtr Pointer {
+    get {
+      return swigCPtr.Handle;
+    }
+  }
+
+  public bool Equals(CCombatInformation other) {
+    if (ReferenceEquals(null, other)) {
+      return false;
+    }
+
+    if (ReferenceEquals(this, other)) {
+      return true;
+    }
+
+    return Pointer.Equals(other.Pointer);
+  }
+
+  public override bool Equals(object obj) {
+    return ReferenceEquals(this, obj) || obj is CCombatInformation other && Equals(other);
+  }
+
+  public override int GetHashCode() {
+    return swigCPtr.Handle.GetHashCode();
+  }
+
+  public static bool operator ==(CCombatInformation left, CCombatInformation right) {
+    return Equals(left, right);
+  }
+
+  public static bool operator !=(CCombatInformation left, CCombatInformation right) {
+    return !Equals(left, right);
   }
 
   public byte m_nNumAttacks {
@@ -323,20 +357,20 @@ public class CCombatInformation : global::System.IDisposable {
     return ret;
   }
 
-  public int __Equals(CCombatInformation pData) {
-    int ret = NWNXLibPINVOKE.CCombatInformation___Equals(swigCPtr, CCombatInformation.getCPtr(pData));
+  public int _OpEquals(CCombatInformation pData) {
+    int ret = NWNXLibPINVOKE.CCombatInformation__OpEquals(swigCPtr, CCombatInformation.getCPtr(pData));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int __NotEquals(CCombatInformation pData) {
-    int ret = NWNXLibPINVOKE.CCombatInformation___NotEquals(swigCPtr, CCombatInformation.getCPtr(pData));
+  public int _OpNotEquals(CCombatInformation pData) {
+    int ret = NWNXLibPINVOKE.CCombatInformation__OpNotEquals(swigCPtr, CCombatInformation.getCPtr(pData));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CCombatInformation __Assign(CCombatInformation pData) {
-    CCombatInformation ret = new CCombatInformation(NWNXLibPINVOKE.CCombatInformation___Assign(swigCPtr, CCombatInformation.getCPtr(pData)), false);
+  public CCombatInformation _OpAssign(CCombatInformation pData) {
+    CCombatInformation ret = new CCombatInformation(NWNXLibPINVOKE.CCombatInformation__OpAssign(swigCPtr, CCombatInformation.getCPtr(pData)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
