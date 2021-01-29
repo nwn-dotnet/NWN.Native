@@ -18,10 +18,12 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <NoWarn>108</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="src\main\API" />
+      <Compile Remove="src\main\API\ICGameObject.cs" />
+      <Compile Remove="src\main\API\ICNWItem.cs" />
     </ItemGroup>
 
 </Project>
