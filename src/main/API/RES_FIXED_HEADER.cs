@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class RES_FIXED_HEADER : global::System.IDisposable {
+public unsafe class RES_FIXED_HEADER : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public RES_FIXED_HEADER(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public RES_FIXED_HEADER(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(RES_FIXED_HEADER obj) {
@@ -37,7 +42,7 @@ public class RES_FIXED_HEADER : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_RES_FIXED_HEADER(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -126,6 +131,9 @@ public class RES_FIXED_HEADER : global::System.IDisposable {
       uint ret = NWNXLibPINVOKE.RES_FIXED_HEADER_nTableOffset_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public RES_FIXED_HEADER() : this(NWNXLibPINVOKE.new_RES_FIXED_HEADER(), true) {
   }
 
 }

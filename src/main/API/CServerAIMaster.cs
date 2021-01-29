@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CServerAIMaster : global::System.IDisposable {
+public unsafe class CServerAIMaster : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CServerAIMaster(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CServerAIMaster(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CServerAIMaster obj) {
@@ -298,8 +303,8 @@ public class CServerAIMaster : global::System.IDisposable {
     return ret;
   }
 
-  public int AddEventDeltaTime(uint nDaysFromNow, uint nTimeFromNow, uint nCallerObjectId, uint nObjectId, uint nEventId, System.IntPtr pScript) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_AddEventDeltaTime__SWIG_0(swigCPtr, nDaysFromNow, nTimeFromNow, nCallerObjectId, nObjectId, nEventId, pScript);
+  public int AddEventDeltaTime(uint nDaysFromNow, uint nTimeFromNow, uint nCallerObjectId, uint nObjectId, uint nEventId, void* pScript) {
+    int ret = NWNXLibPINVOKE.CServerAIMaster_AddEventDeltaTime__SWIG_0(swigCPtr, nDaysFromNow, nTimeFromNow, nCallerObjectId, nObjectId, nEventId, (global::System.IntPtr)pScript);
     return ret;
   }
 
@@ -308,8 +313,8 @@ public class CServerAIMaster : global::System.IDisposable {
     return ret;
   }
 
-  public int AddEventAbsoluteTime(uint nCalendarDay, uint nTimeOfDay, uint nCallerObjectId, uint nObjectId, uint nEventId, System.IntPtr pScript) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_AddEventAbsoluteTime__SWIG_0(swigCPtr, nCalendarDay, nTimeOfDay, nCallerObjectId, nObjectId, nEventId, pScript);
+  public int AddEventAbsoluteTime(uint nCalendarDay, uint nTimeOfDay, uint nCallerObjectId, uint nObjectId, uint nEventId, void* pScript) {
+    int ret = NWNXLibPINVOKE.CServerAIMaster_AddEventAbsoluteTime__SWIG_0(swigCPtr, nCalendarDay, nTimeOfDay, nCallerObjectId, nObjectId, nEventId, (global::System.IntPtr)pScript);
     return ret;
   }
 
@@ -318,8 +323,8 @@ public class CServerAIMaster : global::System.IDisposable {
     return ret;
   }
 
-  public int AddEventAbsoluteTimeViaTail(uint nCalendarDay, uint nTimeOfDay, uint nCallerObjectId, uint nObjectId, uint nEventId, System.IntPtr pScript) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_AddEventAbsoluteTimeViaTail__SWIG_0(swigCPtr, nCalendarDay, nTimeOfDay, nCallerObjectId, nObjectId, nEventId, pScript);
+  public int AddEventAbsoluteTimeViaTail(uint nCalendarDay, uint nTimeOfDay, uint nCallerObjectId, uint nObjectId, uint nEventId, void* pScript) {
+    int ret = NWNXLibPINVOKE.CServerAIMaster_AddEventAbsoluteTimeViaTail__SWIG_0(swigCPtr, nCalendarDay, nTimeOfDay, nCallerObjectId, nObjectId, nEventId, (global::System.IntPtr)pScript);
     return ret;
   }
 
@@ -333,8 +338,8 @@ public class CServerAIMaster : global::System.IDisposable {
     return ret;
   }
 
-  public int GetPendingEvent(SWIGTYPE_p_unsigned_int nCalendarDay, SWIGTYPE_p_unsigned_int nTimeOfDay, SWIGTYPE_p_unsigned_int nCallerObjectId, SWIGTYPE_p_unsigned_int nObjectId, SWIGTYPE_p_unsigned_int nEventId, SWIGTYPE_p_p_void pScript) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_GetPendingEvent(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(nCalendarDay), SWIGTYPE_p_unsigned_int.getCPtr(nTimeOfDay), SWIGTYPE_p_unsigned_int.getCPtr(nCallerObjectId), SWIGTYPE_p_unsigned_int.getCPtr(nObjectId), SWIGTYPE_p_unsigned_int.getCPtr(nEventId), SWIGTYPE_p_p_void.getCPtr(pScript));
+  public int GetPendingEvent(uint* nCalendarDay, uint* nTimeOfDay, uint* nCallerObjectId, uint* nObjectId, uint* nEventId, void** pScript) {
+    int ret = NWNXLibPINVOKE.CServerAIMaster_GetPendingEvent(swigCPtr, (global::System.IntPtr)nCalendarDay, (global::System.IntPtr)nTimeOfDay, (global::System.IntPtr)nCallerObjectId, (global::System.IntPtr)nObjectId, (global::System.IntPtr)nEventId, (global::System.IntPtr)pScript);
     return ret;
   }
 
@@ -396,8 +401,8 @@ public class CServerAIMaster : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void DeleteEventData(uint nEventId, System.IntPtr pEventData) {
-    NWNXLibPINVOKE.CServerAIMaster_DeleteEventData(swigCPtr, nEventId, pEventData);
+  public void DeleteEventData(uint nEventId, void* pEventData) {
+    NWNXLibPINVOKE.CServerAIMaster_DeleteEventData(swigCPtr, nEventId, (global::System.IntPtr)pEventData);
   }
 
 }

@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWSPlayer : CNWSClient {
+public unsafe class CNWSPlayer : CNWSClient {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWSPlayer(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlayer_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSPlayer(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlayer_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSPlayer obj) {
@@ -131,15 +135,15 @@ public class CNWSPlayer : CNWSClient {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_int m_pAreas {
+  public uint* m_pAreas {
     set {
-      NWNXLibPINVOKE.CNWSPlayer_m_pAreas_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSPlayer_m_pAreas_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayer_m_pAreas_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayer_m_pAreas_get(swigCPtr); 
+        return (uint*)retVal; 
+    }
+
   }
 
   public byte m_nLoginState {
@@ -162,12 +166,12 @@ public class CNWSPlayer : CNWSClient {
     } 
   }
 
-  public ulong m_nLastUpdatedTime {
+  public uint m_nLastUpdatedTime {
     set {
       NWNXLibPINVOKE.CNWSPlayer_m_nLastUpdatedTime_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CNWSPlayer_m_nLastUpdatedTime_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CNWSPlayer_m_nLastUpdatedTime_get(swigCPtr);
       return ret;
     } 
   }
@@ -494,9 +498,8 @@ public class CNWSPlayer : CNWSClient {
     NWNXLibPINVOKE.CNWSPlayer_LoadTURDInfoFromIFO(swigCPtr, nIndex);
   }
 
-  public int GetCharacterInfoFromIFO(SWIGTYPE_p_unsigned_char nNumClasses, SWIGTYPE_p_int pClasses, SWIGTYPE_p_unsigned_char pLevels, SWIGTYPE_p_unsigned_int nXP) {
-    int ret = NWNXLibPINVOKE.CNWSPlayer_GetCharacterInfoFromIFO(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(nNumClasses), SWIGTYPE_p_int.getCPtr(pClasses), SWIGTYPE_p_unsigned_char.getCPtr(pLevels), SWIGTYPE_p_unsigned_int.getCPtr(nXP));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int GetCharacterInfoFromIFO(byte* nNumClasses, int* pClasses, byte* pLevels, uint* nXP) {
+    int ret = NWNXLibPINVOKE.CNWSPlayer_GetCharacterInfoFromIFO(swigCPtr, (global::System.IntPtr)nNumClasses, (global::System.IntPtr)pClasses, (global::System.IntPtr)pLevels, (global::System.IntPtr)nXP);
     return ret;
   }
 
@@ -522,14 +525,13 @@ public class CNWSPlayer : CNWSClient {
     return ret;
   }
 
-  public uint ValidateCharacter(SWIGTYPE_p_int bFailedServerRestriction) {
-    uint ret = NWNXLibPINVOKE.CNWSPlayer_ValidateCharacter(swigCPtr, SWIGTYPE_p_int.getCPtr(bFailedServerRestriction));
+  public uint ValidateCharacter(int* bFailedServerRestriction) {
+    uint ret = NWNXLibPINVOKE.CNWSPlayer_ValidateCharacter(swigCPtr, (global::System.IntPtr)bFailedServerRestriction);
     return ret;
   }
 
-  public void ValidateCharacter_SetNormalBonusFlags(ushort nFeatID, SWIGTYPE_p_int bNormalListFeat, SWIGTYPE_p_int bBonusListFeat, byte nClass) {
-    NWNXLibPINVOKE.CNWSPlayer_ValidateCharacter_SetNormalBonusFlags(swigCPtr, nFeatID, SWIGTYPE_p_int.getCPtr(bNormalListFeat), SWIGTYPE_p_int.getCPtr(bBonusListFeat), nClass);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public void ValidateCharacter_SetNormalBonusFlags(ushort nFeatID, int* bNormalListFeat, int* bBonusListFeat, byte nClass) {
+    NWNXLibPINVOKE.CNWSPlayer_ValidateCharacter_SetNormalBonusFlags(swigCPtr, nFeatID, (global::System.IntPtr)bNormalListFeat, (global::System.IntPtr)bBonusListFeat, nClass);
   }
 
   public void StripAllInvalidItemPropertiesInInventory(CNWSCreature pCreature) {

@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWSCreRestorePolymorphData : global::System.IDisposable {
+public unsafe class CNWSCreRestorePolymorphData : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWSCreRestorePolymorphData(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSCreRestorePolymorphData(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSCreRestorePolymorphData obj) {
@@ -37,7 +42,7 @@ public class CNWSCreRestorePolymorphData : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CNWSCreRestorePolymorphData(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -159,6 +164,9 @@ public class CNWSCreRestorePolymorphData : global::System.IDisposable {
       uint ret = NWNXLibPINVOKE.CNWSCreRestorePolymorphData_nExpiryTime_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public CNWSCreRestorePolymorphData() : this(NWNXLibPINVOKE.new_CNWSCreRestorePolymorphData(), true) {
   }
 
 }

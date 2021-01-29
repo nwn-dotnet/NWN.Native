@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class NWPLAYERLISTITEM : global::System.IDisposable {
+public unsafe class NWPLAYERLISTITEM : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public NWPLAYERLISTITEM(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public NWPLAYERLISTITEM(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(NWPLAYERLISTITEM obj) {
@@ -37,7 +42,7 @@ public class NWPLAYERLISTITEM : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_NWPLAYERLISTITEM(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -119,6 +124,9 @@ public class NWPLAYERLISTITEM : global::System.IDisposable {
       int ret = NWNXLibPINVOKE.NWPLAYERLISTITEM_bIsPrimaryPlayer_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public NWPLAYERLISTITEM() : this(NWNXLibPINVOKE.new_NWPLAYERLISTITEM(), true) {
   }
 
 }

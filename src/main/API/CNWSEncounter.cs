@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWSEncounter : CNWSObject {
+public unsafe class CNWSEncounter : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWSEncounter(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSEncounter_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSEncounter(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSEncounter_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSEncounter obj) {
@@ -259,15 +263,15 @@ public class CNWSEncounter : CNWSObject {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_int m_pEnemiesInActivateArea {
+  public uint* m_pEnemiesInActivateArea {
     set {
-      NWNXLibPINVOKE.CNWSEncounter_m_pEnemiesInActivateArea_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSEncounter_m_pEnemiesInActivateArea_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSEncounter_m_pEnemiesInActivateArea_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWSEncounter_m_pEnemiesInActivateArea_get(swigCPtr); 
+        return (uint*)retVal; 
+    }
+
   }
 
   public int m_nNumEnemiesInActivateArea {
@@ -311,15 +315,15 @@ public class CNWSEncounter : CNWSObject {
     } 
   }
 
-  public SWIGTYPE_p_int m_pnOutlineVertices {
+  public int* m_pnOutlineVertices {
     set {
-      NWNXLibPINVOKE.CNWSEncounter_m_pnOutlineVertices_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSEncounter_m_pnOutlineVertices_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSEncounter_m_pnOutlineVertices_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWSEncounter_m_pnOutlineVertices_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
   public int m_nNumOutlineVertices {
@@ -566,8 +570,8 @@ public class CNWSEncounter : CNWSObject {
     NWNXLibPINVOKE.CNWSEncounter_AIUpdate(swigCPtr);
   }
 
-  public override void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSEncounter_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
+  public override void EventHandler(uint nEventId, uint nCallerObjectId, void* pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSEncounter_EventHandler(swigCPtr, nEventId, nCallerObjectId, (global::System.IntPtr)pScript, nCalendarDay, nTimeOfDay);
   }
 
   public void AddToArea(CNWSArea pArea, float fX, float fY, float fZ, int bRunScripts) {
@@ -691,13 +695,12 @@ public class CNWSEncounter : CNWSObject {
     NWNXLibPINVOKE.CNWSEncounter_SpawnEncounterCreatures(swigCPtr);
   }
 
-  public void MakeSpawnList(CEncounterListEntry pSpawnList, SWIGTYPE_p_int nNumCreatures) {
-    NWNXLibPINVOKE.CNWSEncounter_MakeSpawnList(swigCPtr, CEncounterListEntry.getCPtr(pSpawnList), SWIGTYPE_p_int.getCPtr(nNumCreatures));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public void MakeSpawnList(CEncounterListEntry pSpawnList, int* nNumCreatures) {
+    NWNXLibPINVOKE.CNWSEncounter_MakeSpawnList(swigCPtr, CEncounterListEntry.getCPtr(pSpawnList), (global::System.IntPtr)nNumCreatures);
   }
 
-  public void AddCreaturesToSpawnList(CEncounterListEntry pCreatureList, SWIGTYPE_p_int nNumCreatures, int nCRUSplitIndex, CEncounterListEntry cCreature) {
-    NWNXLibPINVOKE.CNWSEncounter_AddCreaturesToSpawnList(swigCPtr, CEncounterListEntry.getCPtr(pCreatureList), SWIGTYPE_p_int.getCPtr(nNumCreatures), nCRUSplitIndex, CEncounterListEntry.getCPtr(cCreature));
+  public void AddCreaturesToSpawnList(CEncounterListEntry pCreatureList, int* nNumCreatures, int nCRUSplitIndex, CEncounterListEntry cCreature) {
+    NWNXLibPINVOKE.CNWSEncounter_AddCreaturesToSpawnList(swigCPtr, CEncounterListEntry.getCPtr(pCreatureList), (global::System.IntPtr)nNumCreatures, nCRUSplitIndex, CEncounterListEntry.getCPtr(cCreature));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -706,9 +709,8 @@ public class CNWSEncounter : CNWSObject {
     return ret;
   }
 
-  public void PadOutCreatureCount(CEncounterListEntry pCreatureList, SWIGTYPE_p_int nNumCreatures) {
-    NWNXLibPINVOKE.CNWSEncounter_PadOutCreatureCount(swigCPtr, CEncounterListEntry.getCPtr(pCreatureList), SWIGTYPE_p_int.getCPtr(nNumCreatures));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public void PadOutCreatureCount(CEncounterListEntry pCreatureList, int* nNumCreatures) {
+    NWNXLibPINVOKE.CNWSEncounter_PadOutCreatureCount(swigCPtr, CEncounterListEntry.getCPtr(pCreatureList), (global::System.IntPtr)nNumCreatures);
   }
 
   public void TallyEnemyRadiusPoints() {

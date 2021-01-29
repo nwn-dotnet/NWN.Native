@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CExoLinkedListCNWSPlayerLUOInventoryItem : global::System.IDisposable {
+public unsafe class CExoLinkedListCNWSPlayerLUOInventoryItem : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CExoLinkedListCNWSPlayerLUOInventoryItem(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CExoLinkedListCNWSPlayerLUOInventoryItem(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoLinkedListCNWSPlayerLUOInventoryItem obj) {

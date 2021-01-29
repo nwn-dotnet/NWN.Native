@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CServerOptionLookup : global::System.IDisposable {
+public unsafe class CServerOptionLookup : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CServerOptionLookup(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CServerOptionLookup(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CServerOptionLookup obj) {
@@ -37,7 +42,7 @@ public class CServerOptionLookup : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CServerOptionLookup(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -78,15 +83,15 @@ public class CServerOptionLookup : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_int pData {
+  public int* pData {
     set {
-      NWNXLibPINVOKE.CServerOptionLookup_pData_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CServerOptionLookup_pData_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerOptionLookup_pData_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CServerOptionLookup_pData_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
   public int nType {
@@ -97,6 +102,9 @@ public class CServerOptionLookup : global::System.IDisposable {
       int ret = NWNXLibPINVOKE.CServerOptionLookup_nType_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public CServerOptionLookup() : this(NWNXLibPINVOKE.new_CServerOptionLookup(), true) {
   }
 
 }

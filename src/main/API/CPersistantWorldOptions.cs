@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CPersistantWorldOptions : global::System.IDisposable {
+public unsafe class CPersistantWorldOptions : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CPersistantWorldOptions(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CPersistantWorldOptions(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CPersistantWorldOptions obj) {
@@ -37,7 +42,7 @@ public class CPersistantWorldOptions : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CPersistantWorldOptions(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -126,6 +131,9 @@ public class CPersistantWorldOptions : global::System.IDisposable {
       int ret = NWNXLibPINVOKE.CPersistantWorldOptions_bServerVaultByPlayerName_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public CPersistantWorldOptions() : this(NWNXLibPINVOKE.new_CPersistantWorldOptions(), true) {
   }
 
 }

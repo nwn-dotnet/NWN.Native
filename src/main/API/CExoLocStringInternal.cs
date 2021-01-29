@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CExoLocStringInternal : global::System.IDisposable {
+public unsafe class CExoLocStringInternal : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CExoLocStringInternal(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CExoLocStringInternal(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoLocStringInternal obj) {
@@ -123,8 +128,8 @@ public class CExoLocStringInternal : global::System.IDisposable {
     return ret;
   }
 
-  public int GetString(uint nPos, SWIGTYPE_p_int pID, CExoString pString) {
-    int ret = NWNXLibPINVOKE.CExoLocStringInternal_GetString__SWIG_0(swigCPtr, nPos, SWIGTYPE_p_int.getCPtr(pID), CExoString.getCPtr(pString));
+  public int GetString(uint nPos, int* pID, CExoString pString) {
+    int ret = NWNXLibPINVOKE.CExoLocStringInternal_GetString__SWIG_0(swigCPtr, nPos, (global::System.IntPtr)pID, CExoString.getCPtr(pString));
     return ret;
   }
 

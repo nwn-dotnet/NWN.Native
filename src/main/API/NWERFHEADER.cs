@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class NWERFHEADER : global::System.IDisposable {
+public unsafe class NWERFHEADER : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public NWERFHEADER(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public NWERFHEADER(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(NWERFHEADER obj) {
@@ -37,7 +42,7 @@ public class NWERFHEADER : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_NWERFHEADER(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -178,15 +183,18 @@ public class NWERFHEADER : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char nUnused {
+  public byte[] nUnused {
     set {
-      NWNXLibPINVOKE.NWERFHEADER_nUnused_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.NWERFHEADER_nUnused_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.NWERFHEADER_nUnused_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.NWERFHEADER_nUnused_get(swigCPtr);
+        return retVal;
+    }
+
+  }
+
+  public NWERFHEADER() : this(NWNXLibPINVOKE.new_NWERFHEADER(), true) {
   }
 
 }

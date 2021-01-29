@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CResGFFLabel : global::System.IDisposable {
+public unsafe class CResGFFLabel : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CResGFFLabel(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CResGFFLabel(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CResGFFLabel obj) {
@@ -37,7 +42,7 @@ public class CResGFFLabel : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CResGFFLabel(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -86,6 +91,9 @@ public class CResGFFLabel : global::System.IDisposable {
       string ret = NWNXLibPINVOKE.CResGFFLabel_m_pLabel_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public CResGFFLabel() : this(NWNXLibPINVOKE.new_CResGFFLabel(), true) {
   }
 
 }

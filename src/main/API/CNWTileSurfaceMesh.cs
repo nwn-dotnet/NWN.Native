@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWTileSurfaceMesh : global::System.IDisposable {
+public unsafe class CNWTileSurfaceMesh : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWTileSurfaceMesh(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWTileSurfaceMesh(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWTileSurfaceMesh obj) {
@@ -239,70 +244,70 @@ public class CNWTileSurfaceMesh : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_pnTriangles {
+  public int* m_pnTriangles {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTriangles_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTriangles_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTriangles_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTriangles_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_int m_pnTrianglesLayer1 {
+  public int* m_pnTrianglesLayer1 {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTrianglesLayer1_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTrianglesLayer1_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTrianglesLayer1_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTrianglesLayer1_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_int m_pnTrianglesLayer2 {
+  public int* m_pnTrianglesLayer2 {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTrianglesLayer2_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTrianglesLayer2_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTrianglesLayer2_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTrianglesLayer2_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_int m_pnTrianglesLayer3 {
+  public int* m_pnTrianglesLayer3 {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTrianglesLayer3_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTrianglesLayer3_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTrianglesLayer3_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTrianglesLayer3_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_int m_pnTriangleMaterial {
+  public int* m_pnTriangleMaterial {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTriangleMaterial_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTriangleMaterial_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTriangleMaterial_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTriangleMaterial_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_float m_pfTriangleDistances {
+  public float* m_pfTriangleDistances {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfTriangleDistances_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfTriangleDistances_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfTriangleDistances_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfTriangleDistances_get(swigCPtr); 
+        return (float*)retVal; 
+    }
+
   }
 
   public Vector m_pvTriangleNormals {
@@ -316,92 +321,92 @@ public class CNWTileSurfaceMesh : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_pnTAdjacency {
+  public int* m_pnTAdjacency {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTAdjacency_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTAdjacency_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTAdjacency_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTAdjacency_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_int m_pnTAdjacencyLayer1 {
+  public int* m_pnTAdjacencyLayer1 {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTAdjacencyLayer1_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTAdjacencyLayer1_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTAdjacencyLayer1_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTAdjacencyLayer1_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_int m_pnTAdjacencyLayer2 {
+  public int* m_pnTAdjacencyLayer2 {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTAdjacencyLayer2_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTAdjacencyLayer2_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTAdjacencyLayer2_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTAdjacencyLayer2_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_int m_pnTAdjacencyLayer3 {
+  public int* m_pnTAdjacencyLayer3 {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTAdjacencyLayer3_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTAdjacencyLayer3_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTAdjacencyLayer3_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnTAdjacencyLayer3_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_float m_pfVertices {
+  public float* m_pfVertices {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfVertices_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfVertices_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfVertices_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfVertices_get(swigCPtr); 
+        return (float*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_float m_pfVerticesLayer1 {
+  public float* m_pfVerticesLayer1 {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfVerticesLayer1_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfVerticesLayer1_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfVerticesLayer1_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfVerticesLayer1_get(swigCPtr); 
+        return (float*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_float m_pfVerticesLayer2 {
+  public float* m_pfVerticesLayer2 {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfVerticesLayer2_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfVerticesLayer2_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfVerticesLayer2_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfVerticesLayer2_get(swigCPtr); 
+        return (float*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_float m_pfVerticesLayer3 {
+  public float* m_pfVerticesLayer3 {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfVerticesLayer3_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfVerticesLayer3_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfVerticesLayer3_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfVerticesLayer3_get(swigCPtr); 
+        return (float*)retVal; 
+    }
+
   }
 
   public int m_nDeniedVertices {
@@ -414,15 +419,15 @@ public class CNWTileSurfaceMesh : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_float m_pfDeniedVertices {
+  public float* m_pfDeniedVertices {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfDeniedVertices_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfDeniedVertices_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfDeniedVertices_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfDeniedVertices_get(swigCPtr); 
+        return (float*)retVal; 
+    }
+
   }
 
   public int m_nDeniedTriangles {
@@ -435,37 +440,37 @@ public class CNWTileSurfaceMesh : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_pnDeniedTriangles {
+  public int* m_pnDeniedTriangles {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnDeniedTriangles_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnDeniedTriangles_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnDeniedTriangles_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnDeniedTriangles_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_int m_pnDeniedTriangleMaterial {
+  public int* m_pnDeniedTriangleMaterial {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnDeniedTriangleMaterial_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnDeniedTriangleMaterial_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnDeniedTriangleMaterial_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnDeniedTriangleMaterial_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_float m_pfDeniedTriangleDistances {
+  public float* m_pfDeniedTriangleDistances {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfDeniedTriangleDistances_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfDeniedTriangleDistances_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfDeniedTriangleDistances_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfDeniedTriangleDistances_get(swigCPtr); 
+        return (float*)retVal; 
+    }
+
   }
 
   public Vector m_pvDeniedTriangleNormals {
@@ -580,15 +585,15 @@ public class CNWTileSurfaceMesh : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_float m_pfIntraTileWayPoints {
+  public float* m_pfIntraTileWayPoints {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfIntraTileWayPoints_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfIntraTileWayPoints_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfIntraTileWayPoints_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pfIntraTileWayPoints_get(swigCPtr); 
+        return (float*)retVal; 
+    }
+
   }
 
   public int m_nIntraTileTriangles {
@@ -601,15 +606,15 @@ public class CNWTileSurfaceMesh : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_pnIntraTileTriangle {
+  public int* m_pnIntraTileTriangle {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnIntraTileTriangle_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnIntraTileTriangle_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnIntraTileTriangle_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMesh_m_pnIntraTileTriangle_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
   public int m_nIntraTileUnits {
@@ -683,13 +688,13 @@ public class CNWTileSurfaceMesh : global::System.IDisposable {
     return ret;
   }
 
-  public int ClippedLineSegmentWalkable(CNWTile pTile, float fStartX, float fStartY, float fEndX, float fEndY, SWIGTYPE_p_float fClipStartX, SWIGTYPE_p_float fClipStartY, SWIGTYPE_p_float fClipEndX, SWIGTYPE_p_float fClipEndY, SWIGTYPE_p_float fClipMinZ, SWIGTYPE_p_float fClipMaxZ) {
-    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_ClippedLineSegmentWalkable(swigCPtr, CNWTile.getCPtr(pTile), fStartX, fStartY, fEndX, fEndY, SWIGTYPE_p_float.getCPtr(fClipStartX), SWIGTYPE_p_float.getCPtr(fClipStartY), SWIGTYPE_p_float.getCPtr(fClipEndX), SWIGTYPE_p_float.getCPtr(fClipEndY), SWIGTYPE_p_float.getCPtr(fClipMinZ), SWIGTYPE_p_float.getCPtr(fClipMaxZ));
+  public int ClippedLineSegmentWalkable(CNWTile pTile, float fStartX, float fStartY, float fEndX, float fEndY, float* fClipStartX, float* fClipStartY, float* fClipEndX, float* fClipEndY, float* fClipMinZ, float* fClipMaxZ) {
+    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_ClippedLineSegmentWalkable(swigCPtr, CNWTile.getCPtr(pTile), fStartX, fStartY, fEndX, fEndY, (global::System.IntPtr)fClipStartX, (global::System.IntPtr)fClipStartY, (global::System.IntPtr)fClipEndX, (global::System.IntPtr)fClipEndY, (global::System.IntPtr)fClipMinZ, (global::System.IntPtr)fClipMaxZ);
     return ret;
   }
 
-  public int ComputeClippedLineSegment(CNWTile pTile, float fStartX, float fStartY, float fEndX, float fEndY, SWIGTYPE_p_float fClipStartX, SWIGTYPE_p_float fClipStartY, SWIGTYPE_p_float fClipEndX, SWIGTYPE_p_float fClipEndY) {
-    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_ComputeClippedLineSegment(swigCPtr, CNWTile.getCPtr(pTile), fStartX, fStartY, fEndX, fEndY, SWIGTYPE_p_float.getCPtr(fClipStartX), SWIGTYPE_p_float.getCPtr(fClipStartY), SWIGTYPE_p_float.getCPtr(fClipEndX), SWIGTYPE_p_float.getCPtr(fClipEndY));
+  public int ComputeClippedLineSegment(CNWTile pTile, float fStartX, float fStartY, float fEndX, float fEndY, float* fClipStartX, float* fClipStartY, float* fClipEndX, float* fClipEndY) {
+    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_ComputeClippedLineSegment(swigCPtr, CNWTile.getCPtr(pTile), fStartX, fStartY, fEndX, fEndY, (global::System.IntPtr)fClipStartX, (global::System.IntPtr)fClipStartY, (global::System.IntPtr)fClipEndX, (global::System.IntPtr)fClipEndY);
     return ret;
   }
 
@@ -727,8 +732,8 @@ public class CNWTileSurfaceMesh : global::System.IDisposable {
     return ret;
   }
 
-  public int FindRegionViaTriangle(int nTriangle, int nRegionNodes, SWIGTYPE_p_int pnRegionTriangles, SWIGTYPE_p_int pbTriangleChecked) {
-    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_FindRegionViaTriangle(swigCPtr, nTriangle, nRegionNodes, SWIGTYPE_p_int.getCPtr(pnRegionTriangles), SWIGTYPE_p_int.getCPtr(pbTriangleChecked));
+  public int FindRegionViaTriangle(int nTriangle, int nRegionNodes, int* pnRegionTriangles, int* pbTriangleChecked) {
+    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_FindRegionViaTriangle(swigCPtr, nTriangle, nRegionNodes, (global::System.IntPtr)pnRegionTriangles, (global::System.IntPtr)pbTriangleChecked);
     return ret;
   }
 
@@ -742,13 +747,13 @@ public class CNWTileSurfaceMesh : global::System.IDisposable {
     return ret;
   }
 
-  public int GenerateBestIntraTileExit(CNWTile pTile, SWIGTYPE_p_CNWArea pWalkGeometry, CPathfindInformation pSearchInformation, float fCurrentX, float fCurrentY) {
-    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_GenerateBestIntraTileExit(swigCPtr, CNWTile.getCPtr(pTile), SWIGTYPE_p_CNWArea.getCPtr(pWalkGeometry), CPathfindInformation.getCPtr(pSearchInformation), fCurrentX, fCurrentY);
+  public int GenerateBestIntraTileExit(CNWTile pTile, CNWArea pWalkGeometry, CPathfindInformation pSearchInformation, float fCurrentX, float fCurrentY) {
+    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_GenerateBestIntraTileExit(swigCPtr, CNWTile.getCPtr(pTile), CNWArea.getCPtr(pWalkGeometry), CPathfindInformation.getCPtr(pSearchInformation), fCurrentX, fCurrentY);
     return ret;
   }
 
-  public int GetExit(int nExit, SWIGTYPE_p_float fX, SWIGTYPE_p_float fY, SWIGTYPE_p_int nRegion) {
-    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_GetExit(swigCPtr, nExit, SWIGTYPE_p_float.getCPtr(fX), SWIGTYPE_p_float.getCPtr(fY), SWIGTYPE_p_int.getCPtr(nRegion));
+  public int GetExit(int nExit, float* fX, float* fY, int* nRegion) {
+    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_GetExit(swigCPtr, nExit, (global::System.IntPtr)fX, (global::System.IntPtr)fY, (global::System.IntPtr)nRegion);
     return ret;
   }
 
@@ -767,18 +772,18 @@ public class CNWTileSurfaceMesh : global::System.IDisposable {
     return ret;
   }
 
-  public int GetRegionCoords(int nRegion, SWIGTYPE_p_float fX, SWIGTYPE_p_float fY, byte nPathNode, int nOrientation) {
-    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_GetRegionCoords__SWIG_0(swigCPtr, nRegion, SWIGTYPE_p_float.getCPtr(fX), SWIGTYPE_p_float.getCPtr(fY), nPathNode, nOrientation);
+  public int GetRegionCoords(int nRegion, float* fX, float* fY, byte nPathNode, int nOrientation) {
+    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_GetRegionCoords__SWIG_0(swigCPtr, nRegion, (global::System.IntPtr)fX, (global::System.IntPtr)fY, nPathNode, nOrientation);
     return ret;
   }
 
-  public int GetRegionCoords(int nRegion, SWIGTYPE_p_float fX, SWIGTYPE_p_float fY, byte nPathNode) {
-    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_GetRegionCoords__SWIG_1(swigCPtr, nRegion, SWIGTYPE_p_float.getCPtr(fX), SWIGTYPE_p_float.getCPtr(fY), nPathNode);
+  public int GetRegionCoords(int nRegion, float* fX, float* fY, byte nPathNode) {
+    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_GetRegionCoords__SWIG_1(swigCPtr, nRegion, (global::System.IntPtr)fX, (global::System.IntPtr)fY, nPathNode);
     return ret;
   }
 
-  public int GetRegionCoords(int nRegion, SWIGTYPE_p_float fX, SWIGTYPE_p_float fY) {
-    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_GetRegionCoords__SWIG_2(swigCPtr, nRegion, SWIGTYPE_p_float.getCPtr(fX), SWIGTYPE_p_float.getCPtr(fY));
+  public int GetRegionCoords(int nRegion, float* fX, float* fY) {
+    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_GetRegionCoords__SWIG_2(swigCPtr, nRegion, (global::System.IntPtr)fX, (global::System.IntPtr)fY);
     return ret;
   }
 
@@ -808,28 +813,28 @@ public class CNWTileSurfaceMesh : global::System.IDisposable {
     return ret;
   }
 
-  public void GetTriangleAdjacency(int nLevel, int nTriangle, SWIGTYPE_p_int ta12, SWIGTYPE_p_int ta23, SWIGTYPE_p_int ta31) {
-    NWNXLibPINVOKE.CNWTileSurfaceMesh_GetTriangleAdjacency(swigCPtr, nLevel, nTriangle, SWIGTYPE_p_int.getCPtr(ta12), SWIGTYPE_p_int.getCPtr(ta23), SWIGTYPE_p_int.getCPtr(ta31));
+  public void GetTriangleAdjacency(int nLevel, int nTriangle, int* ta12, int* ta23, int* ta31) {
+    NWNXLibPINVOKE.CNWTileSurfaceMesh_GetTriangleAdjacency(swigCPtr, nLevel, nTriangle, (global::System.IntPtr)ta12, (global::System.IntPtr)ta23, (global::System.IntPtr)ta31);
   }
 
-  public void GetTriangleCentroid(int nTriangle, SWIGTYPE_p_float fX, SWIGTYPE_p_float fY, SWIGTYPE_p_float fZ) {
-    NWNXLibPINVOKE.CNWTileSurfaceMesh_GetTriangleCentroid(swigCPtr, nTriangle, SWIGTYPE_p_float.getCPtr(fX), SWIGTYPE_p_float.getCPtr(fY), SWIGTYPE_p_float.getCPtr(fZ));
+  public void GetTriangleCentroid(int nTriangle, float* fX, float* fY, float* fZ) {
+    NWNXLibPINVOKE.CNWTileSurfaceMesh_GetTriangleCentroid(swigCPtr, nTriangle, (global::System.IntPtr)fX, (global::System.IntPtr)fY, (global::System.IntPtr)fZ);
   }
 
-  public void GetTriangleVertices(int nLevel, int nTriangle, SWIGTYPE_p_int v1, SWIGTYPE_p_int v2, SWIGTYPE_p_int v3) {
-    NWNXLibPINVOKE.CNWTileSurfaceMesh_GetTriangleVertices(swigCPtr, nLevel, nTriangle, SWIGTYPE_p_int.getCPtr(v1), SWIGTYPE_p_int.getCPtr(v2), SWIGTYPE_p_int.getCPtr(v3));
+  public void GetTriangleVertices(int nLevel, int nTriangle, int* v1, int* v2, int* v3) {
+    NWNXLibPINVOKE.CNWTileSurfaceMesh_GetTriangleVertices(swigCPtr, nLevel, nTriangle, (global::System.IntPtr)v1, (global::System.IntPtr)v2, (global::System.IntPtr)v3);
   }
 
   public void GetVertexGeometry(int nVertex, Vector vVector) {
     NWNXLibPINVOKE.CNWTileSurfaceMesh_GetVertexGeometry__SWIG_0(swigCPtr, nVertex, Vector.getCPtr(vVector));
   }
 
-  public void GetVertexGeometry(int nVertex, SWIGTYPE_p_float vX, SWIGTYPE_p_float vY, SWIGTYPE_p_float vZ) {
-    NWNXLibPINVOKE.CNWTileSurfaceMesh_GetVertexGeometry__SWIG_1(swigCPtr, nVertex, SWIGTYPE_p_float.getCPtr(vX), SWIGTYPE_p_float.getCPtr(vY), SWIGTYPE_p_float.getCPtr(vZ));
+  public void GetVertexGeometry(int nVertex, float* vX, float* vY, float* vZ) {
+    NWNXLibPINVOKE.CNWTileSurfaceMesh_GetVertexGeometry__SWIG_1(swigCPtr, nVertex, (global::System.IntPtr)vX, (global::System.IntPtr)vY, (global::System.IntPtr)vZ);
   }
 
-  public void GetTopLevelVertexGeometry(int nVertex, SWIGTYPE_p_float vX, SWIGTYPE_p_float vY, SWIGTYPE_p_float vZ) {
-    NWNXLibPINVOKE.CNWTileSurfaceMesh_GetTopLevelVertexGeometry(swigCPtr, nVertex, SWIGTYPE_p_float.getCPtr(vX), SWIGTYPE_p_float.getCPtr(vY), SWIGTYPE_p_float.getCPtr(vZ));
+  public void GetTopLevelVertexGeometry(int nVertex, float* vX, float* vY, float* vZ) {
+    NWNXLibPINVOKE.CNWTileSurfaceMesh_GetTopLevelVertexGeometry(swigCPtr, nVertex, (global::System.IntPtr)vX, (global::System.IntPtr)vY, (global::System.IntPtr)vZ);
   }
 
   public CResRef GetWalkMesh() {
@@ -855,13 +860,13 @@ public class CNWTileSurfaceMesh : global::System.IDisposable {
     return ret;
   }
 
-  public int IntraTileDFS(CNWTile pTile, SWIGTYPE_p_CNWArea pWalkGeometry, CPathfindInformation pSearchInformation, int level, float fDistanceTravelled, int nCurrentTriangle, float fX, float fY, float fStartX, float fStartY, float fPersonalSpace, int bUseAdjacenciesOnly) {
-    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_IntraTileDFS(swigCPtr, CNWTile.getCPtr(pTile), SWIGTYPE_p_CNWArea.getCPtr(pWalkGeometry), CPathfindInformation.getCPtr(pSearchInformation), level, fDistanceTravelled, nCurrentTriangle, fX, fY, fStartX, fStartY, fPersonalSpace, bUseAdjacenciesOnly);
+  public int IntraTileDFS(CNWTile pTile, CNWArea pWalkGeometry, CPathfindInformation pSearchInformation, int level, float fDistanceTravelled, int nCurrentTriangle, float fX, float fY, float fStartX, float fStartY, float fPersonalSpace, int bUseAdjacenciesOnly) {
+    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_IntraTileDFS(swigCPtr, CNWTile.getCPtr(pTile), CNWArea.getCPtr(pWalkGeometry), CPathfindInformation.getCPtr(pSearchInformation), level, fDistanceTravelled, nCurrentTriangle, fX, fY, fStartX, fStartY, fPersonalSpace, bUseAdjacenciesOnly);
     return ret;
   }
 
-  public int IntraTileDFSGenerateSuccessors(int bAdjacenciesOnly, CNWTile pTile, SWIGTYPE_p_CNWArea pWalkGeometry, float fX, float fY, int nCurrentTriangle, CPathfindInformation pPathfindInfo, SWIGTYPE_p_p_CPathfindInfoIntraTileSuccessors pSuccessors) {
-    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_IntraTileDFSGenerateSuccessors(swigCPtr, bAdjacenciesOnly, CNWTile.getCPtr(pTile), SWIGTYPE_p_CNWArea.getCPtr(pWalkGeometry), fX, fY, nCurrentTriangle, CPathfindInformation.getCPtr(pPathfindInfo), SWIGTYPE_p_p_CPathfindInfoIntraTileSuccessors.getCPtr(pSuccessors));
+  public int IntraTileDFSGenerateSuccessors(int bAdjacenciesOnly, CNWTile pTile, CNWArea pWalkGeometry, float fX, float fY, int nCurrentTriangle, CPathfindInformation pPathfindInfo, SWIGTYPE_p_p_CPathfindInfoIntraTileSuccessors pSuccessors) {
+    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_IntraTileDFSGenerateSuccessors(swigCPtr, bAdjacenciesOnly, CNWTile.getCPtr(pTile), CNWArea.getCPtr(pWalkGeometry), fX, fY, nCurrentTriangle, CPathfindInformation.getCPtr(pPathfindInfo), SWIGTYPE_p_p_CPathfindInfoIntraTileSuccessors.getCPtr(pSuccessors));
     return ret;
   }
 
@@ -878,8 +883,8 @@ public class CNWTileSurfaceMesh : global::System.IDisposable {
     return ret;
   }
 
-  public int LoadWalkMeshString(SWIGTYPE_p_p_unsigned_char pInput, SWIGTYPE_p_unsigned_int nInputSize, SWIGTYPE_p_unsigned_char pchBuffer, uint nBufferSize) {
-    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_LoadWalkMeshString(swigCPtr, SWIGTYPE_p_p_unsigned_char.getCPtr(pInput), SWIGTYPE_p_unsigned_int.getCPtr(nInputSize), SWIGTYPE_p_unsigned_char.getCPtr(pchBuffer), nBufferSize);
+  public int LoadWalkMeshString(byte** pInput, uint* nInputSize, byte* pchBuffer, uint nBufferSize) {
+    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_LoadWalkMeshString(swigCPtr, (global::System.IntPtr)pInput, (global::System.IntPtr)nInputSize, (global::System.IntPtr)pchBuffer, nBufferSize);
     return ret;
   }
 
@@ -888,13 +893,13 @@ public class CNWTileSurfaceMesh : global::System.IDisposable {
     return ret;
   }
 
-  public uint PlotIntraTilePath(CNWTile pTile, SWIGTYPE_p_CNWArea pWalkGeometry, CPathfindInformation pSearchInformation, float fCurrentIntraTileX, float fCurrentIntraTileY, float fInterTileStartX, float fInterTileStartY, uint nMaxTimeAllowed, int bAdjacenciesOnly) {
-    uint ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_PlotIntraTilePath(swigCPtr, CNWTile.getCPtr(pTile), SWIGTYPE_p_CNWArea.getCPtr(pWalkGeometry), CPathfindInformation.getCPtr(pSearchInformation), fCurrentIntraTileX, fCurrentIntraTileY, fInterTileStartX, fInterTileStartY, nMaxTimeAllowed, bAdjacenciesOnly);
+  public uint PlotIntraTilePath(CNWTile pTile, CNWArea pWalkGeometry, CPathfindInformation pSearchInformation, float fCurrentIntraTileX, float fCurrentIntraTileY, float fInterTileStartX, float fInterTileStartY, uint nMaxTimeAllowed, int bAdjacenciesOnly) {
+    uint ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_PlotIntraTilePath(swigCPtr, CNWTile.getCPtr(pTile), CNWArea.getCPtr(pWalkGeometry), CPathfindInformation.getCPtr(pSearchInformation), fCurrentIntraTileX, fCurrentIntraTileY, fInterTileStartX, fInterTileStartY, nMaxTimeAllowed, bAdjacenciesOnly);
     return ret;
   }
 
-  public void RunSubdivision(SWIGTYPE_p_int pNewTriangles, int nNewTriangles, SWIGTYPE_p_float pNewVertices, int nNewVertices, SWIGTYPE_p_int pNewTAdjacency, SWIGTYPE_p_int pTriangles, int nTriangles, SWIGTYPE_p_float pVertices, int nVertices, SWIGTYPE_p_int pTAdjacency) {
-    NWNXLibPINVOKE.CNWTileSurfaceMesh_RunSubdivision(swigCPtr, SWIGTYPE_p_int.getCPtr(pNewTriangles), nNewTriangles, SWIGTYPE_p_float.getCPtr(pNewVertices), nNewVertices, SWIGTYPE_p_int.getCPtr(pNewTAdjacency), SWIGTYPE_p_int.getCPtr(pTriangles), nTriangles, SWIGTYPE_p_float.getCPtr(pVertices), nVertices, SWIGTYPE_p_int.getCPtr(pTAdjacency));
+  public void RunSubdivision(int* pNewTriangles, int nNewTriangles, float* pNewVertices, int nNewVertices, int* pNewTAdjacency, int* pTriangles, int nTriangles, float* pVertices, int nVertices, int* pTAdjacency) {
+    NWNXLibPINVOKE.CNWTileSurfaceMesh_RunSubdivision(swigCPtr, (global::System.IntPtr)pNewTriangles, nNewTriangles, (global::System.IntPtr)pNewVertices, nNewVertices, (global::System.IntPtr)pNewTAdjacency, (global::System.IntPtr)pTriangles, nTriangles, (global::System.IntPtr)pVertices, nVertices, (global::System.IntPtr)pTAdjacency);
   }
 
   public void SetPathNode(byte nPathNode) {
@@ -910,18 +915,18 @@ public class CNWTileSurfaceMesh : global::System.IDisposable {
     NWNXLibPINVOKE.CNWTileSurfaceMesh_Subdivide(swigCPtr);
   }
 
-  public int TestLineForWalkableOnArea(float fSourceX, float fSourceY, float fTargetX, float fTargetY, float fClipMinZ, float fClipMaxZ, CPathfindInformation pPathfindInfo, CNWTile pTile, SWIGTYPE_p_CNWArea pArea) {
-    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_TestLineForWalkableOnArea(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, fClipMinZ, fClipMaxZ, CPathfindInformation.getCPtr(pPathfindInfo), CNWTile.getCPtr(pTile), SWIGTYPE_p_CNWArea.getCPtr(pArea));
+  public int TestLineForWalkableOnArea(float fSourceX, float fSourceY, float fTargetX, float fTargetY, float fClipMinZ, float fClipMaxZ, CPathfindInformation pPathfindInfo, CNWTile pTile, CNWArea pArea) {
+    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_TestLineForWalkableOnArea(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, fClipMinZ, fClipMaxZ, CPathfindInformation.getCPtr(pPathfindInfo), CNWTile.getCPtr(pTile), CNWArea.getCPtr(pArea));
     return ret;
   }
 
-  public int TestLineForWalkableOnTile(float fSourceX, float fSourceY, float fTargetX, float fTargetY, SWIGTYPE_p_float fClipMinZ, SWIGTYPE_p_float fClipMaxZ, CPathfindInformation pPathfindInfo, CNWTile pTile, int bStayOnTile) {
-    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_TestLineForWalkableOnTile__SWIG_0(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, SWIGTYPE_p_float.getCPtr(fClipMinZ), SWIGTYPE_p_float.getCPtr(fClipMaxZ), CPathfindInformation.getCPtr(pPathfindInfo), CNWTile.getCPtr(pTile), bStayOnTile);
+  public int TestLineForWalkableOnTile(float fSourceX, float fSourceY, float fTargetX, float fTargetY, float* fClipMinZ, float* fClipMaxZ, CPathfindInformation pPathfindInfo, CNWTile pTile, int bStayOnTile) {
+    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_TestLineForWalkableOnTile__SWIG_0(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, (global::System.IntPtr)fClipMinZ, (global::System.IntPtr)fClipMaxZ, CPathfindInformation.getCPtr(pPathfindInfo), CNWTile.getCPtr(pTile), bStayOnTile);
     return ret;
   }
 
-  public int TestLineForWalkableOnTile(float fSourceX, float fSourceY, float fTargetX, float fTargetY, SWIGTYPE_p_float fClipMinZ, SWIGTYPE_p_float fClipMaxZ, CPathfindInformation pPathfindInfo, CNWTile pTile) {
-    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_TestLineForWalkableOnTile__SWIG_1(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, SWIGTYPE_p_float.getCPtr(fClipMinZ), SWIGTYPE_p_float.getCPtr(fClipMaxZ), CPathfindInformation.getCPtr(pPathfindInfo), CNWTile.getCPtr(pTile));
+  public int TestLineForWalkableOnTile(float fSourceX, float fSourceY, float fTargetX, float fTargetY, float* fClipMinZ, float* fClipMaxZ, CPathfindInformation pPathfindInfo, CNWTile pTile) {
+    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_TestLineForWalkableOnTile__SWIG_1(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, (global::System.IntPtr)fClipMinZ, (global::System.IntPtr)fClipMaxZ, CPathfindInformation.getCPtr(pPathfindInfo), CNWTile.getCPtr(pTile));
     return ret;
   }
 

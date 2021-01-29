@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWClass : global::System.IDisposable {
+public unsafe class CNWClass : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWClass(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWClass(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWClass obj) {
@@ -140,15 +145,15 @@ public class CNWClass : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_lstBaseAttackBonus {
+  public byte[] m_lstBaseAttackBonus {
     set {
-      NWNXLibPINVOKE.CNWClass_m_lstBaseAttackBonus_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWClass_m_lstBaseAttackBonus_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWClass_m_lstBaseAttackBonus_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNWClass_m_lstBaseAttackBonus_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public byte m_nHitDie {
@@ -171,70 +176,70 @@ public class CNWClass : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_lstFortificationSaveThrowBonus {
+  public byte[] m_lstFortificationSaveThrowBonus {
     set {
-      NWNXLibPINVOKE.CNWClass_m_lstFortificationSaveThrowBonus_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWClass_m_lstFortificationSaveThrowBonus_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWClass_m_lstFortificationSaveThrowBonus_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNWClass_m_lstFortificationSaveThrowBonus_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_char m_lstWillSaveThrowBonus {
+  public byte[] m_lstWillSaveThrowBonus {
     set {
-      NWNXLibPINVOKE.CNWClass_m_lstWillSaveThrowBonus_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWClass_m_lstWillSaveThrowBonus_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWClass_m_lstWillSaveThrowBonus_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNWClass_m_lstWillSaveThrowBonus_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_char m_lstReflexSaveThrowBonus {
+  public byte[] m_lstReflexSaveThrowBonus {
     set {
-      NWNXLibPINVOKE.CNWClass_m_lstReflexSaveThrowBonus_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWClass_m_lstReflexSaveThrowBonus_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWClass_m_lstReflexSaveThrowBonus_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNWClass_m_lstReflexSaveThrowBonus_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_p_unsigned_char m_lstSpellKnownTable {
+  public byte** m_lstSpellKnownTable {
     set {
-      NWNXLibPINVOKE.CNWClass_m_lstSpellKnownTable_set(swigCPtr, SWIGTYPE_p_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWClass_m_lstSpellKnownTable_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWClass_m_lstSpellKnownTable_get(swigCPtr);
-      SWIGTYPE_p_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWClass_m_lstSpellKnownTable_get(swigCPtr); 
+        return (byte**)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_char m_lstSpellLevelsPerLevel {
+  public byte[] m_lstSpellLevelsPerLevel {
     set {
-      NWNXLibPINVOKE.CNWClass_m_lstSpellLevelsPerLevel_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWClass_m_lstSpellLevelsPerLevel_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWClass_m_lstSpellLevelsPerLevel_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNWClass_m_lstSpellLevelsPerLevel_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_p_unsigned_char m_lstSpellGainTable {
+  public byte*[] m_lstSpellGainTable {
     set {
-      NWNXLibPINVOKE.CNWClass_m_lstSpellGainTable_set(swigCPtr, SWIGTYPE_p_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWClass_m_lstSpellGainTable_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWClass_m_lstSpellGainTable_get(swigCPtr);
-      SWIGTYPE_p_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte*[] retVal = NWNXLibPINVOKE.CNWClass_m_lstSpellGainTable_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public CNWClass_Skill m_lstSkillTable {
@@ -279,15 +284,15 @@ public class CNWClass : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_lstBonusFeatsTable {
+  public byte[] m_lstBonusFeatsTable {
     set {
-      NWNXLibPINVOKE.CNWClass_m_lstBonusFeatsTable_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWClass_m_lstBonusFeatsTable_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWClass_m_lstBonusFeatsTable_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNWClass_m_lstBonusFeatsTable_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public SWIGTYPE_p_a_6__signed_char m_lstAbilityGainTable {
@@ -301,15 +306,15 @@ public class CNWClass : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_signed_char m_lstNaturalACGainTable {
+  public sbyte[] m_lstNaturalACGainTable {
     set {
-      NWNXLibPINVOKE.CNWClass_m_lstNaturalACGainTable_set(swigCPtr, SWIGTYPE_p_signed_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWClass_m_lstNaturalACGainTable_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWClass_m_lstNaturalACGainTable_get(swigCPtr);
-      SWIGTYPE_p_signed_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_signed_char(cPtr, false);
-      return ret;
-    } 
+        sbyte[] retVal = NWNXLibPINVOKE.CNWClass_m_lstNaturalACGainTable_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public byte m_nPrimaryAbility {
@@ -322,15 +327,15 @@ public class CNWClass : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_pnRecommendedAbilities {
+  public byte[] m_pnRecommendedAbilities {
     set {
-      NWNXLibPINVOKE.CNWClass_m_pnRecommendedAbilities_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWClass_m_pnRecommendedAbilities_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWClass_m_pnRecommendedAbilities_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNWClass_m_pnRecommendedAbilities_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public byte m_nClassRestrictions {
@@ -363,15 +368,15 @@ public class CNWClass : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_pnEffectiveCRForLevel {
+  public byte[] m_pnEffectiveCRForLevel {
     set {
-      NWNXLibPINVOKE.CNWClass_m_pnEffectiveCRForLevel_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWClass_m_pnEffectiveCRForLevel_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWClass_m_pnEffectiveCRForLevel_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNWClass_m_pnEffectiveCRForLevel_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public int m_bIsPlayerClass {
@@ -719,9 +724,8 @@ public class CNWClass : global::System.IDisposable {
     return ret;
   }
 
-  public int IsGrantedFeat(ushort nFeat, SWIGTYPE_p_unsigned_char nLevelGranted) {
-    int ret = NWNXLibPINVOKE.CNWClass_IsGrantedFeat(swigCPtr, nFeat, SWIGTYPE_p_unsigned_char.getCPtr(nLevelGranted));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int IsGrantedFeat(ushort nFeat, byte* nLevelGranted) {
+    int ret = NWNXLibPINVOKE.CNWClass_IsGrantedFeat(swigCPtr, nFeat, (global::System.IntPtr)nLevelGranted);
     return ret;
   }
 

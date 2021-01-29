@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWItemProperty : global::System.IDisposable {
+public unsafe class CNWItemProperty : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWItemProperty(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWItemProperty(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWItemProperty obj) {
@@ -37,7 +42,7 @@ public class CNWItemProperty : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CNWItemProperty(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -189,14 +194,17 @@ public class CNWItemProperty : global::System.IDisposable {
     } 
   }
 
-  public ulong m_nID {
+  public uint m_nID {
     set {
       NWNXLibPINVOKE.CNWItemProperty_m_nID_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CNWItemProperty_m_nID_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CNWItemProperty_m_nID_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public CNWItemProperty() : this(NWNXLibPINVOKE.new_CNWItemProperty(), true) {
   }
 
 }

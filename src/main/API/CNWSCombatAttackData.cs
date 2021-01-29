@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWSCombatAttackData : global::System.IDisposable {
+public unsafe class CNWSCombatAttackData : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWSCombatAttackData(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSCombatAttackData(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSCombatAttackData obj) {
@@ -178,15 +183,15 @@ public class CNWSCombatAttackData : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_short m_nDamage {
+  public short[] m_nDamage {
     set {
-      NWNXLibPINVOKE.CNWSCombatAttackData_m_nDamage_set(swigCPtr, SWIGTYPE_p_short.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSCombatAttackData_m_nDamage_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCombatAttackData_m_nDamage_get(swigCPtr);
-      SWIGTYPE_p_short ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_short(cPtr, false);
-      return ret;
-    } 
+        short[] retVal = NWNXLibPINVOKE.CNWSCombatAttackData_m_nDamage_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public byte m_nWeaponAttackType {

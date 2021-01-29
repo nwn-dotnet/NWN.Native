@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CFileInfo : global::System.IDisposable {
+public unsafe class CFileInfo : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CFileInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CFileInfo(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CFileInfo obj) {
@@ -37,7 +42,7 @@ public class CFileInfo : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CFileInfo(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -147,6 +152,9 @@ public class CFileInfo : global::System.IDisposable {
       ushort ret = NWNXLibPINVOKE.CFileInfo_nSecond_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public CFileInfo() : this(NWNXLibPINVOKE.new_CFileInfo(), true) {
   }
 
 }

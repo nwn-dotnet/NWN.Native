@@ -10,7 +10,7 @@
 
 namespace NWN.Native.API {
 
-public static class NWNXLib {
+public static unsafe class NWNXLib {
 public static class Functions {
 
   public static uint _ZN10CERFString4ReadEv {
@@ -49562,34 +49562,29 @@ public static class Functions {
     return ret;
   }
 
-  public static SWIGTYPE_p_int EnableCombatDebugging() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.EnableCombatDebugging();
-    SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-    return ret;
+  public static int* EnableCombatDebugging() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.EnableCombatDebugging();
+    return (int*)retVal;
   }
 
-  public static SWIGTYPE_p_int EnableSavingThrowDebugging() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.EnableSavingThrowDebugging();
-    SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-    return ret;
+  public static int* EnableSavingThrowDebugging() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.EnableSavingThrowDebugging();
+    return (int*)retVal;
   }
 
-  public static SWIGTYPE_p_int EnableMovementSpeedDebugging() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.EnableMovementSpeedDebugging();
-    SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-    return ret;
+  public static int* EnableMovementSpeedDebugging() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.EnableMovementSpeedDebugging();
+    return (int*)retVal;
   }
 
-  public static SWIGTYPE_p_int EnableHitDieDebugging() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.EnableHitDieDebugging();
-    SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-    return ret;
+  public static int* EnableHitDieDebugging() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.EnableHitDieDebugging();
+    return (int*)retVal;
   }
 
-  public static SWIGTYPE_p_int ExitProgram() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.ExitProgram();
-    SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-    return ret;
+  public static int* ExitProgram() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.ExitProgram();
+    return (int*)retVal;
   }
 
 }

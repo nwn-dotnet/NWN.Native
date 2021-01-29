@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CGameObjectArrayNode : global::System.IDisposable {
+public unsafe class CGameObjectArrayNode : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CGameObjectArrayNode(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CGameObjectArrayNode(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CGameObjectArrayNode obj) {
@@ -37,7 +42,7 @@ public class CGameObjectArrayNode : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CGameObjectArrayNode(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -88,9 +93,9 @@ public class CGameObjectArrayNode : global::System.IDisposable {
     } 
   }
 
-  public CGameObject m_objectPtr {
+  public ICGameObject m_objectPtr {
     set {
-      NWNXLibPINVOKE.CGameObjectArrayNode_m_objectPtr_set(swigCPtr, CGameObject.getCPtr(value));
+      NWNXLibPINVOKE.CGameObjectArrayNode_m_objectPtr_set(swigCPtr, value == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : value.GetInterfaceCPtr());
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CGameObjectArrayNode_m_objectPtr_get(swigCPtr);
@@ -108,6 +113,9 @@ public class CGameObjectArrayNode : global::System.IDisposable {
       CGameObjectArrayNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CGameObjectArrayNode(cPtr, false);
       return ret;
     } 
+  }
+
+  public CGameObjectArrayNode() : this(NWNXLibPINVOKE.new_CGameObjectArrayNode(), true) {
   }
 
 }

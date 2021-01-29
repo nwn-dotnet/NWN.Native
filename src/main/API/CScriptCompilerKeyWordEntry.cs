@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CScriptCompilerKeyWordEntry : global::System.IDisposable {
+public unsafe class CScriptCompilerKeyWordEntry : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CScriptCompilerKeyWordEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CScriptCompilerKeyWordEntry(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CScriptCompilerKeyWordEntry obj) {
@@ -37,7 +42,7 @@ public class CScriptCompilerKeyWordEntry : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CScriptCompilerKeyWordEntry(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -117,6 +122,9 @@ public class CScriptCompilerKeyWordEntry : global::System.IDisposable {
       int ret = NWNXLibPINVOKE.CScriptCompilerKeyWordEntry_m_nTokenToTranslate_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public CScriptCompilerKeyWordEntry() : this(NWNXLibPINVOKE.new_CScriptCompilerKeyWordEntry(), true) {
   }
 
 }

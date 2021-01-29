@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CFeatUseListEntry : global::System.IDisposable {
+public unsafe class CFeatUseListEntry : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CFeatUseListEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CFeatUseListEntry(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CFeatUseListEntry obj) {
@@ -37,7 +42,7 @@ public class CFeatUseListEntry : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CFeatUseListEntry(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -96,6 +101,9 @@ public class CFeatUseListEntry : global::System.IDisposable {
       byte ret = NWNXLibPINVOKE.CFeatUseListEntry_m_nUsedToday_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public CFeatUseListEntry() : this(NWNXLibPINVOKE.new_CFeatUseListEntry(), true) {
   }
 
 }

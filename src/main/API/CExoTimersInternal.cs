@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CExoTimersInternal : global::System.IDisposable {
+public unsafe class CExoTimersInternal : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CExoTimersInternal(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CExoTimersInternal(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoTimersInternal obj) {
@@ -98,22 +103,22 @@ public class CExoTimersInternal : global::System.IDisposable {
     } 
   }
 
-  public ulong m_nQPFrequency {
+  public uint m_nQPFrequency {
     set {
       NWNXLibPINVOKE.CExoTimersInternal_m_nQPFrequency_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CExoTimersInternal_m_nQPFrequency_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CExoTimersInternal_m_nQPFrequency_get(swigCPtr);
       return ret;
     } 
   }
 
-  public ulong m_nQPCMicroSecFrequency {
+  public uint m_nQPCMicroSecFrequency {
     set {
       NWNXLibPINVOKE.CExoTimersInternal_m_nQPCMicroSecFrequency_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CExoTimersInternal_m_nQPCMicroSecFrequency_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CExoTimersInternal_m_nQPCMicroSecFrequency_get(swigCPtr);
       return ret;
     } 
   }
@@ -128,12 +133,12 @@ public class CExoTimersInternal : global::System.IDisposable {
     } 
   }
 
-  public ulong m_nHighResTimerValue {
+  public uint m_nHighResTimerValue {
     set {
       NWNXLibPINVOKE.CExoTimersInternal_m_nHighResTimerValue_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CExoTimersInternal_m_nHighResTimerValue_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CExoTimersInternal_m_nHighResTimerValue_get(swigCPtr);
       return ret;
     } 
   }
@@ -158,14 +163,14 @@ public class CExoTimersInternal : global::System.IDisposable {
     } 
   }
 
-  public System.IntPtr m_pTimerThread {
+  public void* m_pTimerThread {
     set {
-      NWNXLibPINVOKE.CExoTimersInternal_m_pTimerThread_set(swigCPtr, value);
+      NWNXLibPINVOKE.CExoTimersInternal_m_pTimerThread_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr cPtr = NWNXLibPINVOKE.CExoTimersInternal_m_pTimerThread_get(swigCPtr); 
-        return cPtr; 
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CExoTimersInternal_m_pTimerThread_get(swigCPtr); 
+        return (void*)retVal; 
+    }
 
   }
 
@@ -177,8 +182,8 @@ public class CExoTimersInternal : global::System.IDisposable {
     return ret;
   }
 
-  public ulong GetHighResolutionTimerReal() {
-    ulong ret = NWNXLibPINVOKE.CExoTimersInternal_GetHighResolutionTimerReal(swigCPtr);
+  public uint GetHighResolutionTimerReal() {
+    uint ret = NWNXLibPINVOKE.CExoTimersInternal_GetHighResolutionTimerReal(swigCPtr);
     return ret;
   }
 
@@ -187,8 +192,8 @@ public class CExoTimersInternal : global::System.IDisposable {
     return ret;
   }
 
-  public ulong GetHighResolutionTimer() {
-    ulong ret = NWNXLibPINVOKE.CExoTimersInternal_GetHighResolutionTimer(swigCPtr);
+  public uint GetHighResolutionTimer() {
+    uint ret = NWNXLibPINVOKE.CExoTimersInternal_GetHighResolutionTimer(swigCPtr);
     return ret;
   }
 

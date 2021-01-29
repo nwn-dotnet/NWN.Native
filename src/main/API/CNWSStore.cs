@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWSStore : CNWSObject {
+public unsafe class CNWSStore : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWSStore(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSStore_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSStore(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSStore_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSStore obj) {
@@ -299,8 +303,8 @@ public class CNWSStore : CNWSObject {
     NWNXLibPINVOKE.CNWSStore_AIUpdate(swigCPtr);
   }
 
-  public override void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSStore_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
+  public override void EventHandler(uint nEventId, uint nCallerObjectId, void* pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSStore_EventHandler(swigCPtr, nEventId, nCallerObjectId, (global::System.IntPtr)pScript, nCalendarDay, nTimeOfDay);
   }
 
   public int GetIsRestrictedBuyItem(int nBaseItemID) {

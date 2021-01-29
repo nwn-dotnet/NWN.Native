@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CExoPackedFile : global::System.IDisposable {
+public unsafe class CExoPackedFile : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CExoPackedFile(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CExoPackedFile(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoPackedFile obj) {
@@ -238,8 +243,8 @@ public class CExoPackedFile : global::System.IDisposable {
     return ret;
   }
 
-  public virtual int OpenFile(SWIGTYPE_p_unsigned_char pCipher) {
-    int ret = NWNXLibPINVOKE.CExoPackedFile_OpenFile__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(pCipher));
+  public virtual int OpenFile(byte* pCipher) {
+    int ret = NWNXLibPINVOKE.CExoPackedFile_OpenFile__SWIG_1(swigCPtr, (global::System.IntPtr)pCipher);
     return ret;
   }
 
@@ -248,14 +253,14 @@ public class CExoPackedFile : global::System.IDisposable {
     return ret;
   }
 
-  public virtual uint ReadResource(RESID nID, System.IntPtr pData, uint nSize, uint nDataOffset) {
-    uint ret = NWNXLibPINVOKE.CExoPackedFile_ReadResource(swigCPtr, RESID.getCPtr(nID), pData, nSize, nDataOffset);
+  public virtual uint ReadResource(RESID nID, void* pData, uint nSize, uint nDataOffset) {
+    uint ret = NWNXLibPINVOKE.CExoPackedFile_ReadResource(swigCPtr, RESID.getCPtr(nID), (global::System.IntPtr)pData, nSize, nDataOffset);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public virtual void ReadResourceAsync(RESID nID, System.IntPtr pData, uint nSize, uint nDataOffset) {
-    NWNXLibPINVOKE.CExoPackedFile_ReadResourceAsync(swigCPtr, RESID.getCPtr(nID), pData, nSize, nDataOffset);
+  public virtual void ReadResourceAsync(RESID nID, void* pData, uint nSize, uint nDataOffset) {
+    NWNXLibPINVOKE.CExoPackedFile_ReadResourceAsync(swigCPtr, RESID.getCPtr(nID), (global::System.IntPtr)pData, nSize, nDataOffset);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -274,8 +279,8 @@ public class CExoPackedFile : global::System.IDisposable {
     return ret;
   }
 
-  public uint ReadNWCompressedBuffer(System.IntPtr outBuffer, uint outBufSize, uint readLength) {
-    uint ret = NWNXLibPINVOKE.CExoPackedFile_ReadNWCompressedBuffer(swigCPtr, outBuffer, outBufSize, readLength);
+  public uint ReadNWCompressedBuffer(void* outBuffer, uint outBufSize, uint readLength) {
+    uint ret = NWNXLibPINVOKE.CExoPackedFile_ReadNWCompressedBuffer(swigCPtr, (global::System.IntPtr)outBuffer, outBufSize, readLength);
     return ret;
   }
 

@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class DataBlock : global::System.IDisposable {
+public unsafe class DataBlock : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public DataBlock(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public DataBlock(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(DataBlock obj) {
@@ -37,7 +42,7 @@ public class DataBlock : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_DataBlock(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -116,6 +121,9 @@ public class DataBlock : global::System.IDisposable {
       bool ret = NWNXLibPINVOKE.DataBlock_m_owning_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public DataBlock() : this(NWNXLibPINVOKE.new_DataBlock(), true) {
   }
 
 }

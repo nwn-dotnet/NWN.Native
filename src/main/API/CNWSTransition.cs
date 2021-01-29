@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWSTransition : global::System.IDisposable {
+public unsafe class CNWSTransition : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWSTransition(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSTransition(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSTransition obj) {
@@ -37,7 +42,7 @@ public class CNWSTransition : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CNWSTransition(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -128,6 +133,9 @@ public class CNWSTransition : global::System.IDisposable {
 
   public void SaveToGff(CResGFF pRes, CResStruct pStruct) {
     NWNXLibPINVOKE.CNWSTransition_SaveToGff(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+  }
+
+  public CNWSTransition() : this(NWNXLibPINVOKE.new_CNWSTransition(), true) {
   }
 
 }

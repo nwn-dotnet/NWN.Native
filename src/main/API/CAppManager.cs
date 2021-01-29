@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CAppManager : global::System.IDisposable {
+public unsafe class CAppManager : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CAppManager(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CAppManager(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CAppManager obj) {
@@ -194,15 +199,15 @@ public class CAppManager : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_pDDCipher {
+  public byte* m_pDDCipher {
     set {
-      NWNXLibPINVOKE.CAppManager_m_pDDCipher_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CAppManager_m_pDDCipher_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CAppManager_m_pDDCipher_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CAppManager_m_pDDCipher_get(swigCPtr); 
+        return (byte*)retVal; 
+    }
+
   }
 
   public uint m_nDDOffset {

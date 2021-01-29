@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWSRules : CNWRules {
+public unsafe class CNWSRules : CNWRules {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWSRules(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSRules_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSRules(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSRules_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSRules obj) {

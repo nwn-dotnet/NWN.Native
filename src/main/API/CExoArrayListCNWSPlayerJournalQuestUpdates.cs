@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.IDisposable {
+public unsafe class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CExoArrayListCNWSPlayerJournalQuestUpdates(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CExoArrayListCNWSPlayerJournalQuestUpdates(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListCNWSPlayerJournalQuestUpdates obj) {

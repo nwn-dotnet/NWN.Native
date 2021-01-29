@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CWorldTimer : global::System.IDisposable {
+public unsafe class CWorldTimer : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CWorldTimer(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CWorldTimer(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CWorldTimer obj) {
@@ -98,22 +103,22 @@ public class CWorldTimer : global::System.IDisposable {
     } 
   }
 
-  public ulong m_nTimeSnapshot {
+  public uint m_nTimeSnapshot {
     set {
       NWNXLibPINVOKE.CWorldTimer_m_nTimeSnapshot_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CWorldTimer_m_nTimeSnapshot_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CWorldTimer_m_nTimeSnapshot_get(swigCPtr);
       return ret;
     } 
   }
 
-  public ulong m_nLastTimeSnapshot {
+  public uint m_nLastTimeSnapshot {
     set {
       NWNXLibPINVOKE.CWorldTimer_m_nLastTimeSnapshot_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CWorldTimer_m_nLastTimeSnapshot_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CWorldTimer_m_nLastTimeSnapshot_get(swigCPtr);
       return ret;
     } 
   }
@@ -205,13 +210,13 @@ public class CWorldTimer : global::System.IDisposable {
     NWNXLibPINVOKE.CWorldTimer_SetSnapshotTime(swigCPtr);
   }
 
-  public ulong GetSnapshotTime() {
-    ulong ret = NWNXLibPINVOKE.CWorldTimer_GetSnapshotTime(swigCPtr);
+  public uint GetSnapshotTime() {
+    uint ret = NWNXLibPINVOKE.CWorldTimer_GetSnapshotTime(swigCPtr);
     return ret;
   }
 
-  public ulong GetSnapshotTimeDifference() {
-    ulong ret = NWNXLibPINVOKE.CWorldTimer_GetSnapshotTimeDifference(swigCPtr);
+  public uint GetSnapshotTimeDifference() {
+    uint ret = NWNXLibPINVOKE.CWorldTimer_GetSnapshotTimeDifference(swigCPtr);
     return ret;
   }
 
@@ -225,12 +230,12 @@ public class CWorldTimer : global::System.IDisposable {
     return ret;
   }
 
-  public void ConvertFromCalendarDay(uint nCalendarDay, SWIGTYPE_p_unsigned_int nYear, SWIGTYPE_p_unsigned_int nMonth, SWIGTYPE_p_unsigned_int nDay) {
-    NWNXLibPINVOKE.CWorldTimer_ConvertFromCalendarDay(swigCPtr, nCalendarDay, SWIGTYPE_p_unsigned_int.getCPtr(nYear), SWIGTYPE_p_unsigned_int.getCPtr(nMonth), SWIGTYPE_p_unsigned_int.getCPtr(nDay));
+  public void ConvertFromCalendarDay(uint nCalendarDay, uint* nYear, uint* nMonth, uint* nDay) {
+    NWNXLibPINVOKE.CWorldTimer_ConvertFromCalendarDay(swigCPtr, nCalendarDay, (global::System.IntPtr)nYear, (global::System.IntPtr)nMonth, (global::System.IntPtr)nDay);
   }
 
-  public void ConvertFromTimeOfDay(uint nTimeOfDay, SWIGTYPE_p_unsigned_int nHour, SWIGTYPE_p_unsigned_int nMinute, SWIGTYPE_p_unsigned_int nSecond, SWIGTYPE_p_unsigned_int nMillisecond) {
-    NWNXLibPINVOKE.CWorldTimer_ConvertFromTimeOfDay(swigCPtr, nTimeOfDay, SWIGTYPE_p_unsigned_int.getCPtr(nHour), SWIGTYPE_p_unsigned_int.getCPtr(nMinute), SWIGTYPE_p_unsigned_int.getCPtr(nSecond), SWIGTYPE_p_unsigned_int.getCPtr(nMillisecond));
+  public void ConvertFromTimeOfDay(uint nTimeOfDay, uint* nHour, uint* nMinute, uint* nSecond, uint* nMillisecond) {
+    NWNXLibPINVOKE.CWorldTimer_ConvertFromTimeOfDay(swigCPtr, nTimeOfDay, (global::System.IntPtr)nHour, (global::System.IntPtr)nMinute, (global::System.IntPtr)nSecond, (global::System.IntPtr)nMillisecond);
   }
 
   public void SetWorldTime(uint nYear, uint nMonth, uint nDay, uint nHour, uint nMinute, uint nSecond, uint nMillisecond, int bTakeSnapshot) {
@@ -254,22 +259,22 @@ public class CWorldTimer : global::System.IDisposable {
     return ret;
   }
 
-  public ulong GetTimeDifference(uint nCalendarDay1, uint nTimeOfDay1, uint nCalendarDay2, uint nTimeOfDay2) {
-    ulong ret = NWNXLibPINVOKE.CWorldTimer_GetTimeDifference(swigCPtr, nCalendarDay1, nTimeOfDay1, nCalendarDay2, nTimeOfDay2);
+  public uint GetTimeDifference(uint nCalendarDay1, uint nTimeOfDay1, uint nCalendarDay2, uint nTimeOfDay2) {
+    uint ret = NWNXLibPINVOKE.CWorldTimer_GetTimeDifference(swigCPtr, nCalendarDay1, nTimeOfDay1, nCalendarDay2, nTimeOfDay2);
     return ret;
   }
 
-  public void GetWorldTime(SWIGTYPE_p_unsigned_int nCalendarDay, SWIGTYPE_p_unsigned_int nTimeOfDay) {
-    NWNXLibPINVOKE.CWorldTimer_GetWorldTime(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(nCalendarDay), SWIGTYPE_p_unsigned_int.getCPtr(nTimeOfDay));
+  public void GetWorldTime(uint* nCalendarDay, uint* nTimeOfDay) {
+    NWNXLibPINVOKE.CWorldTimer_GetWorldTime(swigCPtr, (global::System.IntPtr)nCalendarDay, (global::System.IntPtr)nTimeOfDay);
   }
 
-  public uint AddWorldTimes(uint nCalendarDay1, uint nTimeOfDay1, uint nCalendarDay2, uint nTimeOfDay2, SWIGTYPE_p_unsigned_int nCalendarDayRes, SWIGTYPE_p_unsigned_int nTimeOfDayRes) {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_AddWorldTimes(swigCPtr, nCalendarDay1, nTimeOfDay1, nCalendarDay2, nTimeOfDay2, SWIGTYPE_p_unsigned_int.getCPtr(nCalendarDayRes), SWIGTYPE_p_unsigned_int.getCPtr(nTimeOfDayRes));
+  public uint AddWorldTimes(uint nCalendarDay1, uint nTimeOfDay1, uint nCalendarDay2, uint nTimeOfDay2, uint* nCalendarDayRes, uint* nTimeOfDayRes) {
+    uint ret = NWNXLibPINVOKE.CWorldTimer_AddWorldTimes(swigCPtr, nCalendarDay1, nTimeOfDay1, nCalendarDay2, nTimeOfDay2, (global::System.IntPtr)nCalendarDayRes, (global::System.IntPtr)nTimeOfDayRes);
     return ret;
   }
 
-  public uint SubtractWorldTimes(uint nCalendarDay1, uint nTimeOfDay1, uint nCalendarDay2, uint nTimeOfDay2, SWIGTYPE_p_unsigned_int nCalendarDayRes, SWIGTYPE_p_unsigned_int nTimeOfDayRes) {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_SubtractWorldTimes(swigCPtr, nCalendarDay1, nTimeOfDay1, nCalendarDay2, nTimeOfDay2, SWIGTYPE_p_unsigned_int.getCPtr(nCalendarDayRes), SWIGTYPE_p_unsigned_int.getCPtr(nTimeOfDayRes));
+  public uint SubtractWorldTimes(uint nCalendarDay1, uint nTimeOfDay1, uint nCalendarDay2, uint nTimeOfDay2, uint* nCalendarDayRes, uint* nTimeOfDayRes) {
+    uint ret = NWNXLibPINVOKE.CWorldTimer_SubtractWorldTimes(swigCPtr, nCalendarDay1, nTimeOfDay1, nCalendarDay2, nTimeOfDay2, (global::System.IntPtr)nCalendarDayRes, (global::System.IntPtr)nTimeOfDayRes);
     return ret;
   }
 

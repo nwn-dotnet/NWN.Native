@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
+public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWVirtualMachineCommands(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWVirtualMachineCommands_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWVirtualMachineCommands(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWVirtualMachineCommands_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWVirtualMachineCommands obj) {
@@ -98,24 +102,24 @@ public class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public override System.IntPtr CopyGameDefinedStructure(int nEngineStructure, System.IntPtr pStructureSrc) { 
-    System.IntPtr cPtr = NWNXLibPINVOKE.CNWVirtualMachineCommands_CopyGameDefinedStructure(swigCPtr, nEngineStructure, pStructureSrc);
-    return cPtr;
-    }
+  public override void* CopyGameDefinedStructure(int nEngineStructure, void* pStructureSrc) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_CopyGameDefinedStructure(swigCPtr, nEngineStructure, (global::System.IntPtr)pStructureSrc);
+    return (void*)retVal;
+  }
 
-  public override int GetEqualGameDefinedStructure(int nEngineStructure, System.IntPtr pStructure1, System.IntPtr pStructure2) {
-    int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_GetEqualGameDefinedStructure(swigCPtr, nEngineStructure, pStructure1, pStructure2);
+  public override int GetEqualGameDefinedStructure(int nEngineStructure, void* pStructure1, void* pStructure2) {
+    int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_GetEqualGameDefinedStructure(swigCPtr, nEngineStructure, (global::System.IntPtr)pStructure1, (global::System.IntPtr)pStructure2);
     return ret;
   }
 
-  public override void DestroyGameDefinedStructure(int nEngineStructure, System.IntPtr pStructureToDelete) {
-    NWNXLibPINVOKE.CNWVirtualMachineCommands_DestroyGameDefinedStructure(swigCPtr, nEngineStructure, pStructureToDelete);
+  public override void DestroyGameDefinedStructure(int nEngineStructure, void* pStructureToDelete) {
+    NWNXLibPINVOKE.CNWVirtualMachineCommands_DestroyGameDefinedStructure(swigCPtr, nEngineStructure, (global::System.IntPtr)pStructureToDelete);
   }
 
-  public override System.IntPtr CreateGameDefinedStructure(int nEngineStructure) { 
-    System.IntPtr cPtr = NWNXLibPINVOKE.CNWVirtualMachineCommands_CreateGameDefinedStructure(swigCPtr, nEngineStructure);
-    return cPtr;
-    }
+  public override void* CreateGameDefinedStructure(int nEngineStructure) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_CreateGameDefinedStructure(swigCPtr, nEngineStructure);
+    return (void*)retVal;
+  }
 
   public override CExoString GetGameDefinedStructureName(int nEngineStructure) {
     CExoString ret = new CExoString(NWNXLibPINVOKE.CNWVirtualMachineCommands_GetGameDefinedStructureName(swigCPtr, nEngineStructure), true);
@@ -127,22 +131,22 @@ public class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     return ret;
   }
 
-  public override int SaveGameDefinedStructure(int nEngineStructure, System.IntPtr pStructure, CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_SaveGameDefinedStructure(swigCPtr, nEngineStructure, pStructure, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+  public override int SaveGameDefinedStructure(int nEngineStructure, void* pStructure, CResGFF pRes, CResStruct pStruct) {
+    int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_SaveGameDefinedStructure(swigCPtr, nEngineStructure, (global::System.IntPtr)pStructure, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
     return ret;
   }
 
-  public override int LoadGameDefinedStructure(int nEngineStructure, SWIGTYPE_p_p_void pStructure, CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_LoadGameDefinedStructure(swigCPtr, nEngineStructure, SWIGTYPE_p_p_void.getCPtr(pStructure), CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+  public override int LoadGameDefinedStructure(int nEngineStructure, void** pStructure, CResGFF pRes, CResStruct pStruct) {
+    int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_LoadGameDefinedStructure(swigCPtr, nEngineStructure, (global::System.IntPtr)pStructure, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
     return ret;
   }
 
-  public override void GetEngineStructureWatchView(int nEngineStructure, System.IntPtr pEngineStructure, SWIGTYPE_p_int nEntries, SWIGTYPE_p_p_CExoString m_ppNames, SWIGTYPE_p_p_CExoString m_ppValues) {
-    NWNXLibPINVOKE.CNWVirtualMachineCommands_GetEngineStructureWatchView(swigCPtr, nEngineStructure, pEngineStructure, SWIGTYPE_p_int.getCPtr(nEntries), SWIGTYPE_p_p_CExoString.getCPtr(m_ppNames), SWIGTYPE_p_p_CExoString.getCPtr(m_ppValues));
+  public override void GetEngineStructureWatchView(int nEngineStructure, void* pEngineStructure, int* nEntries, SWIGTYPE_p_p_CExoString m_ppNames, SWIGTYPE_p_p_CExoString m_ppValues) {
+    NWNXLibPINVOKE.CNWVirtualMachineCommands_GetEngineStructureWatchView(swigCPtr, nEngineStructure, (global::System.IntPtr)pEngineStructure, (global::System.IntPtr)nEntries, SWIGTYPE_p_p_CExoString.getCPtr(m_ppNames), SWIGTYPE_p_p_CExoString.getCPtr(m_ppValues));
   }
 
-  public override void GetObjectWatchView(uint oidObject, SWIGTYPE_p_int nEntries, SWIGTYPE_p_p_CExoString m_ppNames, SWIGTYPE_p_p_CExoString m_ppValues) {
-    NWNXLibPINVOKE.CNWVirtualMachineCommands_GetObjectWatchView(swigCPtr, oidObject, SWIGTYPE_p_int.getCPtr(nEntries), SWIGTYPE_p_p_CExoString.getCPtr(m_ppNames), SWIGTYPE_p_p_CExoString.getCPtr(m_ppValues));
+  public override void GetObjectWatchView(uint oidObject, int* nEntries, SWIGTYPE_p_p_CExoString m_ppNames, SWIGTYPE_p_p_CExoString m_ppValues) {
+    NWNXLibPINVOKE.CNWVirtualMachineCommands_GetObjectWatchView(swigCPtr, oidObject, (global::System.IntPtr)nEntries, SWIGTYPE_p_p_CExoString.getCPtr(m_ppNames), SWIGTYPE_p_p_CExoString.getCPtr(m_ppValues));
   }
 
   public override int DebugGUIStart() {
@@ -158,8 +162,8 @@ public class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     NWNXLibPINVOKE.CNWVirtualMachineCommands_DebugGUISendMessageTo(swigCPtr, pMsg, nSize);
   }
 
-  public override int DebugGUIGetMessageFrom(SWIGTYPE_p_p_char pMsg, SWIGTYPE_p_int nSize) {
-    int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_DebugGUIGetMessageFrom(swigCPtr, SWIGTYPE_p_p_char.getCPtr(pMsg), SWIGTYPE_p_int.getCPtr(nSize));
+  public override int DebugGUIGetMessageFrom(char** pMsg, int* nSize) {
+    int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_DebugGUIGetMessageFrom(swigCPtr, (global::System.IntPtr)pMsg, (global::System.IntPtr)nSize);
     return ret;
   }
 

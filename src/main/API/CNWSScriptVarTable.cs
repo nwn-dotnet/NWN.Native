@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWSScriptVarTable : global::System.IDisposable {
+public unsafe class CNWSScriptVarTable : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWSScriptVarTable(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSScriptVarTable(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSScriptVarTable obj) {
@@ -37,7 +42,7 @@ public class CNWSScriptVarTable : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CNWSScriptVarTable(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -203,6 +208,9 @@ public class CNWSScriptVarTable : global::System.IDisposable {
   public void DeleteIndex(CExoString sVarName, uint nVarType) {
     NWNXLibPINVOKE.CNWSScriptVarTable_DeleteIndex(swigCPtr, CExoString.getCPtr(sVarName), nVarType);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public CNWSScriptVarTable() : this(NWNXLibPINVOKE.new_CNWSScriptVarTable(), true) {
   }
 
 }

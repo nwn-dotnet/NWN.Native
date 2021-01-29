@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWSDialogLinkReply : global::System.IDisposable {
+public unsafe class CNWSDialogLinkReply : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWSDialogLinkReply(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSDialogLinkReply(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSDialogLinkReply obj) {
@@ -37,7 +42,7 @@ public class CNWSDialogLinkReply : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CNWSDialogLinkReply(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -118,6 +123,9 @@ public class CNWSDialogLinkReply : global::System.IDisposable {
       int ret = NWNXLibPINVOKE.CNWSDialogLinkReply_m_bDisplayInactive_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public CNWSDialogLinkReply() : this(NWNXLibPINVOKE.new_CNWSDialogLinkReply(), true) {
   }
 
 }

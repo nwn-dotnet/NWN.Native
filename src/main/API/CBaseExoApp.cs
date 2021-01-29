@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CBaseExoApp : global::System.IDisposable {
+public unsafe class CBaseExoApp : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CBaseExoApp(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CBaseExoApp(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CBaseExoApp obj) {
@@ -37,7 +42,7 @@ public class CBaseExoApp : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CBaseExoApp(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -104,8 +109,8 @@ public class CBaseExoApp : global::System.IDisposable {
     NWNXLibPINVOKE.CBaseExoApp_PlayerListChange__SWIG_1(swigCPtr, nPlayerId, bEnter);
   }
 
-  public virtual int HandleMessage(uint nPlayerId, SWIGTYPE_p_unsigned_char pData, uint dwSize, int bRawMessage) {
-    int ret = NWNXLibPINVOKE.CBaseExoApp_HandleMessage(swigCPtr, nPlayerId, SWIGTYPE_p_unsigned_char.getCPtr(pData), dwSize, bRawMessage);
+  public virtual int HandleMessage(uint nPlayerId, byte* pData, uint dwSize, int bRawMessage) {
+    int ret = NWNXLibPINVOKE.CBaseExoApp_HandleMessage(swigCPtr, nPlayerId, (global::System.IntPtr)pData, dwSize, bRawMessage);
     return ret;
   }
 
@@ -140,12 +145,12 @@ public class CBaseExoApp : global::System.IDisposable {
     return ret;
   }
 
-  public virtual void HandleGameSpyToServerMessage(int nKeyId, System.IntPtr pOutBuf, int nIndex) {
-    NWNXLibPINVOKE.CBaseExoApp_HandleGameSpyToServerMessage__SWIG_0(swigCPtr, nKeyId, pOutBuf, nIndex);
+  public virtual void HandleGameSpyToServerMessage(int nKeyId, void* pOutBuf, int nIndex) {
+    NWNXLibPINVOKE.CBaseExoApp_HandleGameSpyToServerMessage__SWIG_0(swigCPtr, nKeyId, (global::System.IntPtr)pOutBuf, nIndex);
   }
 
-  public virtual void HandleGameSpyToServerMessage(int nKeyId, System.IntPtr pOutBuf) {
-    NWNXLibPINVOKE.CBaseExoApp_HandleGameSpyToServerMessage__SWIG_1(swigCPtr, nKeyId, pOutBuf);
+  public virtual void HandleGameSpyToServerMessage(int nKeyId, void* pOutBuf) {
+    NWNXLibPINVOKE.CBaseExoApp_HandleGameSpyToServerMessage__SWIG_1(swigCPtr, nKeyId, (global::System.IntPtr)pOutBuf);
   }
 
   public virtual SWIGTYPE_p_CConnectionLib GetConnectionLib() {
@@ -212,8 +217,8 @@ public class CBaseExoApp : global::System.IDisposable {
     return ret;
   }
 
-  public virtual void PushMessageOverWall(SWIGTYPE_p_unsigned_char pData, uint nMsgLength) {
-    NWNXLibPINVOKE.CBaseExoApp_PushMessageOverWall(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(pData), nMsgLength);
+  public virtual void PushMessageOverWall(byte* pData, uint nMsgLength) {
+    NWNXLibPINVOKE.CBaseExoApp_PushMessageOverWall(swigCPtr, (global::System.IntPtr)pData, nMsgLength);
   }
 
   public virtual int GetIsMultiPlayer() {

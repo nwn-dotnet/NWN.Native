@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CGameEffect : global::System.IDisposable {
+public unsafe class CGameEffect : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CGameEffect(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CGameEffect(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CGameEffect obj) {
@@ -78,12 +83,12 @@ public class CGameEffect : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public ulong m_nID {
+  public uint m_nID {
     set {
       NWNXLibPINVOKE.CGameEffect_m_nID_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CGameEffect_m_nID_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CGameEffect_m_nID_get(swigCPtr);
       return ret;
     } 
   }
@@ -220,26 +225,26 @@ public class CGameEffect : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_nParamInteger {
+  public int* m_nParamInteger {
     set {
-      NWNXLibPINVOKE.CGameEffect_m_nParamInteger_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CGameEffect_m_nParamInteger_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CGameEffect_m_nParamInteger_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CGameEffect_m_nParamInteger_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_float m_nParamFloat {
+  public float[] m_nParamFloat {
     set {
-      NWNXLibPINVOKE.CGameEffect_m_nParamFloat_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CGameEffect_m_nParamFloat_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CGameEffect_m_nParamFloat_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        float[] retVal = NWNXLibPINVOKE.CGameEffect_m_nParamFloat_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public CExoString m_sParamString {
@@ -253,15 +258,15 @@ public class CGameEffect : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_int m_oidParamObjectID {
+  public uint[] m_oidParamObjectID {
     set {
-      NWNXLibPINVOKE.CGameEffect_m_oidParamObjectID_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CGameEffect_m_oidParamObjectID_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CGameEffect_m_oidParamObjectID_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        uint[] retVal = NWNXLibPINVOKE.CGameEffect_m_oidParamObjectID_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public Vector m_vParamVector {
@@ -285,12 +290,12 @@ public class CGameEffect : global::System.IDisposable {
     } 
   }
 
-  public ulong m_nItemPropertySourceId {
+  public uint m_nItemPropertySourceId {
     set {
       NWNXLibPINVOKE.CGameEffect_m_nItemPropertySourceId_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CGameEffect_m_nItemPropertySourceId_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CGameEffect_m_nItemPropertySourceId_get(swigCPtr);
       return ret;
     } 
   }
@@ -412,8 +417,8 @@ public class CGameEffect : global::System.IDisposable {
     NWNXLibPINVOKE.CGameEffect_SetExpiryTime(swigCPtr, nCalendarDayExpiry, nTimeOfDayExpiry);
   }
 
-  public void GetExpiryTime(SWIGTYPE_p_unsigned_int nCurrentCalendarDay, SWIGTYPE_p_unsigned_int nCurrentTimeOfDay) {
-    NWNXLibPINVOKE.CGameEffect_GetExpiryTime(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(nCurrentCalendarDay), SWIGTYPE_p_unsigned_int.getCPtr(nCurrentTimeOfDay));
+  public void GetExpiryTime(uint* nCurrentCalendarDay, uint* nCurrentTimeOfDay) {
+    NWNXLibPINVOKE.CGameEffect_GetExpiryTime(swigCPtr, (global::System.IntPtr)nCurrentCalendarDay, (global::System.IntPtr)nCurrentTimeOfDay);
   }
 
   public CExoString GetCustomTag() {

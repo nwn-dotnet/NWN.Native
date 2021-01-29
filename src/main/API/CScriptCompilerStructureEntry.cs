@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CScriptCompilerStructureEntry : global::System.IDisposable {
+public unsafe class CScriptCompilerStructureEntry : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CScriptCompilerStructureEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CScriptCompilerStructureEntry(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CScriptCompilerStructureEntry obj) {
@@ -37,7 +42,7 @@ public class CScriptCompilerStructureEntry : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CScriptCompilerStructureEntry(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -117,6 +122,9 @@ public class CScriptCompilerStructureEntry : global::System.IDisposable {
       int ret = NWNXLibPINVOKE.CScriptCompilerStructureEntry_m_nByteSize_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public CScriptCompilerStructureEntry() : this(NWNXLibPINVOKE.new_CScriptCompilerStructureEntry(), true) {
   }
 
 }

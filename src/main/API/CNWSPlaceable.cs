@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWSPlaceable : CNWSObject {
+public unsafe class CNWSPlaceable : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWSPlaceable(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlaceable_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSPlaceable(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlaceable_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSPlaceable obj) {
@@ -808,8 +812,8 @@ public class CNWSPlaceable : CNWSObject {
     NWNXLibPINVOKE.CNWSPlaceable_DoDamage(swigCPtr, nDamage);
   }
 
-  public override void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSPlaceable_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
+  public override void EventHandler(uint nEventId, uint nCallerObjectId, void* pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSPlaceable_EventHandler(swigCPtr, nEventId, nCallerObjectId, (global::System.IntPtr)pScript, nCalendarDay, nTimeOfDay);
   }
 
   public int LoadPlaceable(CResGFF pRes, CResStruct cPlaceableStruct, CExoString pTag) {

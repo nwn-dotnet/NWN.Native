@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWSAmbientSound : CNWAmbientSound {
+public unsafe class CNWSAmbientSound : CNWAmbientSound {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWSAmbientSound(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSAmbientSound_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSAmbientSound(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSAmbientSound_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSAmbientSound obj) {

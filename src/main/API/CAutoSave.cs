@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CAutoSave : global::System.IDisposable {
+public unsafe class CAutoSave : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CAutoSave(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CAutoSave(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CAutoSave obj) {
@@ -37,7 +42,7 @@ public class CAutoSave : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CAutoSave(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -116,6 +121,9 @@ public class CAutoSave : global::System.IDisposable {
       int ret = NWNXLibPINVOKE.CAutoSave_nInterval_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public CAutoSave() : this(NWNXLibPINVOKE.new_CAutoSave(), true) {
   }
 
 }

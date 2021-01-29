@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class SSubNetProfile : global::System.IDisposable {
+public unsafe class SSubNetProfile : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public SSubNetProfile(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public SSubNetProfile(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SSubNetProfile obj) {
@@ -37,7 +42,7 @@ public class SSubNetProfile : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_SSubNetProfile(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -110,34 +115,37 @@ public class SSubNetProfile : global::System.IDisposable {
     } 
   }
 
-  public ulong nStartTime {
+  public uint nStartTime {
     set {
       NWNXLibPINVOKE.SSubNetProfile_nStartTime_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.SSubNetProfile_nStartTime_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.SSubNetProfile_nStartTime_get(swigCPtr);
       return ret;
     } 
   }
 
-  public ulong nTotalBytesSent {
+  public uint nTotalBytesSent {
     set {
       NWNXLibPINVOKE.SSubNetProfile_nTotalBytesSent_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.SSubNetProfile_nTotalBytesSent_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.SSubNetProfile_nTotalBytesSent_get(swigCPtr);
       return ret;
     } 
   }
 
-  public ulong nTotalBytesReceived {
+  public uint nTotalBytesReceived {
     set {
       NWNXLibPINVOKE.SSubNetProfile_nTotalBytesReceived_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.SSubNetProfile_nTotalBytesReceived_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.SSubNetProfile_nTotalBytesReceived_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public SSubNetProfile() : this(NWNXLibPINVOKE.new_SSubNetProfile(), true) {
   }
 
 }

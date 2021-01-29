@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CExoArrayListCGameObjectPtr : global::System.IDisposable {
+public unsafe class CExoArrayListCGameObjectPtr : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CExoArrayListCGameObjectPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CExoArrayListCGameObjectPtr(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListCGameObjectPtr obj) {
@@ -142,12 +147,12 @@ public class CExoArrayListCGameObjectPtr : global::System.IDisposable {
     NWNXLibPINVOKE.CExoArrayListCGameObjectPtr_Pack(swigCPtr);
   }
 
-  public void Add(CGameObject t) {
-    NWNXLibPINVOKE.CExoArrayListCGameObjectPtr_Add(swigCPtr, CGameObject.getCPtr(t));
+  public void Add(ICGameObject t) {
+    NWNXLibPINVOKE.CExoArrayListCGameObjectPtr_Add(swigCPtr, t == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : t.GetInterfaceCPtr());
   }
 
-  public void Insert(CGameObject t, int k) {
-    NWNXLibPINVOKE.CExoArrayListCGameObjectPtr_Insert(swigCPtr, CGameObject.getCPtr(t), k);
+  public void Insert(ICGameObject t, int k) {
+    NWNXLibPINVOKE.CExoArrayListCGameObjectPtr_Insert(swigCPtr, t == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : t.GetInterfaceCPtr(), k);
   }
 
   public void DelIndex(int i) {

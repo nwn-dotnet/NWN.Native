@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CVirtualMachineScript : global::System.IDisposable {
+public unsafe class CVirtualMachineScript : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CVirtualMachineScript(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CVirtualMachineScript(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CVirtualMachineScript obj) {
@@ -37,7 +42,7 @@ public class CVirtualMachineScript : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CVirtualMachineScript(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -140,6 +145,9 @@ public class CVirtualMachineScript : global::System.IDisposable {
       if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       return ret;
     } 
+  }
+
+  public CVirtualMachineScript() : this(NWNXLibPINVOKE.new_CVirtualMachineScript(), true) {
   }
 
 }

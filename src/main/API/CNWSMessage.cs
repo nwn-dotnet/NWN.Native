@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWSMessage : CNWMessage {
+public unsafe class CNWSMessage : CNWMessage {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWSMessage(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSMessage_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSMessage(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSMessage_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSMessage obj) {
@@ -215,8 +219,8 @@ public class CNWSMessage : CNWMessage {
     return ret;
   }
 
-  public int HandlePlayerToServerMessage(uint nPlayerId, SWIGTYPE_p_unsigned_char pBuffer, uint nBufferSize) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerMessage(swigCPtr, nPlayerId, SWIGTYPE_p_unsigned_char.getCPtr(pBuffer), nBufferSize);
+  public int HandlePlayerToServerMessage(uint nPlayerId, byte* pBuffer, uint nBufferSize) {
+    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerMessage(swigCPtr, nPlayerId, (global::System.IntPtr)pBuffer, nBufferSize);
     return ret;
   }
 
@@ -412,9 +416,8 @@ public class CNWSMessage : CNWMessage {
     return ret;
   }
 
-  public int SendServerToPlayerLogin_CharacterQuery(CNWSPlayer pPlayer, SWIGTYPE_p_unsigned_char nNumClasses, SWIGTYPE_p_int pClasses, SWIGTYPE_p_unsigned_char pLevels, SWIGTYPE_p_unsigned_int nXP) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLogin_CharacterQuery(swigCPtr, CNWSPlayer.getCPtr(pPlayer), SWIGTYPE_p_unsigned_char.getCPtr(nNumClasses), SWIGTYPE_p_int.getCPtr(pClasses), SWIGTYPE_p_unsigned_char.getCPtr(pLevels), SWIGTYPE_p_unsigned_int.getCPtr(nXP));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int SendServerToPlayerLogin_CharacterQuery(CNWSPlayer pPlayer, byte* nNumClasses, int* pClasses, byte* pLevels, uint* nXP) {
+    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLogin_CharacterQuery(swigCPtr, CNWSPlayer.getCPtr(pPlayer), (global::System.IntPtr)nNumClasses, (global::System.IntPtr)pClasses, (global::System.IntPtr)pLevels, (global::System.IntPtr)nXP);
     return ret;
   }
 
@@ -558,8 +561,8 @@ public class CNWSMessage : CNWMessage {
     return ret;
   }
 
-  public int SendServerToPlayerChatMultiLangMessage(byte nChatMessageType, uint oidSpeaker, CExoLocString sSpeakerMessage, uint oidTokenTarget, byte gender, SWIGTYPE_p_unsigned_int pPlayerIdNoBubble, uint nPlayerIdNoBubble, int bPrivateChat, CResRef sSound, int bPlayHelloSound, uint oidLastSpeaker) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChatMultiLangMessage(swigCPtr, nChatMessageType, oidSpeaker, CExoLocString.getCPtr(sSpeakerMessage), oidTokenTarget, gender, SWIGTYPE_p_unsigned_int.getCPtr(pPlayerIdNoBubble), nPlayerIdNoBubble, bPrivateChat, CResRef.getCPtr(sSound), bPlayHelloSound, oidLastSpeaker);
+  public int SendServerToPlayerChatMultiLangMessage(byte nChatMessageType, uint oidSpeaker, CExoLocString sSpeakerMessage, uint oidTokenTarget, byte gender, uint* pPlayerIdNoBubble, uint nPlayerIdNoBubble, int bPrivateChat, CResRef sSound, int bPlayHelloSound, uint oidLastSpeaker) {
+    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChatMultiLangMessage(swigCPtr, nChatMessageType, oidSpeaker, CExoLocString.getCPtr(sSpeakerMessage), oidTokenTarget, gender, (global::System.IntPtr)pPlayerIdNoBubble, nPlayerIdNoBubble, bPrivateChat, CResRef.getCPtr(sSound), bPlayHelloSound, oidLastSpeaker);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -724,8 +727,8 @@ public class CNWSMessage : CNWMessage {
     return ret;
   }
 
-  public int SendServerToPlayerUpdateActiveItemPropertiesUses(CNWSPlayer pPlayer, uint oidItem, byte nUseableProperties, byte nUseDiff, SWIGTYPE_p_unsigned_char pUsesLeftPerProperty) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateActiveItemPropertiesUses(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidItem, nUseableProperties, nUseDiff, SWIGTYPE_p_unsigned_char.getCPtr(pUsesLeftPerProperty));
+  public int SendServerToPlayerUpdateActiveItemPropertiesUses(CNWSPlayer pPlayer, uint oidItem, byte nUseableProperties, byte nUseDiff, byte* pUsesLeftPerProperty) {
+    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateActiveItemPropertiesUses(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidItem, nUseableProperties, nUseDiff, (global::System.IntPtr)pUsesLeftPerProperty);
     return ret;
   }
 
@@ -772,8 +775,8 @@ public class CNWSMessage : CNWMessage {
     NWNXLibPINVOKE.CNWSMessage_ComputeGameObjectUpdateForYourself(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pPlayerGameObject), CGameObjectArray.getCPtr(pGameObjectArray), oidObjectToUpdate);
   }
 
-  public CNWSPlayerLUOSortedObjectList SortObjectsForGameObjectUpdate(CNWSPlayer pPlayer, CNWSObject pPlayerGameObject, CGameObjectArray pGameObjectArray, SWIGTYPE_p_int nMembersInSortedList) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSMessage_SortObjectsForGameObjectUpdate(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pPlayerGameObject), CGameObjectArray.getCPtr(pGameObjectArray), SWIGTYPE_p_int.getCPtr(nMembersInSortedList));
+  public CNWSPlayerLUOSortedObjectList SortObjectsForGameObjectUpdate(CNWSPlayer pPlayer, CNWSObject pPlayerGameObject, CGameObjectArray pGameObjectArray, int* nMembersInSortedList) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSMessage_SortObjectsForGameObjectUpdate(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pPlayerGameObject), CGameObjectArray.getCPtr(pGameObjectArray), (global::System.IntPtr)nMembersInSortedList);
     CNWSPlayerLUOSortedObjectList ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSPlayerLUOSortedObjectList(cPtr, false);
     return ret;
   }
@@ -787,8 +790,8 @@ public class CNWSMessage : CNWMessage {
     return ret;
   }
 
-  public void TestPartyObjectUpdateDifferences(CNWSPlayer pPlayer, CNWSCreature pPartyCreature, SWIGTYPE_p_p_CLastUpdatePartyObject pLastUpdatePartyObject, SWIGTYPE_p_unsigned_int nObjectUpdatesRequired) {
-    NWNXLibPINVOKE.CNWSMessage_TestPartyObjectUpdateDifferences(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSCreature.getCPtr(pPartyCreature), SWIGTYPE_p_p_CLastUpdatePartyObject.getCPtr(pLastUpdatePartyObject), SWIGTYPE_p_unsigned_int.getCPtr(nObjectUpdatesRequired));
+  public void TestPartyObjectUpdateDifferences(CNWSPlayer pPlayer, CNWSCreature pPartyCreature, SWIGTYPE_p_p_CLastUpdatePartyObject pLastUpdatePartyObject, uint* nObjectUpdatesRequired) {
+    NWNXLibPINVOKE.CNWSMessage_TestPartyObjectUpdateDifferences(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSCreature.getCPtr(pPartyCreature), SWIGTYPE_p_p_CLastUpdatePartyObject.getCPtr(pLastUpdatePartyObject), (global::System.IntPtr)nObjectUpdatesRequired);
   }
 
   public void StoreValuesInLastUpdatePartyObject(CNWSCreature pPlayerCreature, CLastUpdatePartyObject pLastUpdatePartyObject, CNWSCreature pPartyCreature, uint nObjectUpdatesRequired) {
@@ -813,8 +816,8 @@ public class CNWSMessage : CNWMessage {
     NWNXLibPINVOKE.CNWSMessage_StoreValuesInLastUpdateObject(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CLastUpdateObject.getCPtr(pLastUpdateObject), CNWSObject.getCPtr(pAreaObject), nObjectUpdatesRequired, nObjectAppearanceUpdatesRequired);
   }
 
-  public void TestObjectUpdateDifferences(CNWSPlayer pPlayer, CNWSObject pAreaObject, SWIGTYPE_p_p_CLastUpdateObject pLastUpdateObject, SWIGTYPE_p_unsigned_int nObjectUpdatesRequired, SWIGTYPE_p_unsigned_int nObjectAppearanceUpdatesRequired) {
-    NWNXLibPINVOKE.CNWSMessage_TestObjectUpdateDifferences(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pAreaObject), SWIGTYPE_p_p_CLastUpdateObject.getCPtr(pLastUpdateObject), SWIGTYPE_p_unsigned_int.getCPtr(nObjectUpdatesRequired), SWIGTYPE_p_unsigned_int.getCPtr(nObjectAppearanceUpdatesRequired));
+  public void TestObjectUpdateDifferences(CNWSPlayer pPlayer, CNWSObject pAreaObject, SWIGTYPE_p_p_CLastUpdateObject pLastUpdateObject, uint* nObjectUpdatesRequired, uint* nObjectAppearanceUpdatesRequired) {
+    NWNXLibPINVOKE.CNWSMessage_TestObjectUpdateDifferences(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pAreaObject), SWIGTYPE_p_p_CLastUpdateObject.getCPtr(pLastUpdateObject), (global::System.IntPtr)nObjectUpdatesRequired, (global::System.IntPtr)nObjectAppearanceUpdatesRequired);
   }
 
   public int TestObjectVisible(CNWSObject pAreaObject, CNWSObject pPlayerGameObject) {
@@ -822,14 +825,14 @@ public class CNWSMessage : CNWMessage {
     return ret;
   }
 
-  public CLastUpdateObject CreateNewLastUpdateObject(CNWSPlayer pPlayer, CNWSObject pAreaObject, SWIGTYPE_p_unsigned_int nObjectUpdatesRequired, SWIGTYPE_p_unsigned_int nObjectAppeareanceUpdatesRequired) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSMessage_CreateNewLastUpdateObject(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pAreaObject), SWIGTYPE_p_unsigned_int.getCPtr(nObjectUpdatesRequired), SWIGTYPE_p_unsigned_int.getCPtr(nObjectAppeareanceUpdatesRequired));
+  public CLastUpdateObject CreateNewLastUpdateObject(CNWSPlayer pPlayer, CNWSObject pAreaObject, uint* nObjectUpdatesRequired, uint* nObjectAppeareanceUpdatesRequired) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSMessage_CreateNewLastUpdateObject(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pAreaObject), (global::System.IntPtr)nObjectUpdatesRequired, (global::System.IntPtr)nObjectAppeareanceUpdatesRequired);
     CLastUpdateObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new CLastUpdateObject(cPtr, false);
     return ret;
   }
 
-  public uint SelectCategoryForGameObject(CGameObject pAreaGameObject, CNWSObject pPlayerGameObject) {
-    uint ret = NWNXLibPINVOKE.CNWSMessage_SelectCategoryForGameObject(swigCPtr, CGameObject.getCPtr(pAreaGameObject), CNWSObject.getCPtr(pPlayerGameObject));
+  public uint SelectCategoryForGameObject(ICGameObject pAreaGameObject, CNWSObject pPlayerGameObject) {
+    uint ret = NWNXLibPINVOKE.CNWSMessage_SelectCategoryForGameObject(swigCPtr, pAreaGameObject == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : pAreaGameObject.GetInterfaceCPtr(), CNWSObject.getCPtr(pPlayerGameObject));
     return ret;
   }
 
@@ -857,9 +860,8 @@ public class CNWSMessage : CNWMessage {
     NWNXLibPINVOKE.CNWSMessage_WriteGameObjUpdate_MajorGUIPanels_HenchmanInventoryData(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
   }
 
-  public void TestPlayerUpdateDifferences(CNWSPlayer pPlayer, CNWSPlayerLastUpdateObject pPlayerLastUpdateObject, CLastUpdateObject pCreatureLastUpdateObject, SWIGTYPE_p_unsigned_short nUpdatesRequired) {
-    NWNXLibPINVOKE.CNWSMessage_TestPlayerUpdateDifferences(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSPlayerLastUpdateObject.getCPtr(pPlayerLastUpdateObject), CLastUpdateObject.getCPtr(pCreatureLastUpdateObject), SWIGTYPE_p_unsigned_short.getCPtr(nUpdatesRequired));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public void TestPlayerUpdateDifferences(CNWSPlayer pPlayer, CNWSPlayerLastUpdateObject pPlayerLastUpdateObject, CLastUpdateObject pCreatureLastUpdateObject, ushort* nUpdatesRequired) {
+    NWNXLibPINVOKE.CNWSMessage_TestPlayerUpdateDifferences(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSPlayerLastUpdateObject.getCPtr(pPlayerLastUpdateObject), CLastUpdateObject.getCPtr(pCreatureLastUpdateObject), (global::System.IntPtr)nUpdatesRequired);
   }
 
   public void WriteGameObjUpdate_PlayerUpdate(CNWSPlayer pPlayer, CNWSPlayerLastUpdateObject pPlayerLastUpdateObject, CLastUpdateObject pCreatureLastUpdateObject, ushort nUpdatesRequired) {
@@ -1058,8 +1060,8 @@ public class CNWSMessage : CNWMessage {
     return ret;
   }
 
-  public int SendServerToPlayerParty_List(uint nPlayerID, int nNumMembers, SWIGTYPE_p_unsigned_int pMemberIDs, byte nPartyListMessageType, uint oidBanned) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerParty_List(swigCPtr, nPlayerID, nNumMembers, SWIGTYPE_p_unsigned_int.getCPtr(pMemberIDs), nPartyListMessageType, oidBanned);
+  public int SendServerToPlayerParty_List(uint nPlayerID, int nNumMembers, uint* pMemberIDs, byte nPartyListMessageType, uint oidBanned) {
+    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerParty_List(swigCPtr, nPlayerID, nNumMembers, (global::System.IntPtr)pMemberIDs, nPartyListMessageType, oidBanned);
     return ret;
   }
 
@@ -1111,8 +1113,8 @@ public class CNWSMessage : CNWMessage {
     return ret;
   }
 
-  public int SendServerToPlayerDialogReplies(uint nPlayerID, CExoLocString pRepliesStr, SWIGTYPE_p_unsigned_int pRepliesIndex, uint nReplies, uint nInactiveReplies, uint oidTokenTarget, byte gender, int bEndOfDialog, uint currentEntryIndex, int bDisableCameraZoom) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDialogReplies(swigCPtr, nPlayerID, CExoLocString.getCPtr(pRepliesStr), SWIGTYPE_p_unsigned_int.getCPtr(pRepliesIndex), nReplies, nInactiveReplies, oidTokenTarget, gender, bEndOfDialog, currentEntryIndex, bDisableCameraZoom);
+  public int SendServerToPlayerDialogReplies(uint nPlayerID, CExoLocString pRepliesStr, uint* pRepliesIndex, uint nReplies, uint nInactiveReplies, uint oidTokenTarget, byte gender, int bEndOfDialog, uint currentEntryIndex, int bDisableCameraZoom) {
+    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDialogReplies(swigCPtr, nPlayerID, CExoLocString.getCPtr(pRepliesStr), (global::System.IntPtr)pRepliesIndex, nReplies, nInactiveReplies, oidTokenTarget, gender, bEndOfDialog, currentEntryIndex, bDisableCameraZoom);
     return ret;
   }
 
@@ -1406,8 +1408,8 @@ public class CNWSMessage : CNWMessage {
     return ret;
   }
 
-  public int HandleServerAdminToServerMessage(uint nPlayerId, SWIGTYPE_p_unsigned_char pMessage, uint nSize) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandleServerAdminToServerMessage(swigCPtr, nPlayerId, SWIGTYPE_p_unsigned_char.getCPtr(pMessage), nSize);
+  public int HandleServerAdminToServerMessage(uint nPlayerId, byte* pMessage, uint nSize) {
+    int ret = NWNXLibPINVOKE.CNWSMessage_HandleServerAdminToServerMessage(swigCPtr, nPlayerId, (global::System.IntPtr)pMessage, nSize);
     return ret;
   }
 
@@ -1449,21 +1451,19 @@ public class CNWSMessage : CNWMessage {
     NWNXLibPINVOKE.CNWSMessage_SendServerToServerAdminSaveStatus(swigCPtr, nPlayerId, nStatus);
   }
 
-  public int ParseGetBool(SWIGTYPE_p_unsigned_char pMsgPortion, uint msgPortionSize, SWIGTYPE_p_int pBool) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ParseGetBool(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(pMsgPortion), msgPortionSize, SWIGTYPE_p_int.getCPtr(pBool));
+  public int ParseGetBool(byte* pMsgPortion, uint msgPortionSize, int* pBool) {
+    int ret = NWNXLibPINVOKE.CNWSMessage_ParseGetBool(swigCPtr, (global::System.IntPtr)pMsgPortion, msgPortionSize, (global::System.IntPtr)pBool);
+    return ret;
+  }
+
+  public int ParseGetString(byte* pMsgPortion, uint msgPortionSize, CExoString pString, uint nMaxStrLength) {
+    int ret = NWNXLibPINVOKE.CNWSMessage_ParseGetString(swigCPtr, (global::System.IntPtr)pMsgPortion, msgPortionSize, CExoString.getCPtr(pString), nMaxStrLength);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int ParseGetString(SWIGTYPE_p_unsigned_char pMsgPortion, uint msgPortionSize, CExoString pString, uint nMaxStrLength) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ParseGetString(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(pMsgPortion), msgPortionSize, CExoString.getCPtr(pString), nMaxStrLength);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public int ParseToken(string token, SWIGTYPE_p_p_unsigned_char pMsgPortion, SWIGTYPE_p_unsigned_int msgPortionSize, int bDelimeterFollowing) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ParseToken(swigCPtr, token, SWIGTYPE_p_p_unsigned_char.getCPtr(pMsgPortion), SWIGTYPE_p_unsigned_int.getCPtr(msgPortionSize), bDelimeterFollowing);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int ParseToken(string token, byte** pMsgPortion, uint* msgPortionSize, int bDelimeterFollowing) {
+    int ret = NWNXLibPINVOKE.CNWSMessage_ParseToken(swigCPtr, token, (global::System.IntPtr)pMsgPortion, (global::System.IntPtr)msgPortionSize, bDelimeterFollowing);
     return ret;
   }
 
@@ -1770,8 +1770,8 @@ public class CNWSMessage : CNWMessage {
     return ret;
   }
 
-  public int SendServerToPlayerMessage(uint nPlayerId, byte nMajor, byte nMinor, SWIGTYPE_p_unsigned_char pBuffer, uint nBufferSize) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerMessage(swigCPtr, nPlayerId, nMajor, nMinor, SWIGTYPE_p_unsigned_char.getCPtr(pBuffer), nBufferSize);
+  public int SendServerToPlayerMessage(uint nPlayerId, byte nMajor, byte nMinor, byte* pBuffer, uint nBufferSize) {
+    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerMessage(swigCPtr, nPlayerId, nMajor, nMinor, (global::System.IntPtr)pBuffer, nBufferSize);
     return ret;
   }
 
@@ -1825,8 +1825,8 @@ public class CNWSMessage : CNWMessage {
     return ret;
   }
 
-  public uint ComputeNumAutoMapUpdatesRequired(CNWSCreature pCreature, CNWSPlayerLastUpdateObject pLastUpdateObject, SWIGTYPE_p_unsigned_int pnUnexploredTiles) {
-    uint ret = NWNXLibPINVOKE.CNWSMessage_ComputeNumAutoMapUpdatesRequired__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject), SWIGTYPE_p_unsigned_int.getCPtr(pnUnexploredTiles));
+  public uint ComputeNumAutoMapUpdatesRequired(CNWSCreature pCreature, CNWSPlayerLastUpdateObject pLastUpdateObject, uint* pnUnexploredTiles) {
+    uint ret = NWNXLibPINVOKE.CNWSMessage_ComputeNumAutoMapUpdatesRequired__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject), (global::System.IntPtr)pnUnexploredTiles);
     return ret;
   }
 

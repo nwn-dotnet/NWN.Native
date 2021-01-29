@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CStringFieldIDType : global::System.IDisposable {
+public unsafe class CStringFieldIDType : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CStringFieldIDType(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CStringFieldIDType(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CStringFieldIDType obj) {
@@ -37,7 +42,7 @@ public class CStringFieldIDType : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CStringFieldIDType(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -86,6 +91,9 @@ public class CStringFieldIDType : global::System.IDisposable {
       string ret = NWNXLibPINVOKE.CStringFieldIDType_sz_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public CStringFieldIDType() : this(NWNXLibPINVOKE.new_CStringFieldIDType(), true) {
   }
 
 }

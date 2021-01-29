@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CResIFO : CResGFF {
+public unsafe class CResIFO : CResGFF {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CResIFO(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResIFO_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CResIFO(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResIFO_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CResIFO obj) {
@@ -26,7 +30,7 @@ public class CResIFO : CResGFF {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CResIFO(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }

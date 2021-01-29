@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNetLayerWindow : global::System.IDisposable {
+public unsafe class CNetLayerWindow : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNetLayerWindow(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNetLayerWindow(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNetLayerWindow obj) {
@@ -309,70 +314,70 @@ public class CNetLayerWindow : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_short m_pOutgoingBuffers {
+  public ushort[] m_pOutgoingBuffers {
     set {
-      NWNXLibPINVOKE.CNetLayerWindow_m_pOutgoingBuffers_set(swigCPtr, SWIGTYPE_p_unsigned_short.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNetLayerWindow_m_pOutgoingBuffers_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pOutgoingBuffers_get(swigCPtr);
-      SWIGTYPE_p_unsigned_short ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_short(cPtr, false);
-      return ret;
-    } 
+        ushort[] retVal = NWNXLibPINVOKE.CNetLayerWindow_m_pOutgoingBuffers_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_int m_pbTimeOutSet {
+  public int[] m_pbTimeOutSet {
     set {
-      NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutSet_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutSet_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutSet_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        int[] retVal = NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutSet_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_int m_pnTimeOut {
+  public uint[] m_pnTimeOut {
     set {
-      NWNXLibPINVOKE.CNetLayerWindow_m_pnTimeOut_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNetLayerWindow_m_pnTimeOut_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pnTimeOut_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        uint[] retVal = NWNXLibPINVOKE.CNetLayerWindow_m_pnTimeOut_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_int m_pbTimeOutDelay {
+  public int[] m_pbTimeOutDelay {
     set {
-      NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutDelay_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutDelay_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutDelay_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        int[] retVal = NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutDelay_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_short m_pIncomingBuffers {
+  public ushort[] m_pIncomingBuffers {
     set {
-      NWNXLibPINVOKE.CNetLayerWindow_m_pIncomingBuffers_set(swigCPtr, SWIGTYPE_p_unsigned_short.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNetLayerWindow_m_pIncomingBuffers_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pIncomingBuffers_get(swigCPtr);
-      SWIGTYPE_p_unsigned_short ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_short(cPtr, false);
-      return ret;
-    } 
+        ushort[] retVal = NWNXLibPINVOKE.CNetLayerWindow_m_pIncomingBuffers_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_int m_pbArrived {
+  public int[] m_pbArrived {
     set {
-      NWNXLibPINVOKE.CNetLayerWindow_m_pbArrived_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNetLayerWindow_m_pbArrived_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pbArrived_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        int[] retVal = NWNXLibPINVOKE.CNetLayerWindow_m_pbArrived_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public CExoArrayListUInt16 m_lQueueOutgoingHiFrames {
@@ -419,26 +424,26 @@ public class CNetLayerWindow : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_pLowPriorityHoldBuffer {
+  public byte[] m_pLowPriorityHoldBuffer {
     set {
-      NWNXLibPINVOKE.CNetLayerWindow_m_pLowPriorityHoldBuffer_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNetLayerWindow_m_pLowPriorityHoldBuffer_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pLowPriorityHoldBuffer_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNetLayerWindow_m_pLowPriorityHoldBuffer_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_char m_pHighPriorityHoldBuffer {
+  public byte[] m_pHighPriorityHoldBuffer {
     set {
-      NWNXLibPINVOKE.CNetLayerWindow_m_pHighPriorityHoldBuffer_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNetLayerWindow_m_pHighPriorityHoldBuffer_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pHighPriorityHoldBuffer_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNetLayerWindow_m_pHighPriorityHoldBuffer_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public uint m_nLowPriorityHoldBufferSize {
@@ -605,8 +610,8 @@ public class CNetLayerWindow : global::System.IDisposable {
     return ret;
   }
 
-  public int FrameReceive(SWIGTYPE_p_unsigned_char pData, uint dwSize) {
-    int ret = NWNXLibPINVOKE.CNetLayerWindow_FrameReceive(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(pData), dwSize);
+  public int FrameReceive(byte* pData, uint dwSize) {
+    int ret = NWNXLibPINVOKE.CNetLayerWindow_FrameReceive(swigCPtr, (global::System.IntPtr)pData, dwSize);
     return ret;
   }
 

@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class BIFFFILE_VARRESENTRY_E1 : global::System.IDisposable {
+public unsafe class BIFFFILE_VARRESENTRY_E1 : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public BIFFFILE_VARRESENTRY_E1(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public BIFFFILE_VARRESENTRY_E1(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(BIFFFILE_VARRESENTRY_E1 obj) {
@@ -37,7 +42,7 @@ public class BIFFFILE_VARRESENTRY_E1 : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_BIFFFILE_VARRESENTRY_E1(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -136,6 +141,9 @@ public class BIFFFILE_VARRESENTRY_E1 : global::System.IDisposable {
       uint ret = NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nUncompressedSize_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public BIFFFILE_VARRESENTRY_E1() : this(NWNXLibPINVOKE.new_BIFFFILE_VARRESENTRY_E1(), true) {
   }
 
 }

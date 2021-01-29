@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CTlkResFile : CTlkFile {
+public unsafe class CTlkResFile : CTlkFile {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CTlkResFile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CTlkResFile_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CTlkResFile(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CTlkResFile_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CTlkResFile obj) {

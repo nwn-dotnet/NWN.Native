@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CResRef : global::System.IDisposable {
+public unsafe class CResRef : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CResRef(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CResRef(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CResRef obj) {
@@ -37,7 +42,7 @@ public class CResRef : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CResRef(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -78,32 +83,32 @@ public class CResRef : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_unsigned_char m_resRefLowerCase {
+  public byte[] m_resRefLowerCase {
     set {
-      NWNXLibPINVOKE.CResRef_m_resRefLowerCase_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CResRef_m_resRefLowerCase_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CResRef_m_resRefLowerCase_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CResRef_m_resRefLowerCase_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_char m_resRef {
+  public byte[] m_resRef {
     set {
-      NWNXLibPINVOKE.CResRef_m_resRef_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CResRef_m_resRef_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CResRef_m_resRef_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CResRef_m_resRef_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public CResRef() : this(NWNXLibPINVOKE.new_CResRef__SWIG_0(), true) {
   }
 
-  public CResRef(SWIGTYPE_p_unsigned_char resRef) : this(NWNXLibPINVOKE.new_CResRef__SWIG_1(SWIGTYPE_p_unsigned_char.getCPtr(resRef)), true) {
+  public CResRef(byte[] resRef) : this(NWNXLibPINVOKE.new_CResRef__SWIG_1(resRef), true) {
   }
 
   public CResRef(CExoString sName) : this(NWNXLibPINVOKE.new_CResRef__SWIG_2(CExoString.getCPtr(sName)), true) {
@@ -113,7 +118,7 @@ public class CResRef : global::System.IDisposable {
   public CResRef(string pName) : this(NWNXLibPINVOKE.new_CResRef__SWIG_3(pName), true) {
   }
 
-  public CResRef(SWIGTYPE_p_unsigned_char pName, byte nLength) : this(NWNXLibPINVOKE.new_CResRef__SWIG_4(SWIGTYPE_p_unsigned_char.getCPtr(pName), nLength), true) {
+  public CResRef(byte* pName, byte nLength) : this(NWNXLibPINVOKE.new_CResRef__SWIG_4((global::System.IntPtr)pName, nLength), true) {
   }
 
   public void CopyToString(CExoString str) {
@@ -170,8 +175,8 @@ public class CResRef : global::System.IDisposable {
     return ret;
   }
 
-  public CResRef _OpAssign(SWIGTYPE_p_unsigned_char resRef) {
-    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(resRef)), true);
+  public CResRef _OpAssign(byte[] resRef) {
+    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_1(swigCPtr, resRef), true);
     return ret;
   }
 
@@ -192,8 +197,8 @@ public class CResRef : global::System.IDisposable {
     return ret;
   }
 
-  public void GetResRef(SWIGTYPE_p_unsigned_char resRef) {
-    NWNXLibPINVOKE.CResRef_GetResRef__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(resRef));
+  public void GetResRef(byte[] resRef) {
+    NWNXLibPINVOKE.CResRef_GetResRef__SWIG_0(swigCPtr, resRef);
   }
 
   public string GetResRef() {

@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CResTLK : CRes {
+public unsafe class CResTLK : CRes {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CResTLK(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResTLK_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CResTLK(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResTLK_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CResTLK obj) {

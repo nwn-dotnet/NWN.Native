@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CTwoDimArrays : global::System.IDisposable {
+public unsafe class CTwoDimArrays : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CTwoDimArrays(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CTwoDimArrays(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CTwoDimArrays obj) {
@@ -99,48 +104,48 @@ public class CTwoDimArrays : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_lstEpicBaseAttackBonus {
+  public byte[] m_lstEpicBaseAttackBonus {
     set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicBaseAttackBonus_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicBaseAttackBonus_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicBaseAttackBonus_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicBaseAttackBonus_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_char m_lstEpicFortificationSaveThrowBonus {
+  public byte[] m_lstEpicFortificationSaveThrowBonus {
     set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicFortificationSaveThrowBonus_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicFortificationSaveThrowBonus_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicFortificationSaveThrowBonus_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicFortificationSaveThrowBonus_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_char m_lstEpicWillSaveThrowBonus {
+  public byte[] m_lstEpicWillSaveThrowBonus {
     set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicWillSaveThrowBonus_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicWillSaveThrowBonus_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicWillSaveThrowBonus_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicWillSaveThrowBonus_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_char m_lstEpicReflexSaveThrowBonus {
+  public byte[] m_lstEpicReflexSaveThrowBonus {
     set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicReflexSaveThrowBonus_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicReflexSaveThrowBonus_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicReflexSaveThrowBonus_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicReflexSaveThrowBonus_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public C2DA m_pAppearanceTable {

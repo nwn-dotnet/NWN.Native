@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CExoResFile : CExoPackedFile {
+public unsafe class CExoResFile : CExoPackedFile {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CExoResFile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CExoResFile_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CExoResFile(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CExoResFile_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoResFile obj) {
@@ -145,8 +149,8 @@ public class CExoResFile : CExoPackedFile {
     return ret;
   }
 
-  public override int OpenFile(SWIGTYPE_p_unsigned_char pCipher) {
-    int ret = NWNXLibPINVOKE.CExoResFile_OpenFile__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(pCipher));
+  public override int OpenFile(byte* pCipher) {
+    int ret = NWNXLibPINVOKE.CExoResFile_OpenFile__SWIG_1(swigCPtr, (global::System.IntPtr)pCipher);
     return ret;
   }
 
@@ -155,14 +159,14 @@ public class CExoResFile : CExoPackedFile {
     return ret;
   }
 
-  public override uint ReadResource(RESID nID, System.IntPtr pData, uint nSize, uint nDataOffset) {
-    uint ret = NWNXLibPINVOKE.CExoResFile_ReadResource(swigCPtr, RESID.getCPtr(nID), pData, nSize, nDataOffset);
+  public override uint ReadResource(RESID nID, void* pData, uint nSize, uint nDataOffset) {
+    uint ret = NWNXLibPINVOKE.CExoResFile_ReadResource(swigCPtr, RESID.getCPtr(nID), (global::System.IntPtr)pData, nSize, nDataOffset);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public override void ReadResourceAsync(RESID nID, System.IntPtr pData, uint nSize, uint nDataOffset) {
-    NWNXLibPINVOKE.CExoResFile_ReadResourceAsync(swigCPtr, RESID.getCPtr(nID), pData, nSize, nDataOffset);
+  public override void ReadResourceAsync(RESID nID, void* pData, uint nSize, uint nDataOffset) {
+    NWNXLibPINVOKE.CExoResFile_ReadResourceAsync(swigCPtr, RESID.getCPtr(nID), (global::System.IntPtr)pData, nSize, nDataOffset);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 

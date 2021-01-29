@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CScriptParseTreeNode : global::System.IDisposable {
+public unsafe class CScriptParseTreeNode : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CScriptParseTreeNode(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CScriptParseTreeNode(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CScriptParseTreeNode obj) {
@@ -37,7 +42,7 @@ public class CScriptParseTreeNode : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CScriptParseTreeNode(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -149,15 +154,15 @@ public class CScriptParseTreeNode : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_float fVectorData {
+  public float[] fVectorData {
     set {
-      NWNXLibPINVOKE.CScriptParseTreeNode_fVectorData_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CScriptParseTreeNode_fVectorData_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptParseTreeNode_fVectorData_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        float[] retVal = NWNXLibPINVOKE.CScriptParseTreeNode_fVectorData_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public int m_nFileReference {
@@ -241,6 +246,9 @@ public class CScriptParseTreeNode : global::System.IDisposable {
       int ret = NWNXLibPINVOKE.CScriptParseTreeNode_m_nStackPointer_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public CScriptParseTreeNode() : this(NWNXLibPINVOKE.new_CScriptParseTreeNode(), true) {
   }
 
 }

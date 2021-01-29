@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CERFKey : global::System.IDisposable {
+public unsafe class CERFKey : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CERFKey(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CERFKey(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CERFKey obj) {
@@ -108,15 +113,15 @@ public class CERFKey : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_nUnused {
+  public byte[] m_nUnused {
     set {
-      NWNXLibPINVOKE.CERFKey_m_nUnused_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CERFKey_m_nUnused_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CERFKey_m_nUnused_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CERFKey_m_nUnused_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public CERFKey() : this(NWNXLibPINVOKE.new_CERFKey(), true) {

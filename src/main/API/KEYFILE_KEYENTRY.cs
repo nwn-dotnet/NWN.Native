@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class KEYFILE_KEYENTRY : global::System.IDisposable {
+public unsafe class KEYFILE_KEYENTRY : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public KEYFILE_KEYENTRY(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public KEYFILE_KEYENTRY(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(KEYFILE_KEYENTRY obj) {
@@ -37,7 +42,7 @@ public class KEYFILE_KEYENTRY : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_KEYFILE_KEYENTRY(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -78,15 +83,15 @@ public class KEYFILE_KEYENTRY : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_unsigned_char resRef {
+  public byte[] resRef {
     set {
-      NWNXLibPINVOKE.KEYFILE_KEYENTRY_resRef_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.KEYFILE_KEYENTRY_resRef_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.KEYFILE_KEYENTRY_resRef_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.KEYFILE_KEYENTRY_resRef_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public ushort nType {
@@ -107,6 +112,9 @@ public class KEYFILE_KEYENTRY : global::System.IDisposable {
       uint ret = NWNXLibPINVOKE.KEYFILE_KEYENTRY_nID_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public KEYFILE_KEYENTRY() : this(NWNXLibPINVOKE.new_KEYFILE_KEYENTRY(), true) {
   }
 
 }

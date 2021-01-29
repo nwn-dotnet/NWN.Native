@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CResStruct : global::System.IDisposable {
+public unsafe class CResStruct : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CResStruct(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CResStruct(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CResStruct obj) {
@@ -37,7 +42,7 @@ public class CResStruct : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CResStruct(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -100,14 +105,14 @@ public class CResStruct : global::System.IDisposable {
     } 
   }
 
-  public System.IntPtr m_pData {
+  public void* m_pData {
     set {
-      NWNXLibPINVOKE.CResStruct_m_pData_set(swigCPtr, value);
+      NWNXLibPINVOKE.CResStruct_m_pData_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr cPtr = NWNXLibPINVOKE.CResStruct_m_pData_get(swigCPtr); 
-        return cPtr; 
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CResStruct_m_pData_get(swigCPtr); 
+        return (void*)retVal; 
+    }
 
   }
 
@@ -141,6 +146,9 @@ public class CResStruct : global::System.IDisposable {
       CStringFieldIDType ret = (cPtr == global::System.IntPtr.Zero) ? null : new CStringFieldIDType(cPtr, false);
       return ret;
     } 
+  }
+
+  public CResStruct() : this(NWNXLibPINVOKE.new_CResStruct(), true) {
   }
 
 }

@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWSCreatureStats : global::System.IDisposable {
+public unsafe class CNWSCreatureStats : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWSCreatureStats(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSCreatureStats(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSCreatureStats obj) {
@@ -751,15 +756,15 @@ public class CNWSCreatureStats : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_pSpellFailure {
+  public byte[] m_pSpellFailure {
     set {
-      NWNXLibPINVOKE.CNWSCreatureStats_m_pSpellFailure_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSCreatureStats_m_pSpellFailure_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreatureStats_m_pSpellFailure_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_pSpellFailure_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public char m_nSpellResistance {
@@ -1204,15 +1209,15 @@ public class CNWSCreatureStats : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_pPartVariation {
+  public byte[] m_pPartVariation {
     set {
-      NWNXLibPINVOKE.CNWSCreatureStats_m_pPartVariation_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSCreatureStats_m_pPartVariation_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreatureStats_m_pPartVariation_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_pPartVariation_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public uint m_nTailVariation {
@@ -1361,7 +1366,7 @@ public class CNWSCreatureStats : global::System.IDisposable {
   public CNWSCreatureStats(CNWSCreature pCreature) : this(NWNXLibPINVOKE.new_CNWSCreatureStats(CNWSCreature.getCPtr(pCreature)), true) {
   }
 
-  public void UpdateLastStatsObject(ulong nUpdatesRequired, CNWCreatureStatsUpdate updateObject) {
+  public void UpdateLastStatsObject(uint nUpdatesRequired, CNWCreatureStatsUpdate updateObject) {
     NWNXLibPINVOKE.CNWSCreatureStats_UpdateLastStatsObject(swigCPtr, nUpdatesRequired, CNWCreatureStatsUpdate.getCPtr(updateObject));
   }
 
@@ -1440,9 +1445,8 @@ public class CNWSCreatureStats : global::System.IDisposable {
     return ret;
   }
 
-  public void SetNormalBonusFlags(ushort nFeatID, SWIGTYPE_p_int bNormalListFeat, SWIGTYPE_p_int bBonusListFeat) {
-    NWNXLibPINVOKE.CNWSCreatureStats_SetNormalBonusFlags(swigCPtr, nFeatID, SWIGTYPE_p_int.getCPtr(bNormalListFeat), SWIGTYPE_p_int.getCPtr(bBonusListFeat));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public void SetNormalBonusFlags(ushort nFeatID, int* bNormalListFeat, int* bBonusListFeat) {
+    NWNXLibPINVOKE.CNWSCreatureStats_SetNormalBonusFlags(swigCPtr, nFeatID, (global::System.IntPtr)bNormalListFeat, (global::System.IntPtr)bBonusListFeat);
   }
 
   public int FeatAcquired(ushort nFeat, CExoArrayListUInt16 pChosenFeats, int bCheckBonusFeats) {
@@ -1788,20 +1792,20 @@ public class CNWSCreatureStats : global::System.IDisposable {
     return ret;
   }
 
-  public void GetAbilityInfo(byte nAbilityId, SWIGTYPE_p_unsigned_char pStat, string pMod, SWIGTYPE_p_unsigned_char pBase, string pTotalBonus) {
-    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_0(swigCPtr, nAbilityId, SWIGTYPE_p_unsigned_char.getCPtr(pStat), pMod, SWIGTYPE_p_unsigned_char.getCPtr(pBase), pTotalBonus);
+  public void GetAbilityInfo(byte nAbilityId, byte* pStat, string pMod, byte* pBase, string pTotalBonus) {
+    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_0(swigCPtr, nAbilityId, (global::System.IntPtr)pStat, pMod, (global::System.IntPtr)pBase, pTotalBonus);
   }
 
-  public void GetAbilityInfo(byte nAbilityId, SWIGTYPE_p_unsigned_char pStat, string pMod, SWIGTYPE_p_unsigned_char pBase) {
-    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_1(swigCPtr, nAbilityId, SWIGTYPE_p_unsigned_char.getCPtr(pStat), pMod, SWIGTYPE_p_unsigned_char.getCPtr(pBase));
+  public void GetAbilityInfo(byte nAbilityId, byte* pStat, string pMod, byte* pBase) {
+    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_1(swigCPtr, nAbilityId, (global::System.IntPtr)pStat, pMod, (global::System.IntPtr)pBase);
   }
 
-  public void GetAbilityInfo(byte nAbilityId, SWIGTYPE_p_unsigned_char pStat, string pMod) {
-    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_2(swigCPtr, nAbilityId, SWIGTYPE_p_unsigned_char.getCPtr(pStat), pMod);
+  public void GetAbilityInfo(byte nAbilityId, byte* pStat, string pMod) {
+    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_2(swigCPtr, nAbilityId, (global::System.IntPtr)pStat, pMod);
   }
 
-  public void GetAbilityInfo(byte nAbilityId, SWIGTYPE_p_unsigned_char pStat) {
-    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_3(swigCPtr, nAbilityId, SWIGTYPE_p_unsigned_char.getCPtr(pStat));
+  public void GetAbilityInfo(byte nAbilityId, byte* pStat) {
+    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_3(swigCPtr, nAbilityId, (global::System.IntPtr)pStat);
   }
 
   public char GetSkillRank(byte nSkill, CNWSObject pVersus, int bBaseOnly) {
@@ -1904,9 +1908,8 @@ public class CNWSCreatureStats : global::System.IDisposable {
     return ret;
   }
 
-  public void CalcLevelUpNumberFeats(byte nLeveledUpLevel, byte nLeveledUpClass, SWIGTYPE_p_unsigned_char nNumberNormalFeats, SWIGTYPE_p_unsigned_char nNumberBonusFeats) {
-    NWNXLibPINVOKE.CNWSCreatureStats_CalcLevelUpNumberFeats(swigCPtr, nLeveledUpLevel, nLeveledUpClass, SWIGTYPE_p_unsigned_char.getCPtr(nNumberNormalFeats), SWIGTYPE_p_unsigned_char.getCPtr(nNumberBonusFeats));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public void CalcLevelUpNumberFeats(byte nLeveledUpLevel, byte nLeveledUpClass, byte* nNumberNormalFeats, byte* nNumberBonusFeats) {
+    NWNXLibPINVOKE.CNWSCreatureStats_CalcLevelUpNumberFeats(swigCPtr, nLeveledUpLevel, nLeveledUpClass, (global::System.IntPtr)nNumberNormalFeats, (global::System.IntPtr)nNumberBonusFeats);
   }
 
   public int GetCreatureHasTalent(int nType, int nID, byte nMetaType) {
@@ -1919,51 +1922,43 @@ public class CNWSCreatureStats : global::System.IDisposable {
     return ret;
   }
 
-  public int GetCreatureTalentRandom(int nCategory, int nMaxCR, SWIGTYPE_p_int nType, SWIGTYPE_p_int nID, SWIGTYPE_p_unsigned_char nMultiClass, SWIGTYPE_p_unsigned_int oidItem, SWIGTYPE_p_int nItemPropertyIndex, SWIGTYPE_p_unsigned_char nCasterLevel, SWIGTYPE_p_unsigned_char nMetaType) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandom(swigCPtr, nCategory, nMaxCR, SWIGTYPE_p_int.getCPtr(nType), SWIGTYPE_p_int.getCPtr(nID), SWIGTYPE_p_unsigned_char.getCPtr(nMultiClass), SWIGTYPE_p_unsigned_int.getCPtr(oidItem), SWIGTYPE_p_int.getCPtr(nItemPropertyIndex), SWIGTYPE_p_unsigned_char.getCPtr(nCasterLevel), SWIGTYPE_p_unsigned_char.getCPtr(nMetaType));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int GetCreatureTalentRandom(int nCategory, int nMaxCR, int* nType, int* nID, byte* nMultiClass, uint* oidItem, int* nItemPropertyIndex, byte* nCasterLevel, byte* nMetaType) {
+    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandom(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass, (global::System.IntPtr)oidItem, (global::System.IntPtr)nItemPropertyIndex, (global::System.IntPtr)nCasterLevel, (global::System.IntPtr)nMetaType);
     return ret;
   }
 
-  public int GetCreatureTalentRandomSpell(int nCategory, int nMaxCR, SWIGTYPE_p_int nType, SWIGTYPE_p_int nID, SWIGTYPE_p_unsigned_char nMultiClass, SWIGTYPE_p_unsigned_char nMetaType) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomSpell(swigCPtr, nCategory, nMaxCR, SWIGTYPE_p_int.getCPtr(nType), SWIGTYPE_p_int.getCPtr(nID), SWIGTYPE_p_unsigned_char.getCPtr(nMultiClass), SWIGTYPE_p_unsigned_char.getCPtr(nMetaType));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int GetCreatureTalentRandomSpell(int nCategory, int nMaxCR, int* nType, int* nID, byte* nMultiClass, byte* nMetaType) {
+    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomSpell(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass, (global::System.IntPtr)nMetaType);
     return ret;
   }
 
-  public int GetCreatureTalentRandomSpellFromItem(int nCategory, int nMaxCR, SWIGTYPE_p_int nType, SWIGTYPE_p_int nID, SWIGTYPE_p_unsigned_char nMultiClass, SWIGTYPE_p_unsigned_int oidItem, SWIGTYPE_p_int nItemPropertyIndex) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomSpellFromItem(swigCPtr, nCategory, nMaxCR, SWIGTYPE_p_int.getCPtr(nType), SWIGTYPE_p_int.getCPtr(nID), SWIGTYPE_p_unsigned_char.getCPtr(nMultiClass), SWIGTYPE_p_unsigned_int.getCPtr(oidItem), SWIGTYPE_p_int.getCPtr(nItemPropertyIndex));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int GetCreatureTalentRandomSpellFromItem(int nCategory, int nMaxCR, int* nType, int* nID, byte* nMultiClass, uint* oidItem, int* nItemPropertyIndex) {
+    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomSpellFromItem(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass, (global::System.IntPtr)oidItem, (global::System.IntPtr)nItemPropertyIndex);
     return ret;
   }
 
-  public int GetCreatureTalentRandomSpellLikeAbility(int nCategory, int nMaxCR, SWIGTYPE_p_int nType, SWIGTYPE_p_int nID, SWIGTYPE_p_unsigned_char nMultiClass, SWIGTYPE_p_unsigned_char nCasterLevel) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomSpellLikeAbility(swigCPtr, nCategory, nMaxCR, SWIGTYPE_p_int.getCPtr(nType), SWIGTYPE_p_int.getCPtr(nID), SWIGTYPE_p_unsigned_char.getCPtr(nMultiClass), SWIGTYPE_p_unsigned_char.getCPtr(nCasterLevel));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int GetCreatureTalentRandomSpellLikeAbility(int nCategory, int nMaxCR, int* nType, int* nID, byte* nMultiClass, byte* nCasterLevel) {
+    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomSpellLikeAbility(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass, (global::System.IntPtr)nCasterLevel);
     return ret;
   }
 
-  public int GetCreatureTalentRandomFeat(int nCategory, int nMaxCR, SWIGTYPE_p_int nType, SWIGTYPE_p_int nID, SWIGTYPE_p_unsigned_char nMultiClass) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomFeat(swigCPtr, nCategory, nMaxCR, SWIGTYPE_p_int.getCPtr(nType), SWIGTYPE_p_int.getCPtr(nID), SWIGTYPE_p_unsigned_char.getCPtr(nMultiClass));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int GetCreatureTalentRandomFeat(int nCategory, int nMaxCR, int* nType, int* nID, byte* nMultiClass) {
+    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomFeat(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass);
     return ret;
   }
 
-  public int GetCreatureTalentRandomSkill(int nCategory, int nMaxCR, SWIGTYPE_p_int nType, SWIGTYPE_p_int nID, SWIGTYPE_p_unsigned_char nMultiClass) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomSkill(swigCPtr, nCategory, nMaxCR, SWIGTYPE_p_int.getCPtr(nType), SWIGTYPE_p_int.getCPtr(nID), SWIGTYPE_p_unsigned_char.getCPtr(nMultiClass));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int GetCreatureTalentRandomSkill(int nCategory, int nMaxCR, int* nType, int* nID, byte* nMultiClass) {
+    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomSkill(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass);
     return ret;
   }
 
-  public int GetCreatureTalentRandomKnownSpell(int nCategory, int nMaxCR, SWIGTYPE_p_int nType, SWIGTYPE_p_int nID, SWIGTYPE_p_unsigned_char nMultiClass, int nClass) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomKnownSpell(swigCPtr, nCategory, nMaxCR, SWIGTYPE_p_int.getCPtr(nType), SWIGTYPE_p_int.getCPtr(nID), SWIGTYPE_p_unsigned_char.getCPtr(nMultiClass), nClass);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int GetCreatureTalentRandomKnownSpell(int nCategory, int nMaxCR, int* nType, int* nID, byte* nMultiClass, int nClass) {
+    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomKnownSpell(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass, nClass);
     return ret;
   }
 
-  public int GetCreatureTalentRandomMemorisedSpell(int nCategory, int nMaxCR, SWIGTYPE_p_int nType, SWIGTYPE_p_int nID, SWIGTYPE_p_unsigned_char nMultiClass, int nClass, SWIGTYPE_p_unsigned_char nMetaType) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomMemorisedSpell(swigCPtr, nCategory, nMaxCR, SWIGTYPE_p_int.getCPtr(nType), SWIGTYPE_p_int.getCPtr(nID), SWIGTYPE_p_unsigned_char.getCPtr(nMultiClass), nClass, SWIGTYPE_p_unsigned_char.getCPtr(nMetaType));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int GetCreatureTalentRandomMemorisedSpell(int nCategory, int nMaxCR, int* nType, int* nID, byte* nMultiClass, int nClass, byte* nMetaType) {
+    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomMemorisedSpell(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass, nClass, (global::System.IntPtr)nMetaType);
     return ret;
   }
 
@@ -2407,8 +2402,8 @@ public class CNWSCreatureStats : global::System.IDisposable {
     return ret;
   }
 
-  public byte GetMemorizedSpellReadyCount(byte nMultiClass, uint nSpellID, SWIGTYPE_p_unsigned_char nMinSpellLevel, SWIGTYPE_p_unsigned_char nMinSpellSlot) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetMemorizedSpellReadyCount__SWIG_3(swigCPtr, nMultiClass, nSpellID, SWIGTYPE_p_unsigned_char.getCPtr(nMinSpellLevel), SWIGTYPE_p_unsigned_char.getCPtr(nMinSpellSlot));
+  public byte GetMemorizedSpellReadyCount(byte nMultiClass, uint nSpellID, byte* nMinSpellLevel, byte* nMinSpellSlot) {
+    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetMemorizedSpellReadyCount__SWIG_3(swigCPtr, nMultiClass, nSpellID, (global::System.IntPtr)nMinSpellLevel, (global::System.IntPtr)nMinSpellSlot);
     return ret;
   }
 
@@ -2575,15 +2570,13 @@ public class CNWSCreatureStats : global::System.IDisposable {
     return ret;
   }
 
-  public int CheckSpellSuitability(int nSpellId, CNWSpell pSpell, int nCategory, int nMaxCR, int nSpellLevel, int nSpellSlot, int nClass, int bCheckMetamagic, SWIGTYPE_p_unsigned_char nMetaType, int nMasterSpellId) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_CheckSpellSuitability__SWIG_0(swigCPtr, nSpellId, CNWSpell.getCPtr(pSpell), nCategory, nMaxCR, nSpellLevel, nSpellSlot, nClass, bCheckMetamagic, SWIGTYPE_p_unsigned_char.getCPtr(nMetaType), nMasterSpellId);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int CheckSpellSuitability(int nSpellId, CNWSpell pSpell, int nCategory, int nMaxCR, int nSpellLevel, int nSpellSlot, int nClass, int bCheckMetamagic, byte* nMetaType, int nMasterSpellId) {
+    int ret = NWNXLibPINVOKE.CNWSCreatureStats_CheckSpellSuitability__SWIG_0(swigCPtr, nSpellId, CNWSpell.getCPtr(pSpell), nCategory, nMaxCR, nSpellLevel, nSpellSlot, nClass, bCheckMetamagic, (global::System.IntPtr)nMetaType, nMasterSpellId);
     return ret;
   }
 
-  public int CheckSpellSuitability(int nSpellId, CNWSpell pSpell, int nCategory, int nMaxCR, int nSpellLevel, int nSpellSlot, int nClass, int bCheckMetamagic, SWIGTYPE_p_unsigned_char nMetaType) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_CheckSpellSuitability__SWIG_1(swigCPtr, nSpellId, CNWSpell.getCPtr(pSpell), nCategory, nMaxCR, nSpellLevel, nSpellSlot, nClass, bCheckMetamagic, SWIGTYPE_p_unsigned_char.getCPtr(nMetaType));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int CheckSpellSuitability(int nSpellId, CNWSpell pSpell, int nCategory, int nMaxCR, int nSpellLevel, int nSpellSlot, int nClass, int bCheckMetamagic, byte* nMetaType) {
+    int ret = NWNXLibPINVOKE.CNWSCreatureStats_CheckSpellSuitability__SWIG_1(swigCPtr, nSpellId, CNWSpell.getCPtr(pSpell), nCategory, nMaxCR, nSpellLevel, nSpellSlot, nClass, bCheckMetamagic, (global::System.IntPtr)nMetaType);
     return ret;
   }
 

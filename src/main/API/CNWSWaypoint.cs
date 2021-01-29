@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWSWaypoint : CNWSObject {
+public unsafe class CNWSWaypoint : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWSWaypoint(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSWaypoint_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSWaypoint(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSWaypoint_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSWaypoint obj) {
@@ -134,8 +138,8 @@ public class CNWSWaypoint : CNWSObject {
     return ret;
   }
 
-  public override void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSWaypoint_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
+  public override void EventHandler(uint nEventId, uint nCallerObjectId, void* pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSWaypoint_EventHandler(swigCPtr, nEventId, nCallerObjectId, (global::System.IntPtr)pScript, nCalendarDay, nTimeOfDay);
   }
 
   public void RemoveFromArea() {

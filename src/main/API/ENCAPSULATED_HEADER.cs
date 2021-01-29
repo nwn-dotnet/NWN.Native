@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class ENCAPSULATED_HEADER : global::System.IDisposable {
+public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public ENCAPSULATED_HEADER(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public ENCAPSULATED_HEADER(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(ENCAPSULATED_HEADER obj) {
@@ -37,7 +42,7 @@ public class ENCAPSULATED_HEADER : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_ENCAPSULATED_HEADER(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -188,26 +193,29 @@ public class ENCAPSULATED_HEADER : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char pMD5 {
+  public byte[] pMD5 {
     set {
-      NWNXLibPINVOKE.ENCAPSULATED_HEADER_pMD5_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.ENCAPSULATED_HEADER_pMD5_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.ENCAPSULATED_HEADER_pMD5_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.ENCAPSULATED_HEADER_pMD5_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_char pUnused {
+  public byte[] pUnused {
     set {
-      NWNXLibPINVOKE.ENCAPSULATED_HEADER_pUnused_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.ENCAPSULATED_HEADER_pUnused_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.ENCAPSULATED_HEADER_pUnused_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.ENCAPSULATED_HEADER_pUnused_get(swigCPtr);
+        return retVal;
+    }
+
+  }
+
+  public ENCAPSULATED_HEADER() : this(NWNXLibPINVOKE.new_ENCAPSULATED_HEADER(), true) {
   }
 
 }

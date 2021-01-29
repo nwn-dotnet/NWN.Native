@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class StackElement : global::System.IDisposable {
+public unsafe class StackElement : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public StackElement(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public StackElement(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(StackElement obj) {
@@ -37,7 +42,7 @@ public class StackElement : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_StackElement(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -108,15 +113,18 @@ public class StackElement : global::System.IDisposable {
     } 
   }
 
-  public System.IntPtr m_pStackPtr {
+  public void* m_pStackPtr {
     set {
-      NWNXLibPINVOKE.StackElement_m_pStackPtr_set(swigCPtr, value);
+      NWNXLibPINVOKE.StackElement_m_pStackPtr_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr cPtr = NWNXLibPINVOKE.StackElement_m_pStackPtr_get(swigCPtr); 
-        return cPtr; 
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.StackElement_m_pStackPtr_get(swigCPtr); 
+        return (void*)retVal; 
+    }
 
+  }
+
+  public StackElement() : this(NWNXLibPINVOKE.new_StackElement(), true) {
   }
 
 }

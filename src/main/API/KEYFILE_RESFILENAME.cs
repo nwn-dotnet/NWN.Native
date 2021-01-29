@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class KEYFILE_RESFILENAME : global::System.IDisposable {
+public unsafe class KEYFILE_RESFILENAME : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public KEYFILE_RESFILENAME(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public KEYFILE_RESFILENAME(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(KEYFILE_RESFILENAME obj) {
@@ -37,7 +42,7 @@ public class KEYFILE_RESFILENAME : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_KEYFILE_RESFILENAME(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -116,6 +121,9 @@ public class KEYFILE_RESFILENAME : global::System.IDisposable {
       ushort ret = NWNXLibPINVOKE.KEYFILE_RESFILENAME_bDrives_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public KEYFILE_RESFILENAME() : this(NWNXLibPINVOKE.new_KEYFILE_RESFILENAME(), true) {
   }
 
 }

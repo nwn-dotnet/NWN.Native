@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWTileSetManager : global::System.IDisposable {
+public unsafe class CNWTileSetManager : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWTileSetManager(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWTileSetManager(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWTileSetManager obj) {
@@ -89,15 +94,15 @@ public class CNWTileSetManager : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_anTileSetRegistered {
+  public int[] m_anTileSetRegistered {
     set {
-      NWNXLibPINVOKE.CNWTileSetManager_m_anTileSetRegistered_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSetManager_m_anTileSetRegistered_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSetManager_m_anTileSetRegistered_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        int[] retVal = NWNXLibPINVOKE.CNWTileSetManager_m_anTileSetRegistered_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public SWIGTYPE_p_a_4__p_CNWTilePathNode m_apTileNodes {
@@ -139,13 +144,12 @@ public class CNWTileSetManager : global::System.IDisposable {
     return ret;
   }
 
-  public void ComputePathNodeInformation(byte nPathNode, int nPathNodeOrientation, SWIGTYPE_p_int nRegionNodes, SWIGTYPE_p_int nTileExits, SWIGTYPE_p_p_float pfRegionNodes, SWIGTYPE_p_p_float pfTileExits, SWIGTYPE_p_p_int pnTileExitRegion) {
-    NWNXLibPINVOKE.CNWTileSetManager_ComputePathNodeInformation(swigCPtr, nPathNode, nPathNodeOrientation, SWIGTYPE_p_int.getCPtr(nRegionNodes), SWIGTYPE_p_int.getCPtr(nTileExits), SWIGTYPE_p_p_float.getCPtr(pfRegionNodes), SWIGTYPE_p_p_float.getCPtr(pfTileExits), SWIGTYPE_p_p_int.getCPtr(pnTileExitRegion));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public void ComputePathNodeInformation(byte nPathNode, int nPathNodeOrientation, int* nRegionNodes, int* nTileExits, float** pfRegionNodes, float** pfTileExits, int** pnTileExitRegion) {
+    NWNXLibPINVOKE.CNWTileSetManager_ComputePathNodeInformation(swigCPtr, nPathNode, nPathNodeOrientation, (global::System.IntPtr)nRegionNodes, (global::System.IntPtr)nTileExits, (global::System.IntPtr)pfRegionNodes, (global::System.IntPtr)pfTileExits, (global::System.IntPtr)pnTileExitRegion);
   }
 
-  public void ComputePathNodeRotation(int nOrientation, SWIGTYPE_p_float fX, SWIGTYPE_p_float fY) {
-    NWNXLibPINVOKE.CNWTileSetManager_ComputePathNodeRotation(swigCPtr, nOrientation, SWIGTYPE_p_float.getCPtr(fX), SWIGTYPE_p_float.getCPtr(fY));
+  public void ComputePathNodeRotation(int nOrientation, float* fX, float* fY) {
+    NWNXLibPINVOKE.CNWTileSetManager_ComputePathNodeRotation(swigCPtr, nOrientation, (global::System.IntPtr)fX, (global::System.IntPtr)fY);
   }
 
 }

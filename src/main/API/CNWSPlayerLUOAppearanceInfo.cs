@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
+public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWSPlayerLUOAppearanceInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSPlayerLUOAppearanceInfo(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSPlayerLUOAppearanceInfo obj) {
@@ -37,7 +42,7 @@ public class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CNWSPlayerLUOAppearanceInfo(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -208,15 +213,15 @@ public class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_pPartVariation {
+  public byte[] m_pPartVariation {
     set {
-      NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_pPartVariation_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_pPartVariation_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_pPartVariation_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_pPartVariation_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public byte m_nHeadVariation {
@@ -289,6 +294,9 @@ public class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       ObjectVisualTransformData ret = (cPtr == global::System.IntPtr.Zero) ? null : new ObjectVisualTransformData(cPtr, false);
       return ret;
     } 
+  }
+
+  public CNWSPlayerLUOAppearanceInfo() : this(NWNXLibPINVOKE.new_CNWSPlayerLUOAppearanceInfo(), true) {
   }
 
 }

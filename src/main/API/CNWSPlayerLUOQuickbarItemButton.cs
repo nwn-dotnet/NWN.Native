@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWSPlayerLUOQuickbarItemButton : global::System.IDisposable {
+public unsafe class CNWSPlayerLUOQuickbarItemButton : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWSPlayerLUOQuickbarItemButton(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSPlayerLUOQuickbarItemButton(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSPlayerLUOQuickbarItemButton obj) {
@@ -37,7 +42,7 @@ public class CNWSPlayerLUOQuickbarItemButton : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CNWSPlayerLUOQuickbarItemButton(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -116,6 +121,9 @@ public class CNWSPlayerLUOQuickbarItemButton : global::System.IDisposable {
       ushort ret = NWNXLibPINVOKE.CNWSPlayerLUOQuickbarItemButton_m_nUseCount_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public CNWSPlayerLUOQuickbarItemButton() : this(NWNXLibPINVOKE.new_CNWSPlayerLUOQuickbarItemButton(), true) {
   }
 
 }

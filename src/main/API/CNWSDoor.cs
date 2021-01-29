@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWSDoor : CNWSObject {
+public unsafe class CNWSDoor : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWSDoor(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSDoor_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSDoor(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSDoor_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSDoor obj) {
@@ -614,8 +618,8 @@ public class CNWSDoor : CNWSObject {
     return ret;
   }
 
-  public override void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSDoor_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
+  public override void EventHandler(uint nEventId, uint nCallerObjectId, void* pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSDoor_EventHandler(swigCPtr, nEventId, nCallerObjectId, (global::System.IntPtr)pScript, nCalendarDay, nTimeOfDay);
   }
 
   public int LoadDoor(CResGFF pRes, CResStruct cItemStruct) {

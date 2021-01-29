@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
+public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWSCreatureStats_ClassInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSCreatureStats_ClassInfo(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSCreatureStats_ClassInfo obj) {
@@ -100,37 +105,37 @@ public class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_int m_nBonusSpellsList {
+  public uint[] m_nBonusSpellsList {
     set {
-      NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nBonusSpellsList_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nBonusSpellsList_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nBonusSpellsList_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        uint[] retVal = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nBonusSpellsList_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_char m_nSpellsPerDayLeft {
+  public byte[] m_nSpellsPerDayLeft {
     set {
-      NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nSpellsPerDayLeft_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nSpellsPerDayLeft_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nSpellsPerDayLeft_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nSpellsPerDayLeft_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_char m_nMaxSpellsPerDayLeft {
+  public byte[] m_nMaxSpellsPerDayLeft {
     set {
-      NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nMaxSpellsPerDayLeft_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nMaxSpellsPerDayLeft_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nMaxSpellsPerDayLeft_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nMaxSpellsPerDayLeft_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public byte m_nClass {
@@ -173,15 +178,15 @@ public class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_nDomain {
+  public byte[] m_nDomain {
     set {
-      NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nDomain_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nDomain_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nDomain_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nDomain_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public int m_bHasLostClassAbilities {
@@ -279,13 +284,13 @@ public class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
     NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_SetMemorizedSpellInSlotReady(swigCPtr, nSpellLevel, nSpellSlot, bReady);
   }
 
-  public byte GetMemorizedSpellReadyCount(uint nSpellID, SWIGTYPE_p_unsigned_char nMinSpellLevel, SWIGTYPE_p_unsigned_char nMinSpellSlot, byte nRequestedMetaType) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_GetMemorizedSpellReadyCount__SWIG_0(swigCPtr, nSpellID, SWIGTYPE_p_unsigned_char.getCPtr(nMinSpellLevel), SWIGTYPE_p_unsigned_char.getCPtr(nMinSpellSlot), nRequestedMetaType);
+  public byte GetMemorizedSpellReadyCount(uint nSpellID, byte* nMinSpellLevel, byte* nMinSpellSlot, byte nRequestedMetaType) {
+    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_GetMemorizedSpellReadyCount__SWIG_0(swigCPtr, nSpellID, (global::System.IntPtr)nMinSpellLevel, (global::System.IntPtr)nMinSpellSlot, nRequestedMetaType);
     return ret;
   }
 
-  public byte GetMemorizedSpellReadyCount(uint nSpellID, SWIGTYPE_p_unsigned_char nMinSpellLevel, SWIGTYPE_p_unsigned_char nMinSpellSlot) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_GetMemorizedSpellReadyCount__SWIG_1(swigCPtr, nSpellID, SWIGTYPE_p_unsigned_char.getCPtr(nMinSpellLevel), SWIGTYPE_p_unsigned_char.getCPtr(nMinSpellSlot));
+  public byte GetMemorizedSpellReadyCount(uint nSpellID, byte* nMinSpellLevel, byte* nMinSpellSlot) {
+    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_GetMemorizedSpellReadyCount__SWIG_1(swigCPtr, nSpellID, (global::System.IntPtr)nMinSpellLevel, (global::System.IntPtr)nMinSpellSlot);
     return ret;
   }
 

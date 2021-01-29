@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class NWNXExportedGlobals : global::System.IDisposable {
+public unsafe class NWNXExportedGlobals : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public NWNXExportedGlobals(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public NWNXExportedGlobals(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(NWNXExportedGlobals obj) {
@@ -37,7 +42,7 @@ public class NWNXExportedGlobals : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_NWNXExportedGlobals(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -188,59 +193,62 @@ public class NWNXExportedGlobals : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int pbEnableCombatDebugging {
+  public int* pbEnableCombatDebugging {
     set {
-      NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableCombatDebugging_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableCombatDebugging_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableCombatDebugging_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableCombatDebugging_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_int pbEnableSavingThrowDebugging {
+  public int* pbEnableSavingThrowDebugging {
     set {
-      NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableSavingThrowDebugging_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableSavingThrowDebugging_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableSavingThrowDebugging_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableSavingThrowDebugging_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_int pbEnableMovementSpeedDebugging {
+  public int* pbEnableMovementSpeedDebugging {
     set {
-      NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableMovementSpeedDebugging_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableMovementSpeedDebugging_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableMovementSpeedDebugging_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableMovementSpeedDebugging_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_int pbEnableHitDieDebugging {
+  public int* pbEnableHitDieDebugging {
     set {
-      NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableHitDieDebugging_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableHitDieDebugging_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableHitDieDebugging_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableHitDieDebugging_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_int pbExitProgram {
+  public int* pbExitProgram {
     set {
-      NWNXLibPINVOKE.NWNXExportedGlobals_pbExitProgram_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.NWNXExportedGlobals_pbExitProgram_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.NWNXExportedGlobals_pbExitProgram_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_pbExitProgram_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
+  }
+
+  public NWNXExportedGlobals() : this(NWNXLibPINVOKE.new_NWNXExportedGlobals(), true) {
   }
 
 }

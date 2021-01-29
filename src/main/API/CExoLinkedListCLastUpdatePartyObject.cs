@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CExoLinkedListCLastUpdatePartyObject : global::System.IDisposable {
+public unsafe class CExoLinkedListCLastUpdatePartyObject : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CExoLinkedListCLastUpdatePartyObject(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CExoLinkedListCLastUpdatePartyObject(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoLinkedListCLastUpdatePartyObject obj) {

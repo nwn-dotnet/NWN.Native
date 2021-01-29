@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class Vector2 : global::System.IDisposable {
+public unsafe class Vector2 : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public Vector2(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public Vector2(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(Vector2 obj) {
@@ -37,7 +42,7 @@ public class Vector2 : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_Vector2(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -96,6 +101,9 @@ public class Vector2 : global::System.IDisposable {
       float ret = NWNXLibPINVOKE.Vector2_y_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public Vector2() : this(NWNXLibPINVOKE.new_Vector2(), true) {
   }
 
 }

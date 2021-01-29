@@ -10,18 +10,34 @@
 
 namespace NWN.Native.API {
 
-public class CNWSModule : CGameObject {
+public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
+  protected bool swigCMemOwn;
 
-  public CNWSModule(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSModule_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CNWSModule(global::System.IntPtr cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSModule(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSModule obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 
-  protected override void Dispose(bool disposing) {
+  ~CNWSModule() {
+    Dispose(false);
+  }
+
+  public void Dispose() {
+    Dispose(true);
+    global::System.GC.SuppressFinalize(this);
+  }
+
+  protected virtual void Dispose(bool disposing) {
     lock(this) {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
@@ -30,8 +46,12 @@ public class CNWSModule : CGameObject {
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
-      base.Dispose(disposing);
     }
+  }
+
+  [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+  global::System.Runtime.InteropServices.HandleRef ICGameObject.GetInterfaceCPtr() {
+    return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CNWSModule_ICGameObject_GetInterfaceCPtr(swigCPtr.Handle));
   }
 
   public System.IntPtr Pointer {
@@ -1023,7 +1043,7 @@ public class CNWSModule : CGameObject {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public override CNWSModule AsNWSModule() {
+  public virtual CNWSModule AsNWSModule() {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWSModule(swigCPtr);
     CNWSModule ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSModule(cPtr, false);
     return ret;
@@ -1043,12 +1063,12 @@ public class CNWSModule : CGameObject {
     return ret;
   }
 
-  public void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSModule_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
+  public void EventHandler(uint nEventId, uint nCallerObjectId, void* pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSModule_EventHandler(swigCPtr, nEventId, nCallerObjectId, (global::System.IntPtr)pScript, nCalendarDay, nTimeOfDay);
   }
 
-  public uint GenerateInterAreaDFSSuccessors(int level, CPathfindInformation pcPathfindInformation, SWIGTYPE_p_p_unsigned_int pAreaSuccessors) {
-    uint ret = NWNXLibPINVOKE.CNWSModule_GenerateInterAreaDFSSuccessors(swigCPtr, level, CPathfindInformation.getCPtr(pcPathfindInformation), SWIGTYPE_p_p_unsigned_int.getCPtr(pAreaSuccessors));
+  public uint GenerateInterAreaDFSSuccessors(int level, CPathfindInformation pcPathfindInformation, uint** pAreaSuccessors) {
+    uint ret = NWNXLibPINVOKE.CNWSModule_GenerateInterAreaDFSSuccessors(swigCPtr, level, CPathfindInformation.getCPtr(pcPathfindInformation), (global::System.IntPtr)pAreaSuccessors);
     return ret;
   }
 
@@ -1220,8 +1240,8 @@ public class CNWSModule : CGameObject {
     return ret;
   }
 
-  public void GetTime(SWIGTYPE_p_unsigned_int pYear, SWIGTYPE_p_unsigned_int pMonth, SWIGTYPE_p_unsigned_int pDay, SWIGTYPE_p_unsigned_int pHour, SWIGTYPE_p_unsigned_char pTimeOfDayState, SWIGTYPE_p_unsigned_int pTimeIntoTransition) {
-    NWNXLibPINVOKE.CNWSModule_GetTime(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(pYear), SWIGTYPE_p_unsigned_int.getCPtr(pMonth), SWIGTYPE_p_unsigned_int.getCPtr(pDay), SWIGTYPE_p_unsigned_int.getCPtr(pHour), SWIGTYPE_p_unsigned_char.getCPtr(pTimeOfDayState), SWIGTYPE_p_unsigned_int.getCPtr(pTimeIntoTransition));
+  public void GetTime(uint* pYear, uint* pMonth, uint* pDay, uint* pHour, byte* pTimeOfDayState, uint* pTimeIntoTransition) {
+    NWNXLibPINVOKE.CNWSModule_GetTime(swigCPtr, (global::System.IntPtr)pYear, (global::System.IntPtr)pMonth, (global::System.IntPtr)pDay, (global::System.IntPtr)pHour, (global::System.IntPtr)pTimeOfDayState, (global::System.IntPtr)pTimeIntoTransition);
   }
 
   public void UpdateTime(uint nCalendarDay, uint nTimeOfDay, uint nUpdateDifference) {
@@ -1367,15 +1387,203 @@ public class CNWSModule : CGameObject {
     NWNXLibPINVOKE.CNWSModule_TimeStopSanityCheck(swigCPtr);
   }
 
-  public SWIGTYPE_p_unsigned_char GetFullCipher(CExoString sModuleResourceName) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_GetFullCipher(swigCPtr, CExoString.getCPtr(sModuleResourceName));
-    SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
+  public byte* GetFullCipher(CExoString sModuleResourceName) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CNWSModule_GetFullCipher(swigCPtr, CExoString.getCPtr(sModuleResourceName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return (byte*)retVal;
   }
 
   public int FindTagPositionInTable(string szTag) {
     int ret = NWNXLibPINVOKE.CNWSModule_FindTagPositionInTable(swigCPtr, szTag);
+    return ret;
+  }
+
+  public uint m_idSelf {
+    set {
+      NWNXLibPINVOKE.CNWSModule_m_idSelf_set(swigCPtr, value);
+    } 
+    get {
+      uint ret = NWNXLibPINVOKE.CNWSModule_m_idSelf_get(swigCPtr);
+      return ret;
+    } 
+  }
+
+  public byte m_nObjectType {
+    set {
+      NWNXLibPINVOKE.CNWSModule_m_nObjectType_set(swigCPtr, value);
+    } 
+    get {
+      byte ret = NWNXLibPINVOKE.CNWSModule_m_nObjectType_get(swigCPtr);
+      return ret;
+    } 
+  }
+
+  public void* m_pNwnxData {
+    set {
+      NWNXLibPINVOKE.CNWSModule_m_pNwnxData_set(swigCPtr, (global::System.IntPtr)value);
+    }  
+    get {
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWSModule_m_pNwnxData_get(swigCPtr); 
+        return (void*)retVal; 
+    }
+
+  }
+
+  public virtual void SetId(uint oidNew) {
+    NWNXLibPINVOKE.CNWSModule_SetId(swigCPtr, oidNew);
+  }
+
+  public virtual void ResetUpdateTimes(uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSModule_ResetUpdateTimes(swigCPtr, nCalendarDay, nTimeOfDay);
+  }
+
+  public virtual SWIGTYPE_p_CNWCObject AsNWCObject() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWCObject(swigCPtr);
+    SWIGTYPE_p_CNWCObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CNWCObject(cPtr, false);
+    return ret;
+  }
+
+  public virtual CNWSObject AsNWSObject() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWSObject(swigCPtr);
+    CNWSObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSObject(cPtr, false);
+    return ret;
+  }
+
+  public virtual SWIGTYPE_p_CNWCDoor AsNWCDoor() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWCDoor(swigCPtr);
+    SWIGTYPE_p_CNWCDoor ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CNWCDoor(cPtr, false);
+    return ret;
+  }
+
+  public virtual CNWSDoor AsNWSDoor() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWSDoor(swigCPtr);
+    CNWSDoor ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSDoor(cPtr, false);
+    return ret;
+  }
+
+  public virtual SWIGTYPE_p_CNWCModule AsNWCModule() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWCModule(swigCPtr);
+    SWIGTYPE_p_CNWCModule ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CNWCModule(cPtr, false);
+    return ret;
+  }
+
+  public virtual SWIGTYPE_p_CNWCArea AsNWCArea() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWCArea(swigCPtr);
+    SWIGTYPE_p_CNWCArea ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CNWCArea(cPtr, false);
+    return ret;
+  }
+
+  public virtual CNWSArea AsNWSArea() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWSArea(swigCPtr);
+    CNWSArea ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSArea(cPtr, false);
+    return ret;
+  }
+
+  public virtual SWIGTYPE_p_CNWCCreature AsNWCCreature() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWCCreature(swigCPtr);
+    SWIGTYPE_p_CNWCCreature ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CNWCCreature(cPtr, false);
+    return ret;
+  }
+
+  public virtual CNWSCreature AsNWSCreature() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWSCreature(swigCPtr);
+    CNWSCreature ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSCreature(cPtr, false);
+    return ret;
+  }
+
+  public virtual SWIGTYPE_p_CNWCItem AsNWCItem() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWCItem(swigCPtr);
+    SWIGTYPE_p_CNWCItem ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CNWCItem(cPtr, false);
+    return ret;
+  }
+
+  public virtual CNWSItem AsNWSItem() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWSItem(swigCPtr);
+    CNWSItem ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSItem(cPtr, false);
+    return ret;
+  }
+
+  public virtual SWIGTYPE_p_CNWCTrigger AsNWCTrigger() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWCTrigger(swigCPtr);
+    SWIGTYPE_p_CNWCTrigger ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CNWCTrigger(cPtr, false);
+    return ret;
+  }
+
+  public virtual CNWSTrigger AsNWSTrigger() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWSTrigger(swigCPtr);
+    CNWSTrigger ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSTrigger(cPtr, false);
+    return ret;
+  }
+
+  public virtual SWIGTYPE_p_CNWCProjectile AsNWCProjectile() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWCProjectile(swigCPtr);
+    SWIGTYPE_p_CNWCProjectile ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CNWCProjectile(cPtr, false);
+    return ret;
+  }
+
+  public virtual CNWSPlayerTURD AsNWSPlayerTURD() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWSPlayerTURD(swigCPtr);
+    CNWSPlayerTURD ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSPlayerTURD(cPtr, false);
+    return ret;
+  }
+
+  public virtual CNWSPlaceable AsNWSPlaceable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWSPlaceable(swigCPtr);
+    CNWSPlaceable ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSPlaceable(cPtr, false);
+    return ret;
+  }
+
+  public virtual SWIGTYPE_p_CNWCPlaceable AsNWCPlaceable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWCPlaceable(swigCPtr);
+    SWIGTYPE_p_CNWCPlaceable ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CNWCPlaceable(cPtr, false);
+    return ret;
+  }
+
+  public virtual CNWSAreaOfEffectObject AsNWSAreaOfEffectObject() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWSAreaOfEffectObject(swigCPtr);
+    CNWSAreaOfEffectObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSAreaOfEffectObject(cPtr, false);
+    return ret;
+  }
+
+  public virtual SWIGTYPE_p_CNWCAreaOfEffectObject AsNWCAreaOfEffectObject() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWCAreaOfEffectObject(swigCPtr);
+    SWIGTYPE_p_CNWCAreaOfEffectObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CNWCAreaOfEffectObject(cPtr, false);
+    return ret;
+  }
+
+  public virtual CNWSWaypoint AsNWSWaypoint() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWSWaypoint(swigCPtr);
+    CNWSWaypoint ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSWaypoint(cPtr, false);
+    return ret;
+  }
+
+  public virtual CNWSEncounter AsNWSEncounter() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWSEncounter(swigCPtr);
+    CNWSEncounter ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSEncounter(cPtr, false);
+    return ret;
+  }
+
+  public virtual SWIGTYPE_p_CNWCStore AsNWCStore() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWCStore(swigCPtr);
+    SWIGTYPE_p_CNWCStore ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CNWCStore(cPtr, false);
+    return ret;
+  }
+
+  public virtual CNWSStore AsNWSStore() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWSStore(swigCPtr);
+    CNWSStore ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSStore(cPtr, false);
+    return ret;
+  }
+
+  public virtual CNWSSoundObject AsNWSSoundObject() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWSSoundObject(swigCPtr);
+    CNWSSoundObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSSoundObject(cPtr, false);
+    return ret;
+  }
+
+  public virtual SWIGTYPE_p_CNWCSoundObject AsNWCSoundObject() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_AsNWCSoundObject(swigCPtr);
+    SWIGTYPE_p_CNWCSoundObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CNWCSoundObject(cPtr, false);
     return ret;
   }
 

@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class SHA1 : global::System.IDisposable {
+public unsafe class SHA1 : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public SHA1(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public SHA1(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SHA1 obj) {
@@ -37,7 +42,7 @@ public class SHA1 : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_SHA1(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -88,15 +93,15 @@ public class SHA1 : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_data {
+  public byte[] m_data {
     set {
-      NWNXLibPINVOKE.SHA1_m_data_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.SHA1_m_data_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.SHA1_m_data_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.SHA1_m_data_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public string m_hex {
@@ -107,6 +112,9 @@ public class SHA1 : global::System.IDisposable {
       string ret = NWNXLibPINVOKE.SHA1_m_hex_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public SHA1() : this(NWNXLibPINVOKE.new_SHA1(), true) {
   }
 
 }

@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CGameObject : global::System.IDisposable {
+public unsafe class CGameObject : ICGameObject, global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CGameObject(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CGameObject(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CGameObject obj) {
@@ -42,6 +47,11 @@ public class CGameObject : global::System.IDisposable {
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
     }
+  }
+
+  [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+  global::System.Runtime.InteropServices.HandleRef ICGameObject.GetInterfaceCPtr() {
+    return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CGameObject_ICGameObject_GetInterfaceCPtr(swigCPtr.Handle));
   }
 
   public System.IntPtr Pointer {
@@ -98,14 +108,14 @@ public class CGameObject : global::System.IDisposable {
     } 
   }
 
-  public System.IntPtr m_pNwnxData {
+  public void* m_pNwnxData {
     set {
-      NWNXLibPINVOKE.CGameObject_m_pNwnxData_set(swigCPtr, value);
+      NWNXLibPINVOKE.CGameObject_m_pNwnxData_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr cPtr = NWNXLibPINVOKE.CGameObject_m_pNwnxData_get(swigCPtr); 
-        return cPtr; 
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CGameObject_m_pNwnxData_get(swigCPtr); 
+        return (void*)retVal; 
+    }
 
   }
 

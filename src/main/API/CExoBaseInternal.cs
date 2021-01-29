@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CExoBaseInternal : global::System.IDisposable {
+public unsafe class CExoBaseInternal : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CExoBaseInternal(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CExoBaseInternal(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoBaseInternal obj) {
@@ -88,15 +93,15 @@ public class CExoBaseInternal : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_short m_pnResTypes {
+  public ushort* m_pnResTypes {
     set {
-      NWNXLibPINVOKE.CExoBaseInternal_m_pnResTypes_set(swigCPtr, SWIGTYPE_p_unsigned_short.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoBaseInternal_m_pnResTypes_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoBaseInternal_m_pnResTypes_get(swigCPtr);
-      SWIGTYPE_p_unsigned_short ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_short(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CExoBaseInternal_m_pnResTypes_get(swigCPtr); 
+        return (ushort*)retVal; 
+    }
+
   }
 
   public CExoString m_psResTypeNames {

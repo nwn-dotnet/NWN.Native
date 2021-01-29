@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CExoEncrypt : global::System.IDisposable {
+public unsafe class CExoEncrypt : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CExoEncrypt(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CExoEncrypt(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoEncrypt obj) {
@@ -37,7 +42,7 @@ public class CExoEncrypt : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CExoEncrypt(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -78,48 +83,48 @@ public class CExoEncrypt : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_unsigned_int m_anI {
+  public uint[] m_anI {
     set {
-      NWNXLibPINVOKE.CExoEncrypt_m_anI_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoEncrypt_m_anI_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoEncrypt_m_anI_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        uint[] retVal = NWNXLibPINVOKE.CExoEncrypt_m_anI_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_int m_aBuf {
+  public uint[] m_aBuf {
     set {
-      NWNXLibPINVOKE.CExoEncrypt_m_aBuf_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoEncrypt_m_aBuf_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoEncrypt_m_aBuf_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        uint[] retVal = NWNXLibPINVOKE.CExoEncrypt_m_aBuf_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_char m_aIn {
+  public byte[] m_aIn {
     set {
-      NWNXLibPINVOKE.CExoEncrypt_m_aIn_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoEncrypt_m_aIn_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoEncrypt_m_aIn_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CExoEncrypt_m_aIn_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_char m_aDigest {
+  public byte[] m_aDigest {
     set {
-      NWNXLibPINVOKE.CExoEncrypt_m_aDigest_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoEncrypt_m_aDigest_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoEncrypt_m_aDigest_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CExoEncrypt_m_aDigest_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public CExoString EncryptString(CExoString sInput) {
@@ -136,6 +141,9 @@ public class CExoEncrypt : global::System.IDisposable {
   public CExoString GenerateChallenge() {
     CExoString ret = new CExoString(NWNXLibPINVOKE.CExoEncrypt_GenerateChallenge__SWIG_1(swigCPtr), true);
     return ret;
+  }
+
+  public CExoEncrypt() : this(NWNXLibPINVOKE.new_CExoEncrypt(), true) {
   }
 
 }

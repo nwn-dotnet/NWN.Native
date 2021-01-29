@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class MaterialShaderParam : global::System.IDisposable {
+public unsafe class MaterialShaderParam : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public MaterialShaderParam(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public MaterialShaderParam(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(MaterialShaderParam obj) {
@@ -37,7 +42,7 @@ public class MaterialShaderParam : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_MaterialShaderParam(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -156,6 +161,9 @@ public class MaterialShaderParam : global::System.IDisposable {
       float ret = NWNXLibPINVOKE.MaterialShaderParam_m_fValue4_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public MaterialShaderParam() : this(NWNXLibPINVOKE.new_MaterialShaderParam(), true) {
   }
 
 }

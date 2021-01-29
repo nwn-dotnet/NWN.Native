@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CExoLinkedListNWAreaExpansion : global::System.IDisposable {
+public unsafe class CExoLinkedListNWAreaExpansion : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CExoLinkedListNWAreaExpansion(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CExoLinkedListNWAreaExpansion(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoLinkedListNWAreaExpansion obj) {

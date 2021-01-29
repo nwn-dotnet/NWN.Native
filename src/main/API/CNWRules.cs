@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWRules : global::System.IDisposable {
+public unsafe class CNWRules : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWRules(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWRules(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWRules obj) {
@@ -78,15 +83,15 @@ public class CNWRules : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_float m_fRangeTypes {
+  public float[] m_fRangeTypes {
     set {
-      NWNXLibPINVOKE.CNWRules_m_fRangeTypes_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWRules_m_fRangeTypes_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWRules_m_fRangeTypes_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        float[] retVal = NWNXLibPINVOKE.CNWRules_m_fRangeTypes_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public CNWBaseItemArray m_pBaseItemArray {
@@ -100,15 +105,15 @@ public class CNWRules : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_int m_nExperienceTable {
+  public uint[] m_nExperienceTable {
     set {
-      NWNXLibPINVOKE.CNWRules_m_nExperienceTable_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWRules_m_nExperienceTable_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWRules_m_nExperienceTable_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        uint[] retVal = NWNXLibPINVOKE.CNWRules_m_nExperienceTable_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public CNWSpellArray m_pSpellArray {
@@ -133,26 +138,26 @@ public class CNWRules : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_int m_lstMasterFeats {
+  public uint* m_lstMasterFeats {
     set {
-      NWNXLibPINVOKE.CNWRules_m_lstMasterFeats_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWRules_m_lstMasterFeats_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWRules_m_lstMasterFeats_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWRules_m_lstMasterFeats_get(swigCPtr); 
+        return (uint*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_int m_lstMasterFeatDescriptions {
+  public uint* m_lstMasterFeatDescriptions {
     set {
-      NWNXLibPINVOKE.CNWRules_m_lstMasterFeatDescriptions_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWRules_m_lstMasterFeatDescriptions_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWRules_m_lstMasterFeatDescriptions_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWRules_m_lstMasterFeatDescriptions_get(swigCPtr); 
+        return (uint*)retVal; 
+    }
+
   }
 
   public CResRef m_lstMasterFeatIcons {
@@ -166,15 +171,15 @@ public class CNWRules : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_short m_lstSortedFeatIDs {
+  public ushort* m_lstSortedFeatIDs {
     set {
-      NWNXLibPINVOKE.CNWRules_m_lstSortedFeatIDs_set(swigCPtr, SWIGTYPE_p_unsigned_short.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWRules_m_lstSortedFeatIDs_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWRules_m_lstSortedFeatIDs_get(swigCPtr);
-      SWIGTYPE_p_unsigned_short ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_short(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWRules_m_lstSortedFeatIDs_get(swigCPtr); 
+        return (ushort*)retVal; 
+    }
+
   }
 
   public ushort m_nNumFeats {

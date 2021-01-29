@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CKeyTableInfo : global::System.IDisposable {
+public unsafe class CKeyTableInfo : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CKeyTableInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CKeyTableInfo(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CKeyTableInfo obj) {
@@ -37,7 +42,7 @@ public class CKeyTableInfo : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CKeyTableInfo(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -120,6 +125,9 @@ public class CKeyTableInfo : global::System.IDisposable {
       KEYFILE_RESFILENAME ret = (cPtr == global::System.IntPtr.Zero) ? null : new KEYFILE_RESFILENAME(cPtr, false);
       return ret;
     } 
+  }
+
+  public CKeyTableInfo() : this(NWNXLibPINVOKE.new_CKeyTableInfo(), true) {
   }
 
 }

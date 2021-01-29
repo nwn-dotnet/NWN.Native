@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CItemRepository : global::System.IDisposable {
+public unsafe class CItemRepository : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CItemRepository(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CItemRepository(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CItemRepository obj) {
@@ -200,15 +205,13 @@ public class CItemRepository : global::System.IDisposable {
     return ret;
   }
 
-  public int FindPosition(CNWSItem pItem, SWIGTYPE_p_unsigned_char x, SWIGTYPE_p_unsigned_char y, int bOriginatingFromScript) {
-    int ret = NWNXLibPINVOKE.CItemRepository_FindPosition__SWIG_0(swigCPtr, CNWSItem.getCPtr(pItem), SWIGTYPE_p_unsigned_char.getCPtr(x), SWIGTYPE_p_unsigned_char.getCPtr(y), bOriginatingFromScript);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int FindPosition(CNWSItem pItem, byte* x, byte* y, int bOriginatingFromScript) {
+    int ret = NWNXLibPINVOKE.CItemRepository_FindPosition__SWIG_0(swigCPtr, CNWSItem.getCPtr(pItem), (global::System.IntPtr)x, (global::System.IntPtr)y, bOriginatingFromScript);
     return ret;
   }
 
-  public int FindPosition(CNWSItem pItem, SWIGTYPE_p_unsigned_char x, SWIGTYPE_p_unsigned_char y) {
-    int ret = NWNXLibPINVOKE.CItemRepository_FindPosition__SWIG_1(swigCPtr, CNWSItem.getCPtr(pItem), SWIGTYPE_p_unsigned_char.getCPtr(x), SWIGTYPE_p_unsigned_char.getCPtr(y));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int FindPosition(CNWSItem pItem, byte* x, byte* y) {
+    int ret = NWNXLibPINVOKE.CItemRepository_FindPosition__SWIG_1(swigCPtr, CNWSItem.getCPtr(pItem), (global::System.IntPtr)x, (global::System.IntPtr)y);
     return ret;
   }
 

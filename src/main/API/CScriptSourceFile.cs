@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CScriptSourceFile : global::System.IDisposable {
+public unsafe class CScriptSourceFile : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CScriptSourceFile(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CScriptSourceFile(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CScriptSourceFile obj) {
@@ -37,7 +42,7 @@ public class CScriptSourceFile : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CScriptSourceFile(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -81,8 +86,8 @@ public class CScriptSourceFile : global::System.IDisposable {
   public CScriptSourceFile() : this(NWNXLibPINVOKE.new_CScriptSourceFile(), true) {
   }
 
-  public int LoadScript(CExoString sFileName, SWIGTYPE_p_p_char pScript, SWIGTYPE_p_unsigned_int nScriptLength) {
-    int ret = NWNXLibPINVOKE.CScriptSourceFile_LoadScript(swigCPtr, CExoString.getCPtr(sFileName), SWIGTYPE_p_p_char.getCPtr(pScript), SWIGTYPE_p_unsigned_int.getCPtr(nScriptLength));
+  public int LoadScript(CExoString sFileName, char** pScript, uint* nScriptLength) {
+    int ret = NWNXLibPINVOKE.CScriptSourceFile_LoadScript(swigCPtr, CExoString.getCPtr(sFileName), (global::System.IntPtr)pScript, (global::System.IntPtr)nScriptLength);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }

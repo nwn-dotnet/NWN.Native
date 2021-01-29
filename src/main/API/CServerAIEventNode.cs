@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CServerAIEventNode : global::System.IDisposable {
+public unsafe class CServerAIEventNode : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CServerAIEventNode(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CServerAIEventNode(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CServerAIEventNode obj) {
@@ -37,7 +42,7 @@ public class CServerAIEventNode : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CServerAIEventNode(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -128,14 +133,14 @@ public class CServerAIEventNode : global::System.IDisposable {
     } 
   }
 
-  public System.IntPtr m_pEventData {
+  public void* m_pEventData {
     set {
-      NWNXLibPINVOKE.CServerAIEventNode_m_pEventData_set(swigCPtr, value);
+      NWNXLibPINVOKE.CServerAIEventNode_m_pEventData_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr cPtr = NWNXLibPINVOKE.CServerAIEventNode_m_pEventData_get(swigCPtr); 
-        return cPtr; 
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CServerAIEventNode_m_pEventData_get(swigCPtr); 
+        return (void*)retVal; 
+    }
 
   }
 
@@ -147,6 +152,9 @@ public class CServerAIEventNode : global::System.IDisposable {
   public int LoadNode(CResGFF pRes, CResStruct pStruct) {
     int ret = NWNXLibPINVOKE.CServerAIEventNode_LoadNode(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
     return ret;
+  }
+
+  public CServerAIEventNode() : this(NWNXLibPINVOKE.new_CServerAIEventNode(), true) {
   }
 
 }

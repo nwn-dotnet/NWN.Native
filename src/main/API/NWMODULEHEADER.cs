@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class NWMODULEHEADER : global::System.IDisposable {
+public unsafe class NWMODULEHEADER : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public NWMODULEHEADER(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public NWMODULEHEADER(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(NWMODULEHEADER obj) {
@@ -37,7 +42,7 @@ public class NWMODULEHEADER : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_NWMODULEHEADER(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -106,6 +111,9 @@ public class NWMODULEHEADER : global::System.IDisposable {
       uint ret = NWNXLibPINVOKE.NWMODULEHEADER_nModuleVersion_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public NWMODULEHEADER() : this(NWNXLibPINVOKE.new_NWMODULEHEADER(), true) {
   }
 
 }

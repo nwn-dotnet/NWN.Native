@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CScriptCompiler : global::System.IDisposable {
+public unsafe class CScriptCompiler : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CScriptCompiler(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CScriptCompiler(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CScriptCompiler obj) {
@@ -520,15 +525,15 @@ public class CScriptCompiler : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_pnHashString {
+  public int* m_pnHashString {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pnHashString_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CScriptCompiler_m_pnHashString_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pnHashString_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_pnHashString_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
   public CScriptCompilerIdentifierHashTableEntry m_pIdentifierHashTable {
@@ -981,15 +986,15 @@ public class CScriptCompiler : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_pnSwitchLabelStatements {
+  public int* m_pnSwitchLabelStatements {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pnSwitchLabelStatements_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CScriptCompiler_m_pnSwitchLabelStatements_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pnSwitchLabelStatements_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_pnSwitchLabelStatements_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
   public int m_nNumEngineDefinedStructures {
@@ -1002,15 +1007,15 @@ public class CScriptCompiler : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_pbEngineDefinedStructureValid {
+  public int* m_pbEngineDefinedStructureValid {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pbEngineDefinedStructureValid_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CScriptCompiler_m_pbEngineDefinedStructureValid_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pbEngineDefinedStructureValid_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_pbEngineDefinedStructureValid_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
   public CExoString m_psEngineDefinedStructureName {
@@ -1228,15 +1233,15 @@ public class CScriptCompiler : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_pSymbolLabelStartEntry {
+  public int[] m_pSymbolLabelStartEntry {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pSymbolLabelStartEntry_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CScriptCompiler_m_pSymbolLabelStartEntry_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pSymbolLabelStartEntry_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        int[] retVal = NWNXLibPINVOKE.CScriptCompiler_m_pSymbolLabelStartEntry_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public int m_nDebugSymbolicOutput {
@@ -1494,8 +1499,8 @@ public class CScriptCompiler : global::System.IDisposable {
     return ret;
   }
 
-  public int GetCompiledScriptCode(SWIGTYPE_p_p_char pnCode, SWIGTYPE_p_int nCodeSize) {
-    int ret = NWNXLibPINVOKE.CScriptCompiler_GetCompiledScriptCode(swigCPtr, SWIGTYPE_p_p_char.getCPtr(pnCode), SWIGTYPE_p_int.getCPtr(nCodeSize));
+  public int GetCompiledScriptCode(char** pnCode, int* nCodeSize) {
+    int ret = NWNXLibPINVOKE.CScriptCompiler_GetCompiledScriptCode(swigCPtr, (global::System.IntPtr)pnCode, (global::System.IntPtr)nCodeSize);
     return ret;
   }
 
@@ -1559,8 +1564,8 @@ public class CScriptCompiler : global::System.IDisposable {
     NWNXLibPINVOKE.CScriptCompiler_PushSRStack(swigCPtr, nState, nRule, nTerm, CScriptParseTreeNode.getCPtr(pCurrentTree));
   }
 
-  public int PopSRStack(SWIGTYPE_p_int nState, SWIGTYPE_p_int nRule, SWIGTYPE_p_int nTerm, SWIGTYPE_p_p_CScriptParseTreeNode pCurrentTree, SWIGTYPE_p_p_CScriptParseTreeNode pReturnTree) {
-    int ret = NWNXLibPINVOKE.CScriptCompiler_PopSRStack(swigCPtr, SWIGTYPE_p_int.getCPtr(nState), SWIGTYPE_p_int.getCPtr(nRule), SWIGTYPE_p_int.getCPtr(nTerm), SWIGTYPE_p_p_CScriptParseTreeNode.getCPtr(pCurrentTree), SWIGTYPE_p_p_CScriptParseTreeNode.getCPtr(pReturnTree));
+  public int PopSRStack(int* nState, int* nRule, int* nTerm, SWIGTYPE_p_p_CScriptParseTreeNode pCurrentTree, SWIGTYPE_p_p_CScriptParseTreeNode pReturnTree) {
+    int ret = NWNXLibPINVOKE.CScriptCompiler_PopSRStack(swigCPtr, (global::System.IntPtr)nState, (global::System.IntPtr)nRule, (global::System.IntPtr)nTerm, SWIGTYPE_p_p_CScriptParseTreeNode.getCPtr(pCurrentTree), SWIGTYPE_p_p_CScriptParseTreeNode.getCPtr(pReturnTree));
     return ret;
   }
 

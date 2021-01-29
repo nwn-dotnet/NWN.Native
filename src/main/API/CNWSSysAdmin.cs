@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWSSysAdmin : CNWSClient {
+public unsafe class CNWSSysAdmin : CNWSClient {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWSSysAdmin(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSSysAdmin_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSSysAdmin(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSSysAdmin_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSSysAdmin obj) {

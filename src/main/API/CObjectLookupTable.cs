@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CObjectLookupTable : global::System.IDisposable {
+public unsafe class CObjectLookupTable : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CObjectLookupTable(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CObjectLookupTable(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CObjectLookupTable obj) {
@@ -78,15 +83,15 @@ public class CObjectLookupTable : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_unsigned_int m_pdwObjectTable {
+  public uint* m_pdwObjectTable {
     set {
-      NWNXLibPINVOKE.CObjectLookupTable_m_pdwObjectTable_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CObjectLookupTable_m_pdwObjectTable_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CObjectLookupTable_m_pdwObjectTable_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CObjectLookupTable_m_pdwObjectTable_get(swigCPtr); 
+        return (uint*)retVal; 
+    }
+
   }
 
   public uint m_dwStart {
@@ -132,12 +137,12 @@ public class CObjectLookupTable : global::System.IDisposable {
     return ret;
   }
 
-  public void GetUpdate(SWIGTYPE_p_unsigned_char pData, SWIGTYPE_p_unsigned_int dwSize) {
-    NWNXLibPINVOKE.CObjectLookupTable_GetUpdate(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(pData), SWIGTYPE_p_unsigned_int.getCPtr(dwSize));
+  public void GetUpdate(byte* pData, uint* dwSize) {
+    NWNXLibPINVOKE.CObjectLookupTable_GetUpdate(swigCPtr, (global::System.IntPtr)pData, (global::System.IntPtr)dwSize);
   }
 
-  public void Update(SWIGTYPE_p_unsigned_char pData, uint dwSize) {
-    NWNXLibPINVOKE.CObjectLookupTable_Update(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(pData), dwSize);
+  public void Update(byte* pData, uint dwSize) {
+    NWNXLibPINVOKE.CObjectLookupTable_Update(swigCPtr, (global::System.IntPtr)pData, dwSize);
   }
 
   public uint GetIndexFromID(uint dwID) {

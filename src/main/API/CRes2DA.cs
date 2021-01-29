@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CRes2DA : CRes {
+public unsafe class CRes2DA : CRes {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CRes2DA(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CRes2DA_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CRes2DA(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CRes2DA_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CRes2DA obj) {
@@ -88,15 +92,15 @@ public class CRes2DA : CRes {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_p2DAData {
+  public byte* m_p2DAData {
     set {
-      NWNXLibPINVOKE.CRes2DA_m_p2DAData_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CRes2DA_m_p2DAData_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CRes2DA_m_p2DAData_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CRes2DA_m_p2DAData_get(swigCPtr); 
+        return (byte*)retVal; 
+    }
+
   }
 
   public EXO2DAHEADER m_p2DAHeader {
@@ -113,10 +117,9 @@ public class CRes2DA : CRes {
   public CRes2DA() : this(NWNXLibPINVOKE.new_CRes2DA(), true) {
   }
 
-  public SWIGTYPE_p_unsigned_char Get2DADataPtr() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CRes2DA_Get2DADataPtr(swigCPtr);
-    SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-    return ret;
+  public byte* Get2DADataPtr() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CRes2DA_Get2DADataPtr(swigCPtr);
+    return (byte*)retVal;
   }
 
   public EXO2DAHEADER Get2DAHeaderPtr() {

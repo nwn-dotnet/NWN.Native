@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWSPlayerTURD : CNWSObject {
+public unsafe class CNWSPlayerTURD : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWSPlayerTURD(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlayerTURD_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSPlayerTURD(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlayerTURD_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSPlayerTURD obj) {
@@ -163,26 +167,26 @@ public class CNWSPlayerTURD : CNWSObject {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_int m_poidAutomapAreasList {
+  public uint* m_poidAutomapAreasList {
     set {
-      NWNXLibPINVOKE.CNWSPlayerTURD_m_poidAutomapAreasList_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSPlayerTURD_m_poidAutomapAreasList_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayerTURD_m_poidAutomapAreasList_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayerTURD_m_poidAutomapAreasList_get(swigCPtr); 
+        return (uint*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_p_unsigned_char m_pAutoMapTileData {
+  public byte** m_pAutoMapTileData {
     set {
-      NWNXLibPINVOKE.CNWSPlayerTURD_m_pAutoMapTileData_set(swigCPtr, SWIGTYPE_p_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSPlayerTURD_m_pAutoMapTileData_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayerTURD_m_pAutoMapTileData_get(swigCPtr);
-      SWIGTYPE_p_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayerTURD_m_pAutoMapTileData_get(swigCPtr); 
+        return (byte**)retVal; 
+    }
+
   }
 
   public CNWSPlayerTURD(uint oidId) : this(NWNXLibPINVOKE.new_CNWSPlayerTURD__SWIG_0(oidId), true) {
@@ -201,8 +205,8 @@ public class CNWSPlayerTURD : CNWSObject {
     NWNXLibPINVOKE.CNWSPlayerTURD_AIUpdate(swigCPtr);
   }
 
-  public override void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSPlayerTURD_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
+  public override void EventHandler(uint nEventId, uint nCallerObjectId, void* pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSPlayerTURD_EventHandler(swigCPtr, nEventId, nCallerObjectId, (global::System.IntPtr)pScript, nCalendarDay, nTimeOfDay);
   }
 
   public void AddToArea(CNWSArea pArea, int bRunScripts) {
@@ -238,8 +242,8 @@ public class CNWSPlayerTURD : CNWSObject {
     NWNXLibPINVOKE.CNWSPlayerTURD_CopyEffectList(swigCPtr, CExoArrayListCGameEffectPtr.getCPtr(pEffectList));
   }
 
-  public void CopyAutomapData(int nNumAreas, CExoArrayListObjectId pAreaList, SWIGTYPE_p_p_unsigned_char pAreaData) {
-    NWNXLibPINVOKE.CNWSPlayerTURD_CopyAutomapData(swigCPtr, nNumAreas, CExoArrayListObjectId.getCPtr(pAreaList), SWIGTYPE_p_p_unsigned_char.getCPtr(pAreaData));
+  public void CopyAutomapData(int nNumAreas, CExoArrayListObjectId pAreaList, byte** pAreaData) {
+    NWNXLibPINVOKE.CNWSPlayerTURD_CopyAutomapData(swigCPtr, nNumAreas, CExoArrayListObjectId.getCPtr(pAreaList), (global::System.IntPtr)pAreaData);
   }
 
   public void ClearAutomapData() {

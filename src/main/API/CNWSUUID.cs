@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWSUUID : global::System.IDisposable {
+public unsafe class CNWSUUID : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWSUUID(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSUUID(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSUUID obj) {
@@ -78,9 +83,9 @@ public class CNWSUUID : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public CGameObject m_parent {
+  public ICGameObject m_parent {
     set {
-      NWNXLibPINVOKE.CNWSUUID_m_parent_set(swigCPtr, CGameObject.getCPtr(value));
+      NWNXLibPINVOKE.CNWSUUID_m_parent_set(swigCPtr, value == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : value.GetInterfaceCPtr());
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSUUID_m_parent_get(swigCPtr);
@@ -100,7 +105,7 @@ public class CNWSUUID : global::System.IDisposable {
     } 
   }
 
-  public CNWSUUID(CGameObject arg0) : this(NWNXLibPINVOKE.new_CNWSUUID(CGameObject.getCPtr(arg0)), true) {
+  public CNWSUUID(ICGameObject arg0) : this(NWNXLibPINVOKE.new_CNWSUUID(arg0 == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : arg0.GetInterfaceCPtr()), true) {
   }
 
   public bool CanCarryUUID() {

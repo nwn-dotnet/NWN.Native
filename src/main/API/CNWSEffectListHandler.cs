@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWSEffectListHandler : CGameEffectApplierRemover {
+public unsafe class CNWSEffectListHandler : CGameEffectApplierRemover {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWSEffectListHandler(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSEffectListHandler_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSEffectListHandler(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSEffectListHandler_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSEffectListHandler obj) {

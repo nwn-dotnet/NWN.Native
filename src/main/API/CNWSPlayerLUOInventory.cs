@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWSPlayerLUOInventory : global::System.IDisposable {
+public unsafe class CNWSPlayerLUOInventory : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWSPlayerLUOInventory(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSPlayerLUOInventory(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSPlayerLUOInventory obj) {
@@ -78,26 +83,26 @@ public class CNWSPlayerLUOInventory : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_unsigned_int m_oidInventorySlots {
+  public uint[] m_oidInventorySlots {
     set {
-      NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_oidInventorySlots_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_oidInventorySlots_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_oidInventorySlots_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        uint[] retVal = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_oidInventorySlots_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_int m_nStackSizes {
+  public int[] m_nStackSizes {
     set {
-      NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nStackSizes_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nStackSizes_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nStackSizes_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        int[] retVal = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nStackSizes_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public CExoLinkedListCNWSPlayerLUOInventoryItem m_pOldRepositoryItems {

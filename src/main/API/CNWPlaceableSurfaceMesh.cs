@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWPlaceableSurfaceMesh : global::System.IDisposable {
+public unsafe class CNWPlaceableSurfaceMesh : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWPlaceableSurfaceMesh(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWPlaceableSurfaceMesh(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWPlaceableSurfaceMesh obj) {
@@ -89,15 +94,15 @@ public class CNWPlaceableSurfaceMesh : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_pnTriangles {
+  public int* m_pnTriangles {
     set {
-      NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangles_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangles_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangles_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangles_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
   public int m_nTriangles {
@@ -120,15 +125,15 @@ public class CNWPlaceableSurfaceMesh : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_pnTriangleMaterial {
+  public int* m_pnTriangleMaterial {
     set {
-      NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangleMaterial_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangleMaterial_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangleMaterial_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangleMaterial_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
   public Vector m_pvActionPoints {
@@ -151,8 +156,8 @@ public class CNWPlaceableSurfaceMesh : global::System.IDisposable {
     return ret;
   }
 
-  public int LoadWalkMeshString(SWIGTYPE_p_p_unsigned_char pInput, SWIGTYPE_p_unsigned_int nInputSize, SWIGTYPE_p_unsigned_char pchBuffer, uint nBufferSize) {
-    int ret = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_LoadWalkMeshString(swigCPtr, SWIGTYPE_p_p_unsigned_char.getCPtr(pInput), SWIGTYPE_p_unsigned_int.getCPtr(nInputSize), SWIGTYPE_p_unsigned_char.getCPtr(pchBuffer), nBufferSize);
+  public int LoadWalkMeshString(byte** pInput, uint* nInputSize, byte* pchBuffer, uint nBufferSize) {
+    int ret = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_LoadWalkMeshString(swigCPtr, (global::System.IntPtr)pInput, (global::System.IntPtr)nInputSize, (global::System.IntPtr)pchBuffer, nBufferSize);
     return ret;
   }
 

@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWSpell : global::System.IDisposable {
+public unsafe class CNWSpell : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWSpell(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSpell(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSpell obj) {
@@ -505,15 +510,15 @@ public class CNWSpell : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_int m_pSubRadialSpell {
+  public uint* m_pSubRadialSpell {
     set {
-      NWNXLibPINVOKE.CNWSpell_m_pSubRadialSpell_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSpell_m_pSubRadialSpell_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSpell_m_pSubRadialSpell_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWSpell_m_pSubRadialSpell_get(swigCPtr); 
+        return (uint*)retVal; 
+    }
+
   }
 
   public byte m_nSubRadialSpellCount {

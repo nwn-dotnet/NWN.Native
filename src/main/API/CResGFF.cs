@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CResGFF : CRes {
+public unsafe class CResGFF : CRes {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CResGFF(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResGFF_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CResGFF(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResGFF_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CResGFF obj) {
@@ -139,15 +143,15 @@ public class CResGFF : CRes {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_pDDFileHeader {
+  public byte* m_pDDFileHeader {
     set {
-      NWNXLibPINVOKE.CResGFF_m_pDDFileHeader_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CResGFF_m_pDDFileHeader_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CResGFF_m_pDDFileHeader_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_m_pDDFileHeader_get(swigCPtr); 
+        return (byte*)retVal; 
+    }
+
   }
 
   public uint m_nHeaderOffset {
@@ -223,15 +227,15 @@ public class CResGFF : CRes {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_pDataField {
+  public byte* m_pDataField {
     set {
-      NWNXLibPINVOKE.CResGFF_m_pDataField_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CResGFF_m_pDataField_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CResGFF_m_pDataField_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_m_pDataField_get(swigCPtr); 
+        return (byte*)retVal; 
+    }
+
   }
 
   public uint m_nDataFieldAllocated {
@@ -244,15 +248,15 @@ public class CResGFF : CRes {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_pDataLayoutField {
+  public byte* m_pDataLayoutField {
     set {
-      NWNXLibPINVOKE.CResGFF_m_pDataLayoutField_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CResGFF_m_pDataLayoutField_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CResGFF_m_pDataLayoutField_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_m_pDataLayoutField_get(swigCPtr); 
+        return (byte*)retVal; 
+    }
+
   }
 
   public uint m_nDataLayoutFieldAllocated {
@@ -275,15 +279,15 @@ public class CResGFF : CRes {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_pDataLayoutList {
+  public byte* m_pDataLayoutList {
     set {
-      NWNXLibPINVOKE.CResGFF_m_pDataLayoutList_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CResGFF_m_pDataLayoutList_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CResGFF_m_pDataLayoutList_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_m_pDataLayoutList_get(swigCPtr); 
+        return (byte*)retVal; 
+    }
+
   }
 
   public uint m_nDataLayoutListAllocated {
@@ -408,8 +412,8 @@ public class CResGFF : CRes {
     return ret;
   }
 
-  public int GetDataFromPointer(System.IntPtr pData, int nDataSize) {
-    int ret = NWNXLibPINVOKE.CResGFF_GetDataFromPointer(swigCPtr, pData, nDataSize);
+  public int GetDataFromPointer(void* pData, int nDataSize) {
+    int ret = NWNXLibPINVOKE.CResGFF_GetDataFromPointer(swigCPtr, (global::System.IntPtr)pData, nDataSize);
     return ret;
   }
 
@@ -477,173 +481,148 @@ public class CResGFF : CRes {
     return ret;
   }
 
-  public byte ReadFieldBYTE(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess, byte nDefault) {
-    byte ret = NWNXLibPINVOKE.CResGFF_ReadFieldBYTE__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess), nDefault);
+  public byte ReadFieldBYTE(CResStruct pStructure, string szFieldID, int* bSuccess, byte nDefault) {
+    byte ret = NWNXLibPINVOKE.CResGFF_ReadFieldBYTE__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess, nDefault);
+    return ret;
+  }
+
+  public byte ReadFieldBYTE(CResStruct pStructure, string szFieldID, int* bSuccess) {
+    byte ret = NWNXLibPINVOKE.CResGFF_ReadFieldBYTE__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess);
+    return ret;
+  }
+
+  public char ReadFieldCHAR(CResStruct pStructure, string szFieldID, int* bSuccess, char nDefault) {
+    char ret = NWNXLibPINVOKE.CResGFF_ReadFieldCHAR__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess, nDefault);
+    return ret;
+  }
+
+  public char ReadFieldCHAR(CResStruct pStructure, string szFieldID, int* bSuccess) {
+    char ret = NWNXLibPINVOKE.CResGFF_ReadFieldCHAR__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess);
+    return ret;
+  }
+
+  public ushort ReadFieldWORD(CResStruct pStructure, string szFieldID, int* bSuccess, ushort nDefault) {
+    ushort ret = NWNXLibPINVOKE.CResGFF_ReadFieldWORD__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess, nDefault);
+    return ret;
+  }
+
+  public ushort ReadFieldWORD(CResStruct pStructure, string szFieldID, int* bSuccess) {
+    ushort ret = NWNXLibPINVOKE.CResGFF_ReadFieldWORD__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess);
+    return ret;
+  }
+
+  public short ReadFieldSHORT(CResStruct pStructure, string szFieldID, int* bSuccess, short nDefault) {
+    short ret = NWNXLibPINVOKE.CResGFF_ReadFieldSHORT__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess, nDefault);
+    return ret;
+  }
+
+  public short ReadFieldSHORT(CResStruct pStructure, string szFieldID, int* bSuccess) {
+    short ret = NWNXLibPINVOKE.CResGFF_ReadFieldSHORT__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess);
+    return ret;
+  }
+
+  public uint ReadFieldDWORD(CResStruct pStructure, string szFieldID, int* bSuccess, uint nDefault) {
+    uint ret = NWNXLibPINVOKE.CResGFF_ReadFieldDWORD__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess, nDefault);
+    return ret;
+  }
+
+  public uint ReadFieldDWORD(CResStruct pStructure, string szFieldID, int* bSuccess) {
+    uint ret = NWNXLibPINVOKE.CResGFF_ReadFieldDWORD__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess);
+    return ret;
+  }
+
+  public int ReadFieldINT(CResStruct pStructure, string szFieldID, int* bSuccess, int nDefault) {
+    int ret = NWNXLibPINVOKE.CResGFF_ReadFieldINT__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess, nDefault);
+    return ret;
+  }
+
+  public int ReadFieldINT(CResStruct pStructure, string szFieldID, int* bSuccess) {
+    int ret = NWNXLibPINVOKE.CResGFF_ReadFieldINT__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess);
+    return ret;
+  }
+
+  public uint ReadFieldDWORD64(CResStruct pStructure, string szFieldID, int* bSuccess, uint nDefault) {
+    uint ret = NWNXLibPINVOKE.CResGFF_ReadFieldDWORD64__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess, nDefault);
+    return ret;
+  }
+
+  public uint ReadFieldDWORD64(CResStruct pStructure, string szFieldID, int* bSuccess) {
+    uint ret = NWNXLibPINVOKE.CResGFF_ReadFieldDWORD64__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess);
+    return ret;
+  }
+
+  public int ReadFieldINT64(CResStruct pStructure, string szFieldID, int* bSuccess, int nDefault) {
+    int ret = NWNXLibPINVOKE.CResGFF_ReadFieldINT64__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess, nDefault);
+    return ret;
+  }
+
+  public int ReadFieldINT64(CResStruct pStructure, string szFieldID, int* bSuccess) {
+    int ret = NWNXLibPINVOKE.CResGFF_ReadFieldINT64__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess);
+    return ret;
+  }
+
+  public float ReadFieldFLOAT(CResStruct pStructure, string szFieldID, int* bSuccess, float fDefault) {
+    float ret = NWNXLibPINVOKE.CResGFF_ReadFieldFLOAT__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess, fDefault);
+    return ret;
+  }
+
+  public float ReadFieldFLOAT(CResStruct pStructure, string szFieldID, int* bSuccess) {
+    float ret = NWNXLibPINVOKE.CResGFF_ReadFieldFLOAT__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess);
+    return ret;
+  }
+
+  public double ReadFieldDOUBLE(CResStruct pStructure, string szFieldID, int* bSuccess, double fDefault) {
+    double ret = NWNXLibPINVOKE.CResGFF_ReadFieldDOUBLE__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess, fDefault);
+    return ret;
+  }
+
+  public double ReadFieldDOUBLE(CResStruct pStructure, string szFieldID, int* bSuccess) {
+    double ret = NWNXLibPINVOKE.CResGFF_ReadFieldDOUBLE__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess);
+    return ret;
+  }
+
+  public CResRef ReadFieldCResRef(CResStruct pStructure, string szFieldID, int* bSuccess, CResRef sDefault) {
+    CResRef ret = new CResRef(NWNXLibPINVOKE.CResGFF_ReadFieldCResRef__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess, CResRef.getCPtr(sDefault)), true);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public byte ReadFieldBYTE(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess) {
-    byte ret = NWNXLibPINVOKE.CResGFF_ReadFieldBYTE__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess));
+  public CResRef ReadFieldCResRef(CResStruct pStructure, string szFieldID, int* bSuccess) {
+    CResRef ret = new CResRef(NWNXLibPINVOKE.CResGFF_ReadFieldCResRef__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess), true);
+    return ret;
+  }
+
+  public CExoString ReadFieldCExoString(CResStruct pStructure, string szFieldID, int* bSuccess, CExoString sDefault) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CResGFF_ReadFieldCExoString__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess, CExoString.getCPtr(sDefault)), true);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public char ReadFieldCHAR(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess, char nDefault) {
-    char ret = NWNXLibPINVOKE.CResGFF_ReadFieldCHAR__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess), nDefault);
+  public CExoString ReadFieldCExoString(CResStruct pStructure, string szFieldID, int* bSuccess) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CResGFF_ReadFieldCExoString__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess), true);
+    return ret;
+  }
+
+  public CExoLocString ReadFieldCExoLocString(CResStruct pStructure, string szFieldID, int* bSuccess, CExoLocString sDefault) {
+    CExoLocString ret = new CExoLocString(NWNXLibPINVOKE.CResGFF_ReadFieldCExoLocString__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess, CExoLocString.getCPtr(sDefault)), true);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public char ReadFieldCHAR(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess) {
-    char ret = NWNXLibPINVOKE.CResGFF_ReadFieldCHAR__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public CExoLocString ReadFieldCExoLocString(CResStruct pStructure, string szFieldID, int* bSuccess) {
+    CExoLocString ret = new CExoLocString(NWNXLibPINVOKE.CResGFF_ReadFieldCExoLocString__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, (global::System.IntPtr)bSuccess), true);
     return ret;
   }
 
-  public ushort ReadFieldWORD(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess, ushort nDefault) {
-    ushort ret = NWNXLibPINVOKE.CResGFF_ReadFieldWORD__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess), nDefault);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+  public void* ReadFieldVOID(CResStruct pStructure, void* pVariable, uint nSize, string szFieldID, int* bSuccess, void* pDefault) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_ReadFieldVOID__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), (global::System.IntPtr)pVariable, nSize, szFieldID, (global::System.IntPtr)bSuccess, (global::System.IntPtr)pDefault);
+    return (void*)retVal;
   }
 
-  public ushort ReadFieldWORD(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess) {
-    ushort ret = NWNXLibPINVOKE.CResGFF_ReadFieldWORD__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+  public void* ReadFieldVOID(CResStruct pStructure, void* pVariable, uint nSize, string szFieldID, int* bSuccess) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_ReadFieldVOID__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), (global::System.IntPtr)pVariable, nSize, szFieldID, (global::System.IntPtr)bSuccess);
+    return (void*)retVal;
   }
-
-  public short ReadFieldSHORT(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess, short nDefault) {
-    short ret = NWNXLibPINVOKE.CResGFF_ReadFieldSHORT__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess), nDefault);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public short ReadFieldSHORT(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess) {
-    short ret = NWNXLibPINVOKE.CResGFF_ReadFieldSHORT__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public uint ReadFieldDWORD(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess, uint nDefault) {
-    uint ret = NWNXLibPINVOKE.CResGFF_ReadFieldDWORD__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess), nDefault);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public uint ReadFieldDWORD(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess) {
-    uint ret = NWNXLibPINVOKE.CResGFF_ReadFieldDWORD__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public int ReadFieldINT(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess, int nDefault) {
-    int ret = NWNXLibPINVOKE.CResGFF_ReadFieldINT__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess), nDefault);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public int ReadFieldINT(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess) {
-    int ret = NWNXLibPINVOKE.CResGFF_ReadFieldINT__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public ulong ReadFieldDWORD64(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess, ulong nDefault) {
-    ulong ret = NWNXLibPINVOKE.CResGFF_ReadFieldDWORD64__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess), nDefault);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public ulong ReadFieldDWORD64(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess) {
-    ulong ret = NWNXLibPINVOKE.CResGFF_ReadFieldDWORD64__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public long ReadFieldINT64(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess, long nDefault) {
-    long ret = NWNXLibPINVOKE.CResGFF_ReadFieldINT64__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess), nDefault);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public long ReadFieldINT64(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess) {
-    long ret = NWNXLibPINVOKE.CResGFF_ReadFieldINT64__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public float ReadFieldFLOAT(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess, float fDefault) {
-    float ret = NWNXLibPINVOKE.CResGFF_ReadFieldFLOAT__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess), fDefault);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public float ReadFieldFLOAT(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess) {
-    float ret = NWNXLibPINVOKE.CResGFF_ReadFieldFLOAT__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public double ReadFieldDOUBLE(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess, double fDefault) {
-    double ret = NWNXLibPINVOKE.CResGFF_ReadFieldDOUBLE__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess), fDefault);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public double ReadFieldDOUBLE(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess) {
-    double ret = NWNXLibPINVOKE.CResGFF_ReadFieldDOUBLE__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public CResRef ReadFieldCResRef(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess, CResRef sDefault) {
-    CResRef ret = new CResRef(NWNXLibPINVOKE.CResGFF_ReadFieldCResRef__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess), CResRef.getCPtr(sDefault)), true);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public CResRef ReadFieldCResRef(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess) {
-    CResRef ret = new CResRef(NWNXLibPINVOKE.CResGFF_ReadFieldCResRef__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess)), true);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public CExoString ReadFieldCExoString(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess, CExoString sDefault) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CResGFF_ReadFieldCExoString__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess), CExoString.getCPtr(sDefault)), true);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public CExoString ReadFieldCExoString(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CResGFF_ReadFieldCExoString__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess)), true);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public CExoLocString ReadFieldCExoLocString(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess, CExoLocString sDefault) {
-    CExoLocString ret = new CExoLocString(NWNXLibPINVOKE.CResGFF_ReadFieldCExoLocString__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess), CExoLocString.getCPtr(sDefault)), true);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public CExoLocString ReadFieldCExoLocString(CResStruct pStructure, string szFieldID, SWIGTYPE_p_int bSuccess) {
-    CExoLocString ret = new CExoLocString(NWNXLibPINVOKE.CResGFF_ReadFieldCExoLocString__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess)), true);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public System.IntPtr ReadFieldVOID(CResStruct pStructure, System.IntPtr pVariable, uint nSize, string szFieldID, SWIGTYPE_p_int bSuccess, System.IntPtr pDefault) { 
-    System.IntPtr cPtr = NWNXLibPINVOKE.CResGFF_ReadFieldVOID__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), pVariable, nSize, szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess), pDefault);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return cPtr;
-    }
-
-  public System.IntPtr ReadFieldVOID(CResStruct pStructure, System.IntPtr pVariable, uint nSize, string szFieldID, SWIGTYPE_p_int bSuccess) { 
-    System.IntPtr cPtr = NWNXLibPINVOKE.CResGFF_ReadFieldVOID__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), pVariable, nSize, szFieldID, SWIGTYPE_p_int.getCPtr(bSuccess));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return cPtr;
-    }
 
   public int AddList(CResList pList, CResStruct pStructure, string szFieldID) {
     int ret = NWNXLibPINVOKE.CResGFF_AddList(swigCPtr, CResList.getCPtr(pList), CResStruct.getCPtr(pStructure), szFieldID);
@@ -696,12 +675,12 @@ public class CResGFF : CRes {
     return ret;
   }
 
-  public int WriteFieldDWORD64(CResStruct pStructure, ulong nVariable, string szFieldID) {
+  public int WriteFieldDWORD64(CResStruct pStructure, uint nVariable, string szFieldID) {
     int ret = NWNXLibPINVOKE.CResGFF_WriteFieldDWORD64(swigCPtr, CResStruct.getCPtr(pStructure), nVariable, szFieldID);
     return ret;
   }
 
-  public int WriteFieldINT64(CResStruct pStructure, long nVariable, string szFieldID) {
+  public int WriteFieldINT64(CResStruct pStructure, int nVariable, string szFieldID) {
     int ret = NWNXLibPINVOKE.CResGFF_WriteFieldINT64(swigCPtr, CResStruct.getCPtr(pStructure), nVariable, szFieldID);
     return ret;
   }
@@ -734,8 +713,8 @@ public class CResGFF : CRes {
     return ret;
   }
 
-  public int WriteFieldVOID(CResStruct pStructure, System.IntPtr pVariable, uint nSize, string szFieldID) {
-    int ret = NWNXLibPINVOKE.CResGFF_WriteFieldVOID(swigCPtr, CResStruct.getCPtr(pStructure), pVariable, nSize, szFieldID);
+  public int WriteFieldVOID(CResStruct pStructure, void* pVariable, uint nSize, string szFieldID) {
+    int ret = NWNXLibPINVOKE.CResGFF_WriteFieldVOID(swigCPtr, CResStruct.getCPtr(pStructure), (global::System.IntPtr)pVariable, nSize, szFieldID);
     return ret;
   }
 
@@ -750,15 +729,14 @@ public class CResGFF : CRes {
     return ret;
   }
 
-  public int WriteGFFData(CExoFile cFile, SWIGTYPE_p_unsigned_int nBytesWritten) {
-    int ret = NWNXLibPINVOKE.CResGFF_WriteGFFData(swigCPtr, CExoFile.getCPtr(cFile), SWIGTYPE_p_unsigned_int.getCPtr(nBytesWritten));
+  public int WriteGFFData(CExoFile cFile, uint* nBytesWritten) {
+    int ret = NWNXLibPINVOKE.CResGFF_WriteGFFData(swigCPtr, CExoFile.getCPtr(cFile), (global::System.IntPtr)nBytesWritten);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int WriteGFFToPointer(SWIGTYPE_p_p_void pData, SWIGTYPE_p_int nLength) {
-    int ret = NWNXLibPINVOKE.CResGFF_WriteGFFToPointer(swigCPtr, SWIGTYPE_p_p_void.getCPtr(pData), SWIGTYPE_p_int.getCPtr(nLength));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int WriteGFFToPointer(void** pData, int* nLength) {
+    int ret = NWNXLibPINVOKE.CResGFF_WriteGFFToPointer(swigCPtr, (global::System.IntPtr)pData, (global::System.IntPtr)nLength);
     return ret;
   }
 
@@ -820,25 +798,19 @@ public class CResGFF : CRes {
     return ret;
   }
 
-  public SWIGTYPE_p_unsigned_char GetDataField(CResGFFField pField, SWIGTYPE_p_unsigned_int nMaxSize) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CResGFF_GetDataField(swigCPtr, CResGFFField.getCPtr(pField), SWIGTYPE_p_unsigned_int.getCPtr(nMaxSize));
-    SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+  public byte* GetDataField(CResGFFField pField, uint* nMaxSize) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_GetDataField(swigCPtr, CResGFFField.getCPtr(pField), (global::System.IntPtr)nMaxSize);
+    return (byte*)retVal;
   }
 
-  public SWIGTYPE_p_unsigned_char GetDataLayoutField(CResGFFField pField, SWIGTYPE_p_unsigned_int nMaxSize) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CResGFF_GetDataLayoutField(swigCPtr, CResGFFField.getCPtr(pField), SWIGTYPE_p_unsigned_int.getCPtr(nMaxSize));
-    SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+  public byte* GetDataLayoutField(CResGFFField pField, uint* nMaxSize) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_GetDataLayoutField(swigCPtr, CResGFFField.getCPtr(pField), (global::System.IntPtr)nMaxSize);
+    return (byte*)retVal;
   }
 
-  public SWIGTYPE_p_unsigned_char GetDataLayoutList(CResGFFField pField, SWIGTYPE_p_unsigned_int nMaxSize) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CResGFF_GetDataLayoutList(swigCPtr, CResGFFField.getCPtr(pField), SWIGTYPE_p_unsigned_int.getCPtr(nMaxSize));
-    SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+  public byte* GetDataLayoutList(CResGFFField pField, uint* nMaxSize) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_GetDataLayoutList(swigCPtr, CResGFFField.getCPtr(pField), (global::System.IntPtr)nMaxSize);
+    return (byte*)retVal;
   }
 
   public uint GetFieldByLabel(CResStruct pStructure, string szFieldID) {
@@ -877,22 +849,19 @@ public class CResGFF : CRes {
     return ret;
   }
 
-  public SWIGTYPE_p_unsigned_char AddDataField(uint nCurrentOffset, uint nCurrentSize, uint nNewSize) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CResGFF_AddDataField(swigCPtr, nCurrentOffset, nCurrentSize, nNewSize);
-    SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-    return ret;
+  public byte* AddDataField(uint nCurrentOffset, uint nCurrentSize, uint nNewSize) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_AddDataField(swigCPtr, nCurrentOffset, nCurrentSize, nNewSize);
+    return (byte*)retVal;
   }
 
-  public SWIGTYPE_p_unsigned_char AddDataLayoutField(uint nCurrentOffset, uint nCurrentSize, uint nNewSize) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CResGFF_AddDataLayoutField(swigCPtr, nCurrentOffset, nCurrentSize, nNewSize);
-    SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-    return ret;
+  public byte* AddDataLayoutField(uint nCurrentOffset, uint nCurrentSize, uint nNewSize) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_AddDataLayoutField(swigCPtr, nCurrentOffset, nCurrentSize, nNewSize);
+    return (byte*)retVal;
   }
 
-  public SWIGTYPE_p_unsigned_char AddDataLayoutList(uint nCurrentOffset, uint nCurrentSize, uint nNewSize) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CResGFF_AddDataLayoutList(swigCPtr, nCurrentOffset, nCurrentSize, nNewSize);
-    SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-    return ret;
+  public byte* AddDataLayoutList(uint nCurrentOffset, uint nCurrentSize, uint nNewSize) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_AddDataLayoutList(swigCPtr, nCurrentOffset, nCurrentSize, nNewSize);
+    return (byte*)retVal;
   }
 
 }

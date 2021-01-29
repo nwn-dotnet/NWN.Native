@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class NWAREAEXPANSION : global::System.IDisposable {
+public unsafe class NWAREAEXPANSION : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public NWAREAEXPANSION(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public NWAREAEXPANSION(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(NWAREAEXPANSION obj) {
@@ -37,7 +42,7 @@ public class NWAREAEXPANSION : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_NWAREAEXPANSION(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -97,6 +102,9 @@ public class NWAREAEXPANSION : global::System.IDisposable {
       int ret = NWNXLibPINVOKE.NWAREAEXPANSION_nID_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public NWAREAEXPANSION() : this(NWNXLibPINVOKE.new_NWAREAEXPANSION(), true) {
   }
 
 }

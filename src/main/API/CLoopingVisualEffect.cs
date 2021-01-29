@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CLoopingVisualEffect : global::System.IDisposable {
+public unsafe class CLoopingVisualEffect : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CLoopingVisualEffect(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CLoopingVisualEffect(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CLoopingVisualEffect obj) {
@@ -37,7 +42,7 @@ public class CLoopingVisualEffect : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CLoopingVisualEffect(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -122,6 +127,9 @@ public class CLoopingVisualEffect : global::System.IDisposable {
   public int GetIsBeam() {
     int ret = NWNXLibPINVOKE.CLoopingVisualEffect_GetIsBeam(swigCPtr);
     return ret;
+  }
+
+  public CLoopingVisualEffect() : this(NWNXLibPINVOKE.new_CLoopingVisualEffect(), true) {
   }
 
 }

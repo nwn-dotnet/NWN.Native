@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWSTrigger : CNWSObject {
+public unsafe class CNWSTrigger : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWSTrigger(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSTrigger_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSTrigger(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSTrigger_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSTrigger obj) {
@@ -143,15 +147,15 @@ public class CNWSTrigger : CNWSObject {
     } 
   }
 
-  public SWIGTYPE_p_int m_pnTriangles {
+  public int* m_pnTriangles {
     set {
-      NWNXLibPINVOKE.CNWSTrigger_m_pnTriangles_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSTrigger_m_pnTriangles_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSTrigger_m_pnTriangles_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWSTrigger_m_pnTriangles_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
   public int m_nOutlineVertices {
@@ -164,15 +168,15 @@ public class CNWSTrigger : CNWSObject {
     } 
   }
 
-  public SWIGTYPE_p_int m_pnOutlineVertices {
+  public int* m_pnOutlineVertices {
     set {
-      NWNXLibPINVOKE.CNWSTrigger_m_pnOutlineVertices_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSTrigger_m_pnOutlineVertices_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSTrigger_m_pnOutlineVertices_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWSTrigger_m_pnOutlineVertices_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
   public uint m_oidLastEntered {
@@ -485,12 +489,12 @@ public class CNWSTrigger : CNWSObject {
     return ret;
   }
 
-  public void ComputeBoundingBox(SWIGTYPE_p_float fXMin, SWIGTYPE_p_float fYMin, SWIGTYPE_p_float fXMax, SWIGTYPE_p_float fYMax) {
-    NWNXLibPINVOKE.CNWSTrigger_ComputeBoundingBox(swigCPtr, SWIGTYPE_p_float.getCPtr(fXMin), SWIGTYPE_p_float.getCPtr(fYMin), SWIGTYPE_p_float.getCPtr(fXMax), SWIGTYPE_p_float.getCPtr(fYMax));
+  public void ComputeBoundingBox(float* fXMin, float* fYMin, float* fXMax, float* fYMax) {
+    NWNXLibPINVOKE.CNWSTrigger_ComputeBoundingBox(swigCPtr, (global::System.IntPtr)fXMin, (global::System.IntPtr)fYMin, (global::System.IntPtr)fXMax, (global::System.IntPtr)fYMax);
   }
 
-  public override void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSTrigger_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
+  public override void EventHandler(uint nEventId, uint nCallerObjectId, void* pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSTrigger_EventHandler(swigCPtr, nEventId, nCallerObjectId, (global::System.IntPtr)pScript, nCalendarDay, nTimeOfDay);
   }
 
   public uint GetTargetArea() {

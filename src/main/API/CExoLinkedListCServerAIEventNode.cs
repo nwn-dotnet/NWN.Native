@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CExoLinkedListCServerAIEventNode : global::System.IDisposable {
+public unsafe class CExoLinkedListCServerAIEventNode : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CExoLinkedListCServerAIEventNode(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CExoLinkedListCServerAIEventNode(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoLinkedListCServerAIEventNode obj) {

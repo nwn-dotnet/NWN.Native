@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CLastUpdateObject : global::System.IDisposable {
+public unsafe class CLastUpdateObject : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CLastUpdateObject(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CLastUpdateObject(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CLastUpdateObject obj) {
@@ -709,26 +714,26 @@ public class CLastUpdateObject : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_nClass {
+  public byte[] m_nClass {
     set {
-      NWNXLibPINVOKE.CLastUpdateObject_m_nClass_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CLastUpdateObject_m_nClass_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CLastUpdateObject_m_nClass_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nClass_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_char m_nLevel {
+  public byte[] m_nLevel {
     set {
-      NWNXLibPINVOKE.CLastUpdateObject_m_nLevel_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CLastUpdateObject_m_nLevel_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CLastUpdateObject_m_nLevel_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nLevel_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public short m_nAlignmentLawChaos {

@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CSpell_Delete : global::System.IDisposable {
+public unsafe class CSpell_Delete : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CSpell_Delete(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CSpell_Delete(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CSpell_Delete obj) {
@@ -37,7 +42,7 @@ public class CSpell_Delete : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CSpell_Delete(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -96,6 +101,9 @@ public class CSpell_Delete : global::System.IDisposable {
       byte ret = NWNXLibPINVOKE.CSpell_Delete_m_nSpellSlot_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public CSpell_Delete() : this(NWNXLibPINVOKE.new_CSpell_Delete(), true) {
   }
 
 }

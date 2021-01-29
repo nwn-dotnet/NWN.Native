@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CVirtualMachine : global::System.IDisposable {
+public unsafe class CVirtualMachine : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CVirtualMachine(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CVirtualMachine(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CVirtualMachine obj) {
@@ -99,14 +104,14 @@ public class CVirtualMachine : global::System.IDisposable {
     } 
   }
 
-  public System.IntPtr m_pReturnValue {
+  public void* m_pReturnValue {
     set {
-      NWNXLibPINVOKE.CVirtualMachine_m_pReturnValue_set(swigCPtr, value);
+      NWNXLibPINVOKE.CVirtualMachine_m_pReturnValue_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachine_m_pReturnValue_get(swigCPtr); 
-        return cPtr; 
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachine_m_pReturnValue_get(swigCPtr); 
+        return (void*)retVal; 
+    }
 
   }
 
@@ -141,26 +146,26 @@ public class CVirtualMachine : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_bValidObjectRunScript {
+  public int[] m_bValidObjectRunScript {
     set {
-      NWNXLibPINVOKE.CVirtualMachine_m_bValidObjectRunScript_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CVirtualMachine_m_bValidObjectRunScript_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachine_m_bValidObjectRunScript_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        int[] retVal = NWNXLibPINVOKE.CVirtualMachine_m_bValidObjectRunScript_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_int m_oidObjectRunScript {
+  public uint[] m_oidObjectRunScript {
     set {
-      NWNXLibPINVOKE.CVirtualMachine_m_oidObjectRunScript_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CVirtualMachine_m_oidObjectRunScript_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachine_m_oidObjectRunScript_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        uint[] retVal = NWNXLibPINVOKE.CVirtualMachine_m_oidObjectRunScript_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public CExoArrayListScriptParam m_lScriptParams {
@@ -195,15 +200,15 @@ public class CVirtualMachine : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_pnRunTimeInstructPtr {
+  public int[] m_pnRunTimeInstructPtr {
     set {
-      NWNXLibPINVOKE.CVirtualMachine_m_pnRunTimeInstructPtr_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CVirtualMachine_m_pnRunTimeInstructPtr_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachine_m_pnRunTimeInstructPtr_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        int[] retVal = NWNXLibPINVOKE.CVirtualMachine_m_pnRunTimeInstructPtr_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public int m_nSecondaryInstructionPointer {
@@ -381,18 +386,18 @@ public class CVirtualMachine : global::System.IDisposable {
     return ret;
   }
 
-  public int RunScriptSituation(System.IntPtr pScriptSituation, uint oid, int bOidValid) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_RunScriptSituation__SWIG_0(swigCPtr, pScriptSituation, oid, bOidValid);
+  public int RunScriptSituation(void* pScriptSituation, uint oid, int bOidValid) {
+    int ret = NWNXLibPINVOKE.CVirtualMachine_RunScriptSituation__SWIG_0(swigCPtr, (global::System.IntPtr)pScriptSituation, oid, bOidValid);
     return ret;
   }
 
-  public int RunScriptSituation(System.IntPtr pScriptSituation, uint oid) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_RunScriptSituation__SWIG_1(swigCPtr, pScriptSituation, oid);
+  public int RunScriptSituation(void* pScriptSituation, uint oid) {
+    int ret = NWNXLibPINVOKE.CVirtualMachine_RunScriptSituation__SWIG_1(swigCPtr, (global::System.IntPtr)pScriptSituation, oid);
     return ret;
   }
 
-  public int GetRunScriptReturnValue(SWIGTYPE_p_int nParameterType, SWIGTYPE_p_p_void pParameter) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_GetRunScriptReturnValue(swigCPtr, SWIGTYPE_p_int.getCPtr(nParameterType), SWIGTYPE_p_p_void.getCPtr(pParameter));
+  public int GetRunScriptReturnValue(int* nParameterType, void** pParameter) {
+    int ret = NWNXLibPINVOKE.CVirtualMachine_GetRunScriptReturnValue(swigCPtr, (global::System.IntPtr)nParameterType, (global::System.IntPtr)pParameter);
     return ret;
   }
 
@@ -420,8 +425,8 @@ public class CVirtualMachine : global::System.IDisposable {
     NWNXLibPINVOKE.CVirtualMachine_SetCommandImplementer(swigCPtr, CVirtualMachineCmdImplementer.getCPtr(pImplementer));
   }
 
-  public int StackPopInteger(SWIGTYPE_p_int nInteger) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_StackPopInteger(swigCPtr, SWIGTYPE_p_int.getCPtr(nInteger));
+  public int StackPopInteger(int* nInteger) {
+    int ret = NWNXLibPINVOKE.CVirtualMachine_StackPopInteger(swigCPtr, (global::System.IntPtr)nInteger);
     return ret;
   }
 
@@ -430,8 +435,8 @@ public class CVirtualMachine : global::System.IDisposable {
     return ret;
   }
 
-  public int StackPopFloat(SWIGTYPE_p_float fFloat) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_StackPopFloat(swigCPtr, SWIGTYPE_p_float.getCPtr(fFloat));
+  public int StackPopFloat(float* fFloat) {
+    int ret = NWNXLibPINVOKE.CVirtualMachine_StackPopFloat(swigCPtr, (global::System.IntPtr)fFloat);
     return ret;
   }
 
@@ -462,8 +467,8 @@ public class CVirtualMachine : global::System.IDisposable {
     return ret;
   }
 
-  public int StackPopObject(SWIGTYPE_p_unsigned_int poidObjectId) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_StackPopObject(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(poidObjectId));
+  public int StackPopObject(uint* poidObjectId) {
+    int ret = NWNXLibPINVOKE.CVirtualMachine_StackPopObject(swigCPtr, (global::System.IntPtr)poidObjectId);
     return ret;
   }
 
@@ -472,28 +477,28 @@ public class CVirtualMachine : global::System.IDisposable {
     return ret;
   }
 
-  public int StackPopEngineStructure(int nEngineStructure, SWIGTYPE_p_p_void ppEngineStructure) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_StackPopEngineStructure(swigCPtr, nEngineStructure, SWIGTYPE_p_p_void.getCPtr(ppEngineStructure));
+  public int StackPopEngineStructure(int nEngineStructure, void** ppEngineStructure) {
+    int ret = NWNXLibPINVOKE.CVirtualMachine_StackPopEngineStructure(swigCPtr, nEngineStructure, (global::System.IntPtr)ppEngineStructure);
     return ret;
   }
 
-  public int StackPushEngineStructure(int nEngineStructure, System.IntPtr pEngineStructure) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_StackPushEngineStructure(swigCPtr, nEngineStructure, pEngineStructure);
+  public int StackPushEngineStructure(int nEngineStructure, void* pEngineStructure) {
+    int ret = NWNXLibPINVOKE.CVirtualMachine_StackPushEngineStructure(swigCPtr, nEngineStructure, (global::System.IntPtr)pEngineStructure);
     return ret;
   }
 
-  public void DeleteScriptSituation(System.IntPtr pScript) {
-    NWNXLibPINVOKE.CVirtualMachine_DeleteScriptSituation(swigCPtr, pScript);
+  public void DeleteScriptSituation(void* pScript) {
+    NWNXLibPINVOKE.CVirtualMachine_DeleteScriptSituation(swigCPtr, (global::System.IntPtr)pScript);
   }
 
-  public int ExecuteCode(SWIGTYPE_p_int nInstructionPointer, SWIGTYPE_p_DataBlockRef pCode, CVirtualMachineDebuggingContext pDebugContext) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_ExecuteCode__SWIG_0(swigCPtr, SWIGTYPE_p_int.getCPtr(nInstructionPointer), SWIGTYPE_p_DataBlockRef.getCPtr(pCode), CVirtualMachineDebuggingContext.getCPtr(pDebugContext));
+  public int ExecuteCode(int* nInstructionPointer, SWIGTYPE_p_DataBlockRef pCode, CVirtualMachineDebuggingContext pDebugContext) {
+    int ret = NWNXLibPINVOKE.CVirtualMachine_ExecuteCode__SWIG_0(swigCPtr, (global::System.IntPtr)nInstructionPointer, SWIGTYPE_p_DataBlockRef.getCPtr(pCode), CVirtualMachineDebuggingContext.getCPtr(pDebugContext));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int ExecuteCode(SWIGTYPE_p_int nInstructionPointer, SWIGTYPE_p_DataBlockRef pCode) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_ExecuteCode__SWIG_1(swigCPtr, SWIGTYPE_p_int.getCPtr(nInstructionPointer), SWIGTYPE_p_DataBlockRef.getCPtr(pCode));
+  public int ExecuteCode(int* nInstructionPointer, SWIGTYPE_p_DataBlockRef pCode) {
+    int ret = NWNXLibPINVOKE.CVirtualMachine_ExecuteCode__SWIG_1(swigCPtr, (global::System.IntPtr)nInstructionPointer, SWIGTYPE_p_DataBlockRef.getCPtr(pCode));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -514,8 +519,8 @@ public class CVirtualMachine : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public int PopInstructionPtr(SWIGTYPE_p_int nInstructionPointer) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_PopInstructionPtr(swigCPtr, SWIGTYPE_p_int.getCPtr(nInstructionPointer));
+  public int PopInstructionPtr(int* nInstructionPointer) {
+    int ret = NWNXLibPINVOKE.CVirtualMachine_PopInstructionPtr(swigCPtr, (global::System.IntPtr)nInstructionPointer);
     return ret;
   }
 
@@ -545,8 +550,8 @@ public class CVirtualMachine : global::System.IDisposable {
     return ret;
   }
 
-  public void Debugger(SWIGTYPE_p_int pnCurrentInstructionPointer) {
-    NWNXLibPINVOKE.CVirtualMachine_Debugger(swigCPtr, SWIGTYPE_p_int.getCPtr(pnCurrentInstructionPointer));
+  public void Debugger(int* pnCurrentInstructionPointer) {
+    NWNXLibPINVOKE.CVirtualMachine_Debugger(swigCPtr, (global::System.IntPtr)pnCurrentInstructionPointer);
   }
 
   public int StackPopCommand_Internal(SWIGTYPE_p_p_CVirtualMachineScript pScript) {

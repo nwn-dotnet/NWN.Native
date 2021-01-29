@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWSFaction : global::System.IDisposable {
+public unsafe class CNWSFaction : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWSFaction(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSFaction(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSFaction obj) {
@@ -167,8 +172,8 @@ public class CNWSFaction : global::System.IDisposable {
     return ret;
   }
 
-  public uint GetMemberList(SWIGTYPE_p_p_unsigned_int pMemberIDs) {
-    uint ret = NWNXLibPINVOKE.CNWSFaction_GetMemberList(swigCPtr, SWIGTYPE_p_p_unsigned_int.getCPtr(pMemberIDs));
+  public uint GetMemberList(uint** pMemberIDs) {
+    uint ret = NWNXLibPINVOKE.CNWSFaction_GetMemberList(swigCPtr, (global::System.IntPtr)pMemberIDs);
     return ret;
   }
 

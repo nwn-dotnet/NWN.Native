@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CExoRandInternal : global::System.IDisposable {
+public unsafe class CExoRandInternal : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CExoRandInternal(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CExoRandInternal(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoRandInternal obj) {
@@ -328,15 +333,15 @@ public class CExoRandInternal : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_pBuffer {
+  public byte* m_pBuffer {
     set {
-      NWNXLibPINVOKE.CExoRandInternal_m_pBuffer_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoRandInternal_m_pBuffer_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoRandInternal_m_pBuffer_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CExoRandInternal_m_pBuffer_get(swigCPtr); 
+        return (byte*)retVal; 
+    }
+
   }
 
   public ushort m_pBufIndex {
@@ -349,42 +354,42 @@ public class CExoRandInternal : global::System.IDisposable {
     } 
   }
 
-  public ulong m_nEvent1 {
+  public uint m_nEvent1 {
     set {
       NWNXLibPINVOKE.CExoRandInternal_m_nEvent1_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CExoRandInternal_m_nEvent1_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CExoRandInternal_m_nEvent1_get(swigCPtr);
       return ret;
     } 
   }
 
-  public ulong m_nEvent2 {
+  public uint m_nEvent2 {
     set {
       NWNXLibPINVOKE.CExoRandInternal_m_nEvent2_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CExoRandInternal_m_nEvent2_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CExoRandInternal_m_nEvent2_get(swigCPtr);
       return ret;
     } 
   }
 
-  public ulong m_nEvent3 {
+  public uint m_nEvent3 {
     set {
       NWNXLibPINVOKE.CExoRandInternal_m_nEvent3_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CExoRandInternal_m_nEvent3_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CExoRandInternal_m_nEvent3_get(swigCPtr);
       return ret;
     } 
   }
 
-  public ulong m_nEvent4 {
+  public uint m_nEvent4 {
     set {
       NWNXLibPINVOKE.CExoRandInternal_m_nEvent4_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CExoRandInternal_m_nEvent4_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CExoRandInternal_m_nEvent4_get(swigCPtr);
       return ret;
     } 
   }
@@ -428,8 +433,8 @@ public class CExoRandInternal : global::System.IDisposable {
     NWNXLibPINVOKE.CExoRandInternal_GenSeed(swigCPtr);
   }
 
-  public void Add(SWIGTYPE_p_unsigned_char pBuf, int nSize) {
-    NWNXLibPINVOKE.CExoRandInternal_Add(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(pBuf), nSize);
+  public void Add(byte* pBuf, int nSize) {
+    NWNXLibPINVOKE.CExoRandInternal_Add(swigCPtr, (global::System.IntPtr)pBuf, nSize);
   }
 
 }

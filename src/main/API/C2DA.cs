@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class C2DA : global::System.IDisposable {
+public unsafe class C2DA : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public C2DA(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public C2DA(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(C2DA obj) {
@@ -206,25 +211,25 @@ public class C2DA : global::System.IDisposable {
     return ret;
   }
 
-  public int GetFLOATEntry(int nRow, int nColumn, SWIGTYPE_p_float pFloat) {
-    int ret = NWNXLibPINVOKE.C2DA_GetFLOATEntry__SWIG_0(swigCPtr, nRow, nColumn, SWIGTYPE_p_float.getCPtr(pFloat));
+  public int GetFLOATEntry(int nRow, int nColumn, float* pFloat) {
+    int ret = NWNXLibPINVOKE.C2DA_GetFLOATEntry__SWIG_0(swigCPtr, nRow, nColumn, (global::System.IntPtr)pFloat);
     return ret;
   }
 
-  public int GetFLOATEntry(CExoString sRowLabel, CExoString sColumnLabel, SWIGTYPE_p_float pFloat) {
-    int ret = NWNXLibPINVOKE.C2DA_GetFLOATEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sRowLabel), CExoString.getCPtr(sColumnLabel), SWIGTYPE_p_float.getCPtr(pFloat));
+  public int GetFLOATEntry(CExoString sRowLabel, CExoString sColumnLabel, float* pFloat) {
+    int ret = NWNXLibPINVOKE.C2DA_GetFLOATEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sRowLabel), CExoString.getCPtr(sColumnLabel), (global::System.IntPtr)pFloat);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int GetFLOATEntry(int nRow, CExoString sColumnLabel, SWIGTYPE_p_float pFloat) {
-    int ret = NWNXLibPINVOKE.C2DA_GetFLOATEntry__SWIG_2(swigCPtr, nRow, CExoString.getCPtr(sColumnLabel), SWIGTYPE_p_float.getCPtr(pFloat));
+  public int GetFLOATEntry(int nRow, CExoString sColumnLabel, float* pFloat) {
+    int ret = NWNXLibPINVOKE.C2DA_GetFLOATEntry__SWIG_2(swigCPtr, nRow, CExoString.getCPtr(sColumnLabel), (global::System.IntPtr)pFloat);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int GetFLOATEntry(CExoString sRowLabel, int nColumn, SWIGTYPE_p_float pFloat) {
-    int ret = NWNXLibPINVOKE.C2DA_GetFLOATEntry__SWIG_3(swigCPtr, CExoString.getCPtr(sRowLabel), nColumn, SWIGTYPE_p_float.getCPtr(pFloat));
+  public int GetFLOATEntry(CExoString sRowLabel, int nColumn, float* pFloat) {
+    int ret = NWNXLibPINVOKE.C2DA_GetFLOATEntry__SWIG_3(swigCPtr, CExoString.getCPtr(sRowLabel), nColumn, (global::System.IntPtr)pFloat);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -252,25 +257,25 @@ public class C2DA : global::System.IDisposable {
     return ret;
   }
 
-  public int GetINTEntry(int nRow, int nColumn, SWIGTYPE_p_int pInt) {
-    int ret = NWNXLibPINVOKE.C2DA_GetINTEntry__SWIG_0(swigCPtr, nRow, nColumn, SWIGTYPE_p_int.getCPtr(pInt));
+  public int GetINTEntry(int nRow, int nColumn, int* pInt) {
+    int ret = NWNXLibPINVOKE.C2DA_GetINTEntry__SWIG_0(swigCPtr, nRow, nColumn, (global::System.IntPtr)pInt);
     return ret;
   }
 
-  public int GetINTEntry(CExoString sRowLabel, CExoString sColumnLabel, SWIGTYPE_p_int pInt) {
-    int ret = NWNXLibPINVOKE.C2DA_GetINTEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sRowLabel), CExoString.getCPtr(sColumnLabel), SWIGTYPE_p_int.getCPtr(pInt));
+  public int GetINTEntry(CExoString sRowLabel, CExoString sColumnLabel, int* pInt) {
+    int ret = NWNXLibPINVOKE.C2DA_GetINTEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sRowLabel), CExoString.getCPtr(sColumnLabel), (global::System.IntPtr)pInt);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int GetINTEntry(int nRow, CExoString sColumnLabel, SWIGTYPE_p_int pInt) {
-    int ret = NWNXLibPINVOKE.C2DA_GetINTEntry__SWIG_2(swigCPtr, nRow, CExoString.getCPtr(sColumnLabel), SWIGTYPE_p_int.getCPtr(pInt));
+  public int GetINTEntry(int nRow, CExoString sColumnLabel, int* pInt) {
+    int ret = NWNXLibPINVOKE.C2DA_GetINTEntry__SWIG_2(swigCPtr, nRow, CExoString.getCPtr(sColumnLabel), (global::System.IntPtr)pInt);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int GetINTEntry(CExoString sRowLabel, int nColumn, SWIGTYPE_p_int pInt) {
-    int ret = NWNXLibPINVOKE.C2DA_GetINTEntry__SWIG_3(swigCPtr, CExoString.getCPtr(sRowLabel), nColumn, SWIGTYPE_p_int.getCPtr(pInt));
+  public int GetINTEntry(CExoString sRowLabel, int nColumn, int* pInt) {
+    int ret = NWNXLibPINVOKE.C2DA_GetINTEntry__SWIG_3(swigCPtr, CExoString.getCPtr(sRowLabel), nColumn, (global::System.IntPtr)pInt);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -341,8 +346,8 @@ public class C2DA : global::System.IDisposable {
     return ret;
   }
 
-  public int GetNextToken(SWIGTYPE_p_p_char pBuffer, SWIGTYPE_p_unsigned_int pBufferSize, string pToken, uint nMaxTokenSize, SWIGTYPE_p_unsigned_int pLeadingWhiteSpaceSize) {
-    int ret = NWNXLibPINVOKE.C2DA_GetNextToken(swigCPtr, SWIGTYPE_p_p_char.getCPtr(pBuffer), SWIGTYPE_p_unsigned_int.getCPtr(pBufferSize), pToken, nMaxTokenSize, SWIGTYPE_p_unsigned_int.getCPtr(pLeadingWhiteSpaceSize));
+  public int GetNextToken(char** pBuffer, uint* pBufferSize, string pToken, uint nMaxTokenSize, uint* pLeadingWhiteSpaceSize) {
+    int ret = NWNXLibPINVOKE.C2DA_GetNextToken(swigCPtr, (global::System.IntPtr)pBuffer, (global::System.IntPtr)pBufferSize, pToken, nMaxTokenSize, (global::System.IntPtr)pLeadingWhiteSpaceSize);
     return ret;
   }
 
@@ -352,8 +357,8 @@ public class C2DA : global::System.IDisposable {
     return ret;
   }
 
-  public int SkipNewLines(SWIGTYPE_p_p_char pBuffer, SWIGTYPE_p_unsigned_int pBufferSize) {
-    int ret = NWNXLibPINVOKE.C2DA_SkipNewLines(swigCPtr, SWIGTYPE_p_p_char.getCPtr(pBuffer), SWIGTYPE_p_unsigned_int.getCPtr(pBufferSize));
+  public int SkipNewLines(char** pBuffer, uint* pBufferSize) {
+    int ret = NWNXLibPINVOKE.C2DA_SkipNewLines(swigCPtr, (global::System.IntPtr)pBuffer, (global::System.IntPtr)pBufferSize);
     return ret;
   }
 

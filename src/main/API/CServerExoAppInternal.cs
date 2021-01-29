@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CServerExoAppInternal : global::System.IDisposable {
+public unsafe class CServerExoAppInternal : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CServerExoAppInternal(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CServerExoAppInternal(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CServerExoAppInternal obj) {
@@ -78,15 +83,15 @@ public class CServerExoAppInternal : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_unsigned_char ScratchMessageBuffer {
+  public byte[] ScratchMessageBuffer {
     set {
-      NWNXLibPINVOKE.CServerExoAppInternal_ScratchMessageBuffer_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CServerExoAppInternal_ScratchMessageBuffer_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoAppInternal_ScratchMessageBuffer_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CServerExoAppInternal_ScratchMessageBuffer_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public int m_bMultiplayerEnabled {
@@ -172,15 +177,15 @@ public class CServerExoAppInternal : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_int m_pPendingAuthorization {
+  public uint* m_pPendingAuthorization {
     set {
-      NWNXLibPINVOKE.CServerExoAppInternal_m_pPendingAuthorization_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CServerExoAppInternal_m_pPendingAuthorization_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoAppInternal_m_pPendingAuthorization_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CServerExoAppInternal_m_pPendingAuthorization_get(swigCPtr); 
+        return (uint*)retVal; 
+    }
+
   }
 
   public CExoArrayListObjectId m_lstClientDisconnectPending {
@@ -194,32 +199,32 @@ public class CServerExoAppInternal : global::System.IDisposable {
     } 
   }
 
-  public ulong m_nShutdownTimer {
+  public uint m_nShutdownTimer {
     set {
       NWNXLibPINVOKE.CServerExoAppInternal_m_nShutdownTimer_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CServerExoAppInternal_m_nShutdownTimer_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CServerExoAppInternal_m_nShutdownTimer_get(swigCPtr);
       return ret;
     } 
   }
 
-  public ulong m_nShutdownTimeStamp {
+  public uint m_nShutdownTimeStamp {
     set {
       NWNXLibPINVOKE.CServerExoAppInternal_m_nShutdownTimeStamp_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CServerExoAppInternal_m_nShutdownTimeStamp_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CServerExoAppInternal_m_nShutdownTimeStamp_get(swigCPtr);
       return ret;
     } 
   }
 
-  public ulong m_nShutdownMaxTimeLocalLogins {
+  public uint m_nShutdownMaxTimeLocalLogins {
     set {
       NWNXLibPINVOKE.CServerExoAppInternal_m_nShutdownMaxTimeLocalLogins_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CServerExoAppInternal_m_nShutdownMaxTimeLocalLogins_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CServerExoAppInternal_m_nShutdownMaxTimeLocalLogins_get(swigCPtr);
       return ret;
     } 
   }
@@ -582,22 +587,22 @@ public class CServerExoAppInternal : global::System.IDisposable {
     } 
   }
 
-  public ulong m_nLogHeartbeatTimer {
+  public uint m_nLogHeartbeatTimer {
     set {
       NWNXLibPINVOKE.CServerExoAppInternal_m_nLogHeartbeatTimer_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CServerExoAppInternal_m_nLogHeartbeatTimer_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CServerExoAppInternal_m_nLogHeartbeatTimer_get(swigCPtr);
       return ret;
     } 
   }
 
-  public ulong m_nLogHeartbeatTimeStamp {
+  public uint m_nLogHeartbeatTimeStamp {
     set {
       NWNXLibPINVOKE.CServerExoAppInternal_m_nLogHeartbeatTimeStamp_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CServerExoAppInternal_m_nLogHeartbeatTimeStamp_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CServerExoAppInternal_m_nLogHeartbeatTimeStamp_get(swigCPtr);
       return ret;
     } 
   }
@@ -719,12 +724,12 @@ public class CServerExoAppInternal : global::System.IDisposable {
     } 
   }
 
-  public ulong m_nAutoSaveTimer {
+  public uint m_nAutoSaveTimer {
     set {
       NWNXLibPINVOKE.CServerExoAppInternal_m_nAutoSaveTimer_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CServerExoAppInternal_m_nAutoSaveTimer_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CServerExoAppInternal_m_nAutoSaveTimer_get(swigCPtr);
       return ret;
     } 
   }
@@ -740,32 +745,32 @@ public class CServerExoAppInternal : global::System.IDisposable {
     } 
   }
 
-  public ulong m_nTotalSubNetSent {
+  public uint m_nTotalSubNetSent {
     set {
       NWNXLibPINVOKE.CServerExoAppInternal_m_nTotalSubNetSent_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CServerExoAppInternal_m_nTotalSubNetSent_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CServerExoAppInternal_m_nTotalSubNetSent_get(swigCPtr);
       return ret;
     } 
   }
 
-  public ulong m_nTotalSubNetRecv {
+  public uint m_nTotalSubNetRecv {
     set {
       NWNXLibPINVOKE.CServerExoAppInternal_m_nTotalSubNetRecv_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CServerExoAppInternal_m_nTotalSubNetRecv_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CServerExoAppInternal_m_nTotalSubNetRecv_get(swigCPtr);
       return ret;
     } 
   }
 
-  public ulong m_nServerStartupTime {
+  public uint m_nServerStartupTime {
     set {
       NWNXLibPINVOKE.CServerExoAppInternal_m_nServerStartupTime_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CServerExoAppInternal_m_nServerStartupTime_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CServerExoAppInternal_m_nServerStartupTime_get(swigCPtr);
       return ret;
     } 
   }
@@ -985,8 +990,8 @@ public class CServerExoAppInternal : global::System.IDisposable {
     return ret;
   }
 
-  public int HandleMessage(uint nPlayerId, SWIGTYPE_p_unsigned_char pData, uint dwSize, int bRawMessage) {
-    int ret = NWNXLibPINVOKE.CServerExoAppInternal_HandleMessage(swigCPtr, nPlayerId, SWIGTYPE_p_unsigned_char.getCPtr(pData), dwSize, bRawMessage);
+  public int HandleMessage(uint nPlayerId, byte* pData, uint dwSize, int bRawMessage) {
+    int ret = NWNXLibPINVOKE.CServerExoAppInternal_HandleMessage(swigCPtr, nPlayerId, (global::System.IntPtr)pData, dwSize, bRawMessage);
     return ret;
   }
 
@@ -1017,8 +1022,8 @@ public class CServerExoAppInternal : global::System.IDisposable {
     NWNXLibPINVOKE.CServerExoAppInternal_Shutdown__SWIG_1(swigCPtr, bWarnLocals);
   }
 
-  public int ValidatePlayerLogin(System.IntPtr pPlayer) {
-    int ret = NWNXLibPINVOKE.CServerExoAppInternal_ValidatePlayerLogin(swigCPtr, pPlayer);
+  public int ValidatePlayerLogin(void* pPlayer) {
+    int ret = NWNXLibPINVOKE.CServerExoAppInternal_ValidatePlayerLogin(swigCPtr, (global::System.IntPtr)pPlayer);
     return ret;
   }
 
@@ -1111,19 +1116,19 @@ public class CServerExoAppInternal : global::System.IDisposable {
     return ret;
   }
 
-  public uint ValidateCreateServerCharacter(CNWSPlayer pPlayer, System.IntPtr pCharData, uint nSize) {
-    uint ret = NWNXLibPINVOKE.CServerExoAppInternal_ValidateCreateServerCharacter(swigCPtr, CNWSPlayer.getCPtr(pPlayer), pCharData, nSize);
+  public uint ValidateCreateServerCharacter(CNWSPlayer pPlayer, void* pCharData, uint nSize) {
+    uint ret = NWNXLibPINVOKE.CServerExoAppInternal_ValidateCreateServerCharacter(swigCPtr, CNWSPlayer.getCPtr(pPlayer), (global::System.IntPtr)pCharData, nSize);
     return ret;
   }
 
-  public int LoadCharacterStart(byte nType, CNWSPlayer pPlayer, CResRef cResRef, System.IntPtr pCharData, uint nSize) {
-    int ret = NWNXLibPINVOKE.CServerExoAppInternal_LoadCharacterStart__SWIG_0(swigCPtr, nType, CNWSPlayer.getCPtr(pPlayer), CResRef.getCPtr(cResRef), pCharData, nSize);
+  public int LoadCharacterStart(byte nType, CNWSPlayer pPlayer, CResRef cResRef, void* pCharData, uint nSize) {
+    int ret = NWNXLibPINVOKE.CServerExoAppInternal_LoadCharacterStart__SWIG_0(swigCPtr, nType, CNWSPlayer.getCPtr(pPlayer), CResRef.getCPtr(cResRef), (global::System.IntPtr)pCharData, nSize);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int LoadCharacterStart(byte nType, CNWSPlayer pPlayer, CResRef cResRef, System.IntPtr pCharData) {
-    int ret = NWNXLibPINVOKE.CServerExoAppInternal_LoadCharacterStart__SWIG_1(swigCPtr, nType, CNWSPlayer.getCPtr(pPlayer), CResRef.getCPtr(cResRef), pCharData);
+  public int LoadCharacterStart(byte nType, CNWSPlayer pPlayer, CResRef cResRef, void* pCharData) {
+    int ret = NWNXLibPINVOKE.CServerExoAppInternal_LoadCharacterStart__SWIG_1(swigCPtr, nType, CNWSPlayer.getCPtr(pPlayer), CResRef.getCPtr(cResRef), (global::System.IntPtr)pCharData);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -1185,10 +1190,10 @@ public class CServerExoAppInternal : global::System.IDisposable {
     return ret;
   }
 
-  public CGameObject GetGameObject(uint nObjectID) {
+  public ICGameObject GetGameObject(uint nObjectID) {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoAppInternal_GetGameObject(swigCPtr, nObjectID);
     CGameObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new CGameObject(cPtr, false);
-    return ret;
+    return (ICGameObject)ret;
   }
 
   public CNWSStore GetStoreByGameObjectID(uint nObjectID) {
@@ -1278,8 +1283,8 @@ public class CServerExoAppInternal : global::System.IDisposable {
     return ret;
   }
 
-  public int GetPlayerAddressData(uint nConnectionId, SWIGTYPE_p_unsigned_int nProtocol, SWIGTYPE_p_p_unsigned_char pNetAddress1, SWIGTYPE_p_p_unsigned_char pNetAddress2, SWIGTYPE_p_unsigned_int nPort) {
-    int ret = NWNXLibPINVOKE.CServerExoAppInternal_GetPlayerAddressData(swigCPtr, nConnectionId, SWIGTYPE_p_unsigned_int.getCPtr(nProtocol), SWIGTYPE_p_p_unsigned_char.getCPtr(pNetAddress1), SWIGTYPE_p_p_unsigned_char.getCPtr(pNetAddress2), SWIGTYPE_p_unsigned_int.getCPtr(nPort));
+  public int GetPlayerAddressData(uint nConnectionId, uint* nProtocol, byte** pNetAddress1, byte** pNetAddress2, uint* nPort) {
+    int ret = NWNXLibPINVOKE.CServerExoAppInternal_GetPlayerAddressData(swigCPtr, nConnectionId, (global::System.IntPtr)nProtocol, (global::System.IntPtr)pNetAddress1, (global::System.IntPtr)pNetAddress2, (global::System.IntPtr)nPort);
     return ret;
   }
 
@@ -1287,12 +1292,12 @@ public class CServerExoAppInternal : global::System.IDisposable {
     NWNXLibPINVOKE.CServerExoAppInternal_GetExtendedServerInfo(swigCPtr, CExtendedServerInfo.getCPtr(pInfo));
   }
 
-  public void HandleGameSpyToServerMessage(int nKeyId, System.IntPtr pOutBuf, int nIndex) {
-    NWNXLibPINVOKE.CServerExoAppInternal_HandleGameSpyToServerMessage__SWIG_0(swigCPtr, nKeyId, pOutBuf, nIndex);
+  public void HandleGameSpyToServerMessage(int nKeyId, void* pOutBuf, int nIndex) {
+    NWNXLibPINVOKE.CServerExoAppInternal_HandleGameSpyToServerMessage__SWIG_0(swigCPtr, nKeyId, (global::System.IntPtr)pOutBuf, nIndex);
   }
 
-  public void HandleGameSpyToServerMessage(int nKeyId, System.IntPtr pOutBuf) {
-    NWNXLibPINVOKE.CServerExoAppInternal_HandleGameSpyToServerMessage__SWIG_1(swigCPtr, nKeyId, pOutBuf);
+  public void HandleGameSpyToServerMessage(int nKeyId, void* pOutBuf) {
+    NWNXLibPINVOKE.CServerExoAppInternal_HandleGameSpyToServerMessage__SWIG_1(swigCPtr, nKeyId, (global::System.IntPtr)pOutBuf);
   }
 
   public void UpdateClientsForObject(uint oidObjectToUpdate) {
@@ -1303,7 +1308,7 @@ public class CServerExoAppInternal : global::System.IDisposable {
     NWNXLibPINVOKE.CServerExoAppInternal_MarkUpdateClientsForObject(swigCPtr, oidObjectToUpdate);
   }
 
-  public void UpdateClientGameObjectsForPlayer(CNWSPlayer pPlayer, int bForce, ulong nCurrentSystemTime) {
+  public void UpdateClientGameObjectsForPlayer(CNWSPlayer pPlayer, int bForce, uint nCurrentSystemTime) {
     NWNXLibPINVOKE.CServerExoAppInternal_UpdateClientGameObjectsForPlayer__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bForce, nCurrentSystemTime);
   }
 
@@ -1370,20 +1375,20 @@ public class CServerExoAppInternal : global::System.IDisposable {
     return ret;
   }
 
-  public void MovePlayerToArea(System.IntPtr pPlayer) {
-    NWNXLibPINVOKE.CServerExoAppInternal_MovePlayerToArea(swigCPtr, pPlayer);
+  public void MovePlayerToArea(void* pPlayer) {
+    NWNXLibPINVOKE.CServerExoAppInternal_MovePlayerToArea(swigCPtr, (global::System.IntPtr)pPlayer);
   }
 
-  public void InitiateModuleForPlayer(System.IntPtr pPlayer) {
-    NWNXLibPINVOKE.CServerExoAppInternal_InitiateModuleForPlayer(swigCPtr, pPlayer);
+  public void InitiateModuleForPlayer(void* pPlayer) {
+    NWNXLibPINVOKE.CServerExoAppInternal_InitiateModuleForPlayer(swigCPtr, (global::System.IntPtr)pPlayer);
   }
 
   public void UpdateWindowTitle() {
     NWNXLibPINVOKE.CServerExoAppInternal_UpdateWindowTitle(swigCPtr);
   }
 
-  public int GetFactionOfObject(uint oObject, SWIGTYPE_p_int nFaction) {
-    int ret = NWNXLibPINVOKE.CServerExoAppInternal_GetFactionOfObject(swigCPtr, oObject, SWIGTYPE_p_int.getCPtr(nFaction));
+  public int GetFactionOfObject(uint oObject, int* nFaction) {
+    int ret = NWNXLibPINVOKE.CServerExoAppInternal_GetFactionOfObject(swigCPtr, oObject, (global::System.IntPtr)nFaction);
     return ret;
   }
 
@@ -1546,8 +1551,8 @@ public class CServerExoAppInternal : global::System.IDisposable {
     NWNXLibPINVOKE.CServerExoAppInternal_StallEventSaveGame(swigCPtr);
   }
 
-  public void PushMessageOverWall(SWIGTYPE_p_unsigned_char pData, uint nMsgLength) {
-    NWNXLibPINVOKE.CServerExoAppInternal_PushMessageOverWall(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(pData), nMsgLength);
+  public void PushMessageOverWall(byte* pData, uint nMsgLength) {
+    NWNXLibPINVOKE.CServerExoAppInternal_PushMessageOverWall(swigCPtr, (global::System.IntPtr)pData, nMsgLength);
   }
 
   public void UnlockBiowareModule(CNWSModule pModule) {
@@ -1589,8 +1594,8 @@ public class CServerExoAppInternal : global::System.IDisposable {
     return ret;
   }
 
-  public void QuarantineInvalidCharacter(System.IntPtr pData, uint nSize) {
-    NWNXLibPINVOKE.CServerExoAppInternal_QuarantineInvalidCharacter(swigCPtr, pData, nSize);
+  public void QuarantineInvalidCharacter(void* pData, uint nSize) {
+    NWNXLibPINVOKE.CServerExoAppInternal_QuarantineInvalidCharacter(swigCPtr, (global::System.IntPtr)pData, nSize);
   }
 
   public void UpdateClientGameObjects(int bForce) {
@@ -1627,16 +1632,16 @@ public class CServerExoAppInternal : global::System.IDisposable {
     NWNXLibPINVOKE.CServerExoAppInternal_ConnectionLibMainLoop(swigCPtr);
   }
 
-  public void StartShutdownTimer(ulong nTime, ulong nDelay) {
+  public void StartShutdownTimer(uint nTime, uint nDelay) {
     NWNXLibPINVOKE.CServerExoAppInternal_StartShutdownTimer(swigCPtr, nTime, nDelay);
   }
 
-  public int UpdateShutdownTimer(ulong nTime) {
+  public int UpdateShutdownTimer(uint nTime) {
     int ret = NWNXLibPINVOKE.CServerExoAppInternal_UpdateShutdownTimer(swigCPtr, nTime);
     return ret;
   }
 
-  public int UpdateLogHeartbeatTimer(ulong nTime) {
+  public int UpdateLogHeartbeatTimer(uint nTime) {
     int ret = NWNXLibPINVOKE.CServerExoAppInternal_UpdateLogHeartbeatTimer(swigCPtr, nTime);
     return ret;
   }

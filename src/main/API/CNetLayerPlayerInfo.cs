@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNetLayerPlayerInfo : global::System.IDisposable {
+public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNetLayerPlayerInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNetLayerPlayerInfo(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNetLayerPlayerInfo obj) {
@@ -37,7 +42,7 @@ public class CNetLayerPlayerInfo : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CNetLayerPlayerInfo(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -170,22 +175,22 @@ public class CNetLayerPlayerInfo : global::System.IDisposable {
     } 
   }
 
-  public ulong m_nMstServerTimeout {
+  public uint m_nMstServerTimeout {
     set {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nMstServerTimeout_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nMstServerTimeout_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nMstServerTimeout_get(swigCPtr);
       return ret;
     } 
   }
 
-  public ulong m_nMstServerTimeStamp {
+  public uint m_nMstServerTimeStamp {
     set {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nMstServerTimeStamp_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nMstServerTimeStamp_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nMstServerTimeStamp_get(swigCPtr);
       return ret;
     } 
   }
@@ -354,11 +359,11 @@ public class CNetLayerPlayerInfo : global::System.IDisposable {
     NWNXLibPINVOKE.CNetLayerPlayerInfo_Initialize(swigCPtr);
   }
 
-  public void StartMstTimer(ulong nTime) {
+  public void StartMstTimer(uint nTime) {
     NWNXLibPINVOKE.CNetLayerPlayerInfo_StartMstTimer(swigCPtr, nTime);
   }
 
-  public int UpdateMstTimer(ulong nTime) {
+  public int UpdateMstTimer(uint nTime) {
     int ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_UpdateMstTimer(swigCPtr, nTime);
     return ret;
   }
@@ -368,9 +373,8 @@ public class CNetLayerPlayerInfo : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public int AllKeysAuthed(SWIGTYPE_p_unsigned_int nExpansionPacks) {
-    int ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_AllKeysAuthed(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(nExpansionPacks));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int AllKeysAuthed(uint* nExpansionPacks) {
+    int ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_AllKeysAuthed(swigCPtr, (global::System.IntPtr)nExpansionPacks);
     return ret;
   }
 

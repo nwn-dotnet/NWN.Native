@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWSBarter : global::System.IDisposable {
+public unsafe class CNWSBarter : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWSBarter(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSBarter(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSBarter obj) {
@@ -201,21 +206,18 @@ public class CNWSBarter : global::System.IDisposable {
     NWNXLibPINVOKE.CNWSBarter_CleanUp(swigCPtr);
   }
 
-  public int AddItem(uint oidItem, SWIGTYPE_p_unsigned_char xPos, SWIGTYPE_p_unsigned_char yPos) {
-    int ret = NWNXLibPINVOKE.CNWSBarter_AddItem(swigCPtr, oidItem, SWIGTYPE_p_unsigned_char.getCPtr(xPos), SWIGTYPE_p_unsigned_char.getCPtr(yPos));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int AddItem(uint oidItem, byte* xPos, byte* yPos) {
+    int ret = NWNXLibPINVOKE.CNWSBarter_AddItem(swigCPtr, oidItem, (global::System.IntPtr)xPos, (global::System.IntPtr)yPos);
     return ret;
   }
 
-  public int RemoveItem(uint oidItem, SWIGTYPE_p_unsigned_char xPos, SWIGTYPE_p_unsigned_char yPos) {
-    int ret = NWNXLibPINVOKE.CNWSBarter_RemoveItem(swigCPtr, oidItem, SWIGTYPE_p_unsigned_char.getCPtr(xPos), SWIGTYPE_p_unsigned_char.getCPtr(yPos));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int RemoveItem(uint oidItem, byte* xPos, byte* yPos) {
+    int ret = NWNXLibPINVOKE.CNWSBarter_RemoveItem(swigCPtr, oidItem, (global::System.IntPtr)xPos, (global::System.IntPtr)yPos);
     return ret;
   }
 
-  public int MoveItem(uint oidItem, SWIGTYPE_p_unsigned_char xPos, SWIGTYPE_p_unsigned_char yPos) {
-    int ret = NWNXLibPINVOKE.CNWSBarter_MoveItem(swigCPtr, oidItem, SWIGTYPE_p_unsigned_char.getCPtr(xPos), SWIGTYPE_p_unsigned_char.getCPtr(yPos));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int MoveItem(uint oidItem, byte* xPos, byte* yPos) {
+    int ret = NWNXLibPINVOKE.CNWSBarter_MoveItem(swigCPtr, oidItem, (global::System.IntPtr)xPos, (global::System.IntPtr)yPos);
     return ret;
   }
 

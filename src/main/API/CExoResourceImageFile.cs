@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CExoResourceImageFile : CExoPackedFile {
+public unsafe class CExoResourceImageFile : CExoPackedFile {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CExoResourceImageFile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CExoResourceImageFile_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CExoResourceImageFile(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CExoResourceImageFile_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoResourceImageFile obj) {
@@ -68,15 +72,15 @@ public class CExoResourceImageFile : CExoPackedFile {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_unsigned_char m_pResourceImage {
+  public byte* m_pResourceImage {
     set {
-      NWNXLibPINVOKE.CExoResourceImageFile_m_pResourceImage_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoResourceImageFile_m_pResourceImage_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoResourceImageFile_m_pResourceImage_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CExoResourceImageFile_m_pResourceImage_get(swigCPtr); 
+        return (byte*)retVal; 
+    }
+
   }
 
   public CExoResourceImageFile() : this(NWNXLibPINVOKE.new_CExoResourceImageFile(), true) {
@@ -124,8 +128,8 @@ public class CExoResourceImageFile : CExoPackedFile {
     return ret;
   }
 
-  public override int OpenFile(SWIGTYPE_p_unsigned_char pCipher) {
-    int ret = NWNXLibPINVOKE.CExoResourceImageFile_OpenFile__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(pCipher));
+  public override int OpenFile(byte* pCipher) {
+    int ret = NWNXLibPINVOKE.CExoResourceImageFile_OpenFile__SWIG_1(swigCPtr, (global::System.IntPtr)pCipher);
     return ret;
   }
 
@@ -134,14 +138,14 @@ public class CExoResourceImageFile : CExoPackedFile {
     return ret;
   }
 
-  public override uint ReadResource(RESID nID, System.IntPtr pData, uint nSize, uint nDataOffset) {
-    uint ret = NWNXLibPINVOKE.CExoResourceImageFile_ReadResource(swigCPtr, RESID.getCPtr(nID), pData, nSize, nDataOffset);
+  public override uint ReadResource(RESID nID, void* pData, uint nSize, uint nDataOffset) {
+    uint ret = NWNXLibPINVOKE.CExoResourceImageFile_ReadResource(swigCPtr, RESID.getCPtr(nID), (global::System.IntPtr)pData, nSize, nDataOffset);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public override void ReadResourceAsync(RESID nID, System.IntPtr pData, uint nSize, uint nDataOffset) {
-    NWNXLibPINVOKE.CExoResourceImageFile_ReadResourceAsync(swigCPtr, RESID.getCPtr(nID), pData, nSize, nDataOffset);
+  public override void ReadResourceAsync(RESID nID, void* pData, uint nSize, uint nDataOffset) {
+    NWNXLibPINVOKE.CExoResourceImageFile_ReadResourceAsync(swigCPtr, RESID.getCPtr(nID), (global::System.IntPtr)pData, nSize, nDataOffset);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -160,11 +164,11 @@ public class CExoResourceImageFile : CExoPackedFile {
     return ret;
   }
 
-  public virtual System.IntPtr GetResource(RESID nID) { 
-    System.IntPtr cPtr = NWNXLibPINVOKE.CExoResourceImageFile_GetResource(swigCPtr, RESID.getCPtr(nID));
+  public virtual void* GetResource(RESID nID) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoResourceImageFile_GetResource(swigCPtr, RESID.getCPtr(nID));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return cPtr;
-    }
+    return (void*)retVal;
+  }
 
   public SWIGTYPE_p_p_ENCAPSULATED_KEYLISTENTRY GetKeyList() {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoResourceImageFile_GetKeyList(swigCPtr);

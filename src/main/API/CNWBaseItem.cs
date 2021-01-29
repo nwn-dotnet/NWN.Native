@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWBaseItem : global::System.IDisposable {
+public unsafe class CNWBaseItem : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWBaseItem(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWBaseItem(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWBaseItem obj) {
@@ -398,15 +403,15 @@ public class CNWBaseItem : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_bPartEnvMap {
+  public int[] m_bPartEnvMap {
     set {
-      NWNXLibPINVOKE.CNWBaseItem_m_bPartEnvMap_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWBaseItem_m_bPartEnvMap_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWBaseItem_m_bPartEnvMap_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        int[] retVal = NWNXLibPINVOKE.CNWBaseItem_m_bPartEnvMap_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public CResRef m_DefaultIconResRef {
@@ -471,15 +476,15 @@ public class CNWBaseItem : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_short m_pRequiredFeats {
+  public ushort* m_pRequiredFeats {
     set {
-      NWNXLibPINVOKE.CNWBaseItem_m_pRequiredFeats_set(swigCPtr, SWIGTYPE_p_unsigned_short.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWBaseItem_m_pRequiredFeats_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWBaseItem_m_pRequiredFeats_get(swigCPtr);
-      SWIGTYPE_p_unsigned_short ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_short(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWBaseItem_m_pRequiredFeats_get(swigCPtr); 
+        return (ushort*)retVal; 
+    }
+
   }
 
   public byte m_nRequiredFeatCount {

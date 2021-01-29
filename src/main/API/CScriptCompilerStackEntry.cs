@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CScriptCompilerStackEntry : global::System.IDisposable {
+public unsafe class CScriptCompilerStackEntry : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CScriptCompilerStackEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CScriptCompilerStackEntry(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CScriptCompilerStackEntry obj) {
@@ -37,7 +42,7 @@ public class CScriptCompilerStackEntry : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CScriptCompilerStackEntry(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -128,6 +133,9 @@ public class CScriptCompilerStackEntry : global::System.IDisposable {
       CScriptParseTreeNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CScriptParseTreeNode(cPtr, false);
       return ret;
     } 
+  }
+
+  public CScriptCompilerStackEntry() : this(NWNXLibPINVOKE.new_CScriptCompilerStackEntry(), true) {
   }
 
 }

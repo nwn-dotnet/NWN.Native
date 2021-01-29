@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CCombatInformation : global::System.IDisposable {
+public unsafe class CCombatInformation : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CCombatInformation(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CCombatInformation(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CCombatInformation obj) {
@@ -178,26 +183,26 @@ public class CCombatInformation : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_nCreatureDamageDice {
+  public byte[] m_nCreatureDamageDice {
     set {
-      NWNXLibPINVOKE.CCombatInformation_m_nCreatureDamageDice_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CCombatInformation_m_nCreatureDamageDice_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CCombatInformation_m_nCreatureDamageDice_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CCombatInformation_m_nCreatureDamageDice_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_char m_nCreatureDamageDie {
+  public byte[] m_nCreatureDamageDie {
     set {
-      NWNXLibPINVOKE.CCombatInformation_m_nCreatureDamageDie_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CCombatInformation_m_nCreatureDamageDie_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CCombatInformation_m_nCreatureDamageDie_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CCombatInformation_m_nCreatureDamageDie_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public string m_nCreatureDamageModifier {

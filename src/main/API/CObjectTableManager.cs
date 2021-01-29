@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CObjectTableManager : global::System.IDisposable {
+public unsafe class CObjectTableManager : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CObjectTableManager(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CObjectTableManager(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CObjectTableManager obj) {
@@ -102,13 +107,13 @@ public class CObjectTableManager : global::System.IDisposable {
   public CObjectTableManager() : this(NWNXLibPINVOKE.new_CObjectTableManager(), true) {
   }
 
-  public int AddID(uint oidID, SWIGTYPE_p_unsigned_int dwSlot, uint dwPlayerID) {
-    int ret = NWNXLibPINVOKE.CObjectTableManager_AddID__SWIG_0(swigCPtr, oidID, SWIGTYPE_p_unsigned_int.getCPtr(dwSlot), dwPlayerID);
+  public int AddID(uint oidID, uint* dwSlot, uint dwPlayerID) {
+    int ret = NWNXLibPINVOKE.CObjectTableManager_AddID__SWIG_0(swigCPtr, oidID, (global::System.IntPtr)dwSlot, dwPlayerID);
     return ret;
   }
 
-  public int AddID(uint oidID, SWIGTYPE_p_unsigned_int dwSlot) {
-    int ret = NWNXLibPINVOKE.CObjectTableManager_AddID__SWIG_1(swigCPtr, oidID, SWIGTYPE_p_unsigned_int.getCPtr(dwSlot));
+  public int AddID(uint oidID, uint* dwSlot) {
+    int ret = NWNXLibPINVOKE.CObjectTableManager_AddID__SWIG_1(swigCPtr, oidID, (global::System.IntPtr)dwSlot);
     return ret;
   }
 

@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CResSET : CRes {
+public unsafe class CResSET : CRes {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CResSET(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResSET_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CResSET(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResSET_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CResSET obj) {
@@ -122,8 +126,8 @@ public class CResSET : CRes {
   public CResSET() : this(NWNXLibPINVOKE.new_CResSET(), true) {
   }
 
-  public int CopySETData(SWIGTYPE_p_unsigned_char pSETData) {
-    int ret = NWNXLibPINVOKE.CResSET_CopySETData(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(pSETData));
+  public int CopySETData(byte* pSETData) {
+    int ret = NWNXLibPINVOKE.CResSET_CopySETData(swigCPtr, (global::System.IntPtr)pSETData);
     return ret;
   }
 
@@ -161,8 +165,8 @@ public class CResSET : CRes {
     return ret;
   }
 
-  public string GetNextLine(uint nOffsetStart, SWIGTYPE_p_unsigned_int pOffsetEnd) {
-    string ret = NWNXLibPINVOKE.CResSET_GetNextLine(swigCPtr, nOffsetStart, SWIGTYPE_p_unsigned_int.getCPtr(pOffsetEnd));
+  public string GetNextLine(uint nOffsetStart, uint* pOffsetEnd) {
+    string ret = NWNXLibPINVOKE.CResSET_GetNextLine(swigCPtr, nOffsetStart, (global::System.IntPtr)pOffsetEnd);
     return ret;
   }
 

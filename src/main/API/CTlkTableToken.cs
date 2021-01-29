@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CTlkTableToken : global::System.IDisposable {
+public unsafe class CTlkTableToken : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CTlkTableToken(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CTlkTableToken(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CTlkTableToken obj) {
@@ -37,7 +42,7 @@ public class CTlkTableToken : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CTlkTableToken(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -109,15 +114,15 @@ public class CTlkTableToken : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_int m_nStrRef {
+  public uint[] m_nStrRef {
     set {
-      NWNXLibPINVOKE.CTlkTableToken_m_nStrRef_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CTlkTableToken_m_nStrRef_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTlkTableToken_m_nStrRef_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        uint[] retVal = NWNXLibPINVOKE.CTlkTableToken_m_nStrRef_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public uint m_nStrRefDefault {
@@ -128,6 +133,9 @@ public class CTlkTableToken : global::System.IDisposable {
       uint ret = NWNXLibPINVOKE.CTlkTableToken_m_nStrRefDefault_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public CTlkTableToken() : this(NWNXLibPINVOKE.new_CTlkTableToken(), true) {
   }
 
 }

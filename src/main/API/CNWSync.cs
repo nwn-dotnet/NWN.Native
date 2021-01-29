@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWSync : global::System.IDisposable {
+public unsafe class CNWSync : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWSync(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSync(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSync obj) {
@@ -37,7 +42,7 @@ public class CNWSync : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CNWSync(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -78,15 +83,18 @@ public class CNWSync : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public System.IntPtr m_internal {
+  public void* m_internal {
     set {
-      NWNXLibPINVOKE.CNWSync_m_internal_set(swigCPtr, value);
+      NWNXLibPINVOKE.CNWSync_m_internal_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr cPtr = NWNXLibPINVOKE.CNWSync_m_internal_get(swigCPtr); 
-        return cPtr; 
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWSync_m_internal_get(swigCPtr); 
+        return (void*)retVal; 
+    }
 
+  }
+
+  public CNWSync() : this(NWNXLibPINVOKE.new_CNWSync(), true) {
   }
 
 }

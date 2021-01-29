@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWSTile : CNWTile {
+public unsafe class CNWSTile : CNWTile {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWSTile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSTile_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSTile(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSTile_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSTile obj) {
@@ -99,15 +103,15 @@ public class CNWSTile : CNWTile {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_int m_poidTriggers {
+  public uint* m_poidTriggers {
     set {
-      NWNXLibPINVOKE.CNWSTile_m_poidTriggers_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSTile_m_poidTriggers_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSTile_m_poidTriggers_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWSTile_m_poidTriggers_get(swigCPtr); 
+        return (uint*)retVal; 
+    }
+
   }
 
   public CExoArrayListObjectId m_aDoors {
@@ -174,8 +178,8 @@ public class CNWSTile : CNWTile {
     return ret;
   }
 
-  public int ClippedLineSegmentWalkable(float fStartX, float fStartY, float fEndX, float fEndY, SWIGTYPE_p_float fClipStartX, SWIGTYPE_p_float fClipStartY, SWIGTYPE_p_float fClipEndX, SWIGTYPE_p_float fClipEndY, SWIGTYPE_p_float fClipMinZ, SWIGTYPE_p_float fClipMaxZ) {
-    int ret = NWNXLibPINVOKE.CNWSTile_ClippedLineSegmentWalkable(swigCPtr, fStartX, fStartY, fEndX, fEndY, SWIGTYPE_p_float.getCPtr(fClipStartX), SWIGTYPE_p_float.getCPtr(fClipStartY), SWIGTYPE_p_float.getCPtr(fClipEndX), SWIGTYPE_p_float.getCPtr(fClipEndY), SWIGTYPE_p_float.getCPtr(fClipMinZ), SWIGTYPE_p_float.getCPtr(fClipMaxZ));
+  public int ClippedLineSegmentWalkable(float fStartX, float fStartY, float fEndX, float fEndY, float* fClipStartX, float* fClipStartY, float* fClipEndX, float* fClipEndY, float* fClipMinZ, float* fClipMaxZ) {
+    int ret = NWNXLibPINVOKE.CNWSTile_ClippedLineSegmentWalkable(swigCPtr, fStartX, fStartY, fEndX, fEndY, (global::System.IntPtr)fClipStartX, (global::System.IntPtr)fClipStartY, (global::System.IntPtr)fClipEndX, (global::System.IntPtr)fClipEndY, (global::System.IntPtr)fClipMinZ, (global::System.IntPtr)fClipMaxZ);
     return ret;
   }
 
@@ -196,8 +200,8 @@ public class CNWSTile : CNWTile {
     return ret;
   }
 
-  public int GetExit(int nExit, SWIGTYPE_p_float fX, SWIGTYPE_p_float fY, SWIGTYPE_p_int nRegion) {
-    int ret = NWNXLibPINVOKE.CNWSTile_GetExit(swigCPtr, nExit, SWIGTYPE_p_float.getCPtr(fX), SWIGTYPE_p_float.getCPtr(fY), SWIGTYPE_p_int.getCPtr(nRegion));
+  public int GetExit(int nExit, float* fX, float* fY, int* nRegion) {
+    int ret = NWNXLibPINVOKE.CNWSTile_GetExit(swigCPtr, nExit, (global::System.IntPtr)fX, (global::System.IntPtr)fY, (global::System.IntPtr)nRegion);
     return ret;
   }
 
@@ -206,8 +210,8 @@ public class CNWSTile : CNWTile {
     return ret;
   }
 
-  public int GetRegionCoords(int nRegion, SWIGTYPE_p_float fX, SWIGTYPE_p_float fY) {
-    int ret = NWNXLibPINVOKE.CNWSTile_GetRegionCoords(swigCPtr, nRegion, SWIGTYPE_p_float.getCPtr(fX), SWIGTYPE_p_float.getCPtr(fY));
+  public int GetRegionCoords(int nRegion, float* fX, float* fY) {
+    int ret = NWNXLibPINVOKE.CNWSTile_GetRegionCoords(swigCPtr, nRegion, (global::System.IntPtr)fX, (global::System.IntPtr)fY);
     return ret;
   }
 
@@ -233,8 +237,8 @@ public class CNWSTile : CNWTile {
     return ret;
   }
 
-  public int IntersectLineSegments(float fX1, float fY1, float fX2, float fY2, float fX3, float fY3, float fX4, float fY4, SWIGTYPE_p_float fXIntersect, SWIGTYPE_p_float fYIntersect) {
-    int ret = NWNXLibPINVOKE.CNWSTile_IntersectLineSegments(swigCPtr, fX1, fY1, fX2, fY2, fX3, fY3, fX4, fY4, SWIGTYPE_p_float.getCPtr(fXIntersect), SWIGTYPE_p_float.getCPtr(fYIntersect));
+  public int IntersectLineSegments(float fX1, float fY1, float fX2, float fY2, float fX3, float fY3, float fX4, float fY4, float* fXIntersect, float* fYIntersect) {
+    int ret = NWNXLibPINVOKE.CNWSTile_IntersectLineSegments(swigCPtr, fX1, fY1, fX2, fY2, fX3, fY3, fX4, fY4, (global::System.IntPtr)fXIntersect, (global::System.IntPtr)fYIntersect);
     return ret;
   }
 
@@ -264,8 +268,8 @@ public class CNWSTile : CNWTile {
     return ret;
   }
 
-  public uint PlotIntraTilePath(SWIGTYPE_p_CNWArea pWalkGeometry, CPathfindInformation pPathfindInformation, float fCurrentIntraTileX, float fCurrentIntraTileY, float fInterTileStartX, float fInterTileStartY, uint nMaxTimeAllowed) {
-    uint ret = NWNXLibPINVOKE.CNWSTile_PlotIntraTilePath(swigCPtr, SWIGTYPE_p_CNWArea.getCPtr(pWalkGeometry), CPathfindInformation.getCPtr(pPathfindInformation), fCurrentIntraTileX, fCurrentIntraTileY, fInterTileStartX, fInterTileStartY, nMaxTimeAllowed);
+  public uint PlotIntraTilePath(CNWArea pWalkGeometry, CPathfindInformation pPathfindInformation, float fCurrentIntraTileX, float fCurrentIntraTileY, float fInterTileStartX, float fInterTileStartY, uint nMaxTimeAllowed) {
+    uint ret = NWNXLibPINVOKE.CNWSTile_PlotIntraTilePath(swigCPtr, CNWArea.getCPtr(pWalkGeometry), CPathfindInformation.getCPtr(pPathfindInformation), fCurrentIntraTileX, fCurrentIntraTileY, fInterTileStartX, fInterTileStartY, nMaxTimeAllowed);
     return ret;
   }
 

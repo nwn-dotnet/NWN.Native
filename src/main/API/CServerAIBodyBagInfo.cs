@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CServerAIBodyBagInfo : global::System.IDisposable {
+public unsafe class CServerAIBodyBagInfo : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CServerAIBodyBagInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CServerAIBodyBagInfo(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CServerAIBodyBagInfo obj) {
@@ -37,7 +42,7 @@ public class CServerAIBodyBagInfo : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CServerAIBodyBagInfo(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -107,6 +112,9 @@ public class CServerAIBodyBagInfo : global::System.IDisposable {
   public int LoadBodyBag(CResGFF pRes, CResStruct pStruct) {
     int ret = NWNXLibPINVOKE.CServerAIBodyBagInfo_LoadBodyBag(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
     return ret;
+  }
+
+  public CServerAIBodyBagInfo() : this(NWNXLibPINVOKE.new_CServerAIBodyBagInfo(), true) {
   }
 
 }

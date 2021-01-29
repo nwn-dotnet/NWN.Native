@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CExoArrayListUInt32 : global::System.IDisposable {
+public unsafe class CExoArrayListUInt32 : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CExoArrayListUInt32(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CExoArrayListUInt32(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListUInt32 obj) {
@@ -78,15 +83,15 @@ public class CExoArrayListUInt32 : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_unsigned_int element {
+  public uint* element {
     set {
-      NWNXLibPINVOKE.CExoArrayListUInt32_element_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoArrayListUInt32_element_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListUInt32_element_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListUInt32_element_get(swigCPtr); 
+        return (uint*)retVal; 
+    }
+
   }
 
   public int num {
@@ -125,9 +130,9 @@ public class CExoArrayListUInt32 : global::System.IDisposable {
     return ret;
   }
 
-  public SWIGTYPE_p_unsigned_int _OpIndex(int i) {
-    SWIGTYPE_p_unsigned_int ret = new SWIGTYPE_p_unsigned_int(NWNXLibPINVOKE.CExoArrayListUInt32__OpIndex(swigCPtr, i), false);
-    return ret;
+  public uint* _OpIndex(int i) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListUInt32__OpIndex(swigCPtr, i);
+    return (uint*)retVal;
   }
 
   public void Allocate(int s) {
@@ -154,16 +159,14 @@ public class CExoArrayListUInt32 : global::System.IDisposable {
     NWNXLibPINVOKE.CExoArrayListUInt32_DelIndex(swigCPtr, i);
   }
 
-  public SWIGTYPE_p_unsigned_int begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListUInt32_begin(swigCPtr);
-    SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-    return ret;
+  public uint* begin() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListUInt32_begin(swigCPtr);
+    return (uint*)retVal;
   }
 
-  public SWIGTYPE_p_unsigned_int end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListUInt32_end(swigCPtr);
-    SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-    return ret;
+  public uint* end() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListUInt32_end(swigCPtr);
+    return (uint*)retVal;
   }
 
 }

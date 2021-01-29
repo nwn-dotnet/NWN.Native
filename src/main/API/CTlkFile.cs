@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CTlkFile : CExoFile {
+public unsafe class CTlkFile : CExoFile {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CTlkFile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CTlkFile_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CTlkFile(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CTlkFile_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CTlkFile obj) {
@@ -83,7 +87,7 @@ public class CTlkFile : CExoFile {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CTlkFile(System.IntPtr pMemoryBuffer, int nSize) : this(NWNXLibPINVOKE.new_CTlkFile__SWIG_1(pMemoryBuffer, nSize), true) {
+  public CTlkFile(void* pMemoryBuffer, int nSize) : this(NWNXLibPINVOKE.new_CTlkFile__SWIG_1((global::System.IntPtr)pMemoryBuffer, nSize), true) {
   }
 
   public int ReadHeader() {

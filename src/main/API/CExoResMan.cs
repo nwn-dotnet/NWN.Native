@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CExoResMan : global::System.IDisposable {
+public unsafe class CExoResMan : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CExoResMan(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CExoResMan(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoResMan obj) {
@@ -78,32 +83,32 @@ public class CExoResMan : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public long m_nTotalPhysicalMemory {
+  public int m_nTotalPhysicalMemory {
     set {
       NWNXLibPINVOKE.CExoResMan_m_nTotalPhysicalMemory_set(swigCPtr, value);
     } 
     get {
-      long ret = NWNXLibPINVOKE.CExoResMan_m_nTotalPhysicalMemory_get(swigCPtr);
+      int ret = NWNXLibPINVOKE.CExoResMan_m_nTotalPhysicalMemory_get(swigCPtr);
       return ret;
     } 
   }
 
-  public long m_nTotalAvailableMemory {
+  public int m_nTotalAvailableMemory {
     set {
       NWNXLibPINVOKE.CExoResMan_m_nTotalAvailableMemory_set(swigCPtr, value);
     } 
     get {
-      long ret = NWNXLibPINVOKE.CExoResMan_m_nTotalAvailableMemory_get(swigCPtr);
+      int ret = NWNXLibPINVOKE.CExoResMan_m_nTotalAvailableMemory_get(swigCPtr);
       return ret;
     } 
   }
 
-  public long m_nAvailableMemory {
+  public int m_nAvailableMemory {
     set {
       NWNXLibPINVOKE.CExoResMan_m_nAvailableMemory_set(swigCPtr, value);
     } 
     get {
-      long ret = NWNXLibPINVOKE.CExoResMan_m_nAvailableMemory_get(swigCPtr);
+      int ret = NWNXLibPINVOKE.CExoResMan_m_nAvailableMemory_get(swigCPtr);
       return ret;
     } 
   }
@@ -275,14 +280,14 @@ public class CExoResMan : global::System.IDisposable {
     } 
   }
 
-  public System.IntPtr m_pResourceOverrideMap {
+  public void* m_pResourceOverrideMap {
     set {
-      NWNXLibPINVOKE.CExoResMan_m_pResourceOverrideMap_set(swigCPtr, value);
+      NWNXLibPINVOKE.CExoResMan_m_pResourceOverrideMap_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr cPtr = NWNXLibPINVOKE.CExoResMan_m_pResourceOverrideMap_get(swigCPtr); 
-        return cPtr; 
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CExoResMan_m_pResourceOverrideMap_get(swigCPtr); 
+        return (void*)retVal; 
+    }
 
   }
 
@@ -299,14 +304,14 @@ public class CExoResMan : global::System.IDisposable {
     return ret;
   }
 
-  public int AddResourceImageFile(CExoString sName, SWIGTYPE_p_unsigned_char pCipher, uint nPriority) {
-    int ret = NWNXLibPINVOKE.CExoResMan_AddResourceImageFile__SWIG_0(swigCPtr, CExoString.getCPtr(sName), SWIGTYPE_p_unsigned_char.getCPtr(pCipher), nPriority);
+  public int AddResourceImageFile(CExoString sName, byte* pCipher, uint nPriority) {
+    int ret = NWNXLibPINVOKE.CExoResMan_AddResourceImageFile__SWIG_0(swigCPtr, CExoString.getCPtr(sName), (global::System.IntPtr)pCipher, nPriority);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int AddResourceImageFile(CExoString sName, SWIGTYPE_p_unsigned_char pCipher) {
-    int ret = NWNXLibPINVOKE.CExoResMan_AddResourceImageFile__SWIG_1(swigCPtr, CExoString.getCPtr(sName), SWIGTYPE_p_unsigned_char.getCPtr(pCipher));
+  public int AddResourceImageFile(CExoString sName, byte* pCipher) {
+    int ret = NWNXLibPINVOKE.CExoResMan_AddResourceImageFile__SWIG_1(swigCPtr, CExoString.getCPtr(sName), (global::System.IntPtr)pCipher);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -359,8 +364,8 @@ public class CExoResMan : global::System.IDisposable {
     NWNXLibPINVOKE.CExoResMan_FreeResourceData(swigCPtr, CRes.getCPtr(pRes));
   }
 
-  public int Exists(CResRef cResRef, ushort nType, SWIGTYPE_p_unsigned_int pTableType) {
-    int ret = NWNXLibPINVOKE.CExoResMan_Exists__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef), nType, SWIGTYPE_p_unsigned_int.getCPtr(pTableType));
+  public int Exists(CResRef cResRef, ushort nType, uint* pTableType) {
+    int ret = NWNXLibPINVOKE.CExoResMan_Exists__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef), nType, (global::System.IntPtr)pTableType);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -408,8 +413,8 @@ public class CExoResMan : global::System.IDisposable {
     return ret;
   }
 
-  public long GetTotalPhysicalMemory() {
-    long ret = NWNXLibPINVOKE.CExoResMan_GetTotalPhysicalMemory(swigCPtr);
+  public int GetTotalPhysicalMemory() {
+    int ret = NWNXLibPINVOKE.CExoResMan_GetTotalPhysicalMemory(swigCPtr);
     return ret;
   }
 
@@ -468,7 +473,7 @@ public class CExoResMan : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public int SetTotalResourceMemory(long totalAvailableMemory) {
+  public int SetTotalResourceMemory(int totalAvailableMemory) {
     int ret = NWNXLibPINVOKE.CExoResMan_SetTotalResourceMemory(swigCPtr, totalAvailableMemory);
     return ret;
   }
@@ -533,10 +538,10 @@ public class CExoResMan : global::System.IDisposable {
     return ret;
   }
 
-  public System.IntPtr Demand(CRes pRes) { 
-    System.IntPtr cPtr = NWNXLibPINVOKE.CExoResMan_Demand(swigCPtr, CRes.getCPtr(pRes));
-    return cPtr;
-    }
+  public void* Demand(CRes pRes) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoResMan_Demand(swigCPtr, CRes.getCPtr(pRes));
+    return (void*)retVal;
+  }
 
   public void Dump(CRes pRes, int bRemove) {
     NWNXLibPINVOKE.CExoResMan_Dump__SWIG_0(swigCPtr, CRes.getCPtr(pRes), bRemove);
@@ -615,8 +620,8 @@ public class CExoResMan : global::System.IDisposable {
     return ret;
   }
 
-  public int GetFreeDiskSpace(CExoString sDirectory, SWIGTYPE_p_unsigned_long_long pSpaceAvailable) {
-    int ret = NWNXLibPINVOKE.CExoResMan_GetFreeDiskSpace(swigCPtr, CExoString.getCPtr(sDirectory), SWIGTYPE_p_unsigned_long_long.getCPtr(pSpaceAvailable));
+  public int GetFreeDiskSpace(CExoString sDirectory, ulong* pSpaceAvailable) {
+    int ret = NWNXLibPINVOKE.CExoResMan_GetFreeDiskSpace(swigCPtr, CExoString.getCPtr(sDirectory), (global::System.IntPtr)pSpaceAvailable);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -640,14 +645,14 @@ public class CExoResMan : global::System.IDisposable {
     NWNXLibPINVOKE.CExoResMan_RemoveFromToBeFreedList(swigCPtr, CRes.getCPtr(pRes));
   }
 
-  public int AddKeyTable(uint nPriority, CExoString sName, uint nTableType, SWIGTYPE_p_unsigned_char pCipher, int bDetectChanges) {
-    int ret = NWNXLibPINVOKE.CExoResMan_AddKeyTable__SWIG_0(swigCPtr, nPriority, CExoString.getCPtr(sName), nTableType, SWIGTYPE_p_unsigned_char.getCPtr(pCipher), bDetectChanges);
+  public int AddKeyTable(uint nPriority, CExoString sName, uint nTableType, byte* pCipher, int bDetectChanges) {
+    int ret = NWNXLibPINVOKE.CExoResMan_AddKeyTable__SWIG_0(swigCPtr, nPriority, CExoString.getCPtr(sName), nTableType, (global::System.IntPtr)pCipher, bDetectChanges);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int AddKeyTable(uint nPriority, CExoString sName, uint nTableType, SWIGTYPE_p_unsigned_char pCipher) {
-    int ret = NWNXLibPINVOKE.CExoResMan_AddKeyTable__SWIG_1(swigCPtr, nPriority, CExoString.getCPtr(sName), nTableType, SWIGTYPE_p_unsigned_char.getCPtr(pCipher));
+  public int AddKeyTable(uint nPriority, CExoString sName, uint nTableType, byte* pCipher) {
+    int ret = NWNXLibPINVOKE.CExoResMan_AddKeyTable__SWIG_1(swigCPtr, nPriority, CExoString.getCPtr(sName), nTableType, (global::System.IntPtr)pCipher);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }

@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWTilePathNode : global::System.IDisposable {
+public unsafe class CNWTilePathNode : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWTilePathNode(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWTilePathNode(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWTilePathNode obj) {
@@ -37,7 +42,7 @@ public class CNWTilePathNode : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CNWTilePathNode(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -98,37 +103,40 @@ public class CNWTilePathNode : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_float m_pfRegionNodes {
+  public float* m_pfRegionNodes {
     set {
-      NWNXLibPINVOKE.CNWTilePathNode_m_pfRegionNodes_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTilePathNode_m_pfRegionNodes_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTilePathNode_m_pfRegionNodes_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTilePathNode_m_pfRegionNodes_get(swigCPtr); 
+        return (float*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_float m_pfTileExits {
+  public float* m_pfTileExits {
     set {
-      NWNXLibPINVOKE.CNWTilePathNode_m_pfTileExits_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTilePathNode_m_pfTileExits_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTilePathNode_m_pfTileExits_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTilePathNode_m_pfTileExits_get(swigCPtr); 
+        return (float*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_int m_pnTileExitRegion {
+  public int* m_pnTileExitRegion {
     set {
-      NWNXLibPINVOKE.CNWTilePathNode_m_pnTileExitRegion_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTilePathNode_m_pnTileExitRegion_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTilePathNode_m_pnTileExitRegion_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWTilePathNode_m_pnTileExitRegion_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
+  }
+
+  public CNWTilePathNode() : this(NWNXLibPINVOKE.new_CNWTilePathNode(), true) {
   }
 
 }

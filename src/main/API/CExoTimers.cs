@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CExoTimers : global::System.IDisposable {
+public unsafe class CExoTimers : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CExoTimers(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CExoTimers(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoTimers obj) {
@@ -97,8 +102,8 @@ public class CExoTimers : global::System.IDisposable {
     return ret;
   }
 
-  public ulong GetHighResolutionTimer() {
-    ulong ret = NWNXLibPINVOKE.CExoTimers_GetHighResolutionTimer(swigCPtr);
+  public uint GetHighResolutionTimer() {
+    uint ret = NWNXLibPINVOKE.CExoTimers_GetHighResolutionTimer(swigCPtr);
     return ret;
   }
 

@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWDoorSurfaceMesh : global::System.IDisposable {
+public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWDoorSurfaceMesh(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWDoorSurfaceMesh(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWDoorSurfaceMesh obj) {
@@ -78,59 +83,59 @@ public class CNWDoorSurfaceMesh : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_int m_pnVertices {
+  public int[] m_pnVertices {
     set {
-      NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnVertices_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnVertices_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnVertices_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        int[] retVal = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnVertices_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_p_float m_ppfVertices {
+  public float*[] m_ppfVertices {
     set {
-      NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppfVertices_set(swigCPtr, SWIGTYPE_p_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppfVertices_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppfVertices_get(swigCPtr);
-      SWIGTYPE_p_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_float(cPtr, false);
-      return ret;
-    } 
+        float*[] retVal = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppfVertices_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_int m_pnTriangles {
+  public int[] m_pnTriangles {
     set {
-      NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnTriangles_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnTriangles_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnTriangles_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        int[] retVal = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnTriangles_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_p_int m_ppnTriangles {
+  public int*[] m_ppnTriangles {
     set {
-      NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangles_set(swigCPtr, SWIGTYPE_p_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangles_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangles_get(swigCPtr);
-      SWIGTYPE_p_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_int(cPtr, false);
-      return ret;
-    } 
+        int*[] retVal = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangles_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_p_int m_ppnTriangleMaterial {
+  public int*[] m_ppnTriangleMaterial {
     set {
-      NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangleMaterial_set(swigCPtr, SWIGTYPE_p_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangleMaterial_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangleMaterial_get(swigCPtr);
-      SWIGTYPE_p_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_int(cPtr, false);
-      return ret;
-    } 
+        int*[] retVal = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangleMaterial_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public SWIGTYPE_p_a_2__Vector m_pvOpenLocations {
@@ -147,8 +152,8 @@ public class CNWDoorSurfaceMesh : global::System.IDisposable {
   public CNWDoorSurfaceMesh() : this(NWNXLibPINVOKE.new_CNWDoorSurfaceMesh(), true) {
   }
 
-  public int LoadWalkMeshString(SWIGTYPE_p_p_unsigned_char pInput, SWIGTYPE_p_unsigned_int nInputSize, SWIGTYPE_p_unsigned_char pchBuffer, uint nBufferSize) {
-    int ret = NWNXLibPINVOKE.CNWDoorSurfaceMesh_LoadWalkMeshString(swigCPtr, SWIGTYPE_p_p_unsigned_char.getCPtr(pInput), SWIGTYPE_p_unsigned_int.getCPtr(nInputSize), SWIGTYPE_p_unsigned_char.getCPtr(pchBuffer), nBufferSize);
+  public int LoadWalkMeshString(byte** pInput, uint* nInputSize, byte* pchBuffer, uint nBufferSize) {
+    int ret = NWNXLibPINVOKE.CNWDoorSurfaceMesh_LoadWalkMeshString(swigCPtr, (global::System.IntPtr)pInput, (global::System.IntPtr)nInputSize, (global::System.IntPtr)pchBuffer, nBufferSize);
     return ret;
   }
 

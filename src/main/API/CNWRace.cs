@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWRace : global::System.IDisposable {
+public unsafe class CNWRace : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWRace(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWRace(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWRace obj) {
@@ -238,15 +243,15 @@ public class CNWRace : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_short m_lstFeatTable {
+  public ushort* m_lstFeatTable {
     set {
-      NWNXLibPINVOKE.CNWRace_m_lstFeatTable_set(swigCPtr, SWIGTYPE_p_unsigned_short.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWRace_m_lstFeatTable_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWRace_m_lstFeatTable_get(swigCPtr);
-      SWIGTYPE_p_unsigned_short ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_short(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWRace_m_lstFeatTable_get(swigCPtr); 
+        return (ushort*)retVal; 
+    }
+
   }
 
   public int m_nAge {

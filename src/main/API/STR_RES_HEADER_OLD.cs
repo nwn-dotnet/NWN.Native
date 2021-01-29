@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class STR_RES_HEADER_OLD : global::System.IDisposable {
+public unsafe class STR_RES_HEADER_OLD : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public STR_RES_HEADER_OLD(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public STR_RES_HEADER_OLD(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(STR_RES_HEADER_OLD obj) {
@@ -37,7 +42,7 @@ public class STR_RES_HEADER_OLD : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_STR_RES_HEADER_OLD(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -88,15 +93,15 @@ public class STR_RES_HEADER_OLD : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char sndResRef {
+  public byte[] sndResRef {
     set {
-      NWNXLibPINVOKE.STR_RES_HEADER_OLD_sndResRef_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.STR_RES_HEADER_OLD_sndResRef_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.STR_RES_HEADER_OLD_sndResRef_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.STR_RES_HEADER_OLD_sndResRef_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public uint volumeVariance {
@@ -137,6 +142,9 @@ public class STR_RES_HEADER_OLD : global::System.IDisposable {
       uint ret = NWNXLibPINVOKE.STR_RES_HEADER_OLD_strSize_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public STR_RES_HEADER_OLD() : this(NWNXLibPINVOKE.new_STR_RES_HEADER_OLD(), true) {
   }
 
 }

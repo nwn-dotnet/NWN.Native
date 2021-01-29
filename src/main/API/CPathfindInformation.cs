@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CPathfindInformation : global::System.IDisposable {
+public unsafe class CPathfindInformation : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CPathfindInformation(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CPathfindInformation(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CPathfindInformation obj) {
@@ -398,15 +403,15 @@ public class CPathfindInformation : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_float m_pfWayPoints {
+  public float* m_pfWayPoints {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_pfWayPoints_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CPathfindInformation_m_pfWayPoints_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_pfWayPoints_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CPathfindInformation_m_pfWayPoints_get(swigCPtr); 
+        return (float*)retVal; 
+    }
+
   }
 
   public int m_nUnsmoothedWayPoints {
@@ -419,15 +424,15 @@ public class CPathfindInformation : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_float m_pfUnsmoothedWayPoints {
+  public float* m_pfUnsmoothedWayPoints {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_pfUnsmoothedWayPoints_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CPathfindInformation_m_pfUnsmoothedWayPoints_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_pfUnsmoothedWayPoints_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CPathfindInformation_m_pfUnsmoothedWayPoints_get(swigCPtr); 
+        return (float*)retVal; 
+    }
+
   }
 
   public int m_nLocationOnList {
@@ -470,26 +475,26 @@ public class CPathfindInformation : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_int m_poidInterAreas {
+  public uint* m_poidInterAreas {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_poidInterAreas_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CPathfindInformation_m_poidInterAreas_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_poidInterAreas_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CPathfindInformation_m_poidInterAreas_get(swigCPtr); 
+        return (uint*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_int m_poidInterAreaExits {
+  public uint* m_poidInterAreaExits {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_poidInterAreaExits_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CPathfindInformation_m_poidInterAreaExits_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_poidInterAreaExits_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CPathfindInformation_m_poidInterAreaExits_get(swigCPtr); 
+        return (uint*)retVal; 
+    }
+
   }
 
   public int m_nInterAreaDeniedTriggers {
@@ -502,15 +507,15 @@ public class CPathfindInformation : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_int m_poidInterAreaDeniedTriggerIds {
+  public uint* m_poidInterAreaDeniedTriggerIds {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_poidInterAreaDeniedTriggerIds_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CPathfindInformation_m_poidInterAreaDeniedTriggerIds_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_poidInterAreaDeniedTriggerIds_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CPathfindInformation_m_poidInterAreaDeniedTriggerIds_get(swigCPtr); 
+        return (uint*)retVal; 
+    }
+
   }
 
   public uint m_oidDeniedDoor {
@@ -533,26 +538,26 @@ public class CPathfindInformation : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_pnInterTileDeniedExitTiles {
+  public int* m_pnInterTileDeniedExitTiles {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_pnInterTileDeniedExitTiles_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CPathfindInformation_m_pnInterTileDeniedExitTiles_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_pnInterTileDeniedExitTiles_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CPathfindInformation_m_pnInterTileDeniedExitTiles_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_int m_pnInterTileDeniedExitLocations {
+  public int* m_pnInterTileDeniedExitLocations {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_pnInterTileDeniedExitLocations_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CPathfindInformation_m_pnInterTileDeniedExitLocations_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_pnInterTileDeniedExitLocations_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CPathfindInformation_m_pnInterTileDeniedExitLocations_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
   public int m_nTilesToBeExplored {
@@ -565,26 +570,26 @@ public class CPathfindInformation : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_pnTilesToBeExplored {
+  public int* m_pnTilesToBeExplored {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_pnTilesToBeExplored_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CPathfindInformation_m_pnTilesToBeExplored_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_pnTilesToBeExplored_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CPathfindInformation_m_pnTilesToBeExplored_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_float m_pfTileExitsToBeExplored {
+  public float* m_pfTileExitsToBeExplored {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_pfTileExitsToBeExplored_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CPathfindInformation_m_pfTileExitsToBeExplored_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_pfTileExitsToBeExplored_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CPathfindInformation_m_pfTileExitsToBeExplored_get(swigCPtr); 
+        return (float*)retVal; 
+    }
+
   }
 
   public int m_bFirstTileSearching {
@@ -627,26 +632,26 @@ public class CPathfindInformation : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_pnFirstTileFValueCurrentAlternatives {
+  public int* m_pnFirstTileFValueCurrentAlternatives {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_pnFirstTileFValueCurrentAlternatives_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CPathfindInformation_m_pnFirstTileFValueCurrentAlternatives_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_pnFirstTileFValueCurrentAlternatives_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CPathfindInformation_m_pnFirstTileFValueCurrentAlternatives_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_int m_pnFirstTileFValueTotalAlternatives {
+  public int* m_pnFirstTileFValueTotalAlternatives {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_pnFirstTileFValueTotalAlternatives_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CPathfindInformation_m_pnFirstTileFValueTotalAlternatives_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_pnFirstTileFValueTotalAlternatives_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CPathfindInformation_m_pnFirstTileFValueTotalAlternatives_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
   public SWIGTYPE_p_p_CPathfindInfoIntraTileSuccessors m_pcFirstTileFValueComputedAlternatives {
@@ -840,15 +845,15 @@ public class CPathfindInformation : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_pnGridStepsArray {
+  public int* m_pnGridStepsArray {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_pnGridStepsArray_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CPathfindInformation_m_pnGridStepsArray_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_pnGridStepsArray_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CPathfindInformation_m_pnGridStepsArray_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
   public int m_nGridStepsTaken {
@@ -891,14 +896,14 @@ public class CPathfindInformation : global::System.IDisposable {
     } 
   }
 
-  public System.IntPtr m_pGridSearchLastTransTable {
+  public void* m_pGridSearchLastTransTable {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_pGridSearchLastTransTable_set(swigCPtr, value);
+      NWNXLibPINVOKE.CPathfindInformation_m_pGridSearchLastTransTable_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_pGridSearchLastTransTable_get(swigCPtr); 
-        return cPtr; 
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CPathfindInformation_m_pGridSearchLastTransTable_get(swigCPtr); 
+        return (void*)retVal; 
+    }
 
   }
 
@@ -956,15 +961,15 @@ public class CPathfindInformation : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_int m_pnPathToClosestPointArray {
+  public int* m_pnPathToClosestPointArray {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_pnPathToClosestPointArray_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CPathfindInformation_m_pnPathToClosestPointArray_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_pnPathToClosestPointArray_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CPathfindInformation_m_pnPathToClosestPointArray_get(swigCPtr); 
+        return (int*)retVal; 
+    }
+
   }
 
   public int m_nPathToClosestPointDistance {
@@ -1047,35 +1052,35 @@ public class CPathfindInformation : global::System.IDisposable {
     } 
   }
 
-  public ulong m_nGridSearchTimerStart {
+  public uint m_nGridSearchTimerStart {
     set {
       NWNXLibPINVOKE.CPathfindInformation_m_nGridSearchTimerStart_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CPathfindInformation_m_nGridSearchTimerStart_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CPathfindInformation_m_nGridSearchTimerStart_get(swigCPtr);
       return ret;
     } 
   }
 
-  public ulong m_nGridSearchTimeSlice {
+  public uint m_nGridSearchTimeSlice {
     set {
       NWNXLibPINVOKE.CPathfindInformation_m_nGridSearchTimeSlice_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CPathfindInformation_m_nGridSearchTimeSlice_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CPathfindInformation_m_nGridSearchTimeSlice_get(swigCPtr);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_p_int m_pnGridSearchPathStepsArray {
+  public int** m_pnGridSearchPathStepsArray {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_pnGridSearchPathStepsArray_set(swigCPtr, SWIGTYPE_p_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CPathfindInformation_m_pnGridSearchPathStepsArray_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_pnGridSearchPathStepsArray_get(swigCPtr);
-      SWIGTYPE_p_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CPathfindInformation_m_pnGridSearchPathStepsArray_get(swigCPtr); 
+        return (int**)retVal; 
+    }
+
   }
 
   public int m_nGridSearchActivePaths {
@@ -1146,8 +1151,8 @@ public class CPathfindInformation : global::System.IDisposable {
     NWNXLibPINVOKE.CPathfindInformation_FlipTempEndPoints(swigCPtr);
   }
 
-  public void GetFirstTileFValueAlternatives(int level, SWIGTYPE_p_int nCurrentAlternative, SWIGTYPE_p_int nAlternatives, SWIGTYPE_p_p_CPathfindInfoIntraTileSuccessors pSuccessors) {
-    NWNXLibPINVOKE.CPathfindInformation_GetFirstTileFValueAlternatives(swigCPtr, level, SWIGTYPE_p_int.getCPtr(nCurrentAlternative), SWIGTYPE_p_int.getCPtr(nAlternatives), SWIGTYPE_p_p_CPathfindInfoIntraTileSuccessors.getCPtr(pSuccessors));
+  public void GetFirstTileFValueAlternatives(int level, int* nCurrentAlternative, int* nAlternatives, SWIGTYPE_p_p_CPathfindInfoIntraTileSuccessors pSuccessors) {
+    NWNXLibPINVOKE.CPathfindInformation_GetFirstTileFValueAlternatives(swigCPtr, level, (global::System.IntPtr)nCurrentAlternative, (global::System.IntPtr)nAlternatives, SWIGTYPE_p_p_CPathfindInfoIntraTileSuccessors.getCPtr(pSuccessors));
   }
 
   public void SetFirstTileFValueAlternatives(int level, int nCurrentAlternative, int nAlternatives, CPathfindInfoIntraTileSuccessors pSuccessors) {

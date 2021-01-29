@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWTile : global::System.IDisposable {
+public unsafe class CNWTile : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWTile(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWTile(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWTile obj) {
@@ -222,8 +227,8 @@ public class CNWTile : global::System.IDisposable {
   public CNWTile() : this(NWNXLibPINVOKE.new_CNWTile(), true) {
   }
 
-  public void GetLocation(SWIGTYPE_p_int pX, SWIGTYPE_p_int pY) {
-    NWNXLibPINVOKE.CNWTile_GetLocation(swigCPtr, SWIGTYPE_p_int.getCPtr(pX), SWIGTYPE_p_int.getCPtr(pY));
+  public void GetLocation(int* pX, int* pY) {
+    NWNXLibPINVOKE.CNWTile_GetLocation(swigCPtr, (global::System.IntPtr)pX, (global::System.IntPtr)pY);
   }
 
   public void SetID(int nID) {
@@ -238,32 +243,32 @@ public class CNWTile : global::System.IDisposable {
     NWNXLibPINVOKE.CNWTile_SetOrientation(swigCPtr, nOrientation);
   }
 
-  public void RotateCanonicalToRealTile(float fX, float fY, SWIGTYPE_p_float fNewX, SWIGTYPE_p_float fNewY) {
-    NWNXLibPINVOKE.CNWTile_RotateCanonicalToRealTile(swigCPtr, fX, fY, SWIGTYPE_p_float.getCPtr(fNewX), SWIGTYPE_p_float.getCPtr(fNewY));
+  public void RotateCanonicalToRealTile(float fX, float fY, float* fNewX, float* fNewY) {
+    NWNXLibPINVOKE.CNWTile_RotateCanonicalToRealTile(swigCPtr, fX, fY, (global::System.IntPtr)fNewX, (global::System.IntPtr)fNewY);
   }
 
-  public void RotateRealToCanonicalTile(float fX, float fY, SWIGTYPE_p_float fNewX, SWIGTYPE_p_float fNewY) {
-    NWNXLibPINVOKE.CNWTile_RotateRealToCanonicalTile(swigCPtr, fX, fY, SWIGTYPE_p_float.getCPtr(fNewX), SWIGTYPE_p_float.getCPtr(fNewY));
+  public void RotateRealToCanonicalTile(float fX, float fY, float* fNewX, float* fNewY) {
+    NWNXLibPINVOKE.CNWTile_RotateRealToCanonicalTile(swigCPtr, fX, fY, (global::System.IntPtr)fNewX, (global::System.IntPtr)fNewY);
   }
 
-  public void RotateCanonicalToReal(float fX, float fY, SWIGTYPE_p_float fNewX, SWIGTYPE_p_float fNewY) {
-    NWNXLibPINVOKE.CNWTile_RotateCanonicalToReal(swigCPtr, fX, fY, SWIGTYPE_p_float.getCPtr(fNewX), SWIGTYPE_p_float.getCPtr(fNewY));
+  public void RotateCanonicalToReal(float fX, float fY, float* fNewX, float* fNewY) {
+    NWNXLibPINVOKE.CNWTile_RotateCanonicalToReal(swigCPtr, fX, fY, (global::System.IntPtr)fNewX, (global::System.IntPtr)fNewY);
   }
 
-  public void RotateRealToCanonical(float fX, float fY, SWIGTYPE_p_float fNewX, SWIGTYPE_p_float fNewY) {
-    NWNXLibPINVOKE.CNWTile_RotateRealToCanonical(swigCPtr, fX, fY, SWIGTYPE_p_float.getCPtr(fNewX), SWIGTYPE_p_float.getCPtr(fNewY));
+  public void RotateRealToCanonical(float fX, float fY, float* fNewX, float* fNewY) {
+    NWNXLibPINVOKE.CNWTile_RotateRealToCanonical(swigCPtr, fX, fY, (global::System.IntPtr)fNewX, (global::System.IntPtr)fNewY);
   }
 
-  public void GetMainLightColor(SWIGTYPE_p_unsigned_char pMainLight1Color, SWIGTYPE_p_unsigned_char pMainLight2Color) {
-    NWNXLibPINVOKE.CNWTile_GetMainLightColor(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(pMainLight1Color), SWIGTYPE_p_unsigned_char.getCPtr(pMainLight2Color));
+  public void GetMainLightColor(byte* pMainLight1Color, byte* pMainLight2Color) {
+    NWNXLibPINVOKE.CNWTile_GetMainLightColor(swigCPtr, (global::System.IntPtr)pMainLight1Color, (global::System.IntPtr)pMainLight2Color);
   }
 
-  public void GetSourceLightColor(SWIGTYPE_p_unsigned_char pSourceLight1Color, SWIGTYPE_p_unsigned_char pSourceLight2Color) {
-    NWNXLibPINVOKE.CNWTile_GetSourceLightColor(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(pSourceLight1Color), SWIGTYPE_p_unsigned_char.getCPtr(pSourceLight2Color));
+  public void GetSourceLightColor(byte* pSourceLight1Color, byte* pSourceLight2Color) {
+    NWNXLibPINVOKE.CNWTile_GetSourceLightColor(swigCPtr, (global::System.IntPtr)pSourceLight1Color, (global::System.IntPtr)pSourceLight2Color);
   }
 
-  public void GetAnimLoop(SWIGTYPE_p_unsigned_char pAnimLoop1, SWIGTYPE_p_unsigned_char pAnimLoop2, SWIGTYPE_p_unsigned_char pAnimLoop3) {
-    NWNXLibPINVOKE.CNWTile_GetAnimLoop(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(pAnimLoop1), SWIGTYPE_p_unsigned_char.getCPtr(pAnimLoop2), SWIGTYPE_p_unsigned_char.getCPtr(pAnimLoop3));
+  public void GetAnimLoop(byte* pAnimLoop1, byte* pAnimLoop2, byte* pAnimLoop3) {
+    NWNXLibPINVOKE.CNWTile_GetAnimLoop(swigCPtr, (global::System.IntPtr)pAnimLoop1, (global::System.IntPtr)pAnimLoop2, (global::System.IntPtr)pAnimLoop3);
   }
 
   public void SetMainLightColor(byte nMainLight1Color, byte nMainLight2Color) {

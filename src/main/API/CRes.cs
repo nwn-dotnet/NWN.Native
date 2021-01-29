@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CRes : global::System.IDisposable {
+public unsafe class CRes : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CRes(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CRes(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CRes obj) {
@@ -119,14 +124,14 @@ public class CRes : global::System.IDisposable {
     } 
   }
 
-  public System.IntPtr m_pResource {
+  public void* m_pResource {
     set {
-      NWNXLibPINVOKE.CRes_m_pResource_set(swigCPtr, value);
+      NWNXLibPINVOKE.CRes_m_pResource_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr cPtr = NWNXLibPINVOKE.CRes_m_pResource_get(swigCPtr); 
-        return cPtr; 
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CRes_m_pResource_get(swigCPtr); 
+        return (void*)retVal; 
+    }
 
   }
 
@@ -214,10 +219,10 @@ public class CRes : global::System.IDisposable {
     return ret;
   }
 
-  public System.IntPtr Demand() { 
-    System.IntPtr cPtr = NWNXLibPINVOKE.CRes_Demand(swigCPtr);
-    return cPtr;
-    }
+  public void* Demand() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CRes_Demand(swigCPtr);
+    return (void*)retVal;
+  }
 
   public int ReadRaw(int nSize, string pBuffer) {
     int ret = NWNXLibPINVOKE.CRes_ReadRaw(swigCPtr, nSize, pBuffer);
@@ -232,10 +237,10 @@ public class CRes : global::System.IDisposable {
     NWNXLibPINVOKE.CRes_Dump__SWIG_1(swigCPtr);
   }
 
-  public System.IntPtr GetData() { 
-    System.IntPtr cPtr = NWNXLibPINVOKE.CRes_GetData(swigCPtr);
-    return cPtr;
-    }
+  public void* GetData() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CRes_GetData(swigCPtr);
+    return (void*)retVal;
+  }
 
   public int GetDemands() {
     int ret = NWNXLibPINVOKE.CRes_GetDemands(swigCPtr);

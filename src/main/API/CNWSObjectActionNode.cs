@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWSObjectActionNode : global::System.IDisposable {
+public unsafe class CNWSObjectActionNode : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWSObjectActionNode(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSObjectActionNode(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSObjectActionNode obj) {
@@ -88,26 +93,26 @@ public class CNWSObjectActionNode : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_int m_nParamType {
+  public uint[] m_nParamType {
     set {
-      NWNXLibPINVOKE.CNWSObjectActionNode_m_nParamType_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSObjectActionNode_m_nParamType_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSObjectActionNode_m_nParamType_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        uint[] retVal = NWNXLibPINVOKE.CNWSObjectActionNode_m_nParamType_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_int m_pParameter {
+  public long[] m_pParameter {
     set {
-      NWNXLibPINVOKE.CNWSObjectActionNode_m_pParameter_set(swigCPtr, SWIGTYPE_p_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSObjectActionNode_m_pParameter_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSObjectActionNode_m_pParameter_get(swigCPtr);
-      SWIGTYPE_p_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_int(cPtr, false);
-      return ret;
-    } 
+        long[] retVal = NWNXLibPINVOKE.CNWSObjectActionNode_m_pParameter_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public ushort m_nGroupActionId {

@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWSItem : CNWSObject {
+public unsafe class CNWSItem : CNWSObject, ICNWItem {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWSItem(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSItem_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSItem(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSItem_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSItem obj) {
@@ -32,6 +36,11 @@ public class CNWSItem : CNWSObject {
       }
       base.Dispose(disposing);
     }
+  }
+
+  [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+  global::System.Runtime.InteropServices.HandleRef ICNWItem.GetInterfaceCPtr() {
+    return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CNWSItem_ICNWItem_GetInterfaceCPtr(swigCPtr.Handle));
   }
 
   public System.IntPtr Pointer {
@@ -78,15 +87,15 @@ public class CNWSItem : CNWSObject {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_pLastUsedActivePropertyUsesLeft {
+  public byte[] m_pLastUsedActivePropertyUsesLeft {
     set {
-      NWNXLibPINVOKE.CNWSItem_m_pLastUsedActivePropertyUsesLeft_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSItem_m_pLastUsedActivePropertyUsesLeft_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSItem_m_pLastUsedActivePropertyUsesLeft_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNWSItem_m_pLastUsedActivePropertyUsesLeft_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public int m_nArmorValue {
@@ -191,37 +200,37 @@ public class CNWSItem : CNWSObject {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_nModelPart {
+  public byte[] m_nModelPart {
     set {
-      NWNXLibPINVOKE.CNWSItem_m_nModelPart_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSItem_m_nModelPart_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSItem_m_nModelPart_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNWSItem_m_nModelPart_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_char m_nArmorModelPart {
+  public byte[] m_nArmorModelPart {
     set {
-      NWNXLibPINVOKE.CNWSItem_m_nArmorModelPart_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSItem_m_nArmorModelPart_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSItem_m_nArmorModelPart_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNWSItem_m_nArmorModelPart_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_char m_nUnalteredArmorModelPart {
+  public byte[] m_nUnalteredArmorModelPart {
     set {
-      NWNXLibPINVOKE.CNWSItem_m_nUnalteredArmorModelPart_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSItem_m_nUnalteredArmorModelPart_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSItem_m_nUnalteredArmorModelPart_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.CNWSItem_m_nUnalteredArmorModelPart_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public uint m_oidPossessor {
@@ -485,8 +494,8 @@ public class CNWSItem : CNWSObject {
     return ret;
   }
 
-  public override void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSItem_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
+  public override void EventHandler(uint nEventId, uint nCallerObjectId, void* pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSItem_EventHandler(swigCPtr, nEventId, nCallerObjectId, (global::System.IntPtr)pScript, nCalendarDay, nTimeOfDay);
   }
 
   public void InitRepository(uint nObjectID) {
@@ -786,6 +795,47 @@ public class CNWSItem : CNWSObject {
   public float CalculatePassiveCost(CNWItemProperty pItemProperty) {
     float ret = NWNXLibPINVOKE.CNWSItem_CalculatePassiveCost(swigCPtr, CNWItemProperty.getCPtr(pItemProperty));
     return ret;
+  }
+
+  public byte[] m_nLayeredTextureColors {
+    set {
+      NWNXLibPINVOKE.CNWSItem_m_nLayeredTextureColors_set(swigCPtr, value);
+    }  
+    get {
+        byte[] retVal = NWNXLibPINVOKE.CNWSItem_m_nLayeredTextureColors_get(swigCPtr);
+        return retVal;
+    }
+
+  }
+
+  public byte*[] m_pLayeredTextureColorsPerPart {
+    set {
+      NWNXLibPINVOKE.CNWSItem_m_pLayeredTextureColorsPerPart_set(swigCPtr, value);
+    }  
+    get {
+        byte*[] retVal = NWNXLibPINVOKE.CNWSItem_m_pLayeredTextureColorsPerPart_get(swigCPtr);
+        return retVal;
+    }
+
+  }
+
+  public uint m_nBaseItem {
+    set {
+      NWNXLibPINVOKE.CNWSItem_m_nBaseItem_set(swigCPtr, value);
+    } 
+    get {
+      uint ret = NWNXLibPINVOKE.CNWSItem_m_nBaseItem_get(swigCPtr);
+      return ret;
+    } 
+  }
+
+  public byte GetLayeredTextureColorPerPart(byte nTexture, byte nPart) {
+    byte ret = NWNXLibPINVOKE.CNWSItem_GetLayeredTextureColorPerPart(swigCPtr, nTexture, nPart);
+    return ret;
+  }
+
+  public void SetLayeredTextureColorPerPart(byte nTexture, byte nPart, byte nColor) {
+    NWNXLibPINVOKE.CNWSItem_SetLayeredTextureColorPerPart(swigCPtr, nTexture, nPart, nColor);
   }
 
 }

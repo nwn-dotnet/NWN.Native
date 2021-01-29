@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CVirtualMachineFile : global::System.IDisposable {
+public unsafe class CVirtualMachineFile : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CVirtualMachineFile(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CVirtualMachineFile(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CVirtualMachineFile obj) {
@@ -91,9 +96,8 @@ public class CVirtualMachineFile : global::System.IDisposable {
     NWNXLibPINVOKE.CVirtualMachineFile_UnloadFile(swigCPtr);
   }
 
-  public void GetData(SWIGTYPE_p_p_char pData, SWIGTYPE_p_unsigned_int nSize) {
-    NWNXLibPINVOKE.CVirtualMachineFile_GetData(swigCPtr, SWIGTYPE_p_p_char.getCPtr(pData), SWIGTYPE_p_unsigned_int.getCPtr(nSize));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public void GetData(char** pData, uint* nSize) {
+    NWNXLibPINVOKE.CVirtualMachineFile_GetData(swigCPtr, (global::System.IntPtr)pData, (global::System.IntPtr)nSize);
   }
 
 }

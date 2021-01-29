@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNetLayer : global::System.IDisposable {
+public unsafe class CNetLayer : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNetLayer(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNetLayer(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNetLayer obj) {
@@ -439,13 +444,13 @@ public class CNetLayer : global::System.IDisposable {
     NWNXLibPINVOKE.CNetLayer_ProcessReceivedFrames__SWIG_1(swigCPtr);
   }
 
-  public int SendMessageToPlayer(uint nPlayerId, SWIGTYPE_p_unsigned_char pData, uint nSize, uint nFlags) {
-    int ret = NWNXLibPINVOKE.CNetLayer_SendMessageToPlayer(swigCPtr, nPlayerId, SWIGTYPE_p_unsigned_char.getCPtr(pData), nSize, nFlags);
+  public int SendMessageToPlayer(uint nPlayerId, byte* pData, uint nSize, uint nFlags) {
+    int ret = NWNXLibPINVOKE.CNetLayer_SendMessageToPlayer(swigCPtr, nPlayerId, (global::System.IntPtr)pData, nSize, nFlags);
     return ret;
   }
 
-  public int SendMessageToAddress(uint nConnectionId, SWIGTYPE_p_unsigned_char pData, uint nSize) {
-    int ret = NWNXLibPINVOKE.CNetLayer_SendMessageToAddress(swigCPtr, nConnectionId, SWIGTYPE_p_unsigned_char.getCPtr(pData), nSize);
+  public int SendMessageToAddress(uint nConnectionId, byte* pData, uint nSize) {
+    int ret = NWNXLibPINVOKE.CNetLayer_SendMessageToAddress(swigCPtr, nConnectionId, (global::System.IntPtr)pData, nSize);
     return ret;
   }
 
@@ -454,13 +459,13 @@ public class CNetLayer : global::System.IDisposable {
     return ret;
   }
 
-  public int GetPlayerAddressData(uint nConnectionId, SWIGTYPE_p_unsigned_int nProtocol, SWIGTYPE_p_p_unsigned_char pNetAddress1, SWIGTYPE_p_p_unsigned_char pNetAddress2, SWIGTYPE_p_unsigned_int nPort) {
-    int ret = NWNXLibPINVOKE.CNetLayer_GetPlayerAddressData(swigCPtr, nConnectionId, SWIGTYPE_p_unsigned_int.getCPtr(nProtocol), SWIGTYPE_p_p_unsigned_char.getCPtr(pNetAddress1), SWIGTYPE_p_p_unsigned_char.getCPtr(pNetAddress2), SWIGTYPE_p_unsigned_int.getCPtr(nPort));
+  public int GetPlayerAddressData(uint nConnectionId, uint* nProtocol, byte** pNetAddress1, byte** pNetAddress2, uint* nPort) {
+    int ret = NWNXLibPINVOKE.CNetLayer_GetPlayerAddressData(swigCPtr, nConnectionId, (global::System.IntPtr)nProtocol, (global::System.IntPtr)pNetAddress1, (global::System.IntPtr)pNetAddress2, (global::System.IntPtr)nPort);
     return ret;
   }
 
-  public void StoreMessage(SWIGTYPE_p_unsigned_char pData, uint nMsgLength) {
-    NWNXLibPINVOKE.CNetLayer_StoreMessage(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(pData), nMsgLength);
+  public void StoreMessage(byte* pData, uint nMsgLength) {
+    NWNXLibPINVOKE.CNetLayer_StoreMessage(swigCPtr, (global::System.IntPtr)pData, nMsgLength);
   }
 
   public int GetGameMasterPermision() {
@@ -472,8 +477,8 @@ public class CNetLayer : global::System.IDisposable {
     NWNXLibPINVOKE.CNetLayer_SetGameMasterPermission(swigCPtr, state);
   }
 
-  public int TranslateAddressFromString(string szAddress, SWIGTYPE_p_unsigned_int nProtocol, SWIGTYPE_p_unsigned_char pNetAddress1, SWIGTYPE_p_unsigned_char pNetAddress2, SWIGTYPE_p_unsigned_int nWPort) {
-    int ret = NWNXLibPINVOKE.CNetLayer_TranslateAddressFromString(swigCPtr, szAddress, SWIGTYPE_p_unsigned_int.getCPtr(nProtocol), SWIGTYPE_p_unsigned_char.getCPtr(pNetAddress1), SWIGTYPE_p_unsigned_char.getCPtr(pNetAddress2), SWIGTYPE_p_unsigned_int.getCPtr(nWPort));
+  public int TranslateAddressFromString(string szAddress, uint* nProtocol, byte* pNetAddress1, byte* pNetAddress2, uint* nWPort) {
+    int ret = NWNXLibPINVOKE.CNetLayer_TranslateAddressFromString(swigCPtr, szAddress, (global::System.IntPtr)nProtocol, (global::System.IntPtr)pNetAddress1, (global::System.IntPtr)pNetAddress2, (global::System.IntPtr)nWPort);
     return ret;
   }
 
@@ -520,8 +525,8 @@ public class CNetLayer : global::System.IDisposable {
     return ret;
   }
 
-  public int PlayerIdToConnectionId(uint nPlayerId, SWIGTYPE_p_unsigned_int nConnectionId) {
-    int ret = NWNXLibPINVOKE.CNetLayer_PlayerIdToConnectionId(swigCPtr, nPlayerId, SWIGTYPE_p_unsigned_int.getCPtr(nConnectionId));
+  public int PlayerIdToConnectionId(uint nPlayerId, uint* nConnectionId) {
+    int ret = NWNXLibPINVOKE.CNetLayer_PlayerIdToConnectionId(swigCPtr, nPlayerId, (global::System.IntPtr)nConnectionId);
     return ret;
   }
 
@@ -536,8 +541,8 @@ public class CNetLayer : global::System.IDisposable {
     return ret;
   }
 
-  public int GetMessageFromStandardConnection(SWIGTYPE_p_int nConnectionFrom, SWIGTYPE_p_p_char pMessage, SWIGTYPE_p_int nSize) {
-    int ret = NWNXLibPINVOKE.CNetLayer_GetMessageFromStandardConnection(swigCPtr, SWIGTYPE_p_int.getCPtr(nConnectionFrom), SWIGTYPE_p_p_char.getCPtr(pMessage), SWIGTYPE_p_int.getCPtr(nSize));
+  public int GetMessageFromStandardConnection(int* nConnectionFrom, char** pMessage, int* nSize) {
+    int ret = NWNXLibPINVOKE.CNetLayer_GetMessageFromStandardConnection(swigCPtr, (global::System.IntPtr)nConnectionFrom, (global::System.IntPtr)pMessage, (global::System.IntPtr)nSize);
     return ret;
   }
 

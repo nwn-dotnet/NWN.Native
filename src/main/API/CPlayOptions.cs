@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CPlayOptions : global::System.IDisposable {
+public unsafe class CPlayOptions : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CPlayOptions(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CPlayOptions(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CPlayOptions obj) {
@@ -37,7 +42,7 @@ public class CPlayOptions : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CPlayOptions(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -346,6 +351,9 @@ public class CPlayOptions : global::System.IDisposable {
       int ret = NWNXLibPINVOKE.CPlayOptions_bHideHitPointsGained_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public CPlayOptions() : this(NWNXLibPINVOKE.new_CPlayOptions(), true) {
   }
 
 }

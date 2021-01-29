@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWSCreature : CNWSObject {
+public unsafe class CNWSCreature : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWSCreature(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSCreature_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSCreature(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSCreature_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSCreature obj) {
@@ -88,15 +92,15 @@ public class CNWSCreature : CNWSObject {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_int m_poidCntrSpellObjects {
+  public uint[] m_poidCntrSpellObjects {
     set {
-      NWNXLibPINVOKE.CNWSCreature_m_poidCntrSpellObjects_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSCreature_m_poidCntrSpellObjects_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_m_poidCntrSpellObjects_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        uint[] retVal = NWNXLibPINVOKE.CNWSCreature_m_poidCntrSpellObjects_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public int m_nNumCntrSpellObjects {
@@ -539,15 +543,15 @@ public class CNWSCreature : CNWSObject {
     } 
   }
 
-  public SWIGTYPE_p_p_unsigned_char m_nAutoMapTileData {
+  public byte** m_nAutoMapTileData {
     set {
-      NWNXLibPINVOKE.CNWSCreature_m_nAutoMapTileData_set(swigCPtr, SWIGTYPE_p_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSCreature_m_nAutoMapTileData_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_m_nAutoMapTileData_get(swigCPtr);
-      SWIGTYPE_p_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWSCreature_m_nAutoMapTileData_get(swigCPtr); 
+        return (byte**)retVal; 
+    }
+
   }
 
   public int m_bAutoMapAutoExplores {
@@ -1516,15 +1520,15 @@ public class CNWSCreature : CNWSObject {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_int m_pSkillTimer {
+  public uint* m_pSkillTimer {
     set {
-      NWNXLibPINVOKE.CNWSCreature_m_pSkillTimer_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSCreature_m_pSkillTimer_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_m_pSkillTimer_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWSCreature_m_pSkillTimer_get(swigCPtr); 
+        return (uint*)retVal; 
+    }
+
   }
 
   public CNWSCombatRound m_pcCombatRound {
@@ -2047,15 +2051,15 @@ public class CNWSCreature : CNWSObject {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_int m_pPrePolymorphedItems {
+  public uint[] m_pPrePolymorphedItems {
     set {
-      NWNXLibPINVOKE.CNWSCreature_m_pPrePolymorphedItems_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSCreature_m_pPrePolymorphedItems_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_m_pPrePolymorphedItems_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        uint[] retVal = NWNXLibPINVOKE.CNWSCreature_m_pPrePolymorphedItems_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public CResRef m_refPrePolymorphPortrait {
@@ -2179,22 +2183,22 @@ public class CNWSCreature : CNWSObject {
     } 
   }
 
-  public ulong m_nPolymorphACBonusEffect {
+  public uint m_nPolymorphACBonusEffect {
     set {
       NWNXLibPINVOKE.CNWSCreature_m_nPolymorphACBonusEffect_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CNWSCreature_m_nPolymorphACBonusEffect_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CNWSCreature_m_nPolymorphACBonusEffect_get(swigCPtr);
       return ret;
     } 
   }
 
-  public ulong m_nPolymorphHPBonusEffect {
+  public uint m_nPolymorphHPBonusEffect {
     set {
       NWNXLibPINVOKE.CNWSCreature_m_nPolymorphHPBonusEffect_set(swigCPtr, value);
     } 
     get {
-      ulong ret = NWNXLibPINVOKE.CNWSCreature_m_nPolymorphHPBonusEffect_get(swigCPtr);
+      uint ret = NWNXLibPINVOKE.CNWSCreature_m_nPolymorphHPBonusEffect_get(swigCPtr);
       return ret;
     } 
   }
@@ -2676,28 +2680,28 @@ public class CNWSCreature : CNWSObject {
     return ret;
   }
 
-  public byte CanEquipItem(CNWSItem pItem, SWIGTYPE_p_unsigned_int pEquipToSlot, int bEquipping, int bLoading, int bDisplayFeedback, CNWSPlayer pFeedbackPlayer) {
-    byte ret = NWNXLibPINVOKE.CNWSCreature_CanEquipItem__SWIG_0(swigCPtr, CNWSItem.getCPtr(pItem), SWIGTYPE_p_unsigned_int.getCPtr(pEquipToSlot), bEquipping, bLoading, bDisplayFeedback, CNWSPlayer.getCPtr(pFeedbackPlayer));
+  public byte CanEquipItem(CNWSItem pItem, uint* pEquipToSlot, int bEquipping, int bLoading, int bDisplayFeedback, CNWSPlayer pFeedbackPlayer) {
+    byte ret = NWNXLibPINVOKE.CNWSCreature_CanEquipItem__SWIG_0(swigCPtr, CNWSItem.getCPtr(pItem), (global::System.IntPtr)pEquipToSlot, bEquipping, bLoading, bDisplayFeedback, CNWSPlayer.getCPtr(pFeedbackPlayer));
     return ret;
   }
 
-  public byte CanEquipItem(CNWSItem pItem, SWIGTYPE_p_unsigned_int pEquipToSlot, int bEquipping, int bLoading, int bDisplayFeedback) {
-    byte ret = NWNXLibPINVOKE.CNWSCreature_CanEquipItem__SWIG_1(swigCPtr, CNWSItem.getCPtr(pItem), SWIGTYPE_p_unsigned_int.getCPtr(pEquipToSlot), bEquipping, bLoading, bDisplayFeedback);
+  public byte CanEquipItem(CNWSItem pItem, uint* pEquipToSlot, int bEquipping, int bLoading, int bDisplayFeedback) {
+    byte ret = NWNXLibPINVOKE.CNWSCreature_CanEquipItem__SWIG_1(swigCPtr, CNWSItem.getCPtr(pItem), (global::System.IntPtr)pEquipToSlot, bEquipping, bLoading, bDisplayFeedback);
     return ret;
   }
 
-  public byte CanEquipItem(CNWSItem pItem, SWIGTYPE_p_unsigned_int pEquipToSlot, int bEquipping, int bLoading) {
-    byte ret = NWNXLibPINVOKE.CNWSCreature_CanEquipItem__SWIG_2(swigCPtr, CNWSItem.getCPtr(pItem), SWIGTYPE_p_unsigned_int.getCPtr(pEquipToSlot), bEquipping, bLoading);
+  public byte CanEquipItem(CNWSItem pItem, uint* pEquipToSlot, int bEquipping, int bLoading) {
+    byte ret = NWNXLibPINVOKE.CNWSCreature_CanEquipItem__SWIG_2(swigCPtr, CNWSItem.getCPtr(pItem), (global::System.IntPtr)pEquipToSlot, bEquipping, bLoading);
     return ret;
   }
 
-  public byte CanEquipItem(CNWSItem pItem, SWIGTYPE_p_unsigned_int pEquipToSlot, int bEquipping) {
-    byte ret = NWNXLibPINVOKE.CNWSCreature_CanEquipItem__SWIG_3(swigCPtr, CNWSItem.getCPtr(pItem), SWIGTYPE_p_unsigned_int.getCPtr(pEquipToSlot), bEquipping);
+  public byte CanEquipItem(CNWSItem pItem, uint* pEquipToSlot, int bEquipping) {
+    byte ret = NWNXLibPINVOKE.CNWSCreature_CanEquipItem__SWIG_3(swigCPtr, CNWSItem.getCPtr(pItem), (global::System.IntPtr)pEquipToSlot, bEquipping);
     return ret;
   }
 
-  public byte CanEquipItem(CNWSItem pItem, SWIGTYPE_p_unsigned_int pEquipToSlot) {
-    byte ret = NWNXLibPINVOKE.CNWSCreature_CanEquipItem__SWIG_4(swigCPtr, CNWSItem.getCPtr(pItem), SWIGTYPE_p_unsigned_int.getCPtr(pEquipToSlot));
+  public byte CanEquipItem(CNWSItem pItem, uint* pEquipToSlot) {
+    byte ret = NWNXLibPINVOKE.CNWSCreature_CanEquipItem__SWIG_4(swigCPtr, CNWSItem.getCPtr(pItem), (global::System.IntPtr)pEquipToSlot);
     return ret;
   }
 
@@ -2764,8 +2768,8 @@ public class CNWSCreature : CNWSObject {
     NWNXLibPINVOKE.CNWSCreature_ResetUpdateTimes(swigCPtr, nCalendarDay, nTimeOfDay);
   }
 
-  public override void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSCreature_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
+  public override void EventHandler(uint nEventId, uint nCallerObjectId, void* pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSCreature_EventHandler(swigCPtr, nEventId, nCallerObjectId, (global::System.IntPtr)pScript, nCalendarDay, nTimeOfDay);
   }
 
   public uint GetItemCount(int bDroppableOnly) {
@@ -3336,8 +3340,8 @@ public class CNWSCreature : CNWSObject {
     return ret;
   }
 
-  public int GetUseRange(uint oidUse, Vector vUsePoint, SWIGTYPE_p_float fMoveRange) {
-    int ret = NWNXLibPINVOKE.CNWSCreature_GetUseRange(swigCPtr, oidUse, Vector.getCPtr(vUsePoint), SWIGTYPE_p_float.getCPtr(fMoveRange));
+  public int GetUseRange(uint oidUse, Vector vUsePoint, float* fMoveRange) {
+    int ret = NWNXLibPINVOKE.CNWSCreature_GetUseRange(swigCPtr, oidUse, Vector.getCPtr(vUsePoint), (global::System.IntPtr)fMoveRange);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -4252,8 +4256,8 @@ public class CNWSCreature : CNWSObject {
     NWNXLibPINVOKE.CNWSCreature_ClearAutoMapData(swigCPtr);
   }
 
-  public void SetAutoMapData(int nNumAreas, SWIGTYPE_p_unsigned_int pAreaList, SWIGTYPE_p_p_unsigned_char pMapTileData) {
-    NWNXLibPINVOKE.CNWSCreature_SetAutoMapData(swigCPtr, nNumAreas, SWIGTYPE_p_unsigned_int.getCPtr(pAreaList), SWIGTYPE_p_p_unsigned_char.getCPtr(pMapTileData));
+  public void SetAutoMapData(int nNumAreas, uint* pAreaList, byte** pMapTileData) {
+    NWNXLibPINVOKE.CNWSCreature_SetAutoMapData(swigCPtr, nNumAreas, (global::System.IntPtr)pAreaList, (global::System.IntPtr)pMapTileData);
   }
 
   public void ReconcileAutoMapData() {
@@ -4281,8 +4285,8 @@ public class CNWSCreature : CNWSObject {
     return ret;
   }
 
-  public int TranslateAddress(uint oidArea, int nByteIndex, int nBitIndex, SWIGTYPE_p_int xPos, SWIGTYPE_p_int yPos) {
-    int ret = NWNXLibPINVOKE.CNWSCreature_TranslateAddress(swigCPtr, oidArea, nByteIndex, nBitIndex, SWIGTYPE_p_int.getCPtr(xPos), SWIGTYPE_p_int.getCPtr(yPos));
+  public int TranslateAddress(uint oidArea, int nByteIndex, int nBitIndex, int* xPos, int* yPos) {
+    int ret = NWNXLibPINVOKE.CNWSCreature_TranslateAddress(swigCPtr, oidArea, nByteIndex, nBitIndex, (global::System.IntPtr)xPos, (global::System.IntPtr)yPos);
     return ret;
   }
 
@@ -4458,14 +4462,12 @@ public class CNWSCreature : CNWSObject {
     NWNXLibPINVOKE.CNWSCreature_CreateDefaultQuickButtons(swigCPtr);
   }
 
-  public void CreateDefaultQuickButtons_CheckItem(CNWSItem pItem, SWIGTYPE_p_unsigned_int nMaxCostRanged, SWIGTYPE_p_unsigned_int nMaxCostMelee, SWIGTYPE_p_unsigned_int oidRangedWeapon, SWIGTYPE_p_unsigned_int oidMeleeWeapon) {
-    NWNXLibPINVOKE.CNWSCreature_CreateDefaultQuickButtons_CheckItem(swigCPtr, CNWSItem.getCPtr(pItem), SWIGTYPE_p_unsigned_int.getCPtr(nMaxCostRanged), SWIGTYPE_p_unsigned_int.getCPtr(nMaxCostMelee), SWIGTYPE_p_unsigned_int.getCPtr(oidRangedWeapon), SWIGTYPE_p_unsigned_int.getCPtr(oidMeleeWeapon));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public void CreateDefaultQuickButtons_CheckItem(CNWSItem pItem, uint* nMaxCostRanged, uint* nMaxCostMelee, uint* oidRangedWeapon, uint* oidMeleeWeapon) {
+    NWNXLibPINVOKE.CNWSCreature_CreateDefaultQuickButtons_CheckItem(swigCPtr, CNWSItem.getCPtr(pItem), (global::System.IntPtr)nMaxCostRanged, (global::System.IntPtr)nMaxCostMelee, (global::System.IntPtr)oidRangedWeapon, (global::System.IntPtr)oidMeleeWeapon);
   }
 
-  public void CreateDefaultQuickButtons_AddFeat(SWIGTYPE_p_unsigned_char nButton, ushort nFeat, int bDomainFeat) {
-    NWNXLibPINVOKE.CNWSCreature_CreateDefaultQuickButtons_AddFeat(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(nButton), nFeat, bDomainFeat);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public void CreateDefaultQuickButtons_AddFeat(byte* nButton, ushort nFeat, int bDomainFeat) {
+    NWNXLibPINVOKE.CNWSCreature_CreateDefaultQuickButtons_AddFeat(swigCPtr, (global::System.IntPtr)nButton, nFeat, bDomainFeat);
   }
 
   public void CreateDefaultQuickButtonsDM() {
@@ -4734,13 +4736,13 @@ public class CNWSCreature : CNWSObject {
     NWNXLibPINVOKE.CNWSCreature_RemoveDominationEffect(swigCPtr);
   }
 
-  public byte CanEquipWeapon(CNWSItem pItem, SWIGTYPE_p_unsigned_int nEquipToSlot, int bEquipping, int bDisplayFeedback, CNWSPlayer pFeedbackPlayer) {
-    byte ret = NWNXLibPINVOKE.CNWSCreature_CanEquipWeapon__SWIG_0(swigCPtr, CNWSItem.getCPtr(pItem), SWIGTYPE_p_unsigned_int.getCPtr(nEquipToSlot), bEquipping, bDisplayFeedback, CNWSPlayer.getCPtr(pFeedbackPlayer));
+  public byte CanEquipWeapon(CNWSItem pItem, uint* nEquipToSlot, int bEquipping, int bDisplayFeedback, CNWSPlayer pFeedbackPlayer) {
+    byte ret = NWNXLibPINVOKE.CNWSCreature_CanEquipWeapon__SWIG_0(swigCPtr, CNWSItem.getCPtr(pItem), (global::System.IntPtr)nEquipToSlot, bEquipping, bDisplayFeedback, CNWSPlayer.getCPtr(pFeedbackPlayer));
     return ret;
   }
 
-  public byte CanEquipWeapon(CNWSItem pItem, SWIGTYPE_p_unsigned_int nEquipToSlot, int bEquipping, int bDisplayFeedback) {
-    byte ret = NWNXLibPINVOKE.CNWSCreature_CanEquipWeapon__SWIG_1(swigCPtr, CNWSItem.getCPtr(pItem), SWIGTYPE_p_unsigned_int.getCPtr(nEquipToSlot), bEquipping, bDisplayFeedback);
+  public byte CanEquipWeapon(CNWSItem pItem, uint* nEquipToSlot, int bEquipping, int bDisplayFeedback) {
+    byte ret = NWNXLibPINVOKE.CNWSCreature_CanEquipWeapon__SWIG_1(swigCPtr, CNWSItem.getCPtr(pItem), (global::System.IntPtr)nEquipToSlot, bEquipping, bDisplayFeedback);
     return ret;
   }
 
@@ -4749,8 +4751,8 @@ public class CNWSCreature : CNWSObject {
     return ret;
   }
 
-  public byte CanEquipMiscellaneous(CNWSItem pItem, SWIGTYPE_p_unsigned_int pEquipSlot, int bEquipping, int bDisplayFeedback) {
-    byte ret = NWNXLibPINVOKE.CNWSCreature_CanEquipMiscellaneous(swigCPtr, CNWSItem.getCPtr(pItem), SWIGTYPE_p_unsigned_int.getCPtr(pEquipSlot), bEquipping, bDisplayFeedback);
+  public byte CanEquipMiscellaneous(CNWSItem pItem, uint* pEquipSlot, int bEquipping, int bDisplayFeedback) {
+    byte ret = NWNXLibPINVOKE.CNWSCreature_CanEquipMiscellaneous(swigCPtr, CNWSItem.getCPtr(pItem), (global::System.IntPtr)pEquipSlot, bEquipping, bDisplayFeedback);
     return ret;
   }
 
@@ -4791,18 +4793,18 @@ public class CNWSCreature : CNWSObject {
     NWNXLibPINVOKE.CNWSCreature_UpdateTrapCheckDM(swigCPtr);
   }
 
-  public int DoStealthDetection(CNWSCreature pHidingCreature, int bClearLOS, SWIGTYPE_p_int bSeen, SWIGTYPE_p_int bHeard, int bTargetHiding) {
-    int ret = NWNXLibPINVOKE.CNWSCreature_DoStealthDetection__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pHidingCreature), bClearLOS, SWIGTYPE_p_int.getCPtr(bSeen), SWIGTYPE_p_int.getCPtr(bHeard), bTargetHiding);
+  public int DoStealthDetection(CNWSCreature pHidingCreature, int bClearLOS, int* bSeen, int* bHeard, int bTargetHiding) {
+    int ret = NWNXLibPINVOKE.CNWSCreature_DoStealthDetection__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pHidingCreature), bClearLOS, (global::System.IntPtr)bSeen, (global::System.IntPtr)bHeard, bTargetHiding);
     return ret;
   }
 
-  public int DoStealthDetection(CNWSCreature pHidingCreature, int bClearLOS, SWIGTYPE_p_int bSeen, SWIGTYPE_p_int bHeard) {
-    int ret = NWNXLibPINVOKE.CNWSCreature_DoStealthDetection__SWIG_1(swigCPtr, CNWSCreature.getCPtr(pHidingCreature), bClearLOS, SWIGTYPE_p_int.getCPtr(bSeen), SWIGTYPE_p_int.getCPtr(bHeard));
+  public int DoStealthDetection(CNWSCreature pHidingCreature, int bClearLOS, int* bSeen, int* bHeard) {
+    int ret = NWNXLibPINVOKE.CNWSCreature_DoStealthDetection__SWIG_1(swigCPtr, CNWSCreature.getCPtr(pHidingCreature), bClearLOS, (global::System.IntPtr)bSeen, (global::System.IntPtr)bHeard);
     return ret;
   }
 
-  public int DoStealthDetection(CNWSCreature pHidingCreature, int bClearLOS, SWIGTYPE_p_int bSeen) {
-    int ret = NWNXLibPINVOKE.CNWSCreature_DoStealthDetection__SWIG_2(swigCPtr, CNWSCreature.getCPtr(pHidingCreature), bClearLOS, SWIGTYPE_p_int.getCPtr(bSeen));
+  public int DoStealthDetection(CNWSCreature pHidingCreature, int bClearLOS, int* bSeen) {
+    int ret = NWNXLibPINVOKE.CNWSCreature_DoStealthDetection__SWIG_2(swigCPtr, CNWSCreature.getCPtr(pHidingCreature), bClearLOS, (global::System.IntPtr)bSeen);
     return ret;
   }
 

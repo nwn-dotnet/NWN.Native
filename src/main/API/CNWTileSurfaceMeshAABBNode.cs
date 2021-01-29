@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWTileSurfaceMeshAABBNode : global::System.IDisposable {
+public unsafe class CNWTileSurfaceMeshAABBNode : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWTileSurfaceMeshAABBNode(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWTileSurfaceMeshAABBNode(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWTileSurfaceMeshAABBNode obj) {
@@ -37,7 +42,7 @@ public class CNWTileSurfaceMeshAABBNode : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CNWTileSurfaceMeshAABBNode(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -150,6 +155,9 @@ public class CNWTileSurfaceMeshAABBNode : global::System.IDisposable {
       CNWTileSurfaceMeshAABBNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWTileSurfaceMeshAABBNode(cPtr, false);
       return ret;
     } 
+  }
+
+  public CNWTileSurfaceMeshAABBNode() : this(NWNXLibPINVOKE.new_CNWTileSurfaceMeshAABBNode(), true) {
   }
 
 }

@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CResDWK : CRes {
+public unsafe class CResDWK : CRes {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CResDWK(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResDWK_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CResDWK(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResDWK_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CResDWK obj) {
@@ -88,24 +92,23 @@ public class CResDWK : CRes {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_pDWKData {
+  public byte* m_pDWKData {
     set {
-      NWNXLibPINVOKE.CResDWK_m_pDWKData_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CResDWK_m_pDWKData_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CResDWK_m_pDWKData_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CResDWK_m_pDWKData_get(swigCPtr); 
+        return (byte*)retVal; 
+    }
+
   }
 
   public CResDWK() : this(NWNXLibPINVOKE.new_CResDWK(), true) {
   }
 
-  public SWIGTYPE_p_unsigned_char GetDWKDataPtr() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CResDWK_GetDWKDataPtr(swigCPtr);
-    SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-    return ret;
+  public byte* GetDWKDataPtr() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CResDWK_GetDWKDataPtr(swigCPtr);
+    return (byte*)retVal;
   }
 
   public uint GetDWKSize() {

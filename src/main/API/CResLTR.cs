@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CResLTR : CRes {
+public unsafe class CResLTR : CRes {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CResLTR(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResLTR_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CResLTR(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResLTR_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CResLTR obj) {
@@ -68,103 +72,103 @@ public class CResLTR : CRes {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_p_float m_pStartTripleLetterProb {
+  public float*** m_pStartTripleLetterProb {
     set {
-      NWNXLibPINVOKE.CResLTR_m_pStartTripleLetterProb_set(swigCPtr, SWIGTYPE_p_p_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CResLTR_m_pStartTripleLetterProb_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CResLTR_m_pStartTripleLetterProb_get(swigCPtr);
-      SWIGTYPE_p_p_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pStartTripleLetterProb_get(swigCPtr); 
+        return (float***)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_p_p_float m_pMiddleTripleLetterProb {
+  public float*** m_pMiddleTripleLetterProb {
     set {
-      NWNXLibPINVOKE.CResLTR_m_pMiddleTripleLetterProb_set(swigCPtr, SWIGTYPE_p_p_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CResLTR_m_pMiddleTripleLetterProb_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CResLTR_m_pMiddleTripleLetterProb_get(swigCPtr);
-      SWIGTYPE_p_p_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pMiddleTripleLetterProb_get(swigCPtr); 
+        return (float***)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_p_p_float m_pEndTripleLetterProb {
+  public float*** m_pEndTripleLetterProb {
     set {
-      NWNXLibPINVOKE.CResLTR_m_pEndTripleLetterProb_set(swigCPtr, SWIGTYPE_p_p_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CResLTR_m_pEndTripleLetterProb_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CResLTR_m_pEndTripleLetterProb_get(swigCPtr);
-      SWIGTYPE_p_p_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pEndTripleLetterProb_get(swigCPtr); 
+        return (float***)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_p_float m_pStartDoubleLetterProb {
+  public float** m_pStartDoubleLetterProb {
     set {
-      NWNXLibPINVOKE.CResLTR_m_pStartDoubleLetterProb_set(swigCPtr, SWIGTYPE_p_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CResLTR_m_pStartDoubleLetterProb_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CResLTR_m_pStartDoubleLetterProb_get(swigCPtr);
-      SWIGTYPE_p_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pStartDoubleLetterProb_get(swigCPtr); 
+        return (float**)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_p_float m_pMiddleDoubleLetterProb {
+  public float** m_pMiddleDoubleLetterProb {
     set {
-      NWNXLibPINVOKE.CResLTR_m_pMiddleDoubleLetterProb_set(swigCPtr, SWIGTYPE_p_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CResLTR_m_pMiddleDoubleLetterProb_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CResLTR_m_pMiddleDoubleLetterProb_get(swigCPtr);
-      SWIGTYPE_p_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pMiddleDoubleLetterProb_get(swigCPtr); 
+        return (float**)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_p_float m_pEndDoubleLetterProb {
+  public float** m_pEndDoubleLetterProb {
     set {
-      NWNXLibPINVOKE.CResLTR_m_pEndDoubleLetterProb_set(swigCPtr, SWIGTYPE_p_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CResLTR_m_pEndDoubleLetterProb_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CResLTR_m_pEndDoubleLetterProb_get(swigCPtr);
-      SWIGTYPE_p_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pEndDoubleLetterProb_get(swigCPtr); 
+        return (float**)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_float m_pStartSingleLetterProb {
+  public float* m_pStartSingleLetterProb {
     set {
-      NWNXLibPINVOKE.CResLTR_m_pStartSingleLetterProb_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CResLTR_m_pStartSingleLetterProb_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CResLTR_m_pStartSingleLetterProb_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pStartSingleLetterProb_get(swigCPtr); 
+        return (float*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_float m_pMiddleSingleLetterProb {
+  public float* m_pMiddleSingleLetterProb {
     set {
-      NWNXLibPINVOKE.CResLTR_m_pMiddleSingleLetterProb_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CResLTR_m_pMiddleSingleLetterProb_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CResLTR_m_pMiddleSingleLetterProb_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pMiddleSingleLetterProb_get(swigCPtr); 
+        return (float*)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_float m_pEndSingleLetterProb {
+  public float* m_pEndSingleLetterProb {
     set {
-      NWNXLibPINVOKE.CResLTR_m_pEndSingleLetterProb_set(swigCPtr, SWIGTYPE_p_float.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CResLTR_m_pEndSingleLetterProb_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CResLTR_m_pEndSingleLetterProb_get(swigCPtr);
-      SWIGTYPE_p_float ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_float(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pEndSingleLetterProb_get(swigCPtr); 
+        return (float*)retVal; 
+    }
+
   }
 
   public EXOLTRHEADER m_pLTRHeader {
@@ -178,15 +182,15 @@ public class CResLTR : CRes {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char m_pLTRData {
+  public byte* m_pLTRData {
     set {
-      NWNXLibPINVOKE.CResLTR_m_pLTRData_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CResLTR_m_pLTRData_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CResLTR_m_pLTRData_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pLTRData_get(swigCPtr); 
+        return (byte*)retVal; 
+    }
+
   }
 
   public uint m_nLTRNormalSize {

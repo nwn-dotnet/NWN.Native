@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CNWFeat : global::System.IDisposable {
+public unsafe class CNWFeat : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CNWFeat(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWFeat(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWFeat obj) {
@@ -249,26 +254,26 @@ public class CNWFeat : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_short m_lstPrereqFeats {
+  public ushort[] m_lstPrereqFeats {
     set {
-      NWNXLibPINVOKE.CNWFeat_m_lstPrereqFeats_set(swigCPtr, SWIGTYPE_p_unsigned_short.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWFeat_m_lstPrereqFeats_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWFeat_m_lstPrereqFeats_get(swigCPtr);
-      SWIGTYPE_p_unsigned_short ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_short(cPtr, false);
-      return ret;
-    } 
+        ushort[] retVal = NWNXLibPINVOKE.CNWFeat_m_lstPrereqFeats_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_short m_lstOrPrereqFeats {
+  public ushort[] m_lstOrPrereqFeats {
     set {
-      NWNXLibPINVOKE.CNWFeat_m_lstOrPrereqFeats_set(swigCPtr, SWIGTYPE_p_unsigned_short.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWFeat_m_lstOrPrereqFeats_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWFeat_m_lstOrPrereqFeats_get(swigCPtr);
-      SWIGTYPE_p_unsigned_short ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_short(cPtr, false);
-      return ret;
-    } 
+        ushort[] retVal = NWNXLibPINVOKE.CNWFeat_m_lstOrPrereqFeats_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public ushort m_nRequiredSkill {

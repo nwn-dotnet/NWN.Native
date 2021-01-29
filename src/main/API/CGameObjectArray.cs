@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CGameObjectArray : global::System.IDisposable {
+public unsafe class CGameObjectArray : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CGameObjectArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CGameObjectArray(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CGameObjectArray obj) {
@@ -89,26 +94,26 @@ public class CGameObjectArray : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_int m_nNextObjectArrayID {
+  public uint[] m_nNextObjectArrayID {
     set {
-      NWNXLibPINVOKE.CGameObjectArray_m_nNextObjectArrayID_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CGameObjectArray_m_nNextObjectArrayID_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CGameObjectArray_m_nNextObjectArrayID_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        uint[] retVal = NWNXLibPINVOKE.CGameObjectArray_m_nNextObjectArrayID_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
-  public SWIGTYPE_p_unsigned_int m_nNextCharArrayID {
+  public uint[] m_nNextCharArrayID {
     set {
-      NWNXLibPINVOKE.CGameObjectArray_m_nNextCharArrayID_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CGameObjectArray_m_nNextCharArrayID_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CGameObjectArray_m_nNextCharArrayID_get(swigCPtr);
-      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
-      return ret;
-    } 
+        uint[] retVal = NWNXLibPINVOKE.CGameObjectArray_m_nNextCharArrayID_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public uint m_nLogGameObjectCache {
@@ -157,37 +162,33 @@ public class CGameObjectArray : global::System.IDisposable {
   public CGameObjectArray() : this(NWNXLibPINVOKE.new_CGameObjectArray__SWIG_1(), true) {
   }
 
-  public byte AddCharacterObjectAtPos(uint ID, CGameObject ptr) {
-    byte ret = NWNXLibPINVOKE.CGameObjectArray_AddCharacterObjectAtPos(swigCPtr, ID, CGameObject.getCPtr(ptr));
+  public byte AddCharacterObjectAtPos(uint ID, ICGameObject ptr) {
+    byte ret = NWNXLibPINVOKE.CGameObjectArray_AddCharacterObjectAtPos(swigCPtr, ID, ptr == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : ptr.GetInterfaceCPtr());
     return ret;
   }
 
-  public byte AddObjectAtPos(uint ID, CGameObject ptr) {
-    byte ret = NWNXLibPINVOKE.CGameObjectArray_AddObjectAtPos(swigCPtr, ID, CGameObject.getCPtr(ptr));
+  public byte AddObjectAtPos(uint ID, ICGameObject ptr) {
+    byte ret = NWNXLibPINVOKE.CGameObjectArray_AddObjectAtPos(swigCPtr, ID, ptr == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : ptr.GetInterfaceCPtr());
     return ret;
   }
 
-  public byte AddExternalObject(SWIGTYPE_p_unsigned_int ID, CGameObject ptr, int CharacterObject) {
-    byte ret = NWNXLibPINVOKE.CGameObjectArray_AddExternalObject__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(ID), CGameObject.getCPtr(ptr), CharacterObject);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public byte AddExternalObject(uint* ID, ICGameObject ptr, int CharacterObject) {
+    byte ret = NWNXLibPINVOKE.CGameObjectArray_AddExternalObject__SWIG_0(swigCPtr, (global::System.IntPtr)ID, ptr == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : ptr.GetInterfaceCPtr(), CharacterObject);
     return ret;
   }
 
-  public byte AddExternalObject(SWIGTYPE_p_unsigned_int ID, CGameObject ptr) {
-    byte ret = NWNXLibPINVOKE.CGameObjectArray_AddExternalObject__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(ID), CGameObject.getCPtr(ptr));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public byte AddExternalObject(uint* ID, ICGameObject ptr) {
+    byte ret = NWNXLibPINVOKE.CGameObjectArray_AddExternalObject__SWIG_1(swigCPtr, (global::System.IntPtr)ID, ptr == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : ptr.GetInterfaceCPtr());
     return ret;
   }
 
-  public byte AddInternalObject(SWIGTYPE_p_unsigned_int ID, CGameObject ptr, int CharacterObject) {
-    byte ret = NWNXLibPINVOKE.CGameObjectArray_AddInternalObject__SWIG_0(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(ID), CGameObject.getCPtr(ptr), CharacterObject);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public byte AddInternalObject(uint* ID, ICGameObject ptr, int CharacterObject) {
+    byte ret = NWNXLibPINVOKE.CGameObjectArray_AddInternalObject__SWIG_0(swigCPtr, (global::System.IntPtr)ID, ptr == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : ptr.GetInterfaceCPtr(), CharacterObject);
     return ret;
   }
 
-  public byte AddInternalObject(SWIGTYPE_p_unsigned_int ID, CGameObject ptr) {
-    byte ret = NWNXLibPINVOKE.CGameObjectArray_AddInternalObject__SWIG_1(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(ID), CGameObject.getCPtr(ptr));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public byte AddInternalObject(uint* ID, ICGameObject ptr) {
+    byte ret = NWNXLibPINVOKE.CGameObjectArray_AddInternalObject__SWIG_1(swigCPtr, (global::System.IntPtr)ID, ptr == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : ptr.GetInterfaceCPtr());
     return ret;
   }
 

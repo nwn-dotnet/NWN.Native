@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class ENCAPSULATED_KEYLISTENTRY_E1 : global::System.IDisposable {
+public unsafe class ENCAPSULATED_KEYLISTENTRY_E1 : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public ENCAPSULATED_KEYLISTENTRY_E1(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public ENCAPSULATED_KEYLISTENTRY_E1(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(ENCAPSULATED_KEYLISTENTRY_E1 obj) {
@@ -37,7 +42,7 @@ public class ENCAPSULATED_KEYLISTENTRY_E1 : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_ENCAPSULATED_KEYLISTENTRY_E1(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -78,15 +83,15 @@ public class ENCAPSULATED_KEYLISTENTRY_E1 : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_unsigned_char resRef {
+  public byte[] resRef {
     set {
-      NWNXLibPINVOKE.ENCAPSULATED_KEYLISTENTRY_E1_resRef_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.ENCAPSULATED_KEYLISTENTRY_E1_resRef_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.ENCAPSULATED_KEYLISTENTRY_E1_resRef_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.ENCAPSULATED_KEYLISTENTRY_E1_resRef_get(swigCPtr);
+        return retVal;
+    }
+
   }
 
   public uint nID {
@@ -119,15 +124,18 @@ public class ENCAPSULATED_KEYLISTENTRY_E1 : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_unsigned_char sSha1 {
+  public byte[] sSha1 {
     set {
-      NWNXLibPINVOKE.ENCAPSULATED_KEYLISTENTRY_E1_sSha1_set(swigCPtr, SWIGTYPE_p_unsigned_char.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.ENCAPSULATED_KEYLISTENTRY_E1_sSha1_set(swigCPtr, value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.ENCAPSULATED_KEYLISTENTRY_E1_sSha1_get(swigCPtr);
-      SWIGTYPE_p_unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
-      return ret;
-    } 
+        byte[] retVal = NWNXLibPINVOKE.ENCAPSULATED_KEYLISTENTRY_E1_sSha1_get(swigCPtr);
+        return retVal;
+    }
+
+  }
+
+  public ENCAPSULATED_KEYLISTENTRY_E1() : this(NWNXLibPINVOKE.new_ENCAPSULATED_KEYLISTENTRY_E1(), true) {
   }
 
 }

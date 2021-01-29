@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWSAreaOfEffectObject : CNWSObject {
+public unsafe class CNWSAreaOfEffectObject : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWSAreaOfEffectObject(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSAreaOfEffectObject_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSAreaOfEffectObject(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSAreaOfEffectObject_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSAreaOfEffectObject obj) {
@@ -270,8 +274,8 @@ public class CNWSAreaOfEffectObject : CNWSObject {
     NWNXLibPINVOKE.CNWSAreaOfEffectObject_AIUpdate(swigCPtr);
   }
 
-  public override void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSAreaOfEffectObject_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
+  public override void EventHandler(uint nEventId, uint nCallerObjectId, void* pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSAreaOfEffectObject_EventHandler(swigCPtr, nEventId, nCallerObjectId, (global::System.IntPtr)pScript, nCalendarDay, nTimeOfDay);
   }
 
   public void AddToArea(CNWSArea pArea, float fX, float fY, float fZ, int bRunScripts) {

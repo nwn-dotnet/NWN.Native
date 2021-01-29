@@ -10,13 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class CScriptCompilerSymbolTableEntry : global::System.IDisposable {
+public unsafe class CScriptCompilerSymbolTableEntry : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
   public CScriptCompilerSymbolTableEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CScriptCompilerSymbolTableEntry(void* cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CScriptCompilerSymbolTableEntry obj) {
@@ -37,7 +42,7 @@ public class CScriptCompilerSymbolTableEntry : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          throw new global::System.MethodAccessException("C++ destructor does not have public access");
+          NWNXLibPINVOKE.delete_CScriptCompilerSymbolTableEntry(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -126,6 +131,9 @@ public class CScriptCompilerSymbolTableEntry : global::System.IDisposable {
       int ret = NWNXLibPINVOKE.CScriptCompilerSymbolTableEntry_m_nNextEntryPointer_get(swigCPtr);
       return ret;
     } 
+  }
+
+  public CScriptCompilerSymbolTableEntry() : this(NWNXLibPINVOKE.new_CScriptCompilerSymbolTableEntry(), true) {
   }
 
 }

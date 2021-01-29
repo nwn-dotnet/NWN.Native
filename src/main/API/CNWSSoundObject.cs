@@ -10,11 +10,15 @@
 
 namespace NWN.Native.API {
 
-public class CNWSSoundObject : CNWSObject {
+public unsafe class CNWSSoundObject : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
   public CNWSSoundObject(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSSoundObject_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+  }
+
+  public CNWSSoundObject(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSSoundObject_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
+    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSSoundObject obj) {
@@ -275,8 +279,8 @@ public class CNWSSoundObject : CNWSObject {
     NWNXLibPINVOKE.CNWSSoundObject_AIUpdate(swigCPtr);
   }
 
-  public override void EventHandler(uint nEventId, uint nCallerObjectId, System.IntPtr pScript, uint nCalendarDay, uint nTimeOfDay) {
-    NWNXLibPINVOKE.CNWSSoundObject_EventHandler(swigCPtr, nEventId, nCallerObjectId, pScript, nCalendarDay, nTimeOfDay);
+  public override void EventHandler(uint nEventId, uint nCallerObjectId, void* pScript, uint nCalendarDay, uint nTimeOfDay) {
+    NWNXLibPINVOKE.CNWSSoundObject_EventHandler(swigCPtr, nEventId, nCallerObjectId, (global::System.IntPtr)pScript, nCalendarDay, nTimeOfDay);
   }
 
   public int Load(CResGFF pRes, CResStruct cSoundStruct) {
