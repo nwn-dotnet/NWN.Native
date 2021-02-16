@@ -103,11 +103,12 @@ jobs:
 
       - name: Copy generated proxy classes
         run: |
-          rm -rfv "${GITHUB_WORKSPACE}/repo/src/main/API/*"
-          cp -a "${GITHUB_WORKSPACE}/nwnx/Plugins/SWIG/SWIG_DotNET/." "${GITHUB_WORKSPACE}/repo/src/main/API"
+          su -c "rm -fv ${GITHUB_WORKSPACE}/repo/src/main/API/*"
+          cp -av "${GITHUB_WORKSPACE}/nwnx/Plugins/SWIG/SWIG_DotNET/." "${GITHUB_WORKSPACE}/repo/src/main/API"
           if [ -z "$(ls -A ${GITHUB_WORKSPACE}/repo/src/main/API)" ]; then
             exit 1
           fi
+          ls -la "${GITHUB_WORKSPACE}/repo/src/main/API"
 
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v1
@@ -130,5 +131,7 @@ jobs:
           cd ${GITHUB_WORKSPACE}/repo
           git config user.name Jorteck
           git config user.email jorteckdev@gmail.com
-          git add -A src/main/API/*
-          git diff-index --quiet HEAD src/main/API/* || git commit -m "Update APIs (NWNX: ${{ steps.revision.outputs.nwnx_sha_short }}, NWN: ${{ steps.version.outputs.nwn_build }}.${{ steps.version.outputs.nwn_build_revision }})." && git push
+          git add -A src/main/API/
+          git status
+          ls -la "${GITHUB_WORKSPACE}/repo/src/main/API"
+          git diff-index --quiet HEAD src/main/API/ || git commit -m "Update APIs (NWNX: ${{ steps.revision.outputs.nwnx_sha_short }}, NWN: ${{ steps.version.outputs.nwn_build }}.${{ steps.version.outputs.nwn_build_revision }})." && git push
