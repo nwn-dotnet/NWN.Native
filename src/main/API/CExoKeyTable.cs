@@ -55,6 +55,14 @@ public unsafe class CExoKeyTable : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CExoKeyTable self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoKeyTable self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoKeyTable other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -196,15 +204,15 @@ public unsafe class CExoKeyTable : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_p_CExoPackedFile m_pExoPackedFile {
+  public void** m_pExoPackedFile {
     set {
-      NWNXLibPINVOKE.CExoKeyTable_m_pExoPackedFile_set(swigCPtr, SWIGTYPE_p_p_CExoPackedFile.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoKeyTable_m_pExoPackedFile_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoKeyTable_m_pExoPackedFile_get(swigCPtr);
-      SWIGTYPE_p_p_CExoPackedFile ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CExoPackedFile(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CExoKeyTable_m_pExoPackedFile_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public int m_bIsOverride {

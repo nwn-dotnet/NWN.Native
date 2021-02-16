@@ -55,6 +55,14 @@ public unsafe class ENCAPSULATED_KEYLISTENTRY : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(ENCAPSULATED_KEYLISTENTRY self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(ENCAPSULATED_KEYLISTENTRY self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(ENCAPSULATED_KEYLISTENTRY other) {
     if (ReferenceEquals(null, other)) {
       return false;

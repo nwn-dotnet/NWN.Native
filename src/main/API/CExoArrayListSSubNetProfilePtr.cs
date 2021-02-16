@@ -55,6 +55,14 @@ public unsafe class CExoArrayListSSubNetProfilePtr : global::System.IDisposable 
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListSSubNetProfilePtr self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListSSubNetProfilePtr self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListSSubNetProfilePtr other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,15 +91,15 @@ public unsafe class CExoArrayListSSubNetProfilePtr : global::System.IDisposable 
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_SSubNetProfile element {
+  public void** element {
     set {
-      NWNXLibPINVOKE.CExoArrayListSSubNetProfilePtr_element_set(swigCPtr, SWIGTYPE_p_p_SSubNetProfile.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoArrayListSSubNetProfilePtr_element_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListSSubNetProfilePtr_element_get(swigCPtr);
-      SWIGTYPE_p_p_SSubNetProfile ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_SSubNetProfile(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListSSubNetProfilePtr_element_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public int num {
@@ -130,9 +138,9 @@ public unsafe class CExoArrayListSSubNetProfilePtr : global::System.IDisposable 
     return ret;
   }
 
-  public SWIGTYPE_p_p_SSubNetProfile _OpIndex(int i) {
-    SWIGTYPE_p_p_SSubNetProfile ret = new SWIGTYPE_p_p_SSubNetProfile(NWNXLibPINVOKE.CExoArrayListSSubNetProfilePtr__OpIndex(swigCPtr, i), false);
-    return ret;
+  public void** _OpIndex(int i) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListSSubNetProfilePtr__OpIndex(swigCPtr, i);
+    return (void**)retVal;
   }
 
   public void Allocate(int s) {
@@ -159,16 +167,14 @@ public unsafe class CExoArrayListSSubNetProfilePtr : global::System.IDisposable 
     NWNXLibPINVOKE.CExoArrayListSSubNetProfilePtr_DelIndex(swigCPtr, i);
   }
 
-  public SWIGTYPE_p_p_SSubNetProfile begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListSSubNetProfilePtr_begin(swigCPtr);
-    SWIGTYPE_p_p_SSubNetProfile ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_SSubNetProfile(cPtr, false);
-    return ret;
+  public void** begin() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListSSubNetProfilePtr_begin(swigCPtr);
+    return (void**)retVal;
   }
 
-  public SWIGTYPE_p_p_SSubNetProfile end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListSSubNetProfilePtr_end(swigCPtr);
-    SWIGTYPE_p_p_SSubNetProfile ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_SSubNetProfile(cPtr, false);
-    return ret;
+  public void** end() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListSSubNetProfilePtr_end(swigCPtr);
+    return (void**)retVal;
   }
 
 }

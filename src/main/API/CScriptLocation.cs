@@ -55,6 +55,14 @@ public unsafe class CScriptLocation : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CScriptLocation self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CScriptLocation self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CScriptLocation other) {
     if (ReferenceEquals(null, other)) {
       return false;

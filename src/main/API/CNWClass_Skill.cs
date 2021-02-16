@@ -55,6 +55,14 @@ public unsafe class CNWClass_Skill : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWClass_Skill self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWClass_Skill self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWClass_Skill other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -55,6 +55,14 @@ public unsafe class CScriptCompilerIncludeFileStackEntry : global::System.IDispo
     }
   }
 
+  public static unsafe implicit operator void*(CScriptCompilerIncludeFileStackEntry self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CScriptCompilerIncludeFileStackEntry self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CScriptCompilerIncludeFileStackEntry other) {
     if (ReferenceEquals(null, other)) {
       return false;

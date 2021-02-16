@@ -55,6 +55,14 @@ public unsafe class CNWTileSetManager : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWTileSetManager self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWTileSetManager self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWTileSetManager other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,15 +91,16 @@ public unsafe class CNWTileSetManager : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_CNWTileSet m_apTileSets {
+  public CNWTileSetPtrArray m_apTileSets {
     set {
-      NWNXLibPINVOKE.CNWTileSetManager_m_apTileSets_set(swigCPtr, SWIGTYPE_p_p_CNWTileSet.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSetManager_m_apTileSets_set(swigCPtr, CNWTileSetPtrArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSetManager_m_apTileSets_get(swigCPtr);
-      SWIGTYPE_p_p_CNWTileSet ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CNWTileSet(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSetManager_m_apTileSets_get(swigCPtr);;
+        CNWTileSetPtrArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWTileSetPtrArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public int[] m_anTileSetRegistered {

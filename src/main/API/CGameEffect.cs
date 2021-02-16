@@ -55,6 +55,14 @@ public unsafe class CGameEffect : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CGameEffect self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CGameEffect self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CGameEffect other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -247,15 +255,16 @@ public unsafe class CGameEffect : global::System.IDisposable {
 
   }
 
-  public CExoString m_sParamString {
+  public CExoStringArray m_sParamString {
     set {
-      NWNXLibPINVOKE.CGameEffect_m_sParamString_set(swigCPtr, CExoString.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CGameEffect_m_sParamString_set(swigCPtr, CExoStringArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CGameEffect_m_sParamString_get(swigCPtr);
-      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CGameEffect_m_sParamString_get(swigCPtr);;
+        CExoStringArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoStringArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public uint[] m_oidParamObjectID {
@@ -269,15 +278,16 @@ public unsafe class CGameEffect : global::System.IDisposable {
 
   }
 
-  public Vector m_vParamVector {
+  public VectorArray m_vParamVector {
     set {
-      NWNXLibPINVOKE.CGameEffect_m_vParamVector_set(swigCPtr, Vector.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CGameEffect_m_vParamVector_set(swigCPtr, VectorArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CGameEffect_m_vParamVector_get(swigCPtr);
-      Vector ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CGameEffect_m_vParamVector_get(swigCPtr);;
+        VectorArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new VectorArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public int m_bSkipOnLoad {

@@ -44,6 +44,14 @@ public unsafe class CTlkFile : CExoFile {
     }
   }
 
+  public static unsafe implicit operator void*(CTlkFile self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CTlkFile self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CTlkFile other) {
     if (ReferenceEquals(null, other)) {
       return false;

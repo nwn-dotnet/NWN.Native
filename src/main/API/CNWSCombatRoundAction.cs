@@ -55,6 +55,14 @@ public unsafe class CNWSCombatRoundAction : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSCombatRoundAction self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSCombatRoundAction self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSCombatRoundAction other) {
     if (ReferenceEquals(null, other)) {
       return false;

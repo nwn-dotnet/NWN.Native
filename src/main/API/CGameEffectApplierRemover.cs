@@ -55,6 +55,14 @@ public unsafe class CGameEffectApplierRemover : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CGameEffectApplierRemover self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CGameEffectApplierRemover self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CGameEffectApplierRemover other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -55,6 +55,14 @@ public unsafe class NWMODULEHEADER : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(NWMODULEHEADER self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(NWMODULEHEADER self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(NWMODULEHEADER other) {
     if (ReferenceEquals(null, other)) {
       return false;

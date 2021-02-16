@@ -55,6 +55,14 @@ public unsafe class CNWSInventory : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSInventory self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSInventory self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSInventory other) {
     if (ReferenceEquals(null, other)) {
       return false;

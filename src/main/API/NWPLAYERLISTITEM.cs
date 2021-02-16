@@ -55,6 +55,14 @@ public unsafe class NWPLAYERLISTITEM : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(NWPLAYERLISTITEM self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(NWPLAYERLISTITEM self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(NWPLAYERLISTITEM other) {
     if (ReferenceEquals(null, other)) {
       return false;

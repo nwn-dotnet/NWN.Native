@@ -55,6 +55,14 @@ public unsafe class CResStructHeader : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CResStructHeader self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CResStructHeader self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CResStructHeader other) {
     if (ReferenceEquals(null, other)) {
       return false;

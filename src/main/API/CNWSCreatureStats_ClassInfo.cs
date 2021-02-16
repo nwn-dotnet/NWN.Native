@@ -55,6 +55,14 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSCreatureStats_ClassInfo self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSCreatureStats_ClassInfo self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSCreatureStats_ClassInfo other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,26 +91,28 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public CExoArrayListUInt32 m_pKnownSpellList {
+  public CExoArrayListUInt32Array m_pKnownSpellList {
     set {
-      NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_pKnownSpellList_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_pKnownSpellList_set(swigCPtr, CExoArrayListUInt32Array.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_pKnownSpellList_get(swigCPtr);
-      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_pKnownSpellList_get(swigCPtr);;
+        CExoArrayListUInt32Array ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32Array(cPtr, false);
+        return ret;
+    }
+
   }
 
-  public CExoArrayListCNWSStatsSpellPtr m_pMemorizedSpellList {
+  public CExoArrayListCNWSStatsSpellPtrArray m_pMemorizedSpellList {
     set {
-      NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_pMemorizedSpellList_set(swigCPtr, CExoArrayListCNWSStatsSpellPtr.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_pMemorizedSpellList_set(swigCPtr, CExoArrayListCNWSStatsSpellPtrArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_pMemorizedSpellList_get(swigCPtr);
-      CExoArrayListCNWSStatsSpellPtr ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListCNWSStatsSpellPtr(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_pMemorizedSpellList_get(swigCPtr);;
+        CExoArrayListCNWSStatsSpellPtrArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListCNWSStatsSpellPtrArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public uint[] m_nBonusSpellsList {

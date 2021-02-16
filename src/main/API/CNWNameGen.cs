@@ -55,6 +55,14 @@ public unsafe class CNWNameGen : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWNameGen self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWNameGen self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWNameGen other) {
     if (ReferenceEquals(null, other)) {
       return false;

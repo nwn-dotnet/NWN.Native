@@ -55,6 +55,14 @@ public unsafe class CNWSUUID : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSUUID self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSUUID self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSUUID other) {
     if (ReferenceEquals(null, other)) {
       return false;

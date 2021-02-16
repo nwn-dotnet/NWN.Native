@@ -55,6 +55,14 @@ public unsafe class CPathfindInfoIntraTileSuccessors : global::System.IDisposabl
     }
   }
 
+  public static unsafe implicit operator void*(CPathfindInfoIntraTileSuccessors self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CPathfindInfoIntraTileSuccessors self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CPathfindInfoIntraTileSuccessors other) {
     if (ReferenceEquals(null, other)) {
       return false;

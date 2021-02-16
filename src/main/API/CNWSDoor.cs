@@ -44,6 +44,14 @@ public unsafe class CNWSDoor : CNWSObject {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSDoor self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSDoor self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSDoor other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -72,15 +80,16 @@ public unsafe class CNWSDoor : CNWSObject {
     return !Equals(left, right);
   }
 
-  public CExoString m_sScripts {
+  public CExoStringArray m_sScripts {
     set {
-      NWNXLibPINVOKE.CNWSDoor_m_sScripts_set(swigCPtr, CExoString.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSDoor_m_sScripts_set(swigCPtr, CExoStringArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSDoor_m_sScripts_get(swigCPtr);
-      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSDoor_m_sScripts_get(swigCPtr);;
+        CExoStringArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoStringArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public uint m_nAppearanceType {

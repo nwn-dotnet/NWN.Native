@@ -55,6 +55,14 @@ public unsafe class CResStructLookUp : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CResStructLookUp self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CResStructLookUp self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CResStructLookUp other) {
     if (ReferenceEquals(null, other)) {
       return false;

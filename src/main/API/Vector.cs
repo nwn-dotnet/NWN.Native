@@ -55,6 +55,14 @@ public unsafe class Vector : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(Vector self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(Vector self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(Vector other) {
     if (ReferenceEquals(null, other)) {
       return false;

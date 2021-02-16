@@ -44,6 +44,14 @@ public unsafe class CResIFO : CResGFF {
     }
   }
 
+  public static unsafe implicit operator void*(CResIFO self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CResIFO self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CResIFO other) {
     if (ReferenceEquals(null, other)) {
       return false;

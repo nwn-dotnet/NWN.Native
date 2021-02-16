@@ -55,6 +55,14 @@ public unsafe class CExoArrayListCNWSStatsSpellPtr : global::System.IDisposable 
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListCNWSStatsSpellPtr self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListCNWSStatsSpellPtr self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListCNWSStatsSpellPtr other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,15 +91,15 @@ public unsafe class CExoArrayListCNWSStatsSpellPtr : global::System.IDisposable 
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_CNWSStats_Spell element {
+  public void** element {
     set {
-      NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr_element_set(swigCPtr, SWIGTYPE_p_p_CNWSStats_Spell.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr_element_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr_element_get(swigCPtr);
-      SWIGTYPE_p_p_CNWSStats_Spell ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CNWSStats_Spell(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr_element_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public int num {
@@ -130,9 +138,9 @@ public unsafe class CExoArrayListCNWSStatsSpellPtr : global::System.IDisposable 
     return ret;
   }
 
-  public SWIGTYPE_p_p_CNWSStats_Spell _OpIndex(int i) {
-    SWIGTYPE_p_p_CNWSStats_Spell ret = new SWIGTYPE_p_p_CNWSStats_Spell(NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr__OpIndex(swigCPtr, i), false);
-    return ret;
+  public void** _OpIndex(int i) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr__OpIndex(swigCPtr, i);
+    return (void**)retVal;
   }
 
   public void Allocate(int s) {
@@ -159,16 +167,14 @@ public unsafe class CExoArrayListCNWSStatsSpellPtr : global::System.IDisposable 
     NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr_DelIndex(swigCPtr, i);
   }
 
-  public SWIGTYPE_p_p_CNWSStats_Spell begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr_begin(swigCPtr);
-    SWIGTYPE_p_p_CNWSStats_Spell ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CNWSStats_Spell(cPtr, false);
-    return ret;
+  public void** begin() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr_begin(swigCPtr);
+    return (void**)retVal;
   }
 
-  public SWIGTYPE_p_p_CNWSStats_Spell end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr_end(swigCPtr);
-    SWIGTYPE_p_p_CNWSStats_Spell ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CNWSStats_Spell(cPtr, false);
-    return ret;
+  public void** end() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr_end(swigCPtr);
+    return (void**)retVal;
   }
 
 }

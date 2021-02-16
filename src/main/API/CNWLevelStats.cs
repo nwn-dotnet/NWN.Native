@@ -55,6 +55,14 @@ public unsafe class CNWLevelStats : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWLevelStats self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWLevelStats self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWLevelStats other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,26 +91,28 @@ public unsafe class CNWLevelStats : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public CExoArrayListUInt32 m_pAddedKnownSpellList {
+  public CExoArrayListUInt32Array m_pAddedKnownSpellList {
     set {
-      NWNXLibPINVOKE.CNWLevelStats_m_pAddedKnownSpellList_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWLevelStats_m_pAddedKnownSpellList_set(swigCPtr, CExoArrayListUInt32Array.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWLevelStats_m_pAddedKnownSpellList_get(swigCPtr);
-      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWLevelStats_m_pAddedKnownSpellList_get(swigCPtr);;
+        CExoArrayListUInt32Array ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32Array(cPtr, false);
+        return ret;
+    }
+
   }
 
-  public CExoArrayListUInt32 m_pRemovedKnownSpellList {
+  public CExoArrayListUInt32Array m_pRemovedKnownSpellList {
     set {
-      NWNXLibPINVOKE.CNWLevelStats_m_pRemovedKnownSpellList_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWLevelStats_m_pRemovedKnownSpellList_set(swigCPtr, CExoArrayListUInt32Array.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWLevelStats_m_pRemovedKnownSpellList_get(swigCPtr);
-      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWLevelStats_m_pRemovedKnownSpellList_get(swigCPtr);;
+        CExoArrayListUInt32Array ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32Array(cPtr, false);
+        return ret;
+    }
+
   }
 
   public CExoArrayListUInt16 m_lstFeats {

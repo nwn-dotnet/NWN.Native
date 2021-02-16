@@ -55,6 +55,14 @@ public unsafe class RES_FIXED_HEADER : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(RES_FIXED_HEADER self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(RES_FIXED_HEADER self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(RES_FIXED_HEADER other) {
     if (ReferenceEquals(null, other)) {
       return false;

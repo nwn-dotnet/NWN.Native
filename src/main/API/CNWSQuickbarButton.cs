@@ -55,6 +55,14 @@ public unsafe class CNWSQuickbarButton : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSQuickbarButton self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSQuickbarButton self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSQuickbarButton other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -31,6 +31,14 @@ public class SWIGTYPE_p_p_CExoArrayListT_CExoString_t {
     }
   }
 
+  public static unsafe implicit operator void*(SWIGTYPE_p_p_CExoArrayListT_CExoString_t self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(SWIGTYPE_p_p_CExoArrayListT_CExoString_t self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(SWIGTYPE_p_p_CExoArrayListT_CExoString_t other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -55,6 +55,14 @@ public unsafe class CNWSCombatAttackData : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSCombatAttackData self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSCombatAttackData self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSCombatAttackData other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -31,6 +31,14 @@ public class SWIGTYPE_p_z_stream {
     }
   }
 
+  public static unsafe implicit operator void*(SWIGTYPE_p_z_stream self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(SWIGTYPE_p_z_stream self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(SWIGTYPE_p_z_stream other) {
     if (ReferenceEquals(null, other)) {
       return false;

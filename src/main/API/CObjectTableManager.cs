@@ -55,6 +55,14 @@ public unsafe class CObjectTableManager : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CObjectTableManager self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CObjectTableManager self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CObjectTableManager other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,15 +91,16 @@ public unsafe class CObjectTableManager : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_CObjectLookupTable m_pObjectTableArray {
+  public CObjectLookupTablePtrArray m_pObjectTableArray {
     set {
-      NWNXLibPINVOKE.CObjectTableManager_m_pObjectTableArray_set(swigCPtr, SWIGTYPE_p_p_CObjectLookupTable.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CObjectTableManager_m_pObjectTableArray_set(swigCPtr, CObjectLookupTablePtrArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CObjectTableManager_m_pObjectTableArray_get(swigCPtr);
-      SWIGTYPE_p_p_CObjectLookupTable ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CObjectLookupTable(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CObjectTableManager_m_pObjectTableArray_get(swigCPtr);;
+        CObjectLookupTablePtrArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CObjectLookupTablePtrArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public uint m_dwMaxPlayerID {

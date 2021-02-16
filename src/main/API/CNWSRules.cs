@@ -44,6 +44,14 @@ public unsafe class CNWSRules : CNWRules {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSRules self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSRules self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSRules other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -44,6 +44,14 @@ public unsafe class CServerExoApp : CBaseExoApp {
     }
   }
 
+  public static unsafe implicit operator void*(CServerExoApp self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CServerExoApp self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CServerExoApp other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -55,6 +55,14 @@ public unsafe class CNWSPlayerLUOSortedObjectList : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSPlayerLUOSortedObjectList self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSPlayerLUOSortedObjectList self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSPlayerLUOSortedObjectList other) {
     if (ReferenceEquals(null, other)) {
       return false;

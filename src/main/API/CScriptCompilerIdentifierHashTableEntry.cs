@@ -55,6 +55,14 @@ public unsafe class CScriptCompilerIdentifierHashTableEntry : global::System.IDi
     }
   }
 
+  public static unsafe implicit operator void*(CScriptCompilerIdentifierHashTableEntry self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CScriptCompilerIdentifierHashTableEntry self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CScriptCompilerIdentifierHashTableEntry other) {
     if (ReferenceEquals(null, other)) {
       return false;

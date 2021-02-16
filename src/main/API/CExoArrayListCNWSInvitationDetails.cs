@@ -55,6 +55,14 @@ public unsafe class CExoArrayListCNWSInvitationDetails : global::System.IDisposa
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListCNWSInvitationDetails self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListCNWSInvitationDetails self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListCNWSInvitationDetails other) {
     if (ReferenceEquals(null, other)) {
       return false;

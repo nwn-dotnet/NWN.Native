@@ -55,6 +55,14 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWBaseItem self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWBaseItem self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWBaseItem other) {
     if (ReferenceEquals(null, other)) {
       return false;

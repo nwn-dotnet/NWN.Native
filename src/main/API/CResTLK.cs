@@ -44,6 +44,14 @@ public unsafe class CResTLK : CRes {
     }
   }
 
+  public static unsafe implicit operator void*(CResTLK self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CResTLK self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CResTLK other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -55,6 +55,14 @@ public unsafe class CExoArrayListCFileInfo : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListCFileInfo self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListCFileInfo self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListCFileInfo other) {
     if (ReferenceEquals(null, other)) {
       return false;

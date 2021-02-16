@@ -55,6 +55,14 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CExoPackedFile self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoPackedFile self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoPackedFile other) {
     if (ReferenceEquals(null, other)) {
       return false;

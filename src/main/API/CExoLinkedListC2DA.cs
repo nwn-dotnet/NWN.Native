@@ -55,6 +55,14 @@ public unsafe class CExoLinkedListC2DA : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CExoLinkedListC2DA self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoLinkedListC2DA self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoLinkedListC2DA other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -144,17 +152,15 @@ public unsafe class CExoLinkedListC2DA : global::System.IDisposable {
     return ret;
   }
 
-  public C2DA GetNext(SWIGTYPE_p_p_CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListC2DA_GetNext(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
+  public C2DA GetNext(void** Position) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListC2DA_GetNext(swigCPtr, (global::System.IntPtr)Position);
     C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public C2DA GetPrev(SWIGTYPE_p_p_CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListC2DA_GetPrev(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
+  public C2DA GetPrev(void** Position) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListC2DA_GetPrev(swigCPtr, (global::System.IntPtr)Position);
     C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 

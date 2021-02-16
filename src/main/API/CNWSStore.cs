@@ -44,6 +44,14 @@ public unsafe class CNWSStore : CNWSObject {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSStore self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSStore self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSStore other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -72,26 +80,28 @@ public unsafe class CNWSStore : CNWSObject {
     return !Equals(left, right);
   }
 
-  public CExoString m_sScripts {
+  public CExoStringArray m_sScripts {
     set {
-      NWNXLibPINVOKE.CNWSStore_m_sScripts_set(swigCPtr, CExoString.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSStore_m_sScripts_set(swigCPtr, CExoStringArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSStore_m_sScripts_get(swigCPtr);
-      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSStore_m_sScripts_get(swigCPtr);;
+        CExoStringArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoStringArray(cPtr, false);
+        return ret;
+    }
+
   }
 
-  public SWIGTYPE_p_p_CItemRepository m_aInventory {
+  public CItemRepositoryPtrArray m_aInventory {
     set {
-      NWNXLibPINVOKE.CNWSStore_m_aInventory_set(swigCPtr, SWIGTYPE_p_p_CItemRepository.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSStore_m_aInventory_set(swigCPtr, CItemRepositoryPtrArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSStore_m_aInventory_get(swigCPtr);
-      SWIGTYPE_p_p_CItemRepository ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CItemRepository(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSStore_m_aInventory_get(swigCPtr);;
+        CItemRepositoryPtrArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CItemRepositoryPtrArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public CExoArrayListCStoreCustomerPtr m_aCurrentCustomers {
@@ -398,18 +408,18 @@ public unsafe class CNWSStore : CNWSObject {
     return ret;
   }
 
-  public int AddItemToInventory(SWIGTYPE_p_p_CNWSItem pItem, byte nInventoryList, byte x, byte y) {
-    int ret = NWNXLibPINVOKE.CNWSStore_AddItemToInventory__SWIG_0(swigCPtr, SWIGTYPE_p_p_CNWSItem.getCPtr(pItem), nInventoryList, x, y);
+  public int AddItemToInventory(void** pItem, byte nInventoryList, byte x, byte y) {
+    int ret = NWNXLibPINVOKE.CNWSStore_AddItemToInventory__SWIG_0(swigCPtr, (global::System.IntPtr)pItem, nInventoryList, x, y);
     return ret;
   }
 
-  public int AddItemToInventory(SWIGTYPE_p_p_CNWSItem pItem, byte nInventoryList, byte x) {
-    int ret = NWNXLibPINVOKE.CNWSStore_AddItemToInventory__SWIG_1(swigCPtr, SWIGTYPE_p_p_CNWSItem.getCPtr(pItem), nInventoryList, x);
+  public int AddItemToInventory(void** pItem, byte nInventoryList, byte x) {
+    int ret = NWNXLibPINVOKE.CNWSStore_AddItemToInventory__SWIG_1(swigCPtr, (global::System.IntPtr)pItem, nInventoryList, x);
     return ret;
   }
 
-  public int AddItemToInventory(SWIGTYPE_p_p_CNWSItem pItem, byte nInventoryList) {
-    int ret = NWNXLibPINVOKE.CNWSStore_AddItemToInventory__SWIG_2(swigCPtr, SWIGTYPE_p_p_CNWSItem.getCPtr(pItem), nInventoryList);
+  public int AddItemToInventory(void** pItem, byte nInventoryList) {
+    int ret = NWNXLibPINVOKE.CNWSStore_AddItemToInventory__SWIG_2(swigCPtr, (global::System.IntPtr)pItem, nInventoryList);
     return ret;
   }
 

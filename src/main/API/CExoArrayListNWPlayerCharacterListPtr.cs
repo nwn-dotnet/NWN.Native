@@ -55,6 +55,14 @@ public unsafe class CExoArrayListNWPlayerCharacterListPtr : global::System.IDisp
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListNWPlayerCharacterListPtr self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListNWPlayerCharacterListPtr self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListNWPlayerCharacterListPtr other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,15 +91,15 @@ public unsafe class CExoArrayListNWPlayerCharacterListPtr : global::System.IDisp
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_NWPlayerCharacterList_st element {
+  public void** element {
     set {
-      NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr_element_set(swigCPtr, SWIGTYPE_p_p_NWPlayerCharacterList_st.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr_element_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr_element_get(swigCPtr);
-      SWIGTYPE_p_p_NWPlayerCharacterList_st ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_NWPlayerCharacterList_st(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr_element_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public int num {
@@ -130,9 +138,9 @@ public unsafe class CExoArrayListNWPlayerCharacterListPtr : global::System.IDisp
     return ret;
   }
 
-  public SWIGTYPE_p_p_NWPlayerCharacterList_st _OpIndex(int i) {
-    SWIGTYPE_p_p_NWPlayerCharacterList_st ret = new SWIGTYPE_p_p_NWPlayerCharacterList_st(NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr__OpIndex(swigCPtr, i), false);
-    return ret;
+  public void** _OpIndex(int i) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr__OpIndex(swigCPtr, i);
+    return (void**)retVal;
   }
 
   public void Allocate(int s) {
@@ -159,16 +167,14 @@ public unsafe class CExoArrayListNWPlayerCharacterListPtr : global::System.IDisp
     NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr_DelIndex(swigCPtr, i);
   }
 
-  public SWIGTYPE_p_p_NWPlayerCharacterList_st begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr_begin(swigCPtr);
-    SWIGTYPE_p_p_NWPlayerCharacterList_st ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_NWPlayerCharacterList_st(cPtr, false);
-    return ret;
+  public void** begin() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr_begin(swigCPtr);
+    return (void**)retVal;
   }
 
-  public SWIGTYPE_p_p_NWPlayerCharacterList_st end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr_end(swigCPtr);
-    SWIGTYPE_p_p_NWPlayerCharacterList_st ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_NWPlayerCharacterList_st(cPtr, false);
-    return ret;
+  public void** end() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr_end(swigCPtr);
+    return (void**)retVal;
   }
 
 }

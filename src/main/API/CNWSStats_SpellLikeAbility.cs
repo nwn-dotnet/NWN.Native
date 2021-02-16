@@ -55,6 +55,14 @@ public unsafe class CNWSStats_SpellLikeAbility : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSStats_SpellLikeAbility self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSStats_SpellLikeAbility self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSStats_SpellLikeAbility other) {
     if (ReferenceEquals(null, other)) {
       return false;

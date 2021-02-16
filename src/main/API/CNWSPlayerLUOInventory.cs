@@ -55,6 +55,14 @@ public unsafe class CNWSPlayerLUOInventory : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSPlayerLUOInventory self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSPlayerLUOInventory self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSPlayerLUOInventory other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -212,14 +220,12 @@ public unsafe class CNWSPlayerLUOInventory : global::System.IDisposable {
     NWNXLibPINVOKE.CNWSPlayerLUOInventory_ClearStore(swigCPtr);
   }
 
-  public void ItemListSetStart(SWIGTYPE_p_p_CExoLinkedListNode pListPosition, byte nItemList) {
-    NWNXLibPINVOKE.CNWSPlayerLUOInventory_ItemListSetStart(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(pListPosition), nItemList);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public void ItemListSetStart(void** pListPosition, byte nItemList) {
+    NWNXLibPINVOKE.CNWSPlayerLUOInventory_ItemListSetStart(swigCPtr, (global::System.IntPtr)pListPosition, nItemList);
   }
 
-  public void ItemListSetEnd(SWIGTYPE_p_p_CExoLinkedListNode pListPosition, byte nItemList) {
-    NWNXLibPINVOKE.CNWSPlayerLUOInventory_ItemListSetEnd(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(pListPosition), nItemList);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public void ItemListSetEnd(void** pListPosition, byte nItemList) {
+    NWNXLibPINVOKE.CNWSPlayerLUOInventory_ItemListSetEnd(swigCPtr, (global::System.IntPtr)pListPosition, nItemList);
   }
 
   public CNWSItem ItemListGetItem(CExoLinkedListNode pListPosition, byte nItemList) {
@@ -239,14 +245,12 @@ public unsafe class CNWSPlayerLUOInventory : global::System.IDisposable {
     return ret;
   }
 
-  public void ItemListGetNext(SWIGTYPE_p_p_CExoLinkedListNode pListPosition, byte nItemList) {
-    NWNXLibPINVOKE.CNWSPlayerLUOInventory_ItemListGetNext(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(pListPosition), nItemList);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public void ItemListGetNext(void** pListPosition, byte nItemList) {
+    NWNXLibPINVOKE.CNWSPlayerLUOInventory_ItemListGetNext(swigCPtr, (global::System.IntPtr)pListPosition, nItemList);
   }
 
-  public void ItemListGetPrev(SWIGTYPE_p_p_CExoLinkedListNode pListPosition, byte nItemList) {
-    NWNXLibPINVOKE.CNWSPlayerLUOInventory_ItemListGetPrev(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(pListPosition), nItemList);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public void ItemListGetPrev(void** pListPosition, byte nItemList) {
+    NWNXLibPINVOKE.CNWSPlayerLUOInventory_ItemListGetPrev(swigCPtr, (global::System.IntPtr)pListPosition, nItemList);
   }
 
   public void ItemListRemove(CExoLinkedListNode pListPosition, byte nItemList) {

@@ -55,6 +55,14 @@ public unsafe class CNWSync : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSync self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSync self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSync other) {
     if (ReferenceEquals(null, other)) {
       return false;

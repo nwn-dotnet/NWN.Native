@@ -55,6 +55,14 @@ public unsafe class TLK_FILE_HEADER : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(TLK_FILE_HEADER self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(TLK_FILE_HEADER self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(TLK_FILE_HEADER other) {
     if (ReferenceEquals(null, other)) {
       return false;

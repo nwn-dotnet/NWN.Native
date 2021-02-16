@@ -55,6 +55,14 @@ public unsafe class CExoArrayListTextureReplaceInfo : global::System.IDisposable
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListTextureReplaceInfo self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListTextureReplaceInfo self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListTextureReplaceInfo other) {
     if (ReferenceEquals(null, other)) {
       return false;

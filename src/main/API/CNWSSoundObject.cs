@@ -44,6 +44,14 @@ public unsafe class CNWSSoundObject : CNWSObject {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSSoundObject self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSSoundObject self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSSoundObject other) {
     if (ReferenceEquals(null, other)) {
       return false;

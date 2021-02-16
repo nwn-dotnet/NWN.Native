@@ -44,6 +44,14 @@ public unsafe class ObjectVisualTransformData : CAurObjectVisualTransformData {
     }
   }
 
+  public static unsafe implicit operator void*(ObjectVisualTransformData self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(ObjectVisualTransformData self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(ObjectVisualTransformData other) {
     if (ReferenceEquals(null, other)) {
       return false;

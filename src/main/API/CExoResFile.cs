@@ -44,6 +44,14 @@ public unsafe class CExoResFile : CExoPackedFile {
     }
   }
 
+  public static unsafe implicit operator void*(CExoResFile self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoResFile self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoResFile other) {
     if (ReferenceEquals(null, other)) {
       return false;

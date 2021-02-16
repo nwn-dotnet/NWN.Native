@@ -55,6 +55,14 @@ public unsafe class CExoCriticalSection : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CExoCriticalSection self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoCriticalSection self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoCriticalSection other) {
     if (ReferenceEquals(null, other)) {
       return false;

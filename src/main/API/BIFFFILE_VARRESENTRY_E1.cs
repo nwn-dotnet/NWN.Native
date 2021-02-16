@@ -55,6 +55,14 @@ public unsafe class BIFFFILE_VARRESENTRY_E1 : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(BIFFFILE_VARRESENTRY_E1 self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(BIFFFILE_VARRESENTRY_E1 self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(BIFFFILE_VARRESENTRY_E1 other) {
     if (ReferenceEquals(null, other)) {
       return false;

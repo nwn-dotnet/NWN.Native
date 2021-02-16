@@ -55,6 +55,14 @@ public unsafe class ScriptParam : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(ScriptParam self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(ScriptParam self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(ScriptParam other) {
     if (ReferenceEquals(null, other)) {
       return false;

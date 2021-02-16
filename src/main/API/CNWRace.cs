@@ -55,6 +55,14 @@ public unsafe class CNWRace : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWRace self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWRace self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWRace other) {
     if (ReferenceEquals(null, other)) {
       return false;

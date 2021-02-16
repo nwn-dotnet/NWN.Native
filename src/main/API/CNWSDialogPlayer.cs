@@ -55,6 +55,14 @@ public unsafe class CNWSDialogPlayer : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSDialogPlayer self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSDialogPlayer self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSDialogPlayer other) {
     if (ReferenceEquals(null, other)) {
       return false;

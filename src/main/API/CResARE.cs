@@ -44,6 +44,14 @@ public unsafe class CResARE : CResGFF {
     }
   }
 
+  public static unsafe implicit operator void*(CResARE self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CResARE self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CResARE other) {
     if (ReferenceEquals(null, other)) {
       return false;

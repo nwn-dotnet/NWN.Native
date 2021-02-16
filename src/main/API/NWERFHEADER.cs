@@ -55,6 +55,14 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(NWERFHEADER self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(NWERFHEADER self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(NWERFHEADER other) {
     if (ReferenceEquals(null, other)) {
       return false;

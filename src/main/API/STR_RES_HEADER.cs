@@ -44,6 +44,14 @@ public unsafe class STR_RES_HEADER : STR_RES_HEADER_OLD {
     }
   }
 
+  public static unsafe implicit operator void*(STR_RES_HEADER self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(STR_RES_HEADER self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(STR_RES_HEADER other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -55,6 +55,14 @@ public unsafe class CNWPlaceableSurfaceMesh : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWPlaceableSurfaceMesh self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWPlaceableSurfaceMesh self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWPlaceableSurfaceMesh other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -136,15 +144,16 @@ public unsafe class CNWPlaceableSurfaceMesh : global::System.IDisposable {
 
   }
 
-  public Vector m_pvActionPoints {
+  public VectorArray m_pvActionPoints {
     set {
-      NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pvActionPoints_set(swigCPtr, Vector.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pvActionPoints_set(swigCPtr, VectorArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pvActionPoints_get(swigCPtr);
-      Vector ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pvActionPoints_get(swigCPtr);;
+        VectorArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new VectorArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public CNWPlaceableSurfaceMesh() : this(NWNXLibPINVOKE.new_CNWPlaceableSurfaceMesh(), true) {

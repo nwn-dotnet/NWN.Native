@@ -55,6 +55,14 @@ public unsafe class CExoArrayListCFeatUseListEntryPtr : global::System.IDisposab
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListCFeatUseListEntryPtr self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListCFeatUseListEntryPtr self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListCFeatUseListEntryPtr other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,15 +91,15 @@ public unsafe class CExoArrayListCFeatUseListEntryPtr : global::System.IDisposab
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_CFeatUseListEntry element {
+  public void** element {
     set {
-      NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_element_set(swigCPtr, SWIGTYPE_p_p_CFeatUseListEntry.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_element_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_element_get(swigCPtr);
-      SWIGTYPE_p_p_CFeatUseListEntry ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CFeatUseListEntry(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_element_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public int num {
@@ -130,9 +138,9 @@ public unsafe class CExoArrayListCFeatUseListEntryPtr : global::System.IDisposab
     return ret;
   }
 
-  public SWIGTYPE_p_p_CFeatUseListEntry _OpIndex(int i) {
-    SWIGTYPE_p_p_CFeatUseListEntry ret = new SWIGTYPE_p_p_CFeatUseListEntry(NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr__OpIndex(swigCPtr, i), false);
-    return ret;
+  public void** _OpIndex(int i) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr__OpIndex(swigCPtr, i);
+    return (void**)retVal;
   }
 
   public void Allocate(int s) {
@@ -159,16 +167,14 @@ public unsafe class CExoArrayListCFeatUseListEntryPtr : global::System.IDisposab
     NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_DelIndex(swigCPtr, i);
   }
 
-  public SWIGTYPE_p_p_CFeatUseListEntry begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_begin(swigCPtr);
-    SWIGTYPE_p_p_CFeatUseListEntry ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CFeatUseListEntry(cPtr, false);
-    return ret;
+  public void** begin() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_begin(swigCPtr);
+    return (void**)retVal;
   }
 
-  public SWIGTYPE_p_p_CFeatUseListEntry end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_end(swigCPtr);
-    SWIGTYPE_p_p_CFeatUseListEntry ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CFeatUseListEntry(cPtr, false);
-    return ret;
+  public void** end() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_end(swigCPtr);
+    return (void**)retVal;
   }
 
 }

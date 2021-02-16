@@ -55,6 +55,14 @@ public unsafe class CCombatInformation : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CCombatInformation self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CCombatInformation self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CCombatInformation other) {
     if (ReferenceEquals(null, other)) {
       return false;

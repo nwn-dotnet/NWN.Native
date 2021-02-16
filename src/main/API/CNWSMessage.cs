@@ -44,6 +44,14 @@ public unsafe class CNWSMessage : CNWMessage {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSMessage self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSMessage self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSMessage other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -790,8 +798,8 @@ public unsafe class CNWSMessage : CNWMessage {
     return ret;
   }
 
-  public void TestPartyObjectUpdateDifferences(CNWSPlayer pPlayer, CNWSCreature pPartyCreature, SWIGTYPE_p_p_CLastUpdatePartyObject pLastUpdatePartyObject, uint* nObjectUpdatesRequired) {
-    NWNXLibPINVOKE.CNWSMessage_TestPartyObjectUpdateDifferences(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSCreature.getCPtr(pPartyCreature), SWIGTYPE_p_p_CLastUpdatePartyObject.getCPtr(pLastUpdatePartyObject), (global::System.IntPtr)nObjectUpdatesRequired);
+  public void TestPartyObjectUpdateDifferences(CNWSPlayer pPlayer, CNWSCreature pPartyCreature, void** pLastUpdatePartyObject, uint* nObjectUpdatesRequired) {
+    NWNXLibPINVOKE.CNWSMessage_TestPartyObjectUpdateDifferences(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSCreature.getCPtr(pPartyCreature), (global::System.IntPtr)pLastUpdatePartyObject, (global::System.IntPtr)nObjectUpdatesRequired);
   }
 
   public void StoreValuesInLastUpdatePartyObject(CNWSCreature pPlayerCreature, CLastUpdatePartyObject pLastUpdatePartyObject, CNWSCreature pPartyCreature, uint nObjectUpdatesRequired) {
@@ -816,8 +824,8 @@ public unsafe class CNWSMessage : CNWMessage {
     NWNXLibPINVOKE.CNWSMessage_StoreValuesInLastUpdateObject(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CLastUpdateObject.getCPtr(pLastUpdateObject), CNWSObject.getCPtr(pAreaObject), nObjectUpdatesRequired, nObjectAppearanceUpdatesRequired);
   }
 
-  public void TestObjectUpdateDifferences(CNWSPlayer pPlayer, CNWSObject pAreaObject, SWIGTYPE_p_p_CLastUpdateObject pLastUpdateObject, uint* nObjectUpdatesRequired, uint* nObjectAppearanceUpdatesRequired) {
-    NWNXLibPINVOKE.CNWSMessage_TestObjectUpdateDifferences(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pAreaObject), SWIGTYPE_p_p_CLastUpdateObject.getCPtr(pLastUpdateObject), (global::System.IntPtr)nObjectUpdatesRequired, (global::System.IntPtr)nObjectAppearanceUpdatesRequired);
+  public void TestObjectUpdateDifferences(CNWSPlayer pPlayer, CNWSObject pAreaObject, void** pLastUpdateObject, uint* nObjectUpdatesRequired, uint* nObjectAppearanceUpdatesRequired) {
+    NWNXLibPINVOKE.CNWSMessage_TestObjectUpdateDifferences(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pAreaObject), (global::System.IntPtr)pLastUpdateObject, (global::System.IntPtr)nObjectUpdatesRequired, (global::System.IntPtr)nObjectAppearanceUpdatesRequired);
   }
 
   public int TestObjectVisible(CNWSObject pAreaObject, CNWSObject pPlayerGameObject) {

@@ -55,6 +55,14 @@ public unsafe class CServerNetOptions : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CServerNetOptions self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CServerNetOptions self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CServerNetOptions other) {
     if (ReferenceEquals(null, other)) {
       return false;

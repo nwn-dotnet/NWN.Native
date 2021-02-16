@@ -55,6 +55,14 @@ public unsafe class CTlkTableTokenCustom : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CTlkTableTokenCustom self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CTlkTableTokenCustom self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CTlkTableTokenCustom other) {
     if (ReferenceEquals(null, other)) {
       return false;

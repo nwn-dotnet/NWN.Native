@@ -55,6 +55,14 @@ public unsafe class CachedRulesetEntry : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CachedRulesetEntry self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CachedRulesetEntry self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CachedRulesetEntry other) {
     if (ReferenceEquals(null, other)) {
       return false;

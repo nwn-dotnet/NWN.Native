@@ -44,6 +44,14 @@ public unsafe class CNWSTile : CNWTile {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSTile self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSTile self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSTile other) {
     if (ReferenceEquals(null, other)) {
       return false;

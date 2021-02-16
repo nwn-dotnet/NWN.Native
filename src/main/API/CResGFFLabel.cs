@@ -55,6 +55,14 @@ public unsafe class CResGFFLabel : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CResGFFLabel self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CResGFFLabel self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CResGFFLabel other) {
     if (ReferenceEquals(null, other)) {
       return false;

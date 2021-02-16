@@ -44,6 +44,14 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     }
   }
 
+  public static unsafe implicit operator void*(CNWVirtualMachineCommands self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWVirtualMachineCommands self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWVirtualMachineCommands other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -141,12 +149,12 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     return ret;
   }
 
-  public override void GetEngineStructureWatchView(int nEngineStructure, void* pEngineStructure, int* nEntries, SWIGTYPE_p_p_CExoString m_ppNames, SWIGTYPE_p_p_CExoString m_ppValues) {
-    NWNXLibPINVOKE.CNWVirtualMachineCommands_GetEngineStructureWatchView(swigCPtr, nEngineStructure, (global::System.IntPtr)pEngineStructure, (global::System.IntPtr)nEntries, SWIGTYPE_p_p_CExoString.getCPtr(m_ppNames), SWIGTYPE_p_p_CExoString.getCPtr(m_ppValues));
+  public override void GetEngineStructureWatchView(int nEngineStructure, void* pEngineStructure, int* nEntries, void** m_ppNames, void** m_ppValues) {
+    NWNXLibPINVOKE.CNWVirtualMachineCommands_GetEngineStructureWatchView(swigCPtr, nEngineStructure, (global::System.IntPtr)pEngineStructure, (global::System.IntPtr)nEntries, (global::System.IntPtr)m_ppNames, (global::System.IntPtr)m_ppValues);
   }
 
-  public override void GetObjectWatchView(uint oidObject, int* nEntries, SWIGTYPE_p_p_CExoString m_ppNames, SWIGTYPE_p_p_CExoString m_ppValues) {
-    NWNXLibPINVOKE.CNWVirtualMachineCommands_GetObjectWatchView(swigCPtr, oidObject, (global::System.IntPtr)nEntries, SWIGTYPE_p_p_CExoString.getCPtr(m_ppNames), SWIGTYPE_p_p_CExoString.getCPtr(m_ppValues));
+  public override void GetObjectWatchView(uint oidObject, int* nEntries, void** m_ppNames, void** m_ppValues) {
+    NWNXLibPINVOKE.CNWVirtualMachineCommands_GetObjectWatchView(swigCPtr, oidObject, (global::System.IntPtr)nEntries, (global::System.IntPtr)m_ppNames, (global::System.IntPtr)m_ppValues);
   }
 
   public override int DebugGUIStart() {

@@ -55,6 +55,14 @@ public unsafe class CNWGridSearchPath : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWGridSearchPath self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWGridSearchPath self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWGridSearchPath other) {
     if (ReferenceEquals(null, other)) {
       return false;

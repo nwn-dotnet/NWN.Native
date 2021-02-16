@@ -44,6 +44,14 @@ public unsafe class CNWSEffectListHandler : CGameEffectApplierRemover {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSEffectListHandler self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSEffectListHandler self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSEffectListHandler other) {
     if (ReferenceEquals(null, other)) {
       return false;

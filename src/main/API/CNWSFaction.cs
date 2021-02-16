@@ -55,6 +55,14 @@ public unsafe class CNWSFaction : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSFaction self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSFaction self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSFaction other) {
     if (ReferenceEquals(null, other)) {
       return false;

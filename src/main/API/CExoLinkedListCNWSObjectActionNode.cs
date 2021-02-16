@@ -55,6 +55,14 @@ public unsafe class CExoLinkedListCNWSObjectActionNode : global::System.IDisposa
     }
   }
 
+  public static unsafe implicit operator void*(CExoLinkedListCNWSObjectActionNode self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoLinkedListCNWSObjectActionNode self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoLinkedListCNWSObjectActionNode other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -144,17 +152,15 @@ public unsafe class CExoLinkedListCNWSObjectActionNode : global::System.IDisposa
     return ret;
   }
 
-  public CNWSObjectActionNode GetNext(SWIGTYPE_p_p_CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCNWSObjectActionNode_GetNext(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
+  public CNWSObjectActionNode GetNext(void** Position) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCNWSObjectActionNode_GetNext(swigCPtr, (global::System.IntPtr)Position);
     CNWSObjectActionNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSObjectActionNode(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CNWSObjectActionNode GetPrev(SWIGTYPE_p_p_CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCNWSObjectActionNode_GetPrev(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
+  public CNWSObjectActionNode GetPrev(void** Position) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCNWSObjectActionNode_GetPrev(swigCPtr, (global::System.IntPtr)Position);
     CNWSObjectActionNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSObjectActionNode(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 

@@ -55,6 +55,14 @@ public unsafe class CExtendedServerInfo : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CExtendedServerInfo self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExtendedServerInfo self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExtendedServerInfo other) {
     if (ReferenceEquals(null, other)) {
       return false;

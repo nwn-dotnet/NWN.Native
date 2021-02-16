@@ -55,6 +55,14 @@ public unsafe class CExoLinkedListNWAreaExpansion : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CExoLinkedListNWAreaExpansion self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoLinkedListNWAreaExpansion self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoLinkedListNWAreaExpansion other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -144,17 +152,15 @@ public unsafe class CExoLinkedListNWAreaExpansion : global::System.IDisposable {
     return ret;
   }
 
-  public NWAREAEXPANSION GetNext(SWIGTYPE_p_p_CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListNWAreaExpansion_GetNext(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
+  public NWAREAEXPANSION GetNext(void** Position) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListNWAreaExpansion_GetNext(swigCPtr, (global::System.IntPtr)Position);
     NWAREAEXPANSION ret = (cPtr == global::System.IntPtr.Zero) ? null : new NWAREAEXPANSION(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public NWAREAEXPANSION GetPrev(SWIGTYPE_p_p_CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListNWAreaExpansion_GetPrev(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
+  public NWAREAEXPANSION GetPrev(void** Position) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListNWAreaExpansion_GetPrev(swigCPtr, (global::System.IntPtr)Position);
     NWAREAEXPANSION ret = (cPtr == global::System.IntPtr.Zero) ? null : new NWAREAEXPANSION(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 

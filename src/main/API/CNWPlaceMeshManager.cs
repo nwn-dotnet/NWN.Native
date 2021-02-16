@@ -55,6 +55,14 @@ public unsafe class CNWPlaceMeshManager : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWPlaceMeshManager self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWPlaceMeshManager self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWPlaceMeshManager other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -93,15 +101,15 @@ public unsafe class CNWPlaceMeshManager : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_p_CNWPlaceableSurfaceMesh m_pSurfaceMeshLoaded {
+  public void** m_pSurfaceMeshLoaded {
     set {
-      NWNXLibPINVOKE.CNWPlaceMeshManager_m_pSurfaceMeshLoaded_set(swigCPtr, SWIGTYPE_p_p_CNWPlaceableSurfaceMesh.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWPlaceMeshManager_m_pSurfaceMeshLoaded_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWPlaceMeshManager_m_pSurfaceMeshLoaded_get(swigCPtr);
-      SWIGTYPE_p_p_CNWPlaceableSurfaceMesh ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CNWPlaceableSurfaceMesh(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CNWPlaceMeshManager_m_pSurfaceMeshLoaded_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public CNWPlaceMeshManager() : this(NWNXLibPINVOKE.new_CNWPlaceMeshManager(), true) {

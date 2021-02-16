@@ -31,6 +31,14 @@ public class SWIGTYPE_p_p_f_p_CNWSObject_p_CGameEffect__int {
     }
   }
 
+  public static unsafe implicit operator void*(SWIGTYPE_p_p_f_p_CNWSObject_p_CGameEffect__int self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(SWIGTYPE_p_p_f_p_CNWSObject_p_CGameEffect__int self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(SWIGTYPE_p_p_f_p_CNWSObject_p_CGameEffect__int other) {
     if (ReferenceEquals(null, other)) {
       return false;

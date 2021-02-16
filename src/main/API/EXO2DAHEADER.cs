@@ -55,6 +55,14 @@ public unsafe class EXO2DAHEADER : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(EXO2DAHEADER self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(EXO2DAHEADER self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(EXO2DAHEADER other) {
     if (ReferenceEquals(null, other)) {
       return false;

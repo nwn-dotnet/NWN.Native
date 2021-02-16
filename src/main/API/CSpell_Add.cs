@@ -55,6 +55,14 @@ public unsafe class CSpell_Add : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CSpell_Add self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CSpell_Add self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CSpell_Add other) {
     if (ReferenceEquals(null, other)) {
       return false;

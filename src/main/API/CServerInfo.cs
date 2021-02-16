@@ -55,6 +55,14 @@ public unsafe class CServerInfo : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CServerInfo self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CServerInfo self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CServerInfo other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -308,15 +316,16 @@ public unsafe class CServerInfo : global::System.IDisposable {
     } 
   }
 
-  public CServerOptionLookup m_pOptionsTable {
+  public CServerOptionLookupArray m_pOptionsTable {
     set {
-      NWNXLibPINVOKE.CServerInfo_m_pOptionsTable_set(swigCPtr, CServerOptionLookup.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CServerInfo_m_pOptionsTable_set(swigCPtr, CServerOptionLookupArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerInfo_m_pOptionsTable_get(swigCPtr);
-      CServerOptionLookup ret = (cPtr == global::System.IntPtr.Zero) ? null : new CServerOptionLookup(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerInfo_m_pOptionsTable_get(swigCPtr);;
+        CServerOptionLookupArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CServerOptionLookupArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public CServerInfo() : this(NWNXLibPINVOKE.new_CServerInfo(), true) {

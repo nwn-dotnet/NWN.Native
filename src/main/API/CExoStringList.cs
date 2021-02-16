@@ -55,6 +55,14 @@ public unsafe class CExoStringList : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CExoStringList self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoStringList self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoStringList other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,15 +91,15 @@ public unsafe class CExoStringList : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_CExoString m_pStrings {
+  public void** m_pStrings {
     set {
-      NWNXLibPINVOKE.CExoStringList_m_pStrings_set(swigCPtr, SWIGTYPE_p_p_CExoString.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoStringList_m_pStrings_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoStringList_m_pStrings_get(swigCPtr);
-      SWIGTYPE_p_p_CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CExoString(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CExoStringList_m_pStrings_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public int m_nCount {

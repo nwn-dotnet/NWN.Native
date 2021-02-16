@@ -55,6 +55,14 @@ public unsafe class NWPlayerCharacterList_st : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(NWPlayerCharacterList_st self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(NWPlayerCharacterList_st self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(NWPlayerCharacterList_st other) {
     if (ReferenceEquals(null, other)) {
       return false;

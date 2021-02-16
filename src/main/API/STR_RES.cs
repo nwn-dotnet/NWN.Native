@@ -55,6 +55,14 @@ public unsafe class STR_RES : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(STR_RES self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(STR_RES self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(STR_RES other) {
     if (ReferenceEquals(null, other)) {
       return false;

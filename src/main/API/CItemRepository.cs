@@ -55,6 +55,14 @@ public unsafe class CItemRepository : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CItemRepository self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CItemRepository self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CItemRepository other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -150,28 +158,28 @@ public unsafe class CItemRepository : global::System.IDisposable {
   public CItemRepository(uint oidParent, byte nWidth, byte nHeight, uint nBoundary) : this(NWNXLibPINVOKE.new_CItemRepository__SWIG_1(oidParent, nWidth, nHeight, nBoundary), true) {
   }
 
-  public int AddItem(SWIGTYPE_p_p_CNWSItem pItem, byte x, byte y, int bAllowEncumbrance, int bMergeItem) {
-    int ret = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_0(swigCPtr, SWIGTYPE_p_p_CNWSItem.getCPtr(pItem), x, y, bAllowEncumbrance, bMergeItem);
+  public int AddItem(void** pItem, byte x, byte y, int bAllowEncumbrance, int bMergeItem) {
+    int ret = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_0(swigCPtr, (global::System.IntPtr)pItem, x, y, bAllowEncumbrance, bMergeItem);
     return ret;
   }
 
-  public int AddItem(SWIGTYPE_p_p_CNWSItem pItem, byte x, byte y, int bAllowEncumbrance) {
-    int ret = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_1(swigCPtr, SWIGTYPE_p_p_CNWSItem.getCPtr(pItem), x, y, bAllowEncumbrance);
+  public int AddItem(void** pItem, byte x, byte y, int bAllowEncumbrance) {
+    int ret = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_1(swigCPtr, (global::System.IntPtr)pItem, x, y, bAllowEncumbrance);
     return ret;
   }
 
-  public int AddItem(SWIGTYPE_p_p_CNWSItem pItem, byte x, byte y) {
-    int ret = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_2(swigCPtr, SWIGTYPE_p_p_CNWSItem.getCPtr(pItem), x, y);
+  public int AddItem(void** pItem, byte x, byte y) {
+    int ret = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_2(swigCPtr, (global::System.IntPtr)pItem, x, y);
     return ret;
   }
 
-  public int AddItem(SWIGTYPE_p_p_CNWSItem pItem, byte x) {
-    int ret = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_3(swigCPtr, SWIGTYPE_p_p_CNWSItem.getCPtr(pItem), x);
+  public int AddItem(void** pItem, byte x) {
+    int ret = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_3(swigCPtr, (global::System.IntPtr)pItem, x);
     return ret;
   }
 
-  public int AddItem(SWIGTYPE_p_p_CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_4(swigCPtr, SWIGTYPE_p_p_CNWSItem.getCPtr(pItem));
+  public int AddItem(void** pItem) {
+    int ret = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_4(swigCPtr, (global::System.IntPtr)pItem);
     return ret;
   }
 

@@ -55,6 +55,14 @@ public unsafe class CExoBase : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CExoBase self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoBase self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoBase other) {
     if (ReferenceEquals(null, other)) {
       return false;

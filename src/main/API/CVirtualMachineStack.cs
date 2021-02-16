@@ -55,6 +55,14 @@ public unsafe class CVirtualMachineStack : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CVirtualMachineStack self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CVirtualMachineStack self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CVirtualMachineStack other) {
     if (ReferenceEquals(null, other)) {
       return false;

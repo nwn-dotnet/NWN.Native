@@ -55,6 +55,14 @@ public unsafe class CNWSObjectEventHandler : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSObjectEventHandler self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSObjectEventHandler self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSObjectEventHandler other) {
     if (ReferenceEquals(null, other)) {
       return false;

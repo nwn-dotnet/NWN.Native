@@ -55,6 +55,14 @@ public unsafe class CExoArrayListCEffectIconObjectPtr : global::System.IDisposab
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListCEffectIconObjectPtr self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListCEffectIconObjectPtr self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListCEffectIconObjectPtr other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,15 +91,15 @@ public unsafe class CExoArrayListCEffectIconObjectPtr : global::System.IDisposab
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_CEffectIconObject element {
+  public void** element {
     set {
-      NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr_element_set(swigCPtr, SWIGTYPE_p_p_CEffectIconObject.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr_element_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr_element_get(swigCPtr);
-      SWIGTYPE_p_p_CEffectIconObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CEffectIconObject(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr_element_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public int num {
@@ -130,9 +138,9 @@ public unsafe class CExoArrayListCEffectIconObjectPtr : global::System.IDisposab
     return ret;
   }
 
-  public SWIGTYPE_p_p_CEffectIconObject _OpIndex(int i) {
-    SWIGTYPE_p_p_CEffectIconObject ret = new SWIGTYPE_p_p_CEffectIconObject(NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr__OpIndex(swigCPtr, i), false);
-    return ret;
+  public void** _OpIndex(int i) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr__OpIndex(swigCPtr, i);
+    return (void**)retVal;
   }
 
   public void Allocate(int s) {
@@ -159,16 +167,14 @@ public unsafe class CExoArrayListCEffectIconObjectPtr : global::System.IDisposab
     NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr_DelIndex(swigCPtr, i);
   }
 
-  public SWIGTYPE_p_p_CEffectIconObject begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr_begin(swigCPtr);
-    SWIGTYPE_p_p_CEffectIconObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CEffectIconObject(cPtr, false);
-    return ret;
+  public void** begin() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr_begin(swigCPtr);
+    return (void**)retVal;
   }
 
-  public SWIGTYPE_p_p_CEffectIconObject end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr_end(swigCPtr);
-    SWIGTYPE_p_p_CEffectIconObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CEffectIconObject(cPtr, false);
-    return ret;
+  public void** end() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCEffectIconObjectPtr_end(swigCPtr);
+    return (void**)retVal;
   }
 
 }

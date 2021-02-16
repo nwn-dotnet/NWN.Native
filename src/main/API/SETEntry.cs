@@ -55,6 +55,14 @@ public unsafe class SETEntry : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(SETEntry self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(SETEntry self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(SETEntry other) {
     if (ReferenceEquals(null, other)) {
       return false;

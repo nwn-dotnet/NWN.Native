@@ -55,6 +55,14 @@ public unsafe class CGameObjectArrayNode : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CGameObjectArrayNode self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CGameObjectArrayNode self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CGameObjectArrayNode other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -55,6 +55,14 @@ public unsafe class CExoLinkedListCERFString : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CExoLinkedListCERFString self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoLinkedListCERFString self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoLinkedListCERFString other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -144,17 +152,15 @@ public unsafe class CExoLinkedListCERFString : global::System.IDisposable {
     return ret;
   }
 
-  public CERFString GetNext(SWIGTYPE_p_p_CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCERFString_GetNext(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
+  public CERFString GetNext(void** Position) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCERFString_GetNext(swigCPtr, (global::System.IntPtr)Position);
     CERFString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CERFString(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CERFString GetPrev(SWIGTYPE_p_p_CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCERFString_GetPrev(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
+  public CERFString GetPrev(void** Position) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCERFString_GetPrev(swigCPtr, (global::System.IntPtr)Position);
     CERFString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CERFString(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 

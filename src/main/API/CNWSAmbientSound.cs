@@ -44,6 +44,14 @@ public unsafe class CNWSAmbientSound : CNWAmbientSound {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSAmbientSound self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSAmbientSound self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSAmbientSound other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -55,6 +55,14 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSPlayerLUOAppearanceInfo self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSPlayerLUOAppearanceInfo self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSPlayerLUOAppearanceInfo other) {
     if (ReferenceEquals(null, other)) {
       return false;

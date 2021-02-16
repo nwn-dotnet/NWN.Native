@@ -55,6 +55,14 @@ public unsafe class CExoArrayListCStoreCustomerPtr : global::System.IDisposable 
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListCStoreCustomerPtr self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListCStoreCustomerPtr self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListCStoreCustomerPtr other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,15 +91,15 @@ public unsafe class CExoArrayListCStoreCustomerPtr : global::System.IDisposable 
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_CStoreCustomer element {
+  public void** element {
     set {
-      NWNXLibPINVOKE.CExoArrayListCStoreCustomerPtr_element_set(swigCPtr, SWIGTYPE_p_p_CStoreCustomer.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoArrayListCStoreCustomerPtr_element_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCStoreCustomerPtr_element_get(swigCPtr);
-      SWIGTYPE_p_p_CStoreCustomer ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CStoreCustomer(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCStoreCustomerPtr_element_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public int num {
@@ -130,9 +138,9 @@ public unsafe class CExoArrayListCStoreCustomerPtr : global::System.IDisposable 
     return ret;
   }
 
-  public SWIGTYPE_p_p_CStoreCustomer _OpIndex(int i) {
-    SWIGTYPE_p_p_CStoreCustomer ret = new SWIGTYPE_p_p_CStoreCustomer(NWNXLibPINVOKE.CExoArrayListCStoreCustomerPtr__OpIndex(swigCPtr, i), false);
-    return ret;
+  public void** _OpIndex(int i) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCStoreCustomerPtr__OpIndex(swigCPtr, i);
+    return (void**)retVal;
   }
 
   public void Allocate(int s) {
@@ -159,16 +167,14 @@ public unsafe class CExoArrayListCStoreCustomerPtr : global::System.IDisposable 
     NWNXLibPINVOKE.CExoArrayListCStoreCustomerPtr_DelIndex(swigCPtr, i);
   }
 
-  public SWIGTYPE_p_p_CStoreCustomer begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCStoreCustomerPtr_begin(swigCPtr);
-    SWIGTYPE_p_p_CStoreCustomer ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CStoreCustomer(cPtr, false);
-    return ret;
+  public void** begin() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCStoreCustomerPtr_begin(swigCPtr);
+    return (void**)retVal;
   }
 
-  public SWIGTYPE_p_p_CStoreCustomer end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCStoreCustomerPtr_end(swigCPtr);
-    SWIGTYPE_p_p_CStoreCustomer ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CStoreCustomer(cPtr, false);
-    return ret;
+  public void** end() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCStoreCustomerPtr_end(swigCPtr);
+    return (void**)retVal;
   }
 
 }

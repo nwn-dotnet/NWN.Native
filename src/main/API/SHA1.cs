@@ -55,6 +55,14 @@ public unsafe class SHA1 : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(SHA1 self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(SHA1 self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(SHA1 other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -60,6 +60,14 @@ public unsafe class CNWItem : ICNWItem, global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWItem self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWItem self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWItem other) {
     if (ReferenceEquals(null, other)) {
       return false;

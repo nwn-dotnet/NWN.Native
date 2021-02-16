@@ -55,6 +55,14 @@ public unsafe class CExoLinkedListCNWSClient : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CExoLinkedListCNWSClient self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoLinkedListCNWSClient self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoLinkedListCNWSClient other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -144,17 +152,15 @@ public unsafe class CExoLinkedListCNWSClient : global::System.IDisposable {
     return ret;
   }
 
-  public CNWSClient GetNext(SWIGTYPE_p_p_CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCNWSClient_GetNext(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
+  public CNWSClient GetNext(void** Position) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCNWSClient_GetNext(swigCPtr, (global::System.IntPtr)Position);
     CNWSClient ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSClient(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CNWSClient GetPrev(SWIGTYPE_p_p_CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCNWSClient_GetPrev(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
+  public CNWSClient GetPrev(void** Position) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCNWSClient_GetPrev(swigCPtr, (global::System.IntPtr)Position);
     CNWSClient ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSClient(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 

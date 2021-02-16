@@ -55,6 +55,14 @@ public unsafe class CScriptCompilerSymbolTableEntry : global::System.IDisposable
     }
   }
 
+  public static unsafe implicit operator void*(CScriptCompilerSymbolTableEntry self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CScriptCompilerSymbolTableEntry self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CScriptCompilerSymbolTableEntry other) {
     if (ReferenceEquals(null, other)) {
       return false;

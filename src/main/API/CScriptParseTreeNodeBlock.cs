@@ -55,6 +55,14 @@ public unsafe class CScriptParseTreeNodeBlock : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CScriptParseTreeNodeBlock self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CScriptParseTreeNodeBlock self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CScriptParseTreeNodeBlock other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,15 +91,16 @@ public unsafe class CScriptParseTreeNodeBlock : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public CScriptParseTreeNode m_pNodes {
+  public CScriptParseTreeNodeArray m_pNodes {
     set {
-      NWNXLibPINVOKE.CScriptParseTreeNodeBlock_m_pNodes_set(swigCPtr, CScriptParseTreeNode.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CScriptParseTreeNodeBlock_m_pNodes_set(swigCPtr, CScriptParseTreeNodeArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptParseTreeNodeBlock_m_pNodes_get(swigCPtr);
-      CScriptParseTreeNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CScriptParseTreeNode(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptParseTreeNodeBlock_m_pNodes_get(swigCPtr);;
+        CScriptParseTreeNodeArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CScriptParseTreeNodeArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public CScriptParseTreeNodeBlock m_pNextBlock {

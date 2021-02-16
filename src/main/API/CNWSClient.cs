@@ -55,6 +55,14 @@ public unsafe class CNWSClient : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSClient self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSClient self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSClient other) {
     if (ReferenceEquals(null, other)) {
       return false;

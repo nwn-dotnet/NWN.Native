@@ -44,6 +44,14 @@ public unsafe class CNWSWaypoint : CNWSObject {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSWaypoint self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSWaypoint self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSWaypoint other) {
     if (ReferenceEquals(null, other)) {
       return false;

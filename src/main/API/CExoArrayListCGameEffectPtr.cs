@@ -55,6 +55,14 @@ public unsafe class CExoArrayListCGameEffectPtr : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListCGameEffectPtr self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListCGameEffectPtr self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListCGameEffectPtr other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,15 +91,15 @@ public unsafe class CExoArrayListCGameEffectPtr : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_CGameEffect element {
+  public void** element {
     set {
-      NWNXLibPINVOKE.CExoArrayListCGameEffectPtr_element_set(swigCPtr, SWIGTYPE_p_p_CGameEffect.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoArrayListCGameEffectPtr_element_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCGameEffectPtr_element_get(swigCPtr);
-      SWIGTYPE_p_p_CGameEffect ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CGameEffect(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCGameEffectPtr_element_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public int num {
@@ -130,9 +138,9 @@ public unsafe class CExoArrayListCGameEffectPtr : global::System.IDisposable {
     return ret;
   }
 
-  public SWIGTYPE_p_p_CGameEffect _OpIndex(int i) {
-    SWIGTYPE_p_p_CGameEffect ret = new SWIGTYPE_p_p_CGameEffect(NWNXLibPINVOKE.CExoArrayListCGameEffectPtr__OpIndex(swigCPtr, i), false);
-    return ret;
+  public void** _OpIndex(int i) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCGameEffectPtr__OpIndex(swigCPtr, i);
+    return (void**)retVal;
   }
 
   public void Allocate(int s) {
@@ -159,16 +167,14 @@ public unsafe class CExoArrayListCGameEffectPtr : global::System.IDisposable {
     NWNXLibPINVOKE.CExoArrayListCGameEffectPtr_DelIndex(swigCPtr, i);
   }
 
-  public SWIGTYPE_p_p_CGameEffect begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCGameEffectPtr_begin(swigCPtr);
-    SWIGTYPE_p_p_CGameEffect ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CGameEffect(cPtr, false);
-    return ret;
+  public void** begin() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCGameEffectPtr_begin(swigCPtr);
+    return (void**)retVal;
   }
 
-  public SWIGTYPE_p_p_CGameEffect end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCGameEffectPtr_end(swigCPtr);
-    SWIGTYPE_p_p_CGameEffect ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CGameEffect(cPtr, false);
-    return ret;
+  public void** end() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCGameEffectPtr_end(swigCPtr);
+    return (void**)retVal;
   }
 
 }

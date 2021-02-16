@@ -55,6 +55,14 @@ public unsafe class CExoArrayListCSpellDeletePtr : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListCSpellDeletePtr self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListCSpellDeletePtr self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListCSpellDeletePtr other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,15 +91,15 @@ public unsafe class CExoArrayListCSpellDeletePtr : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_CSpell_Delete element {
+  public void** element {
     set {
-      NWNXLibPINVOKE.CExoArrayListCSpellDeletePtr_element_set(swigCPtr, SWIGTYPE_p_p_CSpell_Delete.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoArrayListCSpellDeletePtr_element_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCSpellDeletePtr_element_get(swigCPtr);
-      SWIGTYPE_p_p_CSpell_Delete ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CSpell_Delete(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCSpellDeletePtr_element_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public int num {
@@ -130,9 +138,9 @@ public unsafe class CExoArrayListCSpellDeletePtr : global::System.IDisposable {
     return ret;
   }
 
-  public SWIGTYPE_p_p_CSpell_Delete _OpIndex(int i) {
-    SWIGTYPE_p_p_CSpell_Delete ret = new SWIGTYPE_p_p_CSpell_Delete(NWNXLibPINVOKE.CExoArrayListCSpellDeletePtr__OpIndex(swigCPtr, i), false);
-    return ret;
+  public void** _OpIndex(int i) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCSpellDeletePtr__OpIndex(swigCPtr, i);
+    return (void**)retVal;
   }
 
   public void Allocate(int s) {
@@ -159,16 +167,14 @@ public unsafe class CExoArrayListCSpellDeletePtr : global::System.IDisposable {
     NWNXLibPINVOKE.CExoArrayListCSpellDeletePtr_DelIndex(swigCPtr, i);
   }
 
-  public SWIGTYPE_p_p_CSpell_Delete begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCSpellDeletePtr_begin(swigCPtr);
-    SWIGTYPE_p_p_CSpell_Delete ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CSpell_Delete(cPtr, false);
-    return ret;
+  public void** begin() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCSpellDeletePtr_begin(swigCPtr);
+    return (void**)retVal;
   }
 
-  public SWIGTYPE_p_p_CSpell_Delete end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCSpellDeletePtr_end(swigCPtr);
-    SWIGTYPE_p_p_CSpell_Delete ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CSpell_Delete(cPtr, false);
-    return ret;
+  public void** end() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCSpellDeletePtr_end(swigCPtr);
+    return (void**)retVal;
   }
 
 }

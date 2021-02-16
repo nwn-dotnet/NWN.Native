@@ -60,6 +60,14 @@ public unsafe class CGameObject : ICGameObject, global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CGameObject self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CGameObject self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CGameObject other) {
     if (ReferenceEquals(null, other)) {
       return false;

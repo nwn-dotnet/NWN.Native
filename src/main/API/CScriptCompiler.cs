@@ -55,6 +55,14 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CScriptCompiler self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CScriptCompiler self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CScriptCompiler other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -147,15 +155,15 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_p_CExoString m_ppsParseTreeFileNames {
+  public void** m_ppsParseTreeFileNames {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_ppsParseTreeFileNames_set(swigCPtr, SWIGTYPE_p_p_CExoString.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CScriptCompiler_m_ppsParseTreeFileNames_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_ppsParseTreeFileNames_get(swigCPtr);
-      SWIGTYPE_p_p_CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CExoString(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_ppsParseTreeFileNames_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public int m_nNextParseTreeFileName {
@@ -238,15 +246,16 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     } 
   }
 
-  public CExoString m_psTableFileNames {
+  public CExoStringArray m_psTableFileNames {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_psTableFileNames_set(swigCPtr, CExoString.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CScriptCompiler_m_psTableFileNames_set(swigCPtr, CExoStringArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_psTableFileNames_get(swigCPtr);
-      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_psTableFileNames_get(swigCPtr);;
+        CExoStringArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoStringArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public int m_nLineNumberEntries {
@@ -719,15 +728,16 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     } 
   }
 
-  public CScriptCompilerIncludeFileStackEntry m_pcIncludeFileStack {
+  public CScriptCompilerIncludeFileStackEntryArray m_pcIncludeFileStack {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pcIncludeFileStack_set(swigCPtr, CScriptCompilerIncludeFileStackEntry.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CScriptCompiler_m_pcIncludeFileStack_set(swigCPtr, CScriptCompilerIncludeFileStackEntryArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pcIncludeFileStack_get(swigCPtr);
-      CScriptCompilerIncludeFileStackEntry ret = (cPtr == global::System.IntPtr.Zero) ? null : new CScriptCompilerIncludeFileStackEntry(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pcIncludeFileStack_get(swigCPtr);;
+        CScriptCompilerIncludeFileStackEntryArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CScriptCompilerIncludeFileStackEntryArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public int m_nVarStackRecursionLevel {
@@ -1404,15 +1414,16 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     } 
   }
 
-  public CExoString m_pchActionParameterStructureNames {
+  public CExoStringArray m_pchActionParameterStructureNames {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pchActionParameterStructureNames_set(swigCPtr, CExoString.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CScriptCompiler_m_pchActionParameterStructureNames_set(swigCPtr, CExoStringArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pchActionParameterStructureNames_get(swigCPtr);
-      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pchActionParameterStructureNames_get(swigCPtr);;
+        CExoStringArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoStringArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public int m_nFinalBinarySize {
@@ -1564,8 +1575,8 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     NWNXLibPINVOKE.CScriptCompiler_PushSRStack(swigCPtr, nState, nRule, nTerm, CScriptParseTreeNode.getCPtr(pCurrentTree));
   }
 
-  public int PopSRStack(int* nState, int* nRule, int* nTerm, SWIGTYPE_p_p_CScriptParseTreeNode pCurrentTree, SWIGTYPE_p_p_CScriptParseTreeNode pReturnTree) {
-    int ret = NWNXLibPINVOKE.CScriptCompiler_PopSRStack(swigCPtr, (global::System.IntPtr)nState, (global::System.IntPtr)nRule, (global::System.IntPtr)nTerm, SWIGTYPE_p_p_CScriptParseTreeNode.getCPtr(pCurrentTree), SWIGTYPE_p_p_CScriptParseTreeNode.getCPtr(pReturnTree));
+  public int PopSRStack(int* nState, int* nRule, int* nTerm, void** pCurrentTree, void** pReturnTree) {
+    int ret = NWNXLibPINVOKE.CScriptCompiler_PopSRStack(swigCPtr, (global::System.IntPtr)nState, (global::System.IntPtr)nRule, (global::System.IntPtr)nTerm, (global::System.IntPtr)pCurrentTree, (global::System.IntPtr)pReturnTree);
     return ret;
   }
 

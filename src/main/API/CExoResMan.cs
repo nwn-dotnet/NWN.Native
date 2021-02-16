@@ -55,6 +55,14 @@ public unsafe class CExoResMan : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CExoResMan self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoResMan self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoResMan other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -521,14 +529,14 @@ public unsafe class CExoResMan : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public int GetKeyEntry(CResRef cResRef, ushort nType, SWIGTYPE_p_p_CExoKeyTable pNewTable, SWIGTYPE_p_p_CKeyTableEntry pNewKey, bool bLogFailure) {
-    int ret = NWNXLibPINVOKE.CExoResMan_GetKeyEntry__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef), nType, SWIGTYPE_p_p_CExoKeyTable.getCPtr(pNewTable), SWIGTYPE_p_p_CKeyTableEntry.getCPtr(pNewKey), bLogFailure);
+  public int GetKeyEntry(CResRef cResRef, ushort nType, void** pNewTable, void** pNewKey, bool bLogFailure) {
+    int ret = NWNXLibPINVOKE.CExoResMan_GetKeyEntry__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef), nType, (global::System.IntPtr)pNewTable, (global::System.IntPtr)pNewKey, bLogFailure);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int GetKeyEntry(CResRef cResRef, ushort nType, SWIGTYPE_p_p_CExoKeyTable pNewTable, SWIGTYPE_p_p_CKeyTableEntry pNewKey) {
-    int ret = NWNXLibPINVOKE.CExoResMan_GetKeyEntry__SWIG_1(swigCPtr, CResRef.getCPtr(cResRef), nType, SWIGTYPE_p_p_CExoKeyTable.getCPtr(pNewTable), SWIGTYPE_p_p_CKeyTableEntry.getCPtr(pNewKey));
+  public int GetKeyEntry(CResRef cResRef, ushort nType, void** pNewTable, void** pNewKey) {
+    int ret = NWNXLibPINVOKE.CExoResMan_GetKeyEntry__SWIG_1(swigCPtr, CResRef.getCPtr(cResRef), nType, (global::System.IntPtr)pNewTable, (global::System.IntPtr)pNewKey);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }

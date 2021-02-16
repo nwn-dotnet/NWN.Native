@@ -55,6 +55,14 @@ public unsafe class CExoArrayListInt32 : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListInt32 self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListInt32 self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListInt32 other) {
     if (ReferenceEquals(null, other)) {
       return false;

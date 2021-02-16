@@ -55,6 +55,14 @@ public unsafe class CItemPropertyApplierRemover : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CItemPropertyApplierRemover self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CItemPropertyApplierRemover self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CItemPropertyApplierRemover other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -55,6 +55,14 @@ public unsafe class CNetLayerPlayerCDKeyInfo : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNetLayerPlayerCDKeyInfo self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNetLayerPlayerCDKeyInfo self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNetLayerPlayerCDKeyInfo other) {
     if (ReferenceEquals(null, other)) {
       return false;

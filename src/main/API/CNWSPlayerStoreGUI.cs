@@ -55,6 +55,14 @@ public unsafe class CNWSPlayerStoreGUI : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSPlayerStoreGUI self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSPlayerStoreGUI self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSPlayerStoreGUI other) {
     if (ReferenceEquals(null, other)) {
       return false;

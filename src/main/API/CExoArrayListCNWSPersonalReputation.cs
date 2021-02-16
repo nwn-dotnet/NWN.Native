@@ -55,6 +55,14 @@ public unsafe class CExoArrayListCNWSPersonalReputation : global::System.IDispos
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListCNWSPersonalReputation self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListCNWSPersonalReputation self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListCNWSPersonalReputation other) {
     if (ReferenceEquals(null, other)) {
       return false;

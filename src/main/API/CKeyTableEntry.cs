@@ -55,6 +55,14 @@ public unsafe class CKeyTableEntry : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CKeyTableEntry self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CKeyTableEntry self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CKeyTableEntry other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -44,6 +44,14 @@ public unsafe class CResPWK : CRes {
     }
   }
 
+  public static unsafe implicit operator void*(CResPWK self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CResPWK self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CResPWK other) {
     if (ReferenceEquals(null, other)) {
       return false;

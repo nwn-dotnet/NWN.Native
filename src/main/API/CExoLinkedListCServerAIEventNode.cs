@@ -55,6 +55,14 @@ public unsafe class CExoLinkedListCServerAIEventNode : global::System.IDisposabl
     }
   }
 
+  public static unsafe implicit operator void*(CExoLinkedListCServerAIEventNode self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoLinkedListCServerAIEventNode self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoLinkedListCServerAIEventNode other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -144,17 +152,15 @@ public unsafe class CExoLinkedListCServerAIEventNode : global::System.IDisposabl
     return ret;
   }
 
-  public CServerAIEventNode GetNext(SWIGTYPE_p_p_CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCServerAIEventNode_GetNext(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
+  public CServerAIEventNode GetNext(void** Position) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCServerAIEventNode_GetNext(swigCPtr, (global::System.IntPtr)Position);
     CServerAIEventNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CServerAIEventNode(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CServerAIEventNode GetPrev(SWIGTYPE_p_p_CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCServerAIEventNode_GetPrev(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
+  public CServerAIEventNode GetPrev(void** Position) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCServerAIEventNode_GetPrev(swigCPtr, (global::System.IntPtr)Position);
     CServerAIEventNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CServerAIEventNode(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 

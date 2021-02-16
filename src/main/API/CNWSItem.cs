@@ -49,6 +49,14 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSItem self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSItem self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSItem other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -538,28 +546,28 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
     return ret;
   }
 
-  public int AcquireItem(SWIGTYPE_p_p_CNWSItem pItem, uint oidPossessor, byte x, byte y, int bDisplayFeedback) {
-    int ret = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_0(swigCPtr, SWIGTYPE_p_p_CNWSItem.getCPtr(pItem), oidPossessor, x, y, bDisplayFeedback);
+  public int AcquireItem(void** pItem, uint oidPossessor, byte x, byte y, int bDisplayFeedback) {
+    int ret = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_0(swigCPtr, (global::System.IntPtr)pItem, oidPossessor, x, y, bDisplayFeedback);
     return ret;
   }
 
-  public int AcquireItem(SWIGTYPE_p_p_CNWSItem pItem, uint oidPossessor, byte x, byte y) {
-    int ret = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_1(swigCPtr, SWIGTYPE_p_p_CNWSItem.getCPtr(pItem), oidPossessor, x, y);
+  public int AcquireItem(void** pItem, uint oidPossessor, byte x, byte y) {
+    int ret = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_1(swigCPtr, (global::System.IntPtr)pItem, oidPossessor, x, y);
     return ret;
   }
 
-  public int AcquireItem(SWIGTYPE_p_p_CNWSItem pItem, uint oidPossessor, byte x) {
-    int ret = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_2(swigCPtr, SWIGTYPE_p_p_CNWSItem.getCPtr(pItem), oidPossessor, x);
+  public int AcquireItem(void** pItem, uint oidPossessor, byte x) {
+    int ret = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_2(swigCPtr, (global::System.IntPtr)pItem, oidPossessor, x);
     return ret;
   }
 
-  public int AcquireItem(SWIGTYPE_p_p_CNWSItem pItem, uint oidPossessor) {
-    int ret = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_3(swigCPtr, SWIGTYPE_p_p_CNWSItem.getCPtr(pItem), oidPossessor);
+  public int AcquireItem(void** pItem, uint oidPossessor) {
+    int ret = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_3(swigCPtr, (global::System.IntPtr)pItem, oidPossessor);
     return ret;
   }
 
-  public int AcquireItem(SWIGTYPE_p_p_CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_4(swigCPtr, SWIGTYPE_p_p_CNWSItem.getCPtr(pItem));
+  public int AcquireItem(void** pItem) {
+    int ret = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_4(swigCPtr, (global::System.IntPtr)pItem);
     return ret;
   }
 
@@ -747,13 +755,13 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
     return ret;
   }
 
-  public int GetPropertyByType(SWIGTYPE_p_p_CNWItemProperty ppcItemProperty, ushort nPropertyName, ushort nSubType) {
-    int ret = NWNXLibPINVOKE.CNWSItem_GetPropertyByType__SWIG_0(swigCPtr, SWIGTYPE_p_p_CNWItemProperty.getCPtr(ppcItemProperty), nPropertyName, nSubType);
+  public int GetPropertyByType(void** ppcItemProperty, ushort nPropertyName, ushort nSubType) {
+    int ret = NWNXLibPINVOKE.CNWSItem_GetPropertyByType__SWIG_0(swigCPtr, (global::System.IntPtr)ppcItemProperty, nPropertyName, nSubType);
     return ret;
   }
 
-  public int GetPropertyByType(SWIGTYPE_p_p_CNWItemProperty ppcItemProperty, ushort nPropertyName) {
-    int ret = NWNXLibPINVOKE.CNWSItem_GetPropertyByType__SWIG_1(swigCPtr, SWIGTYPE_p_p_CNWItemProperty.getCPtr(ppcItemProperty), nPropertyName);
+  public int GetPropertyByType(void** ppcItemProperty, ushort nPropertyName) {
+    int ret = NWNXLibPINVOKE.CNWSItem_GetPropertyByType__SWIG_1(swigCPtr, (global::System.IntPtr)ppcItemProperty, nPropertyName);
     return ret;
   }
 

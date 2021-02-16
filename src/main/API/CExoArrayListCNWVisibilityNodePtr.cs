@@ -55,6 +55,14 @@ public unsafe class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposab
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListCNWVisibilityNodePtr self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListCNWVisibilityNodePtr self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListCNWVisibilityNodePtr other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,15 +91,15 @@ public unsafe class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposab
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_CNWVisibilityNode element {
+  public void** element {
     set {
-      NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_element_set(swigCPtr, SWIGTYPE_p_p_CNWVisibilityNode.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_element_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_element_get(swigCPtr);
-      SWIGTYPE_p_p_CNWVisibilityNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CNWVisibilityNode(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_element_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public int num {
@@ -130,9 +138,9 @@ public unsafe class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposab
     return ret;
   }
 
-  public SWIGTYPE_p_p_CNWVisibilityNode _OpIndex(int i) {
-    SWIGTYPE_p_p_CNWVisibilityNode ret = new SWIGTYPE_p_p_CNWVisibilityNode(NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr__OpIndex(swigCPtr, i), false);
-    return ret;
+  public void** _OpIndex(int i) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr__OpIndex(swigCPtr, i);
+    return (void**)retVal;
   }
 
   public void Allocate(int s) {
@@ -159,16 +167,14 @@ public unsafe class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposab
     NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_DelIndex(swigCPtr, i);
   }
 
-  public SWIGTYPE_p_p_CNWVisibilityNode begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_begin(swigCPtr);
-    SWIGTYPE_p_p_CNWVisibilityNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CNWVisibilityNode(cPtr, false);
-    return ret;
+  public void** begin() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_begin(swigCPtr);
+    return (void**)retVal;
   }
 
-  public SWIGTYPE_p_p_CNWVisibilityNode end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_end(swigCPtr);
-    SWIGTYPE_p_p_CNWVisibilityNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CNWVisibilityNode(cPtr, false);
-    return ret;
+  public void** end() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_end(swigCPtr);
+    return (void**)retVal;
   }
 
 }

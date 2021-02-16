@@ -44,6 +44,14 @@ public unsafe class CResNSS : CRes {
     }
   }
 
+  public static unsafe implicit operator void*(CResNSS self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CResNSS self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CResNSS other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -55,6 +55,14 @@ public unsafe class CExoArrayListCNWSStatsSpellLikeAbility : global::System.IDis
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListCNWSStatsSpellLikeAbility self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListCNWSStatsSpellLikeAbility self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListCNWSStatsSpellLikeAbility other) {
     if (ReferenceEquals(null, other)) {
       return false;

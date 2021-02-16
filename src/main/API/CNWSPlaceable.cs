@@ -44,6 +44,14 @@ public unsafe class CNWSPlaceable : CNWSObject {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSPlaceable self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSPlaceable self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSPlaceable other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -399,15 +407,16 @@ public unsafe class CNWSPlaceable : CNWSObject {
     } 
   }
 
-  public CExoString m_sScripts {
+  public CExoStringArray m_sScripts {
     set {
-      NWNXLibPINVOKE.CNWSPlaceable_m_sScripts_set(swigCPtr, CExoString.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSPlaceable_m_sScripts_set(swigCPtr, CExoStringArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlaceable_m_sScripts_get(swigCPtr);
-      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlaceable_m_sScripts_get(swigCPtr);;
+        CExoStringArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoStringArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public byte m_nFortSave {
@@ -682,15 +691,16 @@ public unsafe class CNWSPlaceable : CNWSObject {
     } 
   }
 
-  public Vector m_pvActionPoints {
+  public VectorArray m_pvActionPoints {
     set {
-      NWNXLibPINVOKE.CNWSPlaceable_m_pvActionPoints_set(swigCPtr, Vector.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSPlaceable_m_pvActionPoints_set(swigCPtr, VectorArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlaceable_m_pvActionPoints_get(swigCPtr);
-      Vector ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlaceable_m_pvActionPoints_get(swigCPtr);;
+        VectorArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new VectorArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public CResRef m_cTemplateResRef {
@@ -852,28 +862,28 @@ public unsafe class CNWSPlaceable : CNWSObject {
     NWNXLibPINVOKE.CNWSPlaceable_PostProcess(swigCPtr);
   }
 
-  public int AcquireItem(SWIGTYPE_p_p_CNWSItem pItem, uint oidPossessor, byte x, byte y, int bDisplayFeedback) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_0(swigCPtr, SWIGTYPE_p_p_CNWSItem.getCPtr(pItem), oidPossessor, x, y, bDisplayFeedback);
+  public int AcquireItem(void** pItem, uint oidPossessor, byte x, byte y, int bDisplayFeedback) {
+    int ret = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_0(swigCPtr, (global::System.IntPtr)pItem, oidPossessor, x, y, bDisplayFeedback);
     return ret;
   }
 
-  public int AcquireItem(SWIGTYPE_p_p_CNWSItem pItem, uint oidPossessor, byte x, byte y) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_1(swigCPtr, SWIGTYPE_p_p_CNWSItem.getCPtr(pItem), oidPossessor, x, y);
+  public int AcquireItem(void** pItem, uint oidPossessor, byte x, byte y) {
+    int ret = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_1(swigCPtr, (global::System.IntPtr)pItem, oidPossessor, x, y);
     return ret;
   }
 
-  public int AcquireItem(SWIGTYPE_p_p_CNWSItem pItem, uint oidPossessor, byte x) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_2(swigCPtr, SWIGTYPE_p_p_CNWSItem.getCPtr(pItem), oidPossessor, x);
+  public int AcquireItem(void** pItem, uint oidPossessor, byte x) {
+    int ret = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_2(swigCPtr, (global::System.IntPtr)pItem, oidPossessor, x);
     return ret;
   }
 
-  public int AcquireItem(SWIGTYPE_p_p_CNWSItem pItem, uint oidPossessor) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_3(swigCPtr, SWIGTYPE_p_p_CNWSItem.getCPtr(pItem), oidPossessor);
+  public int AcquireItem(void** pItem, uint oidPossessor) {
+    int ret = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_3(swigCPtr, (global::System.IntPtr)pItem, oidPossessor);
     return ret;
   }
 
-  public int AcquireItem(SWIGTYPE_p_p_CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_4(swigCPtr, SWIGTYPE_p_p_CNWSItem.getCPtr(pItem));
+  public int AcquireItem(void** pItem) {
+    int ret = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_4(swigCPtr, (global::System.IntPtr)pItem);
     return ret;
   }
 

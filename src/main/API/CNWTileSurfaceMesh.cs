@@ -55,6 +55,14 @@ public unsafe class CNWTileSurfaceMesh : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWTileSurfaceMesh self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWTileSurfaceMesh self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWTileSurfaceMesh other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -865,8 +873,8 @@ public unsafe class CNWTileSurfaceMesh : global::System.IDisposable {
     return ret;
   }
 
-  public int IntraTileDFSGenerateSuccessors(int bAdjacenciesOnly, CNWTile pTile, CNWArea pWalkGeometry, float fX, float fY, int nCurrentTriangle, CPathfindInformation pPathfindInfo, SWIGTYPE_p_p_CPathfindInfoIntraTileSuccessors pSuccessors) {
-    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_IntraTileDFSGenerateSuccessors(swigCPtr, bAdjacenciesOnly, CNWTile.getCPtr(pTile), CNWArea.getCPtr(pWalkGeometry), fX, fY, nCurrentTriangle, CPathfindInformation.getCPtr(pPathfindInfo), SWIGTYPE_p_p_CPathfindInfoIntraTileSuccessors.getCPtr(pSuccessors));
+  public int IntraTileDFSGenerateSuccessors(int bAdjacenciesOnly, CNWTile pTile, CNWArea pWalkGeometry, float fX, float fY, int nCurrentTriangle, CPathfindInformation pPathfindInfo, void** pSuccessors) {
+    int ret = NWNXLibPINVOKE.CNWTileSurfaceMesh_IntraTileDFSGenerateSuccessors(swigCPtr, bAdjacenciesOnly, CNWTile.getCPtr(pTile), CNWArea.getCPtr(pWalkGeometry), fX, fY, nCurrentTriangle, CPathfindInformation.getCPtr(pPathfindInfo), (global::System.IntPtr)pSuccessors);
     return ret;
   }
 

@@ -55,6 +55,14 @@ public unsafe class MaterialShaderParam : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(MaterialShaderParam self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(MaterialShaderParam self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(MaterialShaderParam other) {
     if (ReferenceEquals(null, other)) {
       return false;

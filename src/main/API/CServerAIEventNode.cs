@@ -55,6 +55,14 @@ public unsafe class CServerAIEventNode : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CServerAIEventNode self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CServerAIEventNode self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CServerAIEventNode other) {
     if (ReferenceEquals(null, other)) {
       return false;

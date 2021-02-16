@@ -55,6 +55,14 @@ public unsafe class CNWSPlayerJournalQuest : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSPlayerJournalQuest self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSPlayerJournalQuest self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSPlayerJournalQuest other) {
     if (ReferenceEquals(null, other)) {
       return false;

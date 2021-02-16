@@ -55,6 +55,14 @@ public unsafe class TextureReplaceInfo : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(TextureReplaceInfo self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(TextureReplaceInfo self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(TextureReplaceInfo other) {
     if (ReferenceEquals(null, other)) {
       return false;

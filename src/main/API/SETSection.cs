@@ -55,6 +55,14 @@ public unsafe class SETSection : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(SETSection self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(SETSection self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(SETSection other) {
     if (ReferenceEquals(null, other)) {
       return false;

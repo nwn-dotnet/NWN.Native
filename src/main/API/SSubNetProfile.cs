@@ -55,6 +55,14 @@ public unsafe class SSubNetProfile : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(SSubNetProfile self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(SSubNetProfile self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(SSubNetProfile other) {
     if (ReferenceEquals(null, other)) {
       return false;

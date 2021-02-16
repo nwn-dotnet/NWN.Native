@@ -55,6 +55,14 @@ public unsafe class CScriptCompilerVarStackEntry : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CScriptCompilerVarStackEntry self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CScriptCompilerVarStackEntry self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CScriptCompilerVarStackEntry other) {
     if (ReferenceEquals(null, other)) {
       return false;

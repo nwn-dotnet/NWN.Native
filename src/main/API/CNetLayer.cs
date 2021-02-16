@@ -55,6 +55,14 @@ public unsafe class CNetLayer : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNetLayer self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNetLayer self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNetLayer other) {
     if (ReferenceEquals(null, other)) {
       return false;

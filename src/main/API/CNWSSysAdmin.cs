@@ -44,6 +44,14 @@ public unsafe class CNWSSysAdmin : CNWSClient {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSSysAdmin self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSSysAdmin self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSSysAdmin other) {
     if (ReferenceEquals(null, other)) {
       return false;

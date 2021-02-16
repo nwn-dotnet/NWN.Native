@@ -31,6 +31,14 @@ public class SWIGTYPE_p_CNWCPlaceable {
     }
   }
 
+  public static unsafe implicit operator void*(SWIGTYPE_p_CNWCPlaceable self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(SWIGTYPE_p_CNWCPlaceable self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(SWIGTYPE_p_CNWCPlaceable other) {
     if (ReferenceEquals(null, other)) {
       return false;

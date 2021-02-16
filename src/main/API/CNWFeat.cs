@@ -55,6 +55,14 @@ public unsafe class CNWFeat : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWFeat self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWFeat self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWFeat other) {
     if (ReferenceEquals(null, other)) {
       return false;

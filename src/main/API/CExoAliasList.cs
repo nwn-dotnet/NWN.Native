@@ -55,6 +55,14 @@ public unsafe class CExoAliasList : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CExoAliasList self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoAliasList self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoAliasList other) {
     if (ReferenceEquals(null, other)) {
       return false;

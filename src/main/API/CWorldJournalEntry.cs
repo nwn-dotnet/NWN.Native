@@ -55,6 +55,14 @@ public unsafe class CWorldJournalEntry : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CWorldJournalEntry self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CWorldJournalEntry self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CWorldJournalEntry other) {
     if (ReferenceEquals(null, other)) {
       return false;

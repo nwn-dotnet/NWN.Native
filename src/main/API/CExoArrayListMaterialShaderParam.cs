@@ -55,6 +55,14 @@ public unsafe class CExoArrayListMaterialShaderParam : global::System.IDisposabl
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListMaterialShaderParam self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListMaterialShaderParam self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListMaterialShaderParam other) {
     if (ReferenceEquals(null, other)) {
       return false;

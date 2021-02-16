@@ -44,6 +44,14 @@ public unsafe class CRes2DA : CRes {
     }
   }
 
+  public static unsafe implicit operator void*(CRes2DA self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CRes2DA self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CRes2DA other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -55,6 +55,14 @@ public unsafe class CNWTileSurfaceMeshNodeFace : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWTileSurfaceMeshNodeFace self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWTileSurfaceMeshNodeFace self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWTileSurfaceMeshNodeFace other) {
     if (ReferenceEquals(null, other)) {
       return false;

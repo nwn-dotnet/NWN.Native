@@ -55,6 +55,14 @@ public unsafe class CExoLinkedListNode : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CExoLinkedListNode self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoLinkedListNode self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoLinkedListNode other) {
     if (ReferenceEquals(null, other)) {
       return false;

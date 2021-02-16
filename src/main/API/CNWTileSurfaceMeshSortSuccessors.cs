@@ -55,6 +55,14 @@ public unsafe class CNWTileSurfaceMeshSortSuccessors : global::System.IDisposabl
     }
   }
 
+  public static unsafe implicit operator void*(CNWTileSurfaceMeshSortSuccessors self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWTileSurfaceMeshSortSuccessors self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWTileSurfaceMeshSortSuccessors other) {
     if (ReferenceEquals(null, other)) {
       return false;

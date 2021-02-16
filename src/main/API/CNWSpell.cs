@@ -55,6 +55,14 @@ public unsafe class CNWSpell : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSpell self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSpell self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSpell other) {
     if (ReferenceEquals(null, other)) {
       return false;

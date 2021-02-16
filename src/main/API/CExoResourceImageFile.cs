@@ -44,6 +44,14 @@ public unsafe class CExoResourceImageFile : CExoPackedFile {
     }
   }
 
+  public static unsafe implicit operator void*(CExoResourceImageFile self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoResourceImageFile self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoResourceImageFile other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -170,10 +178,9 @@ public unsafe class CExoResourceImageFile : CExoPackedFile {
     return (void*)retVal;
   }
 
-  public SWIGTYPE_p_p_ENCAPSULATED_KEYLISTENTRY GetKeyList() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoResourceImageFile_GetKeyList(swigCPtr);
-    SWIGTYPE_p_p_ENCAPSULATED_KEYLISTENTRY ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_ENCAPSULATED_KEYLISTENTRY(cPtr, false);
-    return ret;
+  public void** GetKeyList() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoResourceImageFile_GetKeyList(swigCPtr);
+    return (void**)retVal;
   }
 
   public ENCAPSULATED_KEYLISTENTRY GetKeyListEntry(uint nIndex) {

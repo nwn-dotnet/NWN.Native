@@ -55,6 +55,14 @@ public unsafe class CNWSAreaGridPoint : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSAreaGridPoint self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSAreaGridPoint self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSAreaGridPoint other) {
     if (ReferenceEquals(null, other)) {
       return false;

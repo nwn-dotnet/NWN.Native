@@ -55,6 +55,14 @@ public unsafe class CTlkTable : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CTlkTable self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CTlkTable self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CTlkTable other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,26 +91,28 @@ public unsafe class CTlkTable : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_CTlkFile m_pTlkFile {
+  public CTlkFilePtrArray m_pTlkFile {
     set {
-      NWNXLibPINVOKE.CTlkTable_m_pTlkFile_set(swigCPtr, SWIGTYPE_p_p_CTlkFile.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CTlkTable_m_pTlkFile_set(swigCPtr, CTlkFilePtrArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTlkTable_m_pTlkFile_get(swigCPtr);
-      SWIGTYPE_p_p_CTlkFile ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CTlkFile(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CTlkTable_m_pTlkFile_get(swigCPtr);;
+        CTlkFilePtrArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CTlkFilePtrArray(cPtr, false);
+        return ret;
+    }
+
   }
 
-  public SWIGTYPE_p_p_CTlkFile m_pTlkFileAlternate {
+  public CTlkFilePtrArray m_pTlkFileAlternate {
     set {
-      NWNXLibPINVOKE.CTlkTable_m_pTlkFileAlternate_set(swigCPtr, SWIGTYPE_p_p_CTlkFile.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CTlkTable_m_pTlkFileAlternate_set(swigCPtr, CTlkFilePtrArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTlkTable_m_pTlkFileAlternate_get(swigCPtr);
-      SWIGTYPE_p_p_CTlkFile ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CTlkFile(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CTlkTable_m_pTlkFileAlternate_get(swigCPtr);;
+        CTlkFilePtrArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CTlkFilePtrArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public byte m_currentGender {
@@ -258,12 +268,12 @@ public unsafe class CTlkTable : global::System.IDisposable {
     return ret;
   }
 
-  public void CloseFile(SWIGTYPE_p_p_CTlkFile pTlkFile) {
-    NWNXLibPINVOKE.CTlkTable_CloseFile(swigCPtr, SWIGTYPE_p_p_CTlkFile.getCPtr(pTlkFile));
+  public void CloseFile(CTlkFilePtrArray pTlkFile) {
+    NWNXLibPINVOKE.CTlkTable_CloseFile(swigCPtr, CTlkFilePtrArray.getCPtr(pTlkFile));
   }
 
-  public int OpenFile(CExoString sFileName, SWIGTYPE_p_p_CTlkFile pTlkFile) {
-    int ret = NWNXLibPINVOKE.CTlkTable_OpenFile__SWIG_1(swigCPtr, CExoString.getCPtr(sFileName), SWIGTYPE_p_p_CTlkFile.getCPtr(pTlkFile));
+  public int OpenFile(CExoString sFileName, CTlkFilePtrArray pTlkFile) {
+    int ret = NWNXLibPINVOKE.CTlkTable_OpenFile__SWIG_1(swigCPtr, CExoString.getCPtr(sFileName), CTlkFilePtrArray.getCPtr(pTlkFile));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }

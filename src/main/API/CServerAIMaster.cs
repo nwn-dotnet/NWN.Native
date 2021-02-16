@@ -55,6 +55,14 @@ public unsafe class CServerAIMaster : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CServerAIMaster self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CServerAIMaster self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CServerAIMaster other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -94,15 +102,16 @@ public unsafe class CServerAIMaster : global::System.IDisposable {
     } 
   }
 
-  public CServerAIList m_apGameAIList {
+  public CServerAIListArray m_apGameAIList {
     set {
-      NWNXLibPINVOKE.CServerAIMaster_m_apGameAIList_set(swigCPtr, CServerAIList.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CServerAIMaster_m_apGameAIList_set(swigCPtr, CServerAIListArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerAIMaster_m_apGameAIList_get(swigCPtr);
-      CServerAIList ret = (cPtr == global::System.IntPtr.Zero) ? null : new CServerAIList(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerAIMaster_m_apGameAIList_get(swigCPtr);;
+        CServerAIListArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CServerAIListArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public CExoLinkedListCServerAIEventNode m_lEventQueue {

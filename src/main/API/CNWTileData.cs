@@ -55,6 +55,14 @@ public unsafe class CNWTileData : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWTileData self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWTileData self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWTileData other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -55,6 +55,14 @@ public unsafe class CNWSTransition : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSTransition self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSTransition self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSTransition other) {
     if (ReferenceEquals(null, other)) {
       return false;

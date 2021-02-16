@@ -55,6 +55,14 @@ public unsafe class CNWSExpressionNode : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSExpressionNode self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSExpressionNode self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSExpressionNode other) {
     if (ReferenceEquals(null, other)) {
       return false;

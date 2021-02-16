@@ -55,6 +55,14 @@ public unsafe class NWSyncAdvertisement : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(NWSyncAdvertisement self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(NWSyncAdvertisement self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(NWSyncAdvertisement other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -55,6 +55,14 @@ public unsafe class CWalkHitInfo : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CWalkHitInfo self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CWalkHitInfo self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CWalkHitInfo other) {
     if (ReferenceEquals(null, other)) {
       return false;

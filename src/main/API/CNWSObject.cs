@@ -60,6 +60,14 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSObject self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSObject self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSObject other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -1487,8 +1495,8 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     return ret;
   }
 
-  public ushort GetActionByGroupId(ushort nGroupId, SWIGTYPE_p_p_CNWSObjectActionNode pReturnNode) {
-    ushort ret = NWNXLibPINVOKE.CNWSObject_GetActionByGroupId(swigCPtr, nGroupId, SWIGTYPE_p_p_CNWSObjectActionNode.getCPtr(pReturnNode));
+  public ushort GetActionByGroupId(ushort nGroupId, void** pReturnNode) {
+    ushort ret = NWNXLibPINVOKE.CNWSObject_GetActionByGroupId(swigCPtr, nGroupId, (global::System.IntPtr)pReturnNode);
     return ret;
   }
 

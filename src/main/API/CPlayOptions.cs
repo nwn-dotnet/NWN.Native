@@ -55,6 +55,14 @@ public unsafe class CPlayOptions : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CPlayOptions self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CPlayOptions self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CPlayOptions other) {
     if (ReferenceEquals(null, other)) {
       return false;

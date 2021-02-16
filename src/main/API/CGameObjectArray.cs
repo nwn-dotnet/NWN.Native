@@ -55,6 +55,14 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CGameObjectArray self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CGameObjectArray self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CGameObjectArray other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,15 +91,15 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_CGameObjectArrayNode m_pArray {
+  public void** m_pArray {
     set {
-      NWNXLibPINVOKE.CGameObjectArray_m_pArray_set(swigCPtr, SWIGTYPE_p_p_CGameObjectArrayNode.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CGameObjectArray_m_pArray_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CGameObjectArray_m_pArray_get(swigCPtr);
-      SWIGTYPE_p_p_CGameObjectArrayNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CGameObjectArrayNode(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CGameObjectArray_m_pArray_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public uint[] m_nNextObjectArrayID {
@@ -201,13 +209,13 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
     return ret;
   }
 
-  public byte Delete(uint ID, SWIGTYPE_p_p_CGameObject ptr) {
-    byte ret = NWNXLibPINVOKE.CGameObjectArray_Delete__SWIG_1(swigCPtr, ID, SWIGTYPE_p_p_CGameObject.getCPtr(ptr));
+  public byte Delete(uint ID, void** ptr) {
+    byte ret = NWNXLibPINVOKE.CGameObjectArray_Delete__SWIG_1(swigCPtr, ID, (global::System.IntPtr)ptr);
     return ret;
   }
 
-  public byte GetGameObject(uint ID, SWIGTYPE_p_p_CGameObject ptr) {
-    byte ret = NWNXLibPINVOKE.CGameObjectArray_GetGameObject(swigCPtr, ID, SWIGTYPE_p_p_CGameObject.getCPtr(ptr));
+  public byte GetGameObject(uint ID, void** ptr) {
+    byte ret = NWNXLibPINVOKE.CGameObjectArray_GetGameObject(swigCPtr, ID, (global::System.IntPtr)ptr);
     return ret;
   }
 

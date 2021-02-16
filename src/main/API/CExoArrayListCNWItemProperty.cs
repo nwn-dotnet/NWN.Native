@@ -55,6 +55,14 @@ public unsafe class CExoArrayListCNWItemProperty : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListCNWItemProperty self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListCNWItemProperty self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListCNWItemProperty other) {
     if (ReferenceEquals(null, other)) {
       return false;

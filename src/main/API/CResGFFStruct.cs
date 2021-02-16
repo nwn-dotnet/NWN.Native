@@ -55,6 +55,14 @@ public unsafe class CResGFFStruct : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CResGFFStruct self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CResGFFStruct self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CResGFFStruct other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -55,6 +55,14 @@ public unsafe class CNWCreatureStatsUpdate : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWCreatureStatsUpdate self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWCreatureStatsUpdate self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWCreatureStatsUpdate other) {
     if (ReferenceEquals(null, other)) {
       return false;

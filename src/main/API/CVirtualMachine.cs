@@ -55,6 +55,14 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CVirtualMachine self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CVirtualMachine self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CVirtualMachine other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -135,15 +143,16 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
     } 
   }
 
-  public CVirtualMachineScript m_pVirtualMachineScript {
+  public CVirtualMachineScriptArray m_pVirtualMachineScript {
     set {
-      NWNXLibPINVOKE.CVirtualMachine_m_pVirtualMachineScript_set(swigCPtr, CVirtualMachineScript.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CVirtualMachine_m_pVirtualMachineScript_set(swigCPtr, CVirtualMachineScriptArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachine_m_pVirtualMachineScript_get(swigCPtr);
-      CVirtualMachineScript ret = (cPtr == global::System.IntPtr.Zero) ? null : new CVirtualMachineScript(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachine_m_pVirtualMachineScript_get(swigCPtr);;
+        CVirtualMachineScriptArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CVirtualMachineScriptArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public int[] m_bValidObjectRunScript {
@@ -168,15 +177,16 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
 
   }
 
-  public CExoArrayListScriptParam m_lScriptParams {
+  public CExoArrayListScriptParamArray m_lScriptParams {
     set {
-      NWNXLibPINVOKE.CVirtualMachine_m_lScriptParams_set(swigCPtr, CExoArrayListScriptParam.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CVirtualMachine_m_lScriptParams_set(swigCPtr, CExoArrayListScriptParamArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachine_m_lScriptParams_get(swigCPtr);
-      CExoArrayListScriptParam ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListScriptParam(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachine_m_lScriptParams_get(swigCPtr);;
+        CExoArrayListScriptParamArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListScriptParamArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public CVirtualMachineStack m_cRunTimeStack {
@@ -554,8 +564,8 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
     NWNXLibPINVOKE.CVirtualMachine_Debugger(swigCPtr, (global::System.IntPtr)pnCurrentInstructionPointer);
   }
 
-  public int StackPopCommand_Internal(SWIGTYPE_p_p_CVirtualMachineScript pScript) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_StackPopCommand_Internal(swigCPtr, SWIGTYPE_p_p_CVirtualMachineScript.getCPtr(pScript));
+  public int StackPopCommand_Internal(void** pScript) {
+    int ret = NWNXLibPINVOKE.CVirtualMachine_StackPopCommand_Internal(swigCPtr, (global::System.IntPtr)pScript);
     return ret;
   }
 
@@ -564,8 +574,8 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
     return ret;
   }
 
-  public int LoadScriptSituation_Internal(SWIGTYPE_p_p_CVirtualMachineScript pScript, CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_LoadScriptSituation_Internal(swigCPtr, SWIGTYPE_p_p_CVirtualMachineScript.getCPtr(pScript), CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+  public int LoadScriptSituation_Internal(void** pScript, CResGFF pRes, CResStruct pStruct) {
+    int ret = NWNXLibPINVOKE.CVirtualMachine_LoadScriptSituation_Internal(swigCPtr, (global::System.IntPtr)pScript, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
     return ret;
   }
 

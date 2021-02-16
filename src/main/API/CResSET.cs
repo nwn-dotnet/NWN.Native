@@ -44,6 +44,14 @@ public unsafe class CResSET : CRes {
     }
   }
 
+  public static unsafe implicit operator void*(CResSET self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CResSET self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CResSET other) {
     if (ReferenceEquals(null, other)) {
       return false;

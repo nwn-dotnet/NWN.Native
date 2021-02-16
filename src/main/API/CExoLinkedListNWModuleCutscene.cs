@@ -55,6 +55,14 @@ public unsafe class CExoLinkedListNWModuleCutscene : global::System.IDisposable 
     }
   }
 
+  public static unsafe implicit operator void*(CExoLinkedListNWModuleCutscene self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoLinkedListNWModuleCutscene self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoLinkedListNWModuleCutscene other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -144,17 +152,15 @@ public unsafe class CExoLinkedListNWModuleCutscene : global::System.IDisposable 
     return ret;
   }
 
-  public NWMODULECUTSCENE GetNext(SWIGTYPE_p_p_CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListNWModuleCutscene_GetNext(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
+  public NWMODULECUTSCENE GetNext(void** Position) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListNWModuleCutscene_GetNext(swigCPtr, (global::System.IntPtr)Position);
     NWMODULECUTSCENE ret = (cPtr == global::System.IntPtr.Zero) ? null : new NWMODULECUTSCENE(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public NWMODULECUTSCENE GetPrev(SWIGTYPE_p_p_CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListNWModuleCutscene_GetPrev(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
+  public NWMODULECUTSCENE GetPrev(void** Position) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListNWModuleCutscene_GetPrev(swigCPtr, (global::System.IntPtr)Position);
     NWMODULECUTSCENE ret = (cPtr == global::System.IntPtr.Zero) ? null : new NWMODULECUTSCENE(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 

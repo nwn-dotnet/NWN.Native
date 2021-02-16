@@ -55,6 +55,14 @@ public unsafe class CPathfindInformation : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CPathfindInformation self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CPathfindInformation self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CPathfindInformation other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -654,15 +662,15 @@ public unsafe class CPathfindInformation : global::System.IDisposable {
 
   }
 
-  public SWIGTYPE_p_p_CPathfindInfoIntraTileSuccessors m_pcFirstTileFValueComputedAlternatives {
+  public void** m_pcFirstTileFValueComputedAlternatives {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_pcFirstTileFValueComputedAlternatives_set(swigCPtr, SWIGTYPE_p_p_CPathfindInfoIntraTileSuccessors.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CPathfindInformation_m_pcFirstTileFValueComputedAlternatives_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_pcFirstTileFValueComputedAlternatives_get(swigCPtr);
-      SWIGTYPE_p_p_CPathfindInfoIntraTileSuccessors ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CPathfindInfoIntraTileSuccessors(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CPathfindInformation_m_pcFirstTileFValueComputedAlternatives_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public CNWTileSurfaceMeshHashTableEntry m_pcFirstTileHashTable {
@@ -1151,8 +1159,8 @@ public unsafe class CPathfindInformation : global::System.IDisposable {
     NWNXLibPINVOKE.CPathfindInformation_FlipTempEndPoints(swigCPtr);
   }
 
-  public void GetFirstTileFValueAlternatives(int level, int* nCurrentAlternative, int* nAlternatives, SWIGTYPE_p_p_CPathfindInfoIntraTileSuccessors pSuccessors) {
-    NWNXLibPINVOKE.CPathfindInformation_GetFirstTileFValueAlternatives(swigCPtr, level, (global::System.IntPtr)nCurrentAlternative, (global::System.IntPtr)nAlternatives, SWIGTYPE_p_p_CPathfindInfoIntraTileSuccessors.getCPtr(pSuccessors));
+  public void GetFirstTileFValueAlternatives(int level, int* nCurrentAlternative, int* nAlternatives, void** pSuccessors) {
+    NWNXLibPINVOKE.CPathfindInformation_GetFirstTileFValueAlternatives(swigCPtr, level, (global::System.IntPtr)nCurrentAlternative, (global::System.IntPtr)nAlternatives, (global::System.IntPtr)pSuccessors);
   }
 
   public void SetFirstTileFValueAlternatives(int level, int nCurrentAlternative, int nAlternatives, CPathfindInfoIntraTileSuccessors pSuccessors) {

@@ -55,6 +55,14 @@ public unsafe class KEYFILE_KEYENTRY : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(KEYFILE_KEYENTRY self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(KEYFILE_KEYENTRY self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(KEYFILE_KEYENTRY other) {
     if (ReferenceEquals(null, other)) {
       return false;

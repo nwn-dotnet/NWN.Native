@@ -55,6 +55,14 @@ public unsafe class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListCNWSPlayerJournalQuestUpdates self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListCNWSPlayerJournalQuestUpdates self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListCNWSPlayerJournalQuestUpdates other) {
     if (ReferenceEquals(null, other)) {
       return false;

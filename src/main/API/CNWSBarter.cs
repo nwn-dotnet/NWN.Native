@@ -55,6 +55,14 @@ public unsafe class CNWSBarter : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSBarter self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSBarter self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSBarter other) {
     if (ReferenceEquals(null, other)) {
       return false;

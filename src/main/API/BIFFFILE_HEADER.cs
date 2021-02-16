@@ -55,6 +55,14 @@ public unsafe class BIFFFILE_HEADER : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(BIFFFILE_HEADER self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(BIFFFILE_HEADER self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(BIFFFILE_HEADER other) {
     if (ReferenceEquals(null, other)) {
       return false;

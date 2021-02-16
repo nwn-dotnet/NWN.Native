@@ -55,6 +55,14 @@ public unsafe class C2DA : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(C2DA self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(C2DA self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(C2DA other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -116,15 +124,15 @@ public unsafe class C2DA : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_p_CExoString m_pArrayData {
+  public void** m_pArrayData {
     set {
-      NWNXLibPINVOKE.C2DA_m_pArrayData_set(swigCPtr, SWIGTYPE_p_p_CExoString.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.C2DA_m_pArrayData_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.C2DA_m_pArrayData_get(swigCPtr);
-      SWIGTYPE_p_p_CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CExoString(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.C2DA_m_pArrayData_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public int m_nNumRows {

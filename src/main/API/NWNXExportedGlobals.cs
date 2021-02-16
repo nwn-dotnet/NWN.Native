@@ -55,6 +55,14 @@ public unsafe class NWNXExportedGlobals : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(NWNXExportedGlobals self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(NWNXExportedGlobals self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(NWNXExportedGlobals other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -105,92 +113,92 @@ public unsafe class NWNXExportedGlobals : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_p_CExoBase ppExoBase {
+  public void** ppExoBase {
     set {
-      NWNXLibPINVOKE.NWNXExportedGlobals_ppExoBase_set(swigCPtr, SWIGTYPE_p_p_CExoBase.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.NWNXExportedGlobals_ppExoBase_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.NWNXExportedGlobals_ppExoBase_get(swigCPtr);
-      SWIGTYPE_p_p_CExoBase ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CExoBase(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppExoBase_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_p_CExoResMan ppExoResMan {
+  public void** ppExoResMan {
     set {
-      NWNXLibPINVOKE.NWNXExportedGlobals_ppExoResMan_set(swigCPtr, SWIGTYPE_p_p_CExoResMan.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.NWNXExportedGlobals_ppExoResMan_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.NWNXExportedGlobals_ppExoResMan_get(swigCPtr);
-      SWIGTYPE_p_p_CExoResMan ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CExoResMan(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppExoResMan_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_p_CVirtualMachine ppVirtualMachine {
+  public void** ppVirtualMachine {
     set {
-      NWNXLibPINVOKE.NWNXExportedGlobals_ppVirtualMachine_set(swigCPtr, SWIGTYPE_p_p_CVirtualMachine.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.NWNXExportedGlobals_ppVirtualMachine_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.NWNXExportedGlobals_ppVirtualMachine_get(swigCPtr);
-      SWIGTYPE_p_p_CVirtualMachine ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CVirtualMachine(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppVirtualMachine_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_p_CScriptCompiler ppScriptCompiler {
+  public void** ppScriptCompiler {
     set {
-      NWNXLibPINVOKE.NWNXExportedGlobals_ppScriptCompiler_set(swigCPtr, SWIGTYPE_p_p_CScriptCompiler.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.NWNXExportedGlobals_ppScriptCompiler_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.NWNXExportedGlobals_ppScriptCompiler_get(swigCPtr);
-      SWIGTYPE_p_p_CScriptCompiler ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CScriptCompiler(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppScriptCompiler_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_p_CAppManager ppAppManager {
+  public void** ppAppManager {
     set {
-      NWNXLibPINVOKE.NWNXExportedGlobals_ppAppManager_set(swigCPtr, SWIGTYPE_p_p_CAppManager.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.NWNXExportedGlobals_ppAppManager_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.NWNXExportedGlobals_ppAppManager_get(swigCPtr);
-      SWIGTYPE_p_p_CAppManager ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CAppManager(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppAppManager_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_p_CTlkTable ppTlkTable {
+  public void** ppTlkTable {
     set {
-      NWNXLibPINVOKE.NWNXExportedGlobals_ppTlkTable_set(swigCPtr, SWIGTYPE_p_p_CTlkTable.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.NWNXExportedGlobals_ppTlkTable_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.NWNXExportedGlobals_ppTlkTable_get(swigCPtr);
-      SWIGTYPE_p_p_CTlkTable ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CTlkTable(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppTlkTable_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_p_CNWRules ppRules {
+  public void** ppRules {
     set {
-      NWNXLibPINVOKE.NWNXExportedGlobals_ppRules_set(swigCPtr, SWIGTYPE_p_p_CNWRules.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.NWNXExportedGlobals_ppRules_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.NWNXExportedGlobals_ppRules_get(swigCPtr);
-      SWIGTYPE_p_p_CNWRules ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CNWRules(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppRules_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
-  public SWIGTYPE_p_p_Task__CExoTaskManager ppExoTaskManager {
+  public void** ppExoTaskManager {
     set {
-      NWNXLibPINVOKE.NWNXExportedGlobals_ppExoTaskManager_set(swigCPtr, SWIGTYPE_p_p_Task__CExoTaskManager.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.NWNXExportedGlobals_ppExoTaskManager_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.NWNXExportedGlobals_ppExoTaskManager_get(swigCPtr);
-      SWIGTYPE_p_p_Task__CExoTaskManager ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_Task__CExoTaskManager(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppExoTaskManager_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public int* pbEnableCombatDebugging {

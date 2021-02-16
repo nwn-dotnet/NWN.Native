@@ -55,6 +55,14 @@ public unsafe class CNWTileSurfaceMeshLocalInfo : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWTileSurfaceMeshLocalInfo self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWTileSurfaceMeshLocalInfo self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWTileSurfaceMeshLocalInfo other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -94,15 +102,16 @@ public unsafe class CNWTileSurfaceMeshLocalInfo : global::System.IDisposable {
 
   }
 
-  public Vector pfVertex {
+  public VectorArray pfVertex {
     set {
-      NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pfVertex_set(swigCPtr, Vector.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pfVertex_set(swigCPtr, VectorArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pfVertex_get(swigCPtr);
-      Vector ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pfVertex_get(swigCPtr);;
+        VectorArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new VectorArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public int[] pnVertexIndex {

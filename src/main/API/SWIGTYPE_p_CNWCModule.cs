@@ -31,6 +31,14 @@ public class SWIGTYPE_p_CNWCModule {
     }
   }
 
+  public static unsafe implicit operator void*(SWIGTYPE_p_CNWCModule self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(SWIGTYPE_p_CNWCModule self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(SWIGTYPE_p_CNWCModule other) {
     if (ReferenceEquals(null, other)) {
       return false;

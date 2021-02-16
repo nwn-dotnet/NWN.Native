@@ -55,6 +55,14 @@ public unsafe class CExoArrayListCNWSExpressionPtr : global::System.IDisposable 
     }
   }
 
+  public static unsafe implicit operator void*(CExoArrayListCNWSExpressionPtr self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoArrayListCNWSExpressionPtr self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoArrayListCNWSExpressionPtr other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,15 +91,15 @@ public unsafe class CExoArrayListCNWSExpressionPtr : global::System.IDisposable 
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_CNWSExpression element {
+  public void** element {
     set {
-      NWNXLibPINVOKE.CExoArrayListCNWSExpressionPtr_element_set(swigCPtr, SWIGTYPE_p_p_CNWSExpression.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CExoArrayListCNWSExpressionPtr_element_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSExpressionPtr_element_get(swigCPtr);
-      SWIGTYPE_p_p_CNWSExpression ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CNWSExpression(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWSExpressionPtr_element_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public int num {
@@ -130,9 +138,9 @@ public unsafe class CExoArrayListCNWSExpressionPtr : global::System.IDisposable 
     return ret;
   }
 
-  public SWIGTYPE_p_p_CNWSExpression _OpIndex(int i) {
-    SWIGTYPE_p_p_CNWSExpression ret = new SWIGTYPE_p_p_CNWSExpression(NWNXLibPINVOKE.CExoArrayListCNWSExpressionPtr__OpIndex(swigCPtr, i), false);
-    return ret;
+  public void** _OpIndex(int i) { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWSExpressionPtr__OpIndex(swigCPtr, i);
+    return (void**)retVal;
   }
 
   public void Allocate(int s) {
@@ -159,16 +167,14 @@ public unsafe class CExoArrayListCNWSExpressionPtr : global::System.IDisposable 
     NWNXLibPINVOKE.CExoArrayListCNWSExpressionPtr_DelIndex(swigCPtr, i);
   }
 
-  public SWIGTYPE_p_p_CNWSExpression begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSExpressionPtr_begin(swigCPtr);
-    SWIGTYPE_p_p_CNWSExpression ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CNWSExpression(cPtr, false);
-    return ret;
+  public void** begin() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWSExpressionPtr_begin(swigCPtr);
+    return (void**)retVal;
   }
 
-  public SWIGTYPE_p_p_CNWSExpression end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSExpressionPtr_end(swigCPtr);
-    SWIGTYPE_p_p_CNWSExpression ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_CNWSExpression(cPtr, false);
-    return ret;
+  public void** end() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWSExpressionPtr_end(swigCPtr);
+    return (void**)retVal;
   }
 
 }

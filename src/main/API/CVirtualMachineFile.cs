@@ -55,6 +55,14 @@ public unsafe class CVirtualMachineFile : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CVirtualMachineFile self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CVirtualMachineFile self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CVirtualMachineFile other) {
     if (ReferenceEquals(null, other)) {
       return false;

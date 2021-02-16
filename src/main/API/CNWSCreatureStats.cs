@@ -55,6 +55,14 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSCreatureStats self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSCreatureStats self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSCreatureStats other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -353,15 +361,16 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
     } 
   }
 
-  public CNWSCreatureStats_ClassInfo m_ClassInfo {
+  public CNWSCreatureStats_ClassInfoArray m_ClassInfo {
     set {
-      NWNXLibPINVOKE.CNWSCreatureStats_m_ClassInfo_set(swigCPtr, CNWSCreatureStats_ClassInfo.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSCreatureStats_m_ClassInfo_set(swigCPtr, CNWSCreatureStats_ClassInfoArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreatureStats_m_ClassInfo_get(swigCPtr);
-      CNWSCreatureStats_ClassInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSCreatureStats_ClassInfo(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreatureStats_m_ClassInfo_get(swigCPtr);;
+        CNWSCreatureStats_ClassInfoArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSCreatureStats_ClassInfoArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public ushort m_nRace {

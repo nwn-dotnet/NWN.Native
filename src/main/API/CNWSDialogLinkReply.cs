@@ -55,6 +55,14 @@ public unsafe class CNWSDialogLinkReply : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSDialogLinkReply self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSDialogLinkReply self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSDialogLinkReply other) {
     if (ReferenceEquals(null, other)) {
       return false;

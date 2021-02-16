@@ -55,6 +55,14 @@ public unsafe class CWorldTimer : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CWorldTimer self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CWorldTimer self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CWorldTimer other) {
     if (ReferenceEquals(null, other)) {
       return false;

@@ -55,6 +55,14 @@ public unsafe class CEncounterListEntry : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CEncounterListEntry self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CEncounterListEntry self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CEncounterListEntry other) {
     if (ReferenceEquals(null, other)) {
       return false;

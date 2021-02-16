@@ -55,6 +55,14 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWSCombatRound self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWSCombatRound self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWSCombatRound other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,15 +91,16 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public CNWSCombatAttackData m_pcLastAttack {
+  public CNWSCombatAttackDataArray m_pcLastAttack {
     set {
-      NWNXLibPINVOKE.CNWSCombatRound_m_pcLastAttack_set(swigCPtr, CNWSCombatAttackData.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CNWSCombatRound_m_pcLastAttack_set(swigCPtr, CNWSCombatAttackDataArray.getCPtr(value));
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCombatRound_m_pcLastAttack_get(swigCPtr);
-      CNWSCombatAttackData ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSCombatAttackData(cPtr, false);
-      return ret;
-    } 
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCombatRound_m_pcLastAttack_get(swigCPtr);;
+        CNWSCombatAttackDataArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSCombatAttackDataArray(cPtr, false);
+        return ret;
+    }
+
   }
 
   public CExoArrayListUInt16 m_nSpecialAttacks {

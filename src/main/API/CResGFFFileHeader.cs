@@ -55,6 +55,14 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CResGFFFileHeader self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CResGFFFileHeader self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CResGFFFileHeader other) {
     if (ReferenceEquals(null, other)) {
       return false;

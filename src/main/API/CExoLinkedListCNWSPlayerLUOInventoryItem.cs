@@ -55,6 +55,14 @@ public unsafe class CExoLinkedListCNWSPlayerLUOInventoryItem : global::System.ID
     }
   }
 
+  public static unsafe implicit operator void*(CExoLinkedListCNWSPlayerLUOInventoryItem self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CExoLinkedListCNWSPlayerLUOInventoryItem self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CExoLinkedListCNWSPlayerLUOInventoryItem other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -144,17 +152,15 @@ public unsafe class CExoLinkedListCNWSPlayerLUOInventoryItem : global::System.ID
     return ret;
   }
 
-  public CNWSPlayerLUOInventoryItem GetNext(SWIGTYPE_p_p_CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCNWSPlayerLUOInventoryItem_GetNext(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
+  public CNWSPlayerLUOInventoryItem GetNext(void** Position) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCNWSPlayerLUOInventoryItem_GetNext(swigCPtr, (global::System.IntPtr)Position);
     CNWSPlayerLUOInventoryItem ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSPlayerLUOInventoryItem(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CNWSPlayerLUOInventoryItem GetPrev(SWIGTYPE_p_p_CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCNWSPlayerLUOInventoryItem_GetPrev(swigCPtr, SWIGTYPE_p_p_CExoLinkedListNode.getCPtr(Position));
+  public CNWSPlayerLUOInventoryItem GetPrev(void** Position) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListCNWSPlayerLUOInventoryItem_GetPrev(swigCPtr, (global::System.IntPtr)Position);
     CNWSPlayerLUOInventoryItem ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSPlayerLUOInventoryItem(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 

@@ -55,6 +55,14 @@ public unsafe class CScriptEvent : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CScriptEvent self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CScriptEvent self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CScriptEvent other) {
     if (ReferenceEquals(null, other)) {
       return false;

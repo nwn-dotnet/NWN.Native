@@ -55,6 +55,14 @@ public unsafe class CNWRules : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CNWRules self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CNWRules self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CNWRules other) {
     if (ReferenceEquals(null, other)) {
       return false;

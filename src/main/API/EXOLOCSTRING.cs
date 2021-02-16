@@ -55,6 +55,14 @@ public unsafe class EXOLOCSTRING : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(EXOLOCSTRING self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(EXOLOCSTRING self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(EXOLOCSTRING other) {
     if (ReferenceEquals(null, other)) {
       return false;

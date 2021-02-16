@@ -55,6 +55,14 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
     }
   }
 
+  public static unsafe implicit operator void*(CTwoDimArrays self) {
+    return (void*)self.swigCPtr.Handle;
+  }
+
+  public static implicit operator System.IntPtr(CTwoDimArrays self) {
+    return self.swigCPtr.Handle;
+  }
+
   public bool Equals(CTwoDimArrays other) {
     if (ReferenceEquals(null, other)) {
       return false;
@@ -83,15 +91,15 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_C2DA m_paIPRPCostTables {
+  public void** m_paIPRPCostTables {
     set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_paIPRPCostTables_set(swigCPtr, SWIGTYPE_p_p_C2DA.getCPtr(value));
-    } 
+      NWNXLibPINVOKE.CTwoDimArrays_m_paIPRPCostTables_set(swigCPtr, (global::System.IntPtr)value);
+    }  
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_paIPRPCostTables_get(swigCPtr);
-      SWIGTYPE_p_p_C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_C2DA(cPtr, false);
-      return ret;
-    } 
+        System.IntPtr retVal = NWNXLibPINVOKE.CTwoDimArrays_m_paIPRPCostTables_get(swigCPtr); 
+        return (void**)retVal; 
+    }
+
   }
 
   public byte m_nNumIPRPCostTables {
