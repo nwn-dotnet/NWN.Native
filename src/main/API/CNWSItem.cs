@@ -100,8 +100,14 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_pLastUsedActivePropertyUsesLeft_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CNWSItem_m_pLastUsedActivePropertyUsesLeft_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CNWSItem_m_pLastUsedActivePropertyUsesLeft_get(swigCPtr);
+      byte[] retVal = new byte[8];
+
+      for(int i = 0; i < 8; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -213,8 +219,14 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nModelPart_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CNWSItem_m_nModelPart_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CNWSItem_m_nModelPart_get(swigCPtr);
+      byte[] retVal = new byte[3];
+
+      for(int i = 0; i < 3; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -224,8 +236,14 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nArmorModelPart_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CNWSItem_m_nArmorModelPart_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CNWSItem_m_nArmorModelPart_get(swigCPtr);
+      byte[] retVal = new byte[19];
+
+      for(int i = 0; i < 19; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -235,8 +253,14 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nUnalteredArmorModelPart_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CNWSItem_m_nUnalteredArmorModelPart_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CNWSItem_m_nUnalteredArmorModelPart_get(swigCPtr);
+      byte[] retVal = new byte[19];
+
+      for(int i = 0; i < 19; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -810,8 +834,14 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nLayeredTextureColors_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CNWSItem_m_nLayeredTextureColors_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CNWSItem_m_nLayeredTextureColors_get(swigCPtr);
+      byte[] retVal = new byte[6];
+
+      for(int i = 0; i < 6; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -821,8 +851,14 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_pLayeredTextureColorsPerPart_set(swigCPtr, value);
     }  
     get {
-        byte*[] retVal = NWNXLibPINVOKE.CNWSItem_m_pLayeredTextureColorsPerPart_get(swigCPtr);
-        return retVal;
+      byte** arrayPtr = NWNXLibPINVOKE.CNWSItem_m_pLayeredTextureColorsPerPart_get(swigCPtr);
+      byte*[] retVal = new byte*[6];
+
+      for(int i = 0; i < 6; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

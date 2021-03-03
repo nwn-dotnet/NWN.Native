@@ -416,8 +416,14 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_bPartEnvMap_set(swigCPtr, value);
     }  
     get {
-        int[] retVal = NWNXLibPINVOKE.CNWBaseItem_m_bPartEnvMap_get(swigCPtr);
-        return retVal;
+      int* arrayPtr = NWNXLibPINVOKE.CNWBaseItem_m_bPartEnvMap_get(swigCPtr);
+      int[] retVal = new int[3];
+
+      for(int i = 0; i < 3; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

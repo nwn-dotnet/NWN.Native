@@ -96,8 +96,14 @@ public unsafe class CNWRules : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRules_m_fRangeTypes_set(swigCPtr, value);
     }  
     get {
-        float[] retVal = NWNXLibPINVOKE.CNWRules_m_fRangeTypes_get(swigCPtr);
-        return retVal;
+      float* arrayPtr = NWNXLibPINVOKE.CNWRules_m_fRangeTypes_get(swigCPtr);
+      float[] retVal = new float[5];
+
+      for(int i = 0; i < 5; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -118,8 +124,14 @@ public unsafe class CNWRules : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRules_m_nExperienceTable_set(swigCPtr, value);
     }  
     get {
-        uint[] retVal = NWNXLibPINVOKE.CNWRules_m_nExperienceTable_get(swigCPtr);
-        return retVal;
+      uint* arrayPtr = NWNXLibPINVOKE.CNWRules_m_nExperienceTable_get(swigCPtr);
+      uint[] retVal = new uint[40+1];
+
+      for(int i = 0; i < 40+1; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

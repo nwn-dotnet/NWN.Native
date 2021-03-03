@@ -127,8 +127,14 @@ public unsafe class CNWDomain : global::System.IDisposable {
       NWNXLibPINVOKE.CNWDomain_m_lstSpells_set(swigCPtr, value);
     }  
     get {
-        uint[] retVal = NWNXLibPINVOKE.CNWDomain_m_lstSpells_get(swigCPtr);
-        return retVal;
+      uint* arrayPtr = NWNXLibPINVOKE.CNWDomain_m_lstSpells_get(swigCPtr);
+      uint[] retVal = new uint[10];
+
+      for(int i = 0; i < 10; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

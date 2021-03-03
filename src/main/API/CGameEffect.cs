@@ -249,8 +249,14 @@ public unsafe class CGameEffect : global::System.IDisposable {
       NWNXLibPINVOKE.CGameEffect_m_nParamFloat_set(swigCPtr, value);
     }  
     get {
-        float[] retVal = NWNXLibPINVOKE.CGameEffect_m_nParamFloat_get(swigCPtr);
-        return retVal;
+      float* arrayPtr = NWNXLibPINVOKE.CGameEffect_m_nParamFloat_get(swigCPtr);
+      float[] retVal = new float[4];
+
+      for(int i = 0; i < 4; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -272,8 +278,14 @@ public unsafe class CGameEffect : global::System.IDisposable {
       NWNXLibPINVOKE.CGameEffect_m_oidParamObjectID_set(swigCPtr, value);
     }  
     get {
-        uint[] retVal = NWNXLibPINVOKE.CGameEffect_m_oidParamObjectID_get(swigCPtr);
-        return retVal;
+      uint* arrayPtr = NWNXLibPINVOKE.CGameEffect_m_oidParamObjectID_get(swigCPtr);
+      uint[] retVal = new uint[4];
+
+      for(int i = 0; i < 4; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

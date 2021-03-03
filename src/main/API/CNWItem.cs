@@ -101,8 +101,14 @@ public unsafe class CNWItem : ICNWItem, global::System.IDisposable {
       NWNXLibPINVOKE.CNWItem_m_nLayeredTextureColors_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CNWItem_m_nLayeredTextureColors_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CNWItem_m_nLayeredTextureColors_get(swigCPtr);
+      byte[] retVal = new byte[6];
+
+      for(int i = 0; i < 6; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -112,8 +118,14 @@ public unsafe class CNWItem : ICNWItem, global::System.IDisposable {
       NWNXLibPINVOKE.CNWItem_m_pLayeredTextureColorsPerPart_set(swigCPtr, value);
     }  
     get {
-        byte*[] retVal = NWNXLibPINVOKE.CNWItem_m_pLayeredTextureColorsPerPart_get(swigCPtr);
-        return retVal;
+      byte** arrayPtr = NWNXLibPINVOKE.CNWItem_m_pLayeredTextureColorsPerPart_get(swigCPtr);
+      byte*[] retVal = new byte*[6];
+
+      for(int i = 0; i < 6; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

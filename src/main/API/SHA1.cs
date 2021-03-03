@@ -106,8 +106,14 @@ public unsafe class SHA1 : global::System.IDisposable {
       NWNXLibPINVOKE.SHA1_m_data_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.SHA1_m_data_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.SHA1_m_data_get(swigCPtr);
+      byte[] retVal = new byte[20];
+
+      for(int i = 0; i < 20; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

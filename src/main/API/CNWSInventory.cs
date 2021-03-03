@@ -96,8 +96,14 @@ public unsafe class CNWSInventory : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSInventory_m_pEquipSlot_set(swigCPtr, value);
     }  
     get {
-        uint[] retVal = NWNXLibPINVOKE.CNWSInventory_m_pEquipSlot_get(swigCPtr);
-        return retVal;
+      uint* arrayPtr = NWNXLibPINVOKE.CNWSInventory_m_pEquipSlot_get(swigCPtr);
+      uint[] retVal = new uint[18];
+
+      for(int i = 0; i < 18; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

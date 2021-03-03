@@ -196,8 +196,14 @@ public unsafe class CNWSCombatAttackData : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatAttackData_m_nDamage_set(swigCPtr, value);
     }  
     get {
-        short[] retVal = NWNXLibPINVOKE.CNWSCombatAttackData_m_nDamage_get(swigCPtr);
-        return retVal;
+      short* arrayPtr = NWNXLibPINVOKE.CNWSCombatAttackData_m_nDamage_get(swigCPtr);
+      short[] retVal = new short[13];
+
+      for(int i = 0; i < 13; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

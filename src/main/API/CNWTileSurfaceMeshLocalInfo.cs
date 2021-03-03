@@ -96,8 +96,14 @@ public unsafe class CNWTileSurfaceMeshLocalInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnEdgeUsed_set(swigCPtr, value);
     }  
     get {
-        int[] retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnEdgeUsed_get(swigCPtr);
-        return retVal;
+      int* arrayPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnEdgeUsed_get(swigCPtr);
+      int[] retVal = new int[12];
+
+      for(int i = 0; i < 12; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -119,8 +125,14 @@ public unsafe class CNWTileSurfaceMeshLocalInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnVertexIndex_set(swigCPtr, value);
     }  
     get {
-        int[] retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnVertexIndex_get(swigCPtr);
-        return retVal;
+      int* arrayPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnVertexIndex_get(swigCPtr);
+      int[] retVal = new int[3];
+
+      for(int i = 0; i < 3; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -130,8 +142,14 @@ public unsafe class CNWTileSurfaceMeshLocalInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnTriangleAdjacency_set(swigCPtr, value);
     }  
     get {
-        int[] retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnTriangleAdjacency_get(swigCPtr);
-        return retVal;
+      int* arrayPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnTriangleAdjacency_get(swigCPtr);
+      int[] retVal = new int[3];
+
+      for(int i = 0; i < 3; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

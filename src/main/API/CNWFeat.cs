@@ -267,8 +267,14 @@ public unsafe class CNWFeat : global::System.IDisposable {
       NWNXLibPINVOKE.CNWFeat_m_lstPrereqFeats_set(swigCPtr, value);
     }  
     get {
-        ushort[] retVal = NWNXLibPINVOKE.CNWFeat_m_lstPrereqFeats_get(swigCPtr);
-        return retVal;
+      ushort* arrayPtr = NWNXLibPINVOKE.CNWFeat_m_lstPrereqFeats_get(swigCPtr);
+      ushort[] retVal = new ushort[2];
+
+      for(int i = 0; i < 2; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -278,8 +284,14 @@ public unsafe class CNWFeat : global::System.IDisposable {
       NWNXLibPINVOKE.CNWFeat_m_lstOrPrereqFeats_set(swigCPtr, value);
     }  
     get {
-        ushort[] retVal = NWNXLibPINVOKE.CNWFeat_m_lstOrPrereqFeats_get(swigCPtr);
-        return retVal;
+      ushort* arrayPtr = NWNXLibPINVOKE.CNWFeat_m_lstOrPrereqFeats_get(swigCPtr);
+      ushort[] retVal = new ushort[5];
+
+      for(int i = 0; i < 5; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

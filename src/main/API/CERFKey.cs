@@ -126,8 +126,14 @@ public unsafe class CERFKey : global::System.IDisposable {
       NWNXLibPINVOKE.CERFKey_m_nUnused_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CERFKey_m_nUnused_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CERFKey_m_nUnused_get(swigCPtr);
+      byte[] retVal = new byte[2];
+
+      for(int i = 0; i < 2; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

@@ -105,8 +105,14 @@ public unsafe class CNWSCreature : CNWSObject {
       NWNXLibPINVOKE.CNWSCreature_m_poidCntrSpellObjects_set(swigCPtr, value);
     }  
     get {
-        uint[] retVal = NWNXLibPINVOKE.CNWSCreature_m_poidCntrSpellObjects_get(swigCPtr);
-        return retVal;
+      uint* arrayPtr = NWNXLibPINVOKE.CNWSCreature_m_poidCntrSpellObjects_get(swigCPtr);
+      uint[] retVal = new uint[10];
+
+      for(int i = 0; i < 10; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -2067,8 +2073,14 @@ public unsafe class CNWSCreature : CNWSObject {
       NWNXLibPINVOKE.CNWSCreature_m_pPrePolymorphedItems_set(swigCPtr, value);
     }  
     get {
-        uint[] retVal = NWNXLibPINVOKE.CNWSCreature_m_pPrePolymorphedItems_get(swigCPtr);
-        return retVal;
+      uint* arrayPtr = NWNXLibPINVOKE.CNWSCreature_m_pPrePolymorphedItems_get(swigCPtr);
+      uint[] retVal = new uint[18];
+
+      for(int i = 0; i < 18; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

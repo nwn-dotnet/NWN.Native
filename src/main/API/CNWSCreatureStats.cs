@@ -770,8 +770,14 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_pSpellFailure_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_pSpellFailure_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CNWSCreatureStats_m_pSpellFailure_get(swigCPtr);
+      byte[] retVal = new byte[9];
+
+      for(int i = 0; i < 9; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -1223,8 +1229,14 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_pPartVariation_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_pPartVariation_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CNWSCreatureStats_m_pPartVariation_get(swigCPtr);
+      byte[] retVal = new byte[19];
+
+      for(int i = 0; i < 19; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

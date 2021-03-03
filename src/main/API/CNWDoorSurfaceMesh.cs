@@ -96,8 +96,14 @@ public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
       NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnVertices_set(swigCPtr, value);
     }  
     get {
-        int[] retVal = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnVertices_get(swigCPtr);
-        return retVal;
+      int* arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnVertices_get(swigCPtr);
+      int[] retVal = new int[3];
+
+      for(int i = 0; i < 3; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -107,8 +113,14 @@ public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
       NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppfVertices_set(swigCPtr, value);
     }  
     get {
-        float*[] retVal = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppfVertices_get(swigCPtr);
-        return retVal;
+      float** arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppfVertices_get(swigCPtr);
+      float*[] retVal = new float*[3];
+
+      for(int i = 0; i < 3; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -118,8 +130,14 @@ public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
       NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnTriangles_set(swigCPtr, value);
     }  
     get {
-        int[] retVal = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnTriangles_get(swigCPtr);
-        return retVal;
+      int* arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnTriangles_get(swigCPtr);
+      int[] retVal = new int[3];
+
+      for(int i = 0; i < 3; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -129,8 +147,14 @@ public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
       NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangles_set(swigCPtr, value);
     }  
     get {
-        int*[] retVal = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangles_get(swigCPtr);
-        return retVal;
+      int** arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangles_get(swigCPtr);
+      int*[] retVal = new int*[3];
+
+      for(int i = 0; i < 3; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -140,8 +164,14 @@ public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
       NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangleMaterial_set(swigCPtr, value);
     }  
     get {
-        int*[] retVal = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangleMaterial_get(swigCPtr);
-        return retVal;
+      int** arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangleMaterial_get(swigCPtr);
+      int*[] retVal = new int*[3];
+
+      for(int i = 0; i < 3; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

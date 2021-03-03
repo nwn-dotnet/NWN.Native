@@ -129,8 +129,14 @@ public unsafe class CNWTileSurfaceMeshNodeFace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_vertexindices_set(swigCPtr, value);
     }  
     get {
-        int[] retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_vertexindices_get(swigCPtr);
-        return retVal;
+      int* arrayPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_vertexindices_get(swigCPtr);
+      int[] retVal = new int[3];
+
+      for(int i = 0; i < 3; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -160,8 +166,14 @@ public unsafe class CNWTileSurfaceMeshNodeFace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_neighbors_set(swigCPtr, value);
     }  
     get {
-        int[] retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_neighbors_get(swigCPtr);
-        return retVal;
+      int* arrayPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_neighbors_get(swigCPtr);
+      int[] retVal = new int[3];
+
+      for(int i = 0; i < 3; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

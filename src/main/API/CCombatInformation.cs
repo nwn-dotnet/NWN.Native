@@ -196,8 +196,14 @@ public unsafe class CCombatInformation : global::System.IDisposable {
       NWNXLibPINVOKE.CCombatInformation_m_nCreatureDamageDice_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CCombatInformation_m_nCreatureDamageDice_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CCombatInformation_m_nCreatureDamageDice_get(swigCPtr);
+      byte[] retVal = new byte[3];
+
+      for(int i = 0; i < 3; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -207,8 +213,14 @@ public unsafe class CCombatInformation : global::System.IDisposable {
       NWNXLibPINVOKE.CCombatInformation_m_nCreatureDamageDie_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CCombatInformation_m_nCreatureDamageDie_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CCombatInformation_m_nCreatureDamageDie_get(swigCPtr);
+      byte[] retVal = new byte[3];
+
+      for(int i = 0; i < 3; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

@@ -108,8 +108,14 @@ public unsafe class CNWTileSetManager : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSetManager_m_anTileSetRegistered_set(swigCPtr, value);
     }  
     get {
-        int[] retVal = NWNXLibPINVOKE.CNWTileSetManager_m_anTileSetRegistered_get(swigCPtr);
-        return retVal;
+      int* arrayPtr = NWNXLibPINVOKE.CNWTileSetManager_m_anTileSetRegistered_get(swigCPtr);
+      int[] retVal = new int[100];
+
+      for(int i = 0; i < 100; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

@@ -1248,8 +1248,14 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptCompiler_m_pSymbolLabelStartEntry_set(swigCPtr, value);
     }  
     get {
-        int[] retVal = NWNXLibPINVOKE.CScriptCompiler_m_pSymbolLabelStartEntry_get(swigCPtr);
-        return retVal;
+      int* arrayPtr = NWNXLibPINVOKE.CScriptCompiler_m_pSymbolLabelStartEntry_get(swigCPtr);
+      int[] retVal = new int[512];
+
+      for(int i = 0; i < 512; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

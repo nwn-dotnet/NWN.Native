@@ -96,8 +96,14 @@ public unsafe class CExoEncrypt : global::System.IDisposable {
       NWNXLibPINVOKE.CExoEncrypt_m_anI_set(swigCPtr, value);
     }  
     get {
-        uint[] retVal = NWNXLibPINVOKE.CExoEncrypt_m_anI_get(swigCPtr);
-        return retVal;
+      uint* arrayPtr = NWNXLibPINVOKE.CExoEncrypt_m_anI_get(swigCPtr);
+      uint[] retVal = new uint[2];
+
+      for(int i = 0; i < 2; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -107,8 +113,14 @@ public unsafe class CExoEncrypt : global::System.IDisposable {
       NWNXLibPINVOKE.CExoEncrypt_m_aBuf_set(swigCPtr, value);
     }  
     get {
-        uint[] retVal = NWNXLibPINVOKE.CExoEncrypt_m_aBuf_get(swigCPtr);
-        return retVal;
+      uint* arrayPtr = NWNXLibPINVOKE.CExoEncrypt_m_aBuf_get(swigCPtr);
+      uint[] retVal = new uint[4];
+
+      for(int i = 0; i < 4; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -118,8 +130,14 @@ public unsafe class CExoEncrypt : global::System.IDisposable {
       NWNXLibPINVOKE.CExoEncrypt_m_aIn_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CExoEncrypt_m_aIn_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CExoEncrypt_m_aIn_get(swigCPtr);
+      byte[] retVal = new byte[128];
+
+      for(int i = 0; i < 128; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -129,8 +147,14 @@ public unsafe class CExoEncrypt : global::System.IDisposable {
       NWNXLibPINVOKE.CExoEncrypt_m_aDigest_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CExoEncrypt_m_aDigest_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CExoEncrypt_m_aDigest_get(swigCPtr);
+      byte[] retVal = new byte[16];
+
+      for(int i = 0; i < 16; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

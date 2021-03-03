@@ -727,8 +727,14 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nClass_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nClass_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CLastUpdateObject_m_nClass_get(swigCPtr);
+      byte[] retVal = new byte[3];
+
+      for(int i = 0; i < 3; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -738,8 +744,14 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nLevel_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nLevel_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CLastUpdateObject_m_nLevel_get(swigCPtr);
+      byte[] retVal = new byte[3];
+
+      for(int i = 0; i < 3; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

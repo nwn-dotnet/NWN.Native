@@ -196,8 +196,14 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.NWERFHEADER_nUnused_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.NWERFHEADER_nUnused_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.NWERFHEADER_nUnused_get(swigCPtr);
+      byte[] retVal = new byte[116];
+
+      for(int i = 0; i < 116; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

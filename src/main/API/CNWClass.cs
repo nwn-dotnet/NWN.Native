@@ -158,8 +158,14 @@ public unsafe class CNWClass : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_m_lstBaseAttackBonus_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CNWClass_m_lstBaseAttackBonus_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstBaseAttackBonus_get(swigCPtr);
+      byte[] retVal = new byte[60];
+
+      for(int i = 0; i < 60; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -189,8 +195,14 @@ public unsafe class CNWClass : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_m_lstFortificationSaveThrowBonus_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CNWClass_m_lstFortificationSaveThrowBonus_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstFortificationSaveThrowBonus_get(swigCPtr);
+      byte[] retVal = new byte[60];
+
+      for(int i = 0; i < 60; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -200,8 +212,14 @@ public unsafe class CNWClass : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_m_lstWillSaveThrowBonus_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CNWClass_m_lstWillSaveThrowBonus_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstWillSaveThrowBonus_get(swigCPtr);
+      byte[] retVal = new byte[60];
+
+      for(int i = 0; i < 60; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -211,8 +229,14 @@ public unsafe class CNWClass : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_m_lstReflexSaveThrowBonus_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CNWClass_m_lstReflexSaveThrowBonus_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstReflexSaveThrowBonus_get(swigCPtr);
+      byte[] retVal = new byte[60];
+
+      for(int i = 0; i < 60; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -233,8 +257,14 @@ public unsafe class CNWClass : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_m_lstSpellLevelsPerLevel_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CNWClass_m_lstSpellLevelsPerLevel_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstSpellLevelsPerLevel_get(swigCPtr);
+      byte[] retVal = new byte[40];
+
+      for(int i = 0; i < 40; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -244,8 +274,14 @@ public unsafe class CNWClass : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_m_lstSpellGainTable_set(swigCPtr, value);
     }  
     get {
-        byte*[] retVal = NWNXLibPINVOKE.CNWClass_m_lstSpellGainTable_get(swigCPtr);
-        return retVal;
+      byte** arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstSpellGainTable_get(swigCPtr);
+      byte*[] retVal = new byte*[40];
+
+      for(int i = 0; i < 40; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -297,8 +333,14 @@ public unsafe class CNWClass : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_m_lstBonusFeatsTable_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CNWClass_m_lstBonusFeatsTable_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstBonusFeatsTable_get(swigCPtr);
+      byte[] retVal = new byte[60];
+
+      for(int i = 0; i < 60; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -319,8 +361,14 @@ public unsafe class CNWClass : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_m_lstNaturalACGainTable_set(swigCPtr, value);
     }  
     get {
-        sbyte[] retVal = NWNXLibPINVOKE.CNWClass_m_lstNaturalACGainTable_get(swigCPtr);
-        return retVal;
+      sbyte* arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstNaturalACGainTable_get(swigCPtr);
+      sbyte[] retVal = new sbyte[60];
+
+      for(int i = 0; i < 60; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -340,8 +388,14 @@ public unsafe class CNWClass : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_m_pnRecommendedAbilities_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CNWClass_m_pnRecommendedAbilities_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CNWClass_m_pnRecommendedAbilities_get(swigCPtr);
+      byte[] retVal = new byte[6];
+
+      for(int i = 0; i < 6; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -381,8 +435,14 @@ public unsafe class CNWClass : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_m_pnEffectiveCRForLevel_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CNWClass_m_pnEffectiveCRForLevel_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CNWClass_m_pnEffectiveCRForLevel_get(swigCPtr);
+      byte[] retVal = new byte[40+1];
+
+      for(int i = 0; i < 40+1; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

@@ -96,8 +96,14 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CServerExoAppInternal_ScratchMessageBuffer_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CServerExoAppInternal_ScratchMessageBuffer_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CServerExoAppInternal_ScratchMessageBuffer_get(swigCPtr);
+      byte[] retVal = new byte[65536];
+
+      for(int i = 0; i < 65536; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

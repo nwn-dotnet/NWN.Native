@@ -107,8 +107,14 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
       NWNXLibPINVOKE.CGameObjectArray_m_nNextObjectArrayID_set(swigCPtr, value);
     }  
     get {
-        uint[] retVal = NWNXLibPINVOKE.CGameObjectArray_m_nNextObjectArrayID_get(swigCPtr);
-        return retVal;
+      uint* arrayPtr = NWNXLibPINVOKE.CGameObjectArray_m_nNextObjectArrayID_get(swigCPtr);
+      uint[] retVal = new uint[2];
+
+      for(int i = 0; i < 2; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -118,8 +124,14 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
       NWNXLibPINVOKE.CGameObjectArray_m_nNextCharArrayID_set(swigCPtr, value);
     }  
     get {
-        uint[] retVal = NWNXLibPINVOKE.CGameObjectArray_m_nNextCharArrayID_get(swigCPtr);
-        return retVal;
+      uint* arrayPtr = NWNXLibPINVOKE.CGameObjectArray_m_nNextCharArrayID_get(swigCPtr);
+      uint[] retVal = new uint[2];
+
+      for(int i = 0; i < 2; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

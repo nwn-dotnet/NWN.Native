@@ -206,8 +206,14 @@ public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_HEADER_pMD5_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.ENCAPSULATED_HEADER_pMD5_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.ENCAPSULATED_HEADER_pMD5_get(swigCPtr);
+      byte[] retVal = new byte[16];
+
+      for(int i = 0; i < 16; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -217,8 +223,14 @@ public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_HEADER_pUnused_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.ENCAPSULATED_HEADER_pUnused_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.ENCAPSULATED_HEADER_pUnused_get(swigCPtr);
+      byte[] retVal = new byte[100];
+
+      for(int i = 0; i < 100; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

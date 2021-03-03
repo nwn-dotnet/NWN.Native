@@ -327,8 +327,14 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerWindow_m_pOutgoingBuffers_set(swigCPtr, value);
     }  
     get {
-        ushort[] retVal = NWNXLibPINVOKE.CNetLayerWindow_m_pOutgoingBuffers_get(swigCPtr);
-        return retVal;
+      ushort* arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pOutgoingBuffers_get(swigCPtr);
+      ushort[] retVal = new ushort[16];
+
+      for(int i = 0; i < 16; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -338,8 +344,14 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutSet_set(swigCPtr, value);
     }  
     get {
-        int[] retVal = NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutSet_get(swigCPtr);
-        return retVal;
+      int* arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutSet_get(swigCPtr);
+      int[] retVal = new int[16];
+
+      for(int i = 0; i < 16; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -349,8 +361,14 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerWindow_m_pnTimeOut_set(swigCPtr, value);
     }  
     get {
-        uint[] retVal = NWNXLibPINVOKE.CNetLayerWindow_m_pnTimeOut_get(swigCPtr);
-        return retVal;
+      uint* arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pnTimeOut_get(swigCPtr);
+      uint[] retVal = new uint[16];
+
+      for(int i = 0; i < 16; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -360,8 +378,14 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutDelay_set(swigCPtr, value);
     }  
     get {
-        int[] retVal = NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutDelay_get(swigCPtr);
-        return retVal;
+      int* arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutDelay_get(swigCPtr);
+      int[] retVal = new int[16];
+
+      for(int i = 0; i < 16; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -371,8 +395,14 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerWindow_m_pIncomingBuffers_set(swigCPtr, value);
     }  
     get {
-        ushort[] retVal = NWNXLibPINVOKE.CNetLayerWindow_m_pIncomingBuffers_get(swigCPtr);
-        return retVal;
+      ushort* arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pIncomingBuffers_get(swigCPtr);
+      ushort[] retVal = new ushort[16];
+
+      for(int i = 0; i < 16; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -382,8 +412,14 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerWindow_m_pbArrived_set(swigCPtr, value);
     }  
     get {
-        int[] retVal = NWNXLibPINVOKE.CNetLayerWindow_m_pbArrived_get(swigCPtr);
-        return retVal;
+      int* arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pbArrived_get(swigCPtr);
+      int[] retVal = new int[16];
+
+      for(int i = 0; i < 16; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -437,8 +473,14 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerWindow_m_pLowPriorityHoldBuffer_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CNetLayerWindow_m_pLowPriorityHoldBuffer_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pLowPriorityHoldBuffer_get(swigCPtr);
+      byte[] retVal = new byte[960];
+
+      for(int i = 0; i < 960; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -448,8 +490,14 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerWindow_m_pHighPriorityHoldBuffer_set(swigCPtr, value);
     }  
     get {
-        byte[] retVal = NWNXLibPINVOKE.CNetLayerWindow_m_pHighPriorityHoldBuffer_get(swigCPtr);
-        return retVal;
+      byte* arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pHighPriorityHoldBuffer_get(swigCPtr);
+      byte[] retVal = new byte[960];
+
+      for(int i = 0; i < 960; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

@@ -96,8 +96,14 @@ public unsafe class CNWSPlayerLUOInventory : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_oidInventorySlots_set(swigCPtr, value);
     }  
     get {
-        uint[] retVal = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_oidInventorySlots_get(swigCPtr);
-        return retVal;
+      uint* arrayPtr = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_oidInventorySlots_get(swigCPtr);
+      uint[] retVal = new uint[18];
+
+      for(int i = 0; i < 18; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -107,8 +113,14 @@ public unsafe class CNWSPlayerLUOInventory : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nStackSizes_set(swigCPtr, value);
     }  
     get {
-        int[] retVal = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nStackSizes_get(swigCPtr);
-        return retVal;
+      int* arrayPtr = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nStackSizes_get(swigCPtr);
+      int[] retVal = new int[18];
+
+      for(int i = 0; i < 18; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

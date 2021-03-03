@@ -199,8 +199,14 @@ public unsafe class CScriptCompilerIdListEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_fVectorData_set(swigCPtr, value);
     }  
     get {
-        float[] retVal = NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_fVectorData_get(swigCPtr);
-        return retVal;
+      float* arrayPtr = NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_fVectorData_get(swigCPtr);
+      float[] retVal = new float[3];
+
+      for(int i = 0; i < 3; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

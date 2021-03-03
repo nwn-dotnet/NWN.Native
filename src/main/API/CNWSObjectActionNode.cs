@@ -106,8 +106,14 @@ public unsafe class CNWSObjectActionNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSObjectActionNode_m_nParamType_set(swigCPtr, value);
     }  
     get {
-        uint[] retVal = NWNXLibPINVOKE.CNWSObjectActionNode_m_nParamType_get(swigCPtr);
-        return retVal;
+      uint* arrayPtr = NWNXLibPINVOKE.CNWSObjectActionNode_m_nParamType_get(swigCPtr);
+      uint[] retVal = new uint[12];
+
+      for(int i = 0; i < 12; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -117,8 +123,14 @@ public unsafe class CNWSObjectActionNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSObjectActionNode_m_pParameter_set(swigCPtr, value);
     }  
     get {
-        long[] retVal = NWNXLibPINVOKE.CNWSObjectActionNode_m_pParameter_get(swigCPtr);
-        return retVal;
+      long* arrayPtr = NWNXLibPINVOKE.CNWSObjectActionNode_m_pParameter_get(swigCPtr);
+      long[] retVal = new long[12];
+
+      for(int i = 0; i < 12; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

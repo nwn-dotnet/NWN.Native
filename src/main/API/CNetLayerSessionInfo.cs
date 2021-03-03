@@ -137,8 +137,14 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketSent_set(swigCPtr, value);
     }  
     get {
-        uint[] retVal = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketSent_get(swigCPtr);
-        return retVal;
+      uint* arrayPtr = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketSent_get(swigCPtr);
+      uint[] retVal = new uint[4];
+
+      for(int i = 0; i < 4; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -148,8 +154,14 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketReceived_set(swigCPtr, value);
     }  
     get {
-        uint[] retVal = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketReceived_get(swigCPtr);
-        return retVal;
+      uint* arrayPtr = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketReceived_get(swigCPtr);
+      uint[] retVal = new uint[4];
+
+      for(int i = 0; i < 4; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

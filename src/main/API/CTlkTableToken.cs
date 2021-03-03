@@ -127,8 +127,14 @@ public unsafe class CTlkTableToken : global::System.IDisposable {
       NWNXLibPINVOKE.CTlkTableToken_m_nStrRef_set(swigCPtr, value);
     }  
     get {
-        uint[] retVal = NWNXLibPINVOKE.CTlkTableToken_m_nStrRef_get(swigCPtr);
-        return retVal;
+      uint* arrayPtr = NWNXLibPINVOKE.CTlkTableToken_m_nStrRef_get(swigCPtr);
+      uint[] retVal = new uint[4];
+
+      for(int i = 0; i < 4; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

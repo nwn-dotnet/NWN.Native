@@ -160,8 +160,14 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
       NWNXLibPINVOKE.CVirtualMachine_m_bValidObjectRunScript_set(swigCPtr, value);
     }  
     get {
-        int[] retVal = NWNXLibPINVOKE.CVirtualMachine_m_bValidObjectRunScript_get(swigCPtr);
-        return retVal;
+      int* arrayPtr = NWNXLibPINVOKE.CVirtualMachine_m_bValidObjectRunScript_get(swigCPtr);
+      int[] retVal = new int[8];
+
+      for(int i = 0; i < 8; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -171,8 +177,14 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
       NWNXLibPINVOKE.CVirtualMachine_m_oidObjectRunScript_set(swigCPtr, value);
     }  
     get {
-        uint[] retVal = NWNXLibPINVOKE.CVirtualMachine_m_oidObjectRunScript_get(swigCPtr);
-        return retVal;
+      uint* arrayPtr = NWNXLibPINVOKE.CVirtualMachine_m_oidObjectRunScript_get(swigCPtr);
+      uint[] retVal = new uint[8];
+
+      for(int i = 0; i < 8; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
@@ -215,8 +227,14 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
       NWNXLibPINVOKE.CVirtualMachine_m_pnRunTimeInstructPtr_set(swigCPtr, value);
     }  
     get {
-        int[] retVal = NWNXLibPINVOKE.CVirtualMachine_m_pnRunTimeInstructPtr_get(swigCPtr);
-        return retVal;
+      int* arrayPtr = NWNXLibPINVOKE.CVirtualMachine_m_pnRunTimeInstructPtr_get(swigCPtr);
+      int[] retVal = new int[128];
+
+      for(int i = 0; i < 128; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }

@@ -167,8 +167,14 @@ public unsafe class CScriptParseTreeNode : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptParseTreeNode_fVectorData_set(swigCPtr, value);
     }  
     get {
-        float[] retVal = NWNXLibPINVOKE.CScriptParseTreeNode_fVectorData_get(swigCPtr);
-        return retVal;
+      float* arrayPtr = NWNXLibPINVOKE.CScriptParseTreeNode_fVectorData_get(swigCPtr);
+      float[] retVal = new float[3];
+
+      for(int i = 0; i < 3; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
     }
 
   }
