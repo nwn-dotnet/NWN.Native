@@ -104,7 +104,7 @@ jobs:
       - name: Copy generated proxy classes
         run: |
           su -c "rm -fv ${GITHUB_WORKSPACE}/repo/src/main/API/*"
-          cp -av "${GITHUB_WORKSPACE}/nwnx/Plugins/SWIG/SWIG_DotNET/." "${GITHUB_WORKSPACE}/repo/src/main/API"
+          cp -av "${GITHUB_WORKSPACE}/nwnx/Plugins/SWIG/SWIG_DotNET/out/." "${GITHUB_WORKSPACE}/repo/src/main/API"
           if [ -z "$(ls -A ${GITHUB_WORKSPACE}/repo/src/main/API)" ]; then
             exit 1
           fi
