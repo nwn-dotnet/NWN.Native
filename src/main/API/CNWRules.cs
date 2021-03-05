@@ -338,13 +338,13 @@ public unsafe class CNWRules : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_std__unordered_mapT_std__string_CachedRulesetEntry_t m_ruleset_2da_cache {
+  public UnorderedMapStringCachedRulesetEntry m_ruleset_2da_cache {
     set {
-      NWNXLibPINVOKE.CNWRules_m_ruleset_2da_cache_set(swigCPtr, SWIGTYPE_p_std__unordered_mapT_std__string_CachedRulesetEntry_t.getCPtr(value));
+      NWNXLibPINVOKE.CNWRules_m_ruleset_2da_cache_set(swigCPtr, UnorderedMapStringCachedRulesetEntry.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWRules_m_ruleset_2da_cache_get(swigCPtr);
-      SWIGTYPE_p_std__unordered_mapT_std__string_CachedRulesetEntry_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__unordered_mapT_std__string_CachedRulesetEntry_t(cPtr, false);
+      UnorderedMapStringCachedRulesetEntry ret = (cPtr == global::System.IntPtr.Zero) ? null : new UnorderedMapStringCachedRulesetEntry(cPtr, false);
       return ret;
     } 
   }

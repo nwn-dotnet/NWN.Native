@@ -135,12 +135,8 @@ public unsafe class CExoString : global::System.IDisposable {
   public CExoString(int value) : this(NWNXLibPINVOKE.new_CExoString__SWIG_5(value), true) {
   }
 
-  public CExoString(SWIGTYPE_p_std__string other) : this(NWNXLibPINVOKE.new_CExoString__SWIG_6(SWIGTYPE_p_std__string.getCPtr(other)), true) {
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public CExoString _OpAssign(SWIGTYPE_p_std__string other) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString__OpAssign__SWIG_0(swigCPtr, SWIGTYPE_p_std__string.getCPtr(other)), false);
+  public CExoString _OpAssign(string other) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString__OpAssign__SWIG_0(swigCPtr, other), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -148,11 +144,6 @@ public unsafe class CExoString : global::System.IDisposable {
   public CExoString _OpAssign(CExoString string_) {
     CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString__OpAssign__SWIG_1(swigCPtr, CExoString.getCPtr(string_)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public CExoString _OpAssign(string string_) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString__OpAssign__SWIG_2(swigCPtr, string_), false);
     return ret;
   }
 

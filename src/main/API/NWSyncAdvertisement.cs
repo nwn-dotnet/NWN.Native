@@ -102,13 +102,13 @@ public unsafe class NWSyncAdvertisement : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_std__vectorT_NWSyncAdvertisementManifest_t m_additional_manifests {
+  public VectorNWSyncAdvertisementManifest m_additional_manifests {
     set {
-      NWNXLibPINVOKE.NWSyncAdvertisement_m_additional_manifests_set(swigCPtr, SWIGTYPE_p_std__vectorT_NWSyncAdvertisementManifest_t.getCPtr(value));
+      NWNXLibPINVOKE.NWSyncAdvertisement_m_additional_manifests_set(swigCPtr, VectorNWSyncAdvertisementManifest.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.NWSyncAdvertisement_m_additional_manifests_get(swigCPtr);
-      SWIGTYPE_p_std__vectorT_NWSyncAdvertisementManifest_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__vectorT_NWSyncAdvertisementManifest_t(cPtr, false);
+      VectorNWSyncAdvertisementManifest ret = (cPtr == global::System.IntPtr.Zero) ? null : new VectorNWSyncAdvertisementManifest(cPtr, false);
       return ret;
     } 
   }

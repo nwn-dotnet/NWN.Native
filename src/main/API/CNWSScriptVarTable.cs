@@ -91,13 +91,13 @@ public unsafe class CNWSScriptVarTable : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_std__unordered_mapT_CExoString_CNWSScriptVar_t m_vars {
+  public UnorderedMapCExoStringCNWSScriptVar m_vars {
     set {
-      NWNXLibPINVOKE.CNWSScriptVarTable_m_vars_set(swigCPtr, SWIGTYPE_p_std__unordered_mapT_CExoString_CNWSScriptVar_t.getCPtr(value));
+      NWNXLibPINVOKE.CNWSScriptVarTable_m_vars_set(swigCPtr, UnorderedMapCExoStringCNWSScriptVar.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSScriptVarTable_m_vars_get(swigCPtr);
-      SWIGTYPE_p_std__unordered_mapT_CExoString_CNWSScriptVar_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__unordered_mapT_CExoString_CNWSScriptVar_t(cPtr, false);
+      UnorderedMapCExoStringCNWSScriptVar ret = (cPtr == global::System.IntPtr.Zero) ? null : new UnorderedMapCExoStringCNWSScriptVar(cPtr, false);
       return ret;
     } 
   }
