@@ -143,6 +143,12 @@ public unsafe class CNWSScriptVarTable : global::System.IDisposable {
     return ret;
   }
 
+  public CassowarySolverEngineStructure GetCswy(CExoString sVarName) {
+    CassowarySolverEngineStructure ret = new CassowarySolverEngineStructure(NWNXLibPINVOKE.CNWSScriptVarTable_GetCswy(swigCPtr, CExoString.getCPtr(sVarName)), true);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public void SetInt(CExoString sVarName, int nValue, int bLoading) {
     NWNXLibPINVOKE.CNWSScriptVarTable_SetInt__SWIG_0(swigCPtr, CExoString.getCPtr(sVarName), nValue, bLoading);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
@@ -173,6 +179,11 @@ public unsafe class CNWSScriptVarTable : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public void SetCswy(CExoString sVarName, CassowarySolverEngineStructure cSolver) {
+    NWNXLibPINVOKE.CNWSScriptVarTable_SetCswy(swigCPtr, CExoString.getCPtr(sVarName), CassowarySolverEngineStructure.getCPtr(cSolver));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
   public void DestroyInt(CExoString sVarName) {
     NWNXLibPINVOKE.CNWSScriptVarTable_DestroyInt(swigCPtr, CExoString.getCPtr(sVarName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
@@ -195,6 +206,11 @@ public unsafe class CNWSScriptVarTable : global::System.IDisposable {
 
   public void DestroyLocation(CExoString sVarName) {
     NWNXLibPINVOKE.CNWSScriptVarTable_DestroyLocation(swigCPtr, CExoString.getCPtr(sVarName));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void DestroyCswy(CExoString sVarName) {
+    NWNXLibPINVOKE.CNWSScriptVarTable_DestroyCswy(swigCPtr, CExoString.getCPtr(sVarName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 

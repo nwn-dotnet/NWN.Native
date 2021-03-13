@@ -119,6 +119,17 @@ public unsafe class CExoLocString : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public CExoLocString(uint simple) : this(NWNXLibPINVOKE.new_CExoLocString__SWIG_2(simple), true) {
+  }
+
+  public CExoLocString(CExoString simple, int lang) : this(NWNXLibPINVOKE.new_CExoLocString__SWIG_3(CExoString.getCPtr(simple), lang), true) {
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public CExoLocString(CExoString simple) : this(NWNXLibPINVOKE.new_CExoLocString__SWIG_4(CExoString.getCPtr(simple)), true) {
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
   public int _OpEquals(CExoLocString LocString) {
     int ret = NWNXLibPINVOKE.CExoLocString__OpEquals(swigCPtr, CExoLocString.getCPtr(LocString));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
@@ -199,6 +210,16 @@ public unsafe class CExoLocString : global::System.IDisposable {
 
   public void RemoveString(int nID, byte bGender) {
     NWNXLibPINVOKE.CExoLocString_RemoveString__SWIG_1(swigCPtr, nID, bGender);
+  }
+
+  public CExoString GetSimple(byte nGender) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoLocString_GetSimple__SWIG_0(swigCPtr, nGender), true);
+    return ret;
+  }
+
+  public CExoString GetSimple() {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoLocString_GetSimple__SWIG_1(swigCPtr), true);
+    return ret;
   }
 
 }

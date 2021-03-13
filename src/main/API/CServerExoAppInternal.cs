@@ -1335,26 +1335,26 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
     return ret;
   }
 
-  public int LoadModule(CExoString moduleResRef, int bIsSaveGame, CNWSPlayer pPlayer, int sourceType) {
-    int ret = NWNXLibPINVOKE.CServerExoAppInternal_LoadModule__SWIG_0(swigCPtr, CExoString.getCPtr(moduleResRef), bIsSaveGame, CNWSPlayer.getCPtr(pPlayer), sourceType);
+  public int LoadModule(CExoString moduleResRef, CUUID uuidOverride, int bIsSaveGame, CNWSPlayer pPlayer, int sourceType) {
+    int ret = NWNXLibPINVOKE.CServerExoAppInternal_LoadModule__SWIG_0(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride), bIsSaveGame, CNWSPlayer.getCPtr(pPlayer), sourceType);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int LoadModule(CExoString moduleResRef, int bIsSaveGame, CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CServerExoAppInternal_LoadModule__SWIG_1(swigCPtr, CExoString.getCPtr(moduleResRef), bIsSaveGame, CNWSPlayer.getCPtr(pPlayer));
+  public int LoadModule(CExoString moduleResRef, CUUID uuidOverride, int bIsSaveGame, CNWSPlayer pPlayer) {
+    int ret = NWNXLibPINVOKE.CServerExoAppInternal_LoadModule__SWIG_1(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride), bIsSaveGame, CNWSPlayer.getCPtr(pPlayer));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int LoadModule(CExoString moduleResRef, int bIsSaveGame) {
-    int ret = NWNXLibPINVOKE.CServerExoAppInternal_LoadModule__SWIG_2(swigCPtr, CExoString.getCPtr(moduleResRef), bIsSaveGame);
+  public int LoadModule(CExoString moduleResRef, CUUID uuidOverride, int bIsSaveGame) {
+    int ret = NWNXLibPINVOKE.CServerExoAppInternal_LoadModule__SWIG_2(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride), bIsSaveGame);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int LoadModule(CExoString moduleResRef) {
-    int ret = NWNXLibPINVOKE.CServerExoAppInternal_LoadModule__SWIG_3(swigCPtr, CExoString.getCPtr(moduleResRef));
+  public int LoadModule(CExoString moduleResRef, CUUID uuidOverride) {
+    int ret = NWNXLibPINVOKE.CServerExoAppInternal_LoadModule__SWIG_3(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }

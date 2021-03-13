@@ -1746,13 +1746,23 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     NWNXLibPINVOKE.CNWSObject_SetDamageImmunity(swigCPtr, nFlags, nValue);
   }
 
+  public int DoSpellLevelAbsorption(CNWSObject pCaster, CNWSAreaOfEffectObject pAoEObject) {
+    int ret = NWNXLibPINVOKE.CNWSObject_DoSpellLevelAbsorption__SWIG_0(swigCPtr, CNWSObject.getCPtr(pCaster), CNWSAreaOfEffectObject.getCPtr(pAoEObject));
+    return ret;
+  }
+
   public int DoSpellLevelAbsorption(CNWSObject pCaster) {
-    int ret = NWNXLibPINVOKE.CNWSObject_DoSpellLevelAbsorption(swigCPtr, CNWSObject.getCPtr(pCaster));
+    int ret = NWNXLibPINVOKE.CNWSObject_DoSpellLevelAbsorption__SWIG_1(swigCPtr, CNWSObject.getCPtr(pCaster));
+    return ret;
+  }
+
+  public int DoSpellImmunity(CNWSObject pCaster, CNWSAreaOfEffectObject pAoEObject) {
+    int ret = NWNXLibPINVOKE.CNWSObject_DoSpellImmunity__SWIG_0(swigCPtr, CNWSObject.getCPtr(pCaster), CNWSAreaOfEffectObject.getCPtr(pAoEObject));
     return ret;
   }
 
   public int DoSpellImmunity(CNWSObject pCaster) {
-    int ret = NWNXLibPINVOKE.CNWSObject_DoSpellImmunity(swigCPtr, CNWSObject.getCPtr(pCaster));
+    int ret = NWNXLibPINVOKE.CNWSObject_DoSpellImmunity__SWIG_1(swigCPtr, CNWSObject.getCPtr(pCaster));
     return ret;
   }
 
@@ -2073,6 +2083,16 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     NWNXLibPINVOKE.CNWSObject_SaveSqliteDatabase(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
   }
 
+  public int RunEventScript(int nScript, CExoString psOverrideScriptName) {
+    int ret = NWNXLibPINVOKE.CNWSObject_RunEventScript__SWIG_0(swigCPtr, nScript, CExoString.getCPtr(psOverrideScriptName));
+    return ret;
+  }
+
+  public int RunEventScript(int nScript) {
+    int ret = NWNXLibPINVOKE.CNWSObject_RunEventScript__SWIG_1(swigCPtr, nScript);
+    return ret;
+  }
+
   public void SetVisualTransformData(ObjectVisualTransformData data) {
     NWNXLibPINVOKE.CNWSObject_SetVisualTransformData(swigCPtr, ObjectVisualTransformData.getCPtr(data));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
@@ -2252,6 +2272,12 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
 
   public virtual void UpdateAttributesOnEffect(CGameEffect e) {
     NWNXLibPINVOKE.CNWSObject_UpdateAttributesOnEffect__SWIG_1(swigCPtr, CGameEffect.getCPtr(e));
+  }
+
+  public virtual CExoString GetScriptName(int nScript) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSObject_GetScriptName(swigCPtr, nScript);
+    CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
+    return ret;
   }
 
   public uint m_idSelf {

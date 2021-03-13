@@ -252,6 +252,11 @@ public unsafe class CExoBase : global::System.IDisposable {
     return ret;
   }
 
+  public CExoString GetInstallDirectory() {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoBase_GetInstallDirectory(swigCPtr), false);
+    return ret;
+  }
+
   public CExoString GetResourceExtension(ushort nType) {
     CExoString ret = new CExoString(NWNXLibPINVOKE.CExoBase_GetResourceExtension(swigCPtr, nType), false);
     return ret;

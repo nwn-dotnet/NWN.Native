@@ -143,6 +143,17 @@ public unsafe class CNWSScriptVar : global::System.IDisposable {
     } 
   }
 
+  public CassowarySolverEngineStructure m_cswy {
+    set {
+      NWNXLibPINVOKE.CNWSScriptVar_m_cswy_set(swigCPtr, CassowarySolverEngineStructure.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSScriptVar_m_cswy_get(swigCPtr);
+      CassowarySolverEngineStructure ret = (cPtr == global::System.IntPtr.Zero) ? null : new CassowarySolverEngineStructure(cPtr, false);
+      return ret;
+    } 
+  }
+
   public CNWSScriptVar() : this(NWNXLibPINVOKE.new_CNWSScriptVar__SWIG_0(), true) {
   }
 

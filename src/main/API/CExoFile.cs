@@ -208,6 +208,16 @@ public unsafe class CExoFile : global::System.IDisposable {
     return ret;
   }
 
+  public int GetIsEOS() {
+    int ret = NWNXLibPINVOKE.CExoFile_GetIsEOS(swigCPtr);
+    return ret;
+  }
+
+  public void* GetFileHandle() { 
+    System.IntPtr retVal = NWNXLibPINVOKE.CExoFile_GetFileHandle(swigCPtr);
+    return (void*)retVal;
+  }
+
 }
 
 }

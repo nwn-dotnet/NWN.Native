@@ -312,6 +312,32 @@ public unsafe class CAppManager : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public CWorldTimer GetWorldTimer() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CAppManager_GetWorldTimer(swigCPtr);
+    CWorldTimer ret = (cPtr == global::System.IntPtr.Zero) ? null : new CWorldTimer(cPtr, false);
+    return ret;
+  }
+
+  public CExoString GetCryptoKxPublicKeyBase64() {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CAppManager_GetCryptoKxPublicKeyBase64(swigCPtr), true);
+    return ret;
+  }
+
+  public CExoString GetPublicCdKey() {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CAppManager_GetPublicCdKey(swigCPtr), true);
+    return ret;
+  }
+
+  public byte GetPlatformId() {
+    byte ret = NWNXLibPINVOKE.CAppManager_GetPlatformId(swigCPtr);
+    return ret;
+  }
+
+  public byte GetLanguageId() {
+    byte ret = NWNXLibPINVOKE.CAppManager_GetLanguageId(swigCPtr);
+    return ret;
+  }
+
 }
 
 }

@@ -321,12 +321,12 @@ public unsafe class CPathfindInformation : global::System.IDisposable {
     } 
   }
 
-  public int m_nStepTolerance {
+  public int m_nGridStepTolerance {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_nStepTolerance_set(swigCPtr, value);
+      NWNXLibPINVOKE.CPathfindInformation_m_nGridStepTolerance_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPathfindInformation_m_nStepTolerance_get(swigCPtr);
+      int ret = NWNXLibPINVOKE.CPathfindInformation_m_nGridStepTolerance_get(swigCPtr);
       return ret;
     } 
   }
@@ -746,32 +746,12 @@ public unsafe class CPathfindInformation : global::System.IDisposable {
     } 
   }
 
-  public int m_nGridStartLocationX {
+  public int m_nGridSearchTargetStepDistance {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_nGridStartLocationX_set(swigCPtr, value);
+      NWNXLibPINVOKE.CPathfindInformation_m_nGridSearchTargetStepDistance_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPathfindInformation_m_nGridStartLocationX_get(swigCPtr);
-      return ret;
-    } 
-  }
-
-  public int m_nGridStartLocationY {
-    set {
-      NWNXLibPINVOKE.CPathfindInformation_m_nGridStartLocationY_set(swigCPtr, value);
-    } 
-    get {
-      int ret = NWNXLibPINVOKE.CPathfindInformation_m_nGridStartLocationY_get(swigCPtr);
-      return ret;
-    } 
-  }
-
-  public int m_nGridStartLocationZ {
-    set {
-      NWNXLibPINVOKE.CPathfindInformation_m_nGridStartLocationZ_set(swigCPtr, value);
-    } 
-    get {
-      int ret = NWNXLibPINVOKE.CPathfindInformation_m_nGridStartLocationZ_get(swigCPtr);
+      int ret = NWNXLibPINVOKE.CPathfindInformation_m_nGridSearchTargetStepDistance_get(swigCPtr);
       return ret;
     } 
   }
@@ -809,50 +789,6 @@ public unsafe class CPathfindInformation : global::System.IDisposable {
     } 
   }
 
-  public Vector m_vGridZeroLocation {
-    set {
-      NWNXLibPINVOKE.CPathfindInformation_m_vGridZeroLocation_set(swigCPtr, Vector.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_vGridZeroLocation_get(swigCPtr);
-      Vector ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public Vector m_vGridStepX {
-    set {
-      NWNXLibPINVOKE.CPathfindInformation_m_vGridStepX_set(swigCPtr, Vector.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_vGridStepX_get(swigCPtr);
-      Vector ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public Vector m_vGridStepY {
-    set {
-      NWNXLibPINVOKE.CPathfindInformation_m_vGridStepY_set(swigCPtr, Vector.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_vGridStepY_get(swigCPtr);
-      Vector ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public Vector m_vGridStepZ {
-    set {
-      NWNXLibPINVOKE.CPathfindInformation_m_vGridStepZ_set(swigCPtr, Vector.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_vGridStepZ_get(swigCPtr);
-      Vector ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector(cPtr, false);
-      return ret;
-    } 
-  }
-
   public int* m_pnGridStepsArray {
     set {
       NWNXLibPINVOKE.CPathfindInformation_m_pnGridStepsArray_set(swigCPtr, (global::System.IntPtr)value);
@@ -884,37 +820,6 @@ public unsafe class CPathfindInformation : global::System.IDisposable {
     } 
   }
 
-  public float m_fGridSearchObjectDistance {
-    set {
-      NWNXLibPINVOKE.CPathfindInformation_m_fGridSearchObjectDistance_set(swigCPtr, value);
-    } 
-    get {
-      float ret = NWNXLibPINVOKE.CPathfindInformation_m_fGridSearchObjectDistance_get(swigCPtr);
-      return ret;
-    } 
-  }
-
-  public int m_nGridSearchLastDistance {
-    set {
-      NWNXLibPINVOKE.CPathfindInformation_m_nGridSearchLastDistance_set(swigCPtr, value);
-    } 
-    get {
-      int ret = NWNXLibPINVOKE.CPathfindInformation_m_nGridSearchLastDistance_get(swigCPtr);
-      return ret;
-    } 
-  }
-
-  public void* m_pGridSearchLastTransTable {
-    set {
-      NWNXLibPINVOKE.CPathfindInformation_m_pGridSearchLastTransTable_set(swigCPtr, (global::System.IntPtr)value);
-    }  
-    get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CPathfindInformation_m_pGridSearchLastTransTable_get(swigCPtr); 
-        return (void*)retVal; 
-    }
-
-  }
-
   public Vector2 m_vGridSearchStartPoint {
     set {
       NWNXLibPINVOKE.CPathfindInformation_m_vGridSearchStartPoint_set(swigCPtr, Vector2.getCPtr(value));
@@ -922,39 +827,6 @@ public unsafe class CPathfindInformation : global::System.IDisposable {
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_vGridSearchStartPoint_get(swigCPtr);
       Vector2 ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector2(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public Vector2 m_vGridSearchEndPoint {
-    set {
-      NWNXLibPINVOKE.CPathfindInformation_m_vGridSearchEndPoint_set(swigCPtr, Vector2.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_vGridSearchEndPoint_get(swigCPtr);
-      Vector2 ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector2(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public Vector m_vGridSearchLastStartPoint {
-    set {
-      NWNXLibPINVOKE.CPathfindInformation_m_vGridSearchLastStartPoint_set(swigCPtr, Vector.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_vGridSearchLastStartPoint_get(swigCPtr);
-      Vector ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public Vector m_vGridSearchLastEndPoint {
-    set {
-      NWNXLibPINVOKE.CPathfindInformation_m_vGridSearchLastEndPoint_set(swigCPtr, Vector.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CPathfindInformation_m_vGridSearchLastEndPoint_get(swigCPtr);
-      Vector ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector(cPtr, false);
       return ret;
     } 
   }
@@ -1175,6 +1047,11 @@ public unsafe class CPathfindInformation : global::System.IDisposable {
     NWNXLibPINVOKE.CPathfindInformation_DeleteFirstTileFValueAlternatives(swigCPtr);
   }
 
+  public float GetGridStepSize() {
+    float ret = NWNXLibPINVOKE.CPathfindInformation_GetGridStepSize(swigCPtr);
+    return ret;
+  }
+
   public bool GetGridPointSearched(int nX, int nY) {
     bool ret = NWNXLibPINVOKE.CPathfindInformation_GetGridPointSearched(swigCPtr, nX, nY);
     return ret;
@@ -1212,8 +1089,8 @@ public unsafe class CPathfindInformation : global::System.IDisposable {
     NWNXLibPINVOKE.CPathfindInformation_SetGridSearchActivePaths(swigCPtr, nCount);
   }
 
-  public void ComputeStepTolerance() {
-    NWNXLibPINVOKE.CPathfindInformation_ComputeStepTolerance(swigCPtr);
+  public void ComputeGridStepTolerance() {
+    NWNXLibPINVOKE.CPathfindInformation_ComputeGridStepTolerance(swigCPtr);
   }
 
 }

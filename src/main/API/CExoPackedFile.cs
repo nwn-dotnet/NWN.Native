@@ -272,13 +272,13 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public virtual int LoadHeader(byte nType) {
-    int ret = NWNXLibPINVOKE.CExoPackedFile_LoadHeader__SWIG_0(swigCPtr, nType);
+  public virtual int LoadHeader(string expectOid, byte nType) {
+    int ret = NWNXLibPINVOKE.CExoPackedFile_LoadHeader__SWIG_0(swigCPtr, expectOid, nType);
     return ret;
   }
 
-  public virtual int LoadHeader() {
-    int ret = NWNXLibPINVOKE.CExoPackedFile_LoadHeader__SWIG_1(swigCPtr);
+  public virtual int LoadHeader(string expectOid) {
+    int ret = NWNXLibPINVOKE.CExoPackedFile_LoadHeader__SWIG_1(swigCPtr, expectOid);
     return ret;
   }
 

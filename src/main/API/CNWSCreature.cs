@@ -3646,8 +3646,8 @@ public unsafe class CNWSCreature : CNWSObject {
     return ret;
   }
 
-  public uint GetNearestEnemy(float fRange, uint oidToExclude, int bVisible, int bNoCreaturesOnLine) {
-    uint ret = NWNXLibPINVOKE.CNWSCreature_GetNearestEnemy__SWIG_0(swigCPtr, fRange, oidToExclude, bVisible, bNoCreaturesOnLine);
+  public uint GetNearestEnemy(float fRange, uint oidToExclude, int bVisible, int bAttackClearLineToTarget) {
+    uint ret = NWNXLibPINVOKE.CNWSCreature_GetNearestEnemy__SWIG_0(swigCPtr, fRange, oidToExclude, bVisible, bAttackClearLineToTarget);
     return ret;
   }
 
@@ -4092,6 +4092,33 @@ public unsafe class CNWSCreature : CNWSObject {
   public uint AIActionUnequipItem(CNWSObjectActionNode pNode) {
     uint ret = NWNXLibPINVOKE.CNWSCreature_AIActionUnequipItem(swigCPtr, CNWSObjectActionNode.getCPtr(pNode));
     return ret;
+  }
+
+  public int CheckAttackClearLineToTarget(uint oidAttackTarget, Vector vTarget, CNWSArea pArea) {
+    int ret = NWNXLibPINVOKE.CNWSCreature_CheckAttackClearLineToTarget__SWIG_0(swigCPtr, oidAttackTarget, Vector.getCPtr(vTarget), CNWSArea.getCPtr(pArea));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public int CheckAttackClearLineToTarget(uint oidAttackTarget, Vector vTarget) {
+    int ret = NWNXLibPINVOKE.CNWSCreature_CheckAttackClearLineToTarget__SWIG_1(swigCPtr, oidAttackTarget, Vector.getCPtr(vTarget));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public int CheckAttackClearLineToTarget(uint oidAttackTarget) {
+    int ret = NWNXLibPINVOKE.CNWSCreature_CheckAttackClearLineToTarget__SWIG_2(swigCPtr, oidAttackTarget);
+    return ret;
+  }
+
+  public CNWSCreature GetNewCombatTarget(uint oidAttackTarget) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_GetNewCombatTarget(swigCPtr, oidAttackTarget);
+    CNWSCreature ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSCreature(cPtr, false);
+    return ret;
+  }
+
+  public void ChangeAttackTarget(CNWSObjectActionNode pNode, uint oidAttackTarget) {
+    NWNXLibPINVOKE.CNWSCreature_ChangeAttackTarget(swigCPtr, CNWSObjectActionNode.getCPtr(pNode), oidAttackTarget);
   }
 
   public uint AIActionAttackObject(CNWSObjectActionNode pNode) {

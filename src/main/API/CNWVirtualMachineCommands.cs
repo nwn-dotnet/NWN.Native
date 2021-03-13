@@ -385,6 +385,11 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     return ret;
   }
 
+  public int ExecuteCommandCassowary(int nCommandId, int nParameters) {
+    int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandCassowary(swigCPtr, nCommandId, nParameters);
+    return ret;
+  }
+
   public int ExecuteCommandCastSpell(int nCommandId, int nParameters) {
     int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandCastSpell(swigCPtr, nCommandId, nParameters);
     return ret;
@@ -990,6 +995,11 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     return ret;
   }
 
+  public int ExecuteCommandGetBaseItemFitsInInventory(int nCommandId, int nParameters) {
+    int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandGetBaseItemFitsInInventory(swigCPtr, nCommandId, nParameters);
+    return ret;
+  }
+
   public int ExecuteCommandGetBaseItemType(int nCommandId, int nParameters) {
     int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandGetBaseItemType(swigCPtr, nCommandId, nParameters);
     return ret;
@@ -1105,6 +1115,11 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     return ret;
   }
 
+  public int ExecuteCommandGetCurrentlyRunningEvent(int nCommandId, int nParameters) {
+    int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandGetCurrentlyRunningEvent(swigCPtr, nCommandId, nParameters);
+    return ret;
+  }
+
   public int ExecuteCommandGetCutsceneCameraMoveRate(int nCommandId, int nParameters) {
     int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandGetCutsceneCameraMoveRate(swigCPtr, nCommandId, nParameters);
     return ret;
@@ -1192,6 +1207,11 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
 
   public int ExecuteCommandGetEffectDurationType(int nCommandId, int nParameters) {
     int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandGetEffectDurationType(swigCPtr, nCommandId, nParameters);
+    return ret;
+  }
+
+  public int ExecuteCommandGetEffectParameter(int nCommandId, int nParameters) {
+    int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandGetEffectParameter(swigCPtr, nCommandId, nParameters);
     return ret;
   }
 
@@ -3027,6 +3047,11 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
 
   public int ExecuteCommandSetTileLightColor(int nCommandId, int nParameters) {
     int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandSetTileLightColor(swigCPtr, nCommandId, nParameters);
+    return ret;
+  }
+
+  public int ExecuteCommandSetTlkOverride(int nCommandId, int nParameters) {
+    int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandSetTlkOverride(swigCPtr, nCommandId, nParameters);
     return ret;
   }
 

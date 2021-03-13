@@ -199,6 +199,17 @@ public unsafe class CTlkTable : global::System.IDisposable {
     } 
   }
 
+  public SWIGTYPE_p_std__unordered_mapT_unsigned_int_CExoString_t m_overrides {
+    set {
+      NWNXLibPINVOKE.CTlkTable_m_overrides_set(swigCPtr, SWIGTYPE_p_std__unordered_mapT_unsigned_int_CExoString_t.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTlkTable_m_overrides_get(swigCPtr);
+      SWIGTYPE_p_std__unordered_mapT_unsigned_int_CExoString_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__unordered_mapT_unsigned_int_CExoString_t(cPtr, false);
+      return ret;
+    } 
+  }
+
   public CTlkTable() : this(NWNXLibPINVOKE.new_CTlkTable(), true) {
   }
 
@@ -225,6 +236,15 @@ public unsafe class CTlkTable : global::System.IDisposable {
 
   public void ClearCustomTokens() {
     NWNXLibPINVOKE.CTlkTable_ClearCustomTokens(swigCPtr);
+  }
+
+  public void ClearOverrides() {
+    NWNXLibPINVOKE.CTlkTable_ClearOverrides(swigCPtr);
+  }
+
+  public void SetOverride(uint strId, CExoString ovr) {
+    NWNXLibPINVOKE.CTlkTable_SetOverride(swigCPtr, strId, CExoString.getCPtr(ovr));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
   public string RemapFontName(string pFontName) {

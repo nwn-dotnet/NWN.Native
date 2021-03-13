@@ -151,6 +151,53 @@ public unsafe class KEYFILE_HEADER : global::System.IDisposable {
     } 
   }
 
+  public uint nBuildYear {
+    set {
+      NWNXLibPINVOKE.KEYFILE_HEADER_nBuildYear_set(swigCPtr, value);
+    } 
+    get {
+      uint ret = NWNXLibPINVOKE.KEYFILE_HEADER_nBuildYear_get(swigCPtr);
+      return ret;
+    } 
+  }
+
+  public uint nBuildDay {
+    set {
+      NWNXLibPINVOKE.KEYFILE_HEADER_nBuildDay_set(swigCPtr, value);
+    } 
+    get {
+      uint ret = NWNXLibPINVOKE.KEYFILE_HEADER_nBuildDay_get(swigCPtr);
+      return ret;
+    } 
+  }
+
+  public string cOid {
+    set {
+      NWNXLibPINVOKE.KEYFILE_HEADER_cOid_set(swigCPtr, value);
+    } 
+    get {
+      string ret = NWNXLibPINVOKE.KEYFILE_HEADER_cOid_get(swigCPtr);
+      return ret;
+    } 
+  }
+
+  public byte[] pReserved {
+    set {
+      NWNXLibPINVOKE.KEYFILE_HEADER_pReserved_set(swigCPtr, value);
+    }  
+    get {
+      byte* arrayPtr = NWNXLibPINVOKE.KEYFILE_HEADER_pReserved_get(swigCPtr);
+      byte[] retVal = new byte[8];
+
+      for(int i = 0; i < 8; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
+    }
+
+  }
+
   public KEYFILE_HEADER() : this(NWNXLibPINVOKE.new_KEYFILE_HEADER(), true) {
   }
 

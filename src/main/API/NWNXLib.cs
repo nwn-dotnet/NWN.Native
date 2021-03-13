@@ -496,6 +496,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN10CExoResMan3GetERK7CResReft {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN10CExoResMan3GetERK7CResReft_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN10CExoResMan4DumpEP4CResi {
     get {
       uint ret = NWNXLibPINVOKE._ZN10CExoResMan4DumpEP4CResi_get();
@@ -629,9 +636,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN10CExoString14FormatDurationEm {
+  public static uint _ZN10CExoString14FormatDurationEmiibPKc {
     get {
-      uint ret = NWNXLibPINVOKE._ZN10CExoString14FormatDurationEm_get();
+      uint ret = NWNXLibPINVOKE._ZN10CExoString14FormatDurationEmiibPKc_get();
       return ret;
     } 
   }
@@ -653,6 +660,20 @@ public static class Functions {
   public static uint _ZN10CExoString20StripNonAlphaNumericEiii {
     get {
       uint ret = NWNXLibPINVOKE._ZN10CExoString20StripNonAlphaNumericEiii_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN10CExoString4JoinERKSt6vectorIS_SaIS_EERKS_ {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN10CExoString4JoinERKSt6vectorIS_SaIS_EERKS__get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN10CExoString5SplitERKS_S1_ {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN10CExoString5SplitERKS_S1__get();
       return ret;
     } 
   }
@@ -863,6 +884,13 @@ public static class Functions {
   public static uint _ZNK10CExoString5RightEi {
     get {
       uint ret = NWNXLibPINVOKE._ZNK10CExoString5RightEi_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZNK10CExoString5SplitERKS_ {
+    get {
+      uint ret = NWNXLibPINVOKE._ZNK10CExoString5SplitERKS__get();
       return ret;
     } 
   }
@@ -2029,6 +2057,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN10CNWSModule14RunEventScriptEiP10CExoString {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN10CNWSModule14RunEventScriptEiP10CExoString_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN10CNWSModule15AddTURDsToWorldEv {
     get {
       uint ret = NWNXLibPINVOKE._ZN10CNWSModule15AddTURDsToWorldEv_get();
@@ -2372,16 +2407,16 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN10CNWSModuleC1E10CExoStringiii {
+  public static uint _ZN10CNWSModuleC1E10CExoString5CUUIDiii {
     get {
-      uint ret = NWNXLibPINVOKE._ZN10CNWSModuleC1E10CExoStringiii_get();
+      uint ret = NWNXLibPINVOKE._ZN10CNWSModuleC1E10CExoString5CUUIDiii_get();
       return ret;
     } 
   }
 
-  public static uint _ZN10CNWSModuleC2E10CExoStringiii {
+  public static uint _ZN10CNWSModuleC2E10CExoString5CUUIDiii {
     get {
-      uint ret = NWNXLibPINVOKE._ZN10CNWSModuleC2E10CExoStringiii_get();
+      uint ret = NWNXLibPINVOKE._ZN10CNWSModuleC2E10CExoString5CUUIDiii_get();
       return ret;
     } 
   }
@@ -2610,6 +2645,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN10CNWSObject13GetScriptNameEi {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN10CNWSObject13GetScriptNameEi_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN10CNWSObject13IsDialogDelayEv {
     get {
       uint ret = NWNXLibPINVOKE._ZN10CNWSObject13IsDialogDelayEv_get();
@@ -2655,6 +2697,13 @@ public static class Functions {
   public static uint _ZN10CNWSObject14ReportOverflowEiiii {
     get {
       uint ret = NWNXLibPINVOKE._ZN10CNWSObject14ReportOverflowEiiii_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN10CNWSObject14RunEventScriptEiP10CExoString {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN10CNWSObject14RunEventScriptEiP10CExoString_get();
       return ret;
     } 
   }
@@ -2722,9 +2771,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN10CNWSObject15DoSpellImmunityEPS_ {
+  public static uint _ZN10CNWSObject15DoSpellImmunityEPS_P22CNWSAreaOfEffectObject {
     get {
-      uint ret = NWNXLibPINVOKE._ZN10CNWSObject15DoSpellImmunityEPS__get();
+      uint ret = NWNXLibPINVOKE._ZN10CNWSObject15DoSpellImmunityEPS_P22CNWSAreaOfEffectObject_get();
       return ret;
     } 
   }
@@ -3296,9 +3345,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN10CNWSObject22DoSpellLevelAbsorptionEPS_ {
+  public static uint _ZN10CNWSObject22DoSpellLevelAbsorptionEPS_P22CNWSAreaOfEffectObject {
     get {
-      uint ret = NWNXLibPINVOKE._ZN10CNWSObject22DoSpellLevelAbsorptionEPS__get();
+      uint ret = NWNXLibPINVOKE._ZN10CNWSObject22DoSpellLevelAbsorptionEPS_P22CNWSAreaOfEffectObject_get();
       return ret;
     } 
   }
@@ -4423,9 +4472,37 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN11CAppManager13GetLanguageIdEv {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN11CAppManager13GetLanguageIdEv_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN11CAppManager13GetPlatformIdEv {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN11CAppManager13GetPlatformIdEv_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN11CAppManager13GetWorldTimerEv {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN11CAppManager13GetWorldTimerEv_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN11CAppManager13ShowServerMemEv {
     get {
       uint ret = NWNXLibPINVOKE._ZN11CAppManager13ShowServerMemEv_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN11CAppManager14GetPublicCdKeyEv {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN11CAppManager14GetPublicCdKeyEv_get();
       return ret;
     } 
   }
@@ -4479,6 +4556,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN11CAppManager26GetCryptoKxPublicKeyBase64Ev {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN11CAppManager26GetCryptoKxPublicKeyBase64Ev_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN11CAppManager26GetDungeonMasterEXERunningEv {
     get {
       uint ret = NWNXLibPINVOKE._ZN11CAppManager26GetDungeonMasterEXERunningEv_get();
@@ -4528,9 +4612,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN11CCampaignDB10DecompressERKSt10shared_ptrI9DataBlockEbRK10CExoString {
+  public static uint _ZN11CCampaignDB10DecompressERKSt10shared_ptrI8DataViewEbRK10CExoString {
     get {
-      uint ret = NWNXLibPINVOKE._ZN11CCampaignDB10DecompressERKSt10shared_ptrI9DataBlockEbRK10CExoString_get();
+      uint ret = NWNXLibPINVOKE._ZN11CCampaignDB10DecompressERKSt10shared_ptrI8DataViewEbRK10CExoString_get();
       return ret;
     } 
   }
@@ -4570,9 +4654,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN11CCampaignDB13SetBinaryDataERK10CExoStringS2_S2_RKSt10shared_ptrIK9DataBlockEt {
+  public static uint _ZN11CCampaignDB13SetBinaryDataERK10CExoStringS2_S2_RKSt10shared_ptrI8DataViewEt {
     get {
-      uint ret = NWNXLibPINVOKE._ZN11CCampaignDB13SetBinaryDataERK10CExoStringS2_S2_RKSt10shared_ptrIK9DataBlockEt_get();
+      uint ret = NWNXLibPINVOKE._ZN11CCampaignDB13SetBinaryDataERK10CExoStringS2_S2_RKSt10shared_ptrI8DataViewEt_get();
       return ret;
     } 
   }
@@ -4619,9 +4703,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN11CCampaignDB8CompressERKSt10shared_ptrI9DataBlockEtRK10CExoString {
+  public static uint _ZN11CCampaignDB8CompressERKSt10shared_ptrI8DataViewEtRK10CExoString {
     get {
-      uint ret = NWNXLibPINVOKE._ZN11CCampaignDB8CompressERKSt10shared_ptrI9DataBlockEtRK10CExoString_get();
+      uint ret = NWNXLibPINVOKE._ZN11CCampaignDB8CompressERKSt10shared_ptrI8DataViewEtRK10CExoString_get();
       return ret;
     } 
   }
@@ -4738,9 +4822,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN11CExoResFile10LoadHeaderEh {
+  public static uint _ZN11CExoResFile10LoadHeaderEPKch {
     get {
-      uint ret = NWNXLibPINVOKE._ZN11CExoResFile10LoadHeaderEh_get();
+      uint ret = NWNXLibPINVOKE._ZN11CExoResFile10LoadHeaderEPKch_get();
       return ret;
     } 
   }
@@ -6117,16 +6201,16 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN11CNWSMessage26AddDoorAppearanceToMessageEP8CNWSDoor {
+  public static uint _ZN11CNWSMessage26AddDoorAppearanceToMessageEP10CNWSPlayerP8CNWSDoor {
     get {
-      uint ret = NWNXLibPINVOKE._ZN11CNWSMessage26AddDoorAppearanceToMessageEP8CNWSDoor_get();
+      uint ret = NWNXLibPINVOKE._ZN11CNWSMessage26AddDoorAppearanceToMessageEP10CNWSPlayerP8CNWSDoor_get();
       return ret;
     } 
   }
 
-  public static uint _ZN11CNWSMessage26AddItemAppearanceToMessageEP8CNWSItem {
+  public static uint _ZN11CNWSMessage26AddItemAppearanceToMessageEP10CNWSPlayerP8CNWSItem {
     get {
-      uint ret = NWNXLibPINVOKE._ZN11CNWSMessage26AddItemAppearanceToMessageEP8CNWSItem_get();
+      uint ret = NWNXLibPINVOKE._ZN11CNWSMessage26AddItemAppearanceToMessageEP10CNWSPlayerP8CNWSItem_get();
       return ret;
     } 
   }
@@ -6453,9 +6537,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN11CNWSMessage31AddPlaceableAppearanceToMessageEP13CNWSPlaceable {
+  public static uint _ZN11CNWSMessage31AddPlaceableAppearanceToMessageEP10CNWSPlayerP13CNWSPlaceable {
     get {
-      uint ret = NWNXLibPINVOKE._ZN11CNWSMessage31AddPlaceableAppearanceToMessageEP13CNWSPlaceable_get();
+      uint ret = NWNXLibPINVOKE._ZN11CNWSMessage31AddPlaceableAppearanceToMessageEP10CNWSPlayerP13CNWSPlaceable_get();
       return ret;
     } 
   }
@@ -6827,6 +6911,13 @@ public static class Functions {
   public static uint _ZN11CNWSMessage32SendServerToPlayerSetCustomTokenEjiRK10CExoString {
     get {
       uint ret = NWNXLibPINVOKE._ZN11CNWSMessage32SendServerToPlayerSetCustomTokenEjiRK10CExoString_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN11CNWSMessage32SendServerToPlayerSetTlkOverrideEjiRK10CExoString {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN11CNWSMessage32SendServerToPlayerSetTlkOverrideEjiRK10CExoString_get();
       return ret;
     } 
   }
@@ -7440,6 +7531,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN11CNWSMessage36SendServerToPlayerSetTlkOverrideListEj {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN11CNWSMessage36SendServerToPlayerSetTlkOverrideListEj_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN11CNWSMessage36SendServerToPlayerUpdateCharResponseEP10CNWSPlayerh7CResRef {
     get {
       uint ret = NWNXLibPINVOKE._ZN11CNWSMessage36SendServerToPlayerUpdateCharResponseEP10CNWSPlayerh7CResRef_get();
@@ -7909,9 +8007,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN11CNWSMessage40WriteGameObjUpdate_WriteInventorySlotAddEP12CNWSCreatureP8CNWSItemj {
+  public static uint _ZN11CNWSMessage40WriteGameObjUpdate_WriteInventorySlotAddEP10CNWSPlayerP12CNWSCreatureP8CNWSItemj {
     get {
-      uint ret = NWNXLibPINVOKE._ZN11CNWSMessage40WriteGameObjUpdate_WriteInventorySlotAddEP12CNWSCreatureP8CNWSItemj_get();
+      uint ret = NWNXLibPINVOKE._ZN11CNWSMessage40WriteGameObjUpdate_WriteInventorySlotAddEP10CNWSPlayerP12CNWSCreatureP8CNWSItemj_get();
       return ret;
     } 
   }
@@ -8126,9 +8224,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN11CNWSMessage43WriteGameObjUpdate_WriteInventorySlotUpdateEjj {
+  public static uint _ZN11CNWSMessage43WriteGameObjUpdate_WriteInventorySlotUpdateEP10CNWSPlayerjj {
     get {
-      uint ret = NWNXLibPINVOKE._ZN11CNWSMessage43WriteGameObjUpdate_WriteInventorySlotUpdateEjj_get();
+      uint ret = NWNXLibPINVOKE._ZN11CNWSMessage43WriteGameObjUpdate_WriteInventorySlotUpdateEP10CNWSPlayerjj_get();
       return ret;
     } 
   }
@@ -9792,6 +9890,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN12CNWSCreature13GetScriptNameEi {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN12CNWSCreature13GetScriptNameEi_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN12CNWSCreature13ResolveAttackEjii {
     get {
       uint ret = NWNXLibPINVOKE._ZN12CNWSCreature13ResolveAttackEjii_get();
@@ -10751,6 +10856,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN12CNWSCreature18ChangeAttackTargetEP20CNWSObjectActionNodej {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN12CNWSCreature18ChangeAttackTargetEP20CNWSObjectActionNodej_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN12CNWSCreature18CheckMasterIsValidEjj {
     get {
       uint ret = NWNXLibPINVOKE._ZN12CNWSCreature18CheckMasterIsValidEjj_get();
@@ -10789,6 +10901,13 @@ public static class Functions {
   public static uint _ZN12CNWSCreature18GetAttackResultHitEP20CNWSCombatAttackData {
     get {
       uint ret = NWNXLibPINVOKE._ZN12CNWSCreature18GetAttackResultHitEP20CNWSCombatAttackData_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN12CNWSCreature18GetNewCombatTargetEj {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN12CNWSCreature18GetNewCombatTargetEj_get();
       return ret;
     } 
   }
@@ -12105,6 +12224,13 @@ public static class Functions {
   public static uint _ZN12CNWSCreature28BroadcastAttackOfOpportunityEji {
     get {
       uint ret = NWNXLibPINVOKE._ZN12CNWSCreature28BroadcastAttackOfOpportunityEji_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN12CNWSCreature28CheckAttackClearLineToTargetEj6VectorP8CNWSArea {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN12CNWSCreature28CheckAttackClearLineToTargetEj6VectorP8CNWSArea_get();
       return ret;
     } 
   }
@@ -13719,6 +13845,20 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN13CExoLocStringC1Ej {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN13CExoLocStringC1Ej_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN13CExoLocStringC1ERK10CExoStringi {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN13CExoLocStringC1ERK10CExoStringi_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN13CExoLocStringC1ERKS_ {
     get {
       uint ret = NWNXLibPINVOKE._ZN13CExoLocStringC1ERKS__get();
@@ -13729,6 +13869,20 @@ public static class Functions {
   public static uint _ZN13CExoLocStringC1Ev {
     get {
       uint ret = NWNXLibPINVOKE._ZN13CExoLocStringC1Ev_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN13CExoLocStringC2Ej {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN13CExoLocStringC2Ej_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN13CExoLocStringC2ERK10CExoStringi {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN13CExoLocStringC2ERK10CExoStringi_get();
       return ret;
     } 
   }
@@ -13799,6 +13953,13 @@ public static class Functions {
   public static uint _ZNK13CExoLocString17GetStringInternalEiP10CExoString {
     get {
       uint ret = NWNXLibPINVOKE._ZNK13CExoLocString17GetStringInternalEiP10CExoString_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZNK13CExoLocString9GetSimpleEh {
+    get {
+      uint ret = NWNXLibPINVOKE._ZNK13CExoLocString9GetSimpleEh_get();
       return ret;
     } 
   }
@@ -13883,6 +14044,13 @@ public static class Functions {
   public static uint _ZN13CNWSEncounter12GetFirstNameEv {
     get {
       uint ret = NWNXLibPINVOKE._ZN13CNWSEncounter12GetFirstNameEv_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN13CNWSEncounter13GetScriptNameEi {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN13CNWSEncounter13GetScriptNameEi_get();
       return ret;
     } 
   }
@@ -14307,6 +14475,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN13CNWSPlaceable13GetScriptNameEi {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN13CNWSPlaceable13GetScriptNameEi_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN13CNWSPlaceable13LoadPlaceableEP7CResGFFP10CResStructP10CExoString {
     get {
       uint ret = NWNXLibPINVOKE._ZN13CNWSPlaceable13LoadPlaceableEP7CResGFFP10CResStructP10CExoString_get();
@@ -14650,9 +14825,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN13CServerExoApp10LoadModuleE10CExoStringiP10CNWSPlayeri {
+  public static uint _ZN13CServerExoApp10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeri {
     get {
-      uint ret = NWNXLibPINVOKE._ZN13CServerExoApp10LoadModuleE10CExoStringiP10CNWSPlayeri_get();
+      uint ret = NWNXLibPINVOKE._ZN13CServerExoApp10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeri_get();
       return ret;
     } 
   }
@@ -16669,6 +16844,13 @@ public static class Functions {
   public static uint _ZN15CItemRepository15ItemListGetItemEP18CExoLinkedListNode {
     get {
       uint ret = NWNXLibPINVOKE._ZN15CItemRepository15ItemListGetItemEP18CExoLinkedListNode_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN15CItemRepository17CheckBaseItemFitsEjhh {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN15CItemRepository17CheckBaseItemFitsEjhh_get();
       return ret;
     } 
   }
@@ -18955,9 +19137,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN15CVirtualMachine14ReadScriptFileEP10CExoString {
+  public static uint _ZN15CVirtualMachine14ReadScriptFileEP10CExoStringi {
     get {
-      uint ret = NWNXLibPINVOKE._ZN15CVirtualMachine14ReadScriptFileEP10CExoString_get();
+      uint ret = NWNXLibPINVOKE._ZN15CVirtualMachine14ReadScriptFileEP10CExoStringi_get();
       return ret;
     } 
   }
@@ -19172,9 +19354,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN15CVirtualMachine9RunScriptEP10CExoStringji {
+  public static uint _ZN15CVirtualMachine9RunScriptEP10CExoStringjii {
     get {
-      uint ret = NWNXLibPINVOKE._ZN15CVirtualMachine9RunScriptEP10CExoStringji_get();
+      uint ret = NWNXLibPINVOKE._ZN15CVirtualMachine9RunScriptEP10CExoStringjii_get();
       return ret;
     } 
   }
@@ -19214,9 +19396,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN15NWVMachineUtils18DeserializeFromGffESt10shared_ptrI9DataBlockERK15CScriptLocationjRK10CExoString {
+  public static uint _ZN15NWVMachineUtils18DeserializeFromGffESt10shared_ptrI8DataViewERK15CScriptLocationjRK10CExoString {
     get {
-      uint ret = NWNXLibPINVOKE._ZN15NWVMachineUtils18DeserializeFromGffESt10shared_ptrI9DataBlockERK15CScriptLocationjRK10CExoString_get();
+      uint ret = NWNXLibPINVOKE._ZN15NWVMachineUtils18DeserializeFromGffESt10shared_ptrI8DataViewERK15CScriptLocationjRK10CExoString_get();
       return ret;
     } 
   }
@@ -19326,6 +19508,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN16CExoFileInternal13GetFileHandleEv {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN16CExoFileInternal13GetFileHandleEv_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN16CExoFileInternal13SeekBeginningEv {
     get {
       uint ret = NWNXLibPINVOKE._ZN16CExoFileInternal13SeekBeginningEv_get();
@@ -19406,6 +19595,13 @@ public static class Functions {
   public static uint _ZN16CExoFileInternal7SeekEndEv {
     get {
       uint ret = NWNXLibPINVOKE._ZN16CExoFileInternal7SeekEndEv_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN16CExoFileInternal8GetIsEOSEv {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN16CExoFileInternal8GetIsEOSEv_get();
       return ret;
     } 
   }
@@ -22385,6 +22581,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN18CNWSScriptVarTable11DestroyCswyER10CExoString {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN18CNWSScriptVarTable11DestroyCswyER10CExoString_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN18CNWSScriptVarTable11GetLocationER10CExoString {
     get {
       uint ret = NWNXLibPINVOKE._ZN18CNWSScriptVarTable11GetLocationER10CExoString_get();
@@ -22416,6 +22619,13 @@ public static class Functions {
   public static uint _ZN18CNWSScriptVarTable12SaveVarTableEP7CResGFFP10CResStruct {
     get {
       uint ret = NWNXLibPINVOKE._ZN18CNWSScriptVarTable12SaveVarTableEP7CResGFFP10CResStruct_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN18CNWSScriptVarTable12VARTYPE_CSWYE {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN18CNWSScriptVarTable12VARTYPE_CSWYE_get();
       return ret;
     } 
   }
@@ -22486,6 +22696,20 @@ public static class Functions {
   public static uint _ZN18CNWSScriptVarTable6SetIntER10CExoStringii {
     get {
       uint ret = NWNXLibPINVOKE._ZN18CNWSScriptVarTable6SetIntER10CExoStringii_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN18CNWSScriptVarTable7GetCswyER10CExoString {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN18CNWSScriptVarTable7GetCswyER10CExoString_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN18CNWSScriptVarTable7SetCswyER10CExoString30CassowarySolverEngineStructure {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN18CNWSScriptVarTable7SetCswyER10CExoString30CassowarySolverEngineStructure_get();
       return ret;
     } 
   }
@@ -23365,9 +23589,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN20CExoEncapsulatedFile10LoadHeaderEh {
+  public static uint _ZN20CExoEncapsulatedFile10LoadHeaderEPKch {
     get {
-      uint ret = NWNXLibPINVOKE._ZN20CExoEncapsulatedFile10LoadHeaderEh_get();
+      uint ret = NWNXLibPINVOKE._ZN20CExoEncapsulatedFile10LoadHeaderEPKch_get();
       return ret;
     } 
   }
@@ -23666,6 +23890,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN20CPathfindInformation15GetGridStepSizeEv {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN20CPathfindInformation15GetGridStepSizeEv_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN20CPathfindInformation16ResetAtEndOfPathEv {
     get {
       uint ret = NWNXLibPINVOKE._ZN20CPathfindInformation16ResetAtEndOfPathEv_get();
@@ -23708,13 +23939,6 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN20CPathfindInformation20ComputeStepToleranceEv {
-    get {
-      uint ret = NWNXLibPINVOKE._ZN20CPathfindInformation20ComputeStepToleranceEv_get();
-      return ret;
-    } 
-  }
-
   public static uint _ZN20CPathfindInformation20CreateGridSearchPathEv {
     get {
       uint ret = NWNXLibPINVOKE._ZN20CPathfindInformation20CreateGridSearchPathEv_get();
@@ -23746,6 +23970,13 @@ public static class Functions {
   public static uint _ZN20CPathfindInformation21SetGridSearchPathInfoEi17CNWGridSearchPath {
     get {
       uint ret = NWNXLibPINVOKE._ZN20CPathfindInformation21SetGridSearchPathInfoEi17CNWGridSearchPath_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN20CPathfindInformation24ComputeGridStepToleranceEv {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN20CPathfindInformation24ComputeGridStepToleranceEv_get();
       return ret;
     } 
   }
@@ -24149,9 +24380,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN21CExoResourceImageFile10LoadHeaderEh {
+  public static uint _ZN21CExoResourceImageFile10LoadHeaderEPKch {
     get {
-      uint ret = NWNXLibPINVOKE._ZN21CExoResourceImageFile10LoadHeaderEh_get();
+      uint ret = NWNXLibPINVOKE._ZN21CExoResourceImageFile10LoadHeaderEPKch_get();
       return ret;
     } 
   }
@@ -26956,9 +27187,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN21CServerExoAppInternal10LoadModuleE10CExoStringiP10CNWSPlayeri {
+  public static uint _ZN21CServerExoAppInternal10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeri {
     get {
-      uint ret = NWNXLibPINVOKE._ZN21CServerExoAppInternal10LoadModuleE10CExoStringiP10CNWSPlayeri_get();
+      uint ret = NWNXLibPINVOKE._ZN21CServerExoAppInternal10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeri_get();
       return ret;
     } 
   }
@@ -28268,6 +28499,13 @@ public static class Functions {
   public static uint _ZN22CNWSAreaOfEffectObject12EventHandlerEjjPvjj {
     get {
       uint ret = NWNXLibPINVOKE._ZN22CNWSAreaOfEffectObject12EventHandlerEjjPvjj_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN22CNWSAreaOfEffectObject13GetScriptNameEi {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN22CNWSAreaOfEffectObject13GetScriptNameEi_get();
       return ret;
     } 
   }
@@ -29623,6 +29861,20 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN25CNWVirtualMachineCommands18COMMAND_CSWY_DEBUGE {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands18COMMAND_CSWY_DEBUGE_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN25CNWVirtualMachineCommands18COMMAND_CSWY_RESETE {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands18COMMAND_CSWY_RESETE_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN25CNWVirtualMachineCommands18COMMAND_DAYTONIGHTE {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands18COMMAND_DAYTONIGHTE_get();
@@ -30232,6 +30484,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN25CNWVirtualMachineCommands20COMMAND_CSWY_SUGGESTE {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands20COMMAND_CSWY_SUGGESTE_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN25CNWVirtualMachineCommands20COMMAND_DELAYCOMMANDE {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands20COMMAND_DELAYCOMMANDE_get();
@@ -30344,6 +30603,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN25CNWVirtualMachineCommands20COMMAND_GETLOCALCSWYE {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands20COMMAND_GETLOCALCSWYE_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN25CNWVirtualMachineCommands20COMMAND_GETPCSPEAKERE {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands20COMMAND_GETPCSPEAKERE_get();
@@ -30410,6 +30676,13 @@ public static class Functions {
   public static uint _ZN25CNWVirtualMachineCommands20COMMAND_SETLISTENINGE {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands20COMMAND_SETLISTENINGE_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN25CNWVirtualMachineCommands20COMMAND_SETLOCALCSWYE {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands20COMMAND_SETLOCALCSWYE_get();
       return ret;
     } 
   }
@@ -30592,6 +30865,13 @@ public static class Functions {
   public static uint _ZN25CNWVirtualMachineCommands21COMMAND_CHANGEFACTIONE {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands21COMMAND_CHANGEFACTIONE_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN25CNWVirtualMachineCommands21COMMAND_CSWY_GETVALUEE {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands21COMMAND_CSWY_GETVALUEE_get();
       return ret;
     } 
   }
@@ -31156,6 +31436,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN25CNWVirtualMachineCommands22COMMAND_CSWY_CONSTRAINE {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands22COMMAND_CSWY_CONSTRAINE_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN25CNWVirtualMachineCommands22COMMAND_DELETELOCALINTE {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands22COMMAND_DELETELOCALINTE_get();
@@ -31243,6 +31530,13 @@ public static class Functions {
   public static uint _ZN25CNWVirtualMachineCommands22COMMAND_GETDESCRIPTIONE {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands22COMMAND_GETDESCRIPTIONE_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN25CNWVirtualMachineCommands22COMMAND_GETEFFECTFLOATE {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands22COMMAND_GETEFFECTFLOATE_get();
       return ret;
     } 
   }
@@ -31527,6 +31821,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN25CNWVirtualMachineCommands22COMMAND_SETTLKOVERRIDEE {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands22COMMAND_SETTLKOVERRIDEE_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN25CNWVirtualMachineCommands22COMMAND_SETTRAPONESHOTE {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands22COMMAND_SETTRAPONESHOTE_get();
@@ -31737,6 +32038,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN25CNWVirtualMachineCommands23COMMAND_DELETELOCALCSWYE {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands23COMMAND_DELETELOCALCSWYE_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN25CNWVirtualMachineCommands23COMMAND_EFFECTBLINDNESSE {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands23COMMAND_EFFECTBLINDNESSE_get();
@@ -31831,6 +32139,27 @@ public static class Functions {
   public static uint _ZN25CNWVirtualMachineCommands23COMMAND_GETCUTSCENEMODEE {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands23COMMAND_GETCUTSCENEMODEE_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN25CNWVirtualMachineCommands23COMMAND_GETEFFECTOBJECTE {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands23COMMAND_GETEFFECTOBJECTE_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN25CNWVirtualMachineCommands23COMMAND_GETEFFECTSTRINGE {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands23COMMAND_GETEFFECTSTRINGE_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN25CNWVirtualMachineCommands23COMMAND_GETEFFECTVECTORE {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands23COMMAND_GETEFFECTVECTORE_get();
       return ret;
     } 
   }
@@ -32234,6 +32563,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN25CNWVirtualMachineCommands23ExecuteCommandCassowaryEii {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands23ExecuteCommandCassowaryEii_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN25CNWVirtualMachineCommands23ExecuteCommandCastSpellEii {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands23ExecuteCommandCastSpellEii_get();
@@ -32549,6 +32885,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN25CNWVirtualMachineCommands24COMMAND_GETEFFECTINTEGERE {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands24COMMAND_GETEFFECTINTEGERE_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN25CNWVirtualMachineCommands24COMMAND_GETEFFECTSPELLIDE {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands24COMMAND_GETEFFECTSPELLIDE_get();
@@ -32762,6 +33105,13 @@ public static class Functions {
   public static uint _ZN25CNWVirtualMachineCommands24COMMAND_ISINCONVERSATIONE {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands24COMMAND_ISINCONVERSATIONE_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN25CNWVirtualMachineCommands24COMMAND_ITEMEFFECTCUSTOME {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands24COMMAND_ITEMEFFECTCUSTOME_get();
       return ret;
     } 
   }
@@ -35720,6 +36070,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN25CNWVirtualMachineCommands28ExecuteCommandSetTlkOverrideEii {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands28ExecuteCommandSetTlkOverrideEii_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN25CNWVirtualMachineCommands28ExecuteCommandSetUseableFlagEii {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands28ExecuteCommandSetUseableFlagEii_get();
@@ -37638,6 +37995,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN25CNWVirtualMachineCommands32COMMAND_GETCURRENTLYRUNNINGEVENTE {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands32COMMAND_GETCURRENTLYRUNNINGEVENTE_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN25CNWVirtualMachineCommands32COMMAND_GETDEFAULTCLICKINGOBJECTE {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands32COMMAND_GETDEFAULTCLICKINGOBJECTE_get();
@@ -37907,6 +38271,13 @@ public static class Functions {
   public static uint _ZN25CNWVirtualMachineCommands32ExecuteCommandGetDistanceBetweenEii {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands32ExecuteCommandGetDistanceBetweenEii_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN25CNWVirtualMachineCommands32ExecuteCommandGetEffectParameterEii {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands32ExecuteCommandGetEffectParameterEii_get();
       return ret;
     } 
   }
@@ -38593,6 +38964,13 @@ public static class Functions {
   public static uint _ZN25CNWVirtualMachineCommands34COMMAND_EFFECTSPELLLEVELABSORPTIONE {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands34COMMAND_EFFECTSPELLLEVELABSORPTIONE_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN25CNWVirtualMachineCommands34COMMAND_GETBASEITEMFITSININVENTORYE {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands34COMMAND_GETBASEITEMFITSININVENTORYE_get();
       return ret;
     } 
   }
@@ -39675,6 +40053,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN25CNWVirtualMachineCommands38ExecuteCommandGetCurrentlyRunningEventEii {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands38ExecuteCommandGetCurrentlyRunningEventEii_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN25CNWVirtualMachineCommands38ExecuteCommandGetLimitSavingThrowBonusEii {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands38ExecuteCommandGetLimitSavingThrowBonusEii_get();
@@ -39832,6 +40217,13 @@ public static class Functions {
   public static uint _ZN25CNWVirtualMachineCommands40ExecuteCommandEffectSpellLevelAbsorptionEii {
     get {
       uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands40ExecuteCommandEffectSpellLevelAbsorptionEii_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN25CNWVirtualMachineCommands40ExecuteCommandGetBaseItemFitsInInventoryEii {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN25CNWVirtualMachineCommands40ExecuteCommandGetBaseItemFitsInInventoryEii_get();
       return ret;
     } 
   }
@@ -40123,16 +40515,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN25ObjectVisualTransformData4ReadEP10CNWMessage {
+  public static uint _ZN25ObjectVisualTransformData5WriteEP10CNWSPlayerP10CNWMessageRKS_ {
     get {
-      uint ret = NWNXLibPINVOKE._ZN25ObjectVisualTransformData4ReadEP10CNWMessage_get();
-      return ret;
-    } 
-  }
-
-  public static uint _ZN25ObjectVisualTransformData5WriteEP10CNWMessageRKS_ {
-    get {
-      uint ret = NWNXLibPINVOKE._ZN25ObjectVisualTransformData5WriteEP10CNWMessageRKS__get();
+      uint ret = NWNXLibPINVOKE._ZN25ObjectVisualTransformData5WriteEP10CNWSPlayerP10CNWMessageRKS__get();
       return ret;
     } 
   }
@@ -44764,6 +45149,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN8CExoBase19GetInstallDirectoryEv {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN8CExoBase19GetInstallDirectoryEv_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN8CExoBase20GetResourceExtensionEt {
     get {
       uint ret = NWNXLibPINVOKE._ZN8CExoBase20GetResourceExtensionEt_get();
@@ -44837,6 +45229,13 @@ public static class Functions {
   public static uint _ZN8CExoFile10FileOpenedEv {
     get {
       uint ret = NWNXLibPINVOKE._ZN8CExoFile10FileOpenedEv_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN8CExoFile13GetFileHandleEv {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN8CExoFile13GetFileHandleEv_get();
       return ret;
     } 
   }
@@ -44942,6 +45341,13 @@ public static class Functions {
   public static uint _ZN8CExoFile7SeekEndEv {
     get {
       uint ret = NWNXLibPINVOKE._ZN8CExoFile7SeekEndEv_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN8CExoFile8GetIsEOSEv {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN8CExoFile8GetIsEOSEv_get();
       return ret;
     } 
   }
@@ -45996,13 +46402,6 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN8CNWSArea12GridDFSearchEiiiiii {
-    get {
-      uint ret = NWNXLibPINVOKE._ZN8CNWSArea12GridDFSearchEiiiiii_get();
-      return ret;
-    } 
-  }
-
   public static uint _ZN8CNWSArea12InterTileDFSEiiiii {
     get {
       uint ret = NWNXLibPINVOKE._ZN8CNWSArea12InterTileDFSEiiiii_get();
@@ -46017,9 +46416,9 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN8CNWSArea12PlotGridPathEP20CPathfindInformationm {
+  public static uint _ZN8CNWSArea12PlotGridPathEP20CPathfindInformationmb {
     get {
-      uint ret = NWNXLibPINVOKE._ZN8CNWSArea12PlotGridPathEP20CPathfindInformationm_get();
+      uint ret = NWNXLibPINVOKE._ZN8CNWSArea12PlotGridPathEP20CPathfindInformationmb_get();
       return ret;
     } 
   }
@@ -46132,6 +46531,13 @@ public static class Functions {
   public static uint _ZN8CNWSArea14LoadPropertiesEP7CResGFFP10CResStruct {
     get {
       uint ret = NWNXLibPINVOKE._ZN8CNWSArea14LoadPropertiesEP7CResGFFP10CResStruct_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN8CNWSArea14RunEventScriptEiP10CExoString {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN8CNWSArea14RunEventScriptEiP10CExoString_get();
       return ret;
     } 
   }
@@ -46332,27 +46738,6 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN8CNWSArea20GridDFSTransTableGetEiiPiS0_ {
-    get {
-      uint ret = NWNXLibPINVOKE._ZN8CNWSArea20GridDFSTransTableGetEiiPiS0__get();
-      return ret;
-    } 
-  }
-
-  public static uint _ZN8CNWSArea20GridDFSTransTablePutEiiii {
-    get {
-      uint ret = NWNXLibPINVOKE._ZN8CNWSArea20GridDFSTransTablePutEiiii_get();
-      return ret;
-    } 
-  }
-
-  public static uint _ZN8CNWSArea20PlotGridPathEnhancedEP20CPathfindInformationmb {
-    get {
-      uint ret = NWNXLibPINVOKE._ZN8CNWSArea20PlotGridPathEnhancedEP20CPathfindInformationmb_get();
-      return ret;
-    } 
-  }
-
   public static uint _ZN8CNWSArea20RemoveObjectFromAreaEj {
     get {
       uint ret = NWNXLibPINVOKE._ZN8CNWSArea20RemoveObjectFromAreaEj_get();
@@ -46384,13 +46769,6 @@ public static class Functions {
   public static uint _ZN8CNWSArea21GenerateInterTilePathEPiiii {
     get {
       uint ret = NWNXLibPINVOKE._ZN8CNWSArea21GenerateInterTilePathEPiiii_get();
-      return ret;
-    } 
-  }
-
-  public static uint _ZN8CNWSArea21GridDFSTransTableHashEii {
-    get {
-      uint ret = NWNXLibPINVOKE._ZN8CNWSArea21GridDFSTransTableHashEii_get();
       return ret;
     } 
   }
@@ -46472,13 +46850,6 @@ public static class Functions {
     } 
   }
 
-  public static uint _ZN8CNWSArea25GridDFSGenerateSuccessorsEiiiiiPP22CNWSAreaGridSuccessors {
-    get {
-      uint ret = NWNXLibPINVOKE._ZN8CNWSArea25GridDFSGenerateSuccessorsEiiiiiPP22CNWSAreaGridSuccessors_get();
-      return ret;
-    } 
-  }
-
   public static uint _ZN8CNWSArea25GridSearchPathInDirectionEiiiiibP17CNWSAreaGridPoint {
     get {
       uint ret = NWNXLibPINVOKE._ZN8CNWSArea25GridSearchPathInDirectionEiiiiibP17CNWSAreaGridPoint_get();
@@ -46503,13 +46874,6 @@ public static class Functions {
   public static uint _ZN8CNWSArea27CountAreaTransitionTriggersEPjiS0_ {
     get {
       uint ret = NWNXLibPINVOKE._ZN8CNWSArea27CountAreaTransitionTriggersEPjiS0__get();
-      return ret;
-    } 
-  }
-
-  public static uint _ZN8CNWSArea27GridDFSTransTableInitializeEv {
-    get {
-      uint ret = NWNXLibPINVOKE._ZN8CNWSArea27GridDFSTransTableInitializeEv_get();
       return ret;
     } 
   }
@@ -46734,6 +47098,13 @@ public static class Functions {
   public static uint _ZN8CNWSDoor12SetOpenStateEh {
     get {
       uint ret = NWNXLibPINVOKE._ZN8CNWSDoor12SetOpenStateEh_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN8CNWSDoor13GetScriptNameEi {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN8CNWSDoor13GetScriptNameEi_get();
       return ret;
     } 
   }
@@ -48985,6 +49356,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN9CNWSStore13GetScriptNameEi {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN9CNWSStore13GetScriptNameEi_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN9CNWSStore14RemoveCustomerEP10CNWSPlayer {
     get {
       uint ret = NWNXLibPINVOKE._ZN9CNWSStore14RemoveCustomerEP10CNWSPlayer_get();
@@ -49195,6 +49573,13 @@ public static class Functions {
     } 
   }
 
+  public static uint _ZN9CTlkTable11SetOverrideEjRK10CExoString {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN9CTlkTable11SetOverrideEjRK10CExoString_get();
+      return ret;
+    } 
+  }
+
   public static uint _ZN9CTlkTable11SND_PRESENTE {
     get {
       uint ret = NWNXLibPINVOKE._ZN9CTlkTable11SND_PRESENTE_get();
@@ -49233,6 +49618,13 @@ public static class Functions {
   public static uint _ZN9CTlkTable13RemapFontNameEPc {
     get {
       uint ret = NWNXLibPINVOKE._ZN9CTlkTable13RemapFontNameEPc_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN9CTlkTable14ClearOverridesEv {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN9CTlkTable14ClearOverridesEv_get();
       return ret;
     } 
   }
@@ -49310,6 +49702,13 @@ public static class Functions {
   public static uint _ZN9CTlkTable20FILESARRAY_GROW_SIZEE {
     get {
       uint ret = NWNXLibPINVOKE._ZN9CTlkTable20FILESARRAY_GROW_SIZEE_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN9CTlkTable20s_szFontName_DefaultE {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN9CTlkTable20s_szFontName_DefaultE_get();
       return ret;
     } 
   }
@@ -49436,6 +49835,27 @@ public static class Functions {
   public static uint _ZNK6Matrix13getquaternionEv {
     get {
       uint ret = NWNXLibPINVOKE._ZNK6Matrix13getquaternionEv_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN9LerpFloat7ReadGFFEP7CResGFFP10CResStructPcRif {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN9LerpFloat7ReadGFFEP7CResGFFP10CResStructPcRif_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN9LerpFloat7RefreshEv {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN9LerpFloat7RefreshEv_get();
+      return ret;
+    } 
+  }
+
+  public static uint _ZN9LerpFloat8WriteGFFEP7CResGFFP10CResStructPc {
+    get {
+      uint ret = NWNXLibPINVOKE._ZN9LerpFloat8WriteGFFEP7CResGFFP10CResStructPc_get();
       return ret;
     } 
   }

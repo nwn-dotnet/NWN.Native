@@ -237,6 +237,17 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
     } 
   }
 
+  public CUUID m_cModUUID {
+    set {
+      NWNXLibPINVOKE.CNWSModule_m_cModUUID_set(swigCPtr, CUUID.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_m_cModUUID_get(swigCPtr);
+      CUUID ret = (cPtr == global::System.IntPtr.Zero) ? null : new CUUID(cPtr, false);
+      return ret;
+    } 
+  }
+
   public CExoString m_sModuleResourceName {
     set {
       NWNXLibPINVOKE.CNWSModule_m_sModuleResourceName_set(swigCPtr, CExoString.getCPtr(value));
@@ -1040,15 +1051,15 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
     } 
   }
 
-  public CNWSModule(CExoString sModuleFilename, int bSetAutoRequest, int bIsSaveGame, int nSourceType) : this(NWNXLibPINVOKE.new_CNWSModule__SWIG_0(CExoString.getCPtr(sModuleFilename), bSetAutoRequest, bIsSaveGame, nSourceType), true) {
+  public CNWSModule(CExoString sModuleFilename, CUUID cModUUID, int bSetAutoRequest, int bIsSaveGame, int nSourceType) : this(NWNXLibPINVOKE.new_CNWSModule__SWIG_0(CExoString.getCPtr(sModuleFilename), CUUID.getCPtr(cModUUID), bSetAutoRequest, bIsSaveGame, nSourceType), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CNWSModule(CExoString sModuleFilename, int bSetAutoRequest, int bIsSaveGame) : this(NWNXLibPINVOKE.new_CNWSModule__SWIG_1(CExoString.getCPtr(sModuleFilename), bSetAutoRequest, bIsSaveGame), true) {
+  public CNWSModule(CExoString sModuleFilename, CUUID cModUUID, int bSetAutoRequest, int bIsSaveGame) : this(NWNXLibPINVOKE.new_CNWSModule__SWIG_1(CExoString.getCPtr(sModuleFilename), CUUID.getCPtr(cModUUID), bSetAutoRequest, bIsSaveGame), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CNWSModule(CExoString sModuleFilename, int bSetAutoRequest) : this(NWNXLibPINVOKE.new_CNWSModule__SWIG_2(CExoString.getCPtr(sModuleFilename), bSetAutoRequest), true) {
+  public CNWSModule(CExoString sModuleFilename, CUUID cModUUID, int bSetAutoRequest) : this(NWNXLibPINVOKE.new_CNWSModule__SWIG_2(CExoString.getCPtr(sModuleFilename), CUUID.getCPtr(cModUUID), bSetAutoRequest), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -1333,6 +1344,16 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
 
   public void DestroyModuleSqliteDatabase() {
     NWNXLibPINVOKE.CNWSModule_DestroyModuleSqliteDatabase(swigCPtr);
+  }
+
+  public int RunEventScript(int nScript, CExoString psOverrideScriptName) {
+    int ret = NWNXLibPINVOKE.CNWSModule_RunEventScript__SWIG_0(swigCPtr, nScript, CExoString.getCPtr(psOverrideScriptName));
+    return ret;
+  }
+
+  public int RunEventScript(int nScript) {
+    int ret = NWNXLibPINVOKE.CNWSModule_RunEventScript__SWIG_1(swigCPtr, nScript);
+    return ret;
   }
 
   public void PostProcess() {

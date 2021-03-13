@@ -91,45 +91,46 @@ public unsafe class CAurObjectVisualTransformData : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public Vector m_scale {
+  public LerpVector m_scale {
     set {
-      NWNXLibPINVOKE.CAurObjectVisualTransformData_m_scale_set(swigCPtr, Vector.getCPtr(value));
+      NWNXLibPINVOKE.CAurObjectVisualTransformData_m_scale_set(swigCPtr, LerpVector.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CAurObjectVisualTransformData_m_scale_get(swigCPtr);
-      Vector ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector(cPtr, false);
+      LerpVector ret = (cPtr == global::System.IntPtr.Zero) ? null : new LerpVector(cPtr, false);
       return ret;
     } 
   }
 
-  public Vector m_rotate {
+  public LerpVector m_rotate {
     set {
-      NWNXLibPINVOKE.CAurObjectVisualTransformData_m_rotate_set(swigCPtr, Vector.getCPtr(value));
+      NWNXLibPINVOKE.CAurObjectVisualTransformData_m_rotate_set(swigCPtr, LerpVector.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CAurObjectVisualTransformData_m_rotate_get(swigCPtr);
-      Vector ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector(cPtr, false);
+      LerpVector ret = (cPtr == global::System.IntPtr.Zero) ? null : new LerpVector(cPtr, false);
       return ret;
     } 
   }
 
-  public Vector m_translate {
+  public LerpVector m_translate {
     set {
-      NWNXLibPINVOKE.CAurObjectVisualTransformData_m_translate_set(swigCPtr, Vector.getCPtr(value));
+      NWNXLibPINVOKE.CAurObjectVisualTransformData_m_translate_set(swigCPtr, LerpVector.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CAurObjectVisualTransformData_m_translate_get(swigCPtr);
-      Vector ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector(cPtr, false);
+      LerpVector ret = (cPtr == global::System.IntPtr.Zero) ? null : new LerpVector(cPtr, false);
       return ret;
     } 
   }
 
-  public float m_animationSpeed {
+  public LerpFloat m_animationSpeed {
     set {
-      NWNXLibPINVOKE.CAurObjectVisualTransformData_m_animationSpeed_set(swigCPtr, value);
+      NWNXLibPINVOKE.CAurObjectVisualTransformData_m_animationSpeed_set(swigCPtr, LerpFloat.getCPtr(value));
     } 
     get {
-      float ret = NWNXLibPINVOKE.CAurObjectVisualTransformData_m_animationSpeed_get(swigCPtr);
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CAurObjectVisualTransformData_m_animationSpeed_get(swigCPtr);
+      LerpFloat ret = (cPtr == global::System.IntPtr.Zero) ? null : new LerpFloat(cPtr, false);
       return ret;
     } 
   }

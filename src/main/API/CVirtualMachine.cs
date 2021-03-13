@@ -386,13 +386,18 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
   public CVirtualMachine() : this(NWNXLibPINVOKE.new_CVirtualMachine(), true) {
   }
 
+  public int RunScript(CExoString psFileName, uint oid, int bOidValid, int nScriptEventID) {
+    int ret = NWNXLibPINVOKE.CVirtualMachine_RunScript__SWIG_0(swigCPtr, CExoString.getCPtr(psFileName), oid, bOidValid, nScriptEventID);
+    return ret;
+  }
+
   public int RunScript(CExoString psFileName, uint oid, int bOidValid) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_RunScript__SWIG_0(swigCPtr, CExoString.getCPtr(psFileName), oid, bOidValid);
+    int ret = NWNXLibPINVOKE.CVirtualMachine_RunScript__SWIG_1(swigCPtr, CExoString.getCPtr(psFileName), oid, bOidValid);
     return ret;
   }
 
   public int RunScript(CExoString psFileName, uint oid) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_RunScript__SWIG_1(swigCPtr, CExoString.getCPtr(psFileName), oid);
+    int ret = NWNXLibPINVOKE.CVirtualMachine_RunScript__SWIG_2(swigCPtr, CExoString.getCPtr(psFileName), oid);
     return ret;
   }
 
@@ -557,8 +562,13 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
     return ret;
   }
 
+  public int ReadScriptFile(CExoString sFileName, int nScriptEvent) {
+    int ret = NWNXLibPINVOKE.CVirtualMachine_ReadScriptFile__SWIG_0(swigCPtr, CExoString.getCPtr(sFileName), nScriptEvent);
+    return ret;
+  }
+
   public int ReadScriptFile(CExoString sFileName) {
-    int ret = NWNXLibPINVOKE.CVirtualMachine_ReadScriptFile(swigCPtr, CExoString.getCPtr(sFileName));
+    int ret = NWNXLibPINVOKE.CVirtualMachine_ReadScriptFile__SWIG_1(swigCPtr, CExoString.getCPtr(sFileName));
     return ret;
   }
 

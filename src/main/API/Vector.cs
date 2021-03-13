@@ -121,7 +121,10 @@ public unsafe class Vector : global::System.IDisposable {
     } 
   }
 
-  public Vector() : this(NWNXLibPINVOKE.new_Vector(), true) {
+  public Vector() : this(NWNXLibPINVOKE.new_Vector__SWIG_0(), true) {
+  }
+
+  public Vector(float xx, float yy, float zz) : this(NWNXLibPINVOKE.new_Vector__SWIG_1(xx, yy, zz), true) {
   }
 
 }

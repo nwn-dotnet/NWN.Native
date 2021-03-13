@@ -413,17 +413,6 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
     } 
   }
 
-  public CNWSAreaGridTransTableEntry m_pcGridTransTableEntry {
-    set {
-      NWNXLibPINVOKE.CNWSArea_m_pcGridTransTableEntry_set(swigCPtr, CNWSAreaGridTransTableEntry.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSArea_m_pcGridTransTableEntry_get(swigCPtr);
-      CNWSAreaGridTransTableEntry ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSAreaGridTransTableEntry(cPtr, false);
-      return ret;
-    } 
-  }
-
   public int g_nUnsmoothedWPList {
     set {
       NWNXLibPINVOKE.CNWSArea_g_nUnsmoothedWPList_set(swigCPtr, value);
@@ -934,8 +923,8 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
     return ret;
   }
 
-  public uint PlotGridPathEnhanced(CPathfindInformation pcPathfindInformation, uint nTimeSlice, bool bMoveToNearest) {
-    uint ret = NWNXLibPINVOKE.CNWSArea_PlotGridPathEnhanced(swigCPtr, CPathfindInformation.getCPtr(pcPathfindInformation), nTimeSlice, bMoveToNearest);
+  public uint PlotGridPath(CPathfindInformation pcPathfindInformation, uint nTimeSlice, bool bMoveToNearest) {
+    uint ret = NWNXLibPINVOKE.CNWSArea_PlotGridPath(swigCPtr, CPathfindInformation.getCPtr(pcPathfindInformation), nTimeSlice, bMoveToNearest);
     return ret;
   }
 
@@ -946,39 +935,6 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   public bool GridSearchPathInDirection(int nStepNumber, int nX, int nY, int nDirectionX, int nDirectionY, bool bTestDirectLine, CNWSAreaGridPoint pcSearch) {
     bool ret = NWNXLibPINVOKE.CNWSArea_GridSearchPathInDirection(swigCPtr, nStepNumber, nX, nY, nDirectionX, nDirectionY, bTestDirectLine, CNWSAreaGridPoint.getCPtr(pcSearch));
     return ret;
-  }
-
-  public uint PlotGridPath(CPathfindInformation pcPathfindInformation, uint nTimeSlice) {
-    uint ret = NWNXLibPINVOKE.CNWSArea_PlotGridPath(swigCPtr, CPathfindInformation.getCPtr(pcPathfindInformation), nTimeSlice);
-    return ret;
-  }
-
-  public int GridDFSearch(int nStepNumber, int nPathLength, int nStepsToExplore, int nX, int nY, int nZ) {
-    int ret = NWNXLibPINVOKE.CNWSArea_GridDFSearch(swigCPtr, nStepNumber, nPathLength, nStepsToExplore, nX, nY, nZ);
-    return ret;
-  }
-
-  public int GridDFSGenerateSuccessors(int nPathLength, int nStepsToExplore, int nX, int nY, int nZ, void** pcSuccessors) {
-    int ret = NWNXLibPINVOKE.CNWSArea_GridDFSGenerateSuccessors(swigCPtr, nPathLength, nStepsToExplore, nX, nY, nZ, (global::System.IntPtr)pcSuccessors);
-    return ret;
-  }
-
-  public void GridDFSTransTableInitialize() {
-    NWNXLibPINVOKE.CNWSArea_GridDFSTransTableInitialize(swigCPtr);
-  }
-
-  public int GridDFSTransTableHash(int nX, int nY) {
-    int ret = NWNXLibPINVOKE.CNWSArea_GridDFSTransTableHash(swigCPtr, nX, nY);
-    return ret;
-  }
-
-  public int GridDFSTransTableGet(int nX, int nY, int* nShortestPath, int* nStepsExplored) {
-    int ret = NWNXLibPINVOKE.CNWSArea_GridDFSTransTableGet(swigCPtr, nX, nY, (global::System.IntPtr)nShortestPath, (global::System.IntPtr)nStepsExplored);
-    return ret;
-  }
-
-  public void GridDFSTransTablePut(int nX, int nY, int nPathLength, int nStepsExplored) {
-    NWNXLibPINVOKE.CNWSArea_GridDFSTransTablePut(swigCPtr, nX, nY, nPathLength, nStepsExplored);
   }
 
   public uint PlotPath(CPathfindInformation pcPathfindInformation, uint nTimeSlice) {
@@ -1185,6 +1141,16 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
 
   public void SetCurrentWeather(byte nWeatherType, int bWeatherStarted) {
     NWNXLibPINVOKE.CNWSArea_SetCurrentWeather(swigCPtr, nWeatherType, bWeatherStarted);
+  }
+
+  public int RunEventScript(int nScript, CExoString psOverrideScriptName) {
+    int ret = NWNXLibPINVOKE.CNWSArea_RunEventScript__SWIG_0(swigCPtr, nScript, CExoString.getCPtr(psOverrideScriptName));
+    return ret;
+  }
+
+  public int RunEventScript(int nScript) {
+    int ret = NWNXLibPINVOKE.CNWSArea_RunEventScript__SWIG_1(swigCPtr, nScript);
+    return ret;
   }
 
   public int LoadAreaHeader(CResStruct pStruct) {

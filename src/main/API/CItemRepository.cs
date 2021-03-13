@@ -193,6 +193,11 @@ public unsafe class CItemRepository : global::System.IDisposable {
     return ret;
   }
 
+  public int CheckBaseItemFits(uint nBaseItemType, byte x, byte y) {
+    int ret = NWNXLibPINVOKE.CItemRepository_CheckBaseItemFits(swigCPtr, nBaseItemType, x, y);
+    return ret;
+  }
+
   public int CheckItemOverlaps(CNWSItem pSourceItem, CNWSItem pDroppingItem, byte x, byte y) {
     int ret = NWNXLibPINVOKE.CItemRepository_CheckItemOverlaps(swigCPtr, CNWSItem.getCPtr(pSourceItem), CNWSItem.getCPtr(pDroppingItem), x, y);
     return ret;

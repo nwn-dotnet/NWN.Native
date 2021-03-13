@@ -377,6 +377,12 @@ public unsafe class CExoString : global::System.IDisposable {
     return ret;
   }
 
+  public SWIGTYPE_p_std__vectorT_CExoString_t Split(CExoString delimiter) {
+    SWIGTYPE_p_std__vectorT_CExoString_t ret = new SWIGTYPE_p_std__vectorT_CExoString_t(NWNXLibPINVOKE.CExoString_Split(swigCPtr, CExoString.getCPtr(delimiter)), true);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
 }
 
 }

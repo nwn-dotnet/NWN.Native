@@ -157,13 +157,13 @@ public unsafe class CExoResourceImageFile : CExoPackedFile {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public override int LoadHeader(byte nType) {
-    int ret = NWNXLibPINVOKE.CExoResourceImageFile_LoadHeader__SWIG_0(swigCPtr, nType);
+  public override int LoadHeader(string expectOid, byte nType) {
+    int ret = NWNXLibPINVOKE.CExoResourceImageFile_LoadHeader__SWIG_0(swigCPtr, expectOid, nType);
     return ret;
   }
 
-  public override int LoadHeader() {
-    int ret = NWNXLibPINVOKE.CExoResourceImageFile_LoadHeader__SWIG_1(swigCPtr);
+  public override int LoadHeader(string expectOid) {
+    int ret = NWNXLibPINVOKE.CExoResourceImageFile_LoadHeader__SWIG_1(swigCPtr, expectOid);
     return ret;
   }
 

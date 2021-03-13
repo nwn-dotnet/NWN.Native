@@ -123,6 +123,17 @@ public unsafe class CExoBaseInternal : global::System.IDisposable {
     } 
   }
 
+  public CExoString m_sInstallDirectory {
+    set {
+      NWNXLibPINVOKE.CExoBaseInternal_m_sInstallDirectory_set(swigCPtr, CExoString.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoBaseInternal_m_sInstallDirectory_get(swigCPtr);
+      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
+      return ret;
+    } 
+  }
+
   public CExoBaseInternal() : this(NWNXLibPINVOKE.new_CExoBaseInternal(), true) {
   }
 

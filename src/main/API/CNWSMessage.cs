@@ -569,6 +569,17 @@ public unsafe class CNWSMessage : CNWMessage {
     return ret;
   }
 
+  public int SendServerToPlayerSetTlkOverride(uint nPlayerID, int nStrRef, CExoString sOverride) {
+    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSetTlkOverride(swigCPtr, nPlayerID, nStrRef, CExoString.getCPtr(sOverride));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public int SendServerToPlayerSetTlkOverrideList(uint nPlayerID) {
+    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSetTlkOverrideList(swigCPtr, nPlayerID);
+    return ret;
+  }
+
   public int SendServerToPlayerChatMultiLangMessage(byte nChatMessageType, uint oidSpeaker, CExoLocString sSpeakerMessage, uint oidTokenTarget, byte gender, uint* pPlayerIdNoBubble, uint nPlayerIdNoBubble, int bPrivateChat, CResRef sSound, int bPlayHelloSound, uint oidLastSpeaker) {
     int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChatMultiLangMessage(swigCPtr, nChatMessageType, oidSpeaker, CExoLocString.getCPtr(sSpeakerMessage), oidTokenTarget, gender, (global::System.IntPtr)pPlayerIdNoBubble, nPlayerIdNoBubble, bPrivateChat, CResRef.getCPtr(sSound), bPlayHelloSound, oidLastSpeaker);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
@@ -1639,12 +1650,12 @@ public unsafe class CNWSMessage : CNWMessage {
     return ret;
   }
 
-  public void AddDoorAppearanceToMessage(CNWSDoor pDoor) {
-    NWNXLibPINVOKE.CNWSMessage_AddDoorAppearanceToMessage(swigCPtr, CNWSDoor.getCPtr(pDoor));
+  public void AddDoorAppearanceToMessage(CNWSPlayer pPlayer, CNWSDoor pDoor) {
+    NWNXLibPINVOKE.CNWSMessage_AddDoorAppearanceToMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSDoor.getCPtr(pDoor));
   }
 
-  public void AddPlaceableAppearanceToMessage(CNWSPlaceable pPlaceable) {
-    NWNXLibPINVOKE.CNWSMessage_AddPlaceableAppearanceToMessage(swigCPtr, CNWSPlaceable.getCPtr(pPlaceable));
+  public void AddPlaceableAppearanceToMessage(CNWSPlayer pPlayer, CNWSPlaceable pPlaceable) {
+    NWNXLibPINVOKE.CNWSMessage_AddPlaceableAppearanceToMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSPlaceable.getCPtr(pPlaceable));
   }
 
   public void AddAreaOfEffectObjectToMessage(CNWSAreaOfEffectObject pSpellImpact) {
@@ -1668,8 +1679,8 @@ public unsafe class CNWSMessage : CNWMessage {
     NWNXLibPINVOKE.CNWSMessage_WriteGameObjUpdate_UpdateQuickbarItemUseCount(swigCPtr, CNWSObject.getCPtr(pGameObject), CLastUpdateObject.getCPtr(pLastUpdateObject));
   }
 
-  public void AddItemAppearanceToMessage(CNWSItem pItem) {
-    NWNXLibPINVOKE.CNWSMessage_AddItemAppearanceToMessage(swigCPtr, CNWSItem.getCPtr(pItem));
+  public void AddItemAppearanceToMessage(CNWSPlayer pPlayer, CNWSItem pItem) {
+    NWNXLibPINVOKE.CNWSMessage_AddItemAppearanceToMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSItem.getCPtr(pItem));
   }
 
   public uint ComputeAppearanceUpdateRequired(CNWSObject pGameObject, CLastUpdateObject pLastUpdateObject) {
@@ -1799,16 +1810,16 @@ public unsafe class CNWSMessage : CNWMessage {
     NWNXLibPINVOKE.CNWSMessage_WriteGameObjUpdate_UpdateAppearance(swigCPtr, CNWSObject.getCPtr(pAreaObject), CLastUpdateObject.getCPtr(pLastUpdateObject), nUpdatesRequired, CNWSPlayer.getCPtr(pPlayer));
   }
 
-  public void WriteGameObjUpdate_WriteInventorySlotAdd(CNWSCreature pAreaCreature, CNWSItem pItem, uint nSlot) {
-    NWNXLibPINVOKE.CNWSMessage_WriteGameObjUpdate_WriteInventorySlotAdd(swigCPtr, CNWSCreature.getCPtr(pAreaCreature), CNWSItem.getCPtr(pItem), nSlot);
+  public void WriteGameObjUpdate_WriteInventorySlotAdd(CNWSPlayer pPlayer, CNWSCreature pAreaCreature, CNWSItem pItem, uint nSlot) {
+    NWNXLibPINVOKE.CNWSMessage_WriteGameObjUpdate_WriteInventorySlotAdd(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSCreature.getCPtr(pAreaCreature), CNWSItem.getCPtr(pItem), nSlot);
   }
 
   public void WriteGameObjUpdate_WriteInventorySlotDelete(CNWSCreature pAreaCreature, uint nSlot) {
     NWNXLibPINVOKE.CNWSMessage_WriteGameObjUpdate_WriteInventorySlotDelete(swigCPtr, CNWSCreature.getCPtr(pAreaCreature), nSlot);
   }
 
-  public void WriteGameObjUpdate_WriteInventorySlotUpdate(uint oidItem, uint nSlot) {
-    NWNXLibPINVOKE.CNWSMessage_WriteGameObjUpdate_WriteInventorySlotUpdate(swigCPtr, oidItem, nSlot);
+  public void WriteGameObjUpdate_WriteInventorySlotUpdate(CNWSPlayer pPlayer, uint oidItem, uint nSlot) {
+    NWNXLibPINVOKE.CNWSMessage_WriteGameObjUpdate_WriteInventorySlotUpdate(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidItem, nSlot);
   }
 
   public void WriteRepositoryUpdate(CNWSPlayer pPlayer, CNWSObject pPlayerGameObject, CItemRepository pItemRepository, CNWSPlayerLUOInventory pLastUpdateInventory, byte nLastUpdateList, char cGuiElementByte, byte nCurrentPanel) {

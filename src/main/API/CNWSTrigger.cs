@@ -529,7 +529,7 @@ public unsafe class CNWSTrigger : CNWSObject {
     return ret;
   }
 
-  public CExoString GetScriptName(int nScript) {
+  public override CExoString GetScriptName(int nScript) {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSTrigger_GetScriptName(swigCPtr, nScript);
     CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
     return ret;

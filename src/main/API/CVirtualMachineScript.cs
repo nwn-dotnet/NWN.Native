@@ -155,6 +155,16 @@ public unsafe class CVirtualMachineScript : global::System.IDisposable {
     } 
   }
 
+  public int m_nScriptEventID {
+    set {
+      NWNXLibPINVOKE.CVirtualMachineScript_m_nScriptEventID_set(swigCPtr, value);
+    } 
+    get {
+      int ret = NWNXLibPINVOKE.CVirtualMachineScript_m_nScriptEventID_get(swigCPtr);
+      return ret;
+    } 
+  }
+
   public CVirtualMachineScript() : this(NWNXLibPINVOKE.new_CVirtualMachineScript(), true) {
   }
 

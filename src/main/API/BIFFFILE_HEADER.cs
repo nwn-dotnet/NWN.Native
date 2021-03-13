@@ -141,6 +141,33 @@ public unsafe class BIFFFILE_HEADER : global::System.IDisposable {
     } 
   }
 
+  public string cOid {
+    set {
+      NWNXLibPINVOKE.BIFFFILE_HEADER_cOid_set(swigCPtr, value);
+    } 
+    get {
+      string ret = NWNXLibPINVOKE.BIFFFILE_HEADER_cOid_get(swigCPtr);
+      return ret;
+    } 
+  }
+
+  public byte[] pReserved {
+    set {
+      NWNXLibPINVOKE.BIFFFILE_HEADER_pReserved_set(swigCPtr, value);
+    }  
+    get {
+      byte* arrayPtr = NWNXLibPINVOKE.BIFFFILE_HEADER_pReserved_get(swigCPtr);
+      byte[] retVal = new byte[8];
+
+      for(int i = 0; i < 8; i++) {
+        retVal[i] = arrayPtr[i];
+      }
+
+      return retVal;
+    }
+
+  }
+
   public BIFFFILE_HEADER() : this(NWNXLibPINVOKE.new_BIFFFILE_HEADER(), true) {
   }
 
