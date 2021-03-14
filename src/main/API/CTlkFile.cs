@@ -91,13 +91,13 @@ public unsafe class CTlkFile : CExoFile {
     } 
   }
 
-  public SWIGTYPE_p_std__unordered_mapT_unsigned_int_STR_RES_t m_cache {
+  public UnorderedMapUInt32STR_RES m_cache {
     set {
-      NWNXLibPINVOKE.CTlkFile_m_cache_set(swigCPtr, SWIGTYPE_p_std__unordered_mapT_unsigned_int_STR_RES_t.getCPtr(value));
+      NWNXLibPINVOKE.CTlkFile_m_cache_set(swigCPtr, UnorderedMapUInt32STR_RES.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CTlkFile_m_cache_get(swigCPtr);
-      SWIGTYPE_p_std__unordered_mapT_unsigned_int_STR_RES_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__unordered_mapT_unsigned_int_STR_RES_t(cPtr, false);
+      UnorderedMapUInt32STR_RES ret = (cPtr == global::System.IntPtr.Zero) ? null : new UnorderedMapUInt32STR_RES(cPtr, false);
       return ret;
     } 
   }

@@ -199,13 +199,13 @@ public unsafe class CTlkTable : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_std__unordered_mapT_unsigned_int_CExoString_t m_overrides {
+  public UnorderedMapUInt32CExoString m_overrides {
     set {
-      NWNXLibPINVOKE.CTlkTable_m_overrides_set(swigCPtr, SWIGTYPE_p_std__unordered_mapT_unsigned_int_CExoString_t.getCPtr(value));
+      NWNXLibPINVOKE.CTlkTable_m_overrides_set(swigCPtr, UnorderedMapUInt32CExoString.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CTlkTable_m_overrides_get(swigCPtr);
-      SWIGTYPE_p_std__unordered_mapT_unsigned_int_CExoString_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__unordered_mapT_unsigned_int_CExoString_t(cPtr, false);
+      UnorderedMapUInt32CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new UnorderedMapUInt32CExoString(cPtr, false);
       return ret;
     } 
   }

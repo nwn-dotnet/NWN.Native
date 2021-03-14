@@ -62,7 +62,8 @@ public enum MessageMajor {
   GuiTimingEvent = 0x30,
   PlayModuleCharacterList = 0x31,
   CustomToken = 0x32,
-  Cutscene = 0x33
+  Cutscene = 0x33,
+  Resman = 0x34
 }
 
 }
