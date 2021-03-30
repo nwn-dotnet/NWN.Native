@@ -49,7 +49,7 @@ public unsafe class CScriptCompilerStructureFieldEntry : global::System.IDisposa
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CScriptCompilerStructureFieldEntry : global::System.IDisposa
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CScriptCompilerStructureFieldEntry self) {
+  public static implicit operator global::System.IntPtr(CScriptCompilerStructureFieldEntry self) {
     return self.swigCPtr.Handle;
   }
 

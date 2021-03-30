@@ -38,7 +38,7 @@ public unsafe class STR_RES_HEADER : STR_RES_HEADER_OLD {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -48,7 +48,7 @@ public unsafe class STR_RES_HEADER : STR_RES_HEADER_OLD {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(STR_RES_HEADER self) {
+  public static implicit operator global::System.IntPtr(STR_RES_HEADER self) {
     return self.swigCPtr.Handle;
   }
 

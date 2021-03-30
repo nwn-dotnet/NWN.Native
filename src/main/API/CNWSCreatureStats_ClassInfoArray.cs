@@ -58,7 +58,7 @@ public unsafe class CNWSCreatureStats_ClassInfoArray : global::System.IDisposabl
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -68,7 +68,7 @@ public unsafe class CNWSCreatureStats_ClassInfoArray : global::System.IDisposabl
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSCreatureStats_ClassInfoArray self) {
+  public static implicit operator global::System.IntPtr(CNWSCreatureStats_ClassInfoArray self) {
     return self.swigCPtr.Handle;
   }
 

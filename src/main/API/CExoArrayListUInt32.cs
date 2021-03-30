@@ -49,7 +49,7 @@ public unsafe class CExoArrayListUInt32 : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CExoArrayListUInt32 : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CExoArrayListUInt32 self) {
+  public static implicit operator global::System.IntPtr(CExoArrayListUInt32 self) {
     return self.swigCPtr.Handle;
   }
 
@@ -96,7 +96,7 @@ public unsafe class CExoArrayListUInt32 : global::System.IDisposable {
       NWNXLibPINVOKE.CExoArrayListUInt32_element_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListUInt32_element_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListUInt32_element_get(swigCPtr); 
         return (uint*)retVal; 
     }
 
@@ -139,7 +139,7 @@ public unsafe class CExoArrayListUInt32 : global::System.IDisposable {
   }
 
   public uint* _OpIndex(int i) { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListUInt32__OpIndex(swigCPtr, i);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListUInt32__OpIndex(swigCPtr, i);
     return (uint*)retVal;
   }
 
@@ -168,12 +168,12 @@ public unsafe class CExoArrayListUInt32 : global::System.IDisposable {
   }
 
   public uint* begin() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListUInt32_begin(swigCPtr);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListUInt32_begin(swigCPtr);
     return (uint*)retVal;
   }
 
   public uint* end() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListUInt32_end(swigCPtr);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListUInt32_end(swigCPtr);
     return (uint*)retVal;
   }
 

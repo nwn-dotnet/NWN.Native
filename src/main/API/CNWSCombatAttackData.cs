@@ -49,7 +49,7 @@ public unsafe class CNWSCombatAttackData : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWSCombatAttackData : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSCombatAttackData self) {
+  public static implicit operator global::System.IntPtr(CNWSCombatAttackData self) {
     return self.swigCPtr.Handle;
   }
 
@@ -191,19 +191,15 @@ public unsafe class CNWSCombatAttackData : global::System.IDisposable {
     } 
   }
 
-  public short[] m_nDamage {
+  public NativeArray<short> m_nDamage {
     set {
       NWNXLibPINVOKE.CNWSCombatAttackData_m_nDamage_set(swigCPtr, value);
     }  
     get {
-      short* arrayPtr = NWNXLibPINVOKE.CNWSCombatAttackData_m_nDamage_get(swigCPtr);
-      short[] retVal = new short[13];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSCombatAttackData_m_nDamage_get(swigCPtr);
+      NativeArray<short> retVal = new NativeArray<short>(arrayPtr, 13);
 
-      for(int i = 0; i < 13; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // short[13] 
     }
 
   }

@@ -49,7 +49,7 @@ public unsafe class CExoArrayListNWPlayerCharacterListClass : global::System.IDi
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CExoArrayListNWPlayerCharacterListClass : global::System.IDi
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CExoArrayListNWPlayerCharacterListClass self) {
+  public static implicit operator global::System.IntPtr(CExoArrayListNWPlayerCharacterListClass self) {
     return self.swigCPtr.Handle;
   }
 

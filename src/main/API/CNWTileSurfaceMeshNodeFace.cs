@@ -49,7 +49,7 @@ public unsafe class CNWTileSurfaceMeshNodeFace : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWTileSurfaceMeshNodeFace : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWTileSurfaceMeshNodeFace self) {
+  public static implicit operator global::System.IntPtr(CNWTileSurfaceMeshNodeFace self) {
     return self.swigCPtr.Handle;
   }
 
@@ -96,7 +96,7 @@ public unsafe class CNWTileSurfaceMeshNodeFace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_pnUselessPointer1_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_pnUselessPointer1_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_pnUselessPointer1_get(swigCPtr); 
         return (int*)retVal; 
     }
 
@@ -107,7 +107,7 @@ public unsafe class CNWTileSurfaceMeshNodeFace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_pnUselessPointer2_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_pnUselessPointer2_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_pnUselessPointer2_get(swigCPtr); 
         return (int*)retVal; 
     }
 
@@ -118,25 +118,21 @@ public unsafe class CNWTileSurfaceMeshNodeFace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_pnUselessPointer3_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_pnUselessPointer3_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_pnUselessPointer3_get(swigCPtr); 
         return (int*)retVal; 
     }
 
   }
 
-  public int[] vertexindices {
+  public NativeArray<int> vertexindices {
     set {
       NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_vertexindices_set(swigCPtr, value);
     }  
     get {
-      int* arrayPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_vertexindices_get(swigCPtr);
-      int[] retVal = new int[3];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_vertexindices_get(swigCPtr);
+      NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 3);
 
-      for(int i = 0; i < 3; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // int[3] 
     }
 
   }
@@ -161,19 +157,15 @@ public unsafe class CNWTileSurfaceMeshNodeFace : global::System.IDisposable {
     } 
   }
 
-  public int[] neighbors {
+  public NativeArray<int> neighbors {
     set {
       NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_neighbors_set(swigCPtr, value);
     }  
     get {
-      int* arrayPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_neighbors_get(swigCPtr);
-      int[] retVal = new int[3];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshNodeFace_neighbors_get(swigCPtr);
+      NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 3);
 
-      for(int i = 0; i < 3; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // int[3] 
     }
 
   }

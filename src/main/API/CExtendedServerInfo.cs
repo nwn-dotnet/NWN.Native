@@ -49,7 +49,7 @@ public unsafe class CExtendedServerInfo : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CExtendedServerInfo : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CExtendedServerInfo self) {
+  public static implicit operator global::System.IntPtr(CExtendedServerInfo self) {
     return self.swigCPtr.Handle;
   }
 

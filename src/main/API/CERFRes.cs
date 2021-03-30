@@ -49,7 +49,7 @@ public unsafe class CERFRes : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CERFRes : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CERFRes self) {
+  public static implicit operator global::System.IntPtr(CERFRes self) {
     return self.swigCPtr.Handle;
   }
 
@@ -116,7 +116,7 @@ public unsafe class CERFRes : global::System.IDisposable {
       NWNXLibPINVOKE.CERFRes_m_pData_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CERFRes_m_pData_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CERFRes_m_pData_get(swigCPtr); 
         return (byte*)retVal; 
     }
 

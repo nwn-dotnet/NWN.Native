@@ -38,7 +38,7 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -48,7 +48,7 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSPlayerTURD self) {
+  public static implicit operator global::System.IntPtr(CNWSPlayerTURD self) {
     return self.swigCPtr.Handle;
   }
 
@@ -180,7 +180,7 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
       NWNXLibPINVOKE.CNWSPlayerTURD_m_poidAutomapAreasList_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayerTURD_m_poidAutomapAreasList_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayerTURD_m_poidAutomapAreasList_get(swigCPtr); 
         return (uint*)retVal; 
     }
 
@@ -191,7 +191,7 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
       NWNXLibPINVOKE.CNWSPlayerTURD_m_pAutoMapTileData_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayerTURD_m_pAutoMapTileData_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayerTURD_m_pAutoMapTileData_get(swigCPtr); 
         return (byte**)retVal; 
     }
 

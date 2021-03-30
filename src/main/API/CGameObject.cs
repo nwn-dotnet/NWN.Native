@@ -54,7 +54,7 @@ public unsafe class CGameObject : ICGameObject, global::System.IDisposable {
     return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CGameObject_ICGameObject_GetInterfaceCPtr(swigCPtr.Handle));
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -64,7 +64,7 @@ public unsafe class CGameObject : ICGameObject, global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CGameObject self) {
+  public static implicit operator global::System.IntPtr(CGameObject self) {
     return self.swigCPtr.Handle;
   }
 
@@ -121,7 +121,7 @@ public unsafe class CGameObject : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CGameObject_m_pNwnxData_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CGameObject_m_pNwnxData_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CGameObject_m_pNwnxData_get(swigCPtr); 
         return (void*)retVal; 
     }
 

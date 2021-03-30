@@ -49,7 +49,7 @@ public unsafe class CNWRules : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWRules : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWRules self) {
+  public static implicit operator global::System.IntPtr(CNWRules self) {
     return self.swigCPtr.Handle;
   }
 
@@ -91,19 +91,15 @@ public unsafe class CNWRules : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public float[] m_fRangeTypes {
+  public NativeArray<float> m_fRangeTypes {
     set {
       NWNXLibPINVOKE.CNWRules_m_fRangeTypes_set(swigCPtr, value);
     }  
     get {
-      float* arrayPtr = NWNXLibPINVOKE.CNWRules_m_fRangeTypes_get(swigCPtr);
-      float[] retVal = new float[5];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWRules_m_fRangeTypes_get(swigCPtr);
+      NativeArray<float> retVal = new NativeArray<float>(arrayPtr, 5);
 
-      for(int i = 0; i < 5; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // float[5] 
     }
 
   }
@@ -119,19 +115,15 @@ public unsafe class CNWRules : global::System.IDisposable {
     } 
   }
 
-  public uint[] m_nExperienceTable {
+  public NativeArray<uint> m_nExperienceTable {
     set {
       NWNXLibPINVOKE.CNWRules_m_nExperienceTable_set(swigCPtr, value);
     }  
     get {
-      uint* arrayPtr = NWNXLibPINVOKE.CNWRules_m_nExperienceTable_get(swigCPtr);
-      uint[] retVal = new uint[40+1];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWRules_m_nExperienceTable_get(swigCPtr);
+      NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 40+1);
 
-      for(int i = 0; i < 40+1; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // uint[40+1] 
     }
 
   }
@@ -163,7 +155,7 @@ public unsafe class CNWRules : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRules_m_lstMasterFeats_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWRules_m_lstMasterFeats_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWRules_m_lstMasterFeats_get(swigCPtr); 
         return (uint*)retVal; 
     }
 
@@ -174,7 +166,7 @@ public unsafe class CNWRules : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRules_m_lstMasterFeatDescriptions_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWRules_m_lstMasterFeatDescriptions_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWRules_m_lstMasterFeatDescriptions_get(swigCPtr); 
         return (uint*)retVal; 
     }
 
@@ -196,7 +188,7 @@ public unsafe class CNWRules : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRules_m_lstSortedFeatIDs_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWRules_m_lstSortedFeatIDs_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWRules_m_lstSortedFeatIDs_get(swigCPtr); 
         return (ushort*)retVal; 
     }
 

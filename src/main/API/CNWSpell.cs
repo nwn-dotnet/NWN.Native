@@ -49,7 +49,7 @@ public unsafe class CNWSpell : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWSpell : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSpell self) {
+  public static implicit operator global::System.IntPtr(CNWSpell self) {
     return self.swigCPtr.Handle;
   }
 
@@ -523,7 +523,7 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_pSubRadialSpell_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWSpell_m_pSubRadialSpell_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSpell_m_pSubRadialSpell_get(swigCPtr); 
         return (uint*)retVal; 
     }
 

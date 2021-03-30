@@ -49,7 +49,7 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CTwoDimArrays self) {
+  public static implicit operator global::System.IntPtr(CTwoDimArrays self) {
     return self.swigCPtr.Handle;
   }
 
@@ -96,7 +96,7 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
       NWNXLibPINVOKE.CTwoDimArrays_m_paIPRPCostTables_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CTwoDimArrays_m_paIPRPCostTables_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CTwoDimArrays_m_paIPRPCostTables_get(swigCPtr); 
         return (void**)retVal; 
     }
 
@@ -112,70 +112,54 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
     } 
   }
 
-  public byte[] m_lstEpicBaseAttackBonus {
+  public NativeArray<byte> m_lstEpicBaseAttackBonus {
     set {
       NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicBaseAttackBonus_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicBaseAttackBonus_get(swigCPtr);
-      byte[] retVal = new byte[60];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicBaseAttackBonus_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 60);
 
-      for(int i = 0; i < 60; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[60] 
     }
 
   }
 
-  public byte[] m_lstEpicFortificationSaveThrowBonus {
+  public NativeArray<byte> m_lstEpicFortificationSaveThrowBonus {
     set {
       NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicFortificationSaveThrowBonus_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicFortificationSaveThrowBonus_get(swigCPtr);
-      byte[] retVal = new byte[60];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicFortificationSaveThrowBonus_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 60);
 
-      for(int i = 0; i < 60; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[60] 
     }
 
   }
 
-  public byte[] m_lstEpicWillSaveThrowBonus {
+  public NativeArray<byte> m_lstEpicWillSaveThrowBonus {
     set {
       NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicWillSaveThrowBonus_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicWillSaveThrowBonus_get(swigCPtr);
-      byte[] retVal = new byte[60];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicWillSaveThrowBonus_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 60);
 
-      for(int i = 0; i < 60; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[60] 
     }
 
   }
 
-  public byte[] m_lstEpicReflexSaveThrowBonus {
+  public NativeArray<byte> m_lstEpicReflexSaveThrowBonus {
     set {
       NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicReflexSaveThrowBonus_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicReflexSaveThrowBonus_get(swigCPtr);
-      byte[] retVal = new byte[60];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicReflexSaveThrowBonus_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 60);
 
-      for(int i = 0; i < 60; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[60] 
     }
 
   }

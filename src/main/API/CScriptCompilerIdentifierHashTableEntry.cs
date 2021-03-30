@@ -49,7 +49,7 @@ public unsafe class CScriptCompilerIdentifierHashTableEntry : global::System.IDi
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CScriptCompilerIdentifierHashTableEntry : global::System.IDi
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CScriptCompilerIdentifierHashTableEntry self) {
+  public static implicit operator global::System.IntPtr(CScriptCompilerIdentifierHashTableEntry self) {
     return self.swigCPtr.Handle;
   }
 

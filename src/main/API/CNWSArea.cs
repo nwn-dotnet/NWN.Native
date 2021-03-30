@@ -43,7 +43,7 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
     return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CNWSArea_ICGameObject_GetInterfaceCPtr(swigCPtr.Handle));
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -53,7 +53,7 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSArea self) {
+  public static implicit operator global::System.IntPtr(CNWSArea self) {
     return self.swigCPtr.Handle;
   }
 
@@ -303,7 +303,7 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_pnInterTileTravel_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pnInterTileTravel_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pnInterTileTravel_get(swigCPtr); 
         return (int*)retVal; 
     }
 
@@ -314,7 +314,7 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_pfInterTileExit_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pfInterTileExit_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pfInterTileExit_get(swigCPtr); 
         return (float*)retVal; 
     }
 
@@ -325,7 +325,7 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_pnInterTileRegionDepths_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pnInterTileRegionDepths_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pnInterTileRegionDepths_get(swigCPtr); 
         return (byte*)retVal; 
     }
 
@@ -428,7 +428,7 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_g_pfUnsmoothedWPList_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_g_pfUnsmoothedWPList_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_g_pfUnsmoothedWPList_get(swigCPtr); 
         return (float*)retVal; 
     }
 
@@ -449,7 +449,7 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_g_pfSmoothedWPList_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_g_pfSmoothedWPList_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_g_pfSmoothedWPList_get(swigCPtr); 
         return (float*)retVal; 
     }
 
@@ -531,7 +531,7 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_pbInterTileDeniedExitCheck_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pbInterTileDeniedExitCheck_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pbInterTileDeniedExitCheck_get(swigCPtr); 
         return (int*)retVal; 
     }
 
@@ -1360,7 +1360,7 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_pNwnxData_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pNwnxData_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pNwnxData_get(swigCPtr); 
         return (void*)retVal; 
     }
 

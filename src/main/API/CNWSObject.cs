@@ -54,7 +54,7 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CNWSObject_ICGameObject_GetInterfaceCPtr(swigCPtr.Handle));
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -64,7 +64,7 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSObject self) {
+  public static implicit operator global::System.IntPtr(CNWSObject self) {
     return self.swigCPtr.Handle;
   }
 
@@ -655,7 +655,7 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSObject_m_pLastDamageList_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWSObject_m_pLastDamageList_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSObject_m_pLastDamageList_get(swigCPtr); 
         return (int*)retVal; 
     }
 
@@ -2305,7 +2305,7 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSObject_m_pNwnxData_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWSObject_m_pNwnxData_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSObject_m_pNwnxData_get(swigCPtr); 
         return (void*)retVal; 
     }
 

@@ -49,7 +49,7 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNetLayerSessionInfo self) {
+  public static implicit operator global::System.IntPtr(CNetLayerSessionInfo self) {
     return self.swigCPtr.Handle;
   }
 
@@ -132,36 +132,28 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
     } 
   }
 
-  public uint[] m_nPingPacketSent {
+  public NativeArray<uint> m_nPingPacketSent {
     set {
       NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketSent_set(swigCPtr, value);
     }  
     get {
-      uint* arrayPtr = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketSent_get(swigCPtr);
-      uint[] retVal = new uint[4];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketSent_get(swigCPtr);
+      NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 4);
 
-      for(int i = 0; i < 4; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // uint[4] 
     }
 
   }
 
-  public uint[] m_nPingPacketReceived {
+  public NativeArray<uint> m_nPingPacketReceived {
     set {
       NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketReceived_set(swigCPtr, value);
     }  
     get {
-      uint* arrayPtr = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketReceived_get(swigCPtr);
-      uint[] retVal = new uint[4];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketReceived_get(swigCPtr);
+      NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 4);
 
-      for(int i = 0; i < 4; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // uint[4] 
     }
 
   }

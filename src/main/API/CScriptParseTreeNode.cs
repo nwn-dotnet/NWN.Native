@@ -49,7 +49,7 @@ public unsafe class CScriptParseTreeNode : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CScriptParseTreeNode : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CScriptParseTreeNode self) {
+  public static implicit operator global::System.IntPtr(CScriptParseTreeNode self) {
     return self.swigCPtr.Handle;
   }
 
@@ -162,19 +162,15 @@ public unsafe class CScriptParseTreeNode : global::System.IDisposable {
     } 
   }
 
-  public float[] fVectorData {
+  public NativeArray<float> fVectorData {
     set {
       NWNXLibPINVOKE.CScriptParseTreeNode_fVectorData_set(swigCPtr, value);
     }  
     get {
-      float* arrayPtr = NWNXLibPINVOKE.CScriptParseTreeNode_fVectorData_get(swigCPtr);
-      float[] retVal = new float[3];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CScriptParseTreeNode_fVectorData_get(swigCPtr);
+      NativeArray<float> retVal = new NativeArray<float>(arrayPtr, 3);
 
-      for(int i = 0; i < 3; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // float[3] 
     }
 
   }

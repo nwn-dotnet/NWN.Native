@@ -49,7 +49,7 @@ public unsafe class CVirtualMachineCmdImplementer : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CVirtualMachineCmdImplementer : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CVirtualMachineCmdImplementer self) {
+  public static implicit operator global::System.IntPtr(CVirtualMachineCmdImplementer self) {
     return self.swigCPtr.Handle;
   }
 
@@ -131,7 +131,7 @@ public unsafe class CVirtualMachineCmdImplementer : global::System.IDisposable {
   }
 
   public virtual void* CreateGameDefinedStructure(int nUserDefinedType) { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_CreateGameDefinedStructure(swigCPtr, nUserDefinedType);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_CreateGameDefinedStructure(swigCPtr, nUserDefinedType);
     return (void*)retVal;
   }
 
@@ -145,7 +145,7 @@ public unsafe class CVirtualMachineCmdImplementer : global::System.IDisposable {
   }
 
   public virtual void* CopyGameDefinedStructure(int nUserDefinedType, void* pStructureSrc) { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_CopyGameDefinedStructure(swigCPtr, nUserDefinedType, (global::System.IntPtr)pStructureSrc);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_CopyGameDefinedStructure(swigCPtr, nUserDefinedType, (global::System.IntPtr)pStructureSrc);
     return (void*)retVal;
   }
 

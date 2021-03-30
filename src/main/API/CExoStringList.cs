@@ -49,7 +49,7 @@ public unsafe class CExoStringList : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CExoStringList : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CExoStringList self) {
+  public static implicit operator global::System.IntPtr(CExoStringList self) {
     return self.swigCPtr.Handle;
   }
 
@@ -96,7 +96,7 @@ public unsafe class CExoStringList : global::System.IDisposable {
       NWNXLibPINVOKE.CExoStringList_m_pStrings_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CExoStringList_m_pStrings_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoStringList_m_pStrings_get(swigCPtr); 
         return (void**)retVal; 
     }
 

@@ -13,10 +13,10 @@ namespace NWN.Native.API {
 public interface ICNWItem {
   [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
   global::System.Runtime.InteropServices.HandleRef GetInterfaceCPtr();
-  void setM_nLayeredTextureColors(byte[] value);
-  byte[] getM_nLayeredTextureColors();
-  void setM_pLayeredTextureColorsPerPart(byte*[] value);
-  byte*[] getM_pLayeredTextureColorsPerPart();
+  void setM_nLayeredTextureColors(NativeArray<byte> value);
+  NativeArray<byte> getM_nLayeredTextureColors();
+  void setM_pLayeredTextureColorsPerPart(NativeArray<global::System.IntPtr> value);
+  NativeArray<global::System.IntPtr> getM_pLayeredTextureColorsPerPart();
   void setM_nBaseItem(uint value);
   uint getM_nBaseItem();
   byte GetLayeredTextureColorPerPart(byte nTexture, byte nPart);

@@ -49,7 +49,7 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSPlayerLastUpdateObject self) {
+  public static implicit operator global::System.IntPtr(CNWSPlayerLastUpdateObject self) {
     return self.swigCPtr.Handle;
   }
 
@@ -261,7 +261,7 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_pAutoMapTileData_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_pAutoMapTileData_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_pAutoMapTileData_get(swigCPtr); 
         return (byte*)retVal; 
     }
 

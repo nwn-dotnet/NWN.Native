@@ -49,7 +49,7 @@ public unsafe class CExoLinkedListInternal : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CExoLinkedListInternal : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CExoLinkedListInternal self) {
+  public static implicit operator global::System.IntPtr(CExoLinkedListInternal self) {
     return self.swigCPtr.Handle;
   }
 
@@ -148,32 +148,32 @@ public unsafe class CExoLinkedListInternal : global::System.IDisposable {
   }
 
   public void* GetAtPos(CExoLinkedListNode Position) { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListInternal_GetAtPos(swigCPtr, CExoLinkedListNode.getCPtr(Position));
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListInternal_GetAtPos(swigCPtr, CExoLinkedListNode.getCPtr(Position));
     return (void*)retVal;
   }
 
   public void* GetNext(void** Position) { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListInternal_GetNext(swigCPtr, (global::System.IntPtr)Position);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListInternal_GetNext(swigCPtr, (global::System.IntPtr)Position);
     return (void*)retVal;
   }
 
   public void* GetPrev(void** Position) { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListInternal_GetPrev(swigCPtr, (global::System.IntPtr)Position);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListInternal_GetPrev(swigCPtr, (global::System.IntPtr)Position);
     return (void*)retVal;
   }
 
   public void* RemoveHead() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListInternal_RemoveHead(swigCPtr);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListInternal_RemoveHead(swigCPtr);
     return (void*)retVal;
   }
 
   public void* RemoveTail() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListInternal_RemoveTail(swigCPtr);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListInternal_RemoveTail(swigCPtr);
     return (void*)retVal;
   }
 
   public void* Remove(CExoLinkedListNode Position) { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListInternal_Remove(swigCPtr, CExoLinkedListNode.getCPtr(Position));
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListInternal_Remove(swigCPtr, CExoLinkedListNode.getCPtr(Position));
     return (void*)retVal;
   }
 

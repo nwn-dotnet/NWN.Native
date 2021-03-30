@@ -49,7 +49,7 @@ public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(ENCAPSULATED_HEADER self) {
+  public static implicit operator global::System.IntPtr(ENCAPSULATED_HEADER self) {
     return self.swigCPtr.Handle;
   }
 
@@ -201,36 +201,28 @@ public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
     } 
   }
 
-  public byte[] pMD5 {
+  public NativeArray<byte> pMD5 {
     set {
       NWNXLibPINVOKE.ENCAPSULATED_HEADER_pMD5_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.ENCAPSULATED_HEADER_pMD5_get(swigCPtr);
-      byte[] retVal = new byte[16];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.ENCAPSULATED_HEADER_pMD5_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16);
 
-      for(int i = 0; i < 16; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[16] 
     }
 
   }
 
-  public byte[] pUnused {
+  public NativeArray<byte> pUnused {
     set {
       NWNXLibPINVOKE.ENCAPSULATED_HEADER_pUnused_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.ENCAPSULATED_HEADER_pUnused_get(swigCPtr);
-      byte[] retVal = new byte[100];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.ENCAPSULATED_HEADER_pUnused_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 100);
 
-      for(int i = 0; i < 100; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[100] 
     }
 
   }

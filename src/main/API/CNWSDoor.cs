@@ -38,7 +38,7 @@ public unsafe class CNWSDoor : CNWSObject {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -48,7 +48,7 @@ public unsafe class CNWSDoor : CNWSObject {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSDoor self) {
+  public static implicit operator global::System.IntPtr(CNWSDoor self) {
     return self.swigCPtr.Handle;
   }
 

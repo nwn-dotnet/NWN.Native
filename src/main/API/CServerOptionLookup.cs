@@ -49,7 +49,7 @@ public unsafe class CServerOptionLookup : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CServerOptionLookup : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CServerOptionLookup self) {
+  public static implicit operator global::System.IntPtr(CServerOptionLookup self) {
     return self.swigCPtr.Handle;
   }
 
@@ -96,7 +96,7 @@ public unsafe class CServerOptionLookup : global::System.IDisposable {
       NWNXLibPINVOKE.CServerOptionLookup_pData_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CServerOptionLookup_pData_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CServerOptionLookup_pData_get(swigCPtr); 
         return (int*)retVal; 
     }
 

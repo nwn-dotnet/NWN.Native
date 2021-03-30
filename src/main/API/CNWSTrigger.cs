@@ -38,7 +38,7 @@ public unsafe class CNWSTrigger : CNWSObject {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -48,7 +48,7 @@ public unsafe class CNWSTrigger : CNWSObject {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSTrigger self) {
+  public static implicit operator global::System.IntPtr(CNWSTrigger self) {
     return self.swigCPtr.Handle;
   }
 
@@ -161,7 +161,7 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_pnTriangles_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWSTrigger_m_pnTriangles_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSTrigger_m_pnTriangles_get(swigCPtr); 
         return (int*)retVal; 
     }
 
@@ -182,7 +182,7 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_pnOutlineVertices_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWSTrigger_m_pnOutlineVertices_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSTrigger_m_pnOutlineVertices_get(swigCPtr); 
         return (int*)retVal; 
     }
 

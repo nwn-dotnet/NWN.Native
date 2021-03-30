@@ -49,7 +49,7 @@ public unsafe class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CExoArrayListCNWSPlayerJournalQuestUpdates self) {
+  public static implicit operator global::System.IntPtr(CExoArrayListCNWSPlayerJournalQuestUpdates self) {
     return self.swigCPtr.Handle;
   }
 

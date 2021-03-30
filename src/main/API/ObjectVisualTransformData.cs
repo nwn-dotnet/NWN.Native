@@ -38,7 +38,7 @@ public unsafe class ObjectVisualTransformData : CAurObjectVisualTransformData {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -48,7 +48,7 @@ public unsafe class ObjectVisualTransformData : CAurObjectVisualTransformData {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(ObjectVisualTransformData self) {
+  public static implicit operator global::System.IntPtr(ObjectVisualTransformData self) {
     return self.swigCPtr.Handle;
   }
 

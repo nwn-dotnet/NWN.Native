@@ -38,7 +38,7 @@ public unsafe class CNWSEffectListHandler : CGameEffectApplierRemover {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -48,7 +48,7 @@ public unsafe class CNWSEffectListHandler : CGameEffectApplierRemover {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSEffectListHandler self) {
+  public static implicit operator global::System.IntPtr(CNWSEffectListHandler self) {
     return self.swigCPtr.Handle;
   }
 

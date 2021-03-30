@@ -7256,27 +7256,27 @@ public static unsafe class NWNXLib {
   }
 
   public static int* EnableCombatDebugging() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.EnableCombatDebugging();
+    global::System.IntPtr retVal = NWNXLibPINVOKE.EnableCombatDebugging();
     return (int*)retVal;
   }
 
   public static int* EnableSavingThrowDebugging() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.EnableSavingThrowDebugging();
+    global::System.IntPtr retVal = NWNXLibPINVOKE.EnableSavingThrowDebugging();
     return (int*)retVal;
   }
 
   public static int* EnableMovementSpeedDebugging() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.EnableMovementSpeedDebugging();
+    global::System.IntPtr retVal = NWNXLibPINVOKE.EnableMovementSpeedDebugging();
     return (int*)retVal;
   }
 
   public static int* EnableHitDieDebugging() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.EnableHitDieDebugging();
+    global::System.IntPtr retVal = NWNXLibPINVOKE.EnableHitDieDebugging();
     return (int*)retVal;
   }
 
   public static int* ExitProgram() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.ExitProgram();
+    global::System.IntPtr retVal = NWNXLibPINVOKE.ExitProgram();
     return (int*)retVal;
   }
 

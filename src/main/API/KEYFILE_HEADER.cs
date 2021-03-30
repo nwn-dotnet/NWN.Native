@@ -49,7 +49,7 @@ public unsafe class KEYFILE_HEADER : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class KEYFILE_HEADER : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(KEYFILE_HEADER self) {
+  public static implicit operator global::System.IntPtr(KEYFILE_HEADER self) {
     return self.swigCPtr.Handle;
   }
 
@@ -181,19 +181,15 @@ public unsafe class KEYFILE_HEADER : global::System.IDisposable {
     } 
   }
 
-  public byte[] pReserved {
+  public NativeArray<byte> pReserved {
     set {
       NWNXLibPINVOKE.KEYFILE_HEADER_pReserved_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.KEYFILE_HEADER_pReserved_get(swigCPtr);
-      byte[] retVal = new byte[8];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.KEYFILE_HEADER_pReserved_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 8);
 
-      for(int i = 0; i < 8; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[8] 
     }
 
   }

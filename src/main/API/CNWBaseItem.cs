@@ -49,7 +49,7 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWBaseItem self) {
+  public static implicit operator global::System.IntPtr(CNWBaseItem self) {
     return self.swigCPtr.Handle;
   }
 
@@ -411,19 +411,15 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
     } 
   }
 
-  public int[] m_bPartEnvMap {
+  public NativeArray<int> m_bPartEnvMap {
     set {
       NWNXLibPINVOKE.CNWBaseItem_m_bPartEnvMap_set(swigCPtr, value);
     }  
     get {
-      int* arrayPtr = NWNXLibPINVOKE.CNWBaseItem_m_bPartEnvMap_get(swigCPtr);
-      int[] retVal = new int[3];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWBaseItem_m_bPartEnvMap_get(swigCPtr);
+      NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 3);
 
-      for(int i = 0; i < 3; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // int[3] 
     }
 
   }
@@ -495,7 +491,7 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_pRequiredFeats_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWBaseItem_m_pRequiredFeats_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWBaseItem_m_pRequiredFeats_get(swigCPtr); 
         return (ushort*)retVal; 
     }
 

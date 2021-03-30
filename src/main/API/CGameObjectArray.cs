@@ -49,7 +49,7 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CGameObjectArray self) {
+  public static implicit operator global::System.IntPtr(CGameObjectArray self) {
     return self.swigCPtr.Handle;
   }
 
@@ -96,42 +96,34 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
       NWNXLibPINVOKE.CGameObjectArray_m_pArray_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CGameObjectArray_m_pArray_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CGameObjectArray_m_pArray_get(swigCPtr); 
         return (void**)retVal; 
     }
 
   }
 
-  public uint[] m_nNextObjectArrayID {
+  public NativeArray<uint> m_nNextObjectArrayID {
     set {
       NWNXLibPINVOKE.CGameObjectArray_m_nNextObjectArrayID_set(swigCPtr, value);
     }  
     get {
-      uint* arrayPtr = NWNXLibPINVOKE.CGameObjectArray_m_nNextObjectArrayID_get(swigCPtr);
-      uint[] retVal = new uint[2];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CGameObjectArray_m_nNextObjectArrayID_get(swigCPtr);
+      NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 2);
 
-      for(int i = 0; i < 2; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // uint[2] 
     }
 
   }
 
-  public uint[] m_nNextCharArrayID {
+  public NativeArray<uint> m_nNextCharArrayID {
     set {
       NWNXLibPINVOKE.CGameObjectArray_m_nNextCharArrayID_set(swigCPtr, value);
     }  
     get {
-      uint* arrayPtr = NWNXLibPINVOKE.CGameObjectArray_m_nNextCharArrayID_get(swigCPtr);
-      uint[] retVal = new uint[2];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CGameObjectArray_m_nNextCharArrayID_get(swigCPtr);
+      NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 2);
 
-      for(int i = 0; i < 2; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // uint[2] 
     }
 
   }

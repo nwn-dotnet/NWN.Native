@@ -49,7 +49,7 @@ public unsafe class CExoLinkedListCERFString : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CExoLinkedListCERFString : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CExoLinkedListCERFString self) {
+  public static implicit operator global::System.IntPtr(CExoLinkedListCERFString self) {
     return self.swigCPtr.Handle;
   }
 

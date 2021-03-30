@@ -38,7 +38,7 @@ public unsafe class CResDWK : CRes {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -48,7 +48,7 @@ public unsafe class CResDWK : CRes {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CResDWK self) {
+  public static implicit operator global::System.IntPtr(CResDWK self) {
     return self.swigCPtr.Handle;
   }
 
@@ -105,7 +105,7 @@ public unsafe class CResDWK : CRes {
       NWNXLibPINVOKE.CResDWK_m_pDWKData_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CResDWK_m_pDWKData_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CResDWK_m_pDWKData_get(swigCPtr); 
         return (byte*)retVal; 
     }
 
@@ -115,7 +115,7 @@ public unsafe class CResDWK : CRes {
   }
 
   public byte* GetDWKDataPtr() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CResDWK_GetDWKDataPtr(swigCPtr);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CResDWK_GetDWKDataPtr(swigCPtr);
     return (byte*)retVal;
   }
 

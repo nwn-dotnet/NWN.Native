@@ -58,7 +58,7 @@ public unsafe class CItemRepositoryPtrArray : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -68,7 +68,7 @@ public unsafe class CItemRepositoryPtrArray : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CItemRepositoryPtrArray self) {
+  public static implicit operator global::System.IntPtr(CItemRepositoryPtrArray self) {
     return self.swigCPtr.Handle;
   }
 
@@ -113,7 +113,7 @@ public unsafe class CItemRepositoryPtrArray : global::System.IDisposable {
     NWNXLibPINVOKE.CItemRepositoryPtrArray_SetItem(swigCPtr, index, CItemRepository.getCPtr(value));
   }
 
-  public static CItemRepositoryPtrArray FromPointer(System.IntPtr* ptr) {
+  public static CItemRepositoryPtrArray FromPointer(global::System.IntPtr* ptr) {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CItemRepositoryPtrArray_FromPointer((global::System.IntPtr)ptr);
     CItemRepositoryPtrArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CItemRepositoryPtrArray(cPtr, false);
     return ret;

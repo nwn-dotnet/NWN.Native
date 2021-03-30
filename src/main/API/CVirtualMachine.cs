@@ -49,7 +49,7 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CVirtualMachine self) {
+  public static implicit operator global::System.IntPtr(CVirtualMachine self) {
     return self.swigCPtr.Handle;
   }
 
@@ -117,7 +117,7 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
       NWNXLibPINVOKE.CVirtualMachine_m_pReturnValue_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachine_m_pReturnValue_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachine_m_pReturnValue_get(swigCPtr); 
         return (void*)retVal; 
     }
 
@@ -155,36 +155,28 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
 
   }
 
-  public int[] m_bValidObjectRunScript {
+  public NativeArray<int> m_bValidObjectRunScript {
     set {
       NWNXLibPINVOKE.CVirtualMachine_m_bValidObjectRunScript_set(swigCPtr, value);
     }  
     get {
-      int* arrayPtr = NWNXLibPINVOKE.CVirtualMachine_m_bValidObjectRunScript_get(swigCPtr);
-      int[] retVal = new int[8];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CVirtualMachine_m_bValidObjectRunScript_get(swigCPtr);
+      NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 8);
 
-      for(int i = 0; i < 8; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // int[8] 
     }
 
   }
 
-  public uint[] m_oidObjectRunScript {
+  public NativeArray<uint> m_oidObjectRunScript {
     set {
       NWNXLibPINVOKE.CVirtualMachine_m_oidObjectRunScript_set(swigCPtr, value);
     }  
     get {
-      uint* arrayPtr = NWNXLibPINVOKE.CVirtualMachine_m_oidObjectRunScript_get(swigCPtr);
-      uint[] retVal = new uint[8];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CVirtualMachine_m_oidObjectRunScript_get(swigCPtr);
+      NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 8);
 
-      for(int i = 0; i < 8; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // uint[8] 
     }
 
   }
@@ -222,19 +214,15 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
     } 
   }
 
-  public int[] m_pnRunTimeInstructPtr {
+  public NativeArray<int> m_pnRunTimeInstructPtr {
     set {
       NWNXLibPINVOKE.CVirtualMachine_m_pnRunTimeInstructPtr_set(swigCPtr, value);
     }  
     get {
-      int* arrayPtr = NWNXLibPINVOKE.CVirtualMachine_m_pnRunTimeInstructPtr_get(swigCPtr);
-      int[] retVal = new int[128];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CVirtualMachine_m_pnRunTimeInstructPtr_get(swigCPtr);
+      NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 128);
 
-      for(int i = 0; i < 128; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // int[128] 
     }
 
   }

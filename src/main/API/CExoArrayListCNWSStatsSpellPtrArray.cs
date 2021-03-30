@@ -58,7 +58,7 @@ public unsafe class CExoArrayListCNWSStatsSpellPtrArray : global::System.IDispos
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -68,7 +68,7 @@ public unsafe class CExoArrayListCNWSStatsSpellPtrArray : global::System.IDispos
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CExoArrayListCNWSStatsSpellPtrArray self) {
+  public static implicit operator global::System.IntPtr(CExoArrayListCNWSStatsSpellPtrArray self) {
     return self.swigCPtr.Handle;
   }
 

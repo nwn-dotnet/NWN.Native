@@ -49,7 +49,7 @@ public unsafe class CNWSInventory : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWSInventory : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSInventory self) {
+  public static implicit operator global::System.IntPtr(CNWSInventory self) {
     return self.swigCPtr.Handle;
   }
 
@@ -91,19 +91,15 @@ public unsafe class CNWSInventory : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public uint[] m_pEquipSlot {
+  public NativeArray<uint> m_pEquipSlot {
     set {
       NWNXLibPINVOKE.CNWSInventory_m_pEquipSlot_set(swigCPtr, value);
     }  
     get {
-      uint* arrayPtr = NWNXLibPINVOKE.CNWSInventory_m_pEquipSlot_get(swigCPtr);
-      uint[] retVal = new uint[18];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSInventory_m_pEquipSlot_get(swigCPtr);
+      NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 18);
 
-      for(int i = 0; i < 18; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // uint[18] 
     }
 
   }

@@ -38,7 +38,7 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -48,7 +48,7 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWVirtualMachineCommands self) {
+  public static implicit operator global::System.IntPtr(CNWVirtualMachineCommands self) {
     return self.swigCPtr.Handle;
   }
 
@@ -111,7 +111,7 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
   }
 
   public override void* CopyGameDefinedStructure(int nEngineStructure, void* pStructureSrc) { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_CopyGameDefinedStructure(swigCPtr, nEngineStructure, (global::System.IntPtr)pStructureSrc);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_CopyGameDefinedStructure(swigCPtr, nEngineStructure, (global::System.IntPtr)pStructureSrc);
     return (void*)retVal;
   }
 
@@ -125,7 +125,7 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
   }
 
   public override void* CreateGameDefinedStructure(int nEngineStructure) { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_CreateGameDefinedStructure(swigCPtr, nEngineStructure);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_CreateGameDefinedStructure(swigCPtr, nEngineStructure);
     return (void*)retVal;
   }
 

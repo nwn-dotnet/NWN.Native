@@ -49,7 +49,7 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(NWERFHEADER self) {
+  public static implicit operator global::System.IntPtr(NWERFHEADER self) {
     return self.swigCPtr.Handle;
   }
 
@@ -191,19 +191,15 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
     } 
   }
 
-  public byte[] nUnused {
+  public NativeArray<byte> nUnused {
     set {
       NWNXLibPINVOKE.NWERFHEADER_nUnused_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.NWERFHEADER_nUnused_get(swigCPtr);
-      byte[] retVal = new byte[116];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.NWERFHEADER_nUnused_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 116);
 
-      for(int i = 0; i < 116; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[116] 
     }
 
   }

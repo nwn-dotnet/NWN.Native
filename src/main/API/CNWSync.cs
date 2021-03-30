@@ -49,7 +49,7 @@ public unsafe class CNWSync : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWSync : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSync self) {
+  public static implicit operator global::System.IntPtr(CNWSync self) {
     return self.swigCPtr.Handle;
   }
 
@@ -96,7 +96,7 @@ public unsafe class CNWSync : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSync_m_internal_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWSync_m_internal_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSync_m_internal_get(swigCPtr); 
         return (void*)retVal; 
     }
 

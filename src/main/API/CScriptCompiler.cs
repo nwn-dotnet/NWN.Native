@@ -49,7 +49,7 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CScriptCompiler self) {
+  public static implicit operator global::System.IntPtr(CScriptCompiler self) {
     return self.swigCPtr.Handle;
   }
 
@@ -160,7 +160,7 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptCompiler_m_ppsParseTreeFileNames_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_ppsParseTreeFileNames_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_ppsParseTreeFileNames_get(swigCPtr); 
         return (void**)retVal; 
     }
 
@@ -539,7 +539,7 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptCompiler_m_pnHashString_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_pnHashString_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_pnHashString_get(swigCPtr); 
         return (int*)retVal; 
     }
 
@@ -1001,7 +1001,7 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptCompiler_m_pnSwitchLabelStatements_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_pnSwitchLabelStatements_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_pnSwitchLabelStatements_get(swigCPtr); 
         return (int*)retVal; 
     }
 
@@ -1022,7 +1022,7 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptCompiler_m_pbEngineDefinedStructureValid_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_pbEngineDefinedStructureValid_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_pbEngineDefinedStructureValid_get(swigCPtr); 
         return (int*)retVal; 
     }
 
@@ -1243,19 +1243,15 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     } 
   }
 
-  public int[] m_pSymbolLabelStartEntry {
+  public NativeArray<int> m_pSymbolLabelStartEntry {
     set {
       NWNXLibPINVOKE.CScriptCompiler_m_pSymbolLabelStartEntry_set(swigCPtr, value);
     }  
     get {
-      int* arrayPtr = NWNXLibPINVOKE.CScriptCompiler_m_pSymbolLabelStartEntry_get(swigCPtr);
-      int[] retVal = new int[512];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CScriptCompiler_m_pSymbolLabelStartEntry_get(swigCPtr);
+      NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 512);
 
-      for(int i = 0; i < 512; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // int[512] 
     }
 
   }

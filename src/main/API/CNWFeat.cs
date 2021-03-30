@@ -49,7 +49,7 @@ public unsafe class CNWFeat : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWFeat : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWFeat self) {
+  public static implicit operator global::System.IntPtr(CNWFeat self) {
     return self.swigCPtr.Handle;
   }
 
@@ -262,36 +262,28 @@ public unsafe class CNWFeat : global::System.IDisposable {
     } 
   }
 
-  public ushort[] m_lstPrereqFeats {
+  public NativeArray<ushort> m_lstPrereqFeats {
     set {
       NWNXLibPINVOKE.CNWFeat_m_lstPrereqFeats_set(swigCPtr, value);
     }  
     get {
-      ushort* arrayPtr = NWNXLibPINVOKE.CNWFeat_m_lstPrereqFeats_get(swigCPtr);
-      ushort[] retVal = new ushort[2];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWFeat_m_lstPrereqFeats_get(swigCPtr);
+      NativeArray<ushort> retVal = new NativeArray<ushort>(arrayPtr, 2);
 
-      for(int i = 0; i < 2; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // ushort[2] 
     }
 
   }
 
-  public ushort[] m_lstOrPrereqFeats {
+  public NativeArray<ushort> m_lstOrPrereqFeats {
     set {
       NWNXLibPINVOKE.CNWFeat_m_lstOrPrereqFeats_set(swigCPtr, value);
     }  
     get {
-      ushort* arrayPtr = NWNXLibPINVOKE.CNWFeat_m_lstOrPrereqFeats_get(swigCPtr);
-      ushort[] retVal = new ushort[5];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWFeat_m_lstOrPrereqFeats_get(swigCPtr);
+      NativeArray<ushort> retVal = new NativeArray<ushort>(arrayPtr, 5);
 
-      for(int i = 0; i < 5; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // ushort[5] 
     }
 
   }

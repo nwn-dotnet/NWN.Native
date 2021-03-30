@@ -38,7 +38,7 @@ public unsafe class CNWSRules : CNWRules {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -48,7 +48,7 @@ public unsafe class CNWSRules : CNWRules {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSRules self) {
+  public static implicit operator global::System.IntPtr(CNWSRules self) {
     return self.swigCPtr.Handle;
   }
 

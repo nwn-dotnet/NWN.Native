@@ -49,7 +49,7 @@ public unsafe class CVirtualMachineDebugLoader : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CVirtualMachineDebugLoader : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CVirtualMachineDebugLoader self) {
+  public static implicit operator global::System.IntPtr(CVirtualMachineDebugLoader self) {
     return self.swigCPtr.Handle;
   }
 
@@ -107,7 +107,7 @@ public unsafe class CVirtualMachineDebugLoader : global::System.IDisposable {
   }
 
   public byte* GetDataPtr() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebugLoader_GetDataPtr(swigCPtr);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebugLoader_GetDataPtr(swigCPtr);
     return (byte*)retVal;
   }
 

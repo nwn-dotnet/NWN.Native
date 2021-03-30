@@ -49,7 +49,7 @@ public unsafe class CResRef : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CResRef : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CResRef self) {
+  public static implicit operator global::System.IntPtr(CResRef self) {
     return self.swigCPtr.Handle;
   }
 
@@ -91,36 +91,28 @@ public unsafe class CResRef : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public byte[] m_resRefLowerCase {
+  public NativeArray<byte> m_resRefLowerCase {
     set {
       NWNXLibPINVOKE.CResRef_m_resRefLowerCase_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CResRef_m_resRefLowerCase_get(swigCPtr);
-      byte[] retVal = new byte[16];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CResRef_m_resRefLowerCase_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16);
 
-      for(int i = 0; i < 16; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[16] 
     }
 
   }
 
-  public byte[] m_resRef {
+  public NativeArray<byte> m_resRef {
     set {
       NWNXLibPINVOKE.CResRef_m_resRef_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CResRef_m_resRef_get(swigCPtr);
-      byte[] retVal = new byte[16];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CResRef_m_resRef_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16);
 
-      for(int i = 0; i < 16; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[16] 
     }
 
   }
@@ -128,7 +120,7 @@ public unsafe class CResRef : global::System.IDisposable {
   public CResRef() : this(NWNXLibPINVOKE.new_CResRef__SWIG_0(), true) {
   }
 
-  public CResRef(byte[] resRef) : this(NWNXLibPINVOKE.new_CResRef__SWIG_1(resRef), true) {
+  public CResRef(NativeArray<byte> resRef) : this(NWNXLibPINVOKE.new_CResRef__SWIG_1(resRef), true) {
   }
 
   public CResRef(CExoString sName) : this(NWNXLibPINVOKE.new_CResRef__SWIG_2(CExoString.getCPtr(sName)), true) {
@@ -195,7 +187,7 @@ public unsafe class CResRef : global::System.IDisposable {
     return ret;
   }
 
-  public CResRef _OpAssign(byte[] resRef) {
+  public CResRef _OpAssign(NativeArray<byte> resRef) {
     CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_1(swigCPtr, resRef), true);
     return ret;
   }
@@ -217,7 +209,7 @@ public unsafe class CResRef : global::System.IDisposable {
     return ret;
   }
 
-  public void GetResRef(byte[] resRef) {
+  public void GetResRef(NativeArray<byte> resRef) {
     NWNXLibPINVOKE.CResRef_GetResRef__SWIG_0(swigCPtr, resRef);
   }
 

@@ -49,7 +49,7 @@ public unsafe class CExoArrayListNWPlayerCharacterListPtr : global::System.IDisp
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CExoArrayListNWPlayerCharacterListPtr : global::System.IDisp
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CExoArrayListNWPlayerCharacterListPtr self) {
+  public static implicit operator global::System.IntPtr(CExoArrayListNWPlayerCharacterListPtr self) {
     return self.swigCPtr.Handle;
   }
 
@@ -96,7 +96,7 @@ public unsafe class CExoArrayListNWPlayerCharacterListPtr : global::System.IDisp
       NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr_element_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr_element_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr_element_get(swigCPtr); 
         return (void**)retVal; 
     }
 
@@ -139,7 +139,7 @@ public unsafe class CExoArrayListNWPlayerCharacterListPtr : global::System.IDisp
   }
 
   public void** _OpIndex(int i) { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr__OpIndex(swigCPtr, i);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr__OpIndex(swigCPtr, i);
     return (void**)retVal;
   }
 
@@ -168,12 +168,12 @@ public unsafe class CExoArrayListNWPlayerCharacterListPtr : global::System.IDisp
   }
 
   public void** begin() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr_begin(swigCPtr);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr_begin(swigCPtr);
     return (void**)retVal;
   }
 
   public void** end() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr_end(swigCPtr);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListPtr_end(swigCPtr);
     return (void**)retVal;
   }
 

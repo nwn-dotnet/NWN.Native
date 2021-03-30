@@ -38,7 +38,7 @@ public unsafe class CResSET : CRes {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -48,7 +48,7 @@ public unsafe class CResSET : CRes {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CResSET self) {
+  public static implicit operator global::System.IntPtr(CResSET self) {
     return self.swigCPtr.Handle;
   }
 

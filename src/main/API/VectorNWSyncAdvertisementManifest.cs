@@ -50,7 +50,7 @@ public unsafe class VectorNWSyncAdvertisementManifest : global::System.IDisposab
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -60,7 +60,7 @@ public unsafe class VectorNWSyncAdvertisementManifest : global::System.IDisposab
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(VectorNWSyncAdvertisementManifest self) {
+  public static implicit operator global::System.IntPtr(VectorNWSyncAdvertisementManifest self) {
     return self.swigCPtr.Handle;
   }
 

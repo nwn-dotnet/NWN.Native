@@ -49,7 +49,7 @@ public unsafe class CExoLinkedListC2DA : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CExoLinkedListC2DA : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CExoLinkedListC2DA self) {
+  public static implicit operator global::System.IntPtr(CExoLinkedListC2DA self) {
     return self.swigCPtr.Handle;
   }
 

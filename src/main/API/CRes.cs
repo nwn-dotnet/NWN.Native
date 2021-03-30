@@ -49,7 +49,7 @@ public unsafe class CRes : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CRes : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CRes self) {
+  public static implicit operator global::System.IntPtr(CRes self) {
     return self.swigCPtr.Handle;
   }
 
@@ -137,7 +137,7 @@ public unsafe class CRes : global::System.IDisposable {
       NWNXLibPINVOKE.CRes_m_pResource_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CRes_m_pResource_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CRes_m_pResource_get(swigCPtr); 
         return (void*)retVal; 
     }
 
@@ -228,7 +228,7 @@ public unsafe class CRes : global::System.IDisposable {
   }
 
   public void* Demand() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CRes_Demand(swigCPtr);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CRes_Demand(swigCPtr);
     return (void*)retVal;
   }
 
@@ -246,7 +246,7 @@ public unsafe class CRes : global::System.IDisposable {
   }
 
   public void* GetData() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CRes_GetData(swigCPtr);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CRes_GetData(swigCPtr);
     return (void*)retVal;
   }
 

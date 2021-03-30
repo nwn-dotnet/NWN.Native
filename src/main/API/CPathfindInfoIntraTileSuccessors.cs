@@ -49,7 +49,7 @@ public unsafe class CPathfindInfoIntraTileSuccessors : global::System.IDisposabl
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CPathfindInfoIntraTileSuccessors : global::System.IDisposabl
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CPathfindInfoIntraTileSuccessors self) {
+  public static implicit operator global::System.IntPtr(CPathfindInfoIntraTileSuccessors self) {
     return self.swigCPtr.Handle;
   }
 

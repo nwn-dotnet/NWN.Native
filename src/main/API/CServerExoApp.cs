@@ -38,7 +38,7 @@ public unsafe class CServerExoApp : CBaseExoApp {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -48,7 +48,7 @@ public unsafe class CServerExoApp : CBaseExoApp {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CServerExoApp self) {
+  public static implicit operator global::System.IntPtr(CServerExoApp self) {
     return self.swigCPtr.Handle;
   }
 
@@ -415,12 +415,12 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public void* GetSysAdminList() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CServerExoApp_GetSysAdminList(swigCPtr);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CServerExoApp_GetSysAdminList(swigCPtr);
     return (void*)retVal;
   }
 
   public void* GetPlayerList() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CServerExoApp_GetPlayerList(swigCPtr);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CServerExoApp_GetPlayerList(swigCPtr);
     return (void*)retVal;
   }
 

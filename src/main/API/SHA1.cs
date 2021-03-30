@@ -49,7 +49,7 @@ public unsafe class SHA1 : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class SHA1 : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(SHA1 self) {
+  public static implicit operator global::System.IntPtr(SHA1 self) {
     return self.swigCPtr.Handle;
   }
 
@@ -101,19 +101,15 @@ public unsafe class SHA1 : global::System.IDisposable {
     } 
   }
 
-  public byte[] m_data {
+  public NativeArray<byte> m_data {
     set {
       NWNXLibPINVOKE.SHA1_m_data_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.SHA1_m_data_get(swigCPtr);
-      byte[] retVal = new byte[20];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.SHA1_m_data_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 20);
 
-      for(int i = 0; i < 20; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[20] 
     }
 
   }

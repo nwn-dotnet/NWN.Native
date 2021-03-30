@@ -49,7 +49,7 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSPlayerLUOAppearanceInfo self) {
+  public static implicit operator global::System.IntPtr(CNWSPlayerLUOAppearanceInfo self) {
     return self.swigCPtr.Handle;
   }
 
@@ -221,19 +221,15 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
     } 
   }
 
-  public byte[] m_pPartVariation {
+  public NativeArray<byte> m_pPartVariation {
     set {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_pPartVariation_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_pPartVariation_get(swigCPtr);
-      byte[] retVal = new byte[19];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_pPartVariation_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 19);
 
-      for(int i = 0; i < 19; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[19] 
     }
 
   }

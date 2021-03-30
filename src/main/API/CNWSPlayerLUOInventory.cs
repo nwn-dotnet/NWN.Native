@@ -49,7 +49,7 @@ public unsafe class CNWSPlayerLUOInventory : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWSPlayerLUOInventory : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSPlayerLUOInventory self) {
+  public static implicit operator global::System.IntPtr(CNWSPlayerLUOInventory self) {
     return self.swigCPtr.Handle;
   }
 
@@ -91,36 +91,28 @@ public unsafe class CNWSPlayerLUOInventory : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public uint[] m_oidInventorySlots {
+  public NativeArray<uint> m_oidInventorySlots {
     set {
       NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_oidInventorySlots_set(swigCPtr, value);
     }  
     get {
-      uint* arrayPtr = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_oidInventorySlots_get(swigCPtr);
-      uint[] retVal = new uint[18];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_oidInventorySlots_get(swigCPtr);
+      NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 18);
 
-      for(int i = 0; i < 18; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // uint[18] 
     }
 
   }
 
-  public int[] m_nStackSizes {
+  public NativeArray<int> m_nStackSizes {
     set {
       NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nStackSizes_set(swigCPtr, value);
     }  
     get {
-      int* arrayPtr = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nStackSizes_get(swigCPtr);
-      int[] retVal = new int[18];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nStackSizes_get(swigCPtr);
+      NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 18);
 
-      for(int i = 0; i < 18; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // int[18] 
     }
 
   }

@@ -38,7 +38,7 @@ public unsafe class CNWSPlayer : CNWSClient {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -48,7 +48,7 @@ public unsafe class CNWSPlayer : CNWSClient {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSPlayer self) {
+  public static implicit operator global::System.IntPtr(CNWSPlayer self) {
     return self.swigCPtr.Handle;
   }
 
@@ -148,7 +148,7 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_pAreas_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayer_m_pAreas_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayer_m_pAreas_get(swigCPtr); 
         return (uint*)retVal; 
     }
 

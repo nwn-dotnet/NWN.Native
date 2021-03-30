@@ -49,7 +49,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(LerpFloat self) {
+  public static implicit operator global::System.IntPtr(LerpFloat self) {
     return self.swigCPtr.Handle;
   }
 
@@ -190,7 +190,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
       }
     }
   
-    public System.IntPtr Pointer {
+    public global::System.IntPtr Pointer {
       get {
         return swigCPtr.Handle;
       }
@@ -200,7 +200,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
       return (void*)self.swigCPtr.Handle;
     }
   
-    public static implicit operator System.IntPtr(TimeType self) {
+    public static implicit operator global::System.IntPtr(TimeType self) {
       return self.swigCPtr.Handle;
     }
   
@@ -271,7 +271,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
           }
         }
       
-        public System.IntPtr Pointer {
+        public global::System.IntPtr Pointer {
           get {
             return swigCPtr.Handle;
           }
@@ -281,7 +281,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
           return (void*)self.swigCPtr.Handle;
         }
       
-        public static implicit operator System.IntPtr(World self) {
+        public static implicit operator global::System.IntPtr(World self) {
           return self.swigCPtr.Handle;
         }
       

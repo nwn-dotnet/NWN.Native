@@ -49,7 +49,7 @@ public unsafe class CNWSObjectActionNode : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWSObjectActionNode : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSObjectActionNode self) {
+  public static implicit operator global::System.IntPtr(CNWSObjectActionNode self) {
     return self.swigCPtr.Handle;
   }
 
@@ -101,36 +101,28 @@ public unsafe class CNWSObjectActionNode : global::System.IDisposable {
     } 
   }
 
-  public uint[] m_nParamType {
+  public NativeArray<uint> m_nParamType {
     set {
       NWNXLibPINVOKE.CNWSObjectActionNode_m_nParamType_set(swigCPtr, value);
     }  
     get {
-      uint* arrayPtr = NWNXLibPINVOKE.CNWSObjectActionNode_m_nParamType_get(swigCPtr);
-      uint[] retVal = new uint[12];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSObjectActionNode_m_nParamType_get(swigCPtr);
+      NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 12);
 
-      for(int i = 0; i < 12; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // uint[12] 
     }
 
   }
 
-  public long[] m_pParameter {
+  public NativeArray<long> m_pParameter {
     set {
       NWNXLibPINVOKE.CNWSObjectActionNode_m_pParameter_set(swigCPtr, value);
     }  
     get {
-      long* arrayPtr = NWNXLibPINVOKE.CNWSObjectActionNode_m_pParameter_get(swigCPtr);
-      long[] retVal = new long[12];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSObjectActionNode_m_pParameter_get(swigCPtr);
+      NativeArray<long> retVal = new NativeArray<long>(arrayPtr, 12);
 
-      for(int i = 0; i < 12; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // long[12] 
     }
 
   }

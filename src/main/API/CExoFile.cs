@@ -49,7 +49,7 @@ public unsafe class CExoFile : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CExoFile : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CExoFile self) {
+  public static implicit operator global::System.IntPtr(CExoFile self) {
     return self.swigCPtr.Handle;
   }
 
@@ -214,7 +214,7 @@ public unsafe class CExoFile : global::System.IDisposable {
   }
 
   public void* GetFileHandle() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoFile_GetFileHandle(swigCPtr);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoFile_GetFileHandle(swigCPtr);
     return (void*)retVal;
   }
 

@@ -49,7 +49,7 @@ public unsafe class CExoTimersInternal : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CExoTimersInternal : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CExoTimersInternal self) {
+  public static implicit operator global::System.IntPtr(CExoTimersInternal self) {
     return self.swigCPtr.Handle;
   }
 
@@ -176,7 +176,7 @@ public unsafe class CExoTimersInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoTimersInternal_m_pTimerThread_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CExoTimersInternal_m_pTimerThread_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoTimersInternal_m_pTimerThread_get(swigCPtr); 
         return (void*)retVal; 
     }
 

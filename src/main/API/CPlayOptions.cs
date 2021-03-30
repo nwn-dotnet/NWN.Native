@@ -49,7 +49,7 @@ public unsafe class CPlayOptions : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CPlayOptions : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CPlayOptions self) {
+  public static implicit operator global::System.IntPtr(CPlayOptions self) {
     return self.swigCPtr.Handle;
   }
 

@@ -49,7 +49,7 @@ public unsafe class CNWTileSurfaceMeshLocalInfo : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWTileSurfaceMeshLocalInfo : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWTileSurfaceMeshLocalInfo self) {
+  public static implicit operator global::System.IntPtr(CNWTileSurfaceMeshLocalInfo self) {
     return self.swigCPtr.Handle;
   }
 
@@ -91,19 +91,15 @@ public unsafe class CNWTileSurfaceMeshLocalInfo : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public int[] pnEdgeUsed {
+  public NativeArray<int> pnEdgeUsed {
     set {
       NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnEdgeUsed_set(swigCPtr, value);
     }  
     get {
-      int* arrayPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnEdgeUsed_get(swigCPtr);
-      int[] retVal = new int[12];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnEdgeUsed_get(swigCPtr);
+      NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 12);
 
-      for(int i = 0; i < 12; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // int[12] 
     }
 
   }
@@ -120,36 +116,28 @@ public unsafe class CNWTileSurfaceMeshLocalInfo : global::System.IDisposable {
 
   }
 
-  public int[] pnVertexIndex {
+  public NativeArray<int> pnVertexIndex {
     set {
       NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnVertexIndex_set(swigCPtr, value);
     }  
     get {
-      int* arrayPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnVertexIndex_get(swigCPtr);
-      int[] retVal = new int[3];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnVertexIndex_get(swigCPtr);
+      NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 3);
 
-      for(int i = 0; i < 3; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // int[3] 
     }
 
   }
 
-  public int[] pnTriangleAdjacency {
+  public NativeArray<int> pnTriangleAdjacency {
     set {
       NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnTriangleAdjacency_set(swigCPtr, value);
     }  
     get {
-      int* arrayPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnTriangleAdjacency_get(swigCPtr);
-      int[] retVal = new int[3];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnTriangleAdjacency_get(swigCPtr);
+      NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 3);
 
-      for(int i = 0; i < 3; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // int[3] 
     }
 
   }

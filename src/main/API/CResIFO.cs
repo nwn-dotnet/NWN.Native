@@ -38,7 +38,7 @@ public unsafe class CResIFO : CResGFF {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -48,7 +48,7 @@ public unsafe class CResIFO : CResGFF {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CResIFO self) {
+  public static implicit operator global::System.IntPtr(CResIFO self) {
     return self.swigCPtr.Handle;
   }
 

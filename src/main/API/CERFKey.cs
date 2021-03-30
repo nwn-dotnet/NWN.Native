@@ -49,7 +49,7 @@ public unsafe class CERFKey : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CERFKey : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CERFKey self) {
+  public static implicit operator global::System.IntPtr(CERFKey self) {
     return self.swigCPtr.Handle;
   }
 
@@ -121,19 +121,15 @@ public unsafe class CERFKey : global::System.IDisposable {
     } 
   }
 
-  public byte[] m_nUnused {
+  public NativeArray<byte> m_nUnused {
     set {
       NWNXLibPINVOKE.CERFKey_m_nUnused_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CERFKey_m_nUnused_get(swigCPtr);
-      byte[] retVal = new byte[2];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CERFKey_m_nUnused_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 2);
 
-      for(int i = 0; i < 2; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[2] 
     }
 
   }

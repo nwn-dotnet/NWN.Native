@@ -38,7 +38,7 @@ public unsafe class CNWSTile : CNWTile {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -48,7 +48,7 @@ public unsafe class CNWSTile : CNWTile {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSTile self) {
+  public static implicit operator global::System.IntPtr(CNWSTile self) {
     return self.swigCPtr.Handle;
   }
 
@@ -116,7 +116,7 @@ public unsafe class CNWSTile : CNWTile {
       NWNXLibPINVOKE.CNWSTile_m_poidTriggers_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWSTile_m_poidTriggers_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSTile_m_poidTriggers_get(swigCPtr); 
         return (uint*)retVal; 
     }
 

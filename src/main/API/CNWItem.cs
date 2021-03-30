@@ -54,7 +54,7 @@ public unsafe class CNWItem : ICNWItem, global::System.IDisposable {
     return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CNWItem_ICNWItem_GetInterfaceCPtr(swigCPtr.Handle));
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -64,7 +64,7 @@ public unsafe class CNWItem : ICNWItem, global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWItem self) {
+  public static implicit operator global::System.IntPtr(CNWItem self) {
     return self.swigCPtr.Handle;
   }
 
@@ -96,36 +96,28 @@ public unsafe class CNWItem : ICNWItem, global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public byte[] m_nLayeredTextureColors {
+  public NativeArray<byte> m_nLayeredTextureColors {
     set {
       NWNXLibPINVOKE.CNWItem_m_nLayeredTextureColors_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CNWItem_m_nLayeredTextureColors_get(swigCPtr);
-      byte[] retVal = new byte[6];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWItem_m_nLayeredTextureColors_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 6);
 
-      for(int i = 0; i < 6; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[6] 
     }
 
   }
 
-  public byte*[] m_pLayeredTextureColorsPerPart {
+  public NativeArray<global::System.IntPtr> m_pLayeredTextureColorsPerPart {
     set {
       NWNXLibPINVOKE.CNWItem_m_pLayeredTextureColorsPerPart_set(swigCPtr, value);
     }  
     get {
-      byte** arrayPtr = NWNXLibPINVOKE.CNWItem_m_pLayeredTextureColorsPerPart_get(swigCPtr);
-      byte*[] retVal = new byte*[6];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWItem_m_pLayeredTextureColorsPerPart_get(swigCPtr);
+      NativeArray<global::System.IntPtr> retVal = new NativeArray<global::System.IntPtr>(arrayPtr, 6);
 
-      for(int i = 0; i < 6; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte*[6] 
     }
 
   }

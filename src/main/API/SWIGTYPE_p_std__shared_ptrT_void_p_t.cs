@@ -25,7 +25,7 @@ public class SWIGTYPE_p_std__shared_ptrT_void_p_t {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -35,7 +35,7 @@ public class SWIGTYPE_p_std__shared_ptrT_void_p_t {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(SWIGTYPE_p_std__shared_ptrT_void_p_t self) {
+  public static implicit operator global::System.IntPtr(SWIGTYPE_p_std__shared_ptrT_void_p_t self) {
     return self.swigCPtr.Handle;
   }
 

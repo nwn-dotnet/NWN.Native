@@ -38,7 +38,7 @@ public unsafe class CExoResFile : CExoPackedFile {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -48,7 +48,7 @@ public unsafe class CExoResFile : CExoPackedFile {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CExoResFile self) {
+  public static implicit operator global::System.IntPtr(CExoResFile self) {
     return self.swigCPtr.Handle;
   }
 

@@ -49,7 +49,7 @@ public unsafe class CExoArrayListCLoopingVisualEffectPtr : global::System.IDispo
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CExoArrayListCLoopingVisualEffectPtr : global::System.IDispo
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CExoArrayListCLoopingVisualEffectPtr self) {
+  public static implicit operator global::System.IntPtr(CExoArrayListCLoopingVisualEffectPtr self) {
     return self.swigCPtr.Handle;
   }
 
@@ -96,7 +96,7 @@ public unsafe class CExoArrayListCLoopingVisualEffectPtr : global::System.IDispo
       NWNXLibPINVOKE.CExoArrayListCLoopingVisualEffectPtr_element_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCLoopingVisualEffectPtr_element_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCLoopingVisualEffectPtr_element_get(swigCPtr); 
         return (void**)retVal; 
     }
 
@@ -139,7 +139,7 @@ public unsafe class CExoArrayListCLoopingVisualEffectPtr : global::System.IDispo
   }
 
   public void** _OpIndex(int i) { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCLoopingVisualEffectPtr__OpIndex(swigCPtr, i);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCLoopingVisualEffectPtr__OpIndex(swigCPtr, i);
     return (void**)retVal;
   }
 
@@ -168,12 +168,12 @@ public unsafe class CExoArrayListCLoopingVisualEffectPtr : global::System.IDispo
   }
 
   public void** begin() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCLoopingVisualEffectPtr_begin(swigCPtr);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCLoopingVisualEffectPtr_begin(swigCPtr);
     return (void**)retVal;
   }
 
   public void** end() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCLoopingVisualEffectPtr_end(swigCPtr);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCLoopingVisualEffectPtr_end(swigCPtr);
     return (void**)retVal;
   }
 

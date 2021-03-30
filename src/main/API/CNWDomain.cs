@@ -49,7 +49,7 @@ public unsafe class CNWDomain : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWDomain : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWDomain self) {
+  public static implicit operator global::System.IntPtr(CNWDomain self) {
     return self.swigCPtr.Handle;
   }
 
@@ -122,19 +122,15 @@ public unsafe class CNWDomain : global::System.IDisposable {
     } 
   }
 
-  public uint[] m_lstSpells {
+  public NativeArray<uint> m_lstSpells {
     set {
       NWNXLibPINVOKE.CNWDomain_m_lstSpells_set(swigCPtr, value);
     }  
     get {
-      uint* arrayPtr = NWNXLibPINVOKE.CNWDomain_m_lstSpells_get(swigCPtr);
-      uint[] retVal = new uint[10];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWDomain_m_lstSpells_get(swigCPtr);
+      NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 10);
 
-      for(int i = 0; i < 10; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // uint[10] 
     }
 
   }

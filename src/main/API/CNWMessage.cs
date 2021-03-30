@@ -49,7 +49,7 @@ public unsafe class CNWMessage : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWMessage : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWMessage self) {
+  public static implicit operator global::System.IntPtr(CNWMessage self) {
     return self.swigCPtr.Handle;
   }
 
@@ -96,7 +96,7 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_pnWriteBuffer_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWMessage_m_pnWriteBuffer_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWMessage_m_pnWriteBuffer_get(swigCPtr); 
         return (byte*)retVal; 
     }
 
@@ -127,7 +127,7 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_pnWriteFragmentsBuffer_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWMessage_m_pnWriteFragmentsBuffer_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWMessage_m_pnWriteFragmentsBuffer_get(swigCPtr); 
         return (byte*)retVal; 
     }
 
@@ -188,7 +188,7 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_pnReadBuffer_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWMessage_m_pnReadBuffer_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWMessage_m_pnReadBuffer_get(swigCPtr); 
         return (byte*)retVal; 
     }
 
@@ -219,7 +219,7 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_pnReadFragmentsBuffer_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWMessage_m_pnReadFragmentsBuffer_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWMessage_m_pnReadFragmentsBuffer_get(swigCPtr); 
         return (byte*)retVal; 
     }
 
@@ -463,7 +463,7 @@ public unsafe class CNWMessage : global::System.IDisposable {
   }
 
   public void* ReadVOIDPtr(int nSize) { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CNWMessage_ReadVOIDPtr(swigCPtr, nSize);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CNWMessage_ReadVOIDPtr(swigCPtr, nSize);
     return (void*)retVal;
   }
 

@@ -49,7 +49,7 @@ public unsafe class CNWSForcedAction : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWSForcedAction : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSForcedAction self) {
+  public static implicit operator global::System.IntPtr(CNWSForcedAction self) {
     return self.swigCPtr.Handle;
   }
 

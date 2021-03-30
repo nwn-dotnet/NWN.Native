@@ -49,7 +49,7 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSCreatureStats_ClassInfo self) {
+  public static implicit operator global::System.IntPtr(CNWSCreatureStats_ClassInfo self) {
     return self.swigCPtr.Handle;
   }
 
@@ -115,53 +115,41 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
 
   }
 
-  public uint[] m_nBonusSpellsList {
+  public NativeArray<uint> m_nBonusSpellsList {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nBonusSpellsList_set(swigCPtr, value);
     }  
     get {
-      uint* arrayPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nBonusSpellsList_get(swigCPtr);
-      uint[] retVal = new uint[10];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nBonusSpellsList_get(swigCPtr);
+      NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 10);
 
-      for(int i = 0; i < 10; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // uint[10] 
     }
 
   }
 
-  public byte[] m_nSpellsPerDayLeft {
+  public NativeArray<byte> m_nSpellsPerDayLeft {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nSpellsPerDayLeft_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nSpellsPerDayLeft_get(swigCPtr);
-      byte[] retVal = new byte[10];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nSpellsPerDayLeft_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 10);
 
-      for(int i = 0; i < 10; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[10] 
     }
 
   }
 
-  public byte[] m_nMaxSpellsPerDayLeft {
+  public NativeArray<byte> m_nMaxSpellsPerDayLeft {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nMaxSpellsPerDayLeft_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nMaxSpellsPerDayLeft_get(swigCPtr);
-      byte[] retVal = new byte[10];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nMaxSpellsPerDayLeft_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 10);
 
-      for(int i = 0; i < 10; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[10] 
     }
 
   }
@@ -206,19 +194,15 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
     } 
   }
 
-  public byte[] m_nDomain {
+  public NativeArray<byte> m_nDomain {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nDomain_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nDomain_get(swigCPtr);
-      byte[] retVal = new byte[2];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nDomain_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 2);
 
-      for(int i = 0; i < 2; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[2] 
     }
 
   }

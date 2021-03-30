@@ -49,7 +49,7 @@ public unsafe class CTlkTableToken : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CTlkTableToken : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CTlkTableToken self) {
+  public static implicit operator global::System.IntPtr(CTlkTableToken self) {
     return self.swigCPtr.Handle;
   }
 
@@ -122,19 +122,15 @@ public unsafe class CTlkTableToken : global::System.IDisposable {
     } 
   }
 
-  public uint[] m_nStrRef {
+  public NativeArray<uint> m_nStrRef {
     set {
       NWNXLibPINVOKE.CTlkTableToken_m_nStrRef_set(swigCPtr, value);
     }  
     get {
-      uint* arrayPtr = NWNXLibPINVOKE.CTlkTableToken_m_nStrRef_get(swigCPtr);
-      uint[] retVal = new uint[4];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CTlkTableToken_m_nStrRef_get(swigCPtr);
+      NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 4);
 
-      for(int i = 0; i < 4; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // uint[4] 
     }
 
   }

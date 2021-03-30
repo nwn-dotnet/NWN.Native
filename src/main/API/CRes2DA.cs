@@ -38,7 +38,7 @@ public unsafe class CRes2DA : CRes {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -48,7 +48,7 @@ public unsafe class CRes2DA : CRes {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CRes2DA self) {
+  public static implicit operator global::System.IntPtr(CRes2DA self) {
     return self.swigCPtr.Handle;
   }
 
@@ -105,7 +105,7 @@ public unsafe class CRes2DA : CRes {
       NWNXLibPINVOKE.CRes2DA_m_p2DAData_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CRes2DA_m_p2DAData_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CRes2DA_m_p2DAData_get(swigCPtr); 
         return (byte*)retVal; 
     }
 
@@ -126,7 +126,7 @@ public unsafe class CRes2DA : CRes {
   }
 
   public byte* Get2DADataPtr() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CRes2DA_Get2DADataPtr(swigCPtr);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CRes2DA_Get2DADataPtr(swigCPtr);
     return (byte*)retVal;
   }
 

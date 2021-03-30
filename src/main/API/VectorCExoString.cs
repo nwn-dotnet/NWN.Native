@@ -50,7 +50,7 @@ public unsafe class VectorCExoString : global::System.IDisposable, global::Syste
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -60,7 +60,7 @@ public unsafe class VectorCExoString : global::System.IDisposable, global::Syste
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(VectorCExoString self) {
+  public static implicit operator global::System.IntPtr(VectorCExoString self) {
     return self.swigCPtr.Handle;
   }
 

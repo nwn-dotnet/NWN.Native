@@ -49,7 +49,7 @@ public unsafe class CExoKeyTable : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CExoKeyTable : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CExoKeyTable self) {
+  public static implicit operator global::System.IntPtr(CExoKeyTable self) {
     return self.swigCPtr.Handle;
   }
 
@@ -209,7 +209,7 @@ public unsafe class CExoKeyTable : global::System.IDisposable {
       NWNXLibPINVOKE.CExoKeyTable_m_pExoPackedFile_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CExoKeyTable_m_pExoPackedFile_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoKeyTable_m_pExoPackedFile_get(swigCPtr); 
         return (void**)retVal; 
     }
 

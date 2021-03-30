@@ -49,7 +49,7 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CServerExoAppInternal self) {
+  public static implicit operator global::System.IntPtr(CServerExoAppInternal self) {
     return self.swigCPtr.Handle;
   }
 
@@ -91,19 +91,15 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public byte[] ScratchMessageBuffer {
+  public NativeArray<byte> ScratchMessageBuffer {
     set {
       NWNXLibPINVOKE.CServerExoAppInternal_ScratchMessageBuffer_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CServerExoAppInternal_ScratchMessageBuffer_get(swigCPtr);
-      byte[] retVal = new byte[65536];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CServerExoAppInternal_ScratchMessageBuffer_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 65536);
 
-      for(int i = 0; i < 65536; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[65536] 
     }
 
   }
@@ -196,7 +192,7 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CServerExoAppInternal_m_pPendingAuthorization_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CServerExoAppInternal_m_pPendingAuthorization_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CServerExoAppInternal_m_pPendingAuthorization_get(swigCPtr); 
         return (uint*)retVal; 
     }
 

@@ -49,7 +49,7 @@ public unsafe class CExoArrayListCNWSSpellScriptDataPtr : global::System.IDispos
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CExoArrayListCNWSSpellScriptDataPtr : global::System.IDispos
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CExoArrayListCNWSSpellScriptDataPtr self) {
+  public static implicit operator global::System.IntPtr(CExoArrayListCNWSSpellScriptDataPtr self) {
     return self.swigCPtr.Handle;
   }
 
@@ -96,7 +96,7 @@ public unsafe class CExoArrayListCNWSSpellScriptDataPtr : global::System.IDispos
       NWNXLibPINVOKE.CExoArrayListCNWSSpellScriptDataPtr_element_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWSSpellScriptDataPtr_element_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWSSpellScriptDataPtr_element_get(swigCPtr); 
         return (void**)retVal; 
     }
 
@@ -139,7 +139,7 @@ public unsafe class CExoArrayListCNWSSpellScriptDataPtr : global::System.IDispos
   }
 
   public void** _OpIndex(int i) { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWSSpellScriptDataPtr__OpIndex(swigCPtr, i);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWSSpellScriptDataPtr__OpIndex(swigCPtr, i);
     return (void**)retVal;
   }
 
@@ -168,12 +168,12 @@ public unsafe class CExoArrayListCNWSSpellScriptDataPtr : global::System.IDispos
   }
 
   public void** begin() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWSSpellScriptDataPtr_begin(swigCPtr);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWSSpellScriptDataPtr_begin(swigCPtr);
     return (void**)retVal;
   }
 
   public void** end() { 
-    System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWSSpellScriptDataPtr_end(swigCPtr);
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWSSpellScriptDataPtr_end(swigCPtr);
     return (void**)retVal;
   }
 

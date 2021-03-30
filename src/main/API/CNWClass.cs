@@ -49,7 +49,7 @@ public unsafe class CNWClass : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWClass : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWClass self) {
+  public static implicit operator global::System.IntPtr(CNWClass self) {
     return self.swigCPtr.Handle;
   }
 
@@ -153,19 +153,15 @@ public unsafe class CNWClass : global::System.IDisposable {
     } 
   }
 
-  public byte[] m_lstBaseAttackBonus {
+  public NativeArray<byte> m_lstBaseAttackBonus {
     set {
       NWNXLibPINVOKE.CNWClass_m_lstBaseAttackBonus_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstBaseAttackBonus_get(swigCPtr);
-      byte[] retVal = new byte[60];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstBaseAttackBonus_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 60);
 
-      for(int i = 0; i < 60; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[60] 
     }
 
   }
@@ -190,53 +186,41 @@ public unsafe class CNWClass : global::System.IDisposable {
     } 
   }
 
-  public byte[] m_lstFortificationSaveThrowBonus {
+  public NativeArray<byte> m_lstFortificationSaveThrowBonus {
     set {
       NWNXLibPINVOKE.CNWClass_m_lstFortificationSaveThrowBonus_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstFortificationSaveThrowBonus_get(swigCPtr);
-      byte[] retVal = new byte[60];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstFortificationSaveThrowBonus_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 60);
 
-      for(int i = 0; i < 60; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[60] 
     }
 
   }
 
-  public byte[] m_lstWillSaveThrowBonus {
+  public NativeArray<byte> m_lstWillSaveThrowBonus {
     set {
       NWNXLibPINVOKE.CNWClass_m_lstWillSaveThrowBonus_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstWillSaveThrowBonus_get(swigCPtr);
-      byte[] retVal = new byte[60];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstWillSaveThrowBonus_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 60);
 
-      for(int i = 0; i < 60; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[60] 
     }
 
   }
 
-  public byte[] m_lstReflexSaveThrowBonus {
+  public NativeArray<byte> m_lstReflexSaveThrowBonus {
     set {
       NWNXLibPINVOKE.CNWClass_m_lstReflexSaveThrowBonus_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstReflexSaveThrowBonus_get(swigCPtr);
-      byte[] retVal = new byte[60];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstReflexSaveThrowBonus_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 60);
 
-      for(int i = 0; i < 60; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[60] 
     }
 
   }
@@ -246,42 +230,34 @@ public unsafe class CNWClass : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_m_lstSpellKnownTable_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWClass_m_lstSpellKnownTable_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWClass_m_lstSpellKnownTable_get(swigCPtr); 
         return (byte**)retVal; 
     }
 
   }
 
-  public byte[] m_lstSpellLevelsPerLevel {
+  public NativeArray<byte> m_lstSpellLevelsPerLevel {
     set {
       NWNXLibPINVOKE.CNWClass_m_lstSpellLevelsPerLevel_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstSpellLevelsPerLevel_get(swigCPtr);
-      byte[] retVal = new byte[40];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstSpellLevelsPerLevel_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 40);
 
-      for(int i = 0; i < 40; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[40] 
     }
 
   }
 
-  public byte*[] m_lstSpellGainTable {
+  public NativeArray<global::System.IntPtr> m_lstSpellGainTable {
     set {
       NWNXLibPINVOKE.CNWClass_m_lstSpellGainTable_set(swigCPtr, value);
     }  
     get {
-      byte** arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstSpellGainTable_get(swigCPtr);
-      byte*[] retVal = new byte*[40];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstSpellGainTable_get(swigCPtr);
+      NativeArray<global::System.IntPtr> retVal = new NativeArray<global::System.IntPtr>(arrayPtr, 40);
 
-      for(int i = 0; i < 40; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte*[40] 
     }
 
   }
@@ -328,19 +304,15 @@ public unsafe class CNWClass : global::System.IDisposable {
     } 
   }
 
-  public byte[] m_lstBonusFeatsTable {
+  public NativeArray<byte> m_lstBonusFeatsTable {
     set {
       NWNXLibPINVOKE.CNWClass_m_lstBonusFeatsTable_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstBonusFeatsTable_get(swigCPtr);
-      byte[] retVal = new byte[60];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstBonusFeatsTable_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 60);
 
-      for(int i = 0; i < 60; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[60] 
     }
 
   }
@@ -356,19 +328,15 @@ public unsafe class CNWClass : global::System.IDisposable {
     } 
   }
 
-  public sbyte[] m_lstNaturalACGainTable {
+  public NativeArray<sbyte> m_lstNaturalACGainTable {
     set {
       NWNXLibPINVOKE.CNWClass_m_lstNaturalACGainTable_set(swigCPtr, value);
     }  
     get {
-      sbyte* arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstNaturalACGainTable_get(swigCPtr);
-      sbyte[] retVal = new sbyte[60];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstNaturalACGainTable_get(swigCPtr);
+      NativeArray<sbyte> retVal = new NativeArray<sbyte>(arrayPtr, 60);
 
-      for(int i = 0; i < 60; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // sbyte[60] 
     }
 
   }
@@ -383,19 +351,15 @@ public unsafe class CNWClass : global::System.IDisposable {
     } 
   }
 
-  public byte[] m_pnRecommendedAbilities {
+  public NativeArray<byte> m_pnRecommendedAbilities {
     set {
       NWNXLibPINVOKE.CNWClass_m_pnRecommendedAbilities_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CNWClass_m_pnRecommendedAbilities_get(swigCPtr);
-      byte[] retVal = new byte[6];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_pnRecommendedAbilities_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 6);
 
-      for(int i = 0; i < 6; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[6] 
     }
 
   }
@@ -430,19 +394,15 @@ public unsafe class CNWClass : global::System.IDisposable {
     } 
   }
 
-  public byte[] m_pnEffectiveCRForLevel {
+  public NativeArray<byte> m_pnEffectiveCRForLevel {
     set {
       NWNXLibPINVOKE.CNWClass_m_pnEffectiveCRForLevel_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CNWClass_m_pnEffectiveCRForLevel_get(swigCPtr);
-      byte[] retVal = new byte[40+1];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_pnEffectiveCRForLevel_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 40+1);
 
-      for(int i = 0; i < 40+1; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[40+1] 
     }
 
   }

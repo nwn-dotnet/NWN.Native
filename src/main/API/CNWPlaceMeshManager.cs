@@ -49,7 +49,7 @@ public unsafe class CNWPlaceMeshManager : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWPlaceMeshManager : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWPlaceMeshManager self) {
+  public static implicit operator global::System.IntPtr(CNWPlaceMeshManager self) {
     return self.swigCPtr.Handle;
   }
 
@@ -106,7 +106,7 @@ public unsafe class CNWPlaceMeshManager : global::System.IDisposable {
       NWNXLibPINVOKE.CNWPlaceMeshManager_m_pSurfaceMeshLoaded_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CNWPlaceMeshManager_m_pSurfaceMeshLoaded_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWPlaceMeshManager_m_pSurfaceMeshLoaded_get(swigCPtr); 
         return (void**)retVal; 
     }
 

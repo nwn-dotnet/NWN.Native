@@ -49,7 +49,7 @@ public unsafe class STR_RES_HEADER_OLD : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class STR_RES_HEADER_OLD : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(STR_RES_HEADER_OLD self) {
+  public static implicit operator global::System.IntPtr(STR_RES_HEADER_OLD self) {
     return self.swigCPtr.Handle;
   }
 
@@ -101,19 +101,15 @@ public unsafe class STR_RES_HEADER_OLD : global::System.IDisposable {
     } 
   }
 
-  public byte[] sndResRef {
+  public NativeArray<byte> sndResRef {
     set {
       NWNXLibPINVOKE.STR_RES_HEADER_OLD_sndResRef_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.STR_RES_HEADER_OLD_sndResRef_get(swigCPtr);
-      byte[] retVal = new byte[16];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.STR_RES_HEADER_OLD_sndResRef_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16);
 
-      for(int i = 0; i < 16; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[16] 
     }
 
   }

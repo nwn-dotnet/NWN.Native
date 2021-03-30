@@ -25,7 +25,7 @@ public class SWIGTYPE_p_NWSync__Advertisement {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -35,7 +35,7 @@ public class SWIGTYPE_p_NWSync__Advertisement {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(SWIGTYPE_p_NWSync__Advertisement self) {
+  public static implicit operator global::System.IntPtr(SWIGTYPE_p_NWSync__Advertisement self) {
     return self.swigCPtr.Handle;
   }
 

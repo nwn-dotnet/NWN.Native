@@ -49,7 +49,7 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNetLayerWindow self) {
+  public static implicit operator global::System.IntPtr(CNetLayerWindow self) {
     return self.swigCPtr.Handle;
   }
 
@@ -322,104 +322,80 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
     } 
   }
 
-  public ushort[] m_pOutgoingBuffers {
+  public NativeArray<ushort> m_pOutgoingBuffers {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_pOutgoingBuffers_set(swigCPtr, value);
     }  
     get {
-      ushort* arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pOutgoingBuffers_get(swigCPtr);
-      ushort[] retVal = new ushort[16];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pOutgoingBuffers_get(swigCPtr);
+      NativeArray<ushort> retVal = new NativeArray<ushort>(arrayPtr, 16);
 
-      for(int i = 0; i < 16; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // ushort[16] 
     }
 
   }
 
-  public int[] m_pbTimeOutSet {
+  public NativeArray<int> m_pbTimeOutSet {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutSet_set(swigCPtr, value);
     }  
     get {
-      int* arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutSet_get(swigCPtr);
-      int[] retVal = new int[16];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutSet_get(swigCPtr);
+      NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 16);
 
-      for(int i = 0; i < 16; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // int[16] 
     }
 
   }
 
-  public uint[] m_pnTimeOut {
+  public NativeArray<uint> m_pnTimeOut {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_pnTimeOut_set(swigCPtr, value);
     }  
     get {
-      uint* arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pnTimeOut_get(swigCPtr);
-      uint[] retVal = new uint[16];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pnTimeOut_get(swigCPtr);
+      NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 16);
 
-      for(int i = 0; i < 16; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // uint[16] 
     }
 
   }
 
-  public int[] m_pbTimeOutDelay {
+  public NativeArray<int> m_pbTimeOutDelay {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutDelay_set(swigCPtr, value);
     }  
     get {
-      int* arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutDelay_get(swigCPtr);
-      int[] retVal = new int[16];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutDelay_get(swigCPtr);
+      NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 16);
 
-      for(int i = 0; i < 16; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // int[16] 
     }
 
   }
 
-  public ushort[] m_pIncomingBuffers {
+  public NativeArray<ushort> m_pIncomingBuffers {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_pIncomingBuffers_set(swigCPtr, value);
     }  
     get {
-      ushort* arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pIncomingBuffers_get(swigCPtr);
-      ushort[] retVal = new ushort[16];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pIncomingBuffers_get(swigCPtr);
+      NativeArray<ushort> retVal = new NativeArray<ushort>(arrayPtr, 16);
 
-      for(int i = 0; i < 16; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // ushort[16] 
     }
 
   }
 
-  public int[] m_pbArrived {
+  public NativeArray<int> m_pbArrived {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_pbArrived_set(swigCPtr, value);
     }  
     get {
-      int* arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pbArrived_get(swigCPtr);
-      int[] retVal = new int[16];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pbArrived_get(swigCPtr);
+      NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 16);
 
-      for(int i = 0; i < 16; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // int[16] 
     }
 
   }
@@ -468,36 +444,28 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
     } 
   }
 
-  public byte[] m_pLowPriorityHoldBuffer {
+  public NativeArray<byte> m_pLowPriorityHoldBuffer {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_pLowPriorityHoldBuffer_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pLowPriorityHoldBuffer_get(swigCPtr);
-      byte[] retVal = new byte[960];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pLowPriorityHoldBuffer_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 960);
 
-      for(int i = 0; i < 960; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[960] 
     }
 
   }
 
-  public byte[] m_pHighPriorityHoldBuffer {
+  public NativeArray<byte> m_pHighPriorityHoldBuffer {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_pHighPriorityHoldBuffer_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pHighPriorityHoldBuffer_get(swigCPtr);
-      byte[] retVal = new byte[960];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pHighPriorityHoldBuffer_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 960);
 
-      for(int i = 0; i < 960; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[960] 
     }
 
   }

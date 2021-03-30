@@ -49,7 +49,7 @@ public unsafe class C2DA : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class C2DA : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(C2DA self) {
+  public static implicit operator global::System.IntPtr(C2DA self) {
     return self.swigCPtr.Handle;
   }
 
@@ -129,7 +129,7 @@ public unsafe class C2DA : global::System.IDisposable {
       NWNXLibPINVOKE.C2DA_m_pArrayData_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.C2DA_m_pArrayData_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.C2DA_m_pArrayData_get(swigCPtr); 
         return (void**)retVal; 
     }
 

@@ -49,7 +49,7 @@ public unsafe class CExoEncrypt : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CExoEncrypt : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CExoEncrypt self) {
+  public static implicit operator global::System.IntPtr(CExoEncrypt self) {
     return self.swigCPtr.Handle;
   }
 
@@ -91,70 +91,54 @@ public unsafe class CExoEncrypt : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public uint[] m_anI {
+  public NativeArray<uint> m_anI {
     set {
       NWNXLibPINVOKE.CExoEncrypt_m_anI_set(swigCPtr, value);
     }  
     get {
-      uint* arrayPtr = NWNXLibPINVOKE.CExoEncrypt_m_anI_get(swigCPtr);
-      uint[] retVal = new uint[2];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CExoEncrypt_m_anI_get(swigCPtr);
+      NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 2);
 
-      for(int i = 0; i < 2; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // uint[2] 
     }
 
   }
 
-  public uint[] m_aBuf {
+  public NativeArray<uint> m_aBuf {
     set {
       NWNXLibPINVOKE.CExoEncrypt_m_aBuf_set(swigCPtr, value);
     }  
     get {
-      uint* arrayPtr = NWNXLibPINVOKE.CExoEncrypt_m_aBuf_get(swigCPtr);
-      uint[] retVal = new uint[4];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CExoEncrypt_m_aBuf_get(swigCPtr);
+      NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 4);
 
-      for(int i = 0; i < 4; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // uint[4] 
     }
 
   }
 
-  public byte[] m_aIn {
+  public NativeArray<byte> m_aIn {
     set {
       NWNXLibPINVOKE.CExoEncrypt_m_aIn_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CExoEncrypt_m_aIn_get(swigCPtr);
-      byte[] retVal = new byte[128];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CExoEncrypt_m_aIn_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 128);
 
-      for(int i = 0; i < 128; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[128] 
     }
 
   }
 
-  public byte[] m_aDigest {
+  public NativeArray<byte> m_aDigest {
     set {
       NWNXLibPINVOKE.CExoEncrypt_m_aDigest_set(swigCPtr, value);
     }  
     get {
-      byte* arrayPtr = NWNXLibPINVOKE.CExoEncrypt_m_aDigest_get(swigCPtr);
-      byte[] retVal = new byte[16];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CExoEncrypt_m_aDigest_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16);
 
-      for(int i = 0; i < 16; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // byte[16] 
     }
 
   }

@@ -49,7 +49,7 @@ public unsafe class CNWTileSetManager : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWTileSetManager : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWTileSetManager self) {
+  public static implicit operator global::System.IntPtr(CNWTileSetManager self) {
     return self.swigCPtr.Handle;
   }
 
@@ -103,19 +103,15 @@ public unsafe class CNWTileSetManager : global::System.IDisposable {
 
   }
 
-  public int[] m_anTileSetRegistered {
+  public NativeArray<int> m_anTileSetRegistered {
     set {
       NWNXLibPINVOKE.CNWTileSetManager_m_anTileSetRegistered_set(swigCPtr, value);
     }  
     get {
-      int* arrayPtr = NWNXLibPINVOKE.CNWTileSetManager_m_anTileSetRegistered_get(swigCPtr);
-      int[] retVal = new int[100];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWTileSetManager_m_anTileSetRegistered_get(swigCPtr);
+      NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 100);
 
-      for(int i = 0; i < 100; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // int[100] 
     }
 
   }

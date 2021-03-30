@@ -49,7 +49,7 @@ public unsafe class CExoInputEventDesc : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CExoInputEventDesc : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CExoInputEventDesc self) {
+  public static implicit operator global::System.IntPtr(CExoInputEventDesc self) {
     return self.swigCPtr.Handle;
   }
 

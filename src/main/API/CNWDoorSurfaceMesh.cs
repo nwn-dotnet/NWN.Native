@@ -49,7 +49,7 @@ public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWDoorSurfaceMesh self) {
+  public static implicit operator global::System.IntPtr(CNWDoorSurfaceMesh self) {
     return self.swigCPtr.Handle;
   }
 
@@ -91,87 +91,67 @@ public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public int[] m_pnVertices {
+  public NativeArray<int> m_pnVertices {
     set {
       NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnVertices_set(swigCPtr, value);
     }  
     get {
-      int* arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnVertices_get(swigCPtr);
-      int[] retVal = new int[3];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnVertices_get(swigCPtr);
+      NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 3);
 
-      for(int i = 0; i < 3; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // int[3] 
     }
 
   }
 
-  public float*[] m_ppfVertices {
+  public NativeArray<global::System.IntPtr> m_ppfVertices {
     set {
       NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppfVertices_set(swigCPtr, value);
     }  
     get {
-      float** arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppfVertices_get(swigCPtr);
-      float*[] retVal = new float*[3];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppfVertices_get(swigCPtr);
+      NativeArray<global::System.IntPtr> retVal = new NativeArray<global::System.IntPtr>(arrayPtr, 3);
 
-      for(int i = 0; i < 3; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // float*[3] 
     }
 
   }
 
-  public int[] m_pnTriangles {
+  public NativeArray<int> m_pnTriangles {
     set {
       NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnTriangles_set(swigCPtr, value);
     }  
     get {
-      int* arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnTriangles_get(swigCPtr);
-      int[] retVal = new int[3];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnTriangles_get(swigCPtr);
+      NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 3);
 
-      for(int i = 0; i < 3; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // int[3] 
     }
 
   }
 
-  public int*[] m_ppnTriangles {
+  public NativeArray<global::System.IntPtr> m_ppnTriangles {
     set {
       NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangles_set(swigCPtr, value);
     }  
     get {
-      int** arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangles_get(swigCPtr);
-      int*[] retVal = new int*[3];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangles_get(swigCPtr);
+      NativeArray<global::System.IntPtr> retVal = new NativeArray<global::System.IntPtr>(arrayPtr, 3);
 
-      for(int i = 0; i < 3; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // int*[3] 
     }
 
   }
 
-  public int*[] m_ppnTriangleMaterial {
+  public NativeArray<global::System.IntPtr> m_ppnTriangleMaterial {
     set {
       NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangleMaterial_set(swigCPtr, value);
     }  
     get {
-      int** arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangleMaterial_get(swigCPtr);
-      int*[] retVal = new int*[3];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangleMaterial_get(swigCPtr);
+      NativeArray<global::System.IntPtr> retVal = new NativeArray<global::System.IntPtr>(arrayPtr, 3);
 
-      for(int i = 0; i < 3; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // int*[3] 
     }
 
   }

@@ -49,7 +49,7 @@ public unsafe class CGameEffect : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CGameEffect : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CGameEffect self) {
+  public static implicit operator global::System.IntPtr(CGameEffect self) {
     return self.swigCPtr.Handle;
   }
 
@@ -238,25 +238,21 @@ public unsafe class CGameEffect : global::System.IDisposable {
       NWNXLibPINVOKE.CGameEffect_m_nParamInteger_set(swigCPtr, (global::System.IntPtr)value);
     }  
     get {
-        System.IntPtr retVal = NWNXLibPINVOKE.CGameEffect_m_nParamInteger_get(swigCPtr); 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CGameEffect_m_nParamInteger_get(swigCPtr); 
         return (int*)retVal; 
     }
 
   }
 
-  public float[] m_nParamFloat {
+  public NativeArray<float> m_nParamFloat {
     set {
       NWNXLibPINVOKE.CGameEffect_m_nParamFloat_set(swigCPtr, value);
     }  
     get {
-      float* arrayPtr = NWNXLibPINVOKE.CGameEffect_m_nParamFloat_get(swigCPtr);
-      float[] retVal = new float[4];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CGameEffect_m_nParamFloat_get(swigCPtr);
+      NativeArray<float> retVal = new NativeArray<float>(arrayPtr, 4);
 
-      for(int i = 0; i < 4; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // float[4] 
     }
 
   }
@@ -273,19 +269,15 @@ public unsafe class CGameEffect : global::System.IDisposable {
 
   }
 
-  public uint[] m_oidParamObjectID {
+  public NativeArray<uint> m_oidParamObjectID {
     set {
       NWNXLibPINVOKE.CGameEffect_m_oidParamObjectID_set(swigCPtr, value);
     }  
     get {
-      uint* arrayPtr = NWNXLibPINVOKE.CGameEffect_m_oidParamObjectID_get(swigCPtr);
-      uint[] retVal = new uint[4];
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CGameEffect_m_oidParamObjectID_get(swigCPtr);
+      NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 4);
 
-      for(int i = 0; i < 4; i++) {
-        retVal[i] = arrayPtr[i];
-      }
-
-      return retVal;
+      return retVal; // uint[4] 
     }
 
   }

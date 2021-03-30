@@ -49,7 +49,7 @@ public unsafe class CNWTileSurfaceMeshSortSuccessors : global::System.IDisposabl
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWTileSurfaceMeshSortSuccessors : global::System.IDisposabl
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWTileSurfaceMeshSortSuccessors self) {
+  public static implicit operator global::System.IntPtr(CNWTileSurfaceMeshSortSuccessors self) {
     return self.swigCPtr.Handle;
   }
 

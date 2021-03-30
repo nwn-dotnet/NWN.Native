@@ -49,7 +49,7 @@ public unsafe class UnorderedMapUInt32STR_RES : global::System.IDisposable, glob
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class UnorderedMapUInt32STR_RES : global::System.IDisposable, glob
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(UnorderedMapUInt32STR_RES self) {
+  public static implicit operator global::System.IntPtr(UnorderedMapUInt32STR_RES self) {
     return self.swigCPtr.Handle;
   }
 

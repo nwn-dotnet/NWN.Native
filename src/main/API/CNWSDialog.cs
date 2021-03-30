@@ -49,7 +49,7 @@ public unsafe class CNWSDialog : global::System.IDisposable {
     }
   }
 
-  public System.IntPtr Pointer {
+  public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
@@ -59,7 +59,7 @@ public unsafe class CNWSDialog : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator System.IntPtr(CNWSDialog self) {
+  public static implicit operator global::System.IntPtr(CNWSDialog self) {
     return self.swigCPtr.Handle;
   }
 
