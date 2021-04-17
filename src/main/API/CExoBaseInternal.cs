@@ -195,11 +195,6 @@ public unsafe class CExoBaseInternal : global::System.IDisposable {
     NWNXLibPINVOKE.CExoBaseInternal_ShutDown(swigCPtr);
   }
 
-  public void SpawnExternalApplication(CExoString sAppName, CExoString sParams, int bShutDownNWN) {
-    NWNXLibPINVOKE.CExoBaseInternal_SpawnExternalApplication(swigCPtr, CExoString.getCPtr(sAppName), CExoString.getCPtr(sParams), bShutDownNWN);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-  }
-
   public int CheckForCD(uint nLanguage) {
     int ret = NWNXLibPINVOKE.CExoBaseInternal_CheckForCD(swigCPtr, nLanguage);
     return ret;

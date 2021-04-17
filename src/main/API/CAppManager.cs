@@ -283,11 +283,6 @@ public unsafe class CAppManager : global::System.IDisposable {
     return ret;
   }
 
-  public int SpawnExternalScriptDebugger() {
-    int ret = NWNXLibPINVOKE.CAppManager_SpawnExternalScriptDebugger(swigCPtr);
-    return ret;
-  }
-
   public void DisplayScriptDebuggerPopup() {
     NWNXLibPINVOKE.CAppManager_DisplayScriptDebuggerPopup(swigCPtr);
   }
