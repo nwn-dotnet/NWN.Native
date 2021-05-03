@@ -274,10 +274,10 @@ public unsafe class CNWSEncounter : CNWSObject {
   public uint* m_pEnemiesInActivateArea {
     set {
       NWNXLibPINVOKE.CNWSEncounter_m_pEnemiesInActivateArea_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSEncounter_m_pEnemiesInActivateArea_get(swigCPtr); 
-        return (uint*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSEncounter_m_pEnemiesInActivateArea_get(swigCPtr);
+        return (uint*)retVal;
     }
 
   }
@@ -326,10 +326,10 @@ public unsafe class CNWSEncounter : CNWSObject {
   public int* m_pnOutlineVertices {
     set {
       NWNXLibPINVOKE.CNWSEncounter_m_pnOutlineVertices_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSEncounter_m_pnOutlineVertices_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSEncounter_m_pnOutlineVertices_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -529,7 +529,7 @@ public unsafe class CNWSEncounter : CNWSObject {
   public CExoStringArray m_sScripts {
     set {
       NWNXLibPINVOKE.CNWSEncounter_m_sScripts_set(swigCPtr, CExoStringArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSEncounter_m_sScripts_get(swigCPtr);;
         CExoStringArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoStringArray(cPtr, false);

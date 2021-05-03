@@ -83,10 +83,10 @@ public unsafe class CExoResourceImageFile : CExoPackedFile {
   public byte* m_pResourceImage {
     set {
       NWNXLibPINVOKE.CExoResourceImageFile_m_pResourceImage_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoResourceImageFile_m_pResourceImage_get(swigCPtr); 
-        return (byte*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoResourceImageFile_m_pResourceImage_get(swigCPtr);
+        return (byte*)retVal;
     }
 
   }
@@ -172,13 +172,13 @@ public unsafe class CExoResourceImageFile : CExoPackedFile {
     return ret;
   }
 
-  public virtual void* GetResource(RESID nID) { 
+  public virtual void* GetResource(RESID nID) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoResourceImageFile_GetResource(swigCPtr, RESID.getCPtr(nID));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return (void*)retVal;
   }
 
-  public void** GetKeyList() { 
+  public void** GetKeyList() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoResourceImageFile_GetKeyList(swigCPtr);
     return (void**)retVal;
   }

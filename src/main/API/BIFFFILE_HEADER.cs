@@ -154,12 +154,12 @@ public unsafe class BIFFFILE_HEADER : global::System.IDisposable {
   public NativeArray<byte> pReserved {
     set {
       NWNXLibPINVOKE.BIFFFILE_HEADER_pReserved_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.BIFFFILE_HEADER_pReserved_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 8);
 
-      return retVal; // byte[8] 
+      return retVal; // byte[8]
     }
 
   }

@@ -94,10 +94,10 @@ public unsafe class CObjectLookupTable : global::System.IDisposable {
   public uint* m_pdwObjectTable {
     set {
       NWNXLibPINVOKE.CObjectLookupTable_m_pdwObjectTable_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CObjectLookupTable_m_pdwObjectTable_get(swigCPtr); 
-        return (uint*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CObjectLookupTable_m_pdwObjectTable_get(swigCPtr);
+        return (uint*)retVal;
     }
 
   }

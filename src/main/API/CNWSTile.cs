@@ -114,10 +114,10 @@ public unsafe class CNWSTile : CNWTile {
   public uint* m_poidTriggers {
     set {
       NWNXLibPINVOKE.CNWSTile_m_poidTriggers_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSTile_m_poidTriggers_get(swigCPtr); 
-        return (uint*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSTile_m_poidTriggers_get(swigCPtr);
+        return (uint*)retVal;
     }
 
   }

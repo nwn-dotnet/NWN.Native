@@ -94,12 +94,12 @@ public unsafe class CNWSPlayerLUOInventory : global::System.IDisposable {
   public NativeArray<uint> m_oidInventorySlots {
     set {
       NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_oidInventorySlots_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_oidInventorySlots_get(swigCPtr);
       NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 18);
 
-      return retVal; // uint[18] 
+      return retVal; // uint[18]
     }
 
   }
@@ -107,12 +107,12 @@ public unsafe class CNWSPlayerLUOInventory : global::System.IDisposable {
   public NativeArray<int> m_nStackSizes {
     set {
       NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nStackSizes_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nStackSizes_get(swigCPtr);
       NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 18);
 
-      return retVal; // int[18] 
+      return retVal; // int[18]
     }
 
   }

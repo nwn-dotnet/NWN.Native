@@ -94,7 +94,7 @@ public unsafe class CTlkTable : global::System.IDisposable {
   public CTlkFilePtrArray m_pTlkFile {
     set {
       NWNXLibPINVOKE.CTlkTable_m_pTlkFile_set(swigCPtr, CTlkFilePtrArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CTlkTable_m_pTlkFile_get(swigCPtr);;
         CTlkFilePtrArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CTlkFilePtrArray(cPtr, false);
@@ -106,7 +106,7 @@ public unsafe class CTlkTable : global::System.IDisposable {
   public CTlkFilePtrArray m_pTlkFileAlternate {
     set {
       NWNXLibPINVOKE.CTlkTable_m_pTlkFileAlternate_set(swigCPtr, CTlkFilePtrArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CTlkTable_m_pTlkFileAlternate_get(swigCPtr);;
         CTlkFilePtrArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CTlkFilePtrArray(cPtr, false);

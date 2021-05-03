@@ -521,10 +521,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
   public uint* m_pSubRadialSpell {
     set {
       NWNXLibPINVOKE.CNWSpell_m_pSubRadialSpell_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSpell_m_pSubRadialSpell_get(swigCPtr); 
-        return (uint*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSpell_m_pSubRadialSpell_get(swigCPtr);
+        return (uint*)retVal;
     }
 
   }

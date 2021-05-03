@@ -104,12 +104,12 @@ public unsafe class CNWSObjectActionNode : global::System.IDisposable {
   public NativeArray<uint> m_nParamType {
     set {
       NWNXLibPINVOKE.CNWSObjectActionNode_m_nParamType_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSObjectActionNode_m_nParamType_get(swigCPtr);
       NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 12);
 
-      return retVal; // uint[12] 
+      return retVal; // uint[12]
     }
 
   }
@@ -117,12 +117,12 @@ public unsafe class CNWSObjectActionNode : global::System.IDisposable {
   public NativeArray<long> m_pParameter {
     set {
       NWNXLibPINVOKE.CNWSObjectActionNode_m_pParameter_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSObjectActionNode_m_pParameter_get(swigCPtr);
       NativeArray<long> retVal = new NativeArray<long>(arrayPtr, 12);
 
-      return retVal; // long[12] 
+      return retVal; // long[12]
     }
 
   }

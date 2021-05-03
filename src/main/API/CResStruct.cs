@@ -116,10 +116,10 @@ public unsafe class CResStruct : global::System.IDisposable {
   public void* m_pData {
     set {
       NWNXLibPINVOKE.CResStruct_m_pData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResStruct_m_pData_get(swigCPtr); 
-        return (void*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CResStruct_m_pData_get(swigCPtr);
+        return (void*)retVal;
     }
 
   }

@@ -247,7 +247,7 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
   public CNWActionNodeArray m_pActionQueueList {
     set {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_pActionQueueList_set(swigCPtr, CNWActionNodeArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_pActionQueueList_get(swigCPtr);;
         CNWActionNodeArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWActionNodeArray(cPtr, false);
@@ -259,10 +259,10 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
   public byte* m_pAutoMapTileData {
     set {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_pAutoMapTileData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_pAutoMapTileData_get(swigCPtr); 
-        return (byte*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_pAutoMapTileData_get(swigCPtr);
+        return (byte*)retVal;
     }
 
   }
@@ -313,7 +313,7 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
   public CExoArrayListUInt32Array m_lstKnownSpellsToDelete {
     set {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_lstKnownSpellsToDelete_set(swigCPtr, CExoArrayListUInt32Array.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_lstKnownSpellsToDelete_get(swigCPtr);;
         CExoArrayListUInt32Array ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32Array(cPtr, false);
@@ -325,7 +325,7 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
   public CExoArrayListUInt32Array m_lstKnownSpellsToAdd {
     set {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_lstKnownSpellsToAdd_set(swigCPtr, CExoArrayListUInt32Array.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_lstKnownSpellsToAdd_get(swigCPtr);;
         CExoArrayListUInt32Array ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32Array(cPtr, false);
@@ -337,7 +337,7 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
   public CExoArrayListCSpellDeletePtrArray m_lstMemorizedSpellsToDelete {
     set {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_lstMemorizedSpellsToDelete_set(swigCPtr, CExoArrayListCSpellDeletePtrArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_lstMemorizedSpellsToDelete_get(swigCPtr);;
         CExoArrayListCSpellDeletePtrArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListCSpellDeletePtrArray(cPtr, false);
@@ -349,7 +349,7 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
   public CExoArrayListCSpellAddPtrArray m_lstMemorizedSpellsToAdd {
     set {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_lstMemorizedSpellsToAdd_set(swigCPtr, CExoArrayListCSpellAddPtrArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_lstMemorizedSpellsToAdd_get(swigCPtr);;
         CExoArrayListCSpellAddPtrArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListCSpellAddPtrArray(cPtr, false);

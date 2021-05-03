@@ -265,12 +265,12 @@ public unsafe class CNWFeat : global::System.IDisposable {
   public NativeArray<ushort> m_lstPrereqFeats {
     set {
       NWNXLibPINVOKE.CNWFeat_m_lstPrereqFeats_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWFeat_m_lstPrereqFeats_get(swigCPtr);
       NativeArray<ushort> retVal = new NativeArray<ushort>(arrayPtr, 2);
 
-      return retVal; // ushort[2] 
+      return retVal; // ushort[2]
     }
 
   }
@@ -278,12 +278,12 @@ public unsafe class CNWFeat : global::System.IDisposable {
   public NativeArray<ushort> m_lstOrPrereqFeats {
     set {
       NWNXLibPINVOKE.CNWFeat_m_lstOrPrereqFeats_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWFeat_m_lstOrPrereqFeats_get(swigCPtr);
       NativeArray<ushort> retVal = new NativeArray<ushort>(arrayPtr, 5);
 
-      return retVal; // ushort[5] 
+      return retVal; // ushort[5]
     }
 
   }

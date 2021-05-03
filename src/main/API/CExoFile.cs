@@ -213,7 +213,7 @@ public unsafe class CExoFile : global::System.IDisposable {
     return ret;
   }
 
-  public void* GetFileHandle() { 
+  public void* GetFileHandle() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoFile_GetFileHandle(swigCPtr);
     return (void*)retVal;
   }

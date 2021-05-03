@@ -103,10 +103,10 @@ public unsafe class CRes2DA : CRes {
   public byte* m_p2DAData {
     set {
       NWNXLibPINVOKE.CRes2DA_m_p2DAData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CRes2DA_m_p2DAData_get(swigCPtr); 
-        return (byte*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CRes2DA_m_p2DAData_get(swigCPtr);
+        return (byte*)retVal;
     }
 
   }
@@ -125,7 +125,7 @@ public unsafe class CRes2DA : CRes {
   public CRes2DA() : this(NWNXLibPINVOKE.new_CRes2DA(), true) {
   }
 
-  public byte* Get2DADataPtr() { 
+  public byte* Get2DADataPtr() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CRes2DA_Get2DADataPtr(swigCPtr);
     return (byte*)retVal;
   }

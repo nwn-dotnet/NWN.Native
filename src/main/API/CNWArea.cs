@@ -144,10 +144,10 @@ public unsafe class CNWArea : global::System.IDisposable {
   public uint* m_poidStaticObjectsObjectIds {
     set {
       NWNXLibPINVOKE.CNWArea_m_poidStaticObjectsObjectIds_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWArea_m_poidStaticObjectsObjectIds_get(swigCPtr); 
-        return (uint*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWArea_m_poidStaticObjectsObjectIds_get(swigCPtr);
+        return (uint*)retVal;
     }
 
   }
@@ -155,10 +155,10 @@ public unsafe class CNWArea : global::System.IDisposable {
   public int* m_pnStaticObjectsTriangleStart {
     set {
       NWNXLibPINVOKE.CNWArea_m_pnStaticObjectsTriangleStart_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWArea_m_pnStaticObjectsTriangleStart_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWArea_m_pnStaticObjectsTriangleStart_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -166,10 +166,10 @@ public unsafe class CNWArea : global::System.IDisposable {
   public int* m_pnStaticObjectsTriangleCount {
     set {
       NWNXLibPINVOKE.CNWArea_m_pnStaticObjectsTriangleCount_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWArea_m_pnStaticObjectsTriangleCount_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWArea_m_pnStaticObjectsTriangleCount_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -177,10 +177,10 @@ public unsafe class CNWArea : global::System.IDisposable {
   public int* m_pnStaticObjectsVertexStart {
     set {
       NWNXLibPINVOKE.CNWArea_m_pnStaticObjectsVertexStart_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWArea_m_pnStaticObjectsVertexStart_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWArea_m_pnStaticObjectsVertexStart_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -188,10 +188,10 @@ public unsafe class CNWArea : global::System.IDisposable {
   public int* m_pnStaticObjectsVertexCount {
     set {
       NWNXLibPINVOKE.CNWArea_m_pnStaticObjectsVertexCount_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWArea_m_pnStaticObjectsVertexCount_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWArea_m_pnStaticObjectsVertexCount_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -219,10 +219,10 @@ public unsafe class CNWArea : global::System.IDisposable {
   public int* m_pnStaticObjectTriangles {
     set {
       NWNXLibPINVOKE.CNWArea_m_pnStaticObjectTriangles_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWArea_m_pnStaticObjectTriangles_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWArea_m_pnStaticObjectTriangles_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -303,10 +303,10 @@ public unsafe class CNWArea : global::System.IDisposable {
   public uint* m_poidStaticBBObjectIds {
     set {
       NWNXLibPINVOKE.CNWArea_m_poidStaticBBObjectIds_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWArea_m_poidStaticBBObjectIds_get(swigCPtr); 
-        return (uint*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWArea_m_poidStaticBBObjectIds_get(swigCPtr);
+        return (uint*)retVal;
     }
 
   }

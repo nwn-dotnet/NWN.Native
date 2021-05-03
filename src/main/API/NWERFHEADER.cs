@@ -194,12 +194,12 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
   public NativeArray<byte> nUnused {
     set {
       NWNXLibPINVOKE.NWERFHEADER_nUnused_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.NWERFHEADER_nUnused_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 116);
 
-      return retVal; // byte[116] 
+      return retVal; // byte[116]
     }
 
   }

@@ -127,10 +127,10 @@ public unsafe class C2DA : global::System.IDisposable {
   public void** m_pArrayData {
     set {
       NWNXLibPINVOKE.C2DA_m_pArrayData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.C2DA_m_pArrayData_get(swigCPtr); 
-        return (void**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.C2DA_m_pArrayData_get(swigCPtr);
+        return (void**)retVal;
     }
 
   }

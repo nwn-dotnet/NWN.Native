@@ -158,10 +158,10 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
   public void** m_ppsParseTreeFileNames {
     set {
       NWNXLibPINVOKE.CScriptCompiler_m_ppsParseTreeFileNames_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_ppsParseTreeFileNames_get(swigCPtr); 
-        return (void**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_ppsParseTreeFileNames_get(swigCPtr);
+        return (void**)retVal;
     }
 
   }
@@ -249,7 +249,7 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
   public CExoStringArray m_psTableFileNames {
     set {
       NWNXLibPINVOKE.CScriptCompiler_m_psTableFileNames_set(swigCPtr, CExoStringArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_psTableFileNames_get(swigCPtr);;
         CExoStringArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoStringArray(cPtr, false);
@@ -537,10 +537,10 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
   public int* m_pnHashString {
     set {
       NWNXLibPINVOKE.CScriptCompiler_m_pnHashString_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_pnHashString_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_pnHashString_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -731,7 +731,7 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
   public CScriptCompilerIncludeFileStackEntryArray m_pcIncludeFileStack {
     set {
       NWNXLibPINVOKE.CScriptCompiler_m_pcIncludeFileStack_set(swigCPtr, CScriptCompilerIncludeFileStackEntryArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pcIncludeFileStack_get(swigCPtr);;
         CScriptCompilerIncludeFileStackEntryArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CScriptCompilerIncludeFileStackEntryArray(cPtr, false);
@@ -999,10 +999,10 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
   public int* m_pnSwitchLabelStatements {
     set {
       NWNXLibPINVOKE.CScriptCompiler_m_pnSwitchLabelStatements_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_pnSwitchLabelStatements_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_pnSwitchLabelStatements_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -1020,10 +1020,10 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
   public int* m_pbEngineDefinedStructureValid {
     set {
       NWNXLibPINVOKE.CScriptCompiler_m_pbEngineDefinedStructureValid_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_pbEngineDefinedStructureValid_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_pbEngineDefinedStructureValid_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -1246,12 +1246,12 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
   public NativeArray<int> m_pSymbolLabelStartEntry {
     set {
       NWNXLibPINVOKE.CScriptCompiler_m_pSymbolLabelStartEntry_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CScriptCompiler_m_pSymbolLabelStartEntry_get(swigCPtr);
       NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 512);
 
-      return retVal; // int[512] 
+      return retVal; // int[512]
     }
 
   }
@@ -1419,7 +1419,7 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
   public CExoStringArray m_pchActionParameterStructureNames {
     set {
       NWNXLibPINVOKE.CScriptCompiler_m_pchActionParameterStructureNames_set(swigCPtr, CExoStringArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pchActionParameterStructureNames_get(swigCPtr);;
         CExoStringArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoStringArray(cPtr, false);

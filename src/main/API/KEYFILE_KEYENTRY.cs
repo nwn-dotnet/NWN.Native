@@ -94,12 +94,12 @@ public unsafe class KEYFILE_KEYENTRY : global::System.IDisposable {
   public NativeArray<byte> resRef {
     set {
       NWNXLibPINVOKE.KEYFILE_KEYENTRY_resRef_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.KEYFILE_KEYENTRY_resRef_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16);
 
-      return retVal; // byte[16] 
+      return retVal; // byte[16]
     }
 
   }

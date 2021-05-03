@@ -94,12 +94,12 @@ public unsafe class CExoEncrypt : global::System.IDisposable {
   public NativeArray<uint> m_anI {
     set {
       NWNXLibPINVOKE.CExoEncrypt_m_anI_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CExoEncrypt_m_anI_get(swigCPtr);
       NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 2);
 
-      return retVal; // uint[2] 
+      return retVal; // uint[2]
     }
 
   }
@@ -107,12 +107,12 @@ public unsafe class CExoEncrypt : global::System.IDisposable {
   public NativeArray<uint> m_aBuf {
     set {
       NWNXLibPINVOKE.CExoEncrypt_m_aBuf_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CExoEncrypt_m_aBuf_get(swigCPtr);
       NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 4);
 
-      return retVal; // uint[4] 
+      return retVal; // uint[4]
     }
 
   }
@@ -120,12 +120,12 @@ public unsafe class CExoEncrypt : global::System.IDisposable {
   public NativeArray<byte> m_aIn {
     set {
       NWNXLibPINVOKE.CExoEncrypt_m_aIn_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CExoEncrypt_m_aIn_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 128);
 
-      return retVal; // byte[128] 
+      return retVal; // byte[128]
     }
 
   }
@@ -133,12 +133,12 @@ public unsafe class CExoEncrypt : global::System.IDisposable {
   public NativeArray<byte> m_aDigest {
     set {
       NWNXLibPINVOKE.CExoEncrypt_m_aDigest_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CExoEncrypt_m_aDigest_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16);
 
-      return retVal; // byte[16] 
+      return retVal; // byte[16]
     }
 
   }

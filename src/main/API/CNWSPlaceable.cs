@@ -410,7 +410,7 @@ public unsafe class CNWSPlaceable : CNWSObject {
   public CExoStringArray m_sScripts {
     set {
       NWNXLibPINVOKE.CNWSPlaceable_m_sScripts_set(swigCPtr, CExoStringArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlaceable_m_sScripts_get(swigCPtr);;
         CExoStringArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoStringArray(cPtr, false);
@@ -694,7 +694,7 @@ public unsafe class CNWSPlaceable : CNWSObject {
   public VectorArray m_pvActionPoints {
     set {
       NWNXLibPINVOKE.CNWSPlaceable_m_pvActionPoints_set(swigCPtr, VectorArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlaceable_m_pvActionPoints_get(swigCPtr);;
         VectorArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new VectorArray(cPtr, false);

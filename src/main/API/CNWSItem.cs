@@ -98,12 +98,12 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   public NativeArray<byte> m_pLastUsedActivePropertyUsesLeft {
     set {
       NWNXLibPINVOKE.CNWSItem_m_pLastUsedActivePropertyUsesLeft_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSItem_m_pLastUsedActivePropertyUsesLeft_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 8);
 
-      return retVal; // byte[8] 
+      return retVal; // byte[8]
     }
 
   }
@@ -213,12 +213,12 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   public NativeArray<byte> m_nModelPart {
     set {
       NWNXLibPINVOKE.CNWSItem_m_nModelPart_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSItem_m_nModelPart_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 3);
 
-      return retVal; // byte[3] 
+      return retVal; // byte[3]
     }
 
   }
@@ -226,12 +226,12 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   public NativeArray<byte> m_nArmorModelPart {
     set {
       NWNXLibPINVOKE.CNWSItem_m_nArmorModelPart_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSItem_m_nArmorModelPart_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 19);
 
-      return retVal; // byte[19] 
+      return retVal; // byte[19]
     }
 
   }
@@ -239,12 +239,12 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   public NativeArray<byte> m_nUnalteredArmorModelPart {
     set {
       NWNXLibPINVOKE.CNWSItem_m_nUnalteredArmorModelPart_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSItem_m_nUnalteredArmorModelPart_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 19);
 
-      return retVal; // byte[19] 
+      return retVal; // byte[19]
     }
 
   }
@@ -816,12 +816,12 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   public NativeArray<byte> m_nLayeredTextureColors {
     set {
       NWNXLibPINVOKE.CNWSItem_m_nLayeredTextureColors_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSItem_m_nLayeredTextureColors_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 6);
 
-      return retVal; // byte[6] 
+      return retVal; // byte[6]
     }
 
   }
@@ -829,12 +829,12 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   public NativeArray<global::System.IntPtr> m_pLayeredTextureColorsPerPart {
     set {
       NWNXLibPINVOKE.CNWSItem_m_pLayeredTextureColorsPerPart_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSItem_m_pLayeredTextureColorsPerPart_get(swigCPtr);
       NativeArray<global::System.IntPtr> retVal = new NativeArray<global::System.IntPtr>(arrayPtr, 6);
 
-      return retVal; // byte*[6] 
+      return retVal; // byte*[6]
     }
 
   }

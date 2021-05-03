@@ -103,10 +103,10 @@ public unsafe class CResNSS : CRes {
   public byte* m_pNSSData {
     set {
       NWNXLibPINVOKE.CResNSS_m_pNSSData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResNSS_m_pNSSData_get(swigCPtr); 
-        return (byte*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CResNSS_m_pNSSData_get(swigCPtr);
+        return (byte*)retVal;
     }
 
   }
@@ -114,7 +114,7 @@ public unsafe class CResNSS : CRes {
   public CResNSS() : this(NWNXLibPINVOKE.new_CResNSS(), true) {
   }
 
-  public byte* GetNSSDataPtr() { 
+  public byte* GetNSSDataPtr() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CResNSS_GetNSSDataPtr(swigCPtr);
     return (byte*)retVal;
   }

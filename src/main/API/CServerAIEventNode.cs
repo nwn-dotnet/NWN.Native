@@ -144,10 +144,10 @@ public unsafe class CServerAIEventNode : global::System.IDisposable {
   public void* m_pEventData {
     set {
       NWNXLibPINVOKE.CServerAIEventNode_m_pEventData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CServerAIEventNode_m_pEventData_get(swigCPtr); 
-        return (void*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CServerAIEventNode_m_pEventData_get(swigCPtr);
+        return (void*)retVal;
     }
 
   }

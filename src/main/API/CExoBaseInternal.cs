@@ -104,10 +104,10 @@ public unsafe class CExoBaseInternal : global::System.IDisposable {
   public ushort* m_pnResTypes {
     set {
       NWNXLibPINVOKE.CExoBaseInternal_m_pnResTypes_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoBaseInternal_m_pnResTypes_get(swigCPtr); 
-        return (ushort*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoBaseInternal_m_pnResTypes_get(swigCPtr);
+        return (ushort*)retVal;
     }
 
   }

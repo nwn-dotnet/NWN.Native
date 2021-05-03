@@ -210,10 +210,10 @@ public unsafe class CAppManager : global::System.IDisposable {
   public byte* m_pDDCipher {
     set {
       NWNXLibPINVOKE.CAppManager_m_pDDCipher_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CAppManager_m_pDDCipher_get(swigCPtr); 
-        return (byte*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CAppManager_m_pDDCipher_get(swigCPtr);
+        return (byte*)retVal;
     }
 
   }

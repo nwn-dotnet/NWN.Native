@@ -319,7 +319,7 @@ public unsafe class CServerInfo : global::System.IDisposable {
   public CServerOptionLookupArray m_pOptionsTable {
     set {
       NWNXLibPINVOKE.CServerInfo_m_pOptionsTable_set(swigCPtr, CServerOptionLookupArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerInfo_m_pOptionsTable_get(swigCPtr);;
         CServerOptionLookupArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CServerOptionLookupArray(cPtr, false);

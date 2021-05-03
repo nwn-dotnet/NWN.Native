@@ -104,12 +104,12 @@ public unsafe class SHA1 : global::System.IDisposable {
   public NativeArray<byte> m_data {
     set {
       NWNXLibPINVOKE.SHA1_m_data_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.SHA1_m_data_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 20);
 
-      return retVal; // byte[20] 
+      return retVal; // byte[20]
     }
 
   }

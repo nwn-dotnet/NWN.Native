@@ -116,10 +116,10 @@ public unsafe class CExoLinkedListNode : global::System.IDisposable {
   public void* pObject {
     set {
       NWNXLibPINVOKE.CExoLinkedListNode_pObject_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListNode_pObject_get(swigCPtr); 
-        return (void*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListNode_pObject_get(swigCPtr);
+        return (void*)retVal;
     }
 
   }

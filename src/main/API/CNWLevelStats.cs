@@ -94,7 +94,7 @@ public unsafe class CNWLevelStats : global::System.IDisposable {
   public CExoArrayListUInt32Array m_pAddedKnownSpellList {
     set {
       NWNXLibPINVOKE.CNWLevelStats_m_pAddedKnownSpellList_set(swigCPtr, CExoArrayListUInt32Array.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWLevelStats_m_pAddedKnownSpellList_get(swigCPtr);;
         CExoArrayListUInt32Array ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32Array(cPtr, false);
@@ -106,7 +106,7 @@ public unsafe class CNWLevelStats : global::System.IDisposable {
   public CExoArrayListUInt32Array m_pRemovedKnownSpellList {
     set {
       NWNXLibPINVOKE.CNWLevelStats_m_pRemovedKnownSpellList_set(swigCPtr, CExoArrayListUInt32Array.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWLevelStats_m_pRemovedKnownSpellList_get(swigCPtr);;
         CExoArrayListUInt32Array ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32Array(cPtr, false);

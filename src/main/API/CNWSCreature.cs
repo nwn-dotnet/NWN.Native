@@ -103,12 +103,12 @@ public unsafe class CNWSCreature : CNWSObject {
   public NativeArray<uint> m_poidCntrSpellObjects {
     set {
       NWNXLibPINVOKE.CNWSCreature_m_poidCntrSpellObjects_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSCreature_m_poidCntrSpellObjects_get(swigCPtr);
       NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 10);
 
-      return retVal; // uint[10] 
+      return retVal; // uint[10]
     }
 
   }
@@ -126,7 +126,7 @@ public unsafe class CNWSCreature : CNWSObject {
   public CExoStringArray m_sScripts {
     set {
       NWNXLibPINVOKE.CNWSCreature_m_sScripts_set(swigCPtr, CExoStringArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_m_sScripts_get(swigCPtr);;
         CExoStringArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoStringArray(cPtr, false);
@@ -138,7 +138,7 @@ public unsafe class CNWSCreature : CNWSObject {
   public CExoStringArray m_sOriginalScripts {
     set {
       NWNXLibPINVOKE.CNWSCreature_m_sOriginalScripts_set(swigCPtr, CExoStringArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_m_sOriginalScripts_get(swigCPtr);;
         CExoStringArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoStringArray(cPtr, false);
@@ -515,7 +515,7 @@ public unsafe class CNWSCreature : CNWSObject {
   public CNWActionNodeArray m_pActionQueue {
     set {
       NWNXLibPINVOKE.CNWSCreature_m_pActionQueue_set(swigCPtr, CNWActionNodeArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_m_pActionQueue_get(swigCPtr);;
         CNWActionNodeArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWActionNodeArray(cPtr, false);
@@ -559,10 +559,10 @@ public unsafe class CNWSCreature : CNWSObject {
   public byte** m_nAutoMapTileData {
     set {
       NWNXLibPINVOKE.CNWSCreature_m_nAutoMapTileData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSCreature_m_nAutoMapTileData_get(swigCPtr); 
-        return (byte**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSCreature_m_nAutoMapTileData_get(swigCPtr);
+        return (byte**)retVal;
     }
 
   }
@@ -1536,10 +1536,10 @@ public unsafe class CNWSCreature : CNWSObject {
   public uint* m_pSkillTimer {
     set {
       NWNXLibPINVOKE.CNWSCreature_m_pSkillTimer_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSCreature_m_pSkillTimer_get(swigCPtr); 
-        return (uint*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSCreature_m_pSkillTimer_get(swigCPtr);
+        return (uint*)retVal;
     }
 
   }
@@ -2067,12 +2067,12 @@ public unsafe class CNWSCreature : CNWSObject {
   public NativeArray<uint> m_pPrePolymorphedItems {
     set {
       NWNXLibPINVOKE.CNWSCreature_m_pPrePolymorphedItems_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSCreature_m_pPrePolymorphedItems_get(swigCPtr);
       NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 18);
 
-      return retVal; // uint[18] 
+      return retVal; // uint[18]
     }
 
   }

@@ -291,10 +291,10 @@ public unsafe class CExoResMan : global::System.IDisposable {
   public void* m_pResourceOverrideMap {
     set {
       NWNXLibPINVOKE.CExoResMan_m_pResourceOverrideMap_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoResMan_m_pResourceOverrideMap_get(swigCPtr); 
-        return (void*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoResMan_m_pResourceOverrideMap_get(swigCPtr);
+        return (void*)retVal;
     }
 
   }
@@ -552,7 +552,7 @@ public unsafe class CExoResMan : global::System.IDisposable {
     return ret;
   }
 
-  public void* Demand(CRes pRes) { 
+  public void* Demand(CRes pRes) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoResMan_Demand(swigCPtr, CRes.getCPtr(pRes));
     return (void*)retVal;
   }

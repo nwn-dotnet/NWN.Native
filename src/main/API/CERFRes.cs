@@ -114,10 +114,10 @@ public unsafe class CERFRes : global::System.IDisposable {
   public byte* m_pData {
     set {
       NWNXLibPINVOKE.CERFRes_m_pData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CERFRes_m_pData_get(swigCPtr); 
-        return (byte*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CERFRes_m_pData_get(swigCPtr);
+        return (byte*)retVal;
     }
 
   }

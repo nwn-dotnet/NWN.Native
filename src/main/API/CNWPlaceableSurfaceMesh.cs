@@ -105,10 +105,10 @@ public unsafe class CNWPlaceableSurfaceMesh : global::System.IDisposable {
   public int* m_pnTriangles {
     set {
       NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangles_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangles_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangles_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -136,10 +136,10 @@ public unsafe class CNWPlaceableSurfaceMesh : global::System.IDisposable {
   public int* m_pnTriangleMaterial {
     set {
       NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangleMaterial_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangleMaterial_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangleMaterial_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -147,7 +147,7 @@ public unsafe class CNWPlaceableSurfaceMesh : global::System.IDisposable {
   public VectorArray m_pvActionPoints {
     set {
       NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pvActionPoints_set(swigCPtr, VectorArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pvActionPoints_get(swigCPtr);;
         VectorArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new VectorArray(cPtr, false);

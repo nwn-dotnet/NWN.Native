@@ -178,10 +178,10 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
   public uint* m_poidAutomapAreasList {
     set {
       NWNXLibPINVOKE.CNWSPlayerTURD_m_poidAutomapAreasList_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayerTURD_m_poidAutomapAreasList_get(swigCPtr); 
-        return (uint*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayerTURD_m_poidAutomapAreasList_get(swigCPtr);
+        return (uint*)retVal;
     }
 
   }
@@ -189,10 +189,10 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
   public byte** m_pAutoMapTileData {
     set {
       NWNXLibPINVOKE.CNWSPlayerTURD_m_pAutoMapTileData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayerTURD_m_pAutoMapTileData_get(swigCPtr); 
-        return (byte**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayerTURD_m_pAutoMapTileData_get(swigCPtr);
+        return (byte**)retVal;
     }
 
   }

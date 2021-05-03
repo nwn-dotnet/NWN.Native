@@ -94,10 +94,10 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
   public void** m_paIPRPCostTables {
     set {
       NWNXLibPINVOKE.CTwoDimArrays_m_paIPRPCostTables_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CTwoDimArrays_m_paIPRPCostTables_get(swigCPtr); 
-        return (void**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CTwoDimArrays_m_paIPRPCostTables_get(swigCPtr);
+        return (void**)retVal;
     }
 
   }
@@ -115,12 +115,12 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
   public NativeArray<byte> m_lstEpicBaseAttackBonus {
     set {
       NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicBaseAttackBonus_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicBaseAttackBonus_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 60);
 
-      return retVal; // byte[60] 
+      return retVal; // byte[60]
     }
 
   }
@@ -128,12 +128,12 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
   public NativeArray<byte> m_lstEpicFortificationSaveThrowBonus {
     set {
       NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicFortificationSaveThrowBonus_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicFortificationSaveThrowBonus_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 60);
 
-      return retVal; // byte[60] 
+      return retVal; // byte[60]
     }
 
   }
@@ -141,12 +141,12 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
   public NativeArray<byte> m_lstEpicWillSaveThrowBonus {
     set {
       NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicWillSaveThrowBonus_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicWillSaveThrowBonus_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 60);
 
-      return retVal; // byte[60] 
+      return retVal; // byte[60]
     }
 
   }
@@ -154,12 +154,12 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
   public NativeArray<byte> m_lstEpicReflexSaveThrowBonus {
     set {
       NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicReflexSaveThrowBonus_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CTwoDimArrays_m_lstEpicReflexSaveThrowBonus_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 60);
 
-      return retVal; // byte[60] 
+      return retVal; // byte[60]
     }
 
   }

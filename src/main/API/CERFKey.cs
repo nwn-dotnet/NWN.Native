@@ -124,12 +124,12 @@ public unsafe class CERFKey : global::System.IDisposable {
   public NativeArray<byte> m_nUnused {
     set {
       NWNXLibPINVOKE.CERFKey_m_nUnused_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CERFKey_m_nUnused_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 2);
 
-      return retVal; // byte[2] 
+      return retVal; // byte[2]
     }
 
   }

@@ -94,10 +94,10 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
   public void** m_pArray {
     set {
       NWNXLibPINVOKE.CGameObjectArray_m_pArray_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CGameObjectArray_m_pArray_get(swigCPtr); 
-        return (void**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CGameObjectArray_m_pArray_get(swigCPtr);
+        return (void**)retVal;
     }
 
   }
@@ -105,12 +105,12 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
   public NativeArray<uint> m_nNextObjectArrayID {
     set {
       NWNXLibPINVOKE.CGameObjectArray_m_nNextObjectArrayID_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CGameObjectArray_m_nNextObjectArrayID_get(swigCPtr);
       NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 2);
 
-      return retVal; // uint[2] 
+      return retVal; // uint[2]
     }
 
   }
@@ -118,12 +118,12 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
   public NativeArray<uint> m_nNextCharArrayID {
     set {
       NWNXLibPINVOKE.CGameObjectArray_m_nNextCharArrayID_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CGameObjectArray_m_nNextCharArrayID_get(swigCPtr);
       NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 2);
 
-      return retVal; // uint[2] 
+      return retVal; // uint[2]
     }
 
   }

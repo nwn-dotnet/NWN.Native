@@ -344,10 +344,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
   public byte* m_pBuffer {
     set {
       NWNXLibPINVOKE.CExoRandInternal_m_pBuffer_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoRandInternal_m_pBuffer_get(swigCPtr); 
-        return (byte*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoRandInternal_m_pBuffer_get(swigCPtr);
+        return (byte*)retVal;
     }
 
   }

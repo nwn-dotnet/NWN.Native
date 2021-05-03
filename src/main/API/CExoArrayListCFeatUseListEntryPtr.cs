@@ -94,10 +94,10 @@ public unsafe class CExoArrayListCFeatUseListEntryPtr : global::System.IDisposab
   public void** element {
     set {
       NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_element_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_element_get(swigCPtr); 
-        return (void**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_element_get(swigCPtr);
+        return (void**)retVal;
     }
 
   }
@@ -138,7 +138,7 @@ public unsafe class CExoArrayListCFeatUseListEntryPtr : global::System.IDisposab
     return ret;
   }
 
-  public void** _OpIndex(int i) { 
+  public void** _OpIndex(int i) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr__OpIndex(swigCPtr, i);
     return (void**)retVal;
   }
@@ -167,12 +167,12 @@ public unsafe class CExoArrayListCFeatUseListEntryPtr : global::System.IDisposab
     NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_DelIndex(swigCPtr, i);
   }
 
-  public void** begin() { 
+  public void** begin() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_begin(swigCPtr);
     return (void**)retVal;
   }
 
-  public void** end() { 
+  public void** end() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_end(swigCPtr);
     return (void**)retVal;
   }

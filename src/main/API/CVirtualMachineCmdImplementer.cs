@@ -130,7 +130,7 @@ public unsafe class CVirtualMachineCmdImplementer : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public virtual void* CreateGameDefinedStructure(int nUserDefinedType) { 
+  public virtual void* CreateGameDefinedStructure(int nUserDefinedType) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_CreateGameDefinedStructure(swigCPtr, nUserDefinedType);
     return (void*)retVal;
   }
@@ -144,7 +144,7 @@ public unsafe class CVirtualMachineCmdImplementer : global::System.IDisposable {
     return ret;
   }
 
-  public virtual void* CopyGameDefinedStructure(int nUserDefinedType, void* pStructureSrc) { 
+  public virtual void* CopyGameDefinedStructure(int nUserDefinedType, void* pStructureSrc) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_CopyGameDefinedStructure(swigCPtr, nUserDefinedType, (global::System.IntPtr)pStructureSrc);
     return (void*)retVal;
   }

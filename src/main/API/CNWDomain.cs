@@ -125,12 +125,12 @@ public unsafe class CNWDomain : global::System.IDisposable {
   public NativeArray<uint> m_lstSpells {
     set {
       NWNXLibPINVOKE.CNWDomain_m_lstSpells_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWDomain_m_lstSpells_get(swigCPtr);
       NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 10);
 
-      return retVal; // uint[10] 
+      return retVal; // uint[10]
     }
 
   }

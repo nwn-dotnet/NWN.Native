@@ -197,12 +197,12 @@ public unsafe class CScriptCompilerIdListEntry : global::System.IDisposable {
   public NativeArray<float> m_fVectorData {
     set {
       NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_fVectorData_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_fVectorData_get(swigCPtr);
       NativeArray<float> retVal = new NativeArray<float>(arrayPtr, 3);
 
-      return retVal; // float[3] 
+      return retVal; // float[3]
     }
 
   }
@@ -271,10 +271,10 @@ public unsafe class CScriptCompilerIdListEntry : global::System.IDisposable {
   public int* m_pbOptionalParameters {
     set {
       NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_pbOptionalParameters_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_pbOptionalParameters_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_pbOptionalParameters_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -282,10 +282,10 @@ public unsafe class CScriptCompilerIdListEntry : global::System.IDisposable {
   public int* m_pnOptionalParameterIntegerData {
     set {
       NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_pnOptionalParameterIntegerData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_pnOptionalParameterIntegerData_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_pnOptionalParameterIntegerData_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -293,10 +293,10 @@ public unsafe class CScriptCompilerIdListEntry : global::System.IDisposable {
   public float* m_pfOptionalParameterFloatData {
     set {
       NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_pfOptionalParameterFloatData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_pfOptionalParameterFloatData_get(swigCPtr); 
-        return (float*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_pfOptionalParameterFloatData_get(swigCPtr);
+        return (float*)retVal;
     }
 
   }
@@ -315,10 +315,10 @@ public unsafe class CScriptCompilerIdListEntry : global::System.IDisposable {
   public uint* m_poidOptionalParameterObjectData {
     set {
       NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_poidOptionalParameterObjectData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_poidOptionalParameterObjectData_get(swigCPtr); 
-        return (uint*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_poidOptionalParameterObjectData_get(swigCPtr);
+        return (uint*)retVal;
     }
 
   }
@@ -326,10 +326,10 @@ public unsafe class CScriptCompilerIdListEntry : global::System.IDisposable {
   public float* m_pfOptionalParameterVectorData {
     set {
       NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_pfOptionalParameterVectorData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_pfOptionalParameterVectorData_get(swigCPtr); 
-        return (float*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_pfOptionalParameterVectorData_get(swigCPtr);
+        return (float*)retVal;
     }
 
   }

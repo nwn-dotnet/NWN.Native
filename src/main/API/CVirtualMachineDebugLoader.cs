@@ -106,7 +106,7 @@ public unsafe class CVirtualMachineDebugLoader : global::System.IDisposable {
     return ret;
   }
 
-  public byte* GetDataPtr() { 
+  public byte* GetDataPtr() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebugLoader_GetDataPtr(swigCPtr);
     return (byte*)retVal;
   }

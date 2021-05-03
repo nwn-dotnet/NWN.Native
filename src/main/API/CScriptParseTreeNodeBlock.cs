@@ -94,7 +94,7 @@ public unsafe class CScriptParseTreeNodeBlock : global::System.IDisposable {
   public CScriptParseTreeNodeArray m_pNodes {
     set {
       NWNXLibPINVOKE.CScriptParseTreeNodeBlock_m_pNodes_set(swigCPtr, CScriptParseTreeNodeArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptParseTreeNodeBlock_m_pNodes_get(swigCPtr);;
         CScriptParseTreeNodeArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CScriptParseTreeNodeArray(cPtr, false);

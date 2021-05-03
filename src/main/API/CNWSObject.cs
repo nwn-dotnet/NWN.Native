@@ -653,10 +653,10 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
   public int* m_pLastDamageList {
     set {
       NWNXLibPINVOKE.CNWSObject_m_pLastDamageList_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSObject_m_pLastDamageList_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSObject_m_pLastDamageList_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -2303,10 +2303,10 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
   public void* m_pNwnxData {
     set {
       NWNXLibPINVOKE.CNWSObject_m_pNwnxData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSObject_m_pNwnxData_get(swigCPtr); 
-        return (void*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSObject_m_pNwnxData_get(swigCPtr);
+        return (void*)retVal;
     }
 
   }

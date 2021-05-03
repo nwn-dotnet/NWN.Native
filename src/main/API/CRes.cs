@@ -135,10 +135,10 @@ public unsafe class CRes : global::System.IDisposable {
   public void* m_pResource {
     set {
       NWNXLibPINVOKE.CRes_m_pResource_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CRes_m_pResource_get(swigCPtr); 
-        return (void*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CRes_m_pResource_get(swigCPtr);
+        return (void*)retVal;
     }
 
   }
@@ -227,7 +227,7 @@ public unsafe class CRes : global::System.IDisposable {
     return ret;
   }
 
-  public void* Demand() { 
+  public void* Demand() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CRes_Demand(swigCPtr);
     return (void*)retVal;
   }
@@ -245,7 +245,7 @@ public unsafe class CRes : global::System.IDisposable {
     NWNXLibPINVOKE.CRes_Dump__SWIG_1(swigCPtr);
   }
 
-  public void* GetData() { 
+  public void* GetData() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CRes_GetData(swigCPtr);
     return (void*)retVal;
   }

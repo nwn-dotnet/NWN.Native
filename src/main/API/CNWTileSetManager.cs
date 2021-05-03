@@ -94,7 +94,7 @@ public unsafe class CNWTileSetManager : global::System.IDisposable {
   public CNWTileSetPtrArray m_apTileSets {
     set {
       NWNXLibPINVOKE.CNWTileSetManager_m_apTileSets_set(swigCPtr, CNWTileSetPtrArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSetManager_m_apTileSets_get(swigCPtr);;
         CNWTileSetPtrArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWTileSetPtrArray(cPtr, false);
@@ -106,12 +106,12 @@ public unsafe class CNWTileSetManager : global::System.IDisposable {
   public NativeArray<int> m_anTileSetRegistered {
     set {
       NWNXLibPINVOKE.CNWTileSetManager_m_anTileSetRegistered_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWTileSetManager_m_anTileSetRegistered_get(swigCPtr);
       NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 100);
 
-      return retVal; // int[100] 
+      return retVal; // int[100]
     }
 
   }

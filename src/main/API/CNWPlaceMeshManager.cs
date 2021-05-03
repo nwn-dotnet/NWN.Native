@@ -104,10 +104,10 @@ public unsafe class CNWPlaceMeshManager : global::System.IDisposable {
   public void** m_pSurfaceMeshLoaded {
     set {
       NWNXLibPINVOKE.CNWPlaceMeshManager_m_pSurfaceMeshLoaded_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWPlaceMeshManager_m_pSurfaceMeshLoaded_get(swigCPtr); 
-        return (void**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWPlaceMeshManager_m_pSurfaceMeshLoaded_get(swigCPtr);
+        return (void**)retVal;
     }
 
   }

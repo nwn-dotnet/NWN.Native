@@ -147,32 +147,32 @@ public unsafe class CExoLinkedListInternal : global::System.IDisposable {
     return ret;
   }
 
-  public void* GetAtPos(CExoLinkedListNode Position) { 
+  public void* GetAtPos(CExoLinkedListNode Position) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListInternal_GetAtPos(swigCPtr, CExoLinkedListNode.getCPtr(Position));
     return (void*)retVal;
   }
 
-  public void* GetNext(void** Position) { 
+  public void* GetNext(void** Position) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListInternal_GetNext(swigCPtr, (global::System.IntPtr)Position);
     return (void*)retVal;
   }
 
-  public void* GetPrev(void** Position) { 
+  public void* GetPrev(void** Position) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListInternal_GetPrev(swigCPtr, (global::System.IntPtr)Position);
     return (void*)retVal;
   }
 
-  public void* RemoveHead() { 
+  public void* RemoveHead() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListInternal_RemoveHead(swigCPtr);
     return (void*)retVal;
   }
 
-  public void* RemoveTail() { 
+  public void* RemoveTail() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListInternal_RemoveTail(swigCPtr);
     return (void*)retVal;
   }
 
-  public void* Remove(CExoLinkedListNode Position) { 
+  public void* Remove(CExoLinkedListNode Position) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListInternal_Remove(swigCPtr, CExoLinkedListNode.getCPtr(Position));
     return (void*)retVal;
   }

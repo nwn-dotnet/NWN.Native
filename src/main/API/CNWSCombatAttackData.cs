@@ -194,12 +194,12 @@ public unsafe class CNWSCombatAttackData : global::System.IDisposable {
   public NativeArray<short> m_nDamage {
     set {
       NWNXLibPINVOKE.CNWSCombatAttackData_m_nDamage_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSCombatAttackData_m_nDamage_get(swigCPtr);
       NativeArray<short> retVal = new NativeArray<short>(arrayPtr, 13);
 
-      return retVal; // short[13] 
+      return retVal; // short[13]
     }
 
   }

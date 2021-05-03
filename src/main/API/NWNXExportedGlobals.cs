@@ -116,10 +116,10 @@ public unsafe class NWNXExportedGlobals : global::System.IDisposable {
   public void** ppExoBase {
     set {
       NWNXLibPINVOKE.NWNXExportedGlobals_ppExoBase_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppExoBase_get(swigCPtr); 
-        return (void**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppExoBase_get(swigCPtr);
+        return (void**)retVal;
     }
 
   }
@@ -127,10 +127,10 @@ public unsafe class NWNXExportedGlobals : global::System.IDisposable {
   public void** ppExoResMan {
     set {
       NWNXLibPINVOKE.NWNXExportedGlobals_ppExoResMan_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppExoResMan_get(swigCPtr); 
-        return (void**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppExoResMan_get(swigCPtr);
+        return (void**)retVal;
     }
 
   }
@@ -138,10 +138,10 @@ public unsafe class NWNXExportedGlobals : global::System.IDisposable {
   public void** ppVirtualMachine {
     set {
       NWNXLibPINVOKE.NWNXExportedGlobals_ppVirtualMachine_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppVirtualMachine_get(swigCPtr); 
-        return (void**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppVirtualMachine_get(swigCPtr);
+        return (void**)retVal;
     }
 
   }
@@ -149,10 +149,10 @@ public unsafe class NWNXExportedGlobals : global::System.IDisposable {
   public void** ppScriptCompiler {
     set {
       NWNXLibPINVOKE.NWNXExportedGlobals_ppScriptCompiler_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppScriptCompiler_get(swigCPtr); 
-        return (void**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppScriptCompiler_get(swigCPtr);
+        return (void**)retVal;
     }
 
   }
@@ -160,10 +160,10 @@ public unsafe class NWNXExportedGlobals : global::System.IDisposable {
   public void** ppAppManager {
     set {
       NWNXLibPINVOKE.NWNXExportedGlobals_ppAppManager_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppAppManager_get(swigCPtr); 
-        return (void**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppAppManager_get(swigCPtr);
+        return (void**)retVal;
     }
 
   }
@@ -171,10 +171,10 @@ public unsafe class NWNXExportedGlobals : global::System.IDisposable {
   public void** ppTlkTable {
     set {
       NWNXLibPINVOKE.NWNXExportedGlobals_ppTlkTable_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppTlkTable_get(swigCPtr); 
-        return (void**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppTlkTable_get(swigCPtr);
+        return (void**)retVal;
     }
 
   }
@@ -182,10 +182,10 @@ public unsafe class NWNXExportedGlobals : global::System.IDisposable {
   public void** ppRules {
     set {
       NWNXLibPINVOKE.NWNXExportedGlobals_ppRules_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppRules_get(swigCPtr); 
-        return (void**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppRules_get(swigCPtr);
+        return (void**)retVal;
     }
 
   }
@@ -193,10 +193,10 @@ public unsafe class NWNXExportedGlobals : global::System.IDisposable {
   public void** ppExoTaskManager {
     set {
       NWNXLibPINVOKE.NWNXExportedGlobals_ppExoTaskManager_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppExoTaskManager_get(swigCPtr); 
-        return (void**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_ppExoTaskManager_get(swigCPtr);
+        return (void**)retVal;
     }
 
   }
@@ -204,10 +204,10 @@ public unsafe class NWNXExportedGlobals : global::System.IDisposable {
   public int* pbEnableCombatDebugging {
     set {
       NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableCombatDebugging_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableCombatDebugging_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableCombatDebugging_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -215,10 +215,10 @@ public unsafe class NWNXExportedGlobals : global::System.IDisposable {
   public int* pbEnableSavingThrowDebugging {
     set {
       NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableSavingThrowDebugging_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableSavingThrowDebugging_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableSavingThrowDebugging_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -226,10 +226,10 @@ public unsafe class NWNXExportedGlobals : global::System.IDisposable {
   public int* pbEnableMovementSpeedDebugging {
     set {
       NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableMovementSpeedDebugging_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableMovementSpeedDebugging_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableMovementSpeedDebugging_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -237,10 +237,10 @@ public unsafe class NWNXExportedGlobals : global::System.IDisposable {
   public int* pbEnableHitDieDebugging {
     set {
       NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableHitDieDebugging_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableHitDieDebugging_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_pbEnableHitDieDebugging_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -248,10 +248,10 @@ public unsafe class NWNXExportedGlobals : global::System.IDisposable {
   public int* pbExitProgram {
     set {
       NWNXLibPINVOKE.NWNXExportedGlobals_pbExitProgram_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_pbExitProgram_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.NWNXExportedGlobals_pbExitProgram_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }

@@ -156,12 +156,12 @@ public unsafe class CNWClass : global::System.IDisposable {
   public NativeArray<byte> m_lstBaseAttackBonus {
     set {
       NWNXLibPINVOKE.CNWClass_m_lstBaseAttackBonus_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstBaseAttackBonus_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 60);
 
-      return retVal; // byte[60] 
+      return retVal; // byte[60]
     }
 
   }
@@ -189,12 +189,12 @@ public unsafe class CNWClass : global::System.IDisposable {
   public NativeArray<byte> m_lstFortificationSaveThrowBonus {
     set {
       NWNXLibPINVOKE.CNWClass_m_lstFortificationSaveThrowBonus_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstFortificationSaveThrowBonus_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 60);
 
-      return retVal; // byte[60] 
+      return retVal; // byte[60]
     }
 
   }
@@ -202,12 +202,12 @@ public unsafe class CNWClass : global::System.IDisposable {
   public NativeArray<byte> m_lstWillSaveThrowBonus {
     set {
       NWNXLibPINVOKE.CNWClass_m_lstWillSaveThrowBonus_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstWillSaveThrowBonus_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 60);
 
-      return retVal; // byte[60] 
+      return retVal; // byte[60]
     }
 
   }
@@ -215,12 +215,12 @@ public unsafe class CNWClass : global::System.IDisposable {
   public NativeArray<byte> m_lstReflexSaveThrowBonus {
     set {
       NWNXLibPINVOKE.CNWClass_m_lstReflexSaveThrowBonus_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstReflexSaveThrowBonus_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 60);
 
-      return retVal; // byte[60] 
+      return retVal; // byte[60]
     }
 
   }
@@ -228,10 +228,10 @@ public unsafe class CNWClass : global::System.IDisposable {
   public byte** m_lstSpellKnownTable {
     set {
       NWNXLibPINVOKE.CNWClass_m_lstSpellKnownTable_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWClass_m_lstSpellKnownTable_get(swigCPtr); 
-        return (byte**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWClass_m_lstSpellKnownTable_get(swigCPtr);
+        return (byte**)retVal;
     }
 
   }
@@ -239,12 +239,12 @@ public unsafe class CNWClass : global::System.IDisposable {
   public NativeArray<byte> m_lstSpellLevelsPerLevel {
     set {
       NWNXLibPINVOKE.CNWClass_m_lstSpellLevelsPerLevel_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstSpellLevelsPerLevel_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 40);
 
-      return retVal; // byte[40] 
+      return retVal; // byte[40]
     }
 
   }
@@ -252,12 +252,12 @@ public unsafe class CNWClass : global::System.IDisposable {
   public NativeArray<global::System.IntPtr> m_lstSpellGainTable {
     set {
       NWNXLibPINVOKE.CNWClass_m_lstSpellGainTable_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstSpellGainTable_get(swigCPtr);
       NativeArray<global::System.IntPtr> retVal = new NativeArray<global::System.IntPtr>(arrayPtr, 40);
 
-      return retVal; // byte*[40] 
+      return retVal; // byte*[40]
     }
 
   }
@@ -307,12 +307,12 @@ public unsafe class CNWClass : global::System.IDisposable {
   public NativeArray<byte> m_lstBonusFeatsTable {
     set {
       NWNXLibPINVOKE.CNWClass_m_lstBonusFeatsTable_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstBonusFeatsTable_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 60);
 
-      return retVal; // byte[60] 
+      return retVal; // byte[60]
     }
 
   }
@@ -331,12 +331,12 @@ public unsafe class CNWClass : global::System.IDisposable {
   public NativeArray<sbyte> m_lstNaturalACGainTable {
     set {
       NWNXLibPINVOKE.CNWClass_m_lstNaturalACGainTable_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstNaturalACGainTable_get(swigCPtr);
       NativeArray<sbyte> retVal = new NativeArray<sbyte>(arrayPtr, 60);
 
-      return retVal; // sbyte[60] 
+      return retVal; // sbyte[60]
     }
 
   }
@@ -354,12 +354,12 @@ public unsafe class CNWClass : global::System.IDisposable {
   public NativeArray<byte> m_pnRecommendedAbilities {
     set {
       NWNXLibPINVOKE.CNWClass_m_pnRecommendedAbilities_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_pnRecommendedAbilities_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 6);
 
-      return retVal; // byte[6] 
+      return retVal; // byte[6]
     }
 
   }
@@ -397,12 +397,12 @@ public unsafe class CNWClass : global::System.IDisposable {
   public NativeArray<byte> m_pnEffectiveCRForLevel {
     set {
       NWNXLibPINVOKE.CNWClass_m_pnEffectiveCRForLevel_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_pnEffectiveCRForLevel_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 40+1);
 
-      return retVal; // byte[40+1] 
+      return retVal; // byte[40+1]
     }
 
   }

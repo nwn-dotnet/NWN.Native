@@ -165,12 +165,12 @@ public unsafe class CScriptParseTreeNode : global::System.IDisposable {
   public NativeArray<float> fVectorData {
     set {
       NWNXLibPINVOKE.CScriptParseTreeNode_fVectorData_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CScriptParseTreeNode_fVectorData_get(swigCPtr);
       NativeArray<float> retVal = new NativeArray<float>(arrayPtr, 3);
 
-      return retVal; // float[3] 
+      return retVal; // float[3]
     }
 
   }

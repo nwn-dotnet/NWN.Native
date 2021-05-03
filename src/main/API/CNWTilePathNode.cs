@@ -114,10 +114,10 @@ public unsafe class CNWTilePathNode : global::System.IDisposable {
   public float* m_pfRegionNodes {
     set {
       NWNXLibPINVOKE.CNWTilePathNode_m_pfRegionNodes_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWTilePathNode_m_pfRegionNodes_get(swigCPtr); 
-        return (float*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWTilePathNode_m_pfRegionNodes_get(swigCPtr);
+        return (float*)retVal;
     }
 
   }
@@ -125,10 +125,10 @@ public unsafe class CNWTilePathNode : global::System.IDisposable {
   public float* m_pfTileExits {
     set {
       NWNXLibPINVOKE.CNWTilePathNode_m_pfTileExits_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWTilePathNode_m_pfTileExits_get(swigCPtr); 
-        return (float*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWTilePathNode_m_pfTileExits_get(swigCPtr);
+        return (float*)retVal;
     }
 
   }
@@ -136,10 +136,10 @@ public unsafe class CNWTilePathNode : global::System.IDisposable {
   public int* m_pnTileExitRegion {
     set {
       NWNXLibPINVOKE.CNWTilePathNode_m_pnTileExitRegion_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWTilePathNode_m_pnTileExitRegion_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWTilePathNode_m_pnTileExitRegion_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }

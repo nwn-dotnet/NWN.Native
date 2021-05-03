@@ -119,10 +119,10 @@ public unsafe class CGameObject : ICGameObject, global::System.IDisposable {
   public void* m_pNwnxData {
     set {
       NWNXLibPINVOKE.CGameObject_m_pNwnxData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CGameObject_m_pNwnxData_get(swigCPtr); 
-        return (void*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CGameObject_m_pNwnxData_get(swigCPtr);
+        return (void*)retVal;
     }
 
   }

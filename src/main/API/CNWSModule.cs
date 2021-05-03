@@ -357,7 +357,7 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   public CExoStringArray m_sScripts {
     set {
       NWNXLibPINVOKE.CNWSModule_m_sScripts_set(swigCPtr, CExoStringArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_m_sScripts_get(swigCPtr);;
         CExoStringArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoStringArray(cPtr, false);
@@ -1417,7 +1417,7 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
     NWNXLibPINVOKE.CNWSModule_TimeStopSanityCheck(swigCPtr);
   }
 
-  public byte* GetFullCipher(CExoString sModuleResourceName) { 
+  public byte* GetFullCipher(CExoString sModuleResourceName) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSModule_GetFullCipher(swigCPtr, CExoString.getCPtr(sModuleResourceName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return (byte*)retVal;
@@ -1451,10 +1451,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   public void* m_pNwnxData {
     set {
       NWNXLibPINVOKE.CNWSModule_m_pNwnxData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSModule_m_pNwnxData_get(swigCPtr); 
-        return (void*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSModule_m_pNwnxData_get(swigCPtr);
+        return (void*)retVal;
     }
 
   }

@@ -124,10 +124,10 @@ public unsafe class StackElement : global::System.IDisposable {
   public void* m_pStackPtr {
     set {
       NWNXLibPINVOKE.StackElement_m_pStackPtr_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.StackElement_m_pStackPtr_get(swigCPtr); 
-        return (void*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.StackElement_m_pStackPtr_get(swigCPtr);
+        return (void*)retVal;
     }
 
   }

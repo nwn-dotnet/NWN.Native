@@ -146,10 +146,10 @@ public unsafe class CNWSPlayer : CNWSClient {
   public uint* m_pAreas {
     set {
       NWNXLibPINVOKE.CNWSPlayer_m_pAreas_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayer_m_pAreas_get(swigCPtr); 
-        return (uint*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayer_m_pAreas_get(swigCPtr);
+        return (uint*)retVal;
     }
 
   }

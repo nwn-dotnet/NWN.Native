@@ -94,10 +94,10 @@ public unsafe class CExoStringList : global::System.IDisposable {
   public void** m_pStrings {
     set {
       NWNXLibPINVOKE.CExoStringList_m_pStrings_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoStringList_m_pStrings_get(swigCPtr); 
-        return (void**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoStringList_m_pStrings_get(swigCPtr);
+        return (void**)retVal;
     }
 
   }

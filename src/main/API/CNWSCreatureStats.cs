@@ -364,7 +364,7 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   public CNWSCreatureStats_ClassInfoArray m_ClassInfo {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_ClassInfo_set(swigCPtr, CNWSCreatureStats_ClassInfoArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreatureStats_m_ClassInfo_get(swigCPtr);;
         CNWSCreatureStats_ClassInfoArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSCreatureStats_ClassInfoArray(cPtr, false);
@@ -768,12 +768,12 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   public NativeArray<byte> m_pSpellFailure {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_pSpellFailure_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSCreatureStats_m_pSpellFailure_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 9);
 
-      return retVal; // byte[9] 
+      return retVal; // byte[9]
     }
 
   }
@@ -1223,12 +1223,12 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   public NativeArray<byte> m_pPartVariation {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_pPartVariation_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSCreatureStats_m_pPartVariation_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 19);
 
-      return retVal; // byte[19] 
+      return retVal; // byte[19]
     }
 
   }

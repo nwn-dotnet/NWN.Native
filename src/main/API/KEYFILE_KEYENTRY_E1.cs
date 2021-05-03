@@ -94,12 +94,12 @@ public unsafe class KEYFILE_KEYENTRY_E1 : global::System.IDisposable {
   public NativeArray<byte> resRef {
     set {
       NWNXLibPINVOKE.KEYFILE_KEYENTRY_E1_resRef_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.KEYFILE_KEYENTRY_E1_resRef_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16);
 
-      return retVal; // byte[16] 
+      return retVal; // byte[16]
     }
 
   }
@@ -127,12 +127,12 @@ public unsafe class KEYFILE_KEYENTRY_E1 : global::System.IDisposable {
   public NativeArray<byte> sSha1 {
     set {
       NWNXLibPINVOKE.KEYFILE_KEYENTRY_E1_sSha1_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.KEYFILE_KEYENTRY_E1_sSha1_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 20);
 
-      return retVal; // byte[20] 
+      return retVal; // byte[20]
     }
 
   }

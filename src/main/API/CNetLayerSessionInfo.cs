@@ -135,12 +135,12 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
   public NativeArray<uint> m_nPingPacketSent {
     set {
       NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketSent_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketSent_get(swigCPtr);
       NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 4);
 
-      return retVal; // uint[4] 
+      return retVal; // uint[4]
     }
 
   }
@@ -148,12 +148,12 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
   public NativeArray<uint> m_nPingPacketReceived {
     set {
       NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketReceived_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketReceived_get(swigCPtr);
       NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 4);
 
-      return retVal; // uint[4] 
+      return retVal; // uint[4]
     }
 
   }

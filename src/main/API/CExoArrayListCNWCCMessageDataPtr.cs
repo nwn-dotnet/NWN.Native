@@ -94,10 +94,10 @@ public unsafe class CExoArrayListCNWCCMessageDataPtr : global::System.IDisposabl
   public void** element {
     set {
       NWNXLibPINVOKE.CExoArrayListCNWCCMessageDataPtr_element_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWCCMessageDataPtr_element_get(swigCPtr); 
-        return (void**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWCCMessageDataPtr_element_get(swigCPtr);
+        return (void**)retVal;
     }
 
   }
@@ -138,7 +138,7 @@ public unsafe class CExoArrayListCNWCCMessageDataPtr : global::System.IDisposabl
     return ret;
   }
 
-  public void** _OpIndex(int i) { 
+  public void** _OpIndex(int i) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWCCMessageDataPtr__OpIndex(swigCPtr, i);
     return (void**)retVal;
   }
@@ -167,12 +167,12 @@ public unsafe class CExoArrayListCNWCCMessageDataPtr : global::System.IDisposabl
     NWNXLibPINVOKE.CExoArrayListCNWCCMessageDataPtr_DelIndex(swigCPtr, i);
   }
 
-  public void** begin() { 
+  public void** begin() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWCCMessageDataPtr_begin(swigCPtr);
     return (void**)retVal;
   }
 
-  public void** end() { 
+  public void** end() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWCCMessageDataPtr_end(swigCPtr);
     return (void**)retVal;
   }

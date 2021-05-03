@@ -94,7 +94,7 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
   public CExoArrayListUInt32Array m_pKnownSpellList {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_pKnownSpellList_set(swigCPtr, CExoArrayListUInt32Array.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_pKnownSpellList_get(swigCPtr);;
         CExoArrayListUInt32Array ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32Array(cPtr, false);
@@ -106,7 +106,7 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
   public CExoArrayListCNWSStatsSpellPtrArray m_pMemorizedSpellList {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_pMemorizedSpellList_set(swigCPtr, CExoArrayListCNWSStatsSpellPtrArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_pMemorizedSpellList_get(swigCPtr);;
         CExoArrayListCNWSStatsSpellPtrArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListCNWSStatsSpellPtrArray(cPtr, false);
@@ -118,12 +118,12 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
   public NativeArray<uint> m_nBonusSpellsList {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nBonusSpellsList_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nBonusSpellsList_get(swigCPtr);
       NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 10);
 
-      return retVal; // uint[10] 
+      return retVal; // uint[10]
     }
 
   }
@@ -131,12 +131,12 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
   public NativeArray<byte> m_nSpellsPerDayLeft {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nSpellsPerDayLeft_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nSpellsPerDayLeft_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 10);
 
-      return retVal; // byte[10] 
+      return retVal; // byte[10]
     }
 
   }
@@ -144,12 +144,12 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
   public NativeArray<byte> m_nMaxSpellsPerDayLeft {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nMaxSpellsPerDayLeft_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nMaxSpellsPerDayLeft_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 10);
 
-      return retVal; // byte[10] 
+      return retVal; // byte[10]
     }
 
   }
@@ -197,12 +197,12 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
   public NativeArray<byte> m_nDomain {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nDomain_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_nDomain_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 2);
 
-      return retVal; // byte[2] 
+      return retVal; // byte[2]
     }
 
   }

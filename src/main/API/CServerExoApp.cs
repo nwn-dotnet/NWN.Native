@@ -414,12 +414,12 @@ public unsafe class CServerExoApp : CBaseExoApp {
     return ret;
   }
 
-  public void* GetSysAdminList() { 
+  public void* GetSysAdminList() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CServerExoApp_GetSysAdminList(swigCPtr);
     return (void*)retVal;
   }
 
-  public void* GetPlayerList() { 
+  public void* GetPlayerList() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CServerExoApp_GetPlayerList(swigCPtr);
     return (void*)retVal;
   }

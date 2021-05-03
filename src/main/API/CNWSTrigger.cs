@@ -105,7 +105,7 @@ public unsafe class CNWSTrigger : CNWSObject {
   public CExoStringArray m_sScripts {
     set {
       NWNXLibPINVOKE.CNWSTrigger_m_sScripts_set(swigCPtr, CExoStringArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSTrigger_m_sScripts_get(swigCPtr);;
         CExoStringArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoStringArray(cPtr, false);
@@ -159,10 +159,10 @@ public unsafe class CNWSTrigger : CNWSObject {
   public int* m_pnTriangles {
     set {
       NWNXLibPINVOKE.CNWSTrigger_m_pnTriangles_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSTrigger_m_pnTriangles_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSTrigger_m_pnTriangles_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -180,10 +180,10 @@ public unsafe class CNWSTrigger : CNWSObject {
   public int* m_pnOutlineVertices {
     set {
       NWNXLibPINVOKE.CNWSTrigger_m_pnOutlineVertices_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSTrigger_m_pnOutlineVertices_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSTrigger_m_pnOutlineVertices_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }

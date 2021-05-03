@@ -414,12 +414,12 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
   public NativeArray<int> m_bPartEnvMap {
     set {
       NWNXLibPINVOKE.CNWBaseItem_m_bPartEnvMap_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWBaseItem_m_bPartEnvMap_get(swigCPtr);
       NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 3);
 
-      return retVal; // int[3] 
+      return retVal; // int[3]
     }
 
   }
@@ -489,10 +489,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
   public ushort* m_pRequiredFeats {
     set {
       NWNXLibPINVOKE.CNWBaseItem_m_pRequiredFeats_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWBaseItem_m_pRequiredFeats_get(swigCPtr); 
-        return (ushort*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWBaseItem_m_pRequiredFeats_get(swigCPtr);
+        return (ushort*)retVal;
     }
 
   }

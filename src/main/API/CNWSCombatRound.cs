@@ -94,7 +94,7 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
   public CNWSCombatAttackDataArray m_pcLastAttack {
     set {
       NWNXLibPINVOKE.CNWSCombatRound_m_pcLastAttack_set(swigCPtr, CNWSCombatAttackDataArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCombatRound_m_pcLastAttack_get(swigCPtr);;
         CNWSCombatAttackDataArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSCombatAttackDataArray(cPtr, false);

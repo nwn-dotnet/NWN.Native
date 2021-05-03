@@ -94,12 +94,12 @@ public unsafe class CNWRules : global::System.IDisposable {
   public NativeArray<float> m_fRangeTypes {
     set {
       NWNXLibPINVOKE.CNWRules_m_fRangeTypes_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWRules_m_fRangeTypes_get(swigCPtr);
       NativeArray<float> retVal = new NativeArray<float>(arrayPtr, 5);
 
-      return retVal; // float[5] 
+      return retVal; // float[5]
     }
 
   }
@@ -118,12 +118,12 @@ public unsafe class CNWRules : global::System.IDisposable {
   public NativeArray<uint> m_nExperienceTable {
     set {
       NWNXLibPINVOKE.CNWRules_m_nExperienceTable_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWRules_m_nExperienceTable_get(swigCPtr);
       NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 40+1);
 
-      return retVal; // uint[40+1] 
+      return retVal; // uint[40+1]
     }
 
   }
@@ -153,10 +153,10 @@ public unsafe class CNWRules : global::System.IDisposable {
   public uint* m_lstMasterFeats {
     set {
       NWNXLibPINVOKE.CNWRules_m_lstMasterFeats_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWRules_m_lstMasterFeats_get(swigCPtr); 
-        return (uint*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWRules_m_lstMasterFeats_get(swigCPtr);
+        return (uint*)retVal;
     }
 
   }
@@ -164,10 +164,10 @@ public unsafe class CNWRules : global::System.IDisposable {
   public uint* m_lstMasterFeatDescriptions {
     set {
       NWNXLibPINVOKE.CNWRules_m_lstMasterFeatDescriptions_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWRules_m_lstMasterFeatDescriptions_get(swigCPtr); 
-        return (uint*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWRules_m_lstMasterFeatDescriptions_get(swigCPtr);
+        return (uint*)retVal;
     }
 
   }
@@ -186,10 +186,10 @@ public unsafe class CNWRules : global::System.IDisposable {
   public ushort* m_lstSortedFeatIDs {
     set {
       NWNXLibPINVOKE.CNWRules_m_lstSortedFeatIDs_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWRules_m_lstSortedFeatIDs_get(swigCPtr); 
-        return (ushort*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWRules_m_lstSortedFeatIDs_get(swigCPtr);
+        return (ushort*)retVal;
     }
 
   }

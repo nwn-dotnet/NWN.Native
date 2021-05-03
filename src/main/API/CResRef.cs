@@ -94,12 +94,12 @@ public unsafe class CResRef : global::System.IDisposable {
   public NativeArray<byte> m_resRefLowerCase {
     set {
       NWNXLibPINVOKE.CResRef_m_resRefLowerCase_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CResRef_m_resRefLowerCase_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16);
 
-      return retVal; // byte[16] 
+      return retVal; // byte[16]
     }
 
   }
@@ -107,12 +107,12 @@ public unsafe class CResRef : global::System.IDisposable {
   public NativeArray<byte> m_resRef {
     set {
       NWNXLibPINVOKE.CResRef_m_resRef_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CResRef_m_resRef_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16);
 
-      return retVal; // byte[16] 
+      return retVal; // byte[16]
     }
 
   }

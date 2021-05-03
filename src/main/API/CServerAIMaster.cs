@@ -105,7 +105,7 @@ public unsafe class CServerAIMaster : global::System.IDisposable {
   public CServerAIListArray m_apGameAIList {
     set {
       NWNXLibPINVOKE.CServerAIMaster_m_apGameAIList_set(swigCPtr, CServerAIListArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerAIMaster_m_apGameAIList_get(swigCPtr);;
         CServerAIListArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CServerAIListArray(cPtr, false);

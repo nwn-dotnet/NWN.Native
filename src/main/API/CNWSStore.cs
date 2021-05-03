@@ -83,7 +83,7 @@ public unsafe class CNWSStore : CNWSObject {
   public CExoStringArray m_sScripts {
     set {
       NWNXLibPINVOKE.CNWSStore_m_sScripts_set(swigCPtr, CExoStringArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSStore_m_sScripts_get(swigCPtr);;
         CExoStringArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoStringArray(cPtr, false);
@@ -95,7 +95,7 @@ public unsafe class CNWSStore : CNWSObject {
   public CItemRepositoryPtrArray m_aInventory {
     set {
       NWNXLibPINVOKE.CNWSStore_m_aInventory_set(swigCPtr, CItemRepositoryPtrArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSStore_m_aInventory_get(swigCPtr);;
         CItemRepositoryPtrArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CItemRepositoryPtrArray(cPtr, false);

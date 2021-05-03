@@ -174,10 +174,10 @@ public unsafe class CExoTimersInternal : global::System.IDisposable {
   public void* m_pTimerThread {
     set {
       NWNXLibPINVOKE.CExoTimersInternal_m_pTimerThread_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoTimersInternal_m_pTimerThread_get(swigCPtr); 
-        return (void*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoTimersInternal_m_pTimerThread_get(swigCPtr);
+        return (void*)retVal;
     }
 
   }

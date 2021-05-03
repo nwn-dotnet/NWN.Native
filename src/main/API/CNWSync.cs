@@ -94,10 +94,10 @@ public unsafe class CNWSync : global::System.IDisposable {
   public void* m_internal {
     set {
       NWNXLibPINVOKE.CNWSync_m_internal_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSync_m_internal_get(swigCPtr); 
-        return (void*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSync_m_internal_get(swigCPtr);
+        return (void*)retVal;
     }
 
   }

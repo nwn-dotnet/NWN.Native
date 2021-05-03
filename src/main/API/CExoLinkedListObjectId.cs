@@ -134,12 +134,12 @@ public unsafe class CExoLinkedListObjectId : global::System.IDisposable {
     return ret;
   }
 
-  public uint* GetAtPos(CExoLinkedListNode Position) { 
+  public uint* GetAtPos(CExoLinkedListNode Position) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_GetAtPos(swigCPtr, CExoLinkedListNode.getCPtr(Position));
     return (uint*)retVal;
   }
 
-  public uint* GetHead() { 
+  public uint* GetHead() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_GetHead(swigCPtr);
     return (uint*)retVal;
   }
@@ -150,17 +150,17 @@ public unsafe class CExoLinkedListObjectId : global::System.IDisposable {
     return ret;
   }
 
-  public uint* GetNext(void** Position) { 
+  public uint* GetNext(void** Position) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_GetNext(swigCPtr, (global::System.IntPtr)Position);
     return (uint*)retVal;
   }
 
-  public uint* GetPrev(void** Position) { 
+  public uint* GetPrev(void** Position) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_GetPrev(swigCPtr, (global::System.IntPtr)Position);
     return (uint*)retVal;
   }
 
-  public uint* GetTail() { 
+  public uint* GetTail() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_GetTail(swigCPtr);
     return (uint*)retVal;
   }
@@ -176,17 +176,17 @@ public unsafe class CExoLinkedListObjectId : global::System.IDisposable {
     return ret;
   }
 
-  public uint* RemoveHead() { 
+  public uint* RemoveHead() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_RemoveHead(swigCPtr);
     return (uint*)retVal;
   }
 
-  public uint* RemoveTail() { 
+  public uint* RemoveTail() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_RemoveTail(swigCPtr);
     return (uint*)retVal;
   }
 
-  public uint* Remove(CExoLinkedListNode Position) { 
+  public uint* Remove(CExoLinkedListNode Position) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_Remove(swigCPtr, CExoLinkedListNode.getCPtr(Position));
     return (uint*)retVal;
   }

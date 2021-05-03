@@ -103,10 +103,10 @@ public unsafe class CResNDB : CRes {
   public byte* m_pNDBData {
     set {
       NWNXLibPINVOKE.CResNDB_m_pNDBData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResNDB_m_pNDBData_get(swigCPtr); 
-        return (byte*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CResNDB_m_pNDBData_get(swigCPtr);
+        return (byte*)retVal;
     }
 
   }
@@ -114,7 +114,7 @@ public unsafe class CResNDB : CRes {
   public CResNDB() : this(NWNXLibPINVOKE.new_CResNDB(), true) {
   }
 
-  public byte* GetNDBDataPtr() { 
+  public byte* GetNDBDataPtr() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CResNDB_GetNDBDataPtr(swigCPtr);
     return (byte*)retVal;
   }

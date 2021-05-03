@@ -94,12 +94,12 @@ public unsafe class CNWSInventory : global::System.IDisposable {
   public NativeArray<uint> m_pEquipSlot {
     set {
       NWNXLibPINVOKE.CNWSInventory_m_pEquipSlot_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSInventory_m_pEquipSlot_get(swigCPtr);
       NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 18);
 
-      return retVal; // uint[18] 
+      return retVal; // uint[18]
     }
 
   }

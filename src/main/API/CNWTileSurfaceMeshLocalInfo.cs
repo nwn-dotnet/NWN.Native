@@ -94,12 +94,12 @@ public unsafe class CNWTileSurfaceMeshLocalInfo : global::System.IDisposable {
   public NativeArray<int> pnEdgeUsed {
     set {
       NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnEdgeUsed_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnEdgeUsed_get(swigCPtr);
       NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 12);
 
-      return retVal; // int[12] 
+      return retVal; // int[12]
     }
 
   }
@@ -107,7 +107,7 @@ public unsafe class CNWTileSurfaceMeshLocalInfo : global::System.IDisposable {
   public VectorArray pfVertex {
     set {
       NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pfVertex_set(swigCPtr, VectorArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pfVertex_get(swigCPtr);;
         VectorArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new VectorArray(cPtr, false);
@@ -119,12 +119,12 @@ public unsafe class CNWTileSurfaceMeshLocalInfo : global::System.IDisposable {
   public NativeArray<int> pnVertexIndex {
     set {
       NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnVertexIndex_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnVertexIndex_get(swigCPtr);
       NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 3);
 
-      return retVal; // int[3] 
+      return retVal; // int[3]
     }
 
   }
@@ -132,12 +132,12 @@ public unsafe class CNWTileSurfaceMeshLocalInfo : global::System.IDisposable {
   public NativeArray<int> pnTriangleAdjacency {
     set {
       NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnTriangleAdjacency_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWTileSurfaceMeshLocalInfo_pnTriangleAdjacency_get(swigCPtr);
       NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 3);
 
-      return retVal; // int[3] 
+      return retVal; // int[3]
     }
 
   }

@@ -236,10 +236,10 @@ public unsafe class CGameEffect : global::System.IDisposable {
   public int* m_nParamInteger {
     set {
       NWNXLibPINVOKE.CGameEffect_m_nParamInteger_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CGameEffect_m_nParamInteger_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CGameEffect_m_nParamInteger_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -247,12 +247,12 @@ public unsafe class CGameEffect : global::System.IDisposable {
   public NativeArray<float> m_nParamFloat {
     set {
       NWNXLibPINVOKE.CGameEffect_m_nParamFloat_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CGameEffect_m_nParamFloat_get(swigCPtr);
       NativeArray<float> retVal = new NativeArray<float>(arrayPtr, 4);
 
-      return retVal; // float[4] 
+      return retVal; // float[4]
     }
 
   }
@@ -260,7 +260,7 @@ public unsafe class CGameEffect : global::System.IDisposable {
   public CExoStringArray m_sParamString {
     set {
       NWNXLibPINVOKE.CGameEffect_m_sParamString_set(swigCPtr, CExoStringArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CGameEffect_m_sParamString_get(swigCPtr);;
         CExoStringArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoStringArray(cPtr, false);
@@ -272,12 +272,12 @@ public unsafe class CGameEffect : global::System.IDisposable {
   public NativeArray<uint> m_oidParamObjectID {
     set {
       NWNXLibPINVOKE.CGameEffect_m_oidParamObjectID_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CGameEffect_m_oidParamObjectID_get(swigCPtr);
       NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 4);
 
-      return retVal; // uint[4] 
+      return retVal; // uint[4]
     }
 
   }
@@ -285,7 +285,7 @@ public unsafe class CGameEffect : global::System.IDisposable {
   public VectorArray m_vParamVector {
     set {
       NWNXLibPINVOKE.CGameEffect_m_vParamVector_set(swigCPtr, VectorArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CGameEffect_m_vParamVector_get(swigCPtr);;
         VectorArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new VectorArray(cPtr, false);

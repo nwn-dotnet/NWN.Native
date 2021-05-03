@@ -99,12 +99,12 @@ public unsafe class CNWItem : ICNWItem, global::System.IDisposable {
   public NativeArray<byte> m_nLayeredTextureColors {
     set {
       NWNXLibPINVOKE.CNWItem_m_nLayeredTextureColors_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWItem_m_nLayeredTextureColors_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 6);
 
-      return retVal; // byte[6] 
+      return retVal; // byte[6]
     }
 
   }
@@ -112,12 +112,12 @@ public unsafe class CNWItem : ICNWItem, global::System.IDisposable {
   public NativeArray<global::System.IntPtr> m_pLayeredTextureColorsPerPart {
     set {
       NWNXLibPINVOKE.CNWItem_m_pLayeredTextureColorsPerPart_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWItem_m_pLayeredTextureColorsPerPart_get(swigCPtr);
       NativeArray<global::System.IntPtr> retVal = new NativeArray<global::System.IntPtr>(arrayPtr, 6);
 
-      return retVal; // byte*[6] 
+      return retVal; // byte*[6]
     }
 
   }

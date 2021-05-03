@@ -227,7 +227,7 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   public CExoStringArray m_sScripts {
     set {
       NWNXLibPINVOKE.CNWSArea_m_sScripts_set(swigCPtr, CExoStringArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSArea_m_sScripts_get(swigCPtr);;
         CExoStringArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoStringArray(cPtr, false);
@@ -301,10 +301,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   public int* m_pnInterTileTravel {
     set {
       NWNXLibPINVOKE.CNWSArea_m_pnInterTileTravel_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pnInterTileTravel_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pnInterTileTravel_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -312,10 +312,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   public float* m_pfInterTileExit {
     set {
       NWNXLibPINVOKE.CNWSArea_m_pfInterTileExit_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pfInterTileExit_get(swigCPtr); 
-        return (float*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pfInterTileExit_get(swigCPtr);
+        return (float*)retVal;
     }
 
   }
@@ -323,10 +323,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   public byte* m_pnInterTileRegionDepths {
     set {
       NWNXLibPINVOKE.CNWSArea_m_pnInterTileRegionDepths_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pnInterTileRegionDepths_get(swigCPtr); 
-        return (byte*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pnInterTileRegionDepths_get(swigCPtr);
+        return (byte*)retVal;
     }
 
   }
@@ -426,10 +426,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   public float* g_pfUnsmoothedWPList {
     set {
       NWNXLibPINVOKE.CNWSArea_g_pfUnsmoothedWPList_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_g_pfUnsmoothedWPList_get(swigCPtr); 
-        return (float*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_g_pfUnsmoothedWPList_get(swigCPtr);
+        return (float*)retVal;
     }
 
   }
@@ -447,10 +447,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   public float* g_pfSmoothedWPList {
     set {
       NWNXLibPINVOKE.CNWSArea_g_pfSmoothedWPList_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_g_pfSmoothedWPList_get(swigCPtr); 
-        return (float*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_g_pfSmoothedWPList_get(swigCPtr);
+        return (float*)retVal;
     }
 
   }
@@ -529,10 +529,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   public int* m_pbInterTileDeniedExitCheck {
     set {
       NWNXLibPINVOKE.CNWSArea_m_pbInterTileDeniedExitCheck_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pbInterTileDeniedExitCheck_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pbInterTileDeniedExitCheck_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }
@@ -1358,10 +1358,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   public void* m_pNwnxData {
     set {
       NWNXLibPINVOKE.CNWSArea_m_pNwnxData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pNwnxData_get(swigCPtr); 
-        return (void*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pNwnxData_get(swigCPtr);
+        return (void*)retVal;
     }
 
   }

@@ -125,12 +125,12 @@ public unsafe class CTlkTableToken : global::System.IDisposable {
   public NativeArray<uint> m_nStrRef {
     set {
       NWNXLibPINVOKE.CTlkTableToken_m_nStrRef_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CTlkTableToken_m_nStrRef_get(swigCPtr);
       NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 4);
 
-      return retVal; // uint[4] 
+      return retVal; // uint[4]
     }
 
   }

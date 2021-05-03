@@ -110,7 +110,7 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public override void* CopyGameDefinedStructure(int nEngineStructure, void* pStructureSrc) { 
+  public override void* CopyGameDefinedStructure(int nEngineStructure, void* pStructureSrc) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_CopyGameDefinedStructure(swigCPtr, nEngineStructure, (global::System.IntPtr)pStructureSrc);
     return (void*)retVal;
   }
@@ -124,7 +124,7 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     NWNXLibPINVOKE.CNWVirtualMachineCommands_DestroyGameDefinedStructure(swigCPtr, nEngineStructure, (global::System.IntPtr)pStructureToDelete);
   }
 
-  public override void* CreateGameDefinedStructure(int nEngineStructure) { 
+  public override void* CreateGameDefinedStructure(int nEngineStructure) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_CreateGameDefinedStructure(swigCPtr, nEngineStructure);
     return (void*)retVal;
   }

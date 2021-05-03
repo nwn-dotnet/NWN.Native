@@ -104,12 +104,12 @@ public unsafe class STR_RES_HEADER_OLD : global::System.IDisposable {
   public NativeArray<byte> sndResRef {
     set {
       NWNXLibPINVOKE.STR_RES_HEADER_OLD_sndResRef_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.STR_RES_HEADER_OLD_sndResRef_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16);
 
-      return retVal; // byte[16] 
+      return retVal; // byte[16]
     }
 
   }

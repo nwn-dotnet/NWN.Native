@@ -94,7 +94,7 @@ public unsafe class CObjectTableManager : global::System.IDisposable {
   public CObjectLookupTablePtrArray m_pObjectTableArray {
     set {
       NWNXLibPINVOKE.CObjectTableManager_m_pObjectTableArray_set(swigCPtr, CObjectLookupTablePtrArray.getCPtr(value));
-    }  
+    } 
     get {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CObjectTableManager_m_pObjectTableArray_get(swigCPtr);;
         CObjectLookupTablePtrArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CObjectLookupTablePtrArray(cPtr, false);

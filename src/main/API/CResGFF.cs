@@ -154,10 +154,10 @@ public unsafe class CResGFF : CRes {
   public byte* m_pDDFileHeader {
     set {
       NWNXLibPINVOKE.CResGFF_m_pDDFileHeader_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_m_pDDFileHeader_get(swigCPtr); 
-        return (byte*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_m_pDDFileHeader_get(swigCPtr);
+        return (byte*)retVal;
     }
 
   }
@@ -238,10 +238,10 @@ public unsafe class CResGFF : CRes {
   public byte* m_pDataField {
     set {
       NWNXLibPINVOKE.CResGFF_m_pDataField_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_m_pDataField_get(swigCPtr); 
-        return (byte*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_m_pDataField_get(swigCPtr);
+        return (byte*)retVal;
     }
 
   }
@@ -259,10 +259,10 @@ public unsafe class CResGFF : CRes {
   public byte* m_pDataLayoutField {
     set {
       NWNXLibPINVOKE.CResGFF_m_pDataLayoutField_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_m_pDataLayoutField_get(swigCPtr); 
-        return (byte*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_m_pDataLayoutField_get(swigCPtr);
+        return (byte*)retVal;
     }
 
   }
@@ -290,10 +290,10 @@ public unsafe class CResGFF : CRes {
   public byte* m_pDataLayoutList {
     set {
       NWNXLibPINVOKE.CResGFF_m_pDataLayoutList_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_m_pDataLayoutList_get(swigCPtr); 
-        return (byte*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_m_pDataLayoutList_get(swigCPtr);
+        return (byte*)retVal;
     }
 
   }
@@ -622,12 +622,12 @@ public unsafe class CResGFF : CRes {
     return ret;
   }
 
-  public void* ReadFieldVOID(CResStruct pStructure, void* pVariable, uint nSize, string szFieldID, int* bSuccess, void* pDefault) { 
+  public void* ReadFieldVOID(CResStruct pStructure, void* pVariable, uint nSize, string szFieldID, int* bSuccess, void* pDefault) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_ReadFieldVOID__SWIG_0(swigCPtr, CResStruct.getCPtr(pStructure), (global::System.IntPtr)pVariable, nSize, szFieldID, (global::System.IntPtr)bSuccess, (global::System.IntPtr)pDefault);
     return (void*)retVal;
   }
 
-  public void* ReadFieldVOID(CResStruct pStructure, void* pVariable, uint nSize, string szFieldID, int* bSuccess) { 
+  public void* ReadFieldVOID(CResStruct pStructure, void* pVariable, uint nSize, string szFieldID, int* bSuccess) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_ReadFieldVOID__SWIG_1(swigCPtr, CResStruct.getCPtr(pStructure), (global::System.IntPtr)pVariable, nSize, szFieldID, (global::System.IntPtr)bSuccess);
     return (void*)retVal;
   }
@@ -806,17 +806,17 @@ public unsafe class CResGFF : CRes {
     return ret;
   }
 
-  public byte* GetDataField(CResGFFField pField, uint* nMaxSize) { 
+  public byte* GetDataField(CResGFFField pField, uint* nMaxSize) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_GetDataField(swigCPtr, CResGFFField.getCPtr(pField), (global::System.IntPtr)nMaxSize);
     return (byte*)retVal;
   }
 
-  public byte* GetDataLayoutField(CResGFFField pField, uint* nMaxSize) { 
+  public byte* GetDataLayoutField(CResGFFField pField, uint* nMaxSize) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_GetDataLayoutField(swigCPtr, CResGFFField.getCPtr(pField), (global::System.IntPtr)nMaxSize);
     return (byte*)retVal;
   }
 
-  public byte* GetDataLayoutList(CResGFFField pField, uint* nMaxSize) { 
+  public byte* GetDataLayoutList(CResGFFField pField, uint* nMaxSize) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_GetDataLayoutList(swigCPtr, CResGFFField.getCPtr(pField), (global::System.IntPtr)nMaxSize);
     return (byte*)retVal;
   }
@@ -857,17 +857,17 @@ public unsafe class CResGFF : CRes {
     return ret;
   }
 
-  public byte* AddDataField(uint nCurrentOffset, uint nCurrentSize, uint nNewSize) { 
+  public byte* AddDataField(uint nCurrentOffset, uint nCurrentSize, uint nNewSize) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_AddDataField(swigCPtr, nCurrentOffset, nCurrentSize, nNewSize);
     return (byte*)retVal;
   }
 
-  public byte* AddDataLayoutField(uint nCurrentOffset, uint nCurrentSize, uint nNewSize) { 
+  public byte* AddDataLayoutField(uint nCurrentOffset, uint nCurrentSize, uint nNewSize) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_AddDataLayoutField(swigCPtr, nCurrentOffset, nCurrentSize, nNewSize);
     return (byte*)retVal;
   }
 
-  public byte* AddDataLayoutList(uint nCurrentOffset, uint nCurrentSize, uint nNewSize) { 
+  public byte* AddDataLayoutList(uint nCurrentOffset, uint nCurrentSize, uint nNewSize) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CResGFF_AddDataLayoutList(swigCPtr, nCurrentOffset, nCurrentSize, nNewSize);
     return (byte*)retVal;
   }

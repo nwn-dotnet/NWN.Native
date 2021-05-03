@@ -83,10 +83,10 @@ public unsafe class CResLTR : CRes {
   public float*** m_pStartTripleLetterProb {
     set {
       NWNXLibPINVOKE.CResLTR_m_pStartTripleLetterProb_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pStartTripleLetterProb_get(swigCPtr); 
-        return (float***)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pStartTripleLetterProb_get(swigCPtr);
+        return (float***)retVal;
     }
 
   }
@@ -94,10 +94,10 @@ public unsafe class CResLTR : CRes {
   public float*** m_pMiddleTripleLetterProb {
     set {
       NWNXLibPINVOKE.CResLTR_m_pMiddleTripleLetterProb_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pMiddleTripleLetterProb_get(swigCPtr); 
-        return (float***)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pMiddleTripleLetterProb_get(swigCPtr);
+        return (float***)retVal;
     }
 
   }
@@ -105,10 +105,10 @@ public unsafe class CResLTR : CRes {
   public float*** m_pEndTripleLetterProb {
     set {
       NWNXLibPINVOKE.CResLTR_m_pEndTripleLetterProb_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pEndTripleLetterProb_get(swigCPtr); 
-        return (float***)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pEndTripleLetterProb_get(swigCPtr);
+        return (float***)retVal;
     }
 
   }
@@ -116,10 +116,10 @@ public unsafe class CResLTR : CRes {
   public float** m_pStartDoubleLetterProb {
     set {
       NWNXLibPINVOKE.CResLTR_m_pStartDoubleLetterProb_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pStartDoubleLetterProb_get(swigCPtr); 
-        return (float**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pStartDoubleLetterProb_get(swigCPtr);
+        return (float**)retVal;
     }
 
   }
@@ -127,10 +127,10 @@ public unsafe class CResLTR : CRes {
   public float** m_pMiddleDoubleLetterProb {
     set {
       NWNXLibPINVOKE.CResLTR_m_pMiddleDoubleLetterProb_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pMiddleDoubleLetterProb_get(swigCPtr); 
-        return (float**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pMiddleDoubleLetterProb_get(swigCPtr);
+        return (float**)retVal;
     }
 
   }
@@ -138,10 +138,10 @@ public unsafe class CResLTR : CRes {
   public float** m_pEndDoubleLetterProb {
     set {
       NWNXLibPINVOKE.CResLTR_m_pEndDoubleLetterProb_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pEndDoubleLetterProb_get(swigCPtr); 
-        return (float**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pEndDoubleLetterProb_get(swigCPtr);
+        return (float**)retVal;
     }
 
   }
@@ -149,10 +149,10 @@ public unsafe class CResLTR : CRes {
   public float* m_pStartSingleLetterProb {
     set {
       NWNXLibPINVOKE.CResLTR_m_pStartSingleLetterProb_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pStartSingleLetterProb_get(swigCPtr); 
-        return (float*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pStartSingleLetterProb_get(swigCPtr);
+        return (float*)retVal;
     }
 
   }
@@ -160,10 +160,10 @@ public unsafe class CResLTR : CRes {
   public float* m_pMiddleSingleLetterProb {
     set {
       NWNXLibPINVOKE.CResLTR_m_pMiddleSingleLetterProb_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pMiddleSingleLetterProb_get(swigCPtr); 
-        return (float*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pMiddleSingleLetterProb_get(swigCPtr);
+        return (float*)retVal;
     }
 
   }
@@ -171,10 +171,10 @@ public unsafe class CResLTR : CRes {
   public float* m_pEndSingleLetterProb {
     set {
       NWNXLibPINVOKE.CResLTR_m_pEndSingleLetterProb_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pEndSingleLetterProb_get(swigCPtr); 
-        return (float*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pEndSingleLetterProb_get(swigCPtr);
+        return (float*)retVal;
     }
 
   }
@@ -193,10 +193,10 @@ public unsafe class CResLTR : CRes {
   public byte* m_pLTRData {
     set {
       NWNXLibPINVOKE.CResLTR_m_pLTRData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pLTRData_get(swigCPtr); 
-        return (byte*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CResLTR_m_pLTRData_get(swigCPtr);
+        return (byte*)retVal;
     }
 
   }

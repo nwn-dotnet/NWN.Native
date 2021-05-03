@@ -94,10 +94,10 @@ public unsafe class CServerOptionLookup : global::System.IDisposable {
   public int* pData {
     set {
       NWNXLibPINVOKE.CServerOptionLookup_pData_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CServerOptionLookup_pData_get(swigCPtr); 
-        return (int*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CServerOptionLookup_pData_get(swigCPtr);
+        return (int*)retVal;
     }
 
   }

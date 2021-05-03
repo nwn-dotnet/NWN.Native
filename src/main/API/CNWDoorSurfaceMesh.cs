@@ -94,12 +94,12 @@ public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
   public NativeArray<int> m_pnVertices {
     set {
       NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnVertices_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnVertices_get(swigCPtr);
       NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 3);
 
-      return retVal; // int[3] 
+      return retVal; // int[3]
     }
 
   }
@@ -107,12 +107,12 @@ public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
   public NativeArray<global::System.IntPtr> m_ppfVertices {
     set {
       NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppfVertices_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppfVertices_get(swigCPtr);
       NativeArray<global::System.IntPtr> retVal = new NativeArray<global::System.IntPtr>(arrayPtr, 3);
 
-      return retVal; // float*[3] 
+      return retVal; // float*[3]
     }
 
   }
@@ -120,12 +120,12 @@ public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
   public NativeArray<int> m_pnTriangles {
     set {
       NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnTriangles_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnTriangles_get(swigCPtr);
       NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 3);
 
-      return retVal; // int[3] 
+      return retVal; // int[3]
     }
 
   }
@@ -133,12 +133,12 @@ public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
   public NativeArray<global::System.IntPtr> m_ppnTriangles {
     set {
       NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangles_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangles_get(swigCPtr);
       NativeArray<global::System.IntPtr> retVal = new NativeArray<global::System.IntPtr>(arrayPtr, 3);
 
-      return retVal; // int*[3] 
+      return retVal; // int*[3]
     }
 
   }
@@ -146,12 +146,12 @@ public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
   public NativeArray<global::System.IntPtr> m_ppnTriangleMaterial {
     set {
       NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangleMaterial_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_ppnTriangleMaterial_get(swigCPtr);
       NativeArray<global::System.IntPtr> retVal = new NativeArray<global::System.IntPtr>(arrayPtr, 3);
 
-      return retVal; // int*[3] 
+      return retVal; // int*[3]
     }
 
   }

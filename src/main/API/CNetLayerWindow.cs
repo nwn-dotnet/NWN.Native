@@ -325,12 +325,12 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
   public NativeArray<ushort> m_pOutgoingBuffers {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_pOutgoingBuffers_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pOutgoingBuffers_get(swigCPtr);
       NativeArray<ushort> retVal = new NativeArray<ushort>(arrayPtr, 16);
 
-      return retVal; // ushort[16] 
+      return retVal; // ushort[16]
     }
 
   }
@@ -338,12 +338,12 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
   public NativeArray<int> m_pbTimeOutSet {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutSet_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutSet_get(swigCPtr);
       NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 16);
 
-      return retVal; // int[16] 
+      return retVal; // int[16]
     }
 
   }
@@ -351,12 +351,12 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
   public NativeArray<uint> m_pnTimeOut {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_pnTimeOut_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pnTimeOut_get(swigCPtr);
       NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 16);
 
-      return retVal; // uint[16] 
+      return retVal; // uint[16]
     }
 
   }
@@ -364,12 +364,12 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
   public NativeArray<int> m_pbTimeOutDelay {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutDelay_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutDelay_get(swigCPtr);
       NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 16);
 
-      return retVal; // int[16] 
+      return retVal; // int[16]
     }
 
   }
@@ -377,12 +377,12 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
   public NativeArray<ushort> m_pIncomingBuffers {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_pIncomingBuffers_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pIncomingBuffers_get(swigCPtr);
       NativeArray<ushort> retVal = new NativeArray<ushort>(arrayPtr, 16);
 
-      return retVal; // ushort[16] 
+      return retVal; // ushort[16]
     }
 
   }
@@ -390,12 +390,12 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
   public NativeArray<int> m_pbArrived {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_pbArrived_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pbArrived_get(swigCPtr);
       NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 16);
 
-      return retVal; // int[16] 
+      return retVal; // int[16]
     }
 
   }
@@ -447,12 +447,12 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
   public NativeArray<byte> m_pLowPriorityHoldBuffer {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_pLowPriorityHoldBuffer_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pLowPriorityHoldBuffer_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 960);
 
-      return retVal; // byte[960] 
+      return retVal; // byte[960]
     }
 
   }
@@ -460,12 +460,12 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
   public NativeArray<byte> m_pHighPriorityHoldBuffer {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_pHighPriorityHoldBuffer_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pHighPriorityHoldBuffer_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 960);
 
-      return retVal; // byte[960] 
+      return retVal; // byte[960]
     }
 
   }

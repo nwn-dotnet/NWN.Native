@@ -204,12 +204,12 @@ public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
   public NativeArray<byte> pMD5 {
     set {
       NWNXLibPINVOKE.ENCAPSULATED_HEADER_pMD5_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.ENCAPSULATED_HEADER_pMD5_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16);
 
-      return retVal; // byte[16] 
+      return retVal; // byte[16]
     }
 
   }
@@ -217,12 +217,12 @@ public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
   public NativeArray<byte> pUnused {
     set {
       NWNXLibPINVOKE.ENCAPSULATED_HEADER_pUnused_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.ENCAPSULATED_HEADER_pUnused_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 100);
 
-      return retVal; // byte[100] 
+      return retVal; // byte[100]
     }
 
   }

@@ -254,10 +254,10 @@ public unsafe class CNWRace : global::System.IDisposable {
   public ushort* m_lstFeatTable {
     set {
       NWNXLibPINVOKE.CNWRace_m_lstFeatTable_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWRace_m_lstFeatTable_get(swigCPtr); 
-        return (ushort*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWRace_m_lstFeatTable_get(swigCPtr);
+        return (ushort*)retVal;
     }
 
   }

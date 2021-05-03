@@ -94,12 +94,12 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
   public NativeArray<byte> ScratchMessageBuffer {
     set {
       NWNXLibPINVOKE.CServerExoAppInternal_ScratchMessageBuffer_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CServerExoAppInternal_ScratchMessageBuffer_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 65536);
 
-      return retVal; // byte[65536] 
+      return retVal; // byte[65536]
     }
 
   }
@@ -190,10 +190,10 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
   public uint* m_pPendingAuthorization {
     set {
       NWNXLibPINVOKE.CServerExoAppInternal_m_pPendingAuthorization_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CServerExoAppInternal_m_pPendingAuthorization_get(swigCPtr); 
-        return (uint*)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CServerExoAppInternal_m_pPendingAuthorization_get(swigCPtr);
+        return (uint*)retVal;
     }
 
   }

@@ -725,12 +725,12 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
   public NativeArray<byte> m_nClass {
     set {
       NWNXLibPINVOKE.CLastUpdateObject_m_nClass_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CLastUpdateObject_m_nClass_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 3);
 
-      return retVal; // byte[3] 
+      return retVal; // byte[3]
     }
 
   }
@@ -738,12 +738,12 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
   public NativeArray<byte> m_nLevel {
     set {
       NWNXLibPINVOKE.CLastUpdateObject_m_nLevel_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CLastUpdateObject_m_nLevel_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 3);
 
-      return retVal; // byte[3] 
+      return retVal; // byte[3]
     }
 
   }

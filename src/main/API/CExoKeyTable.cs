@@ -207,10 +207,10 @@ public unsafe class CExoKeyTable : global::System.IDisposable {
   public void** m_pExoPackedFile {
     set {
       NWNXLibPINVOKE.CExoKeyTable_m_pExoPackedFile_set(swigCPtr, (global::System.IntPtr)value);
-    }  
+    } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoKeyTable_m_pExoPackedFile_get(swigCPtr); 
-        return (void**)retVal; 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoKeyTable_m_pExoPackedFile_get(swigCPtr);
+        return (void**)retVal;
     }
 
   }

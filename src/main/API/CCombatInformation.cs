@@ -194,12 +194,12 @@ public unsafe class CCombatInformation : global::System.IDisposable {
   public NativeArray<byte> m_nCreatureDamageDice {
     set {
       NWNXLibPINVOKE.CCombatInformation_m_nCreatureDamageDice_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CCombatInformation_m_nCreatureDamageDice_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 3);
 
-      return retVal; // byte[3] 
+      return retVal; // byte[3]
     }
 
   }
@@ -207,12 +207,12 @@ public unsafe class CCombatInformation : global::System.IDisposable {
   public NativeArray<byte> m_nCreatureDamageDie {
     set {
       NWNXLibPINVOKE.CCombatInformation_m_nCreatureDamageDie_set(swigCPtr, value);
-    }  
+    } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CCombatInformation_m_nCreatureDamageDie_get(swigCPtr);
       NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 3);
 
-      return retVal; // byte[3] 
+      return retVal; // byte[3]
     }
 
   }
