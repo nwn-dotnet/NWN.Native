@@ -5158,8 +5158,8 @@ public unsafe class CNWSCreature : CNWSObject {
     return ret;
   }
 
-  public uint WalkUpdateLocation() {
-    uint ret = NWNXLibPINVOKE.CNWSCreature_WalkUpdateLocation(swigCPtr);
+  public uint WalkUpdateLocation(ushort nActionGroupID) {
+    uint ret = NWNXLibPINVOKE.CNWSCreature_WalkUpdateLocation(swigCPtr, nActionGroupID);
     return ret;
   }
 
