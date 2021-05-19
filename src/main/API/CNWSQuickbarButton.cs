@@ -14,14 +14,9 @@ public unsafe class CNWSQuickbarButton : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWSQuickbarButton(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWSQuickbarButton(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSQuickbarButton(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSQuickbarButton obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWSQuickbarButton : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWSQuickbarButton : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSQuickbarButton self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSQuickbarButton FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSQuickbarButton((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSQuickbarButton FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSQuickbarButton(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSQuickbarButton other) {
@@ -90,7 +89,7 @@ public unsafe class CNWSQuickbarButton : global::System.IDisposable {
   public static bool operator !=(CNWSQuickbarButton left, CNWSQuickbarButton right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public uint m_oidItem {
     set {
       NWNXLibPINVOKE.CNWSQuickbarButton_m_oidItem_set(swigCPtr, value);

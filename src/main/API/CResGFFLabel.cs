@@ -14,14 +14,9 @@ public unsafe class CResGFFLabel : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CResGFFLabel(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CResGFFLabel(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CResGFFLabel(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CResGFFLabel obj) {
@@ -48,7 +43,7 @@ public unsafe class CResGFFLabel : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CResGFFLabel : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CResGFFLabel self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CResGFFLabel FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CResGFFLabel((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CResGFFLabel FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CResGFFLabel(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CResGFFLabel other) {
@@ -90,7 +89,7 @@ public unsafe class CResGFFLabel : global::System.IDisposable {
   public static bool operator !=(CResGFFLabel left, CResGFFLabel right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public string m_pLabel {
     set {
       NWNXLibPINVOKE.CResGFFLabel_m_pLabel_set(swigCPtr, value);

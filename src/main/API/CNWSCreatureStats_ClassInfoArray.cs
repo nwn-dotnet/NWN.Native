@@ -14,14 +14,9 @@ public unsafe class CNWSCreatureStats_ClassInfoArray : global::System.IDisposabl
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWSCreatureStats_ClassInfoArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWSCreatureStats_ClassInfoArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSCreatureStats_ClassInfoArray(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSCreatureStats_ClassInfoArray obj) {
@@ -48,28 +43,23 @@ public unsafe class CNWSCreatureStats_ClassInfoArray : global::System.IDisposabl
       }
     }
   }
-
-  public CNWSCreatureStats_ClassInfo this[int index] {
-    get {
-      return GetItem(index);
-    }
-    set {
-      SetItem(index, value);
-    }
-  }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
   }
 
-  public static implicit operator void*(CNWSCreatureStats_ClassInfoArray self) {
+  public static unsafe implicit operator void*(CNWSCreatureStats_ClassInfoArray self) {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSCreatureStats_ClassInfoArray self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSCreatureStats_ClassInfoArray FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSCreatureStats_ClassInfoArray((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSCreatureStats_ClassInfoArray FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSCreatureStats_ClassInfoArray(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSCreatureStats_ClassInfoArray other) {
@@ -99,7 +89,16 @@ public unsafe class CNWSCreatureStats_ClassInfoArray : global::System.IDisposabl
   public static bool operator !=(CNWSCreatureStats_ClassInfoArray left, CNWSCreatureStats_ClassInfoArray right) {
     return !Equals(left, right);
   }
+/*@SWIG@*/
 
+  public CNWSCreatureStats_ClassInfo this[int index] {
+    get {
+      return GetItem(index);
+    }
+    set {
+      SetItem(index, value);
+    }
+  }
   public CNWSCreatureStats_ClassInfoArray(int nElements) : this(NWNXLibPINVOKE.new_CNWSCreatureStats_ClassInfoArray(nElements), true) {
   }
 

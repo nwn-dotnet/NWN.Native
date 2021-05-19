@@ -14,14 +14,9 @@ public unsafe class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposab
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoArrayListCNWVisibilityNodePtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoArrayListCNWVisibilityNodePtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoArrayListCNWVisibilityNodePtr(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListCNWVisibilityNodePtr obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposab
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposab
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoArrayListCNWVisibilityNodePtr self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoArrayListCNWVisibilityNodePtr FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoArrayListCNWVisibilityNodePtr((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoArrayListCNWVisibilityNodePtr FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoArrayListCNWVisibilityNodePtr(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoArrayListCNWVisibilityNodePtr other) {
@@ -90,7 +89,7 @@ public unsafe class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposab
   public static bool operator !=(CExoArrayListCNWVisibilityNodePtr left, CExoArrayListCNWVisibilityNodePtr right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public void** element {
     set {
       NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_element_set(swigCPtr, (global::System.IntPtr)value);

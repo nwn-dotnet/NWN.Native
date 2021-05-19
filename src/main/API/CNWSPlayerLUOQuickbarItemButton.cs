@@ -14,14 +14,9 @@ public unsafe class CNWSPlayerLUOQuickbarItemButton : global::System.IDisposable
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWSPlayerLUOQuickbarItemButton(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWSPlayerLUOQuickbarItemButton(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSPlayerLUOQuickbarItemButton(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSPlayerLUOQuickbarItemButton obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWSPlayerLUOQuickbarItemButton : global::System.IDisposable
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWSPlayerLUOQuickbarItemButton : global::System.IDisposable
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSPlayerLUOQuickbarItemButton self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSPlayerLUOQuickbarItemButton FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSPlayerLUOQuickbarItemButton((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSPlayerLUOQuickbarItemButton FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSPlayerLUOQuickbarItemButton(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSPlayerLUOQuickbarItemButton other) {
@@ -90,7 +89,7 @@ public unsafe class CNWSPlayerLUOQuickbarItemButton : global::System.IDisposable
   public static bool operator !=(CNWSPlayerLUOQuickbarItemButton left, CNWSPlayerLUOQuickbarItemButton right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public uint m_oidItem {
     set {
       NWNXLibPINVOKE.CNWSPlayerLUOQuickbarItemButton_m_oidItem_set(swigCPtr, value);

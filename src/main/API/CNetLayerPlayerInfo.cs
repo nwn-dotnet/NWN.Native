@@ -14,14 +14,9 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNetLayerPlayerInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNetLayerPlayerInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNetLayerPlayerInfo(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNetLayerPlayerInfo obj) {
@@ -48,7 +43,7 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNetLayerPlayerInfo self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNetLayerPlayerInfo FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNetLayerPlayerInfo((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNetLayerPlayerInfo FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNetLayerPlayerInfo(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNetLayerPlayerInfo other) {
@@ -90,7 +89,7 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
   public static bool operator !=(CNetLayerPlayerInfo left, CNetLayerPlayerInfo right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public int m_bPlayerInUse {
     set {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bPlayerInUse_set(swigCPtr, value);

@@ -14,14 +14,9 @@ public unsafe class CScriptCompilerIdentifierHashTableEntry : global::System.IDi
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CScriptCompilerIdentifierHashTableEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CScriptCompilerIdentifierHashTableEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CScriptCompilerIdentifierHashTableEntry(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CScriptCompilerIdentifierHashTableEntry obj) {
@@ -48,7 +43,7 @@ public unsafe class CScriptCompilerIdentifierHashTableEntry : global::System.IDi
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CScriptCompilerIdentifierHashTableEntry : global::System.IDi
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CScriptCompilerIdentifierHashTableEntry self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CScriptCompilerIdentifierHashTableEntry FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CScriptCompilerIdentifierHashTableEntry((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CScriptCompilerIdentifierHashTableEntry FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CScriptCompilerIdentifierHashTableEntry(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CScriptCompilerIdentifierHashTableEntry other) {
@@ -90,7 +89,7 @@ public unsafe class CScriptCompilerIdentifierHashTableEntry : global::System.IDi
   public static bool operator !=(CScriptCompilerIdentifierHashTableEntry left, CScriptCompilerIdentifierHashTableEntry right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public uint m_nHashValue {
     set {
       NWNXLibPINVOKE.CScriptCompilerIdentifierHashTableEntry_m_nHashValue_set(swigCPtr, value);

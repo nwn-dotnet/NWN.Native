@@ -14,14 +14,9 @@ public unsafe class CServerAIMaster : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CServerAIMaster(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CServerAIMaster(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CServerAIMaster(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CServerAIMaster obj) {
@@ -48,7 +43,7 @@ public unsafe class CServerAIMaster : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CServerAIMaster : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CServerAIMaster self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CServerAIMaster FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CServerAIMaster((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CServerAIMaster FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CServerAIMaster(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CServerAIMaster other) {
@@ -90,7 +89,7 @@ public unsafe class CServerAIMaster : global::System.IDisposable {
   public static bool operator !=(CServerAIMaster left, CServerAIMaster right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CServerExoAppInternal m_pExoAppInternal {
     set {
       NWNXLibPINVOKE.CServerAIMaster_m_pExoAppInternal_set(swigCPtr, CServerExoAppInternal.getCPtr(value));

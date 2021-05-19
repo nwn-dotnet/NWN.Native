@@ -14,14 +14,9 @@ public unsafe class CachedRulesetEntry : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CachedRulesetEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CachedRulesetEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CachedRulesetEntry(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CachedRulesetEntry obj) {
@@ -48,7 +43,7 @@ public unsafe class CachedRulesetEntry : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CachedRulesetEntry : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CachedRulesetEntry self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CachedRulesetEntry FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CachedRulesetEntry((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CachedRulesetEntry FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CachedRulesetEntry(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CachedRulesetEntry other) {
@@ -90,7 +89,7 @@ public unsafe class CachedRulesetEntry : global::System.IDisposable {
   public static bool operator !=(CachedRulesetEntry left, CachedRulesetEntry right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoString s {
     set {
       NWNXLibPINVOKE.CachedRulesetEntry_s_set(swigCPtr, CExoString.getCPtr(value));

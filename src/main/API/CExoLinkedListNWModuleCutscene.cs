@@ -14,14 +14,9 @@ public unsafe class CExoLinkedListNWModuleCutscene : global::System.IDisposable 
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoLinkedListNWModuleCutscene(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoLinkedListNWModuleCutscene(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoLinkedListNWModuleCutscene(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoLinkedListNWModuleCutscene obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoLinkedListNWModuleCutscene : global::System.IDisposable 
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoLinkedListNWModuleCutscene : global::System.IDisposable 
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoLinkedListNWModuleCutscene self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoLinkedListNWModuleCutscene FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoLinkedListNWModuleCutscene((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoLinkedListNWModuleCutscene FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoLinkedListNWModuleCutscene(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoLinkedListNWModuleCutscene other) {
@@ -90,7 +89,7 @@ public unsafe class CExoLinkedListNWModuleCutscene : global::System.IDisposable 
   public static bool operator !=(CExoLinkedListNWModuleCutscene left, CExoLinkedListNWModuleCutscene right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoLinkedListInternal m_pcExoLinkedListInternal {
     set {
       NWNXLibPINVOKE.CExoLinkedListNWModuleCutscene_m_pcExoLinkedListInternal_set(swigCPtr, CExoLinkedListInternal.getCPtr(value));

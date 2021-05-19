@@ -14,14 +14,9 @@ public unsafe class NWPlayerCharacterList_st : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public NWPlayerCharacterList_st(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal NWPlayerCharacterList_st(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public NWPlayerCharacterList_st(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(NWPlayerCharacterList_st obj) {
@@ -48,7 +43,7 @@ public unsafe class NWPlayerCharacterList_st : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class NWPlayerCharacterList_st : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(NWPlayerCharacterList_st self) {
-    return self.swigCPtr.Handle;
+  public static unsafe NWPlayerCharacterList_st FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new NWPlayerCharacterList_st((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static NWPlayerCharacterList_st FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new NWPlayerCharacterList_st(pointer, memoryOwn) : null;
   }
 
   public bool Equals(NWPlayerCharacterList_st other) {
@@ -90,7 +89,7 @@ public unsafe class NWPlayerCharacterList_st : global::System.IDisposable {
   public static bool operator !=(NWPlayerCharacterList_st left, NWPlayerCharacterList_st right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoLocString sLocFirstName {
     set {
       NWNXLibPINVOKE.NWPlayerCharacterList_st_sLocFirstName_set(swigCPtr, CExoLocString.getCPtr(value));

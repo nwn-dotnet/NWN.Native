@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CTlkResFile : CTlkFile {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CTlkResFile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CTlkResFile_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CTlkResFile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CTlkResFile_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CTlkResFile(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CTlkResFile_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CTlkResFile obj) {
@@ -37,7 +33,7 @@ public unsafe class CTlkResFile : CTlkFile {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CTlkResFile : CTlkFile {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CTlkResFile self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CTlkResFile FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CTlkResFile((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CTlkResFile FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CTlkResFile(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CTlkResFile other) {
@@ -79,7 +79,7 @@ public unsafe class CTlkResFile : CTlkFile {
   public static bool operator !=(CTlkResFile left, CTlkResFile right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CTlkResFile(CResRef pResRef) : this(NWNXLibPINVOKE.new_CTlkResFile(CResRef.getCPtr(pResRef)), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }

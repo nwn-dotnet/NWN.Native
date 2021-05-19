@@ -14,14 +14,9 @@ public unsafe class CGameObjectArrayNode : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CGameObjectArrayNode(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CGameObjectArrayNode(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CGameObjectArrayNode(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CGameObjectArrayNode obj) {
@@ -48,7 +43,7 @@ public unsafe class CGameObjectArrayNode : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CGameObjectArrayNode : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CGameObjectArrayNode self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CGameObjectArrayNode FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CGameObjectArrayNode((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CGameObjectArrayNode FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CGameObjectArrayNode(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CGameObjectArrayNode other) {
@@ -90,7 +89,7 @@ public unsafe class CGameObjectArrayNode : global::System.IDisposable {
   public static bool operator !=(CGameObjectArrayNode left, CGameObjectArrayNode right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public uint m_objectId {
     set {
       NWNXLibPINVOKE.CGameObjectArrayNode_m_objectId_set(swigCPtr, value);

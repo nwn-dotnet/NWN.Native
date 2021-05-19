@@ -15,14 +15,9 @@ public unsafe class VectorCExoString : global::System.IDisposable, global::Syste
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public VectorCExoString(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal VectorCExoString(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public VectorCExoString(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(VectorCExoString obj) {
@@ -49,7 +44,7 @@ public unsafe class VectorCExoString : global::System.IDisposable, global::Syste
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -60,8 +55,12 @@ public unsafe class VectorCExoString : global::System.IDisposable, global::Syste
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(VectorCExoString self) {
-    return self.swigCPtr.Handle;
+  public static unsafe VectorCExoString FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new VectorCExoString((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static VectorCExoString FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new VectorCExoString(pointer, memoryOwn) : null;
   }
 
   public bool Equals(VectorCExoString other) {
@@ -91,7 +90,7 @@ public unsafe class VectorCExoString : global::System.IDisposable, global::Syste
   public static bool operator !=(VectorCExoString left, VectorCExoString right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public VectorCExoString(global::System.Collections.IEnumerable c) : this() {
     if (c == null)
       throw new global::System.ArgumentNullException("c");

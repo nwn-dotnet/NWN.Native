@@ -14,14 +14,9 @@ public unsafe class SJournalEntry : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public SJournalEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal SJournalEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public SJournalEntry(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SJournalEntry obj) {
@@ -48,7 +43,7 @@ public unsafe class SJournalEntry : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class SJournalEntry : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(SJournalEntry self) {
-    return self.swigCPtr.Handle;
+  public static unsafe SJournalEntry FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new SJournalEntry((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static SJournalEntry FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new SJournalEntry(pointer, memoryOwn) : null;
   }
 
   public bool Equals(SJournalEntry other) {
@@ -90,7 +89,7 @@ public unsafe class SJournalEntry : global::System.IDisposable {
   public static bool operator !=(SJournalEntry left, SJournalEntry right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoLocString szName {
     set {
       NWNXLibPINVOKE.SJournalEntry_szName_set(swigCPtr, CExoLocString.getCPtr(value));

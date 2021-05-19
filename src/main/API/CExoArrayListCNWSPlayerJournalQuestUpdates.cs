@@ -14,14 +14,9 @@ public unsafe class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoArrayListCNWSPlayerJournalQuestUpdates(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoArrayListCNWSPlayerJournalQuestUpdates(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoArrayListCNWSPlayerJournalQuestUpdates(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListCNWSPlayerJournalQuestUpdates obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoArrayListCNWSPlayerJournalQuestUpdates self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoArrayListCNWSPlayerJournalQuestUpdates FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoArrayListCNWSPlayerJournalQuestUpdates((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoArrayListCNWSPlayerJournalQuestUpdates FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoArrayListCNWSPlayerJournalQuestUpdates(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoArrayListCNWSPlayerJournalQuestUpdates other) {
@@ -90,7 +89,7 @@ public unsafe class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.
   public static bool operator !=(CExoArrayListCNWSPlayerJournalQuestUpdates left, CExoArrayListCNWSPlayerJournalQuestUpdates right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CNWSPlayerJournalQuestUpdates element {
     set {
       NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_element_set(swigCPtr, CNWSPlayerJournalQuestUpdates.getCPtr(value));

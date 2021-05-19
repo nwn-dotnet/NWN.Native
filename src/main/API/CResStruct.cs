@@ -14,14 +14,9 @@ public unsafe class CResStruct : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CResStruct(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CResStruct(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CResStruct(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CResStruct obj) {
@@ -48,7 +43,7 @@ public unsafe class CResStruct : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CResStruct : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CResStruct self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CResStruct FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CResStruct((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CResStruct FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CResStruct(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CResStruct other) {
@@ -90,7 +89,7 @@ public unsafe class CResStruct : global::System.IDisposable {
   public static bool operator !=(CResStruct left, CResStruct right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CResStructHeader m_cHeader {
     set {
       NWNXLibPINVOKE.CResStruct_m_cHeader_set(swigCPtr, CResStructHeader.getCPtr(value));

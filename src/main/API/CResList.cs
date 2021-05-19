@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CResList : CResStruct {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CResList(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResList_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CResList(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResList_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CResList(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResList_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CResList obj) {
@@ -37,7 +33,7 @@ public unsafe class CResList : CResStruct {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CResList : CResStruct {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CResList self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CResList FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CResList((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CResList FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CResList(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CResList other) {
@@ -79,7 +79,7 @@ public unsafe class CResList : CResStruct {
   public static bool operator !=(CResList left, CResList right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public string m_pLabel {
     set {
       NWNXLibPINVOKE.CResList_m_pLabel_set(swigCPtr, value);

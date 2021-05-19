@@ -14,14 +14,9 @@ public unsafe class MaterialShaderParam : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public MaterialShaderParam(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal MaterialShaderParam(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public MaterialShaderParam(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(MaterialShaderParam obj) {
@@ -48,7 +43,7 @@ public unsafe class MaterialShaderParam : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class MaterialShaderParam : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(MaterialShaderParam self) {
-    return self.swigCPtr.Handle;
+  public static unsafe MaterialShaderParam FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new MaterialShaderParam((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static MaterialShaderParam FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new MaterialShaderParam(pointer, memoryOwn) : null;
   }
 
   public bool Equals(MaterialShaderParam other) {
@@ -90,7 +89,7 @@ public unsafe class MaterialShaderParam : global::System.IDisposable {
   public static bool operator !=(MaterialShaderParam left, MaterialShaderParam right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public int m_nType {
     set {
       NWNXLibPINVOKE.MaterialShaderParam_m_nType_set(swigCPtr, value);

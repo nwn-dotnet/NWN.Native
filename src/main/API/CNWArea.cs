@@ -14,14 +14,9 @@ public unsafe class CNWArea : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWArea(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWArea(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWArea(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWArea obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWArea : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWArea : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWArea self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWArea FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWArea((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWArea FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWArea(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWArea other) {
@@ -90,7 +89,7 @@ public unsafe class CNWArea : global::System.IDisposable {
   public static bool operator !=(CNWArea left, CNWArea right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public uint m_nFlags {
     set {
       NWNXLibPINVOKE.CNWArea_m_nFlags_set(swigCPtr, value);

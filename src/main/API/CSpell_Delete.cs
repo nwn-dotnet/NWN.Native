@@ -14,14 +14,9 @@ public unsafe class CSpell_Delete : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CSpell_Delete(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CSpell_Delete(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CSpell_Delete(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CSpell_Delete obj) {
@@ -48,7 +43,7 @@ public unsafe class CSpell_Delete : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CSpell_Delete : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CSpell_Delete self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CSpell_Delete FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CSpell_Delete((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CSpell_Delete FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CSpell_Delete(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CSpell_Delete other) {
@@ -90,7 +89,7 @@ public unsafe class CSpell_Delete : global::System.IDisposable {
   public static bool operator !=(CSpell_Delete left, CSpell_Delete right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public byte m_nSpellLevel {
     set {
       NWNXLibPINVOKE.CSpell_Delete_m_nSpellLevel_set(swigCPtr, value);

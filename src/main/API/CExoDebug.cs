@@ -14,14 +14,9 @@ public unsafe class CExoDebug : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoDebug(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoDebug(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoDebug(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoDebug obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoDebug : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoDebug : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoDebug self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoDebug FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoDebug((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoDebug FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoDebug(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoDebug other) {
@@ -90,7 +89,7 @@ public unsafe class CExoDebug : global::System.IDisposable {
   public static bool operator !=(CExoDebug left, CExoDebug right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoString m_sLogString {
     set {
       NWNXLibPINVOKE.CExoDebug_m_sLogString_set(swigCPtr, CExoString.getCPtr(value));

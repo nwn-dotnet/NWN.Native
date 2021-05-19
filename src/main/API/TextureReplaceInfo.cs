@@ -14,14 +14,9 @@ public unsafe class TextureReplaceInfo : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public TextureReplaceInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal TextureReplaceInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public TextureReplaceInfo(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(TextureReplaceInfo obj) {
@@ -48,7 +43,7 @@ public unsafe class TextureReplaceInfo : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class TextureReplaceInfo : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(TextureReplaceInfo self) {
-    return self.swigCPtr.Handle;
+  public static unsafe TextureReplaceInfo FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new TextureReplaceInfo((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static TextureReplaceInfo FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new TextureReplaceInfo(pointer, memoryOwn) : null;
   }
 
   public bool Equals(TextureReplaceInfo other) {
@@ -90,7 +89,7 @@ public unsafe class TextureReplaceInfo : global::System.IDisposable {
   public static bool operator !=(TextureReplaceInfo left, TextureReplaceInfo right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public string m_sOldName {
     set {
       NWNXLibPINVOKE.TextureReplaceInfo_m_sOldName_set(swigCPtr, value);

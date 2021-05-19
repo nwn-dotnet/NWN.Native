@@ -14,14 +14,9 @@ public unsafe class CScriptCompilerIdListEntry : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CScriptCompilerIdListEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CScriptCompilerIdListEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CScriptCompilerIdListEntry(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CScriptCompilerIdListEntry obj) {
@@ -48,7 +43,7 @@ public unsafe class CScriptCompilerIdListEntry : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CScriptCompilerIdListEntry : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CScriptCompilerIdListEntry self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CScriptCompilerIdListEntry FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CScriptCompilerIdListEntry((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CScriptCompilerIdListEntry FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CScriptCompilerIdListEntry(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CScriptCompilerIdListEntry other) {
@@ -90,7 +89,7 @@ public unsafe class CScriptCompilerIdListEntry : global::System.IDisposable {
   public static bool operator !=(CScriptCompilerIdListEntry left, CScriptCompilerIdListEntry right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoString m_psIdentifier {
     set {
       NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_psIdentifier_set(swigCPtr, CExoString.getCPtr(value));

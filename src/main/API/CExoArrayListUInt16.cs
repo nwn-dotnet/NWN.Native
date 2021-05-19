@@ -14,14 +14,9 @@ public unsafe class CExoArrayListUInt16 : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoArrayListUInt16(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoArrayListUInt16(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoArrayListUInt16(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListUInt16 obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoArrayListUInt16 : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoArrayListUInt16 : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoArrayListUInt16 self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoArrayListUInt16 FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoArrayListUInt16((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoArrayListUInt16 FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoArrayListUInt16(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoArrayListUInt16 other) {
@@ -90,7 +89,7 @@ public unsafe class CExoArrayListUInt16 : global::System.IDisposable {
   public static bool operator !=(CExoArrayListUInt16 left, CExoArrayListUInt16 right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public ushort* element {
     set {
       NWNXLibPINVOKE.CExoArrayListUInt16_element_set(swigCPtr, (global::System.IntPtr)value);

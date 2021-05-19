@@ -14,14 +14,9 @@ public unsafe class CNWTileSurfaceMeshNodeVertex : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWTileSurfaceMeshNodeVertex(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWTileSurfaceMeshNodeVertex(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWTileSurfaceMeshNodeVertex(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWTileSurfaceMeshNodeVertex obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWTileSurfaceMeshNodeVertex : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWTileSurfaceMeshNodeVertex : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWTileSurfaceMeshNodeVertex self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWTileSurfaceMeshNodeVertex FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWTileSurfaceMeshNodeVertex((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWTileSurfaceMeshNodeVertex FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWTileSurfaceMeshNodeVertex(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWTileSurfaceMeshNodeVertex other) {
@@ -90,7 +89,7 @@ public unsafe class CNWTileSurfaceMeshNodeVertex : global::System.IDisposable {
   public static bool operator !=(CNWTileSurfaceMeshNodeVertex left, CNWTileSurfaceMeshNodeVertex right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public float fVirtualWasteOfSpace {
     set {
       NWNXLibPINVOKE.CNWTileSurfaceMeshNodeVertex_fVirtualWasteOfSpace_set(swigCPtr, value);

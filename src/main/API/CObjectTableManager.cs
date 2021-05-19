@@ -14,14 +14,9 @@ public unsafe class CObjectTableManager : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CObjectTableManager(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CObjectTableManager(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CObjectTableManager(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CObjectTableManager obj) {
@@ -48,7 +43,7 @@ public unsafe class CObjectTableManager : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CObjectTableManager : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CObjectTableManager self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CObjectTableManager FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CObjectTableManager((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CObjectTableManager FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CObjectTableManager(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CObjectTableManager other) {
@@ -90,7 +89,7 @@ public unsafe class CObjectTableManager : global::System.IDisposable {
   public static bool operator !=(CObjectTableManager left, CObjectTableManager right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CObjectLookupTablePtrArray m_pObjectTableArray {
     set {
       NWNXLibPINVOKE.CObjectTableManager_m_pObjectTableArray_set(swigCPtr, CObjectLookupTablePtrArray.getCPtr(value));

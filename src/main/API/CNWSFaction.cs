@@ -14,14 +14,9 @@ public unsafe class CNWSFaction : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWSFaction(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWSFaction(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSFaction(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSFaction obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWSFaction : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWSFaction : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSFaction self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSFaction FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSFaction((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSFaction FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSFaction(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSFaction other) {
@@ -90,7 +89,7 @@ public unsafe class CNWSFaction : global::System.IDisposable {
   public static bool operator !=(CNWSFaction left, CNWSFaction right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoArrayListObjectId m_listFactionMembers {
     set {
       NWNXLibPINVOKE.CNWSFaction_m_listFactionMembers_set(swigCPtr, CExoArrayListObjectId.getCPtr(value));

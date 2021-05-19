@@ -14,14 +14,9 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public NWERFHEADER(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal NWERFHEADER(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public NWERFHEADER(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(NWERFHEADER obj) {
@@ -48,7 +43,7 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(NWERFHEADER self) {
-    return self.swigCPtr.Handle;
+  public static unsafe NWERFHEADER FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new NWERFHEADER((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static NWERFHEADER FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new NWERFHEADER(pointer, memoryOwn) : null;
   }
 
   public bool Equals(NWERFHEADER other) {
@@ -90,7 +89,7 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
   public static bool operator !=(NWERFHEADER left, NWERFHEADER right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public string sVersion {
     set {
       NWNXLibPINVOKE.NWERFHEADER_sVersion_set(swigCPtr, value);

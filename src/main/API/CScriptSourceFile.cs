@@ -14,14 +14,9 @@ public unsafe class CScriptSourceFile : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CScriptSourceFile(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CScriptSourceFile(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CScriptSourceFile(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CScriptSourceFile obj) {
@@ -48,7 +43,7 @@ public unsafe class CScriptSourceFile : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CScriptSourceFile : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CScriptSourceFile self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CScriptSourceFile FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CScriptSourceFile((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CScriptSourceFile FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CScriptSourceFile(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CScriptSourceFile other) {
@@ -90,7 +89,7 @@ public unsafe class CScriptSourceFile : global::System.IDisposable {
   public static bool operator !=(CScriptSourceFile left, CScriptSourceFile right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CScriptSourceFile() : this(NWNXLibPINVOKE.new_CScriptSourceFile(), true) {
   }
 

@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CNWVirtualMachineCommands(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWVirtualMachineCommands_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CNWVirtualMachineCommands(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWVirtualMachineCommands_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWVirtualMachineCommands(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWVirtualMachineCommands_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWVirtualMachineCommands obj) {
@@ -37,7 +33,7 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWVirtualMachineCommands self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWVirtualMachineCommands FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWVirtualMachineCommands((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWVirtualMachineCommands FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWVirtualMachineCommands(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWVirtualMachineCommands other) {
@@ -79,7 +79,7 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
   public static bool operator !=(CNWVirtualMachineCommands left, CNWVirtualMachineCommands right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public SWIGTYPE_p_p_f_int_int__int m_pVirtualMachineCommands {
     set {
       NWNXLibPINVOKE.CNWVirtualMachineCommands_m_pVirtualMachineCommands_set(swigCPtr, SWIGTYPE_p_p_f_int_int__int.getCPtr(value));

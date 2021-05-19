@@ -14,14 +14,9 @@ public unsafe class CNWAmbientSound : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWAmbientSound(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWAmbientSound(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWAmbientSound(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWAmbientSound obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWAmbientSound : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWAmbientSound : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWAmbientSound self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWAmbientSound FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWAmbientSound((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWAmbientSound FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWAmbientSound(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWAmbientSound other) {
@@ -90,7 +89,7 @@ public unsafe class CNWAmbientSound : global::System.IDisposable {
   public static bool operator !=(CNWAmbientSound left, CNWAmbientSound right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public int m_bMusicPlaying {
     set {
       NWNXLibPINVOKE.CNWAmbientSound_m_bMusicPlaying_set(swigCPtr, value);

@@ -14,14 +14,9 @@ public unsafe class CExoArrayListCNWCCMessageDataPtr : global::System.IDisposabl
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoArrayListCNWCCMessageDataPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoArrayListCNWCCMessageDataPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoArrayListCNWCCMessageDataPtr(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListCNWCCMessageDataPtr obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoArrayListCNWCCMessageDataPtr : global::System.IDisposabl
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoArrayListCNWCCMessageDataPtr : global::System.IDisposabl
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoArrayListCNWCCMessageDataPtr self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoArrayListCNWCCMessageDataPtr FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoArrayListCNWCCMessageDataPtr((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoArrayListCNWCCMessageDataPtr FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoArrayListCNWCCMessageDataPtr(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoArrayListCNWCCMessageDataPtr other) {
@@ -90,7 +89,7 @@ public unsafe class CExoArrayListCNWCCMessageDataPtr : global::System.IDisposabl
   public static bool operator !=(CExoArrayListCNWCCMessageDataPtr left, CExoArrayListCNWCCMessageDataPtr right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public void** element {
     set {
       NWNXLibPINVOKE.CExoArrayListCNWCCMessageDataPtr_element_set(swigCPtr, (global::System.IntPtr)value);

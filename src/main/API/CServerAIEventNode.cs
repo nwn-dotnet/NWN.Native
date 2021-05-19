@@ -14,14 +14,9 @@ public unsafe class CServerAIEventNode : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CServerAIEventNode(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CServerAIEventNode(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CServerAIEventNode(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CServerAIEventNode obj) {
@@ -48,7 +43,7 @@ public unsafe class CServerAIEventNode : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CServerAIEventNode : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CServerAIEventNode self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CServerAIEventNode FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CServerAIEventNode((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CServerAIEventNode FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CServerAIEventNode(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CServerAIEventNode other) {
@@ -90,7 +89,7 @@ public unsafe class CServerAIEventNode : global::System.IDisposable {
   public static bool operator !=(CServerAIEventNode left, CServerAIEventNode right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public uint m_nCalendarDay {
     set {
       NWNXLibPINVOKE.CServerAIEventNode_m_nCalendarDay_set(swigCPtr, value);

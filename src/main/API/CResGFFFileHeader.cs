@@ -14,14 +14,9 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CResGFFFileHeader(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CResGFFFileHeader(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CResGFFFileHeader(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CResGFFFileHeader obj) {
@@ -48,7 +43,7 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CResGFFFileHeader self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CResGFFFileHeader FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CResGFFFileHeader((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CResGFFFileHeader FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CResGFFFileHeader(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CResGFFFileHeader other) {
@@ -90,7 +89,7 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
   public static bool operator !=(CResGFFFileHeader left, CResGFFFileHeader right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public uint m_nFileType {
     set {
       NWNXLibPINVOKE.CResGFFFileHeader_m_nFileType_set(swigCPtr, value);

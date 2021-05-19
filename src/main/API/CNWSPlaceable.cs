@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CNWSPlaceable : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CNWSPlaceable(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlaceable_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CNWSPlaceable(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlaceable_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSPlaceable(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlaceable_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSPlaceable obj) {
@@ -37,7 +33,7 @@ public unsafe class CNWSPlaceable : CNWSObject {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CNWSPlaceable : CNWSObject {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSPlaceable self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSPlaceable FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSPlaceable((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSPlaceable FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSPlaceable(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSPlaceable other) {
@@ -79,7 +79,7 @@ public unsafe class CNWSPlaceable : CNWSObject {
   public static bool operator !=(CNWSPlaceable left, CNWSPlaceable right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoLocString m_sLocName {
     set {
       NWNXLibPINVOKE.CNWSPlaceable_m_sLocName_set(swigCPtr, CExoLocString.getCPtr(value));

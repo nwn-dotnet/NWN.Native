@@ -14,14 +14,9 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWSCreatureStats_ClassInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWSCreatureStats_ClassInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSCreatureStats_ClassInfo(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSCreatureStats_ClassInfo obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSCreatureStats_ClassInfo self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSCreatureStats_ClassInfo FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSCreatureStats_ClassInfo((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSCreatureStats_ClassInfo FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSCreatureStats_ClassInfo(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSCreatureStats_ClassInfo other) {
@@ -90,7 +89,7 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
   public static bool operator !=(CNWSCreatureStats_ClassInfo left, CNWSCreatureStats_ClassInfo right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoArrayListUInt32Array m_pKnownSpellList {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_pKnownSpellList_set(swigCPtr, CExoArrayListUInt32Array.getCPtr(value));

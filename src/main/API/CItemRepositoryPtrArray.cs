@@ -14,14 +14,9 @@ public unsafe class CItemRepositoryPtrArray : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CItemRepositoryPtrArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CItemRepositoryPtrArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CItemRepositoryPtrArray(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CItemRepositoryPtrArray obj) {
@@ -48,28 +43,23 @@ public unsafe class CItemRepositoryPtrArray : global::System.IDisposable {
       }
     }
   }
-
-  public CItemRepository this[int index] {
-    get {
-      return GetItem(index);
-    }
-    set {
-      SetItem(index, value);
-    }
-  }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
   }
 
-  public static implicit operator void*(CItemRepositoryPtrArray self) {
+  public static unsafe implicit operator void*(CItemRepositoryPtrArray self) {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CItemRepositoryPtrArray self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CItemRepositoryPtrArray FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CItemRepositoryPtrArray((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CItemRepositoryPtrArray FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CItemRepositoryPtrArray(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CItemRepositoryPtrArray other) {
@@ -99,7 +89,16 @@ public unsafe class CItemRepositoryPtrArray : global::System.IDisposable {
   public static bool operator !=(CItemRepositoryPtrArray left, CItemRepositoryPtrArray right) {
     return !Equals(left, right);
   }
+/*@SWIG@*/
 
+  public CItemRepository this[int index] {
+    get {
+      return GetItem(index);
+    }
+    set {
+      SetItem(index, value);
+    }
+  }
   public CItemRepositoryPtrArray(int nElements) : this(NWNXLibPINVOKE.new_CItemRepositoryPtrArray(nElements), true) {
   }
 

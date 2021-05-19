@@ -14,14 +14,9 @@ public unsafe class CExoArrayListCNWSStatsSpellLikeAbility : global::System.IDis
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoArrayListCNWSStatsSpellLikeAbility(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoArrayListCNWSStatsSpellLikeAbility(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoArrayListCNWSStatsSpellLikeAbility(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListCNWSStatsSpellLikeAbility obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoArrayListCNWSStatsSpellLikeAbility : global::System.IDis
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoArrayListCNWSStatsSpellLikeAbility : global::System.IDis
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoArrayListCNWSStatsSpellLikeAbility self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoArrayListCNWSStatsSpellLikeAbility FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoArrayListCNWSStatsSpellLikeAbility((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoArrayListCNWSStatsSpellLikeAbility FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoArrayListCNWSStatsSpellLikeAbility(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoArrayListCNWSStatsSpellLikeAbility other) {
@@ -90,7 +89,7 @@ public unsafe class CExoArrayListCNWSStatsSpellLikeAbility : global::System.IDis
   public static bool operator !=(CExoArrayListCNWSStatsSpellLikeAbility left, CExoArrayListCNWSStatsSpellLikeAbility right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CNWSStats_SpellLikeAbility element {
     set {
       NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_element_set(swigCPtr, CNWSStats_SpellLikeAbility.getCPtr(value));

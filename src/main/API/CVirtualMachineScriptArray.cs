@@ -14,14 +14,9 @@ public unsafe class CVirtualMachineScriptArray : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CVirtualMachineScriptArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CVirtualMachineScriptArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CVirtualMachineScriptArray(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CVirtualMachineScriptArray obj) {
@@ -48,28 +43,23 @@ public unsafe class CVirtualMachineScriptArray : global::System.IDisposable {
       }
     }
   }
-
-  public CVirtualMachineScript this[int index] {
-    get {
-      return GetItem(index);
-    }
-    set {
-      SetItem(index, value);
-    }
-  }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
   }
 
-  public static implicit operator void*(CVirtualMachineScriptArray self) {
+  public static unsafe implicit operator void*(CVirtualMachineScriptArray self) {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CVirtualMachineScriptArray self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CVirtualMachineScriptArray FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CVirtualMachineScriptArray((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CVirtualMachineScriptArray FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CVirtualMachineScriptArray(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CVirtualMachineScriptArray other) {
@@ -99,7 +89,16 @@ public unsafe class CVirtualMachineScriptArray : global::System.IDisposable {
   public static bool operator !=(CVirtualMachineScriptArray left, CVirtualMachineScriptArray right) {
     return !Equals(left, right);
   }
+/*@SWIG@*/
 
+  public CVirtualMachineScript this[int index] {
+    get {
+      return GetItem(index);
+    }
+    set {
+      SetItem(index, value);
+    }
+  }
   public CVirtualMachineScriptArray(int nElements) : this(NWNXLibPINVOKE.new_CVirtualMachineScriptArray(nElements), true) {
   }
 

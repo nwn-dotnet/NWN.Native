@@ -14,14 +14,9 @@ public unsafe class CNWSDialogReply : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWSDialogReply(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWSDialogReply(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSDialogReply(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSDialogReply obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWSDialogReply : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWSDialogReply : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSDialogReply self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSDialogReply FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSDialogReply((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSDialogReply FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSDialogReply(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSDialogReply other) {
@@ -90,7 +89,7 @@ public unsafe class CNWSDialogReply : global::System.IDisposable {
   public static bool operator !=(CNWSDialogReply left, CNWSDialogReply right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public uint m_nAnimation {
     set {
       NWNXLibPINVOKE.CNWSDialogReply_m_nAnimation_set(swigCPtr, value);

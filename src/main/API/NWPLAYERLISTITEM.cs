@@ -14,14 +14,9 @@ public unsafe class NWPLAYERLISTITEM : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public NWPLAYERLISTITEM(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal NWPLAYERLISTITEM(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public NWPLAYERLISTITEM(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(NWPLAYERLISTITEM obj) {
@@ -48,7 +43,7 @@ public unsafe class NWPLAYERLISTITEM : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class NWPLAYERLISTITEM : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(NWPLAYERLISTITEM self) {
-    return self.swigCPtr.Handle;
+  public static unsafe NWPLAYERLISTITEM FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new NWPLAYERLISTITEM((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static NWPLAYERLISTITEM FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new NWPLAYERLISTITEM(pointer, memoryOwn) : null;
   }
 
   public bool Equals(NWPLAYERLISTITEM other) {
@@ -90,7 +89,7 @@ public unsafe class NWPLAYERLISTITEM : global::System.IDisposable {
   public static bool operator !=(NWPLAYERLISTITEM left, NWPLAYERLISTITEM right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoString sCommunityName {
     set {
       NWNXLibPINVOKE.NWPLAYERLISTITEM_sCommunityName_set(swigCPtr, CExoString.getCPtr(value));

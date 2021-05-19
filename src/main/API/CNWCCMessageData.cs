@@ -14,14 +14,9 @@ public unsafe class CNWCCMessageData : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWCCMessageData(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWCCMessageData(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWCCMessageData(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWCCMessageData obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWCCMessageData : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWCCMessageData : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWCCMessageData self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWCCMessageData FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWCCMessageData((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWCCMessageData FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWCCMessageData(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWCCMessageData other) {
@@ -90,7 +89,7 @@ public unsafe class CNWCCMessageData : global::System.IDisposable {
   public static bool operator !=(CNWCCMessageData left, CNWCCMessageData right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public byte m_nType {
     set {
       NWNXLibPINVOKE.CNWCCMessageData_m_nType_set(swigCPtr, value);

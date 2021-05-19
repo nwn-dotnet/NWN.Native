@@ -14,14 +14,9 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CLastUpdateObject(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CLastUpdateObject(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CLastUpdateObject(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CLastUpdateObject obj) {
@@ -48,7 +43,7 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CLastUpdateObject self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CLastUpdateObject FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CLastUpdateObject((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CLastUpdateObject FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CLastUpdateObject(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CLastUpdateObject other) {
@@ -90,7 +89,7 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
   public static bool operator !=(CLastUpdateObject left, CLastUpdateObject right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CNWSPlayerLUOAppearanceInfo m_cAppearance {
     set {
       NWNXLibPINVOKE.CLastUpdateObject_m_cAppearance_set(swigCPtr, CNWSPlayerLUOAppearanceInfo.getCPtr(value));

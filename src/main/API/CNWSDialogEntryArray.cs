@@ -14,14 +14,9 @@ public unsafe class CNWSDialogEntryArray : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWSDialogEntryArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWSDialogEntryArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSDialogEntryArray(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSDialogEntryArray obj) {
@@ -48,28 +43,23 @@ public unsafe class CNWSDialogEntryArray : global::System.IDisposable {
       }
     }
   }
-
-  public CNWSDialogEntry this[int index] {
-    get {
-      return GetItem(index);
-    }
-    set {
-      SetItem(index, value);
-    }
-  }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
   }
 
-  public static implicit operator void*(CNWSDialogEntryArray self) {
+  public static unsafe implicit operator void*(CNWSDialogEntryArray self) {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSDialogEntryArray self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSDialogEntryArray FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSDialogEntryArray((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSDialogEntryArray FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSDialogEntryArray(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSDialogEntryArray other) {
@@ -99,7 +89,16 @@ public unsafe class CNWSDialogEntryArray : global::System.IDisposable {
   public static bool operator !=(CNWSDialogEntryArray left, CNWSDialogEntryArray right) {
     return !Equals(left, right);
   }
+/*@SWIG@*/
 
+  public CNWSDialogEntry this[int index] {
+    get {
+      return GetItem(index);
+    }
+    set {
+      SetItem(index, value);
+    }
+  }
   public CNWSDialogEntryArray(int nElements) : this(NWNXLibPINVOKE.new_CNWSDialogEntryArray(nElements), true) {
   }
 

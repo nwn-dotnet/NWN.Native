@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CNWSArea : CNWArea, ICGameObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CNWSArea(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSArea_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CNWSArea(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSArea_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSArea(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSArea_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSArea obj) {
@@ -42,7 +38,7 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   global::System.Runtime.InteropServices.HandleRef ICGameObject.GetInterfaceCPtr() {
     return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CNWSArea_ICGameObject_GetInterfaceCPtr(swigCPtr.Handle));
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -53,8 +49,12 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSArea self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSArea FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSArea((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSArea FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSArea(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSArea other) {
@@ -84,7 +84,7 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   public static bool operator !=(CNWSArea left, CNWSArea right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public int m_nPlayersInArea {
     set {
       NWNXLibPINVOKE.CNWSArea_m_nPlayersInArea_set(swigCPtr, value);

@@ -14,14 +14,9 @@ public unsafe class CNWSUUID : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWSUUID(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWSUUID(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSUUID(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSUUID obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWSUUID : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWSUUID : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSUUID self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSUUID FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSUUID((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSUUID FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSUUID(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSUUID other) {
@@ -90,7 +89,7 @@ public unsafe class CNWSUUID : global::System.IDisposable {
   public static bool operator !=(CNWSUUID left, CNWSUUID right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public ICGameObject m_parent {
     set {
       NWNXLibPINVOKE.CNWSUUID_m_parent_set(swigCPtr, value == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : value.GetInterfaceCPtr());

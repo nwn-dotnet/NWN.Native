@@ -14,14 +14,9 @@ public unsafe class CPersistantWorldOptions : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CPersistantWorldOptions(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CPersistantWorldOptions(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CPersistantWorldOptions(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CPersistantWorldOptions obj) {
@@ -48,7 +43,7 @@ public unsafe class CPersistantWorldOptions : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CPersistantWorldOptions : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CPersistantWorldOptions self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CPersistantWorldOptions FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CPersistantWorldOptions((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CPersistantWorldOptions FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CPersistantWorldOptions(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CPersistantWorldOptions other) {
@@ -90,7 +89,7 @@ public unsafe class CPersistantWorldOptions : global::System.IDisposable {
   public static bool operator !=(CPersistantWorldOptions left, CPersistantWorldOptions right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public int bVaultCharsOnly {
     set {
       NWNXLibPINVOKE.CPersistantWorldOptions_bVaultCharsOnly_set(swigCPtr, value);

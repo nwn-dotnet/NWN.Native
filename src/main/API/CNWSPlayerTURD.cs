@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CNWSPlayerTURD : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CNWSPlayerTURD(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlayerTURD_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CNWSPlayerTURD(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlayerTURD_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSPlayerTURD(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlayerTURD_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSPlayerTURD obj) {
@@ -37,7 +33,7 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSPlayerTURD self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSPlayerTURD FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSPlayerTURD((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSPlayerTURD FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSPlayerTURD(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSPlayerTURD other) {
@@ -79,7 +79,7 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
   public static bool operator !=(CNWSPlayerTURD left, CNWSPlayerTURD right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoString m_sCommunityName {
     set {
       NWNXLibPINVOKE.CNWSPlayerTURD_m_sCommunityName_set(swigCPtr, CExoString.getCPtr(value));

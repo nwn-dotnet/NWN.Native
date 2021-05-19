@@ -14,14 +14,9 @@ public unsafe class CNWActionNodeArray : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWActionNodeArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWActionNodeArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWActionNodeArray(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWActionNodeArray obj) {
@@ -48,28 +43,23 @@ public unsafe class CNWActionNodeArray : global::System.IDisposable {
       }
     }
   }
-
-  public CNWActionNode this[int index] {
-    get {
-      return GetItem(index);
-    }
-    set {
-      SetItem(index, value);
-    }
-  }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
   }
 
-  public static implicit operator void*(CNWActionNodeArray self) {
+  public static unsafe implicit operator void*(CNWActionNodeArray self) {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWActionNodeArray self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWActionNodeArray FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWActionNodeArray((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWActionNodeArray FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWActionNodeArray(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWActionNodeArray other) {
@@ -99,7 +89,16 @@ public unsafe class CNWActionNodeArray : global::System.IDisposable {
   public static bool operator !=(CNWActionNodeArray left, CNWActionNodeArray right) {
     return !Equals(left, right);
   }
+/*@SWIG@*/
 
+  public CNWActionNode this[int index] {
+    get {
+      return GetItem(index);
+    }
+    set {
+      SetItem(index, value);
+    }
+  }
   public CNWActionNodeArray(int nElements) : this(NWNXLibPINVOKE.new_CNWActionNodeArray(nElements), true) {
   }
 

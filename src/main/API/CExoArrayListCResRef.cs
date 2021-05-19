@@ -14,14 +14,9 @@ public unsafe class CExoArrayListCResRef : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoArrayListCResRef(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoArrayListCResRef(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoArrayListCResRef(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListCResRef obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoArrayListCResRef : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoArrayListCResRef : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoArrayListCResRef self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoArrayListCResRef FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoArrayListCResRef((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoArrayListCResRef FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoArrayListCResRef(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoArrayListCResRef other) {
@@ -90,7 +89,7 @@ public unsafe class CExoArrayListCResRef : global::System.IDisposable {
   public static bool operator !=(CExoArrayListCResRef left, CExoArrayListCResRef right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CResRef element {
     set {
       NWNXLibPINVOKE.CExoArrayListCResRef_element_set(swigCPtr, CResRef.getCPtr(value));

@@ -14,14 +14,9 @@ public unsafe class CNWTile : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWTile(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWTile(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWTile(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWTile obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWTile : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWTile : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWTile self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWTile FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWTile((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWTile FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWTile(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWTile other) {
@@ -90,7 +89,7 @@ public unsafe class CNWTile : global::System.IDisposable {
   public static bool operator !=(CNWTile left, CNWTile right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public Vector m_vModelPosition {
     set {
       NWNXLibPINVOKE.CNWTile_m_vModelPosition_set(swigCPtr, Vector.getCPtr(value));

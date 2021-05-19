@@ -14,14 +14,9 @@ public unsafe class CNWTileSetPtrArray : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWTileSetPtrArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWTileSetPtrArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWTileSetPtrArray(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWTileSetPtrArray obj) {
@@ -48,28 +43,23 @@ public unsafe class CNWTileSetPtrArray : global::System.IDisposable {
       }
     }
   }
-
-  public CNWTileSet this[int index] {
-    get {
-      return GetItem(index);
-    }
-    set {
-      SetItem(index, value);
-    }
-  }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
   }
 
-  public static implicit operator void*(CNWTileSetPtrArray self) {
+  public static unsafe implicit operator void*(CNWTileSetPtrArray self) {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWTileSetPtrArray self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWTileSetPtrArray FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWTileSetPtrArray((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWTileSetPtrArray FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWTileSetPtrArray(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWTileSetPtrArray other) {
@@ -99,7 +89,16 @@ public unsafe class CNWTileSetPtrArray : global::System.IDisposable {
   public static bool operator !=(CNWTileSetPtrArray left, CNWTileSetPtrArray right) {
     return !Equals(left, right);
   }
+/*@SWIG@*/
 
+  public CNWTileSet this[int index] {
+    get {
+      return GetItem(index);
+    }
+    set {
+      SetItem(index, value);
+    }
+  }
   public CNWTileSetPtrArray(int nElements) : this(NWNXLibPINVOKE.new_CNWTileSetPtrArray(nElements), true) {
   }
 

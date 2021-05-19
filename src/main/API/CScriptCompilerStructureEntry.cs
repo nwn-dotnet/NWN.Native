@@ -14,14 +14,9 @@ public unsafe class CScriptCompilerStructureEntry : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CScriptCompilerStructureEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CScriptCompilerStructureEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CScriptCompilerStructureEntry(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CScriptCompilerStructureEntry obj) {
@@ -48,7 +43,7 @@ public unsafe class CScriptCompilerStructureEntry : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CScriptCompilerStructureEntry : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CScriptCompilerStructureEntry self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CScriptCompilerStructureEntry FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CScriptCompilerStructureEntry((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CScriptCompilerStructureEntry FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CScriptCompilerStructureEntry(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CScriptCompilerStructureEntry other) {
@@ -90,7 +89,7 @@ public unsafe class CScriptCompilerStructureEntry : global::System.IDisposable {
   public static bool operator !=(CScriptCompilerStructureEntry left, CScriptCompilerStructureEntry right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoString m_psName {
     set {
       NWNXLibPINVOKE.CScriptCompilerStructureEntry_m_psName_set(swigCPtr, CExoString.getCPtr(value));

@@ -14,14 +14,9 @@ public unsafe class CScriptCompilerIncludeFileStackEntryArray : global::System.I
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CScriptCompilerIncludeFileStackEntryArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CScriptCompilerIncludeFileStackEntryArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CScriptCompilerIncludeFileStackEntryArray(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CScriptCompilerIncludeFileStackEntryArray obj) {
@@ -48,28 +43,23 @@ public unsafe class CScriptCompilerIncludeFileStackEntryArray : global::System.I
       }
     }
   }
-
-  public CScriptCompilerIncludeFileStackEntry this[int index] {
-    get {
-      return GetItem(index);
-    }
-    set {
-      SetItem(index, value);
-    }
-  }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
   }
 
-  public static implicit operator void*(CScriptCompilerIncludeFileStackEntryArray self) {
+  public static unsafe implicit operator void*(CScriptCompilerIncludeFileStackEntryArray self) {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CScriptCompilerIncludeFileStackEntryArray self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CScriptCompilerIncludeFileStackEntryArray FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CScriptCompilerIncludeFileStackEntryArray((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CScriptCompilerIncludeFileStackEntryArray FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CScriptCompilerIncludeFileStackEntryArray(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CScriptCompilerIncludeFileStackEntryArray other) {
@@ -99,7 +89,16 @@ public unsafe class CScriptCompilerIncludeFileStackEntryArray : global::System.I
   public static bool operator !=(CScriptCompilerIncludeFileStackEntryArray left, CScriptCompilerIncludeFileStackEntryArray right) {
     return !Equals(left, right);
   }
+/*@SWIG@*/
 
+  public CScriptCompilerIncludeFileStackEntry this[int index] {
+    get {
+      return GetItem(index);
+    }
+    set {
+      SetItem(index, value);
+    }
+  }
   public CScriptCompilerIncludeFileStackEntryArray(int nElements) : this(NWNXLibPINVOKE.new_CScriptCompilerIncludeFileStackEntryArray(nElements), true) {
   }
 

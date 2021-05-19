@@ -14,14 +14,9 @@ public unsafe class CNWSPersonalReputation : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWSPersonalReputation(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWSPersonalReputation(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSPersonalReputation(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSPersonalReputation obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWSPersonalReputation : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWSPersonalReputation : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSPersonalReputation self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSPersonalReputation FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSPersonalReputation((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSPersonalReputation FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSPersonalReputation(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSPersonalReputation other) {
@@ -90,7 +89,7 @@ public unsafe class CNWSPersonalReputation : global::System.IDisposable {
   public static bool operator !=(CNWSPersonalReputation left, CNWSPersonalReputation right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public uint m_nDay {
     set {
       NWNXLibPINVOKE.CNWSPersonalReputation_m_nDay_set(swigCPtr, value);

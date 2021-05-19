@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CNWSEncounter : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CNWSEncounter(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSEncounter_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CNWSEncounter(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSEncounter_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSEncounter(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSEncounter_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSEncounter obj) {
@@ -37,7 +33,7 @@ public unsafe class CNWSEncounter : CNWSObject {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CNWSEncounter : CNWSObject {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSEncounter self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSEncounter FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSEncounter((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSEncounter FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSEncounter(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSEncounter other) {
@@ -79,7 +79,7 @@ public unsafe class CNWSEncounter : CNWSObject {
   public static bool operator !=(CNWSEncounter left, CNWSEncounter right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public ushort m_nActivateObjectArrayIndex {
     set {
       NWNXLibPINVOKE.CNWSEncounter_m_nActivateObjectArrayIndex_set(swigCPtr, value);

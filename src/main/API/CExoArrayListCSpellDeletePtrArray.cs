@@ -14,14 +14,9 @@ public unsafe class CExoArrayListCSpellDeletePtrArray : global::System.IDisposab
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoArrayListCSpellDeletePtrArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoArrayListCSpellDeletePtrArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoArrayListCSpellDeletePtrArray(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListCSpellDeletePtrArray obj) {
@@ -48,28 +43,23 @@ public unsafe class CExoArrayListCSpellDeletePtrArray : global::System.IDisposab
       }
     }
   }
-
-  public CExoArrayListCSpellDeletePtr this[int index] {
-    get {
-      return GetItem(index);
-    }
-    set {
-      SetItem(index, value);
-    }
-  }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
   }
 
-  public static implicit operator void*(CExoArrayListCSpellDeletePtrArray self) {
+  public static unsafe implicit operator void*(CExoArrayListCSpellDeletePtrArray self) {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoArrayListCSpellDeletePtrArray self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoArrayListCSpellDeletePtrArray FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoArrayListCSpellDeletePtrArray((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoArrayListCSpellDeletePtrArray FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoArrayListCSpellDeletePtrArray(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoArrayListCSpellDeletePtrArray other) {
@@ -99,7 +89,16 @@ public unsafe class CExoArrayListCSpellDeletePtrArray : global::System.IDisposab
   public static bool operator !=(CExoArrayListCSpellDeletePtrArray left, CExoArrayListCSpellDeletePtrArray right) {
     return !Equals(left, right);
   }
+/*@SWIG@*/
 
+  public CExoArrayListCSpellDeletePtr this[int index] {
+    get {
+      return GetItem(index);
+    }
+    set {
+      SetItem(index, value);
+    }
+  }
   public CExoArrayListCSpellDeletePtrArray(int nElements) : this(NWNXLibPINVOKE.new_CExoArrayListCSpellDeletePtrArray(nElements), true) {
   }
 

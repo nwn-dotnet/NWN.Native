@@ -14,14 +14,9 @@ public unsafe class CNWSScriptVarTable : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWSScriptVarTable(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWSScriptVarTable(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSScriptVarTable(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSScriptVarTable obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWSScriptVarTable : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWSScriptVarTable : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSScriptVarTable self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSScriptVarTable FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSScriptVarTable((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSScriptVarTable FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSScriptVarTable(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSScriptVarTable other) {
@@ -90,7 +89,7 @@ public unsafe class CNWSScriptVarTable : global::System.IDisposable {
   public static bool operator !=(CNWSScriptVarTable left, CNWSScriptVarTable right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public UnorderedMapCExoStringCNWSScriptVar m_vars {
     set {
       NWNXLibPINVOKE.CNWSScriptVarTable_m_vars_set(swigCPtr, UnorderedMapCExoStringCNWSScriptVar.getCPtr(value));

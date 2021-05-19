@@ -14,14 +14,9 @@ public unsafe class SNWItemFlags : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public SNWItemFlags(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal SNWItemFlags(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public SNWItemFlags(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SNWItemFlags obj) {
@@ -48,7 +43,7 @@ public unsafe class SNWItemFlags : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class SNWItemFlags : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(SNWItemFlags self) {
-    return self.swigCPtr.Handle;
+  public static unsafe SNWItemFlags FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new SNWItemFlags((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static SNWItemFlags FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new SNWItemFlags(pointer, memoryOwn) : null;
   }
 
   public bool Equals(SNWItemFlags other) {
@@ -90,7 +89,7 @@ public unsafe class SNWItemFlags : global::System.IDisposable {
   public static bool operator !=(SNWItemFlags left, SNWItemFlags right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public byte m_nDropable {
     set {
       NWNXLibPINVOKE.SNWItemFlags_m_nDropable_set(swigCPtr, value);

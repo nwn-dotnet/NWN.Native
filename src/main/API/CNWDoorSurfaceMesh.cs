@@ -14,14 +14,9 @@ public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWDoorSurfaceMesh(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWDoorSurfaceMesh(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWDoorSurfaceMesh(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWDoorSurfaceMesh obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWDoorSurfaceMesh self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWDoorSurfaceMesh FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWDoorSurfaceMesh((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWDoorSurfaceMesh FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWDoorSurfaceMesh(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWDoorSurfaceMesh other) {
@@ -90,7 +89,7 @@ public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
   public static bool operator !=(CNWDoorSurfaceMesh left, CNWDoorSurfaceMesh right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public NativeArray<int> m_pnVertices {
     set {
       NWNXLibPINVOKE.CNWDoorSurfaceMesh_m_pnVertices_set(swigCPtr, value);

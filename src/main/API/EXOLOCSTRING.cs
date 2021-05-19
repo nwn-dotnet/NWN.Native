@@ -14,14 +14,9 @@ public unsafe class EXOLOCSTRING : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public EXOLOCSTRING(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal EXOLOCSTRING(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public EXOLOCSTRING(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(EXOLOCSTRING obj) {
@@ -48,7 +43,7 @@ public unsafe class EXOLOCSTRING : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class EXOLOCSTRING : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(EXOLOCSTRING self) {
-    return self.swigCPtr.Handle;
+  public static unsafe EXOLOCSTRING FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new EXOLOCSTRING((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static EXOLOCSTRING FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new EXOLOCSTRING(pointer, memoryOwn) : null;
   }
 
   public bool Equals(EXOLOCSTRING other) {
@@ -90,7 +89,7 @@ public unsafe class EXOLOCSTRING : global::System.IDisposable {
   public static bool operator !=(EXOLOCSTRING left, EXOLOCSTRING right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public int nID {
     set {
       NWNXLibPINVOKE.EXOLOCSTRING_nID_set(swigCPtr, value);

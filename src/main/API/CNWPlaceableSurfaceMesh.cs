@@ -14,14 +14,9 @@ public unsafe class CNWPlaceableSurfaceMesh : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWPlaceableSurfaceMesh(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWPlaceableSurfaceMesh(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWPlaceableSurfaceMesh(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWPlaceableSurfaceMesh obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWPlaceableSurfaceMesh : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWPlaceableSurfaceMesh : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWPlaceableSurfaceMesh self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWPlaceableSurfaceMesh FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWPlaceableSurfaceMesh((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWPlaceableSurfaceMesh FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWPlaceableSurfaceMesh(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWPlaceableSurfaceMesh other) {
@@ -90,7 +89,7 @@ public unsafe class CNWPlaceableSurfaceMesh : global::System.IDisposable {
   public static bool operator !=(CNWPlaceableSurfaceMesh left, CNWPlaceableSurfaceMesh right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public Vector m_pvVertices {
     set {
       NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pvVertices_set(swigCPtr, Vector.getCPtr(value));

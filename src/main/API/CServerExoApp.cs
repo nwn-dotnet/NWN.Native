@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CServerExoApp : CBaseExoApp {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CServerExoApp(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CServerExoApp_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CServerExoApp(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CServerExoApp_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CServerExoApp(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CServerExoApp_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CServerExoApp obj) {
@@ -37,7 +33,7 @@ public unsafe class CServerExoApp : CBaseExoApp {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CServerExoApp : CBaseExoApp {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CServerExoApp self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CServerExoApp FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CServerExoApp((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CServerExoApp FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CServerExoApp(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CServerExoApp other) {
@@ -79,7 +79,7 @@ public unsafe class CServerExoApp : CBaseExoApp {
   public static bool operator !=(CServerExoApp left, CServerExoApp right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CServerExoAppInternal m_pcExoAppInternal {
     set {
       NWNXLibPINVOKE.CServerExoApp_m_pcExoAppInternal_set(swigCPtr, CServerExoAppInternal.getCPtr(value));

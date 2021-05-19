@@ -14,14 +14,9 @@ public unsafe class ENCAPSULATED_RESLISTENTRY : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public ENCAPSULATED_RESLISTENTRY(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal ENCAPSULATED_RESLISTENTRY(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public ENCAPSULATED_RESLISTENTRY(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(ENCAPSULATED_RESLISTENTRY obj) {
@@ -48,7 +43,7 @@ public unsafe class ENCAPSULATED_RESLISTENTRY : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class ENCAPSULATED_RESLISTENTRY : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(ENCAPSULATED_RESLISTENTRY self) {
-    return self.swigCPtr.Handle;
+  public static unsafe ENCAPSULATED_RESLISTENTRY FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new ENCAPSULATED_RESLISTENTRY((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static ENCAPSULATED_RESLISTENTRY FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new ENCAPSULATED_RESLISTENTRY(pointer, memoryOwn) : null;
   }
 
   public bool Equals(ENCAPSULATED_RESLISTENTRY other) {
@@ -90,7 +89,7 @@ public unsafe class ENCAPSULATED_RESLISTENTRY : global::System.IDisposable {
   public static bool operator !=(ENCAPSULATED_RESLISTENTRY left, ENCAPSULATED_RESLISTENTRY right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public uint nOffsetToResource {
     set {
       NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_nOffsetToResource_set(swigCPtr, value);

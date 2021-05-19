@@ -14,14 +14,9 @@ public unsafe class CExoArrayListMaterialShaderParam : global::System.IDisposabl
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoArrayListMaterialShaderParam(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoArrayListMaterialShaderParam(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoArrayListMaterialShaderParam(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListMaterialShaderParam obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoArrayListMaterialShaderParam : global::System.IDisposabl
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoArrayListMaterialShaderParam : global::System.IDisposabl
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoArrayListMaterialShaderParam self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoArrayListMaterialShaderParam FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoArrayListMaterialShaderParam((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoArrayListMaterialShaderParam FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoArrayListMaterialShaderParam(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoArrayListMaterialShaderParam other) {
@@ -90,7 +89,7 @@ public unsafe class CExoArrayListMaterialShaderParam : global::System.IDisposabl
   public static bool operator !=(CExoArrayListMaterialShaderParam left, CExoArrayListMaterialShaderParam right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public MaterialShaderParam element {
     set {
       NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_element_set(swigCPtr, MaterialShaderParam.getCPtr(value));

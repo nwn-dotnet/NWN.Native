@@ -14,14 +14,9 @@ public unsafe class CNWSCombatAttackDataArray : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWSCombatAttackDataArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWSCombatAttackDataArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSCombatAttackDataArray(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSCombatAttackDataArray obj) {
@@ -48,28 +43,23 @@ public unsafe class CNWSCombatAttackDataArray : global::System.IDisposable {
       }
     }
   }
-
-  public CNWSCombatAttackData this[int index] {
-    get {
-      return GetItem(index);
-    }
-    set {
-      SetItem(index, value);
-    }
-  }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
   }
 
-  public static implicit operator void*(CNWSCombatAttackDataArray self) {
+  public static unsafe implicit operator void*(CNWSCombatAttackDataArray self) {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSCombatAttackDataArray self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSCombatAttackDataArray FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSCombatAttackDataArray((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSCombatAttackDataArray FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSCombatAttackDataArray(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSCombatAttackDataArray other) {
@@ -99,7 +89,16 @@ public unsafe class CNWSCombatAttackDataArray : global::System.IDisposable {
   public static bool operator !=(CNWSCombatAttackDataArray left, CNWSCombatAttackDataArray right) {
     return !Equals(left, right);
   }
+/*@SWIG@*/
 
+  public CNWSCombatAttackData this[int index] {
+    get {
+      return GetItem(index);
+    }
+    set {
+      SetItem(index, value);
+    }
+  }
   public CNWSCombatAttackDataArray(int nElements) : this(NWNXLibPINVOKE.new_CNWSCombatAttackDataArray(nElements), true) {
   }
 

@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CResWOK : CRes {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CResWOK(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResWOK_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CResWOK(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResWOK_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CResWOK(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResWOK_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CResWOK obj) {
@@ -37,7 +33,7 @@ public unsafe class CResWOK : CRes {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CResWOK : CRes {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CResWOK self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CResWOK FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CResWOK((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CResWOK FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CResWOK(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CResWOK other) {
@@ -79,7 +79,7 @@ public unsafe class CResWOK : CRes {
   public static bool operator !=(CResWOK left, CResWOK right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public int m_bLoaded {
     set {
       NWNXLibPINVOKE.CResWOK_m_bLoaded_set(swigCPtr, value);

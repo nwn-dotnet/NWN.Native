@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CExoResFile : CExoPackedFile {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CExoResFile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CExoResFile_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CExoResFile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CExoResFile_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoResFile(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CExoResFile_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoResFile obj) {
@@ -37,7 +33,7 @@ public unsafe class CExoResFile : CExoPackedFile {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CExoResFile : CExoPackedFile {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoResFile self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoResFile FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoResFile((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoResFile FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoResFile(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoResFile other) {
@@ -79,7 +79,7 @@ public unsafe class CExoResFile : CExoPackedFile {
   public static bool operator !=(CExoResFile left, CExoResFile right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public BIFFFILE_Version m_nVersion {
     set {
       NWNXLibPINVOKE.CExoResFile_m_nVersion_set(swigCPtr, (int)value);

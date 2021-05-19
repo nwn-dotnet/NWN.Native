@@ -14,14 +14,9 @@ public unsafe class CExoArrayListCNWSInvitationDetails : global::System.IDisposa
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoArrayListCNWSInvitationDetails(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoArrayListCNWSInvitationDetails(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoArrayListCNWSInvitationDetails(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListCNWSInvitationDetails obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoArrayListCNWSInvitationDetails : global::System.IDisposa
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoArrayListCNWSInvitationDetails : global::System.IDisposa
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoArrayListCNWSInvitationDetails self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoArrayListCNWSInvitationDetails FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoArrayListCNWSInvitationDetails((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoArrayListCNWSInvitationDetails FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoArrayListCNWSInvitationDetails(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoArrayListCNWSInvitationDetails other) {
@@ -90,7 +89,7 @@ public unsafe class CExoArrayListCNWSInvitationDetails : global::System.IDisposa
   public static bool operator !=(CExoArrayListCNWSInvitationDetails left, CExoArrayListCNWSInvitationDetails right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CNWSInvitationDetails element {
     set {
       NWNXLibPINVOKE.CExoArrayListCNWSInvitationDetails_element_set(swigCPtr, CNWSInvitationDetails.getCPtr(value));

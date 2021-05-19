@@ -14,14 +14,9 @@ public unsafe class SSubNetProfile : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public SSubNetProfile(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal SSubNetProfile(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public SSubNetProfile(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SSubNetProfile obj) {
@@ -48,7 +43,7 @@ public unsafe class SSubNetProfile : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class SSubNetProfile : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(SSubNetProfile self) {
-    return self.swigCPtr.Handle;
+  public static unsafe SSubNetProfile FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new SSubNetProfile((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static SSubNetProfile FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new SSubNetProfile(pointer, memoryOwn) : null;
   }
 
   public bool Equals(SSubNetProfile other) {
@@ -90,7 +89,7 @@ public unsafe class SSubNetProfile : global::System.IDisposable {
   public static bool operator !=(SSubNetProfile left, SSubNetProfile right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public uint nPlayerID {
     set {
       NWNXLibPINVOKE.SSubNetProfile_nPlayerID_set(swigCPtr, value);

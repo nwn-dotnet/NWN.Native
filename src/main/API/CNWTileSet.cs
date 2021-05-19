@@ -14,14 +14,9 @@ public unsafe class CNWTileSet : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWTileSet(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWTileSet(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWTileSet(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWTileSet obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWTileSet : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWTileSet : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWTileSet self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWTileSet FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWTileSet((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWTileSet FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWTileSet(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWTileSet other) {
@@ -90,7 +89,7 @@ public unsafe class CNWTileSet : global::System.IDisposable {
   public static bool operator !=(CNWTileSet left, CNWTileSet right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CResRef m_resrefName {
     set {
       NWNXLibPINVOKE.CNWTileSet_m_resrefName_set(swigCPtr, CResRef.getCPtr(value));

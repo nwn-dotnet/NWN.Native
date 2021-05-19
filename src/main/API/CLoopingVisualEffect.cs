@@ -14,14 +14,9 @@ public unsafe class CLoopingVisualEffect : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CLoopingVisualEffect(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CLoopingVisualEffect(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CLoopingVisualEffect(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CLoopingVisualEffect obj) {
@@ -48,7 +43,7 @@ public unsafe class CLoopingVisualEffect : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CLoopingVisualEffect : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CLoopingVisualEffect self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CLoopingVisualEffect FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CLoopingVisualEffect((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CLoopingVisualEffect FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CLoopingVisualEffect(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CLoopingVisualEffect other) {
@@ -90,7 +89,7 @@ public unsafe class CLoopingVisualEffect : global::System.IDisposable {
   public static bool operator !=(CLoopingVisualEffect left, CLoopingVisualEffect right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public ushort m_nId {
     set {
       NWNXLibPINVOKE.CLoopingVisualEffect_m_nId_set(swigCPtr, value);

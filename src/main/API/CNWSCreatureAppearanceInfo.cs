@@ -14,14 +14,9 @@ public unsafe class CNWSCreatureAppearanceInfo : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWSCreatureAppearanceInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWSCreatureAppearanceInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSCreatureAppearanceInfo(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSCreatureAppearanceInfo obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWSCreatureAppearanceInfo : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWSCreatureAppearanceInfo : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSCreatureAppearanceInfo self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSCreatureAppearanceInfo FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSCreatureAppearanceInfo((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSCreatureAppearanceInfo FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSCreatureAppearanceInfo(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSCreatureAppearanceInfo other) {
@@ -90,7 +89,7 @@ public unsafe class CNWSCreatureAppearanceInfo : global::System.IDisposable {
   public static bool operator !=(CNWSCreatureAppearanceInfo left, CNWSCreatureAppearanceInfo right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public uint m_oidLeftHandItem {
     set {
       NWNXLibPINVOKE.CNWSCreatureAppearanceInfo_m_oidLeftHandItem_set(swigCPtr, value);

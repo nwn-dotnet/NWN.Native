@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CNWSSysAdmin : CNWSClient {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CNWSSysAdmin(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSSysAdmin_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CNWSSysAdmin(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSSysAdmin_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSSysAdmin(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSSysAdmin_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSSysAdmin obj) {
@@ -37,7 +33,7 @@ public unsafe class CNWSSysAdmin : CNWSClient {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CNWSSysAdmin : CNWSClient {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSSysAdmin self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSSysAdmin FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSSysAdmin((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSSysAdmin FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSSysAdmin(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSSysAdmin other) {
@@ -79,7 +79,7 @@ public unsafe class CNWSSysAdmin : CNWSClient {
   public static bool operator !=(CNWSSysAdmin left, CNWSSysAdmin right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CNWSSysAdmin(uint nPlayerID) : this(NWNXLibPINVOKE.new_CNWSSysAdmin(nPlayerID), true) {
   }
 

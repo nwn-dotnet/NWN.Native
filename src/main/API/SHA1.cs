@@ -14,14 +14,9 @@ public unsafe class SHA1 : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public SHA1(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal SHA1(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public SHA1(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SHA1 obj) {
@@ -48,7 +43,7 @@ public unsafe class SHA1 : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class SHA1 : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(SHA1 self) {
-    return self.swigCPtr.Handle;
+  public static unsafe SHA1 FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new SHA1((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static SHA1 FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new SHA1(pointer, memoryOwn) : null;
   }
 
   public bool Equals(SHA1 other) {
@@ -90,7 +89,7 @@ public unsafe class SHA1 : global::System.IDisposable {
   public static bool operator !=(SHA1 left, SHA1 right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public bool m_empty {
     set {
       NWNXLibPINVOKE.SHA1_m_empty_set(swigCPtr, value);

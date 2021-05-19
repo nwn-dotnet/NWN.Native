@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CNWSEffectListHandler : CGameEffectApplierRemover {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CNWSEffectListHandler(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSEffectListHandler_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CNWSEffectListHandler(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSEffectListHandler_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSEffectListHandler(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSEffectListHandler_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSEffectListHandler obj) {
@@ -37,7 +33,7 @@ public unsafe class CNWSEffectListHandler : CGameEffectApplierRemover {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CNWSEffectListHandler : CGameEffectApplierRemover {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSEffectListHandler self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSEffectListHandler FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSEffectListHandler((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSEffectListHandler FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSEffectListHandler(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSEffectListHandler other) {
@@ -79,7 +79,7 @@ public unsafe class CNWSEffectListHandler : CGameEffectApplierRemover {
   public static bool operator !=(CNWSEffectListHandler left, CNWSEffectListHandler right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public SWIGTYPE_p_p_f_p_CNWSObject_p_CGameEffect_int__int m_pApplyEffectCommands {
     set {
       NWNXLibPINVOKE.CNWSEffectListHandler_m_pApplyEffectCommands_set(swigCPtr, SWIGTYPE_p_p_f_p_CNWSObject_p_CGameEffect_int__int.getCPtr(value));

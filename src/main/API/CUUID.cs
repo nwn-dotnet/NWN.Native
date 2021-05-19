@@ -14,14 +14,9 @@ public unsafe class CUUID : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CUUID(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CUUID(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CUUID(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CUUID obj) {
@@ -48,7 +43,7 @@ public unsafe class CUUID : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CUUID : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CUUID self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CUUID FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CUUID((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CUUID FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CUUID(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CUUID other) {
@@ -90,7 +89,7 @@ public unsafe class CUUID : global::System.IDisposable {
   public static bool operator !=(CUUID left, CUUID right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public uint ab {
     set {
       NWNXLibPINVOKE.CUUID_ab_set(swigCPtr, value);

@@ -14,14 +14,9 @@ public unsafe class CExoEncrypt : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoEncrypt(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoEncrypt(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoEncrypt(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoEncrypt obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoEncrypt : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoEncrypt : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoEncrypt self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoEncrypt FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoEncrypt((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoEncrypt FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoEncrypt(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoEncrypt other) {
@@ -90,7 +89,7 @@ public unsafe class CExoEncrypt : global::System.IDisposable {
   public static bool operator !=(CExoEncrypt left, CExoEncrypt right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public NativeArray<uint> m_anI {
     set {
       NWNXLibPINVOKE.CExoEncrypt_m_anI_set(swigCPtr, value);

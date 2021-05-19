@@ -14,14 +14,9 @@ public unsafe class CassowarySolverEngineStructure : global::System.IDisposable 
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CassowarySolverEngineStructure(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CassowarySolverEngineStructure(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CassowarySolverEngineStructure(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CassowarySolverEngineStructure obj) {
@@ -48,7 +43,7 @@ public unsafe class CassowarySolverEngineStructure : global::System.IDisposable 
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CassowarySolverEngineStructure : global::System.IDisposable 
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CassowarySolverEngineStructure self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CassowarySolverEngineStructure FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CassowarySolverEngineStructure((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CassowarySolverEngineStructure FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CassowarySolverEngineStructure(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CassowarySolverEngineStructure other) {
@@ -90,7 +89,7 @@ public unsafe class CassowarySolverEngineStructure : global::System.IDisposable 
   public static bool operator !=(CassowarySolverEngineStructure left, CassowarySolverEngineStructure right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public SWIGTYPE_p_std__shared_ptrT_void_p_t m_shared {
     set {
       NWNXLibPINVOKE.CassowarySolverEngineStructure_m_shared_set(swigCPtr, SWIGTYPE_p_std__shared_ptrT_void_p_t.getCPtr(value));

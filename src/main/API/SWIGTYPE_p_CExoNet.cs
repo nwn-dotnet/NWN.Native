@@ -24,7 +24,7 @@ public class SWIGTYPE_p_CExoNet {
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SWIGTYPE_p_CExoNet obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -35,8 +35,12 @@ public class SWIGTYPE_p_CExoNet {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(SWIGTYPE_p_CExoNet self) {
-    return self.swigCPtr.Handle;
+  public static unsafe SWIGTYPE_p_CExoNet FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new SWIGTYPE_p_CExoNet((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static SWIGTYPE_p_CExoNet FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new SWIGTYPE_p_CExoNet(pointer, memoryOwn) : null;
   }
 
   public bool Equals(SWIGTYPE_p_CExoNet other) {
@@ -66,6 +70,6 @@ public class SWIGTYPE_p_CExoNet {
   public static bool operator !=(SWIGTYPE_p_CExoNet left, SWIGTYPE_p_CExoNet right) {
     return !Equals(left, right);
   }
-}
+/*@SWIG@*/}
 
 }

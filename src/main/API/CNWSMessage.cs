@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CNWSMessage : CNWMessage {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CNWSMessage(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSMessage_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CNWSMessage(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSMessage_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSMessage(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSMessage_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSMessage obj) {
@@ -37,7 +33,7 @@ public unsafe class CNWSMessage : CNWMessage {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CNWSMessage : CNWMessage {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSMessage self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSMessage FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSMessage((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSMessage FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSMessage(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSMessage other) {
@@ -79,7 +79,7 @@ public unsafe class CNWSMessage : CNWMessage {
   public static bool operator !=(CNWSMessage left, CNWSMessage right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CNWSMessage() : this(NWNXLibPINVOKE.new_CNWSMessage(), true) {
   }
 

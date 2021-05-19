@@ -14,14 +14,9 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWSModule(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWSModule(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSModule(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSModule obj) {
@@ -53,7 +48,7 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   global::System.Runtime.InteropServices.HandleRef ICGameObject.GetInterfaceCPtr() {
     return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CNWSModule_ICGameObject_GetInterfaceCPtr(swigCPtr.Handle));
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -64,8 +59,12 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSModule self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSModule FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSModule((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSModule FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSModule(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSModule other) {
@@ -95,7 +94,7 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   public static bool operator !=(CNWSModule left, CNWSModule right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoLinkedListNWModuleExpansion m_lstModuleExpansion {
     set {
       NWNXLibPINVOKE.CNWSModule_m_lstModuleExpansion_set(swigCPtr, CExoLinkedListNWModuleExpansion.getCPtr(value));

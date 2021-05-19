@@ -14,14 +14,9 @@ public unsafe class CNWBaseItemArray : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWBaseItemArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWBaseItemArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWBaseItemArray(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWBaseItemArray obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWBaseItemArray : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWBaseItemArray : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWBaseItemArray self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWBaseItemArray FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWBaseItemArray((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWBaseItemArray FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWBaseItemArray(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWBaseItemArray other) {
@@ -90,7 +89,7 @@ public unsafe class CNWBaseItemArray : global::System.IDisposable {
   public static bool operator !=(CNWBaseItemArray left, CNWBaseItemArray right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public int m_nNumBaseItems {
     set {
       NWNXLibPINVOKE.CNWBaseItemArray_m_nNumBaseItems_set(swigCPtr, value);

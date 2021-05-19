@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CNWSCreature : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CNWSCreature(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSCreature_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CNWSCreature(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSCreature_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSCreature(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSCreature_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSCreature obj) {
@@ -37,7 +33,7 @@ public unsafe class CNWSCreature : CNWSObject {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CNWSCreature : CNWSObject {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSCreature self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSCreature FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSCreature((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSCreature FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSCreature(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSCreature other) {
@@ -79,7 +79,7 @@ public unsafe class CNWSCreature : CNWSObject {
   public static bool operator !=(CNWSCreature left, CNWSCreature right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public int m_bPonyRide {
     set {
       NWNXLibPINVOKE.CNWSCreature_m_bPonyRide_set(swigCPtr, value);

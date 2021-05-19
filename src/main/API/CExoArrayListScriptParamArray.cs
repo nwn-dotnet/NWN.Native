@@ -14,14 +14,9 @@ public unsafe class CExoArrayListScriptParamArray : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoArrayListScriptParamArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoArrayListScriptParamArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoArrayListScriptParamArray(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListScriptParamArray obj) {
@@ -48,28 +43,23 @@ public unsafe class CExoArrayListScriptParamArray : global::System.IDisposable {
       }
     }
   }
-
-  public CExoArrayListScriptParam this[int index] {
-    get {
-      return GetItem(index);
-    }
-    set {
-      SetItem(index, value);
-    }
-  }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
   }
 
-  public static implicit operator void*(CExoArrayListScriptParamArray self) {
+  public static unsafe implicit operator void*(CExoArrayListScriptParamArray self) {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoArrayListScriptParamArray self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoArrayListScriptParamArray FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoArrayListScriptParamArray((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoArrayListScriptParamArray FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoArrayListScriptParamArray(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoArrayListScriptParamArray other) {
@@ -99,7 +89,16 @@ public unsafe class CExoArrayListScriptParamArray : global::System.IDisposable {
   public static bool operator !=(CExoArrayListScriptParamArray left, CExoArrayListScriptParamArray right) {
     return !Equals(left, right);
   }
+/*@SWIG@*/
 
+  public CExoArrayListScriptParam this[int index] {
+    get {
+      return GetItem(index);
+    }
+    set {
+      SetItem(index, value);
+    }
+  }
   public CExoArrayListScriptParamArray(int nElements) : this(NWNXLibPINVOKE.new_CExoArrayListScriptParamArray(nElements), true) {
   }
 

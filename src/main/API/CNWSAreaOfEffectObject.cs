@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CNWSAreaOfEffectObject : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CNWSAreaOfEffectObject(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSAreaOfEffectObject_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CNWSAreaOfEffectObject(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSAreaOfEffectObject_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSAreaOfEffectObject(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSAreaOfEffectObject_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSAreaOfEffectObject obj) {
@@ -37,7 +33,7 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSAreaOfEffectObject self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSAreaOfEffectObject FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSAreaOfEffectObject((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSAreaOfEffectObject FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSAreaOfEffectObject(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSAreaOfEffectObject other) {
@@ -79,7 +79,7 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
   public static bool operator !=(CNWSAreaOfEffectObject left, CNWSAreaOfEffectObject right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public ushort m_nObjectArrayIndex {
     set {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nObjectArrayIndex_set(swigCPtr, value);

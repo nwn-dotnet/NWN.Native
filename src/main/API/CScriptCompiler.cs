@@ -14,14 +14,9 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CScriptCompiler(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CScriptCompiler(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CScriptCompiler(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CScriptCompiler obj) {
@@ -48,7 +43,7 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CScriptCompiler self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CScriptCompiler FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CScriptCompiler((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CScriptCompiler FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CScriptCompiler(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CScriptCompiler other) {
@@ -90,7 +89,7 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
   public static bool operator !=(CScriptCompiler left, CScriptCompiler right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public int m_nKeyWords {
     set {
       NWNXLibPINVOKE.CScriptCompiler_m_nKeyWords_set(swigCPtr, value);

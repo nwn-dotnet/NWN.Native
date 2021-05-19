@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CNWSStore : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CNWSStore(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSStore_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CNWSStore(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSStore_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSStore(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSStore_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSStore obj) {
@@ -37,7 +33,7 @@ public unsafe class CNWSStore : CNWSObject {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CNWSStore : CNWSObject {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSStore self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSStore FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSStore((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSStore FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSStore(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSStore other) {
@@ -79,7 +79,7 @@ public unsafe class CNWSStore : CNWSObject {
   public static bool operator !=(CNWSStore left, CNWSStore right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoStringArray m_sScripts {
     set {
       NWNXLibPINVOKE.CNWSStore_m_sScripts_set(swigCPtr, CExoStringArray.getCPtr(value));

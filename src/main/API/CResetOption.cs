@@ -14,14 +14,9 @@ public unsafe class CResetOption : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CResetOption(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CResetOption(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CResetOption(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CResetOption obj) {
@@ -48,7 +43,7 @@ public unsafe class CResetOption : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CResetOption : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CResetOption self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CResetOption FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CResetOption((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CResetOption FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CResetOption(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CResetOption other) {
@@ -90,7 +89,7 @@ public unsafe class CResetOption : global::System.IDisposable {
   public static bool operator !=(CResetOption left, CResetOption right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public int bOnVacant {
     set {
       NWNXLibPINVOKE.CResetOption_bOnVacant_set(swigCPtr, value);

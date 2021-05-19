@@ -14,14 +14,9 @@ public unsafe class CWalkHitInfo : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CWalkHitInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CWalkHitInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CWalkHitInfo(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CWalkHitInfo obj) {
@@ -48,7 +43,7 @@ public unsafe class CWalkHitInfo : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CWalkHitInfo : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CWalkHitInfo self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CWalkHitInfo FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CWalkHitInfo((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CWalkHitInfo FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CWalkHitInfo(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CWalkHitInfo other) {
@@ -90,7 +89,7 @@ public unsafe class CWalkHitInfo : global::System.IDisposable {
   public static bool operator !=(CWalkHitInfo left, CWalkHitInfo right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public int m_nFailureReason {
     set {
       NWNXLibPINVOKE.CWalkHitInfo_m_nFailureReason_set(swigCPtr, value);

@@ -14,14 +14,9 @@ public unsafe class CExoArrayListCLoopingVisualEffectPtr : global::System.IDispo
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoArrayListCLoopingVisualEffectPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoArrayListCLoopingVisualEffectPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoArrayListCLoopingVisualEffectPtr(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListCLoopingVisualEffectPtr obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoArrayListCLoopingVisualEffectPtr : global::System.IDispo
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoArrayListCLoopingVisualEffectPtr : global::System.IDispo
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoArrayListCLoopingVisualEffectPtr self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoArrayListCLoopingVisualEffectPtr FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoArrayListCLoopingVisualEffectPtr((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoArrayListCLoopingVisualEffectPtr FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoArrayListCLoopingVisualEffectPtr(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoArrayListCLoopingVisualEffectPtr other) {
@@ -90,7 +89,7 @@ public unsafe class CExoArrayListCLoopingVisualEffectPtr : global::System.IDispo
   public static bool operator !=(CExoArrayListCLoopingVisualEffectPtr left, CExoArrayListCLoopingVisualEffectPtr right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public void** element {
     set {
       NWNXLibPINVOKE.CExoArrayListCLoopingVisualEffectPtr_element_set(swigCPtr, (global::System.IntPtr)value);

@@ -14,14 +14,9 @@ public unsafe class SETEntry : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public SETEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal SETEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public SETEntry(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SETEntry obj) {
@@ -48,7 +43,7 @@ public unsafe class SETEntry : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class SETEntry : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(SETEntry self) {
-    return self.swigCPtr.Handle;
+  public static unsafe SETEntry FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new SETEntry((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static SETEntry FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new SETEntry(pointer, memoryOwn) : null;
   }
 
   public bool Equals(SETEntry other) {
@@ -90,7 +89,7 @@ public unsafe class SETEntry : global::System.IDisposable {
   public static bool operator !=(SETEntry left, SETEntry right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoString m_sEntry {
     set {
       NWNXLibPINVOKE.SETEntry_m_sEntry_set(swigCPtr, CExoString.getCPtr(value));

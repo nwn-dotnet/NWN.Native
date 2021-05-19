@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CNWSSoundObject : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CNWSSoundObject(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSSoundObject_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CNWSSoundObject(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSSoundObject_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSSoundObject(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSSoundObject_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSSoundObject obj) {
@@ -37,7 +33,7 @@ public unsafe class CNWSSoundObject : CNWSObject {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CNWSSoundObject : CNWSObject {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSSoundObject self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSSoundObject FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSSoundObject((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSSoundObject FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSSoundObject(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSSoundObject other) {
@@ -79,7 +79,7 @@ public unsafe class CNWSSoundObject : CNWSObject {
   public static bool operator !=(CNWSSoundObject left, CNWSSoundObject right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public int m_bIsActive {
     set {
       NWNXLibPINVOKE.CNWSSoundObject_m_bIsActive_set(swigCPtr, value);

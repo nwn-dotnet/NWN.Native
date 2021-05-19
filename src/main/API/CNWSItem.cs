@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CNWSItem : CNWSObject, ICNWItem {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CNWSItem(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSItem_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CNWSItem(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSItem_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSItem(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSItem_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSItem obj) {
@@ -42,7 +38,7 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   global::System.Runtime.InteropServices.HandleRef ICNWItem.GetInterfaceCPtr() {
     return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CNWSItem_ICNWItem_GetInterfaceCPtr(swigCPtr.Handle));
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -53,8 +49,12 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSItem self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSItem FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSItem((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSItem FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSItem(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSItem other) {
@@ -84,7 +84,7 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   public static bool operator !=(CNWSItem left, CNWSItem right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public byte m_nLastUsedActiveProperties {
     set {
       NWNXLibPINVOKE.CNWSItem_m_nLastUsedActiveProperties_set(swigCPtr, value);

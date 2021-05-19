@@ -14,14 +14,9 @@ public unsafe class NWMODULEENTRYINFO : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public NWMODULEENTRYINFO(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal NWMODULEENTRYINFO(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public NWMODULEENTRYINFO(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(NWMODULEENTRYINFO obj) {
@@ -48,7 +43,7 @@ public unsafe class NWMODULEENTRYINFO : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class NWMODULEENTRYINFO : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(NWMODULEENTRYINFO self) {
-    return self.swigCPtr.Handle;
+  public static unsafe NWMODULEENTRYINFO FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new NWMODULEENTRYINFO((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static NWMODULEENTRYINFO FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new NWMODULEENTRYINFO(pointer, memoryOwn) : null;
   }
 
   public bool Equals(NWMODULEENTRYINFO other) {
@@ -90,7 +89,7 @@ public unsafe class NWMODULEENTRYINFO : global::System.IDisposable {
   public static bool operator !=(NWMODULEENTRYINFO left, NWMODULEENTRYINFO right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CResRef refArea {
     set {
       NWNXLibPINVOKE.NWMODULEENTRYINFO_refArea_set(swigCPtr, CResRef.getCPtr(value));

@@ -14,14 +14,9 @@ public unsafe class LerpVector : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public LerpVector(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal LerpVector(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public LerpVector(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(LerpVector obj) {
@@ -48,7 +43,7 @@ public unsafe class LerpVector : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class LerpVector : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(LerpVector self) {
-    return self.swigCPtr.Handle;
+  public static unsafe LerpVector FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new LerpVector((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static LerpVector FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new LerpVector(pointer, memoryOwn) : null;
   }
 
   public bool Equals(LerpVector other) {
@@ -90,7 +89,7 @@ public unsafe class LerpVector : global::System.IDisposable {
   public static bool operator !=(LerpVector left, LerpVector right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public LerpFloat x {
     set {
       NWNXLibPINVOKE.LerpVector_x_set(swigCPtr, LerpFloat.getCPtr(value));

@@ -14,14 +14,9 @@ public unsafe class CNWSDialogEntry : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWSDialogEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWSDialogEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSDialogEntry(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSDialogEntry obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWSDialogEntry : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWSDialogEntry : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSDialogEntry self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSDialogEntry FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSDialogEntry((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSDialogEntry FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSDialogEntry(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSDialogEntry other) {
@@ -90,7 +89,7 @@ public unsafe class CNWSDialogEntry : global::System.IDisposable {
   public static bool operator !=(CNWSDialogEntry left, CNWSDialogEntry right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoString m_sSpeaker {
     set {
       NWNXLibPINVOKE.CNWSDialogEntry_m_sSpeaker_set(swigCPtr, CExoString.getCPtr(value));

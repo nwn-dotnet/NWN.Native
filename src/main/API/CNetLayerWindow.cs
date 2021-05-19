@@ -14,14 +14,9 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNetLayerWindow(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNetLayerWindow(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNetLayerWindow(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNetLayerWindow obj) {
@@ -48,7 +43,7 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNetLayerWindow self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNetLayerWindow FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNetLayerWindow((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNetLayerWindow FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNetLayerWindow(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNetLayerWindow other) {
@@ -90,7 +89,7 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
   public static bool operator !=(CNetLayerWindow left, CNetLayerWindow right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public int m_bInitialized {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_bInitialized_set(swigCPtr, value);

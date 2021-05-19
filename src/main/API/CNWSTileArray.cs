@@ -14,14 +14,9 @@ public unsafe class CNWSTileArray : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWSTileArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWSTileArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSTileArray(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSTileArray obj) {
@@ -48,28 +43,23 @@ public unsafe class CNWSTileArray : global::System.IDisposable {
       }
     }
   }
-
-  public CNWSTile this[int index] {
-    get {
-      return GetItem(index);
-    }
-    set {
-      SetItem(index, value);
-    }
-  }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
   }
 
-  public static implicit operator void*(CNWSTileArray self) {
+  public static unsafe implicit operator void*(CNWSTileArray self) {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSTileArray self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSTileArray FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSTileArray((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSTileArray FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSTileArray(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSTileArray other) {
@@ -99,7 +89,16 @@ public unsafe class CNWSTileArray : global::System.IDisposable {
   public static bool operator !=(CNWSTileArray left, CNWSTileArray right) {
     return !Equals(left, right);
   }
+/*@SWIG@*/
 
+  public CNWSTile this[int index] {
+    get {
+      return GetItem(index);
+    }
+    set {
+      SetItem(index, value);
+    }
+  }
   public CNWSTileArray(int nElements) : this(NWNXLibPINVOKE.new_CNWSTileArray(nElements), true) {
   }
 

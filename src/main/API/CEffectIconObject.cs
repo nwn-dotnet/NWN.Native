@@ -14,14 +14,9 @@ public unsafe class CEffectIconObject : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CEffectIconObject(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CEffectIconObject(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CEffectIconObject(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CEffectIconObject obj) {
@@ -48,7 +43,7 @@ public unsafe class CEffectIconObject : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CEffectIconObject : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CEffectIconObject self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CEffectIconObject FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CEffectIconObject((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CEffectIconObject FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CEffectIconObject(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CEffectIconObject other) {
@@ -90,7 +89,7 @@ public unsafe class CEffectIconObject : global::System.IDisposable {
   public static bool operator !=(CEffectIconObject left, CEffectIconObject right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public byte m_nIcon {
     set {
       NWNXLibPINVOKE.CEffectIconObject_m_nIcon_set(swigCPtr, value);

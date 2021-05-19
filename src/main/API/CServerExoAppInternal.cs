@@ -14,14 +14,9 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CServerExoAppInternal(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CServerExoAppInternal(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CServerExoAppInternal(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CServerExoAppInternal obj) {
@@ -48,7 +43,7 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CServerExoAppInternal self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CServerExoAppInternal FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CServerExoAppInternal((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CServerExoAppInternal FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CServerExoAppInternal(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CServerExoAppInternal other) {
@@ -90,7 +89,7 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
   public static bool operator !=(CServerExoAppInternal left, CServerExoAppInternal right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public NativeArray<byte> ScratchMessageBuffer {
     set {
       NWNXLibPINVOKE.CServerExoAppInternal_ScratchMessageBuffer_set(swigCPtr, value);

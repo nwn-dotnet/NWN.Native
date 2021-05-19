@@ -14,14 +14,9 @@ public unsafe class CObjectLookupTablePtrArray : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CObjectLookupTablePtrArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CObjectLookupTablePtrArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CObjectLookupTablePtrArray(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CObjectLookupTablePtrArray obj) {
@@ -48,28 +43,23 @@ public unsafe class CObjectLookupTablePtrArray : global::System.IDisposable {
       }
     }
   }
-
-  public CObjectLookupTable this[int index] {
-    get {
-      return GetItem(index);
-    }
-    set {
-      SetItem(index, value);
-    }
-  }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
   }
 
-  public static implicit operator void*(CObjectLookupTablePtrArray self) {
+  public static unsafe implicit operator void*(CObjectLookupTablePtrArray self) {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CObjectLookupTablePtrArray self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CObjectLookupTablePtrArray FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CObjectLookupTablePtrArray((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CObjectLookupTablePtrArray FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CObjectLookupTablePtrArray(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CObjectLookupTablePtrArray other) {
@@ -99,7 +89,16 @@ public unsafe class CObjectLookupTablePtrArray : global::System.IDisposable {
   public static bool operator !=(CObjectLookupTablePtrArray left, CObjectLookupTablePtrArray right) {
     return !Equals(left, right);
   }
+/*@SWIG@*/
 
+  public CObjectLookupTable this[int index] {
+    get {
+      return GetItem(index);
+    }
+    set {
+      SetItem(index, value);
+    }
+  }
   public CObjectLookupTablePtrArray(int nElements) : this(NWNXLibPINVOKE.new_CObjectLookupTablePtrArray(nElements), true) {
   }
 

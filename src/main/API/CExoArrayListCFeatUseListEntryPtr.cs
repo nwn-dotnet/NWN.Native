@@ -14,14 +14,9 @@ public unsafe class CExoArrayListCFeatUseListEntryPtr : global::System.IDisposab
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoArrayListCFeatUseListEntryPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoArrayListCFeatUseListEntryPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoArrayListCFeatUseListEntryPtr(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListCFeatUseListEntryPtr obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoArrayListCFeatUseListEntryPtr : global::System.IDisposab
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoArrayListCFeatUseListEntryPtr : global::System.IDisposab
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoArrayListCFeatUseListEntryPtr self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoArrayListCFeatUseListEntryPtr FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoArrayListCFeatUseListEntryPtr((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoArrayListCFeatUseListEntryPtr FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoArrayListCFeatUseListEntryPtr(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoArrayListCFeatUseListEntryPtr other) {
@@ -90,7 +89,7 @@ public unsafe class CExoArrayListCFeatUseListEntryPtr : global::System.IDisposab
   public static bool operator !=(CExoArrayListCFeatUseListEntryPtr left, CExoArrayListCFeatUseListEntryPtr right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public void** element {
     set {
       NWNXLibPINVOKE.CExoArrayListCFeatUseListEntryPtr_element_set(swigCPtr, (global::System.IntPtr)value);

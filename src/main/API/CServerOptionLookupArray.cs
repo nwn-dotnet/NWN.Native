@@ -14,14 +14,9 @@ public unsafe class CServerOptionLookupArray : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CServerOptionLookupArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CServerOptionLookupArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CServerOptionLookupArray(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CServerOptionLookupArray obj) {
@@ -48,28 +43,23 @@ public unsafe class CServerOptionLookupArray : global::System.IDisposable {
       }
     }
   }
-
-  public CServerOptionLookup this[int index] {
-    get {
-      return GetItem(index);
-    }
-    set {
-      SetItem(index, value);
-    }
-  }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
   }
 
-  public static implicit operator void*(CServerOptionLookupArray self) {
+  public static unsafe implicit operator void*(CServerOptionLookupArray self) {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CServerOptionLookupArray self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CServerOptionLookupArray FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CServerOptionLookupArray((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CServerOptionLookupArray FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CServerOptionLookupArray(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CServerOptionLookupArray other) {
@@ -99,7 +89,16 @@ public unsafe class CServerOptionLookupArray : global::System.IDisposable {
   public static bool operator !=(CServerOptionLookupArray left, CServerOptionLookupArray right) {
     return !Equals(left, right);
   }
+/*@SWIG@*/
 
+  public CServerOptionLookup this[int index] {
+    get {
+      return GetItem(index);
+    }
+    set {
+      SetItem(index, value);
+    }
+  }
   public CServerOptionLookupArray(int nElements) : this(NWNXLibPINVOKE.new_CServerOptionLookupArray(nElements), true) {
   }
 

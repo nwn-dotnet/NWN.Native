@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CNWSPlayer : CNWSClient {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CNWSPlayer(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlayer_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CNWSPlayer(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlayer_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSPlayer(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlayer_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSPlayer obj) {
@@ -37,7 +33,7 @@ public unsafe class CNWSPlayer : CNWSClient {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CNWSPlayer : CNWSClient {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSPlayer self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSPlayer FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSPlayer((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSPlayer FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSPlayer(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSPlayer other) {
@@ -79,7 +79,7 @@ public unsafe class CNWSPlayer : CNWSClient {
   public static bool operator !=(CNWSPlayer left, CNWSPlayer right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoLinkedListCLastUpdateObject m_pActiveObjectsLastUpdate {
     set {
       NWNXLibPINVOKE.CNWSPlayer_m_pActiveObjectsLastUpdate_set(swigCPtr, CExoLinkedListCLastUpdateObject.getCPtr(value));

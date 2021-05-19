@@ -14,14 +14,9 @@ public unsafe class VectorArray : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public VectorArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal VectorArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public VectorArray(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(VectorArray obj) {
@@ -48,28 +43,23 @@ public unsafe class VectorArray : global::System.IDisposable {
       }
     }
   }
-
-  public Vector this[int index] {
-    get {
-      return GetItem(index);
-    }
-    set {
-      SetItem(index, value);
-    }
-  }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
   }
 
-  public static implicit operator void*(VectorArray self) {
+  public static unsafe implicit operator void*(VectorArray self) {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(VectorArray self) {
-    return self.swigCPtr.Handle;
+  public static unsafe VectorArray FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new VectorArray((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static VectorArray FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new VectorArray(pointer, memoryOwn) : null;
   }
 
   public bool Equals(VectorArray other) {
@@ -99,7 +89,16 @@ public unsafe class VectorArray : global::System.IDisposable {
   public static bool operator !=(VectorArray left, VectorArray right) {
     return !Equals(left, right);
   }
+/*@SWIG@*/
 
+  public Vector this[int index] {
+    get {
+      return GetItem(index);
+    }
+    set {
+      SetItem(index, value);
+    }
+  }
   public VectorArray(int nElements) : this(NWNXLibPINVOKE.new_VectorArray(nElements), true) {
   }
 

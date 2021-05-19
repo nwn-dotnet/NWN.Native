@@ -14,14 +14,9 @@ public unsafe class LerpFloat : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public LerpFloat(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal LerpFloat(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public LerpFloat(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(LerpFloat obj) {
@@ -48,7 +43,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class LerpFloat : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(LerpFloat self) {
-    return self.swigCPtr.Handle;
+  public static unsafe LerpFloat FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new LerpFloat((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static LerpFloat FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new LerpFloat(pointer, memoryOwn) : null;
   }
 
   public bool Equals(LerpFloat other) {
@@ -90,7 +89,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
   public static bool operator !=(LerpFloat left, LerpFloat right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public LerpTimerType m_timer_type {
     set {
       NWNXLibPINVOKE.LerpFloat_m_timer_type_set(swigCPtr, (int)value);
@@ -155,14 +154,9 @@ public unsafe class LerpFloat : global::System.IDisposable {
     private global::System.Runtime.InteropServices.HandleRef swigCPtr;
     protected bool swigCMemOwn;
   
-    public TimeType(global::System.IntPtr cPtr, bool cMemoryOwn) {
+    internal TimeType(global::System.IntPtr cPtr, bool cMemoryOwn) {
       swigCMemOwn = cMemoryOwn;
       swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-    }
-  
-    public TimeType(void* cPtr, bool cMemoryOwn) {
-      swigCMemOwn = cMemoryOwn;
-      swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
     }
   
     internal static global::System.Runtime.InteropServices.HandleRef getCPtr(TimeType obj) {
@@ -189,7 +183,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
         }
       }
     }
-  
+  /*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
     public global::System.IntPtr Pointer {
       get {
         return swigCPtr.Handle;
@@ -200,8 +194,12 @@ public unsafe class LerpFloat : global::System.IDisposable {
       return (void*)self.swigCPtr.Handle;
     }
   
-    public static implicit operator global::System.IntPtr(TimeType self) {
-      return self.swigCPtr.Handle;
+    public static unsafe TimeType FromPointer(void* pointer, bool memoryOwn = false) {
+      return pointer != null ? new TimeType((global::System.IntPtr)pointer, memoryOwn) : null;
+    }
+  
+    public static TimeType FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+      return pointer != global::System.IntPtr.Zero ? new TimeType(pointer, memoryOwn) : null;
     }
   
     public bool Equals(TimeType other) {
@@ -231,19 +229,14 @@ public unsafe class LerpFloat : global::System.IDisposable {
     public static bool operator !=(TimeType left, TimeType right) {
       return !Equals(left, right);
     }
-  
+  /*@SWIG@*/
       public unsafe class World : global::System.IDisposable {
         private global::System.Runtime.InteropServices.HandleRef swigCPtr;
         protected bool swigCMemOwn;
       
-        public World(global::System.IntPtr cPtr, bool cMemoryOwn) {
+        internal World(global::System.IntPtr cPtr, bool cMemoryOwn) {
           swigCMemOwn = cMemoryOwn;
           swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-        }
-      
-        public World(void* cPtr, bool cMemoryOwn) {
-          swigCMemOwn = cMemoryOwn;
-          swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
         }
       
         internal static global::System.Runtime.InteropServices.HandleRef getCPtr(World obj) {
@@ -270,7 +263,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
             }
           }
         }
-      
+      /*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
         public global::System.IntPtr Pointer {
           get {
             return swigCPtr.Handle;
@@ -281,8 +274,12 @@ public unsafe class LerpFloat : global::System.IDisposable {
           return (void*)self.swigCPtr.Handle;
         }
       
-        public static implicit operator global::System.IntPtr(World self) {
-          return self.swigCPtr.Handle;
+        public static unsafe World FromPointer(void* pointer, bool memoryOwn = false) {
+          return pointer != null ? new World((global::System.IntPtr)pointer, memoryOwn) : null;
+        }
+      
+        public static World FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+          return pointer != global::System.IntPtr.Zero ? new World(pointer, memoryOwn) : null;
         }
       
         public bool Equals(World other) {
@@ -312,7 +309,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
         public static bool operator !=(World left, World right) {
           return !Equals(left, right);
         }
-      
+      /*@SWIG@*/
         public uint m_day {
           set {
             NWNXLibPINVOKE.LerpFloat_TimeType_World_m_day_set(swigCPtr, value);

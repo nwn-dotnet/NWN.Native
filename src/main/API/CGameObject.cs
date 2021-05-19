@@ -14,14 +14,9 @@ public unsafe class CGameObject : ICGameObject, global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CGameObject(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CGameObject(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CGameObject(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CGameObject obj) {
@@ -53,7 +48,7 @@ public unsafe class CGameObject : ICGameObject, global::System.IDisposable {
   global::System.Runtime.InteropServices.HandleRef ICGameObject.GetInterfaceCPtr() {
     return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CGameObject_ICGameObject_GetInterfaceCPtr(swigCPtr.Handle));
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -64,8 +59,12 @@ public unsafe class CGameObject : ICGameObject, global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CGameObject self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CGameObject FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CGameObject((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CGameObject FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CGameObject(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CGameObject other) {
@@ -95,7 +94,7 @@ public unsafe class CGameObject : ICGameObject, global::System.IDisposable {
   public static bool operator !=(CGameObject left, CGameObject right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public uint m_idSelf {
     set {
       NWNXLibPINVOKE.CGameObject_m_idSelf_set(swigCPtr, value);

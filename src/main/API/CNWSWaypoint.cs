@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CNWSWaypoint : CNWSObject {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CNWSWaypoint(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSWaypoint_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CNWSWaypoint(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSWaypoint_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSWaypoint(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSWaypoint_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSWaypoint obj) {
@@ -37,7 +33,7 @@ public unsafe class CNWSWaypoint : CNWSObject {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CNWSWaypoint : CNWSObject {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSWaypoint self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSWaypoint FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSWaypoint((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSWaypoint FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSWaypoint(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSWaypoint other) {
@@ -79,7 +79,7 @@ public unsafe class CNWSWaypoint : CNWSObject {
   public static bool operator !=(CNWSWaypoint left, CNWSWaypoint right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public int m_bMapNote {
     set {
       NWNXLibPINVOKE.CNWSWaypoint_m_bMapNote_set(swigCPtr, value);

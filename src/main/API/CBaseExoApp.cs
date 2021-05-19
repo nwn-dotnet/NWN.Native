@@ -14,14 +14,9 @@ public unsafe class CBaseExoApp : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CBaseExoApp(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CBaseExoApp(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CBaseExoApp(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CBaseExoApp obj) {
@@ -48,7 +43,7 @@ public unsafe class CBaseExoApp : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CBaseExoApp : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CBaseExoApp self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CBaseExoApp FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CBaseExoApp((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CBaseExoApp FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CBaseExoApp(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CBaseExoApp other) {
@@ -90,7 +89,7 @@ public unsafe class CBaseExoApp : global::System.IDisposable {
   public static bool operator !=(CBaseExoApp left, CBaseExoApp right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public virtual int AdmitNetworkAddress(uint nProtocol, CExoString sAddress) {
     int ret = NWNXLibPINVOKE.CBaseExoApp_AdmitNetworkAddress(swigCPtr, nProtocol, CExoString.getCPtr(sAddress));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();

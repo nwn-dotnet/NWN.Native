@@ -14,14 +14,9 @@ public unsafe class CExoArrayListCNWSPVPEntry : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoArrayListCNWSPVPEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoArrayListCNWSPVPEntry(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoArrayListCNWSPVPEntry(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListCNWSPVPEntry obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoArrayListCNWSPVPEntry : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoArrayListCNWSPVPEntry : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoArrayListCNWSPVPEntry self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoArrayListCNWSPVPEntry FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoArrayListCNWSPVPEntry((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoArrayListCNWSPVPEntry FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoArrayListCNWSPVPEntry(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoArrayListCNWSPVPEntry other) {
@@ -90,7 +89,7 @@ public unsafe class CExoArrayListCNWSPVPEntry : global::System.IDisposable {
   public static bool operator !=(CExoArrayListCNWSPVPEntry left, CExoArrayListCNWSPVPEntry right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CNWSPVPEntry element {
     set {
       NWNXLibPINVOKE.CExoArrayListCNWSPVPEntry_element_set(swigCPtr, CNWSPVPEntry.getCPtr(value));

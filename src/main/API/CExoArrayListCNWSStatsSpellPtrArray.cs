@@ -14,14 +14,9 @@ public unsafe class CExoArrayListCNWSStatsSpellPtrArray : global::System.IDispos
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoArrayListCNWSStatsSpellPtrArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoArrayListCNWSStatsSpellPtrArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoArrayListCNWSStatsSpellPtrArray(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListCNWSStatsSpellPtrArray obj) {
@@ -48,28 +43,23 @@ public unsafe class CExoArrayListCNWSStatsSpellPtrArray : global::System.IDispos
       }
     }
   }
-
-  public CExoArrayListCNWSStatsSpellPtr this[int index] {
-    get {
-      return GetItem(index);
-    }
-    set {
-      SetItem(index, value);
-    }
-  }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
   }
 
-  public static implicit operator void*(CExoArrayListCNWSStatsSpellPtrArray self) {
+  public static unsafe implicit operator void*(CExoArrayListCNWSStatsSpellPtrArray self) {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoArrayListCNWSStatsSpellPtrArray self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoArrayListCNWSStatsSpellPtrArray FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoArrayListCNWSStatsSpellPtrArray((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoArrayListCNWSStatsSpellPtrArray FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoArrayListCNWSStatsSpellPtrArray(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoArrayListCNWSStatsSpellPtrArray other) {
@@ -99,7 +89,16 @@ public unsafe class CExoArrayListCNWSStatsSpellPtrArray : global::System.IDispos
   public static bool operator !=(CExoArrayListCNWSStatsSpellPtrArray left, CExoArrayListCNWSStatsSpellPtrArray right) {
     return !Equals(left, right);
   }
+/*@SWIG@*/
 
+  public CExoArrayListCNWSStatsSpellPtr this[int index] {
+    get {
+      return GetItem(index);
+    }
+    set {
+      SetItem(index, value);
+    }
+  }
   public CExoArrayListCNWSStatsSpellPtrArray(int nElements) : this(NWNXLibPINVOKE.new_CExoArrayListCNWSStatsSpellPtrArray(nElements), true) {
   }
 

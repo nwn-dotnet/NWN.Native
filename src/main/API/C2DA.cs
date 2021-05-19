@@ -14,14 +14,9 @@ public unsafe class C2DA : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public C2DA(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal C2DA(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public C2DA(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(C2DA obj) {
@@ -48,7 +43,7 @@ public unsafe class C2DA : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class C2DA : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(C2DA self) {
-    return self.swigCPtr.Handle;
+  public static unsafe C2DA FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new C2DA((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static C2DA FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new C2DA(pointer, memoryOwn) : null;
   }
 
   public bool Equals(C2DA other) {
@@ -90,7 +89,7 @@ public unsafe class C2DA : global::System.IDisposable {
   public static bool operator !=(C2DA left, C2DA right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoString m_sDefaultValue {
     set {
       NWNXLibPINVOKE.C2DA_m_sDefaultValue_set(swigCPtr, CExoString.getCPtr(value));

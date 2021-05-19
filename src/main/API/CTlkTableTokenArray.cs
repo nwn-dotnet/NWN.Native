@@ -14,14 +14,9 @@ public unsafe class CTlkTableTokenArray : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CTlkTableTokenArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CTlkTableTokenArray(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CTlkTableTokenArray(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CTlkTableTokenArray obj) {
@@ -48,28 +43,23 @@ public unsafe class CTlkTableTokenArray : global::System.IDisposable {
       }
     }
   }
-
-  public CTlkTableToken this[int index] {
-    get {
-      return GetItem(index);
-    }
-    set {
-      SetItem(index, value);
-    }
-  }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
     }
   }
 
-  public static implicit operator void*(CTlkTableTokenArray self) {
+  public static unsafe implicit operator void*(CTlkTableTokenArray self) {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CTlkTableTokenArray self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CTlkTableTokenArray FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CTlkTableTokenArray((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CTlkTableTokenArray FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CTlkTableTokenArray(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CTlkTableTokenArray other) {
@@ -99,7 +89,16 @@ public unsafe class CTlkTableTokenArray : global::System.IDisposable {
   public static bool operator !=(CTlkTableTokenArray left, CTlkTableTokenArray right) {
     return !Equals(left, right);
   }
+/*@SWIG@*/
 
+  public CTlkTableToken this[int index] {
+    get {
+      return GetItem(index);
+    }
+    set {
+      SetItem(index, value);
+    }
+  }
   public CTlkTableTokenArray(int nElements) : this(NWNXLibPINVOKE.new_CTlkTableTokenArray(nElements), true) {
   }
 

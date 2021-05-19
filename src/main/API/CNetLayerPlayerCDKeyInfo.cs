@@ -14,14 +14,9 @@ public unsafe class CNetLayerPlayerCDKeyInfo : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNetLayerPlayerCDKeyInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNetLayerPlayerCDKeyInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNetLayerPlayerCDKeyInfo(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNetLayerPlayerCDKeyInfo obj) {
@@ -48,7 +43,7 @@ public unsafe class CNetLayerPlayerCDKeyInfo : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNetLayerPlayerCDKeyInfo : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNetLayerPlayerCDKeyInfo self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNetLayerPlayerCDKeyInfo FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNetLayerPlayerCDKeyInfo((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNetLayerPlayerCDKeyInfo FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNetLayerPlayerCDKeyInfo(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNetLayerPlayerCDKeyInfo other) {
@@ -90,7 +89,7 @@ public unsafe class CNetLayerPlayerCDKeyInfo : global::System.IDisposable {
   public static bool operator !=(CNetLayerPlayerCDKeyInfo left, CNetLayerPlayerCDKeyInfo right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoString sPublic {
     set {
       NWNXLibPINVOKE.CNetLayerPlayerCDKeyInfo_sPublic_set(swigCPtr, CExoString.getCPtr(value));

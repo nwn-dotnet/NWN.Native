@@ -14,14 +14,9 @@ public unsafe class CExoArrayListCNWSStatsSpellPtr : global::System.IDisposable 
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoArrayListCNWSStatsSpellPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoArrayListCNWSStatsSpellPtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoArrayListCNWSStatsSpellPtr(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListCNWSStatsSpellPtr obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoArrayListCNWSStatsSpellPtr : global::System.IDisposable 
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoArrayListCNWSStatsSpellPtr : global::System.IDisposable 
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoArrayListCNWSStatsSpellPtr self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoArrayListCNWSStatsSpellPtr FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoArrayListCNWSStatsSpellPtr((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoArrayListCNWSStatsSpellPtr FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoArrayListCNWSStatsSpellPtr(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoArrayListCNWSStatsSpellPtr other) {
@@ -90,7 +89,7 @@ public unsafe class CExoArrayListCNWSStatsSpellPtr : global::System.IDisposable 
   public static bool operator !=(CExoArrayListCNWSStatsSpellPtr left, CExoArrayListCNWSStatsSpellPtr right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public void** element {
     set {
       NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellPtr_element_set(swigCPtr, (global::System.IntPtr)value);

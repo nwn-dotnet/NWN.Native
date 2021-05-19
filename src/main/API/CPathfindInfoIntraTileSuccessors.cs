@@ -14,14 +14,9 @@ public unsafe class CPathfindInfoIntraTileSuccessors : global::System.IDisposabl
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CPathfindInfoIntraTileSuccessors(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CPathfindInfoIntraTileSuccessors(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CPathfindInfoIntraTileSuccessors(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CPathfindInfoIntraTileSuccessors obj) {
@@ -48,7 +43,7 @@ public unsafe class CPathfindInfoIntraTileSuccessors : global::System.IDisposabl
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CPathfindInfoIntraTileSuccessors : global::System.IDisposabl
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CPathfindInfoIntraTileSuccessors self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CPathfindInfoIntraTileSuccessors FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CPathfindInfoIntraTileSuccessors((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CPathfindInfoIntraTileSuccessors FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CPathfindInfoIntraTileSuccessors(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CPathfindInfoIntraTileSuccessors other) {
@@ -90,7 +89,7 @@ public unsafe class CPathfindInfoIntraTileSuccessors : global::System.IDisposabl
   public static bool operator !=(CPathfindInfoIntraTileSuccessors left, CPathfindInfoIntraTileSuccessors right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public float fXTransit {
     set {
       NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_fXTransit_set(swigCPtr, value);

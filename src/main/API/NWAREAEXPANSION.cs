@@ -14,14 +14,9 @@ public unsafe class NWAREAEXPANSION : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public NWAREAEXPANSION(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal NWAREAEXPANSION(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public NWAREAEXPANSION(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(NWAREAEXPANSION obj) {
@@ -48,7 +43,7 @@ public unsafe class NWAREAEXPANSION : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class NWAREAEXPANSION : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(NWAREAEXPANSION self) {
-    return self.swigCPtr.Handle;
+  public static unsafe NWAREAEXPANSION FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new NWAREAEXPANSION((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static NWAREAEXPANSION FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new NWAREAEXPANSION(pointer, memoryOwn) : null;
   }
 
   public bool Equals(NWAREAEXPANSION other) {
@@ -90,7 +89,7 @@ public unsafe class NWAREAEXPANSION : global::System.IDisposable {
   public static bool operator !=(NWAREAEXPANSION left, NWAREAEXPANSION right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoLocString lsName {
     set {
       NWNXLibPINVOKE.NWAREAEXPANSION_lsName_set(swigCPtr, CExoLocString.getCPtr(value));

@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CResNDB : CRes {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CResNDB(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResNDB_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CResNDB(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResNDB_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CResNDB(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CResNDB_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CResNDB obj) {
@@ -37,7 +33,7 @@ public unsafe class CResNDB : CRes {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CResNDB : CRes {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CResNDB self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CResNDB FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CResNDB((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CResNDB FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CResNDB(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CResNDB other) {
@@ -79,7 +79,7 @@ public unsafe class CResNDB : CRes {
   public static bool operator !=(CResNDB left, CResNDB right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public int m_bLoaded {
     set {
       NWNXLibPINVOKE.CResNDB_m_bLoaded_set(swigCPtr, value);

@@ -14,14 +14,9 @@ public unsafe class CExoLocString : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoLocString(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoLocString(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoLocString(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoLocString obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoLocString : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoLocString : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoLocString self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoLocString FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoLocString((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoLocString FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoLocString(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoLocString other) {
@@ -90,7 +89,7 @@ public unsafe class CExoLocString : global::System.IDisposable {
   public static bool operator !=(CExoLocString left, CExoLocString right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoLocStringInternal m_pExoLocStringInternal {
     set {
       NWNXLibPINVOKE.CExoLocString_m_pExoLocStringInternal_set(swigCPtr, CExoLocStringInternal.getCPtr(value));

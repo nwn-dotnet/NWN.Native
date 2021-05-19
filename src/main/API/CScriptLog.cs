@@ -14,14 +14,9 @@ public unsafe class CScriptLog : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CScriptLog(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CScriptLog(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CScriptLog(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CScriptLog obj) {
@@ -48,7 +43,7 @@ public unsafe class CScriptLog : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CScriptLog : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CScriptLog self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CScriptLog FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CScriptLog((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CScriptLog FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CScriptLog(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CScriptLog other) {
@@ -90,7 +89,7 @@ public unsafe class CScriptLog : global::System.IDisposable {
   public static bool operator !=(CScriptLog left, CScriptLog right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoString m_sScriptName {
     set {
       NWNXLibPINVOKE.CScriptLog_m_sScriptName_set(swigCPtr, CExoString.getCPtr(value));

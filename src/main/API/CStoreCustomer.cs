@@ -14,14 +14,9 @@ public unsafe class CStoreCustomer : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CStoreCustomer(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CStoreCustomer(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CStoreCustomer(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CStoreCustomer obj) {
@@ -48,7 +43,7 @@ public unsafe class CStoreCustomer : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CStoreCustomer : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CStoreCustomer self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CStoreCustomer FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CStoreCustomer((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CStoreCustomer FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CStoreCustomer(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CStoreCustomer other) {
@@ -90,7 +89,7 @@ public unsafe class CStoreCustomer : global::System.IDisposable {
   public static bool operator !=(CStoreCustomer left, CStoreCustomer right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public uint m_oidObject {
     set {
       NWNXLibPINVOKE.CStoreCustomer_m_oidObject_set(swigCPtr, value);

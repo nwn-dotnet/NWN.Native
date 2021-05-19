@@ -14,14 +14,9 @@ public unsafe class CERFRes : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CERFRes(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CERFRes(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CERFRes(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CERFRes obj) {
@@ -48,7 +43,7 @@ public unsafe class CERFRes : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CERFRes : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CERFRes self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CERFRes FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CERFRes((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CERFRes FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CERFRes(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CERFRes other) {
@@ -90,7 +89,7 @@ public unsafe class CERFRes : global::System.IDisposable {
   public static bool operator !=(CERFRes left, CERFRes right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public uint m_nOffset {
     set {
       NWNXLibPINVOKE.CERFRes_m_nOffset_set(swigCPtr, value);

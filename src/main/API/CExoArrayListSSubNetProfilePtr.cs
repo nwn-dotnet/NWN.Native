@@ -14,14 +14,9 @@ public unsafe class CExoArrayListSSubNetProfilePtr : global::System.IDisposable 
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoArrayListSSubNetProfilePtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoArrayListSSubNetProfilePtr(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoArrayListSSubNetProfilePtr(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListSSubNetProfilePtr obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoArrayListSSubNetProfilePtr : global::System.IDisposable 
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoArrayListSSubNetProfilePtr : global::System.IDisposable 
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoArrayListSSubNetProfilePtr self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoArrayListSSubNetProfilePtr FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoArrayListSSubNetProfilePtr((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoArrayListSSubNetProfilePtr FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoArrayListSSubNetProfilePtr(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoArrayListSSubNetProfilePtr other) {
@@ -90,7 +89,7 @@ public unsafe class CExoArrayListSSubNetProfilePtr : global::System.IDisposable 
   public static bool operator !=(CExoArrayListSSubNetProfilePtr left, CExoArrayListSSubNetProfilePtr right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public void** element {
     set {
       NWNXLibPINVOKE.CExoArrayListSSubNetProfilePtr_element_set(swigCPtr, (global::System.IntPtr)value);

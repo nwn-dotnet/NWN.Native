@@ -14,14 +14,9 @@ public unsafe class CNWSStats_SpellLikeAbility : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWSStats_SpellLikeAbility(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWSStats_SpellLikeAbility(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSStats_SpellLikeAbility(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSStats_SpellLikeAbility obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWSStats_SpellLikeAbility : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWSStats_SpellLikeAbility : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSStats_SpellLikeAbility self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSStats_SpellLikeAbility FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSStats_SpellLikeAbility((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSStats_SpellLikeAbility FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSStats_SpellLikeAbility(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSStats_SpellLikeAbility other) {
@@ -90,7 +89,7 @@ public unsafe class CNWSStats_SpellLikeAbility : global::System.IDisposable {
   public static bool operator !=(CNWSStats_SpellLikeAbility left, CNWSStats_SpellLikeAbility right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public uint m_nSpellId {
     set {
       NWNXLibPINVOKE.CNWSStats_SpellLikeAbility_m_nSpellId_set(swigCPtr, value);

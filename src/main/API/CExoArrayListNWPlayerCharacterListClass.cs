@@ -14,14 +14,9 @@ public unsafe class CExoArrayListNWPlayerCharacterListClass : global::System.IDi
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoArrayListNWPlayerCharacterListClass(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoArrayListNWPlayerCharacterListClass(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoArrayListNWPlayerCharacterListClass(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListNWPlayerCharacterListClass obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoArrayListNWPlayerCharacterListClass : global::System.IDi
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoArrayListNWPlayerCharacterListClass : global::System.IDi
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoArrayListNWPlayerCharacterListClass self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoArrayListNWPlayerCharacterListClass FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoArrayListNWPlayerCharacterListClass((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoArrayListNWPlayerCharacterListClass FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoArrayListNWPlayerCharacterListClass(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoArrayListNWPlayerCharacterListClass other) {
@@ -90,7 +89,7 @@ public unsafe class CExoArrayListNWPlayerCharacterListClass : global::System.IDi
   public static bool operator !=(CExoArrayListNWPlayerCharacterListClass left, CExoArrayListNWPlayerCharacterListClass right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public NWPlayerCharacterListClass_st element {
     set {
       NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_element_set(swigCPtr, NWPlayerCharacterListClass_st.getCPtr(value));

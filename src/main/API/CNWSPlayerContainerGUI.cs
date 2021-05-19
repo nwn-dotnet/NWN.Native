@@ -14,14 +14,9 @@ public unsafe class CNWSPlayerContainerGUI : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CNWSPlayerContainerGUI(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CNWSPlayerContainerGUI(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CNWSPlayerContainerGUI(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CNWSPlayerContainerGUI obj) {
@@ -48,7 +43,7 @@ public unsafe class CNWSPlayerContainerGUI : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CNWSPlayerContainerGUI : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CNWSPlayerContainerGUI self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CNWSPlayerContainerGUI FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CNWSPlayerContainerGUI((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CNWSPlayerContainerGUI FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CNWSPlayerContainerGUI(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CNWSPlayerContainerGUI other) {
@@ -90,7 +89,7 @@ public unsafe class CNWSPlayerContainerGUI : global::System.IDisposable {
   public static bool operator !=(CNWSPlayerContainerGUI left, CNWSPlayerContainerGUI right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public uint m_oidOpen {
     set {
       NWNXLibPINVOKE.CNWSPlayerContainerGUI_m_oidOpen_set(swigCPtr, value);

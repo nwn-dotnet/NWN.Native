@@ -13,12 +13,8 @@ namespace NWN.Native.API {
 public unsafe class CTlkFile : CExoFile {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  public CTlkFile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CTlkFile_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CTlkFile(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CTlkFile_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CTlkFile(void* cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CTlkFile_SWIGUpcast((global::System.IntPtr)cPtr), cMemoryOwn) {
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CTlkFile obj) {
@@ -37,7 +33,7 @@ public unsafe class CTlkFile : CExoFile {
       base.Dispose(disposing);
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -48,8 +44,12 @@ public unsafe class CTlkFile : CExoFile {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CTlkFile self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CTlkFile FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CTlkFile((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CTlkFile FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CTlkFile(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CTlkFile other) {
@@ -79,7 +79,7 @@ public unsafe class CTlkFile : CExoFile {
   public static bool operator !=(CTlkFile left, CTlkFile right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public TLK_FILE_HEADER m_header {
     set {
       NWNXLibPINVOKE.CTlkFile_m_header_set(swigCPtr, TLK_FILE_HEADER.getCPtr(value));

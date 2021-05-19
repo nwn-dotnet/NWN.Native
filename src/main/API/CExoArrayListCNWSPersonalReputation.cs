@@ -14,14 +14,9 @@ public unsafe class CExoArrayListCNWSPersonalReputation : global::System.IDispos
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoArrayListCNWSPersonalReputation(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoArrayListCNWSPersonalReputation(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoArrayListCNWSPersonalReputation(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoArrayListCNWSPersonalReputation obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoArrayListCNWSPersonalReputation : global::System.IDispos
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoArrayListCNWSPersonalReputation : global::System.IDispos
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoArrayListCNWSPersonalReputation self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoArrayListCNWSPersonalReputation FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoArrayListCNWSPersonalReputation((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoArrayListCNWSPersonalReputation FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoArrayListCNWSPersonalReputation(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoArrayListCNWSPersonalReputation other) {
@@ -90,7 +89,7 @@ public unsafe class CExoArrayListCNWSPersonalReputation : global::System.IDispos
   public static bool operator !=(CExoArrayListCNWSPersonalReputation left, CExoArrayListCNWSPersonalReputation right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CNWSPersonalReputation element {
     set {
       NWNXLibPINVOKE.CExoArrayListCNWSPersonalReputation_element_set(swigCPtr, CNWSPersonalReputation.getCPtr(value));

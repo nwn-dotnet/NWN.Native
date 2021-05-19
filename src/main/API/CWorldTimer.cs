@@ -14,14 +14,9 @@ public unsafe class CWorldTimer : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CWorldTimer(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CWorldTimer(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CWorldTimer(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CWorldTimer obj) {
@@ -48,7 +43,7 @@ public unsafe class CWorldTimer : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CWorldTimer : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CWorldTimer self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CWorldTimer FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CWorldTimer((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CWorldTimer FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CWorldTimer(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CWorldTimer other) {
@@ -90,7 +89,7 @@ public unsafe class CWorldTimer : global::System.IDisposable {
   public static bool operator !=(CWorldTimer left, CWorldTimer right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public int m_bFixedSnapshotRate {
     set {
       NWNXLibPINVOKE.CWorldTimer_m_bFixedSnapshotRate_set(swigCPtr, value);

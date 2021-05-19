@@ -14,14 +14,9 @@ public unsafe class CExoRand : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  public CExoRand(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal CExoRand(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
-  }
-
-  public CExoRand(void* cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, (global::System.IntPtr)cPtr);
   }
 
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CExoRand obj) {
@@ -48,7 +43,7 @@ public unsafe class CExoRand : global::System.IDisposable {
       }
     }
   }
-
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,20,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -59,8 +54,12 @@ public unsafe class CExoRand : global::System.IDisposable {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static implicit operator global::System.IntPtr(CExoRand self) {
-    return self.swigCPtr.Handle;
+  public static unsafe CExoRand FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new CExoRand((global::System.IntPtr)pointer, memoryOwn) : null;
+  }
+
+  public static CExoRand FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new CExoRand(pointer, memoryOwn) : null;
   }
 
   public bool Equals(CExoRand other) {
@@ -90,7 +89,7 @@ public unsafe class CExoRand : global::System.IDisposable {
   public static bool operator !=(CExoRand left, CExoRand right) {
     return !Equals(left, right);
   }
-
+/*@SWIG@*/
   public CExoRandInternal m_pcExoRandInternal {
     set {
       NWNXLibPINVOKE.CExoRand_m_pcExoRandInternal_set(swigCPtr, CExoRandInternal.getCPtr(value));
