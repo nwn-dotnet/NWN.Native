@@ -501,26 +501,32 @@ public unsafe class CServerExoApp : CBaseExoApp {
     return ret;
   }
 
+  public int LoadModule(CExoString moduleResRef, CUUID uuidOverride, int bIsSaveGame, CNWSPlayer pPlayer, int sourceType, SWIGTYPE_p_NWSync__Advertisement nwsyncModuleSourceAdvert) {
+    int ret = NWNXLibPINVOKE.CServerExoApp_LoadModule__SWIG_0(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride), bIsSaveGame, CNWSPlayer.getCPtr(pPlayer), sourceType, SWIGTYPE_p_NWSync__Advertisement.getCPtr(nwsyncModuleSourceAdvert));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public int LoadModule(CExoString moduleResRef, CUUID uuidOverride, int bIsSaveGame, CNWSPlayer pPlayer, int sourceType) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_LoadModule__SWIG_0(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride), bIsSaveGame, CNWSPlayer.getCPtr(pPlayer), sourceType);
+    int ret = NWNXLibPINVOKE.CServerExoApp_LoadModule__SWIG_1(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride), bIsSaveGame, CNWSPlayer.getCPtr(pPlayer), sourceType);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int LoadModule(CExoString moduleResRef, CUUID uuidOverride, int bIsSaveGame, CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_LoadModule__SWIG_1(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride), bIsSaveGame, CNWSPlayer.getCPtr(pPlayer));
+    int ret = NWNXLibPINVOKE.CServerExoApp_LoadModule__SWIG_2(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride), bIsSaveGame, CNWSPlayer.getCPtr(pPlayer));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int LoadModule(CExoString moduleResRef, CUUID uuidOverride, int bIsSaveGame) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_LoadModule__SWIG_2(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride), bIsSaveGame);
+    int ret = NWNXLibPINVOKE.CServerExoApp_LoadModule__SWIG_3(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride), bIsSaveGame);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public int LoadModule(CExoString moduleResRef, CUUID uuidOverride) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_LoadModule__SWIG_3(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride));
+    int ret = NWNXLibPINVOKE.CServerExoApp_LoadModule__SWIG_4(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }

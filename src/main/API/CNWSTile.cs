@@ -163,16 +163,6 @@ public unsafe class CNWSTile : CNWTile {
     } 
   }
 
-  public int m_bHasPlaceableWithWalkMesh {
-    set {
-      NWNXLibPINVOKE.CNWSTile_m_bHasPlaceableWithWalkMesh_set(swigCPtr, value);
-    } 
-    get {
-      int ret = NWNXLibPINVOKE.CNWSTile_m_bHasPlaceableWithWalkMesh_get(swigCPtr);
-      return ret;
-    } 
-  }
-
   public CNWSTile() : this(NWNXLibPINVOKE.new_CNWSTile(), true) {
   }
 

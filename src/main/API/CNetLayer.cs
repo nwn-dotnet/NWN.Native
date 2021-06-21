@@ -595,16 +595,6 @@ public unsafe class CNetLayer : global::System.IDisposable {
     return ret;
   }
 
-  public void SetNWSyncData(SWIGTYPE_p_NWSync__Advertisement datra) {
-    NWNXLibPINVOKE.CNetLayer_SetNWSyncData(swigCPtr, SWIGTYPE_p_NWSync__Advertisement.getCPtr(datra));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public NWSyncAdvertisement GetNWSyncData() {
-    NWSyncAdvertisement ret = new NWSyncAdvertisement(NWNXLibPINVOKE.CNetLayer_GetNWSyncData(swigCPtr), false);
-    return ret;
-  }
-
   public int ServerSatisfiesBuild(int nBuild, int nRevision) {
     int ret = NWNXLibPINVOKE.CNetLayer_ServerSatisfiesBuild(swigCPtr, nBuild, nRevision);
     return ret;

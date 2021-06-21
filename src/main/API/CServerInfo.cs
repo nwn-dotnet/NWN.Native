@@ -264,12 +264,12 @@ public unsafe class CServerInfo : global::System.IDisposable {
     } 
   }
 
-  public NWSyncAdvertisement m_nwsyncData {
+  public NWSyncAdvertisement m_nwsyncAdvertisedData {
     set {
-      NWNXLibPINVOKE.CServerInfo_m_nwsyncData_set(swigCPtr, NWSyncAdvertisement.getCPtr(value));
+      NWNXLibPINVOKE.CServerInfo_m_nwsyncAdvertisedData_set(swigCPtr, NWSyncAdvertisement.getCPtr(value));
     } 
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerInfo_m_nwsyncData_get(swigCPtr);
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerInfo_m_nwsyncAdvertisedData_get(swigCPtr);
       NWSyncAdvertisement ret = (cPtr == global::System.IntPtr.Zero) ? null : new NWSyncAdvertisement(cPtr, false);
       return ret;
     } 

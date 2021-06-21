@@ -1078,8 +1078,8 @@ class FunctionsLinuxPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN10CNWSModule15IsObjectInLimboEj_get___")]
   public static extern uint _ZN10CNWSModule15IsObjectInLimboEj_get();
 
-  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN10CNWSModule15LoadModuleStartE10CExoStringii_get___")]
-  public static extern uint _ZN10CNWSModule15LoadModuleStartE10CExoStringii_get();
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN10CNWSModule15LoadModuleStartE10CExoStringiiRKN6NWSync13AdvertisementE_get___")]
+  public static extern uint _ZN10CNWSModule15LoadModuleStartE10CExoStringiiRKN6NWSync13AdvertisementE_get();
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN10CNWSModule15SaveModuleStartER10CExoStringS1__get___")]
   public static extern uint _ZN10CNWSModule15SaveModuleStartER10CExoStringS1__get();
@@ -6538,8 +6538,8 @@ class FunctionsLinuxPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN13CServerExoApp10InitializeEv_get___")]
   public static extern uint _ZN13CServerExoApp10InitializeEv_get();
 
-  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN13CServerExoApp10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeri_get___")]
-  public static extern uint _ZN13CServerExoApp10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeri_get();
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN13CServerExoApp10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeriRKN6NWSync13AdvertisementE_get___")]
+  public static extern uint _ZN13CServerExoApp10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeriRKN6NWSync13AdvertisementE_get();
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN13CServerExoApp10OnCDChangeEv_get___")]
   public static extern uint _ZN13CServerExoApp10OnCDChangeEv_get();
@@ -11833,8 +11833,8 @@ class FunctionsLinuxPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN21CServerExoAppInternal10InitializeEv_get___")]
   public static extern uint _ZN21CServerExoAppInternal10InitializeEv_get();
 
-  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN21CServerExoAppInternal10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeri_get___")]
-  public static extern uint _ZN21CServerExoAppInternal10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeri_get();
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN21CServerExoAppInternal10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeriRKN6NWSync13AdvertisementE_get___")]
+  public static extern uint _ZN21CServerExoAppInternal10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeriRKN6NWSync13AdvertisementE_get();
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN21CServerExoAppInternal10OnCDChangeEv_get___")]
   public static extern uint _ZN21CServerExoAppInternal10OnCDChangeEv_get();
@@ -19528,8 +19528,8 @@ class FunctionsLinuxPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN8CExoBase11LoadAliasesEi_get___")]
   public static extern uint _ZN8CExoBase11LoadAliasesEi_get();
 
-  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN8CExoBase16GetDirectoryListEP13CExoArrayListI10CExoStringES1_tii_get___")]
-  public static extern uint _ZN8CExoBase16GetDirectoryListEP13CExoArrayListI10CExoStringES1_tii_get();
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN8CExoBase16GetDirectoryListEP13CExoArrayListI10CExoStringES1_tiii_get___")]
+  public static extern uint _ZN8CExoBase16GetDirectoryListEP13CExoArrayListI10CExoStringES1_tiii_get();
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN8CExoBase19GetInstallDirectoryEv_get___")]
   public static extern uint _ZN8CExoBase19GetInstallDirectoryEv_get();
@@ -20857,9 +20857,6 @@ class FunctionsLinuxPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN9CNetLayer13GetPlayerInfoEj_get___")]
   public static extern uint _ZN9CNetLayer13GetPlayerInfoEj_get();
 
-  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN9CNetLayer13SetNWSyncDataERKN6NWSync13AdvertisementE_get___")]
-  public static extern uint _ZN9CNetLayer13SetNWSyncDataERKN6NWSync13AdvertisementE_get();
-
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN9CNetLayer13StartProtocolEjjjj_get___")]
   public static extern uint _ZN9CNetLayer13StartProtocolEjjjj_get();
 
@@ -21273,9 +21270,6 @@ class FunctionsLinuxPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN9CNetLayerD2Ev_get___")]
   public static extern uint _ZN9CNetLayerD2Ev_get();
-
-  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZNK9CNetLayer13GetNWSyncDataEv_get___")]
-  public static extern uint _ZNK9CNetLayer13GetNWSyncDataEv_get();
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZNK9CNetLayer22GetGameMasterPermisionEv_get___")]
   public static extern uint _ZNK9CNetLayer22GetGameMasterPermisionEv_get();

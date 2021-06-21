@@ -306,7 +306,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN10CNWSModule14RunEventScriptEiP10CExoString = FunctionsLinuxPINVOKE._ZN10CNWSModule14RunEventScriptEiP10CExoString_get();
   public static readonly uint _ZN10CNWSModule15AddTURDsToWorldEv = FunctionsLinuxPINVOKE._ZN10CNWSModule15AddTURDsToWorldEv_get();
   public static readonly uint _ZN10CNWSModule15IsObjectInLimboEj = FunctionsLinuxPINVOKE._ZN10CNWSModule15IsObjectInLimboEj_get();
-  public static readonly uint _ZN10CNWSModule15LoadModuleStartE10CExoStringii = FunctionsLinuxPINVOKE._ZN10CNWSModule15LoadModuleStartE10CExoStringii_get();
+  public static readonly uint _ZN10CNWSModule15LoadModuleStartE10CExoStringiiRKN6NWSync13AdvertisementE = FunctionsLinuxPINVOKE._ZN10CNWSModule15LoadModuleStartE10CExoStringiiRKN6NWSync13AdvertisementE_get();
   public static readonly uint _ZN10CNWSModule15SaveModuleStartER10CExoStringS1_ = FunctionsLinuxPINVOKE._ZN10CNWSModule15SaveModuleStartER10CExoStringS1__get();
   public static readonly uint _ZN10CNWSModule16AddObjectToLimboEj = FunctionsLinuxPINVOKE._ZN10CNWSModule16AddObjectToLimboEj_get();
   public static readonly uint _ZN10CNWSModule16CleanUpLimboListEv = FunctionsLinuxPINVOKE._ZN10CNWSModule16CleanUpLimboListEv_get();
@@ -2126,7 +2126,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN13CServerAIListD1Ev = FunctionsLinuxPINVOKE._ZN13CServerAIListD1Ev_get();
   public static readonly uint _ZN13CServerAIListD2Ev = FunctionsLinuxPINVOKE._ZN13CServerAIListD2Ev_get();
   public static readonly uint _ZN13CServerExoApp10InitializeEv = FunctionsLinuxPINVOKE._ZN13CServerExoApp10InitializeEv_get();
-  public static readonly uint _ZN13CServerExoApp10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeri = FunctionsLinuxPINVOKE._ZN13CServerExoApp10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeri_get();
+  public static readonly uint _ZN13CServerExoApp10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeriRKN6NWSync13AdvertisementE = FunctionsLinuxPINVOKE._ZN13CServerExoApp10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeriRKN6NWSync13AdvertisementE_get();
   public static readonly uint _ZN13CServerExoApp10OnCDChangeEv = FunctionsLinuxPINVOKE._ZN13CServerExoApp10OnCDChangeEv_get();
   public static readonly uint _ZN13CServerExoApp11GetNetLayerEv = FunctionsLinuxPINVOKE._ZN13CServerExoApp11GetNetLayerEv_get();
   public static readonly uint _ZN13CServerExoApp11OnGainFocusEv = FunctionsLinuxPINVOKE._ZN13CServerExoApp11OnGainFocusEv_get();
@@ -3891,7 +3891,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN21CNWSEffectListHandlerD1Ev = FunctionsLinuxPINVOKE._ZN21CNWSEffectListHandlerD1Ev_get();
   public static readonly uint _ZN21CNWSEffectListHandlerD2Ev = FunctionsLinuxPINVOKE._ZN21CNWSEffectListHandlerD2Ev_get();
   public static readonly uint _ZN21CServerExoAppInternal10InitializeEv = FunctionsLinuxPINVOKE._ZN21CServerExoAppInternal10InitializeEv_get();
-  public static readonly uint _ZN21CServerExoAppInternal10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeri = FunctionsLinuxPINVOKE._ZN21CServerExoAppInternal10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeri_get();
+  public static readonly uint _ZN21CServerExoAppInternal10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeriRKN6NWSync13AdvertisementE = FunctionsLinuxPINVOKE._ZN21CServerExoAppInternal10LoadModuleE10CExoString5CUUIDiP10CNWSPlayeriRKN6NWSync13AdvertisementE_get();
   public static readonly uint _ZN21CServerExoAppInternal10OnCDChangeEv = FunctionsLinuxPINVOKE._ZN21CServerExoAppInternal10OnCDChangeEv_get();
   public static readonly uint _ZN21CServerExoAppInternal11OnGainFocusEv = FunctionsLinuxPINVOKE._ZN21CServerExoAppInternal11OnGainFocusEv_get();
   public static readonly uint _ZN21CServerExoAppInternal11OnLostFocusEv = FunctionsLinuxPINVOKE._ZN21CServerExoAppInternal11OnLostFocusEv_get();
@@ -6456,7 +6456,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN8CERFFileD2Ev = FunctionsLinuxPINVOKE._ZN8CERFFileD2Ev_get();
   public static readonly uint _ZN8CExoBase10CheckForCDEj = FunctionsLinuxPINVOKE._ZN8CExoBase10CheckForCDEj_get();
   public static readonly uint _ZN8CExoBase11LoadAliasesEi = FunctionsLinuxPINVOKE._ZN8CExoBase11LoadAliasesEi_get();
-  public static readonly uint _ZN8CExoBase16GetDirectoryListEP13CExoArrayListI10CExoStringES1_tii = FunctionsLinuxPINVOKE._ZN8CExoBase16GetDirectoryListEP13CExoArrayListI10CExoStringES1_tii_get();
+  public static readonly uint _ZN8CExoBase16GetDirectoryListEP13CExoArrayListI10CExoStringES1_tiii = FunctionsLinuxPINVOKE._ZN8CExoBase16GetDirectoryListEP13CExoArrayListI10CExoStringES1_tiii_get();
   public static readonly uint _ZN8CExoBase19GetInstallDirectoryEv = FunctionsLinuxPINVOKE._ZN8CExoBase19GetInstallDirectoryEv_get();
   public static readonly uint _ZN8CExoBase20GetResourceExtensionEt = FunctionsLinuxPINVOKE._ZN8CExoBase20GetResourceExtensionEt_get();
   public static readonly uint _ZN8CExoBase23GetResTypeFromExtensionERK10CExoString = FunctionsLinuxPINVOKE._ZN8CExoBase23GetResTypeFromExtensionERK10CExoString_get();
@@ -6899,7 +6899,6 @@ public static class FunctionsLinux {
   public static readonly uint _ZN9CNetLayer12StoreMessageEPhj = FunctionsLinuxPINVOKE._ZN9CNetLayer12StoreMessageEPhj_get();
   public static readonly uint _ZN9CNetLayer13EndServerModeEv = FunctionsLinuxPINVOKE._ZN9CNetLayer13EndServerModeEv_get();
   public static readonly uint _ZN9CNetLayer13GetPlayerInfoEj = FunctionsLinuxPINVOKE._ZN9CNetLayer13GetPlayerInfoEj_get();
-  public static readonly uint _ZN9CNetLayer13SetNWSyncDataERKN6NWSync13AdvertisementE = FunctionsLinuxPINVOKE._ZN9CNetLayer13SetNWSyncDataERKN6NWSync13AdvertisementE_get();
   public static readonly uint _ZN9CNetLayer13StartProtocolEjjjj = FunctionsLinuxPINVOKE._ZN9CNetLayer13StartProtocolEjjjj_get();
   public static readonly uint _ZN9CNetLayer14GetSessionInfoEj = FunctionsLinuxPINVOKE._ZN9CNetLayer14GetSessionInfoEj_get();
   public static readonly uint _ZN9CNetLayer14GetSessionNameEv = FunctionsLinuxPINVOKE._ZN9CNetLayer14GetSessionNameEv_get();
@@ -7038,7 +7037,6 @@ public static class FunctionsLinux {
   public static readonly uint _ZN9CNetLayerC2Ev = FunctionsLinuxPINVOKE._ZN9CNetLayerC2Ev_get();
   public static readonly uint _ZN9CNetLayerD1Ev = FunctionsLinuxPINVOKE._ZN9CNetLayerD1Ev_get();
   public static readonly uint _ZN9CNetLayerD2Ev = FunctionsLinuxPINVOKE._ZN9CNetLayerD2Ev_get();
-  public static readonly uint _ZNK9CNetLayer13GetNWSyncDataEv = FunctionsLinuxPINVOKE._ZNK9CNetLayer13GetNWSyncDataEv_get();
   public static readonly uint _ZNK9CNetLayer22GetGameMasterPermisionEv = FunctionsLinuxPINVOKE._ZNK9CNetLayer22GetGameMasterPermisionEv_get();
   public static readonly uint _ZN9CNWDomain11GetNameTextEv = FunctionsLinuxPINVOKE._ZN9CNWDomain11GetNameTextEv_get();
   public static readonly uint _ZN9CNWDomain18GetDescriptionTextEv = FunctionsLinuxPINVOKE._ZN9CNWDomain18GetDescriptionTextEv_get();
