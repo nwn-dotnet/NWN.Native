@@ -43,7 +43,7 @@ public unsafe class CERFFile : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -198,8 +198,8 @@ public unsafe class CERFFile : global::System.IDisposable {
   public CERFFile() : this(NWNXLibPINVOKE.new_CERFFile(), true) {
   }
 
-  public void SetVersion(string sVersion) {
-    NWNXLibPINVOKE.CERFFile_SetVersion(swigCPtr, sVersion);
+  public void SetVersion(byte* sVersion) {
+    NWNXLibPINVOKE.CERFFile_SetVersion(swigCPtr, (global::System.IntPtr)sVersion);
   }
 
   public int AddResource(CExoString sResourceName) {
@@ -208,8 +208,8 @@ public unsafe class CERFFile : global::System.IDisposable {
     return ret;
   }
 
-  public int AddResource(string szResName, ushort rtResType, CRes pRes) {
-    int ret = NWNXLibPINVOKE.CERFFile_AddResource__SWIG_1(swigCPtr, szResName, rtResType, CRes.getCPtr(pRes));
+  public int AddResource(byte* szResName, ushort rtResType, CRes pRes) {
+    int ret = NWNXLibPINVOKE.CERFFile_AddResource__SWIG_1(swigCPtr, (global::System.IntPtr)szResName, rtResType, CRes.getCPtr(pRes));
     return ret;
   }
 
@@ -270,18 +270,18 @@ public unsafe class CERFFile : global::System.IDisposable {
     return ret;
   }
 
-  public int WriteResource(string szResName, ushort rtResType, CRes pRes, int bIsGFF) {
-    int ret = NWNXLibPINVOKE.CERFFile_WriteResource__SWIG_0(swigCPtr, szResName, rtResType, CRes.getCPtr(pRes), bIsGFF);
+  public int WriteResource(byte* szResName, ushort rtResType, CRes pRes, int bIsGFF) {
+    int ret = NWNXLibPINVOKE.CERFFile_WriteResource__SWIG_0(swigCPtr, (global::System.IntPtr)szResName, rtResType, CRes.getCPtr(pRes), bIsGFF);
     return ret;
   }
 
-  public int WriteResource(string szResName, ushort rtResType, CRes pRes) {
-    int ret = NWNXLibPINVOKE.CERFFile_WriteResource__SWIG_1(swigCPtr, szResName, rtResType, CRes.getCPtr(pRes));
+  public int WriteResource(byte* szResName, ushort rtResType, CRes pRes) {
+    int ret = NWNXLibPINVOKE.CERFFile_WriteResource__SWIG_1(swigCPtr, (global::System.IntPtr)szResName, rtResType, CRes.getCPtr(pRes));
     return ret;
   }
 
-  public int WriteResource(string szResName, ushort rtResType, SWIGTYPE_p_DataBlockRef pData) {
-    int ret = NWNXLibPINVOKE.CERFFile_WriteResource__SWIG_2(swigCPtr, szResName, rtResType, SWIGTYPE_p_DataBlockRef.getCPtr(pData));
+  public int WriteResource(byte* szResName, ushort rtResType, SWIGTYPE_p_DataBlockRef pData) {
+    int ret = NWNXLibPINVOKE.CERFFile_WriteResource__SWIG_2(swigCPtr, (global::System.IntPtr)szResName, rtResType, SWIGTYPE_p_DataBlockRef.getCPtr(pData));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }

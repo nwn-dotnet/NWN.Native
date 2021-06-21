@@ -43,7 +43,7 @@ public unsafe class KEYFILE_HEADER : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -170,14 +170,17 @@ public unsafe class KEYFILE_HEADER : global::System.IDisposable {
     } 
   }
 
-  public string cOid {
+  public NativeArray<byte> cOid {
     set {
       NWNXLibPINVOKE.KEYFILE_HEADER_cOid_set(swigCPtr, value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.KEYFILE_HEADER_cOid_get(swigCPtr);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.KEYFILE_HEADER_cOid_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 24);
+
+      return retVal; // byte[24]
+    }
+
   }
 
   public NativeArray<byte> pReserved {

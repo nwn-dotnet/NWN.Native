@@ -43,7 +43,7 @@ public unsafe class DataBlock : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,14 +90,15 @@ public unsafe class DataBlock : global::System.IDisposable {
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public string m_data {
+  public byte* m_data {
     set {
-      NWNXLibPINVOKE.DataBlock_m_data_set(swigCPtr, value);
+      NWNXLibPINVOKE.DataBlock_m_data_set(swigCPtr, (global::System.IntPtr)value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.DataBlock_m_data_get(swigCPtr);
-      return ret;
-    } 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.DataBlock_m_data_get(swigCPtr);
+        return (byte*)retVal;
+    }
+
   }
 
   public uint m_used {

@@ -43,7 +43,7 @@ public unsafe class CRes : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -231,8 +231,8 @@ public unsafe class CRes : global::System.IDisposable {
     return (void*)retVal;
   }
 
-  public int ReadRaw(int nSize, string pBuffer) {
-    int ret = NWNXLibPINVOKE.CRes_ReadRaw(swigCPtr, nSize, pBuffer);
+  public int ReadRaw(int nSize, byte* pBuffer) {
+    int ret = NWNXLibPINVOKE.CRes_ReadRaw(swigCPtr, nSize, (global::System.IntPtr)pBuffer);
     return ret;
   }
 

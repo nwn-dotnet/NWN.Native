@@ -43,7 +43,7 @@ public unsafe class KeyFileData : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -130,24 +130,30 @@ public unsafe class KeyFileData : global::System.IDisposable {
     } 
   }
 
-  public string program {
+  public NativeArray<byte> program {
     set {
       NWNXLibPINVOKE.KeyFileData_program_set(swigCPtr, value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.KeyFileData_program_get(swigCPtr);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.KeyFileData_program_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16);
+
+      return retVal; // byte[16]
+    }
+
   }
 
-  public string description {
+  public NativeArray<byte> description {
     set {
       NWNXLibPINVOKE.KeyFileData_description_set(swigCPtr, value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.KeyFileData_description_get(swigCPtr);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.KeyFileData_description_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 988);
+
+      return retVal; // byte[988]
+    }
+
   }
 
   public KeyFileData() : this(NWNXLibPINVOKE.new_KeyFileData(), true) {

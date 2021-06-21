@@ -43,7 +43,7 @@ public unsafe class CERFKey : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,14 +90,17 @@ public unsafe class CERFKey : global::System.IDisposable {
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public string m_sName {
+  public NativeArray<byte> m_sName {
     set {
       NWNXLibPINVOKE.CERFKey_m_sName_set(swigCPtr, value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CERFKey_m_sName_get(swigCPtr);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CERFKey_m_sName_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16);
+
+      return retVal; // byte[16]
+    }
+
   }
 
   public uint m_nID {

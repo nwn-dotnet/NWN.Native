@@ -43,7 +43,7 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -271,13 +271,13 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public virtual int LoadHeader(string expectOid, byte nType) {
-    int ret = NWNXLibPINVOKE.CExoPackedFile_LoadHeader__SWIG_0(swigCPtr, expectOid, nType);
+  public virtual int LoadHeader(byte* expectOid, byte nType) {
+    int ret = NWNXLibPINVOKE.CExoPackedFile_LoadHeader__SWIG_0(swigCPtr, (global::System.IntPtr)expectOid, nType);
     return ret;
   }
 
-  public virtual int LoadHeader(string expectOid) {
-    int ret = NWNXLibPINVOKE.CExoPackedFile_LoadHeader__SWIG_1(swigCPtr, expectOid);
+  public virtual int LoadHeader(byte* expectOid) {
+    int ret = NWNXLibPINVOKE.CExoPackedFile_LoadHeader__SWIG_1(swigCPtr, (global::System.IntPtr)expectOid);
     return ret;
   }
 

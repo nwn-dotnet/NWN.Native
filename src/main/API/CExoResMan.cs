@@ -43,7 +43,7 @@ public unsafe class CExoResMan : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -574,8 +574,8 @@ public unsafe class CExoResMan : global::System.IDisposable {
     return ret;
   }
 
-  public int ReadRaw(CRes pRes, int nSize, string pBuffer) {
-    int ret = NWNXLibPINVOKE.CExoResMan_ReadRaw(swigCPtr, CRes.getCPtr(pRes), nSize, pBuffer);
+  public int ReadRaw(CRes pRes, int nSize, byte* pBuffer) {
+    int ret = NWNXLibPINVOKE.CExoResMan_ReadRaw(swigCPtr, CRes.getCPtr(pRes), nSize, (global::System.IntPtr)pBuffer);
     return ret;
   }
 
@@ -796,23 +796,23 @@ public unsafe class CExoResMan : global::System.IDisposable {
     return ret;
   }
 
-  public int ServiceFromDirectoryRaw(CRes pRes, int nSize, string pBuffer) {
-    int ret = NWNXLibPINVOKE.CExoResMan_ServiceFromDirectoryRaw(swigCPtr, CRes.getCPtr(pRes), nSize, pBuffer);
+  public int ServiceFromDirectoryRaw(CRes pRes, int nSize, byte* pBuffer) {
+    int ret = NWNXLibPINVOKE.CExoResMan_ServiceFromDirectoryRaw(swigCPtr, CRes.getCPtr(pRes), nSize, (global::System.IntPtr)pBuffer);
     return ret;
   }
 
-  public int ServiceFromEncapsulatedRaw(CRes pRes, int nSize, string pBuffer) {
-    int ret = NWNXLibPINVOKE.CExoResMan_ServiceFromEncapsulatedRaw(swigCPtr, CRes.getCPtr(pRes), nSize, pBuffer);
+  public int ServiceFromEncapsulatedRaw(CRes pRes, int nSize, byte* pBuffer) {
+    int ret = NWNXLibPINVOKE.CExoResMan_ServiceFromEncapsulatedRaw(swigCPtr, CRes.getCPtr(pRes), nSize, (global::System.IntPtr)pBuffer);
     return ret;
   }
 
-  public int ServiceFromResFileRaw(CRes pRes, int nSize, string pBuffer) {
-    int ret = NWNXLibPINVOKE.CExoResMan_ServiceFromResFileRaw(swigCPtr, CRes.getCPtr(pRes), nSize, pBuffer);
+  public int ServiceFromResFileRaw(CRes pRes, int nSize, byte* pBuffer) {
+    int ret = NWNXLibPINVOKE.CExoResMan_ServiceFromResFileRaw(swigCPtr, CRes.getCPtr(pRes), nSize, (global::System.IntPtr)pBuffer);
     return ret;
   }
 
-  public int ServiceFromImageRaw(CRes pRes, int nSize, string pBuffer) {
-    int ret = NWNXLibPINVOKE.CExoResMan_ServiceFromImageRaw(swigCPtr, CRes.getCPtr(pRes), nSize, pBuffer);
+  public int ServiceFromImageRaw(CRes pRes, int nSize, byte* pBuffer) {
+    int ret = NWNXLibPINVOKE.CExoResMan_ServiceFromImageRaw(swigCPtr, CRes.getCPtr(pRes), nSize, (global::System.IntPtr)pBuffer);
     return ret;
   }
 

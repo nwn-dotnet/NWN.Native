@@ -43,7 +43,7 @@ public unsafe class CScriptCompilerIdListEntry : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -246,14 +246,15 @@ public unsafe class CScriptCompilerIdListEntry : global::System.IDisposable {
     } 
   }
 
-  public string m_pchParameters {
+  public byte* m_pchParameters {
     set {
-      NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_pchParameters_set(swigCPtr, value);
+      NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_pchParameters_set(swigCPtr, (global::System.IntPtr)value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_pchParameters_get(swigCPtr);
-      return ret;
-    } 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompilerIdListEntry_m_pchParameters_get(swigCPtr);
+        return (byte*)retVal;
+    }
+
   }
 
   public CExoString m_psStructureParameterNames {

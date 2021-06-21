@@ -43,7 +43,7 @@ public unsafe class CNWLevelStats : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -125,14 +125,15 @@ public unsafe class CNWLevelStats : global::System.IDisposable {
     } 
   }
 
-  public string m_lstSkillRanks {
+  public byte* m_lstSkillRanks {
     set {
-      NWNXLibPINVOKE.CNWLevelStats_m_lstSkillRanks_set(swigCPtr, value);
+      NWNXLibPINVOKE.CNWLevelStats_m_lstSkillRanks_set(swigCPtr, (global::System.IntPtr)value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CNWLevelStats_m_lstSkillRanks_get(swigCPtr);
-      return ret;
-    } 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWLevelStats_m_lstSkillRanks_get(swigCPtr);
+        return (byte*)retVal;
+    }
+
   }
 
   public ushort m_nSkillPointsRemaining {

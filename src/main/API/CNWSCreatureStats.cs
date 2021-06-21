@@ -43,7 +43,7 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -673,14 +673,15 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
     } 
   }
 
-  public string m_nDamageImmunity {
+  public byte* m_nDamageImmunity {
     set {
-      NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageImmunity_set(swigCPtr, value);
+      NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageImmunity_set(swigCPtr, (global::System.IntPtr)value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageImmunity_get(swigCPtr);
-      return ret;
-    } 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageImmunity_get(swigCPtr);
+        return (byte*)retVal;
+    }
+
   }
 
   public int m_nDamageRoll {
@@ -1088,14 +1089,15 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
     } 
   }
 
-  public string m_lstSkillRanks {
+  public byte* m_lstSkillRanks {
     set {
-      NWNXLibPINVOKE.CNWSCreatureStats_m_lstSkillRanks_set(swigCPtr, value);
+      NWNXLibPINVOKE.CNWSCreatureStats_m_lstSkillRanks_set(swigCPtr, (global::System.IntPtr)value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CNWSCreatureStats_m_lstSkillRanks_get(swigCPtr);
-      return ret;
-    } 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_lstSkillRanks_get(swigCPtr);
+        return (byte*)retVal;
+    }
+
   }
 
   public char m_nArmorCheckPenalty {
@@ -1804,16 +1806,16 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
     return ret;
   }
 
-  public void GetAbilityInfo(byte nAbilityId, byte* pStat, string pMod, byte* pBase, string pTotalBonus) {
-    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_0(swigCPtr, nAbilityId, (global::System.IntPtr)pStat, pMod, (global::System.IntPtr)pBase, pTotalBonus);
+  public void GetAbilityInfo(byte nAbilityId, byte* pStat, byte* pMod, byte* pBase, byte* pTotalBonus) {
+    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_0(swigCPtr, nAbilityId, (global::System.IntPtr)pStat, (global::System.IntPtr)pMod, (global::System.IntPtr)pBase, (global::System.IntPtr)pTotalBonus);
   }
 
-  public void GetAbilityInfo(byte nAbilityId, byte* pStat, string pMod, byte* pBase) {
-    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_1(swigCPtr, nAbilityId, (global::System.IntPtr)pStat, pMod, (global::System.IntPtr)pBase);
+  public void GetAbilityInfo(byte nAbilityId, byte* pStat, byte* pMod, byte* pBase) {
+    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_1(swigCPtr, nAbilityId, (global::System.IntPtr)pStat, (global::System.IntPtr)pMod, (global::System.IntPtr)pBase);
   }
 
-  public void GetAbilityInfo(byte nAbilityId, byte* pStat, string pMod) {
-    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_2(swigCPtr, nAbilityId, (global::System.IntPtr)pStat, pMod);
+  public void GetAbilityInfo(byte nAbilityId, byte* pStat, byte* pMod) {
+    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_2(swigCPtr, nAbilityId, (global::System.IntPtr)pStat, (global::System.IntPtr)pMod);
   }
 
   public void GetAbilityInfo(byte nAbilityId, byte* pStat) {

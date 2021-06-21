@@ -48,7 +48,7 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   global::System.Runtime.InteropServices.HandleRef ICGameObject.GetInterfaceCPtr() {
     return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CNWSModule_ICGameObject_GetInterfaceCPtr(swigCPtr.Handle));
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -1418,8 +1418,8 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
     return (byte*)retVal;
   }
 
-  public int FindTagPositionInTable(string szTag) {
-    int ret = NWNXLibPINVOKE.CNWSModule_FindTagPositionInTable(swigCPtr, szTag);
+  public int FindTagPositionInTable(byte* szTag) {
+    int ret = NWNXLibPINVOKE.CNWSModule_FindTagPositionInTable(swigCPtr, (global::System.IntPtr)szTag);
     return ret;
   }
 

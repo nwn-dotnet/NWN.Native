@@ -43,7 +43,7 @@ public unsafe class NWMODULEHEADER : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,14 +90,17 @@ public unsafe class NWMODULEHEADER : global::System.IDisposable {
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public string pModuleID {
+  public NativeArray<byte> pModuleID {
     set {
       NWNXLibPINVOKE.NWMODULEHEADER_pModuleID_set(swigCPtr, value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.NWMODULEHEADER_pModuleID_get(swigCPtr);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.NWMODULEHEADER_pModuleID_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 32);
+
+      return retVal; // byte[32]
+    }
+
   }
 
   public int nModuleCreatorID {

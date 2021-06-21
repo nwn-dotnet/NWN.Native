@@ -33,7 +33,7 @@ public unsafe class CResList : CResStruct {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -80,14 +80,17 @@ public unsafe class CResList : CResStruct {
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public string m_pLabel {
+  public NativeArray<byte> m_pLabel {
     set {
       NWNXLibPINVOKE.CResList_m_pLabel_set(swigCPtr, value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CResList_m_pLabel_get(swigCPtr);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CResList_m_pLabel_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16);
+
+      return retVal; // byte[16]
+    }
+
   }
 
   public CResList() : this(NWNXLibPINVOKE.new_CResList(), true) {

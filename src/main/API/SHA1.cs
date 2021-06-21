@@ -43,7 +43,7 @@ public unsafe class SHA1 : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -113,14 +113,17 @@ public unsafe class SHA1 : global::System.IDisposable {
 
   }
 
-  public string m_hex {
+  public NativeArray<byte> m_hex {
     set {
       NWNXLibPINVOKE.SHA1_m_hex_set(swigCPtr, value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.SHA1_m_hex_get(swigCPtr);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.SHA1_m_hex_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 41);
+
+      return retVal; // byte[41]
+    }
+
   }
 
   public SHA1() : this(NWNXLibPINVOKE.new_SHA1(), true) {

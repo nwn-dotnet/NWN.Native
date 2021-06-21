@@ -43,7 +43,7 @@ public unsafe class MaterialShaderParam : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -100,24 +100,30 @@ public unsafe class MaterialShaderParam : global::System.IDisposable {
     } 
   }
 
-  public string m_sMaterialName {
+  public NativeArray<byte> m_sMaterialName {
     set {
       NWNXLibPINVOKE.MaterialShaderParam_m_sMaterialName_set(swigCPtr, value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.MaterialShaderParam_m_sMaterialName_get(swigCPtr);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.MaterialShaderParam_m_sMaterialName_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16+1);
+
+      return retVal; // byte[16+1]
+    }
+
   }
 
-  public string m_sParamName {
+  public NativeArray<byte> m_sParamName {
     set {
       NWNXLibPINVOKE.MaterialShaderParam_m_sParamName_set(swigCPtr, value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.MaterialShaderParam_m_sParamName_get(swigCPtr);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.MaterialShaderParam_m_sParamName_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 64+1);
+
+      return retVal; // byte[64+1]
+    }
+
   }
 
   public int m_nValue {

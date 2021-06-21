@@ -43,7 +43,7 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -575,14 +575,17 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     } 
   }
 
-  public string m_pchToken {
+  public NativeArray<byte> m_pchToken {
     set {
       NWNXLibPINVOKE.CScriptCompiler_m_pchToken_set(swigCPtr, value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CScriptCompiler_m_pchToken_get(swigCPtr);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CScriptCompiler_m_pchToken_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 512);
+
+      return retVal; // byte[512]
+    }
+
   }
 
   public CScriptCompilerStackEntry m_pSRStack {
@@ -1120,14 +1123,17 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     } 
   }
 
-  public string m_pchStackTypes {
+  public NativeArray<byte> m_pchStackTypes {
     set {
       NWNXLibPINVOKE.CScriptCompiler_m_pchStackTypes_set(swigCPtr, value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CScriptCompiler_m_pchStackTypes_get(swigCPtr);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CScriptCompiler_m_pchStackTypes_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 8192);
+
+      return retVal; // byte[8192]
+    }
+
   }
 
   public int m_nRunTimeIntegers {
@@ -1315,14 +1321,15 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     } 
   }
 
-  public string m_pchOutputCode {
+  public byte* m_pchOutputCode {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pchOutputCode_set(swigCPtr, value);
+      NWNXLibPINVOKE.CScriptCompiler_m_pchOutputCode_set(swigCPtr, (global::System.IntPtr)value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CScriptCompiler_m_pchOutputCode_get(swigCPtr);
-      return ret;
-    } 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_pchOutputCode_get(swigCPtr);
+        return (byte*)retVal;
+    }
+
   }
 
   public int m_nOutputCodeSize {
@@ -1355,14 +1362,15 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     } 
   }
 
-  public string m_pchResolvedOutputBuffer {
+  public byte* m_pchResolvedOutputBuffer {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pchResolvedOutputBuffer_set(swigCPtr, value);
+      NWNXLibPINVOKE.CScriptCompiler_m_pchResolvedOutputBuffer_set(swigCPtr, (global::System.IntPtr)value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CScriptCompiler_m_pchResolvedOutputBuffer_get(swigCPtr);
-      return ret;
-    } 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_pchResolvedOutputBuffer_get(swigCPtr);
+        return (byte*)retVal;
+    }
+
   }
 
   public int m_nResolvedOutputBufferSize {
@@ -1375,14 +1383,15 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     } 
   }
 
-  public string m_pchDebuggerCode {
+  public byte* m_pchDebuggerCode {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pchDebuggerCode_set(swigCPtr, value);
+      NWNXLibPINVOKE.CScriptCompiler_m_pchDebuggerCode_set(swigCPtr, (global::System.IntPtr)value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CScriptCompiler_m_pchDebuggerCode_get(swigCPtr);
-      return ret;
-    } 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CScriptCompiler_m_pchDebuggerCode_get(swigCPtr);
+        return (byte*)retVal;
+    }
+
   }
 
   public int m_nDebuggerCodeSize {
@@ -1405,14 +1414,17 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     } 
   }
 
-  public string m_pchActionParameters {
+  public NativeArray<byte> m_pchActionParameters {
     set {
       NWNXLibPINVOKE.CScriptCompiler_m_pchActionParameters_set(swigCPtr, value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CScriptCompiler_m_pchActionParameters_get(swigCPtr);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CScriptCompiler_m_pchActionParameters_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 32);
+
+      return retVal; // byte[32]
+    }
+
   }
 
   public CExoStringArray m_pchActionParameterStructureNames {
@@ -1511,7 +1523,7 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     return ret;
   }
 
-  public int GetCompiledScriptCode(char** pnCode, int* nCodeSize) {
+  public int GetCompiledScriptCode(byte** pnCode, int* nCodeSize) {
     int ret = NWNXLibPINVOKE.CScriptCompiler_GetCompiledScriptCode(swigCPtr, (global::System.IntPtr)pnCode, (global::System.IntPtr)nCodeSize);
     return ret;
   }
@@ -1551,8 +1563,8 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     return ret;
   }
 
-  public uint HashString(string pString) {
-    uint ret = NWNXLibPINVOKE.CScriptCompiler_HashString__SWIG_1(swigCPtr, pString);
+  public uint HashString(byte* pString) {
+    uint ret = NWNXLibPINVOKE.CScriptCompiler_HashString__SWIG_1(swigCPtr, (global::System.IntPtr)pString);
     return ret;
   }
 
@@ -1770,8 +1782,8 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     return ret;
   }
 
-  public int ParseSource(string pScript, int nScriptLength) {
-    int ret = NWNXLibPINVOKE.CScriptCompiler_ParseSource(swigCPtr, pScript, nScriptLength);
+  public int ParseSource(byte* pScript, int nScriptLength) {
+    int ret = NWNXLibPINVOKE.CScriptCompiler_ParseSource(swigCPtr, (global::System.IntPtr)pScript, nScriptLength);
     return ret;
   }
 
@@ -1899,8 +1911,8 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     return ret;
   }
 
-  public int GetHashEntryByName(string psIdentifierName) {
-    int ret = NWNXLibPINVOKE.CScriptCompiler_GetHashEntryByName(swigCPtr, psIdentifierName);
+  public int GetHashEntryByName(byte* psIdentifierName) {
+    int ret = NWNXLibPINVOKE.CScriptCompiler_GetHashEntryByName(swigCPtr, (global::System.IntPtr)psIdentifierName);
     return ret;
   }
 

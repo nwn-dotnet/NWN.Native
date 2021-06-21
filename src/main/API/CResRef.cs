@@ -43,7 +43,7 @@ public unsafe class CResRef : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,6 +90,17 @@ public unsafe class CResRef : global::System.IDisposable {
     return !Equals(left, right);
   }
 /*@SWIG@*/
+
+  public CResRef(string source) : this(source.GetNullTerminatedString()) {
+  }
+
+  /// <summary>
+  /// Gets a C# string representing this ResRef (GetResRefStr())
+  /// </summary>
+  /// <returns>A C# string representing this ResRef.</returns>
+  public override string ToString() {
+    return StringHelper.ReadNullTerminatedString(GetResRefStr());
+  }
   public NativeArray<byte> m_resRefLowerCase {
     set {
       NWNXLibPINVOKE.CResRef_m_resRefLowerCase_set(swigCPtr, value);
@@ -126,7 +137,7 @@ public unsafe class CResRef : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CResRef(string pName) : this(NWNXLibPINVOKE.new_CResRef__SWIG_3(pName), true) {
+  public CResRef(byte* pName) : this(NWNXLibPINVOKE.new_CResRef__SWIG_3((global::System.IntPtr)pName), true) {
   }
 
   public CResRef(byte* pName, byte nLength) : this(NWNXLibPINVOKE.new_CResRef__SWIG_4((global::System.IntPtr)pName, nLength), true) {
@@ -137,8 +148,8 @@ public unsafe class CResRef : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void CopyToString(string pStr) {
-    NWNXLibPINVOKE.CResRef_CopyToString__SWIG_1(swigCPtr, pStr);
+  public void CopyToString(byte* pStr) {
+    NWNXLibPINVOKE.CResRef_CopyToString__SWIG_1(swigCPtr, (global::System.IntPtr)pStr);
   }
 
   public int _OpNotEquals(CResRef cResRef) {
@@ -153,8 +164,8 @@ public unsafe class CResRef : global::System.IDisposable {
     return ret;
   }
 
-  public int _OpNotEquals(string pName) {
-    int ret = NWNXLibPINVOKE.CResRef__OpNotEquals__SWIG_2(swigCPtr, pName);
+  public int _OpNotEquals(byte* pName) {
+    int ret = NWNXLibPINVOKE.CResRef__OpNotEquals__SWIG_2(swigCPtr, (global::System.IntPtr)pName);
     return ret;
   }
 
@@ -170,8 +181,8 @@ public unsafe class CResRef : global::System.IDisposable {
     return ret;
   }
 
-  public int _OpEquals(string name) {
-    int ret = NWNXLibPINVOKE.CResRef__OpEquals__SWIG_2(swigCPtr, name);
+  public int _OpEquals(byte* name) {
+    int ret = NWNXLibPINVOKE.CResRef__OpEquals__SWIG_2(swigCPtr, (global::System.IntPtr)name);
     return ret;
   }
 
@@ -197,8 +208,8 @@ public unsafe class CResRef : global::System.IDisposable {
     return ret;
   }
 
-  public CResRef _OpAssign(string pName) {
-    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_3(swigCPtr, pName), true);
+  public CResRef _OpAssign(byte* pName) {
+    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_3(swigCPtr, (global::System.IntPtr)pName), true);
     return ret;
   }
 
@@ -212,14 +223,14 @@ public unsafe class CResRef : global::System.IDisposable {
     NWNXLibPINVOKE.CResRef_GetResRef__SWIG_0(swigCPtr, resRef);
   }
 
-  public string GetResRef() {
-    string ret = NWNXLibPINVOKE.CResRef_GetResRef__SWIG_1(swigCPtr);
-    return ret;
+  public byte* GetResRef() {
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CResRef_GetResRef__SWIG_1(swigCPtr);
+    return (byte*)retVal;
   }
 
-  public string GetResRefStr() {
-    string ret = NWNXLibPINVOKE.CResRef_GetResRefStr(swigCPtr);
-    return ret;
+  public byte* GetResRefStr() {
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CResRef_GetResRefStr(swigCPtr);
+    return (byte*)retVal;
   }
 
   public int IsValid() {

@@ -43,7 +43,7 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -400,14 +400,17 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
     } 
   }
 
-  public string m_ItemClassResRefChunk {
+  public NativeArray<byte> m_ItemClassResRefChunk {
     set {
       NWNXLibPINVOKE.CNWBaseItem_m_ItemClassResRefChunk_set(swigCPtr, value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CNWBaseItem_m_ItemClassResRefChunk_get(swigCPtr);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWBaseItem_m_ItemClassResRefChunk_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 10+1);
+
+      return retVal; // byte[10+1]
+    }
+
   }
 
   public NativeArray<int> m_bPartEnvMap {

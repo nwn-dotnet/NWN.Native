@@ -33,7 +33,7 @@ public unsafe class CNWSMessage : CNWMessage {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -1481,8 +1481,8 @@ public unsafe class CNWSMessage : CNWMessage {
     return ret;
   }
 
-  public int ParseToken(string token, byte** pMsgPortion, uint* msgPortionSize, int bDelimeterFollowing) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ParseToken(swigCPtr, token, (global::System.IntPtr)pMsgPortion, (global::System.IntPtr)msgPortionSize, bDelimeterFollowing);
+  public int ParseToken(byte* token, byte** pMsgPortion, uint* msgPortionSize, int bDelimeterFollowing) {
+    int ret = NWNXLibPINVOKE.CNWSMessage_ParseToken(swigCPtr, (global::System.IntPtr)token, (global::System.IntPtr)pMsgPortion, (global::System.IntPtr)msgPortionSize, bDelimeterFollowing);
     return ret;
   }
 

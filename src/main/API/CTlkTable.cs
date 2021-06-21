@@ -43,7 +43,7 @@ public unsafe class CTlkTable : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -246,9 +246,9 @@ public unsafe class CTlkTable : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public string RemapFontName(string pFontName) {
-    string ret = NWNXLibPINVOKE.CTlkTable_RemapFontName(swigCPtr, pFontName);
-    return ret;
+  public byte* RemapFontName(byte* pFontName) {
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CTlkTable_RemapFontName(swigCPtr, (global::System.IntPtr)pFontName);
+    return (byte*)retVal;
   }
 
   public void ParseStr(CExoString sText) {

@@ -43,7 +43,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -183,7 +183,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
         }
       }
     }
-  /*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+  /*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
     public global::System.IntPtr Pointer {
       get {
         return swigCPtr.Handle;
@@ -263,7 +263,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
             }
           }
         }
-      /*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+      /*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
         public global::System.IntPtr Pointer {
           get {
             return swigCPtr.Handle;
@@ -463,8 +463,8 @@ public unsafe class LerpFloat : global::System.IDisposable {
     return ret;
   }
 
-  public void WriteGFF(CResGFF pRes, CResStruct pStruct, string szLabel) {
-    NWNXLibPINVOKE.LerpFloat_WriteGFF(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), szLabel);
+  public void WriteGFF(CResGFF pRes, CResStruct pStruct, byte* szLabel) {
+    NWNXLibPINVOKE.LerpFloat_WriteGFF(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), (global::System.IntPtr)szLabel);
   }
 
   public void AssignStatic(float to) {

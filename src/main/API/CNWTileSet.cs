@@ -43,7 +43,7 @@ public unsafe class CNWTileSet : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -271,13 +271,13 @@ public unsafe class CNWTileSet : global::System.IDisposable {
     return ret;
   }
 
-  public int ParseLine(string pLine) {
-    int ret = NWNXLibPINVOKE.CNWTileSet_ParseLine(swigCPtr, pLine);
+  public int ParseLine(byte* pLine) {
+    int ret = NWNXLibPINVOKE.CNWTileSet_ParseLine(swigCPtr, (global::System.IntPtr)pLine);
     return ret;
   }
 
-  public int SetTileValue(string pVariable, string pValue) {
-    int ret = NWNXLibPINVOKE.CNWTileSet_SetTileValue(swigCPtr, pVariable, pValue);
+  public int SetTileValue(byte* pVariable, byte* pValue) {
+    int ret = NWNXLibPINVOKE.CNWTileSet_SetTileValue(swigCPtr, (global::System.IntPtr)pVariable, (global::System.IntPtr)pValue);
     return ret;
   }
 

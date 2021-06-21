@@ -43,7 +43,7 @@ public unsafe class CExoString : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -91,17 +91,25 @@ public unsafe class CExoString : global::System.IDisposable {
   }
 /*@SWIG@*/
 
-  public override string ToString() {
-    return CStr();
+  public CExoString(string source) : this(source.GetNullTerminatedString()) {
   }
-  public string m_sString {
+
+  /// <summary>
+  /// Converts this CExoString to a C# string.
+  /// </summary>
+  /// <returns>The equivalent C# string for this CExoString.</returns>
+  public override string ToString() {
+    return StringHelper.ReadNullTerminatedString(CStr());
+  }
+  public byte* m_sString {
     set {
-      NWNXLibPINVOKE.CExoString_m_sString_set(swigCPtr, value);
+      NWNXLibPINVOKE.CExoString_m_sString_set(swigCPtr, (global::System.IntPtr)value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CExoString_m_sString_get(swigCPtr);
-      return ret;
-    } 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoString_m_sString_get(swigCPtr);
+        return (byte*)retVal;
+    }
+
   }
 
   public uint m_nBufferLength {
@@ -121,14 +129,14 @@ public unsafe class CExoString : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoString(string source) : this(NWNXLibPINVOKE.new_CExoString__SWIG_2(source), true) {
+  public CExoString(byte* source) : this(NWNXLibPINVOKE.new_CExoString__SWIG_2((global::System.IntPtr)source), true) {
   }
 
   public CExoString(CExoString source) : this(NWNXLibPINVOKE.new_CExoString__SWIG_3(CExoString.getCPtr(source)), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoString(string source, int length) : this(NWNXLibPINVOKE.new_CExoString__SWIG_4(source, length), true) {
+  public CExoString(byte* source, int length) : this(NWNXLibPINVOKE.new_CExoString__SWIG_4((global::System.IntPtr)source, length), true) {
   }
 
   public CExoString(int value) : this(NWNXLibPINVOKE.new_CExoString__SWIG_5(value), true) {
@@ -152,8 +160,8 @@ public unsafe class CExoString : global::System.IDisposable {
     return ret;
   }
 
-  public int _OpEquals(string string_) {
-    int ret = NWNXLibPINVOKE.CExoString__OpEquals__SWIG_1(swigCPtr, string_);
+  public int _OpEquals(byte* string_) {
+    int ret = NWNXLibPINVOKE.CExoString__OpEquals__SWIG_1(swigCPtr, (global::System.IntPtr)string_);
     return ret;
   }
 
@@ -163,8 +171,8 @@ public unsafe class CExoString : global::System.IDisposable {
     return ret;
   }
 
-  public int _OpNotEquals(string string_) {
-    int ret = NWNXLibPINVOKE.CExoString__OpNotEquals__SWIG_1(swigCPtr, string_);
+  public int _OpNotEquals(byte* string_) {
+    int ret = NWNXLibPINVOKE.CExoString__OpNotEquals__SWIG_1(swigCPtr, (global::System.IntPtr)string_);
     return ret;
   }
 
@@ -174,8 +182,8 @@ public unsafe class CExoString : global::System.IDisposable {
     return ret;
   }
 
-  public int _OpLessThan(string string_) {
-    int ret = NWNXLibPINVOKE.CExoString__OpLessThan__SWIG_1(swigCPtr, string_);
+  public int _OpLessThan(byte* string_) {
+    int ret = NWNXLibPINVOKE.CExoString__OpLessThan__SWIG_1(swigCPtr, (global::System.IntPtr)string_);
     return ret;
   }
 
@@ -185,8 +193,8 @@ public unsafe class CExoString : global::System.IDisposable {
     return ret;
   }
 
-  public int _OpGreaterThan(string string_) {
-    int ret = NWNXLibPINVOKE.CExoString__OpGreaterThan__SWIG_1(swigCPtr, string_);
+  public int _OpGreaterThan(byte* string_) {
+    int ret = NWNXLibPINVOKE.CExoString__OpGreaterThan__SWIG_1(swigCPtr, (global::System.IntPtr)string_);
     return ret;
   }
 
@@ -196,8 +204,8 @@ public unsafe class CExoString : global::System.IDisposable {
     return ret;
   }
 
-  public int _OpLessThanOrEqual(string string_) {
-    int ret = NWNXLibPINVOKE.CExoString__OpLessThanOrEqual__SWIG_1(swigCPtr, string_);
+  public int _OpLessThanOrEqual(byte* string_) {
+    int ret = NWNXLibPINVOKE.CExoString__OpLessThanOrEqual__SWIG_1(swigCPtr, (global::System.IntPtr)string_);
     return ret;
   }
 
@@ -207,8 +215,8 @@ public unsafe class CExoString : global::System.IDisposable {
     return ret;
   }
 
-  public int _OpGreaterThanOrEqual(string string_) {
-    int ret = NWNXLibPINVOKE.CExoString__OpGreaterThanOrEqual__SWIG_1(swigCPtr, string_);
+  public int _OpGreaterThanOrEqual(byte* string_) {
+    int ret = NWNXLibPINVOKE.CExoString__OpGreaterThanOrEqual__SWIG_1(swigCPtr, (global::System.IntPtr)string_);
     return ret;
   }
 
@@ -233,9 +241,9 @@ public unsafe class CExoString : global::System.IDisposable {
     return ret;
   }
 
-  public string CStr() {
-    string ret = NWNXLibPINVOKE.CExoString_CStr(swigCPtr);
-    return ret;
+  public byte* CStr() {
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoString_CStr(swigCPtr);
+    return (byte*)retVal;
   }
 
   public int Find(CExoString string_, int position) {
@@ -270,8 +278,8 @@ public unsafe class CExoString : global::System.IDisposable {
     return ret;
   }
 
-  public void Format(string format) {
-    NWNXLibPINVOKE.CExoString_Format(swigCPtr, format);
+  public void Format(byte* format) {
+    NWNXLibPINVOKE.CExoString_Format(swigCPtr, (global::System.IntPtr)format);
   }
 
   public int GetLength() {
@@ -351,8 +359,8 @@ public unsafe class CExoString : global::System.IDisposable {
     return ret;
   }
 
-  public CExoString Strip(bool leading, bool trailing, string set) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_Strip__SWIG_0(swigCPtr, leading, trailing, set), true);
+  public CExoString Strip(bool leading, bool trailing, byte* set) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_Strip__SWIG_0(swigCPtr, leading, trailing, (global::System.IntPtr)set), true);
     return ret;
   }
 

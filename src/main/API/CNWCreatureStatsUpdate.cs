@@ -43,7 +43,7 @@ public unsafe class CNWCreatureStatsUpdate : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -363,14 +363,17 @@ public unsafe class CNWCreatureStatsUpdate : global::System.IDisposable {
     } 
   }
 
-  public string m_nNegativeLevels {
+  public NativeArray<byte> m_nNegativeLevels {
     set {
       NWNXLibPINVOKE.CNWCreatureStatsUpdate_m_nNegativeLevels_set(swigCPtr, value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CNWCreatureStatsUpdate_m_nNegativeLevels_get(swigCPtr);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWCreatureStatsUpdate_m_nNegativeLevels_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 3);
+
+      return retVal; // byte[3]
+    }
+
   }
 
   public short m_nCurrentHP {
@@ -474,14 +477,15 @@ public unsafe class CNWCreatureStatsUpdate : global::System.IDisposable {
     } 
   }
 
-  public string m_lstSkillRanks {
+  public byte* m_lstSkillRanks {
     set {
-      NWNXLibPINVOKE.CNWCreatureStatsUpdate_m_lstSkillRanks_set(swigCPtr, value);
+      NWNXLibPINVOKE.CNWCreatureStatsUpdate_m_lstSkillRanks_set(swigCPtr, (global::System.IntPtr)value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CNWCreatureStatsUpdate_m_lstSkillRanks_get(swigCPtr);
-      return ret;
-    } 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWCreatureStatsUpdate_m_lstSkillRanks_get(swigCPtr);
+        return (byte*)retVal;
+    }
+
   }
 
   public CNWCreatureStatsUpdate() : this(NWNXLibPINVOKE.new_CNWCreatureStatsUpdate(), true) {

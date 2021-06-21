@@ -43,7 +43,7 @@ public unsafe class CScriptSourceFile : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -93,7 +93,7 @@ public unsafe class CScriptSourceFile : global::System.IDisposable {
   public CScriptSourceFile() : this(NWNXLibPINVOKE.new_CScriptSourceFile(), true) {
   }
 
-  public int LoadScript(CExoString sFileName, char** pScript, uint* nScriptLength) {
+  public int LoadScript(CExoString sFileName, byte** pScript, uint* nScriptLength) {
     int ret = NWNXLibPINVOKE.CScriptSourceFile_LoadScript(swigCPtr, CExoString.getCPtr(sFileName), (global::System.IntPtr)pScript, (global::System.IntPtr)nScriptLength);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;

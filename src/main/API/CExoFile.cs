@@ -43,7 +43,7 @@ public unsafe class CExoFile : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -176,8 +176,8 @@ public unsafe class CExoFile : global::System.IDisposable {
     return ret;
   }
 
-  public uint Write(string string_) {
-    uint ret = NWNXLibPINVOKE.CExoFile_Write__SWIG_1(swigCPtr, string_);
+  public uint Write(byte* string_) {
+    uint ret = NWNXLibPINVOKE.CExoFile_Write__SWIG_1(swigCPtr, (global::System.IntPtr)string_);
     return ret;
   }
 

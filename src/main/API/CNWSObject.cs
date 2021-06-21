@@ -48,7 +48,7 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
   global::System.Runtime.InteropServices.HandleRef ICGameObject.GetInterfaceCPtr() {
     return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CNWSObject_ICGameObject_GetInterfaceCPtr(swigCPtr.Handle));
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -793,14 +793,15 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     } 
   }
 
-  public string m_nDamageImmunity {
+  public byte* m_nDamageImmunity {
     set {
-      NWNXLibPINVOKE.CNWSObject_m_nDamageImmunity_set(swigCPtr, value);
+      NWNXLibPINVOKE.CNWSObject_m_nDamageImmunity_set(swigCPtr, (global::System.IntPtr)value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CNWSObject_m_nDamageImmunity_get(swigCPtr);
-      return ret;
-    } 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSObject_m_nDamageImmunity_get(swigCPtr);
+        return (byte*)retVal;
+    }
+
   }
 
   public Vector m_vLastSpellTarget {

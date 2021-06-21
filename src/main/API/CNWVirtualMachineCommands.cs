@@ -33,7 +33,7 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -166,11 +166,11 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     NWNXLibPINVOKE.CNWVirtualMachineCommands_DebugGUIStop(swigCPtr);
   }
 
-  public override void DebugGUISendMessageTo(string pMsg, int nSize) {
-    NWNXLibPINVOKE.CNWVirtualMachineCommands_DebugGUISendMessageTo(swigCPtr, pMsg, nSize);
+  public override void DebugGUISendMessageTo(byte* pMsg, int nSize) {
+    NWNXLibPINVOKE.CNWVirtualMachineCommands_DebugGUISendMessageTo(swigCPtr, (global::System.IntPtr)pMsg, nSize);
   }
 
-  public override int DebugGUIGetMessageFrom(char** pMsg, int* nSize) {
+  public override int DebugGUIGetMessageFrom(byte** pMsg, int* nSize) {
     int ret = NWNXLibPINVOKE.CNWVirtualMachineCommands_DebugGUIGetMessageFrom(swigCPtr, (global::System.IntPtr)pMsg, (global::System.IntPtr)nSize);
     return ret;
   }

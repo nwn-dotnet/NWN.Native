@@ -43,7 +43,7 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -112,14 +112,15 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
 
   }
 
-  public string m_pDebugInputMessageBuffer {
+  public byte* m_pDebugInputMessageBuffer {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugInputMessageBuffer_set(swigCPtr, value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugInputMessageBuffer_set(swigCPtr, (global::System.IntPtr)value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugInputMessageBuffer_get(swigCPtr);
-      return ret;
-    } 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugInputMessageBuffer_get(swigCPtr);
+        return (byte*)retVal;
+    }
+
   }
 
   public int m_nDebugInputMessageSize {
@@ -132,14 +133,15 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
     } 
   }
 
-  public string m_pDebugOutputMessageBuffer {
+  public byte* m_pDebugOutputMessageBuffer {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugOutputMessageBuffer_set(swigCPtr, value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugOutputMessageBuffer_set(swigCPtr, (global::System.IntPtr)value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugOutputMessageBuffer_get(swigCPtr);
-      return ret;
-    } 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugOutputMessageBuffer_get(swigCPtr);
+        return (byte*)retVal;
+    }
+
   }
 
   public int m_nDebugOutputMessageSize {
@@ -605,9 +607,9 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
     return ret;
   }
 
-  public string LoadDebugInfoLine(byte* pResourceData, uint nResourceSize, uint nOffsetStart, uint* pnOffsetEnd) {
-    string ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_LoadDebugInfoLine(swigCPtr, (global::System.IntPtr)pResourceData, nResourceSize, nOffsetStart, (global::System.IntPtr)pnOffsetEnd);
-    return ret;
+  public byte* LoadDebugInfoLine(byte* pResourceData, uint nResourceSize, uint nOffsetStart, uint* pnOffsetEnd) {
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_LoadDebugInfoLine(swigCPtr, (global::System.IntPtr)pResourceData, nResourceSize, nOffsetStart, (global::System.IntPtr)pnOffsetEnd);
+    return (byte*)retVal;
   }
 
   public int LoadDebugInfo(CVirtualMachineDebugLoader pDebugLoader) {
@@ -615,9 +617,9 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
     return ret;
   }
 
-  public string LoadScriptLine(byte* pResourceData, uint nResourceSize, uint nOffsetStart, uint* pnOffsetEnd, int bIncludeReturns) {
-    string ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_LoadScriptLine(swigCPtr, (global::System.IntPtr)pResourceData, nResourceSize, nOffsetStart, (global::System.IntPtr)pnOffsetEnd, bIncludeReturns);
-    return ret;
+  public byte* LoadScriptLine(byte* pResourceData, uint nResourceSize, uint nOffsetStart, uint* pnOffsetEnd, int bIncludeReturns) {
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_LoadScriptLine(swigCPtr, (global::System.IntPtr)pResourceData, nResourceSize, nOffsetStart, (global::System.IntPtr)pnOffsetEnd, bIncludeReturns);
+    return (byte*)retVal;
   }
 
   public int GenerateFunctionIDFromInstructionPointer(int nIP) {

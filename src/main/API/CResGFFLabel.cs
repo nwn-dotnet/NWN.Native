@@ -43,7 +43,7 @@ public unsafe class CResGFFLabel : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,14 +90,17 @@ public unsafe class CResGFFLabel : global::System.IDisposable {
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public string m_pLabel {
+  public NativeArray<byte> m_pLabel {
     set {
       NWNXLibPINVOKE.CResGFFLabel_m_pLabel_set(swigCPtr, value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CResGFFLabel_m_pLabel_get(swigCPtr);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CResGFFLabel_m_pLabel_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16);
+
+      return retVal; // byte[16]
+    }
+
   }
 
   public CResGFFLabel() : this(NWNXLibPINVOKE.new_CResGFFLabel(), true) {

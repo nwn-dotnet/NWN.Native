@@ -43,7 +43,7 @@ public unsafe class CERFString : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -110,14 +110,15 @@ public unsafe class CERFString : global::System.IDisposable {
     } 
   }
 
-  public string m_pText {
+  public byte* m_pText {
     set {
-      NWNXLibPINVOKE.CERFString_m_pText_set(swigCPtr, value);
+      NWNXLibPINVOKE.CERFString_m_pText_set(swigCPtr, (global::System.IntPtr)value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CERFString_m_pText_get(swigCPtr);
-      return ret;
-    } 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CERFString_m_pText_get(swigCPtr);
+        return (byte*)retVal;
+    }
+
   }
 
   public CExoString GetText() {

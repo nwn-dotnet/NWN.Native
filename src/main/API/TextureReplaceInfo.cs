@@ -43,7 +43,7 @@ public unsafe class TextureReplaceInfo : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,24 +90,30 @@ public unsafe class TextureReplaceInfo : global::System.IDisposable {
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public string m_sOldName {
+  public NativeArray<byte> m_sOldName {
     set {
       NWNXLibPINVOKE.TextureReplaceInfo_m_sOldName_set(swigCPtr, value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.TextureReplaceInfo_m_sOldName_get(swigCPtr);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.TextureReplaceInfo_m_sOldName_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16+1);
+
+      return retVal; // byte[16+1]
+    }
+
   }
 
-  public string m_sNewName {
+  public NativeArray<byte> m_sNewName {
     set {
       NWNXLibPINVOKE.TextureReplaceInfo_m_sNewName_set(swigCPtr, value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.TextureReplaceInfo_m_sNewName_get(swigCPtr);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.TextureReplaceInfo_m_sNewName_get(swigCPtr);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16+1);
+
+      return retVal; // byte[16+1]
+    }
+
   }
 
   public TextureReplaceInfo() : this(NWNXLibPINVOKE.new_TextureReplaceInfo(), true) {

@@ -43,7 +43,7 @@ public unsafe class CNWSDialog : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -408,8 +408,8 @@ public unsafe class CNWSDialog : global::System.IDisposable {
     return ret;
   }
 
-  public void LoadScriptParams(CResGFF pRes, CExoArrayListScriptParam paramsList, CResStruct pStructure, string szFieldID) {
-    NWNXLibPINVOKE.CNWSDialog_LoadScriptParams(swigCPtr, CResGFF.getCPtr(pRes), CExoArrayListScriptParam.getCPtr(paramsList), CResStruct.getCPtr(pStructure), szFieldID);
+  public void LoadScriptParams(CResGFF pRes, CExoArrayListScriptParam paramsList, CResStruct pStructure, byte* szFieldID) {
+    NWNXLibPINVOKE.CNWSDialog_LoadScriptParams(swigCPtr, CResGFF.getCPtr(pRes), CExoArrayListScriptParam.getCPtr(paramsList), CResStruct.getCPtr(pStructure), (global::System.IntPtr)szFieldID);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 

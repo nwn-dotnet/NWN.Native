@@ -43,7 +43,7 @@ public unsafe class C2DA : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -348,13 +348,13 @@ public unsafe class C2DA : global::System.IDisposable {
     return ret;
   }
 
-  public uint GetNextLineLength(string pBuffer, uint nBufferSize) {
-    uint ret = NWNXLibPINVOKE.C2DA_GetNextLineLength(swigCPtr, pBuffer, nBufferSize);
+  public uint GetNextLineLength(byte* pBuffer, uint nBufferSize) {
+    uint ret = NWNXLibPINVOKE.C2DA_GetNextLineLength(swigCPtr, (global::System.IntPtr)pBuffer, nBufferSize);
     return ret;
   }
 
-  public int GetNextToken(char** pBuffer, uint* pBufferSize, string pToken, uint nMaxTokenSize, uint* pLeadingWhiteSpaceSize) {
-    int ret = NWNXLibPINVOKE.C2DA_GetNextToken(swigCPtr, (global::System.IntPtr)pBuffer, (global::System.IntPtr)pBufferSize, pToken, nMaxTokenSize, (global::System.IntPtr)pLeadingWhiteSpaceSize);
+  public int GetNextToken(byte** pBuffer, uint* pBufferSize, byte* pToken, uint nMaxTokenSize, uint* pLeadingWhiteSpaceSize) {
+    int ret = NWNXLibPINVOKE.C2DA_GetNextToken(swigCPtr, (global::System.IntPtr)pBuffer, (global::System.IntPtr)pBufferSize, (global::System.IntPtr)pToken, nMaxTokenSize, (global::System.IntPtr)pLeadingWhiteSpaceSize);
     return ret;
   }
 
@@ -364,7 +364,7 @@ public unsafe class C2DA : global::System.IDisposable {
     return ret;
   }
 
-  public int SkipNewLines(char** pBuffer, uint* pBufferSize) {
+  public int SkipNewLines(byte** pBuffer, uint* pBufferSize) {
     int ret = NWNXLibPINVOKE.C2DA_SkipNewLines(swigCPtr, (global::System.IntPtr)pBuffer, (global::System.IntPtr)pBufferSize);
     return ret;
   }

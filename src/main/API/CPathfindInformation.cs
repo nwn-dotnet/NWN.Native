@@ -43,7 +43,7 @@ public unsafe class CPathfindInformation : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -901,14 +901,15 @@ public unsafe class CPathfindInformation : global::System.IDisposable {
     } 
   }
 
-  public string m_bGridPointsSearchedArray {
+  public byte* m_bGridPointsSearchedArray {
     set {
-      NWNXLibPINVOKE.CPathfindInformation_m_bGridPointsSearchedArray_set(swigCPtr, value);
+      NWNXLibPINVOKE.CPathfindInformation_m_bGridPointsSearchedArray_set(swigCPtr, (global::System.IntPtr)value);
     } 
     get {
-      string ret = NWNXLibPINVOKE.CPathfindInformation_m_bGridPointsSearchedArray_get(swigCPtr);
-      return ret;
-    } 
+        global::System.IntPtr retVal = NWNXLibPINVOKE.CPathfindInformation_m_bGridPointsSearchedArray_get(swigCPtr);
+        return (byte*)retVal;
+    }
+
   }
 
   public int m_nGridPointsSearchedOffsetX {

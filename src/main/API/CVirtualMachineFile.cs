@@ -43,7 +43,7 @@ public unsafe class CVirtualMachineFile : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -103,7 +103,7 @@ public unsafe class CVirtualMachineFile : global::System.IDisposable {
     NWNXLibPINVOKE.CVirtualMachineFile_UnloadFile(swigCPtr);
   }
 
-  public void GetData(char** pData, uint* nSize) {
+  public void GetData(byte** pData, uint* nSize) {
     NWNXLibPINVOKE.CVirtualMachineFile_GetData(swigCPtr, (global::System.IntPtr)pData, (global::System.IntPtr)nSize);
   }
 

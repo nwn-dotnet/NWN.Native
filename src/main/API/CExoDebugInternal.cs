@@ -43,7 +43,7 @@ public unsafe class CExoDebugInternal : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -196,12 +196,12 @@ public unsafe class CExoDebugInternal : global::System.IDisposable {
   public CExoDebugInternal() : this(NWNXLibPINVOKE.new_CExoDebugInternal(), true) {
   }
 
-  public void Assert(int nLineNumber, string sFileName, string sComment) {
-    NWNXLibPINVOKE.CExoDebugInternal_Assert__SWIG_0(swigCPtr, nLineNumber, sFileName, sComment);
+  public void Assert(int nLineNumber, byte* sFileName, byte* sComment) {
+    NWNXLibPINVOKE.CExoDebugInternal_Assert__SWIG_0(swigCPtr, nLineNumber, (global::System.IntPtr)sFileName, (global::System.IntPtr)sComment);
   }
 
-  public void Assert(int nLineNumber, string sFileName) {
-    NWNXLibPINVOKE.CExoDebugInternal_Assert__SWIG_1(swigCPtr, nLineNumber, sFileName);
+  public void Assert(int nLineNumber, byte* sFileName) {
+    NWNXLibPINVOKE.CExoDebugInternal_Assert__SWIG_1(swigCPtr, nLineNumber, (global::System.IntPtr)sFileName);
   }
 
   public void CloseLogFiles() {
@@ -221,12 +221,12 @@ public unsafe class CExoDebugInternal : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void Warning(int nLineNumber, string sFileName, string sComment) {
-    NWNXLibPINVOKE.CExoDebugInternal_Warning__SWIG_0(swigCPtr, nLineNumber, sFileName, sComment);
+  public void Warning(int nLineNumber, byte* sFileName, byte* sComment) {
+    NWNXLibPINVOKE.CExoDebugInternal_Warning__SWIG_0(swigCPtr, nLineNumber, (global::System.IntPtr)sFileName, (global::System.IntPtr)sComment);
   }
 
-  public void Warning(int nLineNumber, string sFileName) {
-    NWNXLibPINVOKE.CExoDebugInternal_Warning__SWIG_1(swigCPtr, nLineNumber, sFileName);
+  public void Warning(int nLineNumber, byte* sFileName) {
+    NWNXLibPINVOKE.CExoDebugInternal_Warning__SWIG_1(swigCPtr, nLineNumber, (global::System.IntPtr)sFileName);
   }
 
   public void WriteToErrorFile(CExoString sLogString) {

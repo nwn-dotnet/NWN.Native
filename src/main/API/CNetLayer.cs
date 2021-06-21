@@ -43,7 +43,7 @@ public unsafe class CNetLayer : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,26,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -484,8 +484,8 @@ public unsafe class CNetLayer : global::System.IDisposable {
     NWNXLibPINVOKE.CNetLayer_SetGameMasterPermission(swigCPtr, state);
   }
 
-  public int TranslateAddressFromString(string szAddress, uint* nProtocol, byte* pNetAddress1, byte* pNetAddress2, uint* nWPort) {
-    int ret = NWNXLibPINVOKE.CNetLayer_TranslateAddressFromString(swigCPtr, szAddress, (global::System.IntPtr)nProtocol, (global::System.IntPtr)pNetAddress1, (global::System.IntPtr)pNetAddress2, (global::System.IntPtr)nWPort);
+  public int TranslateAddressFromString(byte* szAddress, uint* nProtocol, byte* pNetAddress1, byte* pNetAddress2, uint* nWPort) {
+    int ret = NWNXLibPINVOKE.CNetLayer_TranslateAddressFromString(swigCPtr, (global::System.IntPtr)szAddress, (global::System.IntPtr)nProtocol, (global::System.IntPtr)pNetAddress1, (global::System.IntPtr)pNetAddress2, (global::System.IntPtr)nWPort);
     return ret;
   }
 
@@ -548,13 +548,13 @@ public unsafe class CNetLayer : global::System.IDisposable {
     return ret;
   }
 
-  public int GetMessageFromStandardConnection(int* nConnectionFrom, char** pMessage, int* nSize) {
+  public int GetMessageFromStandardConnection(int* nConnectionFrom, byte** pMessage, int* nSize) {
     int ret = NWNXLibPINVOKE.CNetLayer_GetMessageFromStandardConnection(swigCPtr, (global::System.IntPtr)nConnectionFrom, (global::System.IntPtr)pMessage, (global::System.IntPtr)nSize);
     return ret;
   }
 
-  public int SendMessageToStandardConnection(int nConnectionTo, string pmessage, int nSize) {
-    int ret = NWNXLibPINVOKE.CNetLayer_SendMessageToStandardConnection(swigCPtr, nConnectionTo, pmessage, nSize);
+  public int SendMessageToStandardConnection(int nConnectionTo, byte* pmessage, int nSize) {
+    int ret = NWNXLibPINVOKE.CNetLayer_SendMessageToStandardConnection(swigCPtr, nConnectionTo, (global::System.IntPtr)pmessage, nSize);
     return ret;
   }
 
@@ -586,7 +586,7 @@ public unsafe class CNetLayer : global::System.IDisposable {
     return ret;
   }
 
-  public void SetEnumerateSpecificOverRelay(int state, string relayToken) {
+  public void SetEnumerateSpecificOverRelay(int state, NativeArray<byte> relayToken) {
     NWNXLibPINVOKE.CNetLayer_SetEnumerateSpecificOverRelay(swigCPtr, state, relayToken);
   }
 
