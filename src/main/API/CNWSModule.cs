@@ -1118,25 +1118,7 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   }
 
   public uint LoadModuleStart(CExoString sModuleName, int bIsSaveGame, int nSourceType, SWIGTYPE_p_NWSync__Advertisement nwsyncModuleSourceAdvert) {
-    uint ret = NWNXLibPINVOKE.CNWSModule_LoadModuleStart__SWIG_0(swigCPtr, CExoString.getCPtr(sModuleName), bIsSaveGame, nSourceType, SWIGTYPE_p_NWSync__Advertisement.getCPtr(nwsyncModuleSourceAdvert));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public uint LoadModuleStart(CExoString sModuleName, int bIsSaveGame, int nSourceType) {
-    uint ret = NWNXLibPINVOKE.CNWSModule_LoadModuleStart__SWIG_1(swigCPtr, CExoString.getCPtr(sModuleName), bIsSaveGame, nSourceType);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public uint LoadModuleStart(CExoString sModuleName, int bIsSaveGame) {
-    uint ret = NWNXLibPINVOKE.CNWSModule_LoadModuleStart__SWIG_2(swigCPtr, CExoString.getCPtr(sModuleName), bIsSaveGame);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public uint LoadModuleStart(CExoString sModuleName) {
-    uint ret = NWNXLibPINVOKE.CNWSModule_LoadModuleStart__SWIG_3(swigCPtr, CExoString.getCPtr(sModuleName));
+    uint ret = NWNXLibPINVOKE.CNWSModule_LoadModuleStart(swigCPtr, CExoString.getCPtr(sModuleName), bIsSaveGame, nSourceType, SWIGTYPE_p_NWSync__Advertisement.getCPtr(nwsyncModuleSourceAdvert));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
