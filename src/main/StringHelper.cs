@@ -21,7 +21,7 @@ namespace NWN.Native.API
     /// Copies the specified C# string and allocates a null-terminated string in unmanaged memory with cp1252 encoding.
     /// </summary>
     /// <param name="value">The managed string to encode.</param>
-    /// <returns>The pointer to the null-terminated string.</returns>
+    /// <returns>The pointer to the unmanaged char array.</returns>
     public static byte* GetNullTerminatedString(this string value)
     {
       byte[] bytes = Cp1252Encoding.GetBytes(value);
@@ -37,9 +37,23 @@ namespace NWN.Native.API
     /// Copies the specified C# string and allocates a string in unmanaged memory with cp1252 encoding.
     /// </summary>
     /// <param name="value">The managed string to encode.</param>
-    /// <returns>The pointer to the null-terminated string.</returns>
-    public static byte* GetFixedLengthString(this string value)
+    /// <param name="length">The max length of the string. If specified, and the specified string is smaller than the length, it will be null terminated.</param>
+    /// <exception cref="ArgumentOutOfRangeException">Thrown if the string value is larger than the length.</exception>
+    /// <returns>The pointer to the unmanaged char array.</returns>
+    public static byte* GetFixedLengthString(this string value, int? length = null)
     {
+      if (length.HasValue)
+      {
+        if (value.Length > length)
+        {
+          throw new ArgumentOutOfRangeException(nameof(value), "value must be smaller than length.");
+        }
+        if (value.Length < length)
+        {
+          return GetNullTerminatedString(value);
+        }
+      }
+
       byte[] bytes = Cp1252Encoding.GetBytes(value);
       IntPtr buffer = Marshal.AllocHGlobal(bytes.Length);
       Marshal.Copy(bytes, 0, buffer, bytes.Length);
