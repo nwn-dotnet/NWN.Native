@@ -9,7 +9,7 @@ namespace NWN.Native.API
   /// </summary>
   public static unsafe class StringHelper
   {
-    private static readonly Encoding Cp1252Encoding;
+    public static readonly Encoding Cp1252Encoding;
 
     static StringHelper()
     {
