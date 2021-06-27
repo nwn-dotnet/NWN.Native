@@ -106,9 +106,10 @@ public unsafe class CFileInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CFileInfo_nYear_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CFileInfo_nYear_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CFileInfo_nYear_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort nMonth {
@@ -116,9 +117,10 @@ public unsafe class CFileInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CFileInfo_nMonth_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CFileInfo_nMonth_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CFileInfo_nMonth_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort nDay {
@@ -126,9 +128,10 @@ public unsafe class CFileInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CFileInfo_nDay_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CFileInfo_nDay_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CFileInfo_nDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort nHour {
@@ -136,9 +139,10 @@ public unsafe class CFileInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CFileInfo_nHour_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CFileInfo_nHour_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CFileInfo_nHour_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort nMinute {
@@ -146,9 +150,10 @@ public unsafe class CFileInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CFileInfo_nMinute_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CFileInfo_nMinute_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CFileInfo_nMinute_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort nSecond {
@@ -156,9 +161,10 @@ public unsafe class CFileInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CFileInfo_nSecond_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CFileInfo_nSecond_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CFileInfo_nSecond_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CFileInfo() : this(NWNXLibPINVOKE.new_CFileInfo(), true) {

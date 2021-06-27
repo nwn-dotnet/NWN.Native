@@ -95,9 +95,10 @@ public unsafe class CEffectIconObject : global::System.IDisposable {
       NWNXLibPINVOKE.CEffectIconObject_m_nIcon_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CEffectIconObject_m_nIcon_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CEffectIconObject_m_nIcon_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bFlashing {
@@ -105,9 +106,10 @@ public unsafe class CEffectIconObject : global::System.IDisposable {
       NWNXLibPINVOKE.CEffectIconObject_m_bFlashing_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CEffectIconObject_m_bFlashing_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CEffectIconObject_m_bFlashing_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nPlayerBar {
@@ -115,9 +117,10 @@ public unsafe class CEffectIconObject : global::System.IDisposable {
       NWNXLibPINVOKE.CEffectIconObject_m_nPlayerBar_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CEffectIconObject_m_nPlayerBar_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CEffectIconObject_m_nPlayerBar_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CEffectIconObject() : this(NWNXLibPINVOKE.new_CEffectIconObject(), true) {

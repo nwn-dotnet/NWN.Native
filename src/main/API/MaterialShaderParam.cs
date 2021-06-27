@@ -95,9 +95,10 @@ public unsafe class MaterialShaderParam : global::System.IDisposable {
       NWNXLibPINVOKE.MaterialShaderParam_m_nType_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.MaterialShaderParam_m_nType_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.MaterialShaderParam_m_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<byte> m_sMaterialName {
@@ -131,9 +132,10 @@ public unsafe class MaterialShaderParam : global::System.IDisposable {
       NWNXLibPINVOKE.MaterialShaderParam_m_nValue_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.MaterialShaderParam_m_nValue_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.MaterialShaderParam_m_nValue_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fValue1 {
@@ -141,9 +143,10 @@ public unsafe class MaterialShaderParam : global::System.IDisposable {
       NWNXLibPINVOKE.MaterialShaderParam_m_fValue1_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.MaterialShaderParam_m_fValue1_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.MaterialShaderParam_m_fValue1_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fValue2 {
@@ -151,9 +154,10 @@ public unsafe class MaterialShaderParam : global::System.IDisposable {
       NWNXLibPINVOKE.MaterialShaderParam_m_fValue2_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.MaterialShaderParam_m_fValue2_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.MaterialShaderParam_m_fValue2_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fValue3 {
@@ -161,9 +165,10 @@ public unsafe class MaterialShaderParam : global::System.IDisposable {
       NWNXLibPINVOKE.MaterialShaderParam_m_fValue3_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.MaterialShaderParam_m_fValue3_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.MaterialShaderParam_m_fValue3_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fValue4 {
@@ -171,9 +176,10 @@ public unsafe class MaterialShaderParam : global::System.IDisposable {
       NWNXLibPINVOKE.MaterialShaderParam_m_fValue4_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.MaterialShaderParam_m_fValue4_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.MaterialShaderParam_m_fValue4_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public MaterialShaderParam() : this(NWNXLibPINVOKE.new_MaterialShaderParam(), true) {

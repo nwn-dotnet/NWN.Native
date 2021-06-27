@@ -95,9 +95,10 @@ public unsafe class CNWActionNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWActionNode_nGroupId_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWActionNode_nGroupId_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWActionNode_nGroupId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort nActionId {
@@ -105,9 +106,10 @@ public unsafe class CNWActionNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWActionNode_nActionId_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWActionNode_nActionId_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWActionNode_nActionId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort nSpecialAttackId {
@@ -115,9 +117,10 @@ public unsafe class CNWActionNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWActionNode_nSpecialAttackId_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWActionNode_nSpecialAttackId_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWActionNode_nSpecialAttackId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nSpellId {
@@ -125,9 +128,10 @@ public unsafe class CNWActionNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWActionNode_nSpellId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWActionNode_nSpellId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWActionNode_nSpellId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public Vector vTargetPos {
@@ -146,9 +150,10 @@ public unsafe class CNWActionNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWActionNode_oidTarget_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWActionNode_oidTarget_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWActionNode_oidTarget_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWActionNode() : this(NWNXLibPINVOKE.new_CNWActionNode(), true) {

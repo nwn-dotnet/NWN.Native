@@ -95,9 +95,10 @@ public unsafe class CScriptEvent : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptEvent_m_nType_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CScriptEvent_m_nType_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CScriptEvent_m_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListInt32 m_nParamInteger {
@@ -148,8 +149,8 @@ public unsafe class CScriptEvent : global::System.IDisposable {
   }
 
   public int GetInteger(int nStorageLocation) {
-    int ret = NWNXLibPINVOKE.CScriptEvent_GetInteger(swigCPtr, nStorageLocation);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CScriptEvent_GetInteger(swigCPtr, nStorageLocation);
+    return retVal;
   }
 
   public void SetInteger(int nStorageLocation, int nValue) {
@@ -157,8 +158,8 @@ public unsafe class CScriptEvent : global::System.IDisposable {
   }
 
   public float GetFloat(int nStorageLocation) {
-    float ret = NWNXLibPINVOKE.CScriptEvent_GetFloat(swigCPtr, nStorageLocation);
-    return ret;
+    float retVal = NWNXLibPINVOKE.CScriptEvent_GetFloat(swigCPtr, nStorageLocation);
+    return retVal;
   }
 
   public void SetFloat(int nStorageLocation, float fValue) {
@@ -166,8 +167,8 @@ public unsafe class CScriptEvent : global::System.IDisposable {
   }
 
   public uint GetObjectID(int nStorageLocation) {
-    uint ret = NWNXLibPINVOKE.CScriptEvent_GetObjectID(swigCPtr, nStorageLocation);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CScriptEvent_GetObjectID(swigCPtr, nStorageLocation);
+    return retVal;
   }
 
   public void SetObjectID(int nStorageLocation, uint oidValue) {
@@ -185,15 +186,15 @@ public unsafe class CScriptEvent : global::System.IDisposable {
   }
 
   public int _OpEquals(CScriptEvent scriptEvent) {
-    int ret = NWNXLibPINVOKE.CScriptEvent__OpEquals(swigCPtr, CScriptEvent.getCPtr(scriptEvent));
+    int retVal = NWNXLibPINVOKE.CScriptEvent__OpEquals(swigCPtr, CScriptEvent.getCPtr(scriptEvent));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int _OpNotEquals(CScriptEvent scriptEvent) {
-    int ret = NWNXLibPINVOKE.CScriptEvent__OpNotEquals(swigCPtr, CScriptEvent.getCPtr(scriptEvent));
+    int retVal = NWNXLibPINVOKE.CScriptEvent__OpNotEquals(swigCPtr, CScriptEvent.getCPtr(scriptEvent));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void CopyScriptEvent(CScriptEvent pScriptEvent) {
@@ -201,13 +202,13 @@ public unsafe class CScriptEvent : global::System.IDisposable {
   }
 
   public int SaveEvent(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CScriptEvent_SaveEvent(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CScriptEvent_SaveEvent(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadEvent(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CScriptEvent_LoadEvent(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CScriptEvent_LoadEvent(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
 }

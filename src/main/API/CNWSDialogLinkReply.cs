@@ -117,9 +117,10 @@ public unsafe class CNWSDialogLinkReply : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialogLinkReply_m_nIndex_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialogLinkReply_m_nIndex_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialogLinkReply_m_nIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bDisplayInactive {
@@ -127,9 +128,10 @@ public unsafe class CNWSDialogLinkReply : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialogLinkReply_m_bDisplayInactive_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDialogLinkReply_m_bDisplayInactive_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDialogLinkReply_m_bDisplayInactive_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSDialogLinkReply() : this(NWNXLibPINVOKE.new_CNWSDialogLinkReply(), true) {

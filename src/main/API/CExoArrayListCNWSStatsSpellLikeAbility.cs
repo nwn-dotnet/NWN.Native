@@ -106,9 +106,10 @@ public unsafe class CExoArrayListCNWSStatsSpellLikeAbility : global::System.IDis
       NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_num_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_num_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_num_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int array_size {
@@ -116,9 +117,10 @@ public unsafe class CExoArrayListCNWSStatsSpellLikeAbility : global::System.IDis
       NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_array_size_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_array_size_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_array_size_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCNWSStatsSpellLikeAbility(int s) : this(NWNXLibPINVOKE.new_CExoArrayListCNWSStatsSpellLikeAbility__SWIG_0(s), true) {

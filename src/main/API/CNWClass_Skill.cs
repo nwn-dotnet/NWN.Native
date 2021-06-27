@@ -95,9 +95,10 @@ public unsafe class CNWClass_Skill : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_Skill_nSkill_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWClass_Skill_nSkill_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWClass_Skill_nSkill_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bClassSkill {
@@ -105,9 +106,10 @@ public unsafe class CNWClass_Skill : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_Skill_bClassSkill_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWClass_Skill_bClassSkill_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWClass_Skill_bClassSkill_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWClass_Skill() : this(NWNXLibPINVOKE.new_CNWClass_Skill(), true) {

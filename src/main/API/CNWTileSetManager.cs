@@ -155,11 +155,11 @@ public unsafe class CNWTileSetManager : global::System.IDisposable {
   }
 
   public void ComputePathNodeInformation(byte nPathNode, int nPathNodeOrientation, int* nRegionNodes, int* nTileExits, float** pfRegionNodes, float** pfTileExits, int** pnTileExitRegion) {
-    NWNXLibPINVOKE.CNWTileSetManager_ComputePathNodeInformation(swigCPtr, nPathNode, nPathNodeOrientation, (global::System.IntPtr)nRegionNodes, (global::System.IntPtr)nTileExits, (global::System.IntPtr)pfRegionNodes, (global::System.IntPtr)pfTileExits, (global::System.IntPtr)pnTileExitRegion);
+    NWNXLibPINVOKE.CNWTileSetManager_ComputePathNodeInformation(swigCPtr, nPathNode, nPathNodeOrientation, (global::System.IntPtr)nRegionNodes, (global::System.IntPtr)nTileExits, pfRegionNodes, pfTileExits, (global::System.IntPtr)pnTileExitRegion);
   }
 
   public void ComputePathNodeRotation(int nOrientation, float* fX, float* fY) {
-    NWNXLibPINVOKE.CNWTileSetManager_ComputePathNodeRotation(swigCPtr, nOrientation, (global::System.IntPtr)fX, (global::System.IntPtr)fY);
+    NWNXLibPINVOKE.CNWTileSetManager_ComputePathNodeRotation(swigCPtr, nOrientation, fX, fY);
   }
 
 }

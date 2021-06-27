@@ -85,9 +85,10 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nObjectArrayIndex_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nObjectArrayIndex_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nObjectArrayIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nAreaEffectId {
@@ -95,9 +96,10 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nAreaEffectId_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nAreaEffectId_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nAreaEffectId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nShape {
@@ -105,9 +107,10 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nShape_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nShape_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nShape_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nSpellId {
@@ -115,9 +118,10 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nSpellId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nSpellId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nSpellId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fRadius {
@@ -125,9 +129,10 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_fRadius_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_fRadius_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_fRadius_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fWidth {
@@ -135,9 +140,10 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_fWidth_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_fWidth_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_fWidth_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fLength {
@@ -145,9 +151,10 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_fLength_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_fLength_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_fLength_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public Vector m_pVertices {
@@ -166,9 +173,10 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_oidCreator_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_oidCreator_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_oidCreator_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLinkedToObj {
@@ -176,9 +184,10 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_oidLinkedToObj_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_oidLinkedToObj_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_oidLinkedToObj_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastEntered {
@@ -186,9 +195,10 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_oidLastEntered_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_oidLastEntered_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_oidLastEntered_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastLeft {
@@ -196,9 +206,10 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_oidLastLeft_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_oidLastLeft_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_oidLastLeft_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nSpellSaveDC {
@@ -206,9 +217,10 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nSpellSaveDC_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nSpellSaveDC_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nSpellSaveDC_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nSpellLevel {
@@ -216,9 +228,10 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nSpellLevel_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nSpellLevel_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nSpellLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoStringArray m_sScripts {
@@ -238,9 +251,10 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nLastHeartbeatScriptCalendarDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nLastHeartbeatScriptCalendarDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nLastHeartbeatScriptCalendarDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nLastHeartbeatScriptTimeOfDay {
@@ -248,9 +262,10 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nLastHeartbeatScriptTimeOfDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nLastHeartbeatScriptTimeOfDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nLastHeartbeatScriptTimeOfDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nDuration {
@@ -258,9 +273,10 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nDuration_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nDuration_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nDuration_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nDurationType {
@@ -268,9 +284,10 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nDurationType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nDurationType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nDurationType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSAreaOfEffectObject(uint oidId) : this(NWNXLibPINVOKE.new_CNWSAreaOfEffectObject__SWIG_0(oidId), true) {
@@ -300,25 +317,25 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
   }
 
   public int LineSegmentIntersectAreaOfEffect(Vector vStartLine, Vector vEndLine) {
-    int ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_LineSegmentIntersectAreaOfEffect(swigCPtr, Vector.getCPtr(vStartLine), Vector.getCPtr(vEndLine));
+    int retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_LineSegmentIntersectAreaOfEffect(swigCPtr, Vector.getCPtr(vStartLine), Vector.getCPtr(vEndLine));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int InAreaOfEffect(Vector vPosition) {
-    int ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_InAreaOfEffect(swigCPtr, Vector.getCPtr(vPosition));
+    int retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_InAreaOfEffect(swigCPtr, Vector.getCPtr(vPosition));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int LoadEffect(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_LoadEffect(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_LoadEffect(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int SaveEffect(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_SaveEffect(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_SaveEffect(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public void SetTargetObjID(uint oidValue) {
@@ -347,8 +364,8 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
   }
 
   public override uint GetEffectSpellId() {
-    uint ret = NWNXLibPINVOKE.CNWSAreaOfEffectObject_GetEffectSpellId(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_GetEffectSpellId(swigCPtr);
+    return retVal;
   }
 
   public override void SetEffectSpellId(uint nSpellId) {

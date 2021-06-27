@@ -117,9 +117,10 @@ public unsafe class NWPlayerCharacterList_st : global::System.IDisposable {
       NWNXLibPINVOKE.NWPlayerCharacterList_st_nType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.NWPlayerCharacterList_st_nType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.NWPlayerCharacterList_st_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResRef resFileName {
@@ -138,9 +139,10 @@ public unsafe class NWPlayerCharacterList_st : global::System.IDisposable {
       NWNXLibPINVOKE.NWPlayerCharacterList_st_nPortraitId_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.NWPlayerCharacterList_st_nPortraitId_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.NWPlayerCharacterList_st_nPortraitId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResRef resPortrait {

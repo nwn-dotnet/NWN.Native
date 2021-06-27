@@ -95,9 +95,10 @@ public unsafe class CScriptCompilerIdentifierHashTableEntry : global::System.IDi
       NWNXLibPINVOKE.CScriptCompilerIdentifierHashTableEntry_m_nHashValue_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CScriptCompilerIdentifierHashTableEntry_m_nHashValue_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CScriptCompilerIdentifierHashTableEntry_m_nHashValue_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nIdentifierType {
@@ -105,9 +106,10 @@ public unsafe class CScriptCompilerIdentifierHashTableEntry : global::System.IDi
       NWNXLibPINVOKE.CScriptCompilerIdentifierHashTableEntry_m_nIdentifierType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CScriptCompilerIdentifierHashTableEntry_m_nIdentifierType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CScriptCompilerIdentifierHashTableEntry_m_nIdentifierType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nIdentifierIndex {
@@ -115,9 +117,10 @@ public unsafe class CScriptCompilerIdentifierHashTableEntry : global::System.IDi
       NWNXLibPINVOKE.CScriptCompilerIdentifierHashTableEntry_m_nIdentifierIndex_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CScriptCompilerIdentifierHashTableEntry_m_nIdentifierIndex_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CScriptCompilerIdentifierHashTableEntry_m_nIdentifierIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CScriptCompilerIdentifierHashTableEntry() : this(NWNXLibPINVOKE.new_CScriptCompilerIdentifierHashTableEntry(), true) {

@@ -95,9 +95,10 @@ public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_HEADER_nFileType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nFileType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nFileType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nFileVersion {
@@ -105,9 +106,10 @@ public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_HEADER_nFileVersion_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nFileVersion_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nFileVersion_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nNumLanguages {
@@ -115,9 +117,10 @@ public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_HEADER_nNumLanguages_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nNumLanguages_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nNumLanguages_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nLocalizedStringSize {
@@ -125,9 +128,10 @@ public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_HEADER_nLocalizedStringSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nLocalizedStringSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nLocalizedStringSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nEntries {
@@ -135,9 +139,10 @@ public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_HEADER_nEntries_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nEntries_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nEntries_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nOffsetToLocalizedString {
@@ -145,9 +150,10 @@ public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_HEADER_nOffsetToLocalizedString_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nOffsetToLocalizedString_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nOffsetToLocalizedString_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nOffsetToKeyList {
@@ -155,9 +161,10 @@ public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_HEADER_nOffsetToKeyList_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nOffsetToKeyList_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nOffsetToKeyList_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nOffsetToResourceList {
@@ -165,9 +172,10 @@ public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_HEADER_nOffsetToResourceList_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nOffsetToResourceList_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nOffsetToResourceList_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nBuildYear {
@@ -175,9 +183,10 @@ public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_HEADER_nBuildYear_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nBuildYear_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nBuildYear_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nBuildDay {
@@ -185,9 +194,10 @@ public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_HEADER_nBuildDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nBuildDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nBuildDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nDescriptionStringRef {
@@ -195,9 +205,10 @@ public unsafe class ENCAPSULATED_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_HEADER_nDescriptionStringRef_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nDescriptionStringRef_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.ENCAPSULATED_HEADER_nDescriptionStringRef_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<byte> pMD5 {

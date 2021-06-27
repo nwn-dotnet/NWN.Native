@@ -106,9 +106,10 @@ public unsafe class CExoArrayListCGameEffectPtr : global::System.IDisposable {
       NWNXLibPINVOKE.CExoArrayListCGameEffectPtr_num_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListCGameEffectPtr_num_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListCGameEffectPtr_num_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int array_size {
@@ -116,9 +117,10 @@ public unsafe class CExoArrayListCGameEffectPtr : global::System.IDisposable {
       NWNXLibPINVOKE.CExoArrayListCGameEffectPtr_array_size_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListCGameEffectPtr_array_size_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListCGameEffectPtr_array_size_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCGameEffectPtr(int s) : this(NWNXLibPINVOKE.new_CExoArrayListCGameEffectPtr__SWIG_0(s), true) {

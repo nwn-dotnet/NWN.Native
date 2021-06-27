@@ -106,9 +106,10 @@ public unsafe class CExoArrayListCLoopingVisualEffectPtr : global::System.IDispo
       NWNXLibPINVOKE.CExoArrayListCLoopingVisualEffectPtr_num_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListCLoopingVisualEffectPtr_num_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListCLoopingVisualEffectPtr_num_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int array_size {
@@ -116,9 +117,10 @@ public unsafe class CExoArrayListCLoopingVisualEffectPtr : global::System.IDispo
       NWNXLibPINVOKE.CExoArrayListCLoopingVisualEffectPtr_array_size_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListCLoopingVisualEffectPtr_array_size_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListCLoopingVisualEffectPtr_array_size_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCLoopingVisualEffectPtr(int s) : this(NWNXLibPINVOKE.new_CExoArrayListCLoopingVisualEffectPtr__SWIG_0(s), true) {

@@ -95,9 +95,10 @@ public unsafe class CNWSPVPEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPVPEntry_m_oidPC_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPVPEntry_m_oidPC_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPVPEntry_m_oidPC_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bILikePlayer {
@@ -105,9 +106,10 @@ public unsafe class CNWSPVPEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPVPEntry_m_bILikePlayer_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPVPEntry_m_bILikePlayer_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPVPEntry_m_bILikePlayer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bPlayerLikesMe {
@@ -115,9 +117,10 @@ public unsafe class CNWSPVPEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPVPEntry_m_bPlayerLikesMe_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPVPEntry_m_bPlayerLikesMe_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPVPEntry_m_bPlayerLikesMe_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSPVPEntry() : this(NWNXLibPINVOKE.new_CNWSPVPEntry(), true) {

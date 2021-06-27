@@ -92,11 +92,11 @@ public unsafe class CExoArrayListObjectId : global::System.IDisposable {
 /*@SWIG@*/
   public uint* element {
     set {
-      NWNXLibPINVOKE.CExoArrayListObjectId_element_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CExoArrayListObjectId_element_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListObjectId_element_get(swigCPtr);
-        return (uint*)retVal;
+      uint* retVal = NWNXLibPINVOKE.CExoArrayListObjectId_element_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -106,9 +106,10 @@ public unsafe class CExoArrayListObjectId : global::System.IDisposable {
       NWNXLibPINVOKE.CExoArrayListObjectId_num_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListObjectId_num_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListObjectId_num_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int array_size {
@@ -116,9 +117,10 @@ public unsafe class CExoArrayListObjectId : global::System.IDisposable {
       NWNXLibPINVOKE.CExoArrayListObjectId_array_size_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListObjectId_array_size_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListObjectId_array_size_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListObjectId(int s) : this(NWNXLibPINVOKE.new_CExoArrayListObjectId__SWIG_0(s), true) {
@@ -167,13 +169,13 @@ public unsafe class CExoArrayListObjectId : global::System.IDisposable {
   }
 
   public uint* begin() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListObjectId_begin(swigCPtr);
-    return (uint*)retVal;
+    uint* retVal = NWNXLibPINVOKE.CExoArrayListObjectId_begin(swigCPtr);
+    return retVal;
   }
 
   public uint* end() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListObjectId_end(swigCPtr);
-    return (uint*)retVal;
+    uint* retVal = NWNXLibPINVOKE.CExoArrayListObjectId_end(swigCPtr);
+    return retVal;
   }
 
 }

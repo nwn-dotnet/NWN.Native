@@ -95,9 +95,10 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bPlayerInUse_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bPlayerInUse_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bPlayerInUse_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sPlayerName {
@@ -116,9 +117,10 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nPlayerLanguage_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nPlayerLanguage_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nPlayerLanguage_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nSlidingWindowId {
@@ -126,9 +128,10 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nSlidingWindowId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nSlidingWindowId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nSlidingWindowId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bPlayerPrivileges {
@@ -136,9 +139,10 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bPlayerPrivileges_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bPlayerPrivileges_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bPlayerPrivileges_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bGameMasterPrivileges {
@@ -146,9 +150,10 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bGameMasterPrivileges_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bGameMasterPrivileges_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bGameMasterPrivileges_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bGameMasterIsPlayerLogin {
@@ -156,9 +161,10 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bGameMasterIsPlayerLogin_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bGameMasterIsPlayerLogin_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bGameMasterIsPlayerLogin_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bServerAdminPrivileges {
@@ -166,9 +172,10 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bServerAdminPrivileges_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bServerAdminPrivileges_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bServerAdminPrivileges_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_szMstServerChallenge {
@@ -182,24 +189,26 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
     } 
   }
 
-  public uint m_nMstServerTimeout {
+  public ulong m_nMstServerTimeout {
     set {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nMstServerTimeout_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nMstServerTimeout_get(swigCPtr);
-      return ret;
-    } 
+      ulong retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nMstServerTimeout_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public uint m_nMstServerTimeStamp {
+  public ulong m_nMstServerTimeStamp {
     set {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nMstServerTimeStamp_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nMstServerTimeStamp_get(swigCPtr);
-      return ret;
-    } 
+      ulong retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nMstServerTimeStamp_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sGamePasswordChallenge {
@@ -240,9 +249,10 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nConnectionType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nConnectionType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nConnectionType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bIsPrimaryPlayer {
@@ -250,9 +260,10 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bIsPrimaryPlayer_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bIsPrimaryPlayer_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bIsPrimaryPlayer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCNetLayerPlayerCDKeyInfo m_lstKeys {
@@ -282,9 +293,10 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bCDKeyAuthorized_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bCDKeyAuthorized_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bCDKeyAuthorized_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bMstPasswordAuthorized {
@@ -292,9 +304,10 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bMstPasswordAuthorized_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bMstPasswordAuthorized_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bMstPasswordAuthorized_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nExpansionPacks {
@@ -302,9 +315,10 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nExpansionPacks_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nExpansionPacks_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nExpansionPacks_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sPSID {
@@ -323,9 +337,10 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nPlatformId_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nPlatformId_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nPlatformId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nBuildVersion {
@@ -333,9 +348,10 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nBuildVersion_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nBuildVersion_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nBuildVersion_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nPatchRevision {
@@ -343,9 +359,10 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nPatchRevision_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nPatchRevision_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nPatchRevision_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sCommitHash {
@@ -366,13 +383,13 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
     NWNXLibPINVOKE.CNetLayerPlayerInfo_Initialize(swigCPtr);
   }
 
-  public void StartMstTimer(uint nTime) {
+  public void StartMstTimer(ulong nTime) {
     NWNXLibPINVOKE.CNetLayerPlayerInfo_StartMstTimer(swigCPtr, nTime);
   }
 
-  public int UpdateMstTimer(uint nTime) {
-    int ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_UpdateMstTimer(swigCPtr, nTime);
-    return ret;
+  public int UpdateMstTimer(ulong nTime) {
+    int retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_UpdateMstTimer(swigCPtr, nTime);
+    return retVal;
   }
 
   public void AddCDKey(CExoString sPublic, CExoString sResponse) {
@@ -381,8 +398,8 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
   }
 
   public int AllKeysAuthed(uint* nExpansionPacks) {
-    int ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_AllKeysAuthed(swigCPtr, (global::System.IntPtr)nExpansionPacks);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_AllKeysAuthed(swigCPtr, (global::System.IntPtr)nExpansionPacks);
+    return retVal;
   }
 
   public void SetCDKey(int nIndex, CExoString sPublic, CExoString sResponse) {

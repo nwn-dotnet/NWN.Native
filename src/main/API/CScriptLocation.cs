@@ -117,9 +117,10 @@ public unsafe class CScriptLocation : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptLocation_m_oArea_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CScriptLocation_m_oArea_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CScriptLocation_m_oArea_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public void CopyScriptLocation(CScriptLocation pLocation) {
@@ -127,13 +128,13 @@ public unsafe class CScriptLocation : global::System.IDisposable {
   }
 
   public int SaveLocation(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CScriptLocation_SaveLocation(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CScriptLocation_SaveLocation(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadLocation(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CScriptLocation_LoadLocation(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CScriptLocation_LoadLocation(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public CScriptLocation() : this(NWNXLibPINVOKE.new_CScriptLocation(), true) {

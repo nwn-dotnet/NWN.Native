@@ -95,9 +95,10 @@ public unsafe class CNWSPlayerLUOSortedObjectList : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOSortedObjectList_oidObject_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerLUOSortedObjectList_oidObject_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerLUOSortedObjectList_oidObject_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float fDistanceToPlayer {
@@ -105,9 +106,10 @@ public unsafe class CNWSPlayerLUOSortedObjectList : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOSortedObjectList_fDistanceToPlayer_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSPlayerLUOSortedObjectList_fDistanceToPlayer_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSPlayerLUOSortedObjectList_fDistanceToPlayer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nCategory {
@@ -115,9 +117,10 @@ public unsafe class CNWSPlayerLUOSortedObjectList : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOSortedObjectList_nCategory_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerLUOSortedObjectList_nCategory_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerLUOSortedObjectList_nCategory_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSPlayerLUOSortedObjectList() : this(NWNXLibPINVOKE.new_CNWSPlayerLUOSortedObjectList(), true) {

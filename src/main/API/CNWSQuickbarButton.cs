@@ -95,9 +95,10 @@ public unsafe class CNWSQuickbarButton : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSQuickbarButton_m_oidItem_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSQuickbarButton_m_oidItem_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSQuickbarButton_m_oidItem_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidSecondaryItem {
@@ -105,9 +106,10 @@ public unsafe class CNWSQuickbarButton : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSQuickbarButton_m_oidSecondaryItem_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSQuickbarButton_m_oidSecondaryItem_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSQuickbarButton_m_oidSecondaryItem_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nObjectType {
@@ -115,9 +117,10 @@ public unsafe class CNWSQuickbarButton : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSQuickbarButton_m_nObjectType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSQuickbarButton_m_nObjectType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSQuickbarButton_m_nObjectType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nMultiClass {
@@ -125,9 +128,10 @@ public unsafe class CNWSQuickbarButton : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSQuickbarButton_m_nMultiClass_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSQuickbarButton_m_nMultiClass_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSQuickbarButton_m_nMultiClass_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResRef m_cResRef {
@@ -179,9 +183,10 @@ public unsafe class CNWSQuickbarButton : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSQuickbarButton_m_nINTParam1_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSQuickbarButton_m_nINTParam1_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSQuickbarButton_m_nINTParam1_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nMetaType {
@@ -189,9 +194,10 @@ public unsafe class CNWSQuickbarButton : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSQuickbarButton_m_nMetaType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSQuickbarButton_m_nMetaType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSQuickbarButton_m_nMetaType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nDomainLevel {
@@ -199,9 +205,10 @@ public unsafe class CNWSQuickbarButton : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSQuickbarButton_m_nDomainLevel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSQuickbarButton_m_nDomainLevel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSQuickbarButton_m_nDomainLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nAssociateType {
@@ -209,9 +216,10 @@ public unsafe class CNWSQuickbarButton : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSQuickbarButton_m_nAssociateType_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSQuickbarButton_m_nAssociateType_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSQuickbarButton_m_nAssociateType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidAssociate {
@@ -219,9 +227,10 @@ public unsafe class CNWSQuickbarButton : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSQuickbarButton_m_oidAssociate_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSQuickbarButton_m_oidAssociate_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSQuickbarButton_m_oidAssociate_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSQuickbarButton() : this(NWNXLibPINVOKE.new_CNWSQuickbarButton(), true) {

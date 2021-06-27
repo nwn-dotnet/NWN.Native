@@ -95,9 +95,10 @@ public unsafe class CServerAIBodyBagInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CServerAIBodyBagInfo_m_oidBodyBag_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CServerAIBodyBagInfo_m_oidBodyBag_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CServerAIBodyBagInfo_m_oidBodyBag_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public Vector m_vPosition {
@@ -112,13 +113,13 @@ public unsafe class CServerAIBodyBagInfo : global::System.IDisposable {
   }
 
   public int SaveBodyBag(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CServerAIBodyBagInfo_SaveBodyBag(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIBodyBagInfo_SaveBodyBag(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadBodyBag(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CServerAIBodyBagInfo_LoadBodyBag(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIBodyBagInfo_LoadBodyBag(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public CServerAIBodyBagInfo() : this(NWNXLibPINVOKE.new_CServerAIBodyBagInfo(), true) {

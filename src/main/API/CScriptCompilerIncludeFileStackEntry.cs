@@ -117,9 +117,10 @@ public unsafe class CScriptCompilerIncludeFileStackEntry : global::System.IDispo
       NWNXLibPINVOKE.CScriptCompilerIncludeFileStackEntry_m_nLine_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptCompilerIncludeFileStackEntry_m_nLine_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptCompilerIncludeFileStackEntry_m_nLine_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nCharacterOnLine {
@@ -127,9 +128,10 @@ public unsafe class CScriptCompilerIncludeFileStackEntry : global::System.IDispo
       NWNXLibPINVOKE.CScriptCompilerIncludeFileStackEntry_m_nCharacterOnLine_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptCompilerIncludeFileStackEntry_m_nCharacterOnLine_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptCompilerIncludeFileStackEntry_m_nCharacterOnLine_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nTokenStatus {
@@ -137,9 +139,10 @@ public unsafe class CScriptCompilerIncludeFileStackEntry : global::System.IDispo
       NWNXLibPINVOKE.CScriptCompilerIncludeFileStackEntry_m_nTokenStatus_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptCompilerIncludeFileStackEntry_m_nTokenStatus_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptCompilerIncludeFileStackEntry_m_nTokenStatus_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nTokenCharacters {
@@ -147,9 +150,10 @@ public unsafe class CScriptCompilerIncludeFileStackEntry : global::System.IDispo
       NWNXLibPINVOKE.CScriptCompilerIncludeFileStackEntry_m_nTokenCharacters_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptCompilerIncludeFileStackEntry_m_nTokenCharacters_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptCompilerIncludeFileStackEntry_m_nTokenCharacters_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CScriptCompilerIncludeFileStackEntry() : this(NWNXLibPINVOKE.new_CScriptCompilerIncludeFileStackEntry(), true) {

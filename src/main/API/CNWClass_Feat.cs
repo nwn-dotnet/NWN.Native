@@ -95,9 +95,10 @@ public unsafe class CNWClass_Feat : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_Feat_nFeat_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWClass_Feat_nFeat_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWClass_Feat_nFeat_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte nLevelGranted {
@@ -105,9 +106,10 @@ public unsafe class CNWClass_Feat : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_Feat_nLevelGranted_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWClass_Feat_nLevelGranted_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWClass_Feat_nLevelGranted_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte nListType {
@@ -115,9 +117,10 @@ public unsafe class CNWClass_Feat : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_Feat_nListType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWClass_Feat_nListType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWClass_Feat_nListType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nTalentCategory {
@@ -125,9 +128,10 @@ public unsafe class CNWClass_Feat : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_Feat_nTalentCategory_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWClass_Feat_nTalentCategory_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWClass_Feat_nTalentCategory_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nMaxCR {
@@ -135,9 +139,10 @@ public unsafe class CNWClass_Feat : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_Feat_nMaxCR_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWClass_Feat_nMaxCR_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWClass_Feat_nMaxCR_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nOnClassRadial {
@@ -145,9 +150,10 @@ public unsafe class CNWClass_Feat : global::System.IDisposable {
       NWNXLibPINVOKE.CNWClass_Feat_nOnClassRadial_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWClass_Feat_nOnClassRadial_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWClass_Feat_nOnClassRadial_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWClass_Feat() : this(NWNXLibPINVOKE.new_CNWClass_Feat(), true) {

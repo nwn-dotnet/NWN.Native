@@ -95,21 +95,21 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public override int AdmitNetworkAddress(uint nProtocol, CExoString sAddress) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_AdmitNetworkAddress(swigCPtr, nProtocol, CExoString.getCPtr(sAddress));
+    int retVal = NWNXLibPINVOKE.CServerExoApp_AdmitNetworkAddress(swigCPtr, nProtocol, CExoString.getCPtr(sAddress));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public override int SetNetworkAddressBan(uint nProtocol, CExoString sAddress, int bBanPlayer) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_SetNetworkAddressBan(swigCPtr, nProtocol, CExoString.getCPtr(sAddress), bBanPlayer);
+    int retVal = NWNXLibPINVOKE.CServerExoApp_SetNetworkAddressBan(swigCPtr, nProtocol, CExoString.getCPtr(sAddress), bBanPlayer);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public override int AdmitPlayerName(CExoString sPlayerName) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_AdmitPlayerName(swigCPtr, CExoString.getCPtr(sPlayerName));
+    int retVal = NWNXLibPINVOKE.CServerExoApp_AdmitPlayerName(swigCPtr, CExoString.getCPtr(sPlayerName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public override void PlayerListChange(uint nPlayerId, int bEnter, int bPrimaryPlayer) {
@@ -125,8 +125,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public override int ContinueMessageProcessing() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_ContinueMessageProcessing(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_ContinueMessageProcessing(swigCPtr);
+    return retVal;
   }
 
   public void RemovePCFromWorld(CNWSPlayer pPlayer) {
@@ -172,21 +172,21 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int LoadGame(uint nSlot, CExoString sSaveName, CExoString sModuleName, CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_LoadGame__SWIG_0(swigCPtr, nSlot, CExoString.getCPtr(sSaveName), CExoString.getCPtr(sModuleName), CNWSPlayer.getCPtr(pPlayer));
+    int retVal = NWNXLibPINVOKE.CServerExoApp_LoadGame__SWIG_0(swigCPtr, nSlot, CExoString.getCPtr(sSaveName), CExoString.getCPtr(sModuleName), CNWSPlayer.getCPtr(pPlayer));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int LoadGame(uint nSlot, CExoString sSaveName, CExoString sModuleName) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_LoadGame__SWIG_1(swigCPtr, nSlot, CExoString.getCPtr(sSaveName), CExoString.getCPtr(sModuleName));
+    int retVal = NWNXLibPINVOKE.CServerExoApp_LoadGame__SWIG_1(swigCPtr, nSlot, CExoString.getCPtr(sSaveName), CExoString.getCPtr(sModuleName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int StartNewModule(CExoString sModuleName) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_StartNewModule(swigCPtr, CExoString.getCPtr(sModuleName));
+    int retVal = NWNXLibPINVOKE.CServerExoApp_StartNewModule(swigCPtr, CExoString.getCPtr(sModuleName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void SetMoveToModulePending(int bPending) {
@@ -194,8 +194,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int GetMoveToModulePending() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetMoveToModulePending(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetMoveToModulePending(swigCPtr);
+    return retVal;
   }
 
   public void SetEndGamePending(int bPending) {
@@ -222,8 +222,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int GetLoadingModule() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetLoadingModule(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetLoadingModule(swigCPtr);
+    return retVal;
   }
 
   public void SetImportingChar(int bImporting) {
@@ -231,8 +231,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int GetImportingChar() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetImportingChar(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetImportingChar(swigCPtr);
+    return retVal;
   }
 
   public void SetAutoSavePending(int bPending) {
@@ -240,18 +240,18 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int GetAutoSavePending() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetAutoSavePending(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetAutoSavePending(swigCPtr);
+    return retVal;
   }
 
   public int ExportAllPlayers() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_ExportAllPlayers(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_ExportAllPlayers(swigCPtr);
+    return retVal;
   }
 
   public int GetExportCharacterPending() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetExportCharacterPending(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetExportCharacterPending(swigCPtr);
+    return retVal;
   }
 
   public void SetExportCharacterPending(int bPending) {
@@ -272,41 +272,41 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int LoadCharacterStart(byte nType, CNWSPlayer pPlayer, CResRef cResRef, void* pCharData, uint nSize) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_LoadCharacterStart__SWIG_0(swigCPtr, nType, CNWSPlayer.getCPtr(pPlayer), CResRef.getCPtr(cResRef), (global::System.IntPtr)pCharData, nSize);
+    int retVal = NWNXLibPINVOKE.CServerExoApp_LoadCharacterStart__SWIG_0(swigCPtr, nType, CNWSPlayer.getCPtr(pPlayer), CResRef.getCPtr(cResRef), (global::System.IntPtr)pCharData, nSize);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int LoadCharacterStart(byte nType, CNWSPlayer pPlayer, CResRef cResRef, void* pCharData) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_LoadCharacterStart__SWIG_1(swigCPtr, nType, CNWSPlayer.getCPtr(pPlayer), CResRef.getCPtr(cResRef), (global::System.IntPtr)pCharData);
+    int retVal = NWNXLibPINVOKE.CServerExoApp_LoadCharacterStart__SWIG_1(swigCPtr, nType, CNWSPlayer.getCPtr(pPlayer), CResRef.getCPtr(cResRef), (global::System.IntPtr)pCharData);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int LoadCharacterStart(byte nType, CNWSPlayer pPlayer, CResRef cResRef) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_LoadCharacterStart__SWIG_2(swigCPtr, nType, CNWSPlayer.getCPtr(pPlayer), CResRef.getCPtr(cResRef));
+    int retVal = NWNXLibPINVOKE.CServerExoApp_LoadCharacterStart__SWIG_2(swigCPtr, nType, CNWSPlayer.getCPtr(pPlayer), CResRef.getCPtr(cResRef));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int LoadCharacterFinish(CNWSPlayer pPlayer, int bUseSaveGameCharacter, int bUseStateDataInSaveGame) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_LoadCharacterFinish__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bUseSaveGameCharacter, bUseStateDataInSaveGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_LoadCharacterFinish__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bUseSaveGameCharacter, bUseStateDataInSaveGame);
+    return retVal;
   }
 
   public int LoadCharacterFinish(CNWSPlayer pPlayer, int bUseSaveGameCharacter) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_LoadCharacterFinish__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bUseSaveGameCharacter);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_LoadCharacterFinish__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bUseSaveGameCharacter);
+    return retVal;
   }
 
   public int LoadCharacterFinish(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_LoadCharacterFinish__SWIG_2(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_LoadCharacterFinish__SWIG_2(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int LoadPrimaryPlayer(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_LoadPrimaryPlayer(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_LoadPrimaryPlayer(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public CGameObjectArray GetObjectArray() {
@@ -394,18 +394,18 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public uint GetPlayerIDByGameObjectID(uint nObjectID) {
-    uint ret = NWNXLibPINVOKE.CServerExoApp_GetPlayerIDByGameObjectID(swigCPtr, nObjectID);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CServerExoApp_GetPlayerIDByGameObjectID(swigCPtr, nObjectID);
+    return retVal;
   }
 
   public int GetPlayerLanguage(uint nPlayerID) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetPlayerLanguage(swigCPtr, nPlayerID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetPlayerLanguage(swigCPtr, nPlayerID);
+    return retVal;
   }
 
   public int GetModuleLanguage() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetModuleLanguage(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetModuleLanguage(swigCPtr);
+    return retVal;
   }
 
   public CServerAIMaster GetServerAIMaster() {
@@ -443,8 +443,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public short GetServerMode() {
-    short ret = NWNXLibPINVOKE.CServerExoApp_GetServerMode(swigCPtr);
-    return ret;
+    short retVal = NWNXLibPINVOKE.CServerExoApp_GetServerMode(swigCPtr);
+    return retVal;
   }
 
   public void SetDebugMode(int bMode) {
@@ -452,8 +452,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int GetDebugMode() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetDebugMode(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetDebugMode(swigCPtr);
+    return retVal;
   }
 
   public CWorldTimer GetActiveTimer(uint oid) {
@@ -487,29 +487,29 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public override int HandleMessage(uint nPlayerId, byte* pData, uint dwSize, int bRawMessage) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_HandleMessage(swigCPtr, nPlayerId, (global::System.IntPtr)pData, dwSize, bRawMessage);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_HandleMessage(swigCPtr, nPlayerId, pData, dwSize, bRawMessage);
+    return retVal;
   }
 
   public int Initialize() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_Initialize(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_Initialize(swigCPtr);
+    return retVal;
   }
 
   public int UnloadModule() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_UnloadModule(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_UnloadModule(swigCPtr);
+    return retVal;
   }
 
   public int LoadModule(CExoString moduleResRef, CUUID uuidOverride, int bIsSaveGame, CNWSPlayer pPlayer, int sourceType, SWIGTYPE_p_NWSync__Advertisement nwsyncModuleSourceAdvert) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_LoadModule(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride), bIsSaveGame, CNWSPlayer.getCPtr(pPlayer), sourceType, SWIGTYPE_p_NWSync__Advertisement.getCPtr(nwsyncModuleSourceAdvert));
+    int retVal = NWNXLibPINVOKE.CServerExoApp_LoadModule(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride), bIsSaveGame, CNWSPlayer.getCPtr(pPlayer), sourceType, SWIGTYPE_p_NWSync__Advertisement.getCPtr(nwsyncModuleSourceAdvert));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int RunModule() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_RunModule(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_RunModule(swigCPtr);
+    return retVal;
   }
 
   public CExoString GetPlayerListString() {
@@ -528,8 +528,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int MainLoop() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_MainLoop(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_MainLoop(swigCPtr);
+    return retVal;
   }
 
   public void OnCDChange() {
@@ -577,8 +577,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int SendCharacterQuery(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_SendCharacterQuery(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_SendCharacterQuery(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public CNWSPlayer GetClientObjectByObjectId(uint nObjectId) {
@@ -592,13 +592,13 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int GetPauseState(byte nState) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetPauseState(swigCPtr, nState);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetPauseState(swigCPtr, nState);
+    return retVal;
   }
 
   public byte GetActivePauseState() {
-    byte ret = NWNXLibPINVOKE.CServerExoApp_GetActivePauseState(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CServerExoApp_GetActivePauseState(swigCPtr);
+    return retVal;
   }
 
   public void SetPauseState(byte nState, int bPause) {
@@ -620,13 +620,13 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int IsOnActiveExclusionList(uint oidExclude) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_IsOnActiveExclusionList(swigCPtr, oidExclude);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_IsOnActiveExclusionList(swigCPtr, oidExclude);
+    return retVal;
   }
 
   public int GetIsControlledByPlayer(uint oidObject) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetIsControlledByPlayer(swigCPtr, oidObject);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetIsControlledByPlayer(swigCPtr, oidObject);
+    return retVal;
   }
 
   public CNWSClient GetClientObjectByPlayerId(uint nPlayerId, byte nClientType) {
@@ -642,8 +642,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int ValidatePlayerLogin(void* pPlayer) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_ValidatePlayerLogin(swigCPtr, (global::System.IntPtr)pPlayer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_ValidatePlayerLogin(swigCPtr, (global::System.IntPtr)pPlayer);
+    return retVal;
   }
 
   public void MovePlayerToArea(void* pPlayer) {
@@ -675,24 +675,24 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int GetPlayerAddressData(uint nConnectionId, uint* nProtocol, byte** pNetAddress1, byte** pNetAddress2, uint* nPort) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetPlayerAddressData(swigCPtr, nConnectionId, (global::System.IntPtr)nProtocol, (global::System.IntPtr)pNetAddress1, (global::System.IntPtr)pNetAddress2, (global::System.IntPtr)nPort);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetPlayerAddressData(swigCPtr, nConnectionId, nProtocol, (global::System.IntPtr)pNetAddress1, (global::System.IntPtr)pNetAddress2, nPort);
+    return retVal;
   }
 
   public int GetFactionOfObject(uint oObject, int* nFaction) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetFactionOfObject(swigCPtr, oObject, (global::System.IntPtr)nFaction);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetFactionOfObject(swigCPtr, oObject, nFaction);
+    return retVal;
   }
 
   public uint ResolvePlayerByFirstName(CExoString sName) {
-    uint ret = NWNXLibPINVOKE.CServerExoApp_ResolvePlayerByFirstName(swigCPtr, CExoString.getCPtr(sName));
+    uint retVal = NWNXLibPINVOKE.CServerExoApp_ResolvePlayerByFirstName(swigCPtr, CExoString.getCPtr(sName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public override int GetMultiplayerEnabled() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetMultiplayerEnabled(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetMultiplayerEnabled(swigCPtr);
+    return retVal;
   }
 
   public void SetReloadModuleWhenEmpty(int bReloadModuleWhenEmpty) {
@@ -700,13 +700,13 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int GetReloadModuleWhenEmpty() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetReloadModuleWhenEmpty(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetReloadModuleWhenEmpty(swigCPtr);
+    return retVal;
   }
 
   public int GetDifficultyOption(int nOption) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetDifficultyOption(swigCPtr, nOption);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetDifficultyOption(swigCPtr, nOption);
+    return retVal;
   }
 
   public void AddCharListRequest(uint nPlayerId) {
@@ -714,13 +714,13 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public override uint GetApplicationId() {
-    uint ret = NWNXLibPINVOKE.CServerExoApp_GetApplicationId(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CServerExoApp_GetApplicationId(swigCPtr);
+    return retVal;
   }
 
   public int IsOnExclusionList(uint oidTarget) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_IsOnExclusionList(swigCPtr, oidTarget);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_IsOnExclusionList(swigCPtr, oidTarget);
+    return retVal;
   }
 
   public void AddIPToBannedList(CExoString sIP) {
@@ -754,21 +754,21 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public override int GetIsIPOnBannedList(CExoString sIP) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetIsIPOnBannedList(swigCPtr, CExoString.getCPtr(sIP));
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetIsIPOnBannedList(swigCPtr, CExoString.getCPtr(sIP));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public override int GetIsPlayerNameOnBannedList(CExoString sPlayerName) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetIsPlayerNameOnBannedList(swigCPtr, CExoString.getCPtr(sPlayerName));
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetIsPlayerNameOnBannedList(swigCPtr, CExoString.getCPtr(sPlayerName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public override int GetIsCDKeyOnBannedList(CExoString sKey) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetIsCDKeyOnBannedList(swigCPtr, CExoString.getCPtr(sKey));
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetIsCDKeyOnBannedList(swigCPtr, CExoString.getCPtr(sKey));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public override void HandleOldServerVaultMigration(CExoString sClientCDKey, CExoString sClientLegacyCDKey, CExoString sPlayerName) {
@@ -777,33 +777,33 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public override int IsPlayerNameSticky() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_IsPlayerNameSticky(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_IsPlayerNameSticky(swigCPtr);
+    return retVal;
   }
 
   public override int CheckStickyPlayerNameReserved(CExoString sClientCDKey, CExoString sClientLegacyCDKey, CExoString sPlayerName, int nConnectionType) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_CheckStickyPlayerNameReserved(swigCPtr, CExoString.getCPtr(sClientCDKey), CExoString.getCPtr(sClientLegacyCDKey), CExoString.getCPtr(sPlayerName), nConnectionType);
+    int retVal = NWNXLibPINVOKE.CServerExoApp_CheckStickyPlayerNameReserved(swigCPtr, CExoString.getCPtr(sClientCDKey), CExoString.getCPtr(sClientLegacyCDKey), CExoString.getCPtr(sPlayerName), nConnectionType);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public uint GetFirstPCObject() {
-    uint ret = NWNXLibPINVOKE.CServerExoApp_GetFirstPCObject(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CServerExoApp_GetFirstPCObject(swigCPtr);
+    return retVal;
   }
 
   public uint GetNextPCObject() {
-    uint ret = NWNXLibPINVOKE.CServerExoApp_GetNextPCObject(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CServerExoApp_GetNextPCObject(swigCPtr);
+    return retVal;
   }
 
   public override void PushMessageOverWall(byte* pData, uint nMsgLength) {
-    NWNXLibPINVOKE.CServerExoApp_PushMessageOverWall(swigCPtr, (global::System.IntPtr)pData, nMsgLength);
+    NWNXLibPINVOKE.CServerExoApp_PushMessageOverWall(swigCPtr, pData, nMsgLength);
   }
 
   public override int GetIsMultiPlayer() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetIsMultiPlayer(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetIsMultiPlayer(swigCPtr);
+    return retVal;
   }
 
   public void SetGameSpyEnabled(int b) {
@@ -811,14 +811,14 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int GetGameSpyEnabled() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetGameSpyEnabled(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetGameSpyEnabled(swigCPtr);
+    return retVal;
   }
 
   public int StripColorTokens(CExoString sInput) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_StripColorTokens(swigCPtr, CExoString.getCPtr(sInput));
+    int retVal = NWNXLibPINVOKE.CServerExoApp_StripColorTokens(swigCPtr, CExoString.getCPtr(sInput));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void AddSubNetProfileSendSize(uint nPlayerID, uint nSize) {
@@ -826,8 +826,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int GetCreatureDeathLogging() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetCreatureDeathLogging(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetCreatureDeathLogging(swigCPtr);
+    return retVal;
   }
 
   public void SetCreatureDeathLogging(int arg0) {
@@ -835,8 +835,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int GetHeartBeatLogging() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetHeartBeatLogging(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetHeartBeatLogging(swigCPtr);
+    return retVal;
   }
 
   public void SetHeartBeatLogging(int arg0) {
@@ -844,13 +844,13 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public uint GetClientsRequiredToDisableCPUSleep() {
-    uint ret = NWNXLibPINVOKE.CServerExoApp_GetClientsRequiredToDisableCPUSleep(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CServerExoApp_GetClientsRequiredToDisableCPUSleep(swigCPtr);
+    return retVal;
   }
 
   public int GetStickyCombatModesEnabled() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetStickyCombatModesEnabled(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetStickyCombatModesEnabled(swigCPtr);
+    return retVal;
   }
 
   public void SetStickyCombatModesEnabled(int v) {
@@ -858,8 +858,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int GetAttackBonusLimit() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetAttackBonusLimit(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetAttackBonusLimit(swigCPtr);
+    return retVal;
   }
 
   public void SetAttackBonusLimit(int newLimit, int isModuleOverride) {
@@ -871,8 +871,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int GetDamageBonusLimit() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetDamageBonusLimit(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetDamageBonusLimit(swigCPtr);
+    return retVal;
   }
 
   public void SetDamageBonusLimit(int newLimit, int isModuleOverride) {
@@ -884,8 +884,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int GetSavingThrowBonusLimit() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetSavingThrowBonusLimit(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetSavingThrowBonusLimit(swigCPtr);
+    return retVal;
   }
 
   public void SetSavingThrowBonusLimit(int newLimit, int isModuleOverride) {
@@ -897,8 +897,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int GetAbilityBonusLimit() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetAbilityBonusLimit(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetAbilityBonusLimit(swigCPtr);
+    return retVal;
   }
 
   public void SetAbilityBonusLimit(int newLimit, int isModuleOverride) {
@@ -910,8 +910,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int GetAbilityPenaltyLimit() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetAbilityPenaltyLimit(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetAbilityPenaltyLimit(swigCPtr);
+    return retVal;
   }
 
   public void SetAbilityPenaltyLimit(int newLimit, int isModuleOverride) {
@@ -923,8 +923,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int GetSkillBonusLimit() {
-    int ret = NWNXLibPINVOKE.CServerExoApp_GetSkillBonusLimit(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetSkillBonusLimit(swigCPtr);
+    return retVal;
   }
 
   public void SetSkillBonusLimit(int newLimit, int isModuleOverride) {
@@ -941,9 +941,9 @@ public unsafe class CServerExoApp : CBaseExoApp {
   }
 
   public int SetDDCipherForModule(CExoString moduleName) {
-    int ret = NWNXLibPINVOKE.CServerExoApp_SetDDCipherForModule(swigCPtr, CExoString.getCPtr(moduleName));
+    int retVal = NWNXLibPINVOKE.CServerExoApp_SetDDCipherForModule(swigCPtr, CExoString.getCPtr(moduleName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
 }

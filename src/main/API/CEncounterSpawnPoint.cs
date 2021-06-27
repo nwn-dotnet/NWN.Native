@@ -106,9 +106,10 @@ public unsafe class CEncounterSpawnPoint : global::System.IDisposable {
       NWNXLibPINVOKE.CEncounterSpawnPoint_m_fOrientation_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CEncounterSpawnPoint_m_fOrientation_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CEncounterSpawnPoint_m_fOrientation_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CEncounterSpawnPoint() : this(NWNXLibPINVOKE.new_CEncounterSpawnPoint(), true) {

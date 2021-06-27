@@ -106,9 +106,10 @@ public unsafe class CachedRulesetEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CachedRulesetEntry_i_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CachedRulesetEntry_i_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CachedRulesetEntry_i_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float f {
@@ -116,9 +117,10 @@ public unsafe class CachedRulesetEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CachedRulesetEntry_f_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CachedRulesetEntry_f_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CachedRulesetEntry_f_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CachedRulesetEntry() : this(NWNXLibPINVOKE.new_CachedRulesetEntry(), true) {

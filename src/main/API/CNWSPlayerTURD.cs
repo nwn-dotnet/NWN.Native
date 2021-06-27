@@ -118,9 +118,10 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
       NWNXLibPINVOKE.CNWSPlayerTURD_m_oidPlayer_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerTURD_m_oidPlayer_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerTURD_m_oidPlayer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nCalendarDay {
@@ -128,9 +129,10 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
       NWNXLibPINVOKE.CNWSPlayerTURD_m_nCalendarDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerTURD_m_nCalendarDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerTURD_m_nCalendarDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nCalendarTimeOfDay {
@@ -138,9 +140,10 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
       NWNXLibPINVOKE.CNWSPlayerTURD_m_nCalendarTimeOfDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerTURD_m_nCalendarTimeOfDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerTURD_m_nCalendarTimeOfDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListInt32 m_pReputation {
@@ -170,18 +173,19 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
       NWNXLibPINVOKE.CNWSPlayerTURD_m_nNumAutomapAreas_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayerTURD_m_nNumAutomapAreas_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayerTURD_m_nNumAutomapAreas_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint* m_poidAutomapAreasList {
     set {
-      NWNXLibPINVOKE.CNWSPlayerTURD_m_poidAutomapAreasList_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWSPlayerTURD_m_poidAutomapAreasList_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayerTURD_m_poidAutomapAreasList_get(swigCPtr);
-        return (uint*)retVal;
+      uint* retVal = NWNXLibPINVOKE.CNWSPlayerTURD_m_poidAutomapAreasList_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -234,8 +238,8 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
   }
 
   public int LoadTURD(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSPlayerTURD_LoadTURD(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlayerTURD_LoadTURD(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public void SetReputation(CExoArrayListInt32 pRep) {

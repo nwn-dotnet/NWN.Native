@@ -82,11 +82,11 @@ public unsafe class CExoResourceImageFile : CExoPackedFile {
 /*@SWIG@*/
   public byte* m_pResourceImage {
     set {
-      NWNXLibPINVOKE.CExoResourceImageFile_m_pResourceImage_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CExoResourceImageFile_m_pResourceImage_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoResourceImageFile_m_pResourceImage_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CExoResourceImageFile_m_pResourceImage_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -103,13 +103,13 @@ public unsafe class CExoResourceImageFile : CExoPackedFile {
   }
 
   public override int CloseFile() {
-    int ret = NWNXLibPINVOKE.CExoResourceImageFile_CloseFile(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoResourceImageFile_CloseFile(swigCPtr);
+    return retVal;
   }
 
   public override int CloseAsyncFile() {
-    int ret = NWNXLibPINVOKE.CExoResourceImageFile_CloseAsyncFile(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoResourceImageFile_CloseAsyncFile(swigCPtr);
+    return retVal;
   }
 
   public override void DeleteRefCount() {
@@ -121,35 +121,35 @@ public unsafe class CExoResourceImageFile : CExoPackedFile {
   }
 
   public override uint GetResourceSize(RESID nID) {
-    uint ret = NWNXLibPINVOKE.CExoResourceImageFile_GetResourceSize(swigCPtr, RESID.getCPtr(nID));
+    uint retVal = NWNXLibPINVOKE.CExoResourceImageFile_GetResourceSize(swigCPtr, RESID.getCPtr(nID));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public override int Initialize() {
-    int ret = NWNXLibPINVOKE.CExoResourceImageFile_Initialize(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoResourceImageFile_Initialize(swigCPtr);
+    return retVal;
   }
 
   public override int OpenFile() {
-    int ret = NWNXLibPINVOKE.CExoResourceImageFile_OpenFile__SWIG_0(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoResourceImageFile_OpenFile__SWIG_0(swigCPtr);
+    return retVal;
   }
 
   public override int OpenFile(byte* pCipher) {
-    int ret = NWNXLibPINVOKE.CExoResourceImageFile_OpenFile__SWIG_1(swigCPtr, (global::System.IntPtr)pCipher);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoResourceImageFile_OpenFile__SWIG_1(swigCPtr, pCipher);
+    return retVal;
   }
 
   public override int OpenAsyncFile() {
-    int ret = NWNXLibPINVOKE.CExoResourceImageFile_OpenAsyncFile(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoResourceImageFile_OpenAsyncFile(swigCPtr);
+    return retVal;
   }
 
   public override uint ReadResource(RESID nID, void* pData, uint nSize, uint nDataOffset) {
-    uint ret = NWNXLibPINVOKE.CExoResourceImageFile_ReadResource(swigCPtr, RESID.getCPtr(nID), (global::System.IntPtr)pData, nSize, nDataOffset);
+    uint retVal = NWNXLibPINVOKE.CExoResourceImageFile_ReadResource(swigCPtr, RESID.getCPtr(nID), (global::System.IntPtr)pData, nSize, nDataOffset);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public override void ReadResourceAsync(RESID nID, void* pData, uint nSize, uint nDataOffset) {
@@ -158,18 +158,18 @@ public unsafe class CExoResourceImageFile : CExoPackedFile {
   }
 
   public override int LoadHeader(byte* expectOid, byte nType) {
-    int ret = NWNXLibPINVOKE.CExoResourceImageFile_LoadHeader__SWIG_0(swigCPtr, (global::System.IntPtr)expectOid, nType);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoResourceImageFile_LoadHeader__SWIG_0(swigCPtr, expectOid, nType);
+    return retVal;
   }
 
   public override int LoadHeader(byte* expectOid) {
-    int ret = NWNXLibPINVOKE.CExoResourceImageFile_LoadHeader__SWIG_1(swigCPtr, (global::System.IntPtr)expectOid);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoResourceImageFile_LoadHeader__SWIG_1(swigCPtr, expectOid);
+    return retVal;
   }
 
   public override int UnloadHeader() {
-    int ret = NWNXLibPINVOKE.CExoResourceImageFile_UnloadHeader(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoResourceImageFile_UnloadHeader(swigCPtr);
+    return retVal;
   }
 
   public virtual void* GetResource(RESID nID) {

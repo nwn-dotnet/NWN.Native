@@ -95,9 +95,10 @@ public unsafe class EXO2DAHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.EXO2DAHEADER_nType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.EXO2DAHEADER_nType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.EXO2DAHEADER_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nVersion {
@@ -105,9 +106,10 @@ public unsafe class EXO2DAHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.EXO2DAHEADER_nVersion_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.EXO2DAHEADER_nVersion_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.EXO2DAHEADER_nVersion_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public EXO2DAHEADER() : this(NWNXLibPINVOKE.new_EXO2DAHEADER(), true) {

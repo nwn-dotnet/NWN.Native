@@ -95,9 +95,10 @@ public unsafe class CFeatUseListEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CFeatUseListEntry_m_nFeat_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CFeatUseListEntry_m_nFeat_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CFeatUseListEntry_m_nFeat_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nUsedToday {
@@ -105,9 +106,10 @@ public unsafe class CFeatUseListEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CFeatUseListEntry_m_nUsedToday_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CFeatUseListEntry_m_nUsedToday_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CFeatUseListEntry_m_nUsedToday_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CFeatUseListEntry() : this(NWNXLibPINVOKE.new_CFeatUseListEntry(), true) {

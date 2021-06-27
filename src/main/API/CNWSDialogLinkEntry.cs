@@ -117,9 +117,10 @@ public unsafe class CNWSDialogLinkEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialogLinkEntry_m_nIndex_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialogLinkEntry_m_nIndex_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialogLinkEntry_m_nIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSDialogLinkEntry() : this(NWNXLibPINVOKE.new_CNWSDialogLinkEntry(), true) {

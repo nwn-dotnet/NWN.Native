@@ -106,33 +106,33 @@ public unsafe class CExoIni : global::System.IDisposable {
   }
 
   public int ReadIniEntry(CExoString sValue, int idxIniFile, CExoString sSection, CExoString sEntry) {
-    int ret = NWNXLibPINVOKE.CExoIni_ReadIniEntry(swigCPtr, CExoString.getCPtr(sValue), idxIniFile, CExoString.getCPtr(sSection), CExoString.getCPtr(sEntry));
+    int retVal = NWNXLibPINVOKE.CExoIni_ReadIniEntry(swigCPtr, CExoString.getCPtr(sValue), idxIniFile, CExoString.getCPtr(sSection), CExoString.getCPtr(sEntry));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int WriteIniEntry(CExoString sValue, int idxIniFile, CExoString sSection, CExoString sEntry, int stripIfEmpty) {
-    int ret = NWNXLibPINVOKE.CExoIni_WriteIniEntry__SWIG_0(swigCPtr, CExoString.getCPtr(sValue), idxIniFile, CExoString.getCPtr(sSection), CExoString.getCPtr(sEntry), stripIfEmpty);
+    int retVal = NWNXLibPINVOKE.CExoIni_WriteIniEntry__SWIG_0(swigCPtr, CExoString.getCPtr(sValue), idxIniFile, CExoString.getCPtr(sSection), CExoString.getCPtr(sEntry), stripIfEmpty);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int WriteIniEntry(CExoString sValue, int idxIniFile, CExoString sSection, CExoString sEntry) {
-    int ret = NWNXLibPINVOKE.CExoIni_WriteIniEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sValue), idxIniFile, CExoString.getCPtr(sSection), CExoString.getCPtr(sEntry));
+    int retVal = NWNXLibPINVOKE.CExoIni_WriteIniEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sValue), idxIniFile, CExoString.getCPtr(sSection), CExoString.getCPtr(sEntry));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetIntOr(int idxIniFile, CExoString sSection, CExoString sEntry, int nOtherwise) {
-    int ret = NWNXLibPINVOKE.CExoIni_GetIntOr(swigCPtr, idxIniFile, CExoString.getCPtr(sSection), CExoString.getCPtr(sEntry), nOtherwise);
+    int retVal = NWNXLibPINVOKE.CExoIni_GetIntOr(swigCPtr, idxIniFile, CExoString.getCPtr(sSection), CExoString.getCPtr(sEntry), nOtherwise);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public float GetFloatOr(int idxIniFile, CExoString sSection, CExoString sEntry, float nOtherwise) {
-    float ret = NWNXLibPINVOKE.CExoIni_GetFloatOr(swigCPtr, idxIniFile, CExoString.getCPtr(sSection), CExoString.getCPtr(sEntry), nOtherwise);
+    float retVal = NWNXLibPINVOKE.CExoIni_GetFloatOr(swigCPtr, idxIniFile, CExoString.getCPtr(sSection), CExoString.getCPtr(sEntry), nOtherwise);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
 }

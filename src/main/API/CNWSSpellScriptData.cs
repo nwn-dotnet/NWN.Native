@@ -95,9 +95,10 @@ public unsafe class CNWSSpellScriptData : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSSpellScriptData_m_nSpellId_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSSpellScriptData_m_nSpellId_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSSpellScriptData_m_nSpellId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nFeatId {
@@ -105,9 +106,10 @@ public unsafe class CNWSSpellScriptData : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSSpellScriptData_m_nFeatId_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSSpellScriptData_m_nFeatId_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSSpellScriptData_m_nFeatId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidCaster {
@@ -115,9 +117,10 @@ public unsafe class CNWSSpellScriptData : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSSpellScriptData_m_oidCaster_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSSpellScriptData_m_oidCaster_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSSpellScriptData_m_oidCaster_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidTarget {
@@ -125,9 +128,10 @@ public unsafe class CNWSSpellScriptData : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSSpellScriptData_m_oidTarget_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSSpellScriptData_m_oidTarget_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSSpellScriptData_m_oidTarget_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidItem {
@@ -135,9 +139,10 @@ public unsafe class CNWSSpellScriptData : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSSpellScriptData_m_oidItem_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSSpellScriptData_m_oidItem_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSSpellScriptData_m_oidItem_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public Vector m_vTargetPosition {
@@ -167,9 +172,10 @@ public unsafe class CNWSSpellScriptData : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSSpellScriptData_m_oidArea_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSSpellScriptData_m_oidArea_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSSpellScriptData_m_oidArea_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nItemCastLevel {
@@ -177,19 +183,20 @@ public unsafe class CNWSSpellScriptData : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSSpellScriptData_m_nItemCastLevel_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSSpellScriptData_m_nItemCastLevel_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSSpellScriptData_m_nItemCastLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int SaveData(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSSpellScriptData_SaveData(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSSpellScriptData_SaveData(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadData(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSSpellScriptData_LoadData(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSSpellScriptData_LoadData(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public CNWSSpellScriptData() : this(NWNXLibPINVOKE.new_CNWSSpellScriptData(), true) {

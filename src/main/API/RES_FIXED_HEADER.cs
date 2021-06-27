@@ -95,9 +95,10 @@ public unsafe class RES_FIXED_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.RES_FIXED_HEADER_nFileType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.RES_FIXED_HEADER_nFileType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.RES_FIXED_HEADER_nFileType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nFileVersion {
@@ -105,9 +106,10 @@ public unsafe class RES_FIXED_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.RES_FIXED_HEADER_nFileVersion_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.RES_FIXED_HEADER_nFileVersion_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.RES_FIXED_HEADER_nFileVersion_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nNumber {
@@ -115,9 +117,10 @@ public unsafe class RES_FIXED_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.RES_FIXED_HEADER_nNumber_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.RES_FIXED_HEADER_nNumber_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.RES_FIXED_HEADER_nNumber_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nSize {
@@ -125,9 +128,10 @@ public unsafe class RES_FIXED_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.RES_FIXED_HEADER_nSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.RES_FIXED_HEADER_nSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.RES_FIXED_HEADER_nSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nTableOffset {
@@ -135,9 +139,10 @@ public unsafe class RES_FIXED_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.RES_FIXED_HEADER_nTableOffset_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.RES_FIXED_HEADER_nTableOffset_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.RES_FIXED_HEADER_nTableOffset_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public RES_FIXED_HEADER() : this(NWNXLibPINVOKE.new_RES_FIXED_HEADER(), true) {

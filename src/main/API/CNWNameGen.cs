@@ -95,9 +95,10 @@ public unsafe class CNWNameGen : global::System.IDisposable {
       NWNXLibPINVOKE.CNWNameGen_m_bLoaded_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWNameGen_m_bLoaded_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWNameGen_m_bLoaded_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nTableRace {
@@ -105,9 +106,10 @@ public unsafe class CNWNameGen : global::System.IDisposable {
       NWNXLibPINVOKE.CNWNameGen_m_nTableRace_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWNameGen_m_nTableRace_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWNameGen_m_nTableRace_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nTableNameType {
@@ -115,18 +117,19 @@ public unsafe class CNWNameGen : global::System.IDisposable {
       NWNXLibPINVOKE.CNWNameGen_m_nTableNameType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWNameGen_m_nTableNameType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWNameGen_m_nTableNameType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWNameGen() : this(NWNXLibPINVOKE.new_CNWNameGen(), true) {
   }
 
   public int LoadNameTable(CExoString sTable) {
-    int ret = NWNXLibPINVOKE.CNWNameGen_LoadNameTable(swigCPtr, CExoString.getCPtr(sTable));
+    int retVal = NWNXLibPINVOKE.CNWNameGen_LoadNameTable(swigCPtr, CExoString.getCPtr(sTable));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void UnloadNameTable() {

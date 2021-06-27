@@ -95,9 +95,10 @@ public unsafe class ENCAPSULATED_RESLISTENTRY : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_nOffsetToResource_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_nOffsetToResource_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_nOffsetToResource_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nResourceSize {
@@ -105,9 +106,10 @@ public unsafe class ENCAPSULATED_RESLISTENTRY : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_nResourceSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_nResourceSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_nResourceSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ENCAPSULATED_RESLISTENTRY() : this(NWNXLibPINVOKE.new_ENCAPSULATED_RESLISTENTRY(), true) {

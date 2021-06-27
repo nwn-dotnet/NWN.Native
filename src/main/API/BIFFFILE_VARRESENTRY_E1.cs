@@ -95,9 +95,10 @@ public unsafe class BIFFFILE_VARRESENTRY_E1 : global::System.IDisposable {
       NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nID_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nID_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nOffset {
@@ -105,9 +106,10 @@ public unsafe class BIFFFILE_VARRESENTRY_E1 : global::System.IDisposable {
       NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nOffset_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nOffset_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nOffset_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nSize {
@@ -115,9 +117,10 @@ public unsafe class BIFFFILE_VARRESENTRY_E1 : global::System.IDisposable {
       NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nType {
@@ -125,9 +128,10 @@ public unsafe class BIFFFILE_VARRESENTRY_E1 : global::System.IDisposable {
       NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nCompressionType {
@@ -135,9 +139,10 @@ public unsafe class BIFFFILE_VARRESENTRY_E1 : global::System.IDisposable {
       NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nCompressionType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nCompressionType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nCompressionType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nUncompressedSize {
@@ -145,9 +150,10 @@ public unsafe class BIFFFILE_VARRESENTRY_E1 : global::System.IDisposable {
       NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nUncompressedSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nUncompressedSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nUncompressedSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public BIFFFILE_VARRESENTRY_E1() : this(NWNXLibPINVOKE.new_BIFFFILE_VARRESENTRY_E1(), true) {

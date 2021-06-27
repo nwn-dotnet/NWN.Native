@@ -95,9 +95,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_s1_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoRandInternal_m_s1_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoRandInternal_m_s1_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_s2 {
@@ -105,9 +106,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_s2_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoRandInternal_m_s2_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoRandInternal_m_s2_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_s3 {
@@ -115,9 +117,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_s3_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoRandInternal_m_s3_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoRandInternal_m_s3_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_s4 {
@@ -125,9 +128,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_s4_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoRandInternal_m_s4_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoRandInternal_m_s4_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_mask1 {
@@ -135,9 +139,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_mask1_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoRandInternal_m_mask1_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoRandInternal_m_mask1_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_mask2 {
@@ -145,9 +150,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_mask2_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoRandInternal_m_mask2_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoRandInternal_m_mask2_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_mask3 {
@@ -155,9 +161,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_mask3_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoRandInternal_m_mask3_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoRandInternal_m_mask3_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_mask4 {
@@ -165,9 +172,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_mask4_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoRandInternal_m_mask4_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoRandInternal_m_mask4_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_shft1 {
@@ -175,9 +183,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_shft1_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoRandInternal_m_shft1_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoRandInternal_m_shft1_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_shft2 {
@@ -185,9 +194,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_shft2_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoRandInternal_m_shft2_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoRandInternal_m_shft2_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_shft3 {
@@ -195,9 +205,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_shft3_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoRandInternal_m_shft3_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoRandInternal_m_shft3_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_shft4 {
@@ -205,9 +216,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_shft4_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoRandInternal_m_shft4_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoRandInternal_m_shft4_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_k1 {
@@ -215,9 +227,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_k1_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoRandInternal_m_k1_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoRandInternal_m_k1_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_k2 {
@@ -225,9 +238,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_k2_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoRandInternal_m_k2_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoRandInternal_m_k2_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_k3 {
@@ -235,9 +249,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_k3_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoRandInternal_m_k3_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoRandInternal_m_k3_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_k4 {
@@ -245,9 +260,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_k4_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoRandInternal_m_k4_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoRandInternal_m_k4_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_q1 {
@@ -255,9 +271,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_q1_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoRandInternal_m_q1_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoRandInternal_m_q1_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_q2 {
@@ -265,9 +282,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_q2_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoRandInternal_m_q2_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoRandInternal_m_q2_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_q3 {
@@ -275,9 +293,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_q3_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoRandInternal_m_q3_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoRandInternal_m_q3_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_q4 {
@@ -285,9 +304,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_q4_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoRandInternal_m_q4_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoRandInternal_m_q4_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_p1 {
@@ -295,9 +315,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_p1_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoRandInternal_m_p1_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoRandInternal_m_p1_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_p2 {
@@ -305,9 +326,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_p2_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoRandInternal_m_p2_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoRandInternal_m_p2_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_p3 {
@@ -315,9 +337,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_p3_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoRandInternal_m_p3_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoRandInternal_m_p3_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_p4 {
@@ -325,9 +348,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_p4_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoRandInternal_m_p4_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoRandInternal_m_p4_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bSeeded {
@@ -335,18 +359,19 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_bSeeded_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoRandInternal_m_bSeeded_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoRandInternal_m_bSeeded_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte* m_pBuffer {
     set {
-      NWNXLibPINVOKE.CExoRandInternal_m_pBuffer_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CExoRandInternal_m_pBuffer_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoRandInternal_m_pBuffer_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CExoRandInternal_m_pBuffer_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -356,49 +381,54 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_pBufIndex_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CExoRandInternal_m_pBufIndex_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CExoRandInternal_m_pBufIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public uint m_nEvent1 {
+  public ulong m_nEvent1 {
     set {
       NWNXLibPINVOKE.CExoRandInternal_m_nEvent1_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoRandInternal_m_nEvent1_get(swigCPtr);
-      return ret;
-    } 
+      ulong retVal = NWNXLibPINVOKE.CExoRandInternal_m_nEvent1_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public uint m_nEvent2 {
+  public ulong m_nEvent2 {
     set {
       NWNXLibPINVOKE.CExoRandInternal_m_nEvent2_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoRandInternal_m_nEvent2_get(swigCPtr);
-      return ret;
-    } 
+      ulong retVal = NWNXLibPINVOKE.CExoRandInternal_m_nEvent2_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public uint m_nEvent3 {
+  public ulong m_nEvent3 {
     set {
       NWNXLibPINVOKE.CExoRandInternal_m_nEvent3_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoRandInternal_m_nEvent3_get(swigCPtr);
-      return ret;
-    } 
+      ulong retVal = NWNXLibPINVOKE.CExoRandInternal_m_nEvent3_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public uint m_nEvent4 {
+  public ulong m_nEvent4 {
     set {
       NWNXLibPINVOKE.CExoRandInternal_m_nEvent4_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoRandInternal_m_nEvent4_get(swigCPtr);
-      return ret;
-    } 
+      ulong retVal = NWNXLibPINVOKE.CExoRandInternal_m_nEvent4_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nEvent5 {
@@ -406,17 +436,18 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoRandInternal_m_nEvent5_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoRandInternal_m_nEvent5_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoRandInternal_m_nEvent5_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoRandInternal() : this(NWNXLibPINVOKE.new_CExoRandInternal(), true) {
   }
 
   public uint Rand() {
-    uint ret = NWNXLibPINVOKE.CExoRandInternal_Rand(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoRandInternal_Rand(swigCPtr);
+    return retVal;
   }
 
   public CExoString GetString(ushort nLength) {
@@ -441,7 +472,7 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
   }
 
   public void Add(byte* pBuf, int nSize) {
-    NWNXLibPINVOKE.CExoRandInternal_Add(swigCPtr, (global::System.IntPtr)pBuf, nSize);
+    NWNXLibPINVOKE.CExoRandInternal_Add(swigCPtr, pBuf, nSize);
   }
 
 }

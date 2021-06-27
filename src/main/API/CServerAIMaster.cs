@@ -151,9 +151,10 @@ public unsafe class CServerAIMaster : global::System.IDisposable {
       NWNXLibPINVOKE.CServerAIMaster_m_nScriptsRun_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CServerAIMaster_m_nScriptsRun_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CServerAIMaster_m_nScriptsRun_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nScriptsRunSize {
@@ -161,9 +162,10 @@ public unsafe class CServerAIMaster : global::System.IDisposable {
       NWNXLibPINVOKE.CServerAIMaster_m_nScriptsRunSize_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CServerAIMaster_m_nScriptsRunSize_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CServerAIMaster_m_nScriptsRunSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_psScriptsRun {
@@ -182,9 +184,10 @@ public unsafe class CServerAIMaster : global::System.IDisposable {
       NWNXLibPINVOKE.CServerAIMaster_m_bPlotPathRun_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CServerAIMaster_m_bPlotPathRun_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CServerAIMaster_m_bPlotPathRun_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bGridPathRun {
@@ -192,9 +195,10 @@ public unsafe class CServerAIMaster : global::System.IDisposable {
       NWNXLibPINVOKE.CServerAIMaster_m_bGridPathRun_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CServerAIMaster_m_bGridPathRun_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CServerAIMaster_m_bGridPathRun_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bUpdateVisibleListRun {
@@ -202,9 +206,10 @@ public unsafe class CServerAIMaster : global::System.IDisposable {
       NWNXLibPINVOKE.CServerAIMaster_m_bUpdateVisibleListRun_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CServerAIMaster_m_bUpdateVisibleListRun_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CServerAIMaster_m_bUpdateVisibleListRun_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bBroadcastAOORun {
@@ -212,9 +217,10 @@ public unsafe class CServerAIMaster : global::System.IDisposable {
       NWNXLibPINVOKE.CServerAIMaster_m_bBroadcastAOORun_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CServerAIMaster_m_bBroadcastAOORun_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CServerAIMaster_m_bBroadcastAOORun_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bTrapCheckRun {
@@ -222,9 +228,10 @@ public unsafe class CServerAIMaster : global::System.IDisposable {
       NWNXLibPINVOKE.CServerAIMaster_m_bTrapCheckRun_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CServerAIMaster_m_bTrapCheckRun_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CServerAIMaster_m_bTrapCheckRun_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nLastActionRun {
@@ -232,9 +239,10 @@ public unsafe class CServerAIMaster : global::System.IDisposable {
       NWNXLibPINVOKE.CServerAIMaster_m_nLastActionRun_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CServerAIMaster_m_nLastActionRun_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CServerAIMaster_m_nLastActionRun_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListInt32 m_pAttackRepAdj {
@@ -297,93 +305,93 @@ public unsafe class CServerAIMaster : global::System.IDisposable {
   }
 
   public int AddObject(CNWSObject pObject, int nAILevel) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_AddObject(swigCPtr, CNWSObject.getCPtr(pObject), nAILevel);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIMaster_AddObject(swigCPtr, CNWSObject.getCPtr(pObject), nAILevel);
+    return retVal;
   }
 
   public int RemoveObject(CNWSObject pObject) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_RemoveObject(swigCPtr, CNWSObject.getCPtr(pObject));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIMaster_RemoveObject(swigCPtr, CNWSObject.getCPtr(pObject));
+    return retVal;
   }
 
   public int SetAILevel(CNWSObject pObject, int nAILevel) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_SetAILevel(swigCPtr, CNWSObject.getCPtr(pObject), nAILevel);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIMaster_SetAILevel(swigCPtr, CNWSObject.getCPtr(pObject), nAILevel);
+    return retVal;
   }
 
   public int AddEventDeltaTime(uint nDaysFromNow, uint nTimeFromNow, uint nCallerObjectId, uint nObjectId, uint nEventId, void* pScript) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_AddEventDeltaTime__SWIG_0(swigCPtr, nDaysFromNow, nTimeFromNow, nCallerObjectId, nObjectId, nEventId, (global::System.IntPtr)pScript);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIMaster_AddEventDeltaTime__SWIG_0(swigCPtr, nDaysFromNow, nTimeFromNow, nCallerObjectId, nObjectId, nEventId, (global::System.IntPtr)pScript);
+    return retVal;
   }
 
   public int AddEventDeltaTime(uint nDaysFromNow, uint nTimeFromNow, uint nCallerObjectId, uint nObjectId, uint nEventId) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_AddEventDeltaTime__SWIG_1(swigCPtr, nDaysFromNow, nTimeFromNow, nCallerObjectId, nObjectId, nEventId);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIMaster_AddEventDeltaTime__SWIG_1(swigCPtr, nDaysFromNow, nTimeFromNow, nCallerObjectId, nObjectId, nEventId);
+    return retVal;
   }
 
   public int AddEventAbsoluteTime(uint nCalendarDay, uint nTimeOfDay, uint nCallerObjectId, uint nObjectId, uint nEventId, void* pScript) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_AddEventAbsoluteTime__SWIG_0(swigCPtr, nCalendarDay, nTimeOfDay, nCallerObjectId, nObjectId, nEventId, (global::System.IntPtr)pScript);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIMaster_AddEventAbsoluteTime__SWIG_0(swigCPtr, nCalendarDay, nTimeOfDay, nCallerObjectId, nObjectId, nEventId, (global::System.IntPtr)pScript);
+    return retVal;
   }
 
   public int AddEventAbsoluteTime(uint nCalendarDay, uint nTimeOfDay, uint nCallerObjectId, uint nObjectId, uint nEventId) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_AddEventAbsoluteTime__SWIG_1(swigCPtr, nCalendarDay, nTimeOfDay, nCallerObjectId, nObjectId, nEventId);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIMaster_AddEventAbsoluteTime__SWIG_1(swigCPtr, nCalendarDay, nTimeOfDay, nCallerObjectId, nObjectId, nEventId);
+    return retVal;
   }
 
   public int AddEventAbsoluteTimeViaTail(uint nCalendarDay, uint nTimeOfDay, uint nCallerObjectId, uint nObjectId, uint nEventId, void* pScript) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_AddEventAbsoluteTimeViaTail__SWIG_0(swigCPtr, nCalendarDay, nTimeOfDay, nCallerObjectId, nObjectId, nEventId, (global::System.IntPtr)pScript);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIMaster_AddEventAbsoluteTimeViaTail__SWIG_0(swigCPtr, nCalendarDay, nTimeOfDay, nCallerObjectId, nObjectId, nEventId, (global::System.IntPtr)pScript);
+    return retVal;
   }
 
   public int AddEventAbsoluteTimeViaTail(uint nCalendarDay, uint nTimeOfDay, uint nCallerObjectId, uint nObjectId, uint nEventId) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_AddEventAbsoluteTimeViaTail__SWIG_1(swigCPtr, nCalendarDay, nTimeOfDay, nCallerObjectId, nObjectId, nEventId);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIMaster_AddEventAbsoluteTimeViaTail__SWIG_1(swigCPtr, nCalendarDay, nTimeOfDay, nCallerObjectId, nObjectId, nEventId);
+    return retVal;
   }
 
   public int EventPending(uint nCalendarDay, uint nTimeOfDay) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_EventPending(swigCPtr, nCalendarDay, nTimeOfDay);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIMaster_EventPending(swigCPtr, nCalendarDay, nTimeOfDay);
+    return retVal;
   }
 
   public int GetPendingEvent(uint* nCalendarDay, uint* nTimeOfDay, uint* nCallerObjectId, uint* nObjectId, uint* nEventId, void** pScript) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_GetPendingEvent(swigCPtr, (global::System.IntPtr)nCalendarDay, (global::System.IntPtr)nTimeOfDay, (global::System.IntPtr)nCallerObjectId, (global::System.IntPtr)nObjectId, (global::System.IntPtr)nEventId, (global::System.IntPtr)pScript);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIMaster_GetPendingEvent(swigCPtr, nCalendarDay, nTimeOfDay, nCallerObjectId, nObjectId, nEventId, (global::System.IntPtr)pScript);
+    return retVal;
   }
 
   public int SaveEventQueue(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_SaveEventQueue(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIMaster_SaveEventQueue(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadEventQueue(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_LoadEventQueue(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIMaster_LoadEventQueue(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int OnEffectApplied(CNWSObject pObject, CGameEffect effect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_OnEffectApplied__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(effect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIMaster_OnEffectApplied__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(effect), bLoadingGame);
+    return retVal;
   }
 
   public int OnEffectApplied(CNWSObject pObject, CGameEffect effect) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_OnEffectApplied__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(effect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIMaster_OnEffectApplied__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(effect));
+    return retVal;
   }
 
   public int OnEffectRemoved(CNWSObject pObject, CGameEffect effect) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_OnEffectRemoved(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(effect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIMaster_OnEffectRemoved(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(effect));
+    return retVal;
   }
 
   public int OnItemPropertyApplied(CNWSItem pItem, CNWItemProperty pItemProperty, CNWSCreature pTargetCreature, uint nTargetInventorySlot, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_OnItemPropertyApplied(swigCPtr, CNWSItem.getCPtr(pItem), CNWItemProperty.getCPtr(pItemProperty), CNWSCreature.getCPtr(pTargetCreature), nTargetInventorySlot, bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIMaster_OnItemPropertyApplied(swigCPtr, CNWSItem.getCPtr(pItem), CNWItemProperty.getCPtr(pItemProperty), CNWSCreature.getCPtr(pTargetCreature), nTargetInventorySlot, bLoadingGame);
+    return retVal;
   }
 
   public int OnItemPropertyRemoved(CNWSItem pItem, CNWItemProperty pItemProperty, CNWSCreature pTargetCreature, uint nTargetInventorySlot) {
-    int ret = NWNXLibPINVOKE.CServerAIMaster_OnItemPropertyRemoved(swigCPtr, CNWSItem.getCPtr(pItem), CNWItemProperty.getCPtr(pItemProperty), CNWSCreature.getCPtr(pTargetCreature), nTargetInventorySlot);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIMaster_OnItemPropertyRemoved(swigCPtr, CNWSItem.getCPtr(pItem), CNWItemProperty.getCPtr(pItemProperty), CNWSCreature.getCPtr(pTargetCreature), nTargetInventorySlot);
+    return retVal;
   }
 
   public void AdjustTargetAndWitnessReputations(uint oidTarget, uint oidSource, int nActionType) {

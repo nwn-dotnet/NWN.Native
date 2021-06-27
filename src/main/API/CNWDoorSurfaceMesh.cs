@@ -170,31 +170,31 @@ public unsafe class CNWDoorSurfaceMesh : global::System.IDisposable {
   }
 
   public int LoadWalkMeshString(byte** pInput, uint* nInputSize, byte* pchBuffer, uint nBufferSize) {
-    int ret = NWNXLibPINVOKE.CNWDoorSurfaceMesh_LoadWalkMeshString(swigCPtr, (global::System.IntPtr)pInput, (global::System.IntPtr)nInputSize, (global::System.IntPtr)pchBuffer, nBufferSize);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWDoorSurfaceMesh_LoadWalkMeshString(swigCPtr, (global::System.IntPtr)pInput, nInputSize, pchBuffer, nBufferSize);
+    return retVal;
   }
 
   public int LoadWalkMesh(CResRef cWalkMesh) {
-    int ret = NWNXLibPINVOKE.CNWDoorSurfaceMesh_LoadWalkMesh(swigCPtr, CResRef.getCPtr(cWalkMesh));
+    int retVal = NWNXLibPINVOKE.CNWDoorSurfaceMesh_LoadWalkMesh(swigCPtr, CResRef.getCPtr(cWalkMesh));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int NoNonWalkPolysOnSurfaceMesh(int nDoorState, float fSourceX, float fSourceY, float fTargetX, float fTargetY, float fMinZ, float fMaxZ, float fPersonalSpace) {
-    int ret = NWNXLibPINVOKE.CNWDoorSurfaceMesh_NoNonWalkPolysOnSurfaceMesh(swigCPtr, nDoorState, fSourceX, fSourceY, fTargetX, fTargetY, fMinZ, fMaxZ, fPersonalSpace);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWDoorSurfaceMesh_NoNonWalkPolysOnSurfaceMesh(swigCPtr, nDoorState, fSourceX, fSourceY, fTargetX, fTargetY, fMinZ, fMaxZ, fPersonalSpace);
+    return retVal;
   }
 
   public int IntersectLineSegments(Vector v1, Vector v2, Vector v3, Vector v4, Vector vIntersect) {
-    int ret = NWNXLibPINVOKE.CNWDoorSurfaceMesh_IntersectLineSegments(swigCPtr, Vector.getCPtr(v1), Vector.getCPtr(v2), Vector.getCPtr(v3), Vector.getCPtr(v4), Vector.getCPtr(vIntersect));
+    int retVal = NWNXLibPINVOKE.CNWDoorSurfaceMesh_IntersectLineSegments(swigCPtr, Vector.getCPtr(v1), Vector.getCPtr(v2), Vector.getCPtr(v3), Vector.getCPtr(v4), Vector.getCPtr(vIntersect));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetMeshBoundingBox(Vector vPosition, Vector vOrientation, Vector vMin, Vector vMax) {
-    int ret = NWNXLibPINVOKE.CNWDoorSurfaceMesh_GetMeshBoundingBox(swigCPtr, Vector.getCPtr(vPosition), Vector.getCPtr(vOrientation), Vector.getCPtr(vMin), Vector.getCPtr(vMax));
+    int retVal = NWNXLibPINVOKE.CNWDoorSurfaceMesh_GetMeshBoundingBox(swigCPtr, Vector.getCPtr(vPosition), Vector.getCPtr(vOrientation), Vector.getCPtr(vMin), Vector.getCPtr(vMax));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
 }

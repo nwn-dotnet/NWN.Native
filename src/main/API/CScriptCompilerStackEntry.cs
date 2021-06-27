@@ -95,9 +95,10 @@ public unsafe class CScriptCompilerStackEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptCompilerStackEntry_nState_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptCompilerStackEntry_nState_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptCompilerStackEntry_nState_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nRule {
@@ -105,9 +106,10 @@ public unsafe class CScriptCompilerStackEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptCompilerStackEntry_nRule_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptCompilerStackEntry_nRule_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptCompilerStackEntry_nRule_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nTerm {
@@ -115,9 +117,10 @@ public unsafe class CScriptCompilerStackEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptCompilerStackEntry_nTerm_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptCompilerStackEntry_nTerm_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptCompilerStackEntry_nTerm_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CScriptParseTreeNode pCurrentTree {

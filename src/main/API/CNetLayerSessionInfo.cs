@@ -95,9 +95,10 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerSessionInfo_m_nConnectionId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nConnectionId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nConnectionId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sSessionName {
@@ -116,9 +117,10 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerSessionInfo_m_nProtocol_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nProtocol_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nProtocol_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nPort {
@@ -126,9 +128,10 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPort_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPort_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPort_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<uint> m_nPingPacketSent {
@@ -162,9 +165,10 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingTotalTime_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingTotalTime_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingTotalTime_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nPingNumPackets {
@@ -172,9 +176,10 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingNumPackets_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingNumPackets_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingNumPackets_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bPingActive {
@@ -182,9 +187,10 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerSessionInfo_m_bPingActive_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNetLayerSessionInfo_m_bPingActive_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNetLayerSessionInfo_m_bPingActive_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nPingPacketTimeout {
@@ -192,9 +198,10 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketTimeout_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketTimeout_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nPingPacketTimeout_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExtendedServerInfo m_pExtendedInfo {
@@ -213,9 +220,10 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerSessionInfo_m_bHasChanged_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNetLayerSessionInfo_m_bHasChanged_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNetLayerSessionInfo_m_bHasChanged_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bServerDetailsChanged {
@@ -223,9 +231,10 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerSessionInfo_m_bServerDetailsChanged_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNetLayerSessionInfo_m_bServerDetailsChanged_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNetLayerSessionInfo_m_bServerDetailsChanged_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bRecievedBNXR {
@@ -233,9 +242,10 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerSessionInfo_m_bRecievedBNXR_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNetLayerSessionInfo_m_bRecievedBNXR_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNetLayerSessionInfo_m_bRecievedBNXR_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nLastUpdate {
@@ -243,9 +253,10 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerSessionInfo_m_nLastUpdate_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nLastUpdate_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nLastUpdate_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sVisibleAddress {

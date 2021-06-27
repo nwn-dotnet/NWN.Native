@@ -90,9 +90,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nPlayersInArea_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSArea_m_nPlayersInArea_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSArea_m_nPlayersInArea_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListObjectId m_pTrapList {
@@ -111,9 +112,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nObjectByNameIndex_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSArea_m_nObjectByNameIndex_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSArea_m_nObjectByNameIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nLastHeartbeatScriptCalendarDay {
@@ -121,9 +123,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nLastHeartbeatScriptCalendarDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSArea_m_nLastHeartbeatScriptCalendarDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSArea_m_nLastHeartbeatScriptCalendarDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nLastHeartbeatScriptTimeOfDay {
@@ -131,9 +134,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nLastHeartbeatScriptTimeOfDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSArea_m_nLastHeartbeatScriptTimeOfDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSArea_m_nLastHeartbeatScriptTimeOfDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoLinkedListNWAreaExpansion m_lstExpansions {
@@ -241,9 +245,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nChanceOfFog_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSArea_m_nChanceOfFog_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSArea_m_nChanceOfFog_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nAreaSpotModifier {
@@ -251,9 +256,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nAreaSpotModifier_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSArea_m_nAreaSpotModifier_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSArea_m_nAreaSpotModifier_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nAreaListenModifier {
@@ -261,9 +267,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nAreaListenModifier_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSArea_m_nAreaListenModifier_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSArea_m_nAreaListenModifier_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListObjectId m_aGameObjects {
@@ -282,9 +289,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nPosGameObjects_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSArea_m_nPosGameObjects_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSArea_m_nPosGameObjects_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListObjectId m_aSubAreas {
@@ -300,33 +308,33 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
 
   public int* m_pnInterTileTravel {
     set {
-      NWNXLibPINVOKE.CNWSArea_m_pnInterTileTravel_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWSArea_m_pnInterTileTravel_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pnInterTileTravel_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CNWSArea_m_pnInterTileTravel_get(swigCPtr);
+      return retVal;
     }
 
   }
 
   public float* m_pfInterTileExit {
     set {
-      NWNXLibPINVOKE.CNWSArea_m_pfInterTileExit_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWSArea_m_pfInterTileExit_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pfInterTileExit_get(swigCPtr);
-        return (float*)retVal;
+      float* retVal = NWNXLibPINVOKE.CNWSArea_m_pfInterTileExit_get(swigCPtr);
+      return retVal;
     }
 
   }
 
   public byte* m_pnInterTileRegionDepths {
     set {
-      NWNXLibPINVOKE.CNWSArea_m_pnInterTileRegionDepths_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWSArea_m_pnInterTileRegionDepths_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pnInterTileRegionDepths_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CNWSArea_m_pnInterTileRegionDepths_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -336,9 +344,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nInterTileTravelLength_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSArea_m_nInterTileTravelLength_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSArea_m_nInterTileTravelLength_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nInterTileGoalX {
@@ -346,9 +355,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nInterTileGoalX_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSArea_m_nInterTileGoalX_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSArea_m_nInterTileGoalX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nInterTileGoalY {
@@ -356,9 +366,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nInterTileGoalY_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSArea_m_nInterTileGoalY_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSArea_m_nInterTileGoalY_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nInterTileGoalRegion {
@@ -366,9 +377,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nInterTileGoalRegion_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSArea_m_nInterTileGoalRegion_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSArea_m_nInterTileGoalRegion_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fGoalTargetX {
@@ -376,9 +388,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_fGoalTargetX_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSArea_m_fGoalTargetX_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSArea_m_fGoalTargetX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fGoalTargetY {
@@ -386,9 +399,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_fGoalTargetY_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSArea_m_fGoalTargetY_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSArea_m_fGoalTargetY_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CPathfindInformation m_pSearchInfo {
@@ -418,18 +432,19 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_g_nUnsmoothedWPList_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSArea_g_nUnsmoothedWPList_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSArea_g_nUnsmoothedWPList_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float* g_pfUnsmoothedWPList {
     set {
-      NWNXLibPINVOKE.CNWSArea_g_pfUnsmoothedWPList_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWSArea_g_pfUnsmoothedWPList_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_g_pfUnsmoothedWPList_get(swigCPtr);
-        return (float*)retVal;
+      float* retVal = NWNXLibPINVOKE.CNWSArea_g_pfUnsmoothedWPList_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -439,18 +454,19 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_g_nSmoothedWPList_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSArea_g_nSmoothedWPList_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSArea_g_nSmoothedWPList_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float* g_pfSmoothedWPList {
     set {
-      NWNXLibPINVOKE.CNWSArea_g_pfSmoothedWPList_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWSArea_g_pfSmoothedWPList_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_g_pfSmoothedWPList_get(swigCPtr);
-        return (float*)retVal;
+      float* retVal = NWNXLibPINVOKE.CNWSArea_g_pfSmoothedWPList_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -460,9 +476,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_g_fPersonalSpace_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSArea_g_fPersonalSpace_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSArea_g_fPersonalSpace_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bGridPathfindingTerminated {
@@ -470,9 +487,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_bGridPathfindingTerminated_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSArea_m_bGridPathfindingTerminated_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSArea_m_bGridPathfindingTerminated_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nGridNodesSearched {
@@ -480,9 +498,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nGridNodesSearched_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSArea_m_nGridNodesSearched_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSArea_m_nGridNodesSearched_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastEntered {
@@ -490,9 +509,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_oidLastEntered_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSArea_m_oidLastEntered_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSArea_m_oidLastEntered_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastLeft {
@@ -500,9 +520,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_oidLastLeft_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSArea_m_oidLastLeft_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSArea_m_oidLastLeft_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nCustomScriptEventId {
@@ -510,9 +531,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nCustomScriptEventId_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSArea_m_nCustomScriptEventId_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSArea_m_nCustomScriptEventId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSAreaInterTileSuccessors m_pcInterTileSuccessors {
@@ -528,11 +550,11 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
 
   public int* m_pbInterTileDeniedExitCheck {
     set {
-      NWNXLibPINVOKE.CNWSArea_m_pbInterTileDeniedExitCheck_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWSArea_m_pbInterTileDeniedExitCheck_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSArea_m_pbInterTileDeniedExitCheck_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CNWSArea_m_pbInterTileDeniedExitCheck_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -542,9 +564,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_bInterAreaDFSVisited_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSArea_m_bInterAreaDFSVisited_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSArea_m_bInterAreaDFSVisited_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSScriptVarTable m_ScriptVars {
@@ -574,9 +597,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nWeatherType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSArea_m_nWeatherType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSArea_m_nWeatherType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bWeatherStarted {
@@ -584,9 +608,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_bWeatherStarted_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSArea_m_bWeatherStarted_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSArea_m_bWeatherStarted_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nWeatherMinDurationTimer {
@@ -594,9 +619,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nWeatherMinDurationTimer_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSArea_m_nWeatherMinDurationTimer_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSArea_m_nWeatherMinDurationTimer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nLastUpdateCalendarDay {
@@ -604,9 +630,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nLastUpdateCalendarDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSArea_m_nLastUpdateCalendarDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSArea_m_nLastUpdateCalendarDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nLastUpdateTimeOfDay {
@@ -614,9 +641,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nLastUpdateTimeOfDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSArea_m_nLastUpdateTimeOfDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSArea_m_nLastUpdateTimeOfDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nOverrideWeatherType {
@@ -624,9 +652,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nOverrideWeatherType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSArea_m_nOverrideWeatherType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSArea_m_nOverrideWeatherType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nCurrentWeatherType {
@@ -634,9 +663,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nCurrentWeatherType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSArea_m_nCurrentWeatherType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSArea_m_nCurrentWeatherType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nLightingScheme {
@@ -644,9 +674,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nLightingScheme_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSArea_m_nLightingScheme_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSArea_m_nLightingScheme_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nPVPSetting {
@@ -654,9 +685,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nPVPSetting_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSArea_m_nPVPSetting_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSArea_m_nPVPSetting_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nMapSize {
@@ -664,9 +696,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nMapSize_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSArea_m_nMapSize_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSArea_m_nMapSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nEnvironmentalAudio {
@@ -674,9 +707,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nEnvironmentalAudio_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSArea_m_nEnvironmentalAudio_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSArea_m_nEnvironmentalAudio_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nLoadScreenID {
@@ -684,9 +718,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nLoadScreenID_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSArea_m_nLoadScreenID_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSArea_m_nLoadScreenID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sDisplayName {
@@ -732,18 +767,18 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   }
 
   public int AddObjectToArea(uint id, int bRunScripts) {
-    int ret = NWNXLibPINVOKE.CNWSArea_AddObjectToArea__SWIG_0(swigCPtr, id, bRunScripts);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_AddObjectToArea__SWIG_0(swigCPtr, id, bRunScripts);
+    return retVal;
   }
 
   public int AddObjectToArea(uint id) {
-    int ret = NWNXLibPINVOKE.CNWSArea_AddObjectToArea__SWIG_1(swigCPtr, id);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_AddObjectToArea__SWIG_1(swigCPtr, id);
+    return retVal;
   }
 
   public int AIUpdate() {
-    int ret = NWNXLibPINVOKE.CNWSArea_AIUpdate(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_AIUpdate(swigCPtr);
+    return retVal;
   }
 
   public Vector ComputeAwayVector(Vector vCurrentPosition, Vector vPositionToMoveAwayFrom, float fMoveAwayRange, CPathfindInformation pPathInfo) {
@@ -753,49 +788,49 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   }
 
   public int ComputeBestCorner(float fX1, float fY1, float fX2, float fY2, float fX3, float fY3, float fPersonalSpace, float fCreatureHeight, float* fNewX1, float* fNewY1, float* fNewX2, float* fNewY2) {
-    int ret = NWNXLibPINVOKE.CNWSArea_ComputeBestCorner(swigCPtr, fX1, fY1, fX2, fY2, fX3, fY3, fPersonalSpace, fCreatureHeight, (global::System.IntPtr)fNewX1, (global::System.IntPtr)fNewY1, (global::System.IntPtr)fNewX2, (global::System.IntPtr)fNewY2);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_ComputeBestCorner(swigCPtr, fX1, fY1, fX2, fY2, fX3, fY3, fPersonalSpace, fCreatureHeight, fNewX1, fNewY1, fNewX2, fNewY2);
+    return retVal;
   }
 
   public int TestSafeLocationPoint(Vector vTestPosition, CPathfindInformation pPathfindInfo) {
-    int ret = NWNXLibPINVOKE.CNWSArea_TestSafeLocationPoint(swigCPtr, Vector.getCPtr(vTestPosition), CPathfindInformation.getCPtr(pPathfindInfo));
+    int retVal = NWNXLibPINVOKE.CNWSArea_TestSafeLocationPoint(swigCPtr, Vector.getCPtr(vTestPosition), CPathfindInformation.getCPtr(pPathfindInfo));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int ComputeSafeLocation(Vector vPosition, float fSearchRadius, CPathfindInformation pPathfindInfo, int bWalkStraightLineRequired, Vector vNewvector) {
-    int ret = NWNXLibPINVOKE.CNWSArea_ComputeSafeLocation(swigCPtr, Vector.getCPtr(vPosition), fSearchRadius, CPathfindInformation.getCPtr(pPathfindInfo), bWalkStraightLineRequired, Vector.getCPtr(vNewvector));
+    int retVal = NWNXLibPINVOKE.CNWSArea_ComputeSafeLocation(swigCPtr, Vector.getCPtr(vPosition), fSearchRadius, CPathfindInformation.getCPtr(pPathfindInfo), bWalkStraightLineRequired, Vector.getCPtr(vNewvector));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int ComputeSafeLocationInDirection(Vector vPosition, Vector vDirection, float fSearchRadisusMin, float fSearchRadiusMax, CPathfindInformation pPathfindInfo, int bWalkStraightLineRequired, Vector vNewVector) {
-    int ret = NWNXLibPINVOKE.CNWSArea_ComputeSafeLocationInDirection(swigCPtr, Vector.getCPtr(vPosition), Vector.getCPtr(vDirection), fSearchRadisusMin, fSearchRadiusMax, CPathfindInformation.getCPtr(pPathfindInfo), bWalkStraightLineRequired, Vector.getCPtr(vNewVector));
+    int retVal = NWNXLibPINVOKE.CNWSArea_ComputeSafeLocationInDirection(swigCPtr, Vector.getCPtr(vPosition), Vector.getCPtr(vDirection), fSearchRadisusMin, fSearchRadiusMax, CPathfindInformation.getCPtr(pPathfindInfo), bWalkStraightLineRequired, Vector.getCPtr(vNewVector));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int ComputeNonVisibleLocation(Vector vTargetPosition, CPathfindInformation pPathfindInfo, int bWalkStraightLineRequired, Vector vNewPosition, float fTargetRadius) {
-    int ret = NWNXLibPINVOKE.CNWSArea_ComputeNonVisibleLocation(swigCPtr, Vector.getCPtr(vTargetPosition), CPathfindInformation.getCPtr(pPathfindInfo), bWalkStraightLineRequired, Vector.getCPtr(vNewPosition), fTargetRadius);
+    int retVal = NWNXLibPINVOKE.CNWSArea_ComputeNonVisibleLocation(swigCPtr, Vector.getCPtr(vTargetPosition), CPathfindInformation.getCPtr(pPathfindInfo), bWalkStraightLineRequired, Vector.getCPtr(vNewPosition), fTargetRadius);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int CountVisibleToPlayers(Vector vPosition, int nMaxPlayers) {
-    int ret = NWNXLibPINVOKE.CNWSArea_CountVisibleToPlayers(swigCPtr, Vector.getCPtr(vPosition), nMaxPlayers);
+    int retVal = NWNXLibPINVOKE.CNWSArea_CountVisibleToPlayers(swigCPtr, Vector.getCPtr(vPosition), nMaxPlayers);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public float ComputeHeight(Vector vPosition) {
-    float ret = NWNXLibPINVOKE.CNWSArea_ComputeHeight(swigCPtr, Vector.getCPtr(vPosition));
+    float retVal = NWNXLibPINVOKE.CNWSArea_ComputeHeight(swigCPtr, Vector.getCPtr(vPosition));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public float ComputePathDistance(int nPoints, float* pfPoints) {
-    float ret = NWNXLibPINVOKE.CNWSArea_ComputePathDistance(swigCPtr, nPoints, (global::System.IntPtr)pfPoints);
-    return ret;
+    float retVal = NWNXLibPINVOKE.CNWSArea_ComputePathDistance(swigCPtr, nPoints, pfPoints);
+    return retVal;
   }
 
   public void BudgeCreatures(Vector vPosition, Vector vBBMin, Vector vBBMax, uint oidNewObject, int bBumpToActionPoint) {
@@ -804,8 +839,8 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   }
 
   public int CountAreaTransitionTriggers(uint* pTriggers, int nDeniedTriggers, uint* oidDeniedTriggers) {
-    int ret = NWNXLibPINVOKE.CNWSArea_CountAreaTransitionTriggers(swigCPtr, (global::System.IntPtr)pTriggers, nDeniedTriggers, (global::System.IntPtr)oidDeniedTriggers);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_CountAreaTransitionTriggers(swigCPtr, pTriggers, nDeniedTriggers, oidDeniedTriggers);
+    return retVal;
   }
 
   public void EventHandler(uint nEventId, uint nCallerObjectId, void* pScript, uint nCalendarDay, uint nTimeOfDay) {
@@ -813,18 +848,18 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   }
 
   public int GenerateInterTilePath(int* nInterTileStartDepth, int nInterTileStartTileX, int nInterTileStartTileY, int nInterTileStartRegion) {
-    int ret = NWNXLibPINVOKE.CNWSArea_GenerateInterTilePath(swigCPtr, (global::System.IntPtr)nInterTileStartDepth, nInterTileStartTileX, nInterTileStartTileY, nInterTileStartRegion);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_GenerateInterTilePath(swigCPtr, nInterTileStartDepth, nInterTileStartTileX, nInterTileStartTileY, nInterTileStartRegion);
+    return retVal;
   }
 
   public int GetFirstObjectInArea(uint* id) {
-    int ret = NWNXLibPINVOKE.CNWSArea_GetFirstObjectInArea(swigCPtr, (global::System.IntPtr)id);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_GetFirstObjectInArea(swigCPtr, (global::System.IntPtr)id);
+    return retVal;
   }
 
   public int GetNextObjectInArea(uint* id) {
-    int ret = NWNXLibPINVOKE.CNWSArea_GetNextObjectInArea(swigCPtr, (global::System.IntPtr)id);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_GetNextObjectInArea(swigCPtr, (global::System.IntPtr)id);
+    return retVal;
   }
 
   public CNWSTile GetTile(Vector vPosition) {
@@ -835,8 +870,8 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   }
 
   public int GoalMoveDenied(int level, int x, int y) {
-    int ret = NWNXLibPINVOKE.CNWSArea_GoalMoveDenied(swigCPtr, level, x, y);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_GoalMoveDenied(swigCPtr, level, x, y);
+    return retVal;
   }
 
   public void UpdatePlayerAutomaps() {
@@ -844,88 +879,88 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   }
 
   public int ExploreArea(CNWSCreature pCreature, int x, int y, int nDepth) {
-    int ret = NWNXLibPINVOKE.CNWSArea_ExploreArea(swigCPtr, CNWSCreature.getCPtr(pCreature), x, y, nDepth);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_ExploreArea(swigCPtr, CNWSCreature.getCPtr(pCreature), x, y, nDepth);
+    return retVal;
   }
 
   public void InterTileDFSExploreArea(byte* pTransTable, int nDepth, int x, int y, float fEntranceX, float fEntranceY) {
-    NWNXLibPINVOKE.CNWSArea_InterTileDFSExploreArea(swigCPtr, (global::System.IntPtr)pTransTable, nDepth, x, y, fEntranceX, fEntranceY);
+    NWNXLibPINVOKE.CNWSArea_InterTileDFSExploreArea(swigCPtr, pTransTable, nDepth, x, y, fEntranceX, fEntranceY);
   }
 
   public int InterTileDFS(int level, int depth, int x, int y, int region) {
-    int ret = NWNXLibPINVOKE.CNWSArea_InterTileDFS(swigCPtr, level, depth, x, y, region);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_InterTileDFS(swigCPtr, level, depth, x, y, region);
+    return retVal;
   }
 
   public int InterTileDFSGenerateSuccessors(int level, int x, int y, int region) {
-    int ret = NWNXLibPINVOKE.CNWSArea_InterTileDFSGenerateSuccessors(swigCPtr, level, x, y, region);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_InterTileDFSGenerateSuccessors(swigCPtr, level, x, y, region);
+    return retVal;
   }
 
   public int InterTileDFSSoundPath(byte* pTransTable, int nDepth, int x, int y, int nRegion) {
-    int ret = NWNXLibPINVOKE.CNWSArea_InterTileDFSSoundPath(swigCPtr, (global::System.IntPtr)pTransTable, nDepth, x, y, nRegion);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_InterTileDFSSoundPath(swigCPtr, pTransTable, nDepth, x, y, nRegion);
+    return retVal;
   }
 
   public int LoadArea(int bLoadStateInfo, CResGFF cOverrideGitGFF, CResStruct cOverrideGitTopLevelStruct) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadArea__SWIG_0(swigCPtr, bLoadStateInfo, CResGFF.getCPtr(cOverrideGitGFF), CResStruct.getCPtr(cOverrideGitTopLevelStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadArea__SWIG_0(swigCPtr, bLoadStateInfo, CResGFF.getCPtr(cOverrideGitGFF), CResStruct.getCPtr(cOverrideGitTopLevelStruct));
+    return retVal;
   }
 
   public int LoadArea(int bLoadStateInfo, CResGFF cOverrideGitGFF) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadArea__SWIG_1(swigCPtr, bLoadStateInfo, CResGFF.getCPtr(cOverrideGitGFF));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadArea__SWIG_1(swigCPtr, bLoadStateInfo, CResGFF.getCPtr(cOverrideGitGFF));
+    return retVal;
   }
 
   public int LoadArea(int bLoadStateInfo) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadArea__SWIG_2(swigCPtr, bLoadStateInfo);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadArea__SWIG_2(swigCPtr, bLoadStateInfo);
+    return retVal;
   }
 
   public int LoadArea() {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadArea__SWIG_3(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadArea__SWIG_3(swigCPtr);
+    return retVal;
   }
 
   public override int NoCreaturesOnLine(float fSourceX, float fSourceY, float fTargetX, float fTargetY, CPathfindInformation pPathfindInfo, int bCheckSourceOccluded, int bIgnoreAssociates, uint* poidBlockingCreature, int bEvaluateOverlappingTarget) {
-    int ret = NWNXLibPINVOKE.CNWSArea_NoCreaturesOnLine__SWIG_0(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, CPathfindInformation.getCPtr(pPathfindInfo), bCheckSourceOccluded, bIgnoreAssociates, (global::System.IntPtr)poidBlockingCreature, bEvaluateOverlappingTarget);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_NoCreaturesOnLine__SWIG_0(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, CPathfindInformation.getCPtr(pPathfindInfo), bCheckSourceOccluded, bIgnoreAssociates, poidBlockingCreature, bEvaluateOverlappingTarget);
+    return retVal;
   }
 
   public override int NoCreaturesOnLine(float fSourceX, float fSourceY, float fTargetX, float fTargetY, CPathfindInformation pPathfindInfo, int bCheckSourceOccluded, int bIgnoreAssociates, uint* poidBlockingCreature) {
-    int ret = NWNXLibPINVOKE.CNWSArea_NoCreaturesOnLine__SWIG_1(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, CPathfindInformation.getCPtr(pPathfindInfo), bCheckSourceOccluded, bIgnoreAssociates, (global::System.IntPtr)poidBlockingCreature);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_NoCreaturesOnLine__SWIG_1(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, CPathfindInformation.getCPtr(pPathfindInfo), bCheckSourceOccluded, bIgnoreAssociates, poidBlockingCreature);
+    return retVal;
   }
 
   public override int NoCreaturesOnLine(float fSourceX, float fSourceY, float fTargetX, float fTargetY, CPathfindInformation pPathfindInfo, int bCheckSourceOccluded, int bIgnoreAssociates) {
-    int ret = NWNXLibPINVOKE.CNWSArea_NoCreaturesOnLine__SWIG_2(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, CPathfindInformation.getCPtr(pPathfindInfo), bCheckSourceOccluded, bIgnoreAssociates);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_NoCreaturesOnLine__SWIG_2(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, CPathfindInformation.getCPtr(pPathfindInfo), bCheckSourceOccluded, bIgnoreAssociates);
+    return retVal;
   }
 
   public override int NoCreaturesOnLine(float fSourceX, float fSourceY, float fTargetX, float fTargetY, CPathfindInformation pPathfindInfo, int bCheckSourceOccluded) {
-    int ret = NWNXLibPINVOKE.CNWSArea_NoCreaturesOnLine__SWIG_3(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, CPathfindInformation.getCPtr(pPathfindInfo), bCheckSourceOccluded);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_NoCreaturesOnLine__SWIG_3(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, CPathfindInformation.getCPtr(pPathfindInfo), bCheckSourceOccluded);
+    return retVal;
   }
 
   public override int NoCreaturesOnLine(float fSourceX, float fSourceY, float fTargetX, float fTargetY, CPathfindInformation pPathfindInfo) {
-    int ret = NWNXLibPINVOKE.CNWSArea_NoCreaturesOnLine__SWIG_4(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, CPathfindInformation.getCPtr(pPathfindInfo));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_NoCreaturesOnLine__SWIG_4(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, CPathfindInformation.getCPtr(pPathfindInfo));
+    return retVal;
   }
 
   public int EvaluateOverlappingTargets(CPathfindInformation pPathfindInfo, Vector vPosition, uint oidAreaCreature, float fSourceX, float fSourceY, float fBothCreaturesPersonalSpace, int bEvaluateOverlappingTarget) {
-    int ret = NWNXLibPINVOKE.CNWSArea_EvaluateOverlappingTargets(swigCPtr, CPathfindInformation.getCPtr(pPathfindInfo), Vector.getCPtr(vPosition), oidAreaCreature, fSourceX, fSourceY, fBothCreaturesPersonalSpace, bEvaluateOverlappingTarget);
+    int retVal = NWNXLibPINVOKE.CNWSArea_EvaluateOverlappingTargets(swigCPtr, CPathfindInformation.getCPtr(pPathfindInfo), Vector.getCPtr(vPosition), oidAreaCreature, fSourceX, fSourceY, fBothCreaturesPersonalSpace, bEvaluateOverlappingTarget);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int PackAreaIntoMessage(int nX, int nY, int nZ, CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSArea_PackAreaIntoMessage(swigCPtr, nX, nY, nZ, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_PackAreaIntoMessage(swigCPtr, nX, nY, nZ, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
-  public uint PlotGridPath(CPathfindInformation pcPathfindInformation, uint nTimeSlice, bool bMoveToNearest) {
-    uint ret = NWNXLibPINVOKE.CNWSArea_PlotGridPath(swigCPtr, CPathfindInformation.getCPtr(pcPathfindInformation), nTimeSlice, bMoveToNearest);
-    return ret;
+  public uint PlotGridPath(CPathfindInformation pcPathfindInformation, ulong nTimeSlice, bool bMoveToNearest) {
+    uint retVal = NWNXLibPINVOKE.CNWSArea_PlotGridPath(swigCPtr, CPathfindInformation.getCPtr(pcPathfindInformation), nTimeSlice, bMoveToNearest);
+    return retVal;
   }
 
   public void GridSearchPath(int nPathID) {
@@ -937,19 +972,19 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
     return ret;
   }
 
-  public uint PlotPath(CPathfindInformation pcPathfindInformation, uint nTimeSlice) {
-    uint ret = NWNXLibPINVOKE.CNWSArea_PlotPath(swigCPtr, CPathfindInformation.getCPtr(pcPathfindInformation), nTimeSlice);
-    return ret;
+  public uint PlotPath(CPathfindInformation pcPathfindInformation, ulong nTimeSlice) {
+    uint retVal = NWNXLibPINVOKE.CNWSArea_PlotPath(swigCPtr, CPathfindInformation.getCPtr(pcPathfindInformation), nTimeSlice);
+    return retVal;
   }
 
   public int RemoveInterTileExit(int nTileX, int nTileY, int nEntrance, int nExit) {
-    int ret = NWNXLibPINVOKE.CNWSArea_RemoveInterTileExit(swigCPtr, nTileX, nTileY, nEntrance, nExit);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_RemoveInterTileExit(swigCPtr, nTileX, nTileY, nEntrance, nExit);
+    return retVal;
   }
 
   public int RemoveObjectFromArea(uint id) {
-    int ret = NWNXLibPINVOKE.CNWSArea_RemoveObjectFromArea(swigCPtr, id);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_RemoveObjectFromArea(swigCPtr, id);
+    return retVal;
   }
 
   public void SaveArea(CERFFile cSaveFile, CExoString sName) {
@@ -968,8 +1003,8 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   }
 
   public int LoadGIT(int bLoadStateInfo) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadGIT__SWIG_0(swigCPtr, bLoadStateInfo);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadGIT__SWIG_0(swigCPtr, bLoadStateInfo);
+    return retVal;
   }
 
   public void LoadGIT(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
@@ -977,35 +1012,35 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   }
 
   public void SmoothCornerOptimize(int nOldWayPoints, float* pfOldWayPoints, int* nNewWayPoints, float** pfNewWayPoints) {
-    NWNXLibPINVOKE.CNWSArea_SmoothCornerOptimize(swigCPtr, nOldWayPoints, (global::System.IntPtr)pfOldWayPoints, (global::System.IntPtr)nNewWayPoints, (global::System.IntPtr)pfNewWayPoints);
+    NWNXLibPINVOKE.CNWSArea_SmoothCornerOptimize(swigCPtr, nOldWayPoints, pfOldWayPoints, nNewWayPoints, pfNewWayPoints);
   }
 
   public int SmoothPointsOnPath() {
-    int ret = NWNXLibPINVOKE.CNWSArea_SmoothPointsOnPath(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_SmoothPointsOnPath(swigCPtr);
+    return retVal;
   }
 
   public void SmoothSelection(int nOldWayPoints, float* pfOldWayPoitns, int* nNewWayPoints, float** pfNewWayPoints) {
-    NWNXLibPINVOKE.CNWSArea_SmoothSelection(swigCPtr, nOldWayPoints, (global::System.IntPtr)pfOldWayPoitns, (global::System.IntPtr)nNewWayPoints, (global::System.IntPtr)pfNewWayPoints);
+    NWNXLibPINVOKE.CNWSArea_SmoothSelection(swigCPtr, nOldWayPoints, pfOldWayPoitns, nNewWayPoints, pfNewWayPoints);
   }
 
   public void SmoothSelectNodes(int nOldWayPoints, float* pfOldWayPoints, int* nNewWayPoints, float** pfNewWayPoints, int bChopIntoMeterSegments, int bSelectBestLines) {
-    NWNXLibPINVOKE.CNWSArea_SmoothSelectNodes(swigCPtr, nOldWayPoints, (global::System.IntPtr)pfOldWayPoints, (global::System.IntPtr)nNewWayPoints, (global::System.IntPtr)pfNewWayPoints, bChopIntoMeterSegments, bSelectBestLines);
+    NWNXLibPINVOKE.CNWSArea_SmoothSelectNodes(swigCPtr, nOldWayPoints, pfOldWayPoints, nNewWayPoints, pfNewWayPoints, bChopIntoMeterSegments, bSelectBestLines);
   }
 
   public int TestDirectLine(float fStartX, float fStartY, float fEndX, float fEndY, float fPersonalSpace, float fCreatureHeight, int bIgnoreClosedDoors) {
-    int ret = NWNXLibPINVOKE.CNWSArea_TestDirectLine__SWIG_0(swigCPtr, fStartX, fStartY, fEndX, fEndY, fPersonalSpace, fCreatureHeight, bIgnoreClosedDoors);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_TestDirectLine__SWIG_0(swigCPtr, fStartX, fStartY, fEndX, fEndY, fPersonalSpace, fCreatureHeight, bIgnoreClosedDoors);
+    return retVal;
   }
 
   public int TestDirectLine(float fStartX, float fStartY, float fEndX, float fEndY, float fPersonalSpace, float fCreatureHeight) {
-    int ret = NWNXLibPINVOKE.CNWSArea_TestDirectLine__SWIG_1(swigCPtr, fStartX, fStartY, fEndX, fEndY, fPersonalSpace, fCreatureHeight);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_TestDirectLine__SWIG_1(swigCPtr, fStartX, fStartY, fEndX, fEndY, fPersonalSpace, fCreatureHeight);
+    return retVal;
   }
 
   public int TestLineWalkable(float fStartX, float fStartY, float fEndX, float fEndY) {
-    int ret = NWNXLibPINVOKE.CNWSArea_TestLineWalkable(swigCPtr, fStartX, fStartY, fEndX, fEndY);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_TestLineWalkable(swigCPtr, fStartX, fStartY, fEndX, fEndY);
+    return retVal;
   }
 
   public void UnloadArea() {
@@ -1018,36 +1053,36 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   }
 
   public int PlotSoundPath(CPathfindInformation pcPathfindInformation) {
-    int ret = NWNXLibPINVOKE.CNWSArea_PlotSoundPath(swigCPtr, CPathfindInformation.getCPtr(pcPathfindInformation));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_PlotSoundPath(swigCPtr, CPathfindInformation.getCPtr(pcPathfindInformation));
+    return retVal;
   }
 
   public int GetFirstObjectIndiceByX(int* nIndice, float fMinX) {
-    int ret = NWNXLibPINVOKE.CNWSArea_GetFirstObjectIndiceByX(swigCPtr, (global::System.IntPtr)nIndice, fMinX);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_GetFirstObjectIndiceByX(swigCPtr, nIndice, fMinX);
+    return retVal;
   }
 
   public int UpdatePositionInObjectsArray(ICGameObject pUpdateObject) {
-    int ret = NWNXLibPINVOKE.CNWSArea_UpdatePositionInObjectsArray(swigCPtr, pUpdateObject == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : pUpdateObject.GetInterfaceCPtr());
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_UpdatePositionInObjectsArray(swigCPtr, pUpdateObject == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : pUpdateObject.GetInterfaceCPtr());
+    return retVal;
   }
 
   public int InSubAreas(Vector vPosition, CExoArrayListObjectId aSubAreasWithin) {
-    int ret = NWNXLibPINVOKE.CNWSArea_InSubAreas(swigCPtr, Vector.getCPtr(vPosition), CExoArrayListObjectId.getCPtr(aSubAreasWithin));
+    int retVal = NWNXLibPINVOKE.CNWSArea_InSubAreas(swigCPtr, Vector.getCPtr(vPosition), CExoArrayListObjectId.getCPtr(aSubAreasWithin));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int IntersectingLineSegment(Vector vStart, Vector vEnd, CExoArrayListObjectId aIntersectingSubAreas) {
-    int ret = NWNXLibPINVOKE.CNWSArea_IntersectingLineSegment(swigCPtr, Vector.getCPtr(vStart), Vector.getCPtr(vEnd), CExoArrayListObjectId.getCPtr(aIntersectingSubAreas));
+    int retVal = NWNXLibPINVOKE.CNWSArea_IntersectingLineSegment(swigCPtr, Vector.getCPtr(vStart), Vector.getCPtr(vEnd), CExoArrayListObjectId.getCPtr(aIntersectingSubAreas));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public uint GetDoorCrossed(Vector vStart, Vector vEnd) {
-    uint ret = NWNXLibPINVOKE.CNWSArea_GetDoorCrossed(swigCPtr, Vector.getCPtr(vStart), Vector.getCPtr(vEnd));
+    uint retVal = NWNXLibPINVOKE.CNWSArea_GetDoorCrossed(swigCPtr, Vector.getCPtr(vStart), Vector.getCPtr(vEnd));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void ApplyEffect(CGameEffect pEffect, Vector vPosition, Vector vOrientation) {
@@ -1056,62 +1091,62 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   }
 
   public int ClearLineOfSight(Vector vSource, Vector vTarget, Vector vImpact, uint* oidImpact, uint oidStart, uint oidTarget, int bIgnoreTransDoors) {
-    int ret = NWNXLibPINVOKE.CNWSArea_ClearLineOfSight__SWIG_0(swigCPtr, Vector.getCPtr(vSource), Vector.getCPtr(vTarget), Vector.getCPtr(vImpact), (global::System.IntPtr)oidImpact, oidStart, oidTarget, bIgnoreTransDoors);
+    int retVal = NWNXLibPINVOKE.CNWSArea_ClearLineOfSight__SWIG_0(swigCPtr, Vector.getCPtr(vSource), Vector.getCPtr(vTarget), Vector.getCPtr(vImpact), oidImpact, oidStart, oidTarget, bIgnoreTransDoors);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int ClearLineOfSight(Vector vSource, Vector vTarget, Vector vImpact, uint* oidImpact, uint oidStart, uint oidTarget) {
-    int ret = NWNXLibPINVOKE.CNWSArea_ClearLineOfSight__SWIG_1(swigCPtr, Vector.getCPtr(vSource), Vector.getCPtr(vTarget), Vector.getCPtr(vImpact), (global::System.IntPtr)oidImpact, oidStart, oidTarget);
+    int retVal = NWNXLibPINVOKE.CNWSArea_ClearLineOfSight__SWIG_1(swigCPtr, Vector.getCPtr(vSource), Vector.getCPtr(vTarget), Vector.getCPtr(vImpact), oidImpact, oidStart, oidTarget);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int ClearLineOfSight(Vector vSource, Vector vTarget, Vector vImpact, uint* oidImpact, uint oidStart) {
-    int ret = NWNXLibPINVOKE.CNWSArea_ClearLineOfSight__SWIG_2(swigCPtr, Vector.getCPtr(vSource), Vector.getCPtr(vTarget), Vector.getCPtr(vImpact), (global::System.IntPtr)oidImpact, oidStart);
+    int retVal = NWNXLibPINVOKE.CNWSArea_ClearLineOfSight__SWIG_2(swigCPtr, Vector.getCPtr(vSource), Vector.getCPtr(vTarget), Vector.getCPtr(vImpact), oidImpact, oidStart);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int ClearLineOfSight(Vector vSource, Vector vTarget, Vector vImpact, uint* oidImpact) {
-    int ret = NWNXLibPINVOKE.CNWSArea_ClearLineOfSight__SWIG_3(swigCPtr, Vector.getCPtr(vSource), Vector.getCPtr(vTarget), Vector.getCPtr(vImpact), (global::System.IntPtr)oidImpact);
+    int retVal = NWNXLibPINVOKE.CNWSArea_ClearLineOfSight__SWIG_3(swigCPtr, Vector.getCPtr(vSource), Vector.getCPtr(vTarget), Vector.getCPtr(vImpact), oidImpact);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public override int HandleTransparentDoors(float fSourceX, float fSourceY, float fTargetX, float fTargetY, float fMinZ, float fMaxZ, float fPersonalSpace, uint oidDeniedDoor, uint* oidBlockingDoor, int bWalking, CExoArrayListCGameObjectPtr pExcludeList, int bIgnoreTransDoors) {
-    int ret = NWNXLibPINVOKE.CNWSArea_HandleTransparentDoors__SWIG_0(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, fMinZ, fMaxZ, fPersonalSpace, oidDeniedDoor, (global::System.IntPtr)oidBlockingDoor, bWalking, CExoArrayListCGameObjectPtr.getCPtr(pExcludeList), bIgnoreTransDoors);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_HandleTransparentDoors__SWIG_0(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, fMinZ, fMaxZ, fPersonalSpace, oidDeniedDoor, (global::System.IntPtr)oidBlockingDoor, bWalking, CExoArrayListCGameObjectPtr.getCPtr(pExcludeList), bIgnoreTransDoors);
+    return retVal;
   }
 
   public override int HandleTransparentDoors(float fSourceX, float fSourceY, float fTargetX, float fTargetY, float fMinZ, float fMaxZ, float fPersonalSpace, uint oidDeniedDoor, uint* oidBlockingDoor, int bWalking, CExoArrayListCGameObjectPtr pExcludeList) {
-    int ret = NWNXLibPINVOKE.CNWSArea_HandleTransparentDoors__SWIG_1(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, fMinZ, fMaxZ, fPersonalSpace, oidDeniedDoor, (global::System.IntPtr)oidBlockingDoor, bWalking, CExoArrayListCGameObjectPtr.getCPtr(pExcludeList));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_HandleTransparentDoors__SWIG_1(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, fMinZ, fMaxZ, fPersonalSpace, oidDeniedDoor, (global::System.IntPtr)oidBlockingDoor, bWalking, CExoArrayListCGameObjectPtr.getCPtr(pExcludeList));
+    return retVal;
   }
 
   public override int HandleTransparentDoors(float fSourceX, float fSourceY, float fTargetX, float fTargetY, float fMinZ, float fMaxZ, float fPersonalSpace, uint oidDeniedDoor, uint* oidBlockingDoor, int bWalking) {
-    int ret = NWNXLibPINVOKE.CNWSArea_HandleTransparentDoors__SWIG_2(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, fMinZ, fMaxZ, fPersonalSpace, oidDeniedDoor, (global::System.IntPtr)oidBlockingDoor, bWalking);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_HandleTransparentDoors__SWIG_2(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, fMinZ, fMaxZ, fPersonalSpace, oidDeniedDoor, (global::System.IntPtr)oidBlockingDoor, bWalking);
+    return retVal;
   }
 
   public override int GetIsIDInExcludeList(uint oidID, CExoArrayListCGameObjectPtr pExcludeList) {
-    int ret = NWNXLibPINVOKE.CNWSArea_GetIsIDInExcludeList__SWIG_0(swigCPtr, oidID, CExoArrayListCGameObjectPtr.getCPtr(pExcludeList));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_GetIsIDInExcludeList__SWIG_0(swigCPtr, oidID, CExoArrayListCGameObjectPtr.getCPtr(pExcludeList));
+    return retVal;
   }
 
   public override int GetIsIDInExcludeList(uint oidID) {
-    int ret = NWNXLibPINVOKE.CNWSArea_GetIsIDInExcludeList__SWIG_1(swigCPtr, oidID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_GetIsIDInExcludeList__SWIG_1(swigCPtr, oidID);
+    return retVal;
   }
 
   public override int NoNoneWalkPolysInStaticObject(uint oidObject, float fSourceX, float fSourceY, float fTargetX, float fTargetY, float fMinZ, float fMaxZ, float fPersonalSpace, uint oidDeniedDoor, int bWalking) {
-    int ret = NWNXLibPINVOKE.CNWSArea_NoNoneWalkPolysInStaticObject__SWIG_0(swigCPtr, oidObject, fSourceX, fSourceY, fTargetX, fTargetY, fMinZ, fMaxZ, fPersonalSpace, oidDeniedDoor, bWalking);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_NoNoneWalkPolysInStaticObject__SWIG_0(swigCPtr, oidObject, fSourceX, fSourceY, fTargetX, fTargetY, fMinZ, fMaxZ, fPersonalSpace, oidDeniedDoor, bWalking);
+    return retVal;
   }
 
   public override int NoNoneWalkPolysInStaticObject(uint oidObject, float fSourceX, float fSourceY, float fTargetX, float fTargetY, float fMinZ, float fMaxZ, float fPersonalSpace, uint oidDeniedDoor) {
-    int ret = NWNXLibPINVOKE.CNWSArea_NoNoneWalkPolysInStaticObject__SWIG_1(swigCPtr, oidObject, fSourceX, fSourceY, fTargetX, fTargetY, fMinZ, fMaxZ, fPersonalSpace, oidDeniedDoor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_NoNoneWalkPolysInStaticObject__SWIG_1(swigCPtr, oidObject, fSourceX, fSourceY, fTargetX, fTargetY, fMinZ, fMaxZ, fPersonalSpace, oidDeniedDoor);
+    return retVal;
   }
 
   public void IncrementPlayersInArea() {
@@ -1123,20 +1158,20 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   }
 
   public byte GetPVPSetting() {
-    byte ret = NWNXLibPINVOKE.CNWSArea_GetPVPSetting(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSArea_GetPVPSetting(swigCPtr);
+    return retVal;
   }
 
   public int GetSurfaceMaterial(Vector vPosition) {
-    int ret = NWNXLibPINVOKE.CNWSArea_GetSurfaceMaterial(swigCPtr, Vector.getCPtr(vPosition));
+    int retVal = NWNXLibPINVOKE.CNWSArea_GetSurfaceMaterial(swigCPtr, Vector.getCPtr(vPosition));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int PositionWalkable(Vector vPosition) {
-    int ret = NWNXLibPINVOKE.CNWSArea_PositionWalkable(swigCPtr, Vector.getCPtr(vPosition));
+    int retVal = NWNXLibPINVOKE.CNWSArea_PositionWalkable(swigCPtr, Vector.getCPtr(vPosition));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void SetCurrentWeather(byte nWeatherType, int bWeatherStarted) {
@@ -1144,133 +1179,133 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   }
 
   public int RunEventScript(int nScript, CExoString psOverrideScriptName) {
-    int ret = NWNXLibPINVOKE.CNWSArea_RunEventScript__SWIG_0(swigCPtr, nScript, CExoString.getCPtr(psOverrideScriptName));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_RunEventScript__SWIG_0(swigCPtr, nScript, CExoString.getCPtr(psOverrideScriptName));
+    return retVal;
   }
 
   public int RunEventScript(int nScript) {
-    int ret = NWNXLibPINVOKE.CNWSArea_RunEventScript__SWIG_1(swigCPtr, nScript);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_RunEventScript__SWIG_1(swigCPtr, nScript);
+    return retVal;
   }
 
   public int LoadAreaHeader(CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadAreaHeader(swigCPtr, CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadAreaHeader(swigCPtr, CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadTileSetInfo(CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadTileSetInfo(swigCPtr, CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadTileSetInfo(swigCPtr, CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadCreatures(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadCreatures__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadCreatures__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
+    return retVal;
   }
 
   public int LoadCreatures(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadCreatures__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadCreatures__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadPlayers(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadPlayers(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadPlayers(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadItems(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadItems__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadItems__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
+    return retVal;
   }
 
   public int LoadItems(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadItems__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadItems__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadDoors(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadDoors__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadDoors__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
+    return retVal;
   }
 
   public int LoadDoors(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadDoors__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadDoors__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadTriggers(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadTriggers__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadTriggers__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
+    return retVal;
   }
 
   public int LoadTriggers(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadTriggers__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadTriggers__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadEncounters(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadEncounters__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadEncounters__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
+    return retVal;
   }
 
   public int LoadEncounters(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadEncounters__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadEncounters__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadWaypoints(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadWaypoints__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadWaypoints__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
+    return retVal;
   }
 
   public int LoadWaypoints(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadWaypoints__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadWaypoints__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadSounds(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadSounds__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadSounds__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
+    return retVal;
   }
 
   public int LoadSounds(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadSounds__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadSounds__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadPlaceables(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadPlaceables__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadPlaceables__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
+    return retVal;
   }
 
   public int LoadPlaceables(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadPlaceables__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadPlaceables__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadStores(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadStores__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadStores__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
+    return retVal;
   }
 
   public int LoadStores(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadStores__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadStores__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadAreaEffects(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadAreaEffects__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadAreaEffects__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
+    return retVal;
   }
 
   public int LoadAreaEffects(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadAreaEffects__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadAreaEffects__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadProperties(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSArea_LoadProperties(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadProperties(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public void IncreaseAILevelPriority() {
@@ -1340,9 +1375,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_idSelf_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSArea_m_idSelf_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSArea_m_idSelf_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nObjectType {
@@ -1350,9 +1386,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
       NWNXLibPINVOKE.CNWSArea_m_nObjectType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSArea_m_nObjectType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSArea_m_nObjectType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public void* m_pNwnxData {

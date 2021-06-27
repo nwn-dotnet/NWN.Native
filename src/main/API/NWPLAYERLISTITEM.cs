@@ -128,9 +128,10 @@ public unsafe class NWPLAYERLISTITEM : global::System.IDisposable {
       NWNXLibPINVOKE.NWPLAYERLISTITEM_bIsPrimaryPlayer_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.NWPLAYERLISTITEM_bIsPrimaryPlayer_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.NWPLAYERLISTITEM_bIsPrimaryPlayer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NWPLAYERLISTITEM() : this(NWNXLibPINVOKE.new_NWPLAYERLISTITEM(), true) {

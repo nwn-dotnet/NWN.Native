@@ -139,9 +139,10 @@ public unsafe class C2DA : global::System.IDisposable {
       NWNXLibPINVOKE.C2DA_m_nNumRows_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.C2DA_m_nNumRows_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.C2DA_m_nNumRows_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nNumColumns {
@@ -149,9 +150,10 @@ public unsafe class C2DA : global::System.IDisposable {
       NWNXLibPINVOKE.C2DA_m_nNumColumns_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.C2DA_m_nNumColumns_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.C2DA_m_nNumColumns_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bLoaded {
@@ -159,9 +161,10 @@ public unsafe class C2DA : global::System.IDisposable {
       NWNXLibPINVOKE.C2DA_m_bLoaded_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.C2DA_m_bLoaded_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.C2DA_m_bLoaded_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public C2DA(CResRef cResRef, int bSetAutoRequest) : this(NWNXLibPINVOKE.new_C2DA__SWIG_0(CResRef.getCPtr(cResRef), bSetAutoRequest), true) {
@@ -172,170 +175,170 @@ public unsafe class C2DA : global::System.IDisposable {
   }
 
   public int GetCExoStringEntry(int nRow, int nColumn, CExoString pString) {
-    int ret = NWNXLibPINVOKE.C2DA_GetCExoStringEntry__SWIG_0(swigCPtr, nRow, nColumn, CExoString.getCPtr(pString));
-    return ret;
+    int retVal = NWNXLibPINVOKE.C2DA_GetCExoStringEntry__SWIG_0(swigCPtr, nRow, nColumn, CExoString.getCPtr(pString));
+    return retVal;
   }
 
   public int GetCExoStringEntry(CExoString sRowLabel, CExoString sColumnLabel, CExoString pString) {
-    int ret = NWNXLibPINVOKE.C2DA_GetCExoStringEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sRowLabel), CExoString.getCPtr(sColumnLabel), CExoString.getCPtr(pString));
+    int retVal = NWNXLibPINVOKE.C2DA_GetCExoStringEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sRowLabel), CExoString.getCPtr(sColumnLabel), CExoString.getCPtr(pString));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetCExoStringEntry(int nRow, CExoString sColumnLabel, CExoString pString) {
-    int ret = NWNXLibPINVOKE.C2DA_GetCExoStringEntry__SWIG_2(swigCPtr, nRow, CExoString.getCPtr(sColumnLabel), CExoString.getCPtr(pString));
+    int retVal = NWNXLibPINVOKE.C2DA_GetCExoStringEntry__SWIG_2(swigCPtr, nRow, CExoString.getCPtr(sColumnLabel), CExoString.getCPtr(pString));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetCExoStringEntry(CExoString sRowLabel, int nColumn, CExoString pString) {
-    int ret = NWNXLibPINVOKE.C2DA_GetCExoStringEntry__SWIG_3(swigCPtr, CExoString.getCPtr(sRowLabel), nColumn, CExoString.getCPtr(pString));
+    int retVal = NWNXLibPINVOKE.C2DA_GetCExoStringEntry__SWIG_3(swigCPtr, CExoString.getCPtr(sRowLabel), nColumn, CExoString.getCPtr(pString));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SetCExoStringEntry(int nRow, int nColumn, CExoString sString) {
-    int ret = NWNXLibPINVOKE.C2DA_SetCExoStringEntry__SWIG_0(swigCPtr, nRow, nColumn, CExoString.getCPtr(sString));
+    int retVal = NWNXLibPINVOKE.C2DA_SetCExoStringEntry__SWIG_0(swigCPtr, nRow, nColumn, CExoString.getCPtr(sString));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SetCExoStringEntry(CExoString sRowLabel, CExoString sColumnLabel, CExoString sString) {
-    int ret = NWNXLibPINVOKE.C2DA_SetCExoStringEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sRowLabel), CExoString.getCPtr(sColumnLabel), CExoString.getCPtr(sString));
+    int retVal = NWNXLibPINVOKE.C2DA_SetCExoStringEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sRowLabel), CExoString.getCPtr(sColumnLabel), CExoString.getCPtr(sString));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SetCExoStringEntry(int nRow, CExoString sColumnLabel, CExoString sString) {
-    int ret = NWNXLibPINVOKE.C2DA_SetCExoStringEntry__SWIG_2(swigCPtr, nRow, CExoString.getCPtr(sColumnLabel), CExoString.getCPtr(sString));
+    int retVal = NWNXLibPINVOKE.C2DA_SetCExoStringEntry__SWIG_2(swigCPtr, nRow, CExoString.getCPtr(sColumnLabel), CExoString.getCPtr(sString));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SetCExoStringEntry(CExoString sRowLabel, int nColumn, CExoString sString) {
-    int ret = NWNXLibPINVOKE.C2DA_SetCExoStringEntry__SWIG_3(swigCPtr, CExoString.getCPtr(sRowLabel), nColumn, CExoString.getCPtr(sString));
+    int retVal = NWNXLibPINVOKE.C2DA_SetCExoStringEntry__SWIG_3(swigCPtr, CExoString.getCPtr(sRowLabel), nColumn, CExoString.getCPtr(sString));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetFLOATEntry(int nRow, int nColumn, float* pFloat) {
-    int ret = NWNXLibPINVOKE.C2DA_GetFLOATEntry__SWIG_0(swigCPtr, nRow, nColumn, (global::System.IntPtr)pFloat);
-    return ret;
+    int retVal = NWNXLibPINVOKE.C2DA_GetFLOATEntry__SWIG_0(swigCPtr, nRow, nColumn, pFloat);
+    return retVal;
   }
 
   public int GetFLOATEntry(CExoString sRowLabel, CExoString sColumnLabel, float* pFloat) {
-    int ret = NWNXLibPINVOKE.C2DA_GetFLOATEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sRowLabel), CExoString.getCPtr(sColumnLabel), (global::System.IntPtr)pFloat);
+    int retVal = NWNXLibPINVOKE.C2DA_GetFLOATEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sRowLabel), CExoString.getCPtr(sColumnLabel), pFloat);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetFLOATEntry(int nRow, CExoString sColumnLabel, float* pFloat) {
-    int ret = NWNXLibPINVOKE.C2DA_GetFLOATEntry__SWIG_2(swigCPtr, nRow, CExoString.getCPtr(sColumnLabel), (global::System.IntPtr)pFloat);
+    int retVal = NWNXLibPINVOKE.C2DA_GetFLOATEntry__SWIG_2(swigCPtr, nRow, CExoString.getCPtr(sColumnLabel), pFloat);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetFLOATEntry(CExoString sRowLabel, int nColumn, float* pFloat) {
-    int ret = NWNXLibPINVOKE.C2DA_GetFLOATEntry__SWIG_3(swigCPtr, CExoString.getCPtr(sRowLabel), nColumn, (global::System.IntPtr)pFloat);
+    int retVal = NWNXLibPINVOKE.C2DA_GetFLOATEntry__SWIG_3(swigCPtr, CExoString.getCPtr(sRowLabel), nColumn, pFloat);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SetFLOATEntry(int nRow, int nColumn, float fFloat) {
-    int ret = NWNXLibPINVOKE.C2DA_SetFLOATEntry__SWIG_0(swigCPtr, nRow, nColumn, fFloat);
-    return ret;
+    int retVal = NWNXLibPINVOKE.C2DA_SetFLOATEntry__SWIG_0(swigCPtr, nRow, nColumn, fFloat);
+    return retVal;
   }
 
   public int SetFLOATEntry(CExoString sRowLabel, CExoString sColumnLabel, float fFloat) {
-    int ret = NWNXLibPINVOKE.C2DA_SetFLOATEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sRowLabel), CExoString.getCPtr(sColumnLabel), fFloat);
+    int retVal = NWNXLibPINVOKE.C2DA_SetFLOATEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sRowLabel), CExoString.getCPtr(sColumnLabel), fFloat);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SetFLOATEntry(int nRow, CExoString sColumnLabel, float fFloat) {
-    int ret = NWNXLibPINVOKE.C2DA_SetFLOATEntry__SWIG_2(swigCPtr, nRow, CExoString.getCPtr(sColumnLabel), fFloat);
+    int retVal = NWNXLibPINVOKE.C2DA_SetFLOATEntry__SWIG_2(swigCPtr, nRow, CExoString.getCPtr(sColumnLabel), fFloat);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SetFLOATEntry(CExoString sRowLabel, int nColumn, float fFloat) {
-    int ret = NWNXLibPINVOKE.C2DA_SetFLOATEntry__SWIG_3(swigCPtr, CExoString.getCPtr(sRowLabel), nColumn, fFloat);
+    int retVal = NWNXLibPINVOKE.C2DA_SetFLOATEntry__SWIG_3(swigCPtr, CExoString.getCPtr(sRowLabel), nColumn, fFloat);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetINTEntry(int nRow, int nColumn, int* pInt) {
-    int ret = NWNXLibPINVOKE.C2DA_GetINTEntry__SWIG_0(swigCPtr, nRow, nColumn, (global::System.IntPtr)pInt);
-    return ret;
+    int retVal = NWNXLibPINVOKE.C2DA_GetINTEntry__SWIG_0(swigCPtr, nRow, nColumn, pInt);
+    return retVal;
   }
 
   public int GetINTEntry(CExoString sRowLabel, CExoString sColumnLabel, int* pInt) {
-    int ret = NWNXLibPINVOKE.C2DA_GetINTEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sRowLabel), CExoString.getCPtr(sColumnLabel), (global::System.IntPtr)pInt);
+    int retVal = NWNXLibPINVOKE.C2DA_GetINTEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sRowLabel), CExoString.getCPtr(sColumnLabel), pInt);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetINTEntry(int nRow, CExoString sColumnLabel, int* pInt) {
-    int ret = NWNXLibPINVOKE.C2DA_GetINTEntry__SWIG_2(swigCPtr, nRow, CExoString.getCPtr(sColumnLabel), (global::System.IntPtr)pInt);
+    int retVal = NWNXLibPINVOKE.C2DA_GetINTEntry__SWIG_2(swigCPtr, nRow, CExoString.getCPtr(sColumnLabel), pInt);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetINTEntry(CExoString sRowLabel, int nColumn, int* pInt) {
-    int ret = NWNXLibPINVOKE.C2DA_GetINTEntry__SWIG_3(swigCPtr, CExoString.getCPtr(sRowLabel), nColumn, (global::System.IntPtr)pInt);
+    int retVal = NWNXLibPINVOKE.C2DA_GetINTEntry__SWIG_3(swigCPtr, CExoString.getCPtr(sRowLabel), nColumn, pInt);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SetINTEntry(int nRow, int nColumn, int nInt) {
-    int ret = NWNXLibPINVOKE.C2DA_SetINTEntry__SWIG_0(swigCPtr, nRow, nColumn, nInt);
-    return ret;
+    int retVal = NWNXLibPINVOKE.C2DA_SetINTEntry__SWIG_0(swigCPtr, nRow, nColumn, nInt);
+    return retVal;
   }
 
   public int SetINTEntry(CExoString sRowLabel, CExoString sColumnLabel, int nInt) {
-    int ret = NWNXLibPINVOKE.C2DA_SetINTEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sRowLabel), CExoString.getCPtr(sColumnLabel), nInt);
+    int retVal = NWNXLibPINVOKE.C2DA_SetINTEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sRowLabel), CExoString.getCPtr(sColumnLabel), nInt);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SetINTEntry(int nRow, CExoString sColumnLabel, int nInt) {
-    int ret = NWNXLibPINVOKE.C2DA_SetINTEntry__SWIG_2(swigCPtr, nRow, CExoString.getCPtr(sColumnLabel), nInt);
+    int retVal = NWNXLibPINVOKE.C2DA_SetINTEntry__SWIG_2(swigCPtr, nRow, CExoString.getCPtr(sColumnLabel), nInt);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SetINTEntry(CExoString sRowLabel, int nColumn, int nInt) {
-    int ret = NWNXLibPINVOKE.C2DA_SetINTEntry__SWIG_3(swigCPtr, CExoString.getCPtr(sRowLabel), nColumn, nInt);
+    int retVal = NWNXLibPINVOKE.C2DA_SetINTEntry__SWIG_3(swigCPtr, CExoString.getCPtr(sRowLabel), nColumn, nInt);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SetBlankEntry(int nRow, int nColumn) {
-    int ret = NWNXLibPINVOKE.C2DA_SetBlankEntry__SWIG_0(swigCPtr, nRow, nColumn);
-    return ret;
+    int retVal = NWNXLibPINVOKE.C2DA_SetBlankEntry__SWIG_0(swigCPtr, nRow, nColumn);
+    return retVal;
   }
 
   public int SetBlankEntry(CExoString sRowLabel, CExoString sColumnLabel) {
-    int ret = NWNXLibPINVOKE.C2DA_SetBlankEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sRowLabel), CExoString.getCPtr(sColumnLabel));
+    int retVal = NWNXLibPINVOKE.C2DA_SetBlankEntry__SWIG_1(swigCPtr, CExoString.getCPtr(sRowLabel), CExoString.getCPtr(sColumnLabel));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SetBlankEntry(int nRow, CExoString sColumnLabel) {
-    int ret = NWNXLibPINVOKE.C2DA_SetBlankEntry__SWIG_2(swigCPtr, nRow, CExoString.getCPtr(sColumnLabel));
+    int retVal = NWNXLibPINVOKE.C2DA_SetBlankEntry__SWIG_2(swigCPtr, nRow, CExoString.getCPtr(sColumnLabel));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SetBlankEntry(CExoString sRowLabel, int nColumn) {
-    int ret = NWNXLibPINVOKE.C2DA_SetBlankEntry__SWIG_3(swigCPtr, CExoString.getCPtr(sRowLabel), nColumn);
+    int retVal = NWNXLibPINVOKE.C2DA_SetBlankEntry__SWIG_3(swigCPtr, CExoString.getCPtr(sRowLabel), nColumn);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int Load2DArray() {
-    int ret = NWNXLibPINVOKE.C2DA_Load2DArray(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.C2DA_Load2DArray(swigCPtr);
+    return retVal;
   }
 
   public void Unload2DArray() {
@@ -343,30 +346,30 @@ public unsafe class C2DA : global::System.IDisposable {
   }
 
   public int GetColumnIndex(CExoString sColumn) {
-    int ret = NWNXLibPINVOKE.C2DA_GetColumnIndex(swigCPtr, CExoString.getCPtr(sColumn));
+    int retVal = NWNXLibPINVOKE.C2DA_GetColumnIndex(swigCPtr, CExoString.getCPtr(sColumn));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public uint GetNextLineLength(byte* pBuffer, uint nBufferSize) {
-    uint ret = NWNXLibPINVOKE.C2DA_GetNextLineLength(swigCPtr, (global::System.IntPtr)pBuffer, nBufferSize);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.C2DA_GetNextLineLength(swigCPtr, pBuffer, nBufferSize);
+    return retVal;
   }
 
   public int GetNextToken(byte** pBuffer, uint* pBufferSize, byte* pToken, uint nMaxTokenSize, uint* pLeadingWhiteSpaceSize) {
-    int ret = NWNXLibPINVOKE.C2DA_GetNextToken(swigCPtr, (global::System.IntPtr)pBuffer, (global::System.IntPtr)pBufferSize, (global::System.IntPtr)pToken, nMaxTokenSize, (global::System.IntPtr)pLeadingWhiteSpaceSize);
-    return ret;
+    int retVal = NWNXLibPINVOKE.C2DA_GetNextToken(swigCPtr, (global::System.IntPtr)pBuffer, pBufferSize, pToken, nMaxTokenSize, pLeadingWhiteSpaceSize);
+    return retVal;
   }
 
   public int GetRowIndex(CExoString sRow) {
-    int ret = NWNXLibPINVOKE.C2DA_GetRowIndex(swigCPtr, CExoString.getCPtr(sRow));
+    int retVal = NWNXLibPINVOKE.C2DA_GetRowIndex(swigCPtr, CExoString.getCPtr(sRow));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SkipNewLines(byte** pBuffer, uint* pBufferSize) {
-    int ret = NWNXLibPINVOKE.C2DA_SkipNewLines(swigCPtr, (global::System.IntPtr)pBuffer, (global::System.IntPtr)pBufferSize);
-    return ret;
+    int retVal = NWNXLibPINVOKE.C2DA_SkipNewLines(swigCPtr, (global::System.IntPtr)pBuffer, pBufferSize);
+    return retVal;
   }
 
 }

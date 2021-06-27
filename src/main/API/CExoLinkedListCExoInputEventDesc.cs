@@ -129,8 +129,8 @@ public unsafe class CExoLinkedListCExoInputEventDesc : global::System.IDisposabl
   }
 
   public uint Count() {
-    uint ret = NWNXLibPINVOKE.CExoLinkedListCExoInputEventDesc_Count(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoLinkedListCExoInputEventDesc_Count(swigCPtr);
+    return retVal;
   }
 
   public CExoInputEventDesc GetAtPos(CExoLinkedListNode Position) {
@@ -176,8 +176,8 @@ public unsafe class CExoLinkedListCExoInputEventDesc : global::System.IDisposabl
   }
 
   public int IsEmpty() {
-    int ret = NWNXLibPINVOKE.CExoLinkedListCExoInputEventDesc_IsEmpty(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoLinkedListCExoInputEventDesc_IsEmpty(swigCPtr);
+    return retVal;
   }
 
   public CExoInputEventDesc RemoveHead() {

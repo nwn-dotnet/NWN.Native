@@ -85,9 +85,10 @@ public unsafe class CNWSAmbientSound : CNWAmbientSound {
       NWNXLibPINVOKE.CNWSAmbientSound_m_nArea_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSAmbientSound_m_nArea_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSAmbientSound_m_nArea_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSAmbientSound(uint nArea) : this(NWNXLibPINVOKE.new_CNWSAmbientSound(nArea), true) {
@@ -138,8 +139,8 @@ public unsafe class CNWSAmbientSound : CNWAmbientSound {
   }
 
   public int Load(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSAmbientSound_Load(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSAmbientSound_Load(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public void Save(CResGFF pRes, CResStruct pStruct) {
@@ -151,8 +152,8 @@ public unsafe class CNWSAmbientSound : CNWAmbientSound {
   }
 
   public int GetPlayersInArea(CExoArrayListObjectId pList) {
-    int ret = NWNXLibPINVOKE.CNWSAmbientSound_GetPlayersInArea(swigCPtr, CExoArrayListObjectId.getCPtr(pList));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSAmbientSound_GetPlayersInArea(swigCPtr, CExoArrayListObjectId.getCPtr(pList));
+    return retVal;
   }
 
 }

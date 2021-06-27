@@ -95,9 +95,10 @@ public unsafe class KEYFILE_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.KEYFILE_HEADER_nFileType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.KEYFILE_HEADER_nFileType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.KEYFILE_HEADER_nFileType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nFileVersion {
@@ -105,9 +106,10 @@ public unsafe class KEYFILE_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.KEYFILE_HEADER_nFileVersion_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.KEYFILE_HEADER_nFileVersion_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.KEYFILE_HEADER_nFileVersion_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nResFiles {
@@ -115,9 +117,10 @@ public unsafe class KEYFILE_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.KEYFILE_HEADER_nResFiles_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.KEYFILE_HEADER_nResFiles_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.KEYFILE_HEADER_nResFiles_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nKeys {
@@ -125,9 +128,10 @@ public unsafe class KEYFILE_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.KEYFILE_HEADER_nKeys_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.KEYFILE_HEADER_nKeys_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.KEYFILE_HEADER_nKeys_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nOffsetToFileTable {
@@ -135,9 +139,10 @@ public unsafe class KEYFILE_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.KEYFILE_HEADER_nOffsetToFileTable_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.KEYFILE_HEADER_nOffsetToFileTable_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.KEYFILE_HEADER_nOffsetToFileTable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nOffsetToKeyTable {
@@ -145,9 +150,10 @@ public unsafe class KEYFILE_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.KEYFILE_HEADER_nOffsetToKeyTable_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.KEYFILE_HEADER_nOffsetToKeyTable_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.KEYFILE_HEADER_nOffsetToKeyTable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nBuildYear {
@@ -155,9 +161,10 @@ public unsafe class KEYFILE_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.KEYFILE_HEADER_nBuildYear_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.KEYFILE_HEADER_nBuildYear_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.KEYFILE_HEADER_nBuildYear_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nBuildDay {
@@ -165,9 +172,10 @@ public unsafe class KEYFILE_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.KEYFILE_HEADER_nBuildDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.KEYFILE_HEADER_nBuildDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.KEYFILE_HEADER_nBuildDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<byte> cOid {

@@ -97,9 +97,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nAppearanceType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDoor_m_nAppearanceType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDoor_m_nAppearanceType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nGenericType {
@@ -107,9 +108,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nGenericType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDoor_m_nGenericType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDoor_m_nGenericType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResRef m_cDialog {
@@ -128,9 +130,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_fBearing_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSDoor_m_fBearing_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSDoor_m_fBearing_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nFactionId {
@@ -138,9 +141,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nFactionId_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDoor_m_nFactionId_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDoor_m_nFactionId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nFortitudeSave {
@@ -148,9 +152,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nFortitudeSave_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSDoor_m_nFortitudeSave_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSDoor_m_nFortitudeSave_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nReflexSave {
@@ -158,9 +163,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nReflexSave_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSDoor_m_nReflexSave_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSDoor_m_nReflexSave_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nWillSave {
@@ -168,9 +174,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nWillSave_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSDoor_m_nWillSave_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSDoor_m_nWillSave_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nOpenLockDC {
@@ -178,9 +185,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nOpenLockDC_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSDoor_m_nOpenLockDC_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSDoor_m_nOpenLockDC_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nLockDC {
@@ -188,9 +196,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nLockDC_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSDoor_m_nLockDC_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSDoor_m_nLockDC_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nSecretDoorDC {
@@ -198,9 +207,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nSecretDoorDC_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSDoor_m_nSecretDoorDC_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSDoor_m_nSecretDoorDC_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nHardness {
@@ -208,9 +218,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nHardness_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSDoor_m_nHardness_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSDoor_m_nHardness_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bLocked {
@@ -218,9 +229,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_bLocked_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDoor_m_bLocked_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDoor_m_bLocked_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bLockable {
@@ -228,9 +240,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_bLockable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDoor_m_bLockable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDoor_m_bLockable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nOpenState {
@@ -238,9 +251,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nOpenState_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSDoor_m_nOpenState_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSDoor_m_nOpenState_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sKeyName {
@@ -270,9 +284,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_bKeyRequired_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDoor_m_bKeyRequired_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDoor_m_bKeyRequired_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListObjectId m_poidCreatures {
@@ -291,9 +306,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_oidTrapCreator_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDoor_m_oidTrapCreator_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDoor_m_oidTrapCreator_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bTrapped {
@@ -301,9 +317,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_bTrapped_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDoor_m_bTrapped_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDoor_m_bTrapped_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nDisarmDC {
@@ -311,9 +328,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nDisarmDC_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSDoor_m_nDisarmDC_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSDoor_m_nDisarmDC_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nDetectDC {
@@ -321,9 +339,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nDetectDC_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSDoor_m_nDetectDC_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSDoor_m_nDetectDC_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bAutoRemoveKey {
@@ -331,9 +350,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_bAutoRemoveKey_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDoor_m_bAutoRemoveKey_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDoor_m_bAutoRemoveKey_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bFlagged {
@@ -341,9 +361,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_bFlagged_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDoor_m_bFlagged_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDoor_m_bFlagged_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nBaseType {
@@ -351,9 +372,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nBaseType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSDoor_m_nBaseType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSDoor_m_nBaseType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bDisarmable {
@@ -361,9 +383,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_bDisarmable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDoor_m_bDisarmable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDoor_m_bDisarmable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bDetectable {
@@ -371,9 +394,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_bDetectable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDoor_m_bDetectable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDoor_m_bDetectable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bOneShot {
@@ -381,9 +405,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_bOneShot_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDoor_m_bOneShot_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDoor_m_bOneShot_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bRecoverable {
@@ -391,9 +416,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_bRecoverable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDoor_m_bRecoverable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDoor_m_bRecoverable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bTrapIsActive {
@@ -401,9 +427,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_bTrapIsActive_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDoor_m_bTrapIsActive_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDoor_m_bTrapIsActive_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nTrapFactionId {
@@ -411,9 +438,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nTrapFactionId_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDoor_m_nTrapFactionId_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDoor_m_nTrapFactionId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bVisibleModel {
@@ -421,9 +449,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_bVisibleModel_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDoor_m_bVisibleModel_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDoor_m_bVisibleModel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nLastHeartbeatScriptCalendarDay {
@@ -431,9 +460,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nLastHeartbeatScriptCalendarDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDoor_m_nLastHeartbeatScriptCalendarDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDoor_m_nLastHeartbeatScriptCalendarDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nLastHeartbeatScriptTimeOfDay {
@@ -441,9 +471,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nLastHeartbeatScriptTimeOfDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDoor_m_nLastHeartbeatScriptTimeOfDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDoor_m_nLastHeartbeatScriptTimeOfDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastLocked {
@@ -451,9 +482,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_oidLastLocked_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDoor_m_oidLastLocked_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDoor_m_oidLastLocked_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastUnlocked {
@@ -461,9 +493,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_oidLastUnlocked_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDoor_m_oidLastUnlocked_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDoor_m_oidLastUnlocked_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastOpened {
@@ -471,9 +504,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_oidLastOpened_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDoor_m_oidLastOpened_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDoor_m_oidLastOpened_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastClosed {
@@ -481,9 +515,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_oidLastClosed_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDoor_m_oidLastClosed_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDoor_m_oidLastClosed_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastTriggered {
@@ -491,9 +526,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_oidLastTriggered_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDoor_m_oidLastTriggered_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDoor_m_oidLastTriggered_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastDisarmed {
@@ -501,9 +537,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_oidLastDisarmed_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDoor_m_oidLastDisarmed_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDoor_m_oidLastDisarmed_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWDoorSurfaceMesh m_pWalkMesh {
@@ -588,9 +625,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nUpdateDisplayNameSeq_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDoor_m_nUpdateDisplayNameSeq_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDoor_m_nUpdateDisplayNameSeq_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nLoadScreenID {
@@ -598,9 +636,10 @@ public unsafe class CNWSDoor : CNWSObject {
       NWNXLibPINVOKE.CNWSDoor_m_nLoadScreenID_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSDoor_m_nLoadScreenID_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSDoor_m_nLoadScreenID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSDoor(uint oidId) : this(NWNXLibPINVOKE.new_CNWSDoor__SWIG_0(oidId), true) {
@@ -632,13 +671,13 @@ public unsafe class CNWSDoor : CNWSObject {
   }
 
   public int LoadDoor(CResGFF pRes, CResStruct cItemStruct) {
-    int ret = NWNXLibPINVOKE.CNWSDoor_LoadDoor(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cItemStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSDoor_LoadDoor(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cItemStruct));
+    return retVal;
   }
 
   public int SaveDoor(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSDoor_SaveDoor(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSDoor_SaveDoor(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public void PostProcess() {
@@ -658,13 +697,13 @@ public unsafe class CNWSDoor : CNWSObject {
   }
 
   public byte GetOpenState() {
-    byte ret = NWNXLibPINVOKE.CNWSDoor_GetOpenState(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSDoor_GetOpenState(swigCPtr);
+    return retVal;
   }
 
   public int NoNonWalkPolysInDoor(float fSourceX, float fSourceY, float fTargetX, float fTargetY, float fMinZ, float fMaxZ, float fPersonalSpace) {
-    int ret = NWNXLibPINVOKE.CNWSDoor_NoNonWalkPolysInDoor(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, fMinZ, fMaxZ, fPersonalSpace);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSDoor_NoNonWalkPolysInDoor(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, fMinZ, fMaxZ, fPersonalSpace);
+    return retVal;
   }
 
   public Vector GetActionPoint(int nAnimation, byte nPositionNumber) {

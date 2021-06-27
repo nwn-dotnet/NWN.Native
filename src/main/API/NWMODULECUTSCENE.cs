@@ -106,9 +106,10 @@ public unsafe class NWMODULECUTSCENE : global::System.IDisposable {
       NWNXLibPINVOKE.NWMODULECUTSCENE_nID_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.NWMODULECUTSCENE_nID_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.NWMODULECUTSCENE_nID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NWMODULECUTSCENE() : this(NWNXLibPINVOKE.new_NWMODULECUTSCENE(), true) {

@@ -117,44 +117,44 @@ public unsafe class CExoFile : global::System.IDisposable {
   }
 
   public int IsMemoryBacked() {
-    int ret = NWNXLibPINVOKE.CExoFile_IsMemoryBacked(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoFile_IsMemoryBacked(swigCPtr);
+    return retVal;
   }
 
   public int Eof() {
-    int ret = NWNXLibPINVOKE.CExoFile_Eof(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoFile_Eof(swigCPtr);
+    return retVal;
   }
 
   public int FileOpened() {
-    int ret = NWNXLibPINVOKE.CExoFile_FileOpened(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoFile_FileOpened(swigCPtr);
+    return retVal;
   }
 
   public int Flush() {
-    int ret = NWNXLibPINVOKE.CExoFile_Flush(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoFile_Flush(swigCPtr);
+    return retVal;
   }
 
   public uint GetOffset() {
-    uint ret = NWNXLibPINVOKE.CExoFile_GetOffset(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoFile_GetOffset(swigCPtr);
+    return retVal;
   }
 
   public int GetSize() {
-    int ret = NWNXLibPINVOKE.CExoFile_GetSize(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoFile_GetSize(swigCPtr);
+    return retVal;
   }
 
   public uint Read(void* ptr, uint size, uint number) {
-    uint ret = NWNXLibPINVOKE.CExoFile_Read__SWIG_0(swigCPtr, (global::System.IntPtr)ptr, size, number);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoFile_Read__SWIG_0(swigCPtr, (global::System.IntPtr)ptr, size, number);
+    return retVal;
   }
 
   public uint Read(CExoString string_, uint length) {
-    uint ret = NWNXLibPINVOKE.CExoFile_Read__SWIG_1(swigCPtr, CExoString.getCPtr(string_), length);
+    uint retVal = NWNXLibPINVOKE.CExoFile_Read__SWIG_1(swigCPtr, CExoString.getCPtr(string_), length);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void ReadAsync(void* ptr, uint size, uint number) {
@@ -162,54 +162,54 @@ public unsafe class CExoFile : global::System.IDisposable {
   }
 
   public int ReadAsyncComplete() {
-    int ret = NWNXLibPINVOKE.CExoFile_ReadAsyncComplete(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoFile_ReadAsyncComplete(swigCPtr);
+    return retVal;
   }
 
   public uint ReadAsyncBytesRead() {
-    uint ret = NWNXLibPINVOKE.CExoFile_ReadAsyncBytesRead(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoFile_ReadAsyncBytesRead(swigCPtr);
+    return retVal;
   }
 
   public uint Write(void* ptr, uint size, uint number) {
-    uint ret = NWNXLibPINVOKE.CExoFile_Write__SWIG_0(swigCPtr, (global::System.IntPtr)ptr, size, number);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoFile_Write__SWIG_0(swigCPtr, (global::System.IntPtr)ptr, size, number);
+    return retVal;
   }
 
   public uint Write(byte* string_) {
-    uint ret = NWNXLibPINVOKE.CExoFile_Write__SWIG_1(swigCPtr, (global::System.IntPtr)string_);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoFile_Write__SWIG_1(swigCPtr, string_);
+    return retVal;
   }
 
   public uint Write(CExoString string_) {
-    uint ret = NWNXLibPINVOKE.CExoFile_Write__SWIG_2(swigCPtr, CExoString.getCPtr(string_));
+    uint retVal = NWNXLibPINVOKE.CExoFile_Write__SWIG_2(swigCPtr, CExoString.getCPtr(string_));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int Seek(int offset, int whence) {
-    int ret = NWNXLibPINVOKE.CExoFile_Seek(swigCPtr, offset, whence);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoFile_Seek(swigCPtr, offset, whence);
+    return retVal;
   }
 
   public int SeekBeginning() {
-    int ret = NWNXLibPINVOKE.CExoFile_SeekBeginning(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoFile_SeekBeginning(swigCPtr);
+    return retVal;
   }
 
   public int SeekEnd() {
-    int ret = NWNXLibPINVOKE.CExoFile_SeekEnd(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoFile_SeekEnd(swigCPtr);
+    return retVal;
   }
 
   public int IsMMapped() {
-    int ret = NWNXLibPINVOKE.CExoFile_IsMMapped(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoFile_IsMMapped(swigCPtr);
+    return retVal;
   }
 
   public int GetIsEOS() {
-    int ret = NWNXLibPINVOKE.CExoFile_GetIsEOS(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoFile_GetIsEOS(swigCPtr);
+    return retVal;
   }
 
   public void* GetFileHandle() {

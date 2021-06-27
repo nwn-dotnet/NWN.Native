@@ -106,9 +106,10 @@ public unsafe class CScriptCompilerStructureEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptCompilerStructureEntry_m_nFieldStart_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptCompilerStructureEntry_m_nFieldStart_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptCompilerStructureEntry_m_nFieldStart_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nFieldEnd {
@@ -116,9 +117,10 @@ public unsafe class CScriptCompilerStructureEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptCompilerStructureEntry_m_nFieldEnd_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptCompilerStructureEntry_m_nFieldEnd_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptCompilerStructureEntry_m_nFieldEnd_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nByteSize {
@@ -126,9 +128,10 @@ public unsafe class CScriptCompilerStructureEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptCompilerStructureEntry_m_nByteSize_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptCompilerStructureEntry_m_nByteSize_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptCompilerStructureEntry_m_nByteSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CScriptCompilerStructureEntry() : this(NWNXLibPINVOKE.new_CScriptCompilerStructureEntry(), true) {

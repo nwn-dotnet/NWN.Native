@@ -85,9 +85,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
       NWNXLibPINVOKE.CNWSSoundObject_m_bIsActive_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSSoundObject_m_bIsActive_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSSoundObject_m_bIsActive_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bPositional {
@@ -95,9 +96,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
       NWNXLibPINVOKE.CNWSSoundObject_m_bPositional_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSSoundObject_m_bPositional_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSSoundObject_m_bPositional_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bLooping {
@@ -105,9 +107,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
       NWNXLibPINVOKE.CNWSSoundObject_m_bLooping_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSSoundObject_m_bLooping_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSSoundObject_m_bLooping_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nVolume {
@@ -115,9 +118,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
       NWNXLibPINVOKE.CNWSSoundObject_m_nVolume_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSSoundObject_m_nVolume_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSSoundObject_m_nVolume_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nVolumeVariation {
@@ -125,9 +129,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
       NWNXLibPINVOKE.CNWSSoundObject_m_nVolumeVariation_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSSoundObject_m_nVolumeVariation_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSSoundObject_m_nVolumeVariation_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_Time {
@@ -135,9 +140,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
       NWNXLibPINVOKE.CNWSSoundObject_m_Time_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSSoundObject_m_Time_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSSoundObject_m_Time_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_nPitchVariation {
@@ -145,9 +151,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
       NWNXLibPINVOKE.CNWSSoundObject_m_nPitchVariation_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSSoundObject_m_nPitchVariation_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSSoundObject_m_nPitchVariation_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nHours {
@@ -155,9 +162,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
       NWNXLibPINVOKE.CNWSSoundObject_m_nHours_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSSoundObject_m_nHours_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSSoundObject_m_nHours_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nPriority {
@@ -165,9 +173,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
       NWNXLibPINVOKE.CNWSSoundObject_m_nPriority_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSSoundObject_m_nPriority_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSSoundObject_m_nPriority_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bRandomPosition {
@@ -175,9 +184,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
       NWNXLibPINVOKE.CNWSSoundObject_m_bRandomPosition_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSSoundObject_m_bRandomPosition_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSSoundObject_m_bRandomPosition_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_nRandomXRange {
@@ -185,9 +195,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
       NWNXLibPINVOKE.CNWSSoundObject_m_nRandomXRange_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSSoundObject_m_nRandomXRange_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSSoundObject_m_nRandomXRange_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_nRandomYRange {
@@ -195,9 +206,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
       NWNXLibPINVOKE.CNWSSoundObject_m_nRandomYRange_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSSoundObject_m_nRandomYRange_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSSoundObject_m_nRandomYRange_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCResRef m_SoundList {
@@ -216,9 +228,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
       NWNXLibPINVOKE.CNWSSoundObject_m_nInterval_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSSoundObject_m_nInterval_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSSoundObject_m_nInterval_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nIntervalVariance {
@@ -226,9 +239,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
       NWNXLibPINVOKE.CNWSSoundObject_m_nIntervalVariance_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSSoundObject_m_nIntervalVariance_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSSoundObject_m_nIntervalVariance_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_nMinDistance {
@@ -236,9 +250,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
       NWNXLibPINVOKE.CNWSSoundObject_m_nMinDistance_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSSoundObject_m_nMinDistance_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSSoundObject_m_nMinDistance_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_nMaxDistance {
@@ -246,9 +261,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
       NWNXLibPINVOKE.CNWSSoundObject_m_nMaxDistance_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSSoundObject_m_nMaxDistance_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSSoundObject_m_nMaxDistance_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bContinuous {
@@ -256,9 +272,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
       NWNXLibPINVOKE.CNWSSoundObject_m_bContinuous_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSSoundObject_m_bContinuous_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSSoundObject_m_bContinuous_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bRandom {
@@ -266,9 +283,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
       NWNXLibPINVOKE.CNWSSoundObject_m_bRandom_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSSoundObject_m_bRandom_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSSoundObject_m_bRandom_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSSoundObject(uint oidId) : this(NWNXLibPINVOKE.new_CNWSSoundObject__SWIG_0(oidId), true) {
@@ -292,8 +310,8 @@ public unsafe class CNWSSoundObject : CNWSObject {
   }
 
   public int Load(CResGFF pRes, CResStruct cSoundStruct) {
-    int ret = NWNXLibPINVOKE.CNWSSoundObject_Load(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cSoundStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSSoundObject_Load(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cSoundStruct));
+    return retVal;
   }
 
   public void Save(CResGFF pRes, CResStruct pStruct) {

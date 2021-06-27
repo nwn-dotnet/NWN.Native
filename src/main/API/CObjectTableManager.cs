@@ -107,62 +107,63 @@ public unsafe class CObjectTableManager : global::System.IDisposable {
       NWNXLibPINVOKE.CObjectTableManager_m_dwMaxPlayerID_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CObjectTableManager_m_dwMaxPlayerID_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CObjectTableManager_m_dwMaxPlayerID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CObjectTableManager() : this(NWNXLibPINVOKE.new_CObjectTableManager(), true) {
   }
 
   public int AddID(uint oidID, uint* dwSlot, uint dwPlayerID) {
-    int ret = NWNXLibPINVOKE.CObjectTableManager_AddID__SWIG_0(swigCPtr, oidID, (global::System.IntPtr)dwSlot, dwPlayerID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CObjectTableManager_AddID__SWIG_0(swigCPtr, oidID, dwSlot, dwPlayerID);
+    return retVal;
   }
 
   public int AddID(uint oidID, uint* dwSlot) {
-    int ret = NWNXLibPINVOKE.CObjectTableManager_AddID__SWIG_1(swigCPtr, oidID, (global::System.IntPtr)dwSlot);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CObjectTableManager_AddID__SWIG_1(swigCPtr, oidID, dwSlot);
+    return retVal;
   }
 
   public uint GetIDFromIndex(uint dwIndex, uint dwPlayerID) {
-    uint ret = NWNXLibPINVOKE.CObjectTableManager_GetIDFromIndex__SWIG_0(swigCPtr, dwIndex, dwPlayerID);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CObjectTableManager_GetIDFromIndex__SWIG_0(swigCPtr, dwIndex, dwPlayerID);
+    return retVal;
   }
 
   public uint GetIDFromIndex(uint dwIndex) {
-    uint ret = NWNXLibPINVOKE.CObjectTableManager_GetIDFromIndex__SWIG_1(swigCPtr, dwIndex);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CObjectTableManager_GetIDFromIndex__SWIG_1(swigCPtr, dwIndex);
+    return retVal;
   }
 
   public uint GetIndexFromID(uint oidID, uint dwPlayerID) {
-    uint ret = NWNXLibPINVOKE.CObjectTableManager_GetIndexFromID__SWIG_0(swigCPtr, oidID, dwPlayerID);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CObjectTableManager_GetIndexFromID__SWIG_0(swigCPtr, oidID, dwPlayerID);
+    return retVal;
   }
 
   public uint GetIndexFromID(uint oidID) {
-    uint ret = NWNXLibPINVOKE.CObjectTableManager_GetIndexFromID__SWIG_1(swigCPtr, oidID);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CObjectTableManager_GetIndexFromID__SWIG_1(swigCPtr, oidID);
+    return retVal;
   }
 
   public int Touch(uint dwIndex, uint dwPlayerID) {
-    int ret = NWNXLibPINVOKE.CObjectTableManager_Touch__SWIG_0(swigCPtr, dwIndex, dwPlayerID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CObjectTableManager_Touch__SWIG_0(swigCPtr, dwIndex, dwPlayerID);
+    return retVal;
   }
 
   public int Touch(uint dwIndex) {
-    int ret = NWNXLibPINVOKE.CObjectTableManager_Touch__SWIG_1(swigCPtr, dwIndex);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CObjectTableManager_Touch__SWIG_1(swigCPtr, dwIndex);
+    return retVal;
   }
 
   public int RemovePlayer(uint dwPlayerID) {
-    int ret = NWNXLibPINVOKE.CObjectTableManager_RemovePlayer__SWIG_0(swigCPtr, dwPlayerID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CObjectTableManager_RemovePlayer__SWIG_0(swigCPtr, dwPlayerID);
+    return retVal;
   }
 
   public int RemovePlayer() {
-    int ret = NWNXLibPINVOKE.CObjectTableManager_RemovePlayer__SWIG_1(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CObjectTableManager_RemovePlayer__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public void ClearAll() {
@@ -170,13 +171,13 @@ public unsafe class CObjectTableManager : global::System.IDisposable {
   }
 
   public int CreateNewPlayer(uint dwPlayerID) {
-    int ret = NWNXLibPINVOKE.CObjectTableManager_CreateNewPlayer__SWIG_0(swigCPtr, dwPlayerID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CObjectTableManager_CreateNewPlayer__SWIG_0(swigCPtr, dwPlayerID);
+    return retVal;
   }
 
   public int CreateNewPlayer() {
-    int ret = NWNXLibPINVOKE.CObjectTableManager_CreateNewPlayer__SWIG_1(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CObjectTableManager_CreateNewPlayer__SWIG_1(swigCPtr);
+    return retVal;
   }
 
 }

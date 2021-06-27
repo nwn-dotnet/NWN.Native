@@ -95,9 +95,10 @@ public unsafe class CExoInputEvent : global::System.IDisposable {
       NWNXLibPINVOKE.CExoInputEvent_m_nValue_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoInputEvent_m_nValue_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoInputEvent_m_nValue_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nTimeStamp {
@@ -105,9 +106,10 @@ public unsafe class CExoInputEvent : global::System.IDisposable {
       NWNXLibPINVOKE.CExoInputEvent_m_nTimeStamp_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoInputEvent_m_nTimeStamp_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoInputEvent_m_nTimeStamp_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nSequenceNumber {
@@ -115,9 +117,10 @@ public unsafe class CExoInputEvent : global::System.IDisposable {
       NWNXLibPINVOKE.CExoInputEvent_m_nSequenceNumber_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoInputEvent_m_nSequenceNumber_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoInputEvent_m_nSequenceNumber_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nMouseX {
@@ -125,9 +128,10 @@ public unsafe class CExoInputEvent : global::System.IDisposable {
       NWNXLibPINVOKE.CExoInputEvent_m_nMouseX_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoInputEvent_m_nMouseX_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoInputEvent_m_nMouseX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nMouseY {
@@ -135,9 +139,10 @@ public unsafe class CExoInputEvent : global::System.IDisposable {
       NWNXLibPINVOKE.CExoInputEvent_m_nMouseY_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoInputEvent_m_nMouseY_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoInputEvent_m_nMouseY_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoInputEventDesc m_pInputEventDesc {
@@ -156,9 +161,10 @@ public unsafe class CExoInputEvent : global::System.IDisposable {
       NWNXLibPINVOKE.CExoInputEvent_m_nInputDevice_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoInputEvent_m_nInputDevice_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoInputEvent_m_nInputDevice_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nInputDeviceElement {
@@ -166,9 +172,10 @@ public unsafe class CExoInputEvent : global::System.IDisposable {
       NWNXLibPINVOKE.CExoInputEvent_m_nInputDeviceElement_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoInputEvent_m_nInputDeviceElement_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoInputEvent_m_nInputDeviceElement_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoInputEvent() : this(NWNXLibPINVOKE.new_CExoInputEvent(), true) {

@@ -95,9 +95,10 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nGold_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nGold_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nGold_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public short m_nArmorClass {
@@ -105,9 +106,10 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nArmorClass_set(swigCPtr, value);
     } 
     get {
-      short ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nArmorClass_get(swigCPtr);
-      return ret;
-    } 
+      short retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nArmorClass_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public short m_nHenchmanArmorClass {
@@ -115,9 +117,10 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nHenchmanArmorClass_set(swigCPtr, value);
     } 
     get {
-      short ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nHenchmanArmorClass_get(swigCPtr);
-      return ret;
-    } 
+      short retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nHenchmanArmorClass_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public short m_nTotalWeightCarried {
@@ -125,9 +128,10 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nTotalWeightCarried_set(swigCPtr, value);
     } 
     get {
-      short ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nTotalWeightCarried_get(swigCPtr);
-      return ret;
-    } 
+      short retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nTotalWeightCarried_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public short m_nHenchmanTotalWeightCarried {
@@ -135,9 +139,10 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nHenchmanTotalWeightCarried_set(swigCPtr, value);
     } 
     get {
-      short ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nHenchmanTotalWeightCarried_get(swigCPtr);
-      return ret;
-    } 
+      short retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nHenchmanTotalWeightCarried_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bCanLevelUp {
@@ -145,9 +150,10 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_bCanLevelUp_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_bCanLevelUp_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_bCanLevelUp_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nLevel {
@@ -155,9 +161,10 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nLevel_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nLevel_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nGuiSkills {
@@ -165,9 +172,10 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nGuiSkills_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nGuiSkills_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nGuiSkills_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListUInt16 m_lstFeats {
@@ -208,9 +216,10 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nPlayerState_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nPlayerState_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nPlayerState_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nPolymorphSpellId1 {
@@ -218,9 +227,10 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nPolymorphSpellId1_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nPolymorphSpellId1_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nPolymorphSpellId1_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nPolymorphSpellId2 {
@@ -228,9 +238,10 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nPolymorphSpellId2_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nPolymorphSpellId2_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nPolymorphSpellId2_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nPolymorphSpellId3 {
@@ -238,9 +249,10 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nPolymorphSpellId3_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nPolymorphSpellId3_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_nPolymorphSpellId3_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWActionNodeArray m_pActionQueueList {
@@ -257,11 +269,11 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
 
   public byte* m_pAutoMapTileData {
     set {
-      NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_pAutoMapTileData_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_pAutoMapTileData_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_pAutoMapTileData_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_pAutoMapTileData_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -271,9 +283,10 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_oidAutoMapArea_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_oidAutoMapArea_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_oidAutoMapArea_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCNWVisibilityNodePtr m_lstVisibilityList {
@@ -410,18 +423,18 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
   }
 
   public uint GetKnownSpell(byte nMultiClass, byte nSpellLevel, byte nSpellSlot) {
-    uint ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_GetKnownSpell(swigCPtr, nMultiClass, nSpellLevel, nSpellSlot);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_GetKnownSpell(swigCPtr, nMultiClass, nSpellLevel, nSpellSlot);
+    return retVal;
   }
 
   public uint GetMemorizedSpell(byte nMultiClass, byte nSpellLevel, byte nSpellSlot) {
-    uint ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_GetMemorizedSpell(swigCPtr, nMultiClass, nSpellLevel, nSpellSlot);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_GetMemorizedSpell(swigCPtr, nMultiClass, nSpellLevel, nSpellSlot);
+    return retVal;
   }
 
   public int GetMemorizedSpellReadied(byte nMultiClass, byte nSpellLevel, byte nSpellSlot) {
-    int ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_GetMemorizedSpellReadied(swigCPtr, nMultiClass, nSpellLevel, nSpellSlot);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_GetMemorizedSpellReadied(swigCPtr, nMultiClass, nSpellLevel, nSpellSlot);
+    return retVal;
   }
 
   public void SetMemorizedSpellReadied(byte nMultiClass, byte nSpellLevel, byte nSpellSlot, int bReadied) {
@@ -429,13 +442,13 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
   }
 
   public byte GetMemorizedSpellMetaType(byte nMultiClass, byte nSpellLevel, byte nSpellSlot) {
-    byte ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_GetMemorizedSpellMetaType(swigCPtr, nMultiClass, nSpellLevel, nSpellSlot);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_GetMemorizedSpellMetaType(swigCPtr, nMultiClass, nSpellLevel, nSpellSlot);
+    return retVal;
   }
 
   public int GetIsDomainSpell(byte nMultiClass, byte nSpellLevel, byte nSpellSlot) {
-    int ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_GetIsDomainSpell(swigCPtr, nMultiClass, nSpellLevel, nSpellSlot);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_GetIsDomainSpell(swigCPtr, nMultiClass, nSpellLevel, nSpellSlot);
+    return retVal;
   }
 
   public void SetNumberMemorizedSpellSlots(byte nMultiClass, byte nSpellLevel, byte nNumSlots) {
@@ -451,8 +464,8 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
   }
 
   public byte GetKnownSpellUsesLeft(byte nMultiClass, byte nSpellLevel) {
-    byte ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_GetKnownSpellUsesLeft(swigCPtr, nMultiClass, nSpellLevel);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_GetKnownSpellUsesLeft(swigCPtr, nMultiClass, nSpellLevel);
+    return retVal;
   }
 
   public void SetKnownSpellUsesLeft(byte nMultiClass, byte nSpellLevel, byte nUses) {
@@ -476,8 +489,8 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
   }
 
   public int InitializeAutoMapData() {
-    int ret = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_InitializeAutoMapData(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_InitializeAutoMapData(swigCPtr);
+    return retVal;
   }
 
   public void ClearEffectIcons() {

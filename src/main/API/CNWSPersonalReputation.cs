@@ -95,9 +95,10 @@ public unsafe class CNWSPersonalReputation : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPersonalReputation_m_nDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPersonalReputation_m_nDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPersonalReputation_m_nDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nTime {
@@ -105,9 +106,10 @@ public unsafe class CNWSPersonalReputation : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPersonalReputation_m_nTime_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPersonalReputation_m_nTime_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPersonalReputation_m_nTime_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bValueDecays {
@@ -115,9 +117,10 @@ public unsafe class CNWSPersonalReputation : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPersonalReputation_m_bValueDecays_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPersonalReputation_m_bValueDecays_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPersonalReputation_m_bValueDecays_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nDurationInSeconds {
@@ -125,9 +128,10 @@ public unsafe class CNWSPersonalReputation : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPersonalReputation_m_nDurationInSeconds_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPersonalReputation_m_nDurationInSeconds_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPersonalReputation_m_nDurationInSeconds_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidCreature {
@@ -135,9 +139,10 @@ public unsafe class CNWSPersonalReputation : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPersonalReputation_m_oidCreature_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPersonalReputation_m_oidCreature_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPersonalReputation_m_oidCreature_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nAmount {
@@ -145,9 +150,10 @@ public unsafe class CNWSPersonalReputation : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPersonalReputation_m_nAmount_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPersonalReputation_m_nAmount_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPersonalReputation_m_nAmount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSPersonalReputation() : this(NWNXLibPINVOKE.new_CNWSPersonalReputation(), true) {

@@ -13,51 +13,58 @@ namespace NWN.Native.API {
 public static unsafe class NWNXLib {
   public static uint OBJECT_INVALID {
     get {
-      uint ret = NWNXLibPINVOKE.OBJECT_INVALID_get();
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.OBJECT_INVALID_get();
+      return retVal;
+    }
+
   }
 
   public static uint PLAYERID_ALL_SERVERADMINS {
     get {
-      uint ret = NWNXLibPINVOKE.PLAYERID_ALL_SERVERADMINS_get();
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.PLAYERID_ALL_SERVERADMINS_get();
+      return retVal;
+    }
+
   }
 
   public static uint PLAYERID_ALL_GAMEMASTERS {
     get {
-      uint ret = NWNXLibPINVOKE.PLAYERID_ALL_GAMEMASTERS_get();
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.PLAYERID_ALL_GAMEMASTERS_get();
+      return retVal;
+    }
+
   }
 
   public static uint PLAYERID_ALL_PLAYERS {
     get {
-      uint ret = NWNXLibPINVOKE.PLAYERID_ALL_PLAYERS_get();
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.PLAYERID_ALL_PLAYERS_get();
+      return retVal;
+    }
+
   }
 
   public static uint PLAYERID_SERVER {
     get {
-      uint ret = NWNXLibPINVOKE.PLAYERID_SERVER_get();
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.PLAYERID_SERVER_get();
+      return retVal;
+    }
+
   }
 
   public static uint PLAYERID_INVALIDID {
     get {
-      uint ret = NWNXLibPINVOKE.PLAYERID_INVALIDID_get();
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.PLAYERID_INVALIDID_get();
+      return retVal;
+    }
+
   }
 
   public static uint PLAYERID_ALL_CLIENTS {
     get {
-      uint ret = NWNXLibPINVOKE.PLAYERID_ALL_CLIENTS_get();
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.PLAYERID_ALL_CLIENTS_get();
+      return retVal;
+    }
+
   }
 
   public static NWNXExportedGlobals ExportedGlobals {
@@ -132,28 +139,28 @@ public static unsafe class NWNXLib {
   }
 
   public static int* EnableCombatDebugging() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.EnableCombatDebugging();
-    return (int*)retVal;
+    int* retVal = NWNXLibPINVOKE.EnableCombatDebugging();
+    return retVal;
   }
 
   public static int* EnableSavingThrowDebugging() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.EnableSavingThrowDebugging();
-    return (int*)retVal;
+    int* retVal = NWNXLibPINVOKE.EnableSavingThrowDebugging();
+    return retVal;
   }
 
   public static int* EnableMovementSpeedDebugging() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.EnableMovementSpeedDebugging();
-    return (int*)retVal;
+    int* retVal = NWNXLibPINVOKE.EnableMovementSpeedDebugging();
+    return retVal;
   }
 
   public static int* EnableHitDieDebugging() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.EnableHitDieDebugging();
-    return (int*)retVal;
+    int* retVal = NWNXLibPINVOKE.EnableHitDieDebugging();
+    return retVal;
   }
 
   public static int* ExitProgram() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.ExitProgram();
-    return (int*)retVal;
+    int* retVal = NWNXLibPINVOKE.ExitProgram();
+    return retVal;
   }
 
 }

@@ -95,9 +95,10 @@ public unsafe class CERFString : global::System.IDisposable {
       NWNXLibPINVOKE.CERFString_m_nLanguageID_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CERFString_m_nLanguageID_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CERFString_m_nLanguageID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nSize {
@@ -105,18 +106,19 @@ public unsafe class CERFString : global::System.IDisposable {
       NWNXLibPINVOKE.CERFString_m_nSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CERFString_m_nSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CERFString_m_nSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte* m_pText {
     set {
-      NWNXLibPINVOKE.CERFString_m_pText_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CERFString_m_pText_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CERFString_m_pText_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CERFString_m_pText_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -135,19 +137,19 @@ public unsafe class CERFString : global::System.IDisposable {
   }
 
   public int Read() {
-    int ret = NWNXLibPINVOKE.CERFString_Read(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CERFString_Read(swigCPtr);
+    return retVal;
   }
 
   public int Reset() {
-    int ret = NWNXLibPINVOKE.CERFString_Reset(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CERFString_Reset(swigCPtr);
+    return retVal;
   }
 
   public int Write(CExoFile cOutFile) {
-    int ret = NWNXLibPINVOKE.CERFString_Write(swigCPtr, CExoFile.getCPtr(cOutFile));
+    int retVal = NWNXLibPINVOKE.CERFString_Write(swigCPtr, CExoFile.getCPtr(cOutFile));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
 }

@@ -95,9 +95,10 @@ public unsafe class TLK_FILE_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.TLK_FILE_HEADER_fileType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.TLK_FILE_HEADER_fileType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.TLK_FILE_HEADER_fileType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint versionNum {
@@ -105,9 +106,10 @@ public unsafe class TLK_FILE_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.TLK_FILE_HEADER_versionNum_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.TLK_FILE_HEADER_versionNum_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.TLK_FILE_HEADER_versionNum_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint LanguageType {
@@ -115,9 +117,10 @@ public unsafe class TLK_FILE_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.TLK_FILE_HEADER_LanguageType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.TLK_FILE_HEADER_LanguageType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.TLK_FILE_HEADER_LanguageType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nStrEntries {
@@ -125,9 +128,10 @@ public unsafe class TLK_FILE_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.TLK_FILE_HEADER_nStrEntries_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.TLK_FILE_HEADER_nStrEntries_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.TLK_FILE_HEADER_nStrEntries_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint strEntriesOffset {
@@ -135,9 +139,10 @@ public unsafe class TLK_FILE_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.TLK_FILE_HEADER_strEntriesOffset_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.TLK_FILE_HEADER_strEntriesOffset_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.TLK_FILE_HEADER_strEntriesOffset_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public TLK_FILE_HEADER() : this(NWNXLibPINVOKE.new_TLK_FILE_HEADER(), true) {

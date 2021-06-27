@@ -106,9 +106,10 @@ public unsafe class CNWSTransition : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSTransition_m_oidCachedTransitionTarget_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSTransition_m_oidCachedTransitionTarget_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSTransition_m_oidCachedTransitionTarget_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSObject LookupTarget() {

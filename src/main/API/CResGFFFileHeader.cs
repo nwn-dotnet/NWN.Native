@@ -95,9 +95,10 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
       NWNXLibPINVOKE.CResGFFFileHeader_m_nFileType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGFFFileHeader_m_nFileType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGFFFileHeader_m_nFileType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nFileVersion {
@@ -105,9 +106,10 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
       NWNXLibPINVOKE.CResGFFFileHeader_m_nFileVersion_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGFFFileHeader_m_nFileVersion_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGFFFileHeader_m_nFileVersion_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nStructOffset {
@@ -115,9 +117,10 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
       NWNXLibPINVOKE.CResGFFFileHeader_m_nStructOffset_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGFFFileHeader_m_nStructOffset_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGFFFileHeader_m_nStructOffset_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nStructCount {
@@ -125,9 +128,10 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
       NWNXLibPINVOKE.CResGFFFileHeader_m_nStructCount_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGFFFileHeader_m_nStructCount_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGFFFileHeader_m_nStructCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nFieldOffset {
@@ -135,9 +139,10 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
       NWNXLibPINVOKE.CResGFFFileHeader_m_nFieldOffset_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGFFFileHeader_m_nFieldOffset_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGFFFileHeader_m_nFieldOffset_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nFieldCount {
@@ -145,9 +150,10 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
       NWNXLibPINVOKE.CResGFFFileHeader_m_nFieldCount_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGFFFileHeader_m_nFieldCount_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGFFFileHeader_m_nFieldCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nLabelOffset {
@@ -155,9 +161,10 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
       NWNXLibPINVOKE.CResGFFFileHeader_m_nLabelOffset_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGFFFileHeader_m_nLabelOffset_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGFFFileHeader_m_nLabelOffset_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nLabelCount {
@@ -165,9 +172,10 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
       NWNXLibPINVOKE.CResGFFFileHeader_m_nLabelCount_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGFFFileHeader_m_nLabelCount_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGFFFileHeader_m_nLabelCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nDataFieldOffset {
@@ -175,9 +183,10 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
       NWNXLibPINVOKE.CResGFFFileHeader_m_nDataFieldOffset_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGFFFileHeader_m_nDataFieldOffset_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGFFFileHeader_m_nDataFieldOffset_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nDataFieldCount {
@@ -185,9 +194,10 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
       NWNXLibPINVOKE.CResGFFFileHeader_m_nDataFieldCount_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGFFFileHeader_m_nDataFieldCount_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGFFFileHeader_m_nDataFieldCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nDataLayoutFieldOffset {
@@ -195,9 +205,10 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
       NWNXLibPINVOKE.CResGFFFileHeader_m_nDataLayoutFieldOffset_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGFFFileHeader_m_nDataLayoutFieldOffset_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGFFFileHeader_m_nDataLayoutFieldOffset_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nDataLayoutFieldCount {
@@ -205,9 +216,10 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
       NWNXLibPINVOKE.CResGFFFileHeader_m_nDataLayoutFieldCount_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGFFFileHeader_m_nDataLayoutFieldCount_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGFFFileHeader_m_nDataLayoutFieldCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nDataLayoutListOffset {
@@ -215,9 +227,10 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
       NWNXLibPINVOKE.CResGFFFileHeader_m_nDataLayoutListOffset_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGFFFileHeader_m_nDataLayoutListOffset_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGFFFileHeader_m_nDataLayoutListOffset_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nDataLayoutListCount {
@@ -225,9 +238,10 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
       NWNXLibPINVOKE.CResGFFFileHeader_m_nDataLayoutListCount_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGFFFileHeader_m_nDataLayoutListCount_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGFFFileHeader_m_nDataLayoutListCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResGFFFileHeader() : this(NWNXLibPINVOKE.new_CResGFFFileHeader(), true) {

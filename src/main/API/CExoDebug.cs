@@ -116,11 +116,11 @@ public unsafe class CExoDebug : global::System.IDisposable {
   }
 
   public void Assert(int nLineNumber, byte* sFileName, byte* sComment) {
-    NWNXLibPINVOKE.CExoDebug_Assert__SWIG_0(swigCPtr, nLineNumber, (global::System.IntPtr)sFileName, (global::System.IntPtr)sComment);
+    NWNXLibPINVOKE.CExoDebug_Assert__SWIG_0(swigCPtr, nLineNumber, sFileName, sComment);
   }
 
   public void Assert(int nLineNumber, byte* sFileName) {
-    NWNXLibPINVOKE.CExoDebug_Assert__SWIG_1(swigCPtr, nLineNumber, (global::System.IntPtr)sFileName);
+    NWNXLibPINVOKE.CExoDebug_Assert__SWIG_1(swigCPtr, nLineNumber, sFileName);
   }
 
   public void CloseLogFiles() {
@@ -136,23 +136,23 @@ public unsafe class CExoDebug : global::System.IDisposable {
   }
 
   public uint GetCurrentAllocatedMemory() {
-    uint ret = NWNXLibPINVOKE.CExoDebug_GetCurrentAllocatedMemory(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoDebug_GetCurrentAllocatedMemory(swigCPtr);
+    return retVal;
   }
 
   public uint GetMaxAllocatedMemory() {
-    uint ret = NWNXLibPINVOKE.CExoDebug_GetMaxAllocatedMemory(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoDebug_GetMaxAllocatedMemory(swigCPtr);
+    return retVal;
   }
 
   public uint GetTotalMemoryAllocations() {
-    uint ret = NWNXLibPINVOKE.CExoDebug_GetTotalMemoryAllocations(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoDebug_GetTotalMemoryAllocations(swigCPtr);
+    return retVal;
   }
 
   public uint GetCurrentMemoryAllocations() {
-    uint ret = NWNXLibPINVOKE.CExoDebug_GetCurrentMemoryAllocations(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoDebug_GetCurrentMemoryAllocations(swigCPtr);
+    return retVal;
   }
 
   public void OpenLogFiles(CExoString sExecutableName, int nMaxLogSize) {
@@ -166,11 +166,11 @@ public unsafe class CExoDebug : global::System.IDisposable {
   }
 
   public void Warning(int nLineNumber, byte* sFileName, byte* sComment) {
-    NWNXLibPINVOKE.CExoDebug_Warning__SWIG_0(swigCPtr, nLineNumber, (global::System.IntPtr)sFileName, (global::System.IntPtr)sComment);
+    NWNXLibPINVOKE.CExoDebug_Warning__SWIG_0(swigCPtr, nLineNumber, sFileName, sComment);
   }
 
   public void Warning(int nLineNumber, byte* sFileName) {
-    NWNXLibPINVOKE.CExoDebug_Warning__SWIG_1(swigCPtr, nLineNumber, (global::System.IntPtr)sFileName);
+    NWNXLibPINVOKE.CExoDebug_Warning__SWIG_1(swigCPtr, nLineNumber, sFileName);
   }
 
   public void WriteToErrorFile(CExoString sLogString) {

@@ -139,9 +139,10 @@ public unsafe class CResStruct : global::System.IDisposable {
       NWNXLibPINVOKE.CResStruct_m_bIncludeStringHashTable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CResStruct_m_bIncludeStringHashTable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CResStruct_m_bIncludeStringHashTable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CStringFieldIDType m_pStringFieldIDs {

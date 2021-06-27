@@ -95,9 +95,10 @@ public unsafe class CNWVisibilityNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWVisibilityNode_m_oidCreature_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWVisibilityNode_m_oidCreature_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWVisibilityNode_m_oidCreature_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_bSeen {
@@ -105,9 +106,10 @@ public unsafe class CNWVisibilityNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWVisibilityNode_m_bSeen_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWVisibilityNode_m_bSeen_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWVisibilityNode_m_bSeen_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_bHeard {
@@ -115,9 +117,10 @@ public unsafe class CNWVisibilityNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWVisibilityNode_m_bHeard_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWVisibilityNode_m_bHeard_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWVisibilityNode_m_bHeard_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nSanctuary {
@@ -125,9 +128,10 @@ public unsafe class CNWVisibilityNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWVisibilityNode_m_nSanctuary_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWVisibilityNode_m_nSanctuary_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWVisibilityNode_m_nSanctuary_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_bInvisible {
@@ -135,9 +139,10 @@ public unsafe class CNWVisibilityNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWVisibilityNode_m_bInvisible_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWVisibilityNode_m_bInvisible_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWVisibilityNode_m_bInvisible_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWVisibilityNode() : this(NWNXLibPINVOKE.new_CNWVisibilityNode(), true) {

@@ -106,15 +106,15 @@ public unsafe class CExoIniInternal : global::System.IDisposable {
   }
 
   public int ReadIniEntry(CExoString sValue, int idxIniFile, CExoString sSection, CExoString sEntry) {
-    int ret = NWNXLibPINVOKE.CExoIniInternal_ReadIniEntry(swigCPtr, CExoString.getCPtr(sValue), idxIniFile, CExoString.getCPtr(sSection), CExoString.getCPtr(sEntry));
+    int retVal = NWNXLibPINVOKE.CExoIniInternal_ReadIniEntry(swigCPtr, CExoString.getCPtr(sValue), idxIniFile, CExoString.getCPtr(sSection), CExoString.getCPtr(sEntry));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int WriteIniEntry(CExoString sValue, int idxIniFile, CExoString sSection, CExoString sEntry, int stripIfEmpty) {
-    int ret = NWNXLibPINVOKE.CExoIniInternal_WriteIniEntry(swigCPtr, CExoString.getCPtr(sValue), idxIniFile, CExoString.getCPtr(sSection), CExoString.getCPtr(sEntry), stripIfEmpty);
+    int retVal = NWNXLibPINVOKE.CExoIniInternal_WriteIniEntry(swigCPtr, CExoString.getCPtr(sValue), idxIniFile, CExoString.getCPtr(sSection), CExoString.getCPtr(sEntry), stripIfEmpty);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
 }

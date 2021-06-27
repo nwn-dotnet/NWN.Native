@@ -106,9 +106,10 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
       NWNXLibPINVOKE.CExoPackedFile_m_wDrives_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CExoPackedFile_m_wDrives_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CExoPackedFile_m_wDrives_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nFileSize {
@@ -116,9 +117,10 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
       NWNXLibPINVOKE.CExoPackedFile_m_nFileSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoPackedFile_m_nFileSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoPackedFile_m_nFileSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoFile m_pExoFile {
@@ -148,9 +150,10 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
       NWNXLibPINVOKE.CExoPackedFile_m_nRefCount_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoPackedFile_m_nRefCount_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoPackedFile_m_nRefCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nAsyncRefCount {
@@ -158,9 +161,10 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
       NWNXLibPINVOKE.CExoPackedFile_m_nAsyncRefCount_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoPackedFile_m_nAsyncRefCount_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoPackedFile_m_nAsyncRefCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bLoaded {
@@ -168,9 +172,10 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
       NWNXLibPINVOKE.CExoPackedFile_m_bLoaded_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoPackedFile_m_bLoaded_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoPackedFile_m_bLoaded_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bAsyncLoaded {
@@ -178,9 +183,10 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
       NWNXLibPINVOKE.CExoPackedFile_m_bAsyncLoaded_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoPackedFile_m_bAsyncLoaded_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoPackedFile_m_bAsyncLoaded_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bHeaderLoaded {
@@ -188,9 +194,10 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
       NWNXLibPINVOKE.CExoPackedFile_m_bHeaderLoaded_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoPackedFile_m_bHeaderLoaded_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoPackedFile_m_bHeaderLoaded_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoPackedFile() : this(NWNXLibPINVOKE.new_CExoPackedFile(), true) {
@@ -205,13 +212,13 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
   }
 
   public virtual int CloseFile() {
-    int ret = NWNXLibPINVOKE.CExoPackedFile_CloseFile(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoPackedFile_CloseFile(swigCPtr);
+    return retVal;
   }
 
   public virtual int CloseAsyncFile() {
-    int ret = NWNXLibPINVOKE.CExoPackedFile_CloseAsyncFile(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoPackedFile_CloseAsyncFile(swigCPtr);
+    return retVal;
   }
 
   public virtual void DeleteRefCount() {
@@ -235,35 +242,35 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
   }
 
   public virtual uint GetResourceSize(RESID nID) {
-    uint ret = NWNXLibPINVOKE.CExoPackedFile_GetResourceSize(swigCPtr, RESID.getCPtr(nID));
+    uint retVal = NWNXLibPINVOKE.CExoPackedFile_GetResourceSize(swigCPtr, RESID.getCPtr(nID));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public virtual int Initialize() {
-    int ret = NWNXLibPINVOKE.CExoPackedFile_Initialize(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoPackedFile_Initialize(swigCPtr);
+    return retVal;
   }
 
   public virtual int OpenFile() {
-    int ret = NWNXLibPINVOKE.CExoPackedFile_OpenFile__SWIG_0(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoPackedFile_OpenFile__SWIG_0(swigCPtr);
+    return retVal;
   }
 
   public virtual int OpenFile(byte* pCipher) {
-    int ret = NWNXLibPINVOKE.CExoPackedFile_OpenFile__SWIG_1(swigCPtr, (global::System.IntPtr)pCipher);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoPackedFile_OpenFile__SWIG_1(swigCPtr, pCipher);
+    return retVal;
   }
 
   public virtual int OpenAsyncFile() {
-    int ret = NWNXLibPINVOKE.CExoPackedFile_OpenAsyncFile(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoPackedFile_OpenAsyncFile(swigCPtr);
+    return retVal;
   }
 
   public virtual uint ReadResource(RESID nID, void* pData, uint nSize, uint nDataOffset) {
-    uint ret = NWNXLibPINVOKE.CExoPackedFile_ReadResource(swigCPtr, RESID.getCPtr(nID), (global::System.IntPtr)pData, nSize, nDataOffset);
+    uint retVal = NWNXLibPINVOKE.CExoPackedFile_ReadResource(swigCPtr, RESID.getCPtr(nID), (global::System.IntPtr)pData, nSize, nDataOffset);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public virtual void ReadResourceAsync(RESID nID, void* pData, uint nSize, uint nDataOffset) {
@@ -272,23 +279,23 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
   }
 
   public virtual int LoadHeader(byte* expectOid, byte nType) {
-    int ret = NWNXLibPINVOKE.CExoPackedFile_LoadHeader__SWIG_0(swigCPtr, (global::System.IntPtr)expectOid, nType);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoPackedFile_LoadHeader__SWIG_0(swigCPtr, expectOid, nType);
+    return retVal;
   }
 
   public virtual int LoadHeader(byte* expectOid) {
-    int ret = NWNXLibPINVOKE.CExoPackedFile_LoadHeader__SWIG_1(swigCPtr, (global::System.IntPtr)expectOid);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoPackedFile_LoadHeader__SWIG_1(swigCPtr, expectOid);
+    return retVal;
   }
 
   public virtual int UnloadHeader() {
-    int ret = NWNXLibPINVOKE.CExoPackedFile_UnloadHeader(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoPackedFile_UnloadHeader(swigCPtr);
+    return retVal;
   }
 
   public uint ReadNWCompressedBuffer(void* outBuffer, uint outBufSize, uint readLength) {
-    uint ret = NWNXLibPINVOKE.CExoPackedFile_ReadNWCompressedBuffer(swigCPtr, (global::System.IntPtr)outBuffer, outBufSize, readLength);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoPackedFile_ReadNWCompressedBuffer(swigCPtr, (global::System.IntPtr)outBuffer, outBufSize, readLength);
+    return retVal;
   }
 
 }

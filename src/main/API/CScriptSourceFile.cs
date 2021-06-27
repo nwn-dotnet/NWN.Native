@@ -94,9 +94,9 @@ public unsafe class CScriptSourceFile : global::System.IDisposable {
   }
 
   public int LoadScript(CExoString sFileName, byte** pScript, uint* nScriptLength) {
-    int ret = NWNXLibPINVOKE.CScriptSourceFile_LoadScript(swigCPtr, CExoString.getCPtr(sFileName), (global::System.IntPtr)pScript, (global::System.IntPtr)nScriptLength);
+    int retVal = NWNXLibPINVOKE.CScriptSourceFile_LoadScript(swigCPtr, CExoString.getCPtr(sFileName), (global::System.IntPtr)pScript, nScriptLength);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void UnloadScript() {

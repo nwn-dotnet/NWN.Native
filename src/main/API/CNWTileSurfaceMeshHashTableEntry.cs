@@ -95,9 +95,10 @@ public unsafe class CNWTileSurfaceMeshHashTableEntry : global::System.IDisposabl
       NWNXLibPINVOKE.CNWTileSurfaceMeshHashTableEntry_m_nBestTriangle_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWTileSurfaceMeshHashTableEntry_m_nBestTriangle_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshHashTableEntry_m_nBestTriangle_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nRecentTriangle {
@@ -105,9 +106,10 @@ public unsafe class CNWTileSurfaceMeshHashTableEntry : global::System.IDisposabl
       NWNXLibPINVOKE.CNWTileSurfaceMeshHashTableEntry_m_nRecentTriangle_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWTileSurfaceMeshHashTableEntry_m_nRecentTriangle_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshHashTableEntry_m_nRecentTriangle_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fBestAttemptedDepth {
@@ -115,9 +117,10 @@ public unsafe class CNWTileSurfaceMeshHashTableEntry : global::System.IDisposabl
       NWNXLibPINVOKE.CNWTileSurfaceMeshHashTableEntry_m_fBestAttemptedDepth_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWTileSurfaceMeshHashTableEntry_m_fBestAttemptedDepth_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshHashTableEntry_m_fBestAttemptedDepth_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fRecentAttemptedDepth {
@@ -125,17 +128,18 @@ public unsafe class CNWTileSurfaceMeshHashTableEntry : global::System.IDisposabl
       NWNXLibPINVOKE.CNWTileSurfaceMeshHashTableEntry_m_fRecentAttemptedDepth_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWTileSurfaceMeshHashTableEntry_m_fRecentAttemptedDepth_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshHashTableEntry_m_fRecentAttemptedDepth_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWTileSurfaceMeshHashTableEntry() : this(NWNXLibPINVOKE.new_CNWTileSurfaceMeshHashTableEntry(), true) {
   }
 
   public float Fetch(int nTriangle) {
-    float ret = NWNXLibPINVOKE.CNWTileSurfaceMeshHashTableEntry_Fetch(swigCPtr, nTriangle);
-    return ret;
+    float retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshHashTableEntry_Fetch(swigCPtr, nTriangle);
+    return retVal;
   }
 
   public void Store(int nTriangle, float fDepth) {

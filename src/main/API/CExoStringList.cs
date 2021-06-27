@@ -106,9 +106,10 @@ public unsafe class CExoStringList : global::System.IDisposable {
       NWNXLibPINVOKE.CExoStringList_m_nCount_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoStringList_m_nCount_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoStringList_m_nCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nDuplicates {
@@ -116,9 +117,10 @@ public unsafe class CExoStringList : global::System.IDisposable {
       NWNXLibPINVOKE.CExoStringList_m_nDuplicates_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoStringList_m_nDuplicates_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoStringList_m_nDuplicates_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nSorted {
@@ -126,9 +128,10 @@ public unsafe class CExoStringList : global::System.IDisposable {
       NWNXLibPINVOKE.CExoStringList_m_nSorted_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoStringList_m_nSorted_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoStringList_m_nSorted_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nSize {
@@ -136,9 +139,10 @@ public unsafe class CExoStringList : global::System.IDisposable {
       NWNXLibPINVOKE.CExoStringList_m_nSize_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoStringList_m_nSize_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoStringList_m_nSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoStringList() : this(NWNXLibPINVOKE.new_CExoStringList__SWIG_0(), true) {
@@ -163,23 +167,23 @@ public unsafe class CExoStringList : global::System.IDisposable {
   }
 
   public int GetCount() {
-    int ret = NWNXLibPINVOKE.CExoStringList_GetCount(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoStringList_GetCount(swigCPtr);
+    return retVal;
   }
 
   public int GetDuplicate() {
-    int ret = NWNXLibPINVOKE.CExoStringList_GetDuplicate(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoStringList_GetDuplicate(swigCPtr);
+    return retVal;
   }
 
   public int GetSize() {
-    int ret = NWNXLibPINVOKE.CExoStringList_GetSize(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoStringList_GetSize(swigCPtr);
+    return retVal;
   }
 
   public int GetSorted() {
-    int ret = NWNXLibPINVOKE.CExoStringList_GetSorted(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoStringList_GetSorted(swigCPtr);
+    return retVal;
   }
 
   public CExoString GetString(int a_nPosition) {

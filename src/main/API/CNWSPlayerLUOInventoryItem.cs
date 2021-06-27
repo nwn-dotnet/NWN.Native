@@ -95,9 +95,10 @@ public unsafe class CNWSPlayerLUOInventoryItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOInventoryItem_oidObject_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerLUOInventoryItem_oidObject_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerLUOInventoryItem_oidObject_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte xPos {
@@ -105,9 +106,10 @@ public unsafe class CNWSPlayerLUOInventoryItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOInventoryItem_xPos_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerLUOInventoryItem_xPos_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerLUOInventoryItem_xPos_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte yPos {
@@ -115,9 +117,10 @@ public unsafe class CNWSPlayerLUOInventoryItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOInventoryItem_yPos_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerLUOInventoryItem_yPos_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerLUOInventoryItem_yPos_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nStackSize {
@@ -125,9 +128,10 @@ public unsafe class CNWSPlayerLUOInventoryItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOInventoryItem_nStackSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerLUOInventoryItem_nStackSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerLUOInventoryItem_nStackSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nCost {
@@ -135,9 +139,10 @@ public unsafe class CNWSPlayerLUOInventoryItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOInventoryItem_nCost_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerLUOInventoryItem_nCost_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerLUOInventoryItem_nCost_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSPlayerLUOInventoryItem() : this(NWNXLibPINVOKE.new_CNWSPlayerLUOInventoryItem(), true) {

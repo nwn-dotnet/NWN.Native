@@ -103,11 +103,11 @@ public unsafe class CNWPlaceableSurfaceMesh : global::System.IDisposable {
 
   public int* m_pnTriangles {
     set {
-      NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangles_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangles_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangles_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangles_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -117,9 +117,10 @@ public unsafe class CNWPlaceableSurfaceMesh : global::System.IDisposable {
       NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_nTriangles_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_nTriangles_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_nTriangles_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nVertices {
@@ -127,18 +128,19 @@ public unsafe class CNWPlaceableSurfaceMesh : global::System.IDisposable {
       NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_nVertices_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_nVertices_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_nVertices_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int* m_pnTriangleMaterial {
     set {
-      NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangleMaterial_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangleMaterial_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangleMaterial_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_m_pnTriangleMaterial_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -159,14 +161,14 @@ public unsafe class CNWPlaceableSurfaceMesh : global::System.IDisposable {
   }
 
   public int LoadWalkMesh(CResRef cWalkMesh) {
-    int ret = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_LoadWalkMesh(swigCPtr, CResRef.getCPtr(cWalkMesh));
+    int retVal = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_LoadWalkMesh(swigCPtr, CResRef.getCPtr(cWalkMesh));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int LoadWalkMeshString(byte** pInput, uint* nInputSize, byte* pchBuffer, uint nBufferSize) {
-    int ret = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_LoadWalkMeshString(swigCPtr, (global::System.IntPtr)pInput, (global::System.IntPtr)nInputSize, (global::System.IntPtr)pchBuffer, nBufferSize);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWPlaceableSurfaceMesh_LoadWalkMeshString(swigCPtr, (global::System.IntPtr)pInput, nInputSize, pchBuffer, nBufferSize);
+    return retVal;
   }
 
 }

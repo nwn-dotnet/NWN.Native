@@ -95,9 +95,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nName_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWBaseItem_m_nName_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWBaseItem_m_nName_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nEquipableSlots {
@@ -105,9 +106,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nEquipableSlots_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWBaseItem_m_nEquipableSlots_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWBaseItem_m_nEquipableSlots_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nWeaponWield {
@@ -115,9 +117,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nWeaponWield_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponWield_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponWield_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nWeaponType {
@@ -125,9 +128,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nWeaponType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nMinRange {
@@ -135,9 +139,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nMinRange_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWBaseItem_m_nMinRange_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWBaseItem_m_nMinRange_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nMaxRange {
@@ -145,9 +150,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nMaxRange_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWBaseItem_m_nMaxRange_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWBaseItem_m_nMaxRange_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nInvSlotWidth {
@@ -155,9 +161,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nInvSlotWidth_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nInvSlotWidth_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nInvSlotWidth_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nInvSlotHeight {
@@ -165,9 +172,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nInvSlotHeight_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nInvSlotHeight_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nInvSlotHeight_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nModelType {
@@ -175,9 +183,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nModelType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nModelType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nModelType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nStartingCharges {
@@ -185,9 +194,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nStartingCharges_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nStartingCharges_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nStartingCharges_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nWeaponRanged {
@@ -195,9 +205,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nWeaponRanged_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponRanged_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponRanged_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nWeaponSize {
@@ -205,9 +216,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nWeaponSize_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponSize_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nNumDice {
@@ -215,9 +227,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nNumDice_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nNumDice_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nNumDice_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nDieToRoll {
@@ -225,9 +238,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nDieToRoll_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nDieToRoll_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nDieToRoll_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nCritThreat {
@@ -235,9 +249,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nCritThreat_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nCritThreat_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nCritThreat_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nCritMult {
@@ -245,9 +260,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nCritMult_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nCritMult_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nCritMult_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nCategory {
@@ -255,9 +271,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nCategory_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nCategory_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nCategory_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_nBaseCost {
@@ -265,9 +282,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nBaseCost_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWBaseItem_m_nBaseCost_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWBaseItem_m_nBaseCost_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nStackSize {
@@ -275,9 +293,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nStackSize_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWBaseItem_m_nStackSize_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWBaseItem_m_nStackSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_nCostMultiplier {
@@ -285,9 +304,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nCostMultiplier_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWBaseItem_m_nCostMultiplier_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWBaseItem_m_nCostMultiplier_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nDescription {
@@ -295,9 +315,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nDescription_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWBaseItem_m_nDescription_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWBaseItem_m_nDescription_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nMinProperties {
@@ -305,9 +326,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nMinProperties_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nMinProperties_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nMinProperties_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nMaxProperties {
@@ -315,9 +337,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nMaxProperties_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nMaxProperties_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nMaxProperties_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nPropColumn {
@@ -325,9 +348,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nPropColumn_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nPropColumn_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nPropColumn_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nStorePanel {
@@ -335,9 +359,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nStorePanel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nStorePanel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nStorePanel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nStorePanelSort {
@@ -345,9 +370,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nStorePanelSort_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nStorePanelSort_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nStorePanelSort_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nPercentageSlashL {
@@ -355,9 +381,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nPercentageSlashL_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nPercentageSlashL_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nPercentageSlashL_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nPercentageSlashR {
@@ -365,9 +392,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nPercentageSlashR_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nPercentageSlashR_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nPercentageSlashR_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nPercentageSlashS {
@@ -375,9 +403,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nPercentageSlashS_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nPercentageSlashS_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nPercentageSlashS_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nILRStackSize {
@@ -385,9 +414,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nILRStackSize_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nILRStackSize_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nILRStackSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fPreferredAttackDist {
@@ -395,9 +425,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_fPreferredAttackDist_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWBaseItem_m_fPreferredAttackDist_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWBaseItem_m_fPreferredAttackDist_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<byte> m_ItemClassResRefChunk {
@@ -453,9 +484,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_bCanRotateIcon_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWBaseItem_m_bCanRotateIcon_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWBaseItem_m_bCanRotateIcon_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bContainer {
@@ -463,9 +495,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_bContainer_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWBaseItem_m_bContainer_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWBaseItem_m_bContainer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bGenderSpecific {
@@ -473,9 +506,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_bGenderSpecific_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWBaseItem_m_bGenderSpecific_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWBaseItem_m_bGenderSpecific_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_InventorySoundType {
@@ -483,9 +517,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_InventorySoundType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_InventorySoundType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_InventorySoundType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort* m_pRequiredFeats {
@@ -504,9 +539,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nRequiredFeatCount_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nRequiredFeatCount_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nRequiredFeatCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nStatsString {
@@ -514,9 +550,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nStatsString_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWBaseItem_m_nStatsString_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWBaseItem_m_nStatsString_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nRotateOnGround {
@@ -524,9 +561,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nRotateOnGround_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nRotateOnGround_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nRotateOnGround_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nWeight {
@@ -534,9 +572,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nWeight_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWBaseItem_m_nWeight_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWBaseItem_m_nWeight_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nBaseAC {
@@ -544,9 +583,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nBaseAC_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nBaseAC_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nBaseAC_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nACEnchantmentType {
@@ -554,9 +594,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nACEnchantmentType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nACEnchantmentType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nACEnchantmentType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nWeaponMaterialType {
@@ -564,29 +605,32 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nWeaponMaterialType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponMaterialType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponMaterialType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nArmorCheckPenalty {
+  public byte m_nArmorCheckPenalty {
     set {
       NWNXLibPINVOKE.CNWBaseItem_m_nArmorCheckPenalty_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWBaseItem_m_nArmorCheckPenalty_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nArmorCheckPenalty_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nAmmunitionType {
+  public byte m_nAmmunitionType {
     set {
       NWNXLibPINVOKE.CNWBaseItem_m_nAmmunitionType_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWBaseItem_m_nAmmunitionType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nAmmunitionType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nQBBehaviourType {
@@ -594,9 +638,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nQBBehaviourType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nQBBehaviourType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nQBBehaviourType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nArcaneSpellFailure {
@@ -604,9 +649,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nArcaneSpellFailure_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWBaseItem_m_nArcaneSpellFailure_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nArcaneSpellFailure_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nWeaponFocusFeat {
@@ -614,9 +660,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nWeaponFocusFeat_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponFocusFeat_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponFocusFeat_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nEpicWeaponFocusFeat {
@@ -624,9 +671,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nEpicWeaponFocusFeat_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWBaseItem_m_nEpicWeaponFocusFeat_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWBaseItem_m_nEpicWeaponFocusFeat_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nWeaponSpecializationFeat {
@@ -634,9 +682,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nWeaponSpecializationFeat_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponSpecializationFeat_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponSpecializationFeat_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nEpicWeaponSpecializationFeat {
@@ -644,9 +693,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nEpicWeaponSpecializationFeat_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWBaseItem_m_nEpicWeaponSpecializationFeat_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWBaseItem_m_nEpicWeaponSpecializationFeat_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nWeaponImprovedCriticalFeat {
@@ -654,9 +704,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nWeaponImprovedCriticalFeat_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponImprovedCriticalFeat_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponImprovedCriticalFeat_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nEpicWeaponOverwhelmingCriticalFeat {
@@ -664,9 +715,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nEpicWeaponOverwhelmingCriticalFeat_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWBaseItem_m_nEpicWeaponOverwhelmingCriticalFeat_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWBaseItem_m_nEpicWeaponOverwhelmingCriticalFeat_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nEpicWeaponDevastatingCriticalFeat {
@@ -674,9 +726,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nEpicWeaponDevastatingCriticalFeat_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWBaseItem_m_nEpicWeaponDevastatingCriticalFeat_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWBaseItem_m_nEpicWeaponDevastatingCriticalFeat_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nWeaponOfChoiceFeat {
@@ -684,9 +737,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItem_m_nWeaponOfChoiceFeat_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponOfChoiceFeat_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponOfChoiceFeat_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWBaseItem() : this(NWNXLibPINVOKE.new_CNWBaseItem(), true) {
@@ -697,7 +751,7 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
     return ret;
   }
 
-  public CResRef GetModelResRef(byte nPart, short nModelNumber, char nGender) {
+  public CResRef GetModelResRef(byte nPart, short nModelNumber, byte nGender) {
     CResRef ret = new CResRef(NWNXLibPINVOKE.CNWBaseItem_GetModelResRef__SWIG_0(swigCPtr, nPart, nModelNumber, nGender), true);
     return ret;
   }
@@ -707,7 +761,7 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
     return ret;
   }
 
-  public CResRef GetIconResRef(byte nPart, short nModelNumber, char nGender) {
+  public CResRef GetIconResRef(byte nPart, short nModelNumber, byte nGender) {
     CResRef ret = new CResRef(NWNXLibPINVOKE.CNWBaseItem_GetIconResRef__SWIG_0(swigCPtr, nPart, nModelNumber, nGender), true);
     return ret;
   }
@@ -718,8 +772,8 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
   }
 
   public ushort GetRequiredFeat(byte nReqFeatIndex) {
-    ushort ret = NWNXLibPINVOKE.CNWBaseItem_GetRequiredFeat(swigCPtr, nReqFeatIndex);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWBaseItem_GetRequiredFeat(swigCPtr, nReqFeatIndex);
+    return retVal;
   }
 
   public void SetRequiredFeat(byte nReqFeatIndex, ushort nFeat) {

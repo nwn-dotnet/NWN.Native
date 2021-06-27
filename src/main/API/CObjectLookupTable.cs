@@ -92,11 +92,11 @@ public unsafe class CObjectLookupTable : global::System.IDisposable {
 /*@SWIG@*/
   public uint* m_pdwObjectTable {
     set {
-      NWNXLibPINVOKE.CObjectLookupTable_m_pdwObjectTable_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CObjectLookupTable_m_pdwObjectTable_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CObjectLookupTable_m_pdwObjectTable_get(swigCPtr);
-        return (uint*)retVal;
+      uint* retVal = NWNXLibPINVOKE.CObjectLookupTable_m_pdwObjectTable_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -106,9 +106,10 @@ public unsafe class CObjectLookupTable : global::System.IDisposable {
       NWNXLibPINVOKE.CObjectLookupTable_m_dwStart_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CObjectLookupTable_m_dwStart_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CObjectLookupTable_m_dwStart_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_dwEnd {
@@ -116,9 +117,10 @@ public unsafe class CObjectLookupTable : global::System.IDisposable {
       NWNXLibPINVOKE.CObjectLookupTable_m_dwEnd_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CObjectLookupTable_m_dwEnd_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CObjectLookupTable_m_dwEnd_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bUpdateRequired {
@@ -126,35 +128,36 @@ public unsafe class CObjectLookupTable : global::System.IDisposable {
       NWNXLibPINVOKE.CObjectLookupTable_m_bUpdateRequired_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CObjectLookupTable_m_bUpdateRequired_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CObjectLookupTable_m_bUpdateRequired_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CObjectLookupTable() : this(NWNXLibPINVOKE.new_CObjectLookupTable(), true) {
   }
 
   public uint AddID(uint dwID) {
-    uint ret = NWNXLibPINVOKE.CObjectLookupTable_AddID(swigCPtr, dwID);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CObjectLookupTable_AddID(swigCPtr, dwID);
+    return retVal;
   }
 
   public uint GetIDFromIndex(uint dwSlot) {
-    uint ret = NWNXLibPINVOKE.CObjectLookupTable_GetIDFromIndex(swigCPtr, dwSlot);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CObjectLookupTable_GetIDFromIndex(swigCPtr, dwSlot);
+    return retVal;
   }
 
   public void GetUpdate(byte* pData, uint* dwSize) {
-    NWNXLibPINVOKE.CObjectLookupTable_GetUpdate(swigCPtr, (global::System.IntPtr)pData, (global::System.IntPtr)dwSize);
+    NWNXLibPINVOKE.CObjectLookupTable_GetUpdate(swigCPtr, pData, dwSize);
   }
 
   public void Update(byte* pData, uint dwSize) {
-    NWNXLibPINVOKE.CObjectLookupTable_Update(swigCPtr, (global::System.IntPtr)pData, dwSize);
+    NWNXLibPINVOKE.CObjectLookupTable_Update(swigCPtr, pData, dwSize);
   }
 
   public uint GetIndexFromID(uint dwID) {
-    uint ret = NWNXLibPINVOKE.CObjectLookupTable_GetIndexFromID(swigCPtr, dwID);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CObjectLookupTable_GetIndexFromID(swigCPtr, dwID);
+    return retVal;
   }
 
   public void Touch(uint dwSlot) {

@@ -95,9 +95,10 @@ public unsafe class KEYFILE_RESFILENAME : global::System.IDisposable {
       NWNXLibPINVOKE.KEYFILE_RESFILENAME_nFileSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.KEYFILE_RESFILENAME_nFileSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.KEYFILE_RESFILENAME_nFileSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nFileNameOffset {
@@ -105,9 +106,10 @@ public unsafe class KEYFILE_RESFILENAME : global::System.IDisposable {
       NWNXLibPINVOKE.KEYFILE_RESFILENAME_nFileNameOffset_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.KEYFILE_RESFILENAME_nFileNameOffset_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.KEYFILE_RESFILENAME_nFileNameOffset_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort nFileNameSize {
@@ -115,9 +117,10 @@ public unsafe class KEYFILE_RESFILENAME : global::System.IDisposable {
       NWNXLibPINVOKE.KEYFILE_RESFILENAME_nFileNameSize_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.KEYFILE_RESFILENAME_nFileNameSize_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.KEYFILE_RESFILENAME_nFileNameSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort bDrives {
@@ -125,9 +128,10 @@ public unsafe class KEYFILE_RESFILENAME : global::System.IDisposable {
       NWNXLibPINVOKE.KEYFILE_RESFILENAME_bDrives_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.KEYFILE_RESFILENAME_bDrives_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.KEYFILE_RESFILENAME_bDrives_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public KEYFILE_RESFILENAME() : this(NWNXLibPINVOKE.new_KEYFILE_RESFILENAME(), true) {

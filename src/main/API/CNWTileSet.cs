@@ -117,9 +117,10 @@ public unsafe class CNWTileSet : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSet_m_fHeightTransition_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWTileSet_m_fHeightTransition_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWTileSet_m_fHeightTransition_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nProperty {
@@ -127,9 +128,10 @@ public unsafe class CNWTileSet : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSet_m_nProperty_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWTileSet_m_nProperty_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWTileSet_m_nProperty_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nNumTileData {
@@ -137,9 +139,10 @@ public unsafe class CNWTileSet : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSet_m_nNumTileData_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWTileSet_m_nNumTileData_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWTileSet_m_nNumTileData_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nCurrentTileData {
@@ -147,9 +150,10 @@ public unsafe class CNWTileSet : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSet_m_nCurrentTileData_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWTileSet_m_nCurrentTileData_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWTileSet_m_nCurrentTileData_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWTileData m_pTileData {
@@ -168,9 +172,10 @@ public unsafe class CNWTileSet : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSet_m_bHasGrass_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWTileSet_m_bHasGrass_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWTileSet_m_bHasGrass_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fGrassDensity {
@@ -178,9 +183,10 @@ public unsafe class CNWTileSet : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSet_m_fGrassDensity_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWTileSet_m_fGrassDensity_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWTileSet_m_fGrassDensity_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fGrassHeight {
@@ -188,9 +194,10 @@ public unsafe class CNWTileSet : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSet_m_fGrassHeight_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWTileSet_m_fGrassHeight_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWTileSet_m_fGrassHeight_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public Vector m_vGrassAmbientColor {
@@ -251,8 +258,8 @@ public unsafe class CNWTileSet : global::System.IDisposable {
   }
 
   public float GetHeightTransition() {
-    float ret = NWNXLibPINVOKE.CNWTileSet_GetHeightTransition(swigCPtr);
-    return ret;
+    float retVal = NWNXLibPINVOKE.CNWTileSet_GetHeightTransition(swigCPtr);
+    return retVal;
   }
 
   public CResRef GetEnvMapResRef() {
@@ -267,18 +274,18 @@ public unsafe class CNWTileSet : global::System.IDisposable {
   }
 
   public int LoadTileSet() {
-    int ret = NWNXLibPINVOKE.CNWTileSet_LoadTileSet(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWTileSet_LoadTileSet(swigCPtr);
+    return retVal;
   }
 
   public int ParseLine(byte* pLine) {
-    int ret = NWNXLibPINVOKE.CNWTileSet_ParseLine(swigCPtr, (global::System.IntPtr)pLine);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWTileSet_ParseLine(swigCPtr, pLine);
+    return retVal;
   }
 
   public int SetTileValue(byte* pVariable, byte* pValue) {
-    int ret = NWNXLibPINVOKE.CNWTileSet_SetTileValue(swigCPtr, (global::System.IntPtr)pVariable, (global::System.IntPtr)pValue);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWTileSet_SetTileValue(swigCPtr, pVariable, pValue);
+    return retVal;
   }
 
   public void UnloadTileSet() {

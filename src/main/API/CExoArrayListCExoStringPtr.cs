@@ -106,9 +106,10 @@ public unsafe class CExoArrayListCExoStringPtr : global::System.IDisposable {
       NWNXLibPINVOKE.CExoArrayListCExoStringPtr_num_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListCExoStringPtr_num_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListCExoStringPtr_num_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int array_size {
@@ -116,9 +117,10 @@ public unsafe class CExoArrayListCExoStringPtr : global::System.IDisposable {
       NWNXLibPINVOKE.CExoArrayListCExoStringPtr_array_size_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListCExoStringPtr_array_size_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListCExoStringPtr_array_size_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCExoStringPtr(int s) : this(NWNXLibPINVOKE.new_CExoArrayListCExoStringPtr__SWIG_0(s), true) {

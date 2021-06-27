@@ -95,9 +95,10 @@ public unsafe class CResetOption : global::System.IDisposable {
       NWNXLibPINVOKE.CResetOption_bOnVacant_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CResetOption_bOnVacant_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CResetOption_bOnVacant_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bOnVictory {
@@ -105,9 +106,10 @@ public unsafe class CResetOption : global::System.IDisposable {
       NWNXLibPINVOKE.CResetOption_bOnVictory_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CResetOption_bOnVictory_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CResetOption_bOnVictory_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bOnFailure {
@@ -115,9 +117,10 @@ public unsafe class CResetOption : global::System.IDisposable {
       NWNXLibPINVOKE.CResetOption_bOnFailure_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CResetOption_bOnFailure_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CResetOption_bOnFailure_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bOnDeath {
@@ -125,9 +128,10 @@ public unsafe class CResetOption : global::System.IDisposable {
       NWNXLibPINVOKE.CResetOption_bOnDeath_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CResetOption_bOnDeath_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CResetOption_bOnDeath_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bOnPartyDeath {
@@ -135,9 +139,10 @@ public unsafe class CResetOption : global::System.IDisposable {
       NWNXLibPINVOKE.CResetOption_bOnPartyDeath_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CResetOption_bOnPartyDeath_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CResetOption_bOnPartyDeath_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResetOption() : this(NWNXLibPINVOKE.new_CResetOption(), true) {

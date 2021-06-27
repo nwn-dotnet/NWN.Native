@@ -95,9 +95,10 @@ public unsafe class CWorldTimer : global::System.IDisposable {
       NWNXLibPINVOKE.CWorldTimer_m_bFixedSnapshotRate_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CWorldTimer_m_bFixedSnapshotRate_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CWorldTimer_m_bFixedSnapshotRate_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nFixedSnapshotsPerSecond {
@@ -105,29 +106,32 @@ public unsafe class CWorldTimer : global::System.IDisposable {
       NWNXLibPINVOKE.CWorldTimer_m_nFixedSnapshotsPerSecond_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CWorldTimer_m_nFixedSnapshotsPerSecond_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CWorldTimer_m_nFixedSnapshotsPerSecond_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public uint m_nTimeSnapshot {
+  public ulong m_nTimeSnapshot {
     set {
       NWNXLibPINVOKE.CWorldTimer_m_nTimeSnapshot_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CWorldTimer_m_nTimeSnapshot_get(swigCPtr);
-      return ret;
-    } 
+      ulong retVal = NWNXLibPINVOKE.CWorldTimer_m_nTimeSnapshot_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public uint m_nLastTimeSnapshot {
+  public ulong m_nLastTimeSnapshot {
     set {
       NWNXLibPINVOKE.CWorldTimer_m_nLastTimeSnapshot_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CWorldTimer_m_nLastTimeSnapshot_get(swigCPtr);
-      return ret;
-    } 
+      ulong retVal = NWNXLibPINVOKE.CWorldTimer_m_nLastTimeSnapshot_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bPaused {
@@ -135,9 +139,10 @@ public unsafe class CWorldTimer : global::System.IDisposable {
       NWNXLibPINVOKE.CWorldTimer_m_bPaused_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CWorldTimer_m_bPaused_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CWorldTimer_m_bPaused_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nPausedCalendarDay {
@@ -145,9 +150,10 @@ public unsafe class CWorldTimer : global::System.IDisposable {
       NWNXLibPINVOKE.CWorldTimer_m_nPausedCalendarDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CWorldTimer_m_nPausedCalendarDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CWorldTimer_m_nPausedCalendarDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nPausedTimeOfDay {
@@ -155,9 +161,10 @@ public unsafe class CWorldTimer : global::System.IDisposable {
       NWNXLibPINVOKE.CWorldTimer_m_nPausedTimeOfDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CWorldTimer_m_nPausedTimeOfDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CWorldTimer_m_nPausedTimeOfDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nCalendarDayAdjustment {
@@ -165,9 +172,10 @@ public unsafe class CWorldTimer : global::System.IDisposable {
       NWNXLibPINVOKE.CWorldTimer_m_nCalendarDayAdjustment_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CWorldTimer_m_nCalendarDayAdjustment_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CWorldTimer_m_nCalendarDayAdjustment_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nTimeOfDayAdjustment {
@@ -175,9 +183,10 @@ public unsafe class CWorldTimer : global::System.IDisposable {
       NWNXLibPINVOKE.CWorldTimer_m_nTimeOfDayAdjustment_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CWorldTimer_m_nTimeOfDayAdjustment_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CWorldTimer_m_nTimeOfDayAdjustment_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nMinutesPerHour {
@@ -185,9 +194,10 @@ public unsafe class CWorldTimer : global::System.IDisposable {
       NWNXLibPINVOKE.CWorldTimer_m_nMinutesPerHour_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CWorldTimer_m_nMinutesPerHour_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CWorldTimer_m_nMinutesPerHour_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nMillisecondsPerDay {
@@ -195,9 +205,10 @@ public unsafe class CWorldTimer : global::System.IDisposable {
       NWNXLibPINVOKE.CWorldTimer_m_nMillisecondsPerDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CWorldTimer_m_nMillisecondsPerDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CWorldTimer_m_nMillisecondsPerDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nSecondsPerDay {
@@ -205,9 +216,10 @@ public unsafe class CWorldTimer : global::System.IDisposable {
       NWNXLibPINVOKE.CWorldTimer_m_nSecondsPerDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CWorldTimer_m_nSecondsPerDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CWorldTimer_m_nSecondsPerDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CWorldTimer() : this(NWNXLibPINVOKE.new_CWorldTimer(), true) {
@@ -217,32 +229,32 @@ public unsafe class CWorldTimer : global::System.IDisposable {
     NWNXLibPINVOKE.CWorldTimer_SetSnapshotTime(swigCPtr);
   }
 
-  public uint GetSnapshotTime() {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_GetSnapshotTime(swigCPtr);
-    return ret;
+  public ulong GetSnapshotTime() {
+    ulong retVal = NWNXLibPINVOKE.CWorldTimer_GetSnapshotTime(swigCPtr);
+    return retVal;
   }
 
-  public uint GetSnapshotTimeDifference() {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_GetSnapshotTimeDifference(swigCPtr);
-    return ret;
+  public ulong GetSnapshotTimeDifference() {
+    ulong retVal = NWNXLibPINVOKE.CWorldTimer_GetSnapshotTimeDifference(swigCPtr);
+    return retVal;
   }
 
   public uint ConvertToCalendarDay(uint nYear, uint nMonth, uint nDay) {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_ConvertToCalendarDay(swigCPtr, nYear, nMonth, nDay);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CWorldTimer_ConvertToCalendarDay(swigCPtr, nYear, nMonth, nDay);
+    return retVal;
   }
 
   public uint ConvertToTimeOfDay(uint nHour, uint nMinute, uint nSecond, uint nMillisecond) {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_ConvertToTimeOfDay(swigCPtr, nHour, nMinute, nSecond, nMillisecond);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CWorldTimer_ConvertToTimeOfDay(swigCPtr, nHour, nMinute, nSecond, nMillisecond);
+    return retVal;
   }
 
   public void ConvertFromCalendarDay(uint nCalendarDay, uint* nYear, uint* nMonth, uint* nDay) {
-    NWNXLibPINVOKE.CWorldTimer_ConvertFromCalendarDay(swigCPtr, nCalendarDay, (global::System.IntPtr)nYear, (global::System.IntPtr)nMonth, (global::System.IntPtr)nDay);
+    NWNXLibPINVOKE.CWorldTimer_ConvertFromCalendarDay(swigCPtr, nCalendarDay, nYear, nMonth, nDay);
   }
 
   public void ConvertFromTimeOfDay(uint nTimeOfDay, uint* nHour, uint* nMinute, uint* nSecond, uint* nMillisecond) {
-    NWNXLibPINVOKE.CWorldTimer_ConvertFromTimeOfDay(swigCPtr, nTimeOfDay, (global::System.IntPtr)nHour, (global::System.IntPtr)nMinute, (global::System.IntPtr)nSecond, (global::System.IntPtr)nMillisecond);
+    NWNXLibPINVOKE.CWorldTimer_ConvertFromTimeOfDay(swigCPtr, nTimeOfDay, nHour, nMinute, nSecond, nMillisecond);
   }
 
   public void SetWorldTime(uint nYear, uint nMonth, uint nDay, uint nHour, uint nMinute, uint nSecond, uint nMillisecond, int bTakeSnapshot) {
@@ -262,32 +274,32 @@ public unsafe class CWorldTimer : global::System.IDisposable {
   }
 
   public uint GetTimeDifferenceFromWorldTime(uint nCalendarDay, uint nTimeOfDay) {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_GetTimeDifferenceFromWorldTime(swigCPtr, nCalendarDay, nTimeOfDay);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CWorldTimer_GetTimeDifferenceFromWorldTime(swigCPtr, nCalendarDay, nTimeOfDay);
+    return retVal;
   }
 
-  public uint GetTimeDifference(uint nCalendarDay1, uint nTimeOfDay1, uint nCalendarDay2, uint nTimeOfDay2) {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_GetTimeDifference(swigCPtr, nCalendarDay1, nTimeOfDay1, nCalendarDay2, nTimeOfDay2);
-    return ret;
+  public ulong GetTimeDifference(uint nCalendarDay1, uint nTimeOfDay1, uint nCalendarDay2, uint nTimeOfDay2) {
+    ulong retVal = NWNXLibPINVOKE.CWorldTimer_GetTimeDifference(swigCPtr, nCalendarDay1, nTimeOfDay1, nCalendarDay2, nTimeOfDay2);
+    return retVal;
   }
 
   public void GetWorldTime(uint* nCalendarDay, uint* nTimeOfDay) {
-    NWNXLibPINVOKE.CWorldTimer_GetWorldTime(swigCPtr, (global::System.IntPtr)nCalendarDay, (global::System.IntPtr)nTimeOfDay);
+    NWNXLibPINVOKE.CWorldTimer_GetWorldTime(swigCPtr, nCalendarDay, nTimeOfDay);
   }
 
   public uint AddWorldTimes(uint nCalendarDay1, uint nTimeOfDay1, uint nCalendarDay2, uint nTimeOfDay2, uint* nCalendarDayRes, uint* nTimeOfDayRes) {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_AddWorldTimes(swigCPtr, nCalendarDay1, nTimeOfDay1, nCalendarDay2, nTimeOfDay2, (global::System.IntPtr)nCalendarDayRes, (global::System.IntPtr)nTimeOfDayRes);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CWorldTimer_AddWorldTimes(swigCPtr, nCalendarDay1, nTimeOfDay1, nCalendarDay2, nTimeOfDay2, nCalendarDayRes, nTimeOfDayRes);
+    return retVal;
   }
 
   public uint SubtractWorldTimes(uint nCalendarDay1, uint nTimeOfDay1, uint nCalendarDay2, uint nTimeOfDay2, uint* nCalendarDayRes, uint* nTimeOfDayRes) {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_SubtractWorldTimes(swigCPtr, nCalendarDay1, nTimeOfDay1, nCalendarDay2, nTimeOfDay2, (global::System.IntPtr)nCalendarDayRes, (global::System.IntPtr)nTimeOfDayRes);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CWorldTimer_SubtractWorldTimes(swigCPtr, nCalendarDay1, nTimeOfDay1, nCalendarDay2, nTimeOfDay2, nCalendarDayRes, nTimeOfDayRes);
+    return retVal;
   }
 
   public int CompareWorldTimes(uint nCalendarDay1, uint nTimeOfDay1, uint nCalendarDay2, uint nTimeOfDay2) {
-    int ret = NWNXLibPINVOKE.CWorldTimer_CompareWorldTimes(swigCPtr, nCalendarDay1, nTimeOfDay1, nCalendarDay2, nTimeOfDay2);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CWorldTimer_CompareWorldTimes(swigCPtr, nCalendarDay1, nTimeOfDay1, nCalendarDay2, nTimeOfDay2);
+    return retVal;
   }
 
   public void PauseWorldTimer() {
@@ -299,8 +311,8 @@ public unsafe class CWorldTimer : global::System.IDisposable {
   }
 
   public uint GetWorldTimeCalendarDay() {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_GetWorldTimeCalendarDay(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CWorldTimer_GetWorldTimeCalendarDay(swigCPtr);
+    return retVal;
   }
 
   public CExoString GetWorldTimeCalendarDayString() {
@@ -309,8 +321,8 @@ public unsafe class CWorldTimer : global::System.IDisposable {
   }
 
   public uint GetWorldTimeTimeOfDay() {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_GetWorldTimeTimeOfDay(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CWorldTimer_GetWorldTimeTimeOfDay(swigCPtr);
+    return retVal;
   }
 
   public CExoString GetWorldTimeTimeOfDayString() {
@@ -325,38 +337,38 @@ public unsafe class CWorldTimer : global::System.IDisposable {
   }
 
   public uint GetWorldTimeYear() {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_GetWorldTimeYear(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CWorldTimer_GetWorldTimeYear(swigCPtr);
+    return retVal;
   }
 
   public uint GetWorldTimeMonth() {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_GetWorldTimeMonth(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CWorldTimer_GetWorldTimeMonth(swigCPtr);
+    return retVal;
   }
 
   public uint GetWorldTimeDay() {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_GetWorldTimeDay(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CWorldTimer_GetWorldTimeDay(swigCPtr);
+    return retVal;
   }
 
   public uint GetWorldTimeHour() {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_GetWorldTimeHour(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CWorldTimer_GetWorldTimeHour(swigCPtr);
+    return retVal;
   }
 
   public uint GetWorldTimeMinute() {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_GetWorldTimeMinute(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CWorldTimer_GetWorldTimeMinute(swigCPtr);
+    return retVal;
   }
 
   public uint GetWorldTimeSecond() {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_GetWorldTimeSecond(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CWorldTimer_GetWorldTimeSecond(swigCPtr);
+    return retVal;
   }
 
   public uint GetWorldTimeMillisecond() {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_GetWorldTimeMillisecond(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CWorldTimer_GetWorldTimeMillisecond(swigCPtr);
+    return retVal;
   }
 
   public void SetFixedSnapshotRate(int bActivate, int nSnapshotsPerSecond) {
@@ -364,13 +376,13 @@ public unsafe class CWorldTimer : global::System.IDisposable {
   }
 
   public uint GetCalendarDayFromSeconds(float fSeconds) {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_GetCalendarDayFromSeconds(swigCPtr, fSeconds);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CWorldTimer_GetCalendarDayFromSeconds(swigCPtr, fSeconds);
+    return retVal;
   }
 
   public uint GetTimeOfDayFromSeconds(float fSeconds) {
-    uint ret = NWNXLibPINVOKE.CWorldTimer_GetTimeOfDayFromSeconds(swigCPtr, fSeconds);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CWorldTimer_GetTimeOfDayFromSeconds(swigCPtr, fSeconds);
+    return retVal;
   }
 
   public void ResetTimer(CWorldTimer pTimer) {

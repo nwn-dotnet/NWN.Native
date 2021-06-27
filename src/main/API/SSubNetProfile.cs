@@ -95,9 +95,10 @@ public unsafe class SSubNetProfile : global::System.IDisposable {
       NWNXLibPINVOKE.SSubNetProfile_nPlayerID_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.SSubNetProfile_nPlayerID_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.SSubNetProfile_nPlayerID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString sPlayerName {
@@ -122,34 +123,37 @@ public unsafe class SSubNetProfile : global::System.IDisposable {
     } 
   }
 
-  public uint nStartTime {
+  public ulong nStartTime {
     set {
       NWNXLibPINVOKE.SSubNetProfile_nStartTime_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.SSubNetProfile_nStartTime_get(swigCPtr);
-      return ret;
-    } 
+      ulong retVal = NWNXLibPINVOKE.SSubNetProfile_nStartTime_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public uint nTotalBytesSent {
+  public ulong nTotalBytesSent {
     set {
       NWNXLibPINVOKE.SSubNetProfile_nTotalBytesSent_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.SSubNetProfile_nTotalBytesSent_get(swigCPtr);
-      return ret;
-    } 
+      ulong retVal = NWNXLibPINVOKE.SSubNetProfile_nTotalBytesSent_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public uint nTotalBytesReceived {
+  public ulong nTotalBytesReceived {
     set {
       NWNXLibPINVOKE.SSubNetProfile_nTotalBytesReceived_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.SSubNetProfile_nTotalBytesReceived_get(swigCPtr);
-      return ret;
-    } 
+      ulong retVal = NWNXLibPINVOKE.SSubNetProfile_nTotalBytesReceived_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public SSubNetProfile() : this(NWNXLibPINVOKE.new_SSubNetProfile(), true) {

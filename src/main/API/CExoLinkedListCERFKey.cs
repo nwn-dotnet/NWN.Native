@@ -129,8 +129,8 @@ public unsafe class CExoLinkedListCERFKey : global::System.IDisposable {
   }
 
   public uint Count() {
-    uint ret = NWNXLibPINVOKE.CExoLinkedListCERFKey_Count(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoLinkedListCERFKey_Count(swigCPtr);
+    return retVal;
   }
 
   public CERFKey GetAtPos(CExoLinkedListNode Position) {
@@ -176,8 +176,8 @@ public unsafe class CExoLinkedListCERFKey : global::System.IDisposable {
   }
 
   public int IsEmpty() {
-    int ret = NWNXLibPINVOKE.CExoLinkedListCERFKey_IsEmpty(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoLinkedListCERFKey_IsEmpty(swigCPtr);
+    return retVal;
   }
 
   public CERFKey RemoveHead() {

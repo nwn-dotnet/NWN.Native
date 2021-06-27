@@ -129,8 +129,8 @@ public unsafe class CExoLinkedListCNWSDialogPlayer : global::System.IDisposable 
   }
 
   public uint Count() {
-    uint ret = NWNXLibPINVOKE.CExoLinkedListCNWSDialogPlayer_Count(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoLinkedListCNWSDialogPlayer_Count(swigCPtr);
+    return retVal;
   }
 
   public CNWSDialogPlayer GetAtPos(CExoLinkedListNode Position) {
@@ -176,8 +176,8 @@ public unsafe class CExoLinkedListCNWSDialogPlayer : global::System.IDisposable 
   }
 
   public int IsEmpty() {
-    int ret = NWNXLibPINVOKE.CExoLinkedListCNWSDialogPlayer_IsEmpty(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoLinkedListCNWSDialogPlayer_IsEmpty(swigCPtr);
+    return retVal;
   }
 
   public CNWSDialogPlayer RemoveHead() {

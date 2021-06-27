@@ -95,9 +95,10 @@ public unsafe class CNWPlaceMeshManager : global::System.IDisposable {
       NWNXLibPINVOKE.CNWPlaceMeshManager_m_nArraySize_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWPlaceMeshManager_m_nArraySize_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWPlaceMeshManager_m_nArraySize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public void** m_pSurfaceMeshLoaded {

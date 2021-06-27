@@ -105,42 +105,42 @@ public unsafe class CExoLinkedListObjectId : global::System.IDisposable {
   }
 
   public CExoLinkedListNode AddHead(uint* Object) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListObjectId_AddHead(swigCPtr, (global::System.IntPtr)Object);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListObjectId_AddHead(swigCPtr, Object);
     CExoLinkedListNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoLinkedListNode(cPtr, false);
     return ret;
   }
 
   public CExoLinkedListNode AddTail(uint* Object) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListObjectId_AddTail(swigCPtr, (global::System.IntPtr)Object);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListObjectId_AddTail(swigCPtr, Object);
     CExoLinkedListNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoLinkedListNode(cPtr, false);
     return ret;
   }
 
   public CExoLinkedListNode AddAfter(uint* Object, CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListObjectId_AddAfter(swigCPtr, (global::System.IntPtr)Object, CExoLinkedListNode.getCPtr(Position));
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListObjectId_AddAfter(swigCPtr, Object, CExoLinkedListNode.getCPtr(Position));
     CExoLinkedListNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoLinkedListNode(cPtr, false);
     return ret;
   }
 
   public CExoLinkedListNode AddBefore(uint* Object, CExoLinkedListNode Position) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListObjectId_AddBefore(swigCPtr, (global::System.IntPtr)Object, CExoLinkedListNode.getCPtr(Position));
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoLinkedListObjectId_AddBefore(swigCPtr, Object, CExoLinkedListNode.getCPtr(Position));
     CExoLinkedListNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoLinkedListNode(cPtr, false);
     return ret;
   }
 
   public uint Count() {
-    uint ret = NWNXLibPINVOKE.CExoLinkedListObjectId_Count(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_Count(swigCPtr);
+    return retVal;
   }
 
   public uint* GetAtPos(CExoLinkedListNode Position) {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_GetAtPos(swigCPtr, CExoLinkedListNode.getCPtr(Position));
-    return (uint*)retVal;
+    uint* retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_GetAtPos(swigCPtr, CExoLinkedListNode.getCPtr(Position));
+    return retVal;
   }
 
   public uint* GetHead() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_GetHead(swigCPtr);
-    return (uint*)retVal;
+    uint* retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_GetHead(swigCPtr);
+    return retVal;
   }
 
   public CExoLinkedListNode GetHeadPos() {
@@ -150,18 +150,18 @@ public unsafe class CExoLinkedListObjectId : global::System.IDisposable {
   }
 
   public uint* GetNext(void** Position) {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_GetNext(swigCPtr, (global::System.IntPtr)Position);
-    return (uint*)retVal;
+    uint* retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_GetNext(swigCPtr, (global::System.IntPtr)Position);
+    return retVal;
   }
 
   public uint* GetPrev(void** Position) {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_GetPrev(swigCPtr, (global::System.IntPtr)Position);
-    return (uint*)retVal;
+    uint* retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_GetPrev(swigCPtr, (global::System.IntPtr)Position);
+    return retVal;
   }
 
   public uint* GetTail() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_GetTail(swigCPtr);
-    return (uint*)retVal;
+    uint* retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_GetTail(swigCPtr);
+    return retVal;
   }
 
   public CExoLinkedListNode GetTailPos() {
@@ -171,23 +171,23 @@ public unsafe class CExoLinkedListObjectId : global::System.IDisposable {
   }
 
   public int IsEmpty() {
-    int ret = NWNXLibPINVOKE.CExoLinkedListObjectId_IsEmpty(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_IsEmpty(swigCPtr);
+    return retVal;
   }
 
   public uint* RemoveHead() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_RemoveHead(swigCPtr);
-    return (uint*)retVal;
+    uint* retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_RemoveHead(swigCPtr);
+    return retVal;
   }
 
   public uint* RemoveTail() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_RemoveTail(swigCPtr);
-    return (uint*)retVal;
+    uint* retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_RemoveTail(swigCPtr);
+    return retVal;
   }
 
   public uint* Remove(CExoLinkedListNode Position) {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_Remove(swigCPtr, CExoLinkedListNode.getCPtr(Position));
-    return (uint*)retVal;
+    uint* retVal = NWNXLibPINVOKE.CExoLinkedListObjectId_Remove(swigCPtr, CExoLinkedListNode.getCPtr(Position));
+    return retVal;
   }
 
 }

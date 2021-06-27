@@ -95,9 +95,10 @@ public unsafe class EXOLTRHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.EXOLTRHEADER_m_nType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.EXOLTRHEADER_m_nType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.EXOLTRHEADER_m_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nVersion {
@@ -105,9 +106,10 @@ public unsafe class EXOLTRHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.EXOLTRHEADER_m_nVersion_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.EXOLTRHEADER_m_nVersion_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.EXOLTRHEADER_m_nVersion_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nNumLetters {
@@ -115,9 +117,10 @@ public unsafe class EXOLTRHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.EXOLTRHEADER_m_nNumLetters_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.EXOLTRHEADER_m_nNumLetters_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.EXOLTRHEADER_m_nNumLetters_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public EXOLTRHEADER() : this(NWNXLibPINVOKE.new_EXOLTRHEADER(), true) {

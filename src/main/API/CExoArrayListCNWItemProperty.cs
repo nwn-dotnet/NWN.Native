@@ -106,9 +106,10 @@ public unsafe class CExoArrayListCNWItemProperty : global::System.IDisposable {
       NWNXLibPINVOKE.CExoArrayListCNWItemProperty_num_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListCNWItemProperty_num_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListCNWItemProperty_num_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int array_size {
@@ -116,9 +117,10 @@ public unsafe class CExoArrayListCNWItemProperty : global::System.IDisposable {
       NWNXLibPINVOKE.CExoArrayListCNWItemProperty_array_size_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListCNWItemProperty_array_size_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListCNWItemProperty_array_size_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCNWItemProperty(int s) : this(NWNXLibPINVOKE.new_CExoArrayListCNWItemProperty__SWIG_0(s), true) {

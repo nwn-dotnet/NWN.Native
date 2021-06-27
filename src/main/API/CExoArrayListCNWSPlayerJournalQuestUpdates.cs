@@ -106,9 +106,10 @@ public unsafe class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.
       NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_num_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_num_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_num_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int array_size {
@@ -116,9 +117,10 @@ public unsafe class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.
       NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_array_size_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_array_size_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_array_size_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCNWSPlayerJournalQuestUpdates(int s) : this(NWNXLibPINVOKE.new_CExoArrayListCNWSPlayerJournalQuestUpdates__SWIG_0(s), true) {

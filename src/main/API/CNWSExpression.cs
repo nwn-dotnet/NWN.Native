@@ -95,9 +95,10 @@ public unsafe class CNWSExpression : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSExpression_m_nExpressionId_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSExpression_m_nExpressionId_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSExpression_m_nExpressionId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCExoStringPtr m_aStored {
@@ -116,9 +117,10 @@ public unsafe class CNWSExpression : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSExpression_m_bCaseSensitive_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSExpression_m_bCaseSensitive_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSExpression_m_bCaseSensitive_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSExpressionList m_pGraph {
@@ -147,21 +149,21 @@ public unsafe class CNWSExpression : global::System.IDisposable {
   }
 
   public int ParseString(CExoString sStringToParse) {
-    int ret = NWNXLibPINVOKE.CNWSExpression_ParseString(swigCPtr, CExoString.getCPtr(sStringToParse));
+    int retVal = NWNXLibPINVOKE.CNWSExpression_ParseString(swigCPtr, CExoString.getCPtr(sStringToParse));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int TestString(CExoString sStringToTest, int bFindStrings) {
-    int ret = NWNXLibPINVOKE.CNWSExpression_TestString__SWIG_0(swigCPtr, CExoString.getCPtr(sStringToTest), bFindStrings);
+    int retVal = NWNXLibPINVOKE.CNWSExpression_TestString__SWIG_0(swigCPtr, CExoString.getCPtr(sStringToTest), bFindStrings);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int TestString(CExoString sStringToTest) {
-    int ret = NWNXLibPINVOKE.CNWSExpression_TestString__SWIG_1(swigCPtr, CExoString.getCPtr(sStringToTest));
+    int retVal = NWNXLibPINVOKE.CNWSExpression_TestString__SWIG_1(swigCPtr, CExoString.getCPtr(sStringToTest));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void ClearGraph() {

@@ -95,9 +95,10 @@ public unsafe class EXOLOCSTRING : global::System.IDisposable {
       NWNXLibPINVOKE.EXOLOCSTRING_nID_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.EXOLOCSTRING_nID_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.EXOLOCSTRING_nID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString sString {

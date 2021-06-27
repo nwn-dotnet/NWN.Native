@@ -106,9 +106,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bActive_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bActive_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bActive_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nObjectType {
@@ -116,9 +117,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nObjectType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nObjectType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nObjectType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nSoundSet {
@@ -126,9 +128,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nSoundSet_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CLastUpdateObject_m_nSoundSet_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nSoundSet_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nFootstepType {
@@ -136,9 +139,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nFootstepType_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_nFootstepType_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nFootstepType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nId {
@@ -146,9 +150,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CLastUpdateObject_m_nId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public Vector m_vPosition {
@@ -167,9 +172,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_oidArea_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CLastUpdateObject_m_oidArea_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CLastUpdateObject_m_oidArea_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public Vector m_vOrientation {
@@ -188,9 +194,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAnimation_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAnimation_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAnimation_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fAnimSpeed {
@@ -198,9 +205,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_fAnimSpeed_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CLastUpdateObject_m_fAnimSpeed_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CLastUpdateObject_m_fAnimSpeed_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nWalkAnimation {
@@ -208,9 +216,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nWalkAnimation_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nWalkAnimation_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nWalkAnimation_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public Vector m_vWalkTo {
@@ -229,9 +238,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nPlayerPathNumber_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nPlayerPathNumber_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nPlayerPathNumber_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nWalkedPathCutVerify {
@@ -239,9 +249,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nWalkedPathCutVerify_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nWalkedPathCutVerify_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nWalkedPathCutVerify_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nAIState {
@@ -249,9 +260,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAIState_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAIState_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAIState_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAIStateAction {
@@ -259,9 +271,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAIStateAction_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAIStateAction_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAIStateAction_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nAIStateActivities {
@@ -269,9 +282,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAIStateActivities_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAIStateActivities_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAIStateActivities_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bCombatState {
@@ -279,9 +293,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bCombatState_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bCombatState_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bCombatState_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidAIStateActee {
@@ -289,9 +304,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_oidAIStateActee_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CLastUpdateObject_m_oidAIStateActee_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CLastUpdateObject_m_oidAIStateActee_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLockOnTarget {
@@ -299,9 +315,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_oidLockOnTarget_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CLastUpdateObject_m_oidLockOnTarget_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CLastUpdateObject_m_oidLockOnTarget_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidAttackTarget {
@@ -309,9 +326,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_oidAttackTarget_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CLastUpdateObject_m_oidAttackTarget_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CLastUpdateObject_m_oidAttackTarget_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResRef m_cPortrait {
@@ -330,9 +348,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nPortraitId_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CLastUpdateObject_m_nPortraitId_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nPortraitId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoLocString m_sLocFirstName {
@@ -362,9 +381,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_fWalkRate_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CLastUpdateObject_m_fWalkRate_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CLastUpdateObject_m_fWalkRate_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fRunRate {
@@ -372,9 +392,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_fRunRate_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CLastUpdateObject_m_fRunRate_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CLastUpdateObject_m_fRunRate_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCLoopingVisualEffectPtr m_lstLoopingVisualEffects {
@@ -393,9 +414,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAssociateState_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAssociateState_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAssociateState_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nDamageLevel {
@@ -403,9 +425,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nDamageLevel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nDamageLevel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nDamageLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nDomain1 {
@@ -413,9 +436,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nDomain1_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nDomain1_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nDomain1_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nDomain2 {
@@ -423,9 +447,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nDomain2_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nDomain2_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nDomain2_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nSchool {
@@ -433,9 +458,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nSchool_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nSchool_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nSchool_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public short m_nCurrentHitPoints {
@@ -443,9 +469,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nCurrentHitPoints_set(swigCPtr, value);
     } 
     get {
-      short ret = NWNXLibPINVOKE.CLastUpdateObject_m_nCurrentHitPoints_get(swigCPtr);
-      return ret;
-    } 
+      short retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nCurrentHitPoints_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public short m_nBaseHitPoints {
@@ -453,9 +480,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nBaseHitPoints_set(swigCPtr, value);
     } 
     get {
-      short ret = NWNXLibPINVOKE.CLastUpdateObject_m_nBaseHitPoints_get(swigCPtr);
-      return ret;
-    } 
+      short retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nBaseHitPoints_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public short m_nTemporaryHitPoints {
@@ -463,9 +491,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nTemporaryHitPoints_set(swigCPtr, value);
     } 
     get {
-      short ret = NWNXLibPINVOKE.CLastUpdateObject_m_nTemporaryHitPoints_get(swigCPtr);
-      return ret;
-    } 
+      short retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nTemporaryHitPoints_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public short m_nMaxHitPoints {
@@ -473,9 +502,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nMaxHitPoints_set(swigCPtr, value);
     } 
     get {
-      short ret = NWNXLibPINVOKE.CLastUpdateObject_m_nMaxHitPoints_get(swigCPtr);
-      return ret;
-    } 
+      short retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nMaxHitPoints_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bFreeWill {
@@ -483,9 +513,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bFreeWill_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bFreeWill_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bFreeWill_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bPartyLeader {
@@ -493,9 +524,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bPartyLeader_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bPartyLeader_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bPartyLeader_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bSingletonParty {
@@ -503,9 +535,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bSingletonParty_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bSingletonParty_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bSingletonParty_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bInvitedToParty {
@@ -513,9 +546,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bInvitedToParty_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bInvitedToParty_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bInvitedToParty_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListObjectId m_poidCreatureList {
@@ -534,9 +568,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bTrapped_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bTrapped_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bTrapped_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bFlagged {
@@ -544,9 +579,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bFlagged_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bFlagged_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bFlagged_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nTrapFaction {
@@ -554,9 +590,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nTrapFaction_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_nTrapFaction_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nTrapFaction_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bLocked {
@@ -564,9 +601,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bLocked_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bLocked_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bLocked_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bLockable {
@@ -574,9 +612,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bLockable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bLockable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bLockable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bRecoverable {
@@ -584,9 +623,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bRecoverable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bRecoverable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bRecoverable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bClickable {
@@ -594,9 +634,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bClickable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bClickable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bClickable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAIStateReaction {
@@ -604,9 +645,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAIStateReaction_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAIStateReaction_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAIStateReaction_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidMaster {
@@ -614,9 +656,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_oidMaster_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CLastUpdateObject_m_oidMaster_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CLastUpdateObject_m_oidMaster_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nAssociateType {
@@ -624,9 +667,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAssociateType_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAssociateType_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAssociateType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bSummonedAnimalCompanion {
@@ -634,9 +678,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bSummonedAnimalCompanion_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bSummonedAnimalCompanion_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bSummonedAnimalCompanion_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bSummonedFamiliar {
@@ -644,9 +689,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bSummonedFamiliar_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bSummonedFamiliar_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bSummonedFamiliar_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bObjectSeen {
@@ -654,9 +700,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bObjectSeen_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bObjectSeen_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bObjectSeen_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bObjectHeard {
@@ -664,9 +711,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bObjectHeard_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bObjectHeard_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bObjectHeard_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bObjectInvisible {
@@ -674,9 +722,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bObjectInvisible_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bObjectInvisible_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bObjectInvisible_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nRace {
@@ -684,9 +733,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nRace_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CLastUpdateObject_m_nRace_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nRace_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sSubRace {
@@ -716,9 +766,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nGender_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nGender_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nGender_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<byte> m_nClass {
@@ -752,9 +803,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAlignmentLawChaos_set(swigCPtr, value);
     } 
     get {
-      short ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAlignmentLawChaos_get(swigCPtr);
-      return ret;
-    } 
+      short retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAlignmentLawChaos_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public short m_nAlignmentGoodEvil {
@@ -762,9 +814,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAlignmentGoodEvil_set(swigCPtr, value);
     } 
     get {
-      short ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAlignmentGoodEvil_get(swigCPtr);
-      return ret;
-    } 
+      short retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAlignmentGoodEvil_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bSelectableWhenDead {
@@ -772,9 +825,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bSelectableWhenDead_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bSelectableWhenDead_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bSelectableWhenDead_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bLootable {
@@ -782,9 +836,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bLootable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bLootable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bLootable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bPC {
@@ -792,9 +847,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_bPC_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_bPC_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bPC_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAbilityBaseSTR {
@@ -802,9 +858,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityBaseSTR_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityBaseSTR_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityBaseSTR_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAbilityBaseDEX {
@@ -812,9 +869,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityBaseDEX_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityBaseDEX_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityBaseDEX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAbilityBaseCON {
@@ -822,9 +880,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityBaseCON_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityBaseCON_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityBaseCON_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAbilityBaseINT {
@@ -832,9 +891,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityBaseINT_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityBaseINT_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityBaseINT_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAbilityBaseWIS {
@@ -842,9 +902,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityBaseWIS_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityBaseWIS_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityBaseWIS_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAbilityBaseCHA {
@@ -852,9 +913,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityBaseCHA_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityBaseCHA_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityBaseCHA_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAbilityFinalSTR {
@@ -862,9 +924,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityFinalSTR_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityFinalSTR_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityFinalSTR_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAbilityFinalDEX {
@@ -872,9 +935,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityFinalDEX_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityFinalDEX_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityFinalDEX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAbilityFinalCON {
@@ -882,9 +946,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityFinalCON_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityFinalCON_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityFinalCON_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAbilityFinalINT {
@@ -892,9 +957,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityFinalINT_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityFinalINT_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityFinalINT_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAbilityFinalWIS {
@@ -902,9 +968,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityFinalWIS_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityFinalWIS_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityFinalWIS_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAbilityFinalCHA {
@@ -912,9 +979,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityFinalCHA_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityFinalCHA_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nAbilityFinalCHA_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ObjectVisualTransformData m_pObjectVisualTransformData {
@@ -966,9 +1034,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nMouseCursor_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_nMouseCursor_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nMouseCursor_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nUpdateDisplayNameSeq {
@@ -976,9 +1045,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nUpdateDisplayNameSeq_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_nUpdateDisplayNameSeq_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nUpdateDisplayNameSeq_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nUpdateHiddenSeq {
@@ -986,9 +1056,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       NWNXLibPINVOKE.CLastUpdateObject_m_nUpdateHiddenSeq_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CLastUpdateObject_m_nUpdateHiddenSeq_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nUpdateHiddenSeq_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSPlayerLUOQuickbarItemButton m_pQuickbarButton {

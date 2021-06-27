@@ -95,9 +95,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bAllKillable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bAllKillable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bAllKillable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bNonPartyKillable {
@@ -105,9 +106,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bNonPartyKillable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bNonPartyKillable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bNonPartyKillable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bRequireResurrection {
@@ -115,9 +117,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bRequireResurrection_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bRequireResurrection_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bRequireResurrection_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bLoseStolenItems {
@@ -125,9 +128,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bLoseStolenItems_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bLoseStolenItems_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bLoseStolenItems_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bLoseItems {
@@ -135,9 +139,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bLoseItems_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bLoseItems_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bLoseItems_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bLoseExp {
@@ -145,9 +150,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bLoseExp_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bLoseExp_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bLoseExp_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bLoseGold {
@@ -155,9 +161,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bLoseGold_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bLoseGold_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bLoseGold_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nLoseGoldNum {
@@ -165,9 +172,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_nLoseGoldNum_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_nLoseGoldNum_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_nLoseGoldNum_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nLoseExpNum {
@@ -175,9 +183,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_nLoseExpNum_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_nLoseExpNum_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_nLoseExpNum_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nLoseItemsNum {
@@ -185,9 +194,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_nLoseItemsNum_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_nLoseItemsNum_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_nLoseItemsNum_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nPVPSetting {
@@ -195,9 +205,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_nPVPSetting_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_nPVPSetting_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_nPVPSetting_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bPauseAndPlay {
@@ -205,9 +216,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bPauseAndPlay_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bPauseAndPlay_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bPauseAndPlay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bOnePartyOnly {
@@ -215,9 +227,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bOnePartyOnly_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bOnePartyOnly_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bOnePartyOnly_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bEnforceLegalCharacters {
@@ -225,9 +238,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bEnforceLegalCharacters_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bEnforceLegalCharacters_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bEnforceLegalCharacters_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bItemLevelRestrictions {
@@ -235,9 +249,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bItemLevelRestrictions_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bItemLevelRestrictions_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bItemLevelRestrictions_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bCDKeyBanListAllowList {
@@ -245,9 +260,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bCDKeyBanListAllowList_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bCDKeyBanListAllowList_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bCDKeyBanListAllowList_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bDisallowShouting {
@@ -255,9 +271,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bDisallowShouting_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bDisallowShouting_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bDisallowShouting_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bShowDMJoinMessage {
@@ -265,9 +282,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bShowDMJoinMessage_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bShowDMJoinMessage_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bShowDMJoinMessage_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bBackupSavedCharacters {
@@ -275,9 +293,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bBackupSavedCharacters_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bBackupSavedCharacters_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bBackupSavedCharacters_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAutoFailSaveOn1 {
@@ -285,9 +304,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bAutoFailSaveOn1_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bAutoFailSaveOn1_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bAutoFailSaveOn1_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bValidateSpells {
@@ -295,9 +315,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bValidateSpells_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bValidateSpells_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bValidateSpells_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bExamineEffects {
@@ -305,9 +326,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bExamineEffects_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bExamineEffects_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bExamineEffects_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bExamineChallengeRating {
@@ -315,9 +337,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bExamineChallengeRating_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bExamineChallengeRating_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bExamineChallengeRating_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bUseMaxHitPoints {
@@ -325,9 +348,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bUseMaxHitPoints_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bUseMaxHitPoints_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bUseMaxHitPoints_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bRestoreSpellsUses {
@@ -335,9 +359,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bRestoreSpellsUses_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bRestoreSpellsUses_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bRestoreSpellsUses_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bResetEncounterSpawnPool {
@@ -345,9 +370,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bResetEncounterSpawnPool_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bResetEncounterSpawnPool_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bResetEncounterSpawnPool_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bHideHitPointsGained {
@@ -355,9 +381,10 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPlayOptions_bHideHitPointsGained_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPlayOptions_bHideHitPointsGained_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bHideHitPointsGained_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CPlayOptions() : this(NWNXLibPINVOKE.new_CPlayOptions(), true) {

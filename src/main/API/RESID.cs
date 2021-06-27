@@ -95,9 +95,10 @@ public unsafe class RESID : global::System.IDisposable {
       NWNXLibPINVOKE.RESID_m_resFileSource_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.RESID_m_resFileSource_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.RESID_m_resFileSource_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_resFileId {
@@ -105,9 +106,10 @@ public unsafe class RESID : global::System.IDisposable {
       NWNXLibPINVOKE.RESID_m_resFileId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.RESID_m_resFileId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.RESID_m_resFileId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_resTableId {
@@ -115,9 +117,10 @@ public unsafe class RESID : global::System.IDisposable {
       NWNXLibPINVOKE.RESID_m_resTableId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.RESID_m_resTableId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.RESID_m_resTableId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_resItemId {
@@ -125,9 +128,10 @@ public unsafe class RESID : global::System.IDisposable {
       NWNXLibPINVOKE.RESID_m_resItemId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.RESID_m_resItemId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.RESID_m_resItemId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public RESID() : this(NWNXLibPINVOKE.new_RESID(), true) {

@@ -95,9 +95,10 @@ public unsafe class CNWDomain : global::System.IDisposable {
       NWNXLibPINVOKE.CNWDomain_m_nNameStrref_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWDomain_m_nNameStrref_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWDomain_m_nNameStrref_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nDescriptionStrref {
@@ -105,9 +106,10 @@ public unsafe class CNWDomain : global::System.IDisposable {
       NWNXLibPINVOKE.CNWDomain_m_nDescriptionStrref_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWDomain_m_nDescriptionStrref_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWDomain_m_nDescriptionStrref_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResRef m_cIcon {
@@ -139,9 +141,10 @@ public unsafe class CNWDomain : global::System.IDisposable {
       NWNXLibPINVOKE.CNWDomain_m_nGrantedFeat_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWDomain_m_nGrantedFeat_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWDomain_m_nGrantedFeat_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bValidDomain {
@@ -149,9 +152,10 @@ public unsafe class CNWDomain : global::System.IDisposable {
       NWNXLibPINVOKE.CNWDomain_m_bValidDomain_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWDomain_m_bValidDomain_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWDomain_m_bValidDomain_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bCastableFeat {
@@ -159,9 +163,10 @@ public unsafe class CNWDomain : global::System.IDisposable {
       NWNXLibPINVOKE.CNWDomain_m_bCastableFeat_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWDomain_m_bCastableFeat_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWDomain_m_bCastableFeat_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWDomain() : this(NWNXLibPINVOKE.new_CNWDomain(), true) {

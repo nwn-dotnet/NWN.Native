@@ -90,14 +90,15 @@ public unsafe class CCombatInformationNode : global::System.IDisposable {
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public char m_nModifier {
+  public byte m_nModifier {
     set {
       NWNXLibPINVOKE.CCombatInformationNode_m_nModifier_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CCombatInformationNode_m_nModifier_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CCombatInformationNode_m_nModifier_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nModifierType {
@@ -105,9 +106,10 @@ public unsafe class CCombatInformationNode : global::System.IDisposable {
       NWNXLibPINVOKE.CCombatInformationNode_m_nModifierType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CCombatInformationNode_m_nModifierType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CCombatInformationNode_m_nModifierType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nWeaponWield {
@@ -115,9 +117,10 @@ public unsafe class CCombatInformationNode : global::System.IDisposable {
       NWNXLibPINVOKE.CCombatInformationNode_m_nWeaponWield_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CCombatInformationNode_m_nWeaponWield_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CCombatInformationNode_m_nWeaponWield_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nVersusAlignLawChaos {
@@ -125,9 +128,10 @@ public unsafe class CCombatInformationNode : global::System.IDisposable {
       NWNXLibPINVOKE.CCombatInformationNode_m_nVersusAlignLawChaos_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CCombatInformationNode_m_nVersusAlignLawChaos_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CCombatInformationNode_m_nVersusAlignLawChaos_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nVersusAlignGoodEvil {
@@ -135,9 +139,10 @@ public unsafe class CCombatInformationNode : global::System.IDisposable {
       NWNXLibPINVOKE.CCombatInformationNode_m_nVersusAlignGoodEvil_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CCombatInformationNode_m_nVersusAlignGoodEvil_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CCombatInformationNode_m_nVersusAlignGoodEvil_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nVersusRace {
@@ -145,24 +150,25 @@ public unsafe class CCombatInformationNode : global::System.IDisposable {
       NWNXLibPINVOKE.CCombatInformationNode_m_nVersusRace_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CCombatInformationNode_m_nVersusRace_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CCombatInformationNode_m_nVersusRace_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CCombatInformationNode() : this(NWNXLibPINVOKE.new_CCombatInformationNode(), true) {
   }
 
   public int _OpEquals(CCombatInformationNode pNode) {
-    int ret = NWNXLibPINVOKE.CCombatInformationNode__OpEquals(swigCPtr, CCombatInformationNode.getCPtr(pNode));
+    int retVal = NWNXLibPINVOKE.CCombatInformationNode__OpEquals(swigCPtr, CCombatInformationNode.getCPtr(pNode));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int _OpNotEquals(CCombatInformationNode pNode) {
-    int ret = NWNXLibPINVOKE.CCombatInformationNode__OpNotEquals(swigCPtr, CCombatInformationNode.getCPtr(pNode));
+    int retVal = NWNXLibPINVOKE.CCombatInformationNode__OpNotEquals(swigCPtr, CCombatInformationNode.getCPtr(pNode));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public CCombatInformationNode _OpAssign(CCombatInformationNode pNode) {

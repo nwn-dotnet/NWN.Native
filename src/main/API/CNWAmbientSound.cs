@@ -95,9 +95,10 @@ public unsafe class CNWAmbientSound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWAmbientSound_m_bMusicPlaying_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWAmbientSound_m_bMusicPlaying_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWAmbientSound_m_bMusicPlaying_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nMusicDelay {
@@ -105,9 +106,10 @@ public unsafe class CNWAmbientSound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWAmbientSound_m_nMusicDelay_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWAmbientSound_m_nMusicDelay_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWAmbientSound_m_nMusicDelay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nMusicDayTrack {
@@ -115,9 +117,10 @@ public unsafe class CNWAmbientSound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWAmbientSound_m_nMusicDayTrack_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWAmbientSound_m_nMusicDayTrack_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWAmbientSound_m_nMusicDayTrack_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nMusicNightTrack {
@@ -125,9 +128,10 @@ public unsafe class CNWAmbientSound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWAmbientSound_m_nMusicNightTrack_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWAmbientSound_m_nMusicNightTrack_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWAmbientSound_m_nMusicNightTrack_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bBattlePlaying {
@@ -135,9 +139,10 @@ public unsafe class CNWAmbientSound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWAmbientSound_m_bBattlePlaying_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWAmbientSound_m_bBattlePlaying_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWAmbientSound_m_bBattlePlaying_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nBattleTrack {
@@ -145,9 +150,10 @@ public unsafe class CNWAmbientSound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWAmbientSound_m_nBattleTrack_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWAmbientSound_m_nBattleTrack_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWAmbientSound_m_nBattleTrack_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bSoundPlaying {
@@ -155,9 +161,10 @@ public unsafe class CNWAmbientSound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWAmbientSound_m_bSoundPlaying_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWAmbientSound_m_bSoundPlaying_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWAmbientSound_m_bSoundPlaying_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nSoundDayTrack {
@@ -165,9 +172,10 @@ public unsafe class CNWAmbientSound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWAmbientSound_m_nSoundDayTrack_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWAmbientSound_m_nSoundDayTrack_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWAmbientSound_m_nSoundDayTrack_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nSoundNightTrack {
@@ -175,9 +183,10 @@ public unsafe class CNWAmbientSound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWAmbientSound_m_nSoundNightTrack_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWAmbientSound_m_nSoundNightTrack_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWAmbientSound_m_nSoundNightTrack_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nDayVolume {
@@ -185,9 +194,10 @@ public unsafe class CNWAmbientSound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWAmbientSound_m_nDayVolume_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWAmbientSound_m_nDayVolume_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWAmbientSound_m_nDayVolume_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nNightVolume {
@@ -195,9 +205,10 @@ public unsafe class CNWAmbientSound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWAmbientSound_m_nNightVolume_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWAmbientSound_m_nNightVolume_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWAmbientSound_m_nNightVolume_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public virtual void PlayMusic(int bPlay) {

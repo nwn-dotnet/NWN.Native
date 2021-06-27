@@ -107,9 +107,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nUpdateDisplayNameSeq_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_nUpdateDisplayNameSeq_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nUpdateDisplayNameSeq_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nAppearance {
@@ -117,9 +118,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nAppearance_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSPlaceable_m_nAppearance_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nAppearance_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoLocString m_sDescription {
@@ -149,9 +151,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nFactionId_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_nFactionId_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nFactionId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResRef m_cDialog {
@@ -170,9 +173,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlaceable_m_nType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bGroundPile {
@@ -180,9 +184,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bGroundPile_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bGroundPile_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bGroundPile_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidSittingCreature {
@@ -190,9 +195,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_oidSittingCreature_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlaceable_m_oidSittingCreature_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlaceable_m_oidSittingCreature_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nHardness {
@@ -200,9 +206,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nHardness_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlaceable_m_nHardness_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nHardness_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fBearing {
@@ -210,9 +217,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_fBearing_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSPlaceable_m_fBearing_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSPlaceable_m_fBearing_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bLocked {
@@ -220,9 +228,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bLocked_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bLocked_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bLocked_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sKeyName {
@@ -252,9 +261,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bKeyRequired_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bKeyRequired_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bKeyRequired_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bAutoRemoveKey {
@@ -262,9 +272,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bAutoRemoveKey_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bAutoRemoveKey_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bAutoRemoveKey_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nOpenLockDC {
@@ -272,9 +283,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nOpenLockDC_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlaceable_m_nOpenLockDC_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nOpenLockDC_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nCloseLockDC {
@@ -282,9 +294,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nCloseLockDC_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlaceable_m_nCloseLockDC_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nCloseLockDC_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidTrapCreator {
@@ -292,9 +305,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_oidTrapCreator_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlaceable_m_oidTrapCreator_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlaceable_m_oidTrapCreator_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nTrapDetectionDC {
@@ -302,9 +316,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nTrapDetectionDC_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlaceable_m_nTrapDetectionDC_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nTrapDetectionDC_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bTrapFlag {
@@ -312,9 +327,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bTrapFlag_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bTrapFlag_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bTrapFlag_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nDisarmDC {
@@ -322,9 +338,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nDisarmDC_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlaceable_m_nDisarmDC_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nDisarmDC_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bDisarmable {
@@ -332,9 +349,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bDisarmable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bDisarmable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bDisarmable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bDetectable {
@@ -342,9 +360,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bDetectable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bDetectable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bDetectable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bOneShot {
@@ -352,9 +371,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bOneShot_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bOneShot_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bOneShot_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bRecoverable {
@@ -362,9 +382,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bRecoverable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bRecoverable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bRecoverable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bFlagged {
@@ -372,9 +393,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bFlagged_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bFlagged_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bFlagged_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nBaseType {
@@ -382,9 +404,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nBaseType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlaceable_m_nBaseType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nBaseType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bTrapIsActive {
@@ -392,9 +415,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bTrapIsActive_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bTrapIsActive_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bTrapIsActive_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nTrapFaction {
@@ -402,9 +426,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nTrapFaction_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_nTrapFaction_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nTrapFaction_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoStringArray m_sScripts {
@@ -424,9 +449,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nFortSave_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlaceable_m_nFortSave_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nFortSave_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nWillSave {
@@ -434,9 +460,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nWillSave_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlaceable_m_nWillSave_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nWillSave_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nReflexSave {
@@ -444,9 +471,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nReflexSave_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlaceable_m_nReflexSave_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nReflexSave_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListObjectId m_poidCreatures {
@@ -465,9 +493,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bHasInventory_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bHasInventory_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bHasInventory_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bUseable {
@@ -475,9 +504,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bUseable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bUseable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bUseable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bPickable {
@@ -485,9 +515,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bPickable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bPickable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bPickable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bLockable {
@@ -495,9 +526,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bLockable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bLockable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bLockable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bDieWhenEmpty {
@@ -505,9 +537,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bDieWhenEmpty_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bDieWhenEmpty_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bDieWhenEmpty_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nOpenCount {
@@ -515,9 +548,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nOpenCount_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlaceable_m_nOpenCount_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nOpenCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nStaticObjectPosition {
@@ -525,9 +559,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nStaticObjectPosition_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_nStaticObjectPosition_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nStaticObjectPosition_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLootCreature {
@@ -535,9 +570,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_oidLootCreature_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlaceable_m_oidLootCreature_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlaceable_m_oidLootCreature_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bIsBodyBag {
@@ -545,9 +581,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bIsBodyBag_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bIsBodyBag_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bIsBodyBag_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nLastHeartbeatScriptCalendarDay {
@@ -555,9 +592,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nLastHeartbeatScriptCalendarDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlaceable_m_nLastHeartbeatScriptCalendarDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nLastHeartbeatScriptCalendarDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nLastHeartbeatScriptTimeOfDay {
@@ -565,9 +603,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nLastHeartbeatScriptTimeOfDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlaceable_m_nLastHeartbeatScriptTimeOfDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nLastHeartbeatScriptTimeOfDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastOpened {
@@ -575,9 +614,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_oidLastOpened_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlaceable_m_oidLastOpened_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlaceable_m_oidLastOpened_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastClosed {
@@ -585,9 +625,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_oidLastClosed_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlaceable_m_oidLastClosed_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlaceable_m_oidLastClosed_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastUser {
@@ -595,9 +636,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_oidLastUser_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlaceable_m_oidLastUser_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlaceable_m_oidLastUser_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastDefaultClickedBy {
@@ -605,9 +647,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_oidLastDefaultClickedBy_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlaceable_m_oidLastDefaultClickedBy_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlaceable_m_oidLastDefaultClickedBy_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastTriggered {
@@ -615,9 +658,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_oidLastTriggered_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlaceable_m_oidLastTriggered_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlaceable_m_oidLastTriggered_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastDisarmed {
@@ -625,9 +669,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_oidLastDisarmed_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlaceable_m_oidLastDisarmed_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlaceable_m_oidLastDisarmed_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastLocked {
@@ -635,9 +680,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_oidLastLocked_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlaceable_m_oidLastLocked_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlaceable_m_oidLastLocked_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastUnlocked {
@@ -645,9 +691,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_oidLastUnlocked_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlaceable_m_oidLastUnlocked_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlaceable_m_oidLastUnlocked_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CItemRepository m_pcItemRepository {
@@ -666,9 +713,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nRepositoryArrayIndex_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSPlaceable_m_nRepositoryArrayIndex_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nRepositoryArrayIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nItemContainerArrayIndex {
@@ -676,9 +724,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nItemContainerArrayIndex_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSPlaceable_m_nItemContainerArrayIndex_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nItemContainerArrayIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidCurrentItemContainer {
@@ -686,9 +735,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_oidCurrentItemContainer_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlaceable_m_oidCurrentItemContainer_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlaceable_m_oidCurrentItemContainer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public VectorArray m_pvActionPoints {
@@ -730,9 +780,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nEffectSpellId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlaceable_m_nEffectSpellId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nEffectSpellId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bLightIsOn {
@@ -740,9 +791,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bLightIsOn_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bLightIsOn_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bLightIsOn_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bLightStateChange {
@@ -750,9 +802,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bLightStateChange_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bLightStateChange_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bLightStateChange_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nBodyBag {
@@ -760,9 +813,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_nBodyBag_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlaceable_m_nBodyBag_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlaceable_m_nBodyBag_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bStaticObject {
@@ -770,9 +824,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bStaticObject_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bStaticObject_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bStaticObject_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bNeverMakeIntoStaticObject {
@@ -780,9 +835,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
       NWNXLibPINVOKE.CNWSPlaceable_m_bNeverMakeIntoStaticObject_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlaceable_m_bNeverMakeIntoStaticObject_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bNeverMakeIntoStaticObject_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public override CNWSPlaceable AsNWSPlaceable() {
@@ -827,35 +883,35 @@ public unsafe class CNWSPlaceable : CNWSObject {
   }
 
   public int LoadPlaceable(CResGFF pRes, CResStruct cPlaceableStruct, CExoString pTag) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_LoadPlaceable__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cPlaceableStruct), CExoString.getCPtr(pTag));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_LoadPlaceable__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cPlaceableStruct), CExoString.getCPtr(pTag));
+    return retVal;
   }
 
   public int LoadPlaceable(CResGFF pRes, CResStruct cPlaceableStruct) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_LoadPlaceable__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cPlaceableStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_LoadPlaceable__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cPlaceableStruct));
+    return retVal;
   }
 
   public int LoadFromTemplate(CResRef cResRef, CExoString pTag) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_LoadFromTemplate__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef), CExoString.getCPtr(pTag));
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_LoadFromTemplate__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef), CExoString.getCPtr(pTag));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int LoadFromTemplate(CResRef cResRef) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_LoadFromTemplate__SWIG_1(swigCPtr, CResRef.getCPtr(cResRef));
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_LoadFromTemplate__SWIG_1(swigCPtr, CResRef.getCPtr(cResRef));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int LoadBodyBag(ushort nAppearance) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_LoadBodyBag(swigCPtr, nAppearance);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_LoadBodyBag(swigCPtr, nAppearance);
+    return retVal;
   }
 
   public int SavePlaceable(CResGFF pRes, CResStruct pStruct, int bSaveOIDs) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_SavePlaceable(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bSaveOIDs);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_SavePlaceable(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bSaveOIDs);
+    return retVal;
   }
 
   public void PostProcess() {
@@ -863,48 +919,48 @@ public unsafe class CNWSPlaceable : CNWSObject {
   }
 
   public int AcquireItem(void** pItem, uint oidPossessor, byte x, byte y, int bDisplayFeedback) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_0(swigCPtr, (global::System.IntPtr)pItem, oidPossessor, x, y, bDisplayFeedback);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_0(swigCPtr, (global::System.IntPtr)pItem, oidPossessor, x, y, bDisplayFeedback);
+    return retVal;
   }
 
   public int AcquireItem(void** pItem, uint oidPossessor, byte x, byte y) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_1(swigCPtr, (global::System.IntPtr)pItem, oidPossessor, x, y);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_1(swigCPtr, (global::System.IntPtr)pItem, oidPossessor, x, y);
+    return retVal;
   }
 
   public int AcquireItem(void** pItem, uint oidPossessor, byte x) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_2(swigCPtr, (global::System.IntPtr)pItem, oidPossessor, x);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_2(swigCPtr, (global::System.IntPtr)pItem, oidPossessor, x);
+    return retVal;
   }
 
   public int AcquireItem(void** pItem, uint oidPossessor) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_3(swigCPtr, (global::System.IntPtr)pItem, oidPossessor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_3(swigCPtr, (global::System.IntPtr)pItem, oidPossessor);
+    return retVal;
   }
 
   public int AcquireItem(void** pItem) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_4(swigCPtr, (global::System.IntPtr)pItem);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_AcquireItem__SWIG_4(swigCPtr, (global::System.IntPtr)pItem);
+    return retVal;
   }
 
   public int RemoveItem(CNWSItem pItem, int bSetPossessor) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_RemoveItem__SWIG_0(swigCPtr, CNWSItem.getCPtr(pItem), bSetPossessor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_RemoveItem__SWIG_0(swigCPtr, CNWSItem.getCPtr(pItem), bSetPossessor);
+    return retVal;
   }
 
   public int RemoveItem(CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_RemoveItem__SWIG_1(swigCPtr, CNWSItem.getCPtr(pItem));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_RemoveItem__SWIG_1(swigCPtr, CNWSItem.getCPtr(pItem));
+    return retVal;
   }
 
   public uint AcquireItemsFromObject(uint oidObject, int bAcquireDroppablesOnly) {
-    uint ret = NWNXLibPINVOKE.CNWSPlaceable_AcquireItemsFromObject__SWIG_0(swigCPtr, oidObject, bAcquireDroppablesOnly);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSPlaceable_AcquireItemsFromObject__SWIG_0(swigCPtr, oidObject, bAcquireDroppablesOnly);
+    return retVal;
   }
 
   public uint AcquireItemsFromObject(uint oidObject) {
-    uint ret = NWNXLibPINVOKE.CNWSPlaceable_AcquireItemsFromObject__SWIG_1(swigCPtr, oidObject);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSPlaceable_AcquireItemsFromObject__SWIG_1(swigCPtr, oidObject);
+    return retVal;
   }
 
   public void OpenInventory(uint oidOpener) {
@@ -930,31 +986,31 @@ public unsafe class CNWSPlaceable : CNWSObject {
   }
 
   public int AddCastSpellActions(uint nSpellId, int nMetaType, Vector vTargetLocation, uint oidTarget, int bFake, byte nProjectilePathType) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_AddCastSpellActions__SWIG_0(swigCPtr, nSpellId, nMetaType, Vector.getCPtr(vTargetLocation), oidTarget, bFake, nProjectilePathType);
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_AddCastSpellActions__SWIG_0(swigCPtr, nSpellId, nMetaType, Vector.getCPtr(vTargetLocation), oidTarget, bFake, nProjectilePathType);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int AddCastSpellActions(uint nSpellId, int nMetaType, Vector vTargetLocation, uint oidTarget, int bFake) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_AddCastSpellActions__SWIG_1(swigCPtr, nSpellId, nMetaType, Vector.getCPtr(vTargetLocation), oidTarget, bFake);
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_AddCastSpellActions__SWIG_1(swigCPtr, nSpellId, nMetaType, Vector.getCPtr(vTargetLocation), oidTarget, bFake);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int AddCastSpellActions(uint nSpellId, int nMetaType, Vector vTargetLocation, uint oidTarget) {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_AddCastSpellActions__SWIG_2(swigCPtr, nSpellId, nMetaType, Vector.getCPtr(vTargetLocation), oidTarget);
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_AddCastSpellActions__SWIG_2(swigCPtr, nSpellId, nMetaType, Vector.getCPtr(vTargetLocation), oidTarget);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public uint AIActionCastSpell(CNWSObjectActionNode pNode) {
-    uint ret = NWNXLibPINVOKE.CNWSPlaceable_AIActionCastSpell(swigCPtr, CNWSObjectActionNode.getCPtr(pNode));
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSPlaceable_AIActionCastSpell(swigCPtr, CNWSObjectActionNode.getCPtr(pNode));
+    return retVal;
   }
 
   public int GetLightIsOn() {
-    int ret = NWNXLibPINVOKE.CNWSPlaceable_GetLightIsOn(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_GetLightIsOn(swigCPtr);
+    return retVal;
   }
 
   public void SetLightIsOn(int b) {
@@ -962,18 +1018,18 @@ public unsafe class CNWSPlaceable : CNWSObject {
   }
 
   public ushort GetBodyBagAppearance() {
-    ushort ret = NWNXLibPINVOKE.CNWSPlaceable_GetBodyBagAppearance(swigCPtr);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWSPlaceable_GetBodyBagAppearance(swigCPtr);
+    return retVal;
   }
 
   public uint GetItemCount(int bDroppableOnly) {
-    uint ret = NWNXLibPINVOKE.CNWSPlaceable_GetItemCount__SWIG_0(swigCPtr, bDroppableOnly);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSPlaceable_GetItemCount__SWIG_0(swigCPtr, bDroppableOnly);
+    return retVal;
   }
 
   public uint GetItemCount() {
-    uint ret = NWNXLibPINVOKE.CNWSPlaceable_GetItemCount__SWIG_1(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSPlaceable_GetItemCount__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public void ClosePlaceableForAllPlayers() {

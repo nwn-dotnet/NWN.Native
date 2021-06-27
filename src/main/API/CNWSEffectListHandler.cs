@@ -107,18 +107,18 @@ public unsafe class CNWSEffectListHandler : CGameEffectApplierRemover {
   }
 
   public override int OnEffectApplied(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnEffectApplied__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnEffectApplied__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public override int OnEffectApplied(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnEffectApplied__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnEffectApplied__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public override int OnEffectRemoved(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnEffectRemoved(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnEffectRemoved(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public void SendFloatyEffect(uint nStrRef, uint oTarget) {
@@ -126,1258 +126,1258 @@ public unsafe class CNWSEffectListHandler : CGameEffectApplierRemover {
   }
 
   public int OnApplyEffectIcon(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyEffectIcon__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyEffectIcon__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyEffectIcon(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyEffectIcon__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyEffectIcon__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveEffectIcon(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveEffectIcon(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveEffectIcon(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyPoison(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyPoison__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyPoison__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyPoison(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyPoison__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyPoison__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyDisease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDisease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDisease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyDisease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDisease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDisease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyRegenerate(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyRegenerate__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyRegenerate__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyRegenerate(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyRegenerate__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyRegenerate__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyDamageReduction(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageReduction__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageReduction__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyDamageReduction(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageReduction__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageReduction__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyDamageResistance(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageResistance__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageResistance__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyDamageResistance(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageResistance__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageResistance__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyLimitMovementSpeed(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyLimitMovementSpeed__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyLimitMovementSpeed__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyLimitMovementSpeed(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyLimitMovementSpeed__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyLimitMovementSpeed__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveLimitMovementSpeed(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveLimitMovementSpeed(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveLimitMovementSpeed(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyHitPointChangeWhenDying(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyHitPointChangeWhenDying__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyHitPointChangeWhenDying__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyHitPointChangeWhenDying(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyHitPointChangeWhenDying__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyHitPointChangeWhenDying__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveHitPointChangeWhenDying(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveHitPointChangeWhenDying(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveHitPointChangeWhenDying(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySpecialWalkAnimation(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpecialWalkAnimation__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpecialWalkAnimation__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySpecialWalkAnimation(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpecialWalkAnimation__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpecialWalkAnimation__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSpecialWalkAnimation(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSpecialWalkAnimation(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSpecialWalkAnimation(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyItemProperty(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyItemProperty__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyItemProperty__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyItemProperty(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyItemProperty__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyItemProperty__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveItemProperty(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveItemProperty(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveItemProperty(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyCutsceneGhost(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyCutsceneGhost__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyCutsceneGhost__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyCutsceneGhost(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyCutsceneGhost__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyCutsceneGhost__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveCutsceneGhost(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveCutsceneGhost(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveCutsceneGhost(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySetAIState(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySetAIState__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySetAIState__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySetAIState(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySetAIState__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySetAIState__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSetAIState(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSetAIState(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSetAIState(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyDamage(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamage__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamage__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyDamage(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamage__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamage__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyHeal(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyHeal__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyHeal__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyHeal(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyHeal__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyHeal__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyDeath(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDeath__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDeath__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyDeath(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDeath__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDeath__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyResurrection(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyResurrection__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyResurrection__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyResurrection(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyResurrection__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyResurrection__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySummonCreature(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySummonCreature__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySummonCreature__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySummonCreature(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySummonCreature__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySummonCreature__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSummonCreature(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSummonCreature(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSummonCreature(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyDispelAllMagic(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDispelAllMagic__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDispelAllMagic__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyDispelAllMagic(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDispelAllMagic__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDispelAllMagic__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyDispelBestMagic(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDispelBestMagic__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDispelBestMagic__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyDispelBestMagic(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDispelBestMagic__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDispelBestMagic__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyAbilityIncrease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAbilityIncrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAbilityIncrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyAbilityIncrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAbilityIncrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAbilityIncrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveAbilityIncrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveAbilityIncrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveAbilityIncrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyAbilityDecrease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAbilityDecrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAbilityDecrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyAbilityDecrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAbilityDecrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAbilityDecrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveAbilityDecrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveAbilityDecrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveAbilityDecrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySavingThrowIncrease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySavingThrowIncrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySavingThrowIncrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySavingThrowIncrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySavingThrowIncrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySavingThrowIncrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSavingThrowIncrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSavingThrowIncrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSavingThrowIncrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySavingThrowDecrease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySavingThrowDecrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySavingThrowDecrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySavingThrowDecrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySavingThrowDecrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySavingThrowDecrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSavingThrowDecrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSavingThrowDecrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSavingThrowDecrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyACIncrease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyACIncrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyACIncrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyACIncrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyACIncrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyACIncrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveACIncrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveACIncrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveACIncrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyACDecrease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyACDecrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyACDecrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyACDecrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyACDecrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyACDecrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveACDecrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveACDecrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveACDecrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyAttackIncrease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAttackIncrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAttackIncrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyAttackIncrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAttackIncrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAttackIncrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveAttackIncrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveAttackIncrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveAttackIncrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyAttackDecrease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAttackDecrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAttackDecrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyAttackDecrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAttackDecrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAttackDecrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveAttackDecrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveAttackDecrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveAttackDecrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyDamageIncrease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageIncrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageIncrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyDamageIncrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageIncrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageIncrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveDamageIncrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveDamageIncrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveDamageIncrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyDamageDecrease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageDecrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageDecrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyDamageDecrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageDecrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageDecrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveDamageDecrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveDamageDecrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveDamageDecrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyTemporaryHitpoints(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTemporaryHitpoints__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTemporaryHitpoints__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyTemporaryHitpoints(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTemporaryHitpoints__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTemporaryHitpoints__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveTemporaryHitpoints(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveTemporaryHitpoints(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveTemporaryHitpoints(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyDamageImmunityIncrease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageImmunityIncrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageImmunityIncrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyDamageImmunityIncrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageImmunityIncrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageImmunityIncrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveDamageImmunityIncrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveDamageImmunityIncrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveDamageImmunityIncrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyDamageImmunityDecrease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageImmunityDecrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageImmunityDecrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyDamageImmunityDecrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageImmunityDecrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageImmunityDecrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveDamageImmunityDecrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveDamageImmunityDecrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveDamageImmunityDecrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyEnemyAttackBonus(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyEnemyAttackBonus__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyEnemyAttackBonus__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyEnemyAttackBonus(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyEnemyAttackBonus__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyEnemyAttackBonus__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveEnemyAttackBonus(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveEnemyAttackBonus(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveEnemyAttackBonus(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyArcaneSpellFailure(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyArcaneSpellFailure__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyArcaneSpellFailure__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyArcaneSpellFailure(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyArcaneSpellFailure__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyArcaneSpellFailure__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveArcaneSpellFailure(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveArcaneSpellFailure(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveArcaneSpellFailure(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyMovementSpeedIncrease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyMovementSpeedIncrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyMovementSpeedIncrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyMovementSpeedIncrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyMovementSpeedIncrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyMovementSpeedIncrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveMovementSpeedIncrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveMovementSpeedIncrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveMovementSpeedIncrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyMovementSpeedDecrease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyMovementSpeedDecrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyMovementSpeedDecrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyMovementSpeedDecrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyMovementSpeedDecrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyMovementSpeedDecrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveMovementSpeedDecrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveMovementSpeedDecrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveMovementSpeedDecrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySpellResistanceIncrease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellResistanceIncrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellResistanceIncrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySpellResistanceIncrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellResistanceIncrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellResistanceIncrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSpellResistanceIncrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSpellResistanceIncrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSpellResistanceIncrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySpellResistanceDecrease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellResistanceDecrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellResistanceDecrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySpellResistanceDecrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellResistanceDecrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellResistanceDecrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSpellResistanceDecrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSpellResistanceDecrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSpellResistanceDecrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyModifyNumAttacks(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyModifyNumAttacks__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyModifyNumAttacks__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyModifyNumAttacks(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyModifyNumAttacks__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyModifyNumAttacks__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveModifyNumAttacks(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveModifyNumAttacks(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveModifyNumAttacks(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyConcealment(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyConcealment__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyConcealment__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyConcealment(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyConcealment__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyConcealment__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveConcealment(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveConcealment(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveConcealment(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyMissChance(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyMissChance__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyMissChance__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyMissChance(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyMissChance__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyMissChance__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveMissChance(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveMissChance(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveMissChance(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySkillIncrease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySkillIncrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySkillIncrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySkillIncrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySkillIncrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySkillIncrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSkillIncrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSkillIncrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSkillIncrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySkillDecrease(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySkillDecrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySkillDecrease__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySkillDecrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySkillDecrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySkillDecrease__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSkillDecrease(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSkillDecrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSkillDecrease(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyTurnResistance(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTurnResistance__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTurnResistance__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyTurnResistance(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTurnResistance__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTurnResistance__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveTurnResistance(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveTurnResistance(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveTurnResistance(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyLink(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyLink__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyLink__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyLink(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyLink__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyLink__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyEntangled(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyEntangled__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyEntangled__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyEntangled(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyEntangled__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyEntangled__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveEntangled(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveEntangled(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveEntangled(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyDeaf(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDeaf__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDeaf__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyDeaf(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDeaf__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDeaf__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyEffectImmunity(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyEffectImmunity__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyEffectImmunity__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyEffectImmunity(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyEffectImmunity__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyEffectImmunity__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveEffectImmunity(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveEffectImmunity(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveEffectImmunity(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySetState(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySetState__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySetState__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySetState(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySetState__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySetState__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSetState(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSetState(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSetState(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySetStateInternal(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySetStateInternal__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySetStateInternal__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySetStateInternal(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySetStateInternal__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySetStateInternal__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSetStateInternal(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSetStateInternal(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSetStateInternal(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyHasteOrSlow(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyHasteOrSlow__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyHasteOrSlow__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyHasteOrSlow(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyHasteOrSlow__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyHasteOrSlow__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveHasteOrSlow(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveHasteOrSlow(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveHasteOrSlow(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyHasteInternal(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyHasteInternal__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyHasteInternal__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyHasteInternal(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyHasteInternal__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyHasteInternal__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveHasteInternal(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveHasteInternal(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveHasteInternal(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySlowInternal(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySlowInternal__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySlowInternal__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySlowInternal(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySlowInternal__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySlowInternal__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSlowInternal(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSlowInternal(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSlowInternal(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyCurse(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyCurse__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyCurse__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyCurse(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyCurse__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyCurse__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveCurse(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveCurse(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveCurse(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySilence(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySilence__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySilence__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySilence(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySilence__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySilence__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSilence(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSilence(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSilence(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySpellImmunity(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellImmunity__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellImmunity__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySpellImmunity(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellImmunity__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellImmunity__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSpellImmunity(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSpellImmunity(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSpellImmunity(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySpellLevelAbsorption(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellLevelAbsorption__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellLevelAbsorption__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySpellLevelAbsorption(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellLevelAbsorption__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellLevelAbsorption__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSpellLevelAbsorption(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSpellLevelAbsorption(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSpellLevelAbsorption(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyTaunt(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTaunt__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTaunt__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyTaunt(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTaunt__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTaunt__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveTaunt(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveTaunt(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveTaunt(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyRacialType(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyRacialType__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyRacialType__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyRacialType(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyRacialType__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyRacialType__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveRacialType(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveRacialType(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveRacialType(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyBonusSpellOfLevel(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBonusSpellOfLevel__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBonusSpellOfLevel__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyBonusSpellOfLevel(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBonusSpellOfLevel__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBonusSpellOfLevel__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveBonusSpellOfLevel(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveBonusSpellOfLevel(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveBonusSpellOfLevel(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyNegativeLevel(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyNegativeLevel__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyNegativeLevel__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyNegativeLevel(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyNegativeLevel__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyNegativeLevel__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveNegativeLevel(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveNegativeLevel(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveNegativeLevel(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyPetrify(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyPetrify__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyPetrify__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyPetrify(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyPetrify__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyPetrify__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemovePetrify(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemovePetrify(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemovePetrify(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyCutsceneImmobile(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyCutsceneImmobile__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyCutsceneImmobile__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyCutsceneImmobile(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyCutsceneImmobile__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyCutsceneImmobile__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyDefensiveStance(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDefensiveStance__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDefensiveStance__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyDefensiveStance(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDefensiveStance__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDefensiveStance__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyKnockdown(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyKnockdown__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyKnockdown__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyKnockdown(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyKnockdown__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyKnockdown__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveKnockdown(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveKnockdown(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveKnockdown(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyDisarm(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDisarm__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDisarm__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyDisarm(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDisarm__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDisarm__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveDisarm(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveDisarm(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveDisarm(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyWounding(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyWounding__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyWounding__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyWounding(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyWounding__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyWounding__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveWounding(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveWounding(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveWounding(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyVampiricRegeneration(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyVampiricRegeneration__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyVampiricRegeneration__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyVampiricRegeneration(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyVampiricRegeneration__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyVampiricRegeneration__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyVisualEffect(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyVisualEffect__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyVisualEffect__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyVisualEffect(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyVisualEffect__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyVisualEffect__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveVisualEffect(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveVisualEffect(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveVisualEffect(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyAreaOfEffect(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAreaOfEffect__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAreaOfEffect__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyAreaOfEffect(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAreaOfEffect__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAreaOfEffect__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveAreaOfEffect(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveAreaOfEffect(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveAreaOfEffect(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyBeam(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBeam__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBeam__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyBeam(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBeam__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBeam__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveBeam(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveBeam(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveBeam(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyLight(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyLight__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyLight__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyLight(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyLight__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyLight__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveLight(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveLight(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveLight(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyVision(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyVision__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyVision__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyVision(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyVision__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyVision__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveVision(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveVision(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveVision(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyInvisibility(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyInvisibility__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyInvisibility__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyInvisibility(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyInvisibility__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyInvisibility__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveInvisibility(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveInvisibility(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveInvisibility(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySanctuary(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySanctuary__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySanctuary__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySanctuary(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySanctuary__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySanctuary__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSanctuary(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSanctuary(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSanctuary(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySeeInvisible(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySeeInvisible__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySeeInvisible__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySeeInvisible(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySeeInvisible__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySeeInvisible__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSeeInvisible(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSeeInvisible(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSeeInvisible(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyUltraVision(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyUltraVision__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyUltraVision__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyUltraVision(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyUltraVision__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyUltraVision__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveUltraVision(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveUltraVision(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveUltraVision(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyTrueSeeing(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTrueSeeing__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTrueSeeing__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyTrueSeeing(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTrueSeeing__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTrueSeeing__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveTrueSeeing(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveTrueSeeing(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveTrueSeeing(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyBlindness(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBlindness__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBlindness__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyBlindness(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBlindness__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBlindness__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveBlindness(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveBlindness(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveBlindness(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyBlindnessInactive(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBlindnessInactive__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBlindnessInactive__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyBlindnessInactive(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBlindnessInactive__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBlindnessInactive__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyDarkness(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDarkness__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDarkness__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyDarkness(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDarkness__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDarkness__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveDarkness(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveDarkness(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveDarkness(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyDisappearAppear(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDisappearAppear__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDisappearAppear__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyDisappearAppear(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDisappearAppear__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDisappearAppear__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveDisappearAppear(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveDisappearAppear(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveDisappearAppear(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyDisappear(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDisappear__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDisappear__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyDisappear(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDisappear__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDisappear__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyAppear(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAppear__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAppear__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyAppear(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAppear__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyAppear__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyDamageShield(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageShield__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageShield__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyDamageShield(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageShield__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyDamageShield__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveDamageShield(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveDamageShield(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveDamageShield(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyPolymorph(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyPolymorph__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyPolymorph__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyPolymorph(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyPolymorph__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyPolymorph__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemovePolymorph(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemovePolymorph(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemovePolymorph(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyTimestop(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTimestop__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTimestop__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyTimestop(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTimestop__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTimestop__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveTimestop(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveTimestop(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveTimestop(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplyBonusFeat(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBonusFeat__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBonusFeat__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplyBonusFeat(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBonusFeat__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyBonusFeat__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveBonusFeat(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveBonusFeat(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveBonusFeat(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySwarm(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySwarm__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySwarm__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySwarm(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySwarm__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySwarm__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSwarm(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSwarm(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSwarm(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnApplySpellFailure(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellFailure__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellFailure__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
   }
 
   public int OnApplySpellFailure(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellFailure__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplySpellFailure__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
   public int OnRemoveSpellFailure(CNWSObject pObject, CGameEffect pEffect) {
-    int ret = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSpellFailure(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveSpellFailure(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
   }
 
 }

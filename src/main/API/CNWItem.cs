@@ -126,17 +126,18 @@ public unsafe class CNWItem : ICNWItem, global::System.IDisposable {
       NWNXLibPINVOKE.CNWItem_m_nBaseItem_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWItem_m_nBaseItem_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWItem_m_nBaseItem_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWItem() : this(NWNXLibPINVOKE.new_CNWItem(), true) {
   }
 
   public byte GetLayeredTextureColorPerPart(byte nTexture, byte nPart) {
-    byte ret = NWNXLibPINVOKE.CNWItem_GetLayeredTextureColorPerPart(swigCPtr, nTexture, nPart);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWItem_GetLayeredTextureColorPerPart(swigCPtr, nTexture, nPart);
+    return retVal;
   }
 
   public void SetLayeredTextureColorPerPart(byte nTexture, byte nPart, byte nColor) {

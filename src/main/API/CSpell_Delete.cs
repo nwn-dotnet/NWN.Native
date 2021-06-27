@@ -95,9 +95,10 @@ public unsafe class CSpell_Delete : global::System.IDisposable {
       NWNXLibPINVOKE.CSpell_Delete_m_nSpellLevel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CSpell_Delete_m_nSpellLevel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CSpell_Delete_m_nSpellLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nSpellSlot {
@@ -105,9 +106,10 @@ public unsafe class CSpell_Delete : global::System.IDisposable {
       NWNXLibPINVOKE.CSpell_Delete_m_nSpellSlot_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CSpell_Delete_m_nSpellSlot_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CSpell_Delete_m_nSpellSlot_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CSpell_Delete() : this(NWNXLibPINVOKE.new_CSpell_Delete(), true) {

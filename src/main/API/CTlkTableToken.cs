@@ -95,9 +95,10 @@ public unsafe class CTlkTableToken : global::System.IDisposable {
       NWNXLibPINVOKE.CTlkTableToken_m_nHash_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CTlkTableToken_m_nHash_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CTlkTableToken_m_nHash_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sToken {
@@ -116,9 +117,10 @@ public unsafe class CTlkTableToken : global::System.IDisposable {
       NWNXLibPINVOKE.CTlkTableToken_m_nActionCode_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CTlkTableToken_m_nActionCode_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CTlkTableToken_m_nActionCode_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<uint> m_nStrRef {
@@ -139,9 +141,10 @@ public unsafe class CTlkTableToken : global::System.IDisposable {
       NWNXLibPINVOKE.CTlkTableToken_m_nStrRefDefault_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CTlkTableToken_m_nStrRefDefault_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CTlkTableToken_m_nStrRefDefault_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CTlkTableToken() : this(NWNXLibPINVOKE.new_CTlkTableToken(), true) {

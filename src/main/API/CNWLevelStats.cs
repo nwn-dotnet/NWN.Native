@@ -127,11 +127,11 @@ public unsafe class CNWLevelStats : global::System.IDisposable {
 
   public byte* m_lstSkillRanks {
     set {
-      NWNXLibPINVOKE.CNWLevelStats_m_lstSkillRanks_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWLevelStats_m_lstSkillRanks_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWLevelStats_m_lstSkillRanks_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CNWLevelStats_m_lstSkillRanks_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -141,9 +141,10 @@ public unsafe class CNWLevelStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWLevelStats_m_nSkillPointsRemaining_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWLevelStats_m_nSkillPointsRemaining_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWLevelStats_m_nSkillPointsRemaining_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAbilityGain {
@@ -151,9 +152,10 @@ public unsafe class CNWLevelStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWLevelStats_m_nAbilityGain_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWLevelStats_m_nAbilityGain_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWLevelStats_m_nAbilityGain_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nHitDie {
@@ -161,9 +163,10 @@ public unsafe class CNWLevelStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWLevelStats_m_nHitDie_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWLevelStats_m_nHitDie_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWLevelStats_m_nHitDie_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nClass {
@@ -171,9 +174,10 @@ public unsafe class CNWLevelStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWLevelStats_m_nClass_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWLevelStats_m_nClass_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWLevelStats_m_nClass_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bEpic {
@@ -181,9 +185,10 @@ public unsafe class CNWLevelStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWLevelStats_m_bEpic_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWLevelStats_m_bEpic_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWLevelStats_m_bEpic_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWLevelStats() : this(NWNXLibPINVOKE.new_CNWLevelStats(), true) {
@@ -197,12 +202,12 @@ public unsafe class CNWLevelStats : global::System.IDisposable {
     NWNXLibPINVOKE.CNWLevelStats_AddFeat(swigCPtr, nFeat);
   }
 
-  public char GetSkillRankChange(ushort nSkill) {
-    char ret = NWNXLibPINVOKE.CNWLevelStats_GetSkillRankChange(swigCPtr, nSkill);
-    return ret;
+  public byte GetSkillRankChange(ushort nSkill) {
+    byte retVal = NWNXLibPINVOKE.CNWLevelStats_GetSkillRankChange(swigCPtr, nSkill);
+    return retVal;
   }
 
-  public void SetSkillRankChange(ushort nSkill, char nRank) {
+  public void SetSkillRankChange(ushort nSkill, byte nRank) {
     NWNXLibPINVOKE.CNWLevelStats_SetSkillRankChange(swigCPtr, nSkill, nRank);
   }
 

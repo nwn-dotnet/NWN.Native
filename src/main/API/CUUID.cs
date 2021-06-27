@@ -90,24 +90,26 @@ public unsafe class CUUID : global::System.IDisposable {
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public uint ab {
+  public ulong ab {
     set {
       NWNXLibPINVOKE.CUUID_ab_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CUUID_ab_get(swigCPtr);
-      return ret;
-    } 
+      ulong retVal = NWNXLibPINVOKE.CUUID_ab_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public uint cd {
+  public ulong cd {
     set {
       NWNXLibPINVOKE.CUUID_cd_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CUUID_cd_get(swigCPtr);
-      return ret;
-    } 
+      ulong retVal = NWNXLibPINVOKE.CUUID_cd_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CUUID() : this(NWNXLibPINVOKE.new_CUUID(), true) {

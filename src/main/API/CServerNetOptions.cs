@@ -95,9 +95,10 @@ public unsafe class CServerNetOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CServerNetOptions_m_nGameRegion_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CServerNetOptions_m_nGameRegion_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CServerNetOptions_m_nGameRegion_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_szGameDetails {
@@ -116,9 +117,10 @@ public unsafe class CServerNetOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CServerNetOptions_m_GameType_set(swigCPtr, value);
     } 
     get {
-      short ret = NWNXLibPINVOKE.CServerNetOptions_m_GameType_get(swigCPtr);
-      return ret;
-    } 
+      short retVal = NWNXLibPINVOKE.CServerNetOptions_m_GameType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bNetworkRelaysEnabled {
@@ -126,9 +128,10 @@ public unsafe class CServerNetOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CServerNetOptions_m_bNetworkRelaysEnabled_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CServerNetOptions_m_bNetworkRelaysEnabled_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CServerNetOptions_m_bNetworkRelaysEnabled_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CServerNetOptions() : this(NWNXLibPINVOKE.new_CServerNetOptions(), true) {

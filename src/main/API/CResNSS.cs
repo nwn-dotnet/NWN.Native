@@ -85,9 +85,10 @@ public unsafe class CResNSS : CRes {
       NWNXLibPINVOKE.CResNSS_m_bLoaded_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CResNSS_m_bLoaded_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CResNSS_m_bLoaded_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nNSSNormalSize {
@@ -95,18 +96,19 @@ public unsafe class CResNSS : CRes {
       NWNXLibPINVOKE.CResNSS_m_nNSSNormalSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResNSS_m_nNSSNormalSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResNSS_m_nNSSNormalSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte* m_pNSSData {
     set {
-      NWNXLibPINVOKE.CResNSS_m_pNSSData_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CResNSS_m_pNSSData_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResNSS_m_pNSSData_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CResNSS_m_pNSSData_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -115,28 +117,28 @@ public unsafe class CResNSS : CRes {
   }
 
   public byte* GetNSSDataPtr() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CResNSS_GetNSSDataPtr(swigCPtr);
-    return (byte*)retVal;
+    byte* retVal = NWNXLibPINVOKE.CResNSS_GetNSSDataPtr(swigCPtr);
+    return retVal;
   }
 
   public uint GetNSSSize() {
-    uint ret = NWNXLibPINVOKE.CResNSS_GetNSSSize(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CResNSS_GetNSSSize(swigCPtr);
+    return retVal;
   }
 
   public int IsLoaded() {
-    int ret = NWNXLibPINVOKE.CResNSS_IsLoaded(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CResNSS_IsLoaded(swigCPtr);
+    return retVal;
   }
 
   public override int OnResourceFreed() {
-    int ret = NWNXLibPINVOKE.CResNSS_OnResourceFreed(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CResNSS_OnResourceFreed(swigCPtr);
+    return retVal;
   }
 
   public override int OnResourceServiced() {
-    int ret = NWNXLibPINVOKE.CResNSS_OnResourceServiced(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CResNSS_OnResourceServiced(swigCPtr);
+    return retVal;
   }
 
 }

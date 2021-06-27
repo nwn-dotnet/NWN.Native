@@ -95,9 +95,10 @@ public unsafe class CNWSClient : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSClient_m_nPlayerID_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSClient_m_nPlayerID_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSClient_m_nPlayerID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nLanguage {
@@ -105,9 +106,10 @@ public unsafe class CNWSClient : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSClient_m_nLanguage_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSClient_m_nLanguage_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSClient_m_nLanguage_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSClient(uint nPlayerID) : this(NWNXLibPINVOKE.new_CNWSClient(nPlayerID), true) {

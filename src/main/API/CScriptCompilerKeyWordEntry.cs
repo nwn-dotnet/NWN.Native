@@ -106,9 +106,10 @@ public unsafe class CScriptCompilerKeyWordEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptCompilerKeyWordEntry_m_nHashValue_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CScriptCompilerKeyWordEntry_m_nHashValue_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CScriptCompilerKeyWordEntry_m_nHashValue_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nNameLength {
@@ -116,9 +117,10 @@ public unsafe class CScriptCompilerKeyWordEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptCompilerKeyWordEntry_m_nNameLength_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CScriptCompilerKeyWordEntry_m_nNameLength_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CScriptCompilerKeyWordEntry_m_nNameLength_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nTokenToTranslate {
@@ -126,9 +128,10 @@ public unsafe class CScriptCompilerKeyWordEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptCompilerKeyWordEntry_m_nTokenToTranslate_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptCompilerKeyWordEntry_m_nTokenToTranslate_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptCompilerKeyWordEntry_m_nTokenToTranslate_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CScriptCompilerKeyWordEntry() : this(NWNXLibPINVOKE.new_CScriptCompilerKeyWordEntry(), true) {

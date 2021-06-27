@@ -95,9 +95,10 @@ public unsafe class CItemRepository : global::System.IDisposable {
       NWNXLibPINVOKE.CItemRepository_m_nWidth_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CItemRepository_m_nWidth_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CItemRepository_m_nWidth_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nHeight {
@@ -105,9 +106,10 @@ public unsafe class CItemRepository : global::System.IDisposable {
       NWNXLibPINVOKE.CItemRepository_m_nHeight_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CItemRepository_m_nHeight_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CItemRepository_m_nHeight_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nBoundary {
@@ -115,9 +117,10 @@ public unsafe class CItemRepository : global::System.IDisposable {
       NWNXLibPINVOKE.CItemRepository_m_nBoundary_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CItemRepository_m_nBoundary_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CItemRepository_m_nBoundary_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidParent {
@@ -125,9 +128,10 @@ public unsafe class CItemRepository : global::System.IDisposable {
       NWNXLibPINVOKE.CItemRepository_m_oidParent_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CItemRepository_m_oidParent_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CItemRepository_m_oidParent_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bScalable {
@@ -135,9 +139,10 @@ public unsafe class CItemRepository : global::System.IDisposable {
       NWNXLibPINVOKE.CItemRepository_m_bScalable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CItemRepository_m_bScalable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CItemRepository_m_bScalable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoLinkedListObjectId m_oidItems {
@@ -158,103 +163,103 @@ public unsafe class CItemRepository : global::System.IDisposable {
   }
 
   public int AddItem(void** pItem, byte x, byte y, int bAllowEncumbrance, int bMergeItem) {
-    int ret = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_0(swigCPtr, (global::System.IntPtr)pItem, x, y, bAllowEncumbrance, bMergeItem);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_0(swigCPtr, (global::System.IntPtr)pItem, x, y, bAllowEncumbrance, bMergeItem);
+    return retVal;
   }
 
   public int AddItem(void** pItem, byte x, byte y, int bAllowEncumbrance) {
-    int ret = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_1(swigCPtr, (global::System.IntPtr)pItem, x, y, bAllowEncumbrance);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_1(swigCPtr, (global::System.IntPtr)pItem, x, y, bAllowEncumbrance);
+    return retVal;
   }
 
   public int AddItem(void** pItem, byte x, byte y) {
-    int ret = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_2(swigCPtr, (global::System.IntPtr)pItem, x, y);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_2(swigCPtr, (global::System.IntPtr)pItem, x, y);
+    return retVal;
   }
 
   public int AddItem(void** pItem, byte x) {
-    int ret = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_3(swigCPtr, (global::System.IntPtr)pItem, x);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_3(swigCPtr, (global::System.IntPtr)pItem, x);
+    return retVal;
   }
 
   public int AddItem(void** pItem) {
-    int ret = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_4(swigCPtr, (global::System.IntPtr)pItem);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CItemRepository_AddItem__SWIG_4(swigCPtr, (global::System.IntPtr)pItem);
+    return retVal;
   }
 
   public byte CalculatePage(byte x, byte y) {
-    byte ret = NWNXLibPINVOKE.CItemRepository_CalculatePage(swigCPtr, x, y);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CItemRepository_CalculatePage(swigCPtr, x, y);
+    return retVal;
   }
 
   public int CheckFit(CNWSItem pItem, byte x, byte y) {
-    int ret = NWNXLibPINVOKE.CItemRepository_CheckFit(swigCPtr, CNWSItem.getCPtr(pItem), x, y);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CItemRepository_CheckFit(swigCPtr, CNWSItem.getCPtr(pItem), x, y);
+    return retVal;
   }
 
   public int CheckBaseItemFits(uint nBaseItemType, byte x, byte y) {
-    int ret = NWNXLibPINVOKE.CItemRepository_CheckBaseItemFits(swigCPtr, nBaseItemType, x, y);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CItemRepository_CheckBaseItemFits(swigCPtr, nBaseItemType, x, y);
+    return retVal;
   }
 
   public int CheckItemOverlaps(CNWSItem pSourceItem, CNWSItem pDroppingItem, byte x, byte y) {
-    int ret = NWNXLibPINVOKE.CItemRepository_CheckItemOverlaps(swigCPtr, CNWSItem.getCPtr(pSourceItem), CNWSItem.getCPtr(pDroppingItem), x, y);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CItemRepository_CheckItemOverlaps(swigCPtr, CNWSItem.getCPtr(pSourceItem), CNWSItem.getCPtr(pDroppingItem), x, y);
+    return retVal;
   }
 
   public uint FindItemWithBaseItemId(uint nBaseItemId, int nTh) {
-    uint ret = NWNXLibPINVOKE.CItemRepository_FindItemWithBaseItemId__SWIG_0(swigCPtr, nBaseItemId, nTh);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CItemRepository_FindItemWithBaseItemId__SWIG_0(swigCPtr, nBaseItemId, nTh);
+    return retVal;
   }
 
   public uint FindItemWithBaseItemId(uint nBaseItemId) {
-    uint ret = NWNXLibPINVOKE.CItemRepository_FindItemWithBaseItemId__SWIG_1(swigCPtr, nBaseItemId);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CItemRepository_FindItemWithBaseItemId__SWIG_1(swigCPtr, nBaseItemId);
+    return retVal;
   }
 
   public uint FindItemWithTag(CExoString pTag) {
-    uint ret = NWNXLibPINVOKE.CItemRepository_FindItemWithTag(swigCPtr, CExoString.getCPtr(pTag));
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CItemRepository_FindItemWithTag(swigCPtr, CExoString.getCPtr(pTag));
+    return retVal;
   }
 
   public int FindPosition(CNWSItem pItem, byte* x, byte* y, int bOriginatingFromScript) {
-    int ret = NWNXLibPINVOKE.CItemRepository_FindPosition__SWIG_0(swigCPtr, CNWSItem.getCPtr(pItem), (global::System.IntPtr)x, (global::System.IntPtr)y, bOriginatingFromScript);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CItemRepository_FindPosition__SWIG_0(swigCPtr, CNWSItem.getCPtr(pItem), (global::System.IntPtr)x, (global::System.IntPtr)y, bOriginatingFromScript);
+    return retVal;
   }
 
   public int FindPosition(CNWSItem pItem, byte* x, byte* y) {
-    int ret = NWNXLibPINVOKE.CItemRepository_FindPosition__SWIG_1(swigCPtr, CNWSItem.getCPtr(pItem), (global::System.IntPtr)x, (global::System.IntPtr)y);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CItemRepository_FindPosition__SWIG_1(swigCPtr, CNWSItem.getCPtr(pItem), (global::System.IntPtr)x, (global::System.IntPtr)y);
+    return retVal;
   }
 
   public int AddPanel() {
-    int ret = NWNXLibPINVOKE.CItemRepository_AddPanel(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CItemRepository_AddPanel(swigCPtr);
+    return retVal;
   }
 
   public int RemoveItem(CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CItemRepository_RemoveItem(swigCPtr, CNWSItem.getCPtr(pItem));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CItemRepository_RemoveItem(swigCPtr, CNWSItem.getCPtr(pItem));
+    return retVal;
   }
 
   public int MoveItem(CNWSItem pItem, byte x, byte y) {
-    int ret = NWNXLibPINVOKE.CItemRepository_MoveItem(swigCPtr, CNWSItem.getCPtr(pItem), x, y);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CItemRepository_MoveItem(swigCPtr, CNWSItem.getCPtr(pItem), x, y);
+    return retVal;
   }
 
   public int GetItemInRepository(CNWSItem pItem, int bCheckContainers) {
-    int ret = NWNXLibPINVOKE.CItemRepository_GetItemInRepository__SWIG_0(swigCPtr, CNWSItem.getCPtr(pItem), bCheckContainers);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CItemRepository_GetItemInRepository__SWIG_0(swigCPtr, CNWSItem.getCPtr(pItem), bCheckContainers);
+    return retVal;
   }
 
   public int GetItemInRepository(CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CItemRepository_GetItemInRepository__SWIG_1(swigCPtr, CNWSItem.getCPtr(pItem));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CItemRepository_GetItemInRepository__SWIG_1(swigCPtr, CNWSItem.getCPtr(pItem));
+    return retVal;
   }
 
   public uint GetItemInRepository(byte x, byte y) {
-    uint ret = NWNXLibPINVOKE.CItemRepository_GetItemInRepository__SWIG_2(swigCPtr, x, y);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CItemRepository_GetItemInRepository__SWIG_2(swigCPtr, x, y);
+    return retVal;
   }
 
   public CNWSItem ItemListGetItem(CExoLinkedListNode pListPosition) {
@@ -264,13 +269,13 @@ public unsafe class CItemRepository : global::System.IDisposable {
   }
 
   public uint ItemListGetItemObjectID(CExoLinkedListNode pListPosition) {
-    uint ret = NWNXLibPINVOKE.CItemRepository_ItemListGetItemObjectID(swigCPtr, CExoLinkedListNode.getCPtr(pListPosition));
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CItemRepository_ItemListGetItemObjectID(swigCPtr, CExoLinkedListNode.getCPtr(pListPosition));
+    return retVal;
   }
 
   public int CalculateContentsWeight() {
-    int ret = NWNXLibPINVOKE.CItemRepository_CalculateContentsWeight(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CItemRepository_CalculateContentsWeight(swigCPtr);
+    return retVal;
   }
 
 }

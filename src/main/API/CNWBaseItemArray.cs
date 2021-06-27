@@ -95,9 +95,10 @@ public unsafe class CNWBaseItemArray : global::System.IDisposable {
       NWNXLibPINVOKE.CNWBaseItemArray_m_nNumBaseItems_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWBaseItemArray_m_nNumBaseItems_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWBaseItemArray_m_nNumBaseItems_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWBaseItem m_pBaseItems {
@@ -125,43 +126,43 @@ public unsafe class CNWBaseItemArray : global::System.IDisposable {
   }
 
   public ushort GetDefaultWeaponFocusFeat(uint baseItemId) {
-    ushort ret = NWNXLibPINVOKE.CNWBaseItemArray_GetDefaultWeaponFocusFeat(swigCPtr, baseItemId);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWBaseItemArray_GetDefaultWeaponFocusFeat(swigCPtr, baseItemId);
+    return retVal;
   }
 
   public ushort GetDefaultEpicWeaponFocusFeat(uint baseItemId) {
-    ushort ret = NWNXLibPINVOKE.CNWBaseItemArray_GetDefaultEpicWeaponFocusFeat(swigCPtr, baseItemId);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWBaseItemArray_GetDefaultEpicWeaponFocusFeat(swigCPtr, baseItemId);
+    return retVal;
   }
 
   public ushort GetDefaultWeaponSpecializationFeat(uint baseItemId) {
-    ushort ret = NWNXLibPINVOKE.CNWBaseItemArray_GetDefaultWeaponSpecializationFeat(swigCPtr, baseItemId);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWBaseItemArray_GetDefaultWeaponSpecializationFeat(swigCPtr, baseItemId);
+    return retVal;
   }
 
   public ushort GetDefaultEpicWeaponSpecializationFeat(uint baseItemId) {
-    ushort ret = NWNXLibPINVOKE.CNWBaseItemArray_GetDefaultEpicWeaponSpecializationFeat(swigCPtr, baseItemId);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWBaseItemArray_GetDefaultEpicWeaponSpecializationFeat(swigCPtr, baseItemId);
+    return retVal;
   }
 
   public ushort GetDefaultWeaponImprovedCriticalFeat(uint baseItemId) {
-    ushort ret = NWNXLibPINVOKE.CNWBaseItemArray_GetDefaultWeaponImprovedCriticalFeat(swigCPtr, baseItemId);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWBaseItemArray_GetDefaultWeaponImprovedCriticalFeat(swigCPtr, baseItemId);
+    return retVal;
   }
 
   public ushort GetDefaultEpicWeaponOverwhelmingCriticalFeat(uint baseItemId) {
-    ushort ret = NWNXLibPINVOKE.CNWBaseItemArray_GetDefaultEpicWeaponOverwhelmingCriticalFeat(swigCPtr, baseItemId);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWBaseItemArray_GetDefaultEpicWeaponOverwhelmingCriticalFeat(swigCPtr, baseItemId);
+    return retVal;
   }
 
   public ushort GetDefaultEpicWeaponDevastatingCriticalFeat(uint baseItemId) {
-    ushort ret = NWNXLibPINVOKE.CNWBaseItemArray_GetDefaultEpicWeaponDevastatingCriticalFeat(swigCPtr, baseItemId);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWBaseItemArray_GetDefaultEpicWeaponDevastatingCriticalFeat(swigCPtr, baseItemId);
+    return retVal;
   }
 
   public ushort GetDefaultWeaponOfChoiceFeat(uint baseItemId) {
-    ushort ret = NWNXLibPINVOKE.CNWBaseItemArray_GetDefaultWeaponOfChoiceFeat(swigCPtr, baseItemId);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWBaseItemArray_GetDefaultWeaponOfChoiceFeat(swigCPtr, baseItemId);
+    return retVal;
   }
 
 }

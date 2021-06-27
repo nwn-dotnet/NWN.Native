@@ -108,9 +108,10 @@ public unsafe class CNWSTagNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSTagNode_m_oidObjectId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSTagNode_m_oidObjectId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSTagNode_m_oidObjectId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSTagNode() : this(NWNXLibPINVOKE.new_CNWSTagNode(), true) {

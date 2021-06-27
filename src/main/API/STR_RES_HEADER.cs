@@ -85,9 +85,10 @@ public unsafe class STR_RES_HEADER : STR_RES_HEADER_OLD {
       NWNXLibPINVOKE.STR_RES_HEADER_fSoundLength_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.STR_RES_HEADER_fSoundLength_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.STR_RES_HEADER_fSoundLength_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public STR_RES_HEADER() : this(NWNXLibPINVOKE.new_STR_RES_HEADER(), true) {

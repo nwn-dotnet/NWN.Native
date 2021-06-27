@@ -131,9 +131,10 @@ public unsafe class CNWSStore : CNWSObject {
       NWNXLibPINVOKE.CNWSStore_m_oidLastOpened_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSStore_m_oidLastOpened_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSStore_m_oidLastOpened_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastClosed {
@@ -141,9 +142,10 @@ public unsafe class CNWSStore : CNWSObject {
       NWNXLibPINVOKE.CNWSStore_m_oidLastClosed_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSStore_m_oidLastClosed_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSStore_m_oidLastClosed_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bBlackMarket {
@@ -151,9 +153,10 @@ public unsafe class CNWSStore : CNWSObject {
       NWNXLibPINVOKE.CNWSStore_m_bBlackMarket_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSStore_m_bBlackMarket_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSStore_m_bBlackMarket_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nBlackMarketMarkDown {
@@ -161,9 +164,10 @@ public unsafe class CNWSStore : CNWSObject {
       NWNXLibPINVOKE.CNWSStore_m_nBlackMarketMarkDown_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSStore_m_nBlackMarketMarkDown_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSStore_m_nBlackMarketMarkDown_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nMarkDown {
@@ -171,9 +175,10 @@ public unsafe class CNWSStore : CNWSObject {
       NWNXLibPINVOKE.CNWSStore_m_nMarkDown_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSStore_m_nMarkDown_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSStore_m_nMarkDown_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nMarkUp {
@@ -181,9 +186,10 @@ public unsafe class CNWSStore : CNWSObject {
       NWNXLibPINVOKE.CNWSStore_m_nMarkUp_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSStore_m_nMarkUp_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSStore_m_nMarkUp_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nRepositoryArrayIndex {
@@ -191,9 +197,10 @@ public unsafe class CNWSStore : CNWSObject {
       NWNXLibPINVOKE.CNWSStore_m_nRepositoryArrayIndex_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSStore_m_nRepositoryArrayIndex_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSStore_m_nRepositoryArrayIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nRepositoryListNumber {
@@ -201,9 +208,10 @@ public unsafe class CNWSStore : CNWSObject {
       NWNXLibPINVOKE.CNWSStore_m_nRepositoryListNumber_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSStore_m_nRepositoryListNumber_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSStore_m_nRepositoryListNumber_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_iGold {
@@ -211,9 +219,10 @@ public unsafe class CNWSStore : CNWSObject {
       NWNXLibPINVOKE.CNWSStore_m_iGold_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSStore_m_iGold_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSStore_m_iGold_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_iIdentifyCost {
@@ -221,9 +230,10 @@ public unsafe class CNWSStore : CNWSObject {
       NWNXLibPINVOKE.CNWSStore_m_iIdentifyCost_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSStore_m_iIdentifyCost_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSStore_m_iIdentifyCost_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_iMaxBuyPrice {
@@ -231,9 +241,10 @@ public unsafe class CNWSStore : CNWSObject {
       NWNXLibPINVOKE.CNWSStore_m_iMaxBuyPrice_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSStore_m_iMaxBuyPrice_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSStore_m_iMaxBuyPrice_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListInt32 m_lstWillNotBuy {
@@ -271,30 +282,30 @@ public unsafe class CNWSStore : CNWSObject {
   }
 
   public int LoadFromTemplate(CResRef cResRef, CExoString pTag) {
-    int ret = NWNXLibPINVOKE.CNWSStore_LoadFromTemplate__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef), CExoString.getCPtr(pTag));
+    int retVal = NWNXLibPINVOKE.CNWSStore_LoadFromTemplate__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef), CExoString.getCPtr(pTag));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int LoadFromTemplate(CResRef cResRef) {
-    int ret = NWNXLibPINVOKE.CNWSStore_LoadFromTemplate__SWIG_1(swigCPtr, CResRef.getCPtr(cResRef));
+    int retVal = NWNXLibPINVOKE.CNWSStore_LoadFromTemplate__SWIG_1(swigCPtr, CResRef.getCPtr(cResRef));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int LoadStore(CResGFF pRes, CResStruct cStoreStruct, CExoString pTag) {
-    int ret = NWNXLibPINVOKE.CNWSStore_LoadStore__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cStoreStruct), CExoString.getCPtr(pTag));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSStore_LoadStore__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cStoreStruct), CExoString.getCPtr(pTag));
+    return retVal;
   }
 
   public int LoadStore(CResGFF pRes, CResStruct cStoreStruct) {
-    int ret = NWNXLibPINVOKE.CNWSStore_LoadStore__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cStoreStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSStore_LoadStore__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cStoreStruct));
+    return retVal;
   }
 
   public int SaveStore(CResGFF pRes, CResStruct pStruct, int bSaveOIDs) {
-    int ret = NWNXLibPINVOKE.CNWSStore_SaveStore(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bSaveOIDs);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSStore_SaveStore(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bSaveOIDs);
+    return retVal;
   }
 
   public void AddToArea(CNWSArea pArea, float fX, float fY, float fZ, int bRunScripts) {
@@ -318,8 +329,8 @@ public unsafe class CNWSStore : CNWSObject {
   }
 
   public int GetIsRestrictedBuyItem(int nBaseItemID) {
-    int ret = NWNXLibPINVOKE.CNWSStore_GetIsRestrictedBuyItem(swigCPtr, nBaseItemID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSStore_GetIsRestrictedBuyItem(swigCPtr, nBaseItemID);
+    return retVal;
   }
 
   public CStoreCustomer GetCustomer(uint oidPlayer) {
@@ -328,11 +339,11 @@ public unsafe class CNWSStore : CNWSObject {
     return ret;
   }
 
-  public void AddCustomer(CNWSPlayer pPlayer, char nMarkUp, char nMarkDown) {
+  public void AddCustomer(CNWSPlayer pPlayer, byte nMarkUp, byte nMarkDown) {
     NWNXLibPINVOKE.CNWSStore_AddCustomer__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMarkUp, nMarkDown);
   }
 
-  public void AddCustomer(CNWSPlayer pPlayer, char nMarkUp) {
+  public void AddCustomer(CNWSPlayer pPlayer, byte nMarkUp) {
     NWNXLibPINVOKE.CNWSStore_AddCustomer__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMarkUp);
   }
 
@@ -345,48 +356,48 @@ public unsafe class CNWSStore : CNWSObject {
   }
 
   public short GetCustomerSellRate(uint oidBuyer) {
-    short ret = NWNXLibPINVOKE.CNWSStore_GetCustomerSellRate(swigCPtr, oidBuyer);
-    return ret;
+    short retVal = NWNXLibPINVOKE.CNWSStore_GetCustomerSellRate(swigCPtr, oidBuyer);
+    return retVal;
   }
 
   public byte GetCustomerBuyRate(uint oidSeller, int bBlackMarket) {
-    byte ret = NWNXLibPINVOKE.CNWSStore_GetCustomerBuyRate(swigCPtr, oidSeller, bBlackMarket);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSStore_GetCustomerBuyRate(swigCPtr, oidSeller, bBlackMarket);
+    return retVal;
   }
 
   public int CalculateItemBuyPrice(CNWSItem pItem, uint oidSeller) {
-    int ret = NWNXLibPINVOKE.CNWSStore_CalculateItemBuyPrice(swigCPtr, CNWSItem.getCPtr(pItem), oidSeller);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSStore_CalculateItemBuyPrice(swigCPtr, CNWSItem.getCPtr(pItem), oidSeller);
+    return retVal;
   }
 
   public int CalculateItemSellPrice(CNWSItem pItem, uint oidBuyer) {
-    int ret = NWNXLibPINVOKE.CNWSStore_CalculateItemSellPrice(swigCPtr, CNWSItem.getCPtr(pItem), oidBuyer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSStore_CalculateItemSellPrice(swigCPtr, CNWSItem.getCPtr(pItem), oidBuyer);
+    return retVal;
   }
 
   public int AcquireItem(CNWSItem pItem, int bInfinite, byte x, byte y) {
-    int ret = NWNXLibPINVOKE.CNWSStore_AcquireItem__SWIG_0(swigCPtr, CNWSItem.getCPtr(pItem), bInfinite, x, y);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSStore_AcquireItem__SWIG_0(swigCPtr, CNWSItem.getCPtr(pItem), bInfinite, x, y);
+    return retVal;
   }
 
   public int AcquireItem(CNWSItem pItem, int bInfinite, byte x) {
-    int ret = NWNXLibPINVOKE.CNWSStore_AcquireItem__SWIG_1(swigCPtr, CNWSItem.getCPtr(pItem), bInfinite, x);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSStore_AcquireItem__SWIG_1(swigCPtr, CNWSItem.getCPtr(pItem), bInfinite, x);
+    return retVal;
   }
 
   public int AcquireItem(CNWSItem pItem, int bInfinite) {
-    int ret = NWNXLibPINVOKE.CNWSStore_AcquireItem__SWIG_2(swigCPtr, CNWSItem.getCPtr(pItem), bInfinite);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSStore_AcquireItem__SWIG_2(swigCPtr, CNWSItem.getCPtr(pItem), bInfinite);
+    return retVal;
   }
 
   public int AcquireItem(CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CNWSStore_AcquireItem__SWIG_3(swigCPtr, CNWSItem.getCPtr(pItem));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSStore_AcquireItem__SWIG_3(swigCPtr, CNWSItem.getCPtr(pItem));
+    return retVal;
   }
 
   public int SellItem(CNWSItem pItem, CNWSCreature pCreature, byte x, byte y) {
-    int ret = NWNXLibPINVOKE.CNWSStore_SellItem(swigCPtr, CNWSItem.getCPtr(pItem), CNWSCreature.getCPtr(pCreature), x, y);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSStore_SellItem(swigCPtr, CNWSItem.getCPtr(pItem), CNWSCreature.getCPtr(pCreature), x, y);
+    return retVal;
   }
 
   public void RemoveItem(CNWSItem pItem) {
@@ -394,38 +405,38 @@ public unsafe class CNWSStore : CNWSObject {
   }
 
   public int GetItemInInventory(uint oidItem) {
-    int ret = NWNXLibPINVOKE.CNWSStore_GetItemInInventory__SWIG_0(swigCPtr, oidItem);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSStore_GetItemInInventory__SWIG_0(swigCPtr, oidItem);
+    return retVal;
   }
 
   public int GetItemInInventory(CExoString sTag) {
-    int ret = NWNXLibPINVOKE.CNWSStore_GetItemInInventory__SWIG_1(swigCPtr, CExoString.getCPtr(sTag));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSStore_GetItemInInventory__SWIG_1(swigCPtr, CExoString.getCPtr(sTag));
+    return retVal;
   }
 
   public byte GetAppropriateListId(uint nBaseItemId) {
-    byte ret = NWNXLibPINVOKE.CNWSStore_GetAppropriateListId(swigCPtr, nBaseItemId);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSStore_GetAppropriateListId(swigCPtr, nBaseItemId);
+    return retVal;
   }
 
   public int AddItemToInventory(void** pItem, byte nInventoryList, byte x, byte y) {
-    int ret = NWNXLibPINVOKE.CNWSStore_AddItemToInventory__SWIG_0(swigCPtr, (global::System.IntPtr)pItem, nInventoryList, x, y);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSStore_AddItemToInventory__SWIG_0(swigCPtr, (global::System.IntPtr)pItem, nInventoryList, x, y);
+    return retVal;
   }
 
   public int AddItemToInventory(void** pItem, byte nInventoryList, byte x) {
-    int ret = NWNXLibPINVOKE.CNWSStore_AddItemToInventory__SWIG_1(swigCPtr, (global::System.IntPtr)pItem, nInventoryList, x);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSStore_AddItemToInventory__SWIG_1(swigCPtr, (global::System.IntPtr)pItem, nInventoryList, x);
+    return retVal;
   }
 
   public int AddItemToInventory(void** pItem, byte nInventoryList) {
-    int ret = NWNXLibPINVOKE.CNWSStore_AddItemToInventory__SWIG_2(swigCPtr, (global::System.IntPtr)pItem, nInventoryList);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSStore_AddItemToInventory__SWIG_2(swigCPtr, (global::System.IntPtr)pItem, nInventoryList);
+    return retVal;
   }
 
   public int RemoveItemFromInventory(CNWSItem pItem, byte nInventoryList) {
-    int ret = NWNXLibPINVOKE.CNWSStore_RemoveItemFromInventory(swigCPtr, CNWSItem.getCPtr(pItem), nInventoryList);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSStore_RemoveItemFromInventory(swigCPtr, CNWSItem.getCPtr(pItem), nInventoryList);
+    return retVal;
   }
 
 }

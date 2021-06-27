@@ -106,9 +106,10 @@ public unsafe class CEncounterListEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CEncounterListEntry_m_fCR_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CEncounterListEntry_m_fCR_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CEncounterListEntry_m_fCR_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fCreaturePoints {
@@ -116,9 +117,10 @@ public unsafe class CEncounterListEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CEncounterListEntry_m_fCreaturePoints_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CEncounterListEntry_m_fCreaturePoints_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CEncounterListEntry_m_fCreaturePoints_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bAlreadyUsed {
@@ -126,9 +128,10 @@ public unsafe class CEncounterListEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CEncounterListEntry_m_bAlreadyUsed_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CEncounterListEntry_m_bAlreadyUsed_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CEncounterListEntry_m_bAlreadyUsed_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bAlreadyChecked {
@@ -136,9 +139,10 @@ public unsafe class CEncounterListEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CEncounterListEntry_m_bAlreadyChecked_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CEncounterListEntry_m_bAlreadyChecked_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CEncounterListEntry_m_bAlreadyChecked_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bUnique {
@@ -146,9 +150,10 @@ public unsafe class CEncounterListEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CEncounterListEntry_m_bUnique_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CEncounterListEntry_m_bUnique_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CEncounterListEntry_m_bUnique_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CEncounterListEntry() : this(NWNXLibPINVOKE.new_CEncounterListEntry(), true) {

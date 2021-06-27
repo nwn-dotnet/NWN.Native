@@ -106,9 +106,10 @@ public unsafe class CNWSFaction : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSFaction_m_nFactionId_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSFaction_m_nFactionId_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSFaction_m_nFactionId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nParentFactionId {
@@ -116,9 +117,10 @@ public unsafe class CNWSFaction : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSFaction_m_nParentFactionId_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSFaction_m_nParentFactionId_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSFaction_m_nParentFactionId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nMemberListArrayIndex {
@@ -126,9 +128,10 @@ public unsafe class CNWSFaction : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSFaction_m_nMemberListArrayIndex_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSFaction_m_nMemberListArrayIndex_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSFaction_m_nMemberListArrayIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sFactionName {
@@ -147,9 +150,10 @@ public unsafe class CNWSFaction : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSFaction_m_bGlobalReaction_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSFaction_m_bGlobalReaction_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSFaction_m_bGlobalReaction_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSFaction() : this(NWNXLibPINVOKE.new_CNWSFaction__SWIG_0(), true) {
@@ -175,23 +179,23 @@ public unsafe class CNWSFaction : global::System.IDisposable {
   }
 
   public int AttemptRemove(uint oidRemoveeID, uint oidRemoverID) {
-    int ret = NWNXLibPINVOKE.CNWSFaction_AttemptRemove(swigCPtr, oidRemoveeID, oidRemoverID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSFaction_AttemptRemove(swigCPtr, oidRemoveeID, oidRemoverID);
+    return retVal;
   }
 
   public uint GetMemberList(uint** pMemberIDs) {
-    uint ret = NWNXLibPINVOKE.CNWSFaction_GetMemberList(swigCPtr, (global::System.IntPtr)pMemberIDs);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSFaction_GetMemberList(swigCPtr, (global::System.IntPtr)pMemberIDs);
+    return retVal;
   }
 
   public int InviteMember(uint oidNewMemberID, uint oidInviterPlayerID) {
-    int ret = NWNXLibPINVOKE.CNWSFaction_InviteMember(swigCPtr, oidNewMemberID, oidInviterPlayerID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSFaction_InviteMember(swigCPtr, oidNewMemberID, oidInviterPlayerID);
+    return retVal;
   }
 
   public int GetIsInvited(uint oidCreatureID) {
-    int ret = NWNXLibPINVOKE.CNWSFaction_GetIsInvited(swigCPtr, oidCreatureID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSFaction_GetIsInvited(swigCPtr, oidCreatureID);
+    return retVal;
   }
 
   public void RemoveMember(uint oidMemberID) {
@@ -220,118 +224,118 @@ public unsafe class CNWSFaction : global::System.IDisposable {
   }
 
   public uint GetWeakestMember(uint oidReferenceFactionMember, int bMustBeVisible) {
-    uint ret = NWNXLibPINVOKE.CNWSFaction_GetWeakestMember__SWIG_0(swigCPtr, oidReferenceFactionMember, bMustBeVisible);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSFaction_GetWeakestMember__SWIG_0(swigCPtr, oidReferenceFactionMember, bMustBeVisible);
+    return retVal;
   }
 
   public uint GetWeakestMember(uint oidReferenceFactionMember) {
-    uint ret = NWNXLibPINVOKE.CNWSFaction_GetWeakestMember__SWIG_1(swigCPtr, oidReferenceFactionMember);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSFaction_GetWeakestMember__SWIG_1(swigCPtr, oidReferenceFactionMember);
+    return retVal;
   }
 
   public uint GetStrongestMember(uint oidReferenceFactionMember, int bMustBeVisible) {
-    uint ret = NWNXLibPINVOKE.CNWSFaction_GetStrongestMember__SWIG_0(swigCPtr, oidReferenceFactionMember, bMustBeVisible);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSFaction_GetStrongestMember__SWIG_0(swigCPtr, oidReferenceFactionMember, bMustBeVisible);
+    return retVal;
   }
 
   public uint GetStrongestMember(uint oidReferenceFactionMember) {
-    uint ret = NWNXLibPINVOKE.CNWSFaction_GetStrongestMember__SWIG_1(swigCPtr, oidReferenceFactionMember);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSFaction_GetStrongestMember__SWIG_1(swigCPtr, oidReferenceFactionMember);
+    return retVal;
   }
 
   public uint GetMostDamagedMember(uint oidReferenceFactionMember, int bMustBeVisible) {
-    uint ret = NWNXLibPINVOKE.CNWSFaction_GetMostDamagedMember__SWIG_0(swigCPtr, oidReferenceFactionMember, bMustBeVisible);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSFaction_GetMostDamagedMember__SWIG_0(swigCPtr, oidReferenceFactionMember, bMustBeVisible);
+    return retVal;
   }
 
   public uint GetMostDamagedMember(uint oidReferenceFactionMember) {
-    uint ret = NWNXLibPINVOKE.CNWSFaction_GetMostDamagedMember__SWIG_1(swigCPtr, oidReferenceFactionMember);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSFaction_GetMostDamagedMember__SWIG_1(swigCPtr, oidReferenceFactionMember);
+    return retVal;
   }
 
   public uint GetLeastDamagedMember(uint oidReferenceFactionMember, int bMustBeVisible) {
-    uint ret = NWNXLibPINVOKE.CNWSFaction_GetLeastDamagedMember__SWIG_0(swigCPtr, oidReferenceFactionMember, bMustBeVisible);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSFaction_GetLeastDamagedMember__SWIG_0(swigCPtr, oidReferenceFactionMember, bMustBeVisible);
+    return retVal;
   }
 
   public uint GetLeastDamagedMember(uint oidReferenceFactionMember) {
-    uint ret = NWNXLibPINVOKE.CNWSFaction_GetLeastDamagedMember__SWIG_1(swigCPtr, oidReferenceFactionMember);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSFaction_GetLeastDamagedMember__SWIG_1(swigCPtr, oidReferenceFactionMember);
+    return retVal;
   }
 
   public int GetGold() {
-    int ret = NWNXLibPINVOKE.CNWSFaction_GetGold(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSFaction_GetGold(swigCPtr);
+    return retVal;
   }
 
   public int GetAverageReputation(uint oidSubject) {
-    int ret = NWNXLibPINVOKE.CNWSFaction_GetAverageReputation(swigCPtr, oidSubject);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSFaction_GetAverageReputation(swigCPtr, oidSubject);
+    return retVal;
   }
 
   public int GetAverageGoodEvilAlignment() {
-    int ret = NWNXLibPINVOKE.CNWSFaction_GetAverageGoodEvilAlignment(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSFaction_GetAverageGoodEvilAlignment(swigCPtr);
+    return retVal;
   }
 
   public int GetAverageLawChaosAlignment() {
-    int ret = NWNXLibPINVOKE.CNWSFaction_GetAverageLawChaosAlignment(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSFaction_GetAverageLawChaosAlignment(swigCPtr);
+    return retVal;
   }
 
   public int GetAverageLevel() {
-    int ret = NWNXLibPINVOKE.CNWSFaction_GetAverageLevel(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSFaction_GetAverageLevel(swigCPtr);
+    return retVal;
   }
 
   public int GetAverageXP() {
-    int ret = NWNXLibPINVOKE.CNWSFaction_GetAverageXP(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSFaction_GetAverageXP(swigCPtr);
+    return retVal;
   }
 
   public int GetMostFrequentClass() {
-    int ret = NWNXLibPINVOKE.CNWSFaction_GetMostFrequentClass(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSFaction_GetMostFrequentClass(swigCPtr);
+    return retVal;
   }
 
   public uint GetWorstAC(uint oidReferenceFactionMember, int bMustBeVisible) {
-    uint ret = NWNXLibPINVOKE.CNWSFaction_GetWorstAC__SWIG_0(swigCPtr, oidReferenceFactionMember, bMustBeVisible);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSFaction_GetWorstAC__SWIG_0(swigCPtr, oidReferenceFactionMember, bMustBeVisible);
+    return retVal;
   }
 
   public uint GetWorstAC(uint oidReferenceFactionMember) {
-    uint ret = NWNXLibPINVOKE.CNWSFaction_GetWorstAC__SWIG_1(swigCPtr, oidReferenceFactionMember);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSFaction_GetWorstAC__SWIG_1(swigCPtr, oidReferenceFactionMember);
+    return retVal;
   }
 
   public uint GetBestAC(uint oidReferenceFactionMember, int bMustBeVisible) {
-    uint ret = NWNXLibPINVOKE.CNWSFaction_GetBestAC__SWIG_0(swigCPtr, oidReferenceFactionMember, bMustBeVisible);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSFaction_GetBestAC__SWIG_0(swigCPtr, oidReferenceFactionMember, bMustBeVisible);
+    return retVal;
   }
 
   public uint GetBestAC(uint oidReferenceFactionMember) {
-    uint ret = NWNXLibPINVOKE.CNWSFaction_GetBestAC__SWIG_1(swigCPtr, oidReferenceFactionMember);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSFaction_GetBestAC__SWIG_1(swigCPtr, oidReferenceFactionMember);
+    return retVal;
   }
 
   public int GetCreatureInParty(uint oidCreature) {
-    int ret = NWNXLibPINVOKE.CNWSFaction_GetCreatureInParty(swigCPtr, oidCreature);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSFaction_GetCreatureInParty(swigCPtr, oidCreature);
+    return retVal;
   }
 
   public int GetSingletonParty() {
-    int ret = NWNXLibPINVOKE.CNWSFaction_GetSingletonParty(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSFaction_GetSingletonParty(swigCPtr);
+    return retVal;
   }
 
   public int TransferLeadership(uint oidNewLeader, uint oidOldLeader) {
-    int ret = NWNXLibPINVOKE.CNWSFaction_TransferLeadership(swigCPtr, oidNewLeader, oidOldLeader);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSFaction_TransferLeadership(swigCPtr, oidNewLeader, oidOldLeader);
+    return retVal;
   }
 
   public uint GetFactionMember(int nStartPos, int bPCOnly) {
-    uint ret = NWNXLibPINVOKE.CNWSFaction_GetFactionMember(swigCPtr, nStartPos, bPCOnly);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSFaction_GetFactionMember(swigCPtr, nStartPos, bPCOnly);
+    return retVal;
   }
 
   public void ClearAllReputationsTowards(uint oidCreature) {
@@ -339,8 +343,8 @@ public unsafe class CNWSFaction : global::System.IDisposable {
   }
 
   public uint GetLeader() {
-    uint ret = NWNXLibPINVOKE.CNWSFaction_GetLeader(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSFaction_GetLeader(swigCPtr);
+    return retVal;
   }
 
   public CFactionManager GetFactionManager() {

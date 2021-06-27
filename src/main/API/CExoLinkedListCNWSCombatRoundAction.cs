@@ -129,8 +129,8 @@ public unsafe class CExoLinkedListCNWSCombatRoundAction : global::System.IDispos
   }
 
   public uint Count() {
-    uint ret = NWNXLibPINVOKE.CExoLinkedListCNWSCombatRoundAction_Count(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoLinkedListCNWSCombatRoundAction_Count(swigCPtr);
+    return retVal;
   }
 
   public CNWSCombatRoundAction GetAtPos(CExoLinkedListNode Position) {
@@ -176,8 +176,8 @@ public unsafe class CExoLinkedListCNWSCombatRoundAction : global::System.IDispos
   }
 
   public int IsEmpty() {
-    int ret = NWNXLibPINVOKE.CExoLinkedListCNWSCombatRoundAction_IsEmpty(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoLinkedListCNWSCombatRoundAction_IsEmpty(swigCPtr);
+    return retVal;
   }
 
   public CNWSCombatRoundAction RemoveHead() {

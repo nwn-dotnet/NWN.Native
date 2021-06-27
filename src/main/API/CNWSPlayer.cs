@@ -107,9 +107,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_nAreaTransitionBMP_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayer_m_nAreaTransitionBMP_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayer_m_nAreaTransitionBMP_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sAreaTransitionName {
@@ -128,9 +129,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_bFloatyEffects_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayer_m_bFloatyEffects_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayer_m_bFloatyEffects_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nAreas {
@@ -138,18 +140,19 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_nAreas_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayer_m_nAreas_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayer_m_nAreas_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint* m_pAreas {
     set {
-      NWNXLibPINVOKE.CNWSPlayer_m_pAreas_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWSPlayer_m_pAreas_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSPlayer_m_pAreas_get(swigCPtr);
-        return (uint*)retVal;
+      uint* retVal = NWNXLibPINVOKE.CNWSPlayer_m_pAreas_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -159,9 +162,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_nLoginState_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayer_m_nLoginState_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayer_m_nLoginState_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidNWSObject {
@@ -169,19 +173,21 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_oidNWSObject_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayer_m_oidNWSObject_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayer_m_oidNWSObject_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public uint m_nLastUpdatedTime {
+  public ulong m_nLastUpdatedTime {
     set {
       NWNXLibPINVOKE.CNWSPlayer_m_nLastUpdatedTime_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayer_m_nLastUpdatedTime_get(swigCPtr);
-      return ret;
-    } 
+      ulong retVal = NWNXLibPINVOKE.CNWSPlayer_m_nLastUpdatedTime_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastObjectControlled {
@@ -189,9 +195,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_oidLastObjectControlled_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayer_m_oidLastObjectControlled_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayer_m_oidLastObjectControlled_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidPCObject {
@@ -199,9 +206,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_oidPCObject_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayer_m_oidPCObject_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayer_m_oidPCObject_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bIsPrimaryPlayer {
@@ -209,9 +217,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_bIsPrimaryPlayer_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayer_m_bIsPrimaryPlayer_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayer_m_bIsPrimaryPlayer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bFromSaveGame {
@@ -219,9 +228,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_bFromSaveGame_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayer_m_bFromSaveGame_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayer_m_bFromSaveGame_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bFromTURD {
@@ -229,9 +239,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_bFromTURD_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayer_m_bFromTURD_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayer_m_bFromTURD_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nPlayerListIndex {
@@ -239,9 +250,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_nPlayerListIndex_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayer_m_nPlayerListIndex_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayer_m_nPlayerListIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bPlayModuleListingCharacters {
@@ -249,9 +261,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_bPlayModuleListingCharacters_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayer_m_bPlayModuleListingCharacters_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayer_m_bPlayModuleListingCharacters_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSPlayerJournalQuest m_pJournalQuest {
@@ -325,9 +338,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_bAlwaysRun_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayer_m_bAlwaysRun_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayer_m_bAlwaysRun_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nCharacterType {
@@ -335,9 +349,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_nCharacterType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayer_m_nCharacterType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayer_m_nCharacterType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResRef m_resFileName {
@@ -356,9 +371,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_bCommunityNameAuthorized_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayer_m_bCommunityNameAuthorized_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayer_m_bCommunityNameAuthorized_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bModuleInfoSucceeded {
@@ -366,9 +382,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_bModuleInfoSucceeded_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayer_m_bModuleInfoSucceeded_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayer_m_bModuleInfoSucceeded_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nIFOCharacterIndex {
@@ -376,9 +393,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_nIFOCharacterIndex_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayer_m_nIFOCharacterIndex_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayer_m_nIFOCharacterIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bCutsceneState {
@@ -386,9 +404,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_bCutsceneState_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayer_m_bCutsceneState_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayer_m_bCutsceneState_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bTargetMode {
@@ -396,9 +415,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_bTargetMode_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayer_m_bTargetMode_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayer_m_bTargetMode_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidDungeonMasterAvatar {
@@ -406,9 +426,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_oidDungeonMasterAvatar_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayer_m_oidDungeonMasterAvatar_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayer_m_oidDungeonMasterAvatar_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nPossessState {
@@ -416,9 +437,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_nPossessState_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayer_m_nPossessState_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayer_m_nPossessState_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bWasSentITP {
@@ -426,9 +448,10 @@ public unsafe class CNWSPlayer : CNWSClient {
       NWNXLibPINVOKE.CNWSPlayer_m_bWasSentITP_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayer_m_bWasSentITP_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayer_m_bWasSentITP_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSPlayer(uint nPlayerID) : this(NWNXLibPINVOKE.new_CNWSPlayer(nPlayerID), true) {
@@ -451,25 +474,25 @@ public unsafe class CNWSPlayer : CNWSClient {
   }
 
   public uint LoadLocalCharacter() {
-    uint ret = NWNXLibPINVOKE.CNWSPlayer_LoadLocalCharacter(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSPlayer_LoadLocalCharacter(swigCPtr);
+    return retVal;
   }
 
   public uint LoadDMCharacter() {
-    uint ret = NWNXLibPINVOKE.CNWSPlayer_LoadDMCharacter(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSPlayer_LoadDMCharacter(swigCPtr);
+    return retVal;
   }
 
   public uint LoadServerCharacter(CResRef cResRef, int bSubDirChar) {
-    uint ret = NWNXLibPINVOKE.CNWSPlayer_LoadServerCharacter__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef), bSubDirChar);
+    uint retVal = NWNXLibPINVOKE.CNWSPlayer_LoadServerCharacter__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef), bSubDirChar);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public uint LoadServerCharacter(CResRef cResRef) {
-    uint ret = NWNXLibPINVOKE.CNWSPlayer_LoadServerCharacter__SWIG_1(swigCPtr, CResRef.getCPtr(cResRef));
+    uint retVal = NWNXLibPINVOKE.CNWSPlayer_LoadServerCharacter__SWIG_1(swigCPtr, CResRef.getCPtr(cResRef));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public CNWSCreature LoadCharacterFromIFO(uint nIndex, int bAreaLoaded, int bRunPostProcess, int bAddObjectToArray, int bDoingCharacterCopy) {
@@ -507,35 +530,35 @@ public unsafe class CNWSPlayer : CNWSClient {
   }
 
   public int GetCharacterInfoFromIFO(byte* nNumClasses, int* pClasses, byte* pLevels, uint* nXP) {
-    int ret = NWNXLibPINVOKE.CNWSPlayer_GetCharacterInfoFromIFO(swigCPtr, (global::System.IntPtr)nNumClasses, (global::System.IntPtr)pClasses, (global::System.IntPtr)pLevels, (global::System.IntPtr)nXP);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlayer_GetCharacterInfoFromIFO(swigCPtr, (global::System.IntPtr)nNumClasses, pClasses, pLevels, (global::System.IntPtr)nXP);
+    return retVal;
   }
 
   public uint LoadCreatureData(CResRef cResRef, CNWSCreature pCreature) {
-    uint ret = NWNXLibPINVOKE.CNWSPlayer_LoadCreatureData(swigCPtr, CResRef.getCPtr(cResRef), CNWSCreature.getCPtr(pCreature));
+    uint retVal = NWNXLibPINVOKE.CNWSPlayer_LoadCreatureData(swigCPtr, CResRef.getCPtr(cResRef), CNWSCreature.getCPtr(pCreature));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SaveServerCharacter(int bBackupPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSPlayer_SaveServerCharacter__SWIG_0(swigCPtr, bBackupPlayer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlayer_SaveServerCharacter__SWIG_0(swigCPtr, bBackupPlayer);
+    return retVal;
   }
 
   public int SaveServerCharacter() {
-    int ret = NWNXLibPINVOKE.CNWSPlayer_SaveServerCharacter__SWIG_1(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlayer_SaveServerCharacter__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public int BackupServerCharacter(CExoString sFilename) {
-    int ret = NWNXLibPINVOKE.CNWSPlayer_BackupServerCharacter(swigCPtr, CExoString.getCPtr(sFilename));
+    int retVal = NWNXLibPINVOKE.CNWSPlayer_BackupServerCharacter(swigCPtr, CExoString.getCPtr(sFilename));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public uint ValidateCharacter(int* bFailedServerRestriction) {
-    uint ret = NWNXLibPINVOKE.CNWSPlayer_ValidateCharacter(swigCPtr, (global::System.IntPtr)bFailedServerRestriction);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSPlayer_ValidateCharacter(swigCPtr, bFailedServerRestriction);
+    return retVal;
   }
 
   public void ValidateCharacter_SetNormalBonusFlags(ushort nFeatID, int* bNormalListFeat, int* bBonusListFeat, byte nClass) {
@@ -555,8 +578,8 @@ public unsafe class CNWSPlayer : CNWSClient {
   }
 
   public int PackCreatureIntoMessage() {
-    int ret = NWNXLibPINVOKE.CNWSPlayer_PackCreatureIntoMessage(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlayer_PackCreatureIntoMessage(swigCPtr);
+    return retVal;
   }
 
   public CNWSObject GetGameObject() {
@@ -590,13 +613,13 @@ public unsafe class CNWSPlayer : CNWSClient {
   }
 
   public int AddArea(uint oidArea) {
-    int ret = NWNXLibPINVOKE.CNWSPlayer_AddArea(swigCPtr, oidArea);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlayer_AddArea(swigCPtr, oidArea);
+    return retVal;
   }
 
   public int GetIsAllowedToSave() {
-    int ret = NWNXLibPINVOKE.CNWSPlayer_GetIsAllowedToSave(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlayer_GetIsAllowedToSave(swigCPtr);
+    return retVal;
   }
 
   public void DropTURD() {
@@ -622,18 +645,18 @@ public unsafe class CNWSPlayer : CNWSClient {
   }
 
   public int PermittedToDisplayCharacterSheet(uint oidCreature) {
-    int ret = NWNXLibPINVOKE.CNWSPlayer_PermittedToDisplayCharacterSheet(swigCPtr, oidCreature);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlayer_PermittedToDisplayCharacterSheet(swigCPtr, oidCreature);
+    return retVal;
   }
 
   public int HasExpansionPack(byte nPack, int bOrBetter) {
-    int ret = NWNXLibPINVOKE.CNWSPlayer_HasExpansionPack__SWIG_0(swigCPtr, nPack, bOrBetter);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlayer_HasExpansionPack__SWIG_0(swigCPtr, nPack, bOrBetter);
+    return retVal;
   }
 
   public int HasExpansionPack(byte nPack) {
-    int ret = NWNXLibPINVOKE.CNWSPlayer_HasExpansionPack__SWIG_1(swigCPtr, nPack);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlayer_HasExpansionPack__SWIG_1(swigCPtr, nPack);
+    return retVal;
   }
 
   public void StoreCameraSettings() {
@@ -645,18 +668,18 @@ public unsafe class CNWSPlayer : CNWSClient {
   }
 
   public int SatisfiesBuild(int nBuild, int nRevision) {
-    int ret = NWNXLibPINVOKE.CNWSPlayer_SatisfiesBuild(swigCPtr, nBuild, nRevision);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlayer_SatisfiesBuild(swigCPtr, nBuild, nRevision);
+    return retVal;
   }
 
   public int GetIsDM() {
-    int ret = NWNXLibPINVOKE.CNWSPlayer_GetIsDM(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlayer_GetIsDM(swigCPtr);
+    return retVal;
   }
 
   public int GetIsPlayerDM() {
-    int ret = NWNXLibPINVOKE.CNWSPlayer_GetIsPlayerDM(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSPlayer_GetIsPlayerDM(swigCPtr);
+    return retVal;
   }
 
   public void PossessCreature(uint oidTarget, byte possessType) {

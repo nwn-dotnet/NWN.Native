@@ -129,8 +129,8 @@ public unsafe class CExoLinkedListCLastUpdatePartyObject : global::System.IDispo
   }
 
   public uint Count() {
-    uint ret = NWNXLibPINVOKE.CExoLinkedListCLastUpdatePartyObject_Count(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoLinkedListCLastUpdatePartyObject_Count(swigCPtr);
+    return retVal;
   }
 
   public CLastUpdatePartyObject GetAtPos(CExoLinkedListNode Position) {
@@ -176,8 +176,8 @@ public unsafe class CExoLinkedListCLastUpdatePartyObject : global::System.IDispo
   }
 
   public int IsEmpty() {
-    int ret = NWNXLibPINVOKE.CExoLinkedListCLastUpdatePartyObject_IsEmpty(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoLinkedListCLastUpdatePartyObject_IsEmpty(swigCPtr);
+    return retVal;
   }
 
   public CLastUpdatePartyObject RemoveHead() {

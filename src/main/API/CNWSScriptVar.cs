@@ -95,9 +95,10 @@ public unsafe class CNWSScriptVar : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSScriptVar_m_int_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSScriptVar_m_int_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSScriptVar_m_int_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_float {
@@ -105,9 +106,10 @@ public unsafe class CNWSScriptVar : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSScriptVar_m_float_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSScriptVar_m_float_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSScriptVar_m_float_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_objectId {
@@ -115,9 +117,10 @@ public unsafe class CNWSScriptVar : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSScriptVar_m_objectId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSScriptVar_m_objectId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSScriptVar_m_objectId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_string {

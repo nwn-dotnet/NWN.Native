@@ -106,22 +106,23 @@ public unsafe class CServerAIList : global::System.IDisposable {
       NWNXLibPINVOKE.CServerAIList_m_nPosition_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CServerAIList_m_nPosition_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CServerAIList_m_nPosition_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CServerAIList() : this(NWNXLibPINVOKE.new_CServerAIList(), true) {
   }
 
   public int AddObject(uint oidObjectToAdd) {
-    int ret = NWNXLibPINVOKE.CServerAIList_AddObject(swigCPtr, oidObjectToAdd);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIList_AddObject(swigCPtr, oidObjectToAdd);
+    return retVal;
   }
 
   public int RemoveObject(uint oidObjectToRemove) {
-    int ret = NWNXLibPINVOKE.CServerAIList_RemoveObject(swigCPtr, oidObjectToRemove);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIList_RemoveObject(swigCPtr, oidObjectToRemove);
+    return retVal;
   }
 
   public CNWSObject GetNextObject() {

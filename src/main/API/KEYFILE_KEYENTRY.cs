@@ -108,9 +108,10 @@ public unsafe class KEYFILE_KEYENTRY : global::System.IDisposable {
       NWNXLibPINVOKE.KEYFILE_KEYENTRY_nType_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.KEYFILE_KEYENTRY_nType_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.KEYFILE_KEYENTRY_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nID {
@@ -118,9 +119,10 @@ public unsafe class KEYFILE_KEYENTRY : global::System.IDisposable {
       NWNXLibPINVOKE.KEYFILE_KEYENTRY_nID_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.KEYFILE_KEYENTRY_nID_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.KEYFILE_KEYENTRY_nID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public KEYFILE_KEYENTRY() : this(NWNXLibPINVOKE.new_KEYFILE_KEYENTRY(), true) {

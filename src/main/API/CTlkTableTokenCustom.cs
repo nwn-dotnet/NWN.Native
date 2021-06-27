@@ -95,9 +95,10 @@ public unsafe class CTlkTableTokenCustom : global::System.IDisposable {
       NWNXLibPINVOKE.CTlkTableTokenCustom_m_nNumber_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CTlkTableTokenCustom_m_nNumber_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CTlkTableTokenCustom_m_nNumber_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sValue {

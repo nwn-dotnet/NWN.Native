@@ -95,9 +95,10 @@ public unsafe class CGameObjectArrayNode : global::System.IDisposable {
       NWNXLibPINVOKE.CGameObjectArrayNode_m_objectId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CGameObjectArrayNode_m_objectId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CGameObjectArrayNode_m_objectId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ICGameObject m_objectPtr {

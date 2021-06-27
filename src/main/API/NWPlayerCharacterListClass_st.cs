@@ -95,9 +95,10 @@ public unsafe class NWPlayerCharacterListClass_st : global::System.IDisposable {
       NWNXLibPINVOKE.NWPlayerCharacterListClass_st_nClass_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.NWPlayerCharacterListClass_st_nClass_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.NWPlayerCharacterListClass_st_nClass_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte nClassLevel {
@@ -105,9 +106,10 @@ public unsafe class NWPlayerCharacterListClass_st : global::System.IDisposable {
       NWNXLibPINVOKE.NWPlayerCharacterListClass_st_nClassLevel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.NWPlayerCharacterListClass_st_nClassLevel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.NWPlayerCharacterListClass_st_nClassLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NWPlayerCharacterListClass_st() : this(NWNXLibPINVOKE.new_NWPlayerCharacterListClass_st(), true) {

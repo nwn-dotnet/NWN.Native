@@ -85,9 +85,10 @@ public unsafe class CNWSWaypoint : CNWSObject {
       NWNXLibPINVOKE.CNWSWaypoint_m_bMapNote_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSWaypoint_m_bMapNote_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSWaypoint_m_bMapNote_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bMapNoteEnabled {
@@ -95,9 +96,10 @@ public unsafe class CNWSWaypoint : CNWSObject {
       NWNXLibPINVOKE.CNWSWaypoint_m_bMapNoteEnabled_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSWaypoint_m_bMapNoteEnabled_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSWaypoint_m_bMapNoteEnabled_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoLocString m_szMapNote {
@@ -155,30 +157,30 @@ public unsafe class CNWSWaypoint : CNWSObject {
   }
 
   public int LoadFromTemplate(CResRef cResRef, CExoString pTag) {
-    int ret = NWNXLibPINVOKE.CNWSWaypoint_LoadFromTemplate__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef), CExoString.getCPtr(pTag));
+    int retVal = NWNXLibPINVOKE.CNWSWaypoint_LoadFromTemplate__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef), CExoString.getCPtr(pTag));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int LoadFromTemplate(CResRef cResRef) {
-    int ret = NWNXLibPINVOKE.CNWSWaypoint_LoadFromTemplate__SWIG_1(swigCPtr, CResRef.getCPtr(cResRef));
+    int retVal = NWNXLibPINVOKE.CNWSWaypoint_LoadFromTemplate__SWIG_1(swigCPtr, CResRef.getCPtr(cResRef));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int LoadWaypoint(CResGFF pRes, CResStruct cWaypointStruct, CExoString pTag) {
-    int ret = NWNXLibPINVOKE.CNWSWaypoint_LoadWaypoint__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cWaypointStruct), CExoString.getCPtr(pTag));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSWaypoint_LoadWaypoint__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cWaypointStruct), CExoString.getCPtr(pTag));
+    return retVal;
   }
 
   public int LoadWaypoint(CResGFF pRes, CResStruct cWaypointStruct) {
-    int ret = NWNXLibPINVOKE.CNWSWaypoint_LoadWaypoint__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cWaypointStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSWaypoint_LoadWaypoint__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cWaypointStruct));
+    return retVal;
   }
 
   public int SaveWaypoint(CResGFF pRes, CResStruct cWaypointStruct) {
-    int ret = NWNXLibPINVOKE.CNWSWaypoint_SaveWaypoint(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cWaypointStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSWaypoint_SaveWaypoint(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cWaypointStruct));
+    return retVal;
   }
 
 }

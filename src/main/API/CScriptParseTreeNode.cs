@@ -95,9 +95,10 @@ public unsafe class CScriptParseTreeNode : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptParseTreeNode_nOperation_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptParseTreeNode_nOperation_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptParseTreeNode_nOperation_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_psStringData {
@@ -116,9 +117,10 @@ public unsafe class CScriptParseTreeNode : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptParseTreeNode_nIntegerData_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptParseTreeNode_nIntegerData_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptParseTreeNode_nIntegerData_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nIntegerData2 {
@@ -126,9 +128,10 @@ public unsafe class CScriptParseTreeNode : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptParseTreeNode_nIntegerData2_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptParseTreeNode_nIntegerData2_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptParseTreeNode_nIntegerData2_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nIntegerData3 {
@@ -136,9 +139,10 @@ public unsafe class CScriptParseTreeNode : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptParseTreeNode_nIntegerData3_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptParseTreeNode_nIntegerData3_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptParseTreeNode_nIntegerData3_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nIntegerData4 {
@@ -146,9 +150,10 @@ public unsafe class CScriptParseTreeNode : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptParseTreeNode_nIntegerData4_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptParseTreeNode_nIntegerData4_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptParseTreeNode_nIntegerData4_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float fFloatData {
@@ -156,9 +161,10 @@ public unsafe class CScriptParseTreeNode : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptParseTreeNode_fFloatData_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CScriptParseTreeNode_fFloatData_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CScriptParseTreeNode_fFloatData_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<float> fVectorData {
@@ -179,9 +185,10 @@ public unsafe class CScriptParseTreeNode : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptParseTreeNode_m_nFileReference_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptParseTreeNode_m_nFileReference_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptParseTreeNode_m_nFileReference_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nLine {
@@ -189,9 +196,10 @@ public unsafe class CScriptParseTreeNode : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptParseTreeNode_nLine_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptParseTreeNode_nLine_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptParseTreeNode_nLine_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nChar {
@@ -199,9 +207,10 @@ public unsafe class CScriptParseTreeNode : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptParseTreeNode_nChar_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptParseTreeNode_nChar_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptParseTreeNode_nChar_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CScriptParseTreeNode pLeft {
@@ -231,9 +240,10 @@ public unsafe class CScriptParseTreeNode : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptParseTreeNode_nType_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptParseTreeNode_nType_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptParseTreeNode_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_psTypeName {
@@ -252,9 +262,10 @@ public unsafe class CScriptParseTreeNode : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptParseTreeNode_m_nStackPointer_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptParseTreeNode_m_nStackPointer_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptParseTreeNode_m_nStackPointer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CScriptParseTreeNode() : this(NWNXLibPINVOKE.new_CScriptParseTreeNode(), true) {

@@ -92,11 +92,11 @@ public unsafe class CNWMessage : global::System.IDisposable {
 /*@SWIG@*/
   public byte* m_pnWriteBuffer {
     set {
-      NWNXLibPINVOKE.CNWMessage_m_pnWriteBuffer_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWMessage_m_pnWriteBuffer_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWMessage_m_pnWriteBuffer_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CNWMessage_m_pnWriteBuffer_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -106,9 +106,10 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_nWriteBufferSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWMessage_m_nWriteBufferSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWMessage_m_nWriteBufferSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nWriteBufferPtr {
@@ -116,18 +117,19 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_nWriteBufferPtr_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWMessage_m_nWriteBufferPtr_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWMessage_m_nWriteBufferPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte* m_pnWriteFragmentsBuffer {
     set {
-      NWNXLibPINVOKE.CNWMessage_m_pnWriteFragmentsBuffer_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWMessage_m_pnWriteFragmentsBuffer_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWMessage_m_pnWriteFragmentsBuffer_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CNWMessage_m_pnWriteFragmentsBuffer_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -137,9 +139,10 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_nWriteFragmentsBufferSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWMessage_m_nWriteFragmentsBufferSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWMessage_m_nWriteFragmentsBufferSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nWriteFragmentsBufferPtr {
@@ -147,9 +150,10 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_nWriteFragmentsBufferPtr_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWMessage_m_nWriteFragmentsBufferPtr_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWMessage_m_nWriteFragmentsBufferPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nWriteFragmentsOffset {
@@ -157,9 +161,10 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_nWriteFragmentsOffset_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWMessage_m_nWriteFragmentsOffset_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWMessage_m_nWriteFragmentsOffset_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nCurWriteBit {
@@ -167,9 +172,10 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_nCurWriteBit_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWMessage_m_nCurWriteBit_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWMessage_m_nCurWriteBit_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bInWriteMessage {
@@ -177,18 +183,19 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_bInWriteMessage_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWMessage_m_bInWriteMessage_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWMessage_m_bInWriteMessage_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte* m_pnReadBuffer {
     set {
-      NWNXLibPINVOKE.CNWMessage_m_pnReadBuffer_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWMessage_m_pnReadBuffer_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWMessage_m_pnReadBuffer_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CNWMessage_m_pnReadBuffer_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -198,9 +205,10 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_nReadBufferSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWMessage_m_nReadBufferSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWMessage_m_nReadBufferSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nReadBufferPtr {
@@ -208,18 +216,19 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_nReadBufferPtr_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWMessage_m_nReadBufferPtr_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWMessage_m_nReadBufferPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte* m_pnReadFragmentsBuffer {
     set {
-      NWNXLibPINVOKE.CNWMessage_m_pnReadFragmentsBuffer_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWMessage_m_pnReadFragmentsBuffer_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWMessage_m_pnReadFragmentsBuffer_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CNWMessage_m_pnReadFragmentsBuffer_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -229,9 +238,10 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_nReadFragmentsBufferSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWMessage_m_nReadFragmentsBufferSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWMessage_m_nReadFragmentsBufferSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nReadFragmentsBufferPtr {
@@ -239,9 +249,10 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_nReadFragmentsBufferPtr_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWMessage_m_nReadFragmentsBufferPtr_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWMessage_m_nReadFragmentsBufferPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nReadFragmentsOffset {
@@ -249,9 +260,10 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_nReadFragmentsOffset_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWMessage_m_nReadFragmentsOffset_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWMessage_m_nReadFragmentsOffset_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nCurReadBit {
@@ -259,9 +271,10 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_nCurReadBit_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWMessage_m_nCurReadBit_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWMessage_m_nCurReadBit_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nLastByteBits {
@@ -269,9 +282,10 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_nLastByteBits_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWMessage_m_nLastByteBits_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWMessage_m_nLastByteBits_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bHighPriority {
@@ -279,9 +293,10 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_bHighPriority_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWMessage_m_bHighPriority_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWMessage_m_bHighPriority_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_dwPlayerID {
@@ -289,27 +304,28 @@ public unsafe class CNWMessage : global::System.IDisposable {
       NWNXLibPINVOKE.CNWMessage_m_dwPlayerID_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWMessage_m_dwPlayerID_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWMessage_m_dwPlayerID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWMessage() : this(NWNXLibPINVOKE.new_CNWMessage(), true) {
   }
 
   public int SetReadMessage(byte* pMessage, uint dwSize, uint dwPlayerID, int bHighPriority) {
-    int ret = NWNXLibPINVOKE.CNWMessage_SetReadMessage__SWIG_0(swigCPtr, (global::System.IntPtr)pMessage, dwSize, dwPlayerID, bHighPriority);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWMessage_SetReadMessage__SWIG_0(swigCPtr, pMessage, dwSize, dwPlayerID, bHighPriority);
+    return retVal;
   }
 
   public int SetReadMessage(byte* pMessage, uint dwSize, uint dwPlayerID) {
-    int ret = NWNXLibPINVOKE.CNWMessage_SetReadMessage__SWIG_1(swigCPtr, (global::System.IntPtr)pMessage, dwSize, dwPlayerID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWMessage_SetReadMessage__SWIG_1(swigCPtr, pMessage, dwSize, dwPlayerID);
+    return retVal;
   }
 
   public int SetReadMessage(byte* pMessage, uint dwSize) {
-    int ret = NWNXLibPINVOKE.CNWMessage_SetReadMessage__SWIG_2(swigCPtr, (global::System.IntPtr)pMessage, dwSize);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWMessage_SetReadMessage__SWIG_2(swigCPtr, pMessage, dwSize);
+    return retVal;
   }
 
   public void ClearReadMessage() {
@@ -317,108 +333,108 @@ public unsafe class CNWMessage : global::System.IDisposable {
   }
 
   public int ReadBOOL() {
-    int ret = NWNXLibPINVOKE.CNWMessage_ReadBOOL(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWMessage_ReadBOOL(swigCPtr);
+    return retVal;
   }
 
   public byte ReadBYTE(int nCount) {
-    byte ret = NWNXLibPINVOKE.CNWMessage_ReadBYTE__SWIG_0(swigCPtr, nCount);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWMessage_ReadBYTE__SWIG_0(swigCPtr, nCount);
+    return retVal;
   }
 
   public byte ReadBYTE() {
-    byte ret = NWNXLibPINVOKE.CNWMessage_ReadBYTE__SWIG_1(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWMessage_ReadBYTE__SWIG_1(swigCPtr);
+    return retVal;
   }
 
-  public char ReadCHAR(int nCount) {
-    char ret = NWNXLibPINVOKE.CNWMessage_ReadCHAR__SWIG_0(swigCPtr, nCount);
-    return ret;
+  public byte ReadCHAR(int nCount) {
+    byte retVal = NWNXLibPINVOKE.CNWMessage_ReadCHAR__SWIG_0(swigCPtr, nCount);
+    return retVal;
   }
 
-  public char ReadCHAR() {
-    char ret = NWNXLibPINVOKE.CNWMessage_ReadCHAR__SWIG_1(swigCPtr);
-    return ret;
+  public byte ReadCHAR() {
+    byte retVal = NWNXLibPINVOKE.CNWMessage_ReadCHAR__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public ushort ReadWORD(int nCount) {
-    ushort ret = NWNXLibPINVOKE.CNWMessage_ReadWORD__SWIG_0(swigCPtr, nCount);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWMessage_ReadWORD__SWIG_0(swigCPtr, nCount);
+    return retVal;
   }
 
   public ushort ReadWORD() {
-    ushort ret = NWNXLibPINVOKE.CNWMessage_ReadWORD__SWIG_1(swigCPtr);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWMessage_ReadWORD__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public short ReadSHORT(int nCount) {
-    short ret = NWNXLibPINVOKE.CNWMessage_ReadSHORT__SWIG_0(swigCPtr, nCount);
-    return ret;
+    short retVal = NWNXLibPINVOKE.CNWMessage_ReadSHORT__SWIG_0(swigCPtr, nCount);
+    return retVal;
   }
 
   public short ReadSHORT() {
-    short ret = NWNXLibPINVOKE.CNWMessage_ReadSHORT__SWIG_1(swigCPtr);
-    return ret;
+    short retVal = NWNXLibPINVOKE.CNWMessage_ReadSHORT__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public uint ReadDWORD(int nCount) {
-    uint ret = NWNXLibPINVOKE.CNWMessage_ReadDWORD__SWIG_0(swigCPtr, nCount);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWMessage_ReadDWORD__SWIG_0(swigCPtr, nCount);
+    return retVal;
   }
 
   public uint ReadDWORD() {
-    uint ret = NWNXLibPINVOKE.CNWMessage_ReadDWORD__SWIG_1(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWMessage_ReadDWORD__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public int ReadINT(int nCount) {
-    int ret = NWNXLibPINVOKE.CNWMessage_ReadINT__SWIG_0(swigCPtr, nCount);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWMessage_ReadINT__SWIG_0(swigCPtr, nCount);
+    return retVal;
   }
 
   public int ReadINT() {
-    int ret = NWNXLibPINVOKE.CNWMessage_ReadINT__SWIG_1(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWMessage_ReadINT__SWIG_1(swigCPtr);
+    return retVal;
   }
 
-  public uint ReadDWORD64(int nCount) {
-    uint ret = NWNXLibPINVOKE.CNWMessage_ReadDWORD64__SWIG_0(swigCPtr, nCount);
-    return ret;
+  public ulong ReadDWORD64(int nCount) {
+    ulong retVal = NWNXLibPINVOKE.CNWMessage_ReadDWORD64__SWIG_0(swigCPtr, nCount);
+    return retVal;
   }
 
-  public uint ReadDWORD64() {
-    uint ret = NWNXLibPINVOKE.CNWMessage_ReadDWORD64__SWIG_1(swigCPtr);
-    return ret;
+  public ulong ReadDWORD64() {
+    ulong retVal = NWNXLibPINVOKE.CNWMessage_ReadDWORD64__SWIG_1(swigCPtr);
+    return retVal;
   }
 
-  public int ReadINT64(int nCount) {
-    int ret = NWNXLibPINVOKE.CNWMessage_ReadINT64__SWIG_0(swigCPtr, nCount);
-    return ret;
+  public long ReadINT64(int nCount) {
+    long retVal = NWNXLibPINVOKE.CNWMessage_ReadINT64__SWIG_0(swigCPtr, nCount);
+    return retVal;
   }
 
-  public int ReadINT64() {
-    int ret = NWNXLibPINVOKE.CNWMessage_ReadINT64__SWIG_1(swigCPtr);
-    return ret;
+  public long ReadINT64() {
+    long retVal = NWNXLibPINVOKE.CNWMessage_ReadINT64__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public float ReadFLOAT(float fMultiplier, int nCount) {
-    float ret = NWNXLibPINVOKE.CNWMessage_ReadFLOAT__SWIG_0(swigCPtr, fMultiplier, nCount);
-    return ret;
+    float retVal = NWNXLibPINVOKE.CNWMessage_ReadFLOAT__SWIG_0(swigCPtr, fMultiplier, nCount);
+    return retVal;
   }
 
   public float ReadFLOAT(float fMultiplier) {
-    float ret = NWNXLibPINVOKE.CNWMessage_ReadFLOAT__SWIG_1(swigCPtr, fMultiplier);
-    return ret;
+    float retVal = NWNXLibPINVOKE.CNWMessage_ReadFLOAT__SWIG_1(swigCPtr, fMultiplier);
+    return retVal;
   }
 
   public float ReadFLOAT() {
-    float ret = NWNXLibPINVOKE.CNWMessage_ReadFLOAT__SWIG_2(swigCPtr);
-    return ret;
+    float retVal = NWNXLibPINVOKE.CNWMessage_ReadFLOAT__SWIG_2(swigCPtr);
+    return retVal;
   }
 
   public float ReadFLOAT(float fMin, float fMax, int nCount) {
-    float ret = NWNXLibPINVOKE.CNWMessage_ReadFLOAT__SWIG_3(swigCPtr, fMin, fMax, nCount);
-    return ret;
+    float retVal = NWNXLibPINVOKE.CNWMessage_ReadFLOAT__SWIG_3(swigCPtr, fMin, fMax, nCount);
+    return retVal;
   }
 
   public double ReadDOUBLE(double fMultiplier, int nCount) {
@@ -467,28 +483,28 @@ public unsafe class CNWMessage : global::System.IDisposable {
   }
 
   public int MessageReadOverflow(int bWarn) {
-    int ret = NWNXLibPINVOKE.CNWMessage_MessageReadOverflow__SWIG_0(swigCPtr, bWarn);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWMessage_MessageReadOverflow__SWIG_0(swigCPtr, bWarn);
+    return retVal;
   }
 
   public int MessageReadOverflow() {
-    int ret = NWNXLibPINVOKE.CNWMessage_MessageReadOverflow__SWIG_1(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWMessage_MessageReadOverflow__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public int MessageReadUnderflow(int bWarn) {
-    int ret = NWNXLibPINVOKE.CNWMessage_MessageReadUnderflow__SWIG_0(swigCPtr, bWarn);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWMessage_MessageReadUnderflow__SWIG_0(swigCPtr, bWarn);
+    return retVal;
   }
 
   public int MessageReadUnderflow() {
-    int ret = NWNXLibPINVOKE.CNWMessage_MessageReadUnderflow__SWIG_1(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWMessage_MessageReadUnderflow__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public int MessageMoreDataToRead() {
-    int ret = NWNXLibPINVOKE.CNWMessage_MessageMoreDataToRead(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWMessage_MessageMoreDataToRead(swigCPtr);
+    return retVal;
   }
 
   public void CreateWriteMessage(uint nSize, uint dwPlayerID, int bHighPriority) {
@@ -519,11 +535,11 @@ public unsafe class CNWMessage : global::System.IDisposable {
     NWNXLibPINVOKE.CNWMessage_WriteBYTE__SWIG_1(swigCPtr, nByte);
   }
 
-  public void WriteCHAR(char nChar, int nCount) {
+  public void WriteCHAR(byte nChar, int nCount) {
     NWNXLibPINVOKE.CNWMessage_WriteCHAR__SWIG_0(swigCPtr, nChar, nCount);
   }
 
-  public void WriteCHAR(char nChar) {
+  public void WriteCHAR(byte nChar) {
     NWNXLibPINVOKE.CNWMessage_WriteCHAR__SWIG_1(swigCPtr, nChar);
   }
 
@@ -559,19 +575,19 @@ public unsafe class CNWMessage : global::System.IDisposable {
     NWNXLibPINVOKE.CNWMessage_WriteINT__SWIG_1(swigCPtr, nInteger);
   }
 
-  public void WriteDWORD64(uint nDword64, int nCount) {
+  public void WriteDWORD64(ulong nDword64, int nCount) {
     NWNXLibPINVOKE.CNWMessage_WriteDWORD64__SWIG_0(swigCPtr, nDword64, nCount);
   }
 
-  public void WriteDWORD64(uint nDword64) {
+  public void WriteDWORD64(ulong nDword64) {
     NWNXLibPINVOKE.CNWMessage_WriteDWORD64__SWIG_1(swigCPtr, nDword64);
   }
 
-  public void WriteINT64(int nInt64, int nCount) {
+  public void WriteINT64(long nInt64, int nCount) {
     NWNXLibPINVOKE.CNWMessage_WriteINT64__SWIG_0(swigCPtr, nInt64, nCount);
   }
 
-  public void WriteINT64(int nInt64) {
+  public void WriteINT64(long nInt64) {
     NWNXLibPINVOKE.CNWMessage_WriteINT64__SWIG_1(swigCPtr, nInt64);
   }
 
@@ -632,13 +648,13 @@ public unsafe class CNWMessage : global::System.IDisposable {
   }
 
   public uint PeekAtWriteMessageSize() {
-    uint ret = NWNXLibPINVOKE.CNWMessage_PeekAtWriteMessageSize(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWMessage_PeekAtWriteMessageSize(swigCPtr);
+    return retVal;
   }
 
   public int GetWriteMessage(byte** pMessage, uint* dwSize) {
-    int ret = NWNXLibPINVOKE.CNWMessage_GetWriteMessage(swigCPtr, (global::System.IntPtr)pMessage, (global::System.IntPtr)dwSize);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWMessage_GetWriteMessage(swigCPtr, (global::System.IntPtr)pMessage, dwSize);
+    return retVal;
   }
 
   public void ExtendWriteBuffer(uint nSize) {
@@ -649,17 +665,17 @@ public unsafe class CNWMessage : global::System.IDisposable {
     NWNXLibPINVOKE.CNWMessage_ExtendWriteFragmentsBuffer(swigCPtr, nSize);
   }
 
-  public int ReadBits(int nCount) {
-    int ret = NWNXLibPINVOKE.CNWMessage_ReadBits(swigCPtr, nCount);
-    return ret;
+  public long ReadBits(int nCount) {
+    long retVal = NWNXLibPINVOKE.CNWMessage_ReadBits(swigCPtr, nCount);
+    return retVal;
   }
 
   public byte ReadBit(byte nBit) {
-    byte ret = NWNXLibPINVOKE.CNWMessage_ReadBit(swigCPtr, nBit);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWMessage_ReadBit(swigCPtr, nBit);
+    return retVal;
   }
 
-  public void WriteBits(uint nInVal, int nCount) {
+  public void WriteBits(ulong nInVal, int nCount) {
     NWNXLibPINVOKE.CNWMessage_WriteBits(swigCPtr, nInVal, nCount);
   }
 
@@ -667,21 +683,21 @@ public unsafe class CNWMessage : global::System.IDisposable {
     NWNXLibPINVOKE.CNWMessage_WriteBit(swigCPtr, nBit);
   }
 
-  public uint ReadUnsigned(int nCount) {
-    uint ret = NWNXLibPINVOKE.CNWMessage_ReadUnsigned(swigCPtr, nCount);
-    return ret;
+  public ulong ReadUnsigned(int nCount) {
+    ulong retVal = NWNXLibPINVOKE.CNWMessage_ReadUnsigned(swigCPtr, nCount);
+    return retVal;
   }
 
-  public int ReadSigned(int nCount) {
-    int ret = NWNXLibPINVOKE.CNWMessage_ReadSigned(swigCPtr, nCount);
-    return ret;
+  public long ReadSigned(int nCount) {
+    long retVal = NWNXLibPINVOKE.CNWMessage_ReadSigned(swigCPtr, nCount);
+    return retVal;
   }
 
-  public void WriteUnsigned(uint dw64InVal, int nCount) {
+  public void WriteUnsigned(ulong dw64InVal, int nCount) {
     NWNXLibPINVOKE.CNWMessage_WriteUnsigned(swigCPtr, dw64InVal, nCount);
   }
 
-  public void WriteSigned(int n64InVal, int nCount) {
+  public void WriteSigned(long n64InVal, int nCount) {
     NWNXLibPINVOKE.CNWMessage_WriteSigned(swigCPtr, n64InVal, nCount);
   }
 

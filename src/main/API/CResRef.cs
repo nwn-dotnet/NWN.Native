@@ -137,10 +137,10 @@ public unsafe class CResRef : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CResRef(byte* pName) : this(NWNXLibPINVOKE.new_CResRef__SWIG_3((global::System.IntPtr)pName), true) {
+  public CResRef(byte* pName) : this(NWNXLibPINVOKE.new_CResRef__SWIG_3(pName), true) {
   }
 
-  public CResRef(byte* pName, byte nLength) : this(NWNXLibPINVOKE.new_CResRef__SWIG_4((global::System.IntPtr)pName, nLength), true) {
+  public CResRef(byte* pName, byte nLength) : this(NWNXLibPINVOKE.new_CResRef__SWIG_4(pName, nLength), true) {
   }
 
   public void CopyToString(CExoString str) {
@@ -149,46 +149,46 @@ public unsafe class CResRef : global::System.IDisposable {
   }
 
   public void CopyToString(byte* pStr) {
-    NWNXLibPINVOKE.CResRef_CopyToString__SWIG_1(swigCPtr, (global::System.IntPtr)pStr);
+    NWNXLibPINVOKE.CResRef_CopyToString__SWIG_1(swigCPtr, pStr);
   }
 
   public int _OpNotEquals(CResRef cResRef) {
-    int ret = NWNXLibPINVOKE.CResRef__OpNotEquals__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef));
+    int retVal = NWNXLibPINVOKE.CResRef__OpNotEquals__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int _OpNotEquals(CExoString sName) {
-    int ret = NWNXLibPINVOKE.CResRef__OpNotEquals__SWIG_1(swigCPtr, CExoString.getCPtr(sName));
+    int retVal = NWNXLibPINVOKE.CResRef__OpNotEquals__SWIG_1(swigCPtr, CExoString.getCPtr(sName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int _OpNotEquals(byte* pName) {
-    int ret = NWNXLibPINVOKE.CResRef__OpNotEquals__SWIG_2(swigCPtr, (global::System.IntPtr)pName);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CResRef__OpNotEquals__SWIG_2(swigCPtr, pName);
+    return retVal;
   }
 
   public int _OpEquals(CResRef cResRef) {
-    int ret = NWNXLibPINVOKE.CResRef__OpEquals__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef));
+    int retVal = NWNXLibPINVOKE.CResRef__OpEquals__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int _OpEquals(CExoString sName) {
-    int ret = NWNXLibPINVOKE.CResRef__OpEquals__SWIG_1(swigCPtr, CExoString.getCPtr(sName));
+    int retVal = NWNXLibPINVOKE.CResRef__OpEquals__SWIG_1(swigCPtr, CExoString.getCPtr(sName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int _OpEquals(byte* name) {
-    int ret = NWNXLibPINVOKE.CResRef__OpEquals__SWIG_2(swigCPtr, (global::System.IntPtr)name);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CResRef__OpEquals__SWIG_2(swigCPtr, name);
+    return retVal;
   }
 
   public int _OpNot() {
-    int ret = NWNXLibPINVOKE.CResRef__OpNot(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CResRef__OpNot(swigCPtr);
+    return retVal;
   }
 
   public CResRef _OpAssign(CResRef cResRef) {
@@ -209,7 +209,7 @@ public unsafe class CResRef : global::System.IDisposable {
   }
 
   public CResRef _OpAssign(byte* pName) {
-    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_3(swigCPtr, (global::System.IntPtr)pName), true);
+    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_3(swigCPtr, pName), true);
     return ret;
   }
 
@@ -224,23 +224,23 @@ public unsafe class CResRef : global::System.IDisposable {
   }
 
   public byte* GetResRef() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CResRef_GetResRef__SWIG_1(swigCPtr);
-    return (byte*)retVal;
+    byte* retVal = NWNXLibPINVOKE.CResRef_GetResRef__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public byte* GetResRefStr() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CResRef_GetResRefStr(swigCPtr);
-    return (byte*)retVal;
+    byte* retVal = NWNXLibPINVOKE.CResRef_GetResRefStr(swigCPtr);
+    return retVal;
   }
 
   public int IsValid() {
-    int ret = NWNXLibPINVOKE.CResRef_IsValid(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CResRef_IsValid(swigCPtr);
+    return retVal;
   }
 
   public byte GetLength() {
-    byte ret = NWNXLibPINVOKE.CResRef_GetLength(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CResRef_GetLength(swigCPtr);
+    return retVal;
   }
 
 }

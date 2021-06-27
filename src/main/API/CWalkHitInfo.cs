@@ -95,9 +95,10 @@ public unsafe class CWalkHitInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CWalkHitInfo_m_nFailureReason_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CWalkHitInfo_m_nFailureReason_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CWalkHitInfo_m_nFailureReason_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public Vector m_vIntersectedAt {
@@ -149,9 +150,10 @@ public unsafe class CWalkHitInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CWalkHitInfo_m_nIntersectionType_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CWalkHitInfo_m_nIntersectionType_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CWalkHitInfo_m_nIntersectionType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CWalkHitInfo() : this(NWNXLibPINVOKE.new_CWalkHitInfo(), true) {

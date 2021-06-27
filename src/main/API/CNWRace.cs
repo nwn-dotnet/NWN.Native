@@ -95,9 +95,10 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_nNameStrref_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWRace_m_nNameStrref_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWRace_m_nNameStrref_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nConverNameStrref {
@@ -105,9 +106,10 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_nConverNameStrref_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWRace_m_nConverNameStrref_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWRace_m_nConverNameStrref_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nConverNameLowerStrref {
@@ -115,9 +117,10 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_nConverNameLowerStrref_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWRace_m_nConverNameLowerStrref_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWRace_m_nConverNameLowerStrref_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nNamePluralStrref {
@@ -125,9 +128,10 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_nNamePluralStrref_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWRace_m_nNamePluralStrref_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWRace_m_nNamePluralStrref_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nDescriptionStrref {
@@ -135,9 +139,10 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_nDescriptionStrref_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWRace_m_nDescriptionStrref_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWRace_m_nDescriptionStrref_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nDefaultBiographyStrref {
@@ -145,69 +150,76 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_nDefaultBiographyStrref_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWRace_m_nDefaultBiographyStrref_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWRace_m_nDefaultBiographyStrref_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nSTRAdjust {
+  public byte m_nSTRAdjust {
     set {
       NWNXLibPINVOKE.CNWRace_m_nSTRAdjust_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWRace_m_nSTRAdjust_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWRace_m_nSTRAdjust_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nDEXAdjust {
+  public byte m_nDEXAdjust {
     set {
       NWNXLibPINVOKE.CNWRace_m_nDEXAdjust_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWRace_m_nDEXAdjust_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWRace_m_nDEXAdjust_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nINTAdjust {
+  public byte m_nINTAdjust {
     set {
       NWNXLibPINVOKE.CNWRace_m_nINTAdjust_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWRace_m_nINTAdjust_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWRace_m_nINTAdjust_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nCHAAdjust {
+  public byte m_nCHAAdjust {
     set {
       NWNXLibPINVOKE.CNWRace_m_nCHAAdjust_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWRace_m_nCHAAdjust_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWRace_m_nCHAAdjust_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nWISAdjust {
+  public byte m_nWISAdjust {
     set {
       NWNXLibPINVOKE.CNWRace_m_nWISAdjust_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWRace_m_nWISAdjust_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWRace_m_nWISAdjust_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nCONAdjust {
+  public byte m_nCONAdjust {
     set {
       NWNXLibPINVOKE.CNWRace_m_nCONAdjust_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWRace_m_nCONAdjust_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWRace_m_nCONAdjust_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nEndurance {
@@ -215,9 +227,10 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_nEndurance_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWRace_m_nEndurance_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWRace_m_nEndurance_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nFavoredClass {
@@ -225,9 +238,10 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_nFavoredClass_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWRace_m_nFavoredClass_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWRace_m_nFavoredClass_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bIsPlayerRace {
@@ -235,9 +249,10 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_bIsPlayerRace_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWRace_m_bIsPlayerRace_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWRace_m_bIsPlayerRace_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nNumFeats {
@@ -245,9 +260,10 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_nNumFeats_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWRace_m_nNumFeats_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWRace_m_nNumFeats_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort* m_lstFeatTable {
@@ -266,9 +282,10 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_nAge_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWRace_m_nAge_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWRace_m_nAge_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nDefaultAppearance {
@@ -276,9 +293,10 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_nDefaultAppearance_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWRace_m_nDefaultAppearance_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWRace_m_nDefaultAppearance_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sIcon {
@@ -297,9 +315,10 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_nExtraFeatsAtFirstLevel_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWRace_m_nExtraFeatsAtFirstLevel_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWRace_m_nExtraFeatsAtFirstLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nExtraSkillPointsPerLevel {
@@ -307,9 +326,10 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_nExtraSkillPointsPerLevel_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWRace_m_nExtraSkillPointsPerLevel_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWRace_m_nExtraSkillPointsPerLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nFirstLevelSkillPointsMultiplier {
@@ -317,9 +337,10 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_nFirstLevelSkillPointsMultiplier_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWRace_m_nFirstLevelSkillPointsMultiplier_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWRace_m_nFirstLevelSkillPointsMultiplier_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nAbilitiesPointBuyNumber {
@@ -327,9 +348,10 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_nAbilitiesPointBuyNumber_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWRace_m_nAbilitiesPointBuyNumber_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWRace_m_nAbilitiesPointBuyNumber_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nNormalFeatEveryNthLevel {
@@ -337,9 +359,10 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_nNormalFeatEveryNthLevel_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWRace_m_nNormalFeatEveryNthLevel_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWRace_m_nNormalFeatEveryNthLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nNumberNormalFeatsEveryNthLevel {
@@ -347,9 +370,10 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_nNumberNormalFeatsEveryNthLevel_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWRace_m_nNumberNormalFeatsEveryNthLevel_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWRace_m_nNumberNormalFeatsEveryNthLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nSkillPointModifierAbility {
@@ -357,9 +381,10 @@ public unsafe class CNWRace : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRace_m_nSkillPointModifierAbility_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWRace_m_nSkillPointModifierAbility_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWRace_m_nSkillPointModifierAbility_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWRace() : this(NWNXLibPINVOKE.new_CNWRace(), true) {
@@ -395,14 +420,14 @@ public unsafe class CNWRace : global::System.IDisposable {
     return ret;
   }
 
-  public char GetAbilityAdjust(byte nAbilityId) {
-    char ret = NWNXLibPINVOKE.CNWRace_GetAbilityAdjust(swigCPtr, nAbilityId);
-    return ret;
+  public byte GetAbilityAdjust(byte nAbilityId) {
+    byte retVal = NWNXLibPINVOKE.CNWRace_GetAbilityAdjust(swigCPtr, nAbilityId);
+    return retVal;
   }
 
   public int IsFirstLevelGrantedFeat(ushort nFeat) {
-    int ret = NWNXLibPINVOKE.CNWRace_IsFirstLevelGrantedFeat(swigCPtr, nFeat);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWRace_IsFirstLevelGrantedFeat(swigCPtr, nFeat);
+    return retVal;
   }
 
   public void LoadFeatsTable(CExoString sTable) {

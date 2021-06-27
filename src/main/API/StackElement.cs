@@ -95,9 +95,10 @@ public unsafe class StackElement : global::System.IDisposable {
       NWNXLibPINVOKE.StackElement_m_nStackObjectID_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.StackElement_m_nStackObjectID_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.StackElement_m_nStackObjectID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nStackInt {
@@ -105,9 +106,10 @@ public unsafe class StackElement : global::System.IDisposable {
       NWNXLibPINVOKE.StackElement_m_nStackInt_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.StackElement_m_nStackInt_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.StackElement_m_nStackInt_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fStackFloat {
@@ -115,9 +117,10 @@ public unsafe class StackElement : global::System.IDisposable {
       NWNXLibPINVOKE.StackElement_m_fStackFloat_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.StackElement_m_fStackFloat_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.StackElement_m_fStackFloat_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public void* m_pStackPtr {

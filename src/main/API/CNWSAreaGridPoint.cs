@@ -95,9 +95,10 @@ public unsafe class CNWSAreaGridPoint : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSAreaGridPoint_nX_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSAreaGridPoint_nX_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSAreaGridPoint_nX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nY {
@@ -105,9 +106,10 @@ public unsafe class CNWSAreaGridPoint : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSAreaGridPoint_nY_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSAreaGridPoint_nY_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSAreaGridPoint_nY_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSAreaGridPoint() : this(NWNXLibPINVOKE.new_CNWSAreaGridPoint(), true) {

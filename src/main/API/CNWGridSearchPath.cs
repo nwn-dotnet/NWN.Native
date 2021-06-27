@@ -95,9 +95,10 @@ public unsafe class CNWGridSearchPath : global::System.IDisposable {
       NWNXLibPINVOKE.CNWGridSearchPath_nDistance_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWGridSearchPath_nDistance_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWGridSearchPath_nDistance_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nSteps {
@@ -105,9 +106,10 @@ public unsafe class CNWGridSearchPath : global::System.IDisposable {
       NWNXLibPINVOKE.CNWGridSearchPath_nSteps_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWGridSearchPath_nSteps_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWGridSearchPath_nSteps_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nLength {
@@ -115,9 +117,10 @@ public unsafe class CNWGridSearchPath : global::System.IDisposable {
       NWNXLibPINVOKE.CNWGridSearchPath_nLength_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWGridSearchPath_nLength_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWGridSearchPath_nLength_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nX {
@@ -125,9 +128,10 @@ public unsafe class CNWGridSearchPath : global::System.IDisposable {
       NWNXLibPINVOKE.CNWGridSearchPath_nX_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWGridSearchPath_nX_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWGridSearchPath_nX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nY {
@@ -135,9 +139,10 @@ public unsafe class CNWGridSearchPath : global::System.IDisposable {
       NWNXLibPINVOKE.CNWGridSearchPath_nY_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWGridSearchPath_nY_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWGridSearchPath_nY_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public bool bTerminated {

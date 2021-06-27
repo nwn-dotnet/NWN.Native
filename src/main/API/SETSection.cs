@@ -117,9 +117,10 @@ public unsafe class SETSection : global::System.IDisposable {
       NWNXLibPINVOKE.SETSection_m_nNumEntries_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.SETSection_m_nNumEntries_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.SETSection_m_nNumEntries_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public SETSection() : this(NWNXLibPINVOKE.new_SETSection(), true) {

@@ -95,9 +95,10 @@ public unsafe class CNWSPlayerLUOQuickbarItemButton : global::System.IDisposable
       NWNXLibPINVOKE.CNWSPlayerLUOQuickbarItemButton_m_oidItem_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerLUOQuickbarItemButton_m_oidItem_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerLUOQuickbarItemButton_m_oidItem_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nObjectType {
@@ -105,9 +106,10 @@ public unsafe class CNWSPlayerLUOQuickbarItemButton : global::System.IDisposable
       NWNXLibPINVOKE.CNWSPlayerLUOQuickbarItemButton_m_nObjectType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerLUOQuickbarItemButton_m_nObjectType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerLUOQuickbarItemButton_m_nObjectType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nINTParam1 {
@@ -115,9 +117,10 @@ public unsafe class CNWSPlayerLUOQuickbarItemButton : global::System.IDisposable
       NWNXLibPINVOKE.CNWSPlayerLUOQuickbarItemButton_m_nINTParam1_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayerLUOQuickbarItemButton_m_nINTParam1_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayerLUOQuickbarItemButton_m_nINTParam1_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nUseCount {
@@ -125,9 +128,10 @@ public unsafe class CNWSPlayerLUOQuickbarItemButton : global::System.IDisposable
       NWNXLibPINVOKE.CNWSPlayerLUOQuickbarItemButton_m_nUseCount_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSPlayerLUOQuickbarItemButton_m_nUseCount_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSPlayerLUOQuickbarItemButton_m_nUseCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSPlayerLUOQuickbarItemButton() : this(NWNXLibPINVOKE.new_CNWSPlayerLUOQuickbarItemButton(), true) {

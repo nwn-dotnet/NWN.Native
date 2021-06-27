@@ -106,9 +106,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_strrefName_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSpell_m_strrefName_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSpell_m_strrefName_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_strrefDesc {
@@ -116,9 +117,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_strrefDesc_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSpell_m_strrefDesc_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSpell_m_strrefDesc_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResRef m_resrefIcon {
@@ -137,9 +139,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nSchool_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSpell_m_nSchool_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSpell_m_nSchool_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sRange {
@@ -169,9 +172,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nTargetType_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSpell_m_nTargetType_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSpell_m_nTargetType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sImpactScript {
@@ -190,9 +194,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nBardLevel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSpell_m_nBardLevel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSpell_m_nBardLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nClericLevel {
@@ -200,9 +205,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nClericLevel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSpell_m_nClericLevel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSpell_m_nClericLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nDruidLevel {
@@ -210,9 +216,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nDruidLevel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSpell_m_nDruidLevel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSpell_m_nDruidLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nPaladinLevel {
@@ -220,9 +227,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nPaladinLevel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSpell_m_nPaladinLevel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSpell_m_nPaladinLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nRangerLevel {
@@ -230,9 +238,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nRangerLevel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSpell_m_nRangerLevel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSpell_m_nRangerLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nSorcererLevel {
@@ -240,9 +249,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nSorcererLevel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSpell_m_nSorcererLevel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSpell_m_nSorcererLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nWizardLevel {
@@ -250,9 +260,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nWizardLevel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSpell_m_nWizardLevel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSpell_m_nWizardLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nInnateLevel {
@@ -260,9 +271,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nInnateLevel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSpell_m_nInnateLevel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSpell_m_nInnateLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nConjureTime {
@@ -270,9 +282,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nConjureTime_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSpell_m_nConjureTime_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSpell_m_nConjureTime_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nConjureAnimation {
@@ -280,9 +293,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nConjureAnimation_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSpell_m_nConjureAnimation_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSpell_m_nConjureAnimation_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResRef m_resrefConjureHeadVisual {
@@ -356,9 +370,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nCastAnimation_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSpell_m_nCastAnimation_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSpell_m_nCastAnimation_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nCastTime {
@@ -366,9 +381,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nCastTime_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSpell_m_nCastTime_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSpell_m_nCastTime_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResRef m_resrefCastHeadVisual {
@@ -420,9 +436,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_bProjectileSpawn_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSpell_m_bProjectileSpawn_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSpell_m_bProjectileSpawn_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResRef m_resrefProjectile {
@@ -441,9 +458,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nProjectileType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSpell_m_nProjectileType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSpell_m_nProjectileType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nProjectileSpawnPoint {
@@ -451,9 +469,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nProjectileSpawnPoint_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSpell_m_nProjectileSpawnPoint_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSpell_m_nProjectileSpawnPoint_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResRef m_resrefProjectileSound {
@@ -472,9 +491,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nProjectileOrientationType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSpell_m_nProjectileOrientationType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSpell_m_nProjectileOrientationType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nImmunityType {
@@ -482,9 +502,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nImmunityType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSpell_m_nImmunityType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSpell_m_nImmunityType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bImmunityItem {
@@ -492,9 +513,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_bImmunityItem_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSpell_m_bImmunityItem_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSpell_m_bImmunityItem_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nTalentCategory {
@@ -502,9 +524,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nTalentCategory_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSpell_m_nTalentCategory_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSpell_m_nTalentCategory_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nTalentMaxCR {
@@ -512,18 +535,19 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nTalentMaxCR_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSpell_m_nTalentMaxCR_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSpell_m_nTalentMaxCR_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint* m_pSubRadialSpell {
     set {
-      NWNXLibPINVOKE.CNWSpell_m_pSubRadialSpell_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWSpell_m_pSubRadialSpell_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSpell_m_pSubRadialSpell_get(swigCPtr);
-        return (uint*)retVal;
+      uint* retVal = NWNXLibPINVOKE.CNWSpell_m_pSubRadialSpell_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -533,9 +557,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nSubRadialSpellCount_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSpell_m_nSubRadialSpellCount_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSpell_m_nSubRadialSpellCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bUseConcentration {
@@ -543,9 +568,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_bUseConcentration_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSpell_m_bUseConcentration_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSpell_m_bUseConcentration_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nMasterSpell {
@@ -553,9 +579,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nMasterSpell_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSpell_m_nMasterSpell_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSpell_m_nMasterSpell_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nCounterSpell1 {
@@ -563,9 +590,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nCounterSpell1_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSpell_m_nCounterSpell1_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSpell_m_nCounterSpell1_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nCounterSpell2 {
@@ -573,9 +601,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nCounterSpell2_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSpell_m_nCounterSpell2_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSpell_m_nCounterSpell2_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nUserType {
@@ -583,9 +612,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nUserType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSpell_m_nUserType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSpell_m_nUserType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bSpontaneouslyCast {
@@ -593,9 +623,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_bSpontaneouslyCast_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSpell_m_bSpontaneouslyCast_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSpell_m_bSpontaneouslyCast_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAllowedMetamagic {
@@ -603,9 +634,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nAllowedMetamagic_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSpell_m_nAllowedMetamagic_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSpell_m_nAllowedMetamagic_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nAltMessage {
@@ -613,9 +645,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nAltMessage_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSpell_m_nAltMessage_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSpell_m_nAltMessage_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bHostile {
@@ -623,9 +656,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_bHostile_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSpell_m_bHostile_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSpell_m_bHostile_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nFeatId {
@@ -633,9 +667,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nFeatId_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSpell_m_nFeatId_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSpell_m_nFeatId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bHasProjectile {
@@ -643,9 +678,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_bHasProjectile_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSpell_m_bHasProjectile_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSpell_m_bHasProjectile_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nSpellId {
@@ -653,9 +689,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpell_m_nSpellId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSpell_m_nSpellId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSpell_m_nSpellId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSpell() : this(NWNXLibPINVOKE.new_CNWSpell(), true) {
@@ -667,23 +704,23 @@ public unsafe class CNWSpell : global::System.IDisposable {
   }
 
   public int GetSpellHasVerbalComponent() {
-    int ret = NWNXLibPINVOKE.CNWSpell_GetSpellHasVerbalComponent(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSpell_GetSpellHasVerbalComponent(swigCPtr);
+    return retVal;
   }
 
   public int GetSpellHasSomaticComponent() {
-    int ret = NWNXLibPINVOKE.CNWSpell_GetSpellHasSomaticComponent(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSpell_GetSpellHasSomaticComponent(swigCPtr);
+    return retVal;
   }
 
   public byte GetSpellLevel(byte nClass) {
-    byte ret = NWNXLibPINVOKE.CNWSpell_GetSpellLevel(swigCPtr, nClass);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSpell_GetSpellLevel(swigCPtr, nClass);
+    return retVal;
   }
 
   public uint GetSubRadialSpell(byte nIndex) {
-    uint ret = NWNXLibPINVOKE.CNWSpell_GetSubRadialSpell(swigCPtr, nIndex);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSpell_GetSubRadialSpell(swigCPtr, nIndex);
+    return retVal;
   }
 
   public void SetSubRadialSpell(byte nIndex, uint nSpellID) {

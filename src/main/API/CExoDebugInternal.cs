@@ -95,9 +95,10 @@ public unsafe class CExoDebugInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoDebugInternal_m_bFilesOpen_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoDebugInternal_m_bFilesOpen_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoDebugInternal_m_bFilesOpen_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoFile m_pLogFile {
@@ -138,9 +139,10 @@ public unsafe class CExoDebugInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoDebugInternal_m_nMaxLogSize_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoDebugInternal_m_nMaxLogSize_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoDebugInternal_m_nMaxLogSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nCurrentLogSize {
@@ -148,9 +150,10 @@ public unsafe class CExoDebugInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoDebugInternal_m_nCurrentLogSize_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoDebugInternal_m_nCurrentLogSize_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoDebugInternal_m_nCurrentLogSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nCurrentErrorSize {
@@ -158,9 +161,10 @@ public unsafe class CExoDebugInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoDebugInternal_m_nCurrentErrorSize_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoDebugInternal_m_nCurrentErrorSize_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoDebugInternal_m_nCurrentErrorSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nCurrentLogFileNumber {
@@ -168,9 +172,10 @@ public unsafe class CExoDebugInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoDebugInternal_m_nCurrentLogFileNumber_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoDebugInternal_m_nCurrentLogFileNumber_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoDebugInternal_m_nCurrentLogFileNumber_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nCurrentErrorFileNumber {
@@ -178,9 +183,10 @@ public unsafe class CExoDebugInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoDebugInternal_m_nCurrentErrorFileNumber_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoDebugInternal_m_nCurrentErrorFileNumber_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoDebugInternal_m_nCurrentErrorFileNumber_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bRotateLogFile {
@@ -188,20 +194,21 @@ public unsafe class CExoDebugInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoDebugInternal_m_bRotateLogFile_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoDebugInternal_m_bRotateLogFile_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoDebugInternal_m_bRotateLogFile_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoDebugInternal() : this(NWNXLibPINVOKE.new_CExoDebugInternal(), true) {
   }
 
   public void Assert(int nLineNumber, byte* sFileName, byte* sComment) {
-    NWNXLibPINVOKE.CExoDebugInternal_Assert__SWIG_0(swigCPtr, nLineNumber, (global::System.IntPtr)sFileName, (global::System.IntPtr)sComment);
+    NWNXLibPINVOKE.CExoDebugInternal_Assert__SWIG_0(swigCPtr, nLineNumber, sFileName, sComment);
   }
 
   public void Assert(int nLineNumber, byte* sFileName) {
-    NWNXLibPINVOKE.CExoDebugInternal_Assert__SWIG_1(swigCPtr, nLineNumber, (global::System.IntPtr)sFileName);
+    NWNXLibPINVOKE.CExoDebugInternal_Assert__SWIG_1(swigCPtr, nLineNumber, sFileName);
   }
 
   public void CloseLogFiles() {
@@ -222,11 +229,11 @@ public unsafe class CExoDebugInternal : global::System.IDisposable {
   }
 
   public void Warning(int nLineNumber, byte* sFileName, byte* sComment) {
-    NWNXLibPINVOKE.CExoDebugInternal_Warning__SWIG_0(swigCPtr, nLineNumber, (global::System.IntPtr)sFileName, (global::System.IntPtr)sComment);
+    NWNXLibPINVOKE.CExoDebugInternal_Warning__SWIG_0(swigCPtr, nLineNumber, sFileName, sComment);
   }
 
   public void Warning(int nLineNumber, byte* sFileName) {
-    NWNXLibPINVOKE.CExoDebugInternal_Warning__SWIG_1(swigCPtr, nLineNumber, (global::System.IntPtr)sFileName);
+    NWNXLibPINVOKE.CExoDebugInternal_Warning__SWIG_1(swigCPtr, nLineNumber, sFileName);
   }
 
   public void WriteToErrorFile(CExoString sLogString) {
@@ -245,9 +252,9 @@ public unsafe class CExoDebugInternal : global::System.IDisposable {
   }
 
   public int CreateDirectory(CExoString sDirectory) {
-    int ret = NWNXLibPINVOKE.CExoDebugInternal_CreateDirectory(swigCPtr, CExoString.getCPtr(sDirectory));
+    int retVal = NWNXLibPINVOKE.CExoDebugInternal_CreateDirectory(swigCPtr, CExoString.getCPtr(sDirectory));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
 }

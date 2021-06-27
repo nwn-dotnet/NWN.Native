@@ -106,9 +106,10 @@ public unsafe class CNWSDialogSpeaker : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialogSpeaker_m_id_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialogSpeaker_m_id_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialogSpeaker_m_id_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSDialogSpeaker() : this(NWNXLibPINVOKE.new_CNWSDialogSpeaker(), true) {

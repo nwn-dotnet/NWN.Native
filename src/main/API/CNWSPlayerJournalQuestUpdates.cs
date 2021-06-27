@@ -95,9 +95,10 @@ public unsafe class CNWSPlayerJournalQuestUpdates : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerJournalQuestUpdates_flags_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSPlayerJournalQuestUpdates_flags_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSPlayerJournalQuestUpdates_flags_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString szPlot_Id {

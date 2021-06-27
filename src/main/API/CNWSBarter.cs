@@ -128,9 +128,10 @@ public unsafe class CNWSBarter : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSBarter_m_bListLocked_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSBarter_m_bListLocked_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSBarter_m_bListLocked_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bListAccepted {
@@ -138,9 +139,10 @@ public unsafe class CNWSBarter : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSBarter_m_bListAccepted_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSBarter_m_bListAccepted_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSBarter_m_bListAccepted_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bInitiator {
@@ -148,9 +150,10 @@ public unsafe class CNWSBarter : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSBarter_m_bInitiator_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSBarter_m_bInitiator_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSBarter_m_bInitiator_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bWindowOpen {
@@ -158,9 +161,10 @@ public unsafe class CNWSBarter : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSBarter_m_bWindowOpen_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSBarter_m_bWindowOpen_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSBarter_m_bWindowOpen_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidBarrator {
@@ -168,9 +172,10 @@ public unsafe class CNWSBarter : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSBarter_m_oidBarrator_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSBarter_m_oidBarrator_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSBarter_m_oidBarrator_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSCreature m_pOwner {
@@ -189,9 +194,10 @@ public unsafe class CNWSBarter : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSBarter_m_bDoReset_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSBarter_m_bDoReset_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSBarter_m_bDoReset_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSBarter(CNWSCreature pCreature) : this(NWNXLibPINVOKE.new_CNWSBarter(CNWSCreature.getCPtr(pCreature)), true) {
@@ -214,38 +220,38 @@ public unsafe class CNWSBarter : global::System.IDisposable {
   }
 
   public int AddItem(uint oidItem, byte* xPos, byte* yPos) {
-    int ret = NWNXLibPINVOKE.CNWSBarter_AddItem(swigCPtr, oidItem, (global::System.IntPtr)xPos, (global::System.IntPtr)yPos);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSBarter_AddItem(swigCPtr, oidItem, (global::System.IntPtr)xPos, (global::System.IntPtr)yPos);
+    return retVal;
   }
 
   public int RemoveItem(uint oidItem, byte* xPos, byte* yPos) {
-    int ret = NWNXLibPINVOKE.CNWSBarter_RemoveItem(swigCPtr, oidItem, (global::System.IntPtr)xPos, (global::System.IntPtr)yPos);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSBarter_RemoveItem(swigCPtr, oidItem, (global::System.IntPtr)xPos, (global::System.IntPtr)yPos);
+    return retVal;
   }
 
   public int MoveItem(uint oidItem, byte* xPos, byte* yPos) {
-    int ret = NWNXLibPINVOKE.CNWSBarter_MoveItem(swigCPtr, oidItem, (global::System.IntPtr)xPos, (global::System.IntPtr)yPos);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSBarter_MoveItem(swigCPtr, oidItem, (global::System.IntPtr)xPos, (global::System.IntPtr)yPos);
+    return retVal;
   }
 
   public int PullItemOut(uint oidItem) {
-    int ret = NWNXLibPINVOKE.CNWSBarter_PullItemOut(swigCPtr, oidItem);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSBarter_PullItemOut(swigCPtr, oidItem);
+    return retVal;
   }
 
   public int SetListLocked(int bLocked) {
-    int ret = NWNXLibPINVOKE.CNWSBarter_SetListLocked(swigCPtr, bLocked);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSBarter_SetListLocked(swigCPtr, bLocked);
+    return retVal;
   }
 
   public int SetListAccepted(int bAccepted) {
-    int ret = NWNXLibPINVOKE.CNWSBarter_SetListAccepted(swigCPtr, bAccepted);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSBarter_SetListAccepted(swigCPtr, bAccepted);
+    return retVal;
   }
 
   public byte GetState() {
-    byte ret = NWNXLibPINVOKE.CNWSBarter_GetState(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSBarter_GetState(swigCPtr);
+    return retVal;
   }
 
 }

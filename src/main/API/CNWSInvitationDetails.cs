@@ -95,9 +95,10 @@ public unsafe class CNWSInvitationDetails : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSInvitationDetails_m_oidCreature_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSInvitationDetails_m_oidCreature_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSInvitationDetails_m_oidCreature_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nCalenderDay {
@@ -105,9 +106,10 @@ public unsafe class CNWSInvitationDetails : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSInvitationDetails_m_nCalenderDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSInvitationDetails_m_nCalenderDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSInvitationDetails_m_nCalenderDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nTimeOfDay {
@@ -115,9 +117,10 @@ public unsafe class CNWSInvitationDetails : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSInvitationDetails_m_nTimeOfDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSInvitationDetails_m_nTimeOfDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSInvitationDetails_m_nTimeOfDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSInvitationDetails() : this(NWNXLibPINVOKE.new_CNWSInvitationDetails(), true) {

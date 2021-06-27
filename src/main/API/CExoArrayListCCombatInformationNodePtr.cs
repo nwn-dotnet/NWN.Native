@@ -106,9 +106,10 @@ public unsafe class CExoArrayListCCombatInformationNodePtr : global::System.IDis
       NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_num_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_num_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_num_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int array_size {
@@ -116,9 +117,10 @@ public unsafe class CExoArrayListCCombatInformationNodePtr : global::System.IDis
       NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_array_size_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_array_size_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_array_size_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCCombatInformationNodePtr(int s) : this(NWNXLibPINVOKE.new_CExoArrayListCCombatInformationNodePtr__SWIG_0(s), true) {

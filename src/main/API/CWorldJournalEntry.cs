@@ -117,9 +117,10 @@ public unsafe class CWorldJournalEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CWorldJournalEntry_nCalendarDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CWorldJournalEntry_nCalendarDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CWorldJournalEntry_nCalendarDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nTimeOfDay {
@@ -127,9 +128,10 @@ public unsafe class CWorldJournalEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CWorldJournalEntry_nTimeOfDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CWorldJournalEntry_nTimeOfDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CWorldJournalEntry_nTimeOfDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nName {
@@ -137,9 +139,10 @@ public unsafe class CWorldJournalEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CWorldJournalEntry_nName_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CWorldJournalEntry_nName_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CWorldJournalEntry_nName_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nID {
@@ -147,9 +150,10 @@ public unsafe class CWorldJournalEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CWorldJournalEntry_nID_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CWorldJournalEntry_nID_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CWorldJournalEntry_nID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bIdIsStrref {
@@ -157,9 +161,10 @@ public unsafe class CWorldJournalEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CWorldJournalEntry_bIdIsStrref_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CWorldJournalEntry_bIdIsStrref_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CWorldJournalEntry_bIdIsStrref_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CWorldJournalEntry() : this(NWNXLibPINVOKE.new_CWorldJournalEntry(), true) {

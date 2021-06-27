@@ -92,11 +92,11 @@ public unsafe class CExoArrayListUInt32 : global::System.IDisposable {
 /*@SWIG@*/
   public uint* element {
     set {
-      NWNXLibPINVOKE.CExoArrayListUInt32_element_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CExoArrayListUInt32_element_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListUInt32_element_get(swigCPtr);
-        return (uint*)retVal;
+      uint* retVal = NWNXLibPINVOKE.CExoArrayListUInt32_element_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -106,9 +106,10 @@ public unsafe class CExoArrayListUInt32 : global::System.IDisposable {
       NWNXLibPINVOKE.CExoArrayListUInt32_num_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListUInt32_num_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListUInt32_num_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int array_size {
@@ -116,9 +117,10 @@ public unsafe class CExoArrayListUInt32 : global::System.IDisposable {
       NWNXLibPINVOKE.CExoArrayListUInt32_array_size_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListUInt32_array_size_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListUInt32_array_size_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListUInt32(int s) : this(NWNXLibPINVOKE.new_CExoArrayListUInt32__SWIG_0(s), true) {
@@ -167,13 +169,13 @@ public unsafe class CExoArrayListUInt32 : global::System.IDisposable {
   }
 
   public uint* begin() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListUInt32_begin(swigCPtr);
-    return (uint*)retVal;
+    uint* retVal = NWNXLibPINVOKE.CExoArrayListUInt32_begin(swigCPtr);
+    return retVal;
   }
 
   public uint* end() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListUInt32_end(swigCPtr);
-    return (uint*)retVal;
+    uint* retVal = NWNXLibPINVOKE.CExoArrayListUInt32_end(swigCPtr);
+    return retVal;
   }
 
 }

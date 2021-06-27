@@ -132,9 +132,10 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
       NWNXLibPINVOKE.CGameObjectArray_m_nLogGameObjectCache_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CGameObjectArray_m_nLogGameObjectCache_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CGameObjectArray_m_nLogGameObjectCache_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nGameObjectCache {
@@ -142,9 +143,10 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
       NWNXLibPINVOKE.CGameObjectArray_m_nGameObjectCache_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CGameObjectArray_m_nGameObjectCache_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CGameObjectArray_m_nGameObjectCache_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bClientMode {
@@ -152,9 +154,10 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
       NWNXLibPINVOKE.CGameObjectArray_m_bClientMode_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CGameObjectArray_m_bClientMode_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CGameObjectArray_m_bClientMode_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nArraySize {
@@ -162,9 +165,10 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
       NWNXLibPINVOKE.CGameObjectArray_m_nArraySize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CGameObjectArray_m_nArraySize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CGameObjectArray_m_nArraySize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CGameObjectArray(int clientMode) : this(NWNXLibPINVOKE.new_CGameObjectArray__SWIG_0(clientMode), true) {
@@ -174,33 +178,33 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
   }
 
   public byte AddCharacterObjectAtPos(uint ID, ICGameObject ptr) {
-    byte ret = NWNXLibPINVOKE.CGameObjectArray_AddCharacterObjectAtPos(swigCPtr, ID, ptr == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : ptr.GetInterfaceCPtr());
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CGameObjectArray_AddCharacterObjectAtPos(swigCPtr, ID, ptr == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : ptr.GetInterfaceCPtr());
+    return retVal;
   }
 
   public byte AddObjectAtPos(uint ID, ICGameObject ptr) {
-    byte ret = NWNXLibPINVOKE.CGameObjectArray_AddObjectAtPos(swigCPtr, ID, ptr == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : ptr.GetInterfaceCPtr());
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CGameObjectArray_AddObjectAtPos(swigCPtr, ID, ptr == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : ptr.GetInterfaceCPtr());
+    return retVal;
   }
 
   public byte AddExternalObject(uint* ID, ICGameObject ptr, int CharacterObject) {
-    byte ret = NWNXLibPINVOKE.CGameObjectArray_AddExternalObject__SWIG_0(swigCPtr, (global::System.IntPtr)ID, ptr == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : ptr.GetInterfaceCPtr(), CharacterObject);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CGameObjectArray_AddExternalObject__SWIG_0(swigCPtr, (global::System.IntPtr)ID, ptr == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : ptr.GetInterfaceCPtr(), CharacterObject);
+    return retVal;
   }
 
   public byte AddExternalObject(uint* ID, ICGameObject ptr) {
-    byte ret = NWNXLibPINVOKE.CGameObjectArray_AddExternalObject__SWIG_1(swigCPtr, (global::System.IntPtr)ID, ptr == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : ptr.GetInterfaceCPtr());
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CGameObjectArray_AddExternalObject__SWIG_1(swigCPtr, (global::System.IntPtr)ID, ptr == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : ptr.GetInterfaceCPtr());
+    return retVal;
   }
 
   public byte AddInternalObject(uint* ID, ICGameObject ptr, int CharacterObject) {
-    byte ret = NWNXLibPINVOKE.CGameObjectArray_AddInternalObject__SWIG_0(swigCPtr, (global::System.IntPtr)ID, ptr == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : ptr.GetInterfaceCPtr(), CharacterObject);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CGameObjectArray_AddInternalObject__SWIG_0(swigCPtr, (global::System.IntPtr)ID, ptr == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : ptr.GetInterfaceCPtr(), CharacterObject);
+    return retVal;
   }
 
   public byte AddInternalObject(uint* ID, ICGameObject ptr) {
-    byte ret = NWNXLibPINVOKE.CGameObjectArray_AddInternalObject__SWIG_1(swigCPtr, (global::System.IntPtr)ID, ptr == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : ptr.GetInterfaceCPtr());
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CGameObjectArray_AddInternalObject__SWIG_1(swigCPtr, (global::System.IntPtr)ID, ptr == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : ptr.GetInterfaceCPtr());
+    return retVal;
   }
 
   public void Clean(ushort nList) {
@@ -208,18 +212,18 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
   }
 
   public byte Delete(uint ID) {
-    byte ret = NWNXLibPINVOKE.CGameObjectArray_Delete__SWIG_0(swigCPtr, ID);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CGameObjectArray_Delete__SWIG_0(swigCPtr, ID);
+    return retVal;
   }
 
   public byte Delete(uint ID, void** ptr) {
-    byte ret = NWNXLibPINVOKE.CGameObjectArray_Delete__SWIG_1(swigCPtr, ID, (global::System.IntPtr)ptr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CGameObjectArray_Delete__SWIG_1(swigCPtr, ID, (global::System.IntPtr)ptr);
+    return retVal;
   }
 
   public byte GetGameObject(uint ID, void** ptr) {
-    byte ret = NWNXLibPINVOKE.CGameObjectArray_GetGameObject(swigCPtr, ID, (global::System.IntPtr)ptr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CGameObjectArray_GetGameObject(swigCPtr, ID, (global::System.IntPtr)ptr);
+    return retVal;
   }
 
 }

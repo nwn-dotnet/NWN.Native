@@ -108,9 +108,10 @@ public unsafe class KEYFILE_KEYENTRY_E1 : global::System.IDisposable {
       NWNXLibPINVOKE.KEYFILE_KEYENTRY_E1_nType_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.KEYFILE_KEYENTRY_E1_nType_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.KEYFILE_KEYENTRY_E1_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nID {
@@ -118,9 +119,10 @@ public unsafe class KEYFILE_KEYENTRY_E1 : global::System.IDisposable {
       NWNXLibPINVOKE.KEYFILE_KEYENTRY_E1_nID_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.KEYFILE_KEYENTRY_E1_nID_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.KEYFILE_KEYENTRY_E1_nID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<byte> sSha1 {

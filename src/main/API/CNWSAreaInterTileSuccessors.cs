@@ -95,9 +95,10 @@ public unsafe class CNWSAreaInterTileSuccessors : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSAreaInterTileSuccessors_nTileGridX_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSAreaInterTileSuccessors_nTileGridX_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSAreaInterTileSuccessors_nTileGridX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nTileGridY {
@@ -105,9 +106,10 @@ public unsafe class CNWSAreaInterTileSuccessors : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSAreaInterTileSuccessors_nTileGridY_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSAreaInterTileSuccessors_nTileGridY_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSAreaInterTileSuccessors_nTileGridY_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nTileRegion {
@@ -115,9 +117,10 @@ public unsafe class CNWSAreaInterTileSuccessors : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSAreaInterTileSuccessors_nTileRegion_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSAreaInterTileSuccessors_nTileRegion_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSAreaInterTileSuccessors_nTileRegion_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float fTileExitX {
@@ -125,9 +128,10 @@ public unsafe class CNWSAreaInterTileSuccessors : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSAreaInterTileSuccessors_fTileExitX_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSAreaInterTileSuccessors_fTileExitX_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSAreaInterTileSuccessors_fTileExitX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float fTileExitY {
@@ -135,9 +139,10 @@ public unsafe class CNWSAreaInterTileSuccessors : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSAreaInterTileSuccessors_fTileExitY_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSAreaInterTileSuccessors_fTileExitY_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSAreaInterTileSuccessors_fTileExitY_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float fDotProduct {
@@ -145,9 +150,10 @@ public unsafe class CNWSAreaInterTileSuccessors : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSAreaInterTileSuccessors_fDotProduct_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSAreaInterTileSuccessors_fDotProduct_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSAreaInterTileSuccessors_fDotProduct_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSAreaInterTileSuccessors() : this(NWNXLibPINVOKE.new_CNWSAreaInterTileSuccessors(), true) {

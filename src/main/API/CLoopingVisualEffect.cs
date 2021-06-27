@@ -95,9 +95,10 @@ public unsafe class CLoopingVisualEffect : global::System.IDisposable {
       NWNXLibPINVOKE.CLoopingVisualEffect_m_nId_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CLoopingVisualEffect_m_nId_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CLoopingVisualEffect_m_nId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oOriginator {
@@ -105,9 +106,10 @@ public unsafe class CLoopingVisualEffect : global::System.IDisposable {
       NWNXLibPINVOKE.CLoopingVisualEffect_m_oOriginator_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CLoopingVisualEffect_m_oOriginator_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CLoopingVisualEffect_m_oOriginator_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nBodyPart {
@@ -115,9 +117,10 @@ public unsafe class CLoopingVisualEffect : global::System.IDisposable {
       NWNXLibPINVOKE.CLoopingVisualEffect_m_nBodyPart_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CLoopingVisualEffect_m_nBodyPart_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CLoopingVisualEffect_m_nBodyPart_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ObjectVisualTransformData m_ovtd {
@@ -132,8 +135,8 @@ public unsafe class CLoopingVisualEffect : global::System.IDisposable {
   }
 
   public int GetIsBeam() {
-    int ret = NWNXLibPINVOKE.CLoopingVisualEffect_GetIsBeam(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CLoopingVisualEffect_GetIsBeam(swigCPtr);
+    return retVal;
   }
 
   public CLoopingVisualEffect() : this(NWNXLibPINVOKE.new_CLoopingVisualEffect(), true) {

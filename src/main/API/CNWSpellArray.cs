@@ -95,9 +95,10 @@ public unsafe class CNWSpellArray : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSpellArray_m_nNumSpells_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSpellArray_m_nNumSpells_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSpellArray_m_nNumSpells_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSpell m_pSpells {

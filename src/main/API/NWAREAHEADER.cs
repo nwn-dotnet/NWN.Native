@@ -95,9 +95,10 @@ public unsafe class NWAREAHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.NWAREAHEADER_nAreaID_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.NWAREAHEADER_nAreaID_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.NWAREAHEADER_nAreaID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nCreatorID {
@@ -105,9 +106,10 @@ public unsafe class NWAREAHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.NWAREAHEADER_nCreatorID_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.NWAREAHEADER_nCreatorID_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.NWAREAHEADER_nCreatorID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nVersion {
@@ -115,9 +117,10 @@ public unsafe class NWAREAHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.NWAREAHEADER_nVersion_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.NWAREAHEADER_nVersion_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.NWAREAHEADER_nVersion_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NWAREAHEADER() : this(NWNXLibPINVOKE.new_NWAREAHEADER(), true) {

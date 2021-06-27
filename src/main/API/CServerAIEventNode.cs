@@ -95,9 +95,10 @@ public unsafe class CServerAIEventNode : global::System.IDisposable {
       NWNXLibPINVOKE.CServerAIEventNode_m_nCalendarDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CServerAIEventNode_m_nCalendarDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CServerAIEventNode_m_nCalendarDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nTimeOfDay {
@@ -105,9 +106,10 @@ public unsafe class CServerAIEventNode : global::System.IDisposable {
       NWNXLibPINVOKE.CServerAIEventNode_m_nTimeOfDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CServerAIEventNode_m_nTimeOfDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CServerAIEventNode_m_nTimeOfDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nCallerObjectId {
@@ -115,9 +117,10 @@ public unsafe class CServerAIEventNode : global::System.IDisposable {
       NWNXLibPINVOKE.CServerAIEventNode_m_nCallerObjectId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CServerAIEventNode_m_nCallerObjectId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CServerAIEventNode_m_nCallerObjectId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nObjectId {
@@ -125,9 +128,10 @@ public unsafe class CServerAIEventNode : global::System.IDisposable {
       NWNXLibPINVOKE.CServerAIEventNode_m_nObjectId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CServerAIEventNode_m_nObjectId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CServerAIEventNode_m_nObjectId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nEventId {
@@ -135,9 +139,10 @@ public unsafe class CServerAIEventNode : global::System.IDisposable {
       NWNXLibPINVOKE.CServerAIEventNode_m_nEventId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CServerAIEventNode_m_nEventId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CServerAIEventNode_m_nEventId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public void* m_pEventData {
@@ -152,13 +157,13 @@ public unsafe class CServerAIEventNode : global::System.IDisposable {
   }
 
   public int SaveNode(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CServerAIEventNode_SaveNode(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIEventNode_SaveNode(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadNode(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CServerAIEventNode_LoadNode(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CServerAIEventNode_LoadNode(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public CServerAIEventNode() : this(NWNXLibPINVOKE.new_CServerAIEventNode(), true) {

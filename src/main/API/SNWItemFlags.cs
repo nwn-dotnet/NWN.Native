@@ -95,9 +95,10 @@ public unsafe class SNWItemFlags : global::System.IDisposable {
       NWNXLibPINVOKE.SNWItemFlags_m_nDropable_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.SNWItemFlags_m_nDropable_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.SNWItemFlags_m_nDropable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nPickpocketable {
@@ -105,9 +106,10 @@ public unsafe class SNWItemFlags : global::System.IDisposable {
       NWNXLibPINVOKE.SNWItemFlags_m_nPickpocketable_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.SNWItemFlags_m_nPickpocketable_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.SNWItemFlags_m_nPickpocketable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public SNWItemFlags() : this(NWNXLibPINVOKE.new_SNWItemFlags(), true) {

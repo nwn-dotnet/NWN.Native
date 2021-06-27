@@ -95,9 +95,10 @@ public unsafe class ENCAPSULATED_RESLISTENTRY_E1 : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_E1_nOffsetToResource_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_E1_nOffsetToResource_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_E1_nOffsetToResource_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nResourceSize {
@@ -105,9 +106,10 @@ public unsafe class ENCAPSULATED_RESLISTENTRY_E1 : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_E1_nResourceSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_E1_nResourceSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_E1_nResourceSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nCompressionType {
@@ -115,9 +117,10 @@ public unsafe class ENCAPSULATED_RESLISTENTRY_E1 : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_E1_nCompressionType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_E1_nCompressionType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_E1_nCompressionType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nUncompressedSize {
@@ -125,9 +128,10 @@ public unsafe class ENCAPSULATED_RESLISTENTRY_E1 : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_E1_nUncompressedSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_E1_nUncompressedSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_E1_nUncompressedSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ENCAPSULATED_RESLISTENTRY_E1() : this(NWNXLibPINVOKE.new_ENCAPSULATED_RESLISTENTRY_E1(), true) {

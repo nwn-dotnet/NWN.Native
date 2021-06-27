@@ -108,9 +108,10 @@ public unsafe class ENCAPSULATED_KEYLISTENTRY : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_KEYLISTENTRY_nID_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.ENCAPSULATED_KEYLISTENTRY_nID_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.ENCAPSULATED_KEYLISTENTRY_nID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort nType {
@@ -118,9 +119,10 @@ public unsafe class ENCAPSULATED_KEYLISTENTRY : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_KEYLISTENTRY_nType_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.ENCAPSULATED_KEYLISTENTRY_nType_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.ENCAPSULATED_KEYLISTENTRY_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort unused {
@@ -128,9 +130,10 @@ public unsafe class ENCAPSULATED_KEYLISTENTRY : global::System.IDisposable {
       NWNXLibPINVOKE.ENCAPSULATED_KEYLISTENTRY_unused_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.ENCAPSULATED_KEYLISTENTRY_unused_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.ENCAPSULATED_KEYLISTENTRY_unused_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ENCAPSULATED_KEYLISTENTRY() : this(NWNXLibPINVOKE.new_ENCAPSULATED_KEYLISTENTRY(), true) {

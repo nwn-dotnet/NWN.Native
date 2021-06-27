@@ -95,9 +95,10 @@ public unsafe class CERFRes : global::System.IDisposable {
       NWNXLibPINVOKE.CERFRes_m_nOffset_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CERFRes_m_nOffset_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CERFRes_m_nOffset_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nSize {
@@ -105,18 +106,19 @@ public unsafe class CERFRes : global::System.IDisposable {
       NWNXLibPINVOKE.CERFRes_m_nSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CERFRes_m_nSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CERFRes_m_nSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte* m_pData {
     set {
-      NWNXLibPINVOKE.CERFRes_m_pData_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CERFRes_m_pData_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CERFRes_m_pData_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CERFRes_m_pData_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -125,19 +127,19 @@ public unsafe class CERFRes : global::System.IDisposable {
   }
 
   public int Read() {
-    int ret = NWNXLibPINVOKE.CERFRes_Read(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CERFRes_Read(swigCPtr);
+    return retVal;
   }
 
   public int Reset() {
-    int ret = NWNXLibPINVOKE.CERFRes_Reset(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CERFRes_Reset(swigCPtr);
+    return retVal;
   }
 
   public int Write(CExoFile cOutFile, uint nTablePosition) {
-    int ret = NWNXLibPINVOKE.CERFRes_Write(swigCPtr, CExoFile.getCPtr(cOutFile), nTablePosition);
+    int retVal = NWNXLibPINVOKE.CERFRes_Write(swigCPtr, CExoFile.getCPtr(cOutFile), nTablePosition);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
 }

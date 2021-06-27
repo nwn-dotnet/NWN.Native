@@ -172,9 +172,10 @@ public unsafe class CExoBase : global::System.IDisposable {
       NWNXLibPINVOKE.CExoBase_m_nExpansionPacks_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoBase_m_nExpansionPacks_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoBase_m_nExpansionPacks_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoBaseInternal m_pcExoBaseInternal {
@@ -204,57 +205,57 @@ public unsafe class CExoBase : global::System.IDisposable {
   }
 
   public int GetDirectoryList(CExoArrayListCExoString lstFilename, CExoString sAliasOrPath, ushort nResType, int bGetDirectories, int bSort, int bResolveAlias) {
-    int ret = NWNXLibPINVOKE.CExoBase_GetDirectoryList__SWIG_0(swigCPtr, CExoArrayListCExoString.getCPtr(lstFilename), CExoString.getCPtr(sAliasOrPath), nResType, bGetDirectories, bSort, bResolveAlias);
+    int retVal = NWNXLibPINVOKE.CExoBase_GetDirectoryList__SWIG_0(swigCPtr, CExoArrayListCExoString.getCPtr(lstFilename), CExoString.getCPtr(sAliasOrPath), nResType, bGetDirectories, bSort, bResolveAlias);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetDirectoryList(CExoArrayListCExoString lstFilename, CExoString sAliasOrPath, ushort nResType, int bGetDirectories, int bSort) {
-    int ret = NWNXLibPINVOKE.CExoBase_GetDirectoryList__SWIG_1(swigCPtr, CExoArrayListCExoString.getCPtr(lstFilename), CExoString.getCPtr(sAliasOrPath), nResType, bGetDirectories, bSort);
+    int retVal = NWNXLibPINVOKE.CExoBase_GetDirectoryList__SWIG_1(swigCPtr, CExoArrayListCExoString.getCPtr(lstFilename), CExoString.getCPtr(sAliasOrPath), nResType, bGetDirectories, bSort);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetDirectoryList(CExoArrayListCExoString lstFilename, CExoString sAliasOrPath, ushort nResType, int bGetDirectories) {
-    int ret = NWNXLibPINVOKE.CExoBase_GetDirectoryList__SWIG_2(swigCPtr, CExoArrayListCExoString.getCPtr(lstFilename), CExoString.getCPtr(sAliasOrPath), nResType, bGetDirectories);
+    int retVal = NWNXLibPINVOKE.CExoBase_GetDirectoryList__SWIG_2(swigCPtr, CExoArrayListCExoString.getCPtr(lstFilename), CExoString.getCPtr(sAliasOrPath), nResType, bGetDirectories);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetDirectoryList(CExoArrayListCExoString lstFilename, CExoString sAliasOrPath, ushort nResType) {
-    int ret = NWNXLibPINVOKE.CExoBase_GetDirectoryList__SWIG_3(swigCPtr, CExoArrayListCExoString.getCPtr(lstFilename), CExoString.getCPtr(sAliasOrPath), nResType);
+    int retVal = NWNXLibPINVOKE.CExoBase_GetDirectoryList__SWIG_3(swigCPtr, CExoArrayListCExoString.getCPtr(lstFilename), CExoString.getCPtr(sAliasOrPath), nResType);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetDirectoryAndWorkshopList(CExoArrayListCExoString lstFilename, CExoString sAlias, ushort nResType, int bGetDirectories, int bSort) {
-    int ret = NWNXLibPINVOKE.CExoBase_GetDirectoryAndWorkshopList__SWIG_0(swigCPtr, CExoArrayListCExoString.getCPtr(lstFilename), CExoString.getCPtr(sAlias), nResType, bGetDirectories, bSort);
+    int retVal = NWNXLibPINVOKE.CExoBase_GetDirectoryAndWorkshopList__SWIG_0(swigCPtr, CExoArrayListCExoString.getCPtr(lstFilename), CExoString.getCPtr(sAlias), nResType, bGetDirectories, bSort);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetDirectoryAndWorkshopList(CExoArrayListCExoString lstFilename, CExoString sAlias, ushort nResType, int bGetDirectories) {
-    int ret = NWNXLibPINVOKE.CExoBase_GetDirectoryAndWorkshopList__SWIG_1(swigCPtr, CExoArrayListCExoString.getCPtr(lstFilename), CExoString.getCPtr(sAlias), nResType, bGetDirectories);
+    int retVal = NWNXLibPINVOKE.CExoBase_GetDirectoryAndWorkshopList__SWIG_1(swigCPtr, CExoArrayListCExoString.getCPtr(lstFilename), CExoString.getCPtr(sAlias), nResType, bGetDirectories);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetDirectoryAndWorkshopList(CExoArrayListCExoString lstFilename, CExoString sAlias, ushort nResType) {
-    int ret = NWNXLibPINVOKE.CExoBase_GetDirectoryAndWorkshopList__SWIG_2(swigCPtr, CExoArrayListCExoString.getCPtr(lstFilename), CExoString.getCPtr(sAlias), nResType);
+    int retVal = NWNXLibPINVOKE.CExoBase_GetDirectoryAndWorkshopList__SWIG_2(swigCPtr, CExoArrayListCExoString.getCPtr(lstFilename), CExoString.getCPtr(sAlias), nResType);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetAugmentedDirectoryList(CExoArrayListCFileInfo lstFileInfo, CExoString sAlias, ushort nResType, int bSort) {
-    int ret = NWNXLibPINVOKE.CExoBase_GetAugmentedDirectoryList__SWIG_0(swigCPtr, CExoArrayListCFileInfo.getCPtr(lstFileInfo), CExoString.getCPtr(sAlias), nResType, bSort);
+    int retVal = NWNXLibPINVOKE.CExoBase_GetAugmentedDirectoryList__SWIG_0(swigCPtr, CExoArrayListCFileInfo.getCPtr(lstFileInfo), CExoString.getCPtr(sAlias), nResType, bSort);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetAugmentedDirectoryList(CExoArrayListCFileInfo lstFileInfo, CExoString sAlias, ushort nResType) {
-    int ret = NWNXLibPINVOKE.CExoBase_GetAugmentedDirectoryList__SWIG_1(swigCPtr, CExoArrayListCFileInfo.getCPtr(lstFileInfo), CExoString.getCPtr(sAlias), nResType);
+    int retVal = NWNXLibPINVOKE.CExoBase_GetAugmentedDirectoryList__SWIG_1(swigCPtr, CExoArrayListCFileInfo.getCPtr(lstFileInfo), CExoString.getCPtr(sAlias), nResType);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public CExoString GetInstallDirectory() {
@@ -268,9 +269,9 @@ public unsafe class CExoBase : global::System.IDisposable {
   }
 
   public ushort GetResTypeFromExtension(CExoString sExtension) {
-    ushort ret = NWNXLibPINVOKE.CExoBase_GetResTypeFromExtension(swigCPtr, CExoString.getCPtr(sExtension));
+    ushort retVal = NWNXLibPINVOKE.CExoBase_GetResTypeFromExtension(swigCPtr, CExoString.getCPtr(sExtension));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void LoadAliases(int idxIniFile) {
@@ -282,13 +283,13 @@ public unsafe class CExoBase : global::System.IDisposable {
   }
 
   public int CheckForCD(uint nLanguage) {
-    int ret = NWNXLibPINVOKE.CExoBase_CheckForCD__SWIG_0(swigCPtr, nLanguage);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoBase_CheckForCD__SWIG_0(swigCPtr, nLanguage);
+    return retVal;
   }
 
   public int CheckForCD() {
-    int ret = NWNXLibPINVOKE.CExoBase_CheckForCD__SWIG_1(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoBase_CheckForCD__SWIG_1(swigCPtr);
+    return retVal;
   }
 
 }

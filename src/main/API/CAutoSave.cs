@@ -95,9 +95,10 @@ public unsafe class CAutoSave : global::System.IDisposable {
       NWNXLibPINVOKE.CAutoSave_bAtIntervals_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CAutoSave_bAtIntervals_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CAutoSave_bAtIntervals_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAtSavePoints {
@@ -105,9 +106,10 @@ public unsafe class CAutoSave : global::System.IDisposable {
       NWNXLibPINVOKE.CAutoSave_bAtSavePoints_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CAutoSave_bAtSavePoints_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CAutoSave_bAtSavePoints_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bOnPlayerChange {
@@ -115,9 +117,10 @@ public unsafe class CAutoSave : global::System.IDisposable {
       NWNXLibPINVOKE.CAutoSave_bOnPlayerChange_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CAutoSave_bOnPlayerChange_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CAutoSave_bOnPlayerChange_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nInterval {
@@ -125,9 +128,10 @@ public unsafe class CAutoSave : global::System.IDisposable {
       NWNXLibPINVOKE.CAutoSave_nInterval_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CAutoSave_nInterval_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CAutoSave_nInterval_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CAutoSave() : this(NWNXLibPINVOKE.new_CAutoSave(), true) {

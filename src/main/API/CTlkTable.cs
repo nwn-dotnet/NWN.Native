@@ -119,9 +119,10 @@ public unsafe class CTlkTable : global::System.IDisposable {
       NWNXLibPINVOKE.CTlkTable_m_currentGender_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CTlkTable_m_currentGender_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CTlkTable_m_currentGender_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CTlkTableToken m_pTokens {
@@ -140,9 +141,10 @@ public unsafe class CTlkTable : global::System.IDisposable {
       NWNXLibPINVOKE.CTlkTable_m_nTokens_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CTlkTable_m_nTokens_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CTlkTable_m_nTokens_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CTlkTableTokenCustom m_pTokensCustom {
@@ -161,9 +163,10 @@ public unsafe class CTlkTable : global::System.IDisposable {
       NWNXLibPINVOKE.CTlkTable_m_nTokensCustom_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CTlkTable_m_nTokensCustom_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CTlkTable_m_nTokensCustom_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bRemove {
@@ -171,9 +174,10 @@ public unsafe class CTlkTable : global::System.IDisposable {
       NWNXLibPINVOKE.CTlkTable_m_bRemove_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CTlkTable_m_bRemove_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CTlkTable_m_bRemove_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sTlkFilePath {
@@ -213,15 +217,15 @@ public unsafe class CTlkTable : global::System.IDisposable {
   }
 
   public int OpenFile(CExoString sFilename) {
-    int ret = NWNXLibPINVOKE.CTlkTable_OpenFile__SWIG_0(swigCPtr, CExoString.getCPtr(sFilename));
+    int retVal = NWNXLibPINVOKE.CTlkTable_OpenFile__SWIG_0(swigCPtr, CExoString.getCPtr(sFilename));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int OpenFileAlternate(CExoString sFileName) {
-    int ret = NWNXLibPINVOKE.CTlkTable_OpenFileAlternate(swigCPtr, CExoString.getCPtr(sFileName));
+    int retVal = NWNXLibPINVOKE.CTlkTable_OpenFileAlternate(swigCPtr, CExoString.getCPtr(sFileName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void CloseFileAlternate() {
@@ -247,8 +251,8 @@ public unsafe class CTlkTable : global::System.IDisposable {
   }
 
   public byte* RemapFontName(byte* pFontName) {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CTlkTable_RemapFontName(swigCPtr, (global::System.IntPtr)pFontName);
-    return (byte*)retVal;
+    byte* retVal = NWNXLibPINVOKE.CTlkTable_RemapFontName(swigCPtr, pFontName);
+    return retVal;
   }
 
   public void ParseStr(CExoString sText) {
@@ -262,18 +266,18 @@ public unsafe class CTlkTable : global::System.IDisposable {
   }
 
   public uint GetLanguageVersion() {
-    uint ret = NWNXLibPINVOKE.CTlkTable_GetLanguageVersion(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CTlkTable_GetLanguageVersion(swigCPtr);
+    return retVal;
   }
 
   public int SetUseLargeDialogFont(int bUseIt) {
-    int ret = NWNXLibPINVOKE.CTlkTable_SetUseLargeDialogFont(swigCPtr, bUseIt);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CTlkTable_SetUseLargeDialogFont(swigCPtr, bUseIt);
+    return retVal;
   }
 
   public int Reload() {
-    int ret = NWNXLibPINVOKE.CTlkTable_Reload(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CTlkTable_Reload(swigCPtr);
+    return retVal;
   }
 
   public virtual void GetTokenValue(CTlkTableToken cTlkTableToken, CExoString sToken) {
@@ -282,9 +286,9 @@ public unsafe class CTlkTable : global::System.IDisposable {
   }
 
   public int FetchInternal(uint strId, STR_RES strRes, int bParse) {
-    int ret = NWNXLibPINVOKE.CTlkTable_FetchInternal(swigCPtr, strId, STR_RES.getCPtr(strRes), bParse);
+    int retVal = NWNXLibPINVOKE.CTlkTable_FetchInternal(swigCPtr, strId, STR_RES.getCPtr(strRes), bParse);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void CloseFile(CTlkFilePtrArray pTlkFile) {
@@ -292,9 +296,9 @@ public unsafe class CTlkTable : global::System.IDisposable {
   }
 
   public int OpenFile(CExoString sFileName, CTlkFilePtrArray pTlkFile) {
-    int ret = NWNXLibPINVOKE.CTlkTable_OpenFile__SWIG_1(swigCPtr, CExoString.getCPtr(sFileName), CTlkFilePtrArray.getCPtr(pTlkFile));
+    int retVal = NWNXLibPINVOKE.CTlkTable_OpenFile__SWIG_1(swigCPtr, CExoString.getCPtr(sFileName), CTlkFilePtrArray.getCPtr(pTlkFile));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
 }

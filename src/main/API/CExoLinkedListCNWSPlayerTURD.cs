@@ -129,8 +129,8 @@ public unsafe class CExoLinkedListCNWSPlayerTURD : global::System.IDisposable {
   }
 
   public uint Count() {
-    uint ret = NWNXLibPINVOKE.CExoLinkedListCNWSPlayerTURD_Count(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoLinkedListCNWSPlayerTURD_Count(swigCPtr);
+    return retVal;
   }
 
   public CNWSPlayerTURD GetAtPos(CExoLinkedListNode Position) {
@@ -176,8 +176,8 @@ public unsafe class CExoLinkedListCNWSPlayerTURD : global::System.IDisposable {
   }
 
   public int IsEmpty() {
-    int ret = NWNXLibPINVOKE.CExoLinkedListCNWSPlayerTURD_IsEmpty(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoLinkedListCNWSPlayerTURD_IsEmpty(swigCPtr);
+    return retVal;
   }
 
   public CNWSPlayerTURD RemoveHead() {

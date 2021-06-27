@@ -95,9 +95,10 @@ public unsafe class CNWTileSurfaceMeshSortSuccessors : global::System.IDisposabl
       NWNXLibPINVOKE.CNWTileSurfaceMeshSortSuccessors_nPathLevel_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWTileSurfaceMeshSortSuccessors_nPathLevel_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshSortSuccessors_nPathLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float fEstimateDistance {
@@ -105,9 +106,10 @@ public unsafe class CNWTileSurfaceMeshSortSuccessors : global::System.IDisposabl
       NWNXLibPINVOKE.CNWTileSurfaceMeshSortSuccessors_fEstimateDistance_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWTileSurfaceMeshSortSuccessors_fEstimateDistance_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshSortSuccessors_fEstimateDistance_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWTileSurfaceMeshSortSuccessors() : this(NWNXLibPINVOKE.new_CNWTileSurfaceMeshSortSuccessors(), true) {

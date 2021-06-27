@@ -106,9 +106,10 @@ public unsafe class NWSyncAdvertisementManifest : global::System.IDisposable {
       NWNXLibPINVOKE.NWSyncAdvertisementManifest_m_flags_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.NWSyncAdvertisementManifest_m_flags_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.NWSyncAdvertisementManifest_m_flags_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_languageId {
@@ -116,9 +117,10 @@ public unsafe class NWSyncAdvertisementManifest : global::System.IDisposable {
       NWNXLibPINVOKE.NWSyncAdvertisementManifest_m_languageId_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.NWSyncAdvertisementManifest_m_languageId_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.NWSyncAdvertisementManifest_m_languageId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NWSyncAdvertisementManifest() : this(NWNXLibPINVOKE.new_NWSyncAdvertisementManifest(), true) {

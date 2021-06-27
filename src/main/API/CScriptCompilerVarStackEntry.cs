@@ -106,9 +106,10 @@ public unsafe class CScriptCompilerVarStackEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptCompilerVarStackEntry_m_nVarType_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptCompilerVarStackEntry_m_nVarType_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptCompilerVarStackEntry_m_nVarType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nVarLevel {
@@ -116,9 +117,10 @@ public unsafe class CScriptCompilerVarStackEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptCompilerVarStackEntry_m_nVarLevel_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptCompilerVarStackEntry_m_nVarLevel_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptCompilerVarStackEntry_m_nVarLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nVarRunTimeLocation {
@@ -126,9 +128,10 @@ public unsafe class CScriptCompilerVarStackEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptCompilerVarStackEntry_m_nVarRunTimeLocation_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptCompilerVarStackEntry_m_nVarRunTimeLocation_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptCompilerVarStackEntry_m_nVarRunTimeLocation_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sVarStructureName {

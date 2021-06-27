@@ -95,9 +95,10 @@ public unsafe class CScriptCompilerStructureFieldEntry : global::System.IDisposa
       NWNXLibPINVOKE.CScriptCompilerStructureFieldEntry_m_pchType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CScriptCompilerStructureFieldEntry_m_pchType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CScriptCompilerStructureFieldEntry_m_pchType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_psStructureName {
@@ -127,9 +128,10 @@ public unsafe class CScriptCompilerStructureFieldEntry : global::System.IDisposa
       NWNXLibPINVOKE.CScriptCompilerStructureFieldEntry_m_nLocation_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptCompilerStructureFieldEntry_m_nLocation_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptCompilerStructureFieldEntry_m_nLocation_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CScriptCompilerStructureFieldEntry() : this(NWNXLibPINVOKE.new_CScriptCompilerStructureFieldEntry(), true) {

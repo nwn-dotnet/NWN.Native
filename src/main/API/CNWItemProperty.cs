@@ -95,9 +95,10 @@ public unsafe class CNWItemProperty : global::System.IDisposable {
       NWNXLibPINVOKE.CNWItemProperty_m_nPropertyName_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWItemProperty_m_nPropertyName_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWItemProperty_m_nPropertyName_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nSubType {
@@ -105,9 +106,10 @@ public unsafe class CNWItemProperty : global::System.IDisposable {
       NWNXLibPINVOKE.CNWItemProperty_m_nSubType_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWItemProperty_m_nSubType_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWItemProperty_m_nSubType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nCostTable {
@@ -115,9 +117,10 @@ public unsafe class CNWItemProperty : global::System.IDisposable {
       NWNXLibPINVOKE.CNWItemProperty_m_nCostTable_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWItemProperty_m_nCostTable_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWItemProperty_m_nCostTable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nCostTableValue {
@@ -125,9 +128,10 @@ public unsafe class CNWItemProperty : global::System.IDisposable {
       NWNXLibPINVOKE.CNWItemProperty_m_nCostTableValue_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWItemProperty_m_nCostTableValue_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWItemProperty_m_nCostTableValue_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nParam1 {
@@ -135,9 +139,10 @@ public unsafe class CNWItemProperty : global::System.IDisposable {
       NWNXLibPINVOKE.CNWItemProperty_m_nParam1_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWItemProperty_m_nParam1_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWItemProperty_m_nParam1_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nParam1Value {
@@ -145,9 +150,10 @@ public unsafe class CNWItemProperty : global::System.IDisposable {
       NWNXLibPINVOKE.CNWItemProperty_m_nParam1Value_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWItemProperty_m_nParam1Value_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWItemProperty_m_nParam1Value_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nChanceOfAppearing {
@@ -155,9 +161,10 @@ public unsafe class CNWItemProperty : global::System.IDisposable {
       NWNXLibPINVOKE.CNWItemProperty_m_nChanceOfAppearing_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWItemProperty_m_nChanceOfAppearing_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWItemProperty_m_nChanceOfAppearing_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bUseable {
@@ -165,9 +172,10 @@ public unsafe class CNWItemProperty : global::System.IDisposable {
       NWNXLibPINVOKE.CNWItemProperty_m_bUseable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWItemProperty_m_bUseable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWItemProperty_m_bUseable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nUsesPerDay {
@@ -175,9 +183,10 @@ public unsafe class CNWItemProperty : global::System.IDisposable {
       NWNXLibPINVOKE.CNWItemProperty_m_nUsesPerDay_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWItemProperty_m_nUsesPerDay_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWItemProperty_m_nUsesPerDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nDurationType {
@@ -185,9 +194,10 @@ public unsafe class CNWItemProperty : global::System.IDisposable {
       NWNXLibPINVOKE.CNWItemProperty_m_nDurationType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWItemProperty_m_nDurationType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWItemProperty_m_nDurationType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sCustomTag {
@@ -201,14 +211,15 @@ public unsafe class CNWItemProperty : global::System.IDisposable {
     } 
   }
 
-  public uint m_nID {
+  public ulong m_nID {
     set {
       NWNXLibPINVOKE.CNWItemProperty_m_nID_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWItemProperty_m_nID_get(swigCPtr);
-      return ret;
-    } 
+      ulong retVal = NWNXLibPINVOKE.CNWItemProperty_m_nID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWItemProperty() : this(NWNXLibPINVOKE.new_CNWItemProperty(), true) {

@@ -129,8 +129,8 @@ public unsafe class CExoLinkedListC2DA : global::System.IDisposable {
   }
 
   public uint Count() {
-    uint ret = NWNXLibPINVOKE.CExoLinkedListC2DA_Count(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoLinkedListC2DA_Count(swigCPtr);
+    return retVal;
   }
 
   public C2DA GetAtPos(CExoLinkedListNode Position) {
@@ -176,8 +176,8 @@ public unsafe class CExoLinkedListC2DA : global::System.IDisposable {
   }
 
   public int IsEmpty() {
-    int ret = NWNXLibPINVOKE.CExoLinkedListC2DA_IsEmpty(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoLinkedListC2DA_IsEmpty(swigCPtr);
+    return retVal;
   }
 
   public C2DA RemoveHead() {

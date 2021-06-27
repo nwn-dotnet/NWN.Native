@@ -95,9 +95,10 @@ public unsafe class CNWSStats_Spell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSStats_Spell_m_nSpellId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSStats_Spell_m_nSpellId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSStats_Spell_m_nSpellId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bReadied {
@@ -105,9 +106,10 @@ public unsafe class CNWSStats_Spell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSStats_Spell_m_bReadied_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSStats_Spell_m_bReadied_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSStats_Spell_m_bReadied_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nMetaType {
@@ -115,9 +117,10 @@ public unsafe class CNWSStats_Spell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSStats_Spell_m_nMetaType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSStats_Spell_m_nMetaType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSStats_Spell_m_nMetaType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bDomainSpell {
@@ -125,9 +128,10 @@ public unsafe class CNWSStats_Spell : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSStats_Spell_m_bDomainSpell_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSStats_Spell_m_bDomainSpell_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSStats_Spell_m_bDomainSpell_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSStats_Spell() : this(NWNXLibPINVOKE.new_CNWSStats_Spell(), true) {

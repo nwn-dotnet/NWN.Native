@@ -92,11 +92,11 @@ public unsafe class CServerOptionLookup : global::System.IDisposable {
 /*@SWIG@*/
   public int* pData {
     set {
-      NWNXLibPINVOKE.CServerOptionLookup_pData_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CServerOptionLookup_pData_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CServerOptionLookup_pData_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CServerOptionLookup_pData_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -106,9 +106,10 @@ public unsafe class CServerOptionLookup : global::System.IDisposable {
       NWNXLibPINVOKE.CServerOptionLookup_nType_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CServerOptionLookup_nType_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CServerOptionLookup_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CServerOptionLookup() : this(NWNXLibPINVOKE.new_CServerOptionLookup(), true) {

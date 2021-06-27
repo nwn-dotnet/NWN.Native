@@ -106,9 +106,10 @@ public unsafe class CExoArrayListCNWSTagNode : global::System.IDisposable {
       NWNXLibPINVOKE.CExoArrayListCNWSTagNode_num_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListCNWSTagNode_num_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListCNWSTagNode_num_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int array_size {
@@ -116,9 +117,10 @@ public unsafe class CExoArrayListCNWSTagNode : global::System.IDisposable {
       NWNXLibPINVOKE.CExoArrayListCNWSTagNode_array_size_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListCNWSTagNode_array_size_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListCNWSTagNode_array_size_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCNWSTagNode(int s) : this(NWNXLibPINVOKE.new_CExoArrayListCNWSTagNode__SWIG_0(s), true) {

@@ -95,13 +95,13 @@ public unsafe class CItemPropertyApplierRemover : global::System.IDisposable {
   }
 
   public virtual int OnItemPropertyApplied(CNWSItem pItem, CNWItemProperty pItemProperty, CNWSCreature pTargetCreature, uint nTargetInventorySlot, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CItemPropertyApplierRemover_OnItemPropertyApplied(swigCPtr, CNWSItem.getCPtr(pItem), CNWItemProperty.getCPtr(pItemProperty), CNWSCreature.getCPtr(pTargetCreature), nTargetInventorySlot, bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CItemPropertyApplierRemover_OnItemPropertyApplied(swigCPtr, CNWSItem.getCPtr(pItem), CNWItemProperty.getCPtr(pItemProperty), CNWSCreature.getCPtr(pTargetCreature), nTargetInventorySlot, bLoadingGame);
+    return retVal;
   }
 
   public virtual int OnItemPropertyRemoved(CNWSItem pItem, CNWItemProperty pItemProperty, CNWSCreature pTargetCreature, uint nTargetInventorySlot) {
-    int ret = NWNXLibPINVOKE.CItemPropertyApplierRemover_OnItemPropertyRemoved(swigCPtr, CNWSItem.getCPtr(pItem), CNWItemProperty.getCPtr(pItemProperty), CNWSCreature.getCPtr(pTargetCreature), nTargetInventorySlot);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CItemPropertyApplierRemover_OnItemPropertyRemoved(swigCPtr, CNWSItem.getCPtr(pItem), CNWItemProperty.getCPtr(pItemProperty), CNWSCreature.getCPtr(pTargetCreature), nTargetInventorySlot);
+    return retVal;
   }
 
 }

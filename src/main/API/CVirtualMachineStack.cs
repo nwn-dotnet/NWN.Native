@@ -95,9 +95,10 @@ public unsafe class CVirtualMachineStack : global::System.IDisposable {
       NWNXLibPINVOKE.CVirtualMachineStack_m_nStackPointer_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineStack_m_nStackPointer_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineStack_m_nStackPointer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nBasePointer {
@@ -105,9 +106,10 @@ public unsafe class CVirtualMachineStack : global::System.IDisposable {
       NWNXLibPINVOKE.CVirtualMachineStack_m_nBasePointer_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineStack_m_nBasePointer_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineStack_m_nBasePointer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nTotalSize {
@@ -115,18 +117,19 @@ public unsafe class CVirtualMachineStack : global::System.IDisposable {
       NWNXLibPINVOKE.CVirtualMachineStack_m_nTotalSize_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineStack_m_nTotalSize_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineStack_m_nTotalSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte* m_pchStackTypes {
     set {
-      NWNXLibPINVOKE.CVirtualMachineStack_m_pchStackTypes_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineStack_m_pchStackTypes_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineStack_m_pchStackTypes_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CVirtualMachineStack_m_pchStackTypes_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -177,13 +180,13 @@ public unsafe class CVirtualMachineStack : global::System.IDisposable {
   }
 
   public int SaveStack(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineStack_SaveStack(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineStack_SaveStack(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadStack(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineStack_LoadStack(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineStack_LoadStack(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public void ClearStack() {
@@ -191,8 +194,8 @@ public unsafe class CVirtualMachineStack : global::System.IDisposable {
   }
 
   public int GetBasePointer() {
-    int ret = NWNXLibPINVOKE.CVirtualMachineStack_GetBasePointer(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineStack_GetBasePointer(swigCPtr);
+    return retVal;
   }
 
   public void SetBasePointer(int nSize) {
@@ -200,8 +203,8 @@ public unsafe class CVirtualMachineStack : global::System.IDisposable {
   }
 
   public int GetStackPointer() {
-    int ret = NWNXLibPINVOKE.CVirtualMachineStack_GetStackPointer(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineStack_GetStackPointer(swigCPtr);
+    return retVal;
   }
 
   public void SetStackPointer(int nSize) {

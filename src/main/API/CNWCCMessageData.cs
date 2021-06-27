@@ -95,9 +95,10 @@ public unsafe class CNWCCMessageData : global::System.IDisposable {
       NWNXLibPINVOKE.CNWCCMessageData_m_nType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWCCMessageData_m_nType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWCCMessageData_m_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListInt32 m_nParamInteger {
@@ -148,8 +149,8 @@ public unsafe class CNWCCMessageData : global::System.IDisposable {
   }
 
   public int GetInteger(int nStorageLocation) {
-    int ret = NWNXLibPINVOKE.CNWCCMessageData_GetInteger(swigCPtr, nStorageLocation);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWCCMessageData_GetInteger(swigCPtr, nStorageLocation);
+    return retVal;
   }
 
   public void SetInteger(int nStorageLocation, int nValue) {
@@ -157,8 +158,8 @@ public unsafe class CNWCCMessageData : global::System.IDisposable {
   }
 
   public float GetFloat(int nStorageLocation) {
-    float ret = NWNXLibPINVOKE.CNWCCMessageData_GetFloat(swigCPtr, nStorageLocation);
-    return ret;
+    float retVal = NWNXLibPINVOKE.CNWCCMessageData_GetFloat(swigCPtr, nStorageLocation);
+    return retVal;
   }
 
   public void SetFloat(int nStorageLocation, float fValue) {
@@ -166,8 +167,8 @@ public unsafe class CNWCCMessageData : global::System.IDisposable {
   }
 
   public uint GetObjectID(int nStorageLocation) {
-    uint ret = NWNXLibPINVOKE.CNWCCMessageData_GetObjectID(swigCPtr, nStorageLocation);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWCCMessageData_GetObjectID(swigCPtr, nStorageLocation);
+    return retVal;
   }
 
   public void SetObjectID(int nStorageLocation, uint oidValue) {
@@ -185,13 +186,13 @@ public unsafe class CNWCCMessageData : global::System.IDisposable {
   }
 
   public int SaveData(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWCCMessageData_SaveData(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWCCMessageData_SaveData(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadData(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWCCMessageData_LoadData(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWCCMessageData_LoadData(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public void CopyTo(CNWCCMessageData pDestinationData) {

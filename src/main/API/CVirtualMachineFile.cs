@@ -94,9 +94,9 @@ public unsafe class CVirtualMachineFile : global::System.IDisposable {
   }
 
   public int LoadFile(CExoString sFileName) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineFile_LoadFile(swigCPtr, CExoString.getCPtr(sFileName));
+    int retVal = NWNXLibPINVOKE.CVirtualMachineFile_LoadFile(swigCPtr, CExoString.getCPtr(sFileName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void UnloadFile() {

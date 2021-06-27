@@ -95,9 +95,10 @@ public unsafe class CStoreCustomer : global::System.IDisposable {
       NWNXLibPINVOKE.CStoreCustomer_m_oidObject_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CStoreCustomer_m_oidObject_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CStoreCustomer_m_oidObject_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nPage {
@@ -105,9 +106,10 @@ public unsafe class CStoreCustomer : global::System.IDisposable {
       NWNXLibPINVOKE.CStoreCustomer_m_nPage_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CStoreCustomer_m_nPage_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CStoreCustomer_m_nPage_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nPanel {
@@ -115,9 +117,10 @@ public unsafe class CStoreCustomer : global::System.IDisposable {
       NWNXLibPINVOKE.CStoreCustomer_m_nPanel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CStoreCustomer_m_nPanel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CStoreCustomer_m_nPanel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public Vector m_vOpenPosition {
@@ -131,24 +134,26 @@ public unsafe class CStoreCustomer : global::System.IDisposable {
     } 
   }
 
-  public char m_nBonusMarkUp {
+  public byte m_nBonusMarkUp {
     set {
       NWNXLibPINVOKE.CStoreCustomer_m_nBonusMarkUp_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CStoreCustomer_m_nBonusMarkUp_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CStoreCustomer_m_nBonusMarkUp_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nBonusMarkDown {
+  public byte m_nBonusMarkDown {
     set {
       NWNXLibPINVOKE.CStoreCustomer_m_nBonusMarkDown_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CStoreCustomer_m_nBonusMarkDown_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CStoreCustomer_m_nBonusMarkDown_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CStoreCustomer() : this(NWNXLibPINVOKE.new_CStoreCustomer(), true) {

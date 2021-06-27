@@ -95,9 +95,10 @@ public unsafe class CNWSObjectActionNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSObjectActionNode_m_nActionId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSObjectActionNode_m_nActionId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSObjectActionNode_m_nActionId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<uint> m_nParamType {
@@ -131,9 +132,10 @@ public unsafe class CNWSObjectActionNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSObjectActionNode_m_nGroupActionId_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSObjectActionNode_m_nGroupActionId_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSObjectActionNode_m_nGroupActionId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nParameters {
@@ -141,9 +143,10 @@ public unsafe class CNWSObjectActionNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSObjectActionNode_m_nParameters_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSObjectActionNode_m_nParameters_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSObjectActionNode_m_nParameters_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bInterruptable {
@@ -151,9 +154,10 @@ public unsafe class CNWSObjectActionNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSObjectActionNode_m_bInterruptable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSObjectActionNode_m_bInterruptable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSObjectActionNode_m_bInterruptable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSObjectActionNode() : this(NWNXLibPINVOKE.new_CNWSObjectActionNode(), true) {

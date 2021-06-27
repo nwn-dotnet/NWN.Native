@@ -130,9 +130,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_nVertices_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTrigger_m_nVertices_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTrigger_m_nVertices_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public Vector m_pvVertices {
@@ -151,18 +152,19 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_nTriangles_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTrigger_m_nTriangles_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTrigger_m_nTriangles_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int* m_pnTriangles {
     set {
-      NWNXLibPINVOKE.CNWSTrigger_m_pnTriangles_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWSTrigger_m_pnTriangles_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSTrigger_m_pnTriangles_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CNWSTrigger_m_pnTriangles_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -172,18 +174,19 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_nOutlineVertices_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTrigger_m_nOutlineVertices_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTrigger_m_nOutlineVertices_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int* m_pnOutlineVertices {
     set {
-      NWNXLibPINVOKE.CNWSTrigger_m_pnOutlineVertices_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWSTrigger_m_pnOutlineVertices_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSTrigger_m_pnOutlineVertices_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CNWSTrigger_m_pnOutlineVertices_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -193,9 +196,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_oidLastEntered_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSTrigger_m_oidLastEntered_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSTrigger_m_oidLastEntered_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastLeft {
@@ -203,9 +207,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_oidLastLeft_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSTrigger_m_oidLastLeft_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSTrigger_m_oidLastLeft_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastDisarmed {
@@ -213,9 +218,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_oidLastDisarmed_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSTrigger_m_oidLastDisarmed_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSTrigger_m_oidLastDisarmed_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListObjectId m_poidCreatures {
@@ -234,9 +240,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_nFactionId_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTrigger_m_nFactionId_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTrigger_m_nFactionId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bTrap {
@@ -244,9 +251,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_bTrap_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTrigger_m_bTrap_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTrigger_m_bTrap_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bDetectable {
@@ -254,9 +262,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_bDetectable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTrigger_m_bDetectable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTrigger_m_bDetectable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bDisarmable {
@@ -264,9 +273,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_bDisarmable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTrigger_m_bDisarmable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTrigger_m_bDisarmable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bFlagged {
@@ -274,9 +284,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_bFlagged_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTrigger_m_bFlagged_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTrigger_m_bFlagged_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bAutoRemoveKey {
@@ -284,9 +295,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_bAutoRemoveKey_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTrigger_m_bAutoRemoveKey_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTrigger_m_bAutoRemoveKey_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bOneShot {
@@ -294,9 +306,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_bOneShot_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTrigger_m_bOneShot_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTrigger_m_bOneShot_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nBaseType {
@@ -304,9 +317,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_nBaseType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSTrigger_m_nBaseType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSTrigger_m_nBaseType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nDCDetectCheck {
@@ -314,9 +328,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_nDCDetectCheck_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTrigger_m_nDCDetectCheck_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTrigger_m_nDCDetectCheck_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nDCDisarmCheck {
@@ -324,9 +339,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_nDCDisarmCheck_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTrigger_m_nDCDisarmCheck_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTrigger_m_nDCDisarmCheck_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bRecoverable {
@@ -334,9 +350,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_bRecoverable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTrigger_m_bRecoverable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTrigger_m_bRecoverable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bTrapIsActive {
@@ -344,9 +361,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_bTrapIsActive_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTrigger_m_bTrapIsActive_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTrigger_m_bTrapIsActive_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nObjectArrayIndex {
@@ -354,9 +372,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_nObjectArrayIndex_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSTrigger_m_nObjectArrayIndex_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSTrigger_m_nObjectArrayIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fTriggerHeight {
@@ -364,9 +383,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_fTriggerHeight_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSTrigger_m_fTriggerHeight_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSTrigger_m_fTriggerHeight_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidCreator {
@@ -374,9 +394,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_oidCreator_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSTrigger_m_oidCreator_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSTrigger_m_oidCreator_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fBoundingBoxMinX {
@@ -384,9 +405,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_fBoundingBoxMinX_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSTrigger_m_fBoundingBoxMinX_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSTrigger_m_fBoundingBoxMinX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fBoundingBoxMaxX {
@@ -394,9 +416,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_fBoundingBoxMaxX_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSTrigger_m_fBoundingBoxMaxX_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSTrigger_m_fBoundingBoxMaxX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fBoundingBoxMinY {
@@ -404,9 +427,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_fBoundingBoxMinY_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSTrigger_m_fBoundingBoxMinY_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSTrigger_m_fBoundingBoxMinY_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fBoundingBoxMaxY {
@@ -414,9 +438,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_fBoundingBoxMaxY_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSTrigger_m_fBoundingBoxMaxY_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSTrigger_m_fBoundingBoxMaxY_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nCustomScriptEventId {
@@ -424,9 +449,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_nCustomScriptEventId_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTrigger_m_nCustomScriptEventId_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTrigger_m_nCustomScriptEventId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nCursor {
@@ -434,9 +460,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_nCursor_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSTrigger_m_nCursor_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSTrigger_m_nCursor_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nLastHeartbeatScriptTimeOfDay {
@@ -444,9 +471,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_nLastHeartbeatScriptTimeOfDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSTrigger_m_nLastHeartbeatScriptTimeOfDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSTrigger_m_nLastHeartbeatScriptTimeOfDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nLastHeartbeatScriptCalendarDay {
@@ -454,9 +482,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_nLastHeartbeatScriptCalendarDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSTrigger_m_nLastHeartbeatScriptCalendarDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSTrigger_m_nLastHeartbeatScriptCalendarDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nLoadScreenID {
@@ -464,9 +493,10 @@ public unsafe class CNWSTrigger : CNWSObject {
       NWNXLibPINVOKE.CNWSTrigger_m_nLoadScreenID_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSTrigger_m_nLoadScreenID_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSTrigger_m_nLoadScreenID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSTrigger(uint oidId) : this(NWNXLibPINVOKE.new_CNWSTrigger__SWIG_0(oidId), true) {
@@ -499,7 +529,7 @@ public unsafe class CNWSTrigger : CNWSObject {
   }
 
   public void ComputeBoundingBox(float* fXMin, float* fYMin, float* fXMax, float* fYMax) {
-    NWNXLibPINVOKE.CNWSTrigger_ComputeBoundingBox(swigCPtr, (global::System.IntPtr)fXMin, (global::System.IntPtr)fYMin, (global::System.IntPtr)fXMax, (global::System.IntPtr)fYMax);
+    NWNXLibPINVOKE.CNWSTrigger_ComputeBoundingBox(swigCPtr, fXMin, fYMin, fXMax, fYMax);
   }
 
   public override void EventHandler(uint nEventId, uint nCallerObjectId, void* pScript, uint nCalendarDay, uint nTimeOfDay) {
@@ -507,26 +537,26 @@ public unsafe class CNWSTrigger : CNWSObject {
   }
 
   public uint GetTargetArea() {
-    uint ret = NWNXLibPINVOKE.CNWSTrigger_GetTargetArea(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSTrigger_GetTargetArea(swigCPtr);
+    return retVal;
   }
 
   public int GetClosestPointWithinTrigger(Vector vCurrentPosition, Vector vTriggerPoint) {
-    int ret = NWNXLibPINVOKE.CNWSTrigger_GetClosestPointWithinTrigger(swigCPtr, Vector.getCPtr(vCurrentPosition), Vector.getCPtr(vTriggerPoint));
+    int retVal = NWNXLibPINVOKE.CNWSTrigger_GetClosestPointWithinTrigger(swigCPtr, Vector.getCPtr(vCurrentPosition), Vector.getCPtr(vTriggerPoint));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int CalculateNearestPoint(Vector vPosition, Vector vIntersectionPoint) {
-    int ret = NWNXLibPINVOKE.CNWSTrigger_CalculateNearestPoint(swigCPtr, Vector.getCPtr(vPosition), Vector.getCPtr(vIntersectionPoint));
+    int retVal = NWNXLibPINVOKE.CNWSTrigger_CalculateNearestPoint(swigCPtr, Vector.getCPtr(vPosition), Vector.getCPtr(vIntersectionPoint));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int InTrigger(Vector vPosition) {
-    int ret = NWNXLibPINVOKE.CNWSTrigger_InTrigger(swigCPtr, Vector.getCPtr(vPosition));
+    int retVal = NWNXLibPINVOKE.CNWSTrigger_InTrigger(swigCPtr, Vector.getCPtr(vPosition));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public override CExoString GetScriptName(int nScript) {
@@ -536,19 +566,19 @@ public unsafe class CNWSTrigger : CNWSObject {
   }
 
   public int LoadFromTemplate(CResRef cResRef) {
-    int ret = NWNXLibPINVOKE.CNWSTrigger_LoadFromTemplate(swigCPtr, CResRef.getCPtr(cResRef));
+    int retVal = NWNXLibPINVOKE.CNWSTrigger_LoadFromTemplate(swigCPtr, CResRef.getCPtr(cResRef));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int LoadTrigger(CResGFF pRes, CResStruct cTriggerStruct) {
-    int ret = NWNXLibPINVOKE.CNWSTrigger_LoadTrigger(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cTriggerStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSTrigger_LoadTrigger(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cTriggerStruct));
+    return retVal;
   }
 
   public int SaveTrigger(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSTrigger_SaveTrigger(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSTrigger_SaveTrigger(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public void RemoveFromArea() {
@@ -565,14 +595,14 @@ public unsafe class CNWSTrigger : CNWSObject {
   }
 
   public int LineSegmentIntersectTrigger(Vector vStartLine, Vector vEndLine) {
-    int ret = NWNXLibPINVOKE.CNWSTrigger_LineSegmentIntersectTrigger(swigCPtr, Vector.getCPtr(vStartLine), Vector.getCPtr(vEndLine));
+    int retVal = NWNXLibPINVOKE.CNWSTrigger_LineSegmentIntersectTrigger(swigCPtr, Vector.getCPtr(vStartLine), Vector.getCPtr(vEndLine));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetCanFireTrapOnObject(uint oidCreatureEntered, int bForceSet) {
-    int ret = NWNXLibPINVOKE.CNWSTrigger_GetCanFireTrapOnObject(swigCPtr, oidCreatureEntered, bForceSet);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSTrigger_GetCanFireTrapOnObject(swigCPtr, oidCreatureEntered, bForceSet);
+    return retVal;
   }
 
   public void OnEnterTrap(int bForceSet) {

@@ -117,9 +117,10 @@ public unsafe class CExoLinkedListInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoLinkedListInternal_m_nCount_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoLinkedListInternal_m_nCount_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoLinkedListInternal_m_nCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoLinkedListNode AddHead(void* Object) {

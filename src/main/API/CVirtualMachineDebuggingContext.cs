@@ -95,9 +95,10 @@ public unsafe class CVirtualMachineDebuggingContext : global::System.IDisposable
       NWNXLibPINVOKE.CVirtualMachineDebuggingContext_m_bStepInto_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineDebuggingContext_m_bStepInto_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggingContext_m_bStepInto_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bStepOver {
@@ -105,9 +106,10 @@ public unsafe class CVirtualMachineDebuggingContext : global::System.IDisposable
       NWNXLibPINVOKE.CVirtualMachineDebuggingContext_m_bStepOver_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineDebuggingContext_m_bStepOver_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggingContext_m_bStepOver_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bRunToLineNumber {
@@ -115,9 +117,10 @@ public unsafe class CVirtualMachineDebuggingContext : global::System.IDisposable
       NWNXLibPINVOKE.CVirtualMachineDebuggingContext_m_bRunToLineNumber_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineDebuggingContext_m_bRunToLineNumber_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggingContext_m_bRunToLineNumber_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nLineNumberToRunTo {
@@ -125,9 +128,10 @@ public unsafe class CVirtualMachineDebuggingContext : global::System.IDisposable
       NWNXLibPINVOKE.CVirtualMachineDebuggingContext_m_nLineNumberToRunTo_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineDebuggingContext_m_nLineNumberToRunTo_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggingContext_m_nLineNumberToRunTo_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CVirtualMachineDebuggerInstance m_pDebuggerInstance {

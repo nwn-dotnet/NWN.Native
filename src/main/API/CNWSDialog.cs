@@ -95,9 +95,10 @@ public unsafe class CNWSDialog : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialog_m_nEntries_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialog_m_nEntries_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialog_m_nEntries_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSDialogEntry m_pEntries {
@@ -116,9 +117,10 @@ public unsafe class CNWSDialog : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialog_m_nReplies_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialog_m_nReplies_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialog_m_nReplies_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSDialogReply m_pReplies {
@@ -137,9 +139,10 @@ public unsafe class CNWSDialog : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialog_m_nStartingEntries_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialog_m_nStartingEntries_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialog_m_nStartingEntries_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSDialogLinkEntry m_pStartingEntries {
@@ -191,9 +194,10 @@ public unsafe class CNWSDialog : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialog_m_bRepliesSent_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDialog_m_bRepliesSent_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDialog_m_bRepliesSent_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bEndOfDialog {
@@ -201,9 +205,10 @@ public unsafe class CNWSDialog : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialog_m_bEndOfDialog_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDialog_m_bEndOfDialog_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDialog_m_bEndOfDialog_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_currentEntryIndex {
@@ -211,9 +216,10 @@ public unsafe class CNWSDialog : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialog_m_currentEntryIndex_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialog_m_currentEntryIndex_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialog_m_currentEntryIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nReplyIndex {
@@ -221,9 +227,10 @@ public unsafe class CNWSDialog : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialog_m_nReplyIndex_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialog_m_nReplyIndex_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialog_m_nReplyIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_lastGender {
@@ -231,9 +238,10 @@ public unsafe class CNWSDialog : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialog_m_lastGender_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSDialog_m_lastGender_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSDialog_m_lastGender_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastObject {
@@ -241,9 +249,10 @@ public unsafe class CNWSDialog : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialog_m_oidLastObject_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialog_m_oidLastObject_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialog_m_oidLastObject_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidDialogOwner {
@@ -251,9 +260,10 @@ public unsafe class CNWSDialog : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialog_m_oidDialogOwner_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialog_m_oidDialogOwner_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialog_m_oidDialogOwner_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSDialogSpeaker m_pSpeakerMap {
@@ -272,9 +282,10 @@ public unsafe class CNWSDialog : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialog_m_nSpeakerMap_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialog_m_nSpeakerMap_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialog_m_nSpeakerMap_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bMultiPCDialogViewOnly {
@@ -282,9 +293,10 @@ public unsafe class CNWSDialog : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialog_m_bMultiPCDialogViewOnly_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDialog_m_bMultiPCDialogViewOnly_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDialog_m_bMultiPCDialogViewOnly_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bPrivate {
@@ -292,9 +304,10 @@ public unsafe class CNWSDialog : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialog_m_bPrivate_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDialog_m_bPrivate_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDialog_m_bPrivate_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastEntrySpeaker {
@@ -302,9 +315,10 @@ public unsafe class CNWSDialog : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialog_m_oidLastEntrySpeaker_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialog_m_oidLastEntrySpeaker_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialog_m_oidLastEntrySpeaker_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastReplySpeaker {
@@ -312,9 +326,10 @@ public unsafe class CNWSDialog : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialog_m_oidLastReplySpeaker_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialog_m_oidLastReplySpeaker_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialog_m_oidLastReplySpeaker_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bDisableCameraZoom {
@@ -322,9 +337,10 @@ public unsafe class CNWSDialog : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialog_m_bDisableCameraZoom_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSDialog_m_bDisableCameraZoom_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSDialog_m_bDisableCameraZoom_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSDialog() : this(NWNXLibPINVOKE.new_CNWSDialog(), true) {
@@ -339,8 +355,8 @@ public unsafe class CNWSDialog : global::System.IDisposable {
   }
 
   public int LoadDialog(CResGFF pRes, int bLoadReplies) {
-    int ret = NWNXLibPINVOKE.CNWSDialog_LoadDialog(swigCPtr, CResGFF.getCPtr(pRes), bLoadReplies);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSDialog_LoadDialog(swigCPtr, CResGFF.getCPtr(pRes), bLoadReplies);
+    return retVal;
   }
 
   public CNWSObject GetSpeaker(CNWSObject pNWSObjectOwner, CExoString sSpeaker) {
@@ -351,9 +367,9 @@ public unsafe class CNWSDialog : global::System.IDisposable {
   }
 
   public int CheckScript(CNWSObject pNWSObjectSpeaker, CResRef sActive, CExoArrayListScriptParam scriptParams) {
-    int ret = NWNXLibPINVOKE.CNWSDialog_CheckScript(swigCPtr, CNWSObject.getCPtr(pNWSObjectSpeaker), CResRef.getCPtr(sActive), CExoArrayListScriptParam.getCPtr(scriptParams));
+    int retVal = NWNXLibPINVOKE.CNWSDialog_CheckScript(swigCPtr, CNWSObject.getCPtr(pNWSObjectSpeaker), CResRef.getCPtr(sActive), CExoArrayListScriptParam.getCPtr(scriptParams));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void RunScript(CNWSObject pNWSObjectSpeaker, CResRef sScript, CExoArrayListScriptParam scriptParams) {
@@ -362,20 +378,20 @@ public unsafe class CNWSDialog : global::System.IDisposable {
   }
 
   public uint GetStartEntry(CNWSObject pNWSObjectOwner) {
-    uint ret = NWNXLibPINVOKE.CNWSDialog_GetStartEntry(swigCPtr, CNWSObject.getCPtr(pNWSObjectOwner));
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSDialog_GetStartEntry(swigCPtr, CNWSObject.getCPtr(pNWSObjectOwner));
+    return retVal;
   }
 
   public int GetStartEntryOneLiner(CNWSObject pNWSObjectOwner, CExoLocString sOneLiner, CResRef sSound, CResRef sScript, CExoArrayListScriptParam scriptParams) {
-    int ret = NWNXLibPINVOKE.CNWSDialog_GetStartEntryOneLiner(swigCPtr, CNWSObject.getCPtr(pNWSObjectOwner), CExoLocString.getCPtr(sOneLiner), CResRef.getCPtr(sSound), CResRef.getCPtr(sScript), CExoArrayListScriptParam.getCPtr(scriptParams));
+    int retVal = NWNXLibPINVOKE.CNWSDialog_GetStartEntryOneLiner(swigCPtr, CNWSObject.getCPtr(pNWSObjectOwner), CExoLocString.getCPtr(sOneLiner), CResRef.getCPtr(sSound), CResRef.getCPtr(sScript), CExoArrayListScriptParam.getCPtr(scriptParams));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public float SetDialogDelay(CNWSObject pNWSObjectOwner, CExoLocString sLocText, uint nMinSeconds, int bEnableNPCTiming) {
-    float ret = NWNXLibPINVOKE.CNWSDialog_SetDialogDelay(swigCPtr, CNWSObject.getCPtr(pNWSObjectOwner), CExoLocString.getCPtr(sLocText), nMinSeconds, bEnableNPCTiming);
+    float retVal = NWNXLibPINVOKE.CNWSDialog_SetDialogDelay(swigCPtr, CNWSObject.getCPtr(pNWSObjectOwner), CExoLocString.getCPtr(sLocText), nMinSeconds, bEnableNPCTiming);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void AddJournalEntry(CExoString szPlotID, uint nState, uint nPlayerId) {
@@ -384,32 +400,32 @@ public unsafe class CNWSDialog : global::System.IDisposable {
   }
 
   public int SendDialogEntry(CNWSObject pNWSObjectOwner, uint nPlayerIdGUIOnly, uint iEntry, int bPlayHelloSound) {
-    int ret = NWNXLibPINVOKE.CNWSDialog_SendDialogEntry(swigCPtr, CNWSObject.getCPtr(pNWSObjectOwner), nPlayerIdGUIOnly, iEntry, bPlayHelloSound);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSDialog_SendDialogEntry(swigCPtr, CNWSObject.getCPtr(pNWSObjectOwner), nPlayerIdGUIOnly, iEntry, bPlayHelloSound);
+    return retVal;
   }
 
   public int SendDialogReplies(CNWSObject pNWSObjectOwner, uint nPlayerIdGUIOnly) {
-    int ret = NWNXLibPINVOKE.CNWSDialog_SendDialogReplies(swigCPtr, CNWSObject.getCPtr(pNWSObjectOwner), nPlayerIdGUIOnly);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSDialog_SendDialogReplies(swigCPtr, CNWSObject.getCPtr(pNWSObjectOwner), nPlayerIdGUIOnly);
+    return retVal;
   }
 
   public int HandleReply(uint nPlayerID, CNWSObject pNWSObjectOwner, uint nReplyIndex, int bEscapeDialog, uint currentEntryIndex) {
-    int ret = NWNXLibPINVOKE.CNWSDialog_HandleReply(swigCPtr, nPlayerID, CNWSObject.getCPtr(pNWSObjectOwner), nReplyIndex, bEscapeDialog, currentEntryIndex);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSDialog_HandleReply(swigCPtr, nPlayerID, CNWSObject.getCPtr(pNWSObjectOwner), nReplyIndex, bEscapeDialog, currentEntryIndex);
+    return retVal;
   }
 
   public int RemovePlayer(uint oidRemove) {
-    int ret = NWNXLibPINVOKE.CNWSDialog_RemovePlayer(swigCPtr, oidRemove);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSDialog_RemovePlayer(swigCPtr, oidRemove);
+    return retVal;
   }
 
   public int IsPlayerInDialog(uint oidPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSDialog_IsPlayerInDialog(swigCPtr, oidPlayer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSDialog_IsPlayerInDialog(swigCPtr, oidPlayer);
+    return retVal;
   }
 
   public void LoadScriptParams(CResGFF pRes, CExoArrayListScriptParam paramsList, CResStruct pStructure, byte* szFieldID) {
-    NWNXLibPINVOKE.CNWSDialog_LoadScriptParams(swigCPtr, CResGFF.getCPtr(pRes), CExoArrayListScriptParam.getCPtr(paramsList), CResStruct.getCPtr(pStructure), (global::System.IntPtr)szFieldID);
+    NWNXLibPINVOKE.CNWSDialog_LoadScriptParams(swigCPtr, CResGFF.getCPtr(pRes), CExoArrayListScriptParam.getCPtr(paramsList), CResStruct.getCPtr(pStructure), szFieldID);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 

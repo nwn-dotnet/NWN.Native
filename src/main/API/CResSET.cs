@@ -85,9 +85,10 @@ public unsafe class CResSET : CRes {
       NWNXLibPINVOKE.CResSET_m_bLoaded_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CResSET_m_bLoaded_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CResSET_m_bLoaded_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nSETNormalSize {
@@ -95,9 +96,10 @@ public unsafe class CResSET : CRes {
       NWNXLibPINVOKE.CResSET_m_nSETNormalSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResSET_m_nSETNormalSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResSET_m_nSETNormalSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public SETSection m_pSection {
@@ -116,18 +118,19 @@ public unsafe class CResSET : CRes {
       NWNXLibPINVOKE.CResSET_m_nNumSections_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResSET_m_nNumSections_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResSET_m_nNumSections_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte* m_sNullTerminated {
     set {
-      NWNXLibPINVOKE.CResSET_m_sNullTerminated_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CResSET_m_sNullTerminated_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CResSET_m_sNullTerminated_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CResSET_m_sNullTerminated_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -136,52 +139,52 @@ public unsafe class CResSET : CRes {
   }
 
   public int CopySETData(byte* pSETData) {
-    int ret = NWNXLibPINVOKE.CResSET_CopySETData(swigCPtr, (global::System.IntPtr)pSETData);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CResSET_CopySETData(swigCPtr, pSETData);
+    return retVal;
   }
 
   public byte* GetSETDataPtr() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CResSET_GetSETDataPtr(swigCPtr);
-    return (byte*)retVal;
+    byte* retVal = NWNXLibPINVOKE.CResSET_GetSETDataPtr(swigCPtr);
+    return retVal;
   }
 
   public uint GetSETSize() {
-    uint ret = NWNXLibPINVOKE.CResSET_GetSETSize(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CResSET_GetSETSize(swigCPtr);
+    return retVal;
   }
 
   public int IsLoaded() {
-    int ret = NWNXLibPINVOKE.CResSET_IsLoaded(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CResSET_IsLoaded(swigCPtr);
+    return retVal;
   }
 
   public override int OnResourceFreed() {
-    int ret = NWNXLibPINVOKE.CResSET_OnResourceFreed(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CResSET_OnResourceFreed(swigCPtr);
+    return retVal;
   }
 
   public override int OnResourceServiced() {
-    int ret = NWNXLibPINVOKE.CResSET_OnResourceServiced(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CResSET_OnResourceServiced(swigCPtr);
+    return retVal;
   }
 
   public void GetSectionEntryValue(byte* szSection, byte* szEntry, byte* szValue) {
-    NWNXLibPINVOKE.CResSET_GetSectionEntryValue(swigCPtr, (global::System.IntPtr)szSection, (global::System.IntPtr)szEntry, (global::System.IntPtr)szValue);
+    NWNXLibPINVOKE.CResSET_GetSectionEntryValue(swigCPtr, szSection, szEntry, szValue);
   }
 
   public int CreateSectionTable() {
-    int ret = NWNXLibPINVOKE.CResSET_CreateSectionTable(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CResSET_CreateSectionTable(swigCPtr);
+    return retVal;
   }
 
   public byte* GetNextLine(uint nOffsetStart, uint* pOffsetEnd) {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CResSET_GetNextLine(swigCPtr, nOffsetStart, (global::System.IntPtr)pOffsetEnd);
-    return (byte*)retVal;
+    byte* retVal = NWNXLibPINVOKE.CResSET_GetNextLine(swigCPtr, nOffsetStart, pOffsetEnd);
+    return retVal;
   }
 
   public byte* SkipWhiteSpace(byte* pLine) {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CResSET_SkipWhiteSpace(swigCPtr, (global::System.IntPtr)pLine);
-    return (byte*)retVal;
+    byte* retVal = NWNXLibPINVOKE.CResSET_SkipWhiteSpace(swigCPtr, pLine);
+    return retVal;
   }
 
 }

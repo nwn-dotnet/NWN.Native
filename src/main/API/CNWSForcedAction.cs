@@ -95,9 +95,10 @@ public unsafe class CNWSForcedAction : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSForcedAction_m_nActionId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSForcedAction_m_nActionId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSForcedAction_m_nActionId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nGroupId {
@@ -105,9 +106,10 @@ public unsafe class CNWSForcedAction : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSForcedAction_m_nGroupId_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSForcedAction_m_nGroupId_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSForcedAction_m_nGroupId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidArea {
@@ -115,9 +117,10 @@ public unsafe class CNWSForcedAction : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSForcedAction_m_oidArea_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSForcedAction_m_oidArea_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSForcedAction_m_oidArea_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public Vector m_vTargetPosition {
@@ -136,22 +139,23 @@ public unsafe class CNWSForcedAction : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSForcedAction_m_oidTarget_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSForcedAction_m_oidTarget_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSForcedAction_m_oidTarget_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSForcedAction() : this(NWNXLibPINVOKE.new_CNWSForcedAction(), true) {
   }
 
   public int SaveForcedAction(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSForcedAction_SaveForcedAction(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSForcedAction_SaveForcedAction(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadForcedAction(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSForcedAction_LoadForcedAction(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSForcedAction_LoadForcedAction(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
 }

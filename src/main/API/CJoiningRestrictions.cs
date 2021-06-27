@@ -95,9 +95,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowLocal_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowLocal_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowLocal_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowServer {
@@ -105,9 +106,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowServer_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowServer_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowServer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowVault {
@@ -115,9 +117,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowVault_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowVault_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowVault_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bFixedParties {
@@ -125,9 +128,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bFixedParties_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bFixedParties_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bFixedParties_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowFighter {
@@ -135,9 +139,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowFighter_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowFighter_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowFighter_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowBarbarian {
@@ -145,9 +150,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowBarbarian_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowBarbarian_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowBarbarian_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowRanger {
@@ -155,9 +161,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowRanger_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowRanger_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowRanger_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowPaladin {
@@ -165,9 +172,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowPaladin_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowPaladin_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowPaladin_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowWizard {
@@ -175,9 +183,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowWizard_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowWizard_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowWizard_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowSorcerer {
@@ -185,9 +194,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowSorcerer_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowSorcerer_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowSorcerer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowCleric {
@@ -195,9 +205,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowCleric_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowCleric_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowCleric_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowDruid {
@@ -205,9 +216,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowDruid_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowDruid_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowDruid_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowRogue {
@@ -215,9 +227,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowRogue_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowRogue_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowRogue_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowBard {
@@ -225,9 +238,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowBard_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowBard_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowBard_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowMonk {
@@ -235,9 +249,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowMonk_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowMonk_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowMonk_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowHuman {
@@ -245,9 +260,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowHuman_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowHuman_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowHuman_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowElf {
@@ -255,9 +271,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowElf_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowElf_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowElf_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowDwarf {
@@ -265,9 +282,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowDwarf_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowDwarf_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowDwarf_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowGnome {
@@ -275,9 +293,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowGnome_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowGnome_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowGnome_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowHalfling {
@@ -285,9 +304,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowHalfling_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowHalfling_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowHalfling_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowHalfOrc {
@@ -295,9 +315,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowHalfOrc_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowHalfOrc_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowHalfOrc_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowHalfElf {
@@ -305,9 +326,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowHalfElf_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowHalfElf_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowHalfElf_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nMaxPlayers {
@@ -315,9 +337,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_nMaxPlayers_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_nMaxPlayers_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_nMaxPlayers_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nMaxParties {
@@ -325,9 +348,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_nMaxParties_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_nMaxParties_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_nMaxParties_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nMaxItemPoints {
@@ -335,9 +359,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_nMaxItemPoints_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_nMaxItemPoints_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_nMaxItemPoints_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nMaxStatTotal {
@@ -345,9 +370,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_nMaxStatTotal_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_nMaxStatTotal_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_nMaxStatTotal_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nMinLevel {
@@ -355,9 +381,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_nMinLevel_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_nMinLevel_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_nMinLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nMaxLevel {
@@ -365,9 +392,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_nMaxLevel_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_nMaxLevel_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_nMaxLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bAllowLocalVaultChars {
@@ -375,9 +403,10 @@ public unsafe class CJoiningRestrictions : global::System.IDisposable {
       NWNXLibPINVOKE.CJoiningRestrictions_bAllowLocalVaultChars_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CJoiningRestrictions_bAllowLocalVaultChars_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CJoiningRestrictions_bAllowLocalVaultChars_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CJoiningRestrictions() : this(NWNXLibPINVOKE.new_CJoiningRestrictions(), true) {

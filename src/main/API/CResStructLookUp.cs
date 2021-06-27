@@ -95,9 +95,10 @@ public unsafe class CResStructLookUp : global::System.IDisposable {
       NWNXLibPINVOKE.CResStructLookUp_m_nType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResStructLookUp_m_nType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResStructLookUp_m_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nSize {
@@ -105,9 +106,10 @@ public unsafe class CResStructLookUp : global::System.IDisposable {
       NWNXLibPINVOKE.CResStructLookUp_m_nSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResStructLookUp_m_nSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResStructLookUp_m_nSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nOffset {
@@ -115,9 +117,10 @@ public unsafe class CResStructLookUp : global::System.IDisposable {
       NWNXLibPINVOKE.CResStructLookUp_m_nOffset_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResStructLookUp_m_nOffset_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResStructLookUp_m_nOffset_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResStructLookUp() : this(NWNXLibPINVOKE.new_CResStructLookUp(), true) {

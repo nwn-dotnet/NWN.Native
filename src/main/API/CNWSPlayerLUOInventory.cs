@@ -132,9 +132,10 @@ public unsafe class CNWSPlayerLUOInventory : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_oidContainer_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_oidContainer_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_oidContainer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoLinkedListCNWSPlayerLUOInventoryItem m_pOldContainerItems {
@@ -153,9 +154,10 @@ public unsafe class CNWSPlayerLUOInventory : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nOldContainerNumPages_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nOldContainerNumPages_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nOldContainerNumPages_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoLinkedListCNWSPlayerLUOInventoryItem m_pOldBarterItems {
@@ -185,9 +187,10 @@ public unsafe class CNWSPlayerLUOInventory : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nOldStoreNumPages_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nOldStoreNumPages_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nOldStoreNumPages_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nOldStoreCurrentPanel {
@@ -195,9 +198,10 @@ public unsafe class CNWSPlayerLUOInventory : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nOldStoreCurrentPanel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nOldStoreCurrentPanel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerLUOInventory_m_nOldStoreCurrentPanel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSPlayerLUOInventory() : this(NWNXLibPINVOKE.new_CNWSPlayerLUOInventory(), true) {
@@ -238,8 +242,8 @@ public unsafe class CNWSPlayerLUOInventory : global::System.IDisposable {
   }
 
   public uint ItemListGetItemObjectID(CExoLinkedListNode pListPosition, byte nItemList) {
-    uint ret = NWNXLibPINVOKE.CNWSPlayerLUOInventory_ItemListGetItemObjectID(swigCPtr, CExoLinkedListNode.getCPtr(pListPosition), nItemList);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSPlayerLUOInventory_ItemListGetItemObjectID(swigCPtr, CExoLinkedListNode.getCPtr(pListPosition), nItemList);
+    return retVal;
   }
 
   public CNWSPlayerLUOInventoryItem ItemListGetUpdateItem(CExoLinkedListNode pListPosition, byte nItemList) {
@@ -265,8 +269,8 @@ public unsafe class CNWSPlayerLUOInventory : global::System.IDisposable {
   }
 
   public uint ItemListGetNumber(byte nItemList) {
-    uint ret = NWNXLibPINVOKE.CNWSPlayerLUOInventory_ItemListGetNumber(swigCPtr, nItemList);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSPlayerLUOInventory_ItemListGetNumber(swigCPtr, nItemList);
+    return retVal;
   }
 
 }

@@ -95,9 +95,10 @@ public unsafe class CVirtualMachineCmdImplementer : global::System.IDisposable {
       NWNXLibPINVOKE.CVirtualMachineCmdImplementer_m_bValidObjectRunScript_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_m_bValidObjectRunScript_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_m_bValidObjectRunScript_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidObjectRunScript {
@@ -105,9 +106,10 @@ public unsafe class CVirtualMachineCmdImplementer : global::System.IDisposable {
       NWNXLibPINVOKE.CVirtualMachineCmdImplementer_m_oidObjectRunScript_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_m_oidObjectRunScript_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_m_oidObjectRunScript_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public virtual void InitializeCommands() {
@@ -115,8 +117,8 @@ public unsafe class CVirtualMachineCmdImplementer : global::System.IDisposable {
   }
 
   public virtual int ExecuteCommand(int nCommandId, int nParameters) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommand(swigCPtr, nCommandId, nParameters);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommand(swigCPtr, nCommandId, nParameters);
+    return retVal;
   }
 
   public virtual void RunScriptCallback(CExoString sFileName) {
@@ -139,8 +141,8 @@ public unsafe class CVirtualMachineCmdImplementer : global::System.IDisposable {
   }
 
   public virtual int GetEqualGameDefinedStructure(int nUserDefinedType, void* pStructure1, void* pStructure2) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_GetEqualGameDefinedStructure(swigCPtr, nUserDefinedType, (global::System.IntPtr)pStructure1, (global::System.IntPtr)pStructure2);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_GetEqualGameDefinedStructure(swigCPtr, nUserDefinedType, (global::System.IntPtr)pStructure1, (global::System.IntPtr)pStructure2);
+    return retVal;
   }
 
   public virtual void* CopyGameDefinedStructure(int nUserDefinedType, void* pStructureSrc) {
@@ -149,13 +151,13 @@ public unsafe class CVirtualMachineCmdImplementer : global::System.IDisposable {
   }
 
   public virtual int SaveGameDefinedStructure(int nEngineStructure, void* pStructure, CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_SaveGameDefinedStructure(swigCPtr, nEngineStructure, (global::System.IntPtr)pStructure, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_SaveGameDefinedStructure(swigCPtr, nEngineStructure, (global::System.IntPtr)pStructure, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public virtual int LoadGameDefinedStructure(int nEngineStructure, void** pStructure, CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_LoadGameDefinedStructure(swigCPtr, nEngineStructure, (global::System.IntPtr)pStructure, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_LoadGameDefinedStructure(swigCPtr, nEngineStructure, (global::System.IntPtr)pStructure, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public virtual CExoString GetGameDefinedStructureName(int nEngineStructure) {
@@ -169,16 +171,16 @@ public unsafe class CVirtualMachineCmdImplementer : global::System.IDisposable {
   }
 
   public virtual void GetEngineStructureWatchView(int nEngineStructure, void* pEngineStructure, int* nEntries, void** m_ppNames, void** m_ppValues) {
-    NWNXLibPINVOKE.CVirtualMachineCmdImplementer_GetEngineStructureWatchView(swigCPtr, nEngineStructure, (global::System.IntPtr)pEngineStructure, (global::System.IntPtr)nEntries, (global::System.IntPtr)m_ppNames, (global::System.IntPtr)m_ppValues);
+    NWNXLibPINVOKE.CVirtualMachineCmdImplementer_GetEngineStructureWatchView(swigCPtr, nEngineStructure, (global::System.IntPtr)pEngineStructure, nEntries, (global::System.IntPtr)m_ppNames, (global::System.IntPtr)m_ppValues);
   }
 
   public virtual void GetObjectWatchView(uint oidObject, int* nEntries, void** m_ppNames, void** m_ppValues) {
-    NWNXLibPINVOKE.CVirtualMachineCmdImplementer_GetObjectWatchView(swigCPtr, oidObject, (global::System.IntPtr)nEntries, (global::System.IntPtr)m_ppNames, (global::System.IntPtr)m_ppValues);
+    NWNXLibPINVOKE.CVirtualMachineCmdImplementer_GetObjectWatchView(swigCPtr, oidObject, nEntries, (global::System.IntPtr)m_ppNames, (global::System.IntPtr)m_ppValues);
   }
 
   public virtual int DebugGUIStart() {
-    int ret = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_DebugGUIStart(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_DebugGUIStart(swigCPtr);
+    return retVal;
   }
 
   public virtual void DebugGUIStop() {
@@ -186,12 +188,12 @@ public unsafe class CVirtualMachineCmdImplementer : global::System.IDisposable {
   }
 
   public virtual void DebugGUISendMessageTo(byte* pMsg, int nSize) {
-    NWNXLibPINVOKE.CVirtualMachineCmdImplementer_DebugGUISendMessageTo(swigCPtr, (global::System.IntPtr)pMsg, nSize);
+    NWNXLibPINVOKE.CVirtualMachineCmdImplementer_DebugGUISendMessageTo(swigCPtr, pMsg, nSize);
   }
 
   public virtual int DebugGUIGetMessageFrom(byte** pMsg, int* nSize) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_DebugGUIGetMessageFrom(swigCPtr, (global::System.IntPtr)pMsg, (global::System.IntPtr)nSize);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_DebugGUIGetMessageFrom(swigCPtr, (global::System.IntPtr)pMsg, nSize);
+    return retVal;
   }
 
   public virtual void DebugGUIUpdate() {

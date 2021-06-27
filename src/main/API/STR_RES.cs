@@ -117,9 +117,10 @@ public unsafe class STR_RES : global::System.IDisposable {
       NWNXLibPINVOKE.STR_RES_fSoundLength_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.STR_RES_fSoundLength_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.STR_RES_fSoundLength_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public STR_RES() : this(NWNXLibPINVOKE.new_STR_RES(), true) {

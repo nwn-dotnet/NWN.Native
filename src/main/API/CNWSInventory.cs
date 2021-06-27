@@ -107,13 +107,13 @@ public unsafe class CNWSInventory : global::System.IDisposable {
   }
 
   public int GetItemInInventory(CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CNWSInventory_GetItemInInventory(swigCPtr, CNWSItem.getCPtr(pItem));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSInventory_GetItemInInventory(swigCPtr, CNWSItem.getCPtr(pItem));
+    return retVal;
   }
 
   public uint GetSlotFromItem(CNWSItem pItem) {
-    uint ret = NWNXLibPINVOKE.CNWSInventory_GetSlotFromItem(swigCPtr, CNWSItem.getCPtr(pItem));
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSInventory_GetSlotFromItem(swigCPtr, CNWSItem.getCPtr(pItem));
+    return retVal;
   }
 
   public CNWSItem GetItemInSlot(uint nSlot) {
@@ -127,13 +127,13 @@ public unsafe class CNWSInventory : global::System.IDisposable {
   }
 
   public int RemoveItem(CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CNWSInventory_RemoveItem(swigCPtr, CNWSItem.getCPtr(pItem));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSInventory_RemoveItem(swigCPtr, CNWSItem.getCPtr(pItem));
+    return retVal;
   }
 
   public int GetArraySlotFromSlotFlag(uint nSlot) {
-    int ret = NWNXLibPINVOKE.CNWSInventory_GetArraySlotFromSlotFlag(swigCPtr, nSlot);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSInventory_GetArraySlotFromSlotFlag(swigCPtr, nSlot);
+    return retVal;
   }
 
 }

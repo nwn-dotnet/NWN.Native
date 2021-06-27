@@ -106,9 +106,10 @@ public unsafe class NWMODULEENTRYINFO : global::System.IDisposable {
       NWNXLibPINVOKE.NWMODULEENTRYINFO_nX_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.NWMODULEENTRYINFO_nX_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.NWMODULEENTRYINFO_nX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float nY {
@@ -116,9 +117,10 @@ public unsafe class NWMODULEENTRYINFO : global::System.IDisposable {
       NWNXLibPINVOKE.NWMODULEENTRYINFO_nY_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.NWMODULEENTRYINFO_nY_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.NWMODULEENTRYINFO_nY_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float nZ {
@@ -126,9 +128,10 @@ public unsafe class NWMODULEENTRYINFO : global::System.IDisposable {
       NWNXLibPINVOKE.NWMODULEENTRYINFO_nZ_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.NWMODULEENTRYINFO_nZ_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.NWMODULEENTRYINFO_nZ_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float fDirX {
@@ -136,9 +139,10 @@ public unsafe class NWMODULEENTRYINFO : global::System.IDisposable {
       NWNXLibPINVOKE.NWMODULEENTRYINFO_fDirX_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.NWMODULEENTRYINFO_fDirX_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.NWMODULEENTRYINFO_fDirX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float fDirY {
@@ -146,9 +150,10 @@ public unsafe class NWMODULEENTRYINFO : global::System.IDisposable {
       NWNXLibPINVOKE.NWMODULEENTRYINFO_fDirY_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.NWMODULEENTRYINFO_fDirY_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.NWMODULEENTRYINFO_fDirY_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NWMODULEENTRYINFO() : this(NWNXLibPINVOKE.new_NWMODULEENTRYINFO(), true) {

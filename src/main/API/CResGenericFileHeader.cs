@@ -95,9 +95,10 @@ public unsafe class CResGenericFileHeader : global::System.IDisposable {
       NWNXLibPINVOKE.CResGenericFileHeader_m_nFileType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGenericFileHeader_m_nFileType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGenericFileHeader_m_nFileType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nVersion {
@@ -105,9 +106,10 @@ public unsafe class CResGenericFileHeader : global::System.IDisposable {
       NWNXLibPINVOKE.CResGenericFileHeader_m_nVersion_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGenericFileHeader_m_nVersion_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGenericFileHeader_m_nVersion_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResGenericFileHeader() : this(NWNXLibPINVOKE.new_CResGenericFileHeader(), true) {

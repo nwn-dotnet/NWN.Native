@@ -90,9 +90,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nLastUsedActiveProperties_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSItem_m_nLastUsedActiveProperties_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSItem_m_nLastUsedActiveProperties_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<byte> m_pLastUsedActivePropertyUsesLeft {
@@ -113,9 +114,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nArmorValue_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSItem_m_nArmorValue_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSItem_m_nArmorValue_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bIdentified {
@@ -123,9 +125,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_bIdentified_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSItem_m_bIdentified_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSItem_m_bIdentified_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nOpenCount {
@@ -133,9 +136,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nOpenCount_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSItem_m_nOpenCount_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSItem_m_nOpenCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCNWItemProperty m_lstActiveProperties {
@@ -165,9 +169,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nNumCharges_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSItem_m_nNumCharges_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSItem_m_nNumCharges_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nBaseUnitCost {
@@ -175,9 +180,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nBaseUnitCost_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSItem_m_nBaseUnitCost_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSItem_m_nBaseUnitCost_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nUnidentifiedCost {
@@ -185,9 +191,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nUnidentifiedCost_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSItem_m_nUnidentifiedCost_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSItem_m_nUnidentifiedCost_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nAdditionalCost {
@@ -195,9 +202,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nAdditionalCost_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSItem_m_nAdditionalCost_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSItem_m_nAdditionalCost_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bRecalculateCost {
@@ -205,9 +213,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_bRecalculateCost_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSItem_m_bRecalculateCost_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSItem_m_bRecalculateCost_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<byte> m_nModelPart {
@@ -254,9 +263,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_oidPossessor_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSItem_m_oidPossessor_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSItem_m_oidPossessor_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CItemRepository m_pItemRepository {
@@ -275,9 +285,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nRepositoryPositionX_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSItem_m_nRepositoryPositionX_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSItem_m_nRepositoryPositionX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nRepositoryPositionY {
@@ -285,9 +296,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nRepositoryPositionY_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSItem_m_nRepositoryPositionY_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSItem_m_nRepositoryPositionY_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoLocString m_sIdentifiedDescription {
@@ -361,9 +373,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nUpdateDisplayNameSeq_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSItem_m_nUpdateDisplayNameSeq_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSItem_m_nUpdateDisplayNameSeq_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bInfinite {
@@ -371,9 +384,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_bInfinite_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSItem_m_bInfinite_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSItem_m_bInfinite_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bDroppable {
@@ -381,9 +395,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_bDroppable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSItem_m_bDroppable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSItem_m_bDroppable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bPickPocketable {
@@ -391,9 +406,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_bPickPocketable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSItem_m_bPickPocketable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSItem_m_bPickPocketable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bCursed {
@@ -401,9 +417,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_bCursed_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSItem_m_bCursed_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSItem_m_bCursed_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nStackSize {
@@ -411,9 +428,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nStackSize_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSItem_m_nStackSize_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSItem_m_nStackSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bStolen {
@@ -421,9 +439,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_bStolen_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSItem_m_bStolen_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSItem_m_bStolen_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nWeight {
@@ -431,9 +450,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nWeight_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSItem_m_nWeight_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSItem_m_nWeight_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nRepositoryArrayIndex {
@@ -441,9 +461,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nRepositoryArrayIndex_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSItem_m_nRepositoryArrayIndex_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSItem_m_nRepositoryArrayIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nVisualEffect {
@@ -451,9 +472,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nVisualEffect_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSItem_m_nVisualEffect_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSItem_m_nVisualEffect_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidBarterOwner {
@@ -461,9 +483,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_oidBarterOwner_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSItem_m_oidBarterOwner_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSItem_m_oidBarterOwner_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bHidden {
@@ -471,9 +494,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_bHidden_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSItem_m_bHidden_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSItem_m_bHidden_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nUpdateHiddenSeq {
@@ -481,9 +505,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nUpdateHiddenSeq_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSItem_m_nUpdateHiddenSeq_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSItem_m_nUpdateHiddenSeq_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSItem(uint oidID) : this(NWNXLibPINVOKE.new_CNWSItem__SWIG_0(oidID), true) {
@@ -519,25 +544,25 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   }
 
   public int LoadFromTemplate(CResRef cResRef, CExoString pTag) {
-    int ret = NWNXLibPINVOKE.CNWSItem_LoadFromTemplate__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef), CExoString.getCPtr(pTag));
+    int retVal = NWNXLibPINVOKE.CNWSItem_LoadFromTemplate__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef), CExoString.getCPtr(pTag));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int LoadFromTemplate(CResRef cResRef) {
-    int ret = NWNXLibPINVOKE.CNWSItem_LoadFromTemplate__SWIG_1(swigCPtr, CResRef.getCPtr(cResRef));
+    int retVal = NWNXLibPINVOKE.CNWSItem_LoadFromTemplate__SWIG_1(swigCPtr, CResRef.getCPtr(cResRef));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int LoadItem(CResGFF pRes, CResStruct cItemStruct, int bIsInsideAContainer) {
-    int ret = NWNXLibPINVOKE.CNWSItem_LoadItem__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cItemStruct), bIsInsideAContainer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_LoadItem__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cItemStruct), bIsInsideAContainer);
+    return retVal;
   }
 
   public int LoadItem(CResGFF pRes, CResStruct cItemStruct) {
-    int ret = NWNXLibPINVOKE.CNWSItem_LoadItem__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cItemStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_LoadItem__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cItemStruct));
+    return retVal;
   }
 
   public void ComputeWeight() {
@@ -545,58 +570,58 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   }
 
   public int SaveItem(CResGFF pRes, CResStruct pStruct, int bExportingChar) {
-    int ret = NWNXLibPINVOKE.CNWSItem_SaveItem__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bExportingChar);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_SaveItem__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bExportingChar);
+    return retVal;
   }
 
   public int SaveItem(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSItem_SaveItem__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_SaveItem__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int AcquireItem(void** pItem, uint oidPossessor, byte x, byte y, int bDisplayFeedback) {
-    int ret = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_0(swigCPtr, (global::System.IntPtr)pItem, oidPossessor, x, y, bDisplayFeedback);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_0(swigCPtr, (global::System.IntPtr)pItem, oidPossessor, x, y, bDisplayFeedback);
+    return retVal;
   }
 
   public int AcquireItem(void** pItem, uint oidPossessor, byte x, byte y) {
-    int ret = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_1(swigCPtr, (global::System.IntPtr)pItem, oidPossessor, x, y);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_1(swigCPtr, (global::System.IntPtr)pItem, oidPossessor, x, y);
+    return retVal;
   }
 
   public int AcquireItem(void** pItem, uint oidPossessor, byte x) {
-    int ret = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_2(swigCPtr, (global::System.IntPtr)pItem, oidPossessor, x);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_2(swigCPtr, (global::System.IntPtr)pItem, oidPossessor, x);
+    return retVal;
   }
 
   public int AcquireItem(void** pItem, uint oidPossessor) {
-    int ret = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_3(swigCPtr, (global::System.IntPtr)pItem, oidPossessor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_3(swigCPtr, (global::System.IntPtr)pItem, oidPossessor);
+    return retVal;
   }
 
   public int AcquireItem(void** pItem) {
-    int ret = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_4(swigCPtr, (global::System.IntPtr)pItem);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_AcquireItem__SWIG_4(swigCPtr, (global::System.IntPtr)pItem);
+    return retVal;
   }
 
   public int SaveContainerItems(CResGFF pRes, CResStruct pStruct, int bExportingChar) {
-    int ret = NWNXLibPINVOKE.CNWSItem_SaveContainerItems(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bExportingChar);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_SaveContainerItems(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bExportingChar);
+    return retVal;
   }
 
   public int SaveItemProperties(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSItem_SaveItemProperties(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_SaveItemProperties(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadDataFromGff(CResGFF pRes, CResStruct pCreatureStruct, int bIsInsideAContainer) {
-    int ret = NWNXLibPINVOKE.CNWSItem_LoadDataFromGff__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pCreatureStruct), bIsInsideAContainer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_LoadDataFromGff__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pCreatureStruct), bIsInsideAContainer);
+    return retVal;
   }
 
   public int LoadDataFromGff(CResGFF pRes, CResStruct pCreatureStruct) {
-    int ret = NWNXLibPINVOKE.CNWSItem_LoadDataFromGff__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pCreatureStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_LoadDataFromGff__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pCreatureStruct));
+    return retVal;
   }
 
   public void RemoveFromArea() {
@@ -624,13 +649,13 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   }
 
   public int CopyItem(CNWSItem pSourceItem, int bCopyVars) {
-    int ret = NWNXLibPINVOKE.CNWSItem_CopyItem__SWIG_0(swigCPtr, CNWSItem.getCPtr(pSourceItem), bCopyVars);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_CopyItem__SWIG_0(swigCPtr, CNWSItem.getCPtr(pSourceItem), bCopyVars);
+    return retVal;
   }
 
   public int CopyItem(CNWSItem pSourceItem) {
-    int ret = NWNXLibPINVOKE.CNWSItem_CopyItem__SWIG_1(swigCPtr, CNWSItem.getCPtr(pSourceItem));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_CopyItem__SWIG_1(swigCPtr, CNWSItem.getCPtr(pSourceItem));
+    return retVal;
   }
 
   public void ReadContainerItemsFromGff(CResGFF pRes, CResStruct pGffItemStruct) {
@@ -638,28 +663,28 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   }
 
   public uint GetCost(int bIncludeStackSize, int bIdentifiedCost, int bUseILRStackSize, int bIgnorePlotFlag) {
-    uint ret = NWNXLibPINVOKE.CNWSItem_GetCost__SWIG_0(swigCPtr, bIncludeStackSize, bIdentifiedCost, bUseILRStackSize, bIgnorePlotFlag);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSItem_GetCost__SWIG_0(swigCPtr, bIncludeStackSize, bIdentifiedCost, bUseILRStackSize, bIgnorePlotFlag);
+    return retVal;
   }
 
   public uint GetCost(int bIncludeStackSize, int bIdentifiedCost, int bUseILRStackSize) {
-    uint ret = NWNXLibPINVOKE.CNWSItem_GetCost__SWIG_1(swigCPtr, bIncludeStackSize, bIdentifiedCost, bUseILRStackSize);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSItem_GetCost__SWIG_1(swigCPtr, bIncludeStackSize, bIdentifiedCost, bUseILRStackSize);
+    return retVal;
   }
 
   public uint GetCost(int bIncludeStackSize, int bIdentifiedCost) {
-    uint ret = NWNXLibPINVOKE.CNWSItem_GetCost__SWIG_2(swigCPtr, bIncludeStackSize, bIdentifiedCost);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSItem_GetCost__SWIG_2(swigCPtr, bIncludeStackSize, bIdentifiedCost);
+    return retVal;
   }
 
   public uint GetCost(int bIncludeStackSize) {
-    uint ret = NWNXLibPINVOKE.CNWSItem_GetCost__SWIG_3(swigCPtr, bIncludeStackSize);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSItem_GetCost__SWIG_3(swigCPtr, bIncludeStackSize);
+    return retVal;
   }
 
   public uint GetCost() {
-    uint ret = NWNXLibPINVOKE.CNWSItem_GetCost__SWIG_4(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSItem_GetCost__SWIG_4(swigCPtr);
+    return retVal;
   }
 
   public void SetIdentified(int bIdentified) {
@@ -667,18 +692,18 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   }
 
   public int ComputeArmorClass() {
-    int ret = NWNXLibPINVOKE.CNWSItem_ComputeArmorClass(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_ComputeArmorClass(swigCPtr);
+    return retVal;
   }
 
   public ushort GetDamageFlags() {
-    ushort ret = NWNXLibPINVOKE.CNWSItem_GetDamageFlags(swigCPtr);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWSItem_GetDamageFlags(swigCPtr);
+    return retVal;
   }
 
   public int MergeItem(CNWSItem pItemToMerge) {
-    int ret = NWNXLibPINVOKE.CNWSItem_MergeItem(swigCPtr, CNWSItem.getCPtr(pItemToMerge));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_MergeItem(swigCPtr, CNWSItem.getCPtr(pItemToMerge));
+    return retVal;
   }
 
   public CNWSItem SplitItem(int nNumberToSplitOff) {
@@ -696,8 +721,8 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   }
 
   public ushort GetUsedActivePropertyUsesLeft(byte nProperty) {
-    ushort ret = NWNXLibPINVOKE.CNWSItem_GetUsedActivePropertyUsesLeft(swigCPtr, nProperty);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWSItem_GetUsedActivePropertyUsesLeft(swigCPtr, nProperty);
+    return retVal;
   }
 
   public void UpdateUsedActiveProperties(int bSendFullList) {
@@ -717,8 +742,8 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   }
 
   public int ActiveProperty(ushort nPropertyName) {
-    int ret = NWNXLibPINVOKE.CNWSItem_ActiveProperty(swigCPtr, nPropertyName);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_ActiveProperty(swigCPtr, nPropertyName);
+    return retVal;
   }
 
   public void AddActiveProperty(CNWItemProperty cNewProperty) {
@@ -727,8 +752,8 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   }
 
   public int RemoveActiveProperty(int nIndex) {
-    int ret = NWNXLibPINVOKE.CNWSItem_RemoveActiveProperty(swigCPtr, nIndex);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_RemoveActiveProperty(swigCPtr, nIndex);
+    return retVal;
   }
 
   public void AddPassiveProperty(CNWItemProperty cNewProperty) {
@@ -737,8 +762,8 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   }
 
   public int RemovePassiveProperty(int nIndex) {
-    int ret = NWNXLibPINVOKE.CNWSItem_RemovePassiveProperty(swigCPtr, nIndex);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_RemovePassiveProperty(swigCPtr, nIndex);
+    return retVal;
   }
 
   public CNWItemProperty GetActiveProperty(int nIndex) {
@@ -754,23 +779,23 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   }
 
   public int GetPropertyByTypeExists(ushort nPropertyName, ushort nSubType) {
-    int ret = NWNXLibPINVOKE.CNWSItem_GetPropertyByTypeExists__SWIG_0(swigCPtr, nPropertyName, nSubType);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_GetPropertyByTypeExists__SWIG_0(swigCPtr, nPropertyName, nSubType);
+    return retVal;
   }
 
   public int GetPropertyByTypeExists(ushort nPropertyName) {
-    int ret = NWNXLibPINVOKE.CNWSItem_GetPropertyByTypeExists__SWIG_1(swigCPtr, nPropertyName);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_GetPropertyByTypeExists__SWIG_1(swigCPtr, nPropertyName);
+    return retVal;
   }
 
   public int GetPropertyByType(void** ppcItemProperty, ushort nPropertyName, ushort nSubType) {
-    int ret = NWNXLibPINVOKE.CNWSItem_GetPropertyByType__SWIG_0(swigCPtr, (global::System.IntPtr)ppcItemProperty, nPropertyName, nSubType);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_GetPropertyByType__SWIG_0(swigCPtr, (global::System.IntPtr)ppcItemProperty, nPropertyName, nSubType);
+    return retVal;
   }
 
   public int GetPropertyByType(void** ppcItemProperty, ushort nPropertyName) {
-    int ret = NWNXLibPINVOKE.CNWSItem_GetPropertyByType__SWIG_1(swigCPtr, (global::System.IntPtr)ppcItemProperty, nPropertyName);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_GetPropertyByType__SWIG_1(swigCPtr, (global::System.IntPtr)ppcItemProperty, nPropertyName);
+    return retVal;
   }
 
   public void ApplyItemProperties(CNWSCreature pCreature, uint nInventorySlot, int bLoadingGame) {
@@ -782,18 +807,18 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   }
 
   public int GetWeight() {
-    int ret = NWNXLibPINVOKE.CNWSItem_GetWeight(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_GetWeight(swigCPtr);
+    return retVal;
   }
 
   public int CompareItem(CNWSItem pItemToCompare) {
-    int ret = NWNXLibPINVOKE.CNWSItem_CompareItem(swigCPtr, CNWSItem.getCPtr(pItemToCompare));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSItem_CompareItem(swigCPtr, CNWSItem.getCPtr(pItemToCompare));
+    return retVal;
   }
 
   public byte GetMinEquipLevel() {
-    byte ret = NWNXLibPINVOKE.CNWSItem_GetMinEquipLevel(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSItem_GetMinEquipLevel(swigCPtr);
+    return retVal;
   }
 
   public void CloseItemForAllPlayers() {
@@ -809,8 +834,8 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   }
 
   public float CalculatePassiveCost(CNWItemProperty pItemProperty) {
-    float ret = NWNXLibPINVOKE.CNWSItem_CalculatePassiveCost(swigCPtr, CNWItemProperty.getCPtr(pItemProperty));
-    return ret;
+    float retVal = NWNXLibPINVOKE.CNWSItem_CalculatePassiveCost(swigCPtr, CNWItemProperty.getCPtr(pItemProperty));
+    return retVal;
   }
 
   public NativeArray<byte> m_nLayeredTextureColors {
@@ -844,14 +869,15 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
       NWNXLibPINVOKE.CNWSItem_m_nBaseItem_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSItem_m_nBaseItem_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSItem_m_nBaseItem_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte GetLayeredTextureColorPerPart(byte nTexture, byte nPart) {
-    byte ret = NWNXLibPINVOKE.CNWSItem_GetLayeredTextureColorPerPart(swigCPtr, nTexture, nPart);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSItem_GetLayeredTextureColorPerPart(swigCPtr, nTexture, nPart);
+    return retVal;
   }
 
   public void SetLayeredTextureColorPerPart(byte nTexture, byte nPart, byte nColor) {

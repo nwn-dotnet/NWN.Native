@@ -105,8 +105,8 @@ public unsafe class CExoRand : global::System.IDisposable {
   }
 
   public uint Rand() {
-    uint ret = NWNXLibPINVOKE.CExoRand_Rand(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoRand_Rand(swigCPtr);
+    return retVal;
   }
 
   public CExoString GetString(ushort nLength) {

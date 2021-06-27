@@ -95,9 +95,10 @@ public unsafe class CScriptTalent : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptTalent_m_nType_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptTalent_m_nType_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptTalent_m_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nID {
@@ -105,9 +106,10 @@ public unsafe class CScriptTalent : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptTalent_m_nID_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptTalent_m_nID_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptTalent_m_nID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nMultiClass {
@@ -115,9 +117,10 @@ public unsafe class CScriptTalent : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptTalent_m_nMultiClass_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CScriptTalent_m_nMultiClass_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CScriptTalent_m_nMultiClass_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidItem {
@@ -125,9 +128,10 @@ public unsafe class CScriptTalent : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptTalent_m_oidItem_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CScriptTalent_m_oidItem_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CScriptTalent_m_oidItem_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nItemPropertyIndex {
@@ -135,9 +139,10 @@ public unsafe class CScriptTalent : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptTalent_m_nItemPropertyIndex_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptTalent_m_nItemPropertyIndex_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptTalent_m_nItemPropertyIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nCasterLevel {
@@ -145,9 +150,10 @@ public unsafe class CScriptTalent : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptTalent_m_nCasterLevel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CScriptTalent_m_nCasterLevel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CScriptTalent_m_nCasterLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nMetaType {
@@ -155,9 +161,10 @@ public unsafe class CScriptTalent : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptTalent_m_nMetaType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CScriptTalent_m_nMetaType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CScriptTalent_m_nMetaType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CScriptTalent() : this(NWNXLibPINVOKE.new_CScriptTalent(), true) {
@@ -168,18 +175,18 @@ public unsafe class CScriptTalent : global::System.IDisposable {
   }
 
   public int _Equals(CScriptTalent pTalent) {
-    int ret = NWNXLibPINVOKE.CScriptTalent__Equals(swigCPtr, CScriptTalent.getCPtr(pTalent));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CScriptTalent__Equals(swigCPtr, CScriptTalent.getCPtr(pTalent));
+    return retVal;
   }
 
   public int SaveTalent(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CScriptTalent_SaveTalent(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CScriptTalent_SaveTalent(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadTalent(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CScriptTalent_LoadTalent(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CScriptTalent_LoadTalent(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
 }

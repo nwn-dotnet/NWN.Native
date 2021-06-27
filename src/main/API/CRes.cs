@@ -95,9 +95,10 @@ public unsafe class CRes : global::System.IDisposable {
       NWNXLibPINVOKE.CRes_m_nDemands_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CRes_m_nDemands_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CRes_m_nDemands_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nRequests {
@@ -105,9 +106,10 @@ public unsafe class CRes : global::System.IDisposable {
       NWNXLibPINVOKE.CRes_m_nRequests_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CRes_m_nRequests_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CRes_m_nRequests_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public RESID m_nID {
@@ -126,9 +128,10 @@ public unsafe class CRes : global::System.IDisposable {
       NWNXLibPINVOKE.CRes_m_status_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CRes_m_status_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CRes_m_status_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public void* m_pResource {
@@ -158,9 +161,10 @@ public unsafe class CRes : global::System.IDisposable {
       NWNXLibPINVOKE.CRes_m_nSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CRes_m_nSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CRes_m_nSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nRefs {
@@ -168,9 +172,10 @@ public unsafe class CRes : global::System.IDisposable {
       NWNXLibPINVOKE.CRes_m_nRefs_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CRes_m_nRefs_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CRes_m_nRefs_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bAllocHeaderData {
@@ -178,9 +183,10 @@ public unsafe class CRes : global::System.IDisposable {
       NWNXLibPINVOKE.CRes_m_bAllocHeaderData_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CRes_m_bAllocHeaderData_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CRes_m_bAllocHeaderData_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bAllocTrailingData {
@@ -188,9 +194,10 @@ public unsafe class CRes : global::System.IDisposable {
       NWNXLibPINVOKE.CRes_m_bAllocTrailingData_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CRes_m_bAllocTrailingData_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CRes_m_bAllocTrailingData_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoLinkedListNode m_pos {
@@ -209,9 +216,10 @@ public unsafe class CRes : global::System.IDisposable {
       NWNXLibPINVOKE.CRes_m_bAllowCaching_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CRes_m_bAllowCaching_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CRes_m_bAllowCaching_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CRes() : this(NWNXLibPINVOKE.new_CRes__SWIG_0(), true) {
@@ -222,8 +230,8 @@ public unsafe class CRes : global::System.IDisposable {
   }
 
   public int CancelRequest() {
-    int ret = NWNXLibPINVOKE.CRes_CancelRequest(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CRes_CancelRequest(swigCPtr);
+    return retVal;
   }
 
   public void* Demand() {
@@ -232,8 +240,8 @@ public unsafe class CRes : global::System.IDisposable {
   }
 
   public int ReadRaw(int nSize, byte* pBuffer) {
-    int ret = NWNXLibPINVOKE.CRes_ReadRaw(swigCPtr, nSize, (global::System.IntPtr)pBuffer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CRes_ReadRaw(swigCPtr, nSize, pBuffer);
+    return retVal;
   }
 
   public void Dump(int bRemove) {
@@ -250,23 +258,23 @@ public unsafe class CRes : global::System.IDisposable {
   }
 
   public int GetDemands() {
-    int ret = NWNXLibPINVOKE.CRes_GetDemands(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CRes_GetDemands(swigCPtr);
+    return retVal;
   }
 
   public virtual int GetFixedResourceSize() {
-    int ret = NWNXLibPINVOKE.CRes_GetFixedResourceSize(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CRes_GetFixedResourceSize(swigCPtr);
+    return retVal;
   }
 
   public virtual int GetFixedResourceDataOffset() {
-    int ret = NWNXLibPINVOKE.CRes_GetFixedResourceDataOffset(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CRes_GetFixedResourceDataOffset(swigCPtr);
+    return retVal;
   }
 
   public int GetRequests() {
-    int ret = NWNXLibPINVOKE.CRes_GetRequests(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CRes_GetRequests(swigCPtr);
+    return retVal;
   }
 
   public RESID GetID() {
@@ -275,28 +283,28 @@ public unsafe class CRes : global::System.IDisposable {
   }
 
   public int GetSize() {
-    int ret = NWNXLibPINVOKE.CRes_GetSize(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CRes_GetSize(swigCPtr);
+    return retVal;
   }
 
   public virtual int OnResourceFreed() {
-    int ret = NWNXLibPINVOKE.CRes_OnResourceFreed(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CRes_OnResourceFreed(swigCPtr);
+    return retVal;
   }
 
   public virtual int OnResourceServiced() {
-    int ret = NWNXLibPINVOKE.CRes_OnResourceServiced(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CRes_OnResourceServiced(swigCPtr);
+    return retVal;
   }
 
   public int Release() {
-    int ret = NWNXLibPINVOKE.CRes_Release(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CRes_Release(swigCPtr);
+    return retVal;
   }
 
   public int Request() {
-    int ret = NWNXLibPINVOKE.CRes_Request(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CRes_Request(swigCPtr);
+    return retVal;
   }
 
   public void SetID(RESID nNewID) {

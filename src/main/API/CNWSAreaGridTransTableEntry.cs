@@ -95,9 +95,10 @@ public unsafe class CNWSAreaGridTransTableEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSAreaGridTransTableEntry_nX_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSAreaGridTransTableEntry_nX_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSAreaGridTransTableEntry_nX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nY {
@@ -105,9 +106,10 @@ public unsafe class CNWSAreaGridTransTableEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSAreaGridTransTableEntry_nY_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSAreaGridTransTableEntry_nY_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSAreaGridTransTableEntry_nY_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nShortestPath {
@@ -115,9 +117,10 @@ public unsafe class CNWSAreaGridTransTableEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSAreaGridTransTableEntry_nShortestPath_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSAreaGridTransTableEntry_nShortestPath_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSAreaGridTransTableEntry_nShortestPath_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nStepsExplored {
@@ -125,9 +128,10 @@ public unsafe class CNWSAreaGridTransTableEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSAreaGridTransTableEntry_nStepsExplored_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSAreaGridTransTableEntry_nStepsExplored_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSAreaGridTransTableEntry_nStepsExplored_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSAreaGridTransTableEntry() : this(NWNXLibPINVOKE.new_CNWSAreaGridTransTableEntry(), true) {

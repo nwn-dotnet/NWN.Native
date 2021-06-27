@@ -129,8 +129,8 @@ public unsafe class CExoLinkedListNWAreaExpansion : global::System.IDisposable {
   }
 
   public uint Count() {
-    uint ret = NWNXLibPINVOKE.CExoLinkedListNWAreaExpansion_Count(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoLinkedListNWAreaExpansion_Count(swigCPtr);
+    return retVal;
   }
 
   public NWAREAEXPANSION GetAtPos(CExoLinkedListNode Position) {
@@ -176,8 +176,8 @@ public unsafe class CExoLinkedListNWAreaExpansion : global::System.IDisposable {
   }
 
   public int IsEmpty() {
-    int ret = NWNXLibPINVOKE.CExoLinkedListNWAreaExpansion_IsEmpty(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoLinkedListNWAreaExpansion_IsEmpty(swigCPtr);
+    return retVal;
   }
 
   public NWAREAEXPANSION RemoveHead() {

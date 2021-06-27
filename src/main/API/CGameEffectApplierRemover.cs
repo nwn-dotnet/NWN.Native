@@ -95,18 +95,18 @@ public unsafe class CGameEffectApplierRemover : global::System.IDisposable {
   }
 
   public virtual int OnEffectApplied(CNWSObject object_, CGameEffect effect, int bLoadingGame) {
-    int ret = NWNXLibPINVOKE.CGameEffectApplierRemover_OnEffectApplied__SWIG_0(swigCPtr, CNWSObject.getCPtr(object_), CGameEffect.getCPtr(effect), bLoadingGame);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CGameEffectApplierRemover_OnEffectApplied__SWIG_0(swigCPtr, CNWSObject.getCPtr(object_), CGameEffect.getCPtr(effect), bLoadingGame);
+    return retVal;
   }
 
   public virtual int OnEffectApplied(CNWSObject object_, CGameEffect effect) {
-    int ret = NWNXLibPINVOKE.CGameEffectApplierRemover_OnEffectApplied__SWIG_1(swigCPtr, CNWSObject.getCPtr(object_), CGameEffect.getCPtr(effect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CGameEffectApplierRemover_OnEffectApplied__SWIG_1(swigCPtr, CNWSObject.getCPtr(object_), CGameEffect.getCPtr(effect));
+    return retVal;
   }
 
   public virtual int OnEffectRemoved(CNWSObject object_, CGameEffect effect) {
-    int ret = NWNXLibPINVOKE.CGameEffectApplierRemover_OnEffectRemoved(swigCPtr, CNWSObject.getCPtr(object_), CGameEffect.getCPtr(effect));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CGameEffectApplierRemover_OnEffectRemoved(swigCPtr, CNWSObject.getCPtr(object_), CGameEffect.getCPtr(effect));
+    return retVal;
   }
 
 }

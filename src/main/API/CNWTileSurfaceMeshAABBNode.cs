@@ -117,9 +117,10 @@ public unsafe class CNWTileSurfaceMeshAABBNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSurfaceMeshAABBNode_nTriangleId_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWTileSurfaceMeshAABBNode_nTriangleId_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshAABBNode_nTriangleId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nTriangleList {
@@ -127,9 +128,10 @@ public unsafe class CNWTileSurfaceMeshAABBNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSurfaceMeshAABBNode_nTriangleList_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWTileSurfaceMeshAABBNode_nTriangleList_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshAABBNode_nTriangleList_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nDirection {
@@ -137,9 +139,10 @@ public unsafe class CNWTileSurfaceMeshAABBNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSurfaceMeshAABBNode_nDirection_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWTileSurfaceMeshAABBNode_nDirection_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshAABBNode_nDirection_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWTileSurfaceMeshAABBNode pLeft {

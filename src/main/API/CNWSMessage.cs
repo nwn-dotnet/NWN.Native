@@ -84,8 +84,8 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public uint ReadOBJECTIDServer() {
-    uint ret = NWNXLibPINVOKE.CNWSMessage_ReadOBJECTIDServer(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSMessage_ReadOBJECTIDServer(swigCPtr);
+    return retVal;
   }
 
   public void WriteCExoLocStringServer(CExoLocString sLocString, byte nGender) {
@@ -103,687 +103,687 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public int HandlePlayerToServerLevelUpMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerLevelUpMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerLevelUpMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerAreaMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerAreaMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerAreaMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerChatMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerChatMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerChatMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerCharListMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerCharListMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerCharListMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int SendPlayerToServerGuiInventory_Status(CNWSPlayer pPlayer, int bIsActive, uint oidInventory) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendPlayerToServerGuiInventory_Status__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bIsActive, oidInventory);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendPlayerToServerGuiInventory_Status__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bIsActive, oidInventory);
+    return retVal;
   }
 
   public int SendPlayerToServerGuiInventory_Status(CNWSPlayer pPlayer, int bIsActive) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendPlayerToServerGuiInventory_Status__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bIsActive);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendPlayerToServerGuiInventory_Status__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bIsActive);
+    return retVal;
   }
 
   public int HandlePlayerToServerCheatMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerCheatMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerCheatMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerDialogMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerDialogMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerDialogMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerDungeonMasterMessage(CNWSPlayer pPlayer, byte nMinor, int bGroup) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerDungeonMasterMessage__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor, bGroup);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerDungeonMasterMessage__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor, bGroup);
+    return retVal;
   }
 
   public int HandlePlayerToServerDungeonMasterMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerDungeonMasterMessage__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerDungeonMasterMessage__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerGameObjectUpdate(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerGameObjectUpdate(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerGameObjectUpdate(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerGuiInventoryMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerGuiInventoryMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerGuiInventoryMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerGuiContainerMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerGuiContainerMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerGuiContainerMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerCharacterSheetMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerCharacterSheetMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerCharacterSheetMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerInputDriveControl(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerInputDriveControl(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerInputDriveControl(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int HandlePlayerToServerInputAbortDriveControl(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerInputAbortDriveControl(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerInputAbortDriveControl(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int HandlePlayerToServerInputWalkToWaypoint(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerInputWalkToWaypoint(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerInputWalkToWaypoint(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int HandlePlayerToServerGroupInputWalkToWaypoint(CNWSPlayer pPlayer, CNWSCreature pCreature, uint oidArea, float fX, float fY, float fZ, byte nClientPathNumber, int nRunToPoint, int nClientMoving, uint oidClickedOn) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerGroupInputWalkToWaypoint(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSCreature.getCPtr(pCreature), oidArea, fX, fY, fZ, nClientPathNumber, nRunToPoint, nClientMoving, oidClickedOn);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerGroupInputWalkToWaypoint(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSCreature.getCPtr(pCreature), oidArea, fX, fY, fZ, nClientPathNumber, nRunToPoint, nClientMoving, oidClickedOn);
+    return retVal;
   }
 
   public int HandlePlayerToServerInputCancelGuiTimingEvent(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerInputCancelGuiTimingEvent(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerInputCancelGuiTimingEvent(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int HandlePlayerToServerInputMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerInputMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerInputMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerGroupInputMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerGroupInputMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerGroupInputMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerStoreMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerStoreMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerStoreMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerGoldMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerGoldMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerGoldMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerInventoryMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerInventoryMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerInventoryMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerLoginMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerLoginMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerLoginMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerMessage(uint nPlayerId, byte* pBuffer, uint nBufferSize) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerMessage(swigCPtr, nPlayerId, (global::System.IntPtr)pBuffer, nBufferSize);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerMessage(swigCPtr, nPlayerId, pBuffer, nBufferSize);
+    return retVal;
   }
 
   public int HandlePlayerToServerModuleMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerModuleMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerModuleMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerParty(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerParty(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerParty(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerServerChatMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerServerChatMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerServerChatMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerServerStatusMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerServerStatusMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerServerStatusMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerQuickChatMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerQuickChatMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerQuickChatMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerJournalMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerJournalMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerJournalMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerGuiQuickbar(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerGuiQuickbar(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerGuiQuickbar(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerGuiQuickbar_SetButton(CNWSPlayer pPlayer, byte nButton, byte nObjectType) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerGuiQuickbar_SetButton(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nButton, nObjectType);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerGuiQuickbar_SetButton(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nButton, nObjectType);
+    return retVal;
   }
 
   public int HandlePlayerToServerMapPinMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerMapPinMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerMapPinMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerMapPinSetMapPinAt(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerMapPinSetMapPinAt(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerMapPinSetMapPinAt(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int HandlePlayerToServerMapPinDestroyMapPin(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerMapPinDestroyMapPin(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerMapPinDestroyMapPin(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int HandlePlayerToServerMapPinChangePin(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerMapPinChangePin(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerMapPinChangePin(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerMapPinEnabled(CNWSPlayer pPlayer, uint oidMapPin, int bEnalbed) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerMapPinEnabled(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidMapPin, bEnalbed);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerMapPinEnabled(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidMapPin, bEnalbed);
+    return retVal;
   }
 
   public int SendServerToPlayerMapPinAdded(CNWSPlayer pPlayer, Vector vPosition, CExoString szNote, uint nReference) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerMapPinAdded(swigCPtr, CNWSPlayer.getCPtr(pPlayer), Vector.getCPtr(vPosition), CExoString.getCPtr(szNote), nReference);
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerMapPinAdded(swigCPtr, CNWSPlayer.getCPtr(pPlayer), Vector.getCPtr(vPosition), CExoString.getCPtr(szNote), nReference);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerMapPinCreated(CNWSPlayer pPlayer, uint oidMapPin, Vector vPosition, CExoLocString szNote, int bMapPinEnabled) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerMapPinCreated(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidMapPin, Vector.getCPtr(vPosition), CExoLocString.getCPtr(szNote), bMapPinEnabled);
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerMapPinCreated(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidMapPin, Vector.getCPtr(vPosition), CExoLocString.getCPtr(szNote), bMapPinEnabled);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int HandlePlayerToServerBarter(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerBarter(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerBarter(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerBarter_StartBarter(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerBarter_StartBarter(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerBarter_StartBarter(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int HandlePlayerToServerBarter_CloseBarter(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerBarter_CloseBarter(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerBarter_CloseBarter(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int HandlePlayerToServerBarter_AddItem(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerBarter_AddItem(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerBarter_AddItem(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int HandlePlayerToServerBarter_RemoveItem(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerBarter_RemoveItem(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerBarter_RemoveItem(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int HandlePlayerToServerBarter_MoveItem(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerBarter_MoveItem(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerBarter_MoveItem(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int HandlePlayerToServerBarter_LockList(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerBarter_LockList(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerBarter_LockList(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int HandlePlayerToServerBarter_AcceptTrade(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerBarter_AcceptTrade(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerBarter_AcceptTrade(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int HandlePlayerToServerBarter_Window(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerBarter_Window(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerBarter_Window(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int HandlePlayerToServerPlayerDeath(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerPlayerDeath(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerPlayerDeath(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerPVPListOperations(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerPVPListOperations(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerPVPListOperations(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerPortal(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerPortal(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerPortal(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerCharacterDownload(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerCharacterDownload(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerCharacterDownload(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerShutDownServer(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerShutDownServer(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerShutDownServer(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int SendServerToPlayerShutDownServer(uint nPlayerId, uint nTimeLeft) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerShutDownServer(swigCPtr, nPlayerId, nTimeLeft);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerShutDownServer(swigCPtr, nPlayerId, nTimeLeft);
+    return retVal;
   }
 
   public int SendServerToPlayerCamera_ChangeLocation(CNWSPlayer pPlayer, int nFlags, float fCameraAngle, float fCameraDistance, float fCameraPitch, int nCameraSmoothTranslation) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_ChangeLocation(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nFlags, fCameraAngle, fCameraDistance, fCameraPitch, nCameraSmoothTranslation);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_ChangeLocation(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nFlags, fCameraAngle, fCameraDistance, fCameraPitch, nCameraSmoothTranslation);
+    return retVal;
   }
 
   public int SendServerToPlayerCamera_SetMode(CNWSPlayer pPlayer, byte nCameraMode) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_SetMode(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nCameraMode);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_SetMode(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nCameraMode);
+    return retVal;
   }
 
   public int SendServerToPlayerCamera_Store(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_Store(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_Store(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerCamera_Restore(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_Restore(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_Restore(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerCamera_SetHeight(CNWSPlayer pPlayer, float fHeight) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_SetHeight(swigCPtr, CNWSPlayer.getCPtr(pPlayer), fHeight);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_SetHeight(swigCPtr, CNWSPlayer.getCPtr(pPlayer), fHeight);
+    return retVal;
   }
 
   public int SendServerToPlayerCamera_LockPitch(CNWSPlayer pPlayer, int bLock) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_LockPitch(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bLock);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_LockPitch(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bLock);
+    return retVal;
   }
 
   public int SendServerToPlayerCamera_LockDistance(CNWSPlayer pPlayer, int bLock) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_LockDistance(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bLock);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_LockDistance(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bLock);
+    return retVal;
   }
 
   public int SendServerToPlayerCamera_LockYaw(CNWSPlayer pPlayer, int bLock) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_LockYaw(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bLock);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_LockYaw(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bLock);
+    return retVal;
   }
 
   public int SendServerToPlayerLogin_CharacterQuery(CNWSPlayer pPlayer, byte* nNumClasses, int* pClasses, byte* pLevels, uint* nXP) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLogin_CharacterQuery(swigCPtr, CNWSPlayer.getCPtr(pPlayer), (global::System.IntPtr)nNumClasses, (global::System.IntPtr)pClasses, (global::System.IntPtr)pLevels, (global::System.IntPtr)nXP);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLogin_CharacterQuery(swigCPtr, CNWSPlayer.getCPtr(pPlayer), (global::System.IntPtr)nNumClasses, pClasses, pLevels, (global::System.IntPtr)nXP);
+    return retVal;
   }
 
   public int SendServerToPlayerLogin_NeedCharacter(uint nPlayerId) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLogin_NeedCharacter(swigCPtr, nPlayerId);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLogin_NeedCharacter(swigCPtr, nPlayerId);
+    return retVal;
   }
 
   public int SendServerToPlayerLoadBar_StartStallEvent(uint nStallEvent) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLoadBar_StartStallEvent(swigCPtr, nStallEvent);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLoadBar_StartStallEvent(swigCPtr, nStallEvent);
+    return retVal;
   }
 
   public int SendServerToPlayerLoadBar_UpdateStallEvent(uint nWorkCompleted, uint nTotalWork) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLoadBar_UpdateStallEvent__SWIG_0(swigCPtr, nWorkCompleted, nTotalWork);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLoadBar_UpdateStallEvent__SWIG_0(swigCPtr, nWorkCompleted, nTotalWork);
+    return retVal;
   }
 
   public int SendServerToPlayerLoadBar_UpdateStallEvent(uint nWorkCompleted) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLoadBar_UpdateStallEvent__SWIG_1(swigCPtr, nWorkCompleted);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLoadBar_UpdateStallEvent__SWIG_1(swigCPtr, nWorkCompleted);
+    return retVal;
   }
 
   public int SendServerToPlayerLoadBar_EndStallEvent(uint nStallEvent, uint nError) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLoadBar_EndStallEvent__SWIG_0(swigCPtr, nStallEvent, nError);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLoadBar_EndStallEvent__SWIG_0(swigCPtr, nStallEvent, nError);
+    return retVal;
   }
 
   public int SendServerToPlayerLoadBar_EndStallEvent(uint nStallEvent) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLoadBar_EndStallEvent__SWIG_1(swigCPtr, nStallEvent);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLoadBar_EndStallEvent__SWIG_1(swigCPtr, nStallEvent);
+    return retVal;
   }
 
   public int SendServerToPlayerModule_SaveGameStatus(byte nStatus) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_SaveGameStatus(swigCPtr, nStatus);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_SaveGameStatus(swigCPtr, nStatus);
+    return retVal;
   }
 
   public int SendServerToPlayerModule_EndGame(uint nPlayerId, CExoString sMovieName) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_EndGame(swigCPtr, nPlayerId, CExoString.getCPtr(sMovieName));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_EndGame(swigCPtr, nPlayerId, CExoString.getCPtr(sMovieName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerModule_Loading(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_Loading(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_Loading(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerSaveLoad_Status(CNWSPlayer pPlayer, byte nStallEventType, uint nStatus) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSaveLoad_Status(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nStallEventType, nStatus);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSaveLoad_Status(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nStallEventType, nStatus);
+    return retVal;
   }
 
   public int SendServerToPlayerModule_StartStartNewModule() {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_StartStartNewModule(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_StartStartNewModule(swigCPtr);
+    return retVal;
   }
 
   public int SendServerToPlayerModule_EndStartNewModule(int bSuccess) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_EndStartNewModule(swigCPtr, bSuccess);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_EndStartNewModule(swigCPtr, bSuccess);
+    return retVal;
   }
 
   public int SendServerToPlayerModule_DumpPlayer(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_DumpPlayer(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_DumpPlayer(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerArea_ClientArea(CNWSPlayer pPlayer, CNWSArea pArea, float fX, float fY, float fZ, Vector vNewOrientation, int bPlayerIsNewToModule) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerArea_ClientArea(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSArea.getCPtr(pArea), fX, fY, fZ, Vector.getCPtr(vNewOrientation), bPlayerIsNewToModule);
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerArea_ClientArea(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSArea.getCPtr(pArea), fX, fY, fZ, Vector.getCPtr(vNewOrientation), bPlayerIsNewToModule);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerArea_VisualEffect(CNWSPlayer pPlayer, ushort nAnim, Vector vPosition, ObjectVisualTransformData ovtd) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerArea_VisualEffect(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nAnim, Vector.getCPtr(vPosition), ObjectVisualTransformData.getCPtr(ovtd));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerArea_VisualEffect(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nAnim, Vector.getCPtr(vPosition), ObjectVisualTransformData.getCPtr(ovtd));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerUpdateBlackoutEffect(CNWSPlayer pPlayer, int bEnableBlackout) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateBlackoutEffect(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bEnableBlackout);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateBlackoutEffect(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bEnableBlackout);
+    return retVal;
   }
 
   public int SendServerToPlayerArea_Weather(CNWSPlayer pPlayer, byte nWeatherType, int bStart) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerArea_Weather(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nWeatherType, bStart);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerArea_Weather(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nWeatherType, bStart);
+    return retVal;
   }
 
   public int SendServerToPlayerArea_ChangeDayNight(CNWSPlayer pPlayer, int bDay, float fTransitionTime) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerArea_ChangeDayNight(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bDay, fTransitionTime);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerArea_ChangeDayNight(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bDay, fTransitionTime);
+    return retVal;
   }
 
   public int SendServerToPlayerArea_RecomputeStaticLighting(uint oidArea) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerArea_RecomputeStaticLighting(swigCPtr, oidArea);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerArea_RecomputeStaticLighting(swigCPtr, oidArea);
+    return retVal;
   }
 
   public int SendServerToPlayerArea_SetName(CNWSPlayer player, uint oidArea) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerArea_SetName(swigCPtr, CNWSPlayer.getCPtr(player), oidArea);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerArea_SetName(swigCPtr, CNWSPlayer.getCPtr(player), oidArea);
+    return retVal;
   }
 
   public int SendServerToPlayerArea_Destroyed(CNWSPlayer player, uint oidArea) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerArea_Destroyed(swigCPtr, CNWSPlayer.getCPtr(player), oidArea);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerArea_Destroyed(swigCPtr, CNWSPlayer.getCPtr(player), oidArea);
+    return retVal;
   }
 
   public int SendServerToPlayerUpdateSkyBox(int nSkyBox, uint oidArea) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateSkyBox(swigCPtr, nSkyBox, oidArea);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateSkyBox(swigCPtr, nSkyBox, oidArea);
+    return retVal;
   }
 
   public int SendServerToPlayerUpdateFogColor(uint nSunFogColor, uint nMoonFogColor, uint oidArea) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateFogColor(swigCPtr, nSunFogColor, nMoonFogColor, oidArea);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateFogColor(swigCPtr, nSunFogColor, nMoonFogColor, oidArea);
+    return retVal;
   }
 
   public int SendServerToPlayerUpdateFogAmount(byte nSunFogAmount, byte nMoonFogAmount, uint oidArea) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateFogAmount(swigCPtr, nSunFogAmount, nMoonFogAmount, oidArea);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateFogAmount(swigCPtr, nSunFogAmount, nMoonFogAmount, oidArea);
+    return retVal;
   }
 
   public int SendServerToPlayerArea_UpdateWind(CNWSPlayer pPlayer, Vector vDirection, float fMagnitude, float fYaw, float fPitch) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerArea_UpdateWind(swigCPtr, CNWSPlayer.getCPtr(pPlayer), Vector.getCPtr(vDirection), fMagnitude, fYaw, fPitch);
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerArea_UpdateWind(swigCPtr, CNWSPlayer.getCPtr(pPlayer), Vector.getCPtr(vDirection), fMagnitude, fYaw, fPitch);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerSetCustomToken(uint nPlayerID, int nCustomTokenNumber, CExoString sTokenValue) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSetCustomToken(swigCPtr, nPlayerID, nCustomTokenNumber, CExoString.getCPtr(sTokenValue));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSetCustomToken(swigCPtr, nPlayerID, nCustomTokenNumber, CExoString.getCPtr(sTokenValue));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerSetCustomTokenList(uint nPlayerID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSetCustomTokenList(swigCPtr, nPlayerID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSetCustomTokenList(swigCPtr, nPlayerID);
+    return retVal;
   }
 
   public int SendServerToPlayerSetTlkOverride(uint nPlayerID, int nStrRef, CExoString sOverride) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSetTlkOverride(swigCPtr, nPlayerID, nStrRef, CExoString.getCPtr(sOverride));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSetTlkOverride(swigCPtr, nPlayerID, nStrRef, CExoString.getCPtr(sOverride));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerSetTlkOverrideList(uint nPlayerID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSetTlkOverrideList(swigCPtr, nPlayerID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSetTlkOverrideList(swigCPtr, nPlayerID);
+    return retVal;
   }
 
   public int SendServerToPlayerChatMultiLangMessage(byte nChatMessageType, uint oidSpeaker, CExoLocString sSpeakerMessage, uint oidTokenTarget, byte gender, uint* pPlayerIdNoBubble, uint nPlayerIdNoBubble, int bPrivateChat, CResRef sSound, int bPlayHelloSound, uint oidLastSpeaker) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChatMultiLangMessage(swigCPtr, nChatMessageType, oidSpeaker, CExoLocString.getCPtr(sSpeakerMessage), oidTokenTarget, gender, (global::System.IntPtr)pPlayerIdNoBubble, nPlayerIdNoBubble, bPrivateChat, CResRef.getCPtr(sSound), bPlayHelloSound, oidLastSpeaker);
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChatMultiLangMessage(swigCPtr, nChatMessageType, oidSpeaker, CExoLocString.getCPtr(sSpeakerMessage), oidTokenTarget, gender, pPlayerIdNoBubble, nPlayerIdNoBubble, bPrivateChat, CResRef.getCPtr(sSound), bPlayHelloSound, oidLastSpeaker);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerChatMultiLang_Helper(uint nPlayerID, byte nChatMessageType, uint oidSpeaker, CExoLocString sSpeakerMessage, uint oidTokenTarget, byte gender, int bNoBubble, CResRef sSound, int bPlayHelloSound, uint oidLastSpeaker) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChatMultiLang_Helper(swigCPtr, nPlayerID, nChatMessageType, oidSpeaker, CExoLocString.getCPtr(sSpeakerMessage), oidTokenTarget, gender, bNoBubble, CResRef.getCPtr(sSound), bPlayHelloSound, oidLastSpeaker);
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChatMultiLang_Helper(swigCPtr, nPlayerID, nChatMessageType, oidSpeaker, CExoLocString.getCPtr(sSpeakerMessage), oidTokenTarget, gender, bNoBubble, CResRef.getCPtr(sSound), bPlayHelloSound, oidLastSpeaker);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerChatMessage(byte nChatMessageType, uint oidSpeaker, CExoString sSpeakerMessage, uint nTellPlayerId, CExoString sTellName) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChatMessage__SWIG_0(swigCPtr, nChatMessageType, oidSpeaker, CExoString.getCPtr(sSpeakerMessage), nTellPlayerId, CExoString.getCPtr(sTellName));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChatMessage__SWIG_0(swigCPtr, nChatMessageType, oidSpeaker, CExoString.getCPtr(sSpeakerMessage), nTellPlayerId, CExoString.getCPtr(sTellName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerChatMessage(byte nChatMessageType, uint oidSpeaker, CExoString sSpeakerMessage, uint nTellPlayerId) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChatMessage__SWIG_1(swigCPtr, nChatMessageType, oidSpeaker, CExoString.getCPtr(sSpeakerMessage), nTellPlayerId);
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChatMessage__SWIG_1(swigCPtr, nChatMessageType, oidSpeaker, CExoString.getCPtr(sSpeakerMessage), nTellPlayerId);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerChatMessage(byte nChatMessageType, uint oidSpeaker, CExoString sSpeakerMessage) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChatMessage__SWIG_2(swigCPtr, nChatMessageType, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChatMessage__SWIG_2(swigCPtr, nChatMessageType, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerChatStrRefMessage(byte nChatMessageType, uint oidSpeaker, uint nStrRef) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChatStrRefMessage(swigCPtr, nChatMessageType, oidSpeaker, nStrRef);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChatStrRefMessage(swigCPtr, nChatMessageType, oidSpeaker, nStrRef);
+    return retVal;
   }
 
   public int SendServerToPlayerAIActionPlaySound(uint nPlayerId, uint oidSpeaker, CExoString sSpeakerMessage) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerAIActionPlaySound(swigCPtr, nPlayerId, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerAIActionPlaySound(swigCPtr, nPlayerId, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerVoiceChat_Play(CNWSPlayer pPlayer, uint oidCreature, byte nVoiceSetID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerVoiceChat_Play(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidCreature, nVoiceSetID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerVoiceChat_Play(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidCreature, nVoiceSetID);
+    return retVal;
   }
 
   public int SendServerToPlayerChat_Party(uint nPlayerID, uint oidSpeaker, CExoString sSpeakerMessage) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_Party(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_Party(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerSoundObject_Play(CNWSPlayer pPlayer, uint oidSound) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSoundObject_Play(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidSound);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSoundObject_Play(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidSound);
+    return retVal;
   }
 
   public int SendServerToPlayerSoundObject_Stop(CNWSPlayer pPlayer, uint oidSound) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSoundObject_Stop(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidSound);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSoundObject_Stop(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidSound);
+    return retVal;
   }
 
   public int SendServerToPlayerSoundObject_ChangeVolume(CNWSPlayer pPlayer, uint oidSound, int nVolume) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSoundObject_ChangeVolume(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidSound, nVolume);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSoundObject_ChangeVolume(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidSound, nVolume);
+    return retVal;
   }
 
   public int SendServerToPlayerSoundObject_ChangePosition(CNWSPlayer pPlayer, uint oidSound, Vector vPos) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSoundObject_ChangePosition(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidSound, Vector.getCPtr(vPos));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSoundObject_ChangePosition(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidSound, Vector.getCPtr(vPos));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerGameObjUpdate(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdate__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdate__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerGameObjUpdate(CNWSPlayer pPlayer, uint oidObjectToUpdate) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdate__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidObjectToUpdate);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdate__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidObjectToUpdate);
+    return retVal;
   }
 
   public int SendServerToPlayerGameObjUpdateVisEffect(CNWSPlayer pPlayer, ushort nVisualEffectID, uint oidTarget, uint oidSource, byte nSourceNode, byte nTargetNode, Vector vTargetPosition, float fDuration, ObjectVisualTransformData ovtd) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdateVisEffect__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nVisualEffectID, oidTarget, oidSource, nSourceNode, nTargetNode, Vector.getCPtr(vTargetPosition), fDuration, ObjectVisualTransformData.getCPtr(ovtd));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdateVisEffect__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nVisualEffectID, oidTarget, oidSource, nSourceNode, nTargetNode, Vector.getCPtr(vTargetPosition), fDuration, ObjectVisualTransformData.getCPtr(ovtd));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerGameObjUpdateVisEffect(CNWSPlayer pPlayer, ushort nVisualEffectID, uint oidTarget, uint oidSource, byte nSourceNode, byte nTargetNode, Vector vTargetPosition, float fDuration) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdateVisEffect__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nVisualEffectID, oidTarget, oidSource, nSourceNode, nTargetNode, Vector.getCPtr(vTargetPosition), fDuration);
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdateVisEffect__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nVisualEffectID, oidTarget, oidSource, nSourceNode, nTargetNode, Vector.getCPtr(vTargetPosition), fDuration);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerGameObjUpdateVisEffect(CNWSPlayer pPlayer, ushort nVisualEffectID, uint oidTarget, uint oidSource, byte nSourceNode, byte nTargetNode, Vector vTargetPosition) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdateVisEffect__SWIG_2(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nVisualEffectID, oidTarget, oidSource, nSourceNode, nTargetNode, Vector.getCPtr(vTargetPosition));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdateVisEffect__SWIG_2(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nVisualEffectID, oidTarget, oidSource, nSourceNode, nTargetNode, Vector.getCPtr(vTargetPosition));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerGameObjUpdateVisEffect(CNWSPlayer pPlayer, ushort nVisualEffectID, uint oidTarget, uint oidSource, byte nSourceNode, byte nTargetNode) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdateVisEffect__SWIG_3(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nVisualEffectID, oidTarget, oidSource, nSourceNode, nTargetNode);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdateVisEffect__SWIG_3(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nVisualEffectID, oidTarget, oidSource, nSourceNode, nTargetNode);
+    return retVal;
   }
 
   public int SendServerToPlayerGameObjUpdateVisEffect(CNWSPlayer pPlayer, ushort nVisualEffectID, uint oidTarget, uint oidSource, byte nSourceNode) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdateVisEffect__SWIG_4(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nVisualEffectID, oidTarget, oidSource, nSourceNode);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdateVisEffect__SWIG_4(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nVisualEffectID, oidTarget, oidSource, nSourceNode);
+    return retVal;
   }
 
   public int SendServerToPlayerGameObjUpdateVisEffect(CNWSPlayer pPlayer, ushort nVisualEffectID, uint oidTarget, uint oidSource) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdateVisEffect__SWIG_5(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nVisualEffectID, oidTarget, oidSource);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdateVisEffect__SWIG_5(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nVisualEffectID, oidTarget, oidSource);
+    return retVal;
   }
 
   public int SendServerToPlayerGameObjUpdateVisEffect(CNWSPlayer pPlayer, ushort nVisualEffectID, uint oidTarget) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdateVisEffect__SWIG_6(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nVisualEffectID, oidTarget);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdateVisEffect__SWIG_6(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nVisualEffectID, oidTarget);
+    return retVal;
   }
 
   public int SendServerToPlayerGameObjUpdateFloatyText(CNWSPlayer pPlayer, uint nStrRef, uint oidTarget) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdateFloatyText(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nStrRef, oidTarget);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdateFloatyText(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nStrRef, oidTarget);
+    return retVal;
   }
 
   public int SendServerToPlayerQuickChatMessage(uint oidSpeaker, ushort nSoundSetSoundID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerQuickChatMessage(swigCPtr, oidSpeaker, nSoundSetSoundID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerQuickChatMessage(swigCPtr, oidSpeaker, nSoundSetSoundID);
+    return retVal;
   }
 
   public int SendServerToPlayerStoreConfirmTransaction(CNWSPlayer pPlayer, int bTransactionSuccessful, uint oidItem, int nStoreGold) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerStoreConfirmTransaction(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bTransactionSuccessful, oidItem, nStoreGold);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerStoreConfirmTransaction(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bTransactionSuccessful, oidItem, nStoreGold);
+    return retVal;
   }
 
   public int SendServerToPlayerCombatRoundStarted(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCombatRoundStarted(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCombatRoundStarted(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerWhirlwindAttack(CNWSPlayer pPlayer, CNWSCreature pCreature) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerWhirlwindAttack(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSCreature.getCPtr(pCreature));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerWhirlwindAttack(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSCreature.getCPtr(pCreature));
+    return retVal;
   }
 
   public int SendServerToPlayerWhirlwindAttackDamage(CNWSPlayer pPlayer, CNWSCreature pCreature) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerWhirlwindAttackDamage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSCreature.getCPtr(pCreature));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerWhirlwindAttackDamage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSCreature.getCPtr(pCreature));
+    return retVal;
   }
 
   public int SendServerToPlayerPlaceableUpdate_Useable(CNWSPlaceable pPlaceable) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPlaceableUpdate_Useable(swigCPtr, CNWSPlaceable.getCPtr(pPlaceable));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPlaceableUpdate_Useable(swigCPtr, CNWSPlaceable.getCPtr(pPlaceable));
+    return retVal;
   }
 
   public int SendServerToPlayerGUICharacterSheet_NotPermitted(uint nPlayerId, uint oidCharSheetFailure) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGUICharacterSheet_NotPermitted(swigCPtr, nPlayerId, oidCharSheetFailure);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGUICharacterSheet_NotPermitted(swigCPtr, nPlayerId, oidCharSheetFailure);
+    return retVal;
   }
 
   public int SendServerToPlayerDestroyDeathGUI(uint nPlayerId) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDestroyDeathGUI(swigCPtr, nPlayerId);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDestroyDeathGUI(swigCPtr, nPlayerId);
+    return retVal;
   }
 
   public int SendServerToPlayerUpdateActiveItemPropertiesUses(CNWSPlayer pPlayer, uint oidItem, byte nUseableProperties, byte nUseDiff, byte* pUsesLeftPerProperty) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateActiveItemPropertiesUses(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidItem, nUseableProperties, nUseDiff, (global::System.IntPtr)pUsesLeftPerProperty);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateActiveItemPropertiesUses(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidItem, nUseableProperties, nUseDiff, pUsesLeftPerProperty);
+    return retVal;
   }
 
   public int SendServerToPlayerUpdateActiveItemProperties(CNWSPlayer pPlayer, CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateActiveItemProperties(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSItem.getCPtr(pItem));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateActiveItemProperties(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSItem.getCPtr(pItem));
+    return retVal;
   }
 
   public int SendServerToPlayerUpdateItemName(CNWSPlayer pPlayer, CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateItemName(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSItem.getCPtr(pItem));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateItemName(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSItem.getCPtr(pItem));
+    return retVal;
   }
 
   public int SendServerToPlayerUpdateItemHidden(CNWSPlayer pPlayer, CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateItemHidden(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSItem.getCPtr(pItem));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateItemHidden(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSItem.getCPtr(pItem));
+    return retVal;
   }
 
   public int HandlePlayerToServerPlayModuleCharacterList(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerPlayModuleCharacterList(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerPlayModuleCharacterList(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerPlayModuleCharacterList_Start(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerPlayModuleCharacterList_Start(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerPlayModuleCharacterList_Start(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int HandlePlayerToServerPlayModuleCharacterList_Stop(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerPlayModuleCharacterList_Stop(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerPlayModuleCharacterList_Stop(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerPlayModuleCharacterListResponse(uint nPlayerId, uint nCharacterId, int bAdd) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPlayModuleCharacterListResponse(swigCPtr, nPlayerId, nCharacterId, bAdd);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPlayModuleCharacterListResponse(swigCPtr, nPlayerId, nCharacterId, bAdd);
+    return retVal;
   }
 
   public void ComputeGameObjectUpdateForYourselfToo(CNWSPlayer pPlayer, CNWSObject pPlayerGameObject, CGameObjectArray pGameObjectArray, uint oidObjectToUpdate) {
@@ -795,7 +795,7 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public CNWSPlayerLUOSortedObjectList SortObjectsForGameObjectUpdate(CNWSPlayer pPlayer, CNWSObject pPlayerGameObject, CGameObjectArray pGameObjectArray, int* nMembersInSortedList) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSMessage_SortObjectsForGameObjectUpdate(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pPlayerGameObject), CGameObjectArray.getCPtr(pGameObjectArray), (global::System.IntPtr)nMembersInSortedList);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSMessage_SortObjectsForGameObjectUpdate(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pPlayerGameObject), CGameObjectArray.getCPtr(pGameObjectArray), nMembersInSortedList);
     CNWSPlayerLUOSortedObjectList ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSPlayerLUOSortedObjectList(cPtr, false);
     return ret;
   }
@@ -805,12 +805,12 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public int ComputeGameObjectUpdateForCategory(uint nCategory, uint nMessageLimit, CNWSPlayer pPlayer, CNWSObject pPlayerGameObject, CGameObjectArray pGameObjectArray, CNWSPlayerLUOSortedObjectList pSortedList, int nSortedListSize) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ComputeGameObjectUpdateForCategory(swigCPtr, nCategory, nMessageLimit, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pPlayerGameObject), CGameObjectArray.getCPtr(pGameObjectArray), CNWSPlayerLUOSortedObjectList.getCPtr(pSortedList), nSortedListSize);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_ComputeGameObjectUpdateForCategory(swigCPtr, nCategory, nMessageLimit, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pPlayerGameObject), CGameObjectArray.getCPtr(pGameObjectArray), CNWSPlayerLUOSortedObjectList.getCPtr(pSortedList), nSortedListSize);
+    return retVal;
   }
 
   public void TestPartyObjectUpdateDifferences(CNWSPlayer pPlayer, CNWSCreature pPartyCreature, void** pLastUpdatePartyObject, uint* nObjectUpdatesRequired) {
-    NWNXLibPINVOKE.CNWSMessage_TestPartyObjectUpdateDifferences(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSCreature.getCPtr(pPartyCreature), (global::System.IntPtr)pLastUpdatePartyObject, (global::System.IntPtr)nObjectUpdatesRequired);
+    NWNXLibPINVOKE.CNWSMessage_TestPartyObjectUpdateDifferences(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSCreature.getCPtr(pPartyCreature), (global::System.IntPtr)pLastUpdatePartyObject, nObjectUpdatesRequired);
   }
 
   public void StoreValuesInLastUpdatePartyObject(CNWSCreature pPlayerCreature, CLastUpdatePartyObject pLastUpdatePartyObject, CNWSCreature pPartyCreature, uint nObjectUpdatesRequired) {
@@ -818,13 +818,13 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public int WriteGameObjUpdate_PartyAIState(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_WriteGameObjUpdate_PartyAIState(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_WriteGameObjUpdate_PartyAIState(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int WriteGameObjUpdate_DungeonMasterAIState(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_WriteGameObjUpdate_DungeonMasterAIState(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_WriteGameObjUpdate_DungeonMasterAIState(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public void WriteGameObjUpdate_WorkRemaining(CNWSObject pPlayerObject, CNWSArea pPlayerArea, int nStagesCompleted, int nTotalStages) {
@@ -836,23 +836,23 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public void TestObjectUpdateDifferences(CNWSPlayer pPlayer, CNWSObject pAreaObject, void** pLastUpdateObject, uint* nObjectUpdatesRequired, uint* nObjectAppearanceUpdatesRequired) {
-    NWNXLibPINVOKE.CNWSMessage_TestObjectUpdateDifferences(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pAreaObject), (global::System.IntPtr)pLastUpdateObject, (global::System.IntPtr)nObjectUpdatesRequired, (global::System.IntPtr)nObjectAppearanceUpdatesRequired);
+    NWNXLibPINVOKE.CNWSMessage_TestObjectUpdateDifferences(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pAreaObject), (global::System.IntPtr)pLastUpdateObject, nObjectUpdatesRequired, nObjectAppearanceUpdatesRequired);
   }
 
   public int TestObjectVisible(CNWSObject pAreaObject, CNWSObject pPlayerGameObject) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_TestObjectVisible(swigCPtr, CNWSObject.getCPtr(pAreaObject), CNWSObject.getCPtr(pPlayerGameObject));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_TestObjectVisible(swigCPtr, CNWSObject.getCPtr(pAreaObject), CNWSObject.getCPtr(pPlayerGameObject));
+    return retVal;
   }
 
   public CLastUpdateObject CreateNewLastUpdateObject(CNWSPlayer pPlayer, CNWSObject pAreaObject, uint* nObjectUpdatesRequired, uint* nObjectAppeareanceUpdatesRequired) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSMessage_CreateNewLastUpdateObject(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pAreaObject), (global::System.IntPtr)nObjectUpdatesRequired, (global::System.IntPtr)nObjectAppeareanceUpdatesRequired);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSMessage_CreateNewLastUpdateObject(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pAreaObject), nObjectUpdatesRequired, nObjectAppeareanceUpdatesRequired);
     CLastUpdateObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new CLastUpdateObject(cPtr, false);
     return ret;
   }
 
   public uint SelectCategoryForGameObject(ICGameObject pAreaGameObject, CNWSObject pPlayerGameObject) {
-    uint ret = NWNXLibPINVOKE.CNWSMessage_SelectCategoryForGameObject(swigCPtr, pAreaGameObject == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : pAreaGameObject.GetInterfaceCPtr(), CNWSObject.getCPtr(pPlayerGameObject));
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSMessage_SelectCategoryForGameObject(swigCPtr, pAreaGameObject == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : pAreaGameObject.GetInterfaceCPtr(), CNWSObject.getCPtr(pPlayerGameObject));
+    return retVal;
   }
 
   public void DeleteLastUpdateObjectsInOtherAreas(CNWSPlayer pPlayer) {
@@ -900,542 +900,542 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public int SendServerToPlayerExamineGui_CreatureData(CNWSPlayer pPlayer, uint oidCreatureID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerExamineGui_CreatureData(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidCreatureID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerExamineGui_CreatureData(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidCreatureID);
+    return retVal;
   }
 
   public int SendServerToPlayerExamineGui_ItemData(CNWSPlayer pPlayer, uint oidItemID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerExamineGui_ItemData(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidItemID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerExamineGui_ItemData(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidItemID);
+    return retVal;
   }
 
   public int SendServerToPlayerExamineGui_PlaceableData(CNWSPlayer pPlayer, uint oidPlaceableID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerExamineGui_PlaceableData(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidPlaceableID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerExamineGui_PlaceableData(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidPlaceableID);
+    return retVal;
   }
 
   public int SendServerToPlayerExamineGui_DoorData(CNWSPlayer pPlayer, uint oidDoorID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerExamineGui_DoorData(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidDoorID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerExamineGui_DoorData(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidDoorID);
+    return retVal;
   }
 
   public int SendServerToPlayerExamineGui_TrapData(CNWSPlayer pPlayer, uint oidTrapID, CNWSCreature pCreature, int bSuccess) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerExamineGui_TrapData(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidTrapID, CNWSCreature.getCPtr(pCreature), bSuccess);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerExamineGui_TrapData(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidTrapID, CNWSCreature.getCPtr(pCreature), bSuccess);
+    return retVal;
   }
 
   public int SendServerToPlayerGameObjUpdate_ObjControl(uint nPlayerID, uint nObjectId) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdate_ObjControl(swigCPtr, nPlayerID, nObjectId);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdate_ObjControl(swigCPtr, nPlayerID, nObjectId);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_Drop(uint nPlayerID, uint nObjectID, int bRunActionForNonPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_Drop__SWIG_0(swigCPtr, nPlayerID, nObjectID, bRunActionForNonPlayer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_Drop__SWIG_0(swigCPtr, nPlayerID, nObjectID, bRunActionForNonPlayer);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_Drop(uint nPlayerID, uint nObjectID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_Drop__SWIG_1(swigCPtr, nPlayerID, nObjectID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_Drop__SWIG_1(swigCPtr, nPlayerID, nObjectID);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_DropCancel(uint nPlayerID, uint nObjectID, int bRunActionForNonPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_DropCancel__SWIG_0(swigCPtr, nPlayerID, nObjectID, bRunActionForNonPlayer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_DropCancel__SWIG_0(swigCPtr, nPlayerID, nObjectID, bRunActionForNonPlayer);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_DropCancel(uint nPlayerID, uint nObjectID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_DropCancel__SWIG_1(swigCPtr, nPlayerID, nObjectID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_DropCancel__SWIG_1(swigCPtr, nPlayerID, nObjectID);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_Equip(uint nPlayerID, uint nObjectID, uint nEquipSlot, int bRunActionForNonPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_Equip__SWIG_0(swigCPtr, nPlayerID, nObjectID, nEquipSlot, bRunActionForNonPlayer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_Equip__SWIG_0(swigCPtr, nPlayerID, nObjectID, nEquipSlot, bRunActionForNonPlayer);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_Equip(uint nPlayerID, uint nObjectID, uint nEquipSlot) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_Equip__SWIG_1(swigCPtr, nPlayerID, nObjectID, nEquipSlot);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_Equip__SWIG_1(swigCPtr, nPlayerID, nObjectID, nEquipSlot);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_EquipCancel(uint nPlayerID, uint nObjectID, uint nEquipSlot, int bRunActionForNonPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_EquipCancel__SWIG_0(swigCPtr, nPlayerID, nObjectID, nEquipSlot, bRunActionForNonPlayer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_EquipCancel__SWIG_0(swigCPtr, nPlayerID, nObjectID, nEquipSlot, bRunActionForNonPlayer);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_EquipCancel(uint nPlayerID, uint nObjectID, uint nEquipSlot) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_EquipCancel__SWIG_1(swigCPtr, nPlayerID, nObjectID, nEquipSlot);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_EquipCancel__SWIG_1(swigCPtr, nPlayerID, nObjectID, nEquipSlot);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_RepositoryMove(uint nPlayerID, uint nObjectID, int bRunActionForNonPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_RepositoryMove__SWIG_0(swigCPtr, nPlayerID, nObjectID, bRunActionForNonPlayer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_RepositoryMove__SWIG_0(swigCPtr, nPlayerID, nObjectID, bRunActionForNonPlayer);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_RepositoryMove(uint nPlayerID, uint nObjectID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_RepositoryMove__SWIG_1(swigCPtr, nPlayerID, nObjectID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_RepositoryMove__SWIG_1(swigCPtr, nPlayerID, nObjectID);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_RepositoryMoveCancel(uint nPlayerID, uint nObjectID, int bRunActionForNonPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_RepositoryMoveCancel__SWIG_0(swigCPtr, nPlayerID, nObjectID, bRunActionForNonPlayer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_RepositoryMoveCancel__SWIG_0(swigCPtr, nPlayerID, nObjectID, bRunActionForNonPlayer);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_RepositoryMoveCancel(uint nPlayerID, uint nObjectID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_RepositoryMoveCancel__SWIG_1(swigCPtr, nPlayerID, nObjectID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_RepositoryMoveCancel__SWIG_1(swigCPtr, nPlayerID, nObjectID);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_Pickup(uint nPlayerID, uint nObjectID, int bRunActionForNonPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_Pickup__SWIG_0(swigCPtr, nPlayerID, nObjectID, bRunActionForNonPlayer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_Pickup__SWIG_0(swigCPtr, nPlayerID, nObjectID, bRunActionForNonPlayer);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_Pickup(uint nPlayerID, uint nObjectID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_Pickup__SWIG_1(swigCPtr, nPlayerID, nObjectID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_Pickup__SWIG_1(swigCPtr, nPlayerID, nObjectID);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_PickupCancel(uint nPlayerID, uint nObjectID, int bRunActionForNonPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_PickupCancel__SWIG_0(swigCPtr, nPlayerID, nObjectID, bRunActionForNonPlayer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_PickupCancel__SWIG_0(swigCPtr, nPlayerID, nObjectID, bRunActionForNonPlayer);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_PickupCancel(uint nPlayerID, uint nObjectID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_PickupCancel__SWIG_1(swigCPtr, nPlayerID, nObjectID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_PickupCancel__SWIG_1(swigCPtr, nPlayerID, nObjectID);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_SelectPanel(uint nPlayerID, byte nPanel) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_SelectPanel(swigCPtr, nPlayerID, nPanel);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_SelectPanel(swigCPtr, nPlayerID, nPanel);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_Unequip(uint nPlayerID, uint nObjectID, int bRunActionForNonPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_Unequip__SWIG_0(swigCPtr, nPlayerID, nObjectID, bRunActionForNonPlayer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_Unequip__SWIG_0(swigCPtr, nPlayerID, nObjectID, bRunActionForNonPlayer);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_Unequip(uint nPlayerID, uint nObjectID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_Unequip__SWIG_1(swigCPtr, nPlayerID, nObjectID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_Unequip__SWIG_1(swigCPtr, nPlayerID, nObjectID);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_UnequipCancel(uint nPlayerID, uint nObjectID, int bRunActionForNonPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_UnequipCancel__SWIG_0(swigCPtr, nPlayerID, nObjectID, bRunActionForNonPlayer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_UnequipCancel__SWIG_0(swigCPtr, nPlayerID, nObjectID, bRunActionForNonPlayer);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_UnequipCancel(uint nPlayerID, uint nObjectID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_UnequipCancel__SWIG_1(swigCPtr, nPlayerID, nObjectID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_UnequipCancel__SWIG_1(swigCPtr, nPlayerID, nObjectID);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_ConfirmDrop(uint nPlayerID, uint nObjectID, int bRunActionForNonPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_ConfirmDrop__SWIG_0(swigCPtr, nPlayerID, nObjectID, bRunActionForNonPlayer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_ConfirmDrop__SWIG_0(swigCPtr, nPlayerID, nObjectID, bRunActionForNonPlayer);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_ConfirmDrop(uint nPlayerID, uint nObjectID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_ConfirmDrop__SWIG_1(swigCPtr, nPlayerID, nObjectID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_ConfirmDrop__SWIG_1(swigCPtr, nPlayerID, nObjectID);
+    return retVal;
   }
 
   public int SendServerToPlayerLogin_Confirm(uint nPlayerID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLogin_Confirm(swigCPtr, nPlayerID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLogin_Confirm(swigCPtr, nPlayerID);
+    return retVal;
   }
 
   public int SendServerToPlayerLogin_GetWaypoint(uint nPlayerID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLogin_GetWaypoint(swigCPtr, nPlayerID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLogin_GetWaypoint(swigCPtr, nPlayerID);
+    return retVal;
   }
 
   public int SendServerToPlayerLogin_Fail(uint nPlayerId, uint strReason) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLogin_Fail(swigCPtr, nPlayerId, strReason);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLogin_Fail(swigCPtr, nPlayerId, strReason);
+    return retVal;
   }
 
   public int SendServerToPlayerModule_Info(uint nPlayerId) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_Info(swigCPtr, nPlayerId);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_Info(swigCPtr, nPlayerId);
+    return retVal;
   }
 
   public int SendServerToPlayerModule_SetPauseState(byte nState, int bPause) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_SetPauseState(swigCPtr, nState, bPause);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_SetPauseState(swigCPtr, nState, bPause);
+    return retVal;
   }
 
   public int SendServerToPlayerModule_ExportReply(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_ExportReply(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_ExportReply(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerParty_Invite(uint nPlayerID, uint oidInviterCreatureID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerParty_Invite(swigCPtr, nPlayerID, oidInviterCreatureID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerParty_Invite(swigCPtr, nPlayerID, oidInviterCreatureID);
+    return retVal;
   }
 
   public int SendServerToPlayerParty_List(uint nPlayerID, int nNumMembers, uint* pMemberIDs, byte nPartyListMessageType, uint oidBanned) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerParty_List(swigCPtr, nPlayerID, nNumMembers, (global::System.IntPtr)pMemberIDs, nPartyListMessageType, oidBanned);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerParty_List(swigCPtr, nPlayerID, nNumMembers, pMemberIDs, nPartyListMessageType, oidBanned);
+    return retVal;
   }
 
   public int SendServerToPlayerParty_TransferObjectControl(uint nPlayerID, uint nControllingPlayer, uint oidCreature) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerParty_TransferObjectControl(swigCPtr, nPlayerID, nControllingPlayer, oidCreature);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerParty_TransferObjectControl(swigCPtr, nPlayerID, nControllingPlayer, oidCreature);
+    return retVal;
   }
 
   public int SendServerToPlayerPlayerList_Add(uint nPlayerId, CNWSPlayer pNewPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPlayerList_Add(swigCPtr, nPlayerId, CNWSPlayer.getCPtr(pNewPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPlayerList_Add(swigCPtr, nPlayerId, CNWSPlayer.getCPtr(pNewPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerPlayerList_All(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPlayerList_All(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPlayerList_All(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerPlayerList_Delete(uint nPlayerId, CNWSPlayer pNewPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPlayerList_Delete(swigCPtr, nPlayerId, CNWSPlayer.getCPtr(pNewPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPlayerList_Delete(swigCPtr, nPlayerId, CNWSPlayer.getCPtr(pNewPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerPlayerList_ReauthorizeCDKey(uint nPlayerId, CExoString sChallenge, CExoString sKey) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPlayerList_ReauthorizeCDKey(swigCPtr, nPlayerId, CExoString.getCPtr(sChallenge), CExoString.getCPtr(sKey));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPlayerList_ReauthorizeCDKey(swigCPtr, nPlayerId, CExoString.getCPtr(sChallenge), CExoString.getCPtr(sKey));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerServerStatus_Status(uint nPlayerId) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerServerStatus_Status(swigCPtr, nPlayerId);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerServerStatus_Status(swigCPtr, nPlayerId);
+    return retVal;
   }
 
   public int SendServerToPlayerCCMessage(uint nPlayerId, byte nMinor, CNWCCMessageData pMessageData, CNWSCombatAttackData pAttackData) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCCMessage(swigCPtr, nPlayerId, nMinor, CNWCCMessageData.getCPtr(pMessageData), CNWSCombatAttackData.getCPtr(pAttackData));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCCMessage(swigCPtr, nPlayerId, nMinor, CNWCCMessageData.getCPtr(pMessageData), CNWSCombatAttackData.getCPtr(pAttackData));
+    return retVal;
   }
 
   public int SendServerToPlayerStringMessage(uint oidPlayer, byte nMinor, CExoString sFeedbackMessage) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerStringMessage(swigCPtr, oidPlayer, nMinor, CExoString.getCPtr(sFeedbackMessage));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerStringMessage(swigCPtr, oidPlayer, nMinor, CExoString.getCPtr(sFeedbackMessage));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerDialogEntry(uint nPlayerID, uint oidOwner, uint oidSpeaker, CExoLocString sEntry, uint oidTokenTarget, byte gender) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDialogEntry(swigCPtr, nPlayerID, oidOwner, oidSpeaker, CExoLocString.getCPtr(sEntry), oidTokenTarget, gender);
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDialogEntry(swigCPtr, nPlayerID, oidOwner, oidSpeaker, CExoLocString.getCPtr(sEntry), oidTokenTarget, gender);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerDialogReplies(uint nPlayerID, CExoLocString pRepliesStr, uint* pRepliesIndex, uint nReplies, uint nInactiveReplies, uint oidTokenTarget, byte gender, int bEndOfDialog, uint currentEntryIndex, int bDisableCameraZoom) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDialogReplies(swigCPtr, nPlayerID, CExoLocString.getCPtr(pRepliesStr), (global::System.IntPtr)pRepliesIndex, nReplies, nInactiveReplies, oidTokenTarget, gender, bEndOfDialog, currentEntryIndex, bDisableCameraZoom);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDialogReplies(swigCPtr, nPlayerID, CExoLocString.getCPtr(pRepliesStr), pRepliesIndex, nReplies, nInactiveReplies, oidTokenTarget, gender, bEndOfDialog, currentEntryIndex, bDisableCameraZoom);
+    return retVal;
   }
 
   public int SendServerToPlayerDialogReplyChosen(uint nPlayerID, uint nReplyIndex, uint currentEntryIndex, CExoLocString sReply, uint oidTokenTarget, byte gender, int bEndOfDialog) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDialogReplyChosen(swigCPtr, nPlayerID, nReplyIndex, currentEntryIndex, CExoLocString.getCPtr(sReply), oidTokenTarget, gender, bEndOfDialog);
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDialogReplyChosen(swigCPtr, nPlayerID, nReplyIndex, currentEntryIndex, CExoLocString.getCPtr(sReply), oidTokenTarget, gender, bEndOfDialog);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerDialogClose(uint nPlayerID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDialogClose(swigCPtr, nPlayerID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDialogClose(swigCPtr, nPlayerID);
+    return retVal;
   }
 
   public int SendServerToPlayerDungeonMasterLoginState(CNWSPlayer pPlayer, int bIsDM, int bIsDMManifested) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMasterLoginState(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bIsDM, bIsDMManifested);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMasterLoginState(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bIsDM, bIsDMManifested);
+    return retVal;
   }
 
   public int SendServerToPlayerDungeonMasterCreatorLists(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMasterCreatorLists(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMasterCreatorLists(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerDungeonMasterAreaList(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMasterAreaList__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMasterAreaList__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerDungeonMasterAreaList(uint nPlayerID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMasterAreaList__SWIG_1(swigCPtr, nPlayerID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMasterAreaList__SWIG_1(swigCPtr, nPlayerID);
+    return retVal;
   }
 
   public int SendServerToPlayerDungeonMasterSearchByIdResult(CNWSPlayer pPlayer, uint oidArea, int objectType, uint oidTarget) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMasterSearchByIdResult(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidArea, objectType, oidTarget);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMasterSearchByIdResult(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidArea, objectType, oidTarget);
+    return retVal;
   }
 
   public int SendServerToPlayerDungeonMasterSearchByTagResult(CNWSPlayer pPlayer, CExoString sTag, int objectType, uint oidTarget) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMasterSearchByTagResult(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CExoString.getCPtr(sTag), objectType, oidTarget);
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMasterSearchByTagResult(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CExoString.getCPtr(sTag), objectType, oidTarget);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerDungeonMasterObjectList(CNWSPlayer pPlayer, uint oidArea, int objectType) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMasterObjectList(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidArea, objectType);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMasterObjectList(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidArea, objectType);
+    return retVal;
   }
 
   public int SendServerToPlayerDungeonMasterUpdatePartyList(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMasterUpdatePartyList__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMasterUpdatePartyList__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerDungeonMasterUpdatePartyList(uint nPlayerID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMasterUpdatePartyList__SWIG_1(swigCPtr, nPlayerID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMasterUpdatePartyList__SWIG_1(swigCPtr, nPlayerID);
+    return retVal;
   }
 
   public int SendServerToPlayerDungeonMastersDifficultyChange(int nDifficulty) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMastersDifficultyChange(swigCPtr, nDifficulty);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDungeonMastersDifficultyChange(swigCPtr, nDifficulty);
+    return retVal;
   }
 
   public int SendServerToPlayerQuickChat(uint nPlayerID, uint oidSpeaker, ushort nSoundSetSoundID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerQuickChat(swigCPtr, nPlayerID, oidSpeaker, nSoundSetSoundID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerQuickChat(swigCPtr, nPlayerID, oidSpeaker, nSoundSetSoundID);
+    return retVal;
   }
 
   public int SendServerToPlayerCheatNasty(uint nPlayerID, uint oidCreature) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCheatNasty(swigCPtr, nPlayerID, oidCreature);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCheatNasty(swigCPtr, nPlayerID, oidCreature);
+    return retVal;
   }
 
   public int SendServerToPlayerCheatPonyRide(uint nPlayerID, uint oidCreature) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCheatPonyRide(swigCPtr, nPlayerID, oidCreature);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCheatPonyRide(swigCPtr, nPlayerID, oidCreature);
+    return retVal;
   }
 
   public int SendServerToPlayerCheatRainOfCows(uint nPlayerID, uint oidCreature) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCheatRainOfCows(swigCPtr, nPlayerID, oidCreature);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCheatRainOfCows(swigCPtr, nPlayerID, oidCreature);
+    return retVal;
   }
 
   public int SendServerToPlayerCheatDebugMode(int bDebugMode) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCheatDebugMode(swigCPtr, bDebugMode);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCheatDebugMode(swigCPtr, bDebugMode);
+    return retVal;
   }
 
   public int SendServerToPlayerGuiContainerObject_Status(CNWSPlayer pPlayer, uint oidContainer, int bOwnInventory) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiContainerObject_Status__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidContainer, bOwnInventory);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiContainerObject_Status__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidContainer, bOwnInventory);
+    return retVal;
   }
 
   public int SendServerToPlayerGuiContainerObject_Status(CNWSPlayer pPlayer, uint oidContainer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiContainerObject_Status__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidContainer);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiContainerObject_Status__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidContainer);
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_SelectPage(uint nPlayerID, byte nPage) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_SelectPage(swigCPtr, nPlayerID, nPage);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_SelectPage(swigCPtr, nPlayerID, nPage);
+    return retVal;
   }
 
   public int SendServerToAllPlayersCreatureUpdate_StripEquippedItems(uint oidCreature, int bLeftHandItemIsDroppable, int bRightHandItemIsDroppable) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToAllPlayersCreatureUpdate_StripEquippedItems(swigCPtr, oidCreature, bLeftHandItemIsDroppable, bRightHandItemIsDroppable);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToAllPlayersCreatureUpdate_StripEquippedItems(swigCPtr, oidCreature, bLeftHandItemIsDroppable, bRightHandItemIsDroppable);
+    return retVal;
   }
 
   public int SendServerPlayerItemUpdate_DestroyItem(CNWSPlayer pPlayer, uint oidItem) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerPlayerItemUpdate_DestroyItem(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidItem);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerPlayerItemUpdate_DestroyItem(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidItem);
+    return retVal;
   }
 
   public int SendServerToPlayerModuleUpdate_Time(CNWSPlayer pPlayer, byte nFlags, uint nYear, uint nMonth, uint nDay, uint nHour, byte nTimeOfDayState, uint nTimeIntoTransition) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModuleUpdate_Time(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nFlags, nYear, nMonth, nDay, nHour, nTimeOfDayState, nTimeIntoTransition);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModuleUpdate_Time(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nFlags, nYear, nMonth, nDay, nHour, nTimeOfDayState, nTimeIntoTransition);
+    return retVal;
   }
 
   public int SendServerToPlayerSafeProjectile(CNWSPlayer pPlayer, uint oidOriginator, uint oidTarget, Vector vOriginator, Vector vTarget, uint nDeltaTime, byte nProjectileType, uint nSpellID, byte nBaseItemID, byte nAttackResult, byte nProjectilePathType) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSafeProjectile(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidOriginator, oidTarget, Vector.getCPtr(vOriginator), Vector.getCPtr(vTarget), nDeltaTime, nProjectileType, nSpellID, nBaseItemID, nAttackResult, nProjectilePathType);
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSafeProjectile(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidOriginator, oidTarget, Vector.getCPtr(vOriginator), Vector.getCPtr(vTarget), nDeltaTime, nProjectileType, nSpellID, nBaseItemID, nAttackResult, nProjectilePathType);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerOpenStoreInventory(CNWSPlayer pPlayer, uint oidStore, byte nPanel) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerOpenStoreInventory(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidStore, nPanel);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerOpenStoreInventory(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidStore, nPanel);
+    return retVal;
   }
 
   public int SendServerToPlayerCloseStoreInventory(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCloseStoreInventory(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCloseStoreInventory(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerPopUpGUIPanel(uint oidObject, int nGuiPanel, int bGUIOption1, int bGUIOption2, int nStringReference, CExoString sStringReference) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPopUpGUIPanel(swigCPtr, oidObject, nGuiPanel, bGUIOption1, bGUIOption2, nStringReference, CExoString.getCPtr(sStringReference));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPopUpGUIPanel(swigCPtr, oidObject, nGuiPanel, bGUIOption1, bGUIOption2, nStringReference, CExoString.getCPtr(sStringReference));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerJournalAddWorld(CNWSPlayer pPlayer, int nIndex, CExoString szEntry, CExoString szTitle, uint nCalendarDay, uint nTimeOfDay) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalAddWorld(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nIndex, CExoString.getCPtr(szEntry), CExoString.getCPtr(szTitle), nCalendarDay, nTimeOfDay);
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalAddWorld(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nIndex, CExoString.getCPtr(szEntry), CExoString.getCPtr(szTitle), nCalendarDay, nTimeOfDay);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerJournalAddWorldStrref(CNWSPlayer pPlayer, uint nStrrefEntry, uint nStrrefTitle, uint nCalendarDay, uint nTimeOfDay) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalAddWorldStrref(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nStrrefEntry, nStrrefTitle, nCalendarDay, nTimeOfDay);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalAddWorldStrref(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nStrrefEntry, nStrrefTitle, nCalendarDay, nTimeOfDay);
+    return retVal;
   }
 
   public int SendServerToPlayerJournalDeleteWorld(CNWSPlayer pPlayer, int nIndex) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalDeleteWorld(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nIndex);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalDeleteWorld(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nIndex);
+    return retVal;
   }
 
   public int SendServerToPlayerJournalDeleteWorldStrref(CNWSPlayer pPlayer, uint nStrrefEntry) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalDeleteWorldStrref(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nStrrefEntry);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalDeleteWorldStrref(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nStrrefEntry);
+    return retVal;
   }
 
   public int SendServerToPlayerJournalDeleteWorldAll(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalDeleteWorldAll(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalDeleteWorldAll(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerJournalAddQuest(CNWSPlayer pPlayer, CExoString szPlotID, int nState, uint nPriority, ushort nPictureIndex, int bCompleteQuest, uint nCalendarDay, uint nTimeOfDay, CExoLocString szName, CExoLocString szText) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalAddQuest(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CExoString.getCPtr(szPlotID), nState, nPriority, nPictureIndex, bCompleteQuest, nCalendarDay, nTimeOfDay, CExoLocString.getCPtr(szName), CExoLocString.getCPtr(szText));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalAddQuest(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CExoString.getCPtr(szPlotID), nState, nPriority, nPictureIndex, bCompleteQuest, nCalendarDay, nTimeOfDay, CExoLocString.getCPtr(szName), CExoLocString.getCPtr(szText));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerJournalRemoveQuest(CNWSPlayer pPlayer, CExoString szPlotID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalRemoveQuest(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CExoString.getCPtr(szPlotID));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalRemoveQuest(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CExoString.getCPtr(szPlotID));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerJournalSetQuestPicture(CNWSPlayer pPlayer, CExoString szPlotID, int nIndex) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalSetQuestPicture(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CExoString.getCPtr(szPlotID), nIndex);
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalSetQuestPicture(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CExoString.getCPtr(szPlotID), nIndex);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerJournalFullUpdate(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalFullUpdate(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalFullUpdate(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerJournalFullUpdateNotNeeded(CNWSPlayer pPlayer, int bClearOldEntries) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalFullUpdateNotNeeded__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bClearOldEntries);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalFullUpdateNotNeeded__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bClearOldEntries);
+    return retVal;
   }
 
   public int SendServerToPlayerJournalFullUpdateNotNeeded(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalFullUpdateNotNeeded__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalFullUpdateNotNeeded__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerJournalUpdated(CNWSPlayer pPlayer, int bQuest, int bCompleted, CExoLocString locName) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalUpdated(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bQuest, bCompleted, CExoLocString.getCPtr(locName));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerJournalUpdated(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bQuest, bCompleted, CExoLocString.getCPtr(locName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerGuiQuickbar_SetButton(CNWSPlayer pPlayer, byte nButton, int bSetAllButtons) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiQuickbar_SetButton__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nButton, bSetAllButtons);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiQuickbar_SetButton__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nButton, bSetAllButtons);
+    return retVal;
   }
 
   public int SendServerToPlayerGuiQuickbar_SetButton(CNWSPlayer pPlayer, byte nButton) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiQuickbar_SetButton__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nButton);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiQuickbar_SetButton__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nButton);
+    return retVal;
   }
 
   public int SendServerToPlayerBarterStartBarter(uint nInitiatorId, uint nRecipientId, uint nInitiatorCreature, uint nRecipientCreature) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerBarterStartBarter(swigCPtr, nInitiatorId, nRecipientId, nInitiatorCreature, nRecipientCreature);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerBarterStartBarter(swigCPtr, nInitiatorId, nRecipientId, nInitiatorCreature, nRecipientCreature);
+    return retVal;
   }
 
   public int SendServerToPlayerBarterCloseBarter(uint nInitiatorId, uint nRecipientId, int bAccepted) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerBarterCloseBarter(swigCPtr, nInitiatorId, nRecipientId, bAccepted);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerBarterCloseBarter(swigCPtr, nInitiatorId, nRecipientId, bAccepted);
+    return retVal;
   }
 
   public int SendServerToPlayerBarterLockList(uint nInitiatorId, uint nRecipientId, int bInitiator, int bLocked) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerBarterLockList(swigCPtr, nInitiatorId, nRecipientId, bInitiator, bLocked);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerBarterLockList(swigCPtr, nInitiatorId, nRecipientId, bInitiator, bLocked);
+    return retVal;
   }
 
   public int SendServerToPlayerBarterAcceptTrade(uint nInitiatorId, uint nRecipientId, int bInitiator, int bAccept) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerBarterAcceptTrade(swigCPtr, nInitiatorId, nRecipientId, bInitiator, bAccept);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerBarterAcceptTrade(swigCPtr, nInitiatorId, nRecipientId, bInitiator, bAccept);
+    return retVal;
   }
 
   public int SendServerToPlayerBarterReject(uint nSenderId, byte nMessage, byte nFlags, uint oidItem) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerBarterReject__SWIG_0(swigCPtr, nSenderId, nMessage, nFlags, oidItem);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerBarterReject__SWIG_0(swigCPtr, nSenderId, nMessage, nFlags, oidItem);
+    return retVal;
   }
 
   public int SendServerToPlayerBarterReject(uint nSenderId, byte nMessage, byte nFlags) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerBarterReject__SWIG_1(swigCPtr, nSenderId, nMessage, nFlags);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerBarterReject__SWIG_1(swigCPtr, nSenderId, nMessage, nFlags);
+    return retVal;
   }
 
   public int SendServerToPlayerAmbientMusicPlay(uint nPlayer, int bPlay) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerAmbientMusicPlay(swigCPtr, nPlayer, bPlay);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerAmbientMusicPlay(swigCPtr, nPlayer, bPlay);
+    return retVal;
   }
 
   public int SendServerToPlayerAmbientMusicSetDelay(uint nPlayer, int nDelay) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerAmbientMusicSetDelay(swigCPtr, nPlayer, nDelay);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerAmbientMusicSetDelay(swigCPtr, nPlayer, nDelay);
+    return retVal;
   }
 
   public int SendServerToPlayerAmbientMusicChangeTrack(uint nPlayer, int bDay, int nTrack) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerAmbientMusicChangeTrack(swigCPtr, nPlayer, bDay, nTrack);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerAmbientMusicChangeTrack(swigCPtr, nPlayer, bDay, nTrack);
+    return retVal;
   }
 
   public int SendServerToPlayerAmbientBattleMusicPlay(uint nPlayer, int bPlay) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerAmbientBattleMusicPlay(swigCPtr, nPlayer, bPlay);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerAmbientBattleMusicPlay(swigCPtr, nPlayer, bPlay);
+    return retVal;
   }
 
   public int SendServerToPlayerAmbientBattleMusicChange(uint nPlayer, int nTrack) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerAmbientBattleMusicChange(swigCPtr, nPlayer, nTrack);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerAmbientBattleMusicChange(swigCPtr, nPlayer, nTrack);
+    return retVal;
   }
 
   public int SendServerToPlayerAmbientSoundLoopPlay(uint nPlayer, int bPlay) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerAmbientSoundLoopPlay(swigCPtr, nPlayer, bPlay);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerAmbientSoundLoopPlay(swigCPtr, nPlayer, bPlay);
+    return retVal;
   }
 
   public int SendServerToPlayerAmbientSoundLoopChange(uint nPlayer, int bDay, int nTrack) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerAmbientSoundLoopChange(swigCPtr, nPlayer, bDay, nTrack);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerAmbientSoundLoopChange(swigCPtr, nPlayer, bDay, nTrack);
+    return retVal;
   }
 
   public int SendServerToPlayerAmbientSoundVolumeChange(uint nPlayer, int bDay, int nVolume) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerAmbientSoundVolumeChange(swigCPtr, nPlayer, bDay, nVolume);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerAmbientSoundVolumeChange(swigCPtr, nPlayer, bDay, nVolume);
+    return retVal;
   }
 
   public int SendServerToPlayerResmanOverride(uint nPlayerId, ushort restype, CResRef sOldName, CResRef sNewName) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerResmanOverride(swigCPtr, nPlayerId, restype, CResRef.getCPtr(sOldName), CResRef.getCPtr(sNewName));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerResmanOverride(swigCPtr, nPlayerId, restype, CResRef.getCPtr(sOldName), CResRef.getCPtr(sNewName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int HandleServerAdminToServerMessage(uint nPlayerId, byte* pMessage, uint nSize) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandleServerAdminToServerMessage(swigCPtr, nPlayerId, (global::System.IntPtr)pMessage, nSize);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandleServerAdminToServerMessage(swigCPtr, nPlayerId, pMessage, nSize);
+    return retVal;
   }
 
   public int SendServerToServerAdminMessage(uint nPlayerId, CExoString sCommand) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToServerAdminMessage(swigCPtr, nPlayerId, CExoString.getCPtr(sCommand));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToServerAdminMessage(swigCPtr, nPlayerId, CExoString.getCPtr(sCommand));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void SendServerToServerAdminModuleList(uint nPlayerId) {
@@ -1471,107 +1471,107 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public int ParseGetBool(byte* pMsgPortion, uint msgPortionSize, int* pBool) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ParseGetBool(swigCPtr, (global::System.IntPtr)pMsgPortion, msgPortionSize, (global::System.IntPtr)pBool);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_ParseGetBool(swigCPtr, pMsgPortion, msgPortionSize, (global::System.IntPtr)pBool);
+    return retVal;
   }
 
   public int ParseGetString(byte* pMsgPortion, uint msgPortionSize, CExoString pString, uint nMaxStrLength) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ParseGetString(swigCPtr, (global::System.IntPtr)pMsgPortion, msgPortionSize, CExoString.getCPtr(pString), nMaxStrLength);
+    int retVal = NWNXLibPINVOKE.CNWSMessage_ParseGetString(swigCPtr, pMsgPortion, msgPortionSize, CExoString.getCPtr(pString), nMaxStrLength);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int ParseToken(byte* token, byte** pMsgPortion, uint* msgPortionSize, int bDelimeterFollowing) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ParseToken(swigCPtr, (global::System.IntPtr)token, (global::System.IntPtr)pMsgPortion, (global::System.IntPtr)msgPortionSize, bDelimeterFollowing);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_ParseToken(swigCPtr, token, (global::System.IntPtr)pMsgPortion, (global::System.IntPtr)msgPortionSize, bDelimeterFollowing);
+    return retVal;
   }
 
   public int SendServerToPlayerDebugInfo_Creature(CNWSPlayer pPlayer, uint oidCreature) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDebugInfo_Creature(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidCreature);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDebugInfo_Creature(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidCreature);
+    return retVal;
   }
 
   public int SendServerToPlayerDebugInfo_Item(CNWSPlayer pPlayer, uint oidItem) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDebugInfo_Item(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidItem);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDebugInfo_Item(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidItem);
+    return retVal;
   }
 
   public int SendServerToPlayerDebugInfo_Placeable(CNWSPlayer pPlayer, uint oidPlaceable) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDebugInfo_Placeable(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidPlaceable);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDebugInfo_Placeable(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidPlaceable);
+    return retVal;
   }
 
   public int SendServerToPlayerDebugInfo_Area(CNWSPlayer pPlayer, uint oidArea) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDebugInfo_Area(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidArea);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDebugInfo_Area(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidArea);
+    return retVal;
   }
 
   public int SendServerToPlayerDebugInfo_Door(CNWSPlayer pPlayer, uint oidDoor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDebugInfo_Door(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidDoor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDebugInfo_Door(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidDoor);
+    return retVal;
   }
 
   public int SendServerToPlayerDebugInfo_Trigger(CNWSPlayer pPlayer, uint oidTrigger) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDebugInfo_Trigger(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidTrigger);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDebugInfo_Trigger(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidTrigger);
+    return retVal;
   }
 
   public int SendServerToPlayerDebugInfo_String(CNWSPlayer pPlayer, CExoString sString) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDebugInfo_String(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CExoString.getCPtr(sString));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerDebugInfo_String(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CExoString.getCPtr(sString));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerLevelUp_Confirmation(uint nPlayerId, int bValidated) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLevelUp_Confirmation(swigCPtr, nPlayerId, bValidated);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLevelUp_Confirmation(swigCPtr, nPlayerId, bValidated);
+    return retVal;
   }
 
   public int SendServerToPlayerLevelUp_Begin(uint nPlayerId, CNWSCreature pCreature) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLevelUp_Begin(swigCPtr, nPlayerId, CNWSCreature.getCPtr(pCreature));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLevelUp_Begin(swigCPtr, nPlayerId, CNWSCreature.getCPtr(pCreature));
+    return retVal;
   }
 
   public int SendServerToPlayerActivatePortal(uint nPlayerId, CExoString sIPAddress, CExoString sPassword, CExoString sWaypointTag, int bSeemless) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerActivatePortal(swigCPtr, nPlayerId, CExoString.getCPtr(sIPAddress), CExoString.getCPtr(sPassword), CExoString.getCPtr(sWaypointTag), bSeemless);
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerActivatePortal(swigCPtr, nPlayerId, CExoString.getCPtr(sIPAddress), CExoString.getCPtr(sPassword), CExoString.getCPtr(sWaypointTag), bSeemless);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerCharacterDownloadReply(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCharacterDownloadReply(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCharacterDownloadReply(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerCharacterDownloadFail(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCharacterDownloadFail(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCharacterDownloadFail(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerPartyBar_PanelButtonFlash(uint nPlayerId, byte nButton, int bEnableFlash) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPartyBar_PanelButtonFlash(swigCPtr, nPlayerId, nButton, bEnableFlash);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPartyBar_PanelButtonFlash(swigCPtr, nPlayerId, nButton, bEnableFlash);
+    return retVal;
   }
 
   public int SendServerToPlayerCharList(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCharList(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCharList(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerUpdateCharResponse(CNWSPlayer pPlayer, byte nCharType, CResRef cResRef) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateCharResponse(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nCharType, CResRef.getCPtr(cResRef));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateCharResponse(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nCharType, CResRef.getCPtr(cResRef));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerGuiTimingEvent(CNWSPlayer pPlayer, int bStarting, byte nGuiTimingEventID, uint nDuration) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiTimingEvent__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bStarting, nGuiTimingEventID, nDuration);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiTimingEvent__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bStarting, nGuiTimingEventID, nDuration);
+    return retVal;
   }
 
   public int SendServerToPlayerGuiTimingEvent(CNWSPlayer pPlayer, int bStarting, byte nGuiTimingEventID) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiTimingEvent__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bStarting, nGuiTimingEventID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiTimingEvent__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bStarting, nGuiTimingEventID);
+    return retVal;
   }
 
   public void UpdateLastUpdate_GuiEffectIcons(CNWSCreature pCreature, CExoArrayListCEffectIconObjectPtr pLastUpdateEffectArray, int bSendNonPlayerBarIcons) {
@@ -1583,13 +1583,13 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public int ComputeLastUpdate_GuiEffectIcons(CNWSCreature pCreature, CExoArrayListCEffectIconObjectPtr pLastUpdateEffectArray, int bSendNonPlayerBarIcons) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_GuiEffectIcons__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pCreature), CExoArrayListCEffectIconObjectPtr.getCPtr(pLastUpdateEffectArray), bSendNonPlayerBarIcons);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_GuiEffectIcons__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pCreature), CExoArrayListCEffectIconObjectPtr.getCPtr(pLastUpdateEffectArray), bSendNonPlayerBarIcons);
+    return retVal;
   }
 
   public int ComputeLastUpdate_GuiEffectIcons(CNWSCreature pCreature, CExoArrayListCEffectIconObjectPtr pLastUpdateEffectArray) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_GuiEffectIcons__SWIG_1(swigCPtr, CNWSCreature.getCPtr(pCreature), CExoArrayListCEffectIconObjectPtr.getCPtr(pLastUpdateEffectArray));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_GuiEffectIcons__SWIG_1(swigCPtr, CNWSCreature.getCPtr(pCreature), CExoArrayListCEffectIconObjectPtr.getCPtr(pLastUpdateEffectArray));
+    return retVal;
   }
 
   public void WriteGuiEffectIconsUpdate(CNWSCreature pCreature, CExoArrayListCEffectIconObjectPtr pLastUpdateEffectArray, int bSendNonPlayerBarIcons) {
@@ -1601,53 +1601,53 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public int SendServerToPlayerPVP_Attitude_Change(uint nTargetPlayerId, uint nSourcePlayerId, int bNewAttitude) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPVP_Attitude_Change(swigCPtr, nTargetPlayerId, nSourcePlayerId, bNewAttitude);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPVP_Attitude_Change(swigCPtr, nTargetPlayerId, nSourcePlayerId, bNewAttitude);
+    return retVal;
   }
 
   public int SendServerToPlayerCutscene_Status(CNWSPlayer pPlayer, int bIsActive, int bEnableLeftMouseButton) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCutscene_Status(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bIsActive, bEnableLeftMouseButton);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCutscene_Status(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bIsActive, bEnableLeftMouseButton);
+    return retVal;
   }
 
   public int SendServerToPlayerCutscene_FadeToBlack(CNWSPlayer pPlayer, float fFadeSpeed) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCutscene_FadeToBlack(swigCPtr, CNWSPlayer.getCPtr(pPlayer), fFadeSpeed);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCutscene_FadeToBlack(swigCPtr, CNWSPlayer.getCPtr(pPlayer), fFadeSpeed);
+    return retVal;
   }
 
   public int SendServerToPlayerCutscene_FadeFromBlack(CNWSPlayer pPlayer, float fFadeSpeed) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCutscene_FadeFromBlack(swigCPtr, CNWSPlayer.getCPtr(pPlayer), fFadeSpeed);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCutscene_FadeFromBlack(swigCPtr, CNWSPlayer.getCPtr(pPlayer), fFadeSpeed);
+    return retVal;
   }
 
   public int SendServerToPlayerCutscene_StopFade(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCutscene_StopFade(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCutscene_StopFade(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerCutscene_BlackScreen(CNWSPlayer pPlayer) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCutscene_BlackScreen(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCutscene_BlackScreen(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public int SendServerToPlayerCutscene_HideGui(CNWSPlayer pPlayer, int bHideGui) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCutscene_HideGui(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bHideGui);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCutscene_HideGui(swigCPtr, CNWSPlayer.getCPtr(pPlayer), bHideGui);
+    return retVal;
   }
 
   public int SendServerToPlayerPolymorph(CNWSPlayer pPlayer, uint oidMorpher, int bMorphing, int bAllowCancel) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPolymorph(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidMorpher, bMorphing, bAllowCancel);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPolymorph(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidMorpher, bMorphing, bAllowCancel);
+    return retVal;
   }
 
   public int HandlePlayerToServerCutscene(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerCutscene(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerCutscene(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public int HandlePlayerToServerPlayerList(CNWSPlayer pPlayer, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerPlayerList(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerPlayerList(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
   }
 
   public void AddDoorAppearanceToMessage(CNWSPlayer pPlayer, CNWSDoor pDoor) {
@@ -1671,8 +1671,8 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public int ComputeQuickbarItemUseCountUpdateRequired(CNWSObject pGameObject, CLastUpdateObject pLastUpdateObject) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ComputeQuickbarItemUseCountUpdateRequired(swigCPtr, CNWSObject.getCPtr(pGameObject), CLastUpdateObject.getCPtr(pLastUpdateObject));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_ComputeQuickbarItemUseCountUpdateRequired(swigCPtr, CNWSObject.getCPtr(pGameObject), CLastUpdateObject.getCPtr(pLastUpdateObject));
+    return retVal;
   }
 
   public void WriteGameObjUpdate_UpdateQuickbarItemUseCount(CNWSObject pGameObject, CLastUpdateObject pLastUpdateObject) {
@@ -1684,18 +1684,18 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public uint ComputeAppearanceUpdateRequired(CNWSObject pGameObject, CLastUpdateObject pLastUpdateObject) {
-    uint ret = NWNXLibPINVOKE.CNWSMessage_ComputeAppearanceUpdateRequired(swigCPtr, CNWSObject.getCPtr(pGameObject), CLastUpdateObject.getCPtr(pLastUpdateObject));
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSMessage_ComputeAppearanceUpdateRequired(swigCPtr, CNWSObject.getCPtr(pGameObject), CLastUpdateObject.getCPtr(pLastUpdateObject));
+    return retVal;
   }
 
   public int ComputeInventoryUpdateRequired(CNWSPlayer pPlayer, uint nInventorySlot, CNWSPlayerInventoryGUI pInventoryGUI) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ComputeInventoryUpdateRequired(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nInventorySlot, CNWSPlayerInventoryGUI.getCPtr(pInventoryGUI));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_ComputeInventoryUpdateRequired(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nInventorySlot, CNWSPlayerInventoryGUI.getCPtr(pInventoryGUI));
+    return retVal;
   }
 
   public int ComputeRepositoryUpdateRequired(CNWSPlayer pPlayer, CExoLinkedListNode pPosition, CExoLinkedListNode pOldPosition) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ComputeRepositoryUpdateRequired(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CExoLinkedListNode.getCPtr(pPosition), CExoLinkedListNode.getCPtr(pOldPosition));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_ComputeRepositoryUpdateRequired(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CExoLinkedListNode.getCPtr(pPosition), CExoLinkedListNode.getCPtr(pOldPosition));
+    return retVal;
   }
 
   public void AssignVisualEffectLists(CExoArrayListCLoopingVisualEffectPtr pTargetList, CExoArrayListCLoopingVisualEffectPtr pSourceList) {
@@ -1703,8 +1703,8 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public int CompareVisualEffectLists(CExoArrayListCLoopingVisualEffectPtr pSourceList1, CExoArrayListCLoopingVisualEffectPtr pSourceList2) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_CompareVisualEffectLists(swigCPtr, CExoArrayListCLoopingVisualEffectPtr.getCPtr(pSourceList1), CExoArrayListCLoopingVisualEffectPtr.getCPtr(pSourceList2));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_CompareVisualEffectLists(swigCPtr, CExoArrayListCLoopingVisualEffectPtr.getCPtr(pSourceList1), CExoArrayListCLoopingVisualEffectPtr.getCPtr(pSourceList2));
+    return retVal;
   }
 
   public void AssignCreatureLists(CExoArrayListObjectId pSourceList, CExoArrayListObjectId pTargetList) {
@@ -1712,8 +1712,8 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public int CompareCreatureLists(CExoArrayListObjectId pSourceList, CExoArrayListObjectId pTargetList) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_CompareCreatureLists(swigCPtr, CExoArrayListObjectId.getCPtr(pSourceList), CExoArrayListObjectId.getCPtr(pTargetList));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_CompareCreatureLists(swigCPtr, CExoArrayListObjectId.getCPtr(pSourceList), CExoArrayListObjectId.getCPtr(pTargetList));
+    return retVal;
   }
 
   public void UpdateLastUpdateVisibilityList(CNWSCreature pCreature, CNWSPlayerLastUpdateObject pLastUpdateObject) {
@@ -1721,77 +1721,77 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public int ComputeVisibilityLists(CNWSCreature pCreature, CNWSPlayerLastUpdateObject pLastUpdateObject) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ComputeVisibilityLists(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_ComputeVisibilityLists(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
+    return retVal;
   }
 
   public uint ComputeUpdateRequired(CNWSPlayer pPlayer, CNWSObject pGameObject, CLastUpdateObject pLastUpdateObject, int bPlayerObject) {
-    uint ret = NWNXLibPINVOKE.CNWSMessage_ComputeUpdateRequired(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pGameObject), CLastUpdateObject.getCPtr(pLastUpdateObject), bPlayerObject);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSMessage_ComputeUpdateRequired(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pGameObject), CLastUpdateObject.getCPtr(pLastUpdateObject), bPlayerObject);
+    return retVal;
   }
 
   public int SendServerToPlayerChat_Talk(uint nPlayerID, uint oidSpeaker, CExoString sSpeakerMessage) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_Talk(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_Talk(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerChat_DM_Talk(uint nPlayerID, uint oidSpeaker, CExoString sSpeakerMessage) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_DM_Talk(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_DM_Talk(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerChat_Tell(uint nPlayerID, uint oidSpeaker, CExoString sSpeakerMessage) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_Tell(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_Tell(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerChat_ServerTell(uint nPlayerID, CExoString sSpeakerMessage) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_ServerTell(swigCPtr, nPlayerID, CExoString.getCPtr(sSpeakerMessage));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_ServerTell(swigCPtr, nPlayerID, CExoString.getCPtr(sSpeakerMessage));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerChat_Shout(uint nPlayerID, uint oidSpeaker, CExoString sSpeakerMessage) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_Shout(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_Shout(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerChat_Silent_Shout(uint nPlayerID, uint oidSpeaker, CExoString sSpeakerMessage) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_Silent_Shout(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_Silent_Shout(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerChat_DM_Silent_Shout(uint nPlayerID, uint oidSpeaker, CExoString sSpeakerMessage) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_DM_Silent_Shout(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_DM_Silent_Shout(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerChat_StrRef(uint nPlayerID, uint oidSpeaker, byte nChatMessageType, uint nStrRef) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_StrRef(swigCPtr, nPlayerID, oidSpeaker, nChatMessageType, nStrRef);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_StrRef(swigCPtr, nPlayerID, oidSpeaker, nChatMessageType, nStrRef);
+    return retVal;
   }
 
   public int SendServerToPlayerChat_Whisper(uint nPlayerID, uint oidSpeaker, CExoString sSpeakerMessage) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_Whisper(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_Whisper(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerChat_DM_Whisper(uint nPlayerID, uint oidSpeaker, CExoString sSpeakerMessage) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_DM_Whisper(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_DM_Whisper(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerMessage(uint nPlayerId, byte nMajor, byte nMinor, byte* pBuffer, uint nBufferSize) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerMessage(swigCPtr, nPlayerId, nMajor, nMinor, (global::System.IntPtr)pBuffer, nBufferSize);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerMessage(swigCPtr, nPlayerId, nMajor, nMinor, pBuffer, nBufferSize);
+    return retVal;
   }
 
   public void UpdateLastUpdateInventory(CNWSPlayer pPlayer, uint nInventorySlot, CNWSPlayerInventoryGUI pInventoryGUI) {
@@ -1822,7 +1822,7 @@ public unsafe class CNWSMessage : CNWMessage {
     NWNXLibPINVOKE.CNWSMessage_WriteGameObjUpdate_WriteInventorySlotUpdate(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidItem, nSlot);
   }
 
-  public void WriteRepositoryUpdate(CNWSPlayer pPlayer, CNWSObject pPlayerGameObject, CItemRepository pItemRepository, CNWSPlayerLUOInventory pLastUpdateInventory, byte nLastUpdateList, char cGuiElementByte, byte nCurrentPanel) {
+  public void WriteRepositoryUpdate(CNWSPlayer pPlayer, CNWSObject pPlayerGameObject, CItemRepository pItemRepository, CNWSPlayerLUOInventory pLastUpdateInventory, byte nLastUpdateList, byte cGuiElementByte, byte nCurrentPanel) {
     NWNXLibPINVOKE.CNWSMessage_WriteRepositoryUpdate(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSObject.getCPtr(pPlayerGameObject), CItemRepository.getCPtr(pItemRepository), CNWSPlayerLUOInventory.getCPtr(pLastUpdateInventory), nLastUpdateList, cGuiElementByte, nCurrentPanel);
   }
 
@@ -1831,8 +1831,8 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public int ComputeLastUpdate_ActionQueue(CNWSCreature pCreature, CNWSPlayerLastUpdateObject pLastUpdateObject) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_ActionQueue(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_ActionQueue(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
+    return retVal;
   }
 
   public void UpdateLastUpdateActionQueue(CNWSCreature pCreature, CNWSPlayerLastUpdateObject pLastUpdateObject) {
@@ -1840,18 +1840,18 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public int ComputeLastUpdate_AutoMap(CNWSCreature pCreature, CNWSPlayerLastUpdateObject pLastUpdateObject) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_AutoMap(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_AutoMap(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
+    return retVal;
   }
 
   public uint ComputeNumAutoMapUpdatesRequired(CNWSCreature pCreature, CNWSPlayerLastUpdateObject pLastUpdateObject, uint* pnUnexploredTiles) {
-    uint ret = NWNXLibPINVOKE.CNWSMessage_ComputeNumAutoMapUpdatesRequired__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject), (global::System.IntPtr)pnUnexploredTiles);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSMessage_ComputeNumAutoMapUpdatesRequired__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject), pnUnexploredTiles);
+    return retVal;
   }
 
   public uint ComputeNumAutoMapUpdatesRequired(CNWSCreature pCreature, CNWSPlayerLastUpdateObject pLastUpdateObject) {
-    uint ret = NWNXLibPINVOKE.CNWSMessage_ComputeNumAutoMapUpdatesRequired__SWIG_1(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSMessage_ComputeNumAutoMapUpdatesRequired__SWIG_1(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
+    return retVal;
   }
 
   public void UpdateLastUpdateAutoMap(CNWSCreature pCreature, CNWSPlayerLastUpdateObject pLastUpdateObject) {
@@ -1859,48 +1859,48 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public int ComputeLastUpdate_GuiFeats(CNWSCreature pCreature, CNWSPlayerLastUpdateObject pLastUpdateObject) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_GuiFeats(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_GuiFeats(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
+    return retVal;
   }
 
   public uint ComputeLastUpdate_GuiSkills(CNWSCreature pCreature) {
-    uint ret = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_GuiSkills(swigCPtr, CNWSCreature.getCPtr(pCreature));
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_GuiSkills(swigCPtr, CNWSCreature.getCPtr(pCreature));
+    return retVal;
   }
 
   public uint ComputeLastUpdate_PlayerState(CNWSCreature pCreature) {
-    uint ret = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_PlayerState(swigCPtr, CNWSCreature.getCPtr(pCreature));
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_PlayerState(swigCPtr, CNWSCreature.getCPtr(pCreature));
+    return retVal;
   }
 
   public ushort ComputeLastUpdate_AssociateState(CNWSCreature pCreature) {
-    ushort ret = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_AssociateState(swigCPtr, CNWSCreature.getCPtr(pCreature));
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_AssociateState(swigCPtr, CNWSCreature.getCPtr(pCreature));
+    return retVal;
   }
 
   public int ComputeLastUpdate_GuiKnownSpells(CNWSCreature pCreature, CNWSPlayerLastUpdateObject pLastUpdateObject) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_GuiKnownSpells(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_GuiKnownSpells(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
+    return retVal;
   }
 
   public int ComputeLastUpdate_GuiMemorizedSpells(CNWSCreature pCreature, CNWSPlayerLastUpdateObject pLastUpdateObject) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_GuiMemorizedSpells(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_GuiMemorizedSpells(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
+    return retVal;
   }
 
   public int ComputeLastUpdate_GuiKnownSpellUses(CNWSCreature pCreature, CNWSPlayerLastUpdateObject pLastUpdateObject) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_GuiKnownSpellUses(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_GuiKnownSpellUses(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
+    return retVal;
   }
 
   public int ComputeLastUpdate_GuiNumberMemorizedSpells(CNWSCreature pCreature, CNWSPlayerLastUpdateObject pLastUpdateObject) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_GuiNumberMemorizedSpells(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_GuiNumberMemorizedSpells(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
+    return retVal;
   }
 
   public int ComputeLastUpdate_CompareSpellLikeAbility(CNWSCreature pCreature, CNWSPlayerLastUpdateObject pLastUpdateObject) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_CompareSpellLikeAbility(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_ComputeLastUpdate_CompareSpellLikeAbility(swigCPtr, CNWSCreature.getCPtr(pCreature), CNWSPlayerLastUpdateObject.getCPtr(pLastUpdateObject));
+    return retVal;
   }
 
   public void ComputeLastUpdate_WriteSpellLikeAbility(CNWSCreature pCreature, CNWSPlayerLastUpdateObject pLastUpdateObject) {
@@ -1912,20 +1912,20 @@ public unsafe class CNWSMessage : CNWMessage {
   }
 
   public int HasValidString(CExoLocString sLocString, byte nGender) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HasValidString__SWIG_0(swigCPtr, CExoLocString.getCPtr(sLocString), nGender);
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HasValidString__SWIG_0(swigCPtr, CExoLocString.getCPtr(sLocString), nGender);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int HasValidString(CExoLocString sLocString) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_HasValidString__SWIG_1(swigCPtr, CExoLocString.getCPtr(sLocString));
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HasValidString__SWIG_1(swigCPtr, CExoLocString.getCPtr(sLocString));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SendServerToPlayerInventory_LearnScroll(uint nPlayerID, uint nObjectID, byte nMinor) {
-    int ret = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_LearnScroll(swigCPtr, nPlayerID, nObjectID, nMinor);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_LearnScroll(swigCPtr, nPlayerID, nObjectID, nMinor);
+    return retVal;
   }
 
 }

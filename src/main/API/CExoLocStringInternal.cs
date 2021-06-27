@@ -106,23 +106,24 @@ public unsafe class CExoLocStringInternal : global::System.IDisposable {
       NWNXLibPINVOKE.CExoLocStringInternal_m_nStringCount_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoLocStringInternal_m_nStringCount_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoLocStringInternal_m_nStringCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoLocStringInternal() : this(NWNXLibPINVOKE.new_CExoLocStringInternal(), true) {
   }
 
   public int AddString(int nID, CExoString sString) {
-    int ret = NWNXLibPINVOKE.CExoLocStringInternal_AddString(swigCPtr, nID, CExoString.getCPtr(sString));
+    int retVal = NWNXLibPINVOKE.CExoLocStringInternal_AddString(swigCPtr, nID, CExoString.getCPtr(sString));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int Assign(CExoLocStringInternal pLocStringInternal) {
-    int ret = NWNXLibPINVOKE.CExoLocStringInternal_Assign(swigCPtr, CExoLocStringInternal.getCPtr(pLocStringInternal));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoLocStringInternal_Assign(swigCPtr, CExoLocStringInternal.getCPtr(pLocStringInternal));
+    return retVal;
   }
 
   public void ClearLocString() {
@@ -130,29 +131,29 @@ public unsafe class CExoLocStringInternal : global::System.IDisposable {
   }
 
   public int Compare(CExoLocString LocString) {
-    int ret = NWNXLibPINVOKE.CExoLocStringInternal_Compare(swigCPtr, CExoLocString.getCPtr(LocString));
+    int retVal = NWNXLibPINVOKE.CExoLocStringInternal_Compare(swigCPtr, CExoLocString.getCPtr(LocString));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int GetString(uint nPos, int* pID, CExoString pString) {
-    int ret = NWNXLibPINVOKE.CExoLocStringInternal_GetString__SWIG_0(swigCPtr, nPos, (global::System.IntPtr)pID, CExoString.getCPtr(pString));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoLocStringInternal_GetString__SWIG_0(swigCPtr, nPos, pID, CExoString.getCPtr(pString));
+    return retVal;
   }
 
   public int GetString(int nID, CExoString pString) {
-    int ret = NWNXLibPINVOKE.CExoLocStringInternal_GetString__SWIG_1(swigCPtr, nID, CExoString.getCPtr(pString));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoLocStringInternal_GetString__SWIG_1(swigCPtr, nID, CExoString.getCPtr(pString));
+    return retVal;
   }
 
   public uint GetStringCount() {
-    uint ret = NWNXLibPINVOKE.CExoLocStringInternal_GetStringCount(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoLocStringInternal_GetStringCount(swigCPtr);
+    return retVal;
   }
 
   public int GetStringLength(uint nPos) {
-    int ret = NWNXLibPINVOKE.CExoLocStringInternal_GetStringLength(swigCPtr, nPos);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoLocStringInternal_GetStringLength(swigCPtr, nPos);
+    return retVal;
   }
 
   public void RemoveString(int nID) {

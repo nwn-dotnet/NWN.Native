@@ -144,9 +144,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nLastAreaAIUpdatePos_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSModule_m_nLastAreaAIUpdatePos_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_nLastAreaAIUpdatePos_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoLinkedListNWPlayerListItem m_lstPlayerInfo {
@@ -253,9 +254,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nSourceType_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSModule_m_nSourceType_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_nSourceType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sDDResourceName {
@@ -274,9 +276,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_bIsDDModule_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSModule_m_bIsDDModule_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_bIsDDModule_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bIsDDDemoModule {
@@ -284,9 +287,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_bIsDDDemoModule_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSModule_m_bIsDDDemoModule_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_bIsDDDemoModule_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bIsDDModuleLoaded {
@@ -294,9 +298,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_bIsDDModuleLoaded_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSModule_m_bIsDDModuleLoaded_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_bIsDDModuleLoaded_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoLocString m_lsModuleName {
@@ -360,9 +365,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nLastHeartbeatScriptCalendarDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_nLastHeartbeatScriptCalendarDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_nLastHeartbeatScriptCalendarDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nLastHeartbeatScriptTimeOfDay {
@@ -370,9 +376,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nLastHeartbeatScriptTimeOfDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_nLastHeartbeatScriptTimeOfDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_nLastHeartbeatScriptTimeOfDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCNWSTagNode m_aTagLookupTable {
@@ -402,9 +409,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nCustomScriptEventId_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSModule_m_nCustomScriptEventId_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_nCustomScriptEventId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastEnter {
@@ -412,9 +420,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastEnter_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastEnter_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastEnter_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastExit {
@@ -422,9 +431,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastExit_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastExit_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastExit_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastItemAcquired {
@@ -432,9 +442,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastItemAcquired_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastItemAcquired_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastItemAcquired_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastItemAcquiredFrom {
@@ -442,9 +453,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastItemAcquiredFrom_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastItemAcquiredFrom_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastItemAcquiredFrom_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastItemAcquiredBy {
@@ -452,9 +464,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastItemAcquiredBy_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastItemAcquiredBy_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastItemAcquiredBy_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastItemLost {
@@ -462,9 +475,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastItemLost_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastItemLost_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastItemLost_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastItemLoser {
@@ -472,9 +486,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastItemLoser_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastItemLoser_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastItemLoser_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nLastItemAcquiredSize {
@@ -482,9 +497,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nLastItemAcquiredSize_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSModule_m_nLastItemAcquiredSize_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_nLastItemAcquiredSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nLastItemLostSize {
@@ -492,9 +508,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nLastItemLostSize_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSModule_m_nLastItemLostSize_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_nLastItemLostSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastItemEquipped {
@@ -502,9 +519,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastItemEquipped_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastItemEquipped_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastItemEquipped_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastItemEquippedBy {
@@ -512,9 +530,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastItemEquippedBy_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastItemEquippedBy_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastItemEquippedBy_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastItemUnequipped {
@@ -522,9 +541,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastItemUnequipped_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastItemUnequipped_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastItemUnequipped_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastItemUnequippedBy {
@@ -532,9 +552,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastItemUnequippedBy_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastItemUnequippedBy_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastItemUnequippedBy_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastRested {
@@ -542,9 +563,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastRested_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastRested_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastRested_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nLastRestEventType {
@@ -552,9 +574,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nLastRestEventType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSModule_m_nLastRestEventType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSModule_m_nLastRestEventType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastPlayerDied {
@@ -562,9 +585,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastPlayerDied_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastPlayerDied_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastPlayerDied_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastPlayerDying {
@@ -572,9 +596,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastPlayerDying_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastPlayerDying_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastPlayerDying_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastRespawnButtonPresser {
@@ -582,9 +607,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastRespawnButtonPresser_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastRespawnButtonPresser_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastRespawnButtonPresser_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastItemActivated {
@@ -592,9 +618,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastItemActivated_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastItemActivated_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastItemActivated_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastItemActivator {
@@ -602,9 +629,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastItemActivator_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastItemActivator_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastItemActivator_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastItemActivatedArea {
@@ -612,9 +640,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastItemActivatedArea_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastItemActivatedArea_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastItemActivatedArea_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastItemActivatedTarget {
@@ -622,9 +651,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastItemActivatedTarget_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastItemActivatedTarget_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastItemActivatedTarget_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public Vector m_vLastItemActivatedPosition {
@@ -643,9 +673,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastPCLevellingUp_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastPCLevellingUp_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastPCLevellingUp_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastPCCancelCutscene {
@@ -653,9 +684,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastPCCancelCutscene_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastPCCancelCutscene_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastPCCancelCutscene_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nMinutesPerHour {
@@ -663,9 +695,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nMinutesPerHour_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSModule_m_nMinutesPerHour_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSModule_m_nMinutesPerHour_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nDawnHour {
@@ -673,9 +706,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nDawnHour_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSModule_m_nDawnHour_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSModule_m_nDawnHour_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nDuskHour {
@@ -683,9 +717,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nDuskHour_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSModule_m_nDuskHour_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSModule_m_nDuskHour_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nStartMonth {
@@ -693,9 +728,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nStartMonth_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSModule_m_nStartMonth_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSModule_m_nStartMonth_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nStartDay {
@@ -703,9 +739,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nStartDay_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSModule_m_nStartDay_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSModule_m_nStartDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nStartHour {
@@ -713,9 +750,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nStartHour_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSModule_m_nStartHour_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSModule_m_nStartHour_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nXPScale {
@@ -723,9 +761,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nXPScale_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSModule_m_nXPScale_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSModule_m_nXPScale_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nCurrentYear {
@@ -733,9 +772,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nCurrentYear_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_nCurrentYear_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_nCurrentYear_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nCurrentMonth {
@@ -743,9 +783,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nCurrentMonth_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_nCurrentMonth_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_nCurrentMonth_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nCurrentDay {
@@ -753,9 +794,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nCurrentDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_nCurrentDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_nCurrentDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nCurrentHour {
@@ -763,9 +805,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nCurrentHour_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_nCurrentHour_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_nCurrentHour_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nTimeIntoTransition {
@@ -773,9 +816,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nTimeIntoTransition_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_nTimeIntoTransition_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_nTimeIntoTransition_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nTimeOfDayState {
@@ -783,9 +827,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nTimeOfDayState_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSModule_m_nTimeOfDayState_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSModule_m_nTimeOfDayState_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nLastUpdateCalendarDay {
@@ -793,9 +838,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nLastUpdateCalendarDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_nLastUpdateCalendarDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_nLastUpdateCalendarDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nLastUpdateTimeOfDay {
@@ -803,9 +849,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nLastUpdateTimeOfDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_nLastUpdateTimeOfDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_nLastUpdateTimeOfDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bIsSaveGame {
@@ -813,9 +860,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_bIsSaveGame_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSModule_m_bIsSaveGame_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_bIsSaveGame_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCWorldJournalEntry m_pWorldJournal {
@@ -834,9 +882,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_bModuleLoadFinished_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSModule_m_bModuleLoadFinished_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_bModuleLoadFinished_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nMaxHenchmen {
@@ -844,9 +893,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nMaxHenchmen_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSModule_m_nMaxHenchmen_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_nMaxHenchmen_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListObjectId m_aGameObjectsLimbo {
@@ -920,9 +970,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_bIsNWMFile_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSModule_m_bIsNWMFile_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_bIsNWMFile_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sNWMResName {
@@ -941,9 +992,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nResourceCount_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSModule_m_nResourceCount_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_nResourceCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nPlayerPathfindRule {
@@ -951,9 +1003,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nPlayerPathfindRule_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSModule_m_nPlayerPathfindRule_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSModule_m_nPlayerPathfindRule_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nEnableScriptDebugger {
@@ -961,9 +1014,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nEnableScriptDebugger_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSModule_m_nEnableScriptDebugger_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSModule_m_nEnableScriptDebugger_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastPlayerChatObjectId {
@@ -971,9 +1025,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastPlayerChatObjectId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastPlayerChatObjectId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastPlayerChatObjectId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sLastPlayerChatMessage {
@@ -992,9 +1047,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nLastPlayerChatType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSModule_m_nLastPlayerChatType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSModule_m_nLastPlayerChatType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidLastPlayerToSelectTarget {
@@ -1002,9 +1058,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidLastPlayerToSelectTarget_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidLastPlayerToSelectTarget_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastPlayerToSelectTarget_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidPlayerTargetObject {
@@ -1012,9 +1069,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_oidPlayerTargetObject_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_oidPlayerTargetObject_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidPlayerTargetObject_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public Vector m_vPlayerTargetPosition {
@@ -1063,13 +1121,13 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   }
 
   public int AIUpdate() {
-    int ret = NWNXLibPINVOKE.CNWSModule_AIUpdate(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSModule_AIUpdate(swigCPtr);
+    return retVal;
   }
 
   public int ComputeInterAreaPath(CPathfindInformation pcPathfindInformation) {
-    int ret = NWNXLibPINVOKE.CNWSModule_ComputeInterAreaPath(swigCPtr, CPathfindInformation.getCPtr(pcPathfindInformation));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSModule_ComputeInterAreaPath(swigCPtr, CPathfindInformation.getCPtr(pcPathfindInformation));
+    return retVal;
   }
 
   public void EventHandler(uint nEventId, uint nCallerObjectId, void* pScript, uint nCalendarDay, uint nTimeOfDay) {
@@ -1077,8 +1135,8 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   }
 
   public uint GenerateInterAreaDFSSuccessors(int level, CPathfindInformation pcPathfindInformation, uint** pAreaSuccessors) {
-    uint ret = NWNXLibPINVOKE.CNWSModule_GenerateInterAreaDFSSuccessors(swigCPtr, level, CPathfindInformation.getCPtr(pcPathfindInformation), (global::System.IntPtr)pAreaSuccessors);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSModule_GenerateInterAreaDFSSuccessors(swigCPtr, level, CPathfindInformation.getCPtr(pcPathfindInformation), (global::System.IntPtr)pAreaSuccessors);
+    return retVal;
   }
 
   public CNWSArea GetArea(CResRef refArea) {
@@ -1113,24 +1171,24 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   }
 
   public int InterAreaDFS(int level, int depth, CPathfindInformation pcPathfindInformation) {
-    int ret = NWNXLibPINVOKE.CNWSModule_InterAreaDFS(swigCPtr, level, depth, CPathfindInformation.getCPtr(pcPathfindInformation));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSModule_InterAreaDFS(swigCPtr, level, depth, CPathfindInformation.getCPtr(pcPathfindInformation));
+    return retVal;
   }
 
   public uint LoadModuleStart(CExoString sModuleName, int bIsSaveGame, int nSourceType, SWIGTYPE_p_NWSync__Advertisement nwsyncModuleSourceAdvert) {
-    uint ret = NWNXLibPINVOKE.CNWSModule_LoadModuleStart(swigCPtr, CExoString.getCPtr(sModuleName), bIsSaveGame, nSourceType, SWIGTYPE_p_NWSync__Advertisement.getCPtr(nwsyncModuleSourceAdvert));
+    uint retVal = NWNXLibPINVOKE.CNWSModule_LoadModuleStart(swigCPtr, CExoString.getCPtr(sModuleName), bIsSaveGame, nSourceType, SWIGTYPE_p_NWSync__Advertisement.getCPtr(nwsyncModuleSourceAdvert));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public uint LoadModuleInProgress(int nAreasLoaded, int nAreasToLoad) {
-    uint ret = NWNXLibPINVOKE.CNWSModule_LoadModuleInProgress(swigCPtr, nAreasLoaded, nAreasToLoad);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSModule_LoadModuleInProgress(swigCPtr, nAreasLoaded, nAreasToLoad);
+    return retVal;
   }
 
   public uint LoadModuleFinish() {
-    uint ret = NWNXLibPINVOKE.CNWSModule_LoadModuleFinish(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSModule_LoadModuleFinish(swigCPtr);
+    return retVal;
   }
 
   public void PackModuleResourcesIntoMessage() {
@@ -1142,18 +1200,18 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   }
 
   public uint PlotPath(CPathfindInformation pcPathfindInformation, uint nTimeSlice) {
-    uint ret = NWNXLibPINVOKE.CNWSModule_PlotPath(swigCPtr, CPathfindInformation.getCPtr(pcPathfindInformation), nTimeSlice);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSModule_PlotPath(swigCPtr, CPathfindInformation.getCPtr(pcPathfindInformation), nTimeSlice);
+    return retVal;
   }
 
   public uint PlotInterAreaPath(CPathfindInformation pcPathfindInformation, uint nTimeSlice) {
-    uint ret = NWNXLibPINVOKE.CNWSModule_PlotInterAreaPath(swigCPtr, CPathfindInformation.getCPtr(pcPathfindInformation), nTimeSlice);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSModule_PlotInterAreaPath(swigCPtr, CPathfindInformation.getCPtr(pcPathfindInformation), nTimeSlice);
+    return retVal;
   }
 
   public uint PlotPathInArea(CPathfindInformation pcPathfindInformation, uint nTimeSlice) {
-    uint ret = NWNXLibPINVOKE.CNWSModule_PlotPathInArea(swigCPtr, CPathfindInformation.getCPtr(pcPathfindInformation), nTimeSlice);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSModule_PlotPathInArea(swigCPtr, CPathfindInformation.getCPtr(pcPathfindInformation), nTimeSlice);
+    return retVal;
   }
 
   public void SaveModuleStart(CExoString sFilePath, CExoString sFileName) {
@@ -1162,24 +1220,24 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   }
 
   public int SaveModuleInProgress() {
-    int ret = NWNXLibPINVOKE.CNWSModule_SaveModuleInProgress(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSModule_SaveModuleInProgress(swigCPtr);
+    return retVal;
   }
 
   public int SaveModuleFinish(CExoString sFilePath, CExoString sFileName) {
-    int ret = NWNXLibPINVOKE.CNWSModule_SaveModuleFinish(swigCPtr, CExoString.getCPtr(sFilePath), CExoString.getCPtr(sFileName));
+    int retVal = NWNXLibPINVOKE.CNWSModule_SaveModuleFinish(swigCPtr, CExoString.getCPtr(sFilePath), CExoString.getCPtr(sFileName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public uint GetPlayerIndexInPlayerList(CNWSPlayer pPlayer) {
-    uint ret = NWNXLibPINVOKE.CNWSModule_GetPlayerIndexInPlayerList(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSModule_GetPlayerIndexInPlayerList(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public uint GetPrimaryPlayerIndex() {
-    uint ret = NWNXLibPINVOKE.CNWSModule_GetPrimaryPlayerIndex(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSModule_GetPrimaryPlayerIndex(swigCPtr);
+    return retVal;
   }
 
   public void PackPlayerCharacterListIntoMessage(CNWSPlayer pPlayer, CExoArrayListNWPlayerCharacterListPtr lstChars) {
@@ -1196,49 +1254,49 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   }
 
   public uint GetWaypoint(CExoString sTag) {
-    uint ret = NWNXLibPINVOKE.CNWSModule_GetWaypoint(swigCPtr, CExoString.getCPtr(sTag));
+    uint retVal = NWNXLibPINVOKE.CNWSModule_GetWaypoint(swigCPtr, CExoString.getCPtr(sTag));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int AddObjectToLookupTable(CExoString sTag, uint oidObject) {
-    int ret = NWNXLibPINVOKE.CNWSModule_AddObjectToLookupTable(swigCPtr, CExoString.getCPtr(sTag), oidObject);
+    int retVal = NWNXLibPINVOKE.CNWSModule_AddObjectToLookupTable(swigCPtr, CExoString.getCPtr(sTag), oidObject);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int RemoveObjectFromLookupTable(CExoString sTag, uint oidObject) {
-    int ret = NWNXLibPINVOKE.CNWSModule_RemoveObjectFromLookupTable(swigCPtr, CExoString.getCPtr(sTag), oidObject);
+    int retVal = NWNXLibPINVOKE.CNWSModule_RemoveObjectFromLookupTable(swigCPtr, CExoString.getCPtr(sTag), oidObject);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public uint FindObjectByTagOrdinal(CExoString sTag, uint nNth) {
-    uint ret = NWNXLibPINVOKE.CNWSModule_FindObjectByTagOrdinal__SWIG_0(swigCPtr, CExoString.getCPtr(sTag), nNth);
+    uint retVal = NWNXLibPINVOKE.CNWSModule_FindObjectByTagOrdinal__SWIG_0(swigCPtr, CExoString.getCPtr(sTag), nNth);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public uint FindObjectByTagOrdinal(CExoString sTag) {
-    uint ret = NWNXLibPINVOKE.CNWSModule_FindObjectByTagOrdinal__SWIG_1(swigCPtr, CExoString.getCPtr(sTag));
+    uint retVal = NWNXLibPINVOKE.CNWSModule_FindObjectByTagOrdinal__SWIG_1(swigCPtr, CExoString.getCPtr(sTag));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public uint FindObjectByTagTypeOrdinal(CExoString sTag, int nObjectType, uint nNth) {
-    uint ret = NWNXLibPINVOKE.CNWSModule_FindObjectByTagTypeOrdinal__SWIG_0(swigCPtr, CExoString.getCPtr(sTag), nObjectType, nNth);
+    uint retVal = NWNXLibPINVOKE.CNWSModule_FindObjectByTagTypeOrdinal__SWIG_0(swigCPtr, CExoString.getCPtr(sTag), nObjectType, nNth);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public uint FindObjectByTagTypeOrdinal(CExoString sTag, int nObjectType) {
-    uint ret = NWNXLibPINVOKE.CNWSModule_FindObjectByTagTypeOrdinal__SWIG_1(swigCPtr, CExoString.getCPtr(sTag), nObjectType);
+    uint retVal = NWNXLibPINVOKE.CNWSModule_FindObjectByTagTypeOrdinal__SWIG_1(swigCPtr, CExoString.getCPtr(sTag), nObjectType);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void GetTime(uint* pYear, uint* pMonth, uint* pDay, uint* pHour, byte* pTimeOfDayState, uint* pTimeIntoTransition) {
-    NWNXLibPINVOKE.CNWSModule_GetTime(swigCPtr, (global::System.IntPtr)pYear, (global::System.IntPtr)pMonth, (global::System.IntPtr)pDay, (global::System.IntPtr)pHour, (global::System.IntPtr)pTimeOfDayState, (global::System.IntPtr)pTimeIntoTransition);
+    NWNXLibPINVOKE.CNWSModule_GetTime(swigCPtr, pYear, pMonth, pDay, pHour, pTimeOfDayState, pTimeIntoTransition);
   }
 
   public void UpdateTime(uint nCalendarDay, uint nTimeOfDay, uint nUpdateDifference) {
@@ -1267,8 +1325,8 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   }
 
   public uint GetWorldJournalIndexUnique() {
-    uint ret = NWNXLibPINVOKE.CNWSModule_GetWorldJournalIndexUnique(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSModule_GetWorldJournalIndexUnique(swigCPtr);
+    return retVal;
   }
 
   public void AddToTURDList(CNWSPlayerTURD pTURD) {
@@ -1306,8 +1364,8 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   }
 
   public int IsObjectInLimbo(uint id) {
-    int ret = NWNXLibPINVOKE.CNWSModule_IsObjectInLimbo(swigCPtr, id);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSModule_IsObjectInLimbo(swigCPtr, id);
+    return retVal;
   }
 
   public void CleanUpLimboList() {
@@ -1315,8 +1373,8 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   }
 
   public byte IsOfficialCampaign() {
-    byte ret = NWNXLibPINVOKE.CNWSModule_IsOfficialCampaign(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSModule_IsOfficialCampaign(swigCPtr);
+    return retVal;
   }
 
   public void DestroyModuleSqliteDatabase() {
@@ -1324,13 +1382,13 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   }
 
   public int RunEventScript(int nScript, CExoString psOverrideScriptName) {
-    int ret = NWNXLibPINVOKE.CNWSModule_RunEventScript__SWIG_0(swigCPtr, nScript, CExoString.getCPtr(psOverrideScriptName));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSModule_RunEventScript__SWIG_0(swigCPtr, nScript, CExoString.getCPtr(psOverrideScriptName));
+    return retVal;
   }
 
   public int RunEventScript(int nScript) {
-    int ret = NWNXLibPINVOKE.CNWSModule_RunEventScript__SWIG_1(swigCPtr, nScript);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSModule_RunEventScript__SWIG_1(swigCPtr, nScript);
+    return retVal;
   }
 
   public void PostProcess() {
@@ -1338,14 +1396,14 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   }
 
   public int SaveModuleIFOStart(CResGFF pRes, CResStruct pTopLevelStruct) {
-    int ret = NWNXLibPINVOKE.CNWSModule_SaveModuleIFOStart(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSModule_SaveModuleIFOStart(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct));
+    return retVal;
   }
 
   public int SaveModuleIFOFinish(CResGFF pRes, CResStruct pTopLevelStruct, CERFFile cSaveFile, CExoString sPath, CExoArrayListObjectId aPlayers) {
-    int ret = NWNXLibPINVOKE.CNWSModule_SaveModuleIFOFinish(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CERFFile.getCPtr(cSaveFile), CExoString.getCPtr(sPath), CExoArrayListObjectId.getCPtr(aPlayers));
+    int retVal = NWNXLibPINVOKE.CNWSModule_SaveModuleIFOFinish(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CERFFile.getCPtr(cSaveFile), CExoString.getCPtr(sPath), CExoArrayListObjectId.getCPtr(aPlayers));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void SaveLimboCreatures(CResGFF pRes, CResStruct pTopLevelStruct) {
@@ -1353,41 +1411,41 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   }
 
   public int LoadLimboCreatures(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int ret = NWNXLibPINVOKE.CNWSModule_LoadLimboCreatures(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSModule_LoadLimboCreatures(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
+    return retVal;
   }
 
   public int SaveSqliteDatabase(CERFFile cSaveFile) {
-    int ret = NWNXLibPINVOKE.CNWSModule_SaveSqliteDatabase(swigCPtr, CERFFile.getCPtr(cSaveFile));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSModule_SaveSqliteDatabase(swigCPtr, CERFFile.getCPtr(cSaveFile));
+    return retVal;
   }
 
   public int LoadSqliteDatabase() {
-    int ret = NWNXLibPINVOKE.CNWSModule_LoadSqliteDatabase(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSModule_LoadSqliteDatabase(swigCPtr);
+    return retVal;
   }
 
   public int SaveModuleFAC(CERFFile cSaveFile) {
-    int ret = NWNXLibPINVOKE.CNWSModule_SaveModuleFAC(swigCPtr, CERFFile.getCPtr(cSaveFile));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSModule_SaveModuleFAC(swigCPtr, CERFFile.getCPtr(cSaveFile));
+    return retVal;
   }
 
   public int SaveStatic(CERFFile cSaveFile, CExoString sFileType, ushort nResType, int bIsGFF) {
-    int ret = NWNXLibPINVOKE.CNWSModule_SaveStatic__SWIG_0(swigCPtr, CERFFile.getCPtr(cSaveFile), CExoString.getCPtr(sFileType), nResType, bIsGFF);
+    int retVal = NWNXLibPINVOKE.CNWSModule_SaveStatic__SWIG_0(swigCPtr, CERFFile.getCPtr(cSaveFile), CExoString.getCPtr(sFileType), nResType, bIsGFF);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SaveStatic(CERFFile cSaveFile, CExoString sFileType, ushort nResType) {
-    int ret = NWNXLibPINVOKE.CNWSModule_SaveStatic__SWIG_1(swigCPtr, CERFFile.getCPtr(cSaveFile), CExoString.getCPtr(sFileType), nResType);
+    int retVal = NWNXLibPINVOKE.CNWSModule_SaveStatic__SWIG_1(swigCPtr, CERFFile.getCPtr(cSaveFile), CExoString.getCPtr(sFileType), nResType);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int SavePlayers(CResGFF pResIFO, CResStruct pStructIFO, CExoString sPath, CExoArrayListObjectId aPlayers) {
-    int ret = NWNXLibPINVOKE.CNWSModule_SavePlayers(swigCPtr, CResGFF.getCPtr(pResIFO), CResStruct.getCPtr(pStructIFO), CExoString.getCPtr(sPath), CExoArrayListObjectId.getCPtr(aPlayers));
+    int retVal = NWNXLibPINVOKE.CNWSModule_SavePlayers(swigCPtr, CResGFF.getCPtr(pResIFO), CResStruct.getCPtr(pStructIFO), CExoString.getCPtr(sPath), CExoArrayListObjectId.getCPtr(aPlayers));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void TimeStopSanityCheck() {
@@ -1395,14 +1453,14 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   }
 
   public byte* GetFullCipher(CExoString sModuleResourceName) {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSModule_GetFullCipher(swigCPtr, CExoString.getCPtr(sModuleResourceName));
+    byte* retVal = NWNXLibPINVOKE.CNWSModule_GetFullCipher(swigCPtr, CExoString.getCPtr(sModuleResourceName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return (byte*)retVal;
+    return retVal;
   }
 
   public int FindTagPositionInTable(byte* szTag) {
-    int ret = NWNXLibPINVOKE.CNWSModule_FindTagPositionInTable(swigCPtr, (global::System.IntPtr)szTag);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSModule_FindTagPositionInTable(swigCPtr, szTag);
+    return retVal;
   }
 
   public uint m_idSelf {
@@ -1410,9 +1468,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_idSelf_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSModule_m_idSelf_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_idSelf_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nObjectType {
@@ -1420,9 +1479,10 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CNWSModule_m_nObjectType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSModule_m_nObjectType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSModule_m_nObjectType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public void* m_pNwnxData {

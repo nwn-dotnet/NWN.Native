@@ -95,9 +95,10 @@ public unsafe class CResGFFField : global::System.IDisposable {
       NWNXLibPINVOKE.CResGFFField_m_nType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGFFField_m_nType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGFFField_m_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nLabelIndex {
@@ -105,9 +106,10 @@ public unsafe class CResGFFField : global::System.IDisposable {
       NWNXLibPINVOKE.CResGFFField_m_nLabelIndex_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGFFField_m_nLabelIndex_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGFFField_m_nLabelIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nDataOrDataOffset {
@@ -115,9 +117,10 @@ public unsafe class CResGFFField : global::System.IDisposable {
       NWNXLibPINVOKE.CResGFFField_m_nDataOrDataOffset_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResGFFField_m_nDataOrDataOffset_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResGFFField_m_nDataOrDataOffset_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResGFFField() : this(NWNXLibPINVOKE.new_CResGFFField(), true) {

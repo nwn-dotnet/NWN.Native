@@ -95,19 +95,21 @@ public unsafe class CNWSPlayerCharSheetGUI : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerCharSheetGUI_m_oidCreatureDisplayed_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerCharSheetGUI_m_oidCreatureDisplayed_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerCharSheetGUI_m_oidCreatureDisplayed_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nActivePanel {
+  public byte m_nActivePanel {
     set {
       NWNXLibPINVOKE.CNWSPlayerCharSheetGUI_m_nActivePanel_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSPlayerCharSheetGUI_m_nActivePanel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerCharSheetGUI_m_nActivePanel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWCreatureStatsUpdate m_pLastStatsUpdate {
@@ -126,14 +128,15 @@ public unsafe class CNWSPlayerCharSheetGUI : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerCharSheetGUI_m_bForceInitialCharSheetUpdate_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayerCharSheetGUI_m_bForceInitialCharSheetUpdate_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayerCharSheetGUI_m_bForceInitialCharSheetUpdate_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint ComputeCharacterSheetUpdateRequired(CNWSPlayer pPlayer) {
-    uint ret = NWNXLibPINVOKE.CNWSPlayerCharSheetGUI_ComputeCharacterSheetUpdateRequired(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSPlayerCharSheetGUI_ComputeCharacterSheetUpdateRequired(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
   }
 
   public void SetCreatureDisplayed(uint oidCreature) {

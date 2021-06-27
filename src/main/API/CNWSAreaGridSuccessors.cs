@@ -95,9 +95,10 @@ public unsafe class CNWSAreaGridSuccessors : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSAreaGridSuccessors_nStepSize_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSAreaGridSuccessors_nStepSize_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSAreaGridSuccessors_nStepSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nX {
@@ -105,9 +106,10 @@ public unsafe class CNWSAreaGridSuccessors : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSAreaGridSuccessors_nX_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSAreaGridSuccessors_nX_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSAreaGridSuccessors_nX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nY {
@@ -115,9 +117,10 @@ public unsafe class CNWSAreaGridSuccessors : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSAreaGridSuccessors_nY_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSAreaGridSuccessors_nY_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSAreaGridSuccessors_nY_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nZ {
@@ -125,9 +128,10 @@ public unsafe class CNWSAreaGridSuccessors : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSAreaGridSuccessors_nZ_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSAreaGridSuccessors_nZ_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSAreaGridSuccessors_nZ_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSAreaGridSuccessors() : this(NWNXLibPINVOKE.new_CNWSAreaGridSuccessors(), true) {

@@ -151,22 +151,22 @@ public unsafe class CNWRules : global::System.IDisposable {
 
   public uint* m_lstMasterFeats {
     set {
-      NWNXLibPINVOKE.CNWRules_m_lstMasterFeats_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWRules_m_lstMasterFeats_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWRules_m_lstMasterFeats_get(swigCPtr);
-        return (uint*)retVal;
+      uint* retVal = NWNXLibPINVOKE.CNWRules_m_lstMasterFeats_get(swigCPtr);
+      return retVal;
     }
 
   }
 
   public uint* m_lstMasterFeatDescriptions {
     set {
-      NWNXLibPINVOKE.CNWRules_m_lstMasterFeatDescriptions_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWRules_m_lstMasterFeatDescriptions_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWRules_m_lstMasterFeatDescriptions_get(swigCPtr);
-        return (uint*)retVal;
+      uint* retVal = NWNXLibPINVOKE.CNWRules_m_lstMasterFeatDescriptions_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -198,9 +198,10 @@ public unsafe class CNWRules : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRules_m_nNumFeats_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWRules_m_nNumFeats_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWRules_m_nNumFeats_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nNumSortedFeats {
@@ -208,19 +209,21 @@ public unsafe class CNWRules : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRules_m_nNumSortedFeats_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWRules_m_nNumSortedFeats_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWRules_m_nNumSortedFeats_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nNumMasterFeats {
+  public byte m_nNumMasterFeats {
     set {
       NWNXLibPINVOKE.CNWRules_m_nNumMasterFeats_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWRules_m_nNumMasterFeats_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWRules_m_nNumMasterFeats_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nNumClasses {
@@ -228,9 +231,10 @@ public unsafe class CNWRules : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRules_m_nNumClasses_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWRules_m_nNumClasses_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWRules_m_nNumClasses_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nNumRaces {
@@ -238,9 +242,10 @@ public unsafe class CNWRules : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRules_m_nNumRaces_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWRules_m_nNumRaces_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWRules_m_nNumRaces_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nNumSkills {
@@ -248,9 +253,10 @@ public unsafe class CNWRules : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRules_m_nNumSkills_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWRules_m_nNumSkills_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWRules_m_nNumSkills_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nNumDomains {
@@ -258,9 +264,10 @@ public unsafe class CNWRules : global::System.IDisposable {
       NWNXLibPINVOKE.CNWRules_m_nNumDomains_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWRules_m_nNumDomains_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWRules_m_nNumDomains_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWClass m_lstClasses {
@@ -350,33 +357,33 @@ public unsafe class CNWRules : global::System.IDisposable {
   }
 
   public int IsArcaneClass(byte nClass) {
-    int ret = NWNXLibPINVOKE.CNWRules_IsArcaneClass(swigCPtr, nClass);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWRules_IsArcaneClass(swigCPtr, nClass);
+    return retVal;
   }
 
   public byte GetFeatExpansionLevel(ushort nFeat) {
-    byte ret = NWNXLibPINVOKE.CNWRules_GetFeatExpansionLevel(swigCPtr, nFeat);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWRules_GetFeatExpansionLevel(swigCPtr, nFeat);
+    return retVal;
   }
 
   public byte GetSkillExpansionLevel(ushort nSkill) {
-    byte ret = NWNXLibPINVOKE.CNWRules_GetSkillExpansionLevel(swigCPtr, nSkill);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWRules_GetSkillExpansionLevel(swigCPtr, nSkill);
+    return retVal;
   }
 
   public byte GetClassExpansionLevel(byte nClass) {
-    byte ret = NWNXLibPINVOKE.CNWRules_GetClassExpansionLevel(swigCPtr, nClass);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWRules_GetClassExpansionLevel(swigCPtr, nClass);
+    return retVal;
   }
 
   public byte GetSpellExpansionLevel(uint nSpellId) {
-    byte ret = NWNXLibPINVOKE.CNWRules_GetSpellExpansionLevel(swigCPtr, nSpellId);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWRules_GetSpellExpansionLevel(swigCPtr, nSpellId);
+    return retVal;
   }
 
   public byte GetFamiliarExpansionLevel(byte nFamiliar, int bAnimalCompanion) {
-    byte ret = NWNXLibPINVOKE.CNWRules_GetFamiliarExpansionLevel(swigCPtr, nFamiliar, bAnimalCompanion);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWRules_GetFamiliarExpansionLevel(swigCPtr, nFamiliar, bAnimalCompanion);
+    return retVal;
   }
 
   public CNWFeat GetFeat(ushort nFeat) {
@@ -385,17 +392,17 @@ public unsafe class CNWRules : global::System.IDisposable {
     return ret;
   }
 
-  public CExoString GetMasterFeatNameText(char nMasterFeat) {
+  public CExoString GetMasterFeatNameText(byte nMasterFeat) {
     CExoString ret = new CExoString(NWNXLibPINVOKE.CNWRules_GetMasterFeatNameText(swigCPtr, nMasterFeat), true);
     return ret;
   }
 
-  public CExoString GetMasterFeatDescriptionText(char nMasterFeat) {
+  public CExoString GetMasterFeatDescriptionText(byte nMasterFeat) {
     CExoString ret = new CExoString(NWNXLibPINVOKE.CNWRules_GetMasterFeatDescriptionText(swigCPtr, nMasterFeat), true);
     return ret;
   }
 
-  public CResRef GetMasterFeatIcon(char nMasterFeat) {
+  public CResRef GetMasterFeatIcon(byte nMasterFeat) {
     CResRef ret = new CResRef(NWNXLibPINVOKE.CNWRules_GetMasterFeatIcon(swigCPtr, nMasterFeat), true);
     return ret;
   }
@@ -405,33 +412,33 @@ public unsafe class CNWRules : global::System.IDisposable {
   }
 
   public byte GetMetaMagicLevelCost(byte nMetaType) {
-    byte ret = NWNXLibPINVOKE.CNWRules_GetMetaMagicLevelCost(swigCPtr, nMetaType);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWRules_GetMetaMagicLevelCost(swigCPtr, nMetaType);
+    return retVal;
   }
 
   public int IsFeatUseable(byte nWISBase, ushort nFeat) {
-    int ret = NWNXLibPINVOKE.CNWRules_IsFeatUseable(swigCPtr, nWISBase, nFeat);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWRules_IsFeatUseable(swigCPtr, nWISBase, nFeat);
+    return retVal;
   }
 
   public ushort RollDice(byte nNumberOfDice, byte nSides) {
-    ushort ret = NWNXLibPINVOKE.CNWRules_RollDice(swigCPtr, nNumberOfDice, nSides);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWRules_RollDice(swigCPtr, nNumberOfDice, nSides);
+    return retVal;
   }
 
   public int GetDifficultyOption(int nOption, int nDifficultyLevel) {
-    int ret = NWNXLibPINVOKE.CNWRules_GetDifficultyOption(swigCPtr, nOption, nDifficultyLevel);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWRules_GetDifficultyOption(swigCPtr, nOption, nDifficultyLevel);
+    return retVal;
   }
 
   public int GetWeightedDamageAmount(int nDamageDealt, int nMaxPossibleDamage, int bPCvsNPC, int bNPCvsPC, int nDamageWeight) {
-    int ret = NWNXLibPINVOKE.CNWRules_GetWeightedDamageAmount(swigCPtr, nDamageDealt, nMaxPossibleDamage, bPCvsNPC, bNPCvsPC, nDamageWeight);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWRules_GetWeightedDamageAmount(swigCPtr, nDamageDealt, nMaxPossibleDamage, bPCvsNPC, bNPCvsPC, nDamageWeight);
+    return retVal;
   }
 
   public int GetDamageIndexFromFlags(uint nDamageFlags) {
-    int ret = NWNXLibPINVOKE.CNWRules_GetDamageIndexFromFlags(swigCPtr, nDamageFlags);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWRules_GetDamageIndexFromFlags(swigCPtr, nDamageFlags);
+    return retVal;
   }
 
   public void ReloadAll() {
@@ -449,15 +456,15 @@ public unsafe class CNWRules : global::System.IDisposable {
   }
 
   public int GetRulesetIntEntry(CExoString label, int whenMissing) {
-    int ret = NWNXLibPINVOKE.CNWRules_GetRulesetIntEntry(swigCPtr, CExoString.getCPtr(label), whenMissing);
+    int retVal = NWNXLibPINVOKE.CNWRules_GetRulesetIntEntry(swigCPtr, CExoString.getCPtr(label), whenMissing);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public float GetRulesetFloatEntry(CExoString label, float whenMissing) {
-    float ret = NWNXLibPINVOKE.CNWRules_GetRulesetFloatEntry(swigCPtr, CExoString.getCPtr(label), whenMissing);
+    float retVal = NWNXLibPINVOKE.CNWRules_GetRulesetFloatEntry(swigCPtr, CExoString.getCPtr(label), whenMissing);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public void LoadFeatInfo() {

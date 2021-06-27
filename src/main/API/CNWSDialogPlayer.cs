@@ -95,9 +95,10 @@ public unsafe class CNWSDialogPlayer : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialogPlayer_m_playerId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialogPlayer_m_playerId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialogPlayer_m_playerId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidObject {
@@ -105,9 +106,10 @@ public unsafe class CNWSDialogPlayer : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialogPlayer_m_oidObject_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialogPlayer_m_oidObject_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialogPlayer_m_oidObject_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_gender {
@@ -115,9 +117,10 @@ public unsafe class CNWSDialogPlayer : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialogPlayer_m_gender_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSDialogPlayer_m_gender_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSDialogPlayer_m_gender_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSDialogPlayer() : this(NWNXLibPINVOKE.new_CNWSDialogPlayer(), true) {

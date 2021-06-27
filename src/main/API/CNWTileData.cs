@@ -139,9 +139,10 @@ public unsafe class CNWTileData : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileData_m_nNumDoors_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWTileData_m_nNumDoors_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWTileData_m_nNumDoors_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sCornerTopLeft {
@@ -236,9 +237,9 @@ public unsafe class CNWTileData : global::System.IDisposable {
   }
 
   public int AddPropertyMethodString(uint nProperty, CExoString sMethodString) {
-    int ret = NWNXLibPINVOKE.CNWTileData_AddPropertyMethodString(swigCPtr, nProperty, CExoString.getCPtr(sMethodString));
+    int retVal = NWNXLibPINVOKE.CNWTileData_AddPropertyMethodString(swigCPtr, nProperty, CExoString.getCPtr(sMethodString));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public CExoLinkedListCExoString GetPropertyMethodStringList(uint nProperty) {

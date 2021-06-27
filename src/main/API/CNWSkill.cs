@@ -95,9 +95,10 @@ public unsafe class CNWSkill : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSkill_m_nNameStrref_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSkill_m_nNameStrref_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSkill_m_nNameStrref_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nDescriptionStrref {
@@ -105,9 +106,10 @@ public unsafe class CNWSkill : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSkill_m_nDescriptionStrref_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSkill_m_nDescriptionStrref_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSkill_m_nDescriptionStrref_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nTalentCategory {
@@ -115,9 +117,10 @@ public unsafe class CNWSkill : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSkill_m_nTalentCategory_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSkill_m_nTalentCategory_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSkill_m_nTalentCategory_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nTalentMaxCR {
@@ -125,9 +128,10 @@ public unsafe class CNWSkill : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSkill_m_nTalentMaxCR_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSkill_m_nTalentMaxCR_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSkill_m_nTalentMaxCR_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sIconName {
@@ -146,9 +150,10 @@ public unsafe class CNWSkill : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSkill_m_nKeyAbility_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSkill_m_nKeyAbility_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSkill_m_nKeyAbility_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bHostileSkill {
@@ -156,9 +161,10 @@ public unsafe class CNWSkill : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSkill_m_bHostileSkill_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSkill_m_bHostileSkill_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSkill_m_bHostileSkill_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bUntrained {
@@ -166,9 +172,10 @@ public unsafe class CNWSkill : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSkill_m_bUntrained_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSkill_m_bUntrained_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSkill_m_bUntrained_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bArmorCheckPenalty {
@@ -176,9 +183,10 @@ public unsafe class CNWSkill : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSkill_m_bArmorCheckPenalty_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSkill_m_bArmorCheckPenalty_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSkill_m_bArmorCheckPenalty_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bAllClassesCanUse {
@@ -186,9 +194,10 @@ public unsafe class CNWSkill : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSkill_m_bAllClassesCanUse_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSkill_m_bAllClassesCanUse_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSkill_m_bAllClassesCanUse_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSkill() : this(NWNXLibPINVOKE.new_CNWSkill(), true) {

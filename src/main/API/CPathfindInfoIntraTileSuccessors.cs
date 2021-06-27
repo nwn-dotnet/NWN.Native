@@ -95,9 +95,10 @@ public unsafe class CPathfindInfoIntraTileSuccessors : global::System.IDisposabl
       NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_fXTransit_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_fXTransit_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_fXTransit_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float fYTransit {
@@ -105,9 +106,10 @@ public unsafe class CPathfindInfoIntraTileSuccessors : global::System.IDisposabl
       NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_fYTransit_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_fYTransit_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_fYTransit_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float fNewX {
@@ -115,9 +117,10 @@ public unsafe class CPathfindInfoIntraTileSuccessors : global::System.IDisposabl
       NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_fNewX_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_fNewX_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_fNewX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float fNewY {
@@ -125,9 +128,10 @@ public unsafe class CPathfindInfoIntraTileSuccessors : global::System.IDisposabl
       NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_fNewY_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_fNewY_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_fNewY_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float fNewDistance {
@@ -135,9 +139,10 @@ public unsafe class CPathfindInfoIntraTileSuccessors : global::System.IDisposabl
       NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_fNewDistance_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_fNewDistance_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_fNewDistance_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nNewTriangle {
@@ -145,9 +150,10 @@ public unsafe class CPathfindInfoIntraTileSuccessors : global::System.IDisposabl
       NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_nNewTriangle_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_nNewTriangle_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_nNewTriangle_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CPathfindInfoIntraTileSuccessors() : this(NWNXLibPINVOKE.new_CPathfindInfoIntraTileSuccessors(), true) {

@@ -95,9 +95,10 @@ public unsafe class Vector2 : global::System.IDisposable {
       NWNXLibPINVOKE.Vector2_x_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.Vector2_x_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.Vector2_x_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float y {
@@ -105,9 +106,10 @@ public unsafe class Vector2 : global::System.IDisposable {
       NWNXLibPINVOKE.Vector2_y_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.Vector2_y_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.Vector2_y_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public Vector2() : this(NWNXLibPINVOKE.new_Vector2(), true) {

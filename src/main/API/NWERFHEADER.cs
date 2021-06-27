@@ -108,9 +108,10 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.NWERFHEADER_nStringCount_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.NWERFHEADER_nStringCount_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.NWERFHEADER_nStringCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nTotalStringSize {
@@ -118,9 +119,10 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.NWERFHEADER_nTotalStringSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.NWERFHEADER_nTotalStringSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.NWERFHEADER_nTotalStringSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nEntryCount {
@@ -128,9 +130,10 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.NWERFHEADER_nEntryCount_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.NWERFHEADER_nEntryCount_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.NWERFHEADER_nEntryCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nOffsetToStringList {
@@ -138,9 +141,10 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.NWERFHEADER_nOffsetToStringList_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.NWERFHEADER_nOffsetToStringList_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.NWERFHEADER_nOffsetToStringList_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nOffsetToKeyList {
@@ -148,9 +152,10 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.NWERFHEADER_nOffsetToKeyList_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.NWERFHEADER_nOffsetToKeyList_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.NWERFHEADER_nOffsetToKeyList_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nOffsetToResourceList {
@@ -158,9 +163,10 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.NWERFHEADER_nOffsetToResourceList_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.NWERFHEADER_nOffsetToResourceList_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.NWERFHEADER_nOffsetToResourceList_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nBuildYear {
@@ -168,9 +174,10 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.NWERFHEADER_nBuildYear_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.NWERFHEADER_nBuildYear_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.NWERFHEADER_nBuildYear_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nBuildDay {
@@ -178,9 +185,10 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.NWERFHEADER_nBuildDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.NWERFHEADER_nBuildDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.NWERFHEADER_nBuildDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nDescriptionStrRef {
@@ -188,9 +196,10 @@ public unsafe class NWERFHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.NWERFHEADER_nDescriptionStrRef_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.NWERFHEADER_nDescriptionStrRef_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.NWERFHEADER_nDescriptionStrRef_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<byte> nUnused {

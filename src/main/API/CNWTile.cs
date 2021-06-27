@@ -106,9 +106,10 @@ public unsafe class CNWTile : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTile_m_nID_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWTile_m_nID_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWTile_m_nID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nHeight {
@@ -116,9 +117,10 @@ public unsafe class CNWTile : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTile_m_nHeight_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWTile_m_nHeight_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWTile_m_nHeight_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nGridX {
@@ -126,9 +128,10 @@ public unsafe class CNWTile : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTile_m_nGridX_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWTile_m_nGridX_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWTile_m_nGridX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nGridY {
@@ -136,9 +139,10 @@ public unsafe class CNWTile : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTile_m_nGridY_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWTile_m_nGridY_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWTile_m_nGridY_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nOrientation {
@@ -146,9 +150,10 @@ public unsafe class CNWTile : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTile_m_nOrientation_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWTile_m_nOrientation_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWTile_m_nOrientation_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nMainLight1Color {
@@ -156,9 +161,10 @@ public unsafe class CNWTile : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTile_m_nMainLight1Color_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWTile_m_nMainLight1Color_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWTile_m_nMainLight1Color_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nMainLight2Color {
@@ -166,9 +172,10 @@ public unsafe class CNWTile : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTile_m_nMainLight2Color_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWTile_m_nMainLight2Color_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWTile_m_nMainLight2Color_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nSourceLight1Color {
@@ -176,9 +183,10 @@ public unsafe class CNWTile : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTile_m_nSourceLight1Color_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWTile_m_nSourceLight1Color_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWTile_m_nSourceLight1Color_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nSourceLight2Color {
@@ -186,9 +194,10 @@ public unsafe class CNWTile : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTile_m_nSourceLight2Color_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWTile_m_nSourceLight2Color_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWTile_m_nSourceLight2Color_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nReplaceTexture {
@@ -196,9 +205,10 @@ public unsafe class CNWTile : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTile_m_nReplaceTexture_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWTile_m_nReplaceTexture_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWTile_m_nReplaceTexture_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAnimLoop1 {
@@ -206,9 +216,10 @@ public unsafe class CNWTile : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTile_m_nAnimLoop1_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWTile_m_nAnimLoop1_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWTile_m_nAnimLoop1_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAnimLoop2 {
@@ -216,9 +227,10 @@ public unsafe class CNWTile : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTile_m_nAnimLoop2_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWTile_m_nAnimLoop2_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWTile_m_nAnimLoop2_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAnimLoop3 {
@@ -226,16 +238,17 @@ public unsafe class CNWTile : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTile_m_nAnimLoop3_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWTile_m_nAnimLoop3_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWTile_m_nAnimLoop3_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWTile() : this(NWNXLibPINVOKE.new_CNWTile(), true) {
   }
 
   public void GetLocation(int* pX, int* pY) {
-    NWNXLibPINVOKE.CNWTile_GetLocation(swigCPtr, (global::System.IntPtr)pX, (global::System.IntPtr)pY);
+    NWNXLibPINVOKE.CNWTile_GetLocation(swigCPtr, pX, pY);
   }
 
   public void SetID(int nID) {
@@ -251,31 +264,31 @@ public unsafe class CNWTile : global::System.IDisposable {
   }
 
   public void RotateCanonicalToRealTile(float fX, float fY, float* fNewX, float* fNewY) {
-    NWNXLibPINVOKE.CNWTile_RotateCanonicalToRealTile(swigCPtr, fX, fY, (global::System.IntPtr)fNewX, (global::System.IntPtr)fNewY);
+    NWNXLibPINVOKE.CNWTile_RotateCanonicalToRealTile(swigCPtr, fX, fY, fNewX, fNewY);
   }
 
   public void RotateRealToCanonicalTile(float fX, float fY, float* fNewX, float* fNewY) {
-    NWNXLibPINVOKE.CNWTile_RotateRealToCanonicalTile(swigCPtr, fX, fY, (global::System.IntPtr)fNewX, (global::System.IntPtr)fNewY);
+    NWNXLibPINVOKE.CNWTile_RotateRealToCanonicalTile(swigCPtr, fX, fY, fNewX, fNewY);
   }
 
   public void RotateCanonicalToReal(float fX, float fY, float* fNewX, float* fNewY) {
-    NWNXLibPINVOKE.CNWTile_RotateCanonicalToReal(swigCPtr, fX, fY, (global::System.IntPtr)fNewX, (global::System.IntPtr)fNewY);
+    NWNXLibPINVOKE.CNWTile_RotateCanonicalToReal(swigCPtr, fX, fY, fNewX, fNewY);
   }
 
   public void RotateRealToCanonical(float fX, float fY, float* fNewX, float* fNewY) {
-    NWNXLibPINVOKE.CNWTile_RotateRealToCanonical(swigCPtr, fX, fY, (global::System.IntPtr)fNewX, (global::System.IntPtr)fNewY);
+    NWNXLibPINVOKE.CNWTile_RotateRealToCanonical(swigCPtr, fX, fY, fNewX, fNewY);
   }
 
   public void GetMainLightColor(byte* pMainLight1Color, byte* pMainLight2Color) {
-    NWNXLibPINVOKE.CNWTile_GetMainLightColor(swigCPtr, (global::System.IntPtr)pMainLight1Color, (global::System.IntPtr)pMainLight2Color);
+    NWNXLibPINVOKE.CNWTile_GetMainLightColor(swigCPtr, pMainLight1Color, pMainLight2Color);
   }
 
   public void GetSourceLightColor(byte* pSourceLight1Color, byte* pSourceLight2Color) {
-    NWNXLibPINVOKE.CNWTile_GetSourceLightColor(swigCPtr, (global::System.IntPtr)pSourceLight1Color, (global::System.IntPtr)pSourceLight2Color);
+    NWNXLibPINVOKE.CNWTile_GetSourceLightColor(swigCPtr, pSourceLight1Color, pSourceLight2Color);
   }
 
   public void GetAnimLoop(byte* pAnimLoop1, byte* pAnimLoop2, byte* pAnimLoop3) {
-    NWNXLibPINVOKE.CNWTile_GetAnimLoop(swigCPtr, (global::System.IntPtr)pAnimLoop1, (global::System.IntPtr)pAnimLoop2, (global::System.IntPtr)pAnimLoop3);
+    NWNXLibPINVOKE.CNWTile_GetAnimLoop(swigCPtr, pAnimLoop1, pAnimLoop2, pAnimLoop3);
   }
 
   public void SetMainLightColor(byte nMainLight1Color, byte nMainLight2Color) {

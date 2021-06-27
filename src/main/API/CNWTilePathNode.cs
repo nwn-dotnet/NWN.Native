@@ -95,9 +95,10 @@ public unsafe class CNWTilePathNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTilePathNode_m_nRegionNodes_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWTilePathNode_m_nRegionNodes_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWTilePathNode_m_nRegionNodes_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nTileExits {
@@ -105,40 +106,41 @@ public unsafe class CNWTilePathNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTilePathNode_m_nTileExits_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWTilePathNode_m_nTileExits_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWTilePathNode_m_nTileExits_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float* m_pfRegionNodes {
     set {
-      NWNXLibPINVOKE.CNWTilePathNode_m_pfRegionNodes_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWTilePathNode_m_pfRegionNodes_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWTilePathNode_m_pfRegionNodes_get(swigCPtr);
-        return (float*)retVal;
+      float* retVal = NWNXLibPINVOKE.CNWTilePathNode_m_pfRegionNodes_get(swigCPtr);
+      return retVal;
     }
 
   }
 
   public float* m_pfTileExits {
     set {
-      NWNXLibPINVOKE.CNWTilePathNode_m_pfTileExits_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWTilePathNode_m_pfTileExits_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWTilePathNode_m_pfTileExits_get(swigCPtr);
-        return (float*)retVal;
+      float* retVal = NWNXLibPINVOKE.CNWTilePathNode_m_pfTileExits_get(swigCPtr);
+      return retVal;
     }
 
   }
 
   public int* m_pnTileExitRegion {
     set {
-      NWNXLibPINVOKE.CNWTilePathNode_m_pnTileExitRegion_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWTilePathNode_m_pnTileExitRegion_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWTilePathNode_m_pnTileExitRegion_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CNWTilePathNode_m_pnTileExitRegion_get(swigCPtr);
+      return retVal;
     }
 
   }

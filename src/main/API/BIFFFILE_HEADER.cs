@@ -95,9 +95,10 @@ public unsafe class BIFFFILE_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.BIFFFILE_HEADER_nFileType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.BIFFFILE_HEADER_nFileType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.BIFFFILE_HEADER_nFileType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nFileVersion {
@@ -105,9 +106,10 @@ public unsafe class BIFFFILE_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.BIFFFILE_HEADER_nFileVersion_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.BIFFFILE_HEADER_nFileVersion_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.BIFFFILE_HEADER_nFileVersion_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nNumVariableResources {
@@ -115,9 +117,10 @@ public unsafe class BIFFFILE_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.BIFFFILE_HEADER_nNumVariableResources_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.BIFFFILE_HEADER_nNumVariableResources_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.BIFFFILE_HEADER_nNumVariableResources_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nNumFixedResources {
@@ -125,9 +128,10 @@ public unsafe class BIFFFILE_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.BIFFFILE_HEADER_nNumFixedResources_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.BIFFFILE_HEADER_nNumFixedResources_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.BIFFFILE_HEADER_nNumFixedResources_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nTableOffset {
@@ -135,9 +139,10 @@ public unsafe class BIFFFILE_HEADER : global::System.IDisposable {
       NWNXLibPINVOKE.BIFFFILE_HEADER_nTableOffset_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.BIFFFILE_HEADER_nTableOffset_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.BIFFFILE_HEADER_nTableOffset_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<byte> cOid {

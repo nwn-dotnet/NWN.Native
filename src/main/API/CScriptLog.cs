@@ -106,9 +106,10 @@ public unsafe class CScriptLog : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptLog_m_nTimesRun_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptLog_m_nTimesRun_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptLog_m_nTimesRun_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nTotalTime {
@@ -116,9 +117,10 @@ public unsafe class CScriptLog : global::System.IDisposable {
       NWNXLibPINVOKE.CScriptLog_m_nTotalTime_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CScriptLog_m_nTotalTime_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CScriptLog_m_nTotalTime_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CScriptLog() : this(NWNXLibPINVOKE.new_CScriptLog(), true) {

@@ -95,9 +95,10 @@ public unsafe class CServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CServerInfo_m_nDataChangedFlags_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CServerInfo_m_nDataChangedFlags_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CServerInfo_m_nDataChangedFlags_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public short m_nServerMode {
@@ -105,9 +106,10 @@ public unsafe class CServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CServerInfo_m_nServerMode_set(swigCPtr, value);
     } 
     get {
-      short ret = NWNXLibPINVOKE.CServerInfo_m_nServerMode_get(swigCPtr);
-      return ret;
-    } 
+      short retVal = NWNXLibPINVOKE.CServerInfo_m_nServerMode_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sModuleName {
@@ -280,9 +282,10 @@ public unsafe class CServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CServerInfo_m_bNWSyncPublishHaks_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CServerInfo_m_bNWSyncPublishHaks_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CServerInfo_m_bNWSyncPublishHaks_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bConversationMultiPlayer {
@@ -290,9 +293,10 @@ public unsafe class CServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CServerInfo_m_bConversationMultiPlayer_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CServerInfo_m_bConversationMultiPlayer_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CServerInfo_m_bConversationMultiPlayer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bConversationMultiPlayerViewOnly {
@@ -300,9 +304,10 @@ public unsafe class CServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CServerInfo_m_bConversationMultiPlayerViewOnly_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CServerInfo_m_bConversationMultiPlayerViewOnly_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CServerInfo_m_bConversationMultiPlayerViewOnly_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nDifficulty {
@@ -310,9 +315,10 @@ public unsafe class CServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CServerInfo_m_nDifficulty_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CServerInfo_m_nDifficulty_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CServerInfo_m_nDifficulty_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CServerOptionLookupArray m_pOptionsTable {
@@ -339,9 +345,9 @@ public unsafe class CServerInfo : global::System.IDisposable {
   }
 
   public int FindOptionIndex(CExoString sOptionCategory, CExoString sOptionName) {
-    int ret = NWNXLibPINVOKE.CServerInfo_FindOptionIndex(swigCPtr, CExoString.getCPtr(sOptionCategory), CExoString.getCPtr(sOptionName));
+    int retVal = NWNXLibPINVOKE.CServerInfo_FindOptionIndex(swigCPtr, CExoString.getCPtr(sOptionCategory), CExoString.getCPtr(sOptionName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
 }

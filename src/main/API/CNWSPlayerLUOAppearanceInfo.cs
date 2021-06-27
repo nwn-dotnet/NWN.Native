@@ -95,9 +95,10 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_oidLeftHandItem_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_oidLeftHandItem_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_oidLeftHandItem_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidRightHandItem {
@@ -105,9 +106,10 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_oidRightHandItem_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_oidRightHandItem_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_oidRightHandItem_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nRightHandItemVFX {
@@ -115,9 +117,10 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nRightHandItemVFX_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nRightHandItemVFX_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nRightHandItemVFX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nLeftHandItemVFX {
@@ -125,9 +128,10 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nLeftHandItemVFX_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nLeftHandItemVFX_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nLeftHandItemVFX_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidChestItem {
@@ -135,9 +139,10 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_oidChestItem_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_oidChestItem_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_oidChestItem_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidHeadItem {
@@ -145,9 +150,10 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_oidHeadItem_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_oidHeadItem_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_oidHeadItem_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nAppearanceType {
@@ -155,9 +161,10 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nAppearanceType_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nAppearanceType_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nAppearanceType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nPhenoType {
@@ -165,9 +172,10 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nPhenoType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nPhenoType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nPhenoType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nGender {
@@ -175,9 +183,10 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nGender_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nGender_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nGender_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nSkinColor {
@@ -185,9 +194,10 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nSkinColor_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nSkinColor_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nSkinColor_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nHairColor {
@@ -195,9 +205,10 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nHairColor_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nHairColor_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nHairColor_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nTattooColor1 {
@@ -205,9 +216,10 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nTattooColor1_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nTattooColor1_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nTattooColor1_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nTattooColor2 {
@@ -215,9 +227,10 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nTattooColor2_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nTattooColor2_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nTattooColor2_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<byte> m_pPartVariation {
@@ -238,9 +251,10 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nHeadVariation_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nHeadVariation_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nHeadVariation_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nTailVariation {
@@ -248,9 +262,10 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nTailVariation_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nTailVariation_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nTailVariation_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nWingVariation {
@@ -258,9 +273,10 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nWingVariation_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nWingVariation_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_nWingVariation_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bForceArmorAppearanceUpdate {
@@ -268,9 +284,10 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_bForceArmorAppearanceUpdate_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_bForceArmorAppearanceUpdate_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_bForceArmorAppearanceUpdate_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidCloakItem {
@@ -278,9 +295,10 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_oidCloakItem_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_oidCloakItem_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_m_oidCloakItem_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ObjectVisualTransformData m_pRightHandItemVisualTransform {

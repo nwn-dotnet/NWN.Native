@@ -96,9 +96,10 @@ public unsafe class CNWSTile : CNWTile {
       NWNXLibPINVOKE.CNWSTile_m_nTriggers_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTile_m_nTriggers_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTile_m_nTriggers_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nTriggerSize {
@@ -106,18 +107,19 @@ public unsafe class CNWSTile : CNWTile {
       NWNXLibPINVOKE.CNWSTile_m_nTriggerSize_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTile_m_nTriggerSize_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTile_m_nTriggerSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint* m_poidTriggers {
     set {
-      NWNXLibPINVOKE.CNWSTile_m_poidTriggers_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWSTile_m_poidTriggers_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSTile_m_poidTriggers_get(swigCPtr);
-        return (uint*)retVal;
+      uint* retVal = NWNXLibPINVOKE.CNWSTile_m_poidTriggers_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -138,9 +140,10 @@ public unsafe class CNWSTile : CNWTile {
       NWNXLibPINVOKE.CNWSTile_m_bMainLightColorChange_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTile_m_bMainLightColorChange_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTile_m_bMainLightColorChange_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bSourceLightColorChange {
@@ -148,9 +151,10 @@ public unsafe class CNWSTile : CNWTile {
       NWNXLibPINVOKE.CNWSTile_m_bSourceLightColorChange_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTile_m_bSourceLightColorChange_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTile_m_bSourceLightColorChange_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bFlaggedAsProblem {
@@ -158,9 +162,10 @@ public unsafe class CNWSTile : CNWTile {
       NWNXLibPINVOKE.CNWSTile_m_bFlaggedAsProblem_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSTile_m_bFlaggedAsProblem_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSTile_m_bFlaggedAsProblem_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSTile() : this(NWNXLibPINVOKE.new_CNWSTile(), true) {
@@ -171,57 +176,57 @@ public unsafe class CNWSTile : CNWTile {
   }
 
   public int ClearLineOfSight(int nDirectionHeuristic, Vector vSource, Vector vTarget, Vector vImpact) {
-    int ret = NWNXLibPINVOKE.CNWSTile_ClearLineOfSight(swigCPtr, nDirectionHeuristic, Vector.getCPtr(vSource), Vector.getCPtr(vTarget), Vector.getCPtr(vImpact));
+    int retVal = NWNXLibPINVOKE.CNWSTile_ClearLineOfSight(swigCPtr, nDirectionHeuristic, Vector.getCPtr(vSource), Vector.getCPtr(vTarget), Vector.getCPtr(vImpact));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int ClippedLineSegmentWalkable(float fStartX, float fStartY, float fEndX, float fEndY, float* fClipStartX, float* fClipStartY, float* fClipEndX, float* fClipEndY, float* fClipMinZ, float* fClipMaxZ) {
-    int ret = NWNXLibPINVOKE.CNWSTile_ClippedLineSegmentWalkable(swigCPtr, fStartX, fStartY, fEndX, fEndY, (global::System.IntPtr)fClipStartX, (global::System.IntPtr)fClipStartY, (global::System.IntPtr)fClipEndX, (global::System.IntPtr)fClipEndY, (global::System.IntPtr)fClipMinZ, (global::System.IntPtr)fClipMaxZ);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSTile_ClippedLineSegmentWalkable(swigCPtr, fStartX, fStartY, fEndX, fEndY, fClipStartX, fClipStartY, fClipEndX, fClipEndY, fClipMinZ, fClipMaxZ);
+    return retVal;
   }
 
   public int ComputeClippedLineSegment(Vector vSource, Vector vTarget, Vector vClipSource, Vector vClipTarget) {
-    int ret = NWNXLibPINVOKE.CNWSTile_ComputeClippedLineSegment(swigCPtr, Vector.getCPtr(vSource), Vector.getCPtr(vTarget), Vector.getCPtr(vClipSource), Vector.getCPtr(vClipTarget));
+    int retVal = NWNXLibPINVOKE.CNWSTile_ComputeClippedLineSegment(swigCPtr, Vector.getCPtr(vSource), Vector.getCPtr(vTarget), Vector.getCPtr(vClipSource), Vector.getCPtr(vClipTarget));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public float ComputeHeight(Vector vPosition) {
-    float ret = NWNXLibPINVOKE.CNWSTile_ComputeHeight(swigCPtr, Vector.getCPtr(vPosition));
+    float retVal = NWNXLibPINVOKE.CNWSTile_ComputeHeight(swigCPtr, Vector.getCPtr(vPosition));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int FindClosestRegion(float fX, float fY) {
-    int ret = NWNXLibPINVOKE.CNWSTile_FindClosestRegion(swigCPtr, fX, fY);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSTile_FindClosestRegion(swigCPtr, fX, fY);
+    return retVal;
   }
 
   public int GetExit(int nExit, float* fX, float* fY, int* nRegion) {
-    int ret = NWNXLibPINVOKE.CNWSTile_GetExit(swigCPtr, nExit, (global::System.IntPtr)fX, (global::System.IntPtr)fY, (global::System.IntPtr)nRegion);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSTile_GetExit(swigCPtr, nExit, fX, fY, nRegion);
+    return retVal;
   }
 
   public int GetExitNumber(float fX, float fY) {
-    int ret = NWNXLibPINVOKE.CNWSTile_GetExitNumber(swigCPtr, fX, fY);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSTile_GetExitNumber(swigCPtr, fX, fY);
+    return retVal;
   }
 
   public int GetRegionCoords(int nRegion, float* fX, float* fY) {
-    int ret = NWNXLibPINVOKE.CNWSTile_GetRegionCoords(swigCPtr, nRegion, (global::System.IntPtr)fX, (global::System.IntPtr)fY);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSTile_GetRegionCoords(swigCPtr, nRegion, fX, fY);
+    return retVal;
   }
 
   public int GetRegionEntrance(float fX, float fY) {
-    int ret = NWNXLibPINVOKE.CNWSTile_GetRegionEntrance(swigCPtr, fX, fY);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSTile_GetRegionEntrance(swigCPtr, fX, fY);
+    return retVal;
   }
 
   public int GetSurfaceMaterial(Vector vPosition) {
-    int ret = NWNXLibPINVOKE.CNWSTile_GetSurfaceMaterial(swigCPtr, Vector.getCPtr(vPosition));
+    int retVal = NWNXLibPINVOKE.CNWSTile_GetSurfaceMaterial(swigCPtr, Vector.getCPtr(vPosition));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public CNWTileData GetTileData() {
@@ -231,19 +236,19 @@ public unsafe class CNWSTile : CNWTile {
   }
 
   public int GetTotalExits() {
-    int ret = NWNXLibPINVOKE.CNWSTile_GetTotalExits(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSTile_GetTotalExits(swigCPtr);
+    return retVal;
   }
 
   public int IntersectLineSegments(float fX1, float fY1, float fX2, float fY2, float fX3, float fY3, float fX4, float fY4, float* fXIntersect, float* fYIntersect) {
-    int ret = NWNXLibPINVOKE.CNWSTile_IntersectLineSegments(swigCPtr, fX1, fY1, fX2, fY2, fX3, fY3, fX4, fY4, (global::System.IntPtr)fXIntersect, (global::System.IntPtr)fYIntersect);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSTile_IntersectLineSegments(swigCPtr, fX1, fY1, fX2, fY2, fX3, fY3, fX4, fY4, fXIntersect, fYIntersect);
+    return retVal;
   }
 
   public int InTrigger(Vector vPosition, CExoArrayListObjectId aTriggers) {
-    int ret = NWNXLibPINVOKE.CNWSTile_InTrigger(swigCPtr, Vector.getCPtr(vPosition), CExoArrayListObjectId.getCPtr(aTriggers));
+    int retVal = NWNXLibPINVOKE.CNWSTile_InTrigger(swigCPtr, Vector.getCPtr(vPosition), CExoArrayListObjectId.getCPtr(aTriggers));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public CResRef GetWalkMesh() {
@@ -252,23 +257,23 @@ public unsafe class CNWSTile : CNWTile {
   }
 
   public int LoadWalkMesh() {
-    int ret = NWNXLibPINVOKE.CNWSTile_LoadWalkMesh(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSTile_LoadWalkMesh(swigCPtr);
+    return retVal;
   }
 
   public int NoNonWalkPolysOnTile(float fSourceX, float fSourceY, float fTargetX, float fTargetY, float fMinZ, float fMaxZ, float fPersonalSpace, int bTestSinglePoint) {
-    int ret = NWNXLibPINVOKE.CNWSTile_NoNonWalkPolysOnTile__SWIG_0(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, fMinZ, fMaxZ, fPersonalSpace, bTestSinglePoint);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSTile_NoNonWalkPolysOnTile__SWIG_0(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, fMinZ, fMaxZ, fPersonalSpace, bTestSinglePoint);
+    return retVal;
   }
 
   public int NoNonWalkPolysOnTile(float fSourceX, float fSourceY, float fTargetX, float fTargetY, float fMinZ, float fMaxZ, float fPersonalSpace) {
-    int ret = NWNXLibPINVOKE.CNWSTile_NoNonWalkPolysOnTile__SWIG_1(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, fMinZ, fMaxZ, fPersonalSpace);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSTile_NoNonWalkPolysOnTile__SWIG_1(swigCPtr, fSourceX, fSourceY, fTargetX, fTargetY, fMinZ, fMaxZ, fPersonalSpace);
+    return retVal;
   }
 
   public uint PlotIntraTilePath(CNWArea pWalkGeometry, CPathfindInformation pPathfindInformation, float fCurrentIntraTileX, float fCurrentIntraTileY, float fInterTileStartX, float fInterTileStartY, uint nMaxTimeAllowed) {
-    uint ret = NWNXLibPINVOKE.CNWSTile_PlotIntraTilePath(swigCPtr, CNWArea.getCPtr(pWalkGeometry), CPathfindInformation.getCPtr(pPathfindInformation), fCurrentIntraTileX, fCurrentIntraTileY, fInterTileStartX, fInterTileStartY, nMaxTimeAllowed);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSTile_PlotIntraTilePath(swigCPtr, CNWArea.getCPtr(pWalkGeometry), CPathfindInformation.getCPtr(pPathfindInformation), fCurrentIntraTileX, fCurrentIntraTileY, fInterTileStartX, fInterTileStartY, nMaxTimeAllowed);
+    return retVal;
   }
 
   public void SetTileData(CNWTileData pTileData) {

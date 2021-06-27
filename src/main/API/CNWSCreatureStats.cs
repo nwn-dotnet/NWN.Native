@@ -183,9 +183,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_bDialogInterruptable_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreatureStats_m_bDialogInterruptable_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_bDialogInterruptable_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoLocString m_sDescription {
@@ -215,9 +216,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nAge_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nAge_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nAge_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nGender {
@@ -225,9 +227,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nGender_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nGender_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nGender_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nExperience {
@@ -235,9 +238,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nExperience_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nExperience_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nExperience_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bIsDMCharacterFile {
@@ -245,9 +249,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_bIsDMCharacterFile_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreatureStats_m_bIsDMCharacterFile_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_bIsDMCharacterFile_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bIsPC {
@@ -255,9 +260,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_bIsPC_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreatureStats_m_bIsPC_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_bIsPC_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bIsAIDisabledPossess {
@@ -265,9 +271,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_bIsAIDisabledPossess_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreatureStats_m_bIsAIDisabledPossess_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_bIsAIDisabledPossess_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bIsAIDisabledOverride {
@@ -275,9 +282,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_bIsAIDisabledOverride_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreatureStats_m_bIsAIDisabledOverride_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_bIsAIDisabledOverride_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bDMManifested {
@@ -285,9 +293,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_bDMManifested_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreatureStats_m_bDMManifested_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_bDMManifested_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nMultiClassLeveledUpIn {
@@ -295,9 +304,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nMultiClassLeveledUpIn_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nMultiClassLeveledUpIn_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nMultiClassLeveledUpIn_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nFactionId {
@@ -305,9 +315,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nFactionId_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nFactionId_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nFactionId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nOriginalFactionId {
@@ -315,9 +326,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nOriginalFactionId_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nOriginalFactionId_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nOriginalFactionId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nPreDominationFactionId {
@@ -325,9 +337,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nPreDominationFactionId_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nPreDominationFactionId_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nPreDominationFactionId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fChallengeRating {
@@ -335,9 +348,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_fChallengeRating_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSCreatureStats_m_fChallengeRating_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_fChallengeRating_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nStartingPackage {
@@ -345,9 +359,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nStartingPackage_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nStartingPackage_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nStartingPackage_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nNumMultiClasses {
@@ -355,9 +370,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nNumMultiClasses_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nNumMultiClasses_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nNumMultiClasses_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSCreatureStats_ClassInfoArray m_ClassInfo {
@@ -377,9 +393,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nRace_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nRace_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nRace_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sSubRace {
@@ -398,19 +415,21 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nStrengthBase_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nStrengthBase_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nStrengthBase_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nStrengthModifier {
+  public byte m_nStrengthModifier {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nStrengthModifier_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nStrengthModifier_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nStrengthModifier_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nDexterityBase {
@@ -418,19 +437,21 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nDexterityBase_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nDexterityBase_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nDexterityBase_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nDexterityModifier {
+  public byte m_nDexterityModifier {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nDexterityModifier_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nDexterityModifier_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nDexterityModifier_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nConstitutionBase {
@@ -438,19 +459,21 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nConstitutionBase_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nConstitutionBase_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nConstitutionBase_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nConstitutionModifier {
+  public byte m_nConstitutionModifier {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nConstitutionModifier_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nConstitutionModifier_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nConstitutionModifier_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nIntelligenceBase {
@@ -458,19 +481,21 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nIntelligenceBase_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nIntelligenceBase_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nIntelligenceBase_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nIntelligenceModifier {
+  public byte m_nIntelligenceModifier {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nIntelligenceModifier_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nIntelligenceModifier_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nIntelligenceModifier_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nWisdomBase {
@@ -478,19 +503,21 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nWisdomBase_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nWisdomBase_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nWisdomBase_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nWisdomModifier {
+  public byte m_nWisdomModifier {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nWisdomModifier_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nWisdomModifier_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nWisdomModifier_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nCharismaBase {
@@ -498,149 +525,164 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nCharismaBase_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nCharismaBase_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nCharismaBase_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nCharismaModifier {
+  public byte m_nCharismaModifier {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nCharismaModifier_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nCharismaModifier_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nCharismaModifier_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nACNaturalBase {
+  public byte m_nACNaturalBase {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nACNaturalBase_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nACNaturalBase_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nACNaturalBase_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nACArmorBase {
+  public byte m_nACArmorBase {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nACArmorBase_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nACArmorBase_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nACArmorBase_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nACShieldBase {
+  public byte m_nACShieldBase {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nACShieldBase_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nACShieldBase_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nACShieldBase_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nACArmorMod {
+  public byte m_nACArmorMod {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nACArmorMod_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nACArmorMod_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nACArmorMod_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nACArmorNeg {
+  public byte m_nACArmorNeg {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nACArmorNeg_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nACArmorNeg_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nACArmorNeg_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nACDeflectionMod {
+  public byte m_nACDeflectionMod {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nACDeflectionMod_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nACDeflectionMod_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nACDeflectionMod_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nACDeflectionNeg {
+  public byte m_nACDeflectionNeg {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nACDeflectionNeg_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nACDeflectionNeg_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nACDeflectionNeg_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nACShieldMod {
+  public byte m_nACShieldMod {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nACShieldMod_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nACShieldMod_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nACShieldMod_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nACShieldNeg {
+  public byte m_nACShieldNeg {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nACShieldNeg_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nACShieldNeg_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nACShieldNeg_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nACNaturalMod {
+  public byte m_nACNaturalMod {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nACNaturalMod_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nACNaturalMod_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nACNaturalMod_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nACNaturalNeg {
+  public byte m_nACNaturalNeg {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nACNaturalNeg_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nACNaturalNeg_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nACNaturalNeg_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nACDodgeMod {
+  public byte m_nACDodgeMod {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nACDodgeMod_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nACDodgeMod_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nACDodgeMod_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nACDodgeNeg {
+  public byte m_nACDodgeNeg {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nACDodgeNeg_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nACDodgeNeg_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nACDodgeNeg_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nBaseAttackBonus {
@@ -648,9 +690,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nBaseAttackBonus_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nBaseAttackBonus_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nBaseAttackBonus_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nOverrideBaseAttackBonus {
@@ -658,28 +701,30 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nOverrideBaseAttackBonus_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nOverrideBaseAttackBonus_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nOverrideBaseAttackBonus_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nEnemyAttackBonus {
+  public byte m_nEnemyAttackBonus {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nEnemyAttackBonus_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nEnemyAttackBonus_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nEnemyAttackBonus_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte* m_nDamageImmunity {
     set {
-      NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageImmunity_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageImmunity_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageImmunity_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageImmunity_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -689,9 +734,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageRoll_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageRoll_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageRoll_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nCriticalHitRoll {
@@ -699,9 +745,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nCriticalHitRoll_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nCriticalHitRoll_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nCriticalHitRoll_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nCriticalHitMultiplier {
@@ -709,9 +756,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nCriticalHitMultiplier_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nCriticalHitMultiplier_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nCriticalHitMultiplier_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAttacksPerRound {
@@ -719,9 +767,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nAttacksPerRound_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nAttacksPerRound_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nAttacksPerRound_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CCombatInformation m_pCombatInformation {
@@ -735,14 +784,15 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
     } 
   }
 
-  public char m_nArcaneSpellFailure {
+  public byte m_nArcaneSpellFailure {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nArcaneSpellFailure_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nArcaneSpellFailure_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nArcaneSpellFailure_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nBaseArmorArcaneSpellFailure {
@@ -750,9 +800,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nBaseArmorArcaneSpellFailure_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nBaseArmorArcaneSpellFailure_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nBaseArmorArcaneSpellFailure_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nBaseShieldArcaneSpellFailure {
@@ -760,9 +811,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nBaseShieldArcaneSpellFailure_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nBaseShieldArcaneSpellFailure_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nBaseShieldArcaneSpellFailure_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<byte> m_pSpellFailure {
@@ -778,24 +830,26 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
 
   }
 
-  public char m_nSpellResistance {
+  public byte m_nSpellResistance {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nSpellResistance_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nSpellResistance_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nSpellResistance_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nSpellResistancePenalty {
+  public byte m_nSpellResistancePenalty {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nSpellResistancePenalty_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nSpellResistancePenalty_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nSpellResistancePenalty_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCNWSStatsSpellLikeAbility m_pSpellLikeAbilityList {
@@ -814,9 +868,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nTempHitpointsPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nTempHitpointsPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nTempHitpointsPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nACVersusPtr {
@@ -824,9 +879,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nACVersusPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nACVersusPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nACVersusPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nAttackBonusPtr {
@@ -834,9 +890,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nAttackBonusPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nAttackBonusPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nAttackBonusPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nDamageReductionPtr {
@@ -844,9 +901,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageReductionPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageReductionPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageReductionPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nDamageResistancePtr {
@@ -854,9 +912,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageResistancePtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageResistancePtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageResistancePtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nDamageBonusPtr {
@@ -864,9 +923,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageBonusPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageBonusPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageBonusPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nAIStatePtr {
@@ -874,9 +934,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nAIStatePtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nAIStatePtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nAIStatePtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nEffectIconPtr {
@@ -884,9 +945,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nEffectIconPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nEffectIconPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nEffectIconPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nSanctuaryPtr {
@@ -894,9 +956,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nSanctuaryPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nSanctuaryPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nSanctuaryPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nInvisibilityPtr {
@@ -904,9 +967,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nInvisibilityPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nInvisibilityPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nInvisibilityPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nSpellResistancePtr {
@@ -914,9 +978,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nSpellResistancePtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nSpellResistancePtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nSpellResistancePtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nAbilityPtr {
@@ -924,9 +989,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nAbilityPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nAbilityPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nAbilityPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nSeeInvisiblePtr {
@@ -934,9 +1000,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nSeeInvisiblePtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nSeeInvisiblePtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nSeeInvisiblePtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nUltraVisionPtr {
@@ -944,9 +1011,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nUltraVisionPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nUltraVisionPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nUltraVisionPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nMissChancePtr {
@@ -954,9 +1022,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nMissChancePtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nMissChancePtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nMissChancePtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nConcealmentPtr {
@@ -964,9 +1033,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nConcealmentPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nConcealmentPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nConcealmentPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nBlindnessPtr {
@@ -974,9 +1044,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nBlindnessPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nBlindnessPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nBlindnessPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nWalkAnimationPtr {
@@ -984,9 +1055,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nWalkAnimationPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nWalkAnimationPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nWalkAnimationPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nSpellLevelAbsorptionPtr {
@@ -994,9 +1066,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nSpellLevelAbsorptionPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nSpellLevelAbsorptionPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nSpellLevelAbsorptionPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nSpellImmunityPtr {
@@ -1004,9 +1077,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nSpellImmunityPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nSpellImmunityPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nSpellImmunityPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nDamageShieldPtr {
@@ -1014,9 +1088,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageShieldPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageShieldPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nDamageShieldPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nSkillBonusPtr {
@@ -1024,9 +1099,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nSkillBonusPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nSkillBonusPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nSkillBonusPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nSavingThrowBonusPtr {
@@ -1034,9 +1110,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nSavingThrowBonusPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nSavingThrowBonusPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nSavingThrowBonusPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nHastePtr {
@@ -1044,9 +1121,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nHastePtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nHastePtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nHastePtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nEffectImmunityPtr {
@@ -1054,9 +1132,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nEffectImmunityPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nEffectImmunityPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nEffectImmunityPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nLimitMovementSpeedPtr {
@@ -1064,9 +1143,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nLimitMovementSpeedPtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nLimitMovementSpeedPtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nLimitMovementSpeedPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nMovementSpeedDecreasePtr {
@@ -1074,9 +1154,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nMovementSpeedDecreasePtr_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nMovementSpeedDecreasePtr_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nMovementSpeedDecreasePtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nSkillPointsRemaining {
@@ -1084,40 +1165,43 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nSkillPointsRemaining_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nSkillPointsRemaining_get(swigCPtr);
-      return ret;
-    } 
-  }
-
-  public byte* m_lstSkillRanks {
-    set {
-      NWNXLibPINVOKE.CNWSCreatureStats_m_lstSkillRanks_set(swigCPtr, (global::System.IntPtr)value);
-    } 
-    get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_lstSkillRanks_get(swigCPtr);
-        return (byte*)retVal;
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nSkillPointsRemaining_get(swigCPtr);
+      return retVal;
     }
 
   }
 
-  public char m_nArmorCheckPenalty {
+  public byte* m_lstSkillRanks {
+    set {
+      NWNXLibPINVOKE.CNWSCreatureStats_m_lstSkillRanks_set(swigCPtr, value);
+    } 
+    get {
+      byte* retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_lstSkillRanks_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public byte m_nArmorCheckPenalty {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nArmorCheckPenalty_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nArmorCheckPenalty_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nArmorCheckPenalty_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nShieldCheckPenalty {
+  public byte m_nShieldCheckPenalty {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nShieldCheckPenalty_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nShieldCheckPenalty_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nShieldCheckPenalty_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResRef m_cPortrait {
@@ -1136,9 +1220,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nAlignmentGoodEvil_set(swigCPtr, value);
     } 
     get {
-      short ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nAlignmentGoodEvil_get(swigCPtr);
-      return ret;
-    } 
+      short retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nAlignmentGoodEvil_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public short m_nAlignmentLawChaos {
@@ -1146,9 +1231,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nAlignmentLawChaos_set(swigCPtr, value);
     } 
     get {
-      short ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nAlignmentLawChaos_get(swigCPtr);
-      return ret;
-    } 
+      short retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nAlignmentLawChaos_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nSkinColor {
@@ -1156,9 +1242,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nSkinColor_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nSkinColor_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nSkinColor_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nHairColor {
@@ -1166,9 +1253,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nHairColor_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nHairColor_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nHairColor_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nTattoo1Color {
@@ -1176,9 +1264,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nTattoo1Color_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nTattoo1Color_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nTattoo1Color_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nTattoo2Color {
@@ -1186,9 +1275,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nTattoo2Color_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nTattoo2Color_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nTattoo2Color_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nAppearanceType {
@@ -1196,9 +1286,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nAppearanceType_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nAppearanceType_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nAppearanceType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nPhenoType {
@@ -1206,9 +1297,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nPhenoType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nPhenoType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nPhenoType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nHeadVariation {
@@ -1216,9 +1308,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nHeadVariation_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nHeadVariation_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nHeadVariation_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<byte> m_pPartVariation {
@@ -1239,9 +1332,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nTailVariation_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nTailVariation_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nTailVariation_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nWingVariation {
@@ -1249,9 +1343,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nWingVariation_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nWingVariation_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nWingVariation_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nMovementRate {
@@ -1259,9 +1354,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nMovementRate_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nMovementRate_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nMovementRate_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fMovementRunSpeed {
@@ -1269,9 +1365,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_fMovementRunSpeed_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSCreatureStats_m_fMovementRunSpeed_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_fMovementRunSpeed_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_fMovementWalkSpeed {
@@ -1279,39 +1376,43 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_fMovementWalkSpeed_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWSCreatureStats_m_fMovementWalkSpeed_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_fMovementWalkSpeed_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nFortSavingThrowMisc {
+  public byte m_nFortSavingThrowMisc {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nFortSavingThrowMisc_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nFortSavingThrowMisc_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nFortSavingThrowMisc_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nWillSavingThrowMisc {
+  public byte m_nWillSavingThrowMisc {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nWillSavingThrowMisc_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nWillSavingThrowMisc_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nWillSavingThrowMisc_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
-  public char m_nReflexSavingThrowMisc {
+  public byte m_nReflexSavingThrowMisc {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nReflexSavingThrowMisc_set(swigCPtr, value);
     } 
     get {
-      char ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nReflexSavingThrowMisc_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nReflexSavingThrowMisc_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nAnimalCompanionCreatureType {
@@ -1319,9 +1420,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nAnimalCompanionCreatureType_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nAnimalCompanionCreatureType_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nAnimalCompanionCreatureType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nFamiliarCreatureType {
@@ -1329,9 +1431,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nFamiliarCreatureType_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nFamiliarCreatureType_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nFamiliarCreatureType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sAnimalCompanionName {
@@ -1372,15 +1475,16 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nLatestDataMigration_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSCreatureStats_m_nLatestDataMigration_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nLatestDataMigration_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSCreatureStats(CNWSCreature pCreature) : this(NWNXLibPINVOKE.new_CNWSCreatureStats(CNWSCreature.getCPtr(pCreature)), true) {
   }
 
-  public void UpdateLastStatsObject(uint nUpdatesRequired, CNWCreatureStatsUpdate updateObject) {
+  public void UpdateLastStatsObject(ulong nUpdatesRequired, CNWCreatureStatsUpdate updateObject) {
     NWNXLibPINVOKE.CNWSCreatureStats_UpdateLastStatsObject(swigCPtr, nUpdatesRequired, CNWCreatureStatsUpdate.getCPtr(updateObject));
   }
 
@@ -1391,23 +1495,23 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public uint ReadStatsFromGff(CResGFF pRes, CResStruct pGffStructWithCreatureStats, CNWSCreatureAppearanceInfo pAppInfo, int bIsSaveGame, int bIsPlayerCharacter, int bCopyObject) {
-    uint ret = NWNXLibPINVOKE.CNWSCreatureStats_ReadStatsFromGff__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats), CNWSCreatureAppearanceInfo.getCPtr(pAppInfo), bIsSaveGame, bIsPlayerCharacter, bCopyObject);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_ReadStatsFromGff__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats), CNWSCreatureAppearanceInfo.getCPtr(pAppInfo), bIsSaveGame, bIsPlayerCharacter, bCopyObject);
+    return retVal;
   }
 
   public uint ReadStatsFromGff(CResGFF pRes, CResStruct pGffStructWithCreatureStats, CNWSCreatureAppearanceInfo pAppInfo, int bIsSaveGame, int bIsPlayerCharacter) {
-    uint ret = NWNXLibPINVOKE.CNWSCreatureStats_ReadStatsFromGff__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats), CNWSCreatureAppearanceInfo.getCPtr(pAppInfo), bIsSaveGame, bIsPlayerCharacter);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_ReadStatsFromGff__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats), CNWSCreatureAppearanceInfo.getCPtr(pAppInfo), bIsSaveGame, bIsPlayerCharacter);
+    return retVal;
   }
 
   public uint ReadStatsFromGff(CResGFF pRes, CResStruct pGffStructWithCreatureStats, CNWSCreatureAppearanceInfo pAppInfo, int bIsSaveGame) {
-    uint ret = NWNXLibPINVOKE.CNWSCreatureStats_ReadStatsFromGff__SWIG_2(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats), CNWSCreatureAppearanceInfo.getCPtr(pAppInfo), bIsSaveGame);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_ReadStatsFromGff__SWIG_2(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats), CNWSCreatureAppearanceInfo.getCPtr(pAppInfo), bIsSaveGame);
+    return retVal;
   }
 
   public uint ReadStatsFromGff(CResGFF pRes, CResStruct pGffStructWithCreatureStats, CNWSCreatureAppearanceInfo pAppInfo) {
-    uint ret = NWNXLibPINVOKE.CNWSCreatureStats_ReadStatsFromGff__SWIG_3(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats), CNWSCreatureAppearanceInfo.getCPtr(pAppInfo));
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_ReadStatsFromGff__SWIG_3(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats), CNWSCreatureAppearanceInfo.getCPtr(pAppInfo));
+    return retVal;
   }
 
   public void ReadSpellsFromGff(CResGFF pRes, CResStruct pGffStructWithCreatureStats, int bDefaultUnsavedSpellsAsReadied) {
@@ -1427,13 +1531,13 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public uint ValidateLevelUp(CNWLevelStats pLevelUpStats, byte nDomain1, byte nDomain2, byte nSchool) {
-    uint ret = NWNXLibPINVOKE.CNWSCreatureStats_ValidateLevelUp(swigCPtr, CNWLevelStats.getCPtr(pLevelUpStats), nDomain1, nDomain2, nSchool);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_ValidateLevelUp(swigCPtr, CNWLevelStats.getCPtr(pLevelUpStats), nDomain1, nDomain2, nSchool);
+    return retVal;
   }
 
   public int CanLevelUp() {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_CanLevelUp(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_CanLevelUp(swigCPtr);
+    return retVal;
   }
 
   public void LevelUp(CNWLevelStats pLevelUpStats, byte nDomain1, byte nDomain2, byte nSchool, int bAddStatsToList) {
@@ -1445,18 +1549,18 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public int LevelUpAutomatic(byte nClass, int bReadyAllSpells, byte nPackage) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_LevelUpAutomatic(swigCPtr, nClass, bReadyAllSpells, nPackage);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_LevelUpAutomatic(swigCPtr, nClass, bReadyAllSpells, nPackage);
+    return retVal;
   }
 
   public int CanChooseFeat(ushort nFeatID, byte nNumberNormalFeats, byte nNumberBonusFeats, CExoArrayListUInt16 pChosenFeats) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_CanChooseFeat(swigCPtr, nFeatID, nNumberNormalFeats, nNumberBonusFeats, CExoArrayListUInt16.getCPtr(pChosenFeats));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_CanChooseFeat(swigCPtr, nFeatID, nNumberNormalFeats, nNumberBonusFeats, CExoArrayListUInt16.getCPtr(pChosenFeats));
+    return retVal;
   }
 
   public int FeatRequirementsMet(ushort nFeatID, CExoArrayListUInt16 pChosenFeats) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_FeatRequirementsMet(swigCPtr, nFeatID, CExoArrayListUInt16.getCPtr(pChosenFeats));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_FeatRequirementsMet(swigCPtr, nFeatID, CExoArrayListUInt16.getCPtr(pChosenFeats));
+    return retVal;
   }
 
   public void SetNormalBonusFlags(ushort nFeatID, int* bNormalListFeat, int* bBonusListFeat) {
@@ -1464,43 +1568,43 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public int FeatAcquired(ushort nFeat, CExoArrayListUInt16 pChosenFeats, int bCheckBonusFeats) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_FeatAcquired(swigCPtr, nFeat, CExoArrayListUInt16.getCPtr(pChosenFeats), bCheckBonusFeats);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_FeatAcquired(swigCPtr, nFeat, CExoArrayListUInt16.getCPtr(pChosenFeats), bCheckBonusFeats);
+    return retVal;
   }
 
   public int AutoMemorizeSpells(int bReadyAllSpells) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_AutoMemorizeSpells__SWIG_0(swigCPtr, bReadyAllSpells);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_AutoMemorizeSpells__SWIG_0(swigCPtr, bReadyAllSpells);
+    return retVal;
   }
 
   public int AutoMemorizeSpells() {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_AutoMemorizeSpells__SWIG_1(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_AutoMemorizeSpells__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public int GetIsClassAvailable(byte nClass) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetIsClassAvailable(swigCPtr, nClass);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetIsClassAvailable(swigCPtr, nClass);
+    return retVal;
   }
 
   public int GetMeetsPrestigeClassRequirements(CNWClass pClass) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetMeetsPrestigeClassRequirements(swigCPtr, CNWClass.getCPtr(pClass));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetMeetsPrestigeClassRequirements(swigCPtr, CNWClass.getCPtr(pClass));
+    return retVal;
   }
 
   public byte GetHitDie(byte nMultiClass, byte nDefaultClass) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetHitDie(swigCPtr, nMultiClass, nDefaultClass);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetHitDie(swigCPtr, nMultiClass, nDefaultClass);
+    return retVal;
   }
 
   public int GetIsDM() {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetIsDM(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetIsDM(swigCPtr);
+    return retVal;
   }
 
   public int GetIsPlayerDM() {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetIsPlayerDM(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetIsPlayerDM(swigCPtr);
+    return retVal;
   }
 
   public CExoString GetFullName() {
@@ -1515,28 +1619,28 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public byte GetLevel(int bUseNegativeLevels) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetLevel__SWIG_0(swigCPtr, bUseNegativeLevels);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetLevel__SWIG_0(swigCPtr, bUseNegativeLevels);
+    return retVal;
   }
 
   public byte GetLevel() {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetLevel__SWIG_1(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetLevel__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public byte GetEffectiveCRForPotentialLevel() {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetEffectiveCRForPotentialLevel(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetEffectiveCRForPotentialLevel(swigCPtr);
+    return retVal;
   }
 
   public byte GetPotentialLevel() {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetPotentialLevel(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetPotentialLevel(swigCPtr);
+    return retVal;
   }
 
   public uint GetExpNeededForLevelUp() {
-    uint ret = NWNXLibPINVOKE.CNWSCreatureStats_GetExpNeededForLevelUp(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetExpNeededForLevelUp(swigCPtr);
+    return retVal;
   }
 
   public void SetTag(CExoString sTag) {
@@ -1562,23 +1666,23 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public byte GetClassLevel(byte nMultiClass, int bUseNegativeLevel) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetClassLevel__SWIG_0(swigCPtr, nMultiClass, bUseNegativeLevel);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetClassLevel__SWIG_0(swigCPtr, nMultiClass, bUseNegativeLevel);
+    return retVal;
   }
 
   public byte GetClassLevel(byte nMultiClass) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetClassLevel__SWIG_1(swigCPtr, nMultiClass);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetClassLevel__SWIG_1(swigCPtr, nMultiClass);
+    return retVal;
   }
 
   public byte GetClassNegativeLevels(byte nMultiClass) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetClassNegativeLevels(swigCPtr, nMultiClass);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetClassNegativeLevels(swigCPtr, nMultiClass);
+    return retVal;
   }
 
   public byte GetClass(byte nMultiClass) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetClass(swigCPtr, nMultiClass);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetClass(swigCPtr, nMultiClass);
+    return retVal;
   }
 
   public CNWSCreatureStats_ClassInfo GetClassInfo(byte nMultiClass) {
@@ -1588,8 +1692,8 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public byte GetIsClass(byte nClass) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetIsClass(swigCPtr, nClass);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetIsClass(swigCPtr, nClass);
+    return retVal;
   }
 
   public void SetClassLevel(byte nMultiClass, byte nValue) {
@@ -1605,18 +1709,18 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public int GetTotalNegativeLevels() {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetTotalNegativeLevels(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetTotalNegativeLevels(swigCPtr);
+    return retVal;
   }
 
   public int GetNumLevelsOfClass(byte nClass, int bEpic) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetNumLevelsOfClass__SWIG_0(swigCPtr, nClass, bEpic);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetNumLevelsOfClass__SWIG_0(swigCPtr, nClass, bEpic);
+    return retVal;
   }
 
   public int GetNumLevelsOfClass(byte nClass) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetNumLevelsOfClass__SWIG_1(swigCPtr, nClass);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetNumLevelsOfClass__SWIG_1(swigCPtr, nClass);
+    return retVal;
   }
 
   public CExoString GetRaceString() {
@@ -1638,139 +1742,139 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
     NWNXLibPINVOKE.CNWSCreatureStats_SetMovementRate(swigCPtr, nValue);
   }
 
-  public char GetFortSavingThrow(int bExcludeEffectBonus) {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetFortSavingThrow__SWIG_0(swigCPtr, bExcludeEffectBonus);
-    return ret;
+  public byte GetFortSavingThrow(int bExcludeEffectBonus) {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetFortSavingThrow__SWIG_0(swigCPtr, bExcludeEffectBonus);
+    return retVal;
   }
 
-  public char GetFortSavingThrow() {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetFortSavingThrow__SWIG_1(swigCPtr);
-    return ret;
+  public byte GetFortSavingThrow() {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetFortSavingThrow__SWIG_1(swigCPtr);
+    return retVal;
   }
 
-  public char GetBaseFortSavingThrow() {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetBaseFortSavingThrow(swigCPtr);
-    return ret;
+  public byte GetBaseFortSavingThrow() {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetBaseFortSavingThrow(swigCPtr);
+    return retVal;
   }
 
-  public char GetWillSavingThrow(int bExcludeEffectBonus) {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetWillSavingThrow__SWIG_0(swigCPtr, bExcludeEffectBonus);
-    return ret;
+  public byte GetWillSavingThrow(int bExcludeEffectBonus) {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetWillSavingThrow__SWIG_0(swigCPtr, bExcludeEffectBonus);
+    return retVal;
   }
 
-  public char GetWillSavingThrow() {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetWillSavingThrow__SWIG_1(swigCPtr);
-    return ret;
+  public byte GetWillSavingThrow() {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetWillSavingThrow__SWIG_1(swigCPtr);
+    return retVal;
   }
 
-  public char GetBaseWillSavingThrow() {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetBaseWillSavingThrow(swigCPtr);
-    return ret;
+  public byte GetBaseWillSavingThrow() {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetBaseWillSavingThrow(swigCPtr);
+    return retVal;
   }
 
-  public char GetReflexSavingThrow(int bExcludeEffectBonus) {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetReflexSavingThrow__SWIG_0(swigCPtr, bExcludeEffectBonus);
-    return ret;
+  public byte GetReflexSavingThrow(int bExcludeEffectBonus) {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetReflexSavingThrow__SWIG_0(swigCPtr, bExcludeEffectBonus);
+    return retVal;
   }
 
-  public char GetReflexSavingThrow() {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetReflexSavingThrow__SWIG_1(swigCPtr);
-    return ret;
+  public byte GetReflexSavingThrow() {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetReflexSavingThrow__SWIG_1(swigCPtr);
+    return retVal;
   }
 
-  public char GetBaseReflexSavingThrow() {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetBaseReflexSavingThrow(swigCPtr);
-    return ret;
+  public byte GetBaseReflexSavingThrow() {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetBaseReflexSavingThrow(swigCPtr);
+    return retVal;
   }
 
-  public char GetAbilityMod(byte nAbility) {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityMod(swigCPtr, nAbility);
-    return ret;
+  public byte GetAbilityMod(byte nAbility) {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityMod(swigCPtr, nAbility);
+    return retVal;
   }
 
-  public char GetPrimaryMod(byte nMultiClass) {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetPrimaryMod(swigCPtr, nMultiClass);
-    return ret;
+  public byte GetPrimaryMod(byte nMultiClass) {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetPrimaryMod(swigCPtr, nMultiClass);
+    return retVal;
   }
 
-  public char GetSpellcastingMod(byte nMultiClass) {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellcastingMod(swigCPtr, nMultiClass);
-    return ret;
+  public byte GetSpellcastingMod(byte nMultiClass) {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellcastingMod(swigCPtr, nMultiClass);
+    return retVal;
   }
 
   public byte GetSTRStat() {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetSTRStat(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSTRStat(swigCPtr);
+    return retVal;
   }
 
-  public char GetTotalSTRBonus() {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetTotalSTRBonus(swigCPtr);
-    return ret;
+  public byte GetTotalSTRBonus() {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetTotalSTRBonus(swigCPtr);
+    return retVal;
   }
 
   public byte GetDEXStat() {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetDEXStat(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetDEXStat(swigCPtr);
+    return retVal;
   }
 
-  public char GetDEXMod(int bUseArmourPenalty) {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetDEXMod__SWIG_0(swigCPtr, bUseArmourPenalty);
-    return ret;
+  public byte GetDEXMod(int bUseArmourPenalty) {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetDEXMod__SWIG_0(swigCPtr, bUseArmourPenalty);
+    return retVal;
   }
 
-  public char GetDEXMod() {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetDEXMod__SWIG_1(swigCPtr);
-    return ret;
+  public byte GetDEXMod() {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetDEXMod__SWIG_1(swigCPtr);
+    return retVal;
   }
 
-  public char GetTotalDEXBonus() {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetTotalDEXBonus(swigCPtr);
-    return ret;
+  public byte GetTotalDEXBonus() {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetTotalDEXBonus(swigCPtr);
+    return retVal;
   }
 
   public byte GetCONStat() {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCONStat(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCONStat(swigCPtr);
+    return retVal;
   }
 
-  public char GetTotalCONBonus() {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetTotalCONBonus(swigCPtr);
-    return ret;
+  public byte GetTotalCONBonus() {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetTotalCONBonus(swigCPtr);
+    return retVal;
   }
 
   public byte GetINTStat() {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetINTStat(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetINTStat(swigCPtr);
+    return retVal;
   }
 
-  public char GetTotalINTBonus() {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetTotalINTBonus(swigCPtr);
-    return ret;
+  public byte GetTotalINTBonus() {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetTotalINTBonus(swigCPtr);
+    return retVal;
   }
 
   public byte GetWISStat() {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetWISStat(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetWISStat(swigCPtr);
+    return retVal;
   }
 
-  public char GetTotalWISBonus() {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetTotalWISBonus(swigCPtr);
-    return ret;
+  public byte GetTotalWISBonus() {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetTotalWISBonus(swigCPtr);
+    return retVal;
   }
 
   public byte GetCHAStat() {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCHAStat(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCHAStat(swigCPtr);
+    return retVal;
   }
 
-  public char GetTotalCHABonus() {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetTotalCHABonus(swigCPtr);
-    return ret;
+  public byte GetTotalCHABonus() {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetTotalCHABonus(swigCPtr);
+    return retVal;
   }
 
   public sbyte GetClassesAbilityAdjust(int ability) {
-    sbyte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetClassesAbilityAdjust(swigCPtr, ability);
-    return ret;
+    sbyte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetClassesAbilityAdjust(swigCPtr, ability);
+    return retVal;
   }
 
   public void SetSTRBase(byte nValue) {
@@ -1801,48 +1905,48 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
     NWNXLibPINVOKE.CNWSCreatureStats_SetCHABase(swigCPtr, nValue);
   }
 
-  public char CalcStatModifier(byte nValue) {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_CalcStatModifier(swigCPtr, nValue);
-    return ret;
+  public byte CalcStatModifier(byte nValue) {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_CalcStatModifier(swigCPtr, nValue);
+    return retVal;
   }
 
   public void GetAbilityInfo(byte nAbilityId, byte* pStat, byte* pMod, byte* pBase, byte* pTotalBonus) {
-    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_0(swigCPtr, nAbilityId, (global::System.IntPtr)pStat, (global::System.IntPtr)pMod, (global::System.IntPtr)pBase, (global::System.IntPtr)pTotalBonus);
+    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_0(swigCPtr, nAbilityId, pStat, pMod, pBase, pTotalBonus);
   }
 
   public void GetAbilityInfo(byte nAbilityId, byte* pStat, byte* pMod, byte* pBase) {
-    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_1(swigCPtr, nAbilityId, (global::System.IntPtr)pStat, (global::System.IntPtr)pMod, (global::System.IntPtr)pBase);
+    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_1(swigCPtr, nAbilityId, pStat, pMod, pBase);
   }
 
   public void GetAbilityInfo(byte nAbilityId, byte* pStat, byte* pMod) {
-    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_2(swigCPtr, nAbilityId, (global::System.IntPtr)pStat, (global::System.IntPtr)pMod);
+    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_2(swigCPtr, nAbilityId, pStat, pMod);
   }
 
   public void GetAbilityInfo(byte nAbilityId, byte* pStat) {
-    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_3(swigCPtr, nAbilityId, (global::System.IntPtr)pStat);
+    NWNXLibPINVOKE.CNWSCreatureStats_GetAbilityInfo__SWIG_3(swigCPtr, nAbilityId, pStat);
   }
 
-  public char GetSkillRank(byte nSkill, CNWSObject pVersus, int bBaseOnly) {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetSkillRank__SWIG_0(swigCPtr, nSkill, CNWSObject.getCPtr(pVersus), bBaseOnly);
-    return ret;
+  public byte GetSkillRank(byte nSkill, CNWSObject pVersus, int bBaseOnly) {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSkillRank__SWIG_0(swigCPtr, nSkill, CNWSObject.getCPtr(pVersus), bBaseOnly);
+    return retVal;
   }
 
-  public char GetSkillRank(byte nSkill, CNWSObject pVersus) {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetSkillRank__SWIG_1(swigCPtr, nSkill, CNWSObject.getCPtr(pVersus));
-    return ret;
+  public byte GetSkillRank(byte nSkill, CNWSObject pVersus) {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSkillRank__SWIG_1(swigCPtr, nSkill, CNWSObject.getCPtr(pVersus));
+    return retVal;
   }
 
   public int GetCanUseSkill(byte nSkill) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCanUseSkill(swigCPtr, nSkill);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCanUseSkill(swigCPtr, nSkill);
+    return retVal;
   }
 
   public int GetCanUseSkillAfterLevelUp(ushort nSkill, CNWLevelStats pLevelUpStats) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCanUseSkillAfterLevelUp(swigCPtr, nSkill, CNWLevelStats.getCPtr(pLevelUpStats));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCanUseSkillAfterLevelUp(swigCPtr, nSkill, CNWLevelStats.getCPtr(pLevelUpStats));
+    return retVal;
   }
 
-  public void SetSkillRank(byte nSkill, char nRank) {
+  public void SetSkillRank(byte nSkill, byte nRank) {
     NWNXLibPINVOKE.CNWSCreatureStats_SetSkillRank(swigCPtr, nSkill, nRank);
   }
 
@@ -1851,18 +1955,18 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public int HasFeat(ushort nFeat) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_HasFeat(swigCPtr, nFeat);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_HasFeat(swigCPtr, nFeat);
+    return retVal;
   }
 
   public byte GetFeatRemainingUses(ushort nFeat) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetFeatRemainingUses(swigCPtr, nFeat);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetFeatRemainingUses(swigCPtr, nFeat);
+    return retVal;
   }
 
   public byte GetFeatTotalUses(ushort nFeat) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetFeatTotalUses(swigCPtr, nFeat);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetFeatTotalUses(swigCPtr, nFeat);
+    return retVal;
   }
 
   public void SetFeatRemainingUses(ushort nFeat, byte nRemainingUses) {
@@ -1882,23 +1986,23 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public ushort GetFeat(ushort nIndex) {
-    ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_GetFeat(swigCPtr, nIndex);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetFeat(swigCPtr, nIndex);
+    return retVal;
   }
 
   public ushort GetHighestLevelOfFeat(ushort nFeat) {
-    ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_GetHighestLevelOfFeat(swigCPtr, nFeat);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetHighestLevelOfFeat(swigCPtr, nFeat);
+    return retVal;
   }
 
   public int FeatRequirementsMetAfterLevelUp(ushort nFeatID, CNWLevelStats pLevelUpStats, byte nSchool) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_FeatRequirementsMetAfterLevelUp(swigCPtr, nFeatID, CNWLevelStats.getCPtr(pLevelUpStats), nSchool);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_FeatRequirementsMetAfterLevelUp(swigCPtr, nFeatID, CNWLevelStats.getCPtr(pLevelUpStats), nSchool);
+    return retVal;
   }
 
   public byte GetFeatSourceClass(ushort nFeat) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetFeatSourceClass(swigCPtr, nFeat);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetFeatSourceClass(swigCPtr, nFeat);
+    return retVal;
   }
 
   public void ComputeFeatBonuses(CExoArrayListUInt16 m_pFeats, int bSubtractBonuses) {
@@ -1918,8 +2022,8 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public ushort GetBonusFeat(ushort nIndex) {
-    ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_GetBonusFeat(swigCPtr, nIndex);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetBonusFeat(swigCPtr, nIndex);
+    return retVal;
   }
 
   public void CalcLevelUpNumberFeats(byte nLeveledUpLevel, byte nLeveledUpClass, byte* nNumberNormalFeats, byte* nNumberBonusFeats) {
@@ -1927,98 +2031,98 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public int GetCreatureHasTalent(int nType, int nID, byte nMetaType) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureHasTalent__SWIG_0(swigCPtr, nType, nID, nMetaType);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureHasTalent__SWIG_0(swigCPtr, nType, nID, nMetaType);
+    return retVal;
   }
 
   public int GetCreatureHasTalent(int nType, int nID) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureHasTalent__SWIG_1(swigCPtr, nType, nID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureHasTalent__SWIG_1(swigCPtr, nType, nID);
+    return retVal;
   }
 
   public int GetCreatureTalentRandom(int nCategory, int nMaxCR, int* nType, int* nID, byte* nMultiClass, uint* oidItem, int* nItemPropertyIndex, byte* nCasterLevel, byte* nMetaType) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandom(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass, (global::System.IntPtr)oidItem, (global::System.IntPtr)nItemPropertyIndex, (global::System.IntPtr)nCasterLevel, (global::System.IntPtr)nMetaType);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandom(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass, (global::System.IntPtr)oidItem, (global::System.IntPtr)nItemPropertyIndex, (global::System.IntPtr)nCasterLevel, (global::System.IntPtr)nMetaType);
+    return retVal;
   }
 
   public int GetCreatureTalentRandomSpell(int nCategory, int nMaxCR, int* nType, int* nID, byte* nMultiClass, byte* nMetaType) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomSpell(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass, (global::System.IntPtr)nMetaType);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomSpell(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass, (global::System.IntPtr)nMetaType);
+    return retVal;
   }
 
   public int GetCreatureTalentRandomSpellFromItem(int nCategory, int nMaxCR, int* nType, int* nID, byte* nMultiClass, uint* oidItem, int* nItemPropertyIndex) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomSpellFromItem(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass, (global::System.IntPtr)oidItem, (global::System.IntPtr)nItemPropertyIndex);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomSpellFromItem(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass, (global::System.IntPtr)oidItem, (global::System.IntPtr)nItemPropertyIndex);
+    return retVal;
   }
 
   public int GetCreatureTalentRandomSpellLikeAbility(int nCategory, int nMaxCR, int* nType, int* nID, byte* nMultiClass, byte* nCasterLevel) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomSpellLikeAbility(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass, (global::System.IntPtr)nCasterLevel);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomSpellLikeAbility(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass, (global::System.IntPtr)nCasterLevel);
+    return retVal;
   }
 
   public int GetCreatureTalentRandomFeat(int nCategory, int nMaxCR, int* nType, int* nID, byte* nMultiClass) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomFeat(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomFeat(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass);
+    return retVal;
   }
 
   public int GetCreatureTalentRandomSkill(int nCategory, int nMaxCR, int* nType, int* nID, byte* nMultiClass) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomSkill(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomSkill(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass);
+    return retVal;
   }
 
   public int GetCreatureTalentRandomKnownSpell(int nCategory, int nMaxCR, int* nType, int* nID, byte* nMultiClass, int nClass) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomKnownSpell(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass, nClass);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomKnownSpell(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass, nClass);
+    return retVal;
   }
 
   public int GetCreatureTalentRandomMemorisedSpell(int nCategory, int nMaxCR, int* nType, int* nID, byte* nMultiClass, int nClass, byte* nMetaType) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomMemorisedSpell(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass, nClass, (global::System.IntPtr)nMetaType);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureTalentRandomMemorisedSpell(swigCPtr, nCategory, nMaxCR, (global::System.IntPtr)nType, (global::System.IntPtr)nID, (global::System.IntPtr)nMultiClass, nClass, (global::System.IntPtr)nMetaType);
+    return retVal;
   }
 
   public int GetCanUseRelatedCategory(int nTalentCategory, int nDesiredCategory) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCanUseRelatedCategory(swigCPtr, nTalentCategory, nDesiredCategory);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCanUseRelatedCategory(swigCPtr, nTalentCategory, nDesiredCategory);
+    return retVal;
   }
 
   public short GetArmorClassVersus(CNWSCreature pCreature, int bVsTouchAttack) {
-    short ret = NWNXLibPINVOKE.CNWSCreatureStats_GetArmorClassVersus__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pCreature), bVsTouchAttack);
-    return ret;
+    short retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetArmorClassVersus__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pCreature), bVsTouchAttack);
+    return retVal;
   }
 
   public short GetArmorClassVersus(CNWSCreature pCreature) {
-    short ret = NWNXLibPINVOKE.CNWSCreatureStats_GetArmorClassVersus__SWIG_1(swigCPtr, CNWSCreature.getCPtr(pCreature));
-    return ret;
+    short retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetArmorClassVersus__SWIG_1(swigCPtr, CNWSCreature.getCPtr(pCreature));
+    return retVal;
   }
 
   public short GetArmorClassVersus() {
-    short ret = NWNXLibPINVOKE.CNWSCreatureStats_GetArmorClassVersus__SWIG_2(swigCPtr);
-    return ret;
+    short retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetArmorClassVersus__SWIG_2(swigCPtr);
+    return retVal;
   }
 
-  public char GetACNaturalBase(int bVsTouchAttack) {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetACNaturalBase__SWIG_0(swigCPtr, bVsTouchAttack);
-    return ret;
+  public byte GetACNaturalBase(int bVsTouchAttack) {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetACNaturalBase__SWIG_0(swigCPtr, bVsTouchAttack);
+    return retVal;
   }
 
-  public char GetACNaturalBase() {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetACNaturalBase__SWIG_1(swigCPtr);
-    return ret;
+  public byte GetACNaturalBase() {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetACNaturalBase__SWIG_1(swigCPtr);
+    return retVal;
   }
 
-  public char GetTotalACSkillMod() {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetTotalACSkillMod(swigCPtr);
-    return ret;
+  public byte GetTotalACSkillMod() {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetTotalACSkillMod(swigCPtr);
+    return retVal;
   }
 
   public byte GetSimpleAlignmentGoodEvil() {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetSimpleAlignmentGoodEvil(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSimpleAlignmentGoodEvil(swigCPtr);
+    return retVal;
   }
 
   public byte GetSimpleAlignmentLawChaos() {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetSimpleAlignmentLawChaos(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSimpleAlignmentLawChaos(swigCPtr);
+    return retVal;
   }
 
   public CExoString GetAlignmentString() {
@@ -2027,18 +2131,18 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public int GetIsEpitomeOfAlignment() {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetIsEpitomeOfAlignment(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetIsEpitomeOfAlignment(swigCPtr);
+    return retVal;
   }
 
   public int GetHasLostClassAbilities(byte nMultiClass) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetHasLostClassAbilities(swigCPtr, nMultiClass);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetHasLostClassAbilities(swigCPtr, nMultiClass);
+    return retVal;
   }
 
   public int ModifyAlignment(short nGoodEvilBonus, short nLawChaosBonus) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_ModifyAlignment(swigCPtr, nGoodEvilBonus, nLawChaosBonus);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_ModifyAlignment(swigCPtr, nGoodEvilBonus, nLawChaosBonus);
+    return retVal;
   }
 
   public void AdjustAlignment(byte nAlignment, short nShift, uint oidInitiator) {
@@ -2054,88 +2158,88 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public int GetEffectImmunity(byte nType, CNWSCreature pVersus, int bConsiderFeats) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetEffectImmunity__SWIG_0(swigCPtr, nType, CNWSCreature.getCPtr(pVersus), bConsiderFeats);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetEffectImmunity__SWIG_0(swigCPtr, nType, CNWSCreature.getCPtr(pVersus), bConsiderFeats);
+    return retVal;
   }
 
   public int GetEffectImmunity(byte nType, CNWSCreature pVersus) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetEffectImmunity__SWIG_1(swigCPtr, nType, CNWSCreature.getCPtr(pVersus));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetEffectImmunity__SWIG_1(swigCPtr, nType, CNWSCreature.getCPtr(pVersus));
+    return retVal;
   }
 
   public int GetUseMonkAttackTables(int bForceUnarmed) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetUseMonkAttackTables(swigCPtr, bForceUnarmed);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetUseMonkAttackTables(swigCPtr, bForceUnarmed);
+    return retVal;
   }
 
   public int GetUnarmedDamageRoll(CNWSObject pTarget) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetUnarmedDamageRoll(swigCPtr, CNWSObject.getCPtr(pTarget));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetUnarmedDamageRoll(swigCPtr, CNWSObject.getCPtr(pTarget));
+    return retVal;
   }
 
   public byte GetUnarmedDamageDice() {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetUnarmedDamageDice(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetUnarmedDamageDice(swigCPtr);
+    return retVal;
   }
 
   public byte GetUnarmedDamageDie() {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetUnarmedDamageDie(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetUnarmedDamageDie(swigCPtr);
+    return retVal;
   }
 
   public byte GetCreatureDamageDice(byte nIndex) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureDamageDice(swigCPtr, nIndex);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureDamageDice(swigCPtr, nIndex);
+    return retVal;
   }
 
   public byte GetCreatureDamageDie(byte nIndex) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureDamageDie(swigCPtr, nIndex);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCreatureDamageDie(swigCPtr, nIndex);
+    return retVal;
   }
 
   public int GetWeaponFinesse(CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetWeaponFinesse(swigCPtr, CNWSItem.getCPtr(pItem));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetWeaponFinesse(swigCPtr, CNWSItem.getCPtr(pItem));
+    return retVal;
   }
 
   public int GetWeaponFocus(CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetWeaponFocus(swigCPtr, CNWSItem.getCPtr(pItem));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetWeaponFocus(swigCPtr, CNWSItem.getCPtr(pItem));
+    return retVal;
   }
 
   public int GetEpicWeaponFocus(CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetEpicWeaponFocus(swigCPtr, CNWSItem.getCPtr(pItem));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetEpicWeaponFocus(swigCPtr, CNWSItem.getCPtr(pItem));
+    return retVal;
   }
 
   public int GetWeaponSpecialization(CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetWeaponSpecialization(swigCPtr, CNWSItem.getCPtr(pItem));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetWeaponSpecialization(swigCPtr, CNWSItem.getCPtr(pItem));
+    return retVal;
   }
 
   public int GetEpicWeaponSpecialization(CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetEpicWeaponSpecialization(swigCPtr, CNWSItem.getCPtr(pItem));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetEpicWeaponSpecialization(swigCPtr, CNWSItem.getCPtr(pItem));
+    return retVal;
   }
 
   public int GetWeaponImprovedCritical(CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetWeaponImprovedCritical(swigCPtr, CNWSItem.getCPtr(pItem));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetWeaponImprovedCritical(swigCPtr, CNWSItem.getCPtr(pItem));
+    return retVal;
   }
 
   public int GetEpicWeaponOverwhelmingCritical(CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetEpicWeaponOverwhelmingCritical(swigCPtr, CNWSItem.getCPtr(pItem));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetEpicWeaponOverwhelmingCritical(swigCPtr, CNWSItem.getCPtr(pItem));
+    return retVal;
   }
 
   public int GetEpicWeaponDevastatingCritical(CNWSItem pItem) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetEpicWeaponDevastatingCritical(swigCPtr, CNWSItem.getCPtr(pItem));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetEpicWeaponDevastatingCritical(swigCPtr, CNWSItem.getCPtr(pItem));
+    return retVal;
   }
 
   public int GetFavoredEnemyBonus(CNWSCreature pTargetCreature) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetFavoredEnemyBonus(swigCPtr, CNWSCreature.getCPtr(pTargetCreature));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetFavoredEnemyBonus(swigCPtr, CNWSCreature.getCPtr(pTargetCreature));
+    return retVal;
   }
 
   public void UpdateCombatInformation() {
@@ -2143,238 +2247,238 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public int GetBaseAttackBonus(int bExcludeEpic) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetBaseAttackBonus__SWIG_0(swigCPtr, bExcludeEpic);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetBaseAttackBonus__SWIG_0(swigCPtr, bExcludeEpic);
+    return retVal;
   }
 
   public int GetBaseAttackBonus() {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetBaseAttackBonus__SWIG_1(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetBaseAttackBonus__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public int GetMeleeAttackBonus(int bOffHand, int bIncludeBase, int bTouchAttack) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetMeleeAttackBonus__SWIG_0(swigCPtr, bOffHand, bIncludeBase, bTouchAttack);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetMeleeAttackBonus__SWIG_0(swigCPtr, bOffHand, bIncludeBase, bTouchAttack);
+    return retVal;
   }
 
   public int GetMeleeAttackBonus(int bOffHand, int bIncludeBase) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetMeleeAttackBonus__SWIG_1(swigCPtr, bOffHand, bIncludeBase);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetMeleeAttackBonus__SWIG_1(swigCPtr, bOffHand, bIncludeBase);
+    return retVal;
   }
 
   public int GetMeleeAttackBonus(int bOffHand) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetMeleeAttackBonus__SWIG_2(swigCPtr, bOffHand);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetMeleeAttackBonus__SWIG_2(swigCPtr, bOffHand);
+    return retVal;
   }
 
   public int GetMeleeAttackBonus() {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetMeleeAttackBonus__SWIG_3(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetMeleeAttackBonus__SWIG_3(swigCPtr);
+    return retVal;
   }
 
   public int GetMeleeDamageBonus(int bOffHand, byte nCreatureWeapon) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetMeleeDamageBonus__SWIG_0(swigCPtr, bOffHand, nCreatureWeapon);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetMeleeDamageBonus__SWIG_0(swigCPtr, bOffHand, nCreatureWeapon);
+    return retVal;
   }
 
   public int GetMeleeDamageBonus(int bOffHand) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetMeleeDamageBonus__SWIG_1(swigCPtr, bOffHand);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetMeleeDamageBonus__SWIG_1(swigCPtr, bOffHand);
+    return retVal;
   }
 
   public int GetMeleeDamageBonus() {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetMeleeDamageBonus__SWIG_2(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetMeleeDamageBonus__SWIG_2(swigCPtr);
+    return retVal;
   }
 
   public int GetRangedAttackBonus(int bIncludeBase, int bTouchAttack) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetRangedAttackBonus__SWIG_0(swigCPtr, bIncludeBase, bTouchAttack);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetRangedAttackBonus__SWIG_0(swigCPtr, bIncludeBase, bTouchAttack);
+    return retVal;
   }
 
   public int GetRangedAttackBonus(int bIncludeBase) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetRangedAttackBonus__SWIG_1(swigCPtr, bIncludeBase);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetRangedAttackBonus__SWIG_1(swigCPtr, bIncludeBase);
+    return retVal;
   }
 
   public int GetRangedAttackBonus() {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetRangedAttackBonus__SWIG_2(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetRangedAttackBonus__SWIG_2(swigCPtr);
+    return retVal;
   }
 
   public int GetRangedDamageBonus() {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetRangedDamageBonus(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetRangedDamageBonus(swigCPtr);
+    return retVal;
   }
 
   public int GetAttackModifierVersus(CNWSCreature pTargetCreature) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetAttackModifierVersus__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pTargetCreature));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetAttackModifierVersus__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pTargetCreature));
+    return retVal;
   }
 
   public int GetAttackModifierVersus() {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetAttackModifierVersus__SWIG_1(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetAttackModifierVersus__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public int GetDamageBonus(CNWSCreature pCreature, int bOffHand) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetDamageBonus__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pCreature), bOffHand);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetDamageBonus__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pCreature), bOffHand);
+    return retVal;
   }
 
   public int GetDamageBonus(CNWSCreature pCreature) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetDamageBonus__SWIG_1(swigCPtr, CNWSCreature.getCPtr(pCreature));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetDamageBonus__SWIG_1(swigCPtr, CNWSCreature.getCPtr(pCreature));
+    return retVal;
   }
 
   public int GetDamageBonus() {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetDamageBonus__SWIG_2(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetDamageBonus__SWIG_2(swigCPtr);
+    return retVal;
   }
 
   public int GetDamageRoll(CNWSObject pTarget, int bOffHand, int bCritical, int bSneakAttack, int bDeathAttack, int bForceMax) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetDamageRoll__SWIG_0(swigCPtr, CNWSObject.getCPtr(pTarget), bOffHand, bCritical, bSneakAttack, bDeathAttack, bForceMax);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetDamageRoll__SWIG_0(swigCPtr, CNWSObject.getCPtr(pTarget), bOffHand, bCritical, bSneakAttack, bDeathAttack, bForceMax);
+    return retVal;
   }
 
   public int GetDamageRoll(CNWSObject pTarget, int bOffHand, int bCritical, int bSneakAttack, int bDeathAttack) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetDamageRoll__SWIG_1(swigCPtr, CNWSObject.getCPtr(pTarget), bOffHand, bCritical, bSneakAttack, bDeathAttack);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetDamageRoll__SWIG_1(swigCPtr, CNWSObject.getCPtr(pTarget), bOffHand, bCritical, bSneakAttack, bDeathAttack);
+    return retVal;
   }
 
   public int GetCriticalHitRoll(int bOffHand) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCriticalHitRoll__SWIG_0(swigCPtr, bOffHand);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCriticalHitRoll__SWIG_0(swigCPtr, bOffHand);
+    return retVal;
   }
 
   public int GetCriticalHitRoll() {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCriticalHitRoll__SWIG_1(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCriticalHitRoll__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public int GetCriticalHitMultiplier(int bOffHand) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCriticalHitMultiplier__SWIG_0(swigCPtr, bOffHand);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCriticalHitMultiplier__SWIG_0(swigCPtr, bOffHand);
+    return retVal;
   }
 
   public int GetCriticalHitMultiplier() {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCriticalHitMultiplier__SWIG_1(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCriticalHitMultiplier__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public byte GetAttacksPerRound() {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetAttacksPerRound(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetAttacksPerRound(swigCPtr);
+    return retVal;
   }
 
   public int ResolveSpecialAttackAttackBonus(CNWSCreature pTarget) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_ResolveSpecialAttackAttackBonus__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pTarget));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_ResolveSpecialAttackAttackBonus__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pTarget));
+    return retVal;
   }
 
   public int ResolveSpecialAttackAttackBonus() {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_ResolveSpecialAttackAttackBonus__SWIG_1(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_ResolveSpecialAttackAttackBonus__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public int ResolveSpecialAttackDamageBonus(CNWSCreature pTarget) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_ResolveSpecialAttackDamageBonus__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pTarget));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_ResolveSpecialAttackDamageBonus__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pTarget));
+    return retVal;
   }
 
   public int ResolveSpecialAttackDamageBonus() {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_ResolveSpecialAttackDamageBonus__SWIG_1(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_ResolveSpecialAttackDamageBonus__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public ushort GetCasterLevel(byte nMultiClass) {
-    ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_GetCasterLevel(swigCPtr, nMultiClass);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetCasterLevel(swigCPtr, nMultiClass);
+    return retVal;
   }
 
   public byte GetSpellFailure(byte nSpellSchool) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellFailure(swigCPtr, nSpellSchool);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellFailure(swigCPtr, nSpellSchool);
+    return retVal;
   }
 
-  public char GetSpellResistance() {
-    char ret = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellResistance(swigCPtr);
-    return ret;
+  public byte GetSpellResistance() {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellResistance(swigCPtr);
+    return retVal;
   }
 
   public byte GetSpellsPerDayLeft(byte nMultiClass, byte nSpellLevel) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellsPerDayLeft(swigCPtr, nMultiClass, nSpellLevel);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellsPerDayLeft(swigCPtr, nMultiClass, nSpellLevel);
+    return retVal;
   }
 
   public byte GetSpellGainWithBonus(byte nMultiClass, byte nSpellLevel) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellGainWithBonus(swigCPtr, nMultiClass, nSpellLevel);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellGainWithBonus(swigCPtr, nMultiClass, nSpellLevel);
+    return retVal;
   }
 
   public byte GetSpellGainWithBonusAfterLevelUp(byte nMultiClass, byte nSpellLevel, CNWLevelStats pLevelUpStats, byte nSchool, int bNewClass) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellGainWithBonusAfterLevelUp__SWIG_0(swigCPtr, nMultiClass, nSpellLevel, CNWLevelStats.getCPtr(pLevelUpStats), nSchool, bNewClass);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellGainWithBonusAfterLevelUp__SWIG_0(swigCPtr, nMultiClass, nSpellLevel, CNWLevelStats.getCPtr(pLevelUpStats), nSchool, bNewClass);
+    return retVal;
   }
 
   public byte GetSpellGainWithBonusAfterLevelUp(byte nMultiClass, byte nSpellLevel, CNWLevelStats pLevelUpStats, byte nSchool) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellGainWithBonusAfterLevelUp__SWIG_1(swigCPtr, nMultiClass, nSpellLevel, CNWLevelStats.getCPtr(pLevelUpStats), nSchool);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellGainWithBonusAfterLevelUp__SWIG_1(swigCPtr, nMultiClass, nSpellLevel, CNWLevelStats.getCPtr(pLevelUpStats), nSchool);
+    return retVal;
   }
 
   public int ConfirmDomainSpell(byte nMultiClass, byte nSpellLevel, uint nSpellID) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_ConfirmDomainSpell(swigCPtr, nMultiClass, nSpellLevel, nSpellID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_ConfirmDomainSpell(swigCPtr, nMultiClass, nSpellLevel, nSpellID);
+    return retVal;
   }
 
   public int GetSpellMinAbilityMet(byte nMultiClass, byte nSpellLevel) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellMinAbilityMet(swigCPtr, nMultiClass, nSpellLevel);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellMinAbilityMet(swigCPtr, nMultiClass, nSpellLevel);
+    return retVal;
   }
 
   public int GetMetamagicPrerequisitesMet(byte nMetaType) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetMetamagicPrerequisitesMet(swigCPtr, nMetaType);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetMetamagicPrerequisitesMet(swigCPtr, nMetaType);
+    return retVal;
   }
 
   public ushort GetNumberKnownSpells(byte nMultiClass, byte nSpellLevel) {
-    ushort ret = NWNXLibPINVOKE.CNWSCreatureStats_GetNumberKnownSpells(swigCPtr, nMultiClass, nSpellLevel);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetNumberKnownSpells(swigCPtr, nMultiClass, nSpellLevel);
+    return retVal;
   }
 
   public uint GetHighestLevelKnown() {
-    uint ret = NWNXLibPINVOKE.CNWSCreatureStats_GetHighestLevelKnown(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetHighestLevelKnown(swigCPtr);
+    return retVal;
   }
 
   public byte GetNumberMemorizedSpellSlots(byte nMultiClass, byte nSpellLevel) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetNumberMemorizedSpellSlots(swigCPtr, nMultiClass, nSpellLevel);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetNumberMemorizedSpellSlots(swigCPtr, nMultiClass, nSpellLevel);
+    return retVal;
   }
 
   public uint GetKnownSpell(byte nMultiClass, byte nSpellLevel, byte nSpellListIndex) {
-    uint ret = NWNXLibPINVOKE.CNWSCreatureStats_GetKnownSpell(swigCPtr, nMultiClass, nSpellLevel, nSpellListIndex);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetKnownSpell(swigCPtr, nMultiClass, nSpellLevel, nSpellListIndex);
+    return retVal;
   }
 
   public uint GetMemorizedSpellInSlot(byte nMultiClass, byte nSpellLevel, byte nSpellSlot) {
-    uint ret = NWNXLibPINVOKE.CNWSCreatureStats_GetMemorizedSpellInSlot(swigCPtr, nMultiClass, nSpellLevel, nSpellSlot);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetMemorizedSpellInSlot(swigCPtr, nMultiClass, nSpellLevel, nSpellSlot);
+    return retVal;
   }
 
   public int GetIsDomainSpell(byte nMultiClass, byte nSpellLevel, byte nSpellSlot) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetIsDomainSpell(swigCPtr, nMultiClass, nSpellLevel, nSpellSlot);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetIsDomainSpell(swigCPtr, nMultiClass, nSpellLevel, nSpellSlot);
+    return retVal;
   }
 
   public byte ComputeNumberKnownSpellsLeft(byte nMultiClass, byte nSpellLevel) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_ComputeNumberKnownSpellsLeft(swigCPtr, nMultiClass, nSpellLevel);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_ComputeNumberKnownSpellsLeft(swigCPtr, nMultiClass, nSpellLevel);
+    return retVal;
   }
 
   public byte GetMemorizedSpellInSlotReady(byte nMultiClass, byte nSpellLevel, byte nSpellSlot) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetMemorizedSpellInSlotReady(swigCPtr, nMultiClass, nSpellLevel, nSpellSlot);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetMemorizedSpellInSlotReady(swigCPtr, nMultiClass, nSpellLevel, nSpellSlot);
+    return retVal;
   }
 
   public void SetMemorizedSpellInSlotReady(byte nMultiClass, byte nSpellLevel, byte nSpellSlot, int bReady) {
@@ -2382,70 +2486,70 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public byte GetMemorizedSpellInSlotMetaType(byte nMultiClass, byte nSpellLevel, byte nSpellSlot) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetMemorizedSpellInSlotMetaType(swigCPtr, nMultiClass, nSpellLevel, nSpellSlot);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetMemorizedSpellInSlotMetaType(swigCPtr, nMultiClass, nSpellLevel, nSpellSlot);
+    return retVal;
   }
 
   public int GetHasSilencedSpell(uint nSpellID) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetHasSilencedSpell(swigCPtr, nSpellID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetHasSilencedSpell(swigCPtr, nSpellID);
+    return retVal;
   }
 
   public int GetHasStilledSpell(uint nSpellID) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetHasStilledSpell(swigCPtr, nSpellID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetHasStilledSpell(swigCPtr, nSpellID);
+    return retVal;
   }
 
   public byte GetSpellUsesLeft(uint nSpellID, byte nMultiClass, byte nDomainLevel, byte nMetaType) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellUsesLeft(swigCPtr, nSpellID, nMultiClass, nDomainLevel, nMetaType);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellUsesLeft(swigCPtr, nSpellID, nMultiClass, nDomainLevel, nMetaType);
+    return retVal;
   }
 
   public byte GetMemorizedSpellReadyCount(uint nSpellID) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetMemorizedSpellReadyCount__SWIG_0(swigCPtr, nSpellID);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetMemorizedSpellReadyCount__SWIG_0(swigCPtr, nSpellID);
+    return retVal;
   }
 
   public byte GetMemorizedSpellReadyCount(byte nMultiClass, uint nSpellID, byte nMetaType) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetMemorizedSpellReadyCount__SWIG_1(swigCPtr, nMultiClass, nSpellID, nMetaType);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetMemorizedSpellReadyCount__SWIG_1(swigCPtr, nMultiClass, nSpellID, nMetaType);
+    return retVal;
   }
 
   public byte GetMemorizedSpellReadyCount(byte nMultiClass, uint nSpellID) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetMemorizedSpellReadyCount__SWIG_2(swigCPtr, nMultiClass, nSpellID);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetMemorizedSpellReadyCount__SWIG_2(swigCPtr, nMultiClass, nSpellID);
+    return retVal;
   }
 
   public byte GetMemorizedSpellReadyCount(byte nMultiClass, uint nSpellID, byte* nMinSpellLevel, byte* nMinSpellSlot) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetMemorizedSpellReadyCount__SWIG_3(swigCPtr, nMultiClass, nSpellID, (global::System.IntPtr)nMinSpellLevel, (global::System.IntPtr)nMinSpellSlot);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetMemorizedSpellReadyCount__SWIG_3(swigCPtr, nMultiClass, nSpellID, nMinSpellLevel, nMinSpellSlot);
+    return retVal;
   }
 
   public byte GetSchool(byte nMultiClass) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetSchool(swigCPtr, nMultiClass);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSchool(swigCPtr, nMultiClass);
+    return retVal;
   }
 
   public byte GetDomain1(byte nMultiClass) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetDomain1(swigCPtr, nMultiClass);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetDomain1(swigCPtr, nMultiClass);
+    return retVal;
   }
 
   public byte GetDomain2(byte nMultiClass) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetDomain2(swigCPtr, nMultiClass);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetDomain2(swigCPtr, nMultiClass);
+    return retVal;
   }
 
   public uint GetNumberOfBonusSpells(byte nMultiClass, byte nSpellLevel) {
-    uint ret = NWNXLibPINVOKE.CNWSCreatureStats_GetNumberOfBonusSpells(swigCPtr, nMultiClass, nSpellLevel);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetNumberOfBonusSpells(swigCPtr, nMultiClass, nSpellLevel);
+    return retVal;
   }
 
   public void ModifyNumberBonusSpells(byte nMultiClass, byte nSpellLevel, int nDelta) {
     NWNXLibPINVOKE.CNWSCreatureStats_ModifyNumberBonusSpells(swigCPtr, nMultiClass, nSpellLevel, nDelta);
   }
 
-  public void SetArcaneSpellFailure(char nValue) {
+  public void SetArcaneSpellFailure(byte nValue) {
     NWNXLibPINVOKE.CNWSCreatureStats_SetArcaneSpellFailure(swigCPtr, nValue);
   }
 
@@ -2453,11 +2557,11 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
     NWNXLibPINVOKE.CNWSCreatureStats_SetSpellFailure(swigCPtr, nSpellSchool, nValue);
   }
 
-  public void SetSpellResistance(char nValue) {
+  public void SetSpellResistance(byte nValue) {
     NWNXLibPINVOKE.CNWSCreatureStats_SetSpellResistance(swigCPtr, nValue);
   }
 
-  public void SetSpellResistancePenalty(char nValue) {
+  public void SetSpellResistancePenalty(byte nValue) {
     NWNXLibPINVOKE.CNWSCreatureStats_SetSpellResistancePenalty(swigCPtr, nValue);
   }
 
@@ -2482,13 +2586,13 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public int SetMemorizedSpellSlot(byte nMultiClass, byte nSpellSlot, uint nSpellID, byte nDomainLevel, byte nMetaType, int bFromClient) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_SetMemorizedSpellSlot__SWIG_0(swigCPtr, nMultiClass, nSpellSlot, nSpellID, nDomainLevel, nMetaType, bFromClient);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_SetMemorizedSpellSlot__SWIG_0(swigCPtr, nMultiClass, nSpellSlot, nSpellID, nDomainLevel, nMetaType, bFromClient);
+    return retVal;
   }
 
   public int SetMemorizedSpellSlot(byte nMultiClass, byte nSpellSlot, uint nSpellID, byte nDomainLevel, byte nMetaType) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_SetMemorizedSpellSlot__SWIG_1(swigCPtr, nMultiClass, nSpellSlot, nSpellID, nDomainLevel, nMetaType);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_SetMemorizedSpellSlot__SWIG_1(swigCPtr, nMultiClass, nSpellSlot, nSpellID, nDomainLevel, nMetaType);
+    return retVal;
   }
 
   public void SetNumberMemorizedSpellSlots(byte nMultiClass, byte nSpellLevel, byte nNumSlots) {
@@ -2508,8 +2612,8 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public byte GetSpellsOfLevelReady(byte nMultiClass, byte nSpellLevel) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellsOfLevelReady(swigCPtr, nMultiClass, nSpellLevel);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellsOfLevelReady(swigCPtr, nMultiClass, nSpellLevel);
+    return retVal;
   }
 
   public void ReadySpellLevel(byte nSpellLevel) {
@@ -2517,8 +2621,8 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public int UnReadySpell(uint nSpellID, byte nMultiClass, byte nDomainLevel, byte nMetaType) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_UnReadySpell(swigCPtr, nSpellID, nMultiClass, nDomainLevel, nMetaType);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_UnReadySpell(swigCPtr, nSpellID, nMultiClass, nDomainLevel, nMetaType);
+    return retVal;
   }
 
   public void SetSchool(byte nMultiClass, byte nSchool) {
@@ -2538,13 +2642,13 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public int SetSpellLikeAbilityReady(uint nSpellId, int bReadied, byte nCasterLevel) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_SetSpellLikeAbilityReady__SWIG_0(swigCPtr, nSpellId, bReadied, nCasterLevel);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_SetSpellLikeAbilityReady__SWIG_0(swigCPtr, nSpellId, bReadied, nCasterLevel);
+    return retVal;
   }
 
   public int SetSpellLikeAbilityReady(uint nSpellId, int bReadied) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_SetSpellLikeAbilityReady__SWIG_1(swigCPtr, nSpellId, bReadied);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_SetSpellLikeAbilityReady__SWIG_1(swigCPtr, nSpellId, bReadied);
+    return retVal;
   }
 
   public void ResetSpellLikeAbilities() {
@@ -2552,18 +2656,18 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public int GetIsInSpellLikeAbilityList(uint nSpellId) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetIsInSpellLikeAbilityList(swigCPtr, nSpellId);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetIsInSpellLikeAbilityList(swigCPtr, nSpellId);
+    return retVal;
   }
 
   public byte GetSpellLikeAbilityCasterLevel(uint nSpellId) {
-    byte ret = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellLikeAbilityCasterLevel(swigCPtr, nSpellId);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellLikeAbilityCasterLevel(swigCPtr, nSpellId);
+    return retVal;
   }
 
   public float GetStatById(int nId) {
-    float ret = NWNXLibPINVOKE.CNWSCreatureStats_GetStatById(swigCPtr, nId);
-    return ret;
+    float retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetStatById(swigCPtr, nId);
+    return retVal;
   }
 
   public void SetStatById(int nId, float nStat) {
@@ -2571,8 +2675,8 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public int GetIsWeaponOfChoice(uint nBaseItemType) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetIsWeaponOfChoice(swigCPtr, nBaseItemType);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetIsWeaponOfChoice(swigCPtr, nBaseItemType);
+    return retVal;
   }
 
   public void RunDataMigrations() {
@@ -2580,18 +2684,18 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   }
 
   public int GetIsInKnownSpellList(byte nMultiClass, uint nSpellID) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_GetIsInKnownSpellList(swigCPtr, nMultiClass, nSpellID);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetIsInKnownSpellList(swigCPtr, nMultiClass, nSpellID);
+    return retVal;
   }
 
   public int CheckSpellSuitability(int nSpellId, CNWSpell pSpell, int nCategory, int nMaxCR, int nSpellLevel, int nSpellSlot, int nClass, int bCheckMetamagic, byte* nMetaType, int nMasterSpellId) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_CheckSpellSuitability__SWIG_0(swigCPtr, nSpellId, CNWSpell.getCPtr(pSpell), nCategory, nMaxCR, nSpellLevel, nSpellSlot, nClass, bCheckMetamagic, (global::System.IntPtr)nMetaType, nMasterSpellId);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_CheckSpellSuitability__SWIG_0(swigCPtr, nSpellId, CNWSpell.getCPtr(pSpell), nCategory, nMaxCR, nSpellLevel, nSpellSlot, nClass, bCheckMetamagic, (global::System.IntPtr)nMetaType, nMasterSpellId);
+    return retVal;
   }
 
   public int CheckSpellSuitability(int nSpellId, CNWSpell pSpell, int nCategory, int nMaxCR, int nSpellLevel, int nSpellSlot, int nClass, int bCheckMetamagic, byte* nMetaType) {
-    int ret = NWNXLibPINVOKE.CNWSCreatureStats_CheckSpellSuitability__SWIG_1(swigCPtr, nSpellId, CNWSpell.getCPtr(pSpell), nCategory, nMaxCR, nSpellLevel, nSpellSlot, nClass, bCheckMetamagic, (global::System.IntPtr)nMetaType);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_CheckSpellSuitability__SWIG_1(swigCPtr, nSpellId, CNWSpell.getCPtr(pSpell), nCategory, nMaxCR, nSpellLevel, nSpellSlot, nClass, bCheckMetamagic, (global::System.IntPtr)nMetaType);
+    return retVal;
   }
 
 }

@@ -128,9 +128,10 @@ public unsafe class CKeyTableEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CKeyTableEntry_m_nRefCount_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CKeyTableEntry_m_nRefCount_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CKeyTableEntry_m_nRefCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nType {
@@ -138,9 +139,10 @@ public unsafe class CKeyTableEntry : global::System.IDisposable {
       NWNXLibPINVOKE.CKeyTableEntry_m_nType_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CKeyTableEntry_m_nType_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CKeyTableEntry_m_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CKeyTableEntry() : this(NWNXLibPINVOKE.new_CKeyTableEntry(), true) {

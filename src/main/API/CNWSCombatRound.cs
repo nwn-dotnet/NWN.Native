@@ -129,9 +129,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nAttackID_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CNWSCombatRound_m_nAttackID_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nAttackID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bRoundStarted {
@@ -139,9 +140,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_bRoundStarted_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_bRoundStarted_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_bRoundStarted_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bSpellCastRound {
@@ -149,9 +151,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_bSpellCastRound_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_bSpellCastRound_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_bSpellCastRound_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nTimer {
@@ -159,9 +162,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nTimer_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_nTimer_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nTimer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nRoundLength {
@@ -169,9 +173,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nRoundLength_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_nRoundLength_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nRoundLength_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nOverlapAmount {
@@ -179,9 +184,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nOverlapAmount_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_nOverlapAmount_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nOverlapAmount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nBleedAmount {
@@ -189,9 +195,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nBleedAmount_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_nBleedAmount_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nBleedAmount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bRoundPaused {
@@ -199,9 +206,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_bRoundPaused_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_bRoundPaused_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_bRoundPaused_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidRoundPausedBy {
@@ -209,9 +217,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_oidRoundPausedBy_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSCombatRound_m_oidRoundPausedBy_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSCombatRound_m_oidRoundPausedBy_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nPauseTimer {
@@ -219,9 +228,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nPauseTimer_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_nPauseTimer_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nPauseTimer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bInfinitePause {
@@ -229,9 +239,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_bInfinitePause_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_bInfinitePause_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_bInfinitePause_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nCurrentAttack {
@@ -239,9 +250,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nCurrentAttack_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCombatRound_m_nCurrentAttack_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nCurrentAttack_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nAttackGroup {
@@ -249,9 +261,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nAttackGroup_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCombatRound_m_nAttackGroup_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nAttackGroup_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bDeflectArrow {
@@ -259,9 +272,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_bDeflectArrow_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_bDeflectArrow_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_bDeflectArrow_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bWeaponSucks {
@@ -269,9 +283,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_bWeaponSucks_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_bWeaponSucks_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_bWeaponSucks_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bEpicDodgeUsed {
@@ -279,9 +294,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_bEpicDodgeUsed_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_bEpicDodgeUsed_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_bEpicDodgeUsed_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nParryIndex {
@@ -289,9 +305,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nParryIndex_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_nParryIndex_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nParryIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nAttacksOfOpportunity {
@@ -299,9 +316,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nAttacksOfOpportunity_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_nAttacksOfOpportunity_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nAttacksOfOpportunity_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nCleaveAttacks {
@@ -309,9 +327,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nCleaveAttacks_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_nCleaveAttacks_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nCleaveAttacks_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nCircleKickAttacks {
@@ -319,9 +338,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nCircleKickAttacks_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_nCircleKickAttacks_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nCircleKickAttacks_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidNewAttackTarget {
@@ -329,9 +349,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_oidNewAttackTarget_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSCombatRound_m_oidNewAttackTarget_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSCombatRound_m_oidNewAttackTarget_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nOnHandAttacks {
@@ -339,9 +360,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nOnHandAttacks_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_nOnHandAttacks_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nOnHandAttacks_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nOffHandAttacks {
@@ -349,9 +371,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nOffHandAttacks_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_nOffHandAttacks_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nOffHandAttacks_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nOffHandAttacksTaken {
@@ -359,9 +382,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nOffHandAttacksTaken_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_nOffHandAttacksTaken_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nOffHandAttacksTaken_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nExtraAttacksTaken {
@@ -369,9 +393,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nExtraAttacksTaken_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_nExtraAttacksTaken_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nExtraAttacksTaken_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nAdditionalAttacks {
@@ -379,9 +404,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nAdditionalAttacks_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_nAdditionalAttacks_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nAdditionalAttacks_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nBonusEffectAttacks {
@@ -389,9 +415,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nBonusEffectAttacks_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCombatRound_m_nBonusEffectAttacks_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nBonusEffectAttacks_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nParryActions {
@@ -399,9 +426,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_nParryActions_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSCombatRound_m_nParryActions_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSCombatRound_m_nParryActions_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidDodgeTarget {
@@ -409,9 +437,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCombatRound_m_oidDodgeTarget_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSCombatRound_m_oidDodgeTarget_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSCombatRound_m_oidDodgeTarget_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoLinkedListCNWSCombatRoundAction m_pScheduledActions {
@@ -506,28 +535,28 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
   }
 
   public int CheckActionLength(uint oidPauser, int nActionLength) {
-    int ret = NWNXLibPINVOKE.CNWSCombatRound_CheckActionLength(swigCPtr, oidPauser, nActionLength);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCombatRound_CheckActionLength(swigCPtr, oidPauser, nActionLength);
+    return retVal;
   }
 
   public int CheckActionLengthAtTime(uint oidPauser, int nActionLength, int nTimeIndex) {
-    int ret = NWNXLibPINVOKE.CNWSCombatRound_CheckActionLengthAtTime(swigCPtr, oidPauser, nActionLength, nTimeIndex);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCombatRound_CheckActionLengthAtTime(swigCPtr, oidPauser, nActionLength, nTimeIndex);
+    return retVal;
   }
 
   public int GetActionPending() {
-    int ret = NWNXLibPINVOKE.CNWSCombatRound_GetActionPending(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCombatRound_GetActionPending(swigCPtr);
+    return retVal;
   }
 
   public int GetAttackActionPending() {
-    int ret = NWNXLibPINVOKE.CNWSCombatRound_GetAttackActionPending(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCombatRound_GetAttackActionPending(swigCPtr);
+    return retVal;
   }
 
   public int GetSpellActionPending() {
-    int ret = NWNXLibPINVOKE.CNWSCombatRound_GetSpellActionPending(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCombatRound_GetSpellActionPending(swigCPtr);
+    return retVal;
   }
 
   public CNWSCombatRoundAction GetAction() {
@@ -609,18 +638,18 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
   }
 
   public int CalculateOffHandAttacks() {
-    int ret = NWNXLibPINVOKE.CNWSCombatRound_CalculateOffHandAttacks(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCombatRound_CalculateOffHandAttacks(swigCPtr);
+    return retVal;
   }
 
   public int GetCombatStepRequired(uint oidTarget) {
-    int ret = NWNXLibPINVOKE.CNWSCombatRound_GetCombatStepRequired(swigCPtr, oidTarget);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCombatRound_GetCombatStepRequired(swigCPtr, oidTarget);
+    return retVal;
   }
 
   public byte GetTotalAttacks() {
-    byte ret = NWNXLibPINVOKE.CNWSCombatRound_GetTotalAttacks(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CNWSCombatRound_GetTotalAttacks(swigCPtr);
+    return retVal;
   }
 
   public void SetDeflectArrow(int bValue) {
@@ -632,23 +661,23 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
   }
 
   public int GetOffHandAttack() {
-    int ret = NWNXLibPINVOKE.CNWSCombatRound_GetOffHandAttack(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCombatRound_GetOffHandAttack(swigCPtr);
+    return retVal;
   }
 
   public int GetExtraAttack() {
-    int ret = NWNXLibPINVOKE.CNWSCombatRound_GetExtraAttack(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCombatRound_GetExtraAttack(swigCPtr);
+    return retVal;
   }
 
   public int HasCreatureWeapons() {
-    int ret = NWNXLibPINVOKE.CNWSCombatRound_HasCreatureWeapons(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCombatRound_HasCreatureWeapons(swigCPtr);
+    return retVal;
   }
 
   public int GetWeaponAttackType() {
-    int ret = NWNXLibPINVOKE.CNWSCombatRound_GetWeaponAttackType(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCombatRound_GetWeaponAttackType(swigCPtr);
+    return retVal;
   }
 
   public CNWSItem GetCurrentAttackWeapon(int nWeaponAttackType) {
@@ -680,23 +709,23 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
   }
 
   public int GetNumSpecialAttacks() {
-    int ret = NWNXLibPINVOKE.CNWSCombatRound_GetNumSpecialAttacks(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCombatRound_GetNumSpecialAttacks(swigCPtr);
+    return retVal;
   }
 
   public ushort GetSpecialAttack(int nIndex) {
-    ushort ret = NWNXLibPINVOKE.CNWSCombatRound_GetSpecialAttack(swigCPtr, nIndex);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWSCombatRound_GetSpecialAttack(swigCPtr, nIndex);
+    return retVal;
   }
 
   public ushort GetSpecialAttackID(int nIndex) {
-    ushort ret = NWNXLibPINVOKE.CNWSCombatRound_GetSpecialAttackID(swigCPtr, nIndex);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWSCombatRound_GetSpecialAttackID(swigCPtr, nIndex);
+    return retVal;
   }
 
   public ushort GetNewAttackID() {
-    ushort ret = NWNXLibPINVOKE.CNWSCombatRound_GetNewAttackID(swigCPtr);
-    return ret;
+    ushort retVal = NWNXLibPINVOKE.CNWSCombatRound_GetNewAttackID(swigCPtr);
+    return retVal;
   }
 
   public void ClearAllSpecialAttacks() {
@@ -704,13 +733,13 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
   }
 
   public int SaveCombatRound(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSCombatRound_SaveCombatRound(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCombatRound_SaveCombatRound(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
   public int LoadCombatRound(CResGFF pRes, CResStruct pStruct) {
-    int ret = NWNXLibPINVOKE.CNWSCombatRound_LoadCombatRound(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CNWSCombatRound_LoadCombatRound(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
   }
 
 }

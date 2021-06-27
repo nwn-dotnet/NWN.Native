@@ -95,9 +95,10 @@ public unsafe class CNWSObjectEventHandler : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSObjectEventHandler_m_nEventId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSObjectEventHandler_m_nEventId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSObjectEventHandler_m_nEventId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sScriptName {

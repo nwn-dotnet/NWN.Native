@@ -105,13 +105,13 @@ public unsafe class CExoTimers : global::System.IDisposable {
   }
 
   public uint GetLowResolutionTimer() {
-    uint ret = NWNXLibPINVOKE.CExoTimers_GetLowResolutionTimer(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoTimers_GetLowResolutionTimer(swigCPtr);
+    return retVal;
   }
 
-  public uint GetHighResolutionTimer() {
-    uint ret = NWNXLibPINVOKE.CExoTimers_GetHighResolutionTimer(swigCPtr);
-    return ret;
+  public ulong GetHighResolutionTimer() {
+    ulong retVal = NWNXLibPINVOKE.CExoTimers_GetHighResolutionTimer(swigCPtr);
+    return retVal;
   }
 
 }

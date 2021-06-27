@@ -100,9 +100,10 @@ public unsafe class CGameObject : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CGameObject_m_idSelf_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CGameObject_m_idSelf_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CGameObject_m_idSelf_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nObjectType {
@@ -110,9 +111,10 @@ public unsafe class CGameObject : ICGameObject, global::System.IDisposable {
       NWNXLibPINVOKE.CGameObject_m_nObjectType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CGameObject_m_nObjectType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CGameObject_m_nObjectType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public void* m_pNwnxData {

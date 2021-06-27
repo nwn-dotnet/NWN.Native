@@ -95,9 +95,10 @@ public unsafe class CScriptCompilerSymbolTableEntry : global::System.IDisposable
       NWNXLibPINVOKE.CScriptCompilerSymbolTableEntry_m_nSymbolType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CScriptCompilerSymbolTableEntry_m_nSymbolType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CScriptCompilerSymbolTableEntry_m_nSymbolType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nSymbolSubType1 {
@@ -105,9 +106,10 @@ public unsafe class CScriptCompilerSymbolTableEntry : global::System.IDisposable
       NWNXLibPINVOKE.CScriptCompilerSymbolTableEntry_m_nSymbolSubType1_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CScriptCompilerSymbolTableEntry_m_nSymbolSubType1_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CScriptCompilerSymbolTableEntry_m_nSymbolSubType1_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nSymbolSubType2 {
@@ -115,9 +117,10 @@ public unsafe class CScriptCompilerSymbolTableEntry : global::System.IDisposable
       NWNXLibPINVOKE.CScriptCompilerSymbolTableEntry_m_nSymbolSubType2_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CScriptCompilerSymbolTableEntry_m_nSymbolSubType2_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CScriptCompilerSymbolTableEntry_m_nSymbolSubType2_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nLocationPointer {
@@ -125,9 +128,10 @@ public unsafe class CScriptCompilerSymbolTableEntry : global::System.IDisposable
       NWNXLibPINVOKE.CScriptCompilerSymbolTableEntry_m_nLocationPointer_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptCompilerSymbolTableEntry_m_nLocationPointer_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptCompilerSymbolTableEntry_m_nLocationPointer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nNextEntryPointer {
@@ -135,9 +139,10 @@ public unsafe class CScriptCompilerSymbolTableEntry : global::System.IDisposable
       NWNXLibPINVOKE.CScriptCompilerSymbolTableEntry_m_nNextEntryPointer_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CScriptCompilerSymbolTableEntry_m_nNextEntryPointer_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CScriptCompilerSymbolTableEntry_m_nNextEntryPointer_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CScriptCompilerSymbolTableEntry() : this(NWNXLibPINVOKE.new_CScriptCompilerSymbolTableEntry(), true) {

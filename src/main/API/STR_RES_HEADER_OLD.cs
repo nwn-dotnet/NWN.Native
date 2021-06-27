@@ -95,9 +95,10 @@ public unsafe class STR_RES_HEADER_OLD : global::System.IDisposable {
       NWNXLibPINVOKE.STR_RES_HEADER_OLD_wFlags_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.STR_RES_HEADER_OLD_wFlags_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.STR_RES_HEADER_OLD_wFlags_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<byte> sndResRef {
@@ -118,9 +119,10 @@ public unsafe class STR_RES_HEADER_OLD : global::System.IDisposable {
       NWNXLibPINVOKE.STR_RES_HEADER_OLD_volumeVariance_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.STR_RES_HEADER_OLD_volumeVariance_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.STR_RES_HEADER_OLD_volumeVariance_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint pitchVariance {
@@ -128,9 +130,10 @@ public unsafe class STR_RES_HEADER_OLD : global::System.IDisposable {
       NWNXLibPINVOKE.STR_RES_HEADER_OLD_pitchVariance_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.STR_RES_HEADER_OLD_pitchVariance_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.STR_RES_HEADER_OLD_pitchVariance_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint offsetToStr {
@@ -138,9 +141,10 @@ public unsafe class STR_RES_HEADER_OLD : global::System.IDisposable {
       NWNXLibPINVOKE.STR_RES_HEADER_OLD_offsetToStr_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.STR_RES_HEADER_OLD_offsetToStr_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.STR_RES_HEADER_OLD_offsetToStr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint strSize {
@@ -148,9 +152,10 @@ public unsafe class STR_RES_HEADER_OLD : global::System.IDisposable {
       NWNXLibPINVOKE.STR_RES_HEADER_OLD_strSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.STR_RES_HEADER_OLD_strSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.STR_RES_HEADER_OLD_strSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public STR_RES_HEADER_OLD() : this(NWNXLibPINVOKE.new_STR_RES_HEADER_OLD(), true) {

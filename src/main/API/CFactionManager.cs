@@ -150,9 +150,10 @@ public unsafe class CFactionManager : global::System.IDisposable {
       NWNXLibPINVOKE.CFactionManager_m_nNPCFactionCount_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CFactionManager_m_nNPCFactionCount_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CFactionManager_m_nNPCFactionCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListInt32 m_pNPCReputations {
@@ -187,13 +188,13 @@ public unsafe class CFactionManager : global::System.IDisposable {
   }
 
   public int GetIsNPCFaction(int nFactionId) {
-    int ret = NWNXLibPINVOKE.CFactionManager_GetIsNPCFaction(swigCPtr, nFactionId);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CFactionManager_GetIsNPCFaction(swigCPtr, nFactionId);
+    return retVal;
   }
 
   public int GetNPCFactionReputation(int nFactionId, int nSubjectFactionId) {
-    int ret = NWNXLibPINVOKE.CFactionManager_GetNPCFactionReputation(swigCPtr, nFactionId, nSubjectFactionId);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CFactionManager_GetNPCFactionReputation(swigCPtr, nFactionId, nSubjectFactionId);
+    return retVal;
   }
 
   public void SetNPCFactionReputation(int nFactionId, int nSubjectFactionId, int nReputation) {
@@ -211,19 +212,19 @@ public unsafe class CFactionManager : global::System.IDisposable {
   }
 
   public int GetFactionIdByName(CExoString name) {
-    int ret = NWNXLibPINVOKE.CFactionManager_GetFactionIdByName(swigCPtr, CExoString.getCPtr(name));
+    int retVal = NWNXLibPINVOKE.CFactionManager_GetFactionIdByName(swigCPtr, CExoString.getCPtr(name));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public int LoadFactions(CResGFF pRes, CResList cFactionList) {
-    int ret = NWNXLibPINVOKE.CFactionManager_LoadFactions(swigCPtr, CResGFF.getCPtr(pRes), CResList.getCPtr(cFactionList));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CFactionManager_LoadFactions(swigCPtr, CResGFF.getCPtr(pRes), CResList.getCPtr(cFactionList));
+    return retVal;
   }
 
   public int LoadReputations(CResGFF pRes, CResList cReputationList) {
-    int ret = NWNXLibPINVOKE.CFactionManager_LoadReputations(swigCPtr, CResGFF.getCPtr(pRes), CResList.getCPtr(cReputationList));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CFactionManager_LoadReputations(swigCPtr, CResGFF.getCPtr(pRes), CResList.getCPtr(cReputationList));
+    return retVal;
   }
 
   public void CreateDefaultFactions() {
@@ -231,13 +232,13 @@ public unsafe class CFactionManager : global::System.IDisposable {
   }
 
   public int SaveFactions(CResGFF pRes, CResList pList) {
-    int ret = NWNXLibPINVOKE.CFactionManager_SaveFactions(swigCPtr, CResGFF.getCPtr(pRes), CResList.getCPtr(pList));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CFactionManager_SaveFactions(swigCPtr, CResGFF.getCPtr(pRes), CResList.getCPtr(pList));
+    return retVal;
   }
 
   public int SaveReputations(CResGFF pRes, CResList pList) {
-    int ret = NWNXLibPINVOKE.CFactionManager_SaveReputations(swigCPtr, CResGFF.getCPtr(pRes), CResList.getCPtr(pList));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CFactionManager_SaveReputations(swigCPtr, CResGFF.getCPtr(pRes), CResList.getCPtr(pList));
+    return retVal;
   }
 
 }

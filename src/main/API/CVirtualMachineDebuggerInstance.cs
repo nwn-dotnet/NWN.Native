@@ -103,22 +103,22 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
 
   public int* m_pnInstructionPointer {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pnInstructionPointer_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pnInstructionPointer_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pnInstructionPointer_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pnInstructionPointer_get(swigCPtr);
+      return retVal;
     }
 
   }
 
   public byte* m_pDebugInputMessageBuffer {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugInputMessageBuffer_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugInputMessageBuffer_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugInputMessageBuffer_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugInputMessageBuffer_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -128,18 +128,19 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
       NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugInputMessageSize_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugInputMessageSize_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugInputMessageSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte* m_pDebugOutputMessageBuffer {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugOutputMessageBuffer_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugOutputMessageBuffer_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugOutputMessageBuffer_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugOutputMessageBuffer_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -149,9 +150,10 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
       NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugOutputMessageSize_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugOutputMessageSize_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugOutputMessageSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nDebugSourceFileNames {
@@ -159,9 +161,10 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
       NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugSourceFileNames_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugSourceFileNames_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugSourceFileNames_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_pDebugSourceFileNames {
@@ -180,9 +183,10 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
       NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugStructureDefines_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugStructureDefines_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugStructureDefines_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_pDebugStructureNames {
@@ -198,11 +202,11 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
 
   public int* m_pDebugStructureFields {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugStructureFields_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugStructureFields_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugStructureFields_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugStructureFields_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -234,9 +238,10 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
       NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugFunctionNames_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugFunctionNames_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugFunctionNames_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_pDebugFunctionNames {
@@ -252,33 +257,33 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
 
   public int* m_pDebugFunctionBinaryStart {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugFunctionBinaryStart_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugFunctionBinaryStart_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugFunctionBinaryStart_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugFunctionBinaryStart_get(swigCPtr);
+      return retVal;
     }
 
   }
 
   public int* m_pDebugFunctionBinaryEnd {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugFunctionBinaryEnd_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugFunctionBinaryEnd_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugFunctionBinaryEnd_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugFunctionBinaryEnd_get(swigCPtr);
+      return retVal;
     }
 
   }
 
   public int* m_pDebugFunctionParameters {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugFunctionParameters_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugFunctionParameters_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugFunctionParameters_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugFunctionParameters_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -310,40 +315,41 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
       NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugVariables_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugVariables_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugVariables_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int* m_pDebugVariableBinaryStart {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugVariableBinaryStart_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugVariableBinaryStart_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugVariableBinaryStart_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugVariableBinaryStart_get(swigCPtr);
+      return retVal;
     }
 
   }
 
   public int* m_pDebugVariableBinaryEnd {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugVariableBinaryEnd_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugVariableBinaryEnd_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugVariableBinaryEnd_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugVariableBinaryEnd_get(swigCPtr);
+      return retVal;
     }
 
   }
 
   public int* m_pDebugVariableStackLocation {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugVariableStackLocation_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugVariableStackLocation_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugVariableStackLocation_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugVariableStackLocation_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -375,51 +381,52 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
       NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugLineNumbers_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugLineNumbers_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugLineNumbers_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int* m_pDebugLineNumberFileName {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugLineNumberFileName_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugLineNumberFileName_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugLineNumberFileName_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugLineNumberFileName_get(swigCPtr);
+      return retVal;
     }
 
   }
 
   public int* m_pDebugLineNumberCodeLine {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugLineNumberCodeLine_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugLineNumberCodeLine_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugLineNumberCodeLine_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugLineNumberCodeLine_get(swigCPtr);
+      return retVal;
     }
 
   }
 
   public int* m_pDebugLineNumberBinaryStart {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugLineNumberBinaryStart_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugLineNumberBinaryStart_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugLineNumberBinaryStart_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugLineNumberBinaryStart_get(swigCPtr);
+      return retVal;
     }
 
   }
 
   public int* m_pDebugLineNumberBinaryEnd {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugLineNumberBinaryEnd_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugLineNumberBinaryEnd_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugLineNumberBinaryEnd_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugLineNumberBinaryEnd_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -429,51 +436,52 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
       NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugWatchViewArraySize_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugWatchViewArraySize_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nDebugWatchViewArraySize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int* m_pDebugWatchViewEmpty {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugWatchViewEmpty_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugWatchViewEmpty_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugWatchViewEmpty_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugWatchViewEmpty_get(swigCPtr);
+      return retVal;
     }
 
   }
 
   public int* m_pDebugWatchViewTouched {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugWatchViewTouched_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugWatchViewTouched_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugWatchViewTouched_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugWatchViewTouched_get(swigCPtr);
+      return retVal;
     }
 
   }
 
   public int* m_pDebugWatchViewExpanded {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugWatchViewExpanded_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugWatchViewExpanded_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugWatchViewExpanded_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugWatchViewExpanded_get(swigCPtr);
+      return retVal;
     }
 
   }
 
   public int* m_pDebugWatchViewStackLocations {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugWatchViewStackLocations_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugWatchViewStackLocations_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugWatchViewStackLocations_get(swigCPtr);
-        return (int*)retVal;
+      int* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugWatchViewStackLocations_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -560,22 +568,23 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
       NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nActiveCallStackEntry_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nActiveCallStackEntry_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nActiveCallStackEntry_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CVirtualMachineDebuggerInstance() : this(NWNXLibPINVOKE.new_CVirtualMachineDebuggerInstance(), true) {
   }
 
   public int SpawnDebugger() {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_SpawnDebugger(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_SpawnDebugger(swigCPtr);
+    return retVal;
   }
 
   public int DebuggerMainLoop() {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_DebuggerMainLoop(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_DebuggerMainLoop(swigCPtr);
+    return retVal;
   }
 
   public void ShutDownDebugger() {
@@ -583,68 +592,68 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
   }
 
   public int GenerateLineNumberFromInstructionPointer(int nIP, int bExactCheck) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_GenerateLineNumberFromInstructionPointer__SWIG_0(swigCPtr, nIP, bExactCheck);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_GenerateLineNumberFromInstructionPointer__SWIG_0(swigCPtr, nIP, bExactCheck);
+    return retVal;
   }
 
   public int GenerateLineNumberFromInstructionPointer(int nIP) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_GenerateLineNumberFromInstructionPointer__SWIG_1(swigCPtr, nIP);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_GenerateLineNumberFromInstructionPointer__SWIG_1(swigCPtr, nIP);
+    return retVal;
   }
 
   public int ReadIntegerFromInput(int* pnSize, int* pnInteger) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_ReadIntegerFromInput(swigCPtr, (global::System.IntPtr)pnSize, (global::System.IntPtr)pnInteger);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_ReadIntegerFromInput(swigCPtr, pnSize, pnInteger);
+    return retVal;
   }
 
   public int ReadStringFromInput(int* pnSize, CExoString psString) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_ReadStringFromInput(swigCPtr, (global::System.IntPtr)pnSize, CExoString.getCPtr(psString));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_ReadStringFromInput(swigCPtr, pnSize, CExoString.getCPtr(psString));
+    return retVal;
   }
 
   public int ParseAndExecuteMessage(int* nSize) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_ParseAndExecuteMessage(swigCPtr, (global::System.IntPtr)nSize);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_ParseAndExecuteMessage(swigCPtr, nSize);
+    return retVal;
   }
 
   public byte* LoadDebugInfoLine(byte* pResourceData, uint nResourceSize, uint nOffsetStart, uint* pnOffsetEnd) {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_LoadDebugInfoLine(swigCPtr, (global::System.IntPtr)pResourceData, nResourceSize, nOffsetStart, (global::System.IntPtr)pnOffsetEnd);
-    return (byte*)retVal;
+    byte* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_LoadDebugInfoLine(swigCPtr, pResourceData, nResourceSize, nOffsetStart, pnOffsetEnd);
+    return retVal;
   }
 
   public int LoadDebugInfo(CVirtualMachineDebugLoader pDebugLoader) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_LoadDebugInfo(swigCPtr, CVirtualMachineDebugLoader.getCPtr(pDebugLoader));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_LoadDebugInfo(swigCPtr, CVirtualMachineDebugLoader.getCPtr(pDebugLoader));
+    return retVal;
   }
 
   public byte* LoadScriptLine(byte* pResourceData, uint nResourceSize, uint nOffsetStart, uint* pnOffsetEnd, int bIncludeReturns) {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_LoadScriptLine(swigCPtr, (global::System.IntPtr)pResourceData, nResourceSize, nOffsetStart, (global::System.IntPtr)pnOffsetEnd, bIncludeReturns);
-    return (byte*)retVal;
+    byte* retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_LoadScriptLine(swigCPtr, pResourceData, nResourceSize, nOffsetStart, pnOffsetEnd, bIncludeReturns);
+    return retVal;
   }
 
   public int GenerateFunctionIDFromInstructionPointer(int nIP) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_GenerateFunctionIDFromInstructionPointer(swigCPtr, nIP);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_GenerateFunctionIDFromInstructionPointer(swigCPtr, nIP);
+    return retVal;
   }
 
   public int GenerateTypeSize(CExoString pNDBString) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_GenerateTypeSize(swigCPtr, CExoString.getCPtr(pNDBString));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_GenerateTypeSize(swigCPtr, CExoString.getCPtr(pNDBString));
+    return retVal;
   }
 
   public int GenerateStackSizeAtInstructionPointer(int nFunctionID, int nIP) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_GenerateStackSizeAtInstructionPointer(swigCPtr, nFunctionID, nIP);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_GenerateStackSizeAtInstructionPointer(swigCPtr, nFunctionID, nIP);
+    return retVal;
   }
 
   public int GenerateDebugVariableLocationForParameter(int nFunctionID, int nParameter) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_GenerateDebugVariableLocationForParameter(swigCPtr, nFunctionID, nParameter);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_GenerateDebugVariableLocationForParameter(swigCPtr, nFunctionID, nParameter);
+    return retVal;
   }
 
   public int GetNextDebugVariable(int nFunctionID, int nIP, int nStackLocationToExceed) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_GetNextDebugVariable(swigCPtr, nFunctionID, nIP, nStackLocationToExceed);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_GetNextDebugVariable(swigCPtr, nFunctionID, nIP, nStackLocationToExceed);
+    return retVal;
   }
 
   public CExoString GenerateTypeName(CExoString pNDBString) {
@@ -673,23 +682,23 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
   }
 
   public int DebuggerSingleStep(int bStepOver) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_DebuggerSingleStep__SWIG_0(swigCPtr, bStepOver);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_DebuggerSingleStep__SWIG_0(swigCPtr, bStepOver);
+    return retVal;
   }
 
   public int DebuggerSingleStep() {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_DebuggerSingleStep__SWIG_1(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_DebuggerSingleStep__SWIG_1(swigCPtr);
+    return retVal;
   }
 
   public int FindEmptyWatchViewEntry() {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_FindEmptyWatchViewEntry(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_FindEmptyWatchViewEntry(swigCPtr);
+    return retVal;
   }
 
   public int FindWatchViewEntry(CExoString psVariableName, CExoString psTypeName, int nStackLocation) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_FindWatchViewEntry(swigCPtr, CExoString.getCPtr(psVariableName), CExoString.getCPtr(psTypeName), nStackLocation);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_FindWatchViewEntry(swigCPtr, CExoString.getCPtr(psVariableName), CExoString.getCPtr(psTypeName), nStackLocation);
+    return retVal;
   }
 
   public void SendWatchWindowEntry(CExoString psLineNumber, CExoString psVariableName, CExoString psVariableValue, CExoString psTypeName, int nStackLocation) {
@@ -714,13 +723,13 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
   }
 
   public int DebuggerDisplayCurrentLocation(int nActiveCallStackEntry, int bInternalDebug) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_DebuggerDisplayCurrentLocation__SWIG_0(swigCPtr, nActiveCallStackEntry, bInternalDebug);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_DebuggerDisplayCurrentLocation__SWIG_0(swigCPtr, nActiveCallStackEntry, bInternalDebug);
+    return retVal;
   }
 
   public int DebuggerDisplayCurrentLocation(int nActiveCallStackEntry) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_DebuggerDisplayCurrentLocation__SWIG_1(swigCPtr, nActiveCallStackEntry);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_DebuggerDisplayCurrentLocation__SWIG_1(swigCPtr, nActiveCallStackEntry);
+    return retVal;
   }
 
 }

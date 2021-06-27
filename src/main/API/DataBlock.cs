@@ -92,11 +92,11 @@ public unsafe class DataBlock : global::System.IDisposable {
 /*@SWIG@*/
   public byte* m_data {
     set {
-      NWNXLibPINVOKE.DataBlock_m_data_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.DataBlock_m_data_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.DataBlock_m_data_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.DataBlock_m_data_get(swigCPtr);
+      return retVal;
     }
 
   }

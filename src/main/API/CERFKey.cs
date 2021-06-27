@@ -108,9 +108,10 @@ public unsafe class CERFKey : global::System.IDisposable {
       NWNXLibPINVOKE.CERFKey_m_nID_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CERFKey_m_nID_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CERFKey_m_nID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort m_nType {
@@ -118,9 +119,10 @@ public unsafe class CERFKey : global::System.IDisposable {
       NWNXLibPINVOKE.CERFKey_m_nType_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.CERFKey_m_nType_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.CERFKey_m_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<byte> m_nUnused {
@@ -145,19 +147,19 @@ public unsafe class CERFKey : global::System.IDisposable {
   }
 
   public int Read() {
-    int ret = NWNXLibPINVOKE.CERFKey_Read(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CERFKey_Read(swigCPtr);
+    return retVal;
   }
 
   public int Reset() {
-    int ret = NWNXLibPINVOKE.CERFKey_Reset(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CERFKey_Reset(swigCPtr);
+    return retVal;
   }
 
   public int Write(CExoFile cOutFile) {
-    int ret = NWNXLibPINVOKE.CERFKey_Write(swigCPtr, CExoFile.getCPtr(cOutFile));
+    int retVal = NWNXLibPINVOKE.CERFKey_Write(swigCPtr, CExoFile.getCPtr(cOutFile));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
 }

@@ -113,15 +113,15 @@ public unsafe class CNWSScriptVarTable : global::System.IDisposable {
   }
 
   public int GetInt(CExoString sVarName) {
-    int ret = NWNXLibPINVOKE.CNWSScriptVarTable_GetInt(swigCPtr, CExoString.getCPtr(sVarName));
+    int retVal = NWNXLibPINVOKE.CNWSScriptVarTable_GetInt(swigCPtr, CExoString.getCPtr(sVarName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public float GetFloat(CExoString sVarName) {
-    float ret = NWNXLibPINVOKE.CNWSScriptVarTable_GetFloat(swigCPtr, CExoString.getCPtr(sVarName));
+    float retVal = NWNXLibPINVOKE.CNWSScriptVarTable_GetFloat(swigCPtr, CExoString.getCPtr(sVarName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public CExoString GetString(CExoString sVarName) {
@@ -131,9 +131,9 @@ public unsafe class CNWSScriptVarTable : global::System.IDisposable {
   }
 
   public uint GetObject(CExoString sVarName) {
-    uint ret = NWNXLibPINVOKE.CNWSScriptVarTable_GetObject(swigCPtr, CExoString.getCPtr(sVarName));
+    uint retVal = NWNXLibPINVOKE.CNWSScriptVarTable_GetObject(swigCPtr, CExoString.getCPtr(sVarName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public CScriptLocation GetLocation(CExoString sVarName) {

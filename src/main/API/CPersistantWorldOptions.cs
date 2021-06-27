@@ -95,9 +95,10 @@ public unsafe class CPersistantWorldOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPersistantWorldOptions_bVaultCharsOnly_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPersistantWorldOptions_bVaultCharsOnly_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPersistantWorldOptions_bVaultCharsOnly_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bSaveCharsInSaveGame {
@@ -105,9 +106,10 @@ public unsafe class CPersistantWorldOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPersistantWorldOptions_bSaveCharsInSaveGame_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPersistantWorldOptions_bSaveCharsInSaveGame_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPersistantWorldOptions_bSaveCharsInSaveGame_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bSuppressBaseServerVault {
@@ -115,9 +117,10 @@ public unsafe class CPersistantWorldOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPersistantWorldOptions_bSuppressBaseServerVault_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPersistantWorldOptions_bSuppressBaseServerVault_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPersistantWorldOptions_bSuppressBaseServerVault_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bStickyPlayerNames {
@@ -125,9 +128,10 @@ public unsafe class CPersistantWorldOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPersistantWorldOptions_bStickyPlayerNames_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPersistantWorldOptions_bStickyPlayerNames_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPersistantWorldOptions_bStickyPlayerNames_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bServerVaultByPlayerName {
@@ -135,9 +139,10 @@ public unsafe class CPersistantWorldOptions : global::System.IDisposable {
       NWNXLibPINVOKE.CPersistantWorldOptions_bServerVaultByPlayerName_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CPersistantWorldOptions_bServerVaultByPlayerName_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CPersistantWorldOptions_bServerVaultByPlayerName_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CPersistantWorldOptions() : this(NWNXLibPINVOKE.new_CPersistantWorldOptions(), true) {

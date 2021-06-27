@@ -106,9 +106,10 @@ public unsafe class CVirtualMachineScript : global::System.IDisposable {
       NWNXLibPINVOKE.CVirtualMachineScript_m_nStackSize_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineScript_m_nStackSize_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineScript_m_nStackSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nInstructPtr {
@@ -116,9 +117,10 @@ public unsafe class CVirtualMachineScript : global::System.IDisposable {
       NWNXLibPINVOKE.CVirtualMachineScript_m_nInstructPtr_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineScript_m_nInstructPtr_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineScript_m_nInstructPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nSecondaryInstructPtr {
@@ -126,9 +128,10 @@ public unsafe class CVirtualMachineScript : global::System.IDisposable {
       NWNXLibPINVOKE.CVirtualMachineScript_m_nSecondaryInstructPtr_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineScript_m_nSecondaryInstructPtr_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineScript_m_nSecondaryInstructPtr_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sScriptName {
@@ -159,9 +162,10 @@ public unsafe class CVirtualMachineScript : global::System.IDisposable {
       NWNXLibPINVOKE.CVirtualMachineScript_m_nScriptEventID_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineScript_m_nScriptEventID_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineScript_m_nScriptEventID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CVirtualMachineScript() : this(NWNXLibPINVOKE.new_CVirtualMachineScript(), true) {

@@ -129,8 +129,8 @@ public unsafe class CExoLinkedListCRes : global::System.IDisposable {
   }
 
   public uint Count() {
-    uint ret = NWNXLibPINVOKE.CExoLinkedListCRes_Count(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CExoLinkedListCRes_Count(swigCPtr);
+    return retVal;
   }
 
   public CRes GetAtPos(CExoLinkedListNode Position) {
@@ -176,8 +176,8 @@ public unsafe class CExoLinkedListCRes : global::System.IDisposable {
   }
 
   public int IsEmpty() {
-    int ret = NWNXLibPINVOKE.CExoLinkedListCRes_IsEmpty(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CExoLinkedListCRes_IsEmpty(swigCPtr);
+    return retVal;
   }
 
   public CRes RemoveHead() {

@@ -95,9 +95,10 @@ public unsafe class CNWSPlayerContainerGUI : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerContainerGUI_m_oidOpen_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerContainerGUI_m_oidOpen_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerContainerGUI_m_oidOpen_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bOpenedTheInventory {
@@ -105,9 +106,10 @@ public unsafe class CNWSPlayerContainerGUI : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerContainerGUI_m_bOpenedTheInventory_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayerContainerGUI_m_bOpenedTheInventory_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayerContainerGUI_m_bOpenedTheInventory_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nSelectedPanel {
@@ -115,9 +117,10 @@ public unsafe class CNWSPlayerContainerGUI : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerContainerGUI_m_nSelectedPanel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerContainerGUI_m_nSelectedPanel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerContainerGUI_m_nSelectedPanel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSPlayerContainerGUI() : this(NWNXLibPINVOKE.new_CNWSPlayerContainerGUI(), true) {

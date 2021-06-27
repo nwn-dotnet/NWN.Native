@@ -106,9 +106,10 @@ public unsafe class NWAREAEXPANSION : global::System.IDisposable {
       NWNXLibPINVOKE.NWAREAEXPANSION_nID_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.NWAREAEXPANSION_nID_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.NWAREAEXPANSION_nID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NWAREAEXPANSION() : this(NWNXLibPINVOKE.new_NWAREAEXPANSION(), true) {

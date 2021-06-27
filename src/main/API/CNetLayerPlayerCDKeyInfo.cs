@@ -117,9 +117,10 @@ public unsafe class CNetLayerPlayerCDKeyInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerPlayerCDKeyInfo_bValidated_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNetLayerPlayerCDKeyInfo_bValidated_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNetLayerPlayerCDKeyInfo_bValidated_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nExpansionPack {
@@ -127,9 +128,10 @@ public unsafe class CNetLayerPlayerCDKeyInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CNetLayerPlayerCDKeyInfo_nExpansionPack_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNetLayerPlayerCDKeyInfo_nExpansionPack_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNetLayerPlayerCDKeyInfo_nExpansionPack_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNetLayerPlayerCDKeyInfo() : this(NWNXLibPINVOKE.new_CNetLayerPlayerCDKeyInfo(), true) {

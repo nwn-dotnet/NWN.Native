@@ -85,9 +85,10 @@ public unsafe class CRes2DA : CRes {
       NWNXLibPINVOKE.CRes2DA_m_bLoaded_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CRes2DA_m_bLoaded_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CRes2DA_m_bLoaded_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_n2DANormalSize {
@@ -95,18 +96,19 @@ public unsafe class CRes2DA : CRes {
       NWNXLibPINVOKE.CRes2DA_m_n2DANormalSize_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CRes2DA_m_n2DANormalSize_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CRes2DA_m_n2DANormalSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte* m_p2DAData {
     set {
-      NWNXLibPINVOKE.CRes2DA_m_p2DAData_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CRes2DA_m_p2DAData_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CRes2DA_m_p2DAData_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CRes2DA_m_p2DAData_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -126,8 +128,8 @@ public unsafe class CRes2DA : CRes {
   }
 
   public byte* Get2DADataPtr() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CRes2DA_Get2DADataPtr(swigCPtr);
-    return (byte*)retVal;
+    byte* retVal = NWNXLibPINVOKE.CRes2DA_Get2DADataPtr(swigCPtr);
+    return retVal;
   }
 
   public EXO2DAHEADER Get2DAHeaderPtr() {
@@ -137,23 +139,23 @@ public unsafe class CRes2DA : CRes {
   }
 
   public uint Get2DASize() {
-    uint ret = NWNXLibPINVOKE.CRes2DA_Get2DASize(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CRes2DA_Get2DASize(swigCPtr);
+    return retVal;
   }
 
   public int IsLoaded() {
-    int ret = NWNXLibPINVOKE.CRes2DA_IsLoaded(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CRes2DA_IsLoaded(swigCPtr);
+    return retVal;
   }
 
   public override int OnResourceFreed() {
-    int ret = NWNXLibPINVOKE.CRes2DA_OnResourceFreed(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CRes2DA_OnResourceFreed(swigCPtr);
+    return retVal;
   }
 
   public override int OnResourceServiced() {
-    int ret = NWNXLibPINVOKE.CRes2DA_OnResourceServiced(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CRes2DA_OnResourceServiced(swigCPtr);
+    return retVal;
   }
 
 }

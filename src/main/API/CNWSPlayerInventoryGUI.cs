@@ -106,9 +106,10 @@ public unsafe class CNWSPlayerInventoryGUI : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerInventoryGUI_m_bGuiInventoryOpen_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayerInventoryGUI_m_bGuiInventoryOpen_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayerInventoryGUI_m_bGuiInventoryOpen_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nSelectedInventoryPanel {
@@ -116,9 +117,10 @@ public unsafe class CNWSPlayerInventoryGUI : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerInventoryGUI_m_nSelectedInventoryPanel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerInventoryGUI_m_nSelectedInventoryPanel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerInventoryGUI_m_nSelectedInventoryPanel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_oidInventoryOwner {
@@ -126,9 +128,10 @@ public unsafe class CNWSPlayerInventoryGUI : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerInventoryGUI_m_oidInventoryOwner_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerInventoryGUI_m_oidInventoryOwner_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerInventoryGUI_m_oidInventoryOwner_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSPlayerContainerGUI m_pContainerGUI {

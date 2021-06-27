@@ -161,9 +161,10 @@ public unsafe class CAppManager : global::System.IDisposable {
       NWNXLibPINVOKE.CAppManager_m_bDungeonMasterEXERunning_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CAppManager_m_bDungeonMasterEXERunning_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CAppManager_m_bDungeonMasterEXERunning_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nApplicationId {
@@ -171,9 +172,10 @@ public unsafe class CAppManager : global::System.IDisposable {
       NWNXLibPINVOKE.CAppManager_m_nApplicationId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CAppManager_m_nApplicationId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CAppManager_m_nApplicationId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bMultiplayerEnabled {
@@ -181,9 +183,10 @@ public unsafe class CAppManager : global::System.IDisposable {
       NWNXLibPINVOKE.CAppManager_m_bMultiplayerEnabled_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CAppManager_m_bMultiplayerEnabled_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CAppManager_m_bMultiplayerEnabled_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bWasPaused {
@@ -191,9 +194,10 @@ public unsafe class CAppManager : global::System.IDisposable {
       NWNXLibPINVOKE.CAppManager_m_bWasPaused_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CAppManager_m_bWasPaused_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CAppManager_m_bWasPaused_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bDigitalDistributionModule {
@@ -201,18 +205,19 @@ public unsafe class CAppManager : global::System.IDisposable {
       NWNXLibPINVOKE.CAppManager_m_bDigitalDistributionModule_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CAppManager_m_bDigitalDistributionModule_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CAppManager_m_bDigitalDistributionModule_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte* m_pDDCipher {
     set {
-      NWNXLibPINVOKE.CAppManager_m_pDDCipher_set(swigCPtr, (global::System.IntPtr)value);
+      NWNXLibPINVOKE.CAppManager_m_pDDCipher_set(swigCPtr, value);
     } 
     get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CAppManager_m_pDDCipher_get(swigCPtr);
-        return (byte*)retVal;
+      byte* retVal = NWNXLibPINVOKE.CAppManager_m_pDDCipher_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -222,9 +227,10 @@ public unsafe class CAppManager : global::System.IDisposable {
       NWNXLibPINVOKE.CAppManager_m_nDDOffset_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CAppManager_m_nDDOffset_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CAppManager_m_nDDOffset_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nPlayerTimeout {
@@ -232,9 +238,10 @@ public unsafe class CAppManager : global::System.IDisposable {
       NWNXLibPINVOKE.CAppManager_m_nPlayerTimeout_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CAppManager_m_nPlayerTimeout_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CAppManager_m_nPlayerTimeout_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bLogModelErrors {
@@ -242,9 +249,10 @@ public unsafe class CAppManager : global::System.IDisposable {
       NWNXLibPINVOKE.CAppManager_m_bLogModelErrors_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CAppManager_m_bLogModelErrors_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CAppManager_m_bLogModelErrors_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CAppManager() : this(NWNXLibPINVOKE.new_CAppManager(), true) {
@@ -278,8 +286,8 @@ public unsafe class CAppManager : global::System.IDisposable {
   }
 
   public int GetDungeonMasterEXERunning() {
-    int ret = NWNXLibPINVOKE.CAppManager_GetDungeonMasterEXERunning(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CAppManager_GetDungeonMasterEXERunning(swigCPtr);
+    return retVal;
   }
 
   public void DisplayScriptDebuggerPopup() {
@@ -291,14 +299,14 @@ public unsafe class CAppManager : global::System.IDisposable {
   }
 
   public int SetDDCipherForModule(CExoString moduleName) {
-    int ret = NWNXLibPINVOKE.CAppManager_SetDDCipherForModule(swigCPtr, CExoString.getCPtr(moduleName));
+    int retVal = NWNXLibPINVOKE.CAppManager_SetDDCipherForModule(swigCPtr, CExoString.getCPtr(moduleName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
+    return retVal;
   }
 
   public byte ReadProgressFromINI(byte m_nCampaign) {
-    byte ret = NWNXLibPINVOKE.CAppManager_ReadProgressFromINI(swigCPtr, m_nCampaign);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CAppManager_ReadProgressFromINI(swigCPtr, m_nCampaign);
+    return retVal;
   }
 
   public void ConnectToServer(CExoString sAddress, int bPasswordRequired) {
@@ -323,13 +331,13 @@ public unsafe class CAppManager : global::System.IDisposable {
   }
 
   public byte GetPlatformId() {
-    byte ret = NWNXLibPINVOKE.CAppManager_GetPlatformId(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CAppManager_GetPlatformId(swigCPtr);
+    return retVal;
   }
 
   public byte GetLanguageId() {
-    byte ret = NWNXLibPINVOKE.CAppManager_GetLanguageId(swigCPtr);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CAppManager_GetLanguageId(swigCPtr);
+    return retVal;
   }
 
 }

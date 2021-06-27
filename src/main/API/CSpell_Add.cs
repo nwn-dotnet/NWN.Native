@@ -95,9 +95,10 @@ public unsafe class CSpell_Add : global::System.IDisposable {
       NWNXLibPINVOKE.CSpell_Add_m_nSpellID_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CSpell_Add_m_nSpellID_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CSpell_Add_m_nSpellID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bReadied {
@@ -105,9 +106,10 @@ public unsafe class CSpell_Add : global::System.IDisposable {
       NWNXLibPINVOKE.CSpell_Add_m_bReadied_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CSpell_Add_m_bReadied_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CSpell_Add_m_bReadied_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bDomainSpell {
@@ -115,9 +117,10 @@ public unsafe class CSpell_Add : global::System.IDisposable {
       NWNXLibPINVOKE.CSpell_Add_m_bDomainSpell_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CSpell_Add_m_bDomainSpell_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CSpell_Add_m_bDomainSpell_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nMetaType {
@@ -125,9 +128,10 @@ public unsafe class CSpell_Add : global::System.IDisposable {
       NWNXLibPINVOKE.CSpell_Add_m_nMetaType_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CSpell_Add_m_nMetaType_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CSpell_Add_m_nMetaType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nSpellSlot {
@@ -135,9 +139,10 @@ public unsafe class CSpell_Add : global::System.IDisposable {
       NWNXLibPINVOKE.CSpell_Add_m_nSpellSlot_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CSpell_Add_m_nSpellSlot_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CSpell_Add_m_nSpellSlot_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nSpellLevel {
@@ -145,9 +150,10 @@ public unsafe class CSpell_Add : global::System.IDisposable {
       NWNXLibPINVOKE.CSpell_Add_m_nSpellLevel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CSpell_Add_m_nSpellLevel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CSpell_Add_m_nSpellLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CSpell_Add() : this(NWNXLibPINVOKE.new_CSpell_Add(), true) {

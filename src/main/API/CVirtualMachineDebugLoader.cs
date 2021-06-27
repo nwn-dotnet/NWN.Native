@@ -95,29 +95,30 @@ public unsafe class CVirtualMachineDebugLoader : global::System.IDisposable {
       NWNXLibPINVOKE.CVirtualMachineDebugLoader_m_bLoaded_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CVirtualMachineDebugLoader_m_bLoaded_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CVirtualMachineDebugLoader_m_bLoaded_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int DemandDebugInfo(CExoString psFileName) {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebugLoader_DemandDebugInfo(swigCPtr, CExoString.getCPtr(psFileName));
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebugLoader_DemandDebugInfo(swigCPtr, CExoString.getCPtr(psFileName));
+    return retVal;
   }
 
   public byte* GetDataPtr() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CVirtualMachineDebugLoader_GetDataPtr(swigCPtr);
-    return (byte*)retVal;
+    byte* retVal = NWNXLibPINVOKE.CVirtualMachineDebugLoader_GetDataPtr(swigCPtr);
+    return retVal;
   }
 
   public uint GetSize() {
-    uint ret = NWNXLibPINVOKE.CVirtualMachineDebugLoader_GetSize(swigCPtr);
-    return ret;
+    uint retVal = NWNXLibPINVOKE.CVirtualMachineDebugLoader_GetSize(swigCPtr);
+    return retVal;
   }
 
   public int ReleaseDebugInfo() {
-    int ret = NWNXLibPINVOKE.CVirtualMachineDebugLoader_ReleaseDebugInfo(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebugLoader_ReleaseDebugInfo(swigCPtr);
+    return retVal;
   }
 
 }

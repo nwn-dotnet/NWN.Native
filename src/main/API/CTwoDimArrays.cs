@@ -106,9 +106,10 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
       NWNXLibPINVOKE.CTwoDimArrays_m_nNumIPRPCostTables_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CTwoDimArrays_m_nNumIPRPCostTables_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CTwoDimArrays_m_nNumIPRPCostTables_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<byte> m_lstEpicBaseAttackBonus {
@@ -1202,9 +1203,10 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
       NWNXLibPINVOKE.CTwoDimArrays_m_n2daCacheSize_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CTwoDimArrays_m_n2daCacheSize_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CTwoDimArrays_m_n2daCacheSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoLinkedListC2DA m_lstUserCached2DAs {
@@ -1223,42 +1225,43 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
       NWNXLibPINVOKE.CTwoDimArrays_m_nUser2daCacheSize_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CTwoDimArrays_m_nUser2daCacheSize_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CTwoDimArrays_m_nUser2daCacheSize_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte GetEpicFortSaveBonus(byte nLevel) {
-    byte ret = NWNXLibPINVOKE.CTwoDimArrays_GetEpicFortSaveBonus(swigCPtr, nLevel);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CTwoDimArrays_GetEpicFortSaveBonus(swigCPtr, nLevel);
+    return retVal;
   }
 
   public byte GetEpicRefSaveBonus(byte nLevel) {
-    byte ret = NWNXLibPINVOKE.CTwoDimArrays_GetEpicRefSaveBonus(swigCPtr, nLevel);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CTwoDimArrays_GetEpicRefSaveBonus(swigCPtr, nLevel);
+    return retVal;
   }
 
   public byte GetEpicWillSaveBonus(byte nLevel) {
-    byte ret = NWNXLibPINVOKE.CTwoDimArrays_GetEpicWillSaveBonus(swigCPtr, nLevel);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CTwoDimArrays_GetEpicWillSaveBonus(swigCPtr, nLevel);
+    return retVal;
   }
 
   public byte GetEpicAttackBonus(byte nLevel) {
-    byte ret = NWNXLibPINVOKE.CTwoDimArrays_GetEpicAttackBonus(swigCPtr, nLevel);
-    return ret;
+    byte retVal = NWNXLibPINVOKE.CTwoDimArrays_GetEpicAttackBonus(swigCPtr, nLevel);
+    return retVal;
   }
 
   public CTwoDimArrays() : this(NWNXLibPINVOKE.new_CTwoDimArrays(), true) {
   }
 
   public int Load2DArrays() {
-    int ret = NWNXLibPINVOKE.CTwoDimArrays_Load2DArrays(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CTwoDimArrays_Load2DArrays(swigCPtr);
+    return retVal;
   }
 
   public int UnLoad2DArrays() {
-    int ret = NWNXLibPINVOKE.CTwoDimArrays_UnLoad2DArrays(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CTwoDimArrays_UnLoad2DArrays(swigCPtr);
+    return retVal;
   }
 
   public C2DA GetCached2DA(CExoString s2DAName, int bUpdateUser2daCache) {
@@ -1286,23 +1289,23 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
   }
 
   public int LoadIPRPCostTables() {
-    int ret = NWNXLibPINVOKE.CTwoDimArrays_LoadIPRPCostTables(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CTwoDimArrays_LoadIPRPCostTables(swigCPtr);
+    return retVal;
   }
 
   public int UnLoadIPRPCostTables() {
-    int ret = NWNXLibPINVOKE.CTwoDimArrays_UnLoadIPRPCostTables(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CTwoDimArrays_UnLoadIPRPCostTables(swigCPtr);
+    return retVal;
   }
 
   public int LoadEpicSaves() {
-    int ret = NWNXLibPINVOKE.CTwoDimArrays_LoadEpicSaves(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CTwoDimArrays_LoadEpicSaves(swigCPtr);
+    return retVal;
   }
 
   public int LoadEpicAttacks() {
-    int ret = NWNXLibPINVOKE.CTwoDimArrays_LoadEpicAttacks(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CTwoDimArrays_LoadEpicAttacks(swigCPtr);
+    return retVal;
   }
 
   public void Update2DACache(CExoLinkedListC2DA lstCached2DAs, int nMaxCacheSize, C2DA p2DA) {

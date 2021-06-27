@@ -95,9 +95,10 @@ public unsafe class CNWSPlayerStoreGUI : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerStoreGUI_m_oidOpen_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSPlayerStoreGUI_m_oidOpen_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSPlayerStoreGUI_m_oidOpen_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nSelectedPanel {
@@ -105,9 +106,10 @@ public unsafe class CNWSPlayerStoreGUI : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerStoreGUI_m_nSelectedPanel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerStoreGUI_m_nSelectedPanel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerStoreGUI_m_nSelectedPanel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nSelectedPage {
@@ -115,9 +117,10 @@ public unsafe class CNWSPlayerStoreGUI : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerStoreGUI_m_nSelectedPage_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSPlayerStoreGUI_m_nSelectedPage_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSPlayerStoreGUI_m_nSelectedPage_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public Vector m_vOpenPosition {
@@ -134,11 +137,11 @@ public unsafe class CNWSPlayerStoreGUI : global::System.IDisposable {
   public CNWSPlayerStoreGUI() : this(NWNXLibPINVOKE.new_CNWSPlayerStoreGUI(), true) {
   }
 
-  public void OpenStore(CNWSPlayer pPlayer, uint oidStore, char nMarkUp, char nMarkDown) {
+  public void OpenStore(CNWSPlayer pPlayer, uint oidStore, byte nMarkUp, byte nMarkDown) {
     NWNXLibPINVOKE.CNWSPlayerStoreGUI_OpenStore__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidStore, nMarkUp, nMarkDown);
   }
 
-  public void OpenStore(CNWSPlayer pPlayer, uint oidStore, char nMarkUp) {
+  public void OpenStore(CNWSPlayer pPlayer, uint oidStore, byte nMarkUp) {
     NWNXLibPINVOKE.CNWSPlayerStoreGUI_OpenStore__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidStore, nMarkUp);
   }
 

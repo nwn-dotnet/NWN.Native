@@ -106,9 +106,10 @@ public unsafe class CExoInputEventDesc : global::System.IDisposable {
       NWNXLibPINVOKE.CExoInputEventDesc_m_nID_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoInputEventDesc_m_nID_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoInputEventDesc_m_nID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nInputDeviceType {
@@ -116,9 +117,10 @@ public unsafe class CExoInputEventDesc : global::System.IDisposable {
       NWNXLibPINVOKE.CExoInputEventDesc_m_nInputDeviceType_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoInputEventDesc_m_nInputDeviceType_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoInputEventDesc_m_nInputDeviceType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nInputDevice {
@@ -126,9 +128,10 @@ public unsafe class CExoInputEventDesc : global::System.IDisposable {
       NWNXLibPINVOKE.CExoInputEventDesc_m_nInputDevice_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoInputEventDesc_m_nInputDevice_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoInputEventDesc_m_nInputDevice_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nInputDeviceElement {
@@ -136,9 +139,10 @@ public unsafe class CExoInputEventDesc : global::System.IDisposable {
       NWNXLibPINVOKE.CExoInputEventDesc_m_nInputDeviceElement_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoInputEventDesc_m_nInputDeviceElement_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoInputEventDesc_m_nInputDeviceElement_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nInputMode {
@@ -146,9 +150,10 @@ public unsafe class CExoInputEventDesc : global::System.IDisposable {
       NWNXLibPINVOKE.CExoInputEventDesc_m_nInputMode_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CExoInputEventDesc_m_nInputMode_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CExoInputEventDesc_m_nInputMode_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoInputEventDesc() : this(NWNXLibPINVOKE.new_CExoInputEventDesc(), true) {

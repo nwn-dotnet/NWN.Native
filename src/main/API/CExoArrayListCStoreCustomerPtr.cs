@@ -106,9 +106,10 @@ public unsafe class CExoArrayListCStoreCustomerPtr : global::System.IDisposable 
       NWNXLibPINVOKE.CExoArrayListCStoreCustomerPtr_num_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListCStoreCustomerPtr_num_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListCStoreCustomerPtr_num_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int array_size {
@@ -116,9 +117,10 @@ public unsafe class CExoArrayListCStoreCustomerPtr : global::System.IDisposable 
       NWNXLibPINVOKE.CExoArrayListCStoreCustomerPtr_array_size_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExoArrayListCStoreCustomerPtr_array_size_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExoArrayListCStoreCustomerPtr_array_size_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCStoreCustomerPtr(int s) : this(NWNXLibPINVOKE.new_CExoArrayListCStoreCustomerPtr__SWIG_0(s), true) {

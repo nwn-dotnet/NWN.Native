@@ -95,9 +95,10 @@ public unsafe class CNWSCreRestorePolymorphData : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreRestorePolymorphData_nCurrentHitPoints_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreRestorePolymorphData_nCurrentHitPoints_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreRestorePolymorphData_nCurrentHitPoints_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int nTemporaryHitPoints {
@@ -105,9 +106,10 @@ public unsafe class CNWSCreRestorePolymorphData : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreRestorePolymorphData_nTemporaryHitPoints_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreRestorePolymorphData_nTemporaryHitPoints_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreRestorePolymorphData_nTemporaryHitPoints_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CGameEffect effect {
@@ -148,9 +150,10 @@ public unsafe class CNWSCreRestorePolymorphData : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreRestorePolymorphData_bTemporaryEffect_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSCreRestorePolymorphData_bTemporaryEffect_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSCreRestorePolymorphData_bTemporaryEffect_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nExpiryDate {
@@ -158,9 +161,10 @@ public unsafe class CNWSCreRestorePolymorphData : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreRestorePolymorphData_nExpiryDate_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSCreRestorePolymorphData_nExpiryDate_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSCreRestorePolymorphData_nExpiryDate_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nExpiryTime {
@@ -168,9 +172,10 @@ public unsafe class CNWSCreRestorePolymorphData : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSCreRestorePolymorphData_nExpiryTime_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSCreRestorePolymorphData_nExpiryTime_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSCreRestorePolymorphData_nExpiryTime_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSCreRestorePolymorphData() : this(NWNXLibPINVOKE.new_CNWSCreRestorePolymorphData(), true) {

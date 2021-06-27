@@ -95,9 +95,10 @@ public unsafe class KeyFileData : global::System.IDisposable {
       NWNXLibPINVOKE.KeyFileData_month_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.KeyFileData_month_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.KeyFileData_month_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int day {
@@ -105,9 +106,10 @@ public unsafe class KeyFileData : global::System.IDisposable {
       NWNXLibPINVOKE.KeyFileData_day_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.KeyFileData_day_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.KeyFileData_day_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int year {
@@ -115,9 +117,10 @@ public unsafe class KeyFileData : global::System.IDisposable {
       NWNXLibPINVOKE.KeyFileData_year_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.KeyFileData_year_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.KeyFileData_year_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int build {
@@ -125,9 +128,10 @@ public unsafe class KeyFileData : global::System.IDisposable {
       NWNXLibPINVOKE.KeyFileData_build_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.KeyFileData_build_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.KeyFileData_build_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NativeArray<byte> program {

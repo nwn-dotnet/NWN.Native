@@ -105,9 +105,10 @@ public unsafe class LerpFloat : global::System.IDisposable {
       NWNXLibPINVOKE.LerpFloat_m_value_to_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.LerpFloat_m_value_to_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.LerpFloat_m_value_to_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_value_from {
@@ -115,9 +116,10 @@ public unsafe class LerpFloat : global::System.IDisposable {
       NWNXLibPINVOKE.LerpFloat_m_value_from_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.LerpFloat_m_value_from_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.LerpFloat_m_value_from_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_lerp_type {
@@ -125,9 +127,10 @@ public unsafe class LerpFloat : global::System.IDisposable {
       NWNXLibPINVOKE.LerpFloat_m_lerp_type_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.LerpFloat_m_lerp_type_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.LerpFloat_m_lerp_type_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_lerp_duration {
@@ -135,9 +138,10 @@ public unsafe class LerpFloat : global::System.IDisposable {
       NWNXLibPINVOKE.LerpFloat_m_lerp_duration_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.LerpFloat_m_lerp_duration_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.LerpFloat_m_lerp_duration_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public float m_lerp_existing_progress {
@@ -145,9 +149,10 @@ public unsafe class LerpFloat : global::System.IDisposable {
       NWNXLibPINVOKE.LerpFloat_m_lerp_existing_progress_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.LerpFloat_m_lerp_existing_progress_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.LerpFloat_m_lerp_existing_progress_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public unsafe class TimeType : global::System.IDisposable {
@@ -315,9 +320,10 @@ public unsafe class LerpFloat : global::System.IDisposable {
             NWNXLibPINVOKE.LerpFloat_TimeType_World_m_day_set(swigCPtr, value);
           } 
           get {
-            uint ret = NWNXLibPINVOKE.LerpFloat_TimeType_World_m_day_get(swigCPtr);
-            return ret;
-          } 
+            uint retVal = NWNXLibPINVOKE.LerpFloat_TimeType_World_m_day_get(swigCPtr);
+            return retVal;
+          }
+      
         }
       
         public uint m_time {
@@ -325,9 +331,10 @@ public unsafe class LerpFloat : global::System.IDisposable {
             NWNXLibPINVOKE.LerpFloat_TimeType_World_m_time_set(swigCPtr, value);
           } 
           get {
-            uint ret = NWNXLibPINVOKE.LerpFloat_TimeType_World_m_time_get(swigCPtr);
-            return ret;
-          } 
+            uint retVal = NWNXLibPINVOKE.LerpFloat_TimeType_World_m_time_get(swigCPtr);
+            return retVal;
+          }
+      
         }
       
         public World() : this(NWNXLibPINVOKE.new_LerpFloat_TimeType_World(), true) {
@@ -347,14 +354,15 @@ public unsafe class LerpFloat : global::System.IDisposable {
       
       }
   
-    public uint m_real {
+    public ulong m_real {
       set {
         NWNXLibPINVOKE.LerpFloat_TimeType_m_real_set(swigCPtr, value);
       } 
       get {
-        uint ret = NWNXLibPINVOKE.LerpFloat_TimeType_m_real_get(swigCPtr);
-        return ret;
-      } 
+        ulong retVal = NWNXLibPINVOKE.LerpFloat_TimeType_m_real_get(swigCPtr);
+        return retVal;
+      }
+  
     }
   
     public LerpFloat.TimeType.World m_world {
@@ -434,37 +442,37 @@ public unsafe class LerpFloat : global::System.IDisposable {
   }
 
   public int LerpType() {
-    int ret = NWNXLibPINVOKE.LerpFloat_LerpType(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.LerpFloat_LerpType(swigCPtr);
+    return retVal;
   }
 
   public float LerpDuration() {
-    float ret = NWNXLibPINVOKE.LerpFloat_LerpDuration(swigCPtr);
-    return ret;
+    float retVal = NWNXLibPINVOKE.LerpFloat_LerpDuration(swigCPtr);
+    return retVal;
   }
 
   public float Value() {
-    float ret = NWNXLibPINVOKE.LerpFloat_Value(swigCPtr);
-    return ret;
+    float retVal = NWNXLibPINVOKE.LerpFloat_Value(swigCPtr);
+    return retVal;
   }
 
   public float ValueFrom() {
-    float ret = NWNXLibPINVOKE.LerpFloat_ValueFrom(swigCPtr);
-    return ret;
+    float retVal = NWNXLibPINVOKE.LerpFloat_ValueFrom(swigCPtr);
+    return retVal;
   }
 
   public float Progress() {
-    float ret = NWNXLibPINVOKE.LerpFloat_Progress(swigCPtr);
-    return ret;
+    float retVal = NWNXLibPINVOKE.LerpFloat_Progress(swigCPtr);
+    return retVal;
   }
 
   public float Lerped() {
-    float ret = NWNXLibPINVOKE.LerpFloat_Lerped(swigCPtr);
-    return ret;
+    float retVal = NWNXLibPINVOKE.LerpFloat_Lerped(swigCPtr);
+    return retVal;
   }
 
   public void WriteGFF(CResGFF pRes, CResStruct pStruct, byte* szLabel) {
-    NWNXLibPINVOKE.LerpFloat_WriteGFF(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), (global::System.IntPtr)szLabel);
+    NWNXLibPINVOKE.LerpFloat_WriteGFF(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), szLabel);
   }
 
   public void AssignStatic(float to) {

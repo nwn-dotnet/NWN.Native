@@ -95,9 +95,10 @@ public unsafe class CExtendedServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CExtendedServerInfo_m_bPasswordRequired_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExtendedServerInfo_m_bPasswordRequired_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExtendedServerInfo_m_bPasswordRequired_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nMinLevel {
@@ -105,9 +106,10 @@ public unsafe class CExtendedServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CExtendedServerInfo_m_nMinLevel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CExtendedServerInfo_m_nMinLevel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CExtendedServerInfo_m_nMinLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nMaxLevel {
@@ -115,9 +117,10 @@ public unsafe class CExtendedServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CExtendedServerInfo_m_nMaxLevel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CExtendedServerInfo_m_nMaxLevel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CExtendedServerInfo_m_nMaxLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nPlayerCount {
@@ -125,9 +128,10 @@ public unsafe class CExtendedServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CExtendedServerInfo_m_nPlayerCount_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CExtendedServerInfo_m_nPlayerCount_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CExtendedServerInfo_m_nPlayerCount_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nMaxPlayers {
@@ -135,9 +139,10 @@ public unsafe class CExtendedServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CExtendedServerInfo_m_nMaxPlayers_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CExtendedServerInfo_m_nMaxPlayers_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CExtendedServerInfo_m_nMaxPlayers_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sModuleName {
@@ -156,9 +161,10 @@ public unsafe class CExtendedServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CExtendedServerInfo_m_bAllowLocalVaultChars_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExtendedServerInfo_m_bAllowLocalVaultChars_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExtendedServerInfo_m_bAllowLocalVaultChars_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bPauseAndPlay {
@@ -166,9 +172,10 @@ public unsafe class CExtendedServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CExtendedServerInfo_m_bPauseAndPlay_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExtendedServerInfo_m_bPauseAndPlay_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExtendedServerInfo_m_bPauseAndPlay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bMultiplayerEnabled {
@@ -176,9 +183,10 @@ public unsafe class CExtendedServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CExtendedServerInfo_m_bMultiplayerEnabled_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExtendedServerInfo_m_bMultiplayerEnabled_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExtendedServerInfo_m_bMultiplayerEnabled_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nPVPSetting {
@@ -186,9 +194,10 @@ public unsafe class CExtendedServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CExtendedServerInfo_m_nPVPSetting_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CExtendedServerInfo_m_nPVPSetting_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CExtendedServerInfo_m_nPVPSetting_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nExpansionPacksRequired {
@@ -196,9 +205,10 @@ public unsafe class CExtendedServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CExtendedServerInfo_m_nExpansionPacksRequired_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CExtendedServerInfo_m_nExpansionPacksRequired_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CExtendedServerInfo_m_nExpansionPacksRequired_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString m_sServerName {
@@ -250,9 +260,10 @@ public unsafe class CExtendedServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CExtendedServerInfo_m_nGameType_set(swigCPtr, value);
     } 
     get {
-      short ret = NWNXLibPINVOKE.CExtendedServerInfo_m_nGameType_get(swigCPtr);
-      return ret;
-    } 
+      short retVal = NWNXLibPINVOKE.CExtendedServerInfo_m_nGameType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bOnePartyOnly {
@@ -260,9 +271,10 @@ public unsafe class CExtendedServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CExtendedServerInfo_m_bOnePartyOnly_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExtendedServerInfo_m_bOnePartyOnly_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExtendedServerInfo_m_bOnePartyOnly_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bLegalChars {
@@ -270,9 +282,10 @@ public unsafe class CExtendedServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CExtendedServerInfo_m_bLegalChars_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExtendedServerInfo_m_bLegalChars_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExtendedServerInfo_m_bLegalChars_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bItemRestrict {
@@ -280,9 +293,10 @@ public unsafe class CExtendedServerInfo : global::System.IDisposable {
       NWNXLibPINVOKE.CExtendedServerInfo_m_bItemRestrict_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CExtendedServerInfo_m_bItemRestrict_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CExtendedServerInfo_m_bItemRestrict_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExtendedServerInfo _OpAssign(CNetLayerSessionInfo pIn) {

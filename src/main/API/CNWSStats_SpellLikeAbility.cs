@@ -95,9 +95,10 @@ public unsafe class CNWSStats_SpellLikeAbility : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSStats_SpellLikeAbility_m_nSpellId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSStats_SpellLikeAbility_m_nSpellId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSStats_SpellLikeAbility_m_nSpellId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_bReadied {
@@ -105,9 +106,10 @@ public unsafe class CNWSStats_SpellLikeAbility : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSStats_SpellLikeAbility_m_bReadied_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSStats_SpellLikeAbility_m_bReadied_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSStats_SpellLikeAbility_m_bReadied_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_nCasterLevel {
@@ -115,9 +117,10 @@ public unsafe class CNWSStats_SpellLikeAbility : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSStats_SpellLikeAbility_m_nCasterLevel_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSStats_SpellLikeAbility_m_nCasterLevel_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSStats_SpellLikeAbility_m_nCasterLevel_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSStats_SpellLikeAbility() : this(NWNXLibPINVOKE.new_CNWSStats_SpellLikeAbility(), true) {

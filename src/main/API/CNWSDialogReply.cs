@@ -95,9 +95,10 @@ public unsafe class CNWSDialogReply : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialogReply_m_nAnimation_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialogReply_m_nAnimation_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialogReply_m_nAnimation_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte m_bAnimationLoop {
@@ -105,9 +106,10 @@ public unsafe class CNWSDialogReply : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialogReply_m_bAnimationLoop_set(swigCPtr, value);
     } 
     get {
-      byte ret = NWNXLibPINVOKE.CNWSDialogReply_m_bAnimationLoop_get(swigCPtr);
-      return ret;
-    } 
+      byte retVal = NWNXLibPINVOKE.CNWSDialogReply_m_bAnimationLoop_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoLocString m_sText {
@@ -137,9 +139,10 @@ public unsafe class CNWSDialogReply : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialogReply_m_nEntries_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialogReply_m_nEntries_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialogReply_m_nEntries_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResRef m_sScript {
@@ -169,9 +172,10 @@ public unsafe class CNWSDialogReply : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialogReply_m_nDelay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialogReply_m_nDelay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialogReply_m_nDelay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResRef m_sSound {
@@ -201,9 +205,10 @@ public unsafe class CNWSDialogReply : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSDialogReply_m_nQuestId_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CNWSDialogReply_m_nQuestId_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CNWSDialogReply_m_nQuestId_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSDialogReply() : this(NWNXLibPINVOKE.new_CNWSDialogReply(), true) {

@@ -95,9 +95,10 @@ public unsafe class CResStructHeader : global::System.IDisposable {
       NWNXLibPINVOKE.CResStructHeader_m_nType_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResStructHeader_m_nType_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResStructHeader_m_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint m_nFields {
@@ -105,9 +106,10 @@ public unsafe class CResStructHeader : global::System.IDisposable {
       NWNXLibPINVOKE.CResStructHeader_m_nFields_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.CResStructHeader_m_nFields_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.CResStructHeader_m_nFields_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CResStructHeader() : this(NWNXLibPINVOKE.new_CResStructHeader(), true) {

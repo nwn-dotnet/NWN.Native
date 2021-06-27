@@ -110,8 +110,8 @@ public unsafe class CTlkFile : CExoFile {
   }
 
   public int ReadHeader() {
-    int ret = NWNXLibPINVOKE.CTlkFile_ReadHeader(swigCPtr);
-    return ret;
+    int retVal = NWNXLibPINVOKE.CTlkFile_ReadHeader(swigCPtr);
+    return retVal;
   }
 
 }

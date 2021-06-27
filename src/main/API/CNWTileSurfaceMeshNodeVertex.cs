@@ -95,9 +95,10 @@ public unsafe class CNWTileSurfaceMeshNodeVertex : global::System.IDisposable {
       NWNXLibPINVOKE.CNWTileSurfaceMeshNodeVertex_fVirtualWasteOfSpace_set(swigCPtr, value);
     } 
     get {
-      float ret = NWNXLibPINVOKE.CNWTileSurfaceMeshNodeVertex_fVirtualWasteOfSpace_get(swigCPtr);
-      return ret;
-    } 
+      float retVal = NWNXLibPINVOKE.CNWTileSurfaceMeshNodeVertex_fVirtualWasteOfSpace_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public Vector vCoord {

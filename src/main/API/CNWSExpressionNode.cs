@@ -95,9 +95,10 @@ public unsafe class CNWSExpressionNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSExpressionNode_nTimesVisited_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSExpressionNode_nTimesVisited_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSExpressionNode_nTimesVisited_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nType {
@@ -105,9 +106,10 @@ public unsafe class CNWSExpressionNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSExpressionNode_m_nType_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSExpressionNode_m_nType_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSExpressionNode_m_nType_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int m_nPosition {
@@ -115,9 +117,10 @@ public unsafe class CNWSExpressionNode : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSExpressionNode_m_nPosition_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSExpressionNode_m_nPosition_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSExpressionNode_m_nPosition_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSExpressionNode m_pNext {

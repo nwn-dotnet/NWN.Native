@@ -108,9 +108,10 @@ public unsafe class NWMODULEHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.NWMODULEHEADER_nModuleCreatorID_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.NWMODULEHEADER_nModuleCreatorID_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.NWMODULEHEADER_nModuleCreatorID_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nModuleVersion {
@@ -118,9 +119,10 @@ public unsafe class NWMODULEHEADER : global::System.IDisposable {
       NWNXLibPINVOKE.NWMODULEHEADER_nModuleVersion_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.NWMODULEHEADER_nModuleVersion_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.NWMODULEHEADER_nModuleVersion_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public NWMODULEHEADER() : this(NWNXLibPINVOKE.new_NWMODULEHEADER(), true) {

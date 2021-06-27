@@ -117,9 +117,10 @@ public unsafe class SJournalEntry : global::System.IDisposable {
       NWNXLibPINVOKE.SJournalEntry_nCalendarDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.SJournalEntry_nCalendarDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.SJournalEntry_nCalendarDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nTimeOfDay {
@@ -127,9 +128,10 @@ public unsafe class SJournalEntry : global::System.IDisposable {
       NWNXLibPINVOKE.SJournalEntry_nTimeOfDay_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.SJournalEntry_nTimeOfDay_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.SJournalEntry_nTimeOfDay_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoString szPlot_Id {
@@ -148,9 +150,10 @@ public unsafe class SJournalEntry : global::System.IDisposable {
       NWNXLibPINVOKE.SJournalEntry_nState_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.SJournalEntry_nState_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.SJournalEntry_nState_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public uint nPriority {
@@ -158,9 +161,10 @@ public unsafe class SJournalEntry : global::System.IDisposable {
       NWNXLibPINVOKE.SJournalEntry_nPriority_set(swigCPtr, value);
     } 
     get {
-      uint ret = NWNXLibPINVOKE.SJournalEntry_nPriority_get(swigCPtr);
-      return ret;
-    } 
+      uint retVal = NWNXLibPINVOKE.SJournalEntry_nPriority_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ushort nPictureIndex {
@@ -168,9 +172,10 @@ public unsafe class SJournalEntry : global::System.IDisposable {
       NWNXLibPINVOKE.SJournalEntry_nPictureIndex_set(swigCPtr, value);
     } 
     get {
-      ushort ret = NWNXLibPINVOKE.SJournalEntry_nPictureIndex_get(swigCPtr);
-      return ret;
-    } 
+      ushort retVal = NWNXLibPINVOKE.SJournalEntry_nPictureIndex_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bQuestCompleted {
@@ -178,9 +183,10 @@ public unsafe class SJournalEntry : global::System.IDisposable {
       NWNXLibPINVOKE.SJournalEntry_bQuestCompleted_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.SJournalEntry_bQuestCompleted_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.SJournalEntry_bQuestCompleted_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bQuestDisplayed {
@@ -188,9 +194,10 @@ public unsafe class SJournalEntry : global::System.IDisposable {
       NWNXLibPINVOKE.SJournalEntry_bQuestDisplayed_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.SJournalEntry_bQuestDisplayed_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.SJournalEntry_bQuestDisplayed_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public int bUpdated {
@@ -198,9 +205,10 @@ public unsafe class SJournalEntry : global::System.IDisposable {
       NWNXLibPINVOKE.SJournalEntry_bUpdated_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.SJournalEntry_bUpdated_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.SJournalEntry_bUpdated_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public SJournalEntry() : this(NWNXLibPINVOKE.new_SJournalEntry(), true) {

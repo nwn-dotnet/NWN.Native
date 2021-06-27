@@ -95,9 +95,10 @@ public unsafe class CNWSPlayerJournalQuest : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerJournalQuest_m_bOpen_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayerJournalQuest_m_bOpen_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayerJournalQuest_m_bOpen_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CExoArrayListCNWSPlayerJournalQuestUpdates m_lstModifications {
@@ -116,9 +117,10 @@ public unsafe class CNWSPlayerJournalQuest : global::System.IDisposable {
       NWNXLibPINVOKE.CNWSPlayerJournalQuest_m_bFullUpdateNeeded_set(swigCPtr, value);
     } 
     get {
-      int ret = NWNXLibPINVOKE.CNWSPlayerJournalQuest_m_bFullUpdateNeeded_get(swigCPtr);
-      return ret;
-    } 
+      int retVal = NWNXLibPINVOKE.CNWSPlayerJournalQuest_m_bFullUpdateNeeded_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public CNWSPlayerJournalQuest() : this(NWNXLibPINVOKE.new_CNWSPlayerJournalQuest(), true) {
