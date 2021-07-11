@@ -2941,12 +2941,16 @@ public unsafe class CNWSCreature : CNWSObject {
     return retVal;
   }
 
+  public void AddToArea(CNWSArea pArea, float fX, float fY, float fZ, int bForceAdd, int bExecuteAreaEntryScript) {
+    NWNXLibPINVOKE.CNWSCreature_AddToArea__SWIG_0(swigCPtr, CNWSArea.getCPtr(pArea), fX, fY, fZ, bForceAdd, bExecuteAreaEntryScript);
+  }
+
   public void AddToArea(CNWSArea pArea, float fX, float fY, float fZ, int bForceAdd) {
-    NWNXLibPINVOKE.CNWSCreature_AddToArea__SWIG_0(swigCPtr, CNWSArea.getCPtr(pArea), fX, fY, fZ, bForceAdd);
+    NWNXLibPINVOKE.CNWSCreature_AddToArea__SWIG_1(swigCPtr, CNWSArea.getCPtr(pArea), fX, fY, fZ, bForceAdd);
   }
 
   public void AddToArea(CNWSArea pArea, float fX, float fY, float fZ) {
-    NWNXLibPINVOKE.CNWSCreature_AddToArea__SWIG_1(swigCPtr, CNWSArea.getCPtr(pArea), fX, fY, fZ);
+    NWNXLibPINVOKE.CNWSCreature_AddToArea__SWIG_2(swigCPtr, CNWSArea.getCPtr(pArea), fX, fY, fZ);
   }
 
   public override void AIUpdate() {
@@ -3059,13 +3063,13 @@ public unsafe class CNWSCreature : CNWSObject {
     NWNXLibPINVOKE.CNWSCreature_RemoveFromArea__SWIG_1(swigCPtr);
   }
 
-  public int LoadCreature(CResGFF pRes, CResStruct cCreatureStruct, int bIsSaveGame, int bIsAssociate, int bPreserveItemIds, int bCopyObject) {
-    int retVal = NWNXLibPINVOKE.CNWSCreature_LoadCreature__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cCreatureStruct), bIsSaveGame, bIsAssociate, bPreserveItemIds, bCopyObject);
+  public int LoadCreature(CResGFF pRes, CResStruct cCreatureStruct, int bIsSaveGame, int bIsAssociate, int bPreserveObjectIDs, int bCopyObject) {
+    int retVal = NWNXLibPINVOKE.CNWSCreature_LoadCreature__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cCreatureStruct), bIsSaveGame, bIsAssociate, bPreserveObjectIDs, bCopyObject);
     return retVal;
   }
 
-  public int LoadCreature(CResGFF pRes, CResStruct cCreatureStruct, int bIsSaveGame, int bIsAssociate, int bPreserveItemIds) {
-    int retVal = NWNXLibPINVOKE.CNWSCreature_LoadCreature__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cCreatureStruct), bIsSaveGame, bIsAssociate, bPreserveItemIds);
+  public int LoadCreature(CResGFF pRes, CResStruct cCreatureStruct, int bIsSaveGame, int bIsAssociate, int bPreserveObjectIDs) {
+    int retVal = NWNXLibPINVOKE.CNWSCreature_LoadCreature__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cCreatureStruct), bIsSaveGame, bIsAssociate, bPreserveObjectIDs);
     return retVal;
   }
 
@@ -3898,8 +3902,8 @@ public unsafe class CNWSCreature : CNWSObject {
     NWNXLibPINVOKE.CNWSCreature_SavePersonalReputationList(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pResStruct));
   }
 
-  public void LoadAssociateList(CResGFF pRes, CResStruct pResStruct) {
-    NWNXLibPINVOKE.CNWSCreature_LoadAssociateList(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pResStruct));
+  public void LoadAssociateList(CResGFF pRes, CResStruct pResStruct, int bLoadOID) {
+    NWNXLibPINVOKE.CNWSCreature_LoadAssociateList(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pResStruct), bLoadOID);
   }
 
   public void SaveAssociateList(CResGFF pRes, CResStruct pResStruct, int bSaveOIDs) {

@@ -724,7 +724,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN11CGameEffect11GetObjectIDEi = FunctionsLinuxPINVOKE._ZN11CGameEffect11GetObjectIDEi_get();
   public static readonly uint _ZN11CGameEffect11SetObjectIDEij = FunctionsLinuxPINVOKE._ZN11CGameEffect11SetObjectIDEij_get();
   public static readonly uint _ZN11CGameEffect12SetCustomTagERK10CExoString = FunctionsLinuxPINVOKE._ZN11CGameEffect12SetCustomTagERK10CExoString_get();
-  public static readonly uint _ZN11CGameEffect12UpdateLinkedEv = FunctionsLinuxPINVOKE._ZN11CGameEffect12UpdateLinkedEv_get();
+  public static readonly uint _ZN11CGameEffect12UpdateLinkedEi = FunctionsLinuxPINVOKE._ZN11CGameEffect12UpdateLinkedEi_get();
   public static readonly uint _ZN11CGameEffect13GetExpiryTimeEPjS0_ = FunctionsLinuxPINVOKE._ZN11CGameEffect13GetExpiryTimeEPjS0__get();
   public static readonly uint _ZN11CGameEffect13SetExpiryTimeEjj = FunctionsLinuxPINVOKE._ZN11CGameEffect13SetExpiryTimeEjj_get();
   public static readonly uint _ZN11CGameEffect14LoadGameEffectEP7CResGFFP10CResStruct = FunctionsLinuxPINVOKE._ZN11CGameEffect14LoadGameEffectEP7CResGFFP10CResStruct_get();
@@ -989,7 +989,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN11CNWSMessage32SendServerToPlayerGuiTimingEventEP10CNWSPlayerihj = FunctionsLinuxPINVOKE._ZN11CNWSMessage32SendServerToPlayerGuiTimingEventEP10CNWSPlayerihj_get();
   public static readonly uint _ZN11CNWSMessage32SendServerToPlayerInventory_DropEjji = FunctionsLinuxPINVOKE._ZN11CNWSMessage32SendServerToPlayerInventory_DropEjji_get();
   public static readonly uint _ZN11CNWSMessage32SendServerToPlayerJournalUpdatedEP10CNWSPlayerii13CExoLocString = FunctionsLinuxPINVOKE._ZN11CNWSMessage32SendServerToPlayerJournalUpdatedEP10CNWSPlayerii13CExoLocString_get();
-  public static readonly uint _ZN11CNWSMessage32SendServerToPlayerModule_EndGameEjRK10CExoString = FunctionsLinuxPINVOKE._ZN11CNWSMessage32SendServerToPlayerModule_EndGameEjRK10CExoString_get();
+  public static readonly uint _ZN11CNWSMessage32SendServerToPlayerModule_EndGameEP10CNWSPlayerRK10CExoStringRKN4Hash4SHA1E = FunctionsLinuxPINVOKE._ZN11CNWSMessage32SendServerToPlayerModule_EndGameEP10CNWSPlayerRK10CExoStringRKN4Hash4SHA1E_get();
   public static readonly uint _ZN11CNWSMessage32SendServerToPlayerModule_LoadingEP10CNWSPlayer = FunctionsLinuxPINVOKE._ZN11CNWSMessage32SendServerToPlayerModule_LoadingEP10CNWSPlayer_get();
   public static readonly uint _ZN11CNWSMessage32SendServerToPlayerPlayerList_AddEjP10CNWSPlayer = FunctionsLinuxPINVOKE._ZN11CNWSMessage32SendServerToPlayerPlayerList_AddEjP10CNWSPlayer_get();
   public static readonly uint _ZN11CNWSMessage32SendServerToPlayerPlayerList_AllEP10CNWSPlayer = FunctionsLinuxPINVOKE._ZN11CNWSMessage32SendServerToPlayerPlayerList_AllEP10CNWSPlayer_get();
@@ -1522,7 +1522,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN12CNWSCreature17DoListenDetectionEPS_i = FunctionsLinuxPINVOKE._ZN12CNWSCreature17DoListenDetectionEPS_i_get();
   public static readonly uint _ZN12CNWSCreature17GetQuickbarButtonEh = FunctionsLinuxPINVOKE._ZN12CNWSCreature17GetQuickbarButtonEh_get();
   public static readonly uint _ZN12CNWSCreature17InitialisePVPListEv = FunctionsLinuxPINVOKE._ZN12CNWSCreature17InitialisePVPListEv_get();
-  public static readonly uint _ZN12CNWSCreature17LoadAssociateListEP7CResGFFP10CResStruct = FunctionsLinuxPINVOKE._ZN12CNWSCreature17LoadAssociateListEP7CResGFFP10CResStruct_get();
+  public static readonly uint _ZN12CNWSCreature17LoadAssociateListEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN12CNWSCreature17LoadAssociateListEP7CResGFFP10CResStructi_get();
   public static readonly uint _ZN12CNWSCreature17LoadPolymorphDataEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN12CNWSCreature17LoadPolymorphDataEP7CResGFFP10CResStructi_get();
   public static readonly uint _ZN12CNWSCreature17PayToIdentifyItemEjj = FunctionsLinuxPINVOKE._ZN12CNWSCreature17PayToIdentifyItemEjj_get();
   public static readonly uint _ZN12CNWSCreature17PossessCreatureDMEjh = FunctionsLinuxPINVOKE._ZN12CNWSCreature17PossessCreatureDMEjh_get();
@@ -1825,7 +1825,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN12CNWSCreature8GetBlindEv = FunctionsLinuxPINVOKE._ZN12CNWSCreature8GetBlindEv_get();
   public static readonly uint _ZN12CNWSCreature8RunEquipEjjj = FunctionsLinuxPINVOKE._ZN12CNWSCreature8RunEquipEjjj_get();
   public static readonly uint _ZN12CNWSCreature8UseSkillEhhj6Vectorjji = FunctionsLinuxPINVOKE._ZN12CNWSCreature8UseSkillEhhj6Vectorjji_get();
-  public static readonly uint _ZN12CNWSCreature9AddToAreaEP8CNWSAreafffi = FunctionsLinuxPINVOKE._ZN12CNWSCreature9AddToAreaEP8CNWSAreafffi_get();
+  public static readonly uint _ZN12CNWSCreature9AddToAreaEP8CNWSAreafffii = FunctionsLinuxPINVOKE._ZN12CNWSCreature9AddToAreaEP8CNWSAreafffii_get();
   public static readonly uint _ZN12CNWSCreature9DumpToLogEv = FunctionsLinuxPINVOKE._ZN12CNWSCreature9DumpToLogEv_get();
   public static readonly uint _ZN12CNWSCreature9EquipItemEjP8CNWSItemii = FunctionsLinuxPINVOKE._ZN12CNWSCreature9EquipItemEjP8CNWSItemii_get();
   public static readonly uint _ZN12CNWSCreature9GetGenderEv = FunctionsLinuxPINVOKE._ZN12CNWSCreature9GetGenderEv_get();
@@ -2077,7 +2077,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN13CNWSPlaceable12GetLightIsOnEv = FunctionsLinuxPINVOKE._ZN13CNWSPlaceable12GetLightIsOnEv_get();
   public static readonly uint _ZN13CNWSPlaceable12SetLightIsOnEi = FunctionsLinuxPINVOKE._ZN13CNWSPlaceable12SetLightIsOnEi_get();
   public static readonly uint _ZN13CNWSPlaceable13GetScriptNameEi = FunctionsLinuxPINVOKE._ZN13CNWSPlaceable13GetScriptNameEi_get();
-  public static readonly uint _ZN13CNWSPlaceable13LoadPlaceableEP7CResGFFP10CResStructP10CExoString = FunctionsLinuxPINVOKE._ZN13CNWSPlaceable13LoadPlaceableEP7CResGFFP10CResStructP10CExoString_get();
+  public static readonly uint _ZN13CNWSPlaceable13LoadPlaceableEP7CResGFFP10CResStructiP10CExoString = FunctionsLinuxPINVOKE._ZN13CNWSPlaceable13LoadPlaceableEP7CResGFFP10CResStructiP10CExoString_get();
   public static readonly uint _ZN13CNWSPlaceable13OpenInventoryEj = FunctionsLinuxPINVOKE._ZN13CNWSPlaceable13OpenInventoryEj_get();
   public static readonly uint _ZN13CNWSPlaceable13SavePlaceableEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN13CNWSPlaceable13SavePlaceableEP7CResGFFP10CResStructi_get();
   public static readonly uint _ZN13CNWSPlaceable14AsNWSPlaceableEv = FunctionsLinuxPINVOKE._ZN13CNWSPlaceable14AsNWSPlaceableEv_get();
@@ -2779,7 +2779,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN15CVirtualMachineD1Ev = FunctionsLinuxPINVOKE._ZN15CVirtualMachineD1Ev_get();
   public static readonly uint _ZN15CVirtualMachineD2Ev = FunctionsLinuxPINVOKE._ZN15CVirtualMachineD2Ev_get();
   public static readonly uint _ZN15NWVMachineUtils14SerializeToGffEP10CNWSObject = FunctionsLinuxPINVOKE._ZN15NWVMachineUtils14SerializeToGffEP10CNWSObject_get();
-  public static readonly uint _ZN15NWVMachineUtils18DeserializeFromGffESt10shared_ptrI8DataViewERK15CScriptLocationjRK10CExoString = FunctionsLinuxPINVOKE._ZN15NWVMachineUtils18DeserializeFromGffESt10shared_ptrI8DataViewERK15CScriptLocationjRK10CExoString_get();
+  public static readonly uint _ZN15NWVMachineUtils18DeserializeFromGffESt10shared_ptrI8DataViewERK15CScriptLocationjRK10CExoStringi = FunctionsLinuxPINVOKE._ZN15NWVMachineUtils18DeserializeFromGffESt10shared_ptrI8DataViewERK15CScriptLocationjRK10CExoStringi_get();
   public static readonly uint _ZN16CExoBaseInternal10CheckForCDEj = FunctionsLinuxPINVOKE._ZN16CExoBaseInternal10CheckForCDEj_get();
   public static readonly uint _ZN16CExoBaseInternal11LoadAliasesEi = FunctionsLinuxPINVOKE._ZN16CExoBaseInternal11LoadAliasesEi_get();
   public static readonly uint _ZN16CExoBaseInternal16GetDirectoryListEP13CExoArrayListI10CExoStringES1_tii = FunctionsLinuxPINVOKE._ZN16CExoBaseInternal16GetDirectoryListEP13CExoArrayListI10CExoStringES1_tii_get();
@@ -3022,7 +3022,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN17CNWSCreatureStats16GetTotalWISBonusEv = FunctionsLinuxPINVOKE._ZN17CNWSCreatureStats16GetTotalWISBonusEv_get();
   public static readonly uint _ZN17CNWSCreatureStats16GetWeaponFinesseEP8CNWSItem = FunctionsLinuxPINVOKE._ZN17CNWSCreatureStats16GetWeaponFinesseEP8CNWSItem_get();
   public static readonly uint _ZN17CNWSCreatureStats16LevelUpAutomaticEhih = FunctionsLinuxPINVOKE._ZN17CNWSCreatureStats16LevelUpAutomaticEhih_get();
-  public static readonly uint _ZN17CNWSCreatureStats16ReadStatsFromGffEP7CResGFFP10CResStructP26CNWSCreatureAppearanceInfoiii = FunctionsLinuxPINVOKE._ZN17CNWSCreatureStats16ReadStatsFromGffEP7CResGFFP10CResStructP26CNWSCreatureAppearanceInfoiii_get();
+  public static readonly uint _ZN17CNWSCreatureStats16ReadStatsFromGffEP7CResGFFP10CResStructP26CNWSCreatureAppearanceInfoiiii = FunctionsLinuxPINVOKE._ZN17CNWSCreatureStats16ReadStatsFromGffEP7CResGFFP10CResStructP26CNWSCreatureAppearanceInfoiiii_get();
   public static readonly uint _ZN17CNWSCreatureStats16RemoveKnownSpellEhj = FunctionsLinuxPINVOKE._ZN17CNWSCreatureStats16RemoveKnownSpellEhj_get();
   public static readonly uint _ZN17CNWSCreatureStats17GetEffectImmunityEhP12CNWSCreaturei = FunctionsLinuxPINVOKE._ZN17CNWSCreatureStats17GetEffectImmunityEhP12CNWSCreaturei_get();
   public static readonly uint _ZN17CNWSCreatureStats17GetPotentialLevelEv = FunctionsLinuxPINVOKE._ZN17CNWSCreatureStats17GetPotentialLevelEv_get();
@@ -3599,6 +3599,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN21CNWSEffectListHandler16OnApplyEntangledEP10CNWSObjectP11CGameEffecti = FunctionsLinuxPINVOKE._ZN21CNWSEffectListHandler16OnApplyEntangledEP10CNWSObjectP11CGameEffecti_get();
   public static readonly uint _ZN21CNWSEffectListHandler16OnApplyKnockdownEP10CNWSObjectP11CGameEffecti = FunctionsLinuxPINVOKE._ZN21CNWSEffectListHandler16OnApplyKnockdownEP10CNWSObjectP11CGameEffecti_get();
   public static readonly uint _ZN21CNWSEffectListHandler16OnApplyPolymorphEP10CNWSObjectP11CGameEffecti = FunctionsLinuxPINVOKE._ZN21CNWSEffectListHandler16OnApplyPolymorphEP10CNWSObjectP11CGameEffecti_get();
+  public static readonly uint _ZN21CNWSEffectListHandler16OnApplyRunScriptEP10CNWSObjectP11CGameEffecti = FunctionsLinuxPINVOKE._ZN21CNWSEffectListHandler16OnApplyRunScriptEP10CNWSObjectP11CGameEffecti_get();
   public static readonly uint _ZN21CNWSEffectListHandler16OnApplySanctuaryEP10CNWSObjectP11CGameEffecti = FunctionsLinuxPINVOKE._ZN21CNWSEffectListHandler16OnApplySanctuaryEP10CNWSObjectP11CGameEffecti_get();
   public static readonly uint _ZN21CNWSEffectListHandler16OnRemoveDarknessEP10CNWSObjectP11CGameEffect = FunctionsLinuxPINVOKE._ZN21CNWSEffectListHandler16OnRemoveDarknessEP10CNWSObjectP11CGameEffect_get();
   public static readonly uint _ZN21CNWSEffectListHandler16OnRemoveSetStateEP10CNWSObjectP11CGameEffect = FunctionsLinuxPINVOKE._ZN21CNWSEffectListHandler16OnRemoveSetStateEP10CNWSObjectP11CGameEffect_get();
@@ -3626,6 +3627,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN21CNWSEffectListHandler17OnRemoveEntangledEP10CNWSObjectP11CGameEffect = FunctionsLinuxPINVOKE._ZN21CNWSEffectListHandler17OnRemoveEntangledEP10CNWSObjectP11CGameEffect_get();
   public static readonly uint _ZN21CNWSEffectListHandler17OnRemoveKnockdownEP10CNWSObjectP11CGameEffect = FunctionsLinuxPINVOKE._ZN21CNWSEffectListHandler17OnRemoveKnockdownEP10CNWSObjectP11CGameEffect_get();
   public static readonly uint _ZN21CNWSEffectListHandler17OnRemovePolymorphEP10CNWSObjectP11CGameEffect = FunctionsLinuxPINVOKE._ZN21CNWSEffectListHandler17OnRemovePolymorphEP10CNWSObjectP11CGameEffect_get();
+  public static readonly uint _ZN21CNWSEffectListHandler17OnRemoveRunScriptEP10CNWSObjectP11CGameEffect = FunctionsLinuxPINVOKE._ZN21CNWSEffectListHandler17OnRemoveRunScriptEP10CNWSObjectP11CGameEffect_get();
   public static readonly uint _ZN21CNWSEffectListHandler17OnRemoveSanctuaryEP10CNWSObjectP11CGameEffect = FunctionsLinuxPINVOKE._ZN21CNWSEffectListHandler17OnRemoveSanctuaryEP10CNWSObjectP11CGameEffect_get();
   public static readonly uint _ZN21CNWSEffectListHandler18DAMAGE_FLAG_DIVINEE = FunctionsLinuxPINVOKE._ZN21CNWSEffectListHandler18DAMAGE_FLAG_DIVINEE_get();
   public static readonly uint _ZN21CNWSEffectListHandler18EFFECT_AC_DECREASEE = FunctionsLinuxPINVOKE._ZN21CNWSEffectListHandler18EFFECT_AC_DECREASEE_get();
@@ -4756,6 +4758,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN25CNWVirtualMachineCommands24ExecuteCommandCopyObjectEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands24ExecuteCommandCopyObjectEii_get();
   public static readonly uint _ZN25CNWVirtualMachineCommands24ExecuteCommandEffectBeamEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands24ExecuteCommandEffectBeamEii_get();
   public static readonly uint _ZN25CNWVirtualMachineCommands24ExecuteCommandEffectHealEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands24ExecuteCommandEffectHealEii_get();
+  public static readonly uint _ZN25CNWVirtualMachineCommands24ExecuteCommandEffectIconEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands24ExecuteCommandEffectIconEii_get();
   public static readonly uint _ZN25CNWVirtualMachineCommands24ExecuteCommandFloatToIntEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands24ExecuteCommandFloatToIntEii_get();
   public static readonly uint _ZN25CNWVirtualMachineCommands24ExecuteCommandGetAILevelEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands24ExecuteCommandGetAILevelEii_get();
   public static readonly uint _ZN25CNWVirtualMachineCommands24ExecuteCommandGetHasFeatEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands24ExecuteCommandGetHasFeatEii_get();
@@ -5149,6 +5152,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN25CNWVirtualMachineCommands28ExecuteCommandGetStrByStrRefEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands28ExecuteCommandGetStrByStrRefEii_get();
   public static readonly uint _ZN25CNWVirtualMachineCommands28ExecuteCommandGetStringRightEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands28ExecuteCommandGetStringRightEii_get();
   public static readonly uint _ZN25CNWVirtualMachineCommands28ExecuteCommandGetUseableFlagEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands28ExecuteCommandGetUseableFlagEii_get();
+  public static readonly uint _ZN25CNWVirtualMachineCommands28ExecuteCommandHideEffectIconEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands28ExecuteCommandHideEffectIconEii_get();
   public static readonly uint _ZN25CNWVirtualMachineCommands28ExecuteCommandIntToHexStringEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands28ExecuteCommandIntToHexStringEii_get();
   public static readonly uint _ZN25CNWVirtualMachineCommands28ExecuteCommandLocationAccessEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands28ExecuteCommandLocationAccessEii_get();
   public static readonly uint _ZN25CNWVirtualMachineCommands28ExecuteCommandObjectToStringEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands28ExecuteCommandObjectToStringEii_get();
@@ -5213,6 +5217,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN25CNWVirtualMachineCommands29ExecuteCommandClearAllActionsEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands29ExecuteCommandClearAllActionsEii_get();
   public static readonly uint _ZN25CNWVirtualMachineCommands29ExecuteCommandEffectBlindnessEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands29ExecuteCommandEffectBlindnessEii_get();
   public static readonly uint _ZN25CNWVirtualMachineCommands29ExecuteCommandEffectDisappearEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands29ExecuteCommandEffectDisappearEii_get();
+  public static readonly uint _ZN25CNWVirtualMachineCommands29ExecuteCommandEffectRunScriptEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands29ExecuteCommandEffectRunScriptEii_get();
   public static readonly uint _ZN25CNWVirtualMachineCommands29ExecuteCommandEffectSanctuaryEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands29ExecuteCommandEffectSanctuaryEii_get();
   public static readonly uint _ZN25CNWVirtualMachineCommands29ExecuteCommandGetAbilityScoreEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands29ExecuteCommandGetAbilityScoreEii_get();
   public static readonly uint _ZN25CNWVirtualMachineCommands29ExecuteCommandGetAttackTargetEii = FunctionsLinuxPINVOKE._ZN25CNWVirtualMachineCommands29ExecuteCommandGetAttackTargetEii_get();
@@ -6022,12 +6027,6 @@ public static class FunctionsLinux {
   public static readonly uint _ZN4Task20CExoTaskManager_implC1Ev = FunctionsLinuxPINVOKE._ZN4Task20CExoTaskManager_implC1Ev_get();
   public static readonly uint _ZN4Task20CExoTaskManager_implC2Ev = FunctionsLinuxPINVOKE._ZN4Task20CExoTaskManager_implC2Ev_get();
   public static readonly uint _ZN4Task5QueueISt10shared_ptrINS_12CExoBaseTaskEEEEvT_m = FunctionsLinuxPINVOKE._ZN4Task5QueueISt10shared_ptrINS_12CExoBaseTaskEEEEvT_m_get();
-  public static readonly uint _ZN4Task5QueueISt10shared_ptrINS_8CExoTaskIbEEEEEvT_ = FunctionsLinuxPINVOKE._ZN4Task5QueueISt10shared_ptrINS_8CExoTaskIbEEEEEvT__get();
-  public static readonly uint _ZN4Task6CreateIbEESt10shared_ptrINS_8CExoTaskIT_EEESt8functionIFS3_vEE = FunctionsLinuxPINVOKE._ZN4Task6CreateIbEESt10shared_ptrINS_8CExoTaskIT_EEESt8functionIFS3_vEE_get();
-  public static readonly uint _ZN4Task8CExoTaskIbE3RunEv = FunctionsLinuxPINVOKE._ZN4Task8CExoTaskIbE3RunEv_get();
-  public static readonly uint _ZN4Task8CExoTaskIbED0Ev = FunctionsLinuxPINVOKE._ZN4Task8CExoTaskIbED0Ev_get();
-  public static readonly uint _ZN4Task8CExoTaskIbED1Ev = FunctionsLinuxPINVOKE._ZN4Task8CExoTaskIbED1Ev_get();
-  public static readonly uint _ZN4Task8CExoTaskIbED2Ev = FunctionsLinuxPINVOKE._ZN4Task8CExoTaskIbED2Ev_get();
   public static readonly uint _ZNK4Task12CExoBaseTask10IsFinishedEv = FunctionsLinuxPINVOKE._ZNK4Task12CExoBaseTask10IsFinishedEv_get();
   public static readonly uint _ZNK4Task12CExoBaseTask7GetNameEv = FunctionsLinuxPINVOKE._ZNK4Task12CExoBaseTask7GetNameEv_get();
   public static readonly uint _ZNK4Task12CExoBaseTask7WaitForEv = FunctionsLinuxPINVOKE._ZNK4Task12CExoBaseTask7WaitForEv_get();
@@ -6438,7 +6437,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN8CERFFile11WriteHeaderEv = FunctionsLinuxPINVOKE._ZN8CERFFile11WriteHeaderEv_get();
   public static readonly uint _ZN8CERFFile13SetNumEntriesEj = FunctionsLinuxPINVOKE._ZN8CERFFile13SetNumEntriesEj_get();
   public static readonly uint _ZN8CERFFile13WriteResourceEPctP4CResi = FunctionsLinuxPINVOKE._ZN8CERFFile13WriteResourceEPctP4CResi_get();
-  public static readonly uint _ZN8CERFFile13WriteResourceEPKctSt10shared_ptrI9DataBlockE = FunctionsLinuxPINVOKE._ZN8CERFFile13WriteResourceEPKctSt10shared_ptrI9DataBlockE_get();
+  public static readonly uint _ZN8CERFFile13WriteResourceEPKctSt10shared_ptrI8DataViewE = FunctionsLinuxPINVOKE._ZN8CERFFile13WriteResourceEPKctSt10shared_ptrI8DataViewE_get();
   public static readonly uint _ZN8CERFFile14RemoveResourceEP7CERFRes = FunctionsLinuxPINVOKE._ZN8CERFFile14RemoveResourceEP7CERFRes_get();
   public static readonly uint _ZN8CERFFile14RemoveResourceER10CExoStringt = FunctionsLinuxPINVOKE._ZN8CERFFile14RemoveResourceER10CExoStringt_get();
   public static readonly uint _ZN8CERFFile16WriteStringTableEv = FunctionsLinuxPINVOKE._ZN8CERFFile16WriteStringTableEv_get();
@@ -6624,8 +6623,8 @@ public static class FunctionsLinux {
   public static readonly uint _ZN8CNWRulesD1Ev = FunctionsLinuxPINVOKE._ZN8CNWRulesD1Ev_get();
   public static readonly uint _ZN8CNWRulesD2Ev = FunctionsLinuxPINVOKE._ZN8CNWRulesD2Ev_get();
   public static readonly uint _ZN8CNWSArea10InSubAreasE6VectorP13CExoArrayListIjE = FunctionsLinuxPINVOKE._ZN8CNWSArea10InSubAreasE6VectorP13CExoArrayListIjE_get();
-  public static readonly uint _ZN8CNWSArea10LoadSoundsEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN8CNWSArea10LoadSoundsEP7CResGFFP10CResStructi_get();
-  public static readonly uint _ZN8CNWSArea10LoadStoresEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN8CNWSArea10LoadStoresEP7CResGFFP10CResStructi_get();
+  public static readonly uint _ZN8CNWSArea10LoadSoundsEP7CResGFFP10CResStructii = FunctionsLinuxPINVOKE._ZN8CNWSArea10LoadSoundsEP7CResGFFP10CResStructii_get();
+  public static readonly uint _ZN8CNWSArea10LoadStoresEP7CResGFFP10CResStructii = FunctionsLinuxPINVOKE._ZN8CNWSArea10LoadStoresEP7CResGFFP10CResStructii_get();
   public static readonly uint _ZN8CNWSArea10SaveSoundsEP7CResGFFP10CResStructR13CExoArrayListIjEi = FunctionsLinuxPINVOKE._ZN8CNWSArea10SaveSoundsEP7CResGFFP10CResStructR13CExoArrayListIjEi_get();
   public static readonly uint _ZN8CNWSArea10SaveStoresEP7CResGFFP10CResStructR13CExoArrayListIjEi = FunctionsLinuxPINVOKE._ZN8CNWSArea10SaveStoresEP7CResGFFP10CResStructR13CExoArrayListIjEi_get();
   public static readonly uint _ZN8CNWSArea10UnloadAreaEv = FunctionsLinuxPINVOKE._ZN8CNWSArea10UnloadAreaEv_get();
@@ -6636,13 +6635,13 @@ public static class FunctionsLinux {
   public static readonly uint _ZN8CNWSArea11MAX_Y_TILESE = FunctionsLinuxPINVOKE._ZN8CNWSArea11MAX_Y_TILESE_get();
   public static readonly uint _ZN8CNWSArea12EventHandlerEjjPvjj = FunctionsLinuxPINVOKE._ZN8CNWSArea12EventHandlerEjjPvjj_get();
   public static readonly uint _ZN8CNWSArea12InterTileDFSEiiiii = FunctionsLinuxPINVOKE._ZN8CNWSArea12InterTileDFSEiiiii_get();
-  public static readonly uint _ZN8CNWSArea12LoadTriggersEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN8CNWSArea12LoadTriggersEP7CResGFFP10CResStructi_get();
+  public static readonly uint _ZN8CNWSArea12LoadTriggersEP7CResGFFP10CResStructii = FunctionsLinuxPINVOKE._ZN8CNWSArea12LoadTriggersEP7CResGFFP10CResStructii_get();
   public static readonly uint _ZN8CNWSArea12PlotGridPathEP20CPathfindInformationmb = FunctionsLinuxPINVOKE._ZN8CNWSArea12PlotGridPathEP20CPathfindInformationmb_get();
   public static readonly uint _ZN8CNWSArea12SaveTriggersEP7CResGFFP10CResStructR13CExoArrayListIjEi = FunctionsLinuxPINVOKE._ZN8CNWSArea12SaveTriggersEP7CResGFFP10CResStructR13CExoArrayListIjEi_get();
   public static readonly uint _ZN8CNWSArea13ComputeHeightE6Vector = FunctionsLinuxPINVOKE._ZN8CNWSArea13ComputeHeightE6Vector_get();
   public static readonly uint _ZN8CNWSArea13GetPVPSettingEv = FunctionsLinuxPINVOKE._ZN8CNWSArea13GetPVPSettingEv_get();
-  public static readonly uint _ZN8CNWSArea13LoadCreaturesEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN8CNWSArea13LoadCreaturesEP7CResGFFP10CResStructi_get();
-  public static readonly uint _ZN8CNWSArea13LoadWaypointsEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN8CNWSArea13LoadWaypointsEP7CResGFFP10CResStructi_get();
+  public static readonly uint _ZN8CNWSArea13LoadCreaturesEP7CResGFFP10CResStructii = FunctionsLinuxPINVOKE._ZN8CNWSArea13LoadCreaturesEP7CResGFFP10CResStructii_get();
+  public static readonly uint _ZN8CNWSArea13LoadWaypointsEP7CResGFFP10CResStructii = FunctionsLinuxPINVOKE._ZN8CNWSArea13LoadWaypointsEP7CResGFFP10CResStructii_get();
   public static readonly uint _ZN8CNWSArea13PlotSoundPathEP20CPathfindInformation = FunctionsLinuxPINVOKE._ZN8CNWSArea13PlotSoundPathEP20CPathfindInformation_get();
   public static readonly uint _ZN8CNWSArea13SaveCreaturesEP7CResGFFP10CResStructR13CExoArrayListIjEi = FunctionsLinuxPINVOKE._ZN8CNWSArea13SaveCreaturesEP7CResGFFP10CResStructR13CExoArrayListIjEi_get();
   public static readonly uint _ZN8CNWSArea13SaveWaypointsEP7CResGFFP10CResStructR13CExoArrayListIjEi = FunctionsLinuxPINVOKE._ZN8CNWSArea13SaveWaypointsEP7CResGFFP10CResStructR13CExoArrayListIjEi_get();
@@ -6651,8 +6650,8 @@ public static class FunctionsLinux {
   public static readonly uint _ZN8CNWSArea14GoalMoveDeniedEiii = FunctionsLinuxPINVOKE._ZN8CNWSArea14GoalMoveDeniedEiii_get();
   public static readonly uint _ZN8CNWSArea14GridSearchPathEi = FunctionsLinuxPINVOKE._ZN8CNWSArea14GridSearchPathEi_get();
   public static readonly uint _ZN8CNWSArea14LoadAreaHeaderEP10CResStruct = FunctionsLinuxPINVOKE._ZN8CNWSArea14LoadAreaHeaderEP10CResStruct_get();
-  public static readonly uint _ZN8CNWSArea14LoadEncountersEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN8CNWSArea14LoadEncountersEP7CResGFFP10CResStructi_get();
-  public static readonly uint _ZN8CNWSArea14LoadPlaceablesEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN8CNWSArea14LoadPlaceablesEP7CResGFFP10CResStructi_get();
+  public static readonly uint _ZN8CNWSArea14LoadEncountersEP7CResGFFP10CResStructii = FunctionsLinuxPINVOKE._ZN8CNWSArea14LoadEncountersEP7CResGFFP10CResStructii_get();
+  public static readonly uint _ZN8CNWSArea14LoadPlaceablesEP7CResGFFP10CResStructii = FunctionsLinuxPINVOKE._ZN8CNWSArea14LoadPlaceablesEP7CResGFFP10CResStructii_get();
   public static readonly uint _ZN8CNWSArea14LoadPropertiesEP7CResGFFP10CResStruct = FunctionsLinuxPINVOKE._ZN8CNWSArea14LoadPropertiesEP7CResGFFP10CResStruct_get();
   public static readonly uint _ZN8CNWSArea14RunEventScriptEiP10CExoString = FunctionsLinuxPINVOKE._ZN8CNWSArea14RunEventScriptEiP10CExoString_get();
   public static readonly uint _ZN8CNWSArea14SaveEncountersEP7CResGFFP10CResStructR13CExoArrayListIjEi = FunctionsLinuxPINVOKE._ZN8CNWSArea14SaveEncountersEP7CResGFFP10CResStructR13CExoArrayListIjEi_get();
@@ -6660,7 +6659,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN8CNWSArea14SavePropertiesEP7CResGFFP10CResStruct = FunctionsLinuxPINVOKE._ZN8CNWSArea14SavePropertiesEP7CResGFFP10CResStruct_get();
   public static readonly uint _ZN8CNWSArea14TestDirectLineEffffffi = FunctionsLinuxPINVOKE._ZN8CNWSArea14TestDirectLineEffffffi_get();
   public static readonly uint _ZN8CNWSArea15AddObjectToAreaEji = FunctionsLinuxPINVOKE._ZN8CNWSArea15AddObjectToAreaEji_get();
-  public static readonly uint _ZN8CNWSArea15LoadAreaEffectsEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN8CNWSArea15LoadAreaEffectsEP7CResGFFP10CResStructi_get();
+  public static readonly uint _ZN8CNWSArea15LoadAreaEffectsEP7CResGFFP10CResStructii = FunctionsLinuxPINVOKE._ZN8CNWSArea15LoadAreaEffectsEP7CResGFFP10CResStructii_get();
   public static readonly uint _ZN8CNWSArea15LoadTileSetInfoEP10CResStruct = FunctionsLinuxPINVOKE._ZN8CNWSArea15LoadTileSetInfoEP10CResStruct_get();
   public static readonly uint _ZN8CNWSArea15NWAreaAsNWSAreaEv = FunctionsLinuxPINVOKE._ZN8CNWSArea15NWAreaAsNWSAreaEv_get();
   public static readonly uint _ZN8CNWSArea15SaveAreaEffectsEP7CResGFFP10CResStructR13CExoArrayListIjEi = FunctionsLinuxPINVOKE._ZN8CNWSArea15SaveAreaEffectsEP7CResGFFP10CResStructR13CExoArrayListIjEi_get();
@@ -6712,17 +6711,18 @@ public static class FunctionsLinux {
   public static readonly uint _ZN8CNWSArea31MAX_OBJECT_CHATWHISPER_DISTANCEE = FunctionsLinuxPINVOKE._ZN8CNWSArea31MAX_OBJECT_CHATWHISPER_DISTANCEE_get();
   public static readonly uint _ZN8CNWSArea32MAX_OBJECT_CONVERSATION_DISTANCEE = FunctionsLinuxPINVOKE._ZN8CNWSArea32MAX_OBJECT_CONVERSATION_DISTANCEE_get();
   public static readonly uint _ZN8CNWSArea7GetTileE6Vector = FunctionsLinuxPINVOKE._ZN8CNWSArea7GetTileE6Vector_get();
-  public static readonly uint _ZN8CNWSArea7LoadGITEi = FunctionsLinuxPINVOKE._ZN8CNWSArea7LoadGITEi_get();
-  public static readonly uint _ZN8CNWSArea7LoadGITEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN8CNWSArea7LoadGITEP7CResGFFP10CResStructi_get();
+  public static readonly uint _ZN8CNWSArea7LoadGITEii = FunctionsLinuxPINVOKE._ZN8CNWSArea7LoadGITEii_get();
+  public static readonly uint _ZN8CNWSArea7LoadGITEP7CResGFFP10CResStructii = FunctionsLinuxPINVOKE._ZN8CNWSArea7LoadGITEP7CResGFFP10CResStructii_get();
   public static readonly uint _ZN8CNWSArea7SaveGITEP7CResGFFP10CResStructR13CExoArrayListIjEi = FunctionsLinuxPINVOKE._ZN8CNWSArea7SaveGITEP7CResGFFP10CResStructR13CExoArrayListIjEi_get();
   public static readonly uint _ZN8CNWSArea7SaveGITEP8CERFFileR10CExoStringR13CExoArrayListIjE = FunctionsLinuxPINVOKE._ZN8CNWSArea7SaveGITEP8CERFFileR10CExoStringR13CExoArrayListIjE_get();
   public static readonly uint _ZN8CNWSArea8AIUpdateEv = FunctionsLinuxPINVOKE._ZN8CNWSArea8AIUpdateEv_get();
-  public static readonly uint _ZN8CNWSArea8LoadAreaEiP7CResGFFP10CResStruct = FunctionsLinuxPINVOKE._ZN8CNWSArea8LoadAreaEiP7CResGFFP10CResStruct_get();
+  public static readonly uint _ZN8CNWSArea8LoadAreaEiiP7CResGFFP10CResStruct = FunctionsLinuxPINVOKE._ZN8CNWSArea8LoadAreaEiiP7CResGFFP10CResStruct_get();
   public static readonly uint _ZN8CNWSArea8PlotPathEP20CPathfindInformationm = FunctionsLinuxPINVOKE._ZN8CNWSArea8PlotPathEP20CPathfindInformationm_get();
+  public static readonly uint _ZN8CNWSArea8SaveAreaEP7CResGFFP10CResStruct = FunctionsLinuxPINVOKE._ZN8CNWSArea8SaveAreaEP7CResGFFP10CResStruct_get();
   public static readonly uint _ZN8CNWSArea8SaveAreaEP8CERFFileR10CExoString = FunctionsLinuxPINVOKE._ZN8CNWSArea8SaveAreaEP8CERFFileR10CExoString_get();
   public static readonly uint _ZN8CNWSArea9AsNWSAreaEv = FunctionsLinuxPINVOKE._ZN8CNWSArea9AsNWSAreaEv_get();
-  public static readonly uint _ZN8CNWSArea9LoadDoorsEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN8CNWSArea9LoadDoorsEP7CResGFFP10CResStructi_get();
-  public static readonly uint _ZN8CNWSArea9LoadItemsEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN8CNWSArea9LoadItemsEP7CResGFFP10CResStructi_get();
+  public static readonly uint _ZN8CNWSArea9LoadDoorsEP7CResGFFP10CResStructii = FunctionsLinuxPINVOKE._ZN8CNWSArea9LoadDoorsEP7CResGFFP10CResStructii_get();
+  public static readonly uint _ZN8CNWSArea9LoadItemsEP7CResGFFP10CResStructii = FunctionsLinuxPINVOKE._ZN8CNWSArea9LoadItemsEP7CResGFFP10CResStructii_get();
   public static readonly uint _ZN8CNWSArea9SaveDoorsEP7CResGFFP10CResStructR13CExoArrayListIjEi = FunctionsLinuxPINVOKE._ZN8CNWSArea9SaveDoorsEP7CResGFFP10CResStructR13CExoArrayListIjEi_get();
   public static readonly uint _ZN8CNWSArea9SaveItemsEP7CResGFFP10CResStructR13CExoArrayListIjEi = FunctionsLinuxPINVOKE._ZN8CNWSArea9SaveItemsEP7CResGFFP10CResStructR13CExoArrayListIjEi_get();
   public static readonly uint _ZN8CNWSAreaC1E7CResRefij = FunctionsLinuxPINVOKE._ZN8CNWSAreaC1E7CResRefij_get();
@@ -6766,7 +6766,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN8CNWSItem14GetDamageFlagsEv = FunctionsLinuxPINVOKE._ZN8CNWSItem14GetDamageFlagsEv_get();
   public static readonly uint _ZN8CNWSItem14InitRepositoryEj = FunctionsLinuxPINVOKE._ZN8CNWSItem14InitRepositoryEj_get();
   public static readonly uint _ZN8CNWSItem14RemoveFromAreaEv = FunctionsLinuxPINVOKE._ZN8CNWSItem14RemoveFromAreaEv_get();
-  public static readonly uint _ZN8CNWSItem15LoadDataFromGffEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN8CNWSItem15LoadDataFromGffEP7CResGFFP10CResStructi_get();
+  public static readonly uint _ZN8CNWSItem15LoadDataFromGffEP7CResGFFP10CResStructii = FunctionsLinuxPINVOKE._ZN8CNWSItem15LoadDataFromGffEP7CResGFFP10CResStructii_get();
   public static readonly uint _ZN8CNWSItem16GetMinEquipLevelEv = FunctionsLinuxPINVOKE._ZN8CNWSItem16GetMinEquipLevelEv_get();
   public static readonly uint _ZN8CNWSItem16LoadFromTemplateE7CResRefP10CExoString = FunctionsLinuxPINVOKE._ZN8CNWSItem16LoadFromTemplateE7CResRefP10CExoString_get();
   public static readonly uint _ZN8CNWSItem17AddActivePropertyE15CNWItemProperty = FunctionsLinuxPINVOKE._ZN8CNWSItem17AddActivePropertyE15CNWItemProperty_get();
@@ -6786,7 +6786,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN8CNWSItem21RemovePassivePropertyEi = FunctionsLinuxPINVOKE._ZN8CNWSItem21RemovePassivePropertyEi_get();
   public static readonly uint _ZN8CNWSItem22CloseItemForAllPlayersEv = FunctionsLinuxPINVOKE._ZN8CNWSItem22CloseItemForAllPlayersEv_get();
   public static readonly uint _ZN8CNWSItem23GetPropertyByTypeExistsEtt = FunctionsLinuxPINVOKE._ZN8CNWSItem23GetPropertyByTypeExistsEtt_get();
-  public static readonly uint _ZN8CNWSItem25ReadContainerItemsFromGffEP7CResGFFP10CResStruct = FunctionsLinuxPINVOKE._ZN8CNWSItem25ReadContainerItemsFromGffEP7CResGFFP10CResStruct_get();
+  public static readonly uint _ZN8CNWSItem25ReadContainerItemsFromGffEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN8CNWSItem25ReadContainerItemsFromGffEP7CResGFFP10CResStructi_get();
   public static readonly uint _ZN8CNWSItem25RestoreUsedActivePropertyEP15CNWItemPropertyi = FunctionsLinuxPINVOKE._ZN8CNWSItem25RestoreUsedActivePropertyEP15CNWItemPropertyi_get();
   public static readonly uint _ZN8CNWSItem26UpdateUsedActivePropertiesEi = FunctionsLinuxPINVOKE._ZN8CNWSItem26UpdateUsedActivePropertiesEi_get();
   public static readonly uint _ZN8CNWSItem27RestoreUsedActivePropertiesEi = FunctionsLinuxPINVOKE._ZN8CNWSItem27RestoreUsedActivePropertiesEi_get();
@@ -6794,7 +6794,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN8CNWSItem7GetCostEiiii = FunctionsLinuxPINVOKE._ZN8CNWSItem7GetCostEiiii_get();
   public static readonly uint _ZN8CNWSItem8AIUpdateEv = FunctionsLinuxPINVOKE._ZN8CNWSItem8AIUpdateEv_get();
   public static readonly uint _ZN8CNWSItem8CopyItemEPS_i = FunctionsLinuxPINVOKE._ZN8CNWSItem8CopyItemEPS_i_get();
-  public static readonly uint _ZN8CNWSItem8LoadItemEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN8CNWSItem8LoadItemEP7CResGFFP10CResStructi_get();
+  public static readonly uint _ZN8CNWSItem8LoadItemEP7CResGFFP10CResStructii = FunctionsLinuxPINVOKE._ZN8CNWSItem8LoadItemEP7CResGFFP10CResStructii_get();
   public static readonly uint _ZN8CNWSItem8SaveItemEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN8CNWSItem8SaveItemEP7CResGFFP10CResStructi_get();
   public static readonly uint _ZN8CNWSItem9AddToAreaEP8CNWSAreafffi = FunctionsLinuxPINVOKE._ZN8CNWSItem9AddToAreaEP8CNWSAreafffi_get();
   public static readonly uint _ZN8CNWSItem9AsNWSItemEv = FunctionsLinuxPINVOKE._ZN8CNWSItem9AsNWSItemEv_get();
@@ -7078,7 +7078,7 @@ public static class FunctionsLinux {
   public static readonly uint _ZN9CNWSStore8AIUpdateEv = FunctionsLinuxPINVOKE._ZN9CNWSStore8AIUpdateEv_get();
   public static readonly uint _ZN9CNWSStore8SellItemEP8CNWSItemP12CNWSCreaturehh = FunctionsLinuxPINVOKE._ZN9CNWSStore8SellItemEP8CNWSItemP12CNWSCreaturehh_get();
   public static readonly uint _ZN9CNWSStore9AddToAreaEP8CNWSAreafffi = FunctionsLinuxPINVOKE._ZN9CNWSStore9AddToAreaEP8CNWSAreafffi_get();
-  public static readonly uint _ZN9CNWSStore9LoadStoreEP7CResGFFP10CResStructP10CExoString = FunctionsLinuxPINVOKE._ZN9CNWSStore9LoadStoreEP7CResGFFP10CResStructP10CExoString_get();
+  public static readonly uint _ZN9CNWSStore9LoadStoreEP7CResGFFP10CResStructiP10CExoString = FunctionsLinuxPINVOKE._ZN9CNWSStore9LoadStoreEP7CResGFFP10CResStructiP10CExoString_get();
   public static readonly uint _ZN9CNWSStore9SaveStoreEP7CResGFFP10CResStructi = FunctionsLinuxPINVOKE._ZN9CNWSStore9SaveStoreEP7CResGFFP10CResStructi_get();
   public static readonly uint _ZN9CNWSStoreC1Ej = FunctionsLinuxPINVOKE._ZN9CNWSStoreC1Ej_get();
   public static readonly uint _ZN9CNWSStoreC2Ej = FunctionsLinuxPINVOKE._ZN9CNWSStoreC2Ej_get();

@@ -1380,6 +1380,21 @@ public unsafe class CNWSEffectListHandler : CGameEffectApplierRemover {
     return retVal;
   }
 
+  public int OnApplyRunScript(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyRunScript__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
+  }
+
+  public int OnApplyRunScript(CNWSObject pObject, CGameEffect pEffect) {
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyRunScript__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
+  }
+
+  public int OnRemoveRunScript(CNWSObject pObject, CGameEffect pEffect) {
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveRunScript(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
+  }
+
 }
 
 }

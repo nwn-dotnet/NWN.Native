@@ -1494,23 +1494,28 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
     return ret;
   }
 
+  public uint ReadStatsFromGff(CResGFF pRes, CResStruct pGffStructWithCreatureStats, CNWSCreatureAppearanceInfo pAppInfo, int bIsSaveGame, int bIsPlayerCharacter, int bCopyObject, int bLoadOID) {
+    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_ReadStatsFromGff__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats), CNWSCreatureAppearanceInfo.getCPtr(pAppInfo), bIsSaveGame, bIsPlayerCharacter, bCopyObject, bLoadOID);
+    return retVal;
+  }
+
   public uint ReadStatsFromGff(CResGFF pRes, CResStruct pGffStructWithCreatureStats, CNWSCreatureAppearanceInfo pAppInfo, int bIsSaveGame, int bIsPlayerCharacter, int bCopyObject) {
-    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_ReadStatsFromGff__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats), CNWSCreatureAppearanceInfo.getCPtr(pAppInfo), bIsSaveGame, bIsPlayerCharacter, bCopyObject);
+    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_ReadStatsFromGff__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats), CNWSCreatureAppearanceInfo.getCPtr(pAppInfo), bIsSaveGame, bIsPlayerCharacter, bCopyObject);
     return retVal;
   }
 
   public uint ReadStatsFromGff(CResGFF pRes, CResStruct pGffStructWithCreatureStats, CNWSCreatureAppearanceInfo pAppInfo, int bIsSaveGame, int bIsPlayerCharacter) {
-    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_ReadStatsFromGff__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats), CNWSCreatureAppearanceInfo.getCPtr(pAppInfo), bIsSaveGame, bIsPlayerCharacter);
+    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_ReadStatsFromGff__SWIG_2(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats), CNWSCreatureAppearanceInfo.getCPtr(pAppInfo), bIsSaveGame, bIsPlayerCharacter);
     return retVal;
   }
 
   public uint ReadStatsFromGff(CResGFF pRes, CResStruct pGffStructWithCreatureStats, CNWSCreatureAppearanceInfo pAppInfo, int bIsSaveGame) {
-    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_ReadStatsFromGff__SWIG_2(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats), CNWSCreatureAppearanceInfo.getCPtr(pAppInfo), bIsSaveGame);
+    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_ReadStatsFromGff__SWIG_3(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats), CNWSCreatureAppearanceInfo.getCPtr(pAppInfo), bIsSaveGame);
     return retVal;
   }
 
   public uint ReadStatsFromGff(CResGFF pRes, CResStruct pGffStructWithCreatureStats, CNWSCreatureAppearanceInfo pAppInfo) {
-    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_ReadStatsFromGff__SWIG_3(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats), CNWSCreatureAppearanceInfo.getCPtr(pAppInfo));
+    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_ReadStatsFromGff__SWIG_4(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats), CNWSCreatureAppearanceInfo.getCPtr(pAppInfo));
     return retVal;
   }
 

@@ -743,6 +743,28 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
 
   }
 
+  public int m_bIsMonkWeapon {
+    set {
+      NWNXLibPINVOKE.CNWBaseItem_m_bIsMonkWeapon_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWBaseItem_m_bIsMonkWeapon_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public byte m_nWeaponFinesseMinimumCreatureSize {
+    set {
+      NWNXLibPINVOKE.CNWBaseItem_m_nWeaponFinesseMinimumCreatureSize_set(swigCPtr, value);
+    } 
+    get {
+      byte retVal = NWNXLibPINVOKE.CNWBaseItem_m_nWeaponFinesseMinimumCreatureSize_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public CNWBaseItem() : this(NWNXLibPINVOKE.new_CNWBaseItem(), true) {
   }
 

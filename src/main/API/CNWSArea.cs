@@ -902,23 +902,28 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
     return retVal;
   }
 
-  public int LoadArea(int bLoadStateInfo, CResGFF cOverrideGitGFF, CResStruct cOverrideGitTopLevelStruct) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadArea__SWIG_0(swigCPtr, bLoadStateInfo, CResGFF.getCPtr(cOverrideGitGFF), CResStruct.getCPtr(cOverrideGitTopLevelStruct));
+  public int LoadArea(int bLoadStateInfo, int bLoadOID, CResGFF cOverrideGitGFF, CResStruct cOverrideGitTopLevelStruct) {
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadArea__SWIG_0(swigCPtr, bLoadStateInfo, bLoadOID, CResGFF.getCPtr(cOverrideGitGFF), CResStruct.getCPtr(cOverrideGitTopLevelStruct));
     return retVal;
   }
 
-  public int LoadArea(int bLoadStateInfo, CResGFF cOverrideGitGFF) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadArea__SWIG_1(swigCPtr, bLoadStateInfo, CResGFF.getCPtr(cOverrideGitGFF));
+  public int LoadArea(int bLoadStateInfo, int bLoadOID, CResGFF cOverrideGitGFF) {
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadArea__SWIG_1(swigCPtr, bLoadStateInfo, bLoadOID, CResGFF.getCPtr(cOverrideGitGFF));
+    return retVal;
+  }
+
+  public int LoadArea(int bLoadStateInfo, int bLoadOID) {
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadArea__SWIG_2(swigCPtr, bLoadStateInfo, bLoadOID);
     return retVal;
   }
 
   public int LoadArea(int bLoadStateInfo) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadArea__SWIG_2(swigCPtr, bLoadStateInfo);
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadArea__SWIG_3(swigCPtr, bLoadStateInfo);
     return retVal;
   }
 
   public int LoadArea() {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadArea__SWIG_3(swigCPtr);
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadArea__SWIG_4(swigCPtr);
     return retVal;
   }
 
@@ -987,8 +992,12 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
     return retVal;
   }
 
+  public void SaveArea(CResGFF pRes, CResStruct pStruct) {
+    NWNXLibPINVOKE.CNWSArea_SaveArea__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+  }
+
   public void SaveArea(CERFFile cSaveFile, CExoString sName) {
-    NWNXLibPINVOKE.CNWSArea_SaveArea(swigCPtr, CERFFile.getCPtr(cSaveFile), CExoString.getCPtr(sName));
+    NWNXLibPINVOKE.CNWSArea_SaveArea__SWIG_1(swigCPtr, CERFFile.getCPtr(cSaveFile), CExoString.getCPtr(sName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -1002,13 +1011,13 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public int LoadGIT(int bLoadStateInfo) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadGIT__SWIG_0(swigCPtr, bLoadStateInfo);
+  public int LoadGIT(int bLoadStateInfo, int bLoadOID) {
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadGIT__SWIG_0(swigCPtr, bLoadStateInfo, bLoadOID);
     return retVal;
   }
 
-  public void LoadGIT(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    NWNXLibPINVOKE.CNWSArea_LoadGIT__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
+  public void LoadGIT(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo, int bLoadOID) {
+    NWNXLibPINVOKE.CNWSArea_LoadGIT__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo, bLoadOID);
   }
 
   public void SmoothCornerOptimize(int nOldWayPoints, float* pfOldWayPoints, int* nNewWayPoints, float** pfNewWayPoints) {
@@ -1198,13 +1207,8 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
     return retVal;
   }
 
-  public int LoadCreatures(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadCreatures__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
-    return retVal;
-  }
-
-  public int LoadCreatures(CResGFF pRes, CResStruct pStruct) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadCreatures__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+  public int LoadCreatures(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo, int bLoadOID) {
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadCreatures(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo, bLoadOID);
     return retVal;
   }
 
@@ -1213,93 +1217,48 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
     return retVal;
   }
 
-  public int LoadItems(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadItems__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
+  public int LoadItems(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo, int bLoadOID) {
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadItems(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo, bLoadOID);
     return retVal;
   }
 
-  public int LoadItems(CResGFF pRes, CResStruct pStruct) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadItems__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+  public int LoadDoors(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo, int bLoadOID) {
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadDoors(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo, bLoadOID);
     return retVal;
   }
 
-  public int LoadDoors(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadDoors__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
+  public int LoadTriggers(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo, int bLoadOID) {
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadTriggers(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo, bLoadOID);
     return retVal;
   }
 
-  public int LoadDoors(CResGFF pRes, CResStruct pStruct) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadDoors__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+  public int LoadEncounters(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo, int bLoadOID) {
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadEncounters(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo, bLoadOID);
     return retVal;
   }
 
-  public int LoadTriggers(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadTriggers__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
+  public int LoadWaypoints(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo, int bLoadOID) {
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadWaypoints(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo, bLoadOID);
     return retVal;
   }
 
-  public int LoadTriggers(CResGFF pRes, CResStruct pStruct) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadTriggers__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+  public int LoadSounds(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo, int bLoadOID) {
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadSounds(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo, bLoadOID);
     return retVal;
   }
 
-  public int LoadEncounters(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadEncounters__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
+  public int LoadPlaceables(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo, int bLoadOID) {
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadPlaceables(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo, bLoadOID);
     return retVal;
   }
 
-  public int LoadEncounters(CResGFF pRes, CResStruct pStruct) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadEncounters__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+  public int LoadStores(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo, int bLoadOID) {
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadStores(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo, bLoadOID);
     return retVal;
   }
 
-  public int LoadWaypoints(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadWaypoints__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
-    return retVal;
-  }
-
-  public int LoadWaypoints(CResGFF pRes, CResStruct pStruct) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadWaypoints__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return retVal;
-  }
-
-  public int LoadSounds(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadSounds__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
-    return retVal;
-  }
-
-  public int LoadSounds(CResGFF pRes, CResStruct pStruct) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadSounds__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return retVal;
-  }
-
-  public int LoadPlaceables(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadPlaceables__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
-    return retVal;
-  }
-
-  public int LoadPlaceables(CResGFF pRes, CResStruct pStruct) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadPlaceables__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return retVal;
-  }
-
-  public int LoadStores(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadStores__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
-    return retVal;
-  }
-
-  public int LoadStores(CResGFF pRes, CResStruct pStruct) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadStores__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
-    return retVal;
-  }
-
-  public int LoadAreaEffects(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadAreaEffects__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo);
-    return retVal;
-  }
-
-  public int LoadAreaEffects(CResGFF pRes, CResStruct pStruct) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_LoadAreaEffects__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+  public int LoadAreaEffects(CResGFF pRes, CResStruct pStruct, int bLoadStateInfo, int bLoadOID) {
+    int retVal = NWNXLibPINVOKE.CNWSArea_LoadAreaEffects(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), bLoadStateInfo, bLoadOID);
     return retVal;
   }
 

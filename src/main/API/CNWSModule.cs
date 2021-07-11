@@ -1086,6 +1086,28 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
     } 
   }
 
+  public CGameEffect m_pLastRunScriptEffect {
+    set {
+      NWNXLibPINVOKE.CNWSModule_m_pLastRunScriptEffect_set(swigCPtr, CGameEffect.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_m_pLastRunScriptEffect_get(swigCPtr);
+      CGameEffect ret = (cPtr == global::System.IntPtr.Zero) ? null : new CGameEffect(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public int m_nLastRunScriptEffectScriptType {
+    set {
+      NWNXLibPINVOKE.CNWSModule_m_nLastRunScriptEffectScriptType_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_nLastRunScriptEffectScriptType_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public SWIGTYPE_p_std__shared_ptrT_void_p_t m_sqlite3 {
     set {
       NWNXLibPINVOKE.CNWSModule_m_sqlite3_set(swigCPtr, SWIGTYPE_p_std__shared_ptrT_void_p_t.getCPtr(value));

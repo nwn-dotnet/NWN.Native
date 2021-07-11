@@ -555,13 +555,13 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
     return retVal;
   }
 
-  public int LoadItem(CResGFF pRes, CResStruct cItemStruct, int bIsInsideAContainer) {
-    int retVal = NWNXLibPINVOKE.CNWSItem_LoadItem__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cItemStruct), bIsInsideAContainer);
+  public int LoadItem(CResGFF pRes, CResStruct cItemStruct, int bLoadOID, int bIsInsideAContainer) {
+    int retVal = NWNXLibPINVOKE.CNWSItem_LoadItem__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cItemStruct), bLoadOID, bIsInsideAContainer);
     return retVal;
   }
 
-  public int LoadItem(CResGFF pRes, CResStruct cItemStruct) {
-    int retVal = NWNXLibPINVOKE.CNWSItem_LoadItem__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cItemStruct));
+  public int LoadItem(CResGFF pRes, CResStruct cItemStruct, int bLoadOID) {
+    int retVal = NWNXLibPINVOKE.CNWSItem_LoadItem__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cItemStruct), bLoadOID);
     return retVal;
   }
 
@@ -614,13 +614,13 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
     return retVal;
   }
 
-  public int LoadDataFromGff(CResGFF pRes, CResStruct pCreatureStruct, int bIsInsideAContainer) {
-    int retVal = NWNXLibPINVOKE.CNWSItem_LoadDataFromGff__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pCreatureStruct), bIsInsideAContainer);
+  public int LoadDataFromGff(CResGFF pRes, CResStruct pCreatureStruct, int bLoadOID, int bIsInsideAContainer) {
+    int retVal = NWNXLibPINVOKE.CNWSItem_LoadDataFromGff__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pCreatureStruct), bLoadOID, bIsInsideAContainer);
     return retVal;
   }
 
-  public int LoadDataFromGff(CResGFF pRes, CResStruct pCreatureStruct) {
-    int retVal = NWNXLibPINVOKE.CNWSItem_LoadDataFromGff__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pCreatureStruct));
+  public int LoadDataFromGff(CResGFF pRes, CResStruct pCreatureStruct, int bLoadOID) {
+    int retVal = NWNXLibPINVOKE.CNWSItem_LoadDataFromGff__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pCreatureStruct), bLoadOID);
     return retVal;
   }
 
@@ -658,8 +658,8 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
     return retVal;
   }
 
-  public void ReadContainerItemsFromGff(CResGFF pRes, CResStruct pGffItemStruct) {
-    NWNXLibPINVOKE.CNWSItem_ReadContainerItemsFromGff(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffItemStruct));
+  public void ReadContainerItemsFromGff(CResGFF pRes, CResStruct pGffItemStruct, int bLoadOID) {
+    NWNXLibPINVOKE.CNWSItem_ReadContainerItemsFromGff(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffItemStruct), bLoadOID);
   }
 
   public uint GetCost(int bIncludeStackSize, int bIdentifiedCost, int bUseILRStackSize, int bIgnorePlotFlag) {

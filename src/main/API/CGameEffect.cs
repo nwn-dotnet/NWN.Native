@@ -462,8 +462,12 @@ public unsafe class CGameEffect : global::System.IDisposable {
     NWNXLibPINVOKE.CGameEffect_SetLinked(swigCPtr, CGameEffect.getCPtr(pLeft), CGameEffect.getCPtr(pRight));
   }
 
+  public void UpdateLinked(int bUpdateIconVisibility) {
+    NWNXLibPINVOKE.CGameEffect_UpdateLinked__SWIG_0(swigCPtr, bUpdateIconVisibility);
+  }
+
   public void UpdateLinked() {
-    NWNXLibPINVOKE.CGameEffect_UpdateLinked(swigCPtr);
+    NWNXLibPINVOKE.CGameEffect_UpdateLinked__SWIG_1(swigCPtr);
   }
 
   public void SaveGameEffect(CResGFF pRes, CResStruct pStruct) {

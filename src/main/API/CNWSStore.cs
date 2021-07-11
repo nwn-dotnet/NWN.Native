@@ -293,13 +293,13 @@ public unsafe class CNWSStore : CNWSObject {
     return retVal;
   }
 
-  public int LoadStore(CResGFF pRes, CResStruct cStoreStruct, CExoString pTag) {
-    int retVal = NWNXLibPINVOKE.CNWSStore_LoadStore__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cStoreStruct), CExoString.getCPtr(pTag));
+  public int LoadStore(CResGFF pRes, CResStruct cStoreStruct, int bLoadOID, CExoString pTag) {
+    int retVal = NWNXLibPINVOKE.CNWSStore_LoadStore__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cStoreStruct), bLoadOID, CExoString.getCPtr(pTag));
     return retVal;
   }
 
-  public int LoadStore(CResGFF pRes, CResStruct cStoreStruct) {
-    int retVal = NWNXLibPINVOKE.CNWSStore_LoadStore__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cStoreStruct));
+  public int LoadStore(CResGFF pRes, CResStruct cStoreStruct, int bLoadOID) {
+    int retVal = NWNXLibPINVOKE.CNWSStore_LoadStore__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cStoreStruct), bLoadOID);
     return retVal;
   }
 

@@ -665,6 +665,11 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     return retVal;
   }
 
+  public int ExecuteCommandEffectIcon(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandEffectIcon(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
   public int ExecuteCommandEffectImmunity(int nCommandId, int nParameters) {
     int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandEffectImmunity(swigCPtr, nCommandId, nParameters);
     return retVal;
@@ -717,6 +722,11 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
 
   public int ExecuteCommandEffectResurrection(int nCommandId, int nParameters) {
     int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandEffectResurrection(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandEffectRunScript(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandEffectRunScript(swigCPtr, nCommandId, nParameters);
     return retVal;
   }
 
@@ -2327,6 +2337,11 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
 
   public int ExecuteCommandGetIsPossessedFamiliar(int nCommandId, int nParameters) {
     int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandGetIsPossessedFamiliar(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandHideEffectIcon(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandHideEffectIcon(swigCPtr, nCommandId, nParameters);
     return retVal;
   }
 

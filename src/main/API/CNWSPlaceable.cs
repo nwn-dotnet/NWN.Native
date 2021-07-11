@@ -882,13 +882,13 @@ public unsafe class CNWSPlaceable : CNWSObject {
     NWNXLibPINVOKE.CNWSPlaceable_EventHandler(swigCPtr, nEventId, nCallerObjectId, (global::System.IntPtr)pScript, nCalendarDay, nTimeOfDay);
   }
 
-  public int LoadPlaceable(CResGFF pRes, CResStruct cPlaceableStruct, CExoString pTag) {
-    int retVal = NWNXLibPINVOKE.CNWSPlaceable_LoadPlaceable__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cPlaceableStruct), CExoString.getCPtr(pTag));
+  public int LoadPlaceable(CResGFF pRes, CResStruct cPlaceableStruct, int bLoadOID, CExoString pTag) {
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_LoadPlaceable__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cPlaceableStruct), bLoadOID, CExoString.getCPtr(pTag));
     return retVal;
   }
 
-  public int LoadPlaceable(CResGFF pRes, CResStruct cPlaceableStruct) {
-    int retVal = NWNXLibPINVOKE.CNWSPlaceable_LoadPlaceable__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cPlaceableStruct));
+  public int LoadPlaceable(CResGFF pRes, CResStruct cPlaceableStruct, int bLoadOID) {
+    int retVal = NWNXLibPINVOKE.CNWSPlaceable_LoadPlaceable__SWIG_1(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(cPlaceableStruct), bLoadOID);
     return retVal;
   }
 

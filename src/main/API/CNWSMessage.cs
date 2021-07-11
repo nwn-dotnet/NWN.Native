@@ -464,8 +464,8 @@ public unsafe class CNWSMessage : CNWMessage {
     return retVal;
   }
 
-  public int SendServerToPlayerModule_EndGame(uint nPlayerId, CExoString sMovieName) {
-    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_EndGame(swigCPtr, nPlayerId, CExoString.getCPtr(sMovieName));
+  public int SendServerToPlayerModule_EndGame(CNWSPlayer pPlayer, CExoString sMovieName, SWIGTYPE_p_Hash__SHA1 nwsync) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerModule_EndGame(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CExoString.getCPtr(sMovieName), SWIGTYPE_p_Hash__SHA1.getCPtr(nwsync));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
