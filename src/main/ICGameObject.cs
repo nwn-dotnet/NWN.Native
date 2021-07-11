@@ -8,11 +8,14 @@
 // the SWIG interface file instead.
 //------------------------------------------------------------------------------
 
+using System;
+
 namespace NWN.Native.API {
 
 public interface ICGameObject {
   [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
   global::System.Runtime.InteropServices.HandleRef GetInterfaceCPtr();
+  public IntPtr Pointer { get; }
   public uint m_idSelf { set; get; }
   public byte m_nObjectType { set; get; }
   public unsafe void* m_pNwnxData { set; get; }
