@@ -621,6 +621,11 @@ public unsafe class CNWArea : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public void GetStaticObjectBoundingBox(int nStaticObjectIndex, Vector vMinimum, Vector vMaximum) {
+    NWNXLibPINVOKE.CNWArea_GetStaticObjectBoundingBox(swigCPtr, nStaticObjectIndex, Vector.getCPtr(vMinimum), Vector.getCPtr(vMaximum));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
   public int AddStaticBoundingBox(uint oidObject, Vector vMinimum, Vector vMaximum) {
     int retVal = NWNXLibPINVOKE.CNWArea_AddStaticBoundingBox(swigCPtr, oidObject, Vector.getCPtr(vMinimum), Vector.getCPtr(vMaximum));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();

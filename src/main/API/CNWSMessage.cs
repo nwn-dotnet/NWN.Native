@@ -1928,6 +1928,16 @@ public unsafe class CNWSMessage : CNWMessage {
     return retVal;
   }
 
+  public int SendServerToPlayerGuiEvent_Disable(uint nPlayerId, int nGuiElement, int bDisable) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiEvent_Disable(swigCPtr, nPlayerId, nGuiElement, bDisable);
+    return retVal;
+  }
+
+  public int HandlePlayerToServerGuiEvent(CNWSPlayer pPlayer, byte nMinor) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerGuiEvent(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
+  }
+
 }
 
 }

@@ -1120,6 +1120,83 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
     } 
   }
 
+  public uint m_oidLastGuiEventPlayer {
+    set {
+      NWNXLibPINVOKE.CNWSModule_m_oidLastGuiEventPlayer_set(swigCPtr, value);
+    } 
+    get {
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastGuiEventPlayer_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public int m_nLastGuiEventType {
+    set {
+      NWNXLibPINVOKE.CNWSModule_m_nLastGuiEventType_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_nLastGuiEventType_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public int m_nLastGuiEventInteger {
+    set {
+      NWNXLibPINVOKE.CNWSModule_m_nLastGuiEventInteger_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_nLastGuiEventInteger_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public uint m_oidLastGuiEventObject {
+    set {
+      NWNXLibPINVOKE.CNWSModule_m_oidLastGuiEventObject_set(swigCPtr, value);
+    } 
+    get {
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastGuiEventObject_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public uint m_oidLastPlayerToDoTileAction {
+    set {
+      NWNXLibPINVOKE.CNWSModule_m_oidLastPlayerToDoTileAction_set(swigCPtr, value);
+    } 
+    get {
+      uint retVal = NWNXLibPINVOKE.CNWSModule_m_oidLastPlayerToDoTileAction_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public int m_nLastPlayerTileActionId {
+    set {
+      NWNXLibPINVOKE.CNWSModule_m_nLastPlayerTileActionId_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_nLastPlayerTileActionId_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public Vector m_vLastPlayerTileActionPosition {
+    set {
+      NWNXLibPINVOKE.CNWSModule_m_vLastPlayerTileActionPosition_set(swigCPtr, Vector.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_m_vLastPlayerTileActionPosition_get(swigCPtr);
+      Vector ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector(cPtr, false);
+      return ret;
+    } 
+  }
+
   public CNWSModule(CExoString sModuleFilename, CUUID cModUUID, int bSetAutoRequest, int bIsSaveGame, int nSourceType) : this(NWNXLibPINVOKE.new_CNWSModule__SWIG_0(CExoString.getCPtr(sModuleFilename), CUUID.getCPtr(cModUUID), bSetAutoRequest, bIsSaveGame, nSourceType), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }

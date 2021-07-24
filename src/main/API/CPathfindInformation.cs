@@ -1148,10 +1148,6 @@ public unsafe class CPathfindInformation : global::System.IDisposable {
     return retVal;
   }
 
-  public void SetGridSearchActivePaths(int nCount) {
-    NWNXLibPINVOKE.CPathfindInformation_SetGridSearchActivePaths(swigCPtr, nCount);
-  }
-
   public void ComputeGridStepTolerance() {
     NWNXLibPINVOKE.CPathfindInformation_ComputeGridStepTolerance(swigCPtr);
   }

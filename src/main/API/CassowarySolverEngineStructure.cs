@@ -90,18 +90,6 @@ public unsafe class CassowarySolverEngineStructure : global::System.IDisposable 
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public SWIGTYPE_p_std__shared_ptrT_void_p_t m_shared {
-    set {
-      NWNXLibPINVOKE.CassowarySolverEngineStructure_m_shared_set(swigCPtr, SWIGTYPE_p_std__shared_ptrT_void_p_t.getCPtr(value));
-      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    } 
-    get {
-      SWIGTYPE_p_std__shared_ptrT_void_p_t ret = new SWIGTYPE_p_std__shared_ptrT_void_p_t(NWNXLibPINVOKE.CassowarySolverEngineStructure_m_shared_get(swigCPtr), true);
-      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-      return ret;
-    } 
-  }
-
   public CassowarySolverEngineStructure() : this(NWNXLibPINVOKE.new_CassowarySolverEngineStructure(), true) {
   }
 

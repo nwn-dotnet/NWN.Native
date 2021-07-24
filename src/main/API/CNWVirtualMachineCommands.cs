@@ -2340,6 +2340,11 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     return retVal;
   }
 
+  public int ExecuteCommandGuiEventManagement(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandGuiEventManagement(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
   public int ExecuteCommandHideEffectIcon(int nCommandId, int nParameters) {
     int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandHideEffectIcon(swigCPtr, nCommandId, nParameters);
     return retVal;
@@ -3262,6 +3267,11 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
 
   public int ExecuteCommandTargetingModeManagement(int nCommandId, int nParameters) {
     int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandTargetingModeManagement(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandTileActionManagement(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandTileActionManagement(swigCPtr, nCommandId, nParameters);
     return retVal;
   }
 
