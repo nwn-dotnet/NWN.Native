@@ -43,7 +43,7 @@ public unsafe class CNWSFaction : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,13 +90,13 @@ public unsafe class CNWSFaction : global::System.IDisposable {
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public CExoArrayListObjectId m_listFactionMembers {
+  public CExoArrayListUInt32 m_listFactionMembers {
     set {
-      NWNXLibPINVOKE.CNWSFaction_m_listFactionMembers_set(swigCPtr, CExoArrayListObjectId.getCPtr(value));
+      NWNXLibPINVOKE.CNWSFaction_m_listFactionMembers_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSFaction_m_listFactionMembers_get(swigCPtr);
-      CExoArrayListObjectId ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListObjectId(cPtr, false);
+      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
       return ret;
     } 
   }

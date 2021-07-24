@@ -38,7 +38,7 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   global::System.Runtime.InteropServices.HandleRef ICGameObject.GetInterfaceCPtr() {
     return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CNWSArea_ICGameObject_GetInterfaceCPtr(swigCPtr.Handle));
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -96,13 +96,13 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
 
   }
 
-  public CExoArrayListObjectId m_pTrapList {
+  public CExoArrayListUInt32 m_pTrapList {
     set {
-      NWNXLibPINVOKE.CNWSArea_m_pTrapList_set(swigCPtr, CExoArrayListObjectId.getCPtr(value));
+      NWNXLibPINVOKE.CNWSArea_m_pTrapList_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSArea_m_pTrapList_get(swigCPtr);
-      CExoArrayListObjectId ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListObjectId(cPtr, false);
+      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
       return ret;
     } 
   }
@@ -273,13 +273,13 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
 
   }
 
-  public CExoArrayListObjectId m_aGameObjects {
+  public CExoArrayListUInt32 m_aGameObjects {
     set {
-      NWNXLibPINVOKE.CNWSArea_m_aGameObjects_set(swigCPtr, CExoArrayListObjectId.getCPtr(value));
+      NWNXLibPINVOKE.CNWSArea_m_aGameObjects_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSArea_m_aGameObjects_get(swigCPtr);
-      CExoArrayListObjectId ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListObjectId(cPtr, false);
+      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
       return ret;
     } 
   }
@@ -295,13 +295,13 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
 
   }
 
-  public CExoArrayListObjectId m_aSubAreas {
+  public CExoArrayListUInt32 m_aSubAreas {
     set {
-      NWNXLibPINVOKE.CNWSArea_m_aSubAreas_set(swigCPtr, CExoArrayListObjectId.getCPtr(value));
+      NWNXLibPINVOKE.CNWSArea_m_aSubAreas_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSArea_m_aSubAreas_get(swigCPtr);
-      CExoArrayListObjectId ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListObjectId(cPtr, false);
+      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
       return ret;
     } 
   }
@@ -1001,13 +1001,13 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void SaveGIT(CResGFF pRes, CResStruct pStruct, CExoArrayListObjectId aPlayers, int bSaveOIDs) {
-    NWNXLibPINVOKE.CNWSArea_SaveGIT__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), CExoArrayListObjectId.getCPtr(aPlayers), bSaveOIDs);
+  public void SaveGIT(CResGFF pRes, CResStruct pStruct, CExoArrayListUInt32 aPlayers, int bSaveOIDs) {
+    NWNXLibPINVOKE.CNWSArea_SaveGIT__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), CExoArrayListUInt32.getCPtr(aPlayers), bSaveOIDs);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void SaveGIT(CERFFile cSaveFile, CExoString sName, CExoArrayListObjectId aPlayers) {
-    NWNXLibPINVOKE.CNWSArea_SaveGIT__SWIG_1(swigCPtr, CERFFile.getCPtr(cSaveFile), CExoString.getCPtr(sName), CExoArrayListObjectId.getCPtr(aPlayers));
+  public void SaveGIT(CERFFile cSaveFile, CExoString sName, CExoArrayListUInt32 aPlayers) {
+    NWNXLibPINVOKE.CNWSArea_SaveGIT__SWIG_1(swigCPtr, CERFFile.getCPtr(cSaveFile), CExoString.getCPtr(sName), CExoArrayListUInt32.getCPtr(aPlayers));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -1076,14 +1076,14 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
     return retVal;
   }
 
-  public int InSubAreas(Vector vPosition, CExoArrayListObjectId aSubAreasWithin) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_InSubAreas(swigCPtr, Vector.getCPtr(vPosition), CExoArrayListObjectId.getCPtr(aSubAreasWithin));
+  public int InSubAreas(Vector vPosition, CExoArrayListUInt32 aSubAreasWithin) {
+    int retVal = NWNXLibPINVOKE.CNWSArea_InSubAreas(swigCPtr, Vector.getCPtr(vPosition), CExoArrayListUInt32.getCPtr(aSubAreasWithin));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
 
-  public int IntersectingLineSegment(Vector vStart, Vector vEnd, CExoArrayListObjectId aIntersectingSubAreas) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_IntersectingLineSegment(swigCPtr, Vector.getCPtr(vStart), Vector.getCPtr(vEnd), CExoArrayListObjectId.getCPtr(aIntersectingSubAreas));
+  public int IntersectingLineSegment(Vector vStart, Vector vEnd, CExoArrayListUInt32 aIntersectingSubAreas) {
+    int retVal = NWNXLibPINVOKE.CNWSArea_IntersectingLineSegment(swigCPtr, Vector.getCPtr(vStart), Vector.getCPtr(vEnd), CExoArrayListUInt32.getCPtr(aIntersectingSubAreas));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
@@ -1275,53 +1275,53 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
     NWNXLibPINVOKE.CNWSArea_DecreaseAILevelPriority(swigCPtr);
   }
 
-  public void SaveCreatures(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListObjectId aCreatures, int bSaveOIDs) {
-    NWNXLibPINVOKE.CNWSArea_SaveCreatures(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListObjectId.getCPtr(aCreatures), bSaveOIDs);
+  public void SaveCreatures(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListUInt32 aCreatures, int bSaveOIDs) {
+    NWNXLibPINVOKE.CNWSArea_SaveCreatures(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListUInt32.getCPtr(aCreatures), bSaveOIDs);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void SaveItems(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListObjectId aItems, int bSaveOIDs) {
-    NWNXLibPINVOKE.CNWSArea_SaveItems(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListObjectId.getCPtr(aItems), bSaveOIDs);
+  public void SaveItems(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListUInt32 aItems, int bSaveOIDs) {
+    NWNXLibPINVOKE.CNWSArea_SaveItems(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListUInt32.getCPtr(aItems), bSaveOIDs);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void SaveDoors(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListObjectId aDoors, int bSaveOIDs) {
-    NWNXLibPINVOKE.CNWSArea_SaveDoors(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListObjectId.getCPtr(aDoors), bSaveOIDs);
+  public void SaveDoors(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListUInt32 aDoors, int bSaveOIDs) {
+    NWNXLibPINVOKE.CNWSArea_SaveDoors(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListUInt32.getCPtr(aDoors), bSaveOIDs);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void SaveTriggers(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListObjectId aTriggers, int bSaveOIDs) {
-    NWNXLibPINVOKE.CNWSArea_SaveTriggers(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListObjectId.getCPtr(aTriggers), bSaveOIDs);
+  public void SaveTriggers(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListUInt32 aTriggers, int bSaveOIDs) {
+    NWNXLibPINVOKE.CNWSArea_SaveTriggers(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListUInt32.getCPtr(aTriggers), bSaveOIDs);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void SaveEncounters(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListObjectId aEncounters, int bSaveOIDs) {
-    NWNXLibPINVOKE.CNWSArea_SaveEncounters(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListObjectId.getCPtr(aEncounters), bSaveOIDs);
+  public void SaveEncounters(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListUInt32 aEncounters, int bSaveOIDs) {
+    NWNXLibPINVOKE.CNWSArea_SaveEncounters(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListUInt32.getCPtr(aEncounters), bSaveOIDs);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void SaveWaypoints(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListObjectId aWaypoints, int bSaveOIDs) {
-    NWNXLibPINVOKE.CNWSArea_SaveWaypoints(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListObjectId.getCPtr(aWaypoints), bSaveOIDs);
+  public void SaveWaypoints(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListUInt32 aWaypoints, int bSaveOIDs) {
+    NWNXLibPINVOKE.CNWSArea_SaveWaypoints(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListUInt32.getCPtr(aWaypoints), bSaveOIDs);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void SaveSounds(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListObjectId aSounds, int bSaveOIDs) {
-    NWNXLibPINVOKE.CNWSArea_SaveSounds(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListObjectId.getCPtr(aSounds), bSaveOIDs);
+  public void SaveSounds(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListUInt32 aSounds, int bSaveOIDs) {
+    NWNXLibPINVOKE.CNWSArea_SaveSounds(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListUInt32.getCPtr(aSounds), bSaveOIDs);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void SavePlaceables(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListObjectId aPlaceables, int bSaveOIDs) {
-    NWNXLibPINVOKE.CNWSArea_SavePlaceables(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListObjectId.getCPtr(aPlaceables), bSaveOIDs);
+  public void SavePlaceables(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListUInt32 aPlaceables, int bSaveOIDs) {
+    NWNXLibPINVOKE.CNWSArea_SavePlaceables(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListUInt32.getCPtr(aPlaceables), bSaveOIDs);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void SaveStores(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListObjectId aStores, int bSaveOIDs) {
-    NWNXLibPINVOKE.CNWSArea_SaveStores(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListObjectId.getCPtr(aStores), bSaveOIDs);
+  public void SaveStores(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListUInt32 aStores, int bSaveOIDs) {
+    NWNXLibPINVOKE.CNWSArea_SaveStores(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListUInt32.getCPtr(aStores), bSaveOIDs);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void SaveAreaEffects(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListObjectId aStores, int bSaveOIDs) {
-    NWNXLibPINVOKE.CNWSArea_SaveAreaEffects(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListObjectId.getCPtr(aStores), bSaveOIDs);
+  public void SaveAreaEffects(CResGFF pRes, CResStruct pTopLevelStruct, CExoArrayListUInt32 aStores, int bSaveOIDs) {
+    NWNXLibPINVOKE.CNWSArea_SaveAreaEffects(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CExoArrayListUInt32.getCPtr(aStores), bSaveOIDs);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 

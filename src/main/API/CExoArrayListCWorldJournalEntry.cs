@@ -10,7 +10,8 @@
 
 namespace NWN.Native.API {
 
-public unsafe class CExoArrayListCWorldJournalEntry : global::System.IDisposable {
+public unsafe class CExoArrayListCWorldJournalEntry : global::System.IDisposable, global::System.Collections.IEnumerable, global::System.Collections.Generic.IEnumerable<CWorldJournalEntry>
+ {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
@@ -43,7 +44,7 @@ public unsafe class CExoArrayListCWorldJournalEntry : global::System.IDisposable
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,18 +91,184 @@ public unsafe class CExoArrayListCWorldJournalEntry : global::System.IDisposable
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public CWorldJournalEntry element {
-    set {
-      NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_element_set(swigCPtr, CWorldJournalEntry.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_element_get(swigCPtr);
-      CWorldJournalEntry ret = (cPtr == global::System.IntPtr.Zero) ? null : new CWorldJournalEntry(cPtr, false);
-      return ret;
-    } 
+  public CExoArrayListCWorldJournalEntry(global::System.Collections.IEnumerable c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (CWorldJournalEntry element in c) {
+      this.Add(element);
+    }
   }
 
-  public int num {
+  public CExoArrayListCWorldJournalEntry(global::System.Collections.Generic.IEnumerable<CWorldJournalEntry> c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (CWorldJournalEntry element in c) {
+      this.Add(element);
+    }
+  }
+
+  public bool IsFixedSize {
+    get {
+      return false;
+    }
+  }
+
+  public bool IsReadOnly {
+    get {
+      return false;
+    }
+  }
+
+  public CWorldJournalEntry this[int index] {
+    get {
+      return InternalGetItem(index);
+    }
+    set {
+      InternalSetItem(index, value);
+    }
+  }
+
+  public int Capacity {
+    get {
+      return (int)array_size;
+    }
+    set {
+      if (value < num)
+        throw new global::System.ArgumentOutOfRangeException("Capacity");
+      SetSize(value);
+    }
+  }
+
+  public int Count {
+    get {
+      return (int)num;
+    }
+  }
+
+  public bool IsSynchronized {
+    get {
+      return false;
+    }
+  }
+
+  public void CopyTo(CWorldJournalEntry[] array)
+  {
+    CopyTo(0, array, 0, this.Count);
+  }
+
+  public void CopyTo(CWorldJournalEntry[] array, int arrayIndex)
+  {
+    CopyTo(0, array, arrayIndex, this.Count);
+  }
+
+  public void Clear()
+  {
+    SetSize(0);
+  }
+
+  public void CopyTo(int index, CWorldJournalEntry[] array, int arrayIndex, int count)
+  {
+    if (array == null)
+      throw new global::System.ArgumentNullException("array");
+    if (index < 0)
+      throw new global::System.ArgumentOutOfRangeException("index", "Value is less than zero");
+    if (arrayIndex < 0)
+      throw new global::System.ArgumentOutOfRangeException("arrayIndex", "Value is less than zero");
+    if (count < 0)
+      throw new global::System.ArgumentOutOfRangeException("count", "Value is less than zero");
+    if (array.Rank > 1)
+      throw new global::System.ArgumentException("Multi dimensional array.", "array");
+    if (index+count > this.Count || arrayIndex+count > array.Length)
+      throw new global::System.ArgumentException("Number of elements to copy is too large.");
+    for (int i=0; i<count; i++)
+      array.SetValue(InternalGetItemCopy(index+i), arrayIndex+i);
+  }
+
+  public CWorldJournalEntry[] ToArray() {
+    CWorldJournalEntry[] array = new CWorldJournalEntry[this.Count];
+    this.CopyTo(array);
+    return array;
+  }
+
+  global::System.Collections.Generic.IEnumerator<CWorldJournalEntry> global::System.Collections.Generic.IEnumerable<CWorldJournalEntry>.GetEnumerator() {
+    return new CExoArrayListCWorldJournalEntryEnumerator(this);
+  }
+
+  global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator() {
+    return new CExoArrayListCWorldJournalEntryEnumerator(this);
+  }
+
+  public CExoArrayListCWorldJournalEntryEnumerator GetEnumerator() {
+    return new CExoArrayListCWorldJournalEntryEnumerator(this);
+  }
+
+  // Type-safe enumerator
+  /// Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+  /// whenever the collection is modified. This has been done for changes in the size of the
+  /// collection but not when one of the elements of the collection is modified as it is a bit
+  /// tricky to detect unmanaged code that modifies the collection under our feet.
+  public sealed class CExoArrayListCWorldJournalEntryEnumerator : global::System.Collections.IEnumerator
+    , global::System.Collections.Generic.IEnumerator<CWorldJournalEntry>
+  {
+    private CExoArrayListCWorldJournalEntry collectionRef;
+    private int currentIndex;
+    private object currentObject;
+    private int currentSize;
+
+    public CExoArrayListCWorldJournalEntryEnumerator(CExoArrayListCWorldJournalEntry collection) {
+      collectionRef = collection;
+      currentIndex = -1;
+      currentObject = null;
+      currentSize = collectionRef.Count;
+    }
+
+    // Type-safe iterator Current
+    public CWorldJournalEntry Current {
+      get {
+        if (currentIndex == -1)
+          throw new global::System.InvalidOperationException("Enumeration not started.");
+        if (currentIndex > currentSize - 1)
+          throw new global::System.InvalidOperationException("Enumeration finished.");
+        if (currentObject == null)
+          throw new global::System.InvalidOperationException("Collection modified.");
+        return (CWorldJournalEntry)currentObject;
+      }
+    }
+
+    // Type-unsafe IEnumerator.Current
+    object global::System.Collections.IEnumerator.Current {
+      get {
+        return Current;
+      }
+    }
+
+    public bool MoveNext() {
+      int size = collectionRef.Count;
+      bool moveOkay = (currentIndex+1 < size) && (size == currentSize);
+      if (moveOkay) {
+        currentIndex++;
+        currentObject = collectionRef[currentIndex];
+      } else {
+        currentObject = null;
+      }
+      return moveOkay;
+    }
+
+    public void Reset() {
+      currentIndex = -1;
+      currentObject = null;
+      if (collectionRef.Count != currentSize) {
+        throw new global::System.InvalidOperationException("Collection modified.");
+      }
+    }
+
+    public void Dispose() {
+        currentIndex = -1;
+        currentObject = null;
+    }
+  }
+
+  private int num {
     set {
       NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_num_set(swigCPtr, value);
     } 
@@ -112,7 +279,7 @@ public unsafe class CExoArrayListCWorldJournalEntry : global::System.IDisposable
 
   }
 
-  public int array_size {
+  private int array_size {
     set {
       NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_array_size_set(swigCPtr, value);
     } 
@@ -121,6 +288,23 @@ public unsafe class CExoArrayListCWorldJournalEntry : global::System.IDisposable
       return retVal;
     }
 
+  }
+
+  public void Add(CWorldJournalEntry t) {
+    NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_Add(swigCPtr, CWorldJournalEntry.getCPtr(t));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void Pack() {
+    NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_Pack(swigCPtr);
+  }
+
+  private void Allocate(int s) {
+    NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_Allocate(swigCPtr, s);
+  }
+
+  public void SetSize(int s) {
+    NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_SetSize(swigCPtr, s);
   }
 
   public CExoArrayListCWorldJournalEntry(int s) : this(NWNXLibPINVOKE.new_CExoArrayListCWorldJournalEntry__SWIG_0(s), true) {
@@ -133,53 +317,31 @@ public unsafe class CExoArrayListCWorldJournalEntry : global::System.IDisposable
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCWorldJournalEntry _OpAssign(CExoArrayListCWorldJournalEntry list) {
-    CExoArrayListCWorldJournalEntry ret = new CExoArrayListCWorldJournalEntry(NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry__OpAssign(swigCPtr, CExoArrayListCWorldJournalEntry.getCPtr(list)), false);
+  public void RemoveAt(int index) {
+    NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_RemoveAt(swigCPtr, index);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  private CWorldJournalEntry InternalGetItem(int index) {
+    CWorldJournalEntry ret = new CWorldJournalEntry(NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_InternalGetItem(swigCPtr, index), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CWorldJournalEntry _OpIndex(int i) {
-    CWorldJournalEntry ret = new CWorldJournalEntry(NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry__OpIndex(swigCPtr, i), false);
+  private CWorldJournalEntry InternalGetItemCopy(int index) {
+    CWorldJournalEntry ret = new CWorldJournalEntry(NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_InternalGetItemCopy(swigCPtr, index), true);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public void Allocate(int s) {
-    NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_Allocate(swigCPtr, s);
-  }
-
-  public void SetSize(int s) {
-    NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_SetSize(swigCPtr, s);
-  }
-
-  public void Pack() {
-    NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_Pack(swigCPtr);
-  }
-
-  public void Add(CWorldJournalEntry t) {
-    NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_Add(swigCPtr, CWorldJournalEntry.getCPtr(t));
+  private void InternalSetItem(int index, CWorldJournalEntry val) {
+    NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_InternalSetItem(swigCPtr, index, CWorldJournalEntry.getCPtr(val));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void Insert(CWorldJournalEntry t, int k) {
-    NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_Insert(swigCPtr, CWorldJournalEntry.getCPtr(t), k);
+  public void Insert(int index, CWorldJournalEntry x) {
+    NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_Insert(swigCPtr, index, CWorldJournalEntry.getCPtr(x));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public void DelIndex(int i) {
-    NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_DelIndex(swigCPtr, i);
-  }
-
-  public CWorldJournalEntry begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_begin(swigCPtr);
-    CWorldJournalEntry ret = (cPtr == global::System.IntPtr.Zero) ? null : new CWorldJournalEntry(cPtr, false);
-    return ret;
-  }
-
-  public CWorldJournalEntry end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCWorldJournalEntry_end(swigCPtr);
-    CWorldJournalEntry ret = (cPtr == global::System.IntPtr.Zero) ? null : new CWorldJournalEntry(cPtr, false);
-    return ret;
   }
 
 }

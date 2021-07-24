@@ -33,7 +33,7 @@ public unsafe class CServerExoApp : CBaseExoApp {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -262,8 +262,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
     NWNXLibPINVOKE.CServerExoApp_AddExportPlayersCharacterRequest(swigCPtr, oid);
   }
 
-  public CExoArrayListObjectId GetExportPlayersCharacterRequests() {
-    CExoArrayListObjectId ret = new CExoArrayListObjectId(NWNXLibPINVOKE.CServerExoApp_GetExportPlayersCharacterRequests(swigCPtr), false);
+  public CExoArrayListUInt32 GetExportPlayersCharacterRequests() {
+    CExoArrayListUInt32 ret = new CExoArrayListUInt32(NWNXLibPINVOKE.CServerExoApp_GetExportPlayersCharacterRequests(swigCPtr), false);
     return ret;
   }
 
@@ -605,9 +605,9 @@ public unsafe class CServerExoApp : CBaseExoApp {
     NWNXLibPINVOKE.CServerExoApp_SetPauseState(swigCPtr, nState, bPause);
   }
 
-  public CExoArrayListObjectId GetActiveExclusionList() {
+  public CExoArrayListUInt32 GetActiveExclusionList() {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoApp_GetActiveExclusionList(swigCPtr);
-    CExoArrayListObjectId ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListObjectId(cPtr, false);
+    CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
     return ret;
   }
 

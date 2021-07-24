@@ -33,7 +33,7 @@ public unsafe class CNWSSoundObject : CNWSObject {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -351,8 +351,8 @@ public unsafe class CNWSSoundObject : CNWSObject {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListObjectId GetPeopleInSoundRange() {
-    CExoArrayListObjectId ret = new CExoArrayListObjectId(NWNXLibPINVOKE.CNWSSoundObject_GetPeopleInSoundRange(swigCPtr), true);
+  public CExoArrayListUInt32 GetPeopleInSoundRange() {
+    CExoArrayListUInt32 ret = new CExoArrayListUInt32(NWNXLibPINVOKE.CNWSSoundObject_GetPeopleInSoundRange(swigCPtr), true);
     return ret;
   }
 

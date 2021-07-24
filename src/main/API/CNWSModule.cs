@@ -48,7 +48,7 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   global::System.Runtime.InteropServices.HandleRef ICGameObject.GetInterfaceCPtr() {
     return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CNWSModule_ICGameObject_GetInterfaceCPtr(swigCPtr.Handle));
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -128,13 +128,13 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
     } 
   }
 
-  public CExoArrayListObjectId m_lstModuleAreaID {
+  public CExoArrayListUInt32 m_lstModuleAreaID {
     set {
-      NWNXLibPINVOKE.CNWSModule_m_lstModuleAreaID_set(swigCPtr, CExoArrayListObjectId.getCPtr(value));
+      NWNXLibPINVOKE.CNWSModule_m_lstModuleAreaID_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_m_lstModuleAreaID_get(swigCPtr);
-      CExoArrayListObjectId ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListObjectId(cPtr, false);
+      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
       return ret;
     } 
   }
@@ -393,13 +393,13 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
     } 
   }
 
-  public CExoArrayListObjectId m_pInvisibleCreaturesList {
+  public CExoArrayListUInt32 m_pInvisibleCreaturesList {
     set {
-      NWNXLibPINVOKE.CNWSModule_m_pInvisibleCreaturesList_set(swigCPtr, CExoArrayListObjectId.getCPtr(value));
+      NWNXLibPINVOKE.CNWSModule_m_pInvisibleCreaturesList_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_m_pInvisibleCreaturesList_get(swigCPtr);
-      CExoArrayListObjectId ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListObjectId(cPtr, false);
+      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
       return ret;
     } 
   }
@@ -899,13 +899,13 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
 
   }
 
-  public CExoArrayListObjectId m_aGameObjectsLimbo {
+  public CExoArrayListUInt32 m_aGameObjectsLimbo {
     set {
-      NWNXLibPINVOKE.CNWSModule_m_aGameObjectsLimbo_set(swigCPtr, CExoArrayListObjectId.getCPtr(value));
+      NWNXLibPINVOKE.CNWSModule_m_aGameObjectsLimbo_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_m_aGameObjectsLimbo_get(swigCPtr);
-      CExoArrayListObjectId ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListObjectId(cPtr, false);
+      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
       return ret;
     } 
   }
@@ -943,13 +943,13 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
     } 
   }
 
-  public CExoArrayListObjectId m_apPlayers {
+  public CExoArrayListUInt32 m_apPlayers {
     set {
-      NWNXLibPINVOKE.CNWSModule_m_apPlayers_set(swigCPtr, CExoArrayListObjectId.getCPtr(value));
+      NWNXLibPINVOKE.CNWSModule_m_apPlayers_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_m_apPlayers_get(swigCPtr);
-      CExoArrayListObjectId ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListObjectId(cPtr, false);
+      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
       return ret;
     } 
   }
@@ -1499,8 +1499,8 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
     return retVal;
   }
 
-  public int SaveModuleIFOFinish(CResGFF pRes, CResStruct pTopLevelStruct, CERFFile cSaveFile, CExoString sPath, CExoArrayListObjectId aPlayers) {
-    int retVal = NWNXLibPINVOKE.CNWSModule_SaveModuleIFOFinish(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CERFFile.getCPtr(cSaveFile), CExoString.getCPtr(sPath), CExoArrayListObjectId.getCPtr(aPlayers));
+  public int SaveModuleIFOFinish(CResGFF pRes, CResStruct pTopLevelStruct, CERFFile cSaveFile, CExoString sPath, CExoArrayListUInt32 aPlayers) {
+    int retVal = NWNXLibPINVOKE.CNWSModule_SaveModuleIFOFinish(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct), CERFFile.getCPtr(cSaveFile), CExoString.getCPtr(sPath), CExoArrayListUInt32.getCPtr(aPlayers));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
@@ -1541,8 +1541,8 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
     return retVal;
   }
 
-  public int SavePlayers(CResGFF pResIFO, CResStruct pStructIFO, CExoString sPath, CExoArrayListObjectId aPlayers) {
-    int retVal = NWNXLibPINVOKE.CNWSModule_SavePlayers(swigCPtr, CResGFF.getCPtr(pResIFO), CResStruct.getCPtr(pStructIFO), CExoString.getCPtr(sPath), CExoArrayListObjectId.getCPtr(aPlayers));
+  public int SavePlayers(CResGFF pResIFO, CResStruct pStructIFO, CExoString sPath, CExoArrayListUInt32 aPlayers) {
+    int retVal = NWNXLibPINVOKE.CNWSModule_SavePlayers(swigCPtr, CResGFF.getCPtr(pResIFO), CResStruct.getCPtr(pStructIFO), CExoString.getCPtr(sPath), CExoArrayListUInt32.getCPtr(aPlayers));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }

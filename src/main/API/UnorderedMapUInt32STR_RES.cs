@@ -43,7 +43,7 @@ public unsafe class UnorderedMapUInt32STR_RES : global::System.IDisposable, glob
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,88 +90,146 @@ public unsafe class UnorderedMapUInt32STR_RES : global::System.IDisposable, glob
     return !Equals(left, right);
   }
 /*@SWIG@*/
-
-  public STR_RES this[uint key] {
-    get {
-      return getitem(key);
-    }
-
-    set {
-      setitem(key, value);
-    }
+  public bool IsReadOnly
+  {
+    get => false;
   }
 
-  public bool TryGetValue(uint key, out STR_RES value) {
-    if (this.ContainsKey(key)) {
-      value = this[key];
+  public int Count
+  {
+    get => (int)size();
+  }
+
+  public STR_RES this[uint key]
+  {
+    get
+    {
+      Iterator iterator = find(key);
+      if (iterator.IsEqual(end()))
+      {
+         throw new global::System.Collections.Generic.KeyNotFoundException("The given key was not present in the UnorderedMap.");
+      }
+
+      return iterator.GetValue();
+    }
+
+    set => InternalSetValue(key, value);
+  }
+
+  public bool Remove(uint key)
+  {
+    Iterator iterator = find(key);
+    if (!iterator.IsEqual(end()))
+    {
+      InternalRemove(iterator);
       return true;
     }
-    value = default(STR_RES);
+
     return false;
   }
 
-  public int Count {
-    get {
-      return (int)size();
-    }
-  }
-
-  public bool IsReadOnly {
-    get {
-      return false;
-    }
-  }
-
-  public global::System.Collections.Generic.ICollection<uint> Keys {
-    get {
-      global::System.Collections.Generic.ICollection<uint> keys = new global::System.Collections.Generic.List<uint>();
-      int size = this.Count;
-      if (size > 0) {
-        global::System.IntPtr iter = create_iterator_begin();
-        for (int i = 0; i < size; i++) {
-          keys.Add(get_next_key(iter));
-        }
-        destroy_iterator(iter);
+  public bool TryGetValue(uint key, out STR_RES value)
+  {
+      Iterator iterator = find(key);
+      if (iterator.IsEqual(end()))
+      {
+         value = default;
+         return false;
       }
+
+      value = iterator.GetValue();
+      return true;
+  }
+
+  public global::System.Collections.Generic.ICollection<uint> Keys
+  {
+    get
+    {
+      int startCount = Count;
+      Iterator iterator = begin();
+      Iterator endIterator = end();
+
+      global::System.Collections.Generic.ICollection<uint> keys = new global::System.Collections.Generic.List<uint>();
+
+      while (!iterator.IsEqual(endIterator))
+      {
+        if (Count != startCount)
+        {
+          throw new System.InvalidOperationException("Collection was modified; enumeration operation may not execute.");
+        }
+
+        keys.Add(iterator.GetKey());
+        iterator = iterator.MoveNext();
+      }
+
       return keys;
     }
   }
 
-  public global::System.Collections.Generic.ICollection<STR_RES> Values {
-    get {
-      global::System.Collections.Generic.ICollection<STR_RES> vals = new global::System.Collections.Generic.List<STR_RES>();
-      foreach (global::System.Collections.Generic.KeyValuePair<uint, STR_RES> pair in this) {
-        vals.Add(pair.Value);
+  public global::System.Collections.Generic.ICollection<STR_RES> Values
+  {
+    get
+    {
+      int startCount = Count;
+      Iterator iterator = begin();
+      Iterator endIterator = end();
+
+      global::System.Collections.Generic.ICollection<STR_RES> values = new global::System.Collections.Generic.List<STR_RES>();
+
+      while (!iterator.IsEqual(endIterator))
+      {
+        if (Count != startCount)
+        {
+          throw new System.InvalidOperationException("Collection was modified; enumeration operation may not execute.");
+        }
+
+        values.Add(iterator.GetValue());
+        iterator = iterator.MoveNext();
       }
-      return vals;
+
+      return values;
     }
   }
 
-  public void Add(global::System.Collections.Generic.KeyValuePair<uint, STR_RES> item) {
+  public void Add(uint key, STR_RES value)
+  {
+    if (ContainsKey(key))
+    {
+      throw new global::System.ArgumentException(nameof(key), "An item with the same key has already been added.");
+    }
+
+    InternalSetValue(key, value);
+  }
+
+  public void Add(global::System.Collections.Generic.KeyValuePair<uint, STR_RES> item)
+  {
     Add(item.Key, item.Value);
   }
 
-  public bool Remove(global::System.Collections.Generic.KeyValuePair<uint, STR_RES> item) {
-    if (Contains(item)) {
-      return Remove(item.Key);
-    } else {
-      return false;
-    }
+  bool global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<uint, STR_RES>>.Contains(global::System.Collections.Generic.KeyValuePair<uint, STR_RES> keyValuePair)
+  {
+    return TryGetValue(keyValuePair.Key, out STR_RES value) && value == keyValuePair.Value;
   }
 
-  public bool Contains(global::System.Collections.Generic.KeyValuePair<uint, STR_RES> item) {
-    if (this[item.Key] == item.Value) {
+  bool global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<uint, STR_RES>>.Remove(global::System.Collections.Generic.KeyValuePair<uint, STR_RES> keyValuePair)
+  {
+    Iterator iterator = find(keyValuePair.Key);
+    if (!iterator.IsEqual(end()) && iterator.GetValue() == keyValuePair.Value)
+    {
+      InternalRemove(iterator);
       return true;
-    } else {
-      return false;
     }
+
+    return false;
   }
 
-  public void CopyTo(global::System.Collections.Generic.KeyValuePair<uint, STR_RES>[] array) {
+  public void CopyTo(global::System.Collections.Generic.KeyValuePair<uint, STR_RES>[] array)
+  {
     CopyTo(array, 0);
   }
 
-  public void CopyTo(global::System.Collections.Generic.KeyValuePair<uint, STR_RES>[] array, int arrayIndex) {
+  public void CopyTo(global::System.Collections.Generic.KeyValuePair<uint, STR_RES>[] array, int arrayIndex)
+  {
     if (array == null)
       throw new global::System.ArgumentNullException("array");
     if (arrayIndex < 0)
@@ -181,94 +239,43 @@ public unsafe class UnorderedMapUInt32STR_RES : global::System.IDisposable, glob
     if (arrayIndex+this.Count > array.Length)
       throw new global::System.ArgumentException("Number of elements to copy is too large.");
 
-    global::System.Collections.Generic.IList<uint> keyList = new global::System.Collections.Generic.List<uint>(this.Keys);
-    for (int i = 0; i < keyList.Count; i++) {
-      uint currentKey = keyList[i];
-      array.SetValue(new global::System.Collections.Generic.KeyValuePair<uint, STR_RES>(currentKey, this[currentKey]), arrayIndex+i);
+    int startCount = Count;
+    Iterator iterator = begin();
+    Iterator endIterator = end();
+
+    for (int i = 0; i < Count && !iterator.IsEqual(endIterator); i++, iterator = iterator.MoveNext())
+    {
+      if (Count != startCount)
+      {
+        throw new System.InvalidOperationException("Collection was modified; enumeration operation may not execute.");
+      }
+
+      array.SetValue(new global::System.Collections.Generic.KeyValuePair<uint, STR_RES>(iterator.GetKey(), iterator.GetValue()), arrayIndex+i);
     }
   }
 
-  global::System.Collections.Generic.IEnumerator<global::System.Collections.Generic.KeyValuePair<uint, STR_RES>> global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<uint, STR_RES>>.GetEnumerator() {
-    return new UnorderedMapUInt32STR_RESEnumerator(this);
-  }
-
-  global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator() {
-    return new UnorderedMapUInt32STR_RESEnumerator(this);
-  }
-
-  public UnorderedMapUInt32STR_RESEnumerator GetEnumerator() {
-    return new UnorderedMapUInt32STR_RESEnumerator(this);
-  }
-
-  // Type-safe enumerator
-  /// Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
-  /// whenever the collection is modified. This has been done for changes in the size of the
-  /// collection but not when one of the elements of the collection is modified as it is a bit
-  /// tricky to detect unmanaged code that modifies the collection under our feet.
-  public sealed class UnorderedMapUInt32STR_RESEnumerator : global::System.Collections.IEnumerator,
-      global::System.Collections.Generic.IEnumerator<global::System.Collections.Generic.KeyValuePair<uint, STR_RES>>
+  public global::System.Collections.Generic.IEnumerator<global::System.Collections.Generic.KeyValuePair<uint, STR_RES>> GetEnumerator()
   {
-    private UnorderedMapUInt32STR_RES collectionRef;
-    private global::System.Collections.Generic.IList<uint> keyCollection;
-    private int currentIndex;
-    private object currentObject;
-    private int currentSize;
+    int startCount = Count;
+    Iterator iterator = begin();
+    Iterator endIterator = end();
 
-    public UnorderedMapUInt32STR_RESEnumerator(UnorderedMapUInt32STR_RES collection) {
-      collectionRef = collection;
-      keyCollection = new global::System.Collections.Generic.List<uint>(collection.Keys);
-      currentIndex = -1;
-      currentObject = null;
-      currentSize = collectionRef.Count;
-    }
-
-    // Type-safe iterator Current
-    public global::System.Collections.Generic.KeyValuePair<uint, STR_RES> Current {
-      get {
-        if (currentIndex == -1)
-          throw new global::System.InvalidOperationException("Enumeration not started.");
-        if (currentIndex > currentSize - 1)
-          throw new global::System.InvalidOperationException("Enumeration finished.");
-        if (currentObject == null)
-          throw new global::System.InvalidOperationException("Collection modified.");
-        return (global::System.Collections.Generic.KeyValuePair<uint, STR_RES>)currentObject;
+    while (!iterator.IsEqual(endIterator))
+    {
+      if (Count != startCount)
+      {
+        throw new System.InvalidOperationException("Collection was modified; enumeration operation may not execute.");
       }
-    }
 
-    // Type-unsafe IEnumerator.Current
-    object global::System.Collections.IEnumerator.Current {
-      get {
-        return Current;
-      }
-    }
-
-    public bool MoveNext() {
-      int size = collectionRef.Count;
-      bool moveOkay = (currentIndex+1 < size) && (size == currentSize);
-      if (moveOkay) {
-        currentIndex++;
-        uint currentKey = keyCollection[currentIndex];
-        currentObject = new global::System.Collections.Generic.KeyValuePair<uint, STR_RES>(currentKey, collectionRef[currentKey]);
-      } else {
-        currentObject = null;
-      }
-      return moveOkay;
-    }
-
-    public void Reset() {
-      currentIndex = -1;
-      currentObject = null;
-      if (collectionRef.Count != currentSize) {
-        throw new global::System.InvalidOperationException("Collection modified.");
-      }
-    }
-
-    public void Dispose() {
-      currentIndex = -1;
-      currentObject = null;
+      yield return new global::System.Collections.Generic.KeyValuePair<uint, STR_RES>(iterator.GetKey(), iterator.GetValue());
+      iterator = iterator.MoveNext();
     }
   }
 
+  global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
+  {
+    return GetEnumerator();
+  }
 
   public UnorderedMapUInt32STR_RES() : this(NWNXLibPINVOKE.new_UnorderedMapUInt32STR_RES__SWIG_0(), true) {
   }
@@ -277,13 +284,116 @@ public unsafe class UnorderedMapUInt32STR_RES : global::System.IDisposable, glob
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  private uint size() {
-    uint ret = NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_size(swigCPtr);
-    return ret;
+  private class Iterator : global::System.IDisposable {
+    private global::System.Runtime.InteropServices.HandleRef swigCPtr;
+    protected bool swigCMemOwn;
+  
+    internal Iterator(global::System.IntPtr cPtr, bool cMemoryOwn) {
+      swigCMemOwn = cMemoryOwn;
+      swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+    }
+  
+    internal static global::System.Runtime.InteropServices.HandleRef getCPtr(Iterator obj) {
+      return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
+    }
+  
+    ~Iterator() {
+      Dispose(false);
+    }
+  
+    public void Dispose() {
+      Dispose(true);
+      global::System.GC.SuppressFinalize(this);
+    }
+  
+    protected virtual void Dispose(bool disposing) {
+      lock(this) {
+        if (swigCPtr.Handle != global::System.IntPtr.Zero) {
+          if (swigCMemOwn) {
+            swigCMemOwn = false;
+            NWNXLibPINVOKE.delete_UnorderedMapUInt32STR_RES_Iterator(swigCPtr);
+          }
+          swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
+        }
+      }
+    }
+  /*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+    public global::System.IntPtr Pointer {
+      get {
+        return swigCPtr.Handle;
+      }
+    }
+  
+    public static unsafe implicit operator void*(Iterator self) {
+      return (void*)self.swigCPtr.Handle;
+    }
+  
+    public static unsafe Iterator FromPointer(void* pointer, bool memoryOwn = false) {
+      return pointer != null ? new Iterator((global::System.IntPtr)pointer, memoryOwn) : null;
+    }
+  
+    public static Iterator FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+      return pointer != global::System.IntPtr.Zero ? new Iterator(pointer, memoryOwn) : null;
+    }
+  
+    public bool Equals(Iterator other) {
+      if (ReferenceEquals(null, other)) {
+        return false;
+      }
+  
+      if (ReferenceEquals(this, other)) {
+        return true;
+      }
+  
+      return Pointer.Equals(other.Pointer);
+    }
+  
+    public override bool Equals(object obj) {
+      return ReferenceEquals(this, obj) || obj is Iterator other && Equals(other);
+    }
+  
+    public override int GetHashCode() {
+      return swigCPtr.Handle.GetHashCode();
+    }
+  
+    public static bool operator ==(Iterator left, Iterator right) {
+      return Equals(left, right);
+    }
+  
+    public static bool operator !=(Iterator left, Iterator right) {
+      return !Equals(left, right);
+    }
+  /*@SWIG@*/
+    public UnorderedMapUInt32STR_RES.Iterator MoveNext() {
+      UnorderedMapUInt32STR_RES.Iterator ret = new UnorderedMapUInt32STR_RES.Iterator(NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_Iterator_MoveNext(swigCPtr), true);
+      return ret;
+    }
+  
+    internal bool IsEqual(UnorderedMapUInt32STR_RES.Iterator other) {
+      bool ret = NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_Iterator_IsEqual(swigCPtr, UnorderedMapUInt32STR_RES.Iterator.getCPtr(other));
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+      return ret;
+    }
+  
+    internal uint GetKey() {
+      uint retVal = NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_Iterator_GetKey(swigCPtr);
+      return retVal;
+    }
+  
+    internal STR_RES GetValue() {
+      STR_RES ret = new STR_RES(NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_Iterator_GetValue(swigCPtr), true);
+      return ret;
+    }
+  
+    internal void SetValue(STR_RES newValue) {
+      NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_Iterator_SetValue(swigCPtr, STR_RES.getCPtr(newValue));
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    }
+  
   }
 
-  public bool empty() {
-    bool ret = NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_empty(swigCPtr);
+  private uint size() {
+    uint ret = NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_size(swigCPtr);
     return ret;
   }
 
@@ -291,15 +401,19 @@ public unsafe class UnorderedMapUInt32STR_RES : global::System.IDisposable, glob
     NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_Clear(swigCPtr);
   }
 
-  private STR_RES getitem(uint key) {
-    STR_RES ret = new STR_RES(NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_getitem(swigCPtr, key), false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  private UnorderedMapUInt32STR_RES.Iterator find(uint key) {
+    UnorderedMapUInt32STR_RES.Iterator ret = new UnorderedMapUInt32STR_RES.Iterator(NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_find(swigCPtr, key), true);
     return ret;
   }
 
-  private void setitem(uint key, STR_RES x) {
-    NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_setitem(swigCPtr, key, STR_RES.getCPtr(x));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  private UnorderedMapUInt32STR_RES.Iterator begin() {
+    UnorderedMapUInt32STR_RES.Iterator ret = new UnorderedMapUInt32STR_RES.Iterator(NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_begin(swigCPtr), true);
+    return ret;
+  }
+
+  private UnorderedMapUInt32STR_RES.Iterator end() {
+    UnorderedMapUInt32STR_RES.Iterator ret = new UnorderedMapUInt32STR_RES.Iterator(NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_end(swigCPtr), true);
+    return ret;
   }
 
   public bool ContainsKey(uint key) {
@@ -307,28 +421,14 @@ public unsafe class UnorderedMapUInt32STR_RES : global::System.IDisposable, glob
     return ret;
   }
 
-  public void Add(uint key, STR_RES value) {
-    NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_Add(swigCPtr, key, STR_RES.getCPtr(value));
+  private void InternalSetValue(uint key, STR_RES value) {
+    NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_InternalSetValue(swigCPtr, key, STR_RES.getCPtr(value));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public bool Remove(uint key) {
-    bool ret = NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_Remove(swigCPtr, key);
-    return ret;
-  }
-
-  private global::System.IntPtr create_iterator_begin() {
-    global::System.IntPtr ret = NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_create_iterator_begin(swigCPtr);
-    return ret;
-  }
-
-  private uint get_next_key(global::System.IntPtr swigiterator) {
-    uint ret = NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_get_next_key(swigCPtr, swigiterator);
-    return ret;
-  }
-
-  private void destroy_iterator(global::System.IntPtr swigiterator) {
-    NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_destroy_iterator(swigCPtr, swigiterator);
+  private void InternalRemove(UnorderedMapUInt32STR_RES.Iterator itr) {
+    NWNXLibPINVOKE.UnorderedMapUInt32STR_RES_InternalRemove(swigCPtr, UnorderedMapUInt32STR_RES.Iterator.getCPtr(itr));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
 }

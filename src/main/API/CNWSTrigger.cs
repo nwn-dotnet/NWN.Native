@@ -33,7 +33,7 @@ public unsafe class CNWSTrigger : CNWSObject {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -224,13 +224,13 @@ public unsafe class CNWSTrigger : CNWSObject {
 
   }
 
-  public CExoArrayListObjectId m_poidCreatures {
+  public CExoArrayListUInt32 m_poidCreatures {
     set {
-      NWNXLibPINVOKE.CNWSTrigger_m_poidCreatures_set(swigCPtr, CExoArrayListObjectId.getCPtr(value));
+      NWNXLibPINVOKE.CNWSTrigger_m_poidCreatures_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSTrigger_m_poidCreatures_get(swigCPtr);
-      CExoArrayListObjectId ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListObjectId(cPtr, false);
+      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
       return ret;
     } 
   }

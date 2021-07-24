@@ -33,7 +33,7 @@ public unsafe class CNWSMessage : CNWMessage {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -1707,12 +1707,12 @@ public unsafe class CNWSMessage : CNWMessage {
     return retVal;
   }
 
-  public void AssignCreatureLists(CExoArrayListObjectId pSourceList, CExoArrayListObjectId pTargetList) {
-    NWNXLibPINVOKE.CNWSMessage_AssignCreatureLists(swigCPtr, CExoArrayListObjectId.getCPtr(pSourceList), CExoArrayListObjectId.getCPtr(pTargetList));
+  public void AssignCreatureLists(CExoArrayListUInt32 pSourceList, CExoArrayListUInt32 pTargetList) {
+    NWNXLibPINVOKE.CNWSMessage_AssignCreatureLists(swigCPtr, CExoArrayListUInt32.getCPtr(pSourceList), CExoArrayListUInt32.getCPtr(pTargetList));
   }
 
-  public int CompareCreatureLists(CExoArrayListObjectId pSourceList, CExoArrayListObjectId pTargetList) {
-    int retVal = NWNXLibPINVOKE.CNWSMessage_CompareCreatureLists(swigCPtr, CExoArrayListObjectId.getCPtr(pSourceList), CExoArrayListObjectId.getCPtr(pTargetList));
+  public int CompareCreatureLists(CExoArrayListUInt32 pSourceList, CExoArrayListUInt32 pTargetList) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_CompareCreatureLists(swigCPtr, CExoArrayListUInt32.getCPtr(pSourceList), CExoArrayListUInt32.getCPtr(pTargetList));
     return retVal;
   }
 

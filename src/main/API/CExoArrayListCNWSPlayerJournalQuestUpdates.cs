@@ -10,7 +10,8 @@
 
 namespace NWN.Native.API {
 
-public unsafe class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.IDisposable {
+public unsafe class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.IDisposable, global::System.Collections.IEnumerable, global::System.Collections.Generic.IEnumerable<CNWSPlayerJournalQuestUpdates>
+ {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
@@ -43,7 +44,7 @@ public unsafe class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,18 +91,184 @@ public unsafe class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public CNWSPlayerJournalQuestUpdates element {
-    set {
-      NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_element_set(swigCPtr, CNWSPlayerJournalQuestUpdates.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_element_get(swigCPtr);
-      CNWSPlayerJournalQuestUpdates ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSPlayerJournalQuestUpdates(cPtr, false);
-      return ret;
-    } 
+  public CExoArrayListCNWSPlayerJournalQuestUpdates(global::System.Collections.IEnumerable c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (CNWSPlayerJournalQuestUpdates element in c) {
+      this.Add(element);
+    }
   }
 
-  public int num {
+  public CExoArrayListCNWSPlayerJournalQuestUpdates(global::System.Collections.Generic.IEnumerable<CNWSPlayerJournalQuestUpdates> c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (CNWSPlayerJournalQuestUpdates element in c) {
+      this.Add(element);
+    }
+  }
+
+  public bool IsFixedSize {
+    get {
+      return false;
+    }
+  }
+
+  public bool IsReadOnly {
+    get {
+      return false;
+    }
+  }
+
+  public CNWSPlayerJournalQuestUpdates this[int index] {
+    get {
+      return InternalGetItem(index);
+    }
+    set {
+      InternalSetItem(index, value);
+    }
+  }
+
+  public int Capacity {
+    get {
+      return (int)array_size;
+    }
+    set {
+      if (value < num)
+        throw new global::System.ArgumentOutOfRangeException("Capacity");
+      SetSize(value);
+    }
+  }
+
+  public int Count {
+    get {
+      return (int)num;
+    }
+  }
+
+  public bool IsSynchronized {
+    get {
+      return false;
+    }
+  }
+
+  public void CopyTo(CNWSPlayerJournalQuestUpdates[] array)
+  {
+    CopyTo(0, array, 0, this.Count);
+  }
+
+  public void CopyTo(CNWSPlayerJournalQuestUpdates[] array, int arrayIndex)
+  {
+    CopyTo(0, array, arrayIndex, this.Count);
+  }
+
+  public void Clear()
+  {
+    SetSize(0);
+  }
+
+  public void CopyTo(int index, CNWSPlayerJournalQuestUpdates[] array, int arrayIndex, int count)
+  {
+    if (array == null)
+      throw new global::System.ArgumentNullException("array");
+    if (index < 0)
+      throw new global::System.ArgumentOutOfRangeException("index", "Value is less than zero");
+    if (arrayIndex < 0)
+      throw new global::System.ArgumentOutOfRangeException("arrayIndex", "Value is less than zero");
+    if (count < 0)
+      throw new global::System.ArgumentOutOfRangeException("count", "Value is less than zero");
+    if (array.Rank > 1)
+      throw new global::System.ArgumentException("Multi dimensional array.", "array");
+    if (index+count > this.Count || arrayIndex+count > array.Length)
+      throw new global::System.ArgumentException("Number of elements to copy is too large.");
+    for (int i=0; i<count; i++)
+      array.SetValue(InternalGetItemCopy(index+i), arrayIndex+i);
+  }
+
+  public CNWSPlayerJournalQuestUpdates[] ToArray() {
+    CNWSPlayerJournalQuestUpdates[] array = new CNWSPlayerJournalQuestUpdates[this.Count];
+    this.CopyTo(array);
+    return array;
+  }
+
+  global::System.Collections.Generic.IEnumerator<CNWSPlayerJournalQuestUpdates> global::System.Collections.Generic.IEnumerable<CNWSPlayerJournalQuestUpdates>.GetEnumerator() {
+    return new CExoArrayListCNWSPlayerJournalQuestUpdatesEnumerator(this);
+  }
+
+  global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator() {
+    return new CExoArrayListCNWSPlayerJournalQuestUpdatesEnumerator(this);
+  }
+
+  public CExoArrayListCNWSPlayerJournalQuestUpdatesEnumerator GetEnumerator() {
+    return new CExoArrayListCNWSPlayerJournalQuestUpdatesEnumerator(this);
+  }
+
+  // Type-safe enumerator
+  /// Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+  /// whenever the collection is modified. This has been done for changes in the size of the
+  /// collection but not when one of the elements of the collection is modified as it is a bit
+  /// tricky to detect unmanaged code that modifies the collection under our feet.
+  public sealed class CExoArrayListCNWSPlayerJournalQuestUpdatesEnumerator : global::System.Collections.IEnumerator
+    , global::System.Collections.Generic.IEnumerator<CNWSPlayerJournalQuestUpdates>
+  {
+    private CExoArrayListCNWSPlayerJournalQuestUpdates collectionRef;
+    private int currentIndex;
+    private object currentObject;
+    private int currentSize;
+
+    public CExoArrayListCNWSPlayerJournalQuestUpdatesEnumerator(CExoArrayListCNWSPlayerJournalQuestUpdates collection) {
+      collectionRef = collection;
+      currentIndex = -1;
+      currentObject = null;
+      currentSize = collectionRef.Count;
+    }
+
+    // Type-safe iterator Current
+    public CNWSPlayerJournalQuestUpdates Current {
+      get {
+        if (currentIndex == -1)
+          throw new global::System.InvalidOperationException("Enumeration not started.");
+        if (currentIndex > currentSize - 1)
+          throw new global::System.InvalidOperationException("Enumeration finished.");
+        if (currentObject == null)
+          throw new global::System.InvalidOperationException("Collection modified.");
+        return (CNWSPlayerJournalQuestUpdates)currentObject;
+      }
+    }
+
+    // Type-unsafe IEnumerator.Current
+    object global::System.Collections.IEnumerator.Current {
+      get {
+        return Current;
+      }
+    }
+
+    public bool MoveNext() {
+      int size = collectionRef.Count;
+      bool moveOkay = (currentIndex+1 < size) && (size == currentSize);
+      if (moveOkay) {
+        currentIndex++;
+        currentObject = collectionRef[currentIndex];
+      } else {
+        currentObject = null;
+      }
+      return moveOkay;
+    }
+
+    public void Reset() {
+      currentIndex = -1;
+      currentObject = null;
+      if (collectionRef.Count != currentSize) {
+        throw new global::System.InvalidOperationException("Collection modified.");
+      }
+    }
+
+    public void Dispose() {
+        currentIndex = -1;
+        currentObject = null;
+    }
+  }
+
+  private int num {
     set {
       NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_num_set(swigCPtr, value);
     } 
@@ -112,7 +279,7 @@ public unsafe class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.
 
   }
 
-  public int array_size {
+  private int array_size {
     set {
       NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_array_size_set(swigCPtr, value);
     } 
@@ -121,6 +288,23 @@ public unsafe class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.
       return retVal;
     }
 
+  }
+
+  public void Add(CNWSPlayerJournalQuestUpdates t) {
+    NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_Add(swigCPtr, CNWSPlayerJournalQuestUpdates.getCPtr(t));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void Pack() {
+    NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_Pack(swigCPtr);
+  }
+
+  private void Allocate(int s) {
+    NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_Allocate(swigCPtr, s);
+  }
+
+  public void SetSize(int s) {
+    NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_SetSize(swigCPtr, s);
   }
 
   public CExoArrayListCNWSPlayerJournalQuestUpdates(int s) : this(NWNXLibPINVOKE.new_CExoArrayListCNWSPlayerJournalQuestUpdates__SWIG_0(s), true) {
@@ -133,53 +317,31 @@ public unsafe class CExoArrayListCNWSPlayerJournalQuestUpdates : global::System.
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCNWSPlayerJournalQuestUpdates _OpAssign(CExoArrayListCNWSPlayerJournalQuestUpdates list) {
-    CExoArrayListCNWSPlayerJournalQuestUpdates ret = new CExoArrayListCNWSPlayerJournalQuestUpdates(NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates__OpAssign(swigCPtr, CExoArrayListCNWSPlayerJournalQuestUpdates.getCPtr(list)), false);
+  public void RemoveAt(int index) {
+    NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_RemoveAt(swigCPtr, index);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  private CNWSPlayerJournalQuestUpdates InternalGetItem(int index) {
+    CNWSPlayerJournalQuestUpdates ret = new CNWSPlayerJournalQuestUpdates(NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_InternalGetItem(swigCPtr, index), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CNWSPlayerJournalQuestUpdates _OpIndex(int i) {
-    CNWSPlayerJournalQuestUpdates ret = new CNWSPlayerJournalQuestUpdates(NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates__OpIndex(swigCPtr, i), false);
+  private CNWSPlayerJournalQuestUpdates InternalGetItemCopy(int index) {
+    CNWSPlayerJournalQuestUpdates ret = new CNWSPlayerJournalQuestUpdates(NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_InternalGetItemCopy(swigCPtr, index), true);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public void Allocate(int s) {
-    NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_Allocate(swigCPtr, s);
-  }
-
-  public void SetSize(int s) {
-    NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_SetSize(swigCPtr, s);
-  }
-
-  public void Pack() {
-    NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_Pack(swigCPtr);
-  }
-
-  public void Add(CNWSPlayerJournalQuestUpdates t) {
-    NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_Add(swigCPtr, CNWSPlayerJournalQuestUpdates.getCPtr(t));
+  private void InternalSetItem(int index, CNWSPlayerJournalQuestUpdates val) {
+    NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_InternalSetItem(swigCPtr, index, CNWSPlayerJournalQuestUpdates.getCPtr(val));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void Insert(CNWSPlayerJournalQuestUpdates t, int k) {
-    NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_Insert(swigCPtr, CNWSPlayerJournalQuestUpdates.getCPtr(t), k);
+  public void Insert(int index, CNWSPlayerJournalQuestUpdates x) {
+    NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_Insert(swigCPtr, index, CNWSPlayerJournalQuestUpdates.getCPtr(x));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public void DelIndex(int i) {
-    NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_DelIndex(swigCPtr, i);
-  }
-
-  public CNWSPlayerJournalQuestUpdates begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_begin(swigCPtr);
-    CNWSPlayerJournalQuestUpdates ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSPlayerJournalQuestUpdates(cPtr, false);
-    return ret;
-  }
-
-  public CNWSPlayerJournalQuestUpdates end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSPlayerJournalQuestUpdates_end(swigCPtr);
-    CNWSPlayerJournalQuestUpdates ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSPlayerJournalQuestUpdates(cPtr, false);
-    return ret;
   }
 
 }

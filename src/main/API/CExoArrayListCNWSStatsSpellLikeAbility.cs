@@ -10,7 +10,8 @@
 
 namespace NWN.Native.API {
 
-public unsafe class CExoArrayListCNWSStatsSpellLikeAbility : global::System.IDisposable {
+public unsafe class CExoArrayListCNWSStatsSpellLikeAbility : global::System.IDisposable, global::System.Collections.IEnumerable, global::System.Collections.Generic.IEnumerable<CNWSStats_SpellLikeAbility>
+ {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
@@ -43,7 +44,7 @@ public unsafe class CExoArrayListCNWSStatsSpellLikeAbility : global::System.IDis
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,18 +91,184 @@ public unsafe class CExoArrayListCNWSStatsSpellLikeAbility : global::System.IDis
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public CNWSStats_SpellLikeAbility element {
-    set {
-      NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_element_set(swigCPtr, CNWSStats_SpellLikeAbility.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_element_get(swigCPtr);
-      CNWSStats_SpellLikeAbility ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSStats_SpellLikeAbility(cPtr, false);
-      return ret;
-    } 
+  public CExoArrayListCNWSStatsSpellLikeAbility(global::System.Collections.IEnumerable c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (CNWSStats_SpellLikeAbility element in c) {
+      this.Add(element);
+    }
   }
 
-  public int num {
+  public CExoArrayListCNWSStatsSpellLikeAbility(global::System.Collections.Generic.IEnumerable<CNWSStats_SpellLikeAbility> c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (CNWSStats_SpellLikeAbility element in c) {
+      this.Add(element);
+    }
+  }
+
+  public bool IsFixedSize {
+    get {
+      return false;
+    }
+  }
+
+  public bool IsReadOnly {
+    get {
+      return false;
+    }
+  }
+
+  public CNWSStats_SpellLikeAbility this[int index] {
+    get {
+      return InternalGetItem(index);
+    }
+    set {
+      InternalSetItem(index, value);
+    }
+  }
+
+  public int Capacity {
+    get {
+      return (int)array_size;
+    }
+    set {
+      if (value < num)
+        throw new global::System.ArgumentOutOfRangeException("Capacity");
+      SetSize(value);
+    }
+  }
+
+  public int Count {
+    get {
+      return (int)num;
+    }
+  }
+
+  public bool IsSynchronized {
+    get {
+      return false;
+    }
+  }
+
+  public void CopyTo(CNWSStats_SpellLikeAbility[] array)
+  {
+    CopyTo(0, array, 0, this.Count);
+  }
+
+  public void CopyTo(CNWSStats_SpellLikeAbility[] array, int arrayIndex)
+  {
+    CopyTo(0, array, arrayIndex, this.Count);
+  }
+
+  public void Clear()
+  {
+    SetSize(0);
+  }
+
+  public void CopyTo(int index, CNWSStats_SpellLikeAbility[] array, int arrayIndex, int count)
+  {
+    if (array == null)
+      throw new global::System.ArgumentNullException("array");
+    if (index < 0)
+      throw new global::System.ArgumentOutOfRangeException("index", "Value is less than zero");
+    if (arrayIndex < 0)
+      throw new global::System.ArgumentOutOfRangeException("arrayIndex", "Value is less than zero");
+    if (count < 0)
+      throw new global::System.ArgumentOutOfRangeException("count", "Value is less than zero");
+    if (array.Rank > 1)
+      throw new global::System.ArgumentException("Multi dimensional array.", "array");
+    if (index+count > this.Count || arrayIndex+count > array.Length)
+      throw new global::System.ArgumentException("Number of elements to copy is too large.");
+    for (int i=0; i<count; i++)
+      array.SetValue(InternalGetItemCopy(index+i), arrayIndex+i);
+  }
+
+  public CNWSStats_SpellLikeAbility[] ToArray() {
+    CNWSStats_SpellLikeAbility[] array = new CNWSStats_SpellLikeAbility[this.Count];
+    this.CopyTo(array);
+    return array;
+  }
+
+  global::System.Collections.Generic.IEnumerator<CNWSStats_SpellLikeAbility> global::System.Collections.Generic.IEnumerable<CNWSStats_SpellLikeAbility>.GetEnumerator() {
+    return new CExoArrayListCNWSStatsSpellLikeAbilityEnumerator(this);
+  }
+
+  global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator() {
+    return new CExoArrayListCNWSStatsSpellLikeAbilityEnumerator(this);
+  }
+
+  public CExoArrayListCNWSStatsSpellLikeAbilityEnumerator GetEnumerator() {
+    return new CExoArrayListCNWSStatsSpellLikeAbilityEnumerator(this);
+  }
+
+  // Type-safe enumerator
+  /// Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+  /// whenever the collection is modified. This has been done for changes in the size of the
+  /// collection but not when one of the elements of the collection is modified as it is a bit
+  /// tricky to detect unmanaged code that modifies the collection under our feet.
+  public sealed class CExoArrayListCNWSStatsSpellLikeAbilityEnumerator : global::System.Collections.IEnumerator
+    , global::System.Collections.Generic.IEnumerator<CNWSStats_SpellLikeAbility>
+  {
+    private CExoArrayListCNWSStatsSpellLikeAbility collectionRef;
+    private int currentIndex;
+    private object currentObject;
+    private int currentSize;
+
+    public CExoArrayListCNWSStatsSpellLikeAbilityEnumerator(CExoArrayListCNWSStatsSpellLikeAbility collection) {
+      collectionRef = collection;
+      currentIndex = -1;
+      currentObject = null;
+      currentSize = collectionRef.Count;
+    }
+
+    // Type-safe iterator Current
+    public CNWSStats_SpellLikeAbility Current {
+      get {
+        if (currentIndex == -1)
+          throw new global::System.InvalidOperationException("Enumeration not started.");
+        if (currentIndex > currentSize - 1)
+          throw new global::System.InvalidOperationException("Enumeration finished.");
+        if (currentObject == null)
+          throw new global::System.InvalidOperationException("Collection modified.");
+        return (CNWSStats_SpellLikeAbility)currentObject;
+      }
+    }
+
+    // Type-unsafe IEnumerator.Current
+    object global::System.Collections.IEnumerator.Current {
+      get {
+        return Current;
+      }
+    }
+
+    public bool MoveNext() {
+      int size = collectionRef.Count;
+      bool moveOkay = (currentIndex+1 < size) && (size == currentSize);
+      if (moveOkay) {
+        currentIndex++;
+        currentObject = collectionRef[currentIndex];
+      } else {
+        currentObject = null;
+      }
+      return moveOkay;
+    }
+
+    public void Reset() {
+      currentIndex = -1;
+      currentObject = null;
+      if (collectionRef.Count != currentSize) {
+        throw new global::System.InvalidOperationException("Collection modified.");
+      }
+    }
+
+    public void Dispose() {
+        currentIndex = -1;
+        currentObject = null;
+    }
+  }
+
+  private int num {
     set {
       NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_num_set(swigCPtr, value);
     } 
@@ -112,7 +279,7 @@ public unsafe class CExoArrayListCNWSStatsSpellLikeAbility : global::System.IDis
 
   }
 
-  public int array_size {
+  private int array_size {
     set {
       NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_array_size_set(swigCPtr, value);
     } 
@@ -121,6 +288,23 @@ public unsafe class CExoArrayListCNWSStatsSpellLikeAbility : global::System.IDis
       return retVal;
     }
 
+  }
+
+  public void Add(CNWSStats_SpellLikeAbility t) {
+    NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_Add(swigCPtr, CNWSStats_SpellLikeAbility.getCPtr(t));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void Pack() {
+    NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_Pack(swigCPtr);
+  }
+
+  private void Allocate(int s) {
+    NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_Allocate(swigCPtr, s);
+  }
+
+  public void SetSize(int s) {
+    NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_SetSize(swigCPtr, s);
   }
 
   public CExoArrayListCNWSStatsSpellLikeAbility(int s) : this(NWNXLibPINVOKE.new_CExoArrayListCNWSStatsSpellLikeAbility__SWIG_0(s), true) {
@@ -133,53 +317,31 @@ public unsafe class CExoArrayListCNWSStatsSpellLikeAbility : global::System.IDis
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCNWSStatsSpellLikeAbility _OpAssign(CExoArrayListCNWSStatsSpellLikeAbility list) {
-    CExoArrayListCNWSStatsSpellLikeAbility ret = new CExoArrayListCNWSStatsSpellLikeAbility(NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility__OpAssign(swigCPtr, CExoArrayListCNWSStatsSpellLikeAbility.getCPtr(list)), false);
+  public void RemoveAt(int index) {
+    NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_RemoveAt(swigCPtr, index);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  private CNWSStats_SpellLikeAbility InternalGetItem(int index) {
+    CNWSStats_SpellLikeAbility ret = new CNWSStats_SpellLikeAbility(NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_InternalGetItem(swigCPtr, index), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CNWSStats_SpellLikeAbility _OpIndex(int i) {
-    CNWSStats_SpellLikeAbility ret = new CNWSStats_SpellLikeAbility(NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility__OpIndex(swigCPtr, i), false);
+  private CNWSStats_SpellLikeAbility InternalGetItemCopy(int index) {
+    CNWSStats_SpellLikeAbility ret = new CNWSStats_SpellLikeAbility(NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_InternalGetItemCopy(swigCPtr, index), true);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public void Allocate(int s) {
-    NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_Allocate(swigCPtr, s);
-  }
-
-  public void SetSize(int s) {
-    NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_SetSize(swigCPtr, s);
-  }
-
-  public void Pack() {
-    NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_Pack(swigCPtr);
-  }
-
-  public void Add(CNWSStats_SpellLikeAbility t) {
-    NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_Add(swigCPtr, CNWSStats_SpellLikeAbility.getCPtr(t));
+  private void InternalSetItem(int index, CNWSStats_SpellLikeAbility val) {
+    NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_InternalSetItem(swigCPtr, index, CNWSStats_SpellLikeAbility.getCPtr(val));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void Insert(CNWSStats_SpellLikeAbility t, int k) {
-    NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_Insert(swigCPtr, CNWSStats_SpellLikeAbility.getCPtr(t), k);
+  public void Insert(int index, CNWSStats_SpellLikeAbility x) {
+    NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_Insert(swigCPtr, index, CNWSStats_SpellLikeAbility.getCPtr(x));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public void DelIndex(int i) {
-    NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_DelIndex(swigCPtr, i);
-  }
-
-  public CNWSStats_SpellLikeAbility begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_begin(swigCPtr);
-    CNWSStats_SpellLikeAbility ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSStats_SpellLikeAbility(cPtr, false);
-    return ret;
-  }
-
-  public CNWSStats_SpellLikeAbility end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWSStatsSpellLikeAbility_end(swigCPtr);
-    CNWSStats_SpellLikeAbility ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSStats_SpellLikeAbility(cPtr, false);
-    return ret;
   }
 
 }

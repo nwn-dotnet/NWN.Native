@@ -33,7 +33,7 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -254,8 +254,8 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
     NWNXLibPINVOKE.CNWSPlayerTURD_CopyEffectList(swigCPtr, CExoArrayListCGameEffectPtr.getCPtr(pEffectList));
   }
 
-  public void CopyAutomapData(int nNumAreas, CExoArrayListObjectId pAreaList, byte** pAreaData) {
-    NWNXLibPINVOKE.CNWSPlayerTURD_CopyAutomapData(swigCPtr, nNumAreas, CExoArrayListObjectId.getCPtr(pAreaList), (global::System.IntPtr)pAreaData);
+  public void CopyAutomapData(int nNumAreas, CExoArrayListUInt32 pAreaList, byte** pAreaData) {
+    NWNXLibPINVOKE.CNWSPlayerTURD_CopyAutomapData(swigCPtr, nNumAreas, CExoArrayListUInt32.getCPtr(pAreaList), (global::System.IntPtr)pAreaData);
   }
 
   public void ClearAutomapData() {

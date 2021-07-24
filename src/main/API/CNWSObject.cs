@@ -48,7 +48,7 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
   global::System.Runtime.InteropServices.HandleRef ICGameObject.GetInterfaceCPtr() {
     return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CNWSObject_ICGameObject_GetInterfaceCPtr(swigCPtr.Handle));
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -590,13 +590,13 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     } 
   }
 
-  public CExoArrayListObjectId m_lstEffectTargets {
+  public CExoArrayListUInt32 m_lstEffectTargets {
     set {
-      NWNXLibPINVOKE.CNWSObject_m_lstEffectTargets_set(swigCPtr, CExoArrayListObjectId.getCPtr(value));
+      NWNXLibPINVOKE.CNWSObject_m_lstEffectTargets_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSObject_m_lstEffectTargets_get(swigCPtr);
-      CExoArrayListObjectId ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListObjectId(cPtr, false);
+      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
       return ret;
     } 
   }

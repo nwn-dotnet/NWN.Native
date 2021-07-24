@@ -33,7 +33,7 @@ public unsafe class CNWSTile : CNWTile {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -124,13 +124,13 @@ public unsafe class CNWSTile : CNWTile {
 
   }
 
-  public CExoArrayListObjectId m_aDoors {
+  public CExoArrayListUInt32 m_aDoors {
     set {
-      NWNXLibPINVOKE.CNWSTile_m_aDoors_set(swigCPtr, CExoArrayListObjectId.getCPtr(value));
+      NWNXLibPINVOKE.CNWSTile_m_aDoors_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSTile_m_aDoors_get(swigCPtr);
-      CExoArrayListObjectId ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListObjectId(cPtr, false);
+      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
       return ret;
     } 
   }
@@ -245,8 +245,8 @@ public unsafe class CNWSTile : CNWTile {
     return retVal;
   }
 
-  public int InTrigger(Vector vPosition, CExoArrayListObjectId aTriggers) {
-    int retVal = NWNXLibPINVOKE.CNWSTile_InTrigger(swigCPtr, Vector.getCPtr(vPosition), CExoArrayListObjectId.getCPtr(aTriggers));
+  public int InTrigger(Vector vPosition, CExoArrayListUInt32 aTriggers) {
+    int retVal = NWNXLibPINVOKE.CNWSTile_InTrigger(swigCPtr, Vector.getCPtr(vPosition), CExoArrayListUInt32.getCPtr(aTriggers));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }

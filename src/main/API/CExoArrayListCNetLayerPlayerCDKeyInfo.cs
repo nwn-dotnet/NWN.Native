@@ -10,7 +10,8 @@
 
 namespace NWN.Native.API {
 
-public unsafe class CExoArrayListCNetLayerPlayerCDKeyInfo : global::System.IDisposable {
+public unsafe class CExoArrayListCNetLayerPlayerCDKeyInfo : global::System.IDisposable, global::System.Collections.IEnumerable, global::System.Collections.Generic.IEnumerable<CNetLayerPlayerCDKeyInfo>
+ {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
@@ -43,7 +44,7 @@ public unsafe class CExoArrayListCNetLayerPlayerCDKeyInfo : global::System.IDisp
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,18 +91,184 @@ public unsafe class CExoArrayListCNetLayerPlayerCDKeyInfo : global::System.IDisp
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public CNetLayerPlayerCDKeyInfo element {
-    set {
-      NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_element_set(swigCPtr, CNetLayerPlayerCDKeyInfo.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_element_get(swigCPtr);
-      CNetLayerPlayerCDKeyInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNetLayerPlayerCDKeyInfo(cPtr, false);
-      return ret;
-    } 
+  public CExoArrayListCNetLayerPlayerCDKeyInfo(global::System.Collections.IEnumerable c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (CNetLayerPlayerCDKeyInfo element in c) {
+      this.Add(element);
+    }
   }
 
-  public int num {
+  public CExoArrayListCNetLayerPlayerCDKeyInfo(global::System.Collections.Generic.IEnumerable<CNetLayerPlayerCDKeyInfo> c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (CNetLayerPlayerCDKeyInfo element in c) {
+      this.Add(element);
+    }
+  }
+
+  public bool IsFixedSize {
+    get {
+      return false;
+    }
+  }
+
+  public bool IsReadOnly {
+    get {
+      return false;
+    }
+  }
+
+  public CNetLayerPlayerCDKeyInfo this[int index] {
+    get {
+      return InternalGetItem(index);
+    }
+    set {
+      InternalSetItem(index, value);
+    }
+  }
+
+  public int Capacity {
+    get {
+      return (int)array_size;
+    }
+    set {
+      if (value < num)
+        throw new global::System.ArgumentOutOfRangeException("Capacity");
+      SetSize(value);
+    }
+  }
+
+  public int Count {
+    get {
+      return (int)num;
+    }
+  }
+
+  public bool IsSynchronized {
+    get {
+      return false;
+    }
+  }
+
+  public void CopyTo(CNetLayerPlayerCDKeyInfo[] array)
+  {
+    CopyTo(0, array, 0, this.Count);
+  }
+
+  public void CopyTo(CNetLayerPlayerCDKeyInfo[] array, int arrayIndex)
+  {
+    CopyTo(0, array, arrayIndex, this.Count);
+  }
+
+  public void Clear()
+  {
+    SetSize(0);
+  }
+
+  public void CopyTo(int index, CNetLayerPlayerCDKeyInfo[] array, int arrayIndex, int count)
+  {
+    if (array == null)
+      throw new global::System.ArgumentNullException("array");
+    if (index < 0)
+      throw new global::System.ArgumentOutOfRangeException("index", "Value is less than zero");
+    if (arrayIndex < 0)
+      throw new global::System.ArgumentOutOfRangeException("arrayIndex", "Value is less than zero");
+    if (count < 0)
+      throw new global::System.ArgumentOutOfRangeException("count", "Value is less than zero");
+    if (array.Rank > 1)
+      throw new global::System.ArgumentException("Multi dimensional array.", "array");
+    if (index+count > this.Count || arrayIndex+count > array.Length)
+      throw new global::System.ArgumentException("Number of elements to copy is too large.");
+    for (int i=0; i<count; i++)
+      array.SetValue(InternalGetItemCopy(index+i), arrayIndex+i);
+  }
+
+  public CNetLayerPlayerCDKeyInfo[] ToArray() {
+    CNetLayerPlayerCDKeyInfo[] array = new CNetLayerPlayerCDKeyInfo[this.Count];
+    this.CopyTo(array);
+    return array;
+  }
+
+  global::System.Collections.Generic.IEnumerator<CNetLayerPlayerCDKeyInfo> global::System.Collections.Generic.IEnumerable<CNetLayerPlayerCDKeyInfo>.GetEnumerator() {
+    return new CExoArrayListCNetLayerPlayerCDKeyInfoEnumerator(this);
+  }
+
+  global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator() {
+    return new CExoArrayListCNetLayerPlayerCDKeyInfoEnumerator(this);
+  }
+
+  public CExoArrayListCNetLayerPlayerCDKeyInfoEnumerator GetEnumerator() {
+    return new CExoArrayListCNetLayerPlayerCDKeyInfoEnumerator(this);
+  }
+
+  // Type-safe enumerator
+  /// Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+  /// whenever the collection is modified. This has been done for changes in the size of the
+  /// collection but not when one of the elements of the collection is modified as it is a bit
+  /// tricky to detect unmanaged code that modifies the collection under our feet.
+  public sealed class CExoArrayListCNetLayerPlayerCDKeyInfoEnumerator : global::System.Collections.IEnumerator
+    , global::System.Collections.Generic.IEnumerator<CNetLayerPlayerCDKeyInfo>
+  {
+    private CExoArrayListCNetLayerPlayerCDKeyInfo collectionRef;
+    private int currentIndex;
+    private object currentObject;
+    private int currentSize;
+
+    public CExoArrayListCNetLayerPlayerCDKeyInfoEnumerator(CExoArrayListCNetLayerPlayerCDKeyInfo collection) {
+      collectionRef = collection;
+      currentIndex = -1;
+      currentObject = null;
+      currentSize = collectionRef.Count;
+    }
+
+    // Type-safe iterator Current
+    public CNetLayerPlayerCDKeyInfo Current {
+      get {
+        if (currentIndex == -1)
+          throw new global::System.InvalidOperationException("Enumeration not started.");
+        if (currentIndex > currentSize - 1)
+          throw new global::System.InvalidOperationException("Enumeration finished.");
+        if (currentObject == null)
+          throw new global::System.InvalidOperationException("Collection modified.");
+        return (CNetLayerPlayerCDKeyInfo)currentObject;
+      }
+    }
+
+    // Type-unsafe IEnumerator.Current
+    object global::System.Collections.IEnumerator.Current {
+      get {
+        return Current;
+      }
+    }
+
+    public bool MoveNext() {
+      int size = collectionRef.Count;
+      bool moveOkay = (currentIndex+1 < size) && (size == currentSize);
+      if (moveOkay) {
+        currentIndex++;
+        currentObject = collectionRef[currentIndex];
+      } else {
+        currentObject = null;
+      }
+      return moveOkay;
+    }
+
+    public void Reset() {
+      currentIndex = -1;
+      currentObject = null;
+      if (collectionRef.Count != currentSize) {
+        throw new global::System.InvalidOperationException("Collection modified.");
+      }
+    }
+
+    public void Dispose() {
+        currentIndex = -1;
+        currentObject = null;
+    }
+  }
+
+  private int num {
     set {
       NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_num_set(swigCPtr, value);
     } 
@@ -112,7 +279,7 @@ public unsafe class CExoArrayListCNetLayerPlayerCDKeyInfo : global::System.IDisp
 
   }
 
-  public int array_size {
+  private int array_size {
     set {
       NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_array_size_set(swigCPtr, value);
     } 
@@ -121,6 +288,23 @@ public unsafe class CExoArrayListCNetLayerPlayerCDKeyInfo : global::System.IDisp
       return retVal;
     }
 
+  }
+
+  public void Add(CNetLayerPlayerCDKeyInfo t) {
+    NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_Add(swigCPtr, CNetLayerPlayerCDKeyInfo.getCPtr(t));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void Pack() {
+    NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_Pack(swigCPtr);
+  }
+
+  private void Allocate(int s) {
+    NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_Allocate(swigCPtr, s);
+  }
+
+  public void SetSize(int s) {
+    NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_SetSize(swigCPtr, s);
   }
 
   public CExoArrayListCNetLayerPlayerCDKeyInfo(int s) : this(NWNXLibPINVOKE.new_CExoArrayListCNetLayerPlayerCDKeyInfo__SWIG_0(s), true) {
@@ -133,53 +317,31 @@ public unsafe class CExoArrayListCNetLayerPlayerCDKeyInfo : global::System.IDisp
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCNetLayerPlayerCDKeyInfo _OpAssign(CExoArrayListCNetLayerPlayerCDKeyInfo list) {
-    CExoArrayListCNetLayerPlayerCDKeyInfo ret = new CExoArrayListCNetLayerPlayerCDKeyInfo(NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo__OpAssign(swigCPtr, CExoArrayListCNetLayerPlayerCDKeyInfo.getCPtr(list)), false);
+  public void RemoveAt(int index) {
+    NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_RemoveAt(swigCPtr, index);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  private CNetLayerPlayerCDKeyInfo InternalGetItem(int index) {
+    CNetLayerPlayerCDKeyInfo ret = new CNetLayerPlayerCDKeyInfo(NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_InternalGetItem(swigCPtr, index), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CNetLayerPlayerCDKeyInfo _OpIndex(int i) {
-    CNetLayerPlayerCDKeyInfo ret = new CNetLayerPlayerCDKeyInfo(NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo__OpIndex(swigCPtr, i), false);
+  private CNetLayerPlayerCDKeyInfo InternalGetItemCopy(int index) {
+    CNetLayerPlayerCDKeyInfo ret = new CNetLayerPlayerCDKeyInfo(NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_InternalGetItemCopy(swigCPtr, index), true);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public void Allocate(int s) {
-    NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_Allocate(swigCPtr, s);
-  }
-
-  public void SetSize(int s) {
-    NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_SetSize(swigCPtr, s);
-  }
-
-  public void Pack() {
-    NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_Pack(swigCPtr);
-  }
-
-  public void Add(CNetLayerPlayerCDKeyInfo t) {
-    NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_Add(swigCPtr, CNetLayerPlayerCDKeyInfo.getCPtr(t));
+  private void InternalSetItem(int index, CNetLayerPlayerCDKeyInfo val) {
+    NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_InternalSetItem(swigCPtr, index, CNetLayerPlayerCDKeyInfo.getCPtr(val));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void Insert(CNetLayerPlayerCDKeyInfo t, int k) {
-    NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_Insert(swigCPtr, CNetLayerPlayerCDKeyInfo.getCPtr(t), k);
+  public void Insert(int index, CNetLayerPlayerCDKeyInfo x) {
+    NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_Insert(swigCPtr, index, CNetLayerPlayerCDKeyInfo.getCPtr(x));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public void DelIndex(int i) {
-    NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_DelIndex(swigCPtr, i);
-  }
-
-  public CNetLayerPlayerCDKeyInfo begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_begin(swigCPtr);
-    CNetLayerPlayerCDKeyInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNetLayerPlayerCDKeyInfo(cPtr, false);
-    return ret;
-  }
-
-  public CNetLayerPlayerCDKeyInfo end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNetLayerPlayerCDKeyInfo_end(swigCPtr);
-    CNetLayerPlayerCDKeyInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNetLayerPlayerCDKeyInfo(cPtr, false);
-    return ret;
   }
 
 }

@@ -10,7 +10,8 @@
 
 namespace NWN.Native.API {
 
-public unsafe class CExoArrayListCFileInfo : global::System.IDisposable {
+public unsafe class CExoArrayListCFileInfo : global::System.IDisposable, global::System.Collections.IEnumerable, global::System.Collections.Generic.IEnumerable<CFileInfo>
+ {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
@@ -43,7 +44,7 @@ public unsafe class CExoArrayListCFileInfo : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,18 +91,184 @@ public unsafe class CExoArrayListCFileInfo : global::System.IDisposable {
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public CFileInfo element {
-    set {
-      NWNXLibPINVOKE.CExoArrayListCFileInfo_element_set(swigCPtr, CFileInfo.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCFileInfo_element_get(swigCPtr);
-      CFileInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new CFileInfo(cPtr, false);
-      return ret;
-    } 
+  public CExoArrayListCFileInfo(global::System.Collections.IEnumerable c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (CFileInfo element in c) {
+      this.Add(element);
+    }
   }
 
-  public int num {
+  public CExoArrayListCFileInfo(global::System.Collections.Generic.IEnumerable<CFileInfo> c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (CFileInfo element in c) {
+      this.Add(element);
+    }
+  }
+
+  public bool IsFixedSize {
+    get {
+      return false;
+    }
+  }
+
+  public bool IsReadOnly {
+    get {
+      return false;
+    }
+  }
+
+  public CFileInfo this[int index] {
+    get {
+      return InternalGetItem(index);
+    }
+    set {
+      InternalSetItem(index, value);
+    }
+  }
+
+  public int Capacity {
+    get {
+      return (int)array_size;
+    }
+    set {
+      if (value < num)
+        throw new global::System.ArgumentOutOfRangeException("Capacity");
+      SetSize(value);
+    }
+  }
+
+  public int Count {
+    get {
+      return (int)num;
+    }
+  }
+
+  public bool IsSynchronized {
+    get {
+      return false;
+    }
+  }
+
+  public void CopyTo(CFileInfo[] array)
+  {
+    CopyTo(0, array, 0, this.Count);
+  }
+
+  public void CopyTo(CFileInfo[] array, int arrayIndex)
+  {
+    CopyTo(0, array, arrayIndex, this.Count);
+  }
+
+  public void Clear()
+  {
+    SetSize(0);
+  }
+
+  public void CopyTo(int index, CFileInfo[] array, int arrayIndex, int count)
+  {
+    if (array == null)
+      throw new global::System.ArgumentNullException("array");
+    if (index < 0)
+      throw new global::System.ArgumentOutOfRangeException("index", "Value is less than zero");
+    if (arrayIndex < 0)
+      throw new global::System.ArgumentOutOfRangeException("arrayIndex", "Value is less than zero");
+    if (count < 0)
+      throw new global::System.ArgumentOutOfRangeException("count", "Value is less than zero");
+    if (array.Rank > 1)
+      throw new global::System.ArgumentException("Multi dimensional array.", "array");
+    if (index+count > this.Count || arrayIndex+count > array.Length)
+      throw new global::System.ArgumentException("Number of elements to copy is too large.");
+    for (int i=0; i<count; i++)
+      array.SetValue(InternalGetItemCopy(index+i), arrayIndex+i);
+  }
+
+  public CFileInfo[] ToArray() {
+    CFileInfo[] array = new CFileInfo[this.Count];
+    this.CopyTo(array);
+    return array;
+  }
+
+  global::System.Collections.Generic.IEnumerator<CFileInfo> global::System.Collections.Generic.IEnumerable<CFileInfo>.GetEnumerator() {
+    return new CExoArrayListCFileInfoEnumerator(this);
+  }
+
+  global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator() {
+    return new CExoArrayListCFileInfoEnumerator(this);
+  }
+
+  public CExoArrayListCFileInfoEnumerator GetEnumerator() {
+    return new CExoArrayListCFileInfoEnumerator(this);
+  }
+
+  // Type-safe enumerator
+  /// Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+  /// whenever the collection is modified. This has been done for changes in the size of the
+  /// collection but not when one of the elements of the collection is modified as it is a bit
+  /// tricky to detect unmanaged code that modifies the collection under our feet.
+  public sealed class CExoArrayListCFileInfoEnumerator : global::System.Collections.IEnumerator
+    , global::System.Collections.Generic.IEnumerator<CFileInfo>
+  {
+    private CExoArrayListCFileInfo collectionRef;
+    private int currentIndex;
+    private object currentObject;
+    private int currentSize;
+
+    public CExoArrayListCFileInfoEnumerator(CExoArrayListCFileInfo collection) {
+      collectionRef = collection;
+      currentIndex = -1;
+      currentObject = null;
+      currentSize = collectionRef.Count;
+    }
+
+    // Type-safe iterator Current
+    public CFileInfo Current {
+      get {
+        if (currentIndex == -1)
+          throw new global::System.InvalidOperationException("Enumeration not started.");
+        if (currentIndex > currentSize - 1)
+          throw new global::System.InvalidOperationException("Enumeration finished.");
+        if (currentObject == null)
+          throw new global::System.InvalidOperationException("Collection modified.");
+        return (CFileInfo)currentObject;
+      }
+    }
+
+    // Type-unsafe IEnumerator.Current
+    object global::System.Collections.IEnumerator.Current {
+      get {
+        return Current;
+      }
+    }
+
+    public bool MoveNext() {
+      int size = collectionRef.Count;
+      bool moveOkay = (currentIndex+1 < size) && (size == currentSize);
+      if (moveOkay) {
+        currentIndex++;
+        currentObject = collectionRef[currentIndex];
+      } else {
+        currentObject = null;
+      }
+      return moveOkay;
+    }
+
+    public void Reset() {
+      currentIndex = -1;
+      currentObject = null;
+      if (collectionRef.Count != currentSize) {
+        throw new global::System.InvalidOperationException("Collection modified.");
+      }
+    }
+
+    public void Dispose() {
+        currentIndex = -1;
+        currentObject = null;
+    }
+  }
+
+  private int num {
     set {
       NWNXLibPINVOKE.CExoArrayListCFileInfo_num_set(swigCPtr, value);
     } 
@@ -112,7 +279,7 @@ public unsafe class CExoArrayListCFileInfo : global::System.IDisposable {
 
   }
 
-  public int array_size {
+  private int array_size {
     set {
       NWNXLibPINVOKE.CExoArrayListCFileInfo_array_size_set(swigCPtr, value);
     } 
@@ -121,6 +288,23 @@ public unsafe class CExoArrayListCFileInfo : global::System.IDisposable {
       return retVal;
     }
 
+  }
+
+  public void Add(CFileInfo t) {
+    NWNXLibPINVOKE.CExoArrayListCFileInfo_Add(swigCPtr, CFileInfo.getCPtr(t));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void Pack() {
+    NWNXLibPINVOKE.CExoArrayListCFileInfo_Pack(swigCPtr);
+  }
+
+  private void Allocate(int s) {
+    NWNXLibPINVOKE.CExoArrayListCFileInfo_Allocate(swigCPtr, s);
+  }
+
+  public void SetSize(int s) {
+    NWNXLibPINVOKE.CExoArrayListCFileInfo_SetSize(swigCPtr, s);
   }
 
   public CExoArrayListCFileInfo(int s) : this(NWNXLibPINVOKE.new_CExoArrayListCFileInfo__SWIG_0(s), true) {
@@ -133,53 +317,31 @@ public unsafe class CExoArrayListCFileInfo : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCFileInfo _OpAssign(CExoArrayListCFileInfo list) {
-    CExoArrayListCFileInfo ret = new CExoArrayListCFileInfo(NWNXLibPINVOKE.CExoArrayListCFileInfo__OpAssign(swigCPtr, CExoArrayListCFileInfo.getCPtr(list)), false);
+  public void RemoveAt(int index) {
+    NWNXLibPINVOKE.CExoArrayListCFileInfo_RemoveAt(swigCPtr, index);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  private CFileInfo InternalGetItem(int index) {
+    CFileInfo ret = new CFileInfo(NWNXLibPINVOKE.CExoArrayListCFileInfo_InternalGetItem(swigCPtr, index), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public CFileInfo _OpIndex(int i) {
-    CFileInfo ret = new CFileInfo(NWNXLibPINVOKE.CExoArrayListCFileInfo__OpIndex(swigCPtr, i), false);
+  private CFileInfo InternalGetItemCopy(int index) {
+    CFileInfo ret = new CFileInfo(NWNXLibPINVOKE.CExoArrayListCFileInfo_InternalGetItemCopy(swigCPtr, index), true);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public void Allocate(int s) {
-    NWNXLibPINVOKE.CExoArrayListCFileInfo_Allocate(swigCPtr, s);
-  }
-
-  public void SetSize(int s) {
-    NWNXLibPINVOKE.CExoArrayListCFileInfo_SetSize(swigCPtr, s);
-  }
-
-  public void Pack() {
-    NWNXLibPINVOKE.CExoArrayListCFileInfo_Pack(swigCPtr);
-  }
-
-  public void Add(CFileInfo t) {
-    NWNXLibPINVOKE.CExoArrayListCFileInfo_Add(swigCPtr, CFileInfo.getCPtr(t));
+  private void InternalSetItem(int index, CFileInfo val) {
+    NWNXLibPINVOKE.CExoArrayListCFileInfo_InternalSetItem(swigCPtr, index, CFileInfo.getCPtr(val));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void Insert(CFileInfo t, int k) {
-    NWNXLibPINVOKE.CExoArrayListCFileInfo_Insert(swigCPtr, CFileInfo.getCPtr(t), k);
+  public void Insert(int index, CFileInfo x) {
+    NWNXLibPINVOKE.CExoArrayListCFileInfo_Insert(swigCPtr, index, CFileInfo.getCPtr(x));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public void DelIndex(int i) {
-    NWNXLibPINVOKE.CExoArrayListCFileInfo_DelIndex(swigCPtr, i);
-  }
-
-  public CFileInfo begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCFileInfo_begin(swigCPtr);
-    CFileInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new CFileInfo(cPtr, false);
-    return ret;
-  }
-
-  public CFileInfo end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCFileInfo_end(swigCPtr);
-    CFileInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new CFileInfo(cPtr, false);
-    return ret;
   }
 
 }

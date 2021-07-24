@@ -33,7 +33,7 @@ public unsafe class CNWSCreature : CNWSObject {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -227,24 +227,24 @@ public unsafe class CNWSCreature : CNWSObject {
 
   }
 
-  public CExoArrayListObjectId m_aLinkedAreaOfEffectObjects {
+  public CExoArrayListUInt32 m_aLinkedAreaOfEffectObjects {
     set {
-      NWNXLibPINVOKE.CNWSCreature_m_aLinkedAreaOfEffectObjects_set(swigCPtr, CExoArrayListObjectId.getCPtr(value));
+      NWNXLibPINVOKE.CNWSCreature_m_aLinkedAreaOfEffectObjects_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_m_aLinkedAreaOfEffectObjects_get(swigCPtr);
-      CExoArrayListObjectId ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListObjectId(cPtr, false);
+      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
       return ret;
     } 
   }
 
-  public CExoArrayListObjectId m_aInSubAreas {
+  public CExoArrayListUInt32 m_aInSubAreas {
     set {
-      NWNXLibPINVOKE.CNWSCreature_m_aInSubAreas_set(swigCPtr, CExoArrayListObjectId.getCPtr(value));
+      NWNXLibPINVOKE.CNWSCreature_m_aInSubAreas_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_m_aInSubAreas_get(swigCPtr);
-      CExoArrayListObjectId ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListObjectId(cPtr, false);
+      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
       return ret;
     } 
   }
@@ -580,13 +580,13 @@ public unsafe class CNWSCreature : CNWSObject {
     } 
   }
 
-  public CExoArrayListObjectId m_oidAutoMapAreaList {
+  public CExoArrayListUInt32 m_oidAutoMapAreaList {
     set {
-      NWNXLibPINVOKE.CNWSCreature_m_oidAutoMapAreaList_set(swigCPtr, CExoArrayListObjectId.getCPtr(value));
+      NWNXLibPINVOKE.CNWSCreature_m_oidAutoMapAreaList_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_m_oidAutoMapAreaList_get(swigCPtr);
-      CExoArrayListObjectId ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListObjectId(cPtr, false);
+      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
       return ret;
     } 
   }
@@ -1394,13 +1394,13 @@ public unsafe class CNWSCreature : CNWSObject {
 
   }
 
-  public CExoArrayListObjectId m_poidSpellIdentified {
+  public CExoArrayListUInt32 m_poidSpellIdentified {
     set {
-      NWNXLibPINVOKE.CNWSCreature_m_poidSpellIdentified_set(swigCPtr, CExoArrayListObjectId.getCPtr(value));
+      NWNXLibPINVOKE.CNWSCreature_m_poidSpellIdentified_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_m_poidSpellIdentified_get(swigCPtr);
-      CExoArrayListObjectId ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListObjectId(cPtr, false);
+      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
       return ret;
     } 
   }
@@ -1966,13 +1966,13 @@ public unsafe class CNWSCreature : CNWSObject {
 
   }
 
-  public CExoArrayListObjectId m_pAssociateList {
+  public CExoArrayListUInt32 m_pAssociateList {
     set {
-      NWNXLibPINVOKE.CNWSCreature_m_pAssociateList_set(swigCPtr, CExoArrayListObjectId.getCPtr(value));
+      NWNXLibPINVOKE.CNWSCreature_m_pAssociateList_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_m_pAssociateList_get(swigCPtr);
-      CExoArrayListObjectId ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListObjectId(cPtr, false);
+      CExoArrayListUInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListUInt32(cPtr, false);
       return ret;
     } 
   }
@@ -4010,14 +4010,14 @@ public unsafe class CNWSCreature : CNWSObject {
     return retVal;
   }
 
-  public int UpdateSubareasOnMoveTo(Vector vOldPosition, Vector vNewPosition, int bIntersectingSubAreas, CExoArrayListObjectId aIntersectingSubAreas, int bDriveMode) {
-    int retVal = NWNXLibPINVOKE.CNWSCreature_UpdateSubareasOnMoveTo__SWIG_0(swigCPtr, Vector.getCPtr(vOldPosition), Vector.getCPtr(vNewPosition), bIntersectingSubAreas, CExoArrayListObjectId.getCPtr(aIntersectingSubAreas), bDriveMode);
+  public int UpdateSubareasOnMoveTo(Vector vOldPosition, Vector vNewPosition, int bIntersectingSubAreas, CExoArrayListUInt32 aIntersectingSubAreas, int bDriveMode) {
+    int retVal = NWNXLibPINVOKE.CNWSCreature_UpdateSubareasOnMoveTo__SWIG_0(swigCPtr, Vector.getCPtr(vOldPosition), Vector.getCPtr(vNewPosition), bIntersectingSubAreas, CExoArrayListUInt32.getCPtr(aIntersectingSubAreas), bDriveMode);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
 
-  public int UpdateSubareasOnMoveTo(Vector vOldPosition, Vector vNewPosition, int bIntersectingSubAreas, CExoArrayListObjectId aIntersectingSubAreas) {
-    int retVal = NWNXLibPINVOKE.CNWSCreature_UpdateSubareasOnMoveTo__SWIG_1(swigCPtr, Vector.getCPtr(vOldPosition), Vector.getCPtr(vNewPosition), bIntersectingSubAreas, CExoArrayListObjectId.getCPtr(aIntersectingSubAreas));
+  public int UpdateSubareasOnMoveTo(Vector vOldPosition, Vector vNewPosition, int bIntersectingSubAreas, CExoArrayListUInt32 aIntersectingSubAreas) {
+    int retVal = NWNXLibPINVOKE.CNWSCreature_UpdateSubareasOnMoveTo__SWIG_1(swigCPtr, Vector.getCPtr(vOldPosition), Vector.getCPtr(vNewPosition), bIntersectingSubAreas, CExoArrayListUInt32.getCPtr(aIntersectingSubAreas));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
@@ -4034,13 +4034,13 @@ public unsafe class CNWSCreature : CNWSObject {
     return retVal;
   }
 
-  public int HandleSubAreaStateChanges(CExoArrayListObjectId aNewSubAreas, CExoArrayListObjectId aIntersectingSubAreas, int bDriveMode) {
-    int retVal = NWNXLibPINVOKE.CNWSCreature_HandleSubAreaStateChanges__SWIG_0(swigCPtr, CExoArrayListObjectId.getCPtr(aNewSubAreas), CExoArrayListObjectId.getCPtr(aIntersectingSubAreas), bDriveMode);
+  public int HandleSubAreaStateChanges(CExoArrayListUInt32 aNewSubAreas, CExoArrayListUInt32 aIntersectingSubAreas, int bDriveMode) {
+    int retVal = NWNXLibPINVOKE.CNWSCreature_HandleSubAreaStateChanges__SWIG_0(swigCPtr, CExoArrayListUInt32.getCPtr(aNewSubAreas), CExoArrayListUInt32.getCPtr(aIntersectingSubAreas), bDriveMode);
     return retVal;
   }
 
-  public int HandleSubAreaStateChanges(CExoArrayListObjectId aNewSubAreas, CExoArrayListObjectId aIntersectingSubAreas) {
-    int retVal = NWNXLibPINVOKE.CNWSCreature_HandleSubAreaStateChanges__SWIG_1(swigCPtr, CExoArrayListObjectId.getCPtr(aNewSubAreas), CExoArrayListObjectId.getCPtr(aIntersectingSubAreas));
+  public int HandleSubAreaStateChanges(CExoArrayListUInt32 aNewSubAreas, CExoArrayListUInt32 aIntersectingSubAreas) {
+    int retVal = NWNXLibPINVOKE.CNWSCreature_HandleSubAreaStateChanges__SWIG_1(swigCPtr, CExoArrayListUInt32.getCPtr(aNewSubAreas), CExoArrayListUInt32.getCPtr(aIntersectingSubAreas));
     return retVal;
   }
 
@@ -5351,8 +5351,8 @@ public unsafe class CNWSCreature : CNWSObject {
     return retVal;
   }
 
-  public int WalkUpdateLocationDistance(float fDistance, Vector vNewPosition, Vector vNewOrientation, CExoArrayListObjectId aIntersectingSubAreas) {
-    int retVal = NWNXLibPINVOKE.CNWSCreature_WalkUpdateLocationDistance(swigCPtr, fDistance, Vector.getCPtr(vNewPosition), Vector.getCPtr(vNewOrientation), CExoArrayListObjectId.getCPtr(aIntersectingSubAreas));
+  public int WalkUpdateLocationDistance(float fDistance, Vector vNewPosition, Vector vNewOrientation, CExoArrayListUInt32 aIntersectingSubAreas) {
+    int retVal = NWNXLibPINVOKE.CNWSCreature_WalkUpdateLocationDistance(swigCPtr, fDistance, Vector.getCPtr(vNewPosition), Vector.getCPtr(vNewOrientation), CExoArrayListUInt32.getCPtr(aIntersectingSubAreas));
     return retVal;
   }
 

@@ -10,7 +10,8 @@
 
 namespace NWN.Native.API {
 
-public unsafe class CExoArrayListNWPlayerCharacterListClass : global::System.IDisposable {
+public unsafe class CExoArrayListNWPlayerCharacterListClass : global::System.IDisposable, global::System.Collections.IEnumerable, global::System.Collections.Generic.IEnumerable<NWPlayerCharacterListClass_st>
+ {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
@@ -43,7 +44,7 @@ public unsafe class CExoArrayListNWPlayerCharacterListClass : global::System.IDi
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,18 +91,184 @@ public unsafe class CExoArrayListNWPlayerCharacterListClass : global::System.IDi
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public NWPlayerCharacterListClass_st element {
-    set {
-      NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_element_set(swigCPtr, NWPlayerCharacterListClass_st.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_element_get(swigCPtr);
-      NWPlayerCharacterListClass_st ret = (cPtr == global::System.IntPtr.Zero) ? null : new NWPlayerCharacterListClass_st(cPtr, false);
-      return ret;
-    } 
+  public CExoArrayListNWPlayerCharacterListClass(global::System.Collections.IEnumerable c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (NWPlayerCharacterListClass_st element in c) {
+      this.Add(element);
+    }
   }
 
-  public int num {
+  public CExoArrayListNWPlayerCharacterListClass(global::System.Collections.Generic.IEnumerable<NWPlayerCharacterListClass_st> c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (NWPlayerCharacterListClass_st element in c) {
+      this.Add(element);
+    }
+  }
+
+  public bool IsFixedSize {
+    get {
+      return false;
+    }
+  }
+
+  public bool IsReadOnly {
+    get {
+      return false;
+    }
+  }
+
+  public NWPlayerCharacterListClass_st this[int index] {
+    get {
+      return InternalGetItem(index);
+    }
+    set {
+      InternalSetItem(index, value);
+    }
+  }
+
+  public int Capacity {
+    get {
+      return (int)array_size;
+    }
+    set {
+      if (value < num)
+        throw new global::System.ArgumentOutOfRangeException("Capacity");
+      SetSize(value);
+    }
+  }
+
+  public int Count {
+    get {
+      return (int)num;
+    }
+  }
+
+  public bool IsSynchronized {
+    get {
+      return false;
+    }
+  }
+
+  public void CopyTo(NWPlayerCharacterListClass_st[] array)
+  {
+    CopyTo(0, array, 0, this.Count);
+  }
+
+  public void CopyTo(NWPlayerCharacterListClass_st[] array, int arrayIndex)
+  {
+    CopyTo(0, array, arrayIndex, this.Count);
+  }
+
+  public void Clear()
+  {
+    SetSize(0);
+  }
+
+  public void CopyTo(int index, NWPlayerCharacterListClass_st[] array, int arrayIndex, int count)
+  {
+    if (array == null)
+      throw new global::System.ArgumentNullException("array");
+    if (index < 0)
+      throw new global::System.ArgumentOutOfRangeException("index", "Value is less than zero");
+    if (arrayIndex < 0)
+      throw new global::System.ArgumentOutOfRangeException("arrayIndex", "Value is less than zero");
+    if (count < 0)
+      throw new global::System.ArgumentOutOfRangeException("count", "Value is less than zero");
+    if (array.Rank > 1)
+      throw new global::System.ArgumentException("Multi dimensional array.", "array");
+    if (index+count > this.Count || arrayIndex+count > array.Length)
+      throw new global::System.ArgumentException("Number of elements to copy is too large.");
+    for (int i=0; i<count; i++)
+      array.SetValue(InternalGetItemCopy(index+i), arrayIndex+i);
+  }
+
+  public NWPlayerCharacterListClass_st[] ToArray() {
+    NWPlayerCharacterListClass_st[] array = new NWPlayerCharacterListClass_st[this.Count];
+    this.CopyTo(array);
+    return array;
+  }
+
+  global::System.Collections.Generic.IEnumerator<NWPlayerCharacterListClass_st> global::System.Collections.Generic.IEnumerable<NWPlayerCharacterListClass_st>.GetEnumerator() {
+    return new CExoArrayListNWPlayerCharacterListClassEnumerator(this);
+  }
+
+  global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator() {
+    return new CExoArrayListNWPlayerCharacterListClassEnumerator(this);
+  }
+
+  public CExoArrayListNWPlayerCharacterListClassEnumerator GetEnumerator() {
+    return new CExoArrayListNWPlayerCharacterListClassEnumerator(this);
+  }
+
+  // Type-safe enumerator
+  /// Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+  /// whenever the collection is modified. This has been done for changes in the size of the
+  /// collection but not when one of the elements of the collection is modified as it is a bit
+  /// tricky to detect unmanaged code that modifies the collection under our feet.
+  public sealed class CExoArrayListNWPlayerCharacterListClassEnumerator : global::System.Collections.IEnumerator
+    , global::System.Collections.Generic.IEnumerator<NWPlayerCharacterListClass_st>
+  {
+    private CExoArrayListNWPlayerCharacterListClass collectionRef;
+    private int currentIndex;
+    private object currentObject;
+    private int currentSize;
+
+    public CExoArrayListNWPlayerCharacterListClassEnumerator(CExoArrayListNWPlayerCharacterListClass collection) {
+      collectionRef = collection;
+      currentIndex = -1;
+      currentObject = null;
+      currentSize = collectionRef.Count;
+    }
+
+    // Type-safe iterator Current
+    public NWPlayerCharacterListClass_st Current {
+      get {
+        if (currentIndex == -1)
+          throw new global::System.InvalidOperationException("Enumeration not started.");
+        if (currentIndex > currentSize - 1)
+          throw new global::System.InvalidOperationException("Enumeration finished.");
+        if (currentObject == null)
+          throw new global::System.InvalidOperationException("Collection modified.");
+        return (NWPlayerCharacterListClass_st)currentObject;
+      }
+    }
+
+    // Type-unsafe IEnumerator.Current
+    object global::System.Collections.IEnumerator.Current {
+      get {
+        return Current;
+      }
+    }
+
+    public bool MoveNext() {
+      int size = collectionRef.Count;
+      bool moveOkay = (currentIndex+1 < size) && (size == currentSize);
+      if (moveOkay) {
+        currentIndex++;
+        currentObject = collectionRef[currentIndex];
+      } else {
+        currentObject = null;
+      }
+      return moveOkay;
+    }
+
+    public void Reset() {
+      currentIndex = -1;
+      currentObject = null;
+      if (collectionRef.Count != currentSize) {
+        throw new global::System.InvalidOperationException("Collection modified.");
+      }
+    }
+
+    public void Dispose() {
+        currentIndex = -1;
+        currentObject = null;
+    }
+  }
+
+  private int num {
     set {
       NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_num_set(swigCPtr, value);
     } 
@@ -112,7 +279,7 @@ public unsafe class CExoArrayListNWPlayerCharacterListClass : global::System.IDi
 
   }
 
-  public int array_size {
+  private int array_size {
     set {
       NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_array_size_set(swigCPtr, value);
     } 
@@ -121,6 +288,23 @@ public unsafe class CExoArrayListNWPlayerCharacterListClass : global::System.IDi
       return retVal;
     }
 
+  }
+
+  public void Add(NWPlayerCharacterListClass_st t) {
+    NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_Add(swigCPtr, NWPlayerCharacterListClass_st.getCPtr(t));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void Pack() {
+    NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_Pack(swigCPtr);
+  }
+
+  private void Allocate(int s) {
+    NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_Allocate(swigCPtr, s);
+  }
+
+  public void SetSize(int s) {
+    NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_SetSize(swigCPtr, s);
   }
 
   public CExoArrayListNWPlayerCharacterListClass(int s) : this(NWNXLibPINVOKE.new_CExoArrayListNWPlayerCharacterListClass__SWIG_0(s), true) {
@@ -133,53 +317,31 @@ public unsafe class CExoArrayListNWPlayerCharacterListClass : global::System.IDi
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListNWPlayerCharacterListClass _OpAssign(CExoArrayListNWPlayerCharacterListClass list) {
-    CExoArrayListNWPlayerCharacterListClass ret = new CExoArrayListNWPlayerCharacterListClass(NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass__OpAssign(swigCPtr, CExoArrayListNWPlayerCharacterListClass.getCPtr(list)), false);
+  public void RemoveAt(int index) {
+    NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_RemoveAt(swigCPtr, index);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  private NWPlayerCharacterListClass_st InternalGetItem(int index) {
+    NWPlayerCharacterListClass_st ret = new NWPlayerCharacterListClass_st(NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_InternalGetItem(swigCPtr, index), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public NWPlayerCharacterListClass_st _OpIndex(int i) {
-    NWPlayerCharacterListClass_st ret = new NWPlayerCharacterListClass_st(NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass__OpIndex(swigCPtr, i), false);
+  private NWPlayerCharacterListClass_st InternalGetItemCopy(int index) {
+    NWPlayerCharacterListClass_st ret = new NWPlayerCharacterListClass_st(NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_InternalGetItemCopy(swigCPtr, index), true);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public void Allocate(int s) {
-    NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_Allocate(swigCPtr, s);
-  }
-
-  public void SetSize(int s) {
-    NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_SetSize(swigCPtr, s);
-  }
-
-  public void Pack() {
-    NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_Pack(swigCPtr);
-  }
-
-  public void Add(NWPlayerCharacterListClass_st t) {
-    NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_Add(swigCPtr, NWPlayerCharacterListClass_st.getCPtr(t));
+  private void InternalSetItem(int index, NWPlayerCharacterListClass_st val) {
+    NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_InternalSetItem(swigCPtr, index, NWPlayerCharacterListClass_st.getCPtr(val));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void Insert(NWPlayerCharacterListClass_st t, int k) {
-    NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_Insert(swigCPtr, NWPlayerCharacterListClass_st.getCPtr(t), k);
+  public void Insert(int index, NWPlayerCharacterListClass_st x) {
+    NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_Insert(swigCPtr, index, NWPlayerCharacterListClass_st.getCPtr(x));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public void DelIndex(int i) {
-    NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_DelIndex(swigCPtr, i);
-  }
-
-  public NWPlayerCharacterListClass_st begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_begin(swigCPtr);
-    NWPlayerCharacterListClass_st ret = (cPtr == global::System.IntPtr.Zero) ? null : new NWPlayerCharacterListClass_st(cPtr, false);
-    return ret;
-  }
-
-  public NWPlayerCharacterListClass_st end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListNWPlayerCharacterListClass_end(swigCPtr);
-    NWPlayerCharacterListClass_st ret = (cPtr == global::System.IntPtr.Zero) ? null : new NWPlayerCharacterListClass_st(cPtr, false);
-    return ret;
   }
 
 }

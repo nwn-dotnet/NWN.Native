@@ -10,7 +10,8 @@
 
 namespace NWN.Native.API {
 
-public unsafe class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposable {
+public unsafe class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposable, global::System.Collections.IEnumerable, global::System.Collections.Generic.IList<CNWVisibilityNode>
+ {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
@@ -43,7 +44,7 @@ public unsafe class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposab
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,18 +91,184 @@ public unsafe class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposab
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public void** element {
-    set {
-      NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_element_set(swigCPtr, (global::System.IntPtr)value);
-    } 
-    get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_element_get(swigCPtr);
-        return (void**)retVal;
+  public CExoArrayListCNWVisibilityNodePtr(global::System.Collections.IEnumerable c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (CNWVisibilityNode element in c) {
+      this.Add(element);
     }
-
   }
 
-  public int num {
+  public CExoArrayListCNWVisibilityNodePtr(global::System.Collections.Generic.IEnumerable<CNWVisibilityNode> c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (CNWVisibilityNode element in c) {
+      this.Add(element);
+    }
+  }
+
+  public bool IsFixedSize {
+    get {
+      return false;
+    }
+  }
+
+  public bool IsReadOnly {
+    get {
+      return false;
+    }
+  }
+
+  public CNWVisibilityNode this[int index] {
+    get {
+      return InternalGetItem(index);
+    }
+    set {
+      InternalSetItem(index, value);
+    }
+  }
+
+  public int Capacity {
+    get {
+      return (int)array_size;
+    }
+    set {
+      if (value < num)
+        throw new global::System.ArgumentOutOfRangeException("Capacity");
+      SetSize(value);
+    }
+  }
+
+  public int Count {
+    get {
+      return (int)num;
+    }
+  }
+
+  public bool IsSynchronized {
+    get {
+      return false;
+    }
+  }
+
+  public void CopyTo(CNWVisibilityNode[] array)
+  {
+    CopyTo(0, array, 0, this.Count);
+  }
+
+  public void CopyTo(CNWVisibilityNode[] array, int arrayIndex)
+  {
+    CopyTo(0, array, arrayIndex, this.Count);
+  }
+
+  public void Clear()
+  {
+    SetSize(0);
+  }
+
+  public void CopyTo(int index, CNWVisibilityNode[] array, int arrayIndex, int count)
+  {
+    if (array == null)
+      throw new global::System.ArgumentNullException("array");
+    if (index < 0)
+      throw new global::System.ArgumentOutOfRangeException("index", "Value is less than zero");
+    if (arrayIndex < 0)
+      throw new global::System.ArgumentOutOfRangeException("arrayIndex", "Value is less than zero");
+    if (count < 0)
+      throw new global::System.ArgumentOutOfRangeException("count", "Value is less than zero");
+    if (array.Rank > 1)
+      throw new global::System.ArgumentException("Multi dimensional array.", "array");
+    if (index+count > this.Count || arrayIndex+count > array.Length)
+      throw new global::System.ArgumentException("Number of elements to copy is too large.");
+    for (int i=0; i<count; i++)
+      array.SetValue(InternalGetItemCopy(index+i), arrayIndex+i);
+  }
+
+  public CNWVisibilityNode[] ToArray() {
+    CNWVisibilityNode[] array = new CNWVisibilityNode[this.Count];
+    this.CopyTo(array);
+    return array;
+  }
+
+  global::System.Collections.Generic.IEnumerator<CNWVisibilityNode> global::System.Collections.Generic.IEnumerable<CNWVisibilityNode>.GetEnumerator() {
+    return new CExoArrayListCNWVisibilityNodePtrEnumerator(this);
+  }
+
+  global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator() {
+    return new CExoArrayListCNWVisibilityNodePtrEnumerator(this);
+  }
+
+  public CExoArrayListCNWVisibilityNodePtrEnumerator GetEnumerator() {
+    return new CExoArrayListCNWVisibilityNodePtrEnumerator(this);
+  }
+
+  // Type-safe enumerator
+  /// Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+  /// whenever the collection is modified. This has been done for changes in the size of the
+  /// collection but not when one of the elements of the collection is modified as it is a bit
+  /// tricky to detect unmanaged code that modifies the collection under our feet.
+  public sealed class CExoArrayListCNWVisibilityNodePtrEnumerator : global::System.Collections.IEnumerator
+    , global::System.Collections.Generic.IEnumerator<CNWVisibilityNode>
+  {
+    private CExoArrayListCNWVisibilityNodePtr collectionRef;
+    private int currentIndex;
+    private object currentObject;
+    private int currentSize;
+
+    public CExoArrayListCNWVisibilityNodePtrEnumerator(CExoArrayListCNWVisibilityNodePtr collection) {
+      collectionRef = collection;
+      currentIndex = -1;
+      currentObject = null;
+      currentSize = collectionRef.Count;
+    }
+
+    // Type-safe iterator Current
+    public CNWVisibilityNode Current {
+      get {
+        if (currentIndex == -1)
+          throw new global::System.InvalidOperationException("Enumeration not started.");
+        if (currentIndex > currentSize - 1)
+          throw new global::System.InvalidOperationException("Enumeration finished.");
+        if (currentObject == null)
+          throw new global::System.InvalidOperationException("Collection modified.");
+        return (CNWVisibilityNode)currentObject;
+      }
+    }
+
+    // Type-unsafe IEnumerator.Current
+    object global::System.Collections.IEnumerator.Current {
+      get {
+        return Current;
+      }
+    }
+
+    public bool MoveNext() {
+      int size = collectionRef.Count;
+      bool moveOkay = (currentIndex+1 < size) && (size == currentSize);
+      if (moveOkay) {
+        currentIndex++;
+        currentObject = collectionRef[currentIndex];
+      } else {
+        currentObject = null;
+      }
+      return moveOkay;
+    }
+
+    public void Reset() {
+      currentIndex = -1;
+      currentObject = null;
+      if (collectionRef.Count != currentSize) {
+        throw new global::System.InvalidOperationException("Collection modified.");
+      }
+    }
+
+    public void Dispose() {
+        currentIndex = -1;
+        currentObject = null;
+    }
+  }
+
+  private int num {
     set {
       NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_num_set(swigCPtr, value);
     } 
@@ -112,7 +279,7 @@ public unsafe class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposab
 
   }
 
-  public int array_size {
+  private int array_size {
     set {
       NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_array_size_set(swigCPtr, value);
     } 
@@ -121,6 +288,22 @@ public unsafe class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposab
       return retVal;
     }
 
+  }
+
+  public void Add(CNWVisibilityNode t) {
+    NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_Add(swigCPtr, CNWVisibilityNode.getCPtr(t));
+  }
+
+  public void Pack() {
+    NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_Pack(swigCPtr);
+  }
+
+  private void Allocate(int s) {
+    NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_Allocate(swigCPtr, s);
+  }
+
+  public void SetSize(int s) {
+    NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_SetSize(swigCPtr, s);
   }
 
   public CExoArrayListCNWVisibilityNodePtr(int s) : this(NWNXLibPINVOKE.new_CExoArrayListCNWVisibilityNodePtr__SWIG_0(s), true) {
@@ -133,49 +316,58 @@ public unsafe class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposab
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCNWVisibilityNodePtr _OpAssign(CExoArrayListCNWVisibilityNodePtr list) {
-    CExoArrayListCNWVisibilityNodePtr ret = new CExoArrayListCNWVisibilityNodePtr(NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr__OpAssign(swigCPtr, CExoArrayListCNWVisibilityNodePtr.getCPtr(list)), false);
+  public void RemoveAt(int index) {
+    NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_RemoveAt(swigCPtr, index);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public int IndexOf(CNWVisibilityNode t) {
+    int retVal = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_IndexOf(swigCPtr, CNWVisibilityNode.getCPtr(t));
+    return retVal;
+  }
+
+  public int AddUnique(CNWVisibilityNode t) {
+    int retVal = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_AddUnique(swigCPtr, CNWVisibilityNode.getCPtr(t));
+    return retVal;
+  }
+
+  private CNWVisibilityNode InternalGetItem(int index) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_InternalGetItem(swigCPtr, index);
+    CNWVisibilityNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWVisibilityNode(cPtr, false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public void** _OpIndex(int i) {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr__OpIndex(swigCPtr, i);
-    return (void**)retVal;
+  private CNWVisibilityNode InternalGetItemCopy(int index) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_InternalGetItemCopy(swigCPtr, index);
+    CNWVisibilityNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWVisibilityNode(cPtr, false);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
   }
 
-  public void Allocate(int s) {
-    NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_Allocate(swigCPtr, s);
+  private void InternalSetItem(int index, CNWVisibilityNode val) {
+    NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_InternalSetItem(swigCPtr, index, CNWVisibilityNode.getCPtr(val));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void SetSize(int s) {
-    NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_SetSize(swigCPtr, s);
+  public void Insert(int index, CNWVisibilityNode x) {
+    NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_Insert(swigCPtr, index, CNWVisibilityNode.getCPtr(x));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void Pack() {
-    NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_Pack(swigCPtr);
+  public bool Contains(CNWVisibilityNode value) {
+    bool ret = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_Contains(swigCPtr, CNWVisibilityNode.getCPtr(value));
+    return ret;
   }
 
-  public void Add(CNWVisibilityNode t) {
-    NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_Add(swigCPtr, CNWVisibilityNode.getCPtr(t));
+  public int LastIndexOf(CNWVisibilityNode value) {
+    int retVal = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_LastIndexOf(swigCPtr, CNWVisibilityNode.getCPtr(value));
+    return retVal;
   }
 
-  public void Insert(CNWVisibilityNode t, int k) {
-    NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_Insert(swigCPtr, CNWVisibilityNode.getCPtr(t), k);
-  }
-
-  public void DelIndex(int i) {
-    NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_DelIndex(swigCPtr, i);
-  }
-
-  public void** begin() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_begin(swigCPtr);
-    return (void**)retVal;
-  }
-
-  public void** end() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_end(swigCPtr);
-    return (void**)retVal;
+  public bool Remove(CNWVisibilityNode value) {
+    bool ret = NWNXLibPINVOKE.CExoArrayListCNWVisibilityNodePtr_Remove(swigCPtr, CNWVisibilityNode.getCPtr(value));
+    return ret;
   }
 
 }

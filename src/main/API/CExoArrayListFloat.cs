@@ -10,7 +10,8 @@
 
 namespace NWN.Native.API {
 
-public unsafe class CExoArrayListFloat : global::System.IDisposable {
+public unsafe class CExoArrayListFloat : global::System.IDisposable, global::System.Collections.IEnumerable, global::System.Collections.Generic.IList<float>
+ {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
@@ -43,7 +44,7 @@ public unsafe class CExoArrayListFloat : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,18 +91,184 @@ public unsafe class CExoArrayListFloat : global::System.IDisposable {
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public float* element {
-    set {
-      NWNXLibPINVOKE.CExoArrayListFloat_element_set(swigCPtr, value);
-    } 
-    get {
-      float* retVal = NWNXLibPINVOKE.CExoArrayListFloat_element_get(swigCPtr);
-      return retVal;
+  public CExoArrayListFloat(global::System.Collections.IEnumerable c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (float element in c) {
+      this.Add(element);
     }
-
   }
 
-  public int num {
+  public CExoArrayListFloat(global::System.Collections.Generic.IEnumerable<float> c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (float element in c) {
+      this.Add(element);
+    }
+  }
+
+  public bool IsFixedSize {
+    get {
+      return false;
+    }
+  }
+
+  public bool IsReadOnly {
+    get {
+      return false;
+    }
+  }
+
+  public float this[int index] {
+    get {
+      return InternalGetItem(index);
+    }
+    set {
+      InternalSetItem(index, value);
+    }
+  }
+
+  public int Capacity {
+    get {
+      return (int)array_size;
+    }
+    set {
+      if (value < num)
+        throw new global::System.ArgumentOutOfRangeException("Capacity");
+      SetSize(value);
+    }
+  }
+
+  public int Count {
+    get {
+      return (int)num;
+    }
+  }
+
+  public bool IsSynchronized {
+    get {
+      return false;
+    }
+  }
+
+  public void CopyTo(float[] array)
+  {
+    CopyTo(0, array, 0, this.Count);
+  }
+
+  public void CopyTo(float[] array, int arrayIndex)
+  {
+    CopyTo(0, array, arrayIndex, this.Count);
+  }
+
+  public void Clear()
+  {
+    SetSize(0);
+  }
+
+  public void CopyTo(int index, float[] array, int arrayIndex, int count)
+  {
+    if (array == null)
+      throw new global::System.ArgumentNullException("array");
+    if (index < 0)
+      throw new global::System.ArgumentOutOfRangeException("index", "Value is less than zero");
+    if (arrayIndex < 0)
+      throw new global::System.ArgumentOutOfRangeException("arrayIndex", "Value is less than zero");
+    if (count < 0)
+      throw new global::System.ArgumentOutOfRangeException("count", "Value is less than zero");
+    if (array.Rank > 1)
+      throw new global::System.ArgumentException("Multi dimensional array.", "array");
+    if (index+count > this.Count || arrayIndex+count > array.Length)
+      throw new global::System.ArgumentException("Number of elements to copy is too large.");
+    for (int i=0; i<count; i++)
+      array.SetValue(InternalGetItemCopy(index+i), arrayIndex+i);
+  }
+
+  public float[] ToArray() {
+    float[] array = new float[this.Count];
+    this.CopyTo(array);
+    return array;
+  }
+
+  global::System.Collections.Generic.IEnumerator<float> global::System.Collections.Generic.IEnumerable<float>.GetEnumerator() {
+    return new CExoArrayListFloatEnumerator(this);
+  }
+
+  global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator() {
+    return new CExoArrayListFloatEnumerator(this);
+  }
+
+  public CExoArrayListFloatEnumerator GetEnumerator() {
+    return new CExoArrayListFloatEnumerator(this);
+  }
+
+  // Type-safe enumerator
+  /// Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+  /// whenever the collection is modified. This has been done for changes in the size of the
+  /// collection but not when one of the elements of the collection is modified as it is a bit
+  /// tricky to detect unmanaged code that modifies the collection under our feet.
+  public sealed class CExoArrayListFloatEnumerator : global::System.Collections.IEnumerator
+    , global::System.Collections.Generic.IEnumerator<float>
+  {
+    private CExoArrayListFloat collectionRef;
+    private int currentIndex;
+    private object currentObject;
+    private int currentSize;
+
+    public CExoArrayListFloatEnumerator(CExoArrayListFloat collection) {
+      collectionRef = collection;
+      currentIndex = -1;
+      currentObject = null;
+      currentSize = collectionRef.Count;
+    }
+
+    // Type-safe iterator Current
+    public float Current {
+      get {
+        if (currentIndex == -1)
+          throw new global::System.InvalidOperationException("Enumeration not started.");
+        if (currentIndex > currentSize - 1)
+          throw new global::System.InvalidOperationException("Enumeration finished.");
+        if (currentObject == null)
+          throw new global::System.InvalidOperationException("Collection modified.");
+        return (float)currentObject;
+      }
+    }
+
+    // Type-unsafe IEnumerator.Current
+    object global::System.Collections.IEnumerator.Current {
+      get {
+        return Current;
+      }
+    }
+
+    public bool MoveNext() {
+      int size = collectionRef.Count;
+      bool moveOkay = (currentIndex+1 < size) && (size == currentSize);
+      if (moveOkay) {
+        currentIndex++;
+        currentObject = collectionRef[currentIndex];
+      } else {
+        currentObject = null;
+      }
+      return moveOkay;
+    }
+
+    public void Reset() {
+      currentIndex = -1;
+      currentObject = null;
+      if (collectionRef.Count != currentSize) {
+        throw new global::System.InvalidOperationException("Collection modified.");
+      }
+    }
+
+    public void Dispose() {
+        currentIndex = -1;
+        currentObject = null;
+    }
+  }
+
+  private int num {
     set {
       NWNXLibPINVOKE.CExoArrayListFloat_num_set(swigCPtr, value);
     } 
@@ -112,7 +279,7 @@ public unsafe class CExoArrayListFloat : global::System.IDisposable {
 
   }
 
-  public int array_size {
+  private int array_size {
     set {
       NWNXLibPINVOKE.CExoArrayListFloat_array_size_set(swigCPtr, value);
     } 
@@ -121,6 +288,22 @@ public unsafe class CExoArrayListFloat : global::System.IDisposable {
       return retVal;
     }
 
+  }
+
+  public void Add(float t) {
+    NWNXLibPINVOKE.CExoArrayListFloat_Add(swigCPtr, t);
+  }
+
+  public void Pack() {
+    NWNXLibPINVOKE.CExoArrayListFloat_Pack(swigCPtr);
+  }
+
+  private void Allocate(int s) {
+    NWNXLibPINVOKE.CExoArrayListFloat_Allocate(swigCPtr, s);
+  }
+
+  public void SetSize(int s) {
+    NWNXLibPINVOKE.CExoArrayListFloat_SetSize(swigCPtr, s);
   }
 
   public CExoArrayListFloat(int s) : this(NWNXLibPINVOKE.new_CExoArrayListFloat__SWIG_0(s), true) {
@@ -133,49 +316,56 @@ public unsafe class CExoArrayListFloat : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListFloat _OpAssign(CExoArrayListFloat list) {
-    CExoArrayListFloat ret = new CExoArrayListFloat(NWNXLibPINVOKE.CExoArrayListFloat__OpAssign(swigCPtr, CExoArrayListFloat.getCPtr(list)), false);
+  public void RemoveAt(int index) {
+    NWNXLibPINVOKE.CExoArrayListFloat_RemoveAt(swigCPtr, index);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  private float InternalGetItem(int index) {
+    float ret = NWNXLibPINVOKE.CExoArrayListFloat_InternalGetItem(swigCPtr, index);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public float* _OpIndex(int i) {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListFloat__OpIndex(swigCPtr, i);
-    return (float*)retVal;
-  }
-
-  public void Allocate(int s) {
-    NWNXLibPINVOKE.CExoArrayListFloat_Allocate(swigCPtr, s);
-  }
-
-  public void SetSize(int s) {
-    NWNXLibPINVOKE.CExoArrayListFloat_SetSize(swigCPtr, s);
-  }
-
-  public void Pack() {
-    NWNXLibPINVOKE.CExoArrayListFloat_Pack(swigCPtr);
-  }
-
-  public void Add(float t) {
-    NWNXLibPINVOKE.CExoArrayListFloat_Add(swigCPtr, t);
-  }
-
-  public void Insert(float t, int k) {
-    NWNXLibPINVOKE.CExoArrayListFloat_Insert(swigCPtr, t, k);
-  }
-
-  public void DelIndex(int i) {
-    NWNXLibPINVOKE.CExoArrayListFloat_DelIndex(swigCPtr, i);
-  }
-
-  public float* begin() {
-    float* retVal = NWNXLibPINVOKE.CExoArrayListFloat_begin(swigCPtr);
+  private float InternalGetItemCopy(int index) {
+    float retVal = NWNXLibPINVOKE.CExoArrayListFloat_InternalGetItemCopy(swigCPtr, index);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
 
-  public float* end() {
-    float* retVal = NWNXLibPINVOKE.CExoArrayListFloat_end(swigCPtr);
+  private void InternalSetItem(int index, float val) {
+    NWNXLibPINVOKE.CExoArrayListFloat_InternalSetItem(swigCPtr, index, val);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void Insert(int index, float x) {
+    NWNXLibPINVOKE.CExoArrayListFloat_Insert(swigCPtr, index, x);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public int IndexOf(float t) {
+    int retVal = NWNXLibPINVOKE.CExoArrayListFloat_IndexOf(swigCPtr, t);
     return retVal;
+  }
+
+  public int AddUnique(float t) {
+    int retVal = NWNXLibPINVOKE.CExoArrayListFloat_AddUnique(swigCPtr, t);
+    return retVal;
+  }
+
+  public bool Contains(float value) {
+    bool ret = NWNXLibPINVOKE.CExoArrayListFloat_Contains(swigCPtr, value);
+    return ret;
+  }
+
+  public int LastIndexOf(float value) {
+    int retVal = NWNXLibPINVOKE.CExoArrayListFloat_LastIndexOf(swigCPtr, value);
+    return retVal;
+  }
+
+  public bool Remove(float value) {
+    bool ret = NWNXLibPINVOKE.CExoArrayListFloat_Remove(swigCPtr, value);
+    return ret;
   }
 
 }

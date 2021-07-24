@@ -43,7 +43,7 @@ public unsafe class UnorderedMapCExoStringCNWSScriptVar : global::System.IDispos
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,88 +90,146 @@ public unsafe class UnorderedMapCExoStringCNWSScriptVar : global::System.IDispos
     return !Equals(left, right);
   }
 /*@SWIG@*/
-
-  public CNWSScriptVar this[CExoString key] {
-    get {
-      return getitem(key);
-    }
-
-    set {
-      setitem(key, value);
-    }
+  public bool IsReadOnly
+  {
+    get => false;
   }
 
-  public bool TryGetValue(CExoString key, out CNWSScriptVar value) {
-    if (this.ContainsKey(key)) {
-      value = this[key];
+  public int Count
+  {
+    get => (int)size();
+  }
+
+  public CNWSScriptVar this[CExoString key]
+  {
+    get
+    {
+      Iterator iterator = find(key);
+      if (iterator.IsEqual(end()))
+      {
+         throw new global::System.Collections.Generic.KeyNotFoundException("The given key was not present in the UnorderedMap.");
+      }
+
+      return iterator.GetValue();
+    }
+
+    set => InternalSetValue(key, value);
+  }
+
+  public bool Remove(CExoString key)
+  {
+    Iterator iterator = find(key);
+    if (!iterator.IsEqual(end()))
+    {
+      InternalRemove(iterator);
       return true;
     }
-    value = default(CNWSScriptVar);
+
     return false;
   }
 
-  public int Count {
-    get {
-      return (int)size();
-    }
-  }
-
-  public bool IsReadOnly {
-    get {
-      return false;
-    }
-  }
-
-  public global::System.Collections.Generic.ICollection<CExoString> Keys {
-    get {
-      global::System.Collections.Generic.ICollection<CExoString> keys = new global::System.Collections.Generic.List<CExoString>();
-      int size = this.Count;
-      if (size > 0) {
-        global::System.IntPtr iter = create_iterator_begin();
-        for (int i = 0; i < size; i++) {
-          keys.Add(get_next_key(iter));
-        }
-        destroy_iterator(iter);
+  public bool TryGetValue(CExoString key, out CNWSScriptVar value)
+  {
+      Iterator iterator = find(key);
+      if (iterator.IsEqual(end()))
+      {
+         value = default;
+         return false;
       }
+
+      value = iterator.GetValue();
+      return true;
+  }
+
+  public global::System.Collections.Generic.ICollection<CExoString> Keys
+  {
+    get
+    {
+      int startCount = Count;
+      Iterator iterator = begin();
+      Iterator endIterator = end();
+
+      global::System.Collections.Generic.ICollection<CExoString> keys = new global::System.Collections.Generic.List<CExoString>();
+
+      while (!iterator.IsEqual(endIterator))
+      {
+        if (Count != startCount)
+        {
+          throw new System.InvalidOperationException("Collection was modified; enumeration operation may not execute.");
+        }
+
+        keys.Add(iterator.GetKey());
+        iterator = iterator.MoveNext();
+      }
+
       return keys;
     }
   }
 
-  public global::System.Collections.Generic.ICollection<CNWSScriptVar> Values {
-    get {
-      global::System.Collections.Generic.ICollection<CNWSScriptVar> vals = new global::System.Collections.Generic.List<CNWSScriptVar>();
-      foreach (global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar> pair in this) {
-        vals.Add(pair.Value);
+  public global::System.Collections.Generic.ICollection<CNWSScriptVar> Values
+  {
+    get
+    {
+      int startCount = Count;
+      Iterator iterator = begin();
+      Iterator endIterator = end();
+
+      global::System.Collections.Generic.ICollection<CNWSScriptVar> values = new global::System.Collections.Generic.List<CNWSScriptVar>();
+
+      while (!iterator.IsEqual(endIterator))
+      {
+        if (Count != startCount)
+        {
+          throw new System.InvalidOperationException("Collection was modified; enumeration operation may not execute.");
+        }
+
+        values.Add(iterator.GetValue());
+        iterator = iterator.MoveNext();
       }
-      return vals;
+
+      return values;
     }
   }
 
-  public void Add(global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar> item) {
+  public void Add(CExoString key, CNWSScriptVar value)
+  {
+    if (ContainsKey(key))
+    {
+      throw new global::System.ArgumentException(nameof(key), "An item with the same key has already been added.");
+    }
+
+    InternalSetValue(key, value);
+  }
+
+  public void Add(global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar> item)
+  {
     Add(item.Key, item.Value);
   }
 
-  public bool Remove(global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar> item) {
-    if (Contains(item)) {
-      return Remove(item.Key);
-    } else {
-      return false;
-    }
+  bool global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar>>.Contains(global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar> keyValuePair)
+  {
+    return TryGetValue(keyValuePair.Key, out CNWSScriptVar value) && value == keyValuePair.Value;
   }
 
-  public bool Contains(global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar> item) {
-    if (this[item.Key] == item.Value) {
+  bool global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar>>.Remove(global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar> keyValuePair)
+  {
+    Iterator iterator = find(keyValuePair.Key);
+    if (!iterator.IsEqual(end()) && iterator.GetValue() == keyValuePair.Value)
+    {
+      InternalRemove(iterator);
       return true;
-    } else {
-      return false;
     }
+
+    return false;
   }
 
-  public void CopyTo(global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar>[] array) {
+  public void CopyTo(global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar>[] array)
+  {
     CopyTo(array, 0);
   }
 
-  public void CopyTo(global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar>[] array, int arrayIndex) {
+  public void CopyTo(global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar>[] array, int arrayIndex)
+  {
     if (array == null)
       throw new global::System.ArgumentNullException("array");
     if (arrayIndex < 0)
@@ -181,94 +239,43 @@ public unsafe class UnorderedMapCExoStringCNWSScriptVar : global::System.IDispos
     if (arrayIndex+this.Count > array.Length)
       throw new global::System.ArgumentException("Number of elements to copy is too large.");
 
-    global::System.Collections.Generic.IList<CExoString> keyList = new global::System.Collections.Generic.List<CExoString>(this.Keys);
-    for (int i = 0; i < keyList.Count; i++) {
-      CExoString currentKey = keyList[i];
-      array.SetValue(new global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar>(currentKey, this[currentKey]), arrayIndex+i);
+    int startCount = Count;
+    Iterator iterator = begin();
+    Iterator endIterator = end();
+
+    for (int i = 0; i < Count && !iterator.IsEqual(endIterator); i++, iterator = iterator.MoveNext())
+    {
+      if (Count != startCount)
+      {
+        throw new System.InvalidOperationException("Collection was modified; enumeration operation may not execute.");
+      }
+
+      array.SetValue(new global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar>(iterator.GetKey(), iterator.GetValue()), arrayIndex+i);
     }
   }
 
-  global::System.Collections.Generic.IEnumerator<global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar>> global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar>>.GetEnumerator() {
-    return new UnorderedMapCExoStringCNWSScriptVarEnumerator(this);
-  }
-
-  global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator() {
-    return new UnorderedMapCExoStringCNWSScriptVarEnumerator(this);
-  }
-
-  public UnorderedMapCExoStringCNWSScriptVarEnumerator GetEnumerator() {
-    return new UnorderedMapCExoStringCNWSScriptVarEnumerator(this);
-  }
-
-  // Type-safe enumerator
-  /// Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
-  /// whenever the collection is modified. This has been done for changes in the size of the
-  /// collection but not when one of the elements of the collection is modified as it is a bit
-  /// tricky to detect unmanaged code that modifies the collection under our feet.
-  public sealed class UnorderedMapCExoStringCNWSScriptVarEnumerator : global::System.Collections.IEnumerator,
-      global::System.Collections.Generic.IEnumerator<global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar>>
+  public global::System.Collections.Generic.IEnumerator<global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar>> GetEnumerator()
   {
-    private UnorderedMapCExoStringCNWSScriptVar collectionRef;
-    private global::System.Collections.Generic.IList<CExoString> keyCollection;
-    private int currentIndex;
-    private object currentObject;
-    private int currentSize;
+    int startCount = Count;
+    Iterator iterator = begin();
+    Iterator endIterator = end();
 
-    public UnorderedMapCExoStringCNWSScriptVarEnumerator(UnorderedMapCExoStringCNWSScriptVar collection) {
-      collectionRef = collection;
-      keyCollection = new global::System.Collections.Generic.List<CExoString>(collection.Keys);
-      currentIndex = -1;
-      currentObject = null;
-      currentSize = collectionRef.Count;
-    }
-
-    // Type-safe iterator Current
-    public global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar> Current {
-      get {
-        if (currentIndex == -1)
-          throw new global::System.InvalidOperationException("Enumeration not started.");
-        if (currentIndex > currentSize - 1)
-          throw new global::System.InvalidOperationException("Enumeration finished.");
-        if (currentObject == null)
-          throw new global::System.InvalidOperationException("Collection modified.");
-        return (global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar>)currentObject;
+    while (!iterator.IsEqual(endIterator))
+    {
+      if (Count != startCount)
+      {
+        throw new System.InvalidOperationException("Collection was modified; enumeration operation may not execute.");
       }
-    }
 
-    // Type-unsafe IEnumerator.Current
-    object global::System.Collections.IEnumerator.Current {
-      get {
-        return Current;
-      }
-    }
-
-    public bool MoveNext() {
-      int size = collectionRef.Count;
-      bool moveOkay = (currentIndex+1 < size) && (size == currentSize);
-      if (moveOkay) {
-        currentIndex++;
-        CExoString currentKey = keyCollection[currentIndex];
-        currentObject = new global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar>(currentKey, collectionRef[currentKey]);
-      } else {
-        currentObject = null;
-      }
-      return moveOkay;
-    }
-
-    public void Reset() {
-      currentIndex = -1;
-      currentObject = null;
-      if (collectionRef.Count != currentSize) {
-        throw new global::System.InvalidOperationException("Collection modified.");
-      }
-    }
-
-    public void Dispose() {
-      currentIndex = -1;
-      currentObject = null;
+      yield return new global::System.Collections.Generic.KeyValuePair<CExoString, CNWSScriptVar>(iterator.GetKey(), iterator.GetValue());
+      iterator = iterator.MoveNext();
     }
   }
 
+  global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
+  {
+    return GetEnumerator();
+  }
 
   public UnorderedMapCExoStringCNWSScriptVar() : this(NWNXLibPINVOKE.new_UnorderedMapCExoStringCNWSScriptVar__SWIG_0(), true) {
   }
@@ -277,13 +284,116 @@ public unsafe class UnorderedMapCExoStringCNWSScriptVar : global::System.IDispos
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  private uint size() {
-    uint ret = NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_size(swigCPtr);
-    return ret;
+  private class Iterator : global::System.IDisposable {
+    private global::System.Runtime.InteropServices.HandleRef swigCPtr;
+    protected bool swigCMemOwn;
+  
+    internal Iterator(global::System.IntPtr cPtr, bool cMemoryOwn) {
+      swigCMemOwn = cMemoryOwn;
+      swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+    }
+  
+    internal static global::System.Runtime.InteropServices.HandleRef getCPtr(Iterator obj) {
+      return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
+    }
+  
+    ~Iterator() {
+      Dispose(false);
+    }
+  
+    public void Dispose() {
+      Dispose(true);
+      global::System.GC.SuppressFinalize(this);
+    }
+  
+    protected virtual void Dispose(bool disposing) {
+      lock(this) {
+        if (swigCPtr.Handle != global::System.IntPtr.Zero) {
+          if (swigCMemOwn) {
+            swigCMemOwn = false;
+            NWNXLibPINVOKE.delete_UnorderedMapCExoStringCNWSScriptVar_Iterator(swigCPtr);
+          }
+          swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
+        }
+      }
+    }
+  /*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+    public global::System.IntPtr Pointer {
+      get {
+        return swigCPtr.Handle;
+      }
+    }
+  
+    public static unsafe implicit operator void*(Iterator self) {
+      return (void*)self.swigCPtr.Handle;
+    }
+  
+    public static unsafe Iterator FromPointer(void* pointer, bool memoryOwn = false) {
+      return pointer != null ? new Iterator((global::System.IntPtr)pointer, memoryOwn) : null;
+    }
+  
+    public static Iterator FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+      return pointer != global::System.IntPtr.Zero ? new Iterator(pointer, memoryOwn) : null;
+    }
+  
+    public bool Equals(Iterator other) {
+      if (ReferenceEquals(null, other)) {
+        return false;
+      }
+  
+      if (ReferenceEquals(this, other)) {
+        return true;
+      }
+  
+      return Pointer.Equals(other.Pointer);
+    }
+  
+    public override bool Equals(object obj) {
+      return ReferenceEquals(this, obj) || obj is Iterator other && Equals(other);
+    }
+  
+    public override int GetHashCode() {
+      return swigCPtr.Handle.GetHashCode();
+    }
+  
+    public static bool operator ==(Iterator left, Iterator right) {
+      return Equals(left, right);
+    }
+  
+    public static bool operator !=(Iterator left, Iterator right) {
+      return !Equals(left, right);
+    }
+  /*@SWIG@*/
+    public UnorderedMapCExoStringCNWSScriptVar.Iterator MoveNext() {
+      UnorderedMapCExoStringCNWSScriptVar.Iterator ret = new UnorderedMapCExoStringCNWSScriptVar.Iterator(NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_Iterator_MoveNext(swigCPtr), true);
+      return ret;
+    }
+  
+    internal bool IsEqual(UnorderedMapCExoStringCNWSScriptVar.Iterator other) {
+      bool ret = NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_Iterator_IsEqual(swigCPtr, UnorderedMapCExoStringCNWSScriptVar.Iterator.getCPtr(other));
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+      return ret;
+    }
+  
+    internal CExoString GetKey() {
+      CExoString ret = new CExoString(NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_Iterator_GetKey(swigCPtr), true);
+      return ret;
+    }
+  
+    internal CNWSScriptVar GetValue() {
+      CNWSScriptVar ret = new CNWSScriptVar(NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_Iterator_GetValue(swigCPtr), true);
+      return ret;
+    }
+  
+    internal void SetValue(CNWSScriptVar newValue) {
+      NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_Iterator_SetValue(swigCPtr, CNWSScriptVar.getCPtr(newValue));
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    }
+  
   }
 
-  public bool empty() {
-    bool ret = NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_empty(swigCPtr);
+  private uint size() {
+    uint ret = NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_size(swigCPtr);
     return ret;
   }
 
@@ -291,15 +401,20 @@ public unsafe class UnorderedMapCExoStringCNWSScriptVar : global::System.IDispos
     NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_Clear(swigCPtr);
   }
 
-  private CNWSScriptVar getitem(CExoString key) {
-    CNWSScriptVar ret = new CNWSScriptVar(NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_getitem(swigCPtr, CExoString.getCPtr(key)), false);
+  private UnorderedMapCExoStringCNWSScriptVar.Iterator find(CExoString key) {
+    UnorderedMapCExoStringCNWSScriptVar.Iterator ret = new UnorderedMapCExoStringCNWSScriptVar.Iterator(NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_find(swigCPtr, CExoString.getCPtr(key)), true);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  private void setitem(CExoString key, CNWSScriptVar x) {
-    NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_setitem(swigCPtr, CExoString.getCPtr(key), CNWSScriptVar.getCPtr(x));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  private UnorderedMapCExoStringCNWSScriptVar.Iterator begin() {
+    UnorderedMapCExoStringCNWSScriptVar.Iterator ret = new UnorderedMapCExoStringCNWSScriptVar.Iterator(NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_begin(swigCPtr), true);
+    return ret;
+  }
+
+  private UnorderedMapCExoStringCNWSScriptVar.Iterator end() {
+    UnorderedMapCExoStringCNWSScriptVar.Iterator ret = new UnorderedMapCExoStringCNWSScriptVar.Iterator(NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_end(swigCPtr), true);
+    return ret;
   }
 
   public bool ContainsKey(CExoString key) {
@@ -308,29 +423,14 @@ public unsafe class UnorderedMapCExoStringCNWSScriptVar : global::System.IDispos
     return ret;
   }
 
-  public void Add(CExoString key, CNWSScriptVar value) {
-    NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_Add(swigCPtr, CExoString.getCPtr(key), CNWSScriptVar.getCPtr(value));
+  private void InternalSetValue(CExoString key, CNWSScriptVar value) {
+    NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_InternalSetValue(swigCPtr, CExoString.getCPtr(key), CNWSScriptVar.getCPtr(value));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public bool Remove(CExoString key) {
-    bool ret = NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_Remove(swigCPtr, CExoString.getCPtr(key));
+  private void InternalRemove(UnorderedMapCExoStringCNWSScriptVar.Iterator itr) {
+    NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_InternalRemove(swigCPtr, UnorderedMapCExoStringCNWSScriptVar.Iterator.getCPtr(itr));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  private global::System.IntPtr create_iterator_begin() {
-    global::System.IntPtr ret = NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_create_iterator_begin(swigCPtr);
-    return ret;
-  }
-
-  private CExoString get_next_key(global::System.IntPtr swigiterator) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_get_next_key(swigCPtr, swigiterator), false);
-    return ret;
-  }
-
-  private void destroy_iterator(global::System.IntPtr swigiterator) {
-    NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_destroy_iterator(swigCPtr, swigiterator);
   }
 
 }

@@ -33,7 +33,7 @@ public unsafe class CNWSAmbientSound : CNWAmbientSound {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -151,8 +151,8 @@ public unsafe class CNWSAmbientSound : CNWAmbientSound {
     NWNXLibPINVOKE.CNWSAmbientSound_PackIntoMessage(swigCPtr, CNWSMessage.getCPtr(pMessage));
   }
 
-  public int GetPlayersInArea(CExoArrayListObjectId pList) {
-    int retVal = NWNXLibPINVOKE.CNWSAmbientSound_GetPlayersInArea(swigCPtr, CExoArrayListObjectId.getCPtr(pList));
+  public int GetPlayersInArea(CExoArrayListUInt32 pList) {
+    int retVal = NWNXLibPINVOKE.CNWSAmbientSound_GetPlayersInArea(swigCPtr, CExoArrayListUInt32.getCPtr(pList));
     return retVal;
   }
 

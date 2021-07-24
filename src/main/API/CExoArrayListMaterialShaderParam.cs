@@ -10,7 +10,8 @@
 
 namespace NWN.Native.API {
 
-public unsafe class CExoArrayListMaterialShaderParam : global::System.IDisposable {
+public unsafe class CExoArrayListMaterialShaderParam : global::System.IDisposable, global::System.Collections.IEnumerable, global::System.Collections.Generic.IEnumerable<MaterialShaderParam>
+ {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
@@ -43,7 +44,7 @@ public unsafe class CExoArrayListMaterialShaderParam : global::System.IDisposabl
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,18 +91,184 @@ public unsafe class CExoArrayListMaterialShaderParam : global::System.IDisposabl
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public MaterialShaderParam element {
-    set {
-      NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_element_set(swigCPtr, MaterialShaderParam.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_element_get(swigCPtr);
-      MaterialShaderParam ret = (cPtr == global::System.IntPtr.Zero) ? null : new MaterialShaderParam(cPtr, false);
-      return ret;
-    } 
+  public CExoArrayListMaterialShaderParam(global::System.Collections.IEnumerable c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (MaterialShaderParam element in c) {
+      this.Add(element);
+    }
   }
 
-  public int num {
+  public CExoArrayListMaterialShaderParam(global::System.Collections.Generic.IEnumerable<MaterialShaderParam> c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (MaterialShaderParam element in c) {
+      this.Add(element);
+    }
+  }
+
+  public bool IsFixedSize {
+    get {
+      return false;
+    }
+  }
+
+  public bool IsReadOnly {
+    get {
+      return false;
+    }
+  }
+
+  public MaterialShaderParam this[int index] {
+    get {
+      return InternalGetItem(index);
+    }
+    set {
+      InternalSetItem(index, value);
+    }
+  }
+
+  public int Capacity {
+    get {
+      return (int)array_size;
+    }
+    set {
+      if (value < num)
+        throw new global::System.ArgumentOutOfRangeException("Capacity");
+      SetSize(value);
+    }
+  }
+
+  public int Count {
+    get {
+      return (int)num;
+    }
+  }
+
+  public bool IsSynchronized {
+    get {
+      return false;
+    }
+  }
+
+  public void CopyTo(MaterialShaderParam[] array)
+  {
+    CopyTo(0, array, 0, this.Count);
+  }
+
+  public void CopyTo(MaterialShaderParam[] array, int arrayIndex)
+  {
+    CopyTo(0, array, arrayIndex, this.Count);
+  }
+
+  public void Clear()
+  {
+    SetSize(0);
+  }
+
+  public void CopyTo(int index, MaterialShaderParam[] array, int arrayIndex, int count)
+  {
+    if (array == null)
+      throw new global::System.ArgumentNullException("array");
+    if (index < 0)
+      throw new global::System.ArgumentOutOfRangeException("index", "Value is less than zero");
+    if (arrayIndex < 0)
+      throw new global::System.ArgumentOutOfRangeException("arrayIndex", "Value is less than zero");
+    if (count < 0)
+      throw new global::System.ArgumentOutOfRangeException("count", "Value is less than zero");
+    if (array.Rank > 1)
+      throw new global::System.ArgumentException("Multi dimensional array.", "array");
+    if (index+count > this.Count || arrayIndex+count > array.Length)
+      throw new global::System.ArgumentException("Number of elements to copy is too large.");
+    for (int i=0; i<count; i++)
+      array.SetValue(InternalGetItemCopy(index+i), arrayIndex+i);
+  }
+
+  public MaterialShaderParam[] ToArray() {
+    MaterialShaderParam[] array = new MaterialShaderParam[this.Count];
+    this.CopyTo(array);
+    return array;
+  }
+
+  global::System.Collections.Generic.IEnumerator<MaterialShaderParam> global::System.Collections.Generic.IEnumerable<MaterialShaderParam>.GetEnumerator() {
+    return new CExoArrayListMaterialShaderParamEnumerator(this);
+  }
+
+  global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator() {
+    return new CExoArrayListMaterialShaderParamEnumerator(this);
+  }
+
+  public CExoArrayListMaterialShaderParamEnumerator GetEnumerator() {
+    return new CExoArrayListMaterialShaderParamEnumerator(this);
+  }
+
+  // Type-safe enumerator
+  /// Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+  /// whenever the collection is modified. This has been done for changes in the size of the
+  /// collection but not when one of the elements of the collection is modified as it is a bit
+  /// tricky to detect unmanaged code that modifies the collection under our feet.
+  public sealed class CExoArrayListMaterialShaderParamEnumerator : global::System.Collections.IEnumerator
+    , global::System.Collections.Generic.IEnumerator<MaterialShaderParam>
+  {
+    private CExoArrayListMaterialShaderParam collectionRef;
+    private int currentIndex;
+    private object currentObject;
+    private int currentSize;
+
+    public CExoArrayListMaterialShaderParamEnumerator(CExoArrayListMaterialShaderParam collection) {
+      collectionRef = collection;
+      currentIndex = -1;
+      currentObject = null;
+      currentSize = collectionRef.Count;
+    }
+
+    // Type-safe iterator Current
+    public MaterialShaderParam Current {
+      get {
+        if (currentIndex == -1)
+          throw new global::System.InvalidOperationException("Enumeration not started.");
+        if (currentIndex > currentSize - 1)
+          throw new global::System.InvalidOperationException("Enumeration finished.");
+        if (currentObject == null)
+          throw new global::System.InvalidOperationException("Collection modified.");
+        return (MaterialShaderParam)currentObject;
+      }
+    }
+
+    // Type-unsafe IEnumerator.Current
+    object global::System.Collections.IEnumerator.Current {
+      get {
+        return Current;
+      }
+    }
+
+    public bool MoveNext() {
+      int size = collectionRef.Count;
+      bool moveOkay = (currentIndex+1 < size) && (size == currentSize);
+      if (moveOkay) {
+        currentIndex++;
+        currentObject = collectionRef[currentIndex];
+      } else {
+        currentObject = null;
+      }
+      return moveOkay;
+    }
+
+    public void Reset() {
+      currentIndex = -1;
+      currentObject = null;
+      if (collectionRef.Count != currentSize) {
+        throw new global::System.InvalidOperationException("Collection modified.");
+      }
+    }
+
+    public void Dispose() {
+        currentIndex = -1;
+        currentObject = null;
+    }
+  }
+
+  private int num {
     set {
       NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_num_set(swigCPtr, value);
     } 
@@ -112,7 +279,7 @@ public unsafe class CExoArrayListMaterialShaderParam : global::System.IDisposabl
 
   }
 
-  public int array_size {
+  private int array_size {
     set {
       NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_array_size_set(swigCPtr, value);
     } 
@@ -121,6 +288,23 @@ public unsafe class CExoArrayListMaterialShaderParam : global::System.IDisposabl
       return retVal;
     }
 
+  }
+
+  public void Add(MaterialShaderParam t) {
+    NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_Add(swigCPtr, MaterialShaderParam.getCPtr(t));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void Pack() {
+    NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_Pack(swigCPtr);
+  }
+
+  private void Allocate(int s) {
+    NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_Allocate(swigCPtr, s);
+  }
+
+  public void SetSize(int s) {
+    NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_SetSize(swigCPtr, s);
   }
 
   public CExoArrayListMaterialShaderParam(int s) : this(NWNXLibPINVOKE.new_CExoArrayListMaterialShaderParam__SWIG_0(s), true) {
@@ -133,53 +317,31 @@ public unsafe class CExoArrayListMaterialShaderParam : global::System.IDisposabl
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListMaterialShaderParam _OpAssign(CExoArrayListMaterialShaderParam list) {
-    CExoArrayListMaterialShaderParam ret = new CExoArrayListMaterialShaderParam(NWNXLibPINVOKE.CExoArrayListMaterialShaderParam__OpAssign(swigCPtr, CExoArrayListMaterialShaderParam.getCPtr(list)), false);
+  public void RemoveAt(int index) {
+    NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_RemoveAt(swigCPtr, index);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  private MaterialShaderParam InternalGetItem(int index) {
+    MaterialShaderParam ret = new MaterialShaderParam(NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_InternalGetItem(swigCPtr, index), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public MaterialShaderParam _OpIndex(int i) {
-    MaterialShaderParam ret = new MaterialShaderParam(NWNXLibPINVOKE.CExoArrayListMaterialShaderParam__OpIndex(swigCPtr, i), false);
+  private MaterialShaderParam InternalGetItemCopy(int index) {
+    MaterialShaderParam ret = new MaterialShaderParam(NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_InternalGetItemCopy(swigCPtr, index), true);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public void Allocate(int s) {
-    NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_Allocate(swigCPtr, s);
-  }
-
-  public void SetSize(int s) {
-    NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_SetSize(swigCPtr, s);
-  }
-
-  public void Pack() {
-    NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_Pack(swigCPtr);
-  }
-
-  public void Add(MaterialShaderParam t) {
-    NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_Add(swigCPtr, MaterialShaderParam.getCPtr(t));
+  private void InternalSetItem(int index, MaterialShaderParam val) {
+    NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_InternalSetItem(swigCPtr, index, MaterialShaderParam.getCPtr(val));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void Insert(MaterialShaderParam t, int k) {
-    NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_Insert(swigCPtr, MaterialShaderParam.getCPtr(t), k);
+  public void Insert(int index, MaterialShaderParam x) {
+    NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_Insert(swigCPtr, index, MaterialShaderParam.getCPtr(x));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public void DelIndex(int i) {
-    NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_DelIndex(swigCPtr, i);
-  }
-
-  public MaterialShaderParam begin() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_begin(swigCPtr);
-    MaterialShaderParam ret = (cPtr == global::System.IntPtr.Zero) ? null : new MaterialShaderParam(cPtr, false);
-    return ret;
-  }
-
-  public MaterialShaderParam end() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListMaterialShaderParam_end(swigCPtr);
-    MaterialShaderParam ret = (cPtr == global::System.IntPtr.Zero) ? null : new MaterialShaderParam(cPtr, false);
-    return ret;
   }
 
 }

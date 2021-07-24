@@ -10,7 +10,8 @@
 
 namespace NWN.Native.API {
 
-public unsafe class CExoArrayListUInt32 : global::System.IDisposable {
+public unsafe class CExoArrayListUInt32 : global::System.IDisposable, global::System.Collections.IEnumerable, global::System.Collections.Generic.IList<uint>
+ {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
@@ -43,7 +44,7 @@ public unsafe class CExoArrayListUInt32 : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,18 +91,184 @@ public unsafe class CExoArrayListUInt32 : global::System.IDisposable {
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public uint* element {
-    set {
-      NWNXLibPINVOKE.CExoArrayListUInt32_element_set(swigCPtr, value);
-    } 
-    get {
-      uint* retVal = NWNXLibPINVOKE.CExoArrayListUInt32_element_get(swigCPtr);
-      return retVal;
+  public CExoArrayListUInt32(global::System.Collections.IEnumerable c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (uint element in c) {
+      this.Add(element);
     }
-
   }
 
-  public int num {
+  public CExoArrayListUInt32(global::System.Collections.Generic.IEnumerable<uint> c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (uint element in c) {
+      this.Add(element);
+    }
+  }
+
+  public bool IsFixedSize {
+    get {
+      return false;
+    }
+  }
+
+  public bool IsReadOnly {
+    get {
+      return false;
+    }
+  }
+
+  public uint this[int index] {
+    get {
+      return InternalGetItem(index);
+    }
+    set {
+      InternalSetItem(index, value);
+    }
+  }
+
+  public int Capacity {
+    get {
+      return (int)array_size;
+    }
+    set {
+      if (value < num)
+        throw new global::System.ArgumentOutOfRangeException("Capacity");
+      SetSize(value);
+    }
+  }
+
+  public int Count {
+    get {
+      return (int)num;
+    }
+  }
+
+  public bool IsSynchronized {
+    get {
+      return false;
+    }
+  }
+
+  public void CopyTo(uint[] array)
+  {
+    CopyTo(0, array, 0, this.Count);
+  }
+
+  public void CopyTo(uint[] array, int arrayIndex)
+  {
+    CopyTo(0, array, arrayIndex, this.Count);
+  }
+
+  public void Clear()
+  {
+    SetSize(0);
+  }
+
+  public void CopyTo(int index, uint[] array, int arrayIndex, int count)
+  {
+    if (array == null)
+      throw new global::System.ArgumentNullException("array");
+    if (index < 0)
+      throw new global::System.ArgumentOutOfRangeException("index", "Value is less than zero");
+    if (arrayIndex < 0)
+      throw new global::System.ArgumentOutOfRangeException("arrayIndex", "Value is less than zero");
+    if (count < 0)
+      throw new global::System.ArgumentOutOfRangeException("count", "Value is less than zero");
+    if (array.Rank > 1)
+      throw new global::System.ArgumentException("Multi dimensional array.", "array");
+    if (index+count > this.Count || arrayIndex+count > array.Length)
+      throw new global::System.ArgumentException("Number of elements to copy is too large.");
+    for (int i=0; i<count; i++)
+      array.SetValue(InternalGetItemCopy(index+i), arrayIndex+i);
+  }
+
+  public uint[] ToArray() {
+    uint[] array = new uint[this.Count];
+    this.CopyTo(array);
+    return array;
+  }
+
+  global::System.Collections.Generic.IEnumerator<uint> global::System.Collections.Generic.IEnumerable<uint>.GetEnumerator() {
+    return new CExoArrayListUInt32Enumerator(this);
+  }
+
+  global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator() {
+    return new CExoArrayListUInt32Enumerator(this);
+  }
+
+  public CExoArrayListUInt32Enumerator GetEnumerator() {
+    return new CExoArrayListUInt32Enumerator(this);
+  }
+
+  // Type-safe enumerator
+  /// Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+  /// whenever the collection is modified. This has been done for changes in the size of the
+  /// collection but not when one of the elements of the collection is modified as it is a bit
+  /// tricky to detect unmanaged code that modifies the collection under our feet.
+  public sealed class CExoArrayListUInt32Enumerator : global::System.Collections.IEnumerator
+    , global::System.Collections.Generic.IEnumerator<uint>
+  {
+    private CExoArrayListUInt32 collectionRef;
+    private int currentIndex;
+    private object currentObject;
+    private int currentSize;
+
+    public CExoArrayListUInt32Enumerator(CExoArrayListUInt32 collection) {
+      collectionRef = collection;
+      currentIndex = -1;
+      currentObject = null;
+      currentSize = collectionRef.Count;
+    }
+
+    // Type-safe iterator Current
+    public uint Current {
+      get {
+        if (currentIndex == -1)
+          throw new global::System.InvalidOperationException("Enumeration not started.");
+        if (currentIndex > currentSize - 1)
+          throw new global::System.InvalidOperationException("Enumeration finished.");
+        if (currentObject == null)
+          throw new global::System.InvalidOperationException("Collection modified.");
+        return (uint)currentObject;
+      }
+    }
+
+    // Type-unsafe IEnumerator.Current
+    object global::System.Collections.IEnumerator.Current {
+      get {
+        return Current;
+      }
+    }
+
+    public bool MoveNext() {
+      int size = collectionRef.Count;
+      bool moveOkay = (currentIndex+1 < size) && (size == currentSize);
+      if (moveOkay) {
+        currentIndex++;
+        currentObject = collectionRef[currentIndex];
+      } else {
+        currentObject = null;
+      }
+      return moveOkay;
+    }
+
+    public void Reset() {
+      currentIndex = -1;
+      currentObject = null;
+      if (collectionRef.Count != currentSize) {
+        throw new global::System.InvalidOperationException("Collection modified.");
+      }
+    }
+
+    public void Dispose() {
+        currentIndex = -1;
+        currentObject = null;
+    }
+  }
+
+  private int num {
     set {
       NWNXLibPINVOKE.CExoArrayListUInt32_num_set(swigCPtr, value);
     } 
@@ -112,7 +279,7 @@ public unsafe class CExoArrayListUInt32 : global::System.IDisposable {
 
   }
 
-  public int array_size {
+  private int array_size {
     set {
       NWNXLibPINVOKE.CExoArrayListUInt32_array_size_set(swigCPtr, value);
     } 
@@ -121,6 +288,22 @@ public unsafe class CExoArrayListUInt32 : global::System.IDisposable {
       return retVal;
     }
 
+  }
+
+  public void Add(uint t) {
+    NWNXLibPINVOKE.CExoArrayListUInt32_Add(swigCPtr, t);
+  }
+
+  public void Pack() {
+    NWNXLibPINVOKE.CExoArrayListUInt32_Pack(swigCPtr);
+  }
+
+  private void Allocate(int s) {
+    NWNXLibPINVOKE.CExoArrayListUInt32_Allocate(swigCPtr, s);
+  }
+
+  public void SetSize(int s) {
+    NWNXLibPINVOKE.CExoArrayListUInt32_SetSize(swigCPtr, s);
   }
 
   public CExoArrayListUInt32(int s) : this(NWNXLibPINVOKE.new_CExoArrayListUInt32__SWIG_0(s), true) {
@@ -133,49 +316,56 @@ public unsafe class CExoArrayListUInt32 : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListUInt32 _OpAssign(CExoArrayListUInt32 list) {
-    CExoArrayListUInt32 ret = new CExoArrayListUInt32(NWNXLibPINVOKE.CExoArrayListUInt32__OpAssign(swigCPtr, CExoArrayListUInt32.getCPtr(list)), false);
+  public void RemoveAt(int index) {
+    NWNXLibPINVOKE.CExoArrayListUInt32_RemoveAt(swigCPtr, index);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  private uint InternalGetItem(int index) {
+    uint ret = NWNXLibPINVOKE.CExoArrayListUInt32_InternalGetItem(swigCPtr, index);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public uint* _OpIndex(int i) {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListUInt32__OpIndex(swigCPtr, i);
-    return (uint*)retVal;
-  }
-
-  public void Allocate(int s) {
-    NWNXLibPINVOKE.CExoArrayListUInt32_Allocate(swigCPtr, s);
-  }
-
-  public void SetSize(int s) {
-    NWNXLibPINVOKE.CExoArrayListUInt32_SetSize(swigCPtr, s);
-  }
-
-  public void Pack() {
-    NWNXLibPINVOKE.CExoArrayListUInt32_Pack(swigCPtr);
-  }
-
-  public void Add(uint t) {
-    NWNXLibPINVOKE.CExoArrayListUInt32_Add(swigCPtr, t);
-  }
-
-  public void Insert(uint t, int k) {
-    NWNXLibPINVOKE.CExoArrayListUInt32_Insert(swigCPtr, t, k);
-  }
-
-  public void DelIndex(int i) {
-    NWNXLibPINVOKE.CExoArrayListUInt32_DelIndex(swigCPtr, i);
-  }
-
-  public uint* begin() {
-    uint* retVal = NWNXLibPINVOKE.CExoArrayListUInt32_begin(swigCPtr);
+  private uint InternalGetItemCopy(int index) {
+    uint retVal = NWNXLibPINVOKE.CExoArrayListUInt32_InternalGetItemCopy(swigCPtr, index);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
 
-  public uint* end() {
-    uint* retVal = NWNXLibPINVOKE.CExoArrayListUInt32_end(swigCPtr);
+  private void InternalSetItem(int index, uint val) {
+    NWNXLibPINVOKE.CExoArrayListUInt32_InternalSetItem(swigCPtr, index, val);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void Insert(int index, uint x) {
+    NWNXLibPINVOKE.CExoArrayListUInt32_Insert(swigCPtr, index, x);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public int IndexOf(uint t) {
+    int retVal = NWNXLibPINVOKE.CExoArrayListUInt32_IndexOf(swigCPtr, t);
     return retVal;
+  }
+
+  public int AddUnique(uint t) {
+    int retVal = NWNXLibPINVOKE.CExoArrayListUInt32_AddUnique(swigCPtr, t);
+    return retVal;
+  }
+
+  public bool Contains(uint value) {
+    bool ret = NWNXLibPINVOKE.CExoArrayListUInt32_Contains(swigCPtr, value);
+    return ret;
+  }
+
+  public int LastIndexOf(uint value) {
+    int retVal = NWNXLibPINVOKE.CExoArrayListUInt32_LastIndexOf(swigCPtr, value);
+    return retVal;
+  }
+
+  public bool Remove(uint value) {
+    bool ret = NWNXLibPINVOKE.CExoArrayListUInt32_Remove(swigCPtr, value);
+    return ret;
   }
 
 }

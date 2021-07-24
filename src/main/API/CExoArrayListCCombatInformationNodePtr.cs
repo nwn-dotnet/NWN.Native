@@ -10,7 +10,8 @@
 
 namespace NWN.Native.API {
 
-public unsafe class CExoArrayListCCombatInformationNodePtr : global::System.IDisposable {
+public unsafe class CExoArrayListCCombatInformationNodePtr : global::System.IDisposable, global::System.Collections.IEnumerable, global::System.Collections.Generic.IList<CCombatInformationNode>
+ {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
@@ -43,7 +44,7 @@ public unsafe class CExoArrayListCCombatInformationNodePtr : global::System.IDis
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/API_NWNXLib.i,25,SWIG_DOTNET_EXTENSIONS@*/
+/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,18 +91,184 @@ public unsafe class CExoArrayListCCombatInformationNodePtr : global::System.IDis
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public void** element {
-    set {
-      NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_element_set(swigCPtr, (global::System.IntPtr)value);
-    } 
-    get {
-        global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_element_get(swigCPtr);
-        return (void**)retVal;
+  public CExoArrayListCCombatInformationNodePtr(global::System.Collections.IEnumerable c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (CCombatInformationNode element in c) {
+      this.Add(element);
     }
-
   }
 
-  public int num {
+  public CExoArrayListCCombatInformationNodePtr(global::System.Collections.Generic.IEnumerable<CCombatInformationNode> c) : this() {
+    if (c == null)
+      throw new global::System.ArgumentNullException("c");
+    foreach (CCombatInformationNode element in c) {
+      this.Add(element);
+    }
+  }
+
+  public bool IsFixedSize {
+    get {
+      return false;
+    }
+  }
+
+  public bool IsReadOnly {
+    get {
+      return false;
+    }
+  }
+
+  public CCombatInformationNode this[int index] {
+    get {
+      return InternalGetItem(index);
+    }
+    set {
+      InternalSetItem(index, value);
+    }
+  }
+
+  public int Capacity {
+    get {
+      return (int)array_size;
+    }
+    set {
+      if (value < num)
+        throw new global::System.ArgumentOutOfRangeException("Capacity");
+      SetSize(value);
+    }
+  }
+
+  public int Count {
+    get {
+      return (int)num;
+    }
+  }
+
+  public bool IsSynchronized {
+    get {
+      return false;
+    }
+  }
+
+  public void CopyTo(CCombatInformationNode[] array)
+  {
+    CopyTo(0, array, 0, this.Count);
+  }
+
+  public void CopyTo(CCombatInformationNode[] array, int arrayIndex)
+  {
+    CopyTo(0, array, arrayIndex, this.Count);
+  }
+
+  public void Clear()
+  {
+    SetSize(0);
+  }
+
+  public void CopyTo(int index, CCombatInformationNode[] array, int arrayIndex, int count)
+  {
+    if (array == null)
+      throw new global::System.ArgumentNullException("array");
+    if (index < 0)
+      throw new global::System.ArgumentOutOfRangeException("index", "Value is less than zero");
+    if (arrayIndex < 0)
+      throw new global::System.ArgumentOutOfRangeException("arrayIndex", "Value is less than zero");
+    if (count < 0)
+      throw new global::System.ArgumentOutOfRangeException("count", "Value is less than zero");
+    if (array.Rank > 1)
+      throw new global::System.ArgumentException("Multi dimensional array.", "array");
+    if (index+count > this.Count || arrayIndex+count > array.Length)
+      throw new global::System.ArgumentException("Number of elements to copy is too large.");
+    for (int i=0; i<count; i++)
+      array.SetValue(InternalGetItemCopy(index+i), arrayIndex+i);
+  }
+
+  public CCombatInformationNode[] ToArray() {
+    CCombatInformationNode[] array = new CCombatInformationNode[this.Count];
+    this.CopyTo(array);
+    return array;
+  }
+
+  global::System.Collections.Generic.IEnumerator<CCombatInformationNode> global::System.Collections.Generic.IEnumerable<CCombatInformationNode>.GetEnumerator() {
+    return new CExoArrayListCCombatInformationNodePtrEnumerator(this);
+  }
+
+  global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator() {
+    return new CExoArrayListCCombatInformationNodePtrEnumerator(this);
+  }
+
+  public CExoArrayListCCombatInformationNodePtrEnumerator GetEnumerator() {
+    return new CExoArrayListCCombatInformationNodePtrEnumerator(this);
+  }
+
+  // Type-safe enumerator
+  /// Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+  /// whenever the collection is modified. This has been done for changes in the size of the
+  /// collection but not when one of the elements of the collection is modified as it is a bit
+  /// tricky to detect unmanaged code that modifies the collection under our feet.
+  public sealed class CExoArrayListCCombatInformationNodePtrEnumerator : global::System.Collections.IEnumerator
+    , global::System.Collections.Generic.IEnumerator<CCombatInformationNode>
+  {
+    private CExoArrayListCCombatInformationNodePtr collectionRef;
+    private int currentIndex;
+    private object currentObject;
+    private int currentSize;
+
+    public CExoArrayListCCombatInformationNodePtrEnumerator(CExoArrayListCCombatInformationNodePtr collection) {
+      collectionRef = collection;
+      currentIndex = -1;
+      currentObject = null;
+      currentSize = collectionRef.Count;
+    }
+
+    // Type-safe iterator Current
+    public CCombatInformationNode Current {
+      get {
+        if (currentIndex == -1)
+          throw new global::System.InvalidOperationException("Enumeration not started.");
+        if (currentIndex > currentSize - 1)
+          throw new global::System.InvalidOperationException("Enumeration finished.");
+        if (currentObject == null)
+          throw new global::System.InvalidOperationException("Collection modified.");
+        return (CCombatInformationNode)currentObject;
+      }
+    }
+
+    // Type-unsafe IEnumerator.Current
+    object global::System.Collections.IEnumerator.Current {
+      get {
+        return Current;
+      }
+    }
+
+    public bool MoveNext() {
+      int size = collectionRef.Count;
+      bool moveOkay = (currentIndex+1 < size) && (size == currentSize);
+      if (moveOkay) {
+        currentIndex++;
+        currentObject = collectionRef[currentIndex];
+      } else {
+        currentObject = null;
+      }
+      return moveOkay;
+    }
+
+    public void Reset() {
+      currentIndex = -1;
+      currentObject = null;
+      if (collectionRef.Count != currentSize) {
+        throw new global::System.InvalidOperationException("Collection modified.");
+      }
+    }
+
+    public void Dispose() {
+        currentIndex = -1;
+        currentObject = null;
+    }
+  }
+
+  private int num {
     set {
       NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_num_set(swigCPtr, value);
     } 
@@ -112,7 +279,7 @@ public unsafe class CExoArrayListCCombatInformationNodePtr : global::System.IDis
 
   }
 
-  public int array_size {
+  private int array_size {
     set {
       NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_array_size_set(swigCPtr, value);
     } 
@@ -121,6 +288,22 @@ public unsafe class CExoArrayListCCombatInformationNodePtr : global::System.IDis
       return retVal;
     }
 
+  }
+
+  public void Add(CCombatInformationNode t) {
+    NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_Add(swigCPtr, CCombatInformationNode.getCPtr(t));
+  }
+
+  public void Pack() {
+    NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_Pack(swigCPtr);
+  }
+
+  private void Allocate(int s) {
+    NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_Allocate(swigCPtr, s);
+  }
+
+  public void SetSize(int s) {
+    NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_SetSize(swigCPtr, s);
   }
 
   public CExoArrayListCCombatInformationNodePtr(int s) : this(NWNXLibPINVOKE.new_CExoArrayListCCombatInformationNodePtr__SWIG_0(s), true) {
@@ -133,49 +316,58 @@ public unsafe class CExoArrayListCCombatInformationNodePtr : global::System.IDis
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public CExoArrayListCCombatInformationNodePtr _OpAssign(CExoArrayListCCombatInformationNodePtr list) {
-    CExoArrayListCCombatInformationNodePtr ret = new CExoArrayListCCombatInformationNodePtr(NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr__OpAssign(swigCPtr, CExoArrayListCCombatInformationNodePtr.getCPtr(list)), false);
+  public void RemoveAt(int index) {
+    NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_RemoveAt(swigCPtr, index);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public int IndexOf(CCombatInformationNode t) {
+    int retVal = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_IndexOf(swigCPtr, CCombatInformationNode.getCPtr(t));
+    return retVal;
+  }
+
+  public int AddUnique(CCombatInformationNode t) {
+    int retVal = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_AddUnique(swigCPtr, CCombatInformationNode.getCPtr(t));
+    return retVal;
+  }
+
+  private CCombatInformationNode InternalGetItem(int index) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_InternalGetItem(swigCPtr, index);
+    CCombatInformationNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CCombatInformationNode(cPtr, false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public void** _OpIndex(int i) {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr__OpIndex(swigCPtr, i);
-    return (void**)retVal;
+  private CCombatInformationNode InternalGetItemCopy(int index) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_InternalGetItemCopy(swigCPtr, index);
+    CCombatInformationNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CCombatInformationNode(cPtr, false);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
   }
 
-  public void Allocate(int s) {
-    NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_Allocate(swigCPtr, s);
+  private void InternalSetItem(int index, CCombatInformationNode val) {
+    NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_InternalSetItem(swigCPtr, index, CCombatInformationNode.getCPtr(val));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void SetSize(int s) {
-    NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_SetSize(swigCPtr, s);
+  public void Insert(int index, CCombatInformationNode x) {
+    NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_Insert(swigCPtr, index, CCombatInformationNode.getCPtr(x));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void Pack() {
-    NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_Pack(swigCPtr);
+  public bool Contains(CCombatInformationNode value) {
+    bool ret = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_Contains(swigCPtr, CCombatInformationNode.getCPtr(value));
+    return ret;
   }
 
-  public void Add(CCombatInformationNode t) {
-    NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_Add(swigCPtr, CCombatInformationNode.getCPtr(t));
+  public int LastIndexOf(CCombatInformationNode value) {
+    int retVal = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_LastIndexOf(swigCPtr, CCombatInformationNode.getCPtr(value));
+    return retVal;
   }
 
-  public void Insert(CCombatInformationNode t, int k) {
-    NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_Insert(swigCPtr, CCombatInformationNode.getCPtr(t), k);
-  }
-
-  public void DelIndex(int i) {
-    NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_DelIndex(swigCPtr, i);
-  }
-
-  public void** begin() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_begin(swigCPtr);
-    return (void**)retVal;
-  }
-
-  public void** end() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_end(swigCPtr);
-    return (void**)retVal;
+  public bool Remove(CCombatInformationNode value) {
+    bool ret = NWNXLibPINVOKE.CExoArrayListCCombatInformationNodePtr_Remove(swigCPtr, CCombatInformationNode.getCPtr(value));
+    return ret;
   }
 
 }
