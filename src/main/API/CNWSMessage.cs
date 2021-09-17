@@ -1650,6 +1650,38 @@ public unsafe class CNWSMessage : CNWMessage {
     return retVal;
   }
 
+  public int SendServerToPlayerGuiEvent_Disable(uint nPlayerId, int nGuiElement, int bDisable) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiEvent_Disable(swigCPtr, nPlayerId, nGuiElement, bDisable);
+    return retVal;
+  }
+
+  public int HandlePlayerToServerDevice(CNWSPlayer pPlayer, byte nMinor) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerDevice(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
+  }
+
+  public int SendServerToPlayerNui_CreateClient(CNWSPlayer pPlayer, int cToken, string sId, CResRef cResRef) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerNui_CreateClient(swigCPtr, CNWSPlayer.getCPtr(pPlayer), cToken, sId, CResRef.getCPtr(cResRef));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return retVal;
+  }
+
+  public int SendServerToPlayerNui_Destroy(CNWSPlayer pPlayer, int nToken) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerNui_Destroy(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nToken);
+    return retVal;
+  }
+
+  public int SendServerToPlayerNui_Binds(CNWSPlayer pPlayer, SWIGTYPE_p_std__vectorT_Nui__JSON__BindUpdate_t updates) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerNui_Binds(swigCPtr, CNWSPlayer.getCPtr(pPlayer), SWIGTYPE_p_std__vectorT_Nui__JSON__BindUpdate_t.getCPtr(updates));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return retVal;
+  }
+
+  public int HandlePlayerToServerNuiEvent(CNWSPlayer pPlayer, byte nMinor) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerNuiEvent(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
+  }
+
   public void AddDoorAppearanceToMessage(CNWSPlayer pPlayer, CNWSDoor pDoor) {
     NWNXLibPINVOKE.CNWSMessage_AddDoorAppearanceToMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSDoor.getCPtr(pDoor));
   }
@@ -1925,11 +1957,6 @@ public unsafe class CNWSMessage : CNWMessage {
 
   public int SendServerToPlayerInventory_LearnScroll(uint nPlayerID, uint nObjectID, byte nMinor) {
     int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerInventory_LearnScroll(swigCPtr, nPlayerID, nObjectID, nMinor);
-    return retVal;
-  }
-
-  public int SendServerToPlayerGuiEvent_Disable(uint nPlayerId, int nGuiElement, int bDisable) {
-    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiEvent_Disable(swigCPtr, nPlayerId, nGuiElement, bDisable);
     return retVal;
   }
 

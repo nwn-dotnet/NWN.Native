@@ -80,6 +80,287 @@ public unsafe class CNWSPlayer : CNWSClient {
     return !Equals(left, right);
   }
 /*@SWIG@*/
+  public unsafe class NuiState : global::System.IDisposable {
+    private global::System.Runtime.InteropServices.HandleRef swigCPtr;
+    protected bool swigCMemOwn;
+  
+    internal NuiState(global::System.IntPtr cPtr, bool cMemoryOwn) {
+      swigCMemOwn = cMemoryOwn;
+      swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+    }
+  
+    internal static global::System.Runtime.InteropServices.HandleRef getCPtr(NuiState obj) {
+      return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
+    }
+  
+    ~NuiState() {
+      Dispose(false);
+    }
+  
+    public void Dispose() {
+      Dispose(true);
+      global::System.GC.SuppressFinalize(this);
+    }
+  
+    protected virtual void Dispose(bool disposing) {
+      lock(this) {
+        if (swigCPtr.Handle != global::System.IntPtr.Zero) {
+          if (swigCMemOwn) {
+            swigCMemOwn = false;
+            NWNXLibPINVOKE.delete_CNWSPlayer_NuiState(swigCPtr);
+          }
+          swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
+        }
+      }
+    }
+  /*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+    public global::System.IntPtr Pointer {
+      get {
+        return swigCPtr.Handle;
+      }
+    }
+  
+    public static unsafe implicit operator void*(NuiState self) {
+      return (void*)self.swigCPtr.Handle;
+    }
+  
+    public static unsafe NuiState FromPointer(void* pointer, bool memoryOwn = false) {
+      return pointer != null ? new NuiState((global::System.IntPtr)pointer, memoryOwn) : null;
+    }
+  
+    public static NuiState FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+      return pointer != global::System.IntPtr.Zero ? new NuiState(pointer, memoryOwn) : null;
+    }
+  
+    public bool Equals(NuiState other) {
+      if (ReferenceEquals(null, other)) {
+        return false;
+      }
+  
+      if (ReferenceEquals(this, other)) {
+        return true;
+      }
+  
+      return Pointer.Equals(other.Pointer);
+    }
+  
+    public override bool Equals(object obj) {
+      return ReferenceEquals(this, obj) || obj is NuiState other && Equals(other);
+    }
+  
+    public override int GetHashCode() {
+      return swigCPtr.Handle.GetHashCode();
+    }
+  
+    public static bool operator ==(NuiState left, NuiState right) {
+      return Equals(left, right);
+    }
+  
+    public static bool operator !=(NuiState left, NuiState right) {
+      return !Equals(left, right);
+    }
+  /*@SWIG@*/
+      public unsafe class WindowState : global::System.IDisposable {
+        private global::System.Runtime.InteropServices.HandleRef swigCPtr;
+        protected bool swigCMemOwn;
+      
+        internal WindowState(global::System.IntPtr cPtr, bool cMemoryOwn) {
+          swigCMemOwn = cMemoryOwn;
+          swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
+        }
+      
+        internal static global::System.Runtime.InteropServices.HandleRef getCPtr(WindowState obj) {
+          return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
+        }
+      
+        ~WindowState() {
+          Dispose(false);
+        }
+      
+        public void Dispose() {
+          Dispose(true);
+          global::System.GC.SuppressFinalize(this);
+        }
+      
+        protected virtual void Dispose(bool disposing) {
+          lock(this) {
+            if (swigCPtr.Handle != global::System.IntPtr.Zero) {
+              if (swigCMemOwn) {
+                swigCMemOwn = false;
+                NWNXLibPINVOKE.delete_CNWSPlayer_NuiState_WindowState(swigCPtr);
+              }
+              swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
+            }
+          }
+        }
+      /*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+        public global::System.IntPtr Pointer {
+          get {
+            return swigCPtr.Handle;
+          }
+        }
+      
+        public static unsafe implicit operator void*(WindowState self) {
+          return (void*)self.swigCPtr.Handle;
+        }
+      
+        public static unsafe WindowState FromPointer(void* pointer, bool memoryOwn = false) {
+          return pointer != null ? new WindowState((global::System.IntPtr)pointer, memoryOwn) : null;
+        }
+      
+        public static WindowState FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+          return pointer != global::System.IntPtr.Zero ? new WindowState(pointer, memoryOwn) : null;
+        }
+      
+        public bool Equals(WindowState other) {
+          if (ReferenceEquals(null, other)) {
+            return false;
+          }
+      
+          if (ReferenceEquals(this, other)) {
+            return true;
+          }
+      
+          return Pointer.Equals(other.Pointer);
+        }
+      
+        public override bool Equals(object obj) {
+          return ReferenceEquals(this, obj) || obj is WindowState other && Equals(other);
+        }
+      
+        public override int GetHashCode() {
+          return swigCPtr.Handle.GetHashCode();
+        }
+      
+        public static bool operator ==(WindowState left, WindowState right) {
+          return Equals(left, right);
+        }
+      
+        public static bool operator !=(WindowState left, WindowState right) {
+          return !Equals(left, right);
+        }
+      /*@SWIG@*/
+        public int m_token {
+          set {
+            NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_token_set(swigCPtr, value);
+          } 
+          get {
+            int retVal = NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_token_get(swigCPtr);
+            return retVal;
+          }
+      
+        }
+      
+        public string m_id {
+          set {
+            NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_id_set(swigCPtr, value);
+            if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+          } 
+          get {
+            string ret = NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_id_get(swigCPtr);
+            if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+            return ret;
+          } 
+        }
+      
+        public SWIGTYPE_p_std__vectorT_std__string_t m_bind_list {
+          set {
+            NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_bind_list_set(swigCPtr, SWIGTYPE_p_std__vectorT_std__string_t.getCPtr(value));
+          } 
+          get {
+            global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_bind_list_get(swigCPtr);
+            SWIGTYPE_p_std__vectorT_std__string_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__vectorT_std__string_t(cPtr, false);
+            return ret;
+          } 
+        }
+      
+        public SWIGTYPE_p_std__unordered_mapT_std__string_json_t m_binds {
+          set {
+            NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_binds_set(swigCPtr, SWIGTYPE_p_std__unordered_mapT_std__string_json_t.getCPtr(value));
+          } 
+          get {
+            global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_binds_get(swigCPtr);
+            SWIGTYPE_p_std__unordered_mapT_std__string_json_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__unordered_mapT_std__string_json_t(cPtr, false);
+            return ret;
+          } 
+        }
+      
+        public SWIGTYPE_p_std__unordered_setT_std__string_t m_watch {
+          set {
+            NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_watch_set(swigCPtr, SWIGTYPE_p_std__unordered_setT_std__string_t.getCPtr(value));
+          } 
+          get {
+            global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_watch_get(swigCPtr);
+            SWIGTYPE_p_std__unordered_setT_std__string_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__unordered_setT_std__string_t(cPtr, false);
+            return ret;
+          } 
+        }
+      
+        public json m_userdata {
+          set {
+            NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_userdata_set(swigCPtr, json.getCPtr(value));
+          } 
+          get {
+            global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_userdata_get(swigCPtr);
+            json ret = (cPtr == global::System.IntPtr.Zero) ? null : new json(cPtr, false);
+            return ret;
+          } 
+        }
+      
+        public WindowState() : this(NWNXLibPINVOKE.new_CNWSPlayer_NuiState_WindowState(), true) {
+        }
+      
+      }
+  
+    public int m_next_token {
+      set {
+        NWNXLibPINVOKE.CNWSPlayer_NuiState_m_next_token_set(swigCPtr, value);
+      } 
+      get {
+        int retVal = NWNXLibPINVOKE.CNWSPlayer_NuiState_m_next_token_get(swigCPtr);
+        return retVal;
+      }
+  
+    }
+  
+    public SWIGTYPE_p_std__vectorT_int_t m_window_list {
+      set {
+        NWNXLibPINVOKE.CNWSPlayer_NuiState_m_window_list_set(swigCPtr, SWIGTYPE_p_std__vectorT_int_t.getCPtr(value));
+      } 
+      get {
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayer_NuiState_m_window_list_get(swigCPtr);
+        SWIGTYPE_p_std__vectorT_int_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__vectorT_int_t(cPtr, false);
+        return ret;
+      } 
+    }
+  
+    public SWIGTYPE_p_std__unordered_mapT_int_CNWSPlayer__NuiState__WindowState_t m_windows {
+      set {
+        NWNXLibPINVOKE.CNWSPlayer_NuiState_m_windows_set(swigCPtr, SWIGTYPE_p_std__unordered_mapT_int_CNWSPlayer__NuiState__WindowState_t.getCPtr(value));
+      } 
+      get {
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayer_NuiState_m_windows_get(swigCPtr);
+        SWIGTYPE_p_std__unordered_mapT_int_CNWSPlayer__NuiState__WindowState_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__unordered_mapT_int_CNWSPlayer__NuiState__WindowState_t(cPtr, false);
+        return ret;
+      } 
+    }
+  
+    public SWIGTYPE_p_std__mapT_std__string_CNWSPlayer__NuiState__WindowState_p_t m_by_id {
+      set {
+        NWNXLibPINVOKE.CNWSPlayer_NuiState_m_by_id_set(swigCPtr, SWIGTYPE_p_std__mapT_std__string_CNWSPlayer__NuiState__WindowState_p_t.getCPtr(value));
+      } 
+      get {
+        global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayer_NuiState_m_by_id_get(swigCPtr);
+        SWIGTYPE_p_std__mapT_std__string_CNWSPlayer__NuiState__WindowState_p_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__mapT_std__string_CNWSPlayer__NuiState__WindowState_p_t(cPtr, false);
+        return ret;
+      } 
+    }
+  
+    public NuiState() : this(NWNXLibPINVOKE.new_CNWSPlayer_NuiState(), true) {
+    }
+  
+  }
+
   public CExoLinkedListCLastUpdateObject m_pActiveObjectsLastUpdate {
     set {
       NWNXLibPINVOKE.CNWSPlayer_m_pActiveObjectsLastUpdate_set(swigCPtr, CExoLinkedListCLastUpdateObject.getCPtr(value));
@@ -419,6 +700,28 @@ public unsafe class CNWSPlayer : CNWSClient {
       return retVal;
     }
 
+  }
+
+  public SWIGTYPE_p_std__unordered_mapT_std__string_int_t m_device_properties {
+    set {
+      NWNXLibPINVOKE.CNWSPlayer_m_device_properties_set(swigCPtr, SWIGTYPE_p_std__unordered_mapT_std__string_int_t.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayer_m_device_properties_get(swigCPtr);
+      SWIGTYPE_p_std__unordered_mapT_std__string_int_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__unordered_mapT_std__string_int_t(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public CNWSPlayer.NuiState m_cNuiState {
+    set {
+      NWNXLibPINVOKE.CNWSPlayer_m_cNuiState_set(swigCPtr, CNWSPlayer.NuiState.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayer_m_cNuiState_get(swigCPtr);
+      CNWSPlayer.NuiState ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSPlayer.NuiState(cPtr, false);
+      return ret;
+    } 
   }
 
   public uint m_oidDungeonMasterAvatar {

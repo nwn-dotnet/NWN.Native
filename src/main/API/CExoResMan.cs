@@ -620,20 +620,26 @@ public unsafe class CExoResMan : global::System.IDisposable {
     return retVal;
   }
 
+  public int CleanDirectory(CExoString sDirectory, int bDeleteSubDirectories, int bCleanSubDirectories, ushort restype) {
+    int retVal = NWNXLibPINVOKE.CExoResMan_CleanDirectory__SWIG_0(swigCPtr, CExoString.getCPtr(sDirectory), bDeleteSubDirectories, bCleanSubDirectories, restype);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return retVal;
+  }
+
   public int CleanDirectory(CExoString sDirectory, int bDeleteSubDirectories, int bCleanSubDirectories) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_CleanDirectory__SWIG_0(swigCPtr, CExoString.getCPtr(sDirectory), bDeleteSubDirectories, bCleanSubDirectories);
+    int retVal = NWNXLibPINVOKE.CExoResMan_CleanDirectory__SWIG_1(swigCPtr, CExoString.getCPtr(sDirectory), bDeleteSubDirectories, bCleanSubDirectories);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
 
   public int CleanDirectory(CExoString sDirectory, int bDeleteSubDirectories) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_CleanDirectory__SWIG_1(swigCPtr, CExoString.getCPtr(sDirectory), bDeleteSubDirectories);
+    int retVal = NWNXLibPINVOKE.CExoResMan_CleanDirectory__SWIG_2(swigCPtr, CExoString.getCPtr(sDirectory), bDeleteSubDirectories);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
 
   public int CleanDirectory(CExoString sDirectory) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_CleanDirectory__SWIG_2(swigCPtr, CExoString.getCPtr(sDirectory));
+    int retVal = NWNXLibPINVOKE.CExoResMan_CleanDirectory__SWIG_3(swigCPtr, CExoString.getCPtr(sDirectory));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
@@ -724,8 +730,14 @@ public unsafe class CExoResMan : global::System.IDisposable {
     NWNXLibPINVOKE.CExoResMan_ClearOverrides(swigCPtr);
   }
 
+  public int WipeDirectory(CExoString sDirectory, int bDeleteAllFiles, int bRemoveDirectory, int bDeleteAllSubDirectoryFiles, int bDeleteAllSubDirectories, ushort restype) {
+    int retVal = NWNXLibPINVOKE.CExoResMan_WipeDirectory__SWIG_0(swigCPtr, CExoString.getCPtr(sDirectory), bDeleteAllFiles, bRemoveDirectory, bDeleteAllSubDirectoryFiles, bDeleteAllSubDirectories, restype);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return retVal;
+  }
+
   public int WipeDirectory(CExoString sDirectory, int bDeleteAllFiles, int bRemoveDirectory, int bDeleteAllSubDirectoryFiles, int bDeleteAllSubDirectories) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_WipeDirectory(swigCPtr, CExoString.getCPtr(sDirectory), bDeleteAllFiles, bRemoveDirectory, bDeleteAllSubDirectoryFiles, bDeleteAllSubDirectories);
+    int retVal = NWNXLibPINVOKE.CExoResMan_WipeDirectory__SWIG_1(swigCPtr, CExoString.getCPtr(sDirectory), bDeleteAllFiles, bRemoveDirectory, bDeleteAllSubDirectoryFiles, bDeleteAllSubDirectories);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }

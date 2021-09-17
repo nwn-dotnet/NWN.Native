@@ -148,6 +148,12 @@ public unsafe class CNWSScriptVarTable : global::System.IDisposable {
     return ret;
   }
 
+  public JsonEngineStructure GetJson(CExoString sVarName) {
+    JsonEngineStructure ret = new JsonEngineStructure(NWNXLibPINVOKE.CNWSScriptVarTable_GetJson(swigCPtr, CExoString.getCPtr(sVarName)), true);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public void SetInt(CExoString sVarName, int nValue, int bLoading) {
     NWNXLibPINVOKE.CNWSScriptVarTable_SetInt__SWIG_0(swigCPtr, CExoString.getCPtr(sVarName), nValue, bLoading);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
@@ -183,6 +189,11 @@ public unsafe class CNWSScriptVarTable : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public void SetJson(CExoString sVarName, JsonEngineStructure cJson) {
+    NWNXLibPINVOKE.CNWSScriptVarTable_SetJson(swigCPtr, CExoString.getCPtr(sVarName), JsonEngineStructure.getCPtr(cJson));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
   public void DestroyInt(CExoString sVarName) {
     NWNXLibPINVOKE.CNWSScriptVarTable_DestroyInt(swigCPtr, CExoString.getCPtr(sVarName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
@@ -210,6 +221,11 @@ public unsafe class CNWSScriptVarTable : global::System.IDisposable {
 
   public void DestroyCswy(CExoString sVarName) {
     NWNXLibPINVOKE.CNWSScriptVarTable_DestroyCswy(swigCPtr, CExoString.getCPtr(sVarName));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void DestroyJson(CExoString sVarName) {
+    NWNXLibPINVOKE.CNWSScriptVarTable_DestroyJson(swigCPtr, CExoString.getCPtr(sVarName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 

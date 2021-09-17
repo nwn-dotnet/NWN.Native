@@ -1739,8 +1739,8 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     return retVal;
   }
 
-  public int ParseStringCharacter(int ch, int chNext) {
-    int retVal = NWNXLibPINVOKE.CScriptCompiler_ParseStringCharacter(swigCPtr, ch, chNext);
+  public int ParseStringCharacter(int ch, int chNext, byte* pScript, int nScriptLength) {
+    int retVal = NWNXLibPINVOKE.CScriptCompiler_ParseStringCharacter(swigCPtr, ch, chNext, pScript, nScriptLength);
     return retVal;
   }
 
@@ -1854,8 +1854,8 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     return retVal;
   }
 
-  public int ParseNextCharacter(int ch, int chNext) {
-    int retVal = NWNXLibPINVOKE.CScriptCompiler_ParseNextCharacter(swigCPtr, ch, chNext);
+  public int ParseNextCharacter(int ch, int chNext, byte* pScript, int nScriptLength) {
+    int retVal = NWNXLibPINVOKE.CScriptCompiler_ParseNextCharacter(swigCPtr, ch, chNext, pScript, nScriptLength);
     return retVal;
   }
 

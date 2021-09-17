@@ -3820,6 +3820,11 @@ public unsafe class CNWSCreature : CNWSObject {
     return retVal;
   }
 
+  public int GetTakesCommandsFromPlayer(CNWSPlayer pPlayer) {
+    int retVal = NWNXLibPINVOKE.CNWSCreature_GetTakesCommandsFromPlayer(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
+    return retVal;
+  }
+
   public CNWSFaction GetFaction() {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_GetFaction(swigCPtr);
     CNWSFaction ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSFaction(cPtr, false);

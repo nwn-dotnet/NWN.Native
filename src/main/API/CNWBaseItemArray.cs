@@ -165,6 +165,16 @@ public unsafe class CNWBaseItemArray : global::System.IDisposable {
     return retVal;
   }
 
+  public int GetIsDefaultMonkWeapon(uint baseItemId) {
+    int retVal = NWNXLibPINVOKE.CNWBaseItemArray_GetIsDefaultMonkWeapon(swigCPtr, baseItemId);
+    return retVal;
+  }
+
+  public byte GetDefaultWeaponFinesseMinimumCreatureSize(uint baseItemId) {
+    byte retVal = NWNXLibPINVOKE.CNWBaseItemArray_GetDefaultWeaponFinesseMinimumCreatureSize(swigCPtr, baseItemId);
+    return retVal;
+  }
+
 }
 
 }

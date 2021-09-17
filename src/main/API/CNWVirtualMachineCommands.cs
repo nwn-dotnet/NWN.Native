@@ -500,6 +500,11 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     return retVal;
   }
 
+  public int ExecuteCommandPlayerDevice(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandPlayerDevice(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
   public int ExecuteCommandDistanceConversions(int nCommandId, int nParameters) {
     int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandDistanceConversions(swigCPtr, nCommandId, nParameters);
     return retVal;
@@ -1047,6 +1052,11 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
 
   public int ExecuteCommandGetCampaignInt(int nCommandId, int nParameters) {
     int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandGetCampaignInt(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandGetCampaignJson(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandGetCampaignJson(swigCPtr, nCommandId, nParameters);
     return retVal;
   }
 
@@ -2420,6 +2430,11 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     return retVal;
   }
 
+  public int ExecuteCommandJson(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandJson(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
   public int ExecuteCommandLevelUpHenchman(int nCommandId, int nParameters) {
     int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandLevelUpHenchman(swigCPtr, nCommandId, nParameters);
     return retVal;
@@ -2482,6 +2497,11 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
 
   public int ExecuteCommandMusicBattle(int nCommandId, int nParameters) {
     int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandMusicBattle(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandNuiManagement(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandNuiManagement(swigCPtr, nCommandId, nParameters);
     return retVal;
   }
 
@@ -2625,6 +2645,11 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     return retVal;
   }
 
+  public int ExecuteCommandResMan(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandResMan(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
   public int ExecuteCommandRestoreBaseAttackBonus(int nCommandId, int nParameters) {
     int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandRestoreBaseAttackBonus(swigCPtr, nCommandId, nParameters);
     return retVal;
@@ -2717,6 +2742,11 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
 
   public int ExecuteCommandSetCampaignInt(int nCommandId, int nParameters) {
     int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandSetCampaignInt(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandSetCampaignJson(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandSetCampaignJson(swigCPtr, nCommandId, nParameters);
     return retVal;
   }
 

@@ -447,8 +447,8 @@ public unsafe class CResGFF : CRes {
     return retVal;
   }
 
-  public int GetDataFromPointer(void* pData, int nDataSize) {
-    int retVal = NWNXLibPINVOKE.CResGFF_GetDataFromPointer(swigCPtr, (global::System.IntPtr)pData, nDataSize);
+  public int GetDataFromPointer(void* pData, int nDataSize, bool bTakeOwnership) {
+    int retVal = NWNXLibPINVOKE.CResGFF_GetDataFromPointer(swigCPtr, (global::System.IntPtr)pData, nDataSize, bTakeOwnership);
     return retVal;
   }
 

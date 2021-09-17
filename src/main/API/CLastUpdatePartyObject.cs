@@ -365,6 +365,17 @@ public unsafe class CLastUpdatePartyObject : global::System.IDisposable {
 
   }
 
+  public int m_bTakesCommands {
+    set {
+      NWNXLibPINVOKE.CLastUpdatePartyObject_m_bTakesCommands_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CLastUpdatePartyObject_m_bTakesCommands_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public int m_bPoisoned {
     set {
       NWNXLibPINVOKE.CLastUpdatePartyObject_m_bPoisoned_set(swigCPtr, value);

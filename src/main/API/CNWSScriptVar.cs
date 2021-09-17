@@ -156,6 +156,17 @@ public unsafe class CNWSScriptVar : global::System.IDisposable {
     } 
   }
 
+  public JsonEngineStructure m_json {
+    set {
+      NWNXLibPINVOKE.CNWSScriptVar_m_json_set(swigCPtr, JsonEngineStructure.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSScriptVar_m_json_get(swigCPtr);
+      JsonEngineStructure ret = (cPtr == global::System.IntPtr.Zero) ? null : new JsonEngineStructure(cPtr, false);
+      return ret;
+    } 
+  }
+
   public CNWSScriptVar() : this(NWNXLibPINVOKE.new_CNWSScriptVar__SWIG_0(), true) {
   }
 
@@ -195,6 +206,11 @@ public unsafe class CNWSScriptVar : global::System.IDisposable {
 
   public bool HasLocation() {
     bool ret = NWNXLibPINVOKE.CNWSScriptVar_HasLocation(swigCPtr);
+    return ret;
+  }
+
+  public bool HasJson() {
+    bool ret = NWNXLibPINVOKE.CNWSScriptVar_HasJson(swigCPtr);
     return ret;
   }
 

@@ -695,6 +695,17 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
 
   }
 
+  public int m_bTakesCommands {
+    set {
+      NWNXLibPINVOKE.CLastUpdateObject_m_bTakesCommands_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bTakesCommands_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public int m_bObjectSeen {
     set {
       NWNXLibPINVOKE.CLastUpdateObject_m_bObjectSeen_set(swigCPtr, value);

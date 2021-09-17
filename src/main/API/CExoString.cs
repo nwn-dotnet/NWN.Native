@@ -279,6 +279,16 @@ public unsafe class CExoString : global::System.IDisposable {
     return retVal;
   }
 
+  public CExoString RemoveAll(byte* c) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_RemoveAll(swigCPtr, c), true);
+    return ret;
+  }
+
+  public CExoString RemoveAllExcept(byte* c) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_RemoveAllExcept(swigCPtr, c), true);
+    return ret;
+  }
+
   public void Format(byte* format) {
     NWNXLibPINVOKE.CExoString_Format(swigCPtr, format);
   }
