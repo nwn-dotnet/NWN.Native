@@ -63,7 +63,10 @@ public enum MessageMajor {
   PlayModuleCharacterList = 0x31,
   CustomToken = 0x32,
   Cutscene = 0x33,
-  Resman = 0x34
+  Resman = 0x34,
+  GuiEvent = 0x35,
+  Device = 0x36,
+  Nui = 0x37
 }
 
 }

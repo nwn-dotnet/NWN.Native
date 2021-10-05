@@ -20629,8 +20629,8 @@ class FunctionsLinuxPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN8CNWSArea21InterTileDFSSoundPathEPhiiii_get___")]
   public static extern uint _ZN8CNWSArea21InterTileDFSSoundPathEPhiiii_get();
 
-  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN8CNWSArea21TestSafeLocationPointE6VectorP20CPathfindInformation_get___")]
-  public static extern uint _ZN8CNWSArea21TestSafeLocationPointE6VectorP20CPathfindInformation_get();
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN8CNWSArea21TestSafeLocationPointE6VectorP20CPathfindInformationb_get___")]
+  public static extern uint _ZN8CNWSArea21TestSafeLocationPointE6VectorP20CPathfindInformationb_get();
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN8CNWSArea22DecrementPlayersInAreaEv_get___")]
   public static extern uint _ZN8CNWSArea22DecrementPlayersInAreaEv_get();

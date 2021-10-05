@@ -792,8 +792,14 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
     return retVal;
   }
 
+  public int TestSafeLocationPoint(Vector vTestPosition, CPathfindInformation pPathfindInfo, bool bDisregardCurrentTarget) {
+    int retVal = NWNXLibPINVOKE.CNWSArea_TestSafeLocationPoint__SWIG_0(swigCPtr, Vector.getCPtr(vTestPosition), CPathfindInformation.getCPtr(pPathfindInfo), bDisregardCurrentTarget);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return retVal;
+  }
+
   public int TestSafeLocationPoint(Vector vTestPosition, CPathfindInformation pPathfindInfo) {
-    int retVal = NWNXLibPINVOKE.CNWSArea_TestSafeLocationPoint(swigCPtr, Vector.getCPtr(vTestPosition), CPathfindInformation.getCPtr(pPathfindInfo));
+    int retVal = NWNXLibPINVOKE.CNWSArea_TestSafeLocationPoint__SWIG_1(swigCPtr, Vector.getCPtr(vTestPosition), CPathfindInformation.getCPtr(pPathfindInfo));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
