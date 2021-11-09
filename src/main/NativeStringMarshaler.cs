@@ -17,12 +17,12 @@ namespace NWN.Native.API
         return IntPtr.Zero;
       }
 
-      if (managedObj is not string data)
+      if (managedObj is string data)
       {
-        throw new MarshalDirectiveException($"{nameof(NativeStringMarshaler)} must be used on a string.");
+        return (IntPtr)data.GetNullTerminatedString();
       }
 
-      return (IntPtr)data.GetNullTerminatedString();
+      throw new MarshalDirectiveException($"{nameof(NativeStringMarshaler)} must be used on a string.");
     }
 
     public object MarshalNativeToManaged(IntPtr pNativeData)
