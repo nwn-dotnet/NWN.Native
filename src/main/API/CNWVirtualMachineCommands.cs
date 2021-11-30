@@ -910,8 +910,8 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     return retVal;
   }
 
-  public int ExecuteCommandGet2DAString(int nCommandId, int nParameters) {
-    int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandGet2DAString(swigCPtr, nCommandId, nParameters);
+  public int ExecuteCommandGet2DA(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CNWVirtualMachineCommands_ExecuteCommandGet2DA(swigCPtr, nCommandId, nParameters);
     return retVal;
   }
 

@@ -15349,8 +15349,8 @@ class FunctionsLinuxPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN25CNWVirtualMachineCommands26ExecuteCommandFloatingTextEii_get___")]
   public static extern uint _ZN25CNWVirtualMachineCommands26ExecuteCommandFloatingTextEii_get();
 
-  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN25CNWVirtualMachineCommands26ExecuteCommandGet2DAStringEii_get___")]
-  public static extern uint _ZN25CNWVirtualMachineCommands26ExecuteCommandGet2DAStringEii_get();
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN25CNWVirtualMachineCommands20ExecuteCommandGet2DAEii_get___")]
+  public static extern uint _ZN25CNWVirtualMachineCommands20ExecuteCommandGet2DAEii_get();
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN25CNWVirtualMachineCommands26ExecuteCommandGetAlignmentEii_get___")]
   public static extern uint _ZN25CNWVirtualMachineCommands26ExecuteCommandGetAlignmentEii_get();
