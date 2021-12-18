@@ -478,6 +478,51 @@ public unsafe class CGameEffect : global::System.IDisposable {
     NWNXLibPINVOKE.CGameEffect_LoadGameEffect(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
   }
 
+  public ushort GetDurationType() {
+    ushort retVal = NWNXLibPINVOKE.CGameEffect_GetDurationType(swigCPtr);
+    return retVal;
+  }
+
+  public void SetDurationType(ushort nDurationType) {
+    NWNXLibPINVOKE.CGameEffect_SetDurationType(swigCPtr, nDurationType);
+  }
+
+  public ushort GetSubType() {
+    ushort retVal = NWNXLibPINVOKE.CGameEffect_GetSubType(swigCPtr);
+    return retVal;
+  }
+
+  public void SetSubType(ushort nType) {
+    NWNXLibPINVOKE.CGameEffect_SetSubType(swigCPtr, nType);
+  }
+
+  public int GetSubType_Magical() {
+    int retVal = NWNXLibPINVOKE.CGameEffect_GetSubType_Magical(swigCPtr);
+    return retVal;
+  }
+
+  public void SetSubType_Magical() {
+    NWNXLibPINVOKE.CGameEffect_SetSubType_Magical(swigCPtr);
+  }
+
+  public int GetSubType_Supernatural() {
+    int retVal = NWNXLibPINVOKE.CGameEffect_GetSubType_Supernatural(swigCPtr);
+    return retVal;
+  }
+
+  public void SetSubType_Supernatural() {
+    NWNXLibPINVOKE.CGameEffect_SetSubType_Supernatural(swigCPtr);
+  }
+
+  public int GetSubType_Extraordinary() {
+    int retVal = NWNXLibPINVOKE.CGameEffect_GetSubType_Extraordinary(swigCPtr);
+    return retVal;
+  }
+
+  public void SetSubType_Extraordinary() {
+    NWNXLibPINVOKE.CGameEffect_SetSubType_Extraordinary(swigCPtr);
+  }
+
 }
 
 }

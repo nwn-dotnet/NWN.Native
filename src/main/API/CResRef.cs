@@ -243,6 +243,10 @@ public unsafe class CResRef : global::System.IDisposable {
     return retVal;
   }
 
+  public CResRef(CResRef other) : this(NWNXLibPINVOKE.new_CResRef__SWIG_5(CResRef.getCPtr(other)), true) {
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
 }
 
 }
