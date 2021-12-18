@@ -325,15 +325,17 @@ public unsafe class CNWRules : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_a_7__unsigned_char m_nDifficultyOptions {
+  public TwoDimNativeArray<byte> m_nDifficultyOptions {
     set {
-      NWNXLibPINVOKE.CNWRules_m_nDifficultyOptions_set(swigCPtr, SWIGTYPE_p_a_7__unsigned_char.getCPtr(value));
+      NWNXLibPINVOKE.CNWRules_m_nDifficultyOptions_set(swigCPtr, value);
     } 
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWRules_m_nDifficultyOptions_get(swigCPtr);
-      SWIGTYPE_p_a_7__unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_a_7__unsigned_char(cPtr, false);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWRules_m_nDifficultyOptions_get(swigCPtr);
+      TwoDimNativeArray<byte> retVal = new TwoDimNativeArray<byte>(arrayPtr, 5, 7);
+
+      return retVal; // byte[5][7]
+    }
+
   }
 
   public UnorderedMapStringCachedRulesetEntry m_ruleset_2da_cache {

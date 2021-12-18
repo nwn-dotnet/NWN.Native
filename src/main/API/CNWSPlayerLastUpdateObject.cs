@@ -370,15 +370,17 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
 
   }
 
-  public SWIGTYPE_p_a_10__unsigned_char m_pKnownSpellUsesLeft {
+  public TwoDimNativeArray<byte> m_pKnownSpellUsesLeft {
     set {
-      NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_pKnownSpellUsesLeft_set(swigCPtr, SWIGTYPE_p_a_10__unsigned_char.getCPtr(value));
+      NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_pKnownSpellUsesLeft_set(swigCPtr, value);
     } 
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_pKnownSpellUsesLeft_get(swigCPtr);
-      SWIGTYPE_p_a_10__unsigned_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_a_10__unsigned_char(cPtr, false);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_pKnownSpellUsesLeft_get(swigCPtr);
+      TwoDimNativeArray<byte> retVal = new TwoDimNativeArray<byte>(arrayPtr, 3, 10);
+
+      return retVal; // byte[3][10]
+    }
+
   }
 
   public CExoArrayListCEffectIconObjectPtr m_aEffectIcons {

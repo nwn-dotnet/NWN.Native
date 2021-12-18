@@ -16,7 +16,10 @@ public enum AssociateType {
   AnimalCompanion = 2,
   Familiar = 3,
   Summoned = 4,
-  Dominated = 5
+  DominatedByPC = 5,
+  DominatedByNPC = 6,
+  DMPossess = 7,
+  DMImpersonate = 8
 }
 
 }

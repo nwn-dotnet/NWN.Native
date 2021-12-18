@@ -324,15 +324,17 @@ public unsafe class CNWClass : global::System.IDisposable {
 
   }
 
-  public SWIGTYPE_p_a_6__signed_char m_lstAbilityGainTable {
+  public TwoDimNativeArray<sbyte> m_lstAbilityGainTable {
     set {
-      NWNXLibPINVOKE.CNWClass_m_lstAbilityGainTable_set(swigCPtr, SWIGTYPE_p_a_6__signed_char.getCPtr(value));
+      NWNXLibPINVOKE.CNWClass_m_lstAbilityGainTable_set(swigCPtr, value);
     } 
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWClass_m_lstAbilityGainTable_get(swigCPtr);
-      SWIGTYPE_p_a_6__signed_char ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_a_6__signed_char(cPtr, false);
-      return ret;
-    } 
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWClass_m_lstAbilityGainTable_get(swigCPtr);
+      TwoDimNativeArray<sbyte> retVal = new TwoDimNativeArray<sbyte>(arrayPtr, 60, 6);
+
+      return retVal; // sbyte[60][6]
+    }
+
   }
 
   public NativeArray<sbyte> m_lstNaturalACGainTable {
