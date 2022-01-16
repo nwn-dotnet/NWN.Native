@@ -5,6 +5,8 @@ on:
     inputs:
       tag:
         description: 'Commit Tag'
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   build:
