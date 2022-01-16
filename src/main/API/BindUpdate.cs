@@ -124,13 +124,14 @@ public unsafe class BindUpdate : global::System.IDisposable {
     } 
   }
 
-  public json m_value {
+  public SWIGTYPE_p_nlohmann__json m_value {
     set {
-      NWNXLibPINVOKE.BindUpdate_m_value_set(swigCPtr, json.getCPtr(value));
+      NWNXLibPINVOKE.BindUpdate_m_value_set(swigCPtr, SWIGTYPE_p_nlohmann__json.getCPtr(value));
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     } 
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.BindUpdate_m_value_get(swigCPtr);
-      json ret = (cPtr == global::System.IntPtr.Zero) ? null : new json(cPtr, false);
+      SWIGTYPE_p_nlohmann__json ret = new SWIGTYPE_p_nlohmann__json(NWNXLibPINVOKE.BindUpdate_m_value_get(swigCPtr), true);
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       return ret;
     } 
   }

@@ -145,14 +145,13 @@ public unsafe class CVirtualMachineScript : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_DataBlockRef m_pCode {
+  public SWIGTYPE_p_std__shared_ptrT_DataBlock_t m_pCode {
     set {
-      NWNXLibPINVOKE.CVirtualMachineScript_m_pCode_set(swigCPtr, SWIGTYPE_p_DataBlockRef.getCPtr(value));
-      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+      NWNXLibPINVOKE.CVirtualMachineScript_m_pCode_set(swigCPtr, SWIGTYPE_p_std__shared_ptrT_DataBlock_t.getCPtr(value));
     } 
     get {
-      SWIGTYPE_p_DataBlockRef ret = new SWIGTYPE_p_DataBlockRef(NWNXLibPINVOKE.CVirtualMachineScript_m_pCode_get(swigCPtr), true);
-      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachineScript_m_pCode_get(swigCPtr);
+      SWIGTYPE_p_std__shared_ptrT_DataBlock_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__shared_ptrT_DataBlock_t(cPtr, false);
       return ret;
     } 
   }

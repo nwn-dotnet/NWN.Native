@@ -274,13 +274,13 @@ public unsafe class CNWSPlayer : CNWSClient {
           } 
         }
       
-        public SWIGTYPE_p_std__unordered_mapT_std__string_json_t m_binds {
+        public SWIGTYPE_p_std__unordered_mapT_std__string_nlohmann__json_t m_binds {
           set {
-            NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_binds_set(swigCPtr, SWIGTYPE_p_std__unordered_mapT_std__string_json_t.getCPtr(value));
+            NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_binds_set(swigCPtr, SWIGTYPE_p_std__unordered_mapT_std__string_nlohmann__json_t.getCPtr(value));
           } 
           get {
             global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_binds_get(swigCPtr);
-            SWIGTYPE_p_std__unordered_mapT_std__string_json_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__unordered_mapT_std__string_json_t(cPtr, false);
+            SWIGTYPE_p_std__unordered_mapT_std__string_nlohmann__json_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__unordered_mapT_std__string_nlohmann__json_t(cPtr, false);
             return ret;
           } 
         }
@@ -296,13 +296,14 @@ public unsafe class CNWSPlayer : CNWSClient {
           } 
         }
       
-        public json m_userdata {
+        public SWIGTYPE_p_nlohmann__json m_userdata {
           set {
-            NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_userdata_set(swigCPtr, json.getCPtr(value));
+            NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_userdata_set(swigCPtr, SWIGTYPE_p_nlohmann__json.getCPtr(value));
+            if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
           } 
           get {
-            global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_userdata_get(swigCPtr);
-            json ret = (cPtr == global::System.IntPtr.Zero) ? null : new json(cPtr, false);
+            SWIGTYPE_p_nlohmann__json ret = new SWIGTYPE_p_nlohmann__json(NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_userdata_get(swigCPtr), true);
+            if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
             return ret;
           } 
         }

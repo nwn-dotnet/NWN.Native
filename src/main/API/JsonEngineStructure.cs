@@ -90,13 +90,14 @@ public unsafe class JsonEngineStructure : global::System.IDisposable {
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public json m_json {
+  public SWIGTYPE_p_nlohmann__json m_json {
     set {
-      NWNXLibPINVOKE.JsonEngineStructure_m_json_set(swigCPtr, json.getCPtr(value));
+      NWNXLibPINVOKE.JsonEngineStructure_m_json_set(swigCPtr, SWIGTYPE_p_nlohmann__json.getCPtr(value));
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     } 
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.JsonEngineStructure_m_json_get(swigCPtr);
-      json ret = (cPtr == global::System.IntPtr.Zero) ? null : new json(cPtr, false);
+      SWIGTYPE_p_nlohmann__json ret = new SWIGTYPE_p_nlohmann__json(NWNXLibPINVOKE.JsonEngineStructure_m_json_get(swigCPtr), true);
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       return ret;
     } 
   }
@@ -115,11 +116,11 @@ public unsafe class JsonEngineStructure : global::System.IDisposable {
   public JsonEngineStructure() : this(NWNXLibPINVOKE.new_JsonEngineStructure__SWIG_0(), true) {
   }
 
-  public JsonEngineStructure(json j, CExoString err) : this(NWNXLibPINVOKE.new_JsonEngineStructure__SWIG_1(json.getCPtr(j), CExoString.getCPtr(err)), true) {
+  public JsonEngineStructure(SWIGTYPE_p_nlohmann__json j, CExoString err) : this(NWNXLibPINVOKE.new_JsonEngineStructure__SWIG_1(SWIGTYPE_p_nlohmann__json.getCPtr(j), CExoString.getCPtr(err)), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public JsonEngineStructure(json j) : this(NWNXLibPINVOKE.new_JsonEngineStructure__SWIG_2(json.getCPtr(j)), true) {
+  public JsonEngineStructure(SWIGTYPE_p_nlohmann__json j) : this(NWNXLibPINVOKE.new_JsonEngineStructure__SWIG_2(SWIGTYPE_p_nlohmann__json.getCPtr(j)), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -136,6 +137,10 @@ public unsafe class JsonEngineStructure : global::System.IDisposable {
   public bool IsEmpty() {
     bool ret = NWNXLibPINVOKE.JsonEngineStructure_IsEmpty(swigCPtr);
     return ret;
+  }
+
+  public void Clear() {
+    NWNXLibPINVOKE.JsonEngineStructure_Clear(swigCPtr);
   }
 
 }

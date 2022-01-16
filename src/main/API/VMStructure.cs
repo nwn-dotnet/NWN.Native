@@ -16,7 +16,9 @@ public enum VMStructure {
   Location = 2,
   Talent = 3,
   ItemProperty = 4,
-  SQLQuery = 5
+  SQLQuery = 5,
+  CswySolver = 6,
+  Json = 7
 }
 
 }

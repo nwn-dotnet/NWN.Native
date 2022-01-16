@@ -147,13 +147,14 @@ public unsafe class Event : global::System.IDisposable {
 
   }
 
-  public json m_payload {
+  public SWIGTYPE_p_nlohmann__json m_payload {
     set {
-      NWNXLibPINVOKE.Event_m_payload_set(swigCPtr, json.getCPtr(value));
+      NWNXLibPINVOKE.Event_m_payload_set(swigCPtr, SWIGTYPE_p_nlohmann__json.getCPtr(value));
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     } 
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.Event_m_payload_get(swigCPtr);
-      json ret = (cPtr == global::System.IntPtr.Zero) ? null : new json(cPtr, false);
+      SWIGTYPE_p_nlohmann__json ret = new SWIGTYPE_p_nlohmann__json(NWNXLibPINVOKE.Event_m_payload_get(swigCPtr), true);
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       return ret;
     } 
   }

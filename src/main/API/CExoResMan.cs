@@ -394,8 +394,8 @@ public unsafe class CExoResMan : global::System.IDisposable {
     return retVal;
   }
 
-  public SWIGTYPE_p_std__shared_ptrT_void_p_t Get(CResRef cResRef, ushort nType) {
-    SWIGTYPE_p_std__shared_ptrT_void_p_t ret = new SWIGTYPE_p_std__shared_ptrT_void_p_t(NWNXLibPINVOKE.CExoResMan_Get(swigCPtr, CResRef.getCPtr(cResRef), nType), true);
+  public SWIGTYPE_p_std__shared_ptrT_DataBlock_t Get(CResRef cResRef, ushort nType) {
+    SWIGTYPE_p_std__shared_ptrT_DataBlock_t ret = new SWIGTYPE_p_std__shared_ptrT_DataBlock_t(NWNXLibPINVOKE.CExoResMan_Get(swigCPtr, CResRef.getCPtr(cResRef), nType), true);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }

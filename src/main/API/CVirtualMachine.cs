@@ -525,14 +525,14 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
     NWNXLibPINVOKE.CVirtualMachine_DeleteScriptSituation(swigCPtr, (global::System.IntPtr)pScript);
   }
 
-  public int ExecuteCode(int* nInstructionPointer, SWIGTYPE_p_DataBlockRef pCode, CVirtualMachineDebuggingContext pDebugContext) {
-    int retVal = NWNXLibPINVOKE.CVirtualMachine_ExecuteCode__SWIG_0(swigCPtr, nInstructionPointer, SWIGTYPE_p_DataBlockRef.getCPtr(pCode), CVirtualMachineDebuggingContext.getCPtr(pDebugContext));
+  public int ExecuteCode(int* nInstructionPointer, SWIGTYPE_p_std__shared_ptrT_DataBlock_t pCode, CVirtualMachineDebuggingContext pDebugContext) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachine_ExecuteCode__SWIG_0(swigCPtr, nInstructionPointer, SWIGTYPE_p_std__shared_ptrT_DataBlock_t.getCPtr(pCode), CVirtualMachineDebuggingContext.getCPtr(pDebugContext));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
 
-  public int ExecuteCode(int* nInstructionPointer, SWIGTYPE_p_DataBlockRef pCode) {
-    int retVal = NWNXLibPINVOKE.CVirtualMachine_ExecuteCode__SWIG_1(swigCPtr, nInstructionPointer, SWIGTYPE_p_DataBlockRef.getCPtr(pCode));
+  public int ExecuteCode(int* nInstructionPointer, SWIGTYPE_p_std__shared_ptrT_DataBlock_t pCode) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachine_ExecuteCode__SWIG_1(swigCPtr, nInstructionPointer, SWIGTYPE_p_std__shared_ptrT_DataBlock_t.getCPtr(pCode));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
@@ -548,8 +548,8 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
     return retVal;
   }
 
-  public void InitializeScript(CVirtualMachineScript pScript, SWIGTYPE_p_DataBlockRef pData) {
-    NWNXLibPINVOKE.CVirtualMachine_InitializeScript(swigCPtr, CVirtualMachineScript.getCPtr(pScript), SWIGTYPE_p_DataBlockRef.getCPtr(pData));
+  public void InitializeScript(CVirtualMachineScript pScript, SWIGTYPE_p_std__shared_ptrT_DataBlock_t pData) {
+    NWNXLibPINVOKE.CVirtualMachine_InitializeScript(swigCPtr, CVirtualMachineScript.getCPtr(pScript), SWIGTYPE_p_std__shared_ptrT_DataBlock_t.getCPtr(pData));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 

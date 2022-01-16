@@ -10,12 +10,10 @@
 
 namespace NWN.Native.API {
 
-public unsafe class DataBlock : global::System.IDisposable {
+public unsafe class DataBlock : DataView {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
-  protected bool swigCMemOwn;
 
-  internal DataBlock(global::System.IntPtr cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
+  internal DataBlock(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.DataBlock_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -23,16 +21,7 @@ public unsafe class DataBlock : global::System.IDisposable {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 
-  ~DataBlock() {
-    Dispose(false);
-  }
-
-  public void Dispose() {
-    Dispose(true);
-    global::System.GC.SuppressFinalize(this);
-  }
-
-  protected virtual void Dispose(bool disposing) {
+  protected override void Dispose(bool disposing) {
     lock(this) {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
@@ -41,6 +30,7 @@ public unsafe class DataBlock : global::System.IDisposable {
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
+      base.Dispose(disposing);
     }
   }
 /*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
@@ -90,48 +80,54 @@ public unsafe class DataBlock : global::System.IDisposable {
     return !Equals(left, right);
   }
 /*@SWIG@*/
-  public byte* m_data {
-    set {
-      NWNXLibPINVOKE.DataBlock_m_data_set(swigCPtr, value);
-    } 
-    get {
-      byte* retVal = NWNXLibPINVOKE.DataBlock_m_data_get(swigCPtr);
-      return retVal;
-    }
-
+  public DataBlock(uint preallocate) : this(NWNXLibPINVOKE.new_DataBlock__SWIG_0(preallocate), true) {
   }
 
-  public uint m_used {
-    set {
-      NWNXLibPINVOKE.DataBlock_m_used_set(swigCPtr, value);
-    } 
-    get {
-      uint ret = NWNXLibPINVOKE.DataBlock_m_used_get(swigCPtr);
-      return ret;
-    } 
+  public DataBlock() : this(NWNXLibPINVOKE.new_DataBlock__SWIG_1(), true) {
   }
 
-  public uint m_allocated {
-    set {
-      NWNXLibPINVOKE.DataBlock_m_allocated_set(swigCPtr, value);
-    } 
-    get {
-      uint ret = NWNXLibPINVOKE.DataBlock_m_allocated_get(swigCPtr);
-      return ret;
-    } 
+  public DataBlock(void* data, uint length) : this(NWNXLibPINVOKE.new_DataBlock__SWIG_2((global::System.IntPtr)data, length), true) {
   }
 
-  public bool m_owning {
-    set {
-      NWNXLibPINVOKE.DataBlock_m_owning_set(swigCPtr, value);
-    } 
-    get {
-      bool ret = NWNXLibPINVOKE.DataBlock_m_owning_get(swigCPtr);
-      return ret;
-    } 
+  public DataBlock(SWIGTYPE_p_std__vectorT_unsigned_char_t data) : this(NWNXLibPINVOKE.new_DataBlock__SWIG_3(SWIGTYPE_p_std__vectorT_unsigned_char_t.getCPtr(data)), true) {
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public DataBlock() : this(NWNXLibPINVOKE.new_DataBlock(), true) {
+  public DataBlock(string data) : this(NWNXLibPINVOKE.new_DataBlock__SWIG_4(data), true) {
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void* Data() {
+    global::System.IntPtr retVal = NWNXLibPINVOKE.DataBlock_Data(swigCPtr);
+    return (void*)retVal;
+  }
+
+  public void AllocateAtLeast(uint length) {
+    NWNXLibPINVOKE.DataBlock_AllocateAtLeast(swigCPtr, length);
+  }
+
+  public void MarkUsed(uint length) {
+    NWNXLibPINVOKE.DataBlock_MarkUsed(swigCPtr, length);
+  }
+
+  public void Prepend(void* payload, uint length, uint chunkSize) {
+    NWNXLibPINVOKE.DataBlock_Prepend__SWIG_0(swigCPtr, (global::System.IntPtr)payload, length, chunkSize);
+  }
+
+  public void Prepend(void* payload, uint length) {
+    NWNXLibPINVOKE.DataBlock_Prepend__SWIG_1(swigCPtr, (global::System.IntPtr)payload, length);
+  }
+
+  public void Append(void* payload, uint length, uint chunkSize) {
+    NWNXLibPINVOKE.DataBlock_Append__SWIG_0(swigCPtr, (global::System.IntPtr)payload, length, chunkSize);
+  }
+
+  public void Append(void* payload, uint length) {
+    NWNXLibPINVOKE.DataBlock_Append__SWIG_1(swigCPtr, (global::System.IntPtr)payload, length);
+  }
+
+  public void Compact() {
+    NWNXLibPINVOKE.DataBlock_Compact(swigCPtr);
   }
 
 }

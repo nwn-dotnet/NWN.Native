@@ -21952,6 +21952,36 @@ class FunctionsLinuxPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZNK9LerpFloat8ProgressEv_get___")]
   public static extern uint _ZNK9LerpFloat8ProgressEv_get();
 
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN9DataBlock15AllocateAtLeastEm_get___")]
+  public static extern uint _ZN9DataBlock15AllocateAtLeastEm_get();
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN9DataBlock6AppendEPKvmm_get___")]
+  public static extern uint _ZN9DataBlock6AppendEPKvmm_get();
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN9DataBlock7CompactEv_get___")]
+  public static extern uint _ZN9DataBlock7CompactEv_get();
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN9DataBlock7PrependEPKvmm_get___")]
+  public static extern uint _ZN9DataBlock7PrependEPKvmm_get();
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN9DataBlock8MarkUsedEm_get___")]
+  public static extern uint _ZN9DataBlock8MarkUsedEm_get();
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN8DataView8EmptyRefEv_get___")]
+  public static extern uint _ZN8DataView8EmptyRefEv_get();
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN8DataViewD1Ev_get___")]
+  public static extern uint _ZN8DataViewD1Ev_get();
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZN8DataViewD2Ev_get___")]
+  public static extern uint _ZN8DataViewD2Ev_get();
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZNK8DataView4ViewEmm_get___")]
+  public static extern uint _ZNK8DataView4ViewEmm_get();
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI__ZNK8DataView8MakeCopyEv_get___")]
+  public static extern uint _ZNK8DataView8MakeCopyEv_get();
+
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_NWNXEntryPoint_get___")]
   public static extern uint NWNXEntryPoint_get();
 }

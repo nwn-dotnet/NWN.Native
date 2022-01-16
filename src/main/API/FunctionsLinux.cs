@@ -7264,6 +7264,16 @@ public static class FunctionsLinux {
   public static readonly uint _ZN9LerpFloat8WriteGFFEP7CResGFFP10CResStructPc = FunctionsLinuxPINVOKE._ZN9LerpFloat8WriteGFFEP7CResGFFP10CResStructPc_get();
   public static readonly uint _ZNK9LerpFloat6LerpedEv = FunctionsLinuxPINVOKE._ZNK9LerpFloat6LerpedEv_get();
   public static readonly uint _ZNK9LerpFloat8ProgressEv = FunctionsLinuxPINVOKE._ZNK9LerpFloat8ProgressEv_get();
+  public static readonly uint _ZN9DataBlock15AllocateAtLeastEm = FunctionsLinuxPINVOKE._ZN9DataBlock15AllocateAtLeastEm_get();
+  public static readonly uint _ZN9DataBlock6AppendEPKvmm = FunctionsLinuxPINVOKE._ZN9DataBlock6AppendEPKvmm_get();
+  public static readonly uint _ZN9DataBlock7CompactEv = FunctionsLinuxPINVOKE._ZN9DataBlock7CompactEv_get();
+  public static readonly uint _ZN9DataBlock7PrependEPKvmm = FunctionsLinuxPINVOKE._ZN9DataBlock7PrependEPKvmm_get();
+  public static readonly uint _ZN9DataBlock8MarkUsedEm = FunctionsLinuxPINVOKE._ZN9DataBlock8MarkUsedEm_get();
+  public static readonly uint _ZN8DataView8EmptyRefEv = FunctionsLinuxPINVOKE._ZN8DataView8EmptyRefEv_get();
+  public static readonly uint _ZN8DataViewD1Ev = FunctionsLinuxPINVOKE._ZN8DataViewD1Ev_get();
+  public static readonly uint _ZN8DataViewD2Ev = FunctionsLinuxPINVOKE._ZN8DataViewD2Ev_get();
+  public static readonly uint _ZNK8DataView4ViewEmm = FunctionsLinuxPINVOKE._ZNK8DataView4ViewEmm_get();
+  public static readonly uint _ZNK8DataView8MakeCopyEv = FunctionsLinuxPINVOKE._ZNK8DataView8MakeCopyEv_get();
   public static readonly uint NWNXEntryPoint = FunctionsLinuxPINVOKE.NWNXEntryPoint_get();
 }
 
