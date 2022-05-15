@@ -732,6 +732,10 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CVirtualMachineDebuggerInstance__Destructor(swigCPtr);
+  }
+
 }
 
 }

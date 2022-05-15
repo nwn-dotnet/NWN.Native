@@ -160,6 +160,10 @@ public unsafe class CNWSJournal : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSJournal__Destructor(swigCPtr);
+  }
+
 }
 
 }

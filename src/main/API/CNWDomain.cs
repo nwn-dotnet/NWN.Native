@@ -182,6 +182,10 @@ public unsafe class CNWDomain : global::System.IDisposable {
     return ret;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWDomain__Destructor(swigCPtr);
+  }
+
 }
 
 }

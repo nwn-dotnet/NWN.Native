@@ -298,6 +298,10 @@ public unsafe class CGameObject : ICGameObject, global::System.IDisposable {
     return ret;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CGameObject__Destructor(swigCPtr);
+  }
+
 }
 
 }

@@ -162,6 +162,10 @@ public unsafe class CERFKey : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CERFKey__Destructor(swigCPtr);
+  }
+
 }
 
 }

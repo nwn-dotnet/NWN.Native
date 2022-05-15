@@ -104,6 +104,10 @@ public unsafe class CItemPropertyApplierRemover : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CItemPropertyApplierRemover__Destructor(swigCPtr);
+  }
+
 }
 
 }

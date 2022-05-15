@@ -200,6 +200,10 @@ public unsafe class CExoBaseInternal : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CExoBaseInternal__Destructor(swigCPtr);
+  }
+
 }
 
 }

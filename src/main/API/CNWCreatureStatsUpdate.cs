@@ -532,6 +532,10 @@ public unsafe class CNWCreatureStatsUpdate : global::System.IDisposable {
     NWNXLibPINVOKE.CNWCreatureStatsUpdate_ClearEffectIcons(swigCPtr);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWCreatureStatsUpdate__Destructor(swigCPtr);
+  }
+
 }
 
 }

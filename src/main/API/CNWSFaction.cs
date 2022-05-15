@@ -353,6 +353,10 @@ public unsafe class CNWSFaction : global::System.IDisposable {
     return ret;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSFaction__Destructor(swigCPtr);
+  }
+
 }
 
 }

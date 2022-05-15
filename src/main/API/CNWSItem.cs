@@ -838,6 +838,10 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
     return retVal;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSItem__Destructor(swigCPtr);
+  }
+
   public NativeArray<byte> m_nLayeredTextureColors {
     set {
       NWNXLibPINVOKE.CNWSItem_m_nLayeredTextureColors_set(swigCPtr, value);

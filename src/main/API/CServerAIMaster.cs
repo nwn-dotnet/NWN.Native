@@ -421,6 +421,10 @@ public unsafe class CServerAIMaster : global::System.IDisposable {
     NWNXLibPINVOKE.CServerAIMaster_DeleteEventData(swigCPtr, nEventId, (global::System.IntPtr)pEventData);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CServerAIMaster__Destructor(swigCPtr);
+  }
+
 }
 
 }

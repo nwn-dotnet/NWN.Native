@@ -429,6 +429,10 @@ public unsafe class CNWSDialog : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSDialog__Destructor(swigCPtr);
+  }
+
 }
 
 }

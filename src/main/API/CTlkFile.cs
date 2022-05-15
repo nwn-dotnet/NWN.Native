@@ -114,6 +114,10 @@ public unsafe class CTlkFile : CExoFile {
     return retVal;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CTlkFile__Destructor(swigCPtr);
+  }
+
 }
 
 }

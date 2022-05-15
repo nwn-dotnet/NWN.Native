@@ -1152,6 +1152,10 @@ public unsafe class CPathfindInformation : global::System.IDisposable {
     NWNXLibPINVOKE.CPathfindInformation_ComputeGridStepTolerance(swigCPtr);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CPathfindInformation__Destructor(swigCPtr);
+  }
+
 }
 
 }

@@ -177,6 +177,10 @@ public unsafe class CExoLinkedListInternal : global::System.IDisposable {
     return (void*)retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CExoLinkedListInternal__Destructor(swigCPtr);
+  }
+
   public CExoLinkedListInternal() : this(NWNXLibPINVOKE.new_CExoLinkedListInternal(), true) {
   }
 

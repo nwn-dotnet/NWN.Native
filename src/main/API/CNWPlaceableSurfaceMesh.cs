@@ -171,6 +171,10 @@ public unsafe class CNWPlaceableSurfaceMesh : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWPlaceableSurfaceMesh__Destructor(swigCPtr);
+  }
+
 }
 
 }

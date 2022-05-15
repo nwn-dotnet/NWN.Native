@@ -1312,6 +1312,10 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
     NWNXLibPINVOKE.CTwoDimArrays_Update2DACache(swigCPtr, CExoLinkedListC2DA.getCPtr(lstCached2DAs), nMaxCacheSize, C2DA.getCPtr(p2DA));
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CTwoDimArrays__Destructor(swigCPtr);
+  }
+
 }
 
 }

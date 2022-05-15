@@ -213,6 +213,10 @@ public unsafe class CNWSkill : global::System.IDisposable {
     return ret;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSkill__Destructor(swigCPtr);
+  }
+
 }
 
 }

@@ -83,6 +83,10 @@ public unsafe class CNWSRules : CNWRules {
   public CNWSRules() : this(NWNXLibPINVOKE.new_CNWSRules(), true) {
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSRules__Destructor(swigCPtr);
+  }
+
 }
 
 }

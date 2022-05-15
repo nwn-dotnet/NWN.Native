@@ -301,6 +301,10 @@ public unsafe class CTlkTable : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CTlkTable__Destructor(swigCPtr);
+  }
+
 }
 
 }

@@ -742,6 +742,10 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSCombatRound__Destructor(swigCPtr);
+  }
+
 }
 
 }

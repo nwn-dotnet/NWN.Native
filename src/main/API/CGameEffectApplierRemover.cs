@@ -109,6 +109,10 @@ public unsafe class CGameEffectApplierRemover : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CGameEffectApplierRemover__Destructor(swigCPtr);
+  }
+
 }
 
 }

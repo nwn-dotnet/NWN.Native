@@ -731,6 +731,10 @@ public unsafe class CNWSpell : global::System.IDisposable {
     NWNXLibPINVOKE.CNWSpell_SetSubRadialSpellCount(swigCPtr, nCount);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSpell__Destructor(swigCPtr);
+  }
+
 }
 
 }

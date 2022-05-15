@@ -990,6 +990,10 @@ public unsafe class CNWSPlayer : CNWSClient {
     NWNXLibPINVOKE.CNWSPlayer_PossessCreature(swigCPtr, oidTarget, possessType);
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSPlayer__Destructor(swigCPtr);
+  }
+
 }
 
 }

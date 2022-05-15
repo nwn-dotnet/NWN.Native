@@ -160,6 +160,10 @@ public unsafe class CExoLocStringInternal : global::System.IDisposable {
     NWNXLibPINVOKE.CExoLocStringInternal_RemoveString(swigCPtr, nID);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CExoLocStringInternal__Destructor(swigCPtr);
+  }
+
 }
 
 }

@@ -122,6 +122,10 @@ public unsafe class CExoRand : global::System.IDisposable {
     NWNXLibPINVOKE.CExoRand_SignalEvent__SWIG_1(swigCPtr, nTimeStamp);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CExoRand__Destructor(swigCPtr);
+  }
+
 }
 
 }

@@ -164,6 +164,10 @@ public unsafe class CObjectLookupTable : global::System.IDisposable {
     NWNXLibPINVOKE.CObjectLookupTable_Touch(swigCPtr, dwSlot);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CObjectLookupTable__Destructor(swigCPtr);
+  }
+
 }
 
 }

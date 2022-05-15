@@ -131,6 +131,10 @@ public unsafe class CServerAIList : global::System.IDisposable {
     return ret;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CServerAIList__Destructor(swigCPtr);
+  }
+
 }
 
 }

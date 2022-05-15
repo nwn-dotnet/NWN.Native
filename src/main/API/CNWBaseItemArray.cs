@@ -175,6 +175,10 @@ public unsafe class CNWBaseItemArray : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWBaseItemArray__Destructor(swigCPtr);
+  }
+
 }
 
 }

@@ -496,6 +496,10 @@ public unsafe class CNWSCombatAttackData : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSCombatAttackData__Destructor(swigCPtr);
+  }
+
 }
 
 }

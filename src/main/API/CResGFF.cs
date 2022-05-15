@@ -899,6 +899,10 @@ public unsafe class CResGFF : CRes {
     return retVal;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CResGFF__Destructor(swigCPtr);
+  }
+
 }
 
 }

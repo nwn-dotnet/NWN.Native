@@ -815,6 +815,10 @@ public unsafe class CNWClass : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWClass__Destructor(swigCPtr);
+  }
+
 }
 
 }

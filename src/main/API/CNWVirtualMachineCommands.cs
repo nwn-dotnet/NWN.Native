@@ -3380,6 +3380,10 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
     return retVal;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWVirtualMachineCommands__Destructor(swigCPtr);
+  }
+
 }
 
 }

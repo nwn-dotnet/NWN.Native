@@ -723,6 +723,10 @@ public unsafe class CNWSDoor : CNWSObject {
     return ret;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSDoor__Destructor(swigCPtr);
+  }
+
 }
 
 }

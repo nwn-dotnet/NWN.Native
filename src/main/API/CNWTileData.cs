@@ -288,6 +288,10 @@ public unsafe class CNWTileData : global::System.IDisposable {
     return ret;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWTileData__Destructor(swigCPtr);
+  }
+
 }
 
 }

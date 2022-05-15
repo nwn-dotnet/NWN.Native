@@ -451,6 +451,10 @@ public unsafe class CExoKeyTable : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CExoKeyTable__Destructor(swigCPtr);
+  }
+
 }
 
 }

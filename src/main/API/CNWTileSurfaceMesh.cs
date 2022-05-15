@@ -978,6 +978,10 @@ public unsafe class CNWTileSurfaceMesh : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWTileSurfaceMesh__Destructor(swigCPtr);
+  }
+
 }
 
 }

@@ -312,6 +312,10 @@ public unsafe class CRes : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CRes__Destructor(swigCPtr);
+  }
+
 }
 
 }

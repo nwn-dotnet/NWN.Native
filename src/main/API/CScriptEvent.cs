@@ -211,6 +211,10 @@ public unsafe class CScriptEvent : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CScriptEvent__Destructor(swigCPtr);
+  }
+
 }
 
 }

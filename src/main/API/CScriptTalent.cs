@@ -189,6 +189,10 @@ public unsafe class CScriptTalent : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CScriptTalent__Destructor(swigCPtr);
+  }
+
 }
 
 }

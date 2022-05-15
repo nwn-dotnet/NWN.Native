@@ -187,6 +187,10 @@ public unsafe class CResSET : CRes {
     return retVal;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CResSET__Destructor(swigCPtr);
+  }
+
 }
 
 }

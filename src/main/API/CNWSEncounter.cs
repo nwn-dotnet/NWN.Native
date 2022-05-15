@@ -770,6 +770,10 @@ public unsafe class CNWSEncounter : CNWSObject {
     NWNXLibPINVOKE.CNWSEncounter_LoadFractionalCRData(swigCPtr);
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSEncounter__Destructor(swigCPtr);
+  }
+
 }
 
 }

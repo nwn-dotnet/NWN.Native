@@ -5367,6 +5367,10 @@ public unsafe class CNWSCreature : CNWSObject {
     return retVal;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSCreature__Destructor(swigCPtr);
+  }
+
 }
 
 }

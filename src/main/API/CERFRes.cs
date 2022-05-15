@@ -142,6 +142,10 @@ public unsafe class CERFRes : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CERFRes__Destructor(swigCPtr);
+  }
+
 }
 
 }

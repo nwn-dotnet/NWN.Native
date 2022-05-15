@@ -501,6 +501,10 @@ public unsafe class CNWRules : global::System.IDisposable {
     NWNXLibPINVOKE.CNWRules_LoadRulesetInfo(swigCPtr);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWRules__Destructor(swigCPtr);
+  }
+
 }
 
 }

@@ -129,6 +129,10 @@ public unsafe class CNWPlaceMeshManager : global::System.IDisposable {
     return ret;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWPlaceMeshManager__Destructor(swigCPtr);
+  }
+
 }
 
 }

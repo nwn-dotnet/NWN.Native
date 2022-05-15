@@ -107,6 +107,10 @@ public unsafe class CVirtualMachineFile : global::System.IDisposable {
     NWNXLibPINVOKE.CVirtualMachineFile_GetData(swigCPtr, (global::System.IntPtr)pData, (global::System.IntPtr)nSize);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CVirtualMachineFile__Destructor(swigCPtr);
+  }
+
 }
 
 }

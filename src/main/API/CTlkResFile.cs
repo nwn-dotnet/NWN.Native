@@ -84,6 +84,10 @@ public unsafe class CTlkResFile : CTlkFile {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CTlkResFile__Destructor(swigCPtr);
+  }
+
 }
 
 }

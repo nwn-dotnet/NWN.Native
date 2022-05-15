@@ -144,6 +144,10 @@ public unsafe class CNWItem : ICNWItem, global::System.IDisposable {
     NWNXLibPINVOKE.CNWItem_SetLayeredTextureColorPerPart(swigCPtr, nTexture, nPart, nColor);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWItem__Destructor(swigCPtr);
+  }
+
 }
 
 }

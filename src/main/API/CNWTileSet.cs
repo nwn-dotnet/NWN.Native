@@ -292,6 +292,10 @@ public unsafe class CNWTileSet : global::System.IDisposable {
     NWNXLibPINVOKE.CNWTileSet_UnloadTileSet(swigCPtr);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWTileSet__Destructor(swigCPtr);
+  }
+
 }
 
 }

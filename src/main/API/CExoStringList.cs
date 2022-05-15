@@ -226,6 +226,10 @@ public unsafe class CExoStringList : global::System.IDisposable {
     NWNXLibPINVOKE.CExoStringList_Introduce(swigCPtr, CExoString.getCPtr(a_nString), a_nPosition);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CExoStringList__Destructor(swigCPtr);
+  }
+
 }
 
 }

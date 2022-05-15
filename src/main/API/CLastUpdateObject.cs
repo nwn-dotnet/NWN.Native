@@ -1091,6 +1091,10 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
     NWNXLibPINVOKE.CLastUpdateObject_InitializeQuickbar(swigCPtr);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CLastUpdateObject__Destructor(swigCPtr);
+  }
+
 }
 
 }

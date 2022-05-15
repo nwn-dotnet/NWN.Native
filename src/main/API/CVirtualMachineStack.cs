@@ -211,6 +211,10 @@ public unsafe class CVirtualMachineStack : global::System.IDisposable {
     NWNXLibPINVOKE.CVirtualMachineStack_SetStackPointer(swigCPtr, nSize);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CVirtualMachineStack__Destructor(swigCPtr);
+  }
+
 }
 
 }

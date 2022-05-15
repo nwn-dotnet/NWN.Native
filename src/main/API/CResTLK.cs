@@ -83,6 +83,10 @@ public unsafe class CResTLK : CRes {
   public CResTLK() : this(NWNXLibPINVOKE.new_CResTLK(), true) {
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CResTLK__Destructor(swigCPtr);
+  }
+
 }
 
 }

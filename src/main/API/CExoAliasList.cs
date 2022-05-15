@@ -136,6 +136,10 @@ public unsafe class CExoAliasList : global::System.IDisposable {
     return ret;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CExoAliasList__Destructor(swigCPtr);
+  }
+
 }
 
 }

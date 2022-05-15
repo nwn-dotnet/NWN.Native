@@ -1965,6 +1965,10 @@ public unsafe class CNWSMessage : CNWMessage {
     return retVal;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSMessage__Destructor(swigCPtr);
+  }
+
 }
 
 }

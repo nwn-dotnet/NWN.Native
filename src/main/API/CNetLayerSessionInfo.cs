@@ -288,6 +288,10 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
     NWNXLibPINVOKE.CNetLayerSessionInfo_Clean(swigCPtr);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNetLayerSessionInfo__Destructor(swigCPtr);
+  }
+
 }
 
 }

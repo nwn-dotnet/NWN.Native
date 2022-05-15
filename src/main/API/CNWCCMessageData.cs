@@ -203,6 +203,10 @@ public unsafe class CNWCCMessageData : global::System.IDisposable {
     NWNXLibPINVOKE.CNWCCMessageData_ClearData(swigCPtr);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWCCMessageData__Destructor(swigCPtr);
+  }
+
 }
 
 }

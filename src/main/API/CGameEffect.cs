@@ -523,6 +523,10 @@ public unsafe class CGameEffect : global::System.IDisposable {
     NWNXLibPINVOKE.CGameEffect_SetSubType_Extraordinary(swigCPtr);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CGameEffect__Destructor(swigCPtr);
+  }
+
 }
 
 }

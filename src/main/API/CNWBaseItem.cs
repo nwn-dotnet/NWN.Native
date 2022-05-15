@@ -806,6 +806,10 @@ public unsafe class CNWBaseItem : global::System.IDisposable {
     NWNXLibPINVOKE.CNWBaseItem_SetRequiredFeatCount(swigCPtr, nReqFeatCount);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWBaseItem__Destructor(swigCPtr);
+  }
+
 }
 
 }

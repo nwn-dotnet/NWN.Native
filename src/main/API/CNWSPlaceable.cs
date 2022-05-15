@@ -1040,6 +1040,10 @@ public unsafe class CNWSPlaceable : CNWSObject {
     NWNXLibPINVOKE.CNWSPlaceable_CalculateActionPoints(swigCPtr);
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSPlaceable__Destructor(swigCPtr);
+  }
+
 }
 
 }

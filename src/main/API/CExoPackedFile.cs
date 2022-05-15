@@ -298,6 +298,10 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CExoPackedFile__Destructor(swigCPtr);
+  }
+
 }
 
 }

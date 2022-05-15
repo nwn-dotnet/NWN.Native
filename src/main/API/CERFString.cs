@@ -152,6 +152,10 @@ public unsafe class CERFString : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CERFString__Destructor(swigCPtr);
+  }
+
 }
 
 }

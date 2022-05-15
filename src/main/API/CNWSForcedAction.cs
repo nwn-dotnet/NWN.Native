@@ -158,6 +158,10 @@ public unsafe class CNWSForcedAction : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSForcedAction__Destructor(swigCPtr);
+  }
+
 }
 
 }

@@ -180,6 +180,10 @@ public unsafe class CObjectTableManager : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CObjectTableManager__Destructor(swigCPtr);
+  }
+
 }
 
 }

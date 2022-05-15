@@ -136,6 +136,10 @@ public unsafe class CNWSInventory : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSInventory__Destructor(swigCPtr);
+  }
+
 }
 
 }

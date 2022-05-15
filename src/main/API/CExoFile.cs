@@ -217,6 +217,10 @@ public unsafe class CExoFile : global::System.IDisposable {
     return (void*)retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CExoFile__Destructor(swigCPtr);
+  }
+
 }
 
 }

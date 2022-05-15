@@ -201,6 +201,10 @@ public unsafe class CExoResourceImageFile : CExoPackedFile {
     return ret;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CExoResourceImageFile__Destructor(swigCPtr);
+  }
+
 }
 
 }

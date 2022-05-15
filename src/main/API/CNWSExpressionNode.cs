@@ -159,6 +159,10 @@ public unsafe class CNWSExpressionNode : global::System.IDisposable {
   public CNWSExpressionNode() : this(NWNXLibPINVOKE.new_CNWSExpressionNode(), true) {
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSExpressionNode__Destructor(swigCPtr);
+  }
+
 }
 
 }

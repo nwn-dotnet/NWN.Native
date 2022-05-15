@@ -729,6 +729,10 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
     NWNXLibPINVOKE.CNetLayerWindow_CutOutgoingBufferSize(swigCPtr);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNetLayerWindow__Destructor(swigCPtr);
+  }
+
 }
 
 }

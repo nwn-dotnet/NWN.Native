@@ -156,6 +156,10 @@ public unsafe class CNWSAmbientSound : CNWAmbientSound {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSAmbientSound__Destructor(swigCPtr);
+  }
+
 }
 
 }

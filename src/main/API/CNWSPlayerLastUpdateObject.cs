@@ -499,6 +499,10 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
     NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_ClearEffectIcons(swigCPtr);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSPlayerLastUpdateObject__Destructor(swigCPtr);
+  }
+
 }
 
 }

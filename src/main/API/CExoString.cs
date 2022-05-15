@@ -401,6 +401,10 @@ public unsafe class CExoString : global::System.IDisposable {
     return ret;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CExoString__Destructor(swigCPtr);
+  }
+
 }
 
 }

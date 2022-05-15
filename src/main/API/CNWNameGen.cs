@@ -146,6 +146,10 @@ public unsafe class CNWNameGen : global::System.IDisposable {
     return ret;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWNameGen__Destructor(swigCPtr);
+  }
+
 }
 
 }

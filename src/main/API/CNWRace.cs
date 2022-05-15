@@ -435,6 +435,10 @@ public unsafe class CNWRace : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWRace__Destructor(swigCPtr);
+  }
+
 }
 
 }

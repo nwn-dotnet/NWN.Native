@@ -183,6 +183,10 @@ public unsafe class CNWSWaypoint : CNWSObject {
     return retVal;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSWaypoint__Destructor(swigCPtr);
+  }
+
 }
 
 }

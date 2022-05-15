@@ -475,6 +475,10 @@ public unsafe class CExoRandInternal : global::System.IDisposable {
     NWNXLibPINVOKE.CExoRandInternal_Add(swigCPtr, pBuf, nSize);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CExoRandInternal__Destructor(swigCPtr);
+  }
+
 }
 
 }

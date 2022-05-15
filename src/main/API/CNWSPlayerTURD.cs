@@ -270,6 +270,10 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
     NWNXLibPINVOKE.CNWSPlayerTURD_SaveAutoMapData(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSPlayerTURD__Destructor(swigCPtr);
+  }
+
 }
 
 }

@@ -130,6 +130,10 @@ public unsafe class CNWSpellArray : global::System.IDisposable {
     return ret;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSpellArray__Destructor(swigCPtr);
+  }
+
 }
 
 }

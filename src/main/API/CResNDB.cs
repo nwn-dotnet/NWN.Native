@@ -141,6 +141,10 @@ public unsafe class CResNDB : CRes {
     return retVal;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CResNDB__Destructor(swigCPtr);
+  }
+
 }
 
 }

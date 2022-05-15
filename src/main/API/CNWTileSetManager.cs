@@ -162,6 +162,10 @@ public unsafe class CNWTileSetManager : global::System.IDisposable {
     NWNXLibPINVOKE.CNWTileSetManager_ComputePathNodeRotation(swigCPtr, nOrientation, fX, fY);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWTileSetManager__Destructor(swigCPtr);
+  }
+
 }
 
 }

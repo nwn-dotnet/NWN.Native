@@ -1335,6 +1335,10 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
     NWNXLibPINVOKE.CNWSArea_SaveProperties(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pTopLevelStruct));
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSArea__Destructor(swigCPtr);
+  }
+
   public uint m_idSelf {
     set {
       NWNXLibPINVOKE.CNWSArea_m_idSelf_set(swigCPtr, value);

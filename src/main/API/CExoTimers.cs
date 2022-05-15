@@ -114,6 +114,10 @@ public unsafe class CExoTimers : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CExoTimers__Destructor(swigCPtr);
+  }
+
 }
 
 }

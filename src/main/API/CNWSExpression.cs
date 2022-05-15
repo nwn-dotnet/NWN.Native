@@ -180,6 +180,10 @@ public unsafe class CNWSExpression : global::System.IDisposable {
     return ret;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSExpression__Destructor(swigCPtr);
+  }
+
 }
 
 }

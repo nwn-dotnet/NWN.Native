@@ -288,6 +288,10 @@ public unsafe class CNWSTile : CNWTile {
     NWNXLibPINVOKE.CNWSTile_SetSourceLightColor(swigCPtr, nSourceLight1Color, nSourceLight2Color);
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSTile__Destructor(swigCPtr);
+  }
+
 }
 
 }

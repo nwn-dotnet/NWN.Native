@@ -481,6 +481,10 @@ public unsafe class CNWFeat : global::System.IDisposable {
     return ret;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWFeat__Destructor(swigCPtr);
+  }
+
 }
 
 }

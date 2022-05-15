@@ -292,6 +292,10 @@ public unsafe class CExoBase : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CExoBase__Destructor(swigCPtr);
+  }
+
 }
 
 }

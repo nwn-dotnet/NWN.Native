@@ -397,6 +397,10 @@ public unsafe class CWorldTimer : global::System.IDisposable {
     NWNXLibPINVOKE.CWorldTimer_AdvanceToTime(swigCPtr, nHour, nMinute, nSecond, nMillisecond);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CWorldTimer__Destructor(swigCPtr);
+  }
+
 }
 
 }

@@ -1731,6 +1731,10 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
     NWNXLibPINVOKE.CServerExoAppInternal_ShutdownServerProfiles(swigCPtr);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CServerExoAppInternal__Destructor(swigCPtr);
+  }
+
 }
 
 }

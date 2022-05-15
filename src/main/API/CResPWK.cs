@@ -141,6 +141,10 @@ public unsafe class CResPWK : CRes {
     return retVal;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CResPWK__Destructor(swigCPtr);
+  }
+
 }
 
 }

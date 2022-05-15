@@ -200,6 +200,10 @@ public unsafe class CVirtualMachineCmdImplementer : global::System.IDisposable {
     NWNXLibPINVOKE.CVirtualMachineCmdImplementer_DebugGUIUpdate(swigCPtr);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CVirtualMachineCmdImplementer__Destructor(swigCPtr);
+  }
+
 }
 
 }

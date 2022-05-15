@@ -144,6 +144,10 @@ public unsafe class CNWSUUID : global::System.IDisposable {
     NWNXLibPINVOKE.CNWSUUID_SaveToGff(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSUUID__Destructor(swigCPtr);
+  }
+
 }
 
 }

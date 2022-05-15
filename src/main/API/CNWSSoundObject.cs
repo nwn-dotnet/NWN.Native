@@ -356,6 +356,10 @@ public unsafe class CNWSSoundObject : CNWSObject {
     return ret;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSSoundObject__Destructor(swigCPtr);
+  }
+
 }
 
 }

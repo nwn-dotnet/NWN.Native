@@ -236,6 +236,10 @@ public unsafe class CResLTR : CRes {
     return retVal;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CResLTR__Destructor(swigCPtr);
+  }
+
 }
 
 }

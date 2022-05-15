@@ -615,6 +615,10 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
     return ret;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CVirtualMachine__Destructor(swigCPtr);
+  }
+
 }
 
 }

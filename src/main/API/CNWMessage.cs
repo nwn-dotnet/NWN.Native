@@ -701,6 +701,10 @@ public unsafe class CNWMessage : global::System.IDisposable {
     NWNXLibPINVOKE.CNWMessage_WriteSigned(swigCPtr, n64InVal, nCount);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWMessage__Destructor(swigCPtr);
+  }
+
 }
 
 }

@@ -845,6 +845,10 @@ public unsafe class CExoResMan : global::System.IDisposable {
     return ret;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CExoResMan__Destructor(swigCPtr);
+  }
+
 }
 
 }

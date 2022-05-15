@@ -307,6 +307,10 @@ public unsafe class CNWTile : global::System.IDisposable {
     NWNXLibPINVOKE.CNWTile_SetAnimLoop(swigCPtr, nAnimLoop1, nAnimLoop2, nAnimLoop3);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWTile__Destructor(swigCPtr);
+  }
+
 }
 
 }

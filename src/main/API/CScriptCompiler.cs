@@ -2177,6 +2177,10 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CScriptCompiler__Destructor(swigCPtr);
+  }
+
 }
 
 }

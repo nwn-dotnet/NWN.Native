@@ -439,6 +439,10 @@ public unsafe class CNWSStore : CNWSObject {
     return retVal;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSStore__Destructor(swigCPtr);
+  }
+
 }
 
 }

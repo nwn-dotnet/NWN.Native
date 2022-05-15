@@ -89,6 +89,10 @@ public unsafe class CNWSSysAdmin : CNWSClient {
     return ret;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSSysAdmin__Destructor(swigCPtr);
+  }
+
 }
 
 }

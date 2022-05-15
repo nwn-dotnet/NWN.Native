@@ -356,6 +356,10 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
     NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_ResetSpellsPerDayLeft(swigCPtr, nSpellLevel, nSpellGain);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo__Destructor(swigCPtr);
+  }
+
 }
 
 }

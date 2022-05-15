@@ -127,6 +127,10 @@ public unsafe class CNWSClient : global::System.IDisposable {
     return ret;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSClient__Destructor(swigCPtr);
+  }
+
 }
 
 }

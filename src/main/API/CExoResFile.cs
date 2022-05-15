@@ -193,6 +193,10 @@ public unsafe class CExoResFile : CExoPackedFile {
     return retVal;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CExoResFile__Destructor(swigCPtr);
+  }
+
 }
 
 }

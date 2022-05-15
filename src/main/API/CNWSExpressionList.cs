@@ -142,6 +142,10 @@ public unsafe class CNWSExpressionList : global::System.IDisposable {
     NWNXLibPINVOKE.CNWSExpressionList_DeleteAlternate(swigCPtr, CNWSExpressionNode.getCPtr(pNode));
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSExpressionList__Destructor(swigCPtr);
+  }
+
 }
 
 }

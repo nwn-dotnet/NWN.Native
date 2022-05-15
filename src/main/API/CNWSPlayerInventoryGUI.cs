@@ -164,6 +164,10 @@ public unsafe class CNWSPlayerInventoryGUI : global::System.IDisposable {
     NWNXLibPINVOKE.CNWSPlayerInventoryGUI_SetOwner(swigCPtr, oidNewOwner);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSPlayerInventoryGUI__Destructor(swigCPtr);
+  }
+
 }
 
 }

@@ -192,6 +192,10 @@ public unsafe class CExoDebug : global::System.IDisposable {
     NWNXLibPINVOKE.CExoDebug_SetRotateLogFile(swigCPtr, bEnable);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CExoDebug__Destructor(swigCPtr);
+  }
+
 }
 
 }

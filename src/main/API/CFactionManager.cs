@@ -241,6 +241,10 @@ public unsafe class CFactionManager : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CFactionManager__Destructor(swigCPtr);
+  }
+
 }
 
 }

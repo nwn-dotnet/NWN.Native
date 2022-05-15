@@ -117,6 +117,10 @@ public unsafe class CExoIniInternal : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CExoIniInternal__Destructor(swigCPtr);
+  }
+
 }
 
 }

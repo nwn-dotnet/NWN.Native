@@ -158,6 +158,10 @@ public unsafe class CRes2DA : CRes {
     return retVal;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CRes2DA__Destructor(swigCPtr);
+  }
+
 }
 
 }

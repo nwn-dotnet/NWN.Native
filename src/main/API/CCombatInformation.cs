@@ -413,6 +413,10 @@ public unsafe class CCombatInformation : global::System.IDisposable {
     return ret;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CCombatInformation__Destructor(swigCPtr);
+  }
+
 }
 
 }

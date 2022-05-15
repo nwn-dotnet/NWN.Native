@@ -372,6 +372,10 @@ public unsafe class C2DA : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.C2DA__Destructor(swigCPtr);
+  }
+
 }
 
 }

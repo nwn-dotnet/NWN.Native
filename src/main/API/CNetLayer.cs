@@ -600,6 +600,10 @@ public unsafe class CNetLayer : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNetLayer__Destructor(swigCPtr);
+  }
+
 }
 
 }

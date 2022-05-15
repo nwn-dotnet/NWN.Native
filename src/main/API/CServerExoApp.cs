@@ -946,6 +946,10 @@ public unsafe class CServerExoApp : CBaseExoApp {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CServerExoApp__Destructor(swigCPtr);
+  }
+
 }
 
 }

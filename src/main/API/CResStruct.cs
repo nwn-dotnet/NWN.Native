@@ -156,6 +156,10 @@ public unsafe class CResStruct : global::System.IDisposable {
     } 
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CResStruct__Destructor(swigCPtr);
+  }
+
   public CResStruct() : this(NWNXLibPINVOKE.new_CResStruct(), true) {
   }
 

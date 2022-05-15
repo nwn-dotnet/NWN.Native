@@ -163,6 +163,10 @@ public unsafe class CNWSObjectActionNode : global::System.IDisposable {
   public CNWSObjectActionNode() : this(NWNXLibPINVOKE.new_CNWSObjectActionNode(), true) {
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSObjectActionNode__Destructor(swigCPtr);
+  }
+
 }
 
 }

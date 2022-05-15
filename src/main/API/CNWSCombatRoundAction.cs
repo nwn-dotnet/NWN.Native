@@ -224,6 +224,10 @@ public unsafe class CNWSCombatRoundAction : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSCombatRoundAction__Destructor(swigCPtr);
+  }
+
 }
 
 }

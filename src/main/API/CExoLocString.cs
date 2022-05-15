@@ -222,6 +222,10 @@ public unsafe class CExoLocString : global::System.IDisposable {
     return ret;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CExoLocString__Destructor(swigCPtr);
+  }
+
 }
 
 }

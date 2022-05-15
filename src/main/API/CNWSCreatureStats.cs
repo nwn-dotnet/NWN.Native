@@ -2703,6 +2703,10 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSCreatureStats__Destructor(swigCPtr);
+  }
+
 }
 
 }

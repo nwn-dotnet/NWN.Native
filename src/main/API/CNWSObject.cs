@@ -2346,6 +2346,10 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     return ret;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSObject__Destructor(swigCPtr);
+  }
+
   public uint m_idSelf {
     set {
       NWNXLibPINVOKE.CNWSObject_m_idSelf_set(swigCPtr, value);

@@ -278,6 +278,10 @@ public unsafe class CItemRepository : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CItemRepository__Destructor(swigCPtr);
+  }
+
 }
 
 }

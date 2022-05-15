@@ -290,6 +290,10 @@ public unsafe class CERFFile : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CERFFile__Destructor(swigCPtr);
+  }
+
 }
 
 }

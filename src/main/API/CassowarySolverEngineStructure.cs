@@ -90,6 +90,10 @@ public unsafe class CassowarySolverEngineStructure : global::System.IDisposable 
     return !Equals(left, right);
   }
 /*@SWIG@*/
+  public void _Destructor() {
+    NWNXLibPINVOKE.CassowarySolverEngineStructure__Destructor(swigCPtr);
+  }
+
   public CassowarySolverEngineStructure() : this(NWNXLibPINVOKE.new_CassowarySolverEngineStructure(), true) {
   }
 

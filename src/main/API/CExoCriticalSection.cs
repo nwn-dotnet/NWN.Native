@@ -112,6 +112,10 @@ public unsafe class CExoCriticalSection : global::System.IDisposable {
     NWNXLibPINVOKE.CExoCriticalSection_LeaveCriticalSection(swigCPtr);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CExoCriticalSection__Destructor(swigCPtr);
+  }
+
 }
 
 }

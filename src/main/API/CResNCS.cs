@@ -141,6 +141,10 @@ public unsafe class CResNCS : CRes {
     return retVal;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CResNCS__Destructor(swigCPtr);
+  }
+
 }
 
 }

@@ -1395,6 +1395,10 @@ public unsafe class CNWSEffectListHandler : CGameEffectApplierRemover {
     return retVal;
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSEffectListHandler__Destructor(swigCPtr);
+  }
+
 }
 
 }

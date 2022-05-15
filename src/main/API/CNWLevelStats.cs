@@ -211,6 +211,10 @@ public unsafe class CNWLevelStats : global::System.IDisposable {
     NWNXLibPINVOKE.CNWLevelStats_SetSkillRankChange(swigCPtr, nSkill, nRank);
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWLevelStats__Destructor(swigCPtr);
+  }
+
 }
 
 }

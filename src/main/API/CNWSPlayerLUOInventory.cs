@@ -273,6 +273,10 @@ public unsafe class CNWSPlayerLUOInventory : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CNWSPlayerLUOInventory__Destructor(swigCPtr);
+  }
+
 }
 
 }

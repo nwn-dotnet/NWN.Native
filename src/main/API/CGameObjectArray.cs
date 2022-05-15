@@ -226,6 +226,10 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
     return retVal;
   }
 
+  public void _Destructor() {
+    NWNXLibPINVOKE.CGameObjectArray__Destructor(swigCPtr);
+  }
+
 }
 
 }

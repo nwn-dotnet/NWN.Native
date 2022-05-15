@@ -609,6 +609,10 @@ public unsafe class CNWSTrigger : CNWSObject {
     NWNXLibPINVOKE.CNWSTrigger_OnEnterTrap(swigCPtr, bForceSet);
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSTrigger__Destructor(swigCPtr);
+  }
+
 }
 
 }

@@ -410,6 +410,10 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
     NWNXLibPINVOKE.CNWSAreaOfEffectObject_RemoveFromSubAreas__SWIG_1(swigCPtr);
   }
 
+  public new void _Destructor() {
+    NWNXLibPINVOKE.CNWSAreaOfEffectObject__Destructor(swigCPtr);
+  }
+
 }
 
 }
