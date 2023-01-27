@@ -9,12 +9,16 @@ namespace NWN.Native.API
   /// </summary>
   public static unsafe class StringHelper
   {
-    public static readonly Encoding Cp1252Encoding;
+    /// <summary>
+    /// Gets or sets the encoding to use for native/managed string conversion.<br/>
+    /// Defaults to windows-1252.
+    /// </summary>
+    public static Encoding Encoding { get; set; }
 
     static StringHelper()
     {
       Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-      Cp1252Encoding = Encoding.GetEncoding("windows-1252");
+      Encoding = Encoding.GetEncoding("windows-1252");
     }
 
     /// <summary>
@@ -24,7 +28,7 @@ namespace NWN.Native.API
     /// <returns>The pointer to the unmanaged char array.</returns>
     public static byte* GetNullTerminatedString(this string value)
     {
-      byte[] bytes = Cp1252Encoding.GetBytes(value);
+      byte[] bytes = Encoding.GetBytes(value);
       IntPtr buffer = Marshal.AllocHGlobal(bytes.Length + 1);
       Marshal.Copy(bytes, 0, buffer, bytes.Length);
 
@@ -48,13 +52,14 @@ namespace NWN.Native.API
         {
           throw new ArgumentOutOfRangeException(nameof(value), "value must be smaller than length.");
         }
+
         if (value.Length < length)
         {
           return GetNullTerminatedString(value);
         }
       }
 
-      byte[] bytes = Cp1252Encoding.GetBytes(value);
+      byte[] bytes = Encoding.GetBytes(value);
       IntPtr buffer = Marshal.AllocHGlobal(bytes.Length);
       Marshal.Copy(bytes, 0, buffer, bytes.Length);
 
@@ -69,7 +74,7 @@ namespace NWN.Native.API
     /// <exception cref="ArgumentOutOfRangeException">Thrown if the length of the string exceeds the length of the array.</exception>
     public static void WriteFixedLengthString(this NativeArray<byte> nativeArray, string value)
     {
-      byte[] bytes = Cp1252Encoding.GetBytes(value);
+      byte[] bytes = Encoding.GetBytes(value);
       if (bytes.Length > nativeArray.Length)
       {
         throw new ArgumentOutOfRangeException(nameof(value), "The length of the string exceeds the length of the array.");
@@ -91,7 +96,7 @@ namespace NWN.Native.API
     /// <returns>The converted managed string.</returns>
     public static string ReadNullTerminatedString(byte* cString)
     {
-      return Cp1252Encoding.GetString(cString, GetStringLength(cString));
+      return Encoding.GetString(cString, GetStringLength(cString));
     }
 
     /// <inheritdoc cref="ReadNullTerminatedString(byte*)"/>
@@ -108,7 +113,7 @@ namespace NWN.Native.API
     /// <returns>The converted managed string.</returns>
     public static string ReadFixedLengthString(byte* cString, int length)
     {
-      return Cp1252Encoding.GetString(cString, GetStringLength(cString, length));
+      return Encoding.GetString(cString, GetStringLength(cString, length));
     }
 
     /// <summary>
