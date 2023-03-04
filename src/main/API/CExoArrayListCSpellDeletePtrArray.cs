@@ -43,7 +43,7 @@ public unsafe class CExoArrayListCSpellDeletePtrArray : global::System.IDisposab
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CExoArrayListCSpellDeletePtrArray : global::System.IDisposab
   public static bool operator !=(CExoArrayListCSpellDeletePtrArray left, CExoArrayListCSpellDeletePtrArray right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
 
   public CExoArrayListCSpellDeletePtr this[int index] {
     get {

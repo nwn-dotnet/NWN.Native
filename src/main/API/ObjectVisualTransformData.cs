@@ -33,7 +33,7 @@ public unsafe class ObjectVisualTransformData : CAurObjectVisualTransformData {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class ObjectVisualTransformData : CAurObjectVisualTransformData {
   public static bool operator !=(ObjectVisualTransformData left, ObjectVisualTransformData right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public ObjectVisualTransformData() : this(NWNXLibPINVOKE.new_ObjectVisualTransformData(), true) {
   }
 

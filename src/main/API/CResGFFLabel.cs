@@ -43,7 +43,7 @@ public unsafe class CResGFFLabel : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CResGFFLabel : global::System.IDisposable {
   public static bool operator !=(CResGFFLabel left, CResGFFLabel right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public NativeArray<byte> m_pLabel {
     set {
       NWNXLibPINVOKE.CResGFFLabel_m_pLabel_set(swigCPtr, value);

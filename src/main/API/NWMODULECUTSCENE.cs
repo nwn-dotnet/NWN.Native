@@ -43,7 +43,7 @@ public unsafe class NWMODULECUTSCENE : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class NWMODULECUTSCENE : global::System.IDisposable {
   public static bool operator !=(NWMODULECUTSCENE left, NWMODULECUTSCENE right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CResRef refName {
     set {
       NWNXLibPINVOKE.NWMODULECUTSCENE_refName_set(swigCPtr, CResRef.getCPtr(value));

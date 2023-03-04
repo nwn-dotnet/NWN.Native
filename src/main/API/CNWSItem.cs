@@ -38,7 +38,7 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   global::System.Runtime.InteropServices.HandleRef ICNWItem.GetInterfaceCPtr() {
     return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CNWSItem_ICNWItem_GetInterfaceCPtr(swigCPtr.Handle));
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -84,7 +84,7 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
   public static bool operator !=(CNWSItem left, CNWSItem right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public byte m_nLastUsedActiveProperties {
     set {
       NWNXLibPINVOKE.CNWSItem_m_nLastUsedActiveProperties_set(swigCPtr, value);

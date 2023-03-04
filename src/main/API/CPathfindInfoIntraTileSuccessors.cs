@@ -43,7 +43,7 @@ public unsafe class CPathfindInfoIntraTileSuccessors : global::System.IDisposabl
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CPathfindInfoIntraTileSuccessors : global::System.IDisposabl
   public static bool operator !=(CPathfindInfoIntraTileSuccessors left, CPathfindInfoIntraTileSuccessors right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public float fXTransit {
     set {
       NWNXLibPINVOKE.CPathfindInfoIntraTileSuccessors_fXTransit_set(swigCPtr, value);

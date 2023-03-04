@@ -43,7 +43,7 @@ public unsafe class CBaseExoApp : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CBaseExoApp : global::System.IDisposable {
   public static bool operator !=(CBaseExoApp left, CBaseExoApp right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public virtual int AdmitNetworkAddress(uint nProtocol, CExoString sAddress) {
     int retVal = NWNXLibPINVOKE.CBaseExoApp_AdmitNetworkAddress(swigCPtr, nProtocol, CExoString.getCPtr(sAddress));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();

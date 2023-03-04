@@ -43,7 +43,7 @@ public unsafe class CScriptTalent : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CScriptTalent : global::System.IDisposable {
   public static bool operator !=(CScriptTalent left, CScriptTalent right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public int m_nType {
     set {
       NWNXLibPINVOKE.CScriptTalent_m_nType_set(swigCPtr, value);

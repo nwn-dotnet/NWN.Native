@@ -43,7 +43,7 @@ public unsafe class CNWTileSurfaceMesh : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNWTileSurfaceMesh : global::System.IDisposable {
   public static bool operator !=(CNWTileSurfaceMesh left, CNWTileSurfaceMesh right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CResRef m_cWalkMesh {
     set {
       NWNXLibPINVOKE.CNWTileSurfaceMesh_m_cWalkMesh_set(swigCPtr, CResRef.getCPtr(value));

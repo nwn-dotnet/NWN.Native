@@ -43,7 +43,7 @@ public unsafe class CResStructLookUp : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CResStructLookUp : global::System.IDisposable {
   public static bool operator !=(CResStructLookUp left, CResStructLookUp right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public uint m_nType {
     set {
       NWNXLibPINVOKE.CResStructLookUp_m_nType_set(swigCPtr, value);

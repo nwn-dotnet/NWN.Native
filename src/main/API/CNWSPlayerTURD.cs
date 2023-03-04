@@ -33,7 +33,7 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CNWSPlayerTURD : CNWSObject {
   public static bool operator !=(CNWSPlayerTURD left, CNWSPlayerTURD right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoString m_sCommunityName {
     set {
       NWNXLibPINVOKE.CNWSPlayerTURD_m_sCommunityName_set(swigCPtr, CExoString.getCPtr(value));

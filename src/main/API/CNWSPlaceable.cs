@@ -33,7 +33,7 @@ public unsafe class CNWSPlaceable : CNWSObject {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CNWSPlaceable : CNWSObject {
   public static bool operator !=(CNWSPlaceable left, CNWSPlaceable right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoLocString m_sLocName {
     set {
       NWNXLibPINVOKE.CNWSPlaceable_m_sLocName_set(swigCPtr, CExoLocString.getCPtr(value));

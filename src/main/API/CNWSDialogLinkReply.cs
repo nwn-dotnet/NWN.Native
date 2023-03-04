@@ -43,7 +43,7 @@ public unsafe class CNWSDialogLinkReply : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNWSDialogLinkReply : global::System.IDisposable {
   public static bool operator !=(CNWSDialogLinkReply left, CNWSDialogLinkReply right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CResRef m_sActive {
     set {
       NWNXLibPINVOKE.CNWSDialogLinkReply_m_sActive_set(swigCPtr, CResRef.getCPtr(value));

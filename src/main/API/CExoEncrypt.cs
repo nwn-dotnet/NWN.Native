@@ -43,7 +43,7 @@ public unsafe class CExoEncrypt : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CExoEncrypt : global::System.IDisposable {
   public static bool operator !=(CExoEncrypt left, CExoEncrypt right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public NativeArray<uint> m_anI {
     set {
       NWNXLibPINVOKE.CExoEncrypt_m_anI_set(swigCPtr, value);

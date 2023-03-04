@@ -24,7 +24,7 @@ public class SWIGTYPE_p_std__mapT_std__string_CNWSPlayer__NuiState__WindowState_
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SWIGTYPE_p_std__mapT_std__string_CNWSPlayer__NuiState__WindowState_p_t obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -70,6 +70,6 @@ public class SWIGTYPE_p_std__mapT_std__string_CNWSPlayer__NuiState__WindowState_
   public static bool operator !=(SWIGTYPE_p_std__mapT_std__string_CNWSPlayer__NuiState__WindowState_p_t left, SWIGTYPE_p_std__mapT_std__string_CNWSPlayer__NuiState__WindowState_p_t right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/}
+}
 
 }

@@ -43,7 +43,7 @@ public unsafe class CServerNetOptions : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CServerNetOptions : global::System.IDisposable {
   public static bool operator !=(CServerNetOptions left, CServerNetOptions right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public int m_nGameRegion {
     set {
       NWNXLibPINVOKE.CServerNetOptions_m_nGameRegion_set(swigCPtr, value);

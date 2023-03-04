@@ -33,7 +33,7 @@ public unsafe class CNWSEncounter : CNWSObject {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CNWSEncounter : CNWSObject {
   public static bool operator !=(CNWSEncounter left, CNWSEncounter right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public ushort m_nActivateObjectArrayIndex {
     set {
       NWNXLibPINVOKE.CNWSEncounter_m_nActivateObjectArrayIndex_set(swigCPtr, value);

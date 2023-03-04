@@ -24,7 +24,7 @@ public class SWIGTYPE_p_std__unordered_mapT_std__string_nlohmann__json_t {
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SWIGTYPE_p_std__unordered_mapT_std__string_nlohmann__json_t obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -70,6 +70,6 @@ public class SWIGTYPE_p_std__unordered_mapT_std__string_nlohmann__json_t {
   public static bool operator !=(SWIGTYPE_p_std__unordered_mapT_std__string_nlohmann__json_t left, SWIGTYPE_p_std__unordered_mapT_std__string_nlohmann__json_t right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/}
+}
 
 }

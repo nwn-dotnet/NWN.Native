@@ -33,7 +33,7 @@ public unsafe class CNWSCreature : CNWSObject {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CNWSCreature : CNWSObject {
   public static bool operator !=(CNWSCreature left, CNWSCreature right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public int m_bPonyRide {
     set {
       NWNXLibPINVOKE.CNWSCreature_m_bPonyRide_set(swigCPtr, value);

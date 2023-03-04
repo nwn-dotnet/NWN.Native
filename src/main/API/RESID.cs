@@ -43,7 +43,7 @@ public unsafe class RESID : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class RESID : global::System.IDisposable {
   public static bool operator !=(RESID left, RESID right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public uint m_resFileSource {
     set {
       NWNXLibPINVOKE.RESID_m_resFileSource_set(swigCPtr, value);

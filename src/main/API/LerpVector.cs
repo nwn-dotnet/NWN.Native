@@ -43,7 +43,7 @@ public unsafe class LerpVector : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class LerpVector : global::System.IDisposable {
   public static bool operator !=(LerpVector left, LerpVector right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public LerpFloat x {
     set {
       NWNXLibPINVOKE.LerpVector_x_set(swigCPtr, LerpFloat.getCPtr(value));

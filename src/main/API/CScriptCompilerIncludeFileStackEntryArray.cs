@@ -43,7 +43,7 @@ public unsafe class CScriptCompilerIncludeFileStackEntryArray : global::System.I
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CScriptCompilerIncludeFileStackEntryArray : global::System.I
   public static bool operator !=(CScriptCompilerIncludeFileStackEntryArray left, CScriptCompilerIncludeFileStackEntryArray right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
 
   public CScriptCompilerIncludeFileStackEntry this[int index] {
     get {

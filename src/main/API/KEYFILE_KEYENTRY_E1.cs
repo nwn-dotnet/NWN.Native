@@ -43,7 +43,7 @@ public unsafe class KEYFILE_KEYENTRY_E1 : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class KEYFILE_KEYENTRY_E1 : global::System.IDisposable {
   public static bool operator !=(KEYFILE_KEYENTRY_E1 left, KEYFILE_KEYENTRY_E1 right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public NativeArray<byte> resRef {
     set {
       NWNXLibPINVOKE.KEYFILE_KEYENTRY_E1_resRef_set(swigCPtr, value);

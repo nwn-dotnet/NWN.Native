@@ -43,7 +43,7 @@ public unsafe class CNetLayerPlayerCDKeyInfo : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNetLayerPlayerCDKeyInfo : global::System.IDisposable {
   public static bool operator !=(CNetLayerPlayerCDKeyInfo left, CNetLayerPlayerCDKeyInfo right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoString sPublic {
     set {
       NWNXLibPINVOKE.CNetLayerPlayerCDKeyInfo_sPublic_set(swigCPtr, CExoString.getCPtr(value));

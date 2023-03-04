@@ -43,7 +43,7 @@ public unsafe class CServerAIList : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CServerAIList : global::System.IDisposable {
   public static bool operator !=(CServerAIList left, CServerAIList right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoArrayListUInt32 m_aoGameObjects {
     set {
       NWNXLibPINVOKE.CServerAIList_m_aoGameObjects_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));

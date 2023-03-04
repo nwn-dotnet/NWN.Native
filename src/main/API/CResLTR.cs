@@ -33,7 +33,7 @@ public unsafe class CResLTR : CRes {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CResLTR : CRes {
   public static bool operator !=(CResLTR left, CResLTR right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public float*** m_pStartTripleLetterProb {
     set {
       NWNXLibPINVOKE.CResLTR_m_pStartTripleLetterProb_set(swigCPtr, (global::System.IntPtr)value);

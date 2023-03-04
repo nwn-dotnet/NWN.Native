@@ -43,7 +43,7 @@ public unsafe class CExoLinkedListCNWSCombatRoundAction : global::System.IDispos
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CExoLinkedListCNWSCombatRoundAction : global::System.IDispos
   public static bool operator !=(CExoLinkedListCNWSCombatRoundAction left, CExoLinkedListCNWSCombatRoundAction right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoLinkedListInternal m_pcExoLinkedListInternal {
     set {
       NWNXLibPINVOKE.CExoLinkedListCNWSCombatRoundAction_m_pcExoLinkedListInternal_set(swigCPtr, CExoLinkedListInternal.getCPtr(value));

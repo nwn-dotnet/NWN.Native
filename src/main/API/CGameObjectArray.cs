@@ -43,7 +43,7 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CGameObjectArray : global::System.IDisposable {
   public static bool operator !=(CGameObjectArray left, CGameObjectArray right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public void** m_pArray {
     set {
       NWNXLibPINVOKE.CGameObjectArray_m_pArray_set(swigCPtr, (global::System.IntPtr)value);

@@ -43,7 +43,7 @@ public unsafe class CNWDomain : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNWDomain : global::System.IDisposable {
   public static bool operator !=(CNWDomain left, CNWDomain right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public int m_nNameStrref {
     set {
       NWNXLibPINVOKE.CNWDomain_m_nNameStrref_set(swigCPtr, value);

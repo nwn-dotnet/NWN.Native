@@ -43,7 +43,7 @@ public unsafe class CExoArrayListUInt32Array : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CExoArrayListUInt32Array : global::System.IDisposable {
   public static bool operator !=(CExoArrayListUInt32Array left, CExoArrayListUInt32Array right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
 
   public CExoArrayListUInt32 this[int index] {
     get {

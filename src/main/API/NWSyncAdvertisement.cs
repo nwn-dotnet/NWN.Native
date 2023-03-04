@@ -43,7 +43,7 @@ public unsafe class NWSyncAdvertisement : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class NWSyncAdvertisement : global::System.IDisposable {
   public static bool operator !=(NWSyncAdvertisement left, NWSyncAdvertisement right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public SHA1 m_primary_manifest {
     set {
       NWNXLibPINVOKE.NWSyncAdvertisement_m_primary_manifest_set(swigCPtr, SHA1.getCPtr(value));

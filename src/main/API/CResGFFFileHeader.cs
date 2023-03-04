@@ -43,7 +43,7 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CResGFFFileHeader : global::System.IDisposable {
   public static bool operator !=(CResGFFFileHeader left, CResGFFFileHeader right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public uint m_nFileType {
     set {
       NWNXLibPINVOKE.CResGFFFileHeader_m_nFileType_set(swigCPtr, value);

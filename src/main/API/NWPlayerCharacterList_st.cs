@@ -43,7 +43,7 @@ public unsafe class NWPlayerCharacterList_st : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class NWPlayerCharacterList_st : global::System.IDisposable {
   public static bool operator !=(NWPlayerCharacterList_st left, NWPlayerCharacterList_st right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoLocString sLocFirstName {
     set {
       NWNXLibPINVOKE.NWPlayerCharacterList_st_sLocFirstName_set(swigCPtr, CExoLocString.getCPtr(value));

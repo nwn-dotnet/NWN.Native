@@ -43,7 +43,7 @@ public unsafe class UnorderedMapStringCachedRulesetEntry : global::System.IDispo
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class UnorderedMapStringCachedRulesetEntry : global::System.IDispo
   public static bool operator !=(UnorderedMapStringCachedRulesetEntry left, UnorderedMapStringCachedRulesetEntry right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public bool IsReadOnly
   {
     get => false;
@@ -317,7 +317,7 @@ public unsafe class UnorderedMapStringCachedRulesetEntry : global::System.IDispo
         }
       }
     }
-  /*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+  
     public global::System.IntPtr Pointer {
       get {
         return swigCPtr.Handle;
@@ -363,7 +363,7 @@ public unsafe class UnorderedMapStringCachedRulesetEntry : global::System.IDispo
     public static bool operator !=(Iterator left, Iterator right) {
       return !Equals(left, right);
     }
-  /*@SWIG@*/
+  
     public UnorderedMapStringCachedRulesetEntry.Iterator MoveNext() {
       UnorderedMapStringCachedRulesetEntry.Iterator ret = new UnorderedMapStringCachedRulesetEntry.Iterator(NWNXLibPINVOKE.UnorderedMapStringCachedRulesetEntry_Iterator_MoveNext(swigCPtr), true);
       return ret;

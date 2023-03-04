@@ -43,7 +43,7 @@ public unsafe class CNWSBarter : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNWSBarter : global::System.IDisposable {
   public static bool operator !=(CNWSBarter left, CNWSBarter right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CItemRepository m_pBarterList {
     set {
       NWNXLibPINVOKE.CNWSBarter_m_pBarterList_set(swigCPtr, CItemRepository.getCPtr(value));

@@ -43,7 +43,7 @@ public unsafe class CScriptParseTreeNodeBlock : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CScriptParseTreeNodeBlock : global::System.IDisposable {
   public static bool operator !=(CScriptParseTreeNodeBlock left, CScriptParseTreeNodeBlock right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CScriptParseTreeNodeArray m_pNodes {
     set {
       NWNXLibPINVOKE.CScriptParseTreeNodeBlock_m_pNodes_set(swigCPtr, CScriptParseTreeNodeArray.getCPtr(value));

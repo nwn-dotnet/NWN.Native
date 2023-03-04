@@ -43,7 +43,7 @@ public unsafe class CNWTileSurfaceMeshSortSuccessors : global::System.IDisposabl
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNWTileSurfaceMeshSortSuccessors : global::System.IDisposabl
   public static bool operator !=(CNWTileSurfaceMeshSortSuccessors left, CNWTileSurfaceMeshSortSuccessors right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public int nPathLevel {
     set {
       NWNXLibPINVOKE.CNWTileSurfaceMeshSortSuccessors_nPathLevel_set(swigCPtr, value);

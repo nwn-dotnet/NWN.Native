@@ -43,7 +43,7 @@ public unsafe class CServerOptionLookup : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CServerOptionLookup : global::System.IDisposable {
   public static bool operator !=(CServerOptionLookup left, CServerOptionLookup right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public int* pData {
     set {
       NWNXLibPINVOKE.CServerOptionLookup_pData_set(swigCPtr, value);

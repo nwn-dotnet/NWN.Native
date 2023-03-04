@@ -43,7 +43,7 @@ public unsafe class UnorderedMapCExoStringCNWSScriptVar : global::System.IDispos
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class UnorderedMapCExoStringCNWSScriptVar : global::System.IDispos
   public static bool operator !=(UnorderedMapCExoStringCNWSScriptVar left, UnorderedMapCExoStringCNWSScriptVar right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public bool IsReadOnly
   {
     get => false;
@@ -317,7 +317,7 @@ public unsafe class UnorderedMapCExoStringCNWSScriptVar : global::System.IDispos
         }
       }
     }
-  /*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+  
     public global::System.IntPtr Pointer {
       get {
         return swigCPtr.Handle;
@@ -363,7 +363,7 @@ public unsafe class UnorderedMapCExoStringCNWSScriptVar : global::System.IDispos
     public static bool operator !=(Iterator left, Iterator right) {
       return !Equals(left, right);
     }
-  /*@SWIG@*/
+  
     public UnorderedMapCExoStringCNWSScriptVar.Iterator MoveNext() {
       UnorderedMapCExoStringCNWSScriptVar.Iterator ret = new UnorderedMapCExoStringCNWSScriptVar.Iterator(NWNXLibPINVOKE.UnorderedMapCExoStringCNWSScriptVar_Iterator_MoveNext(swigCPtr), true);
       return ret;

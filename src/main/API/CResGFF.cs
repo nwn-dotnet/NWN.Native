@@ -33,7 +33,7 @@ public unsafe class CResGFF : CRes {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CResGFF : CRes {
   public static bool operator !=(CResGFF left, CResGFF right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public uint STRUCT_GROWSIZE {
     set {
       NWNXLibPINVOKE.CResGFF_STRUCT_GROWSIZE_set(swigCPtr, value);

@@ -33,7 +33,7 @@ public unsafe class CNWSStore : CNWSObject {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CNWSStore : CNWSObject {
   public static bool operator !=(CNWSStore left, CNWSStore right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoStringArray m_sScripts {
     set {
       NWNXLibPINVOKE.CNWSStore_m_sScripts_set(swigCPtr, CExoStringArray.getCPtr(value));

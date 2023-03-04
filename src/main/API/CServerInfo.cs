@@ -43,7 +43,7 @@ public unsafe class CServerInfo : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CServerInfo : global::System.IDisposable {
   public static bool operator !=(CServerInfo left, CServerInfo right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public int m_nDataChangedFlags {
     set {
       NWNXLibPINVOKE.CServerInfo_m_nDataChangedFlags_set(swigCPtr, value);

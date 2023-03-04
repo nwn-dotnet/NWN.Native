@@ -43,7 +43,7 @@ public unsafe class CSpell_Delete : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CSpell_Delete : global::System.IDisposable {
   public static bool operator !=(CSpell_Delete left, CSpell_Delete right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public byte m_nSpellLevel {
     set {
       NWNXLibPINVOKE.CSpell_Delete_m_nSpellLevel_set(swigCPtr, value);

@@ -43,7 +43,7 @@ public unsafe class CRes : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CRes : global::System.IDisposable {
   public static bool operator !=(CRes left, CRes right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public ushort m_nDemands {
     set {
       NWNXLibPINVOKE.CRes_m_nDemands_set(swigCPtr, value);

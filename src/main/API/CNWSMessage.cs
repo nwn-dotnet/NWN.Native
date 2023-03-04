@@ -33,7 +33,7 @@ public unsafe class CNWSMessage : CNWMessage {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CNWSMessage : CNWMessage {
   public static bool operator !=(CNWSMessage left, CNWSMessage right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CNWSMessage() : this(NWNXLibPINVOKE.new_CNWSMessage(), true) {
   }
 

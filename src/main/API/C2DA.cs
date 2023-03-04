@@ -43,7 +43,7 @@ public unsafe class C2DA : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class C2DA : global::System.IDisposable {
   public static bool operator !=(C2DA left, C2DA right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoString m_sDefaultValue {
     set {
       NWNXLibPINVOKE.C2DA_m_sDefaultValue_set(swigCPtr, CExoString.getCPtr(value));

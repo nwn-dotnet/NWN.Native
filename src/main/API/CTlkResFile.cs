@@ -33,7 +33,7 @@ public unsafe class CTlkResFile : CTlkFile {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CTlkResFile : CTlkFile {
   public static bool operator !=(CTlkResFile left, CTlkResFile right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CTlkResFile(CResRef pResRef) : this(NWNXLibPINVOKE.new_CTlkResFile(CResRef.getCPtr(pResRef)), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }

@@ -43,7 +43,7 @@ public unsafe class CNWSInventory : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNWSInventory : global::System.IDisposable {
   public static bool operator !=(CNWSInventory left, CNWSInventory right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public NativeArray<uint> m_pEquipSlot {
     set {
       NWNXLibPINVOKE.CNWSInventory_m_pEquipSlot_set(swigCPtr, value);

@@ -43,7 +43,7 @@ public unsafe class CNWTileSurfaceMeshHashTableEntry : global::System.IDisposabl
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNWTileSurfaceMeshHashTableEntry : global::System.IDisposabl
   public static bool operator !=(CNWTileSurfaceMeshHashTableEntry left, CNWTileSurfaceMeshHashTableEntry right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public int m_nBestTriangle {
     set {
       NWNXLibPINVOKE.CNWTileSurfaceMeshHashTableEntry_m_nBestTriangle_set(swigCPtr, value);

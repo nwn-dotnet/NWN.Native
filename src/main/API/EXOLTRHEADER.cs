@@ -43,7 +43,7 @@ public unsafe class EXOLTRHEADER : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class EXOLTRHEADER : global::System.IDisposable {
   public static bool operator !=(EXOLTRHEADER left, EXOLTRHEADER right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public uint m_nType {
     set {
       NWNXLibPINVOKE.EXOLTRHEADER_m_nType_set(swigCPtr, value);

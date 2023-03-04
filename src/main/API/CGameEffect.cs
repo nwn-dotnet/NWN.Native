@@ -43,7 +43,7 @@ public unsafe class CGameEffect : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CGameEffect : global::System.IDisposable {
   public static bool operator !=(CGameEffect left, CGameEffect right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public ulong m_nID {
     set {
       NWNXLibPINVOKE.CGameEffect_m_nID_set(swigCPtr, value);

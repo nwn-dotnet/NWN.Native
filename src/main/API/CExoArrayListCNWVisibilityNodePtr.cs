@@ -44,7 +44,7 @@ public unsafe class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposab
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,7 +90,7 @@ public unsafe class CExoArrayListCNWVisibilityNodePtr : global::System.IDisposab
   public static bool operator !=(CExoArrayListCNWVisibilityNodePtr left, CExoArrayListCNWVisibilityNodePtr right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoArrayListCNWVisibilityNodePtr(global::System.Collections.IEnumerable c) : this() {
     if (c == null)
       throw new global::System.ArgumentNullException("c");

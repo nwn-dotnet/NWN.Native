@@ -33,7 +33,7 @@ public unsafe class CNWSEffectListHandler : CGameEffectApplierRemover {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CNWSEffectListHandler : CGameEffectApplierRemover {
   public static bool operator !=(CNWSEffectListHandler left, CNWSEffectListHandler right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public SWIGTYPE_p_p_f_p_CNWSObject_p_CGameEffect_int__int m_pApplyEffectCommands {
     set {
       NWNXLibPINVOKE.CNWSEffectListHandler_m_pApplyEffectCommands_set(swigCPtr, SWIGTYPE_p_p_f_p_CNWSObject_p_CGameEffect_int__int.getCPtr(value));

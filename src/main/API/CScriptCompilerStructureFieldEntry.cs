@@ -43,7 +43,7 @@ public unsafe class CScriptCompilerStructureFieldEntry : global::System.IDisposa
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CScriptCompilerStructureFieldEntry : global::System.IDisposa
   public static bool operator !=(CScriptCompilerStructureFieldEntry left, CScriptCompilerStructureFieldEntry right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public byte m_pchType {
     set {
       NWNXLibPINVOKE.CScriptCompilerStructureFieldEntry_m_pchType_set(swigCPtr, value);

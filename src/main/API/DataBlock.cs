@@ -33,7 +33,7 @@ public unsafe class DataBlock : DataView {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class DataBlock : DataView {
   public static bool operator !=(DataBlock left, DataBlock right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public DataBlock(uint preallocate) : this(NWNXLibPINVOKE.new_DataBlock__SWIG_0(preallocate), true) {
   }
 

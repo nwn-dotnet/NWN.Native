@@ -43,7 +43,7 @@ public unsafe class CERFString : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CERFString : global::System.IDisposable {
   public static bool operator !=(CERFString left, CERFString right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public uint m_nLanguageID {
     set {
       NWNXLibPINVOKE.CERFString_m_nLanguageID_set(swigCPtr, value);

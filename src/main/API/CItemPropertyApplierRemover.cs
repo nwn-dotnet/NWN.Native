@@ -43,7 +43,7 @@ public unsafe class CItemPropertyApplierRemover : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CItemPropertyApplierRemover : global::System.IDisposable {
   public static bool operator !=(CItemPropertyApplierRemover left, CItemPropertyApplierRemover right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public virtual void InitializeItemProperties() {
     NWNXLibPINVOKE.CItemPropertyApplierRemover_InitializeItemProperties(swigCPtr);
   }

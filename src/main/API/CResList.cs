@@ -33,7 +33,7 @@ public unsafe class CResList : CResStruct {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CResList : CResStruct {
   public static bool operator !=(CResList left, CResList right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public NativeArray<byte> m_pLabel {
     set {
       NWNXLibPINVOKE.CResList_m_pLabel_set(swigCPtr, value);

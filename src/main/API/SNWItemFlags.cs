@@ -43,7 +43,7 @@ public unsafe class SNWItemFlags : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class SNWItemFlags : global::System.IDisposable {
   public static bool operator !=(SNWItemFlags left, SNWItemFlags right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public byte m_nDropable {
     set {
       NWNXLibPINVOKE.SNWItemFlags_m_nDropable_set(swigCPtr, value);

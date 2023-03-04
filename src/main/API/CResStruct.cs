@@ -43,7 +43,7 @@ public unsafe class CResStruct : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CResStruct : global::System.IDisposable {
   public static bool operator !=(CResStruct left, CResStruct right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CResStructHeader m_cHeader {
     set {
       NWNXLibPINVOKE.CResStruct_m_cHeader_set(swigCPtr, CResStructHeader.getCPtr(value));

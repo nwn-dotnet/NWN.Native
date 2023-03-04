@@ -43,7 +43,7 @@ public unsafe class Vector2 : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class Vector2 : global::System.IDisposable {
   public static bool operator !=(Vector2 left, Vector2 right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public float x {
     set {
       NWNXLibPINVOKE.Vector2_x_set(swigCPtr, value);

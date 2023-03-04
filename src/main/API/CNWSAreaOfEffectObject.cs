@@ -33,7 +33,7 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
   public static bool operator !=(CNWSAreaOfEffectObject left, CNWSAreaOfEffectObject right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public ushort m_nObjectArrayIndex {
     set {
       NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nObjectArrayIndex_set(swigCPtr, value);

@@ -43,7 +43,7 @@ public unsafe class CScriptCompilerIdentifierHashTableEntry : global::System.IDi
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CScriptCompilerIdentifierHashTableEntry : global::System.IDi
   public static bool operator !=(CScriptCompilerIdentifierHashTableEntry left, CScriptCompilerIdentifierHashTableEntry right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public uint m_nHashValue {
     set {
       NWNXLibPINVOKE.CScriptCompilerIdentifierHashTableEntry_m_nHashValue_set(swigCPtr, value);

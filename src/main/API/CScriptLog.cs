@@ -43,7 +43,7 @@ public unsafe class CScriptLog : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CScriptLog : global::System.IDisposable {
   public static bool operator !=(CScriptLog left, CScriptLog right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoString m_sScriptName {
     set {
       NWNXLibPINVOKE.CScriptLog_m_sScriptName_set(swigCPtr, CExoString.getCPtr(value));

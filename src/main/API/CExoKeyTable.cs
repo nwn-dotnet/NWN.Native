@@ -43,7 +43,7 @@ public unsafe class CExoKeyTable : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CExoKeyTable : global::System.IDisposable {
   public static bool operator !=(CExoKeyTable left, CExoKeyTable right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public int m_bLoaded {
     set {
       NWNXLibPINVOKE.CExoKeyTable_m_bLoaded_set(swigCPtr, value);

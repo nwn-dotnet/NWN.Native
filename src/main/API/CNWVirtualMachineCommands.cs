@@ -33,7 +33,7 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CNWVirtualMachineCommands : CVirtualMachineCmdImplementer {
   public static bool operator !=(CNWVirtualMachineCommands left, CNWVirtualMachineCommands right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public SWIGTYPE_p_p_f_int_int__int m_pVirtualMachineCommands {
     set {
       NWNXLibPINVOKE.CNWVirtualMachineCommands_m_pVirtualMachineCommands_set(swigCPtr, SWIGTYPE_p_p_f_int_int__int.getCPtr(value));

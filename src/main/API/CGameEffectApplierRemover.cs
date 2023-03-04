@@ -43,7 +43,7 @@ public unsafe class CGameEffectApplierRemover : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CGameEffectApplierRemover : global::System.IDisposable {
   public static bool operator !=(CGameEffectApplierRemover left, CGameEffectApplierRemover right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public virtual void InitializeEffects() {
     NWNXLibPINVOKE.CGameEffectApplierRemover_InitializeEffects(swigCPtr);
   }

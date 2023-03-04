@@ -43,7 +43,7 @@ public unsafe class CNWFeat : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNWFeat : global::System.IDisposable {
   public static bool operator !=(CNWFeat left, CNWFeat right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public int m_nNameStrref {
     set {
       NWNXLibPINVOKE.CNWFeat_m_nNameStrref_set(swigCPtr, value);

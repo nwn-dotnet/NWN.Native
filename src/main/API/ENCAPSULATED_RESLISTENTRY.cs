@@ -43,7 +43,7 @@ public unsafe class ENCAPSULATED_RESLISTENTRY : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class ENCAPSULATED_RESLISTENTRY : global::System.IDisposable {
   public static bool operator !=(ENCAPSULATED_RESLISTENTRY left, ENCAPSULATED_RESLISTENTRY right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public uint nOffsetToResource {
     set {
       NWNXLibPINVOKE.ENCAPSULATED_RESLISTENTRY_nOffsetToResource_set(swigCPtr, value);

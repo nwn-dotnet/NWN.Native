@@ -48,7 +48,7 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   global::System.Runtime.InteropServices.HandleRef ICGameObject.GetInterfaceCPtr() {
     return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CNWSModule_ICGameObject_GetInterfaceCPtr(swigCPtr.Handle));
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -94,7 +94,7 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
   public static bool operator !=(CNWSModule left, CNWSModule right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoLinkedListNWModuleExpansion m_lstModuleExpansion {
     set {
       NWNXLibPINVOKE.CNWSModule_m_lstModuleExpansion_set(swigCPtr, CExoLinkedListNWModuleExpansion.getCPtr(value));

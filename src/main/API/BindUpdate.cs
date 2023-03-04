@@ -43,7 +43,7 @@ public unsafe class BindUpdate : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class BindUpdate : global::System.IDisposable {
   public static bool operator !=(BindUpdate left, BindUpdate right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public uint m_player {
     set {
       NWNXLibPINVOKE.BindUpdate_m_player_set(swigCPtr, value);

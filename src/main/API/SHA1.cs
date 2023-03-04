@@ -43,7 +43,7 @@ public unsafe class SHA1 : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class SHA1 : global::System.IDisposable {
   public static bool operator !=(SHA1 left, SHA1 right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public bool m_empty {
     set {
       NWNXLibPINVOKE.SHA1_m_empty_set(swigCPtr, value);

@@ -43,7 +43,7 @@ public unsafe class BIFFFILE_VARRESENTRY_E1 : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class BIFFFILE_VARRESENTRY_E1 : global::System.IDisposable {
   public static bool operator !=(BIFFFILE_VARRESENTRY_E1 left, BIFFFILE_VARRESENTRY_E1 right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public uint nID {
     set {
       NWNXLibPINVOKE.BIFFFILE_VARRESENTRY_E1_nID_set(swigCPtr, value);

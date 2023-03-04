@@ -43,7 +43,7 @@ public unsafe class CNWSPlayerJournalQuest : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNWSPlayerJournalQuest : global::System.IDisposable {
   public static bool operator !=(CNWSPlayerJournalQuest left, CNWSPlayerJournalQuest right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public int m_bOpen {
     set {
       NWNXLibPINVOKE.CNWSPlayerJournalQuest_m_bOpen_set(swigCPtr, value);

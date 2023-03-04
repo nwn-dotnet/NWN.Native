@@ -43,7 +43,7 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNWSCreatureStats_ClassInfo : global::System.IDisposable {
   public static bool operator !=(CNWSCreatureStats_ClassInfo left, CNWSCreatureStats_ClassInfo right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoArrayListUInt32Array m_pKnownSpellList {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_ClassInfo_m_pKnownSpellList_set(swigCPtr, CExoArrayListUInt32Array.getCPtr(value));

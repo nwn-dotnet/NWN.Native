@@ -43,7 +43,7 @@ public unsafe class CExoLocStringInternal : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CExoLocStringInternal : global::System.IDisposable {
   public static bool operator !=(CExoLocStringInternal left, CExoLocStringInternal right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoLinkedListEXOLOCSTRING m_lstString {
     set {
       NWNXLibPINVOKE.CExoLocStringInternal_m_lstString_set(swigCPtr, CExoLinkedListEXOLOCSTRING.getCPtr(value));

@@ -43,7 +43,7 @@ public unsafe class CScriptCompilerKeyWordEntry : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CScriptCompilerKeyWordEntry : global::System.IDisposable {
   public static bool operator !=(CScriptCompilerKeyWordEntry left, CScriptCompilerKeyWordEntry right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoString m_sAlphanumericName {
     set {
       NWNXLibPINVOKE.CScriptCompilerKeyWordEntry_m_sAlphanumericName_set(swigCPtr, CExoString.getCPtr(value));

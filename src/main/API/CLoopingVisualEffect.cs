@@ -43,7 +43,7 @@ public unsafe class CLoopingVisualEffect : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CLoopingVisualEffect : global::System.IDisposable {
   public static bool operator !=(CLoopingVisualEffect left, CLoopingVisualEffect right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public ushort m_nId {
     set {
       NWNXLibPINVOKE.CLoopingVisualEffect_m_nId_set(swigCPtr, value);

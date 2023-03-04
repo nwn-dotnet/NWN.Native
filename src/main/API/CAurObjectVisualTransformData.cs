@@ -43,7 +43,7 @@ public unsafe class CAurObjectVisualTransformData : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CAurObjectVisualTransformData : global::System.IDisposable {
   public static bool operator !=(CAurObjectVisualTransformData left, CAurObjectVisualTransformData right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public LerpVector m_scale {
     set {
       NWNXLibPINVOKE.CAurObjectVisualTransformData_m_scale_set(swigCPtr, LerpVector.getCPtr(value));
@@ -135,6 +135,12 @@ public unsafe class CAurObjectVisualTransformData : global::System.IDisposable {
   }
 
   public CAurObjectVisualTransformData() : this(NWNXLibPINVOKE.new_CAurObjectVisualTransformData(), true) {
+  }
+
+  public bool _OpEquals(CAurObjectVisualTransformData rhs) {
+    bool ret = NWNXLibPINVOKE.CAurObjectVisualTransformData__OpEquals(swigCPtr, CAurObjectVisualTransformData.getCPtr(rhs));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
   }
 
 }

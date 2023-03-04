@@ -43,7 +43,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
   public static bool operator !=(LerpFloat left, LerpFloat right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public LerpTimerType m_timer_type {
     set {
       NWNXLibPINVOKE.LerpFloat_m_timer_type_set(swigCPtr, (int)value);
@@ -188,7 +188,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
         }
       }
     }
-  /*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+  
     public global::System.IntPtr Pointer {
       get {
         return swigCPtr.Handle;
@@ -234,7 +234,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
     public static bool operator !=(TimeType left, TimeType right) {
       return !Equals(left, right);
     }
-  /*@SWIG@*/
+  
       public unsafe class World : global::System.IDisposable {
         private global::System.Runtime.InteropServices.HandleRef swigCPtr;
         protected bool swigCMemOwn;
@@ -268,7 +268,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
             }
           }
         }
-      /*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+      
         public global::System.IntPtr Pointer {
           get {
             return swigCPtr.Handle;
@@ -314,7 +314,7 @@ public unsafe class LerpFloat : global::System.IDisposable {
         public static bool operator !=(World left, World right) {
           return !Equals(left, right);
         }
-      /*@SWIG@*/
+      
         public uint m_day {
           set {
             NWNXLibPINVOKE.LerpFloat_TimeType_World_m_day_set(swigCPtr, value);

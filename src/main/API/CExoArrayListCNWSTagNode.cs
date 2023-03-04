@@ -44,7 +44,7 @@ public unsafe class CExoArrayListCNWSTagNode : global::System.IDisposable, globa
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -90,7 +90,7 @@ public unsafe class CExoArrayListCNWSTagNode : global::System.IDisposable, globa
   public static bool operator !=(CExoArrayListCNWSTagNode left, CExoArrayListCNWSTagNode right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoArrayListCNWSTagNode(global::System.Collections.IEnumerable c) : this() {
     if (c == null)
       throw new global::System.ArgumentNullException("c");

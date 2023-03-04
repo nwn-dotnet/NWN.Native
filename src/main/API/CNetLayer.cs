@@ -43,7 +43,7 @@ public unsafe class CNetLayer : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNetLayer : global::System.IDisposable {
   public static bool operator !=(CNetLayer left, CNetLayer right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public SWIGTYPE_p_CNetLayerInternal m_pcNetLayerInternal {
     set {
       NWNXLibPINVOKE.CNetLayer_m_pcNetLayerInternal_set(swigCPtr, SWIGTYPE_p_CNetLayerInternal.getCPtr(value));

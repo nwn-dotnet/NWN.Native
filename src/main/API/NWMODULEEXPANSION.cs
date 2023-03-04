@@ -43,7 +43,7 @@ public unsafe class NWMODULEEXPANSION : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class NWMODULEEXPANSION : global::System.IDisposable {
   public static bool operator !=(NWMODULEEXPANSION left, NWMODULEEXPANSION right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoLocString lsName {
     set {
       NWNXLibPINVOKE.NWMODULEEXPANSION_lsName_set(swigCPtr, CExoLocString.getCPtr(value));

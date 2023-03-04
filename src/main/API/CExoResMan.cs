@@ -43,7 +43,7 @@ public unsafe class CExoResMan : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CExoResMan : global::System.IDisposable {
   public static bool operator !=(CExoResMan left, CExoResMan right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public long m_nTotalPhysicalMemory {
     set {
       NWNXLibPINVOKE.CExoResMan_m_nTotalPhysicalMemory_set(swigCPtr, value);

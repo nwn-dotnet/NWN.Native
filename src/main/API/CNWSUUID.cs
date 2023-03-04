@@ -43,7 +43,7 @@ public unsafe class CNWSUUID : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNWSUUID : global::System.IDisposable {
   public static bool operator !=(CNWSUUID left, CNWSUUID right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public ICGameObject m_parent {
     set {
       NWNXLibPINVOKE.CNWSUUID_m_parent_set(swigCPtr, value == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : value.GetInterfaceCPtr());

@@ -24,7 +24,7 @@ public class SWIGTYPE_p_p_f_int_int__int {
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SWIGTYPE_p_p_f_int_int__int obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -70,6 +70,6 @@ public class SWIGTYPE_p_p_f_int_int__int {
   public static bool operator !=(SWIGTYPE_p_p_f_int_int__int left, SWIGTYPE_p_p_f_int_int__int right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/}
+}
 
 }

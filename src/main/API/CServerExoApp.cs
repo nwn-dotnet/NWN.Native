@@ -33,7 +33,7 @@ public unsafe class CServerExoApp : CBaseExoApp {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CServerExoApp : CBaseExoApp {
   public static bool operator !=(CServerExoApp left, CServerExoApp right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CServerExoAppInternal m_pcExoAppInternal {
     set {
       NWNXLibPINVOKE.CServerExoApp_m_pcExoAppInternal_set(swigCPtr, CServerExoAppInternal.getCPtr(value));

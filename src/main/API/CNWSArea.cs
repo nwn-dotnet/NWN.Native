@@ -38,7 +38,7 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   global::System.Runtime.InteropServices.HandleRef ICGameObject.GetInterfaceCPtr() {
     return new global::System.Runtime.InteropServices.HandleRef(this, NWNXLibPINVOKE.CNWSArea_ICGameObject_GetInterfaceCPtr(swigCPtr.Handle));
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -84,7 +84,7 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
   public static bool operator !=(CNWSArea left, CNWSArea right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public int m_nPlayersInArea {
     set {
       NWNXLibPINVOKE.CNWSArea_m_nPlayersInArea_set(swigCPtr, value);

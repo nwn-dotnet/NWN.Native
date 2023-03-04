@@ -33,7 +33,7 @@ public unsafe class CNWSPlayer : CNWSClient {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CNWSPlayer : CNWSClient {
   public static bool operator !=(CNWSPlayer left, CNWSPlayer right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public unsafe class NuiState : global::System.IDisposable {
     private global::System.Runtime.InteropServices.HandleRef swigCPtr;
     protected bool swigCMemOwn;
@@ -113,7 +113,7 @@ public unsafe class CNWSPlayer : CNWSClient {
         }
       }
     }
-  /*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+  
     public global::System.IntPtr Pointer {
       get {
         return swigCPtr.Handle;
@@ -159,7 +159,7 @@ public unsafe class CNWSPlayer : CNWSClient {
     public static bool operator !=(NuiState left, NuiState right) {
       return !Equals(left, right);
     }
-  /*@SWIG@*/
+  
       public unsafe class WindowState : global::System.IDisposable {
         private global::System.Runtime.InteropServices.HandleRef swigCPtr;
         protected bool swigCMemOwn;
@@ -193,7 +193,7 @@ public unsafe class CNWSPlayer : CNWSClient {
             }
           }
         }
-      /*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+      
         public global::System.IntPtr Pointer {
           get {
             return swigCPtr.Handle;
@@ -239,7 +239,7 @@ public unsafe class CNWSPlayer : CNWSClient {
         public static bool operator !=(WindowState left, WindowState right) {
           return !Equals(left, right);
         }
-      /*@SWIG@*/
+      
         public int m_token {
           set {
             NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_token_set(swigCPtr, value);

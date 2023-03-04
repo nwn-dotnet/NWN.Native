@@ -33,7 +33,7 @@ public unsafe class CNWSTrigger : CNWSObject {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CNWSTrigger : CNWSObject {
   public static bool operator !=(CNWSTrigger left, CNWSTrigger right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoLocString m_sLocalizedName {
     set {
       NWNXLibPINVOKE.CNWSTrigger_m_sLocalizedName_set(swigCPtr, CExoLocString.getCPtr(value));

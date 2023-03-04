@@ -43,7 +43,7 @@ public unsafe class NWMODULEHEADER : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class NWMODULEHEADER : global::System.IDisposable {
   public static bool operator !=(NWMODULEHEADER left, NWMODULEHEADER right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public NativeArray<byte> pModuleID {
     set {
       NWNXLibPINVOKE.NWMODULEHEADER_pModuleID_set(swigCPtr, value);

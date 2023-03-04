@@ -43,7 +43,7 @@ public unsafe class CEffectIconObject : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CEffectIconObject : global::System.IDisposable {
   public static bool operator !=(CEffectIconObject left, CEffectIconObject right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public byte m_nIcon {
     set {
       NWNXLibPINVOKE.CEffectIconObject_m_nIcon_set(swigCPtr, value);

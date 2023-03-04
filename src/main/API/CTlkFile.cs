@@ -33,7 +33,7 @@ public unsafe class CTlkFile : CExoFile {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CTlkFile : CExoFile {
   public static bool operator !=(CTlkFile left, CTlkFile right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public TLK_FILE_HEADER m_header {
     set {
       NWNXLibPINVOKE.CTlkFile_m_header_set(swigCPtr, TLK_FILE_HEADER.getCPtr(value));

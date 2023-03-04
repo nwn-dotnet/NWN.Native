@@ -43,7 +43,7 @@ public unsafe class CPlayOptions : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CPlayOptions : global::System.IDisposable {
   public static bool operator !=(CPlayOptions left, CPlayOptions right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public int bAllKillable {
     set {
       NWNXLibPINVOKE.CPlayOptions_bAllKillable_set(swigCPtr, value);

@@ -43,7 +43,7 @@ public unsafe class CNWSFaction : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNWSFaction : global::System.IDisposable {
   public static bool operator !=(CNWSFaction left, CNWSFaction right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoArrayListUInt32 m_listFactionMembers {
     set {
       NWNXLibPINVOKE.CNWSFaction_m_listFactionMembers_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));

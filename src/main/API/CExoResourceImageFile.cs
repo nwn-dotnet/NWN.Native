@@ -33,7 +33,7 @@ public unsafe class CExoResourceImageFile : CExoPackedFile {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CExoResourceImageFile : CExoPackedFile {
   public static bool operator !=(CExoResourceImageFile left, CExoResourceImageFile right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public byte* m_pResourceImage {
     set {
       NWNXLibPINVOKE.CExoResourceImageFile_m_pResourceImage_set(swigCPtr, value);

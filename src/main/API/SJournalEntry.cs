@@ -43,7 +43,7 @@ public unsafe class SJournalEntry : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class SJournalEntry : global::System.IDisposable {
   public static bool operator !=(SJournalEntry left, SJournalEntry right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoLocString szName {
     set {
       NWNXLibPINVOKE.SJournalEntry_szName_set(swigCPtr, CExoLocString.getCPtr(value));

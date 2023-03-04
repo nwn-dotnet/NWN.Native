@@ -33,7 +33,7 @@ public unsafe class CNWSSysAdmin : CNWSClient {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CNWSSysAdmin : CNWSClient {
   public static bool operator !=(CNWSSysAdmin left, CNWSSysAdmin right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CNWSSysAdmin(uint nPlayerID) : this(NWNXLibPINVOKE.new_CNWSSysAdmin(nPlayerID), true) {
   }
 

@@ -43,7 +43,7 @@ public unsafe class CNWSStats_SpellLikeAbility : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNWSStats_SpellLikeAbility : global::System.IDisposable {
   public static bool operator !=(CNWSStats_SpellLikeAbility left, CNWSStats_SpellLikeAbility right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public uint m_nSpellId {
     set {
       NWNXLibPINVOKE.CNWSStats_SpellLikeAbility_m_nSpellId_set(swigCPtr, value);

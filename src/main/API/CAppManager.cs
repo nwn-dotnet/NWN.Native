@@ -43,7 +43,7 @@ public unsafe class CAppManager : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CAppManager : global::System.IDisposable {
   public static bool operator !=(CAppManager left, CAppManager right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public SWIGTYPE_p_CClientExoApp m_pClientExoApp {
     set {
       NWNXLibPINVOKE.CAppManager_m_pClientExoApp_set(swigCPtr, SWIGTYPE_p_CClientExoApp.getCPtr(value));

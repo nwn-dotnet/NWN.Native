@@ -43,7 +43,7 @@ public unsafe class TLK_FILE_HEADER : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class TLK_FILE_HEADER : global::System.IDisposable {
   public static bool operator !=(TLK_FILE_HEADER left, TLK_FILE_HEADER right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public uint fileType {
     set {
       NWNXLibPINVOKE.TLK_FILE_HEADER_fileType_set(swigCPtr, value);

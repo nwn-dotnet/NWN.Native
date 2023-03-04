@@ -43,7 +43,7 @@ public unsafe class CResetOption : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CResetOption : global::System.IDisposable {
   public static bool operator !=(CResetOption left, CResetOption right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public int bOnVacant {
     set {
       NWNXLibPINVOKE.CResetOption_bOnVacant_set(swigCPtr, value);

@@ -43,7 +43,7 @@ public unsafe class CNWSScriptVarTable : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNWSScriptVarTable : global::System.IDisposable {
   public static bool operator !=(CNWSScriptVarTable left, CNWSScriptVarTable right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public UnorderedMapCExoStringCNWSScriptVar m_vars {
     set {
       NWNXLibPINVOKE.CNWSScriptVarTable_m_vars_set(swigCPtr, UnorderedMapCExoStringCNWSScriptVar.getCPtr(value));

@@ -43,7 +43,7 @@ public unsafe class CERFFile : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CERFFile : global::System.IDisposable {
   public static bool operator !=(CERFFile left, CERFFile right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public NWERFHEADER m_stHeader {
     set {
       NWNXLibPINVOKE.CERFFile_m_stHeader_set(swigCPtr, NWERFHEADER.getCPtr(value));

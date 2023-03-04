@@ -33,7 +33,7 @@ public unsafe class CNWSTile : CNWTile {
       base.Dispose(disposing);
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -79,7 +79,7 @@ public unsafe class CNWSTile : CNWTile {
   public static bool operator !=(CNWSTile left, CNWSTile right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CNWTileData m_pTileData {
     set {
       NWNXLibPINVOKE.CNWSTile_m_pTileData_set(swigCPtr, CNWTileData.getCPtr(value));

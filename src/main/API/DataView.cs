@@ -43,7 +43,7 @@ public unsafe class DataView : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class DataView : global::System.IDisposable {
   public static bool operator !=(DataView left, DataView right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public unsafe class Shared : global::System.IDisposable {
     private global::System.Runtime.InteropServices.HandleRef swigCPtr;
     protected bool swigCMemOwn;
@@ -123,7 +123,7 @@ public unsafe class DataView : global::System.IDisposable {
         }
       }
     }
-  /*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+  
     public global::System.IntPtr Pointer {
       get {
         return swigCPtr.Handle;
@@ -169,7 +169,7 @@ public unsafe class DataView : global::System.IDisposable {
     public static bool operator !=(Shared left, Shared right) {
       return !Equals(left, right);
     }
-  /*@SWIG@*/
+  
     public Shared(void* data, uint used, uint allocated, bool owned) : this(NWNXLibPINVOKE.new_DataView_Shared((global::System.IntPtr)data, used, allocated, owned), true) {
     }
   

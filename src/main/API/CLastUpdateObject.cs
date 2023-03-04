@@ -43,7 +43,7 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
   public static bool operator !=(CLastUpdateObject left, CLastUpdateObject right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CNWSPlayerLUOAppearanceInfo m_cAppearance {
     set {
       NWNXLibPINVOKE.CLastUpdateObject_m_cAppearance_set(swigCPtr, CNWSPlayerLUOAppearanceInfo.getCPtr(value));

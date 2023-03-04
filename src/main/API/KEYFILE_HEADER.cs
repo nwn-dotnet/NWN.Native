@@ -43,7 +43,7 @@ public unsafe class KEYFILE_HEADER : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class KEYFILE_HEADER : global::System.IDisposable {
   public static bool operator !=(KEYFILE_HEADER left, KEYFILE_HEADER right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public uint nFileType {
     set {
       NWNXLibPINVOKE.KEYFILE_HEADER_nFileType_set(swigCPtr, value);

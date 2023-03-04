@@ -43,7 +43,7 @@ public unsafe class CNWTileSetManager : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNWTileSetManager : global::System.IDisposable {
   public static bool operator !=(CNWTileSetManager left, CNWTileSetManager right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CNWTileSetPtrArray m_apTileSets {
     set {
       NWNXLibPINVOKE.CNWTileSetManager_m_apTileSets_set(swigCPtr, CNWTileSetPtrArray.getCPtr(value));

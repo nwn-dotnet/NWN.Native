@@ -43,7 +43,7 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNWSCombatRound : global::System.IDisposable {
   public static bool operator !=(CNWSCombatRound left, CNWSCombatRound right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CNWSCombatAttackDataArray m_pcLastAttack {
     set {
       NWNXLibPINVOKE.CNWSCombatRound_m_pcLastAttack_set(swigCPtr, CNWSCombatAttackDataArray.getCPtr(value));

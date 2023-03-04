@@ -24,7 +24,7 @@ public class SWIGTYPE_p_CExoConfig {
   internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SWIGTYPE_p_CExoConfig obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -70,6 +70,6 @@ public class SWIGTYPE_p_CExoConfig {
   public static bool operator !=(SWIGTYPE_p_CExoConfig left, SWIGTYPE_p_CExoConfig right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/}
+}
 
 }

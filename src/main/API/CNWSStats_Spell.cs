@@ -43,7 +43,7 @@ public unsafe class CNWSStats_Spell : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNWSStats_Spell : global::System.IDisposable {
   public static bool operator !=(CNWSStats_Spell left, CNWSStats_Spell right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public uint m_nSpellId {
     set {
       NWNXLibPINVOKE.CNWSStats_Spell_m_nSpellId_set(swigCPtr, value);

@@ -43,7 +43,7 @@ public unsafe class CNWRules : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CNWRules : global::System.IDisposable {
   public static bool operator !=(CNWRules left, CNWRules right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public NativeArray<float> m_fRangeTypes {
     set {
       NWNXLibPINVOKE.CNWRules_m_fRangeTypes_set(swigCPtr, value);

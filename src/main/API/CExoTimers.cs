@@ -43,7 +43,7 @@ public unsafe class CExoTimers : global::System.IDisposable {
       }
     }
   }
-/*@SWIG:/__w/NWN.Native/NWN.Native/nwnx/Plugins/SWIG/SWIG_DotNET/DotNETExtensions.i,1,SWIG_DOTNET_EXTENSIONS@*/
+
   public global::System.IntPtr Pointer {
     get {
       return swigCPtr.Handle;
@@ -89,7 +89,7 @@ public unsafe class CExoTimers : global::System.IDisposable {
   public static bool operator !=(CExoTimers left, CExoTimers right) {
     return !Equals(left, right);
   }
-/*@SWIG@*/
+
   public CExoTimersInternal m_pcExoTimersInternal {
     set {
       NWNXLibPINVOKE.CExoTimers_m_pcExoTimersInternal_set(swigCPtr, CExoTimersInternal.getCPtr(value));
