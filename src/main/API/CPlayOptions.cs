@@ -398,6 +398,17 @@ public unsafe class CPlayOptions : global::System.IDisposable {
 
   }
 
+  public int bShowPlayerJoinMessages {
+    set {
+      NWNXLibPINVOKE.CPlayOptions_bShowPlayerJoinMessages_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CPlayOptions_bShowPlayerJoinMessages_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public CPlayOptions() : this(NWNXLibPINVOKE.new_CPlayOptions(), true) {
   }
 

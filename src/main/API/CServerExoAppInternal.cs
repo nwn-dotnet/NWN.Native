@@ -1016,6 +1016,17 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
     } 
   }
 
+  public AdvertLUT m_nwsyncAdvertLUT {
+    set {
+      NWNXLibPINVOKE.CServerExoAppInternal_m_nwsyncAdvertLUT_set(swigCPtr, AdvertLUT.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoAppInternal_m_nwsyncAdvertLUT_get(swigCPtr);
+      AdvertLUT ret = (cPtr == global::System.IntPtr.Zero) ? null : new AdvertLUT(cPtr, false);
+      return ret;
+    } 
+  }
+
   public CServerExoAppInternal() : this(NWNXLibPINVOKE.new_CServerExoAppInternal(), true) {
   }
 
@@ -1630,6 +1641,32 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
   public CExoString GetHostedPublicInternetAddressAndPort() {
     CExoString ret = new CExoString(NWNXLibPINVOKE.CServerExoAppInternal_GetHostedPublicInternetAddressAndPort(swigCPtr), true);
     return ret;
+  }
+
+  public int GetGameObjectUpdateInterval(CNWSObject creature) {
+    int retVal = NWNXLibPINVOKE.CServerExoAppInternal_GetGameObjectUpdateInterval(swigCPtr, CNWSObject.getCPtr(creature));
+    return retVal;
+  }
+
+  public int GetGameObjectUpdateMessageLimit(CNWSObject creature) {
+    int retVal = NWNXLibPINVOKE.CServerExoAppInternal_GetGameObjectUpdateMessageLimit(swigCPtr, CNWSObject.getCPtr(creature));
+    return retVal;
+  }
+
+  public void SetGameObjectUpdateIntervalTarget(int target) {
+    NWNXLibPINVOKE.CServerExoAppInternal_SetGameObjectUpdateIntervalTarget(swigCPtr, target);
+  }
+
+  public void SetGameObjectUpdateIntervalTargetLoading(int target) {
+    NWNXLibPINVOKE.CServerExoAppInternal_SetGameObjectUpdateIntervalTargetLoading(swigCPtr, target);
+  }
+
+  public void SetGameObjectUpdateMessageLimit(int target) {
+    NWNXLibPINVOKE.CServerExoAppInternal_SetGameObjectUpdateMessageLimit(swigCPtr, target);
+  }
+
+  public void SetGameObjectUpdateMessageLimitLoading(int target) {
+    NWNXLibPINVOKE.CServerExoAppInternal_SetGameObjectUpdateMessageLimitLoading(swigCPtr, target);
   }
 
   public int StorePlayerCharacters() {

@@ -233,25 +233,25 @@ public unsafe class CNWSCreatureAppearanceInfo : global::System.IDisposable {
 
   }
 
-  public NativeArray<byte> m_pPartVariation {
+  public NativeArray<ushort> m_pPartVariation {
     set {
       NWNXLibPINVOKE.CNWSCreatureAppearanceInfo_m_pPartVariation_set(swigCPtr, value);
     } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSCreatureAppearanceInfo_m_pPartVariation_get(swigCPtr);
-      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 19);
+      NativeArray<ushort> retVal = new NativeArray<ushort>(arrayPtr, 19);
 
-      return retVal; // byte[19]
+      return retVal; // ushort[19]
     }
 
   }
 
-  public byte m_nHeadVariation {
+  public ushort m_nHeadVariation {
     set {
       NWNXLibPINVOKE.CNWSCreatureAppearanceInfo_m_nHeadVariation_set(swigCPtr, value);
     } 
     get {
-      byte retVal = NWNXLibPINVOKE.CNWSCreatureAppearanceInfo_m_nHeadVariation_get(swigCPtr);
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureAppearanceInfo_m_nHeadVariation_get(swigCPtr);
       return retVal;
     }
 
@@ -324,6 +324,10 @@ public unsafe class CNWSCreatureAppearanceInfo : global::System.IDisposable {
   }
 
   public CNWSCreatureAppearanceInfo() : this(NWNXLibPINVOKE.new_CNWSCreatureAppearanceInfo(), true) {
+  }
+
+  public void Clear() {
+    NWNXLibPINVOKE.CNWSCreatureAppearanceInfo_Clear(swigCPtr);
   }
 
 }

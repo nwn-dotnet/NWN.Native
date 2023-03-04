@@ -145,50 +145,6 @@ public unsafe class CExoResMan : global::System.IDisposable {
     } 
   }
 
-  public CExoLinkedListCRes m_lstAsyncResQueue {
-    set {
-      NWNXLibPINVOKE.CExoResMan_m_lstAsyncResQueue_set(swigCPtr, CExoLinkedListCRes.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoResMan_m_lstAsyncResQueue_get(swigCPtr);
-      CExoLinkedListCRes ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoLinkedListCRes(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public CRes m_pCurrentAsyncRes {
-    set {
-      NWNXLibPINVOKE.CExoResMan_m_pCurrentAsyncRes_set(swigCPtr, CRes.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoResMan_m_pCurrentAsyncRes_get(swigCPtr);
-      CRes ret = (cPtr == global::System.IntPtr.Zero) ? null : new CRes(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public CExoFile m_pAsyncFile {
-    set {
-      NWNXLibPINVOKE.CExoResMan_m_pAsyncFile_set(swigCPtr, CExoFile.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoResMan_m_pAsyncFile_get(swigCPtr);
-      CExoFile ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoFile(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public int m_bAsyncSuspended {
-    set {
-      NWNXLibPINVOKE.CExoResMan_m_bAsyncSuspended_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CExoResMan_m_bAsyncSuspended_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
   public uint m_nTotalDemands {
     set {
       NWNXLibPINVOKE.CExoResMan_m_nTotalDemands_set(swigCPtr, value);
@@ -488,10 +444,6 @@ public unsafe class CExoResMan : global::System.IDisposable {
     return retVal;
   }
 
-  public void ResumeServicing() {
-    NWNXLibPINVOKE.CExoResMan_ResumeServicing(swigCPtr);
-  }
-
   public void SetResObject(CResRef cResRef, ushort nType, CRes pNewRes) {
     NWNXLibPINVOKE.CExoResMan_SetResObject(swigCPtr, CResRef.getCPtr(cResRef), nType, CRes.getCPtr(pNewRes));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
@@ -500,10 +452,6 @@ public unsafe class CExoResMan : global::System.IDisposable {
   public int SetTotalResourceMemory(long totalAvailableMemory) {
     int retVal = NWNXLibPINVOKE.CExoResMan_SetTotalResourceMemory(swigCPtr, totalAvailableMemory);
     return retVal;
-  }
-
-  public void SuspendServicing() {
-    NWNXLibPINVOKE.CExoResMan_SuspendServicing(swigCPtr);
   }
 
   public void Update(uint nTimeSlice) {
@@ -557,11 +505,6 @@ public unsafe class CExoResMan : global::System.IDisposable {
     return retVal;
   }
 
-  public int CancelRequest(CRes pRes) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_CancelRequest(swigCPtr, CRes.getCPtr(pRes));
-    return retVal;
-  }
-
   public void* Demand(CRes pRes) {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CExoResMan_Demand(swigCPtr, CRes.getCPtr(pRes));
     return (void*)retVal;
@@ -577,11 +520,6 @@ public unsafe class CExoResMan : global::System.IDisposable {
 
   public int Release(CRes pRes) {
     int retVal = NWNXLibPINVOKE.CExoResMan_Release(swigCPtr, CRes.getCPtr(pRes));
-    return retVal;
-  }
-
-  public int Request(CRes pRes) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_Request(swigCPtr, CRes.getCPtr(pRes));
     return retVal;
   }
 
@@ -653,11 +591,6 @@ public unsafe class CExoResMan : global::System.IDisposable {
   public int GetFreeDiskSpace(CExoString sDirectory, ulong* pSpaceAvailable) {
     int retVal = NWNXLibPINVOKE.CExoResMan_GetFreeDiskSpace(swigCPtr, CExoString.getCPtr(sDirectory), (global::System.IntPtr)pSpaceAvailable);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return retVal;
-  }
-
-  public int ServiceCurrentAsyncRes() {
-    int retVal = NWNXLibPINVOKE.CExoResMan_ServiceCurrentAsyncRes(swigCPtr);
     return retVal;
   }
 
@@ -763,53 +696,28 @@ public unsafe class CExoResMan : global::System.IDisposable {
     return retVal;
   }
 
-  public int ServiceFromDirectory(CRes pRes, int bAsync) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromDirectory__SWIG_0(swigCPtr, CRes.getCPtr(pRes), bAsync);
-    return retVal;
-  }
-
   public int ServiceFromDirectory(CRes pRes) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromDirectory__SWIG_1(swigCPtr, CRes.getCPtr(pRes));
-    return retVal;
-  }
-
-  public int ServiceFromEncapsulated(CRes pRes, int bAsync) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromEncapsulated__SWIG_0(swigCPtr, CRes.getCPtr(pRes), bAsync);
+    int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromDirectory(swigCPtr, CRes.getCPtr(pRes));
     return retVal;
   }
 
   public int ServiceFromEncapsulated(CRes pRes) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromEncapsulated__SWIG_1(swigCPtr, CRes.getCPtr(pRes));
-    return retVal;
-  }
-
-  public int ServiceFromResFile(CRes pRes, int bAsync) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromResFile__SWIG_0(swigCPtr, CRes.getCPtr(pRes), bAsync);
+    int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromEncapsulated(swigCPtr, CRes.getCPtr(pRes));
     return retVal;
   }
 
   public int ServiceFromResFile(CRes pRes) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromResFile__SWIG_1(swigCPtr, CRes.getCPtr(pRes));
-    return retVal;
-  }
-
-  public int ServiceFromImage(CRes pRes, int bAsync) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromImage__SWIG_0(swigCPtr, CRes.getCPtr(pRes), bAsync);
+    int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromResFile(swigCPtr, CRes.getCPtr(pRes));
     return retVal;
   }
 
   public int ServiceFromImage(CRes pRes) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromImage__SWIG_1(swigCPtr, CRes.getCPtr(pRes));
-    return retVal;
-  }
-
-  public int ServiceFromManifest(CRes pRes, int bAsync) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromManifest__SWIG_0(swigCPtr, CRes.getCPtr(pRes), bAsync);
+    int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromImage(swigCPtr, CRes.getCPtr(pRes));
     return retVal;
   }
 
   public int ServiceFromManifest(CRes pRes) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromManifest__SWIG_1(swigCPtr, CRes.getCPtr(pRes));
+    int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromManifest(swigCPtr, CRes.getCPtr(pRes));
     return retVal;
   }
 

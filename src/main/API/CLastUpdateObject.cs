@@ -789,9 +789,9 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
     } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CLastUpdateObject_m_nClass_get(swigCPtr);
-      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 3);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 8);
 
-      return retVal; // byte[3]
+      return retVal; // byte[8]
     }
 
   }
@@ -802,9 +802,9 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
     } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CLastUpdateObject_m_nLevel_get(swigCPtr);
-      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 3);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 8);
 
-      return retVal; // byte[3]
+      return retVal; // byte[8]
     }
 
   }
@@ -1029,6 +1029,17 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
     } 
   }
 
+  public CExoArrayListTextureReplaceInfo m_lAnimationReplaceInfo {
+    set {
+      NWNXLibPINVOKE.CLastUpdateObject_m_lAnimationReplaceInfo_set(swigCPtr, CExoArrayListTextureReplaceInfo.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CLastUpdateObject_m_lAnimationReplaceInfo_get(swigCPtr);
+      CExoArrayListTextureReplaceInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListTextureReplaceInfo(cPtr, false);
+      return ret;
+    } 
+  }
+
   public Vector m_vHiliteColor {
     set {
       NWNXLibPINVOKE.CLastUpdateObject_m_vHiliteColor_set(swigCPtr, Vector.getCPtr(value));
@@ -1049,6 +1060,50 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
       return retVal;
     }
 
+  }
+
+  public int m_bUseable {
+    set {
+      NWNXLibPINVOKE.CLastUpdateObject_m_bUseable_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_bUseable_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public int m_nUiDiscoveryMask {
+    set {
+      NWNXLibPINVOKE.CLastUpdateObject_m_nUiDiscoveryMask_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nUiDiscoveryMask_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public int m_nTextBubbleOverrideType {
+    set {
+      NWNXLibPINVOKE.CLastUpdateObject_m_nTextBubbleOverrideType_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CLastUpdateObject_m_nTextBubbleOverrideType_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public CExoString m_sTextBubbleOverrideText {
+    set {
+      NWNXLibPINVOKE.CLastUpdateObject_m_sTextBubbleOverrideText_set(swigCPtr, CExoString.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CLastUpdateObject_m_sTextBubbleOverrideText_get(swigCPtr);
+      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
+      return ret;
+    } 
   }
 
   public int m_nUpdateDisplayNameSeq {
@@ -1085,6 +1140,16 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
   }
 
   public CLastUpdateObject() : this(NWNXLibPINVOKE.new_CLastUpdateObject(), true) {
+  }
+
+  public ObjectVisualTransformData GetVisualTransformData() {
+    ObjectVisualTransformData ret = new ObjectVisualTransformData(NWNXLibPINVOKE.CLastUpdateObject_GetVisualTransformData(swigCPtr), false);
+    return ret;
+  }
+
+  public void SetVisualTransformData(ObjectVisualTransformData data) {
+    NWNXLibPINVOKE.CLastUpdateObject_SetVisualTransformData(swigCPtr, ObjectVisualTransformData.getCPtr(data));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
   public void InitializeQuickbar() {

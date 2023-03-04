@@ -695,6 +695,50 @@ public unsafe class CNWSpell : global::System.IDisposable {
 
   }
 
+  public uint m_nTargetShape {
+    set {
+      NWNXLibPINVOKE.CNWSpell_m_nTargetShape_set(swigCPtr, value);
+    } 
+    get {
+      uint retVal = NWNXLibPINVOKE.CNWSpell_m_nTargetShape_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public float m_nTargetSizeX {
+    set {
+      NWNXLibPINVOKE.CNWSpell_m_nTargetSizeX_set(swigCPtr, value);
+    } 
+    get {
+      float retVal = NWNXLibPINVOKE.CNWSpell_m_nTargetSizeX_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public float m_nTargetSizeY {
+    set {
+      NWNXLibPINVOKE.CNWSpell_m_nTargetSizeY_set(swigCPtr, value);
+    } 
+    get {
+      float retVal = NWNXLibPINVOKE.CNWSpell_m_nTargetSizeY_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public uint m_nTargetFlags {
+    set {
+      NWNXLibPINVOKE.CNWSpell_m_nTargetFlags_set(swigCPtr, value);
+    } 
+    get {
+      uint retVal = NWNXLibPINVOKE.CNWSpell_m_nTargetFlags_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public CNWSpell() : this(NWNXLibPINVOKE.new_CNWSpell(), true) {
   }
 

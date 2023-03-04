@@ -155,6 +155,28 @@ public unsafe class LerpFloat : global::System.IDisposable {
 
   }
 
+  public int m_behavior_flags {
+    set {
+      NWNXLibPINVOKE.LerpFloat_m_behavior_flags_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.LerpFloat_m_behavior_flags_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public int m_repeats_remaining {
+    set {
+      NWNXLibPINVOKE.LerpFloat_m_repeats_remaining_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.LerpFloat_m_repeats_remaining_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public unsafe class TimeType : global::System.IDisposable {
     private global::System.Runtime.InteropServices.HandleRef swigCPtr;
     protected bool swigCMemOwn;
@@ -409,13 +431,19 @@ public unsafe class LerpFloat : global::System.IDisposable {
   public LerpFloat() : this(NWNXLibPINVOKE.new_LerpFloat__SWIG_1(), true) {
   }
 
-  public LerpFloat(LerpTimerType type, float to, float from, int lerpType, float lerpDuration, float existingProgress) : this(NWNXLibPINVOKE.new_LerpFloat__SWIG_2((int)type, to, from, lerpType, lerpDuration, existingProgress), true) {
+  public LerpFloat(LerpTimerType type, float to, float from, int lerpType, float lerpDuration, float existingProgress, int behaviorFlags, int repeatsRemaining) : this(NWNXLibPINVOKE.new_LerpFloat__SWIG_2((int)type, to, from, lerpType, lerpDuration, existingProgress, behaviorFlags, repeatsRemaining), true) {
   }
 
-  public LerpFloat(LerpTimerType type, float to, float from, int lerpType, float lerpDuration) : this(NWNXLibPINVOKE.new_LerpFloat__SWIG_3((int)type, to, from, lerpType, lerpDuration), true) {
+  public LerpFloat(LerpTimerType type, float to, float from, int lerpType, float lerpDuration, float existingProgress, int behaviorFlags) : this(NWNXLibPINVOKE.new_LerpFloat__SWIG_3((int)type, to, from, lerpType, lerpDuration, existingProgress, behaviorFlags), true) {
   }
 
-  public LerpFloat(LerpFloat other) : this(NWNXLibPINVOKE.new_LerpFloat__SWIG_4(LerpFloat.getCPtr(other)), true) {
+  public LerpFloat(LerpTimerType type, float to, float from, int lerpType, float lerpDuration, float existingProgress) : this(NWNXLibPINVOKE.new_LerpFloat__SWIG_4((int)type, to, from, lerpType, lerpDuration, existingProgress), true) {
+  }
+
+  public LerpFloat(LerpTimerType type, float to, float from, int lerpType, float lerpDuration) : this(NWNXLibPINVOKE.new_LerpFloat__SWIG_5((int)type, to, from, lerpType, lerpDuration), true) {
+  }
+
+  public LerpFloat(LerpFloat other) : this(NWNXLibPINVOKE.new_LerpFloat__SWIG_6(LerpFloat.getCPtr(other)), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 

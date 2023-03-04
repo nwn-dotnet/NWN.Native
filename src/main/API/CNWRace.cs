@@ -387,6 +387,17 @@ public unsafe class CNWRace : global::System.IDisposable {
 
   }
 
+  public ushort m_nFavoredEnemyFeat {
+    set {
+      NWNXLibPINVOKE.CNWRace_m_nFavoredEnemyFeat_set(swigCPtr, value);
+    } 
+    get {
+      ushort retVal = NWNXLibPINVOKE.CNWRace_m_nFavoredEnemyFeat_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public CNWRace() : this(NWNXLibPINVOKE.new_CNWRace(), true) {
   }
 

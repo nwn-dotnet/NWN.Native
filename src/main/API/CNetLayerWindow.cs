@@ -382,19 +382,6 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
 
   }
 
-  public NativeArray<int> m_pbTimeOutDelay {
-    set {
-      NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutDelay_set(swigCPtr, value);
-    } 
-    get {
-      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNetLayerWindow_m_pbTimeOutDelay_get(swigCPtr);
-      NativeArray<int> retVal = new NativeArray<int>(arrayPtr, 16);
-
-      return retVal; // int[16]
-    }
-
-  }
-
   public NativeArray<ushort> m_pIncomingBuffers {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_pIncomingBuffers_set(swigCPtr, value);
@@ -508,17 +495,6 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
     } 
     get {
       uint retVal = NWNXLibPINVOKE.CNetLayerWindow_m_nHighPriorityHoldBufferSize_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public int m_bCrapNetBandwidthNoSend {
-    set {
-      NWNXLibPINVOKE.CNetLayerWindow_m_bCrapNetBandwidthNoSend_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CNetLayerWindow_m_bCrapNetBandwidthNoSend_get(swigCPtr);
       return retVal;
     }
 

@@ -101,17 +101,6 @@ public unsafe class CRes : global::System.IDisposable {
 
   }
 
-  public ushort m_nRequests {
-    set {
-      NWNXLibPINVOKE.CRes_m_nRequests_set(swigCPtr, value);
-    } 
-    get {
-      ushort retVal = NWNXLibPINVOKE.CRes_m_nRequests_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
   public RESID m_nID {
     set {
       NWNXLibPINVOKE.CRes_m_nID_set(swigCPtr, RESID.getCPtr(value));
@@ -229,11 +218,6 @@ public unsafe class CRes : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public int CancelRequest() {
-    int retVal = NWNXLibPINVOKE.CRes_CancelRequest(swigCPtr);
-    return retVal;
-  }
-
   public void* Demand() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.CRes_Demand(swigCPtr);
     return (void*)retVal;
@@ -269,11 +253,6 @@ public unsafe class CRes : global::System.IDisposable {
 
   public virtual int GetFixedResourceDataOffset() {
     int retVal = NWNXLibPINVOKE.CRes_GetFixedResourceDataOffset(swigCPtr);
-    return retVal;
-  }
-
-  public int GetRequests() {
-    int retVal = NWNXLibPINVOKE.CRes_GetRequests(swigCPtr);
     return retVal;
   }
 

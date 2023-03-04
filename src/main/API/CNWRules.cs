@@ -451,6 +451,11 @@ public unsafe class CNWRules : global::System.IDisposable {
     NWNXLibPINVOKE.CNWRules_UnloadAll(swigCPtr);
   }
 
+  public uint GetHighestDamageTypeFlag() {
+    uint retVal = NWNXLibPINVOKE.CNWRules_GetHighestDamageTypeFlag(swigCPtr);
+    return retVal;
+  }
+
   public CExoString GetRulesetStringEntry(CExoString label, CExoString whenMissing) {
     CExoString ret = new CExoString(NWNXLibPINVOKE.CNWRules_GetRulesetStringEntry(swigCPtr, CExoString.getCPtr(label), CExoString.getCPtr(whenMissing)), true);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
@@ -491,6 +496,10 @@ public unsafe class CNWRules : global::System.IDisposable {
 
   public void InitLegacyClassDefaults(byte nClass) {
     NWNXLibPINVOKE.CNWRules_InitLegacyClassDefaults(swigCPtr, nClass);
+  }
+
+  public void InitLegacyRaceDefaults(byte nRace) {
+    NWNXLibPINVOKE.CNWRules_InitLegacyRaceDefaults(swigCPtr, nRace);
   }
 
   public void LoadDifficultyInfo() {

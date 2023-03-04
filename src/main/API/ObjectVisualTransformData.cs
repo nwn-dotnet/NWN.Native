@@ -10,10 +10,12 @@
 
 namespace NWN.Native.API {
 
-public unsafe class ObjectVisualTransformData : CAurObjectVisualTransformData {
+public unsafe class ObjectVisualTransformData : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
+  protected bool swigCMemOwn;
 
-  internal ObjectVisualTransformData(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.ObjectVisualTransformData_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal ObjectVisualTransformData(global::System.IntPtr cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -21,7 +23,16 @@ public unsafe class ObjectVisualTransformData : CAurObjectVisualTransformData {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 
-  protected override void Dispose(bool disposing) {
+  ~ObjectVisualTransformData() {
+    Dispose(false);
+  }
+
+  public void Dispose() {
+    Dispose(true);
+    global::System.GC.SuppressFinalize(this);
+  }
+
+  protected virtual void Dispose(bool disposing) {
     lock(this) {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
@@ -30,7 +41,6 @@ public unsafe class ObjectVisualTransformData : CAurObjectVisualTransformData {
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
-      base.Dispose(disposing);
     }
   }
 
@@ -78,6 +88,17 @@ public unsafe class ObjectVisualTransformData : CAurObjectVisualTransformData {
 
   public static bool operator !=(ObjectVisualTransformData left, ObjectVisualTransformData right) {
     return !Equals(left, right);
+  }
+
+  public SWIGTYPE_p_std__mapT_int_CAurObjectVisualTransformData_t m_scopes {
+    set {
+      NWNXLibPINVOKE.ObjectVisualTransformData_m_scopes_set(swigCPtr, SWIGTYPE_p_std__mapT_int_CAurObjectVisualTransformData_t.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.ObjectVisualTransformData_m_scopes_get(swigCPtr);
+      SWIGTYPE_p_std__mapT_int_CAurObjectVisualTransformData_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__mapT_int_CAurObjectVisualTransformData_t(cPtr, false);
+      return ret;
+    } 
   }
 
   public ObjectVisualTransformData() : this(NWNXLibPINVOKE.new_ObjectVisualTransformData(), true) {

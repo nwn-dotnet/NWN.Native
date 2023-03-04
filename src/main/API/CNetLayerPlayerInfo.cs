@@ -365,6 +365,17 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
 
   }
 
+  public int m_nPatchPostfix {
+    set {
+      NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nPatchPostfix_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nPatchPostfix_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public CExoString m_sCommitHash {
     set {
       NWNXLibPINVOKE.CNetLayerPlayerInfo_m_sCommitHash_set(swigCPtr, CExoString.getCPtr(value));

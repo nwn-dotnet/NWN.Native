@@ -1063,6 +1063,61 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
 
   }
 
+  public int m_bUseable {
+    set {
+      NWNXLibPINVOKE.CNWSObject_m_bUseable_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWSObject_m_bUseable_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public float m_fVisibleDistance {
+    set {
+      NWNXLibPINVOKE.CNWSObject_m_fVisibleDistance_set(swigCPtr, value);
+    } 
+    get {
+      float retVal = NWNXLibPINVOKE.CNWSObject_m_fVisibleDistance_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public int m_nUiDiscoveryMask {
+    set {
+      NWNXLibPINVOKE.CNWSObject_m_nUiDiscoveryMask_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWSObject_m_nUiDiscoveryMask_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public int m_nTextBubbleOverrideType {
+    set {
+      NWNXLibPINVOKE.CNWSObject_m_nTextBubbleOverrideType_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWSObject_m_nTextBubbleOverrideType_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public CExoString m_sTextBubbleOverrideText {
+    set {
+      NWNXLibPINVOKE.CNWSObject_m_sTextBubbleOverrideText_set(swigCPtr, CExoString.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSObject_m_sTextBubbleOverrideText_get(swigCPtr);
+      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
+      return ret;
+    } 
+  }
+
   public CNWSTransition m_pTransition {
     set {
       NWNXLibPINVOKE.CNWSObject_m_pTransition_set(swigCPtr, CNWSTransition.getCPtr(value));
@@ -1114,6 +1169,17 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSObject_m_lTextureReplaceInfo_get(swigCPtr);
+      CExoArrayListTextureReplaceInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListTextureReplaceInfo(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public CExoArrayListTextureReplaceInfo m_lAnimationReplaceInfo {
+    set {
+      NWNXLibPINVOKE.CNWSObject_m_lAnimationReplaceInfo_set(swigCPtr, CExoArrayListTextureReplaceInfo.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSObject_m_lAnimationReplaceInfo_get(swigCPtr);
       CExoArrayListTextureReplaceInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListTextureReplaceInfo(cPtr, false);
       return ret;
     } 
@@ -1778,22 +1844,22 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     return retVal;
   }
 
-  public virtual int DoDamageResistance(CNWSCreature pDamager, int nDamage, ushort nFlags, int bSimulation, int bCombatDamage, int bBaseWeaponDamage) {
+  public virtual int DoDamageResistance(CNWSCreature pDamager, int nDamage, uint nFlags, int bSimulation, int bCombatDamage, int bBaseWeaponDamage) {
     int retVal = NWNXLibPINVOKE.CNWSObject_DoDamageResistance__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pDamager), nDamage, nFlags, bSimulation, bCombatDamage, bBaseWeaponDamage);
     return retVal;
   }
 
-  public virtual int DoDamageResistance(CNWSCreature pDamager, int nDamage, ushort nFlags, int bSimulation, int bCombatDamage) {
+  public virtual int DoDamageResistance(CNWSCreature pDamager, int nDamage, uint nFlags, int bSimulation, int bCombatDamage) {
     int retVal = NWNXLibPINVOKE.CNWSObject_DoDamageResistance__SWIG_1(swigCPtr, CNWSCreature.getCPtr(pDamager), nDamage, nFlags, bSimulation, bCombatDamage);
     return retVal;
   }
 
-  public virtual int GetMaximumDamageResistanceVsDamageFlag(ushort nDamageFlag, int* nBestIndex) {
+  public virtual int GetMaximumDamageResistanceVsDamageFlag(uint nDamageFlag, int* nBestIndex) {
     int retVal = NWNXLibPINVOKE.CNWSObject_GetMaximumDamageResistanceVsDamageFlag(swigCPtr, nDamageFlag, nBestIndex);
     return retVal;
   }
 
-  public virtual int DoDamageImmunity(CNWSCreature pDamager, int nDamage, ushort nFlags, int bSimulation, int bCombatDamage) {
+  public virtual int DoDamageImmunity(CNWSCreature pDamager, int nDamage, uint nFlags, int bSimulation, int bCombatDamage) {
     int retVal = NWNXLibPINVOKE.CNWSObject_DoDamageImmunity(swigCPtr, CNWSCreature.getCPtr(pDamager), nDamage, nFlags, bSimulation, bCombatDamage);
     return retVal;
   }
@@ -1803,12 +1869,12 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     return retVal;
   }
 
-  public virtual byte GetDamageImmunityByFlags(ushort nFlags) {
+  public virtual byte GetDamageImmunityByFlags(uint nFlags) {
     byte retVal = NWNXLibPINVOKE.CNWSObject_GetDamageImmunityByFlags(swigCPtr, nFlags);
     return retVal;
   }
 
-  public void SetDamageImmunity(ushort nFlags, int nValue) {
+  public void SetDamageImmunity(uint nFlags, int nValue) {
     NWNXLibPINVOKE.CNWSObject_SetDamageImmunity(swigCPtr, nFlags, nValue);
   }
 
@@ -1936,7 +2002,7 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     return ret;
   }
 
-  public int GetLastDamageAmountByFlags(int nDamageFlags) {
+  public int GetLastDamageAmountByFlags(uint nDamageFlags) {
     int retVal = NWNXLibPINVOKE.CNWSObject_GetLastDamageAmountByFlags(swigCPtr, nDamageFlags);
     return retVal;
   }
@@ -2141,6 +2207,14 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     NWNXLibPINVOKE.CNWSObject_LoadTextureOverrides(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
   }
 
+  public void SaveAnimationOverrides(CResGFF pRes, CResStruct pStruct) {
+    NWNXLibPINVOKE.CNWSObject_SaveAnimationOverrides(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+  }
+
+  public void LoadAnimationOverrides(CResGFF pRes, CResStruct pStruct) {
+    NWNXLibPINVOKE.CNWSObject_LoadAnimationOverrides(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+  }
+
   public void LoadSqliteDatabase(CResGFF pRes, CResStruct pStruct) {
     NWNXLibPINVOKE.CNWSObject_LoadSqliteDatabase(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
   }
@@ -2190,6 +2264,11 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
 
   public void SetTextureReplace(CExoString sOld, CExoString sNew) {
     NWNXLibPINVOKE.CNWSObject_SetTextureReplace(swigCPtr, CExoString.getCPtr(sOld), CExoString.getCPtr(sNew));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void SetAnimationReplace(CExoString sOld, CExoString sNew) {
+    NWNXLibPINVOKE.CNWSObject_SetAnimationReplace(swigCPtr, CExoString.getCPtr(sOld), CExoString.getCPtr(sNew));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 

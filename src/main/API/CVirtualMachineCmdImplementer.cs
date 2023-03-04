@@ -121,13 +121,21 @@ public unsafe class CVirtualMachineCmdImplementer : global::System.IDisposable {
     return retVal;
   }
 
-  public virtual void RunScriptCallback(CExoString sFileName) {
-    NWNXLibPINVOKE.CVirtualMachineCmdImplementer_RunScriptCallback(swigCPtr, CExoString.getCPtr(sFileName));
+  public virtual void RunScriptCallback(CExoString psFileName, int nRecursionLevel) {
+    NWNXLibPINVOKE.CVirtualMachineCmdImplementer_RunScriptCallback(swigCPtr, CExoString.getCPtr(psFileName), nRecursionLevel);
+  }
+
+  public virtual void RunScriptEndCallback(CExoString psFileName, int nRecursionLevel) {
+    NWNXLibPINVOKE.CVirtualMachineCmdImplementer_RunScriptEndCallback(swigCPtr, CExoString.getCPtr(psFileName), nRecursionLevel);
+  }
+
+  public virtual void ReportError(CExoString sFileName, int nError, CExoString customMsg) {
+    NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ReportError__SWIG_0(swigCPtr, CExoString.getCPtr(sFileName), nError, CExoString.getCPtr(customMsg));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
   public virtual void ReportError(CExoString sFileName, int nError) {
-    NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ReportError(swigCPtr, CExoString.getCPtr(sFileName), nError);
+    NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ReportError__SWIG_1(swigCPtr, CExoString.getCPtr(sFileName), nError);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 

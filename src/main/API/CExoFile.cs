@@ -157,20 +157,6 @@ public unsafe class CExoFile : global::System.IDisposable {
     return retVal;
   }
 
-  public void ReadAsync(void* ptr, uint size, uint number) {
-    NWNXLibPINVOKE.CExoFile_ReadAsync(swigCPtr, (global::System.IntPtr)ptr, size, number);
-  }
-
-  public int ReadAsyncComplete() {
-    int retVal = NWNXLibPINVOKE.CExoFile_ReadAsyncComplete(swigCPtr);
-    return retVal;
-  }
-
-  public uint ReadAsyncBytesRead() {
-    uint retVal = NWNXLibPINVOKE.CExoFile_ReadAsyncBytesRead(swigCPtr);
-    return retVal;
-  }
-
   public uint Write(void* ptr, uint size, uint number) {
     uint retVal = NWNXLibPINVOKE.CExoFile_Write__SWIG_0(swigCPtr, (global::System.IntPtr)ptr, size, number);
     return retVal;

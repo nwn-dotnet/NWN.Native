@@ -2054,6 +2054,17 @@ public unsafe class CNWSCreature : CNWSObject {
 
   }
 
+  public uint m_oidCommandingPlayer {
+    set {
+      NWNXLibPINVOKE.CNWSCreature_m_oidCommandingPlayer_set(swigCPtr, value);
+    } 
+    get {
+      uint retVal = NWNXLibPINVOKE.CNWSCreature_m_oidCommandingPlayer_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public int m_nOriginalFactionId {
     set {
       NWNXLibPINVOKE.CNWSCreature_m_nOriginalFactionId_set(swigCPtr, value);
@@ -3298,8 +3309,8 @@ public unsafe class CNWSCreature : CNWSObject {
     return retVal;
   }
 
-  public ushort GetDamageFlags() {
-    ushort retVal = NWNXLibPINVOKE.CNWSCreature_GetDamageFlags(swigCPtr);
+  public uint GetDamageFlags() {
+    uint retVal = NWNXLibPINVOKE.CNWSCreature_GetDamageFlags(swigCPtr);
     return retVal;
   }
 

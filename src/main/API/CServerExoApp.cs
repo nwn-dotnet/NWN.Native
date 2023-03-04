@@ -946,6 +946,27 @@ public unsafe class CServerExoApp : CBaseExoApp {
     return retVal;
   }
 
+  public AdvertLUT GetNWSyncAdvertLUT() {
+    AdvertLUT ret = new AdvertLUT(NWNXLibPINVOKE.CServerExoApp_GetNWSyncAdvertLUT(swigCPtr), false);
+    return ret;
+  }
+
+  public void SetGameObjectUpdateIntervalTarget(int target) {
+    NWNXLibPINVOKE.CServerExoApp_SetGameObjectUpdateIntervalTarget(swigCPtr, target);
+  }
+
+  public void SetGameObjectUpdateIntervalTargetLoading(int target) {
+    NWNXLibPINVOKE.CServerExoApp_SetGameObjectUpdateIntervalTargetLoading(swigCPtr, target);
+  }
+
+  public void SetGameObjectUpdateMessageLimit(int target) {
+    NWNXLibPINVOKE.CServerExoApp_SetGameObjectUpdateMessageLimit(swigCPtr, target);
+  }
+
+  public void SetGameObjectUpdateMessageLimitLoading(int target) {
+    NWNXLibPINVOKE.CServerExoApp_SetGameObjectUpdateMessageLimitLoading(swigCPtr, target);
+  }
+
   public void _Destructor() {
     NWNXLibPINVOKE.CServerExoApp__Destructor(swigCPtr);
   }

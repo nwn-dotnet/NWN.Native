@@ -134,17 +134,6 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
     } 
   }
 
-  public CExoFile m_pAsyncExoFile {
-    set {
-      NWNXLibPINVOKE.CExoPackedFile_m_pAsyncExoFile_set(swigCPtr, CExoFile.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoPackedFile_m_pAsyncExoFile_get(swigCPtr);
-      CExoFile ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoFile(cPtr, false);
-      return ret;
-    } 
-  }
-
   public int m_nRefCount {
     set {
       NWNXLibPINVOKE.CExoPackedFile_m_nRefCount_set(swigCPtr, value);
@@ -156,34 +145,12 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
 
   }
 
-  public int m_nAsyncRefCount {
-    set {
-      NWNXLibPINVOKE.CExoPackedFile_m_nAsyncRefCount_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CExoPackedFile_m_nAsyncRefCount_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
   public int m_bLoaded {
     set {
       NWNXLibPINVOKE.CExoPackedFile_m_bLoaded_set(swigCPtr, value);
     } 
     get {
       int retVal = NWNXLibPINVOKE.CExoPackedFile_m_bLoaded_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public int m_bAsyncLoaded {
-    set {
-      NWNXLibPINVOKE.CExoPackedFile_m_bAsyncLoaded_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CExoPackedFile_m_bAsyncLoaded_get(swigCPtr);
       return retVal;
     }
 
@@ -207,17 +174,8 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
     NWNXLibPINVOKE.CExoPackedFile_AddRefCount(swigCPtr);
   }
 
-  public virtual void AddAsyncRefCount() {
-    NWNXLibPINVOKE.CExoPackedFile_AddAsyncRefCount(swigCPtr);
-  }
-
   public virtual int CloseFile() {
     int retVal = NWNXLibPINVOKE.CExoPackedFile_CloseFile(swigCPtr);
-    return retVal;
-  }
-
-  public virtual int CloseAsyncFile() {
-    int retVal = NWNXLibPINVOKE.CExoPackedFile_CloseAsyncFile(swigCPtr);
     return retVal;
   }
 
@@ -231,12 +189,6 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
 
   public virtual CExoFile GetFile() {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoPackedFile_GetFile(swigCPtr);
-    CExoFile ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoFile(cPtr, false);
-    return ret;
-  }
-
-  public virtual CExoFile GetAsyncFile() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoPackedFile_GetAsyncFile(swigCPtr);
     CExoFile ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoFile(cPtr, false);
     return ret;
   }
@@ -259,11 +211,6 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
 
   public virtual int OpenFile(byte* pCipher) {
     int retVal = NWNXLibPINVOKE.CExoPackedFile_OpenFile__SWIG_1(swigCPtr, pCipher);
-    return retVal;
-  }
-
-  public virtual int OpenAsyncFile() {
-    int retVal = NWNXLibPINVOKE.CExoPackedFile_OpenAsyncFile(swigCPtr);
     return retVal;
   }
 

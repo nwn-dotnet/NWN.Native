@@ -90,6 +90,9 @@ public unsafe class CUUID : global::System.IDisposable {
     return !Equals(left, right);
   }
 
+  public CUUID() : this(NWNXLibPINVOKE.new_CUUID(), true) {
+  }
+
   public ulong ab {
     set {
       NWNXLibPINVOKE.CUUID_ab_set(swigCPtr, value);
@@ -112,7 +115,72 @@ public unsafe class CUUID : global::System.IDisposable {
 
   }
 
-  public CUUID() : this(NWNXLibPINVOKE.new_CUUID(), true) {
+  public bool empty() {
+    bool ret = NWNXLibPINVOKE.CUUID_empty(swigCPtr);
+    return ret;
+  }
+
+  public void clear() {
+    NWNXLibPINVOKE.CUUID_clear(swigCPtr);
+  }
+
+  public bool _OpEquals(CUUID other) {
+    bool ret = NWNXLibPINVOKE.CUUID__OpEquals(swigCPtr, CUUID.getCPtr(other));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public bool _OpNotEquals(CUUID other) {
+    bool ret = NWNXLibPINVOKE.CUUID__OpNotEquals(swigCPtr, CUUID.getCPtr(other));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public bool _OpLessThan(CUUID other) {
+    bool ret = NWNXLibPINVOKE.CUUID__OpLessThan(swigCPtr, CUUID.getCPtr(other));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public string pretty() {
+    string ret = NWNXLibPINVOKE.CUUID_pretty(swigCPtr);
+    return ret;
+  }
+
+  public string base62() {
+    string ret = NWNXLibPINVOKE.CUUID_base62(swigCPtr);
+    return ret;
+  }
+
+  public string str() {
+    string ret = NWNXLibPINVOKE.CUUID_str(swigCPtr);
+    return ret;
+  }
+
+  public static CUUID uuid0() {
+    CUUID ret = new CUUID(NWNXLibPINVOKE.CUUID_uuid0(), true);
+    return ret;
+  }
+
+  public static CUUID uuid1() {
+    CUUID ret = new CUUID(NWNXLibPINVOKE.CUUID_uuid1(), true);
+    return ret;
+  }
+
+  public static CUUID uuid4() {
+    CUUID ret = new CUUID(NWNXLibPINVOKE.CUUID_uuid4(), true);
+    return ret;
+  }
+
+  public static CUUID rebuild(ulong ab, ulong cd) {
+    CUUID ret = new CUUID(NWNXLibPINVOKE.CUUID_rebuild__SWIG_0(ab, cd), true);
+    return ret;
+  }
+
+  public static CUUID rebuild(string uustr) {
+    CUUID ret = new CUUID(NWNXLibPINVOKE.CUUID_rebuild__SWIG_1(uustr), true);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
   }
 
 }

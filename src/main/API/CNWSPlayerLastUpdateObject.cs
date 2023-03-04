@@ -376,9 +376,9 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
     } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_pKnownSpellUsesLeft_get(swigCPtr);
-      TwoDimNativeArray<byte> retVal = new TwoDimNativeArray<byte>(arrayPtr, 3, 10);
+      TwoDimNativeArray<byte> retVal = new TwoDimNativeArray<byte>(arrayPtr, 8, 10);
 
-      return retVal; // byte[3][10]
+      return retVal; // byte[8][10]
     }
 
   }

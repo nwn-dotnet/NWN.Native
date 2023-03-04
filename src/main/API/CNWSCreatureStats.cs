@@ -1303,26 +1303,26 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
 
   }
 
-  public byte m_nHeadVariation {
+  public ushort m_nHeadVariation {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nHeadVariation_set(swigCPtr, value);
     } 
     get {
-      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nHeadVariation_get(swigCPtr);
+      ushort retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nHeadVariation_get(swigCPtr);
       return retVal;
     }
 
   }
 
-  public NativeArray<byte> m_pPartVariation {
+  public NativeArray<ushort> m_pPartVariation {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_pPartVariation_set(swigCPtr, value);
     } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSCreatureStats_m_pPartVariation_get(swigCPtr);
-      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 19);
+      NativeArray<ushort> retVal = new NativeArray<ushort>(arrayPtr, 19);
 
-      return retVal; // byte[19]
+      return retVal; // ushort[19]
     }
 
   }
@@ -2008,6 +2008,14 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   public byte GetFeatSourceClass(ushort nFeat) {
     byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetFeatSourceClass(swigCPtr, nFeat);
     return retVal;
+  }
+
+  public static void GetStatBonusesFromFeats(CExoArrayListUInt16 m_pFeats, int* pMods, int bSubtractBonuses) {
+    NWNXLibPINVOKE.CNWSCreatureStats_GetStatBonusesFromFeats__SWIG_0(CExoArrayListUInt16.getCPtr(m_pFeats), pMods, bSubtractBonuses);
+  }
+
+  public static void GetStatBonusesFromFeats(CExoArrayListUInt16 m_pFeats, int* pMods) {
+    NWNXLibPINVOKE.CNWSCreatureStats_GetStatBonusesFromFeats__SWIG_1(CExoArrayListUInt16.getCPtr(m_pFeats), pMods);
   }
 
   public void ComputeFeatBonuses(CExoArrayListUInt16 m_pFeats, int bSubtractBonuses) {

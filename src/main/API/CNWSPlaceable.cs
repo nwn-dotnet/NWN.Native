@@ -499,17 +499,6 @@ public unsafe class CNWSPlaceable : CNWSObject {
 
   }
 
-  public int m_bUseable {
-    set {
-      NWNXLibPINVOKE.CNWSPlaceable_m_bUseable_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CNWSPlaceable_m_bUseable_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
   public int m_bPickable {
     set {
       NWNXLibPINVOKE.CNWSPlaceable_m_bPickable_set(swigCPtr, value);
