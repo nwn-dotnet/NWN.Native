@@ -1142,11 +1142,6 @@ public unsafe class CLastUpdateObject : global::System.IDisposable {
   public CLastUpdateObject() : this(NWNXLibPINVOKE.new_CLastUpdateObject(), true) {
   }
 
-  public ObjectVisualTransformData GetVisualTransformData() {
-    ObjectVisualTransformData ret = new ObjectVisualTransformData(NWNXLibPINVOKE.CLastUpdateObject_GetVisualTransformData(swigCPtr), false);
-    return ret;
-  }
-
   public void SetVisualTransformData(ObjectVisualTransformData data) {
     NWNXLibPINVOKE.CLastUpdateObject_SetVisualTransformData(swigCPtr, ObjectVisualTransformData.getCPtr(data));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();

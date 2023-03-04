@@ -281,11 +281,6 @@ public unsafe class CRes : global::System.IDisposable {
     return retVal;
   }
 
-  public int Request() {
-    int retVal = NWNXLibPINVOKE.CRes_Request(swigCPtr);
-    return retVal;
-  }
-
   public void SetID(RESID nNewID) {
     NWNXLibPINVOKE.CRes_SetID(swigCPtr, RESID.getCPtr(nNewID));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();

@@ -547,11 +547,6 @@ public unsafe class CNWSMessage : CNWMessage {
     return retVal;
   }
 
-  public int SendServerToPlayerUpdateFogColor(uint nSunFogColor, uint nMoonFogColor, uint oidArea) {
-    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateFogColor(swigCPtr, nSunFogColor, nMoonFogColor, oidArea);
-    return retVal;
-  }
-
   public int SendServerToPlayerUpdateFogAmount(byte nSunFogAmount, byte nMoonFogAmount, uint oidArea) {
     int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateFogAmount(swigCPtr, nSunFogAmount, nMoonFogAmount, oidArea);
     return retVal;
@@ -1647,11 +1642,6 @@ public unsafe class CNWSMessage : CNWMessage {
 
   public int HandlePlayerToServerPlayerList(CNWSPlayer pPlayer, byte nMinor) {
     int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerPlayerList(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return retVal;
-  }
-
-  public int SendServerToPlayerGuiEvent_Disable(uint nPlayerId, int nGuiElement, int bDisable) {
-    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiEvent_Disable(swigCPtr, nPlayerId, nGuiElement, bDisable);
     return retVal;
   }
 

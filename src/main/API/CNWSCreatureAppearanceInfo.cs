@@ -326,10 +326,6 @@ public unsafe class CNWSCreatureAppearanceInfo : global::System.IDisposable {
   public CNWSCreatureAppearanceInfo() : this(NWNXLibPINVOKE.new_CNWSCreatureAppearanceInfo(), true) {
   }
 
-  public void Clear() {
-    NWNXLibPINVOKE.CNWSCreatureAppearanceInfo_Clear(swigCPtr);
-  }
-
 }
 
 }

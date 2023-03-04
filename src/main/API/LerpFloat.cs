@@ -499,10 +499,6 @@ public unsafe class LerpFloat : global::System.IDisposable {
     return retVal;
   }
 
-  public void WriteGFF(CResGFF pRes, CResStruct pStruct, byte* szLabel) {
-    NWNXLibPINVOKE.LerpFloat_WriteGFF(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct), szLabel);
-  }
-
   public void AssignStatic(float to) {
     NWNXLibPINVOKE.LerpFloat_AssignStatic(swigCPtr, to);
   }

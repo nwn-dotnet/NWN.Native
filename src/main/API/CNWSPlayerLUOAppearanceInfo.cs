@@ -326,10 +326,6 @@ public unsafe class CNWSPlayerLUOAppearanceInfo : global::System.IDisposable {
   public CNWSPlayerLUOAppearanceInfo() : this(NWNXLibPINVOKE.new_CNWSPlayerLUOAppearanceInfo(), true) {
   }
 
-  public void Clear() {
-    NWNXLibPINVOKE.CNWSPlayerLUOAppearanceInfo_Clear(swigCPtr);
-  }
-
 }
 
 }
