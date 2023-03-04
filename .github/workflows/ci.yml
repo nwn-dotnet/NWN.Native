@@ -4,11 +4,13 @@ on:
   push:
     branches:
       - main
+      - build8193.35
     paths-ignore:
       - '**.md'
   pull_request:
     branches:
       - main
+      - build8193.35
     paths-ignore:
       - '**.md'
   workflow_dispatch:
@@ -68,25 +70,3 @@ jobs:
           name: Binaries
           path: bin/Release/
           if-no-files-found: error
-
-  nuget:
-    runs-on: ubuntu-20.04
-    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-    needs: build
-    steps:
-      - name: Setup .NET Core
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: '7.0.x'
-
-      - name: Download Release Artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: Binaries
-          path: bin/Release/
-
-      - name: NuGet Publish
-        run: dotnet nuget push bin/Release/*.nupkg --api-key ${{ secrets.NUGET_KEY }} --source https://api.nuget.org/v3/index.json
-        
-      - name: GitHub Publish
-        run: dotnet nuget push bin/Release/*.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source https://nuget.pkg.github.com/nwn-dotnet/index.json
