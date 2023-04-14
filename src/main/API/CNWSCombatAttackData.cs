@@ -206,9 +206,9 @@ public unsafe class CNWSCombatAttackData : global::System.IDisposable {
     } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSCombatAttackData_m_nDamage_get(swigCPtr);
-      NativeArray<short> retVal = new NativeArray<short>(arrayPtr, 13);
+      NativeArray<short> retVal = new NativeArray<short>(arrayPtr, 32);
 
-      return retVal; // short[13]
+      return retVal; // short[32]
     }
 
   }
@@ -463,16 +463,16 @@ public unsafe class CNWSCombatAttackData : global::System.IDisposable {
     NWNXLibPINVOKE.CNWSCombatAttackData_SetBaseDamage(swigCPtr, nDamage);
   }
 
-  public void SetDamage(ushort nDamageType, int nDamage) {
-    NWNXLibPINVOKE.CNWSCombatAttackData_SetDamage(swigCPtr, nDamageType, nDamage);
+  public void SetDamage(uint damageFlags, int nDamage) {
+    NWNXLibPINVOKE.CNWSCombatAttackData_SetDamage(swigCPtr, damageFlags, nDamage);
   }
 
-  public void AddDamage(ushort nDamageType, int nDamage) {
-    NWNXLibPINVOKE.CNWSCombatAttackData_AddDamage(swigCPtr, nDamageType, nDamage);
+  public void AddDamage(uint damageFlags, int nDamage) {
+    NWNXLibPINVOKE.CNWSCombatAttackData_AddDamage(swigCPtr, damageFlags, nDamage);
   }
 
-  public int GetDamage(ushort nDamageType) {
-    int retVal = NWNXLibPINVOKE.CNWSCombatAttackData_GetDamage(swigCPtr, nDamageType);
+  public int GetDamage(uint damageFlags) {
+    int retVal = NWNXLibPINVOKE.CNWSCombatAttackData_GetDamage(swigCPtr, damageFlags);
     return retVal;
   }
 

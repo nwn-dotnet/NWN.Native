@@ -200,6 +200,17 @@ public unsafe class CNWSkill : global::System.IDisposable {
 
   }
 
+  public int m_bHideFromLevelUp {
+    set {
+      NWNXLibPINVOKE.CNWSkill_m_bHideFromLevelUp_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWSkill_m_bHideFromLevelUp_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public CNWSkill() : this(NWNXLibPINVOKE.new_CNWSkill(), true) {
   }
 

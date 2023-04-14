@@ -90,48 +90,11 @@ public unsafe class JsonEngineStructure : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_nlohmann__json m_json {
-    set {
-      NWNXLibPINVOKE.JsonEngineStructure_m_json_set(swigCPtr, SWIGTYPE_p_nlohmann__json.getCPtr(value));
-      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    } 
-    get {
-      SWIGTYPE_p_nlohmann__json ret = new SWIGTYPE_p_nlohmann__json(NWNXLibPINVOKE.JsonEngineStructure_m_json_get(swigCPtr), true);
-      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-      return ret;
-    } 
-  }
-
-  public CExoString m_error {
-    set {
-      NWNXLibPINVOKE.JsonEngineStructure_m_error_set(swigCPtr, CExoString.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.JsonEngineStructure_m_error_get(swigCPtr);
-      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
-      return ret;
-    } 
-  }
-
   public JsonEngineStructure() : this(NWNXLibPINVOKE.new_JsonEngineStructure__SWIG_0(), true) {
   }
 
   public JsonEngineStructure(SWIGTYPE_p_nlohmann__json j, CExoString err) : this(NWNXLibPINVOKE.new_JsonEngineStructure__SWIG_1(SWIGTYPE_p_nlohmann__json.getCPtr(j), CExoString.getCPtr(err)), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public JsonEngineStructure(SWIGTYPE_p_nlohmann__json j) : this(NWNXLibPINVOKE.new_JsonEngineStructure__SWIG_2(SWIGTYPE_p_nlohmann__json.getCPtr(j)), true) {
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public JsonEngineStructure(JsonEngineStructure other) : this(NWNXLibPINVOKE.new_JsonEngineStructure__SWIG_3(JsonEngineStructure.getCPtr(other)), true) {
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public JsonEngineStructure _OpAssign(JsonEngineStructure other) {
-    JsonEngineStructure ret = new JsonEngineStructure(NWNXLibPINVOKE.JsonEngineStructure__OpAssign(swigCPtr, JsonEngineStructure.getCPtr(other)), false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
   }
 
   public bool IsEmpty() {

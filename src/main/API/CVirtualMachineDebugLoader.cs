@@ -101,9 +101,31 @@ public unsafe class CVirtualMachineDebugLoader : global::System.IDisposable {
 
   }
 
+  public SWIGTYPE_p_std__shared_ptrT_DataBlock_t m_pNDB {
+    set {
+      NWNXLibPINVOKE.CVirtualMachineDebugLoader_m_pNDB_set(swigCPtr, SWIGTYPE_p_std__shared_ptrT_DataBlock_t.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachineDebugLoader_m_pNDB_get(swigCPtr);
+      SWIGTYPE_p_std__shared_ptrT_DataBlock_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__shared_ptrT_DataBlock_t(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public int SetDebugInfo(SWIGTYPE_p_std__shared_ptrT_DataBlock_t pNDB) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebugLoader_SetDebugInfo(swigCPtr, SWIGTYPE_p_std__shared_ptrT_DataBlock_t.getCPtr(pNDB));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return retVal;
+  }
+
   public int DemandDebugInfo(CExoString psFileName) {
     int retVal = NWNXLibPINVOKE.CVirtualMachineDebugLoader_DemandDebugInfo(swigCPtr, CExoString.getCPtr(psFileName));
     return retVal;
+  }
+
+  public bool Verify() {
+    bool ret = NWNXLibPINVOKE.CVirtualMachineDebugLoader_Verify(swigCPtr);
+    return ret;
   }
 
   public byte* GetDataPtr() {

@@ -129,6 +129,58 @@ public unsafe class Vector : global::System.IDisposable {
   public Vector(float xx, float yy, float zz) : this(NWNXLibPINVOKE.new_Vector__SWIG_1(xx, yy, zz), true) {
   }
 
+  public bool _OpEquals(Vector v) {
+    bool ret = NWNXLibPINVOKE.Vector__OpEquals(swigCPtr, Vector.getCPtr(v));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public bool _OpNotEquals(Vector v) {
+    bool ret = NWNXLibPINVOKE.Vector__OpNotEquals(swigCPtr, Vector.getCPtr(v));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public Vector _OpIncrement(Vector v) {
+    Vector ret = new Vector(NWNXLibPINVOKE.Vector__OpIncrement(swigCPtr, Vector.getCPtr(v)), false);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public Vector _OpDecrement(Vector v) {
+    Vector ret = new Vector(NWNXLibPINVOKE.Vector__OpDecrement(swigCPtr, Vector.getCPtr(v)), false);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static float MagnitudeSquared(Vector v) {
+    float retVal = NWNXLibPINVOKE.Vector_MagnitudeSquared(Vector.getCPtr(v));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return retVal;
+  }
+
+  public static float Magnitude(Vector v) {
+    float retVal = NWNXLibPINVOKE.Vector_Magnitude(Vector.getCPtr(v));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return retVal;
+  }
+
+  public static float Dot(Vector v1, Vector v2) {
+    float retVal = NWNXLibPINVOKE.Vector_Dot(Vector.getCPtr(v1), Vector.getCPtr(v2));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return retVal;
+  }
+
+  public void Normalize() {
+    NWNXLibPINVOKE.Vector_Normalize__SWIG_0(swigCPtr);
+  }
+
+  public static Vector Lineproject(Vector p0, Vector p1, Vector a) {
+    Vector ret = new Vector(NWNXLibPINVOKE.Vector_Lineproject(Vector.getCPtr(p0), Vector.getCPtr(p1), Vector.getCPtr(a)), true);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
 }
 
 }

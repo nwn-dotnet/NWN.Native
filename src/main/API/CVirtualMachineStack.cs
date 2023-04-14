@@ -193,15 +193,6 @@ public unsafe class CVirtualMachineStack : global::System.IDisposable {
     NWNXLibPINVOKE.CVirtualMachineStack_ClearStack(swigCPtr);
   }
 
-  public int GetBasePointer() {
-    int retVal = NWNXLibPINVOKE.CVirtualMachineStack_GetBasePointer(swigCPtr);
-    return retVal;
-  }
-
-  public void SetBasePointer(int nSize) {
-    NWNXLibPINVOKE.CVirtualMachineStack_SetBasePointer(swigCPtr, nSize);
-  }
-
   public int GetStackPointer() {
     int retVal = NWNXLibPINVOKE.CVirtualMachineStack_GetStackPointer(swigCPtr);
     return retVal;

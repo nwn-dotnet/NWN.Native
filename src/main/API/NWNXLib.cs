@@ -11,6 +11,24 @@
 namespace NWN.Native.API {
 
 public static unsafe class NWNXLib {
+  public static Vector _OpAdd(Vector v1, Vector v2) {
+    Vector ret = new Vector(NWNXLibPINVOKE._OpAdd(Vector.getCPtr(v1), Vector.getCPtr(v2)), true);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static Vector _OpSubtract(Vector v1, Vector v2) {
+    Vector ret = new Vector(NWNXLibPINVOKE._OpSubtract__SWIG_0(Vector.getCPtr(v1), Vector.getCPtr(v2)), true);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static Vector _OpSubtract(Vector v) {
+    Vector ret = new Vector(NWNXLibPINVOKE._OpSubtract__SWIG_1(Vector.getCPtr(v)), true);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public static uint OBJECT_INVALID {
     get {
       uint retVal = NWNXLibPINVOKE.OBJECT_INVALID_get();
@@ -67,15 +85,180 @@ public static unsafe class NWNXLib {
 
   }
 
-  public static NWNXExportedGlobals ExportedGlobals {
+  public static CExoString g_sBuildNumber {
     set {
-      NWNXLibPINVOKE.ExportedGlobals_set(NWNXExportedGlobals.getCPtr(value));
+      NWNXLibPINVOKE.g_sBuildNumber_set(CExoString.getCPtr(value));
     } 
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.ExportedGlobals_get();
-      NWNXExportedGlobals ret = (cPtr == global::System.IntPtr.Zero) ? null : new NWNXExportedGlobals(cPtr, false);
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.g_sBuildNumber_get();
+      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
       return ret;
     } 
+  }
+
+  public static CExoString g_sBuildRevision {
+    set {
+      NWNXLibPINVOKE.g_sBuildRevision_set(CExoString.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.g_sBuildRevision_get();
+      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public static CExoString g_sBuildPostfix {
+    set {
+      NWNXLibPINVOKE.g_sBuildPostfix_set(CExoString.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.g_sBuildPostfix_get();
+      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public static CExoBase g_pExoBase {
+    set {
+      NWNXLibPINVOKE.g_pExoBase_set(CExoBase.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.g_pExoBase_get();
+      CExoBase ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoBase(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public static CExoResMan g_pExoResMan {
+    set {
+      NWNXLibPINVOKE.g_pExoResMan_set(CExoResMan.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.g_pExoResMan_get();
+      CExoResMan ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoResMan(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public static CVirtualMachine g_pVirtualMachine {
+    set {
+      NWNXLibPINVOKE.g_pVirtualMachine_set(CVirtualMachine.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.g_pVirtualMachine_get();
+      CVirtualMachine ret = (cPtr == global::System.IntPtr.Zero) ? null : new CVirtualMachine(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public static CScriptCompiler g_pScriptCompiler {
+    set {
+      NWNXLibPINVOKE.g_pScriptCompiler_set(CScriptCompiler.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.g_pScriptCompiler_get();
+      CScriptCompiler ret = (cPtr == global::System.IntPtr.Zero) ? null : new CScriptCompiler(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public static CAppManager g_pAppManager {
+    set {
+      NWNXLibPINVOKE.g_pAppManager_set(CAppManager.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.g_pAppManager_get();
+      CAppManager ret = (cPtr == global::System.IntPtr.Zero) ? null : new CAppManager(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public static CTlkTable g_pTlkTable {
+    set {
+      NWNXLibPINVOKE.g_pTlkTable_set(CTlkTable.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.g_pTlkTable_get();
+      CTlkTable ret = (cPtr == global::System.IntPtr.Zero) ? null : new CTlkTable(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public static CNWRules g_pRules {
+    set {
+      NWNXLibPINVOKE.g_pRules_set(CNWRules.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.g_pRules_get();
+      CNWRules ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWRules(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public static SWIGTYPE_p_CExoTaskManager g_pExoTaskManager {
+    set {
+      NWNXLibPINVOKE.g_pExoTaskManager_set(SWIGTYPE_p_CExoTaskManager.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.g_pExoTaskManager_get();
+      SWIGTYPE_p_CExoTaskManager ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CExoTaskManager(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public static int g_bEnableCombatDebugging {
+    set {
+      NWNXLibPINVOKE.g_bEnableCombatDebugging_set(value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.g_bEnableCombatDebugging_get();
+      return retVal;
+    }
+
+  }
+
+  public static int g_bEnableSavingThrowDebugging {
+    set {
+      NWNXLibPINVOKE.g_bEnableSavingThrowDebugging_set(value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.g_bEnableSavingThrowDebugging_get();
+      return retVal;
+    }
+
+  }
+
+  public static int g_bEnableMovementSpeedDebugging {
+    set {
+      NWNXLibPINVOKE.g_bEnableMovementSpeedDebugging_set(value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.g_bEnableMovementSpeedDebugging_get();
+      return retVal;
+    }
+
+  }
+
+  public static int g_bEnableHitDieDebugging {
+    set {
+      NWNXLibPINVOKE.g_bEnableHitDieDebugging_set(value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.g_bEnableHitDieDebugging_get();
+      return retVal;
+    }
+
+  }
+
+  public static int g_bExitProgram {
+    set {
+      NWNXLibPINVOKE.g_bExitProgram_set(value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.g_bExitProgram_get();
+      return retVal;
+    }
+
   }
 
   public static CExoString BuildNumber() {
@@ -86,6 +269,12 @@ public static unsafe class NWNXLib {
 
   public static CExoString BuildRevision() {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.BuildRevision();
+    CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
+    return ret;
+  }
+
+  public static CExoString BuildPostfix() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.BuildPostfix();
     CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
     return ret;
   }

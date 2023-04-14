@@ -398,6 +398,17 @@ public unsafe class CNWArea : global::System.IDisposable {
 
   }
 
+  public Vector m_vMoonDirection {
+    set {
+      NWNXLibPINVOKE.CNWArea_m_vMoonDirection_set(swigCPtr, Vector.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWArea_m_vMoonDirection_get(swigCPtr);
+      Vector ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector(cPtr, false);
+      return ret;
+    } 
+  }
+
   public uint m_nSunAmbientColor {
     set {
       NWNXLibPINVOKE.CNWArea_m_nSunAmbientColor_set(swigCPtr, value);
@@ -451,6 +462,17 @@ public unsafe class CNWArea : global::System.IDisposable {
       return retVal;
     }
 
+  }
+
+  public Vector m_vSunDirection {
+    set {
+      NWNXLibPINVOKE.CNWArea_m_vSunDirection_set(swigCPtr, Vector.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWArea_m_vSunDirection_get(swigCPtr);
+      Vector ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector(cPtr, false);
+      return ret;
+    } 
   }
 
   public int m_bUseDayNightCycle {

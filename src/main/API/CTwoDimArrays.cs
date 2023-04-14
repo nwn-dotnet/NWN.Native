@@ -1066,6 +1066,28 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
     } 
   }
 
+  public C2DA m_pDamageTypes {
+    set {
+      NWNXLibPINVOKE.CTwoDimArrays_m_pDamageTypes_set(swigCPtr, C2DA.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pDamageTypes_get(swigCPtr);
+      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public C2DA m_pDamageTypeGroups {
+    set {
+      NWNXLibPINVOKE.CTwoDimArrays_m_pDamageTypeGroups_set(swigCPtr, C2DA.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pDamageTypeGroups_get(swigCPtr);
+      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+      return ret;
+    } 
+  }
+
   public C2DA m_pXpBase {
     set {
       NWNXLibPINVOKE.CTwoDimArrays_m_pXpBase_set(swigCPtr, C2DA.getCPtr(value));

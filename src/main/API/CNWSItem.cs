@@ -219,41 +219,41 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
 
   }
 
-  public NativeArray<byte> m_nModelPart {
+  public NativeArray<ushort> m_nModelPart {
     set {
       NWNXLibPINVOKE.CNWSItem_m_nModelPart_set(swigCPtr, value);
     } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSItem_m_nModelPart_get(swigCPtr);
-      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 3);
+      NativeArray<ushort> retVal = new NativeArray<ushort>(arrayPtr, 3);
 
-      return retVal; // byte[3]
+      return retVal; // ushort[3]
     }
 
   }
 
-  public NativeArray<byte> m_nArmorModelPart {
+  public NativeArray<ushort> m_nArmorModelPart {
     set {
       NWNXLibPINVOKE.CNWSItem_m_nArmorModelPart_set(swigCPtr, value);
     } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSItem_m_nArmorModelPart_get(swigCPtr);
-      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 19);
+      NativeArray<ushort> retVal = new NativeArray<ushort>(arrayPtr, 19);
 
-      return retVal; // byte[19]
+      return retVal; // ushort[19]
     }
 
   }
 
-  public NativeArray<byte> m_nUnalteredArmorModelPart {
+  public NativeArray<ushort> m_nUnalteredArmorModelPart {
     set {
       NWNXLibPINVOKE.CNWSItem_m_nUnalteredArmorModelPart_set(swigCPtr, value);
     } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSItem_m_nUnalteredArmorModelPart_get(swigCPtr);
-      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 19);
+      NativeArray<ushort> retVal = new NativeArray<ushort>(arrayPtr, 19);
 
-      return retVal; // byte[19]
+      return retVal; // ushort[19]
     }
 
   }
@@ -696,8 +696,8 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
     return retVal;
   }
 
-  public ushort GetDamageFlags() {
-    ushort retVal = NWNXLibPINVOKE.CNWSItem_GetDamageFlags(swigCPtr);
+  public uint GetDamageFlags() {
+    uint retVal = NWNXLibPINVOKE.CNWSItem_GetDamageFlags(swigCPtr);
     return retVal;
   }
 

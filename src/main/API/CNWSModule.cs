@@ -558,6 +558,28 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
 
   }
 
+  public int m_nLastItemEquippedSlot {
+    set {
+      NWNXLibPINVOKE.CNWSModule_m_nLastItemEquippedSlot_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_nLastItemEquippedSlot_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public int m_nLastItemUnequippedSlot {
+    set {
+      NWNXLibPINVOKE.CNWSModule_m_nLastItemUnequippedSlot_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_nLastItemUnequippedSlot_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public uint m_oidLastRested {
     set {
       NWNXLibPINVOKE.CNWSModule_m_oidLastRested_set(swigCPtr, value);
@@ -899,6 +921,17 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
 
   }
 
+  public int m_nPartyControlMode {
+    set {
+      NWNXLibPINVOKE.CNWSModule_m_nPartyControlMode_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWSModule_m_nPartyControlMode_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public CExoArrayListUInt32 m_aGameObjectsLimbo {
     set {
       NWNXLibPINVOKE.CNWSModule_m_aGameObjectsLimbo_set(swigCPtr, CExoArrayListUInt32.getCPtr(value));
@@ -1162,6 +1195,17 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
       return retVal;
     }
 
+  }
+
+  public Vector m_vLastGuiEventVector {
+    set {
+      NWNXLibPINVOKE.CNWSModule_m_vLastGuiEventVector_set(swigCPtr, Vector.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_m_vLastGuiEventVector_get(swigCPtr);
+      Vector ret = (cPtr == global::System.IntPtr.Zero) ? null : new Vector(cPtr, false);
+      return ret;
+    } 
   }
 
   public uint m_oidLastPlayerToDoTileAction {

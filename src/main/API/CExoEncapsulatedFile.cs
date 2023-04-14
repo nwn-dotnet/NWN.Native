@@ -131,26 +131,13 @@ public unsafe class CExoEncapsulatedFile : CExoPackedFile {
     NWNXLibPINVOKE.CExoEncapsulatedFile_AddRefCount(swigCPtr);
   }
 
-  public override void AddAsyncRefCount() {
-    NWNXLibPINVOKE.CExoEncapsulatedFile_AddAsyncRefCount(swigCPtr);
-  }
-
   public override int CloseFile() {
     int retVal = NWNXLibPINVOKE.CExoEncapsulatedFile_CloseFile(swigCPtr);
     return retVal;
   }
 
-  public override int CloseAsyncFile() {
-    int retVal = NWNXLibPINVOKE.CExoEncapsulatedFile_CloseAsyncFile(swigCPtr);
-    return retVal;
-  }
-
   public override void DeleteRefCount() {
     NWNXLibPINVOKE.CExoEncapsulatedFile_DeleteRefCount(swigCPtr);
-  }
-
-  public override void DeleteAsyncRefCount() {
-    NWNXLibPINVOKE.CExoEncapsulatedFile_DeleteAsyncRefCount(swigCPtr);
   }
 
   public override uint GetResourceSize(RESID nID) {
@@ -174,20 +161,10 @@ public unsafe class CExoEncapsulatedFile : CExoPackedFile {
     return retVal;
   }
 
-  public override int OpenAsyncFile() {
-    int retVal = NWNXLibPINVOKE.CExoEncapsulatedFile_OpenAsyncFile(swigCPtr);
-    return retVal;
-  }
-
   public override uint ReadResource(RESID nID, void* pData, uint nSize, uint nDataOffset) {
     uint retVal = NWNXLibPINVOKE.CExoEncapsulatedFile_ReadResource(swigCPtr, RESID.getCPtr(nID), (global::System.IntPtr)pData, nSize, nDataOffset);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
-  }
-
-  public override void ReadResourceAsync(RESID nID, void* pData, uint nSize, uint nDataOffset) {
-    NWNXLibPINVOKE.CExoEncapsulatedFile_ReadResourceAsync(swigCPtr, RESID.getCPtr(nID), (global::System.IntPtr)pData, nSize, nDataOffset);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
   public override int LoadHeader(byte* expectOid, byte nType) {

@@ -101,6 +101,17 @@ public unsafe class CNWClass : global::System.IDisposable {
 
   }
 
+  public uint m_nShort {
+    set {
+      NWNXLibPINVOKE.CNWClass_m_nShort_set(swigCPtr, value);
+    } 
+    get {
+      uint retVal = NWNXLibPINVOKE.CNWClass_m_nShort_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public uint m_nNameLower {
     set {
       NWNXLibPINVOKE.CNWClass_m_nNameLower_set(swigCPtr, value);
@@ -651,11 +662,27 @@ public unsafe class CNWClass : global::System.IDisposable {
 
   }
 
+  public int m_bSkipSpellSelection {
+    set {
+      NWNXLibPINVOKE.CNWClass_m_bSkipSpellSelection_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWClass_m_bSkipSpellSelection_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public CNWClass() : this(NWNXLibPINVOKE.new_CNWClass(), true) {
   }
 
   public CExoString GetNameText() {
     CExoString ret = new CExoString(NWNXLibPINVOKE.CNWClass_GetNameText(swigCPtr), true);
+    return ret;
+  }
+
+  public CExoString GetShortNameText() {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CNWClass_GetShortNameText(swigCPtr), true);
     return ret;
   }
 

@@ -1262,13 +1262,13 @@ public unsafe class CNWSCreature : CNWSObject {
 
   }
 
-  public CExoArrayListCNWVisibilityNodePtr m_pVisibleCreaturesList {
+  public SWIGTYPE_p_CExoArrayListT_CNWVisibilityNode_t m_pVisibleCreaturesList {
     set {
-      NWNXLibPINVOKE.CNWSCreature_m_pVisibleCreaturesList_set(swigCPtr, CExoArrayListCNWVisibilityNodePtr.getCPtr(value));
+      NWNXLibPINVOKE.CNWSCreature_m_pVisibleCreaturesList_set(swigCPtr, SWIGTYPE_p_CExoArrayListT_CNWVisibilityNode_t.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_m_pVisibleCreaturesList_get(swigCPtr);
-      CExoArrayListCNWVisibilityNodePtr ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListCNWVisibilityNodePtr(cPtr, false);
+      SWIGTYPE_p_CExoArrayListT_CNWVisibilityNode_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CExoArrayListT_CNWVisibilityNode_t(cPtr, false);
       return ret;
     } 
   }
@@ -2049,6 +2049,17 @@ public unsafe class CNWSCreature : CNWSObject {
     } 
     get {
       uint retVal = NWNXLibPINVOKE.CNWSCreature_m_nMasterDroppedTimeOfDay_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public uint m_oidCommandingPlayer {
+    set {
+      NWNXLibPINVOKE.CNWSCreature_m_oidCommandingPlayer_set(swigCPtr, value);
+    } 
+    get {
+      uint retVal = NWNXLibPINVOKE.CNWSCreature_m_oidCommandingPlayer_get(swigCPtr);
       return retVal;
     }
 
@@ -3298,8 +3309,8 @@ public unsafe class CNWSCreature : CNWSObject {
     return retVal;
   }
 
-  public ushort GetDamageFlags() {
-    ushort retVal = NWNXLibPINVOKE.CNWSCreature_GetDamageFlags(swigCPtr);
+  public uint GetDamageFlags() {
+    uint retVal = NWNXLibPINVOKE.CNWSCreature_GetDamageFlags(swigCPtr);
     return retVal;
   }
 

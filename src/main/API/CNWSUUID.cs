@@ -112,12 +112,33 @@ public unsafe class CNWSUUID : global::System.IDisposable {
     } 
   }
 
+  public static void* GetMapPtr() {
+    global::System.IntPtr retVal = NWNXLibPINVOKE.CNWSUUID_GetMapPtr();
+    return (void*)retVal;
+  }
+
   public CNWSUUID(ICGameObject arg0) : this(NWNXLibPINVOKE.new_CNWSUUID(arg0 == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : arg0.GetInterfaceCPtr()), true) {
   }
 
-  public bool CanCarryUUID() {
-    bool ret = NWNXLibPINVOKE.CNWSUUID_CanCarryUUID(swigCPtr);
+  public static bool CanCarryUUID(int objectType) {
+    bool ret = NWNXLibPINVOKE.CNWSUUID_CanCarryUUID__SWIG_0(objectType);
     return ret;
+  }
+
+  public bool CanCarryUUID() {
+    bool ret = NWNXLibPINVOKE.CNWSUUID_CanCarryUUID__SWIG_1(swigCPtr);
+    return ret;
+  }
+
+  public static CExoString MakeRandom() {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CNWSUUID_MakeRandom(), true);
+    return ret;
+  }
+
+  public static uint LookupObjectIdByUUID(CExoString uuid) {
+    uint retVal = NWNXLibPINVOKE.CNWSUUID_LookupObjectIdByUUID(CExoString.getCPtr(uuid));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return retVal;
   }
 
   public bool TryAssign(CExoString uuid) {

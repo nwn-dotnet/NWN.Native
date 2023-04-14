@@ -338,6 +338,17 @@ public unsafe class CGameEffect : global::System.IDisposable {
     } 
   }
 
+  public int m_bIgnoreImmunity {
+    set {
+      NWNXLibPINVOKE.CGameEffect_m_bIgnoreImmunity_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CGameEffect_m_bIgnoreImmunity_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public CGameEffect(int bCreateNewID) : this(NWNXLibPINVOKE.new_CGameEffect__SWIG_0(bCreateNewID), true) {
   }
 
@@ -521,6 +532,15 @@ public unsafe class CGameEffect : global::System.IDisposable {
 
   public void SetSubType_Extraordinary() {
     NWNXLibPINVOKE.CGameEffect_SetSubType_Extraordinary(swigCPtr);
+  }
+
+  public int GetSubType_Unyielding() {
+    int retVal = NWNXLibPINVOKE.CGameEffect_GetSubType_Unyielding(swigCPtr);
+    return retVal;
+  }
+
+  public void SetSubType_Unyielding() {
+    NWNXLibPINVOKE.CGameEffect_SetSubType_Unyielding(swigCPtr);
   }
 
   public void _Destructor() {

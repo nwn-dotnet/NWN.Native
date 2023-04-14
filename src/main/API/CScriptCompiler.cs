@@ -603,9 +603,9 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CScriptCompiler_m_pchToken_get(swigCPtr);
-      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 512);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 8192);
 
-      return retVal; // byte[512]
+      return retVal; // byte[8192]
     }
 
   }
@@ -1612,23 +1612,6 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
 
   public void ClearCompiledScriptCode() {
     NWNXLibPINVOKE.CScriptCompiler_ClearCompiledScriptCode(swigCPtr);
-  }
-
-  public void Test_CompileAllScriptsInDirectory(CExoString sSourceDirectoryAlias, CExoString sTargetDirectoryAlias, CExoString sIdentifierFile) {
-    NWNXLibPINVOKE.CScriptCompiler_Test_CompileAllScriptsInDirectory(swigCPtr, CExoString.getCPtr(sSourceDirectoryAlias), CExoString.getCPtr(sTargetDirectoryAlias), CExoString.getCPtr(sIdentifierFile));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public int Test_CompareDirectoryContents(CExoString sSourceDirectoryAlias, CExoString sTargetDirectoryAlias) {
-    int retVal = NWNXLibPINVOKE.CScriptCompiler_Test_CompareDirectoryContents(swigCPtr, CExoString.getCPtr(sSourceDirectoryAlias), CExoString.getCPtr(sTargetDirectoryAlias));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return retVal;
-  }
-
-  public int Test_CompareFileInclusion(CExoString sTargetAlias, CExoString sBaseAlias, CExoStringList plFileNames, ushort nResType) {
-    int retVal = NWNXLibPINVOKE.CScriptCompiler_Test_CompareFileInclusion(swigCPtr, CExoString.getCPtr(sTargetAlias), CExoString.getCPtr(sBaseAlias), CExoStringList.getCPtr(plFileNames), nResType);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return retVal;
   }
 
   public void Initialize() {

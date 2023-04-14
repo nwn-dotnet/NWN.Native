@@ -424,6 +424,11 @@ public unsafe class CNWSMessage : CNWMessage {
     return retVal;
   }
 
+  public int SendServerToPlayerCamera_SetLimits(CNWSPlayer pPlayer, float fMinPitch, float fMaxPitch, float fMinDist, float fMaxDist) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_SetLimits(swigCPtr, CNWSPlayer.getCPtr(pPlayer), fMinPitch, fMaxPitch, fMinDist, fMaxDist);
+    return retVal;
+  }
+
   public int SendServerToPlayerLogin_CharacterQuery(CNWSPlayer pPlayer, byte* nNumClasses, int* pClasses, byte* pLevels, uint* nXP) {
     int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLogin_CharacterQuery(swigCPtr, CNWSPlayer.getCPtr(pPlayer), (global::System.IntPtr)nNumClasses, pClasses, pLevels, (global::System.IntPtr)nXP);
     return retVal;
@@ -542,8 +547,8 @@ public unsafe class CNWSMessage : CNWMessage {
     return retVal;
   }
 
-  public int SendServerToPlayerUpdateFogColor(uint nSunFogColor, uint nMoonFogColor, uint oidArea) {
-    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateFogColor(swigCPtr, nSunFogColor, nMoonFogColor, oidArea);
+  public int SendServerToPlayerUpdateFogColor(uint nSunFogColor, uint nMoonFogColor, uint oidArea, float fFadeTime) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateFogColor(swigCPtr, nSunFogColor, nMoonFogColor, oidArea, fFadeTime);
     return retVal;
   }
 
@@ -653,13 +658,8 @@ public unsafe class CNWSMessage : CNWMessage {
     return retVal;
   }
 
-  public int SendServerToPlayerGameObjUpdate(CNWSPlayer pPlayer) {
-    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdate__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer));
-    return retVal;
-  }
-
-  public int SendServerToPlayerGameObjUpdate(CNWSPlayer pPlayer, uint oidObjectToUpdate) {
-    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdate__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidObjectToUpdate);
+  public int SendServerToPlayerGameObjUpdate(CNWSPlayer pPlayer, uint oidObjectToUpdate, int nMessageLimit) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGameObjUpdate(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidObjectToUpdate, nMessageLimit);
     return retVal;
   }
 
@@ -731,8 +731,8 @@ public unsafe class CNWSMessage : CNWMessage {
     return retVal;
   }
 
-  public int SendServerToPlayerPlaceableUpdate_Useable(CNWSPlaceable pPlaceable) {
-    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerPlaceableUpdate_Useable(swigCPtr, CNWSPlaceable.getCPtr(pPlaceable));
+  public int SendServerToPlayerObjectUpdate_Useable(CNWSObject pObject) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerObjectUpdate_Useable(swigCPtr, CNWSObject.getCPtr(pObject));
     return retVal;
   }
 
@@ -1650,8 +1650,13 @@ public unsafe class CNWSMessage : CNWMessage {
     return retVal;
   }
 
-  public int SendServerToPlayerGuiEvent_Disable(uint nPlayerId, int nGuiElement, int bDisable) {
-    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiEvent_Disable(swigCPtr, nPlayerId, nGuiElement, bDisable);
+  public int SendServerToPlayerGuiEvent_Disable(CNWSPlayer pPlayer, int nGuiElement, int bDisable, uint oidTarget) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiEvent_Disable__SWIG_0(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nGuiElement, bDisable, oidTarget);
+    return retVal;
+  }
+
+  public int SendServerToPlayerGuiEvent_Disable(CNWSPlayer pPlayer, int nGuiElement, int bDisable) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerGuiEvent_Disable__SWIG_1(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nGuiElement, bDisable);
     return retVal;
   }
 
@@ -1679,6 +1684,32 @@ public unsafe class CNWSMessage : CNWMessage {
 
   public int HandlePlayerToServerNuiEvent(CNWSPlayer pPlayer, byte nMinor) {
     int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerNuiEvent(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
+  }
+
+  public int SendServerToPlayerSetShaderUniform_Float(CNWSPlayer player, byte idx, float v) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSetShaderUniform_Float(swigCPtr, CNWSPlayer.getCPtr(player), idx, v);
+    return retVal;
+  }
+
+  public int SendServerToPlayerSetShaderUniform_Int(CNWSPlayer player, byte idx, int v) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSetShaderUniform_Int(swigCPtr, CNWSPlayer.getCPtr(player), idx, v);
+    return retVal;
+  }
+
+  public int SendServerToPlayerSetShaderUniform_Vec(CNWSPlayer player, byte idx, Vector4 v) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSetShaderUniform_Vec(swigCPtr, CNWSPlayer.getCPtr(player), idx, Vector4.getCPtr(v));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return retVal;
+  }
+
+  public int SendServerToPlayerSetSpellTargetingData(CNWSPlayer player, int spell, int shape, float sizeX, float sizeY, int flags) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSetSpellTargetingData(swigCPtr, CNWSPlayer.getCPtr(player), spell, shape, sizeX, sizeY, flags);
+    return retVal;
+  }
+
+  public int SendServerToPlayerSetEnterTargetingModeData(CNWSPlayer player, int shape, float sizeX, float sizeY, int flags, float range, int spellId, int featId) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSetEnterTargetingModeData(swigCPtr, CNWSPlayer.getCPtr(player), shape, sizeX, sizeY, flags, range, spellId, featId);
     return retVal;
   }
 
@@ -1730,12 +1761,12 @@ public unsafe class CNWSMessage : CNWMessage {
     return retVal;
   }
 
-  public void AssignVisualEffectLists(CExoArrayListCLoopingVisualEffectPtr pTargetList, CExoArrayListCLoopingVisualEffectPtr pSourceList) {
-    NWNXLibPINVOKE.CNWSMessage_AssignVisualEffectLists(swigCPtr, CExoArrayListCLoopingVisualEffectPtr.getCPtr(pTargetList), CExoArrayListCLoopingVisualEffectPtr.getCPtr(pSourceList));
+  public void AssignVisualEffectLists(SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t pTargetList, SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t pSourceList) {
+    NWNXLibPINVOKE.CNWSMessage_AssignVisualEffectLists(swigCPtr, SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t.getCPtr(pTargetList), SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t.getCPtr(pSourceList));
   }
 
-  public int CompareVisualEffectLists(CExoArrayListCLoopingVisualEffectPtr pSourceList1, CExoArrayListCLoopingVisualEffectPtr pSourceList2) {
-    int retVal = NWNXLibPINVOKE.CNWSMessage_CompareVisualEffectLists(swigCPtr, CExoArrayListCLoopingVisualEffectPtr.getCPtr(pSourceList1), CExoArrayListCLoopingVisualEffectPtr.getCPtr(pSourceList2));
+  public int CompareVisualEffectLists(SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t pSourceList1, SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t pSourceList2) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_CompareVisualEffectLists(swigCPtr, SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t.getCPtr(pSourceList1), SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t.getCPtr(pSourceList2));
     return retVal;
   }
 

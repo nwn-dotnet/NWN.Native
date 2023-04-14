@@ -725,6 +725,17 @@ public unsafe class CNWSPlayer : CNWSClient {
     } 
   }
 
+  public uint m_oidCameraTarget {
+    set {
+      NWNXLibPINVOKE.CNWSPlayer_m_oidCameraTarget_set(swigCPtr, value);
+    } 
+    get {
+      uint retVal = NWNXLibPINVOKE.CNWSPlayer_m_oidCameraTarget_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public uint m_oidDungeonMasterAvatar {
     set {
       NWNXLibPINVOKE.CNWSPlayer_m_oidDungeonMasterAvatar_set(swigCPtr, value);

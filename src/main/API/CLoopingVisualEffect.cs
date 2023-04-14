@@ -134,12 +134,12 @@ public unsafe class CLoopingVisualEffect : global::System.IDisposable {
     } 
   }
 
+  public CLoopingVisualEffect() : this(NWNXLibPINVOKE.new_CLoopingVisualEffect(), true) {
+  }
+
   public int GetIsBeam() {
     int retVal = NWNXLibPINVOKE.CLoopingVisualEffect_GetIsBeam(swigCPtr);
     return retVal;
-  }
-
-  public CLoopingVisualEffect() : this(NWNXLibPINVOKE.new_CLoopingVisualEffect(), true) {
   }
 
 }

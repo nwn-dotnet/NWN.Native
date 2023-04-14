@@ -289,13 +289,13 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
 
   }
 
-  public CExoArrayListCNWVisibilityNodePtr m_lstVisibilityList {
+  public SWIGTYPE_p_CExoArrayListT_CNWVisibilityNode_t m_lstVisibilityList {
     set {
-      NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_lstVisibilityList_set(swigCPtr, CExoArrayListCNWVisibilityNodePtr.getCPtr(value));
+      NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_lstVisibilityList_set(swigCPtr, SWIGTYPE_p_CExoArrayListT_CNWVisibilityNode_t.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_lstVisibilityList_get(swigCPtr);
-      CExoArrayListCNWVisibilityNodePtr ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListCNWVisibilityNodePtr(cPtr, false);
+      SWIGTYPE_p_CExoArrayListT_CNWVisibilityNode_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CExoArrayListT_CNWVisibilityNode_t(cPtr, false);
       return ret;
     } 
   }
@@ -376,9 +376,9 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
     } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_pKnownSpellUsesLeft_get(swigCPtr);
-      TwoDimNativeArray<byte> retVal = new TwoDimNativeArray<byte>(arrayPtr, 3, 10);
+      TwoDimNativeArray<byte> retVal = new TwoDimNativeArray<byte>(arrayPtr, 8, 10);
 
-      return retVal; // byte[3][10]
+      return retVal; // byte[8][10]
     }
 
   }
