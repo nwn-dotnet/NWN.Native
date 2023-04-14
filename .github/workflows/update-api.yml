@@ -80,6 +80,7 @@ jobs:
         run: |
           echo "::set-output name=nwn_build::$(grep 'set(TARGET_NWN_BUILD ' ./nwnx/CMakeLists.txt | cut -d' ' -f2 | sed 's/)//')"
           echo "::set-output name=nwn_build_revision::$(grep 'set(TARGET_NWN_BUILD_REVISION ' ./nwnx/CMakeLists.txt | cut -d' ' -f2 | sed 's/)//')"
+          echo "::set-output name=nwn_build_postfix::$(grep 'set(TARGET_NWN_BUILD_POSTFIX ' ./nwnx/CMakeLists.txt | cut -d' ' -f2 | sed 's/)//')"
 
       - name: Commit Changes
         run: |
@@ -88,5 +89,5 @@ jobs:
           git config user.email 10942655+jhett12321@users.noreply.github.com
           git add -A src/main/API/
           git diff-index --quiet HEAD src/main/API/ ||
-          git commit -m "Update APIs (NWNX: ${{ steps.revision.outputs.nwnx_sha_short }}, NWN: ${{ steps.version.outputs.nwn_build }}.${{ steps.version.outputs.nwn_build_revision }})." &&
-          if [ ${{ github.event.inputs.tag }} != '' ]; then git tag ${{ github.event.inputs.tag }} && git push --atomic origin main ${{ github.event.inputs.tag }}; else git push; fi;
+          git commit -m "Update APIs (NWNX: ${{ steps.revision.outputs.nwnx_sha_short }}, NWN: ${{ steps.version.outputs.nwn_build }}.${{ steps.version.outputs.nwn_build_revision }}-${{ steps.version.outputs.nwn_build_postfix }})." &&
+          if [ ${{ github.event.inputs.tag }} != '' ]; then git tag ${{ github.event.inputs.tag }} && git push --atomic origin ${{ github.ref }} ${{ github.event.inputs.tag }}; else git push; fi;
