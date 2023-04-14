@@ -201,12 +201,13 @@ public sealed class OnServerCharacterSave : IEvent
 
   internal sealed unsafe class Factory : SingleHookEventFactory<Factory.SaveServerCharacterHook>
   {
-    internal delegate int SaveServerCharacterHook(void* pPlayer, int bBackupPlayer);
+    [NativeFunction("_ZN10CNWSPlayer19SaveServerCharacterEi", "?SaveServerCharacter@CNWSPlayer@@QEAAHH@Z")]
+    private delegate int SaveServerCharacterHook(void* pPlayer, int bBackupPlayer);
 
     protected override FunctionHook<SaveServerCharacterHook> RequestHook()
     {
       delegate* unmanaged<void*, int, int> pHook = &OnSaveServerCharacter;
-      return HookService.RequestHook<SaveServerCharacterHook>(pHook, FunctionsLinux._ZN10CNWSPlayer19SaveServerCharacterEi, HookOrder.Early);
+      return HookService.RequestHook<SaveServerCharacterHook>(pHook, HookOrder.Early);
     }
 
     [UnmanagedCallersOnly]
@@ -241,7 +242,7 @@ public static unsafe class OnServerCharacterSaveEventFactory
   static OnServerCharacterSaveEventFactory()
   {
     delegate* unmanaged<void*, int, int> pHook = &OnSaveServerCharacter;
-    IntPtr hookPtr = VM.RequestHook(new IntPtr(FunctionsLinux._ZN10CNWSPlayer19SaveServerCharacterEi), (IntPtr)pHook, -1000000);
+    IntPtr hookPtr = VM.RequestHook(NativeLibrary.GetExport(NativeLibrary.GetMainProgramHandle(), "_ZN10CNWSPlayer19SaveServerCharacterEi"), (IntPtr)pHook, -1000000);
     CallOriginal = Marshal.GetDelegateForFunctionPointer<SaveServerCharacterHook>(hookPtr);
   }
 
