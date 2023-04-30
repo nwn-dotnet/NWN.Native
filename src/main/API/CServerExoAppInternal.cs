@@ -708,39 +708,6 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
     } 
   }
 
-  public ushort m_nBannedListsTimeStampSecond {
-    set {
-      NWNXLibPINVOKE.CServerExoAppInternal_m_nBannedListsTimeStampSecond_set(swigCPtr, value);
-    } 
-    get {
-      ushort retVal = NWNXLibPINVOKE.CServerExoAppInternal_m_nBannedListsTimeStampSecond_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public ushort m_nBannedListsTimeStampMinute {
-    set {
-      NWNXLibPINVOKE.CServerExoAppInternal_m_nBannedListsTimeStampMinute_set(swigCPtr, value);
-    } 
-    get {
-      ushort retVal = NWNXLibPINVOKE.CServerExoAppInternal_m_nBannedListsTimeStampMinute_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public ushort m_nBannedListsTimeStampHour {
-    set {
-      NWNXLibPINVOKE.CServerExoAppInternal_m_nBannedListsTimeStampHour_set(swigCPtr, value);
-    } 
-    get {
-      ushort retVal = NWNXLibPINVOKE.CServerExoAppInternal_m_nBannedListsTimeStampHour_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
   public uint m_nBannedListsTimeStamp {
     set {
       NWNXLibPINVOKE.CServerExoAppInternal_m_nBannedListsTimeStamp_set(swigCPtr, value);
@@ -761,6 +728,50 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
       CExoLinkedListNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoLinkedListNode(cPtr, false);
       return ret;
     } 
+  }
+
+  public int m_nGameObjectUpdateIntervalTarget {
+    set {
+      NWNXLibPINVOKE.CServerExoAppInternal_m_nGameObjectUpdateIntervalTarget_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CServerExoAppInternal_m_nGameObjectUpdateIntervalTarget_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public int m_nGameObjectUpdateIntervalTargetLoading {
+    set {
+      NWNXLibPINVOKE.CServerExoAppInternal_m_nGameObjectUpdateIntervalTargetLoading_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CServerExoAppInternal_m_nGameObjectUpdateIntervalTargetLoading_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public int m_nGameObjectUpdateMessageLimit {
+    set {
+      NWNXLibPINVOKE.CServerExoAppInternal_m_nGameObjectUpdateMessageLimit_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CServerExoAppInternal_m_nGameObjectUpdateMessageLimit_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public int m_nGameObjectUpdateMessageLimitLoading {
+    set {
+      NWNXLibPINVOKE.CServerExoAppInternal_m_nGameObjectUpdateMessageLimitLoading_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CServerExoAppInternal_m_nGameObjectUpdateMessageLimitLoading_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public ulong m_nAutoSaveTimer {
