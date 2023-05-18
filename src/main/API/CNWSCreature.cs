@@ -4464,6 +4464,10 @@ public unsafe class CNWSCreature : CNWSObject {
     return ret;
   }
 
+  public void ReloadJournalEntries() {
+    NWNXLibPINVOKE.CNWSCreature_ReloadJournalEntries(swigCPtr);
+  }
+
   public CNWSBarter GetBarterInfo(int bCreateIfNonExistant) {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_GetBarterInfo__SWIG_0(swigCPtr, bCreateIfNonExistant);
     CNWSBarter ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSBarter(cPtr, false);
