@@ -104,7 +104,9 @@ public enum EffectTrueType {
   CutsceneGhost = 93,
   CutsceneImmobile = 94,
   DefensiveStance = 95,
-  RunScript = 96
+  RunScript = 96,
+  Pacify = 97,
+  TimeStopImmunity = 98
 }
 
 }
