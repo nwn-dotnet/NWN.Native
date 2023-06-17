@@ -16,7 +16,8 @@ public enum Ability {
   Constitution = 2,
   Intelligence = 3,
   Wisdom = 4,
-  Charisma = 5
+  Charisma = 5,
+  None = 6
 }
 
 }
