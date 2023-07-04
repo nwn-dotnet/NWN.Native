@@ -401,33 +401,33 @@ public unsafe class CExoString : global::System.IDisposable {
     return ret;
   }
 
-  public static CExoString FormatBytes(ulong param_1) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatBytes(param_1), true);
+  public static CExoString FormatBytes(ulong bytes) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatBytes(bytes), true);
     return ret;
   }
 
-  public static CExoString FormatDuration(ulong param_1, int param_2, int param_3, bool param_4, byte* param_5) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatDuration__SWIG_0(param_1, param_2, param_3, param_4, param_5), true);
+  public static CExoString FormatDuration(ulong span, int compact_levels, int min_level, bool label_fields, byte* separator) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatDuration__SWIG_0(span, compact_levels, min_level, label_fields, separator), true);
     return ret;
   }
 
-  public static CExoString FormatDuration(ulong param_1, int param_2, int param_3, bool param_4) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatDuration__SWIG_1(param_1, param_2, param_3, param_4), true);
+  public static CExoString FormatDuration(ulong span, int compact_levels, int min_level, bool label_fields) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatDuration__SWIG_1(span, compact_levels, min_level, label_fields), true);
     return ret;
   }
 
-  public static CExoString FormatDuration(ulong param_1, int param_2, int param_3) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatDuration__SWIG_2(param_1, param_2, param_3), true);
+  public static CExoString FormatDuration(ulong span, int compact_levels, int min_level) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatDuration__SWIG_2(span, compact_levels, min_level), true);
     return ret;
   }
 
-  public static CExoString FormatDuration(ulong param_1, int param_2) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatDuration__SWIG_3(param_1, param_2), true);
+  public static CExoString FormatDuration(ulong span, int compact_levels) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatDuration__SWIG_3(span, compact_levels), true);
     return ret;
   }
 
-  public static CExoString FormatDuration(ulong param_1) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatDuration__SWIG_4(param_1), true);
+  public static CExoString FormatDuration(ulong span) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatDuration__SWIG_4(span), true);
     return ret;
   }
 

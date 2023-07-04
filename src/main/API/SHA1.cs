@@ -126,14 +126,24 @@ public unsafe class SHA1 : global::System.IDisposable {
 
   }
 
-  public SHA1(CExoString param_1) : this(NWNXLibPINVOKE.new_SHA1__SWIG_0(CExoString.getCPtr(param_1)), true) {
+  public SHA1(SHA1 other) : this(NWNXLibPINVOKE.new_SHA1__SWIG_0(SHA1.getCPtr(other)), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
   public SHA1() : this(NWNXLibPINVOKE.new_SHA1__SWIG_1(), true) {
   }
 
-  public SHA1(byte* param_1) : this(NWNXLibPINVOKE.new_SHA1__SWIG_2(param_1), true) {
+  public SHA1(NativeArray<byte> ptr) : this(NWNXLibPINVOKE.new_SHA1__SWIG_2(ptr), true) {
+  }
+
+  public SHA1(CExoString hex) : this(NWNXLibPINVOKE.new_SHA1__SWIG_3(CExoString.getCPtr(hex)), true) {
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public SHA1 _OpAssign(SHA1 other) {
+    SHA1 ret = new SHA1(NWNXLibPINVOKE.SHA1__OpAssign(swigCPtr, SHA1.getCPtr(other)), true);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
   }
 
   public void Clear() {
