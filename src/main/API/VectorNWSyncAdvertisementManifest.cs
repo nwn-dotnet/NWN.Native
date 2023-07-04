@@ -10,7 +10,7 @@
 
 namespace NWN.Native.API {
 
-public unsafe class VectorNWSyncAdvertisementManifest : global::System.IDisposable, global::System.Collections.IEnumerable, global::System.Collections.Generic.IEnumerable<NWSyncAdvertisementManifest>
+public unsafe class VectorNWSyncAdvertisementManifest : global::System.IDisposable, global::System.Collections.IEnumerable, global::System.Collections.Generic.IEnumerable<AdvertisementManifest>
  {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
@@ -94,15 +94,15 @@ public unsafe class VectorNWSyncAdvertisementManifest : global::System.IDisposab
   public VectorNWSyncAdvertisementManifest(global::System.Collections.IEnumerable c) : this() {
     if (c == null)
       throw new global::System.ArgumentNullException("c");
-    foreach (NWSyncAdvertisementManifest element in c) {
+    foreach (AdvertisementManifest element in c) {
       this.Add(element);
     }
   }
 
-  public VectorNWSyncAdvertisementManifest(global::System.Collections.Generic.IEnumerable<NWSyncAdvertisementManifest> c) : this() {
+  public VectorNWSyncAdvertisementManifest(global::System.Collections.Generic.IEnumerable<AdvertisementManifest> c) : this() {
     if (c == null)
       throw new global::System.ArgumentNullException("c");
-    foreach (NWSyncAdvertisementManifest element in c) {
+    foreach (AdvertisementManifest element in c) {
       this.Add(element);
     }
   }
@@ -119,7 +119,7 @@ public unsafe class VectorNWSyncAdvertisementManifest : global::System.IDisposab
     }
   }
 
-  public NWSyncAdvertisementManifest this[int index]  {
+  public AdvertisementManifest this[int index]  {
     get {
       return getitem(index);
     }
@@ -151,17 +151,17 @@ public unsafe class VectorNWSyncAdvertisementManifest : global::System.IDisposab
     }
   }
 
-  public void CopyTo(NWSyncAdvertisementManifest[] array)
+  public void CopyTo(AdvertisementManifest[] array)
   {
     CopyTo(0, array, 0, this.Count);
   }
 
-  public void CopyTo(NWSyncAdvertisementManifest[] array, int arrayIndex)
+  public void CopyTo(AdvertisementManifest[] array, int arrayIndex)
   {
     CopyTo(0, array, arrayIndex, this.Count);
   }
 
-  public void CopyTo(int index, NWSyncAdvertisementManifest[] array, int arrayIndex, int count)
+  public void CopyTo(int index, AdvertisementManifest[] array, int arrayIndex, int count)
   {
     if (array == null)
       throw new global::System.ArgumentNullException("array");
@@ -179,13 +179,13 @@ public unsafe class VectorNWSyncAdvertisementManifest : global::System.IDisposab
       array.SetValue(getitemcopy(index+i), arrayIndex+i);
   }
 
-  public NWSyncAdvertisementManifest[] ToArray() {
-    NWSyncAdvertisementManifest[] array = new NWSyncAdvertisementManifest[this.Count];
+  public AdvertisementManifest[] ToArray() {
+    AdvertisementManifest[] array = new AdvertisementManifest[this.Count];
     this.CopyTo(array);
     return array;
   }
 
-  global::System.Collections.Generic.IEnumerator<NWSyncAdvertisementManifest> global::System.Collections.Generic.IEnumerable<NWSyncAdvertisementManifest>.GetEnumerator() {
+  global::System.Collections.Generic.IEnumerator<AdvertisementManifest> global::System.Collections.Generic.IEnumerable<AdvertisementManifest>.GetEnumerator() {
     return new VectorNWSyncAdvertisementManifestEnumerator(this);
   }
 
@@ -203,7 +203,7 @@ public unsafe class VectorNWSyncAdvertisementManifest : global::System.IDisposab
   /// collection but not when one of the elements of the collection is modified as it is a bit
   /// tricky to detect unmanaged code that modifies the collection under our feet.
   public sealed class VectorNWSyncAdvertisementManifestEnumerator : global::System.Collections.IEnumerator
-    , global::System.Collections.Generic.IEnumerator<NWSyncAdvertisementManifest>
+    , global::System.Collections.Generic.IEnumerator<AdvertisementManifest>
   {
     private VectorNWSyncAdvertisementManifest collectionRef;
     private int currentIndex;
@@ -218,7 +218,7 @@ public unsafe class VectorNWSyncAdvertisementManifest : global::System.IDisposab
     }
 
     // Type-safe iterator Current
-    public NWSyncAdvertisementManifest Current {
+    public AdvertisementManifest Current {
       get {
         if (currentIndex == -1)
           throw new global::System.InvalidOperationException("Enumeration not started.");
@@ -226,7 +226,7 @@ public unsafe class VectorNWSyncAdvertisementManifest : global::System.IDisposab
           throw new global::System.InvalidOperationException("Enumeration finished.");
         if (currentObject == null)
           throw new global::System.InvalidOperationException("Collection modified.");
-        return (NWSyncAdvertisementManifest)currentObject;
+        return (AdvertisementManifest)currentObject;
       }
     }
 
@@ -267,8 +267,8 @@ public unsafe class VectorNWSyncAdvertisementManifest : global::System.IDisposab
     NWNXLibPINVOKE.VectorNWSyncAdvertisementManifest_Clear(swigCPtr);
   }
 
-  public void Add(NWSyncAdvertisementManifest x) {
-    NWNXLibPINVOKE.VectorNWSyncAdvertisementManifest_Add(swigCPtr, NWSyncAdvertisementManifest.getCPtr(x));
+  public void Add(AdvertisementManifest x) {
+    NWNXLibPINVOKE.VectorNWSyncAdvertisementManifest_Add(swigCPtr, AdvertisementManifest.getCPtr(x));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -297,20 +297,20 @@ public unsafe class VectorNWSyncAdvertisementManifest : global::System.IDisposab
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  private NWSyncAdvertisementManifest getitemcopy(int index) {
-    NWSyncAdvertisementManifest ret = new NWSyncAdvertisementManifest(NWNXLibPINVOKE.VectorNWSyncAdvertisementManifest_getitemcopy(swigCPtr, index), true);
+  private AdvertisementManifest getitemcopy(int index) {
+    AdvertisementManifest ret = new AdvertisementManifest(NWNXLibPINVOKE.VectorNWSyncAdvertisementManifest_getitemcopy(swigCPtr, index), true);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  private NWSyncAdvertisementManifest getitem(int index) {
-    NWSyncAdvertisementManifest ret = new NWSyncAdvertisementManifest(NWNXLibPINVOKE.VectorNWSyncAdvertisementManifest_getitem(swigCPtr, index), false);
+  private AdvertisementManifest getitem(int index) {
+    AdvertisementManifest ret = new AdvertisementManifest(NWNXLibPINVOKE.VectorNWSyncAdvertisementManifest_getitem(swigCPtr, index), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  private void setitem(int index, NWSyncAdvertisementManifest val) {
-    NWNXLibPINVOKE.VectorNWSyncAdvertisementManifest_setitem(swigCPtr, index, NWSyncAdvertisementManifest.getCPtr(val));
+  private void setitem(int index, AdvertisementManifest val) {
+    NWNXLibPINVOKE.VectorNWSyncAdvertisementManifest_setitem(swigCPtr, index, AdvertisementManifest.getCPtr(val));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -326,8 +326,8 @@ public unsafe class VectorNWSyncAdvertisementManifest : global::System.IDisposab
     return ret;
   }
 
-  public void Insert(int index, NWSyncAdvertisementManifest x) {
-    NWNXLibPINVOKE.VectorNWSyncAdvertisementManifest_Insert(swigCPtr, index, NWSyncAdvertisementManifest.getCPtr(x));
+  public void Insert(int index, AdvertisementManifest x) {
+    NWNXLibPINVOKE.VectorNWSyncAdvertisementManifest_Insert(swigCPtr, index, AdvertisementManifest.getCPtr(x));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -346,8 +346,8 @@ public unsafe class VectorNWSyncAdvertisementManifest : global::System.IDisposab
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public static VectorNWSyncAdvertisementManifest Repeat(NWSyncAdvertisementManifest value, int count) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.VectorNWSyncAdvertisementManifest_Repeat(NWSyncAdvertisementManifest.getCPtr(value), count);
+  public static VectorNWSyncAdvertisementManifest Repeat(AdvertisementManifest value, int count) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.VectorNWSyncAdvertisementManifest_Repeat(AdvertisementManifest.getCPtr(value), count);
     VectorNWSyncAdvertisementManifest ret = (cPtr == global::System.IntPtr.Zero) ? null : new VectorNWSyncAdvertisementManifest(cPtr, true);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;

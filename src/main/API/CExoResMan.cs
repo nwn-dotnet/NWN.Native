@@ -320,8 +320,8 @@ public unsafe class CExoResMan : global::System.IDisposable {
     return retVal;
   }
 
-  public int AddManifest(SWIGTYPE_p_Hash__SHA1 manifestHash, uint nPriority) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_AddManifest(swigCPtr, SWIGTYPE_p_Hash__SHA1.getCPtr(manifestHash), nPriority);
+  public int AddManifest(SHA1 manifestHash, uint nPriority) {
+    int retVal = NWNXLibPINVOKE.CExoResMan_AddManifest(swigCPtr, SHA1.getCPtr(manifestHash), nPriority);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
@@ -438,8 +438,8 @@ public unsafe class CExoResMan : global::System.IDisposable {
     return retVal;
   }
 
-  public int RemoveManifest(SWIGTYPE_p_Hash__SHA1 sManifestHash) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_RemoveManifest(swigCPtr, SWIGTYPE_p_Hash__SHA1.getCPtr(sManifestHash));
+  public int RemoveManifest(SHA1 sManifestHash) {
+    int retVal = NWNXLibPINVOKE.CExoResMan_RemoveManifest(swigCPtr, SHA1.getCPtr(sManifestHash));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }

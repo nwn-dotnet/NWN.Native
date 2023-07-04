@@ -501,8 +501,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
     return retVal;
   }
 
-  public int LoadModule(CExoString moduleResRef, CUUID uuidOverride, int bIsSaveGame, CNWSPlayer pPlayer, int sourceType, SWIGTYPE_p_NWSync__Advertisement nwsyncModuleSourceAdvert) {
-    int retVal = NWNXLibPINVOKE.CServerExoApp_LoadModule(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride), bIsSaveGame, CNWSPlayer.getCPtr(pPlayer), sourceType, SWIGTYPE_p_NWSync__Advertisement.getCPtr(nwsyncModuleSourceAdvert));
+  public int LoadModule(CExoString moduleResRef, CUUID uuidOverride, int bIsSaveGame, CNWSPlayer pPlayer, int sourceType, Advertisement nwsyncModuleSourceAdvert) {
+    int retVal = NWNXLibPINVOKE.CServerExoApp_LoadModule(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride), bIsSaveGame, CNWSPlayer.getCPtr(pPlayer), sourceType, Advertisement.getCPtr(nwsyncModuleSourceAdvert));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }

@@ -401,6 +401,36 @@ public unsafe class CExoString : global::System.IDisposable {
     return ret;
   }
 
+  public static CExoString FormatBytes(ulong param_1) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatBytes(param_1), true);
+    return ret;
+  }
+
+  public static CExoString FormatDuration(ulong param_1, int param_2, int param_3, bool param_4, byte* param_5) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatDuration__SWIG_0(param_1, param_2, param_3, param_4, param_5), true);
+    return ret;
+  }
+
+  public static CExoString FormatDuration(ulong param_1, int param_2, int param_3, bool param_4) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatDuration__SWIG_1(param_1, param_2, param_3, param_4), true);
+    return ret;
+  }
+
+  public static CExoString FormatDuration(ulong param_1, int param_2, int param_3) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatDuration__SWIG_2(param_1, param_2, param_3), true);
+    return ret;
+  }
+
+  public static CExoString FormatDuration(ulong param_1, int param_2) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatDuration__SWIG_3(param_1, param_2), true);
+    return ret;
+  }
+
+  public static CExoString FormatDuration(ulong param_1) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatDuration__SWIG_4(param_1), true);
+    return ret;
+  }
+
   public void _Destructor() {
     NWNXLibPINVOKE.CExoString__Destructor(swigCPtr);
   }

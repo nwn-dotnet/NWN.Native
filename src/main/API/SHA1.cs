@@ -126,7 +126,18 @@ public unsafe class SHA1 : global::System.IDisposable {
 
   }
 
-  public SHA1() : this(NWNXLibPINVOKE.new_SHA1(), true) {
+  public SHA1(CExoString param_1) : this(NWNXLibPINVOKE.new_SHA1__SWIG_0(CExoString.getCPtr(param_1)), true) {
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public SHA1() : this(NWNXLibPINVOKE.new_SHA1__SWIG_1(), true) {
+  }
+
+  public SHA1(byte* param_1) : this(NWNXLibPINVOKE.new_SHA1__SWIG_2(param_1), true) {
+  }
+
+  public void Clear() {
+    NWNXLibPINVOKE.SHA1_Clear(swigCPtr);
   }
 
 }

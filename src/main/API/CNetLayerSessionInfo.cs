@@ -270,13 +270,13 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
     } 
   }
 
-  public NWSyncAdvertisement m_nwsyncData {
+  public Advertisement m_nwsyncData {
     set {
-      NWNXLibPINVOKE.CNetLayerSessionInfo_m_nwsyncData_set(swigCPtr, NWSyncAdvertisement.getCPtr(value));
+      NWNXLibPINVOKE.CNetLayerSessionInfo_m_nwsyncData_set(swigCPtr, Advertisement.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nwsyncData_get(swigCPtr);
-      NWSyncAdvertisement ret = (cPtr == global::System.IntPtr.Zero) ? null : new NWSyncAdvertisement(cPtr, false);
+      Advertisement ret = (cPtr == global::System.IntPtr.Zero) ? null : new Advertisement(cPtr, false);
       return ret;
     } 
   }

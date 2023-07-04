@@ -194,13 +194,13 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
     } 
   }
 
-  public NWSyncAdvertisement m_nwsyncModuleSourceAdvert {
+  public Advertisement m_nwsyncModuleSourceAdvert {
     set {
-      NWNXLibPINVOKE.CNWSModule_m_nwsyncModuleSourceAdvert_set(swigCPtr, NWSyncAdvertisement.getCPtr(value));
+      NWNXLibPINVOKE.CNWSModule_m_nwsyncModuleSourceAdvert_set(swigCPtr, Advertisement.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_m_nwsyncModuleSourceAdvert_get(swigCPtr);
-      NWSyncAdvertisement ret = (cPtr == global::System.IntPtr.Zero) ? null : new NWSyncAdvertisement(cPtr, false);
+      Advertisement ret = (cPtr == global::System.IntPtr.Zero) ? null : new Advertisement(cPtr, false);
       return ret;
     } 
   }
@@ -1326,6 +1326,12 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
 
   public int InterAreaDFS(int level, int depth, CPathfindInformation pcPathfindInformation) {
     int retVal = NWNXLibPINVOKE.CNWSModule_InterAreaDFS(swigCPtr, level, depth, CPathfindInformation.getCPtr(pcPathfindInformation));
+    return retVal;
+  }
+
+  public uint LoadModuleStart(CExoString param_1, int param_2, int param_3, Advertisement param_4) {
+    uint retVal = NWNXLibPINVOKE.CNWSModule_LoadModuleStart(swigCPtr, CExoString.getCPtr(param_1), param_2, param_3, Advertisement.getCPtr(param_4));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
 

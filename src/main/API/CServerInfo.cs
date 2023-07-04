@@ -266,13 +266,13 @@ public unsafe class CServerInfo : global::System.IDisposable {
     } 
   }
 
-  public NWSyncAdvertisement m_nwsyncAdvertisedData {
+  public Advertisement m_nwsyncAdvertisedData {
     set {
-      NWNXLibPINVOKE.CServerInfo_m_nwsyncAdvertisedData_set(swigCPtr, NWSyncAdvertisement.getCPtr(value));
+      NWNXLibPINVOKE.CServerInfo_m_nwsyncAdvertisedData_set(swigCPtr, Advertisement.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerInfo_m_nwsyncAdvertisedData_get(swigCPtr);
-      NWSyncAdvertisement ret = (cPtr == global::System.IntPtr.Zero) ? null : new NWSyncAdvertisement(cPtr, false);
+      Advertisement ret = (cPtr == global::System.IntPtr.Zero) ? null : new Advertisement(cPtr, false);
       return ret;
     } 
   }

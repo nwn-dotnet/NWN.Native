@@ -1016,13 +1016,13 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
 
   }
 
-  public NWSyncAdvertisement m_nwsyncModuleSourceAdvert {
+  public Advertisement m_nwsyncModuleSourceAdvert {
     set {
-      NWNXLibPINVOKE.CServerExoAppInternal_m_nwsyncModuleSourceAdvert_set(swigCPtr, NWSyncAdvertisement.getCPtr(value));
+      NWNXLibPINVOKE.CServerExoAppInternal_m_nwsyncModuleSourceAdvert_set(swigCPtr, Advertisement.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoAppInternal_m_nwsyncModuleSourceAdvert_get(swigCPtr);
-      NWSyncAdvertisement ret = (cPtr == global::System.IntPtr.Zero) ? null : new NWSyncAdvertisement(cPtr, false);
+      Advertisement ret = (cPtr == global::System.IntPtr.Zero) ? null : new Advertisement(cPtr, false);
       return ret;
     } 
   }
@@ -1414,8 +1414,8 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
     return retVal;
   }
 
-  public int LoadModule(CExoString moduleResRef, CUUID uuidOverride, int bIsSaveGame, CNWSPlayer pPlayer, int sourceType, SWIGTYPE_p_NWSync__Advertisement nwsyncModuleSourceAdvert) {
-    int retVal = NWNXLibPINVOKE.CServerExoAppInternal_LoadModule(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride), bIsSaveGame, CNWSPlayer.getCPtr(pPlayer), sourceType, SWIGTYPE_p_NWSync__Advertisement.getCPtr(nwsyncModuleSourceAdvert));
+  public int LoadModule(CExoString moduleResRef, CUUID uuidOverride, int bIsSaveGame, CNWSPlayer pPlayer, int sourceType, Advertisement nwsyncModuleSourceAdvert) {
+    int retVal = NWNXLibPINVOKE.CServerExoAppInternal_LoadModule(swigCPtr, CExoString.getCPtr(moduleResRef), CUUID.getCPtr(uuidOverride), bIsSaveGame, CNWSPlayer.getCPtr(pPlayer), sourceType, Advertisement.getCPtr(nwsyncModuleSourceAdvert));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
