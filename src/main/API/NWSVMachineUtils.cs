@@ -10,20 +10,20 @@
 
 namespace NWN.Native.API {
 
-public unsafe class NWVMachineUtils : global::System.IDisposable {
+public unsafe class NWSVMachineUtils : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal NWVMachineUtils(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal NWSVMachineUtils(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
-  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(NWVMachineUtils obj) {
+  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(NWSVMachineUtils obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 
-  ~NWVMachineUtils() {
+  ~NWSVMachineUtils() {
     Dispose(false);
   }
 
@@ -37,7 +37,7 @@ public unsafe class NWVMachineUtils : global::System.IDisposable {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          NWNXLibPINVOKE.delete_NWVMachineUtils(swigCPtr);
+          NWNXLibPINVOKE.delete_NWSVMachineUtils(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
@@ -50,19 +50,19 @@ public unsafe class NWVMachineUtils : global::System.IDisposable {
     }
   }
 
-  public static unsafe implicit operator void*(NWVMachineUtils self) {
+  public static unsafe implicit operator void*(NWSVMachineUtils self) {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static unsafe NWVMachineUtils FromPointer(void* pointer, bool memoryOwn = false) {
-    return pointer != null ? new NWVMachineUtils((global::System.IntPtr)pointer, memoryOwn) : null;
+  public static unsafe NWSVMachineUtils FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new NWSVMachineUtils((global::System.IntPtr)pointer, memoryOwn) : null;
   }
 
-  public static NWVMachineUtils FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
-    return pointer != global::System.IntPtr.Zero ? new NWVMachineUtils(pointer, memoryOwn) : null;
+  public static NWSVMachineUtils FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new NWSVMachineUtils(pointer, memoryOwn) : null;
   }
 
-  public bool Equals(NWVMachineUtils other) {
+  public bool Equals(NWSVMachineUtils other) {
     if (ReferenceEquals(null, other)) {
       return false;
     }
@@ -75,96 +75,107 @@ public unsafe class NWVMachineUtils : global::System.IDisposable {
   }
 
   public override bool Equals(object obj) {
-    return ReferenceEquals(this, obj) || obj is NWVMachineUtils other && Equals(other);
+    return ReferenceEquals(this, obj) || obj is NWSVMachineUtils other && Equals(other);
   }
 
   public override int GetHashCode() {
     return swigCPtr.Handle.GetHashCode();
   }
 
-  public static bool operator ==(NWVMachineUtils left, NWVMachineUtils right) {
+  public static bool operator ==(NWSVMachineUtils left, NWSVMachineUtils right) {
     return Equals(left, right);
   }
 
-  public static bool operator !=(NWVMachineUtils left, NWVMachineUtils right) {
+  public static bool operator !=(NWSVMachineUtils left, NWSVMachineUtils right) {
     return !Equals(left, right);
   }
 
+  public static bool IsGffSerializableResType(ushort t) {
+    bool ret = NWNXLibPINVOKE.NWSVMachineUtils_IsGffSerializableResType(t);
+    return ret;
+  }
+
+  public static CExoString GetDataTypeFor(ushort t) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.NWSVMachineUtils_GetDataTypeFor(t), true);
+    return ret;
+  }
+
   public static SWIGTYPE_p_std__shared_ptrT_DataBlock_t SerializeToGff(ICGameObject o, int bSaveObjectState) {
-    SWIGTYPE_p_std__shared_ptrT_DataBlock_t ret = new SWIGTYPE_p_std__shared_ptrT_DataBlock_t(NWNXLibPINVOKE.NWVMachineUtils_SerializeToGff(o == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : o.GetInterfaceCPtr(), bSaveObjectState), true);
+    SWIGTYPE_p_std__shared_ptrT_DataBlock_t ret = new SWIGTYPE_p_std__shared_ptrT_DataBlock_t(NWNXLibPINVOKE.NWSVMachineUtils_SerializeToGff(o == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : o.GetInterfaceCPtr(), bSaveObjectState), true);
     return ret;
   }
 
   public static ICGameObject DeserializeFromGff(SWIGTYPE_p_std__shared_ptrT_DataView_t d, int bLoadObjectState, CScriptLocation loc, uint owner, CExoString sNewTag, int bObjectCopy) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWVMachineUtils_DeserializeFromGff__SWIG_0(SWIGTYPE_p_std__shared_ptrT_DataView_t.getCPtr(d), bLoadObjectState, CScriptLocation.getCPtr(loc), owner, CExoString.getCPtr(sNewTag), bObjectCopy);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWSVMachineUtils_DeserializeFromGff__SWIG_0(SWIGTYPE_p_std__shared_ptrT_DataView_t.getCPtr(d), bLoadObjectState, CScriptLocation.getCPtr(loc), owner, CExoString.getCPtr(sNewTag), bObjectCopy);
     CGameObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new CGameObject(cPtr, false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return (ICGameObject)ret;
   }
 
   public static ICGameObject DeserializeFromGff(SWIGTYPE_p_std__shared_ptrT_DataView_t d, int bLoadObjectState, CScriptLocation loc, uint owner, CExoString sNewTag) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWVMachineUtils_DeserializeFromGff__SWIG_1(SWIGTYPE_p_std__shared_ptrT_DataView_t.getCPtr(d), bLoadObjectState, CScriptLocation.getCPtr(loc), owner, CExoString.getCPtr(sNewTag));
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWSVMachineUtils_DeserializeFromGff__SWIG_1(SWIGTYPE_p_std__shared_ptrT_DataView_t.getCPtr(d), bLoadObjectState, CScriptLocation.getCPtr(loc), owner, CExoString.getCPtr(sNewTag));
     CGameObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new CGameObject(cPtr, false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return (ICGameObject)ret;
   }
 
   public static JsonEngineStructure SerializeToJson(ICGameObject o, int bSaveObjectState) {
-    JsonEngineStructure ret = new JsonEngineStructure(NWNXLibPINVOKE.NWVMachineUtils_SerializeToJson__SWIG_0(o == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : o.GetInterfaceCPtr(), bSaveObjectState), true);
+    JsonEngineStructure ret = new JsonEngineStructure(NWNXLibPINVOKE.NWSVMachineUtils_SerializeToJson__SWIG_0(o == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : o.GetInterfaceCPtr(), bSaveObjectState), true);
     return ret;
   }
 
   public static ICGameObject DeserializeFromJson(JsonEngineStructure ob, int bLoadObjectState, CScriptLocation loc, uint owner, CExoString sNewTag, int bObjectCopy) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWVMachineUtils_DeserializeFromJson__SWIG_0(JsonEngineStructure.getCPtr(ob), bLoadObjectState, CScriptLocation.getCPtr(loc), owner, CExoString.getCPtr(sNewTag), bObjectCopy);
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWSVMachineUtils_DeserializeFromJson__SWIG_0(JsonEngineStructure.getCPtr(ob), bLoadObjectState, CScriptLocation.getCPtr(loc), owner, CExoString.getCPtr(sNewTag), bObjectCopy);
     CGameObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new CGameObject(cPtr, false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return (ICGameObject)ret;
   }
 
   public static ICGameObject DeserializeFromJson(JsonEngineStructure ob, int bLoadObjectState, CScriptLocation loc, uint owner, CExoString sNewTag) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWVMachineUtils_DeserializeFromJson__SWIG_1(JsonEngineStructure.getCPtr(ob), bLoadObjectState, CScriptLocation.getCPtr(loc), owner, CExoString.getCPtr(sNewTag));
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWSVMachineUtils_DeserializeFromJson__SWIG_1(JsonEngineStructure.getCPtr(ob), bLoadObjectState, CScriptLocation.getCPtr(loc), owner, CExoString.getCPtr(sNewTag));
     CGameObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new CGameObject(cPtr, false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return (ICGameObject)ret;
   }
 
   public static SWIGTYPE_p_nlohmann__json StructToJson(CResGFF gff, CResStruct str, uint nType) {
-    SWIGTYPE_p_nlohmann__json ret = new SWIGTYPE_p_nlohmann__json(NWNXLibPINVOKE.NWVMachineUtils_StructToJson(CResGFF.getCPtr(gff), CResStruct.getCPtr(str), nType), true);
+    SWIGTYPE_p_nlohmann__json ret = new SWIGTYPE_p_nlohmann__json(NWNXLibPINVOKE.NWSVMachineUtils_StructToJson(CResGFF.getCPtr(gff), CResStruct.getCPtr(str), nType), true);
     return ret;
   }
 
-  public static void JsonToStruct(SWIGTYPE_p_nlohmann__json ob, CResGFF gff, CResStruct str) {
-    NWNXLibPINVOKE.NWVMachineUtils_JsonToStruct(SWIGTYPE_p_nlohmann__json.getCPtr(ob), CResGFF.getCPtr(gff), CResStruct.getCPtr(str));
+  public static bool JsonToStruct(SWIGTYPE_p_nlohmann__json ob, CResGFF gff, CResStruct str) {
+    bool ret = NWNXLibPINVOKE.NWSVMachineUtils_JsonToStruct(SWIGTYPE_p_nlohmann__json.getCPtr(ob), CResGFF.getCPtr(gff), CResStruct.getCPtr(str));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
   }
 
   public static JsonEngineStructure SerializeToJson(CResRef r, ushort t) {
-    JsonEngineStructure ret = new JsonEngineStructure(NWNXLibPINVOKE.NWVMachineUtils_SerializeToJson__SWIG_1(CResRef.getCPtr(r), t), true);
+    JsonEngineStructure ret = new JsonEngineStructure(NWNXLibPINVOKE.NWSVMachineUtils_SerializeToJson__SWIG_1(CResRef.getCPtr(r), t), true);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public static CNWSArea SpawnScriptArea(CResGFF areRoot, CResGFF gitRoot, CExoString newTag, CExoString newName) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWVMachineUtils_SpawnScriptArea__SWIG_0(CResGFF.getCPtr(areRoot), CResGFF.getCPtr(gitRoot), CExoString.getCPtr(newTag), CExoString.getCPtr(newName));
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWSVMachineUtils_SpawnScriptArea__SWIG_0(CResGFF.getCPtr(areRoot), CResGFF.getCPtr(gitRoot), CExoString.getCPtr(newTag), CExoString.getCPtr(newName));
     CNWSArea ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSArea(cPtr, false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public static CNWSArea SpawnScriptArea(CResGFF areRoot, CResGFF gitRoot, CExoString newTag) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWVMachineUtils_SpawnScriptArea__SWIG_1(CResGFF.getCPtr(areRoot), CResGFF.getCPtr(gitRoot), CExoString.getCPtr(newTag));
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWSVMachineUtils_SpawnScriptArea__SWIG_1(CResGFF.getCPtr(areRoot), CResGFF.getCPtr(gitRoot), CExoString.getCPtr(newTag));
     CNWSArea ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSArea(cPtr, false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public static CNWSArea SpawnScriptArea(CResGFF areRoot, CResGFF gitRoot) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWVMachineUtils_SpawnScriptArea__SWIG_2(CResGFF.getCPtr(areRoot), CResGFF.getCPtr(gitRoot));
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWSVMachineUtils_SpawnScriptArea__SWIG_2(CResGFF.getCPtr(areRoot), CResGFF.getCPtr(gitRoot));
     CNWSArea ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSArea(cPtr, false);
     return ret;
   }
 
-  public NWVMachineUtils() : this(NWNXLibPINVOKE.new_NWVMachineUtils(), true) {
+  public NWSVMachineUtils() : this(NWNXLibPINVOKE.new_NWSVMachineUtils(), true) {
   }
 
 }

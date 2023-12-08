@@ -129,6 +129,11 @@ public unsafe class Vector : global::System.IDisposable {
   public Vector(float xx, float yy, float zz) : this(NWNXLibPINVOKE.new_Vector__SWIG_1(xx, yy, zz), true) {
   }
 
+  public int IsZero() {
+    int retVal = NWNXLibPINVOKE.Vector_IsZero(swigCPtr);
+    return retVal;
+  }
+
   public bool _OpEquals(Vector v) {
     bool ret = NWNXLibPINVOKE.Vector__OpEquals(swigCPtr, Vector.getCPtr(v));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();

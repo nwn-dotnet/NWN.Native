@@ -10,18 +10,18 @@
 
 namespace NWN.Native.API {
 
-public class SWIGTYPE_p_std__shared_ptrT_void_p_t {
+public class SWIGTYPE_p_f_unsigned_int__p_char {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal SWIGTYPE_p_std__shared_ptrT_void_p_t(global::System.IntPtr cPtr, bool futureUse) {
+  internal SWIGTYPE_p_f_unsigned_int__p_char(global::System.IntPtr cPtr, bool futureUse) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
-  protected SWIGTYPE_p_std__shared_ptrT_void_p_t() {
+  protected SWIGTYPE_p_f_unsigned_int__p_char() {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
   }
 
-  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SWIGTYPE_p_std__shared_ptrT_void_p_t obj) {
+  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SWIGTYPE_p_f_unsigned_int__p_char obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 
@@ -31,19 +31,19 @@ public class SWIGTYPE_p_std__shared_ptrT_void_p_t {
     }
   }
 
-  public static unsafe implicit operator void*(SWIGTYPE_p_std__shared_ptrT_void_p_t self) {
+  public static unsafe implicit operator void*(SWIGTYPE_p_f_unsigned_int__p_char self) {
     return (void*)self.swigCPtr.Handle;
   }
 
-  public static unsafe SWIGTYPE_p_std__shared_ptrT_void_p_t FromPointer(void* pointer, bool memoryOwn = false) {
-    return pointer != null ? new SWIGTYPE_p_std__shared_ptrT_void_p_t((global::System.IntPtr)pointer, memoryOwn) : null;
+  public static unsafe SWIGTYPE_p_f_unsigned_int__p_char FromPointer(void* pointer, bool memoryOwn = false) {
+    return pointer != null ? new SWIGTYPE_p_f_unsigned_int__p_char((global::System.IntPtr)pointer, memoryOwn) : null;
   }
 
-  public static SWIGTYPE_p_std__shared_ptrT_void_p_t FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
-    return pointer != global::System.IntPtr.Zero ? new SWIGTYPE_p_std__shared_ptrT_void_p_t(pointer, memoryOwn) : null;
+  public static SWIGTYPE_p_f_unsigned_int__p_char FromPointer(global::System.IntPtr pointer, bool memoryOwn = false) {
+    return pointer != global::System.IntPtr.Zero ? new SWIGTYPE_p_f_unsigned_int__p_char(pointer, memoryOwn) : null;
   }
 
-  public bool Equals(SWIGTYPE_p_std__shared_ptrT_void_p_t other) {
+  public bool Equals(SWIGTYPE_p_f_unsigned_int__p_char other) {
     if (ReferenceEquals(null, other)) {
       return false;
     }
@@ -56,18 +56,18 @@ public class SWIGTYPE_p_std__shared_ptrT_void_p_t {
   }
 
   public override bool Equals(object obj) {
-    return ReferenceEquals(this, obj) || obj is SWIGTYPE_p_std__shared_ptrT_void_p_t other && Equals(other);
+    return ReferenceEquals(this, obj) || obj is SWIGTYPE_p_f_unsigned_int__p_char other && Equals(other);
   }
 
   public override int GetHashCode() {
     return swigCPtr.Handle.GetHashCode();
   }
 
-  public static bool operator ==(SWIGTYPE_p_std__shared_ptrT_void_p_t left, SWIGTYPE_p_std__shared_ptrT_void_p_t right) {
+  public static bool operator ==(SWIGTYPE_p_f_unsigned_int__p_char left, SWIGTYPE_p_f_unsigned_int__p_char right) {
     return Equals(left, right);
   }
 
-  public static bool operator !=(SWIGTYPE_p_std__shared_ptrT_void_p_t left, SWIGTYPE_p_std__shared_ptrT_void_p_t right) {
+  public static bool operator !=(SWIGTYPE_p_f_unsigned_int__p_char left, SWIGTYPE_p_f_unsigned_int__p_char right) {
     return !Equals(left, right);
   }
 }

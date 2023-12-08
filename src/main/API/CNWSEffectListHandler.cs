@@ -1395,6 +1395,36 @@ public unsafe class CNWSEffectListHandler : CGameEffectApplierRemover {
     return retVal;
   }
 
+  public int OnApplyPacify(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyPacify__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
+  }
+
+  public int OnApplyPacify(CNWSObject pObject, CGameEffect pEffect) {
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyPacify__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
+  }
+
+  public int OnRemovePacify(CNWSObject pObject, CGameEffect pEffect) {
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemovePacify(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
+  }
+
+  public int OnApplyTimeStopImmunity(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTimeStopImmunity__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
+    return retVal;
+  }
+
+  public int OnApplyTimeStopImmunity(CNWSObject pObject, CGameEffect pEffect) {
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnApplyTimeStopImmunity__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
+  }
+
+  public int OnRemoveTimeStopImmunity(CNWSObject pObject, CGameEffect pEffect) {
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveTimeStopImmunity(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
+  }
+
   public new void _Destructor() {
     NWNXLibPINVOKE.CNWSEffectListHandler__Destructor(swigCPtr);
   }

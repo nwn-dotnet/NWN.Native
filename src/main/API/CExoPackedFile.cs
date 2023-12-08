@@ -183,10 +183,6 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
     NWNXLibPINVOKE.CExoPackedFile_DeleteRefCount(swigCPtr);
   }
 
-  public virtual void DeleteAsyncRefCount() {
-    NWNXLibPINVOKE.CExoPackedFile_DeleteAsyncRefCount(swigCPtr);
-  }
-
   public virtual CExoFile GetFile() {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoPackedFile_GetFile(swigCPtr);
     CExoFile ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoFile(cPtr, false);
@@ -205,12 +201,7 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
   }
 
   public virtual int OpenFile() {
-    int retVal = NWNXLibPINVOKE.CExoPackedFile_OpenFile__SWIG_0(swigCPtr);
-    return retVal;
-  }
-
-  public virtual int OpenFile(byte* pCipher) {
-    int retVal = NWNXLibPINVOKE.CExoPackedFile_OpenFile__SWIG_1(swigCPtr, pCipher);
+    int retVal = NWNXLibPINVOKE.CExoPackedFile_OpenFile(swigCPtr);
     return retVal;
   }
 
@@ -218,11 +209,6 @@ public unsafe class CExoPackedFile : global::System.IDisposable {
     uint retVal = NWNXLibPINVOKE.CExoPackedFile_ReadResource(swigCPtr, RESID.getCPtr(nID), (global::System.IntPtr)pData, nSize, nDataOffset);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
-  }
-
-  public virtual void ReadResourceAsync(RESID nID, void* pData, uint nSize, uint nDataOffset) {
-    NWNXLibPINVOKE.CExoPackedFile_ReadResourceAsync(swigCPtr, RESID.getCPtr(nID), (global::System.IntPtr)pData, nSize, nDataOffset);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
   public virtual int LoadHeader(byte* expectOid, byte nType) {

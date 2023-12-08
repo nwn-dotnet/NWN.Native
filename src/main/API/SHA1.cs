@@ -119,35 +119,88 @@ public unsafe class SHA1 : global::System.IDisposable {
     } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.SHA1_m_hex_get(swigCPtr);
-      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 41);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 20*2+1);
 
-      return retVal; // byte[41]
+      return retVal; // byte[20*2+1]
     }
 
+  }
+
+  public void Clear() {
+    NWNXLibPINVOKE.SHA1_Clear(swigCPtr);
+  }
+
+  public void _swap(SHA1 other) {
+    NWNXLibPINVOKE.SHA1__swap(swigCPtr, SHA1.getCPtr(other));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public SHA1 _OpAssign(SHA1 other) {
+    SHA1 ret = new SHA1(NWNXLibPINVOKE.SHA1__OpAssign__SWIG_0(swigCPtr, SHA1.getCPtr(other)), false);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
   }
 
   public SHA1(SHA1 other) : this(NWNXLibPINVOKE.new_SHA1__SWIG_0(SHA1.getCPtr(other)), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public SHA1() : this(NWNXLibPINVOKE.new_SHA1__SWIG_1(), true) {
+  public byte* Hex() {
+    byte* retVal = NWNXLibPINVOKE.SHA1_Hex(swigCPtr);
+    return retVal;
   }
 
-  public SHA1(NativeArray<byte> ptr) : this(NWNXLibPINVOKE.new_SHA1__SWIG_2(ptr), true) {
+  public byte* Data() {
+    byte* retVal = NWNXLibPINVOKE.SHA1_Data(swigCPtr);
+    return retVal;
   }
 
-  public SHA1(CExoString hex) : this(NWNXLibPINVOKE.new_SHA1__SWIG_3(CExoString.getCPtr(hex)), true) {
+  public bool IsEmpty() {
+    bool ret = NWNXLibPINVOKE.SHA1_IsEmpty(swigCPtr);
+    return ret;
+  }
+
+  public uint BinaryLength() {
+    uint ret = NWNXLibPINVOKE.SHA1_BinaryLength(swigCPtr);
+    return ret;
+  }
+
+  public uint HexLength() {
+    uint ret = NWNXLibPINVOKE.SHA1_HexLength(swigCPtr);
+    return ret;
+  }
+
+  public SHA1() : this(NWNXLibPINVOKE.new_SHA1__SWIG_2(), true) {
+  }
+
+  public SHA1(NativeArray<byte> ptr) : this(NWNXLibPINVOKE.new_SHA1__SWIG_3(ptr), true) {
+  }
+
+  public SHA1(CExoString hex) : this(NWNXLibPINVOKE.new_SHA1__SWIG_4(CExoString.getCPtr(hex)), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public SHA1 _OpAssign(SHA1 other) {
-    SHA1 ret = new SHA1(NWNXLibPINVOKE.SHA1__OpAssign(swigCPtr, SHA1.getCPtr(other)), true);
+  public static SHA1 Hash(byte* data, uint len) {
+    SHA1 ret = new SHA1(NWNXLibPINVOKE.SHA1_Hash(data, len), true);
+    return ret;
+  }
+
+  public bool _OpEquals(SHA1 other) {
+    bool ret = NWNXLibPINVOKE.SHA1__OpEquals(swigCPtr, SHA1.getCPtr(other));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public void Clear() {
-    NWNXLibPINVOKE.SHA1_Clear(swigCPtr);
+  public bool _OpNotEquals(SHA1 other) {
+    bool ret = NWNXLibPINVOKE.SHA1__OpNotEquals(swigCPtr, SHA1.getCPtr(other));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public bool _OpLessThan(SHA1 other) {
+    bool ret = NWNXLibPINVOKE.SHA1__OpLessThan(swigCPtr, SHA1.getCPtr(other));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
   }
 
 }

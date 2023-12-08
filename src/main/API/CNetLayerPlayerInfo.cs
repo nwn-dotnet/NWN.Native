@@ -418,8 +418,8 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public bool SatisfiesBuild(int nBuild, int nRevision) {
-    bool ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_SatisfiesBuild(swigCPtr, nBuild, nRevision);
+  public bool SatisfiesBuild(int nBuild, int nRevision, int nPostfix) {
+    bool ret = NWNXLibPINVOKE.CNetLayerPlayerInfo_SatisfiesBuild(swigCPtr, nBuild, nRevision, nPostfix);
     return ret;
   }
 

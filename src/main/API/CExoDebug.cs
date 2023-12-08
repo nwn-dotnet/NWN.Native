@@ -135,26 +135,6 @@ public unsafe class CExoDebug : global::System.IDisposable {
     NWNXLibPINVOKE.CExoDebug_FlushLogFile(swigCPtr);
   }
 
-  public uint GetCurrentAllocatedMemory() {
-    uint retVal = NWNXLibPINVOKE.CExoDebug_GetCurrentAllocatedMemory(swigCPtr);
-    return retVal;
-  }
-
-  public uint GetMaxAllocatedMemory() {
-    uint retVal = NWNXLibPINVOKE.CExoDebug_GetMaxAllocatedMemory(swigCPtr);
-    return retVal;
-  }
-
-  public uint GetTotalMemoryAllocations() {
-    uint retVal = NWNXLibPINVOKE.CExoDebug_GetTotalMemoryAllocations(swigCPtr);
-    return retVal;
-  }
-
-  public uint GetCurrentMemoryAllocations() {
-    uint retVal = NWNXLibPINVOKE.CExoDebug_GetCurrentMemoryAllocations(swigCPtr);
-    return retVal;
-  }
-
   public void OpenLogFiles(CExoString sExecutableName, int nMaxLogSize) {
     NWNXLibPINVOKE.CExoDebug_OpenLogFiles__SWIG_0(swigCPtr, CExoString.getCPtr(sExecutableName), nMaxLogSize);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();

@@ -233,9 +233,9 @@ public unsafe class CBaseExoApp : global::System.IDisposable {
     return retVal;
   }
 
-  public virtual int GetCDKeys(SWIGTYPE_p_p_CExoArrayListT_CExoString_t lstKeys) {
-    int retVal = NWNXLibPINVOKE.CBaseExoApp_GetCDKeys(swigCPtr, SWIGTYPE_p_p_CExoArrayListT_CExoString_t.getCPtr(lstKeys));
-    return retVal;
+  public virtual CExoString GetCDKey() {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CBaseExoApp_GetCDKey(swigCPtr), true);
+    return ret;
   }
 
   public virtual void SetWeGotDisconnected() {

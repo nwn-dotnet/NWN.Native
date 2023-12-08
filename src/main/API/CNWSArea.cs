@@ -735,6 +735,28 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
     } 
   }
 
+  public int m_bDefaultGrassDisabled {
+    set {
+      NWNXLibPINVOKE.CNWSArea_m_bDefaultGrassDisabled_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWSArea_m_bDefaultGrassDisabled_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public SWIGTYPE_p_std__unordered_mapT_int_CNWSAreaGrassOverride_t m_areaGrassOverrides {
+    set {
+      NWNXLibPINVOKE.CNWSArea_m_areaGrassOverrides_set(swigCPtr, SWIGTYPE_p_std__unordered_mapT_int_CNWSAreaGrassOverride_t.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSArea_m_areaGrassOverrides_get(swigCPtr);
+      SWIGTYPE_p_std__unordered_mapT_int_CNWSAreaGrassOverride_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__unordered_mapT_int_CNWSAreaGrassOverride_t(cPtr, false);
+      return ret;
+    } 
+  }
+
   public CNWSUUID m_pUUID {
     set {
       NWNXLibPINVOKE.CNWSArea_m_pUUID_set(swigCPtr, CNWSUUID.getCPtr(value));

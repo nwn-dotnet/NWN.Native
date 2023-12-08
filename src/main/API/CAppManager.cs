@@ -200,39 +200,6 @@ public unsafe class CAppManager : global::System.IDisposable {
 
   }
 
-  public int m_bDigitalDistributionModule {
-    set {
-      NWNXLibPINVOKE.CAppManager_m_bDigitalDistributionModule_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CAppManager_m_bDigitalDistributionModule_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public byte* m_pDDCipher {
-    set {
-      NWNXLibPINVOKE.CAppManager_m_pDDCipher_set(swigCPtr, value);
-    } 
-    get {
-      byte* retVal = NWNXLibPINVOKE.CAppManager_m_pDDCipher_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public uint m_nDDOffset {
-    set {
-      NWNXLibPINVOKE.CAppManager_m_nDDOffset_set(swigCPtr, value);
-    } 
-    get {
-      uint retVal = NWNXLibPINVOKE.CAppManager_m_nDDOffset_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
   public uint m_nPlayerTimeout {
     set {
       NWNXLibPINVOKE.CAppManager_m_nPlayerTimeout_set(swigCPtr, value);
@@ -296,12 +263,6 @@ public unsafe class CAppManager : global::System.IDisposable {
 
   public void DestroyScriptDebuggerPopup() {
     NWNXLibPINVOKE.CAppManager_DestroyScriptDebuggerPopup(swigCPtr);
-  }
-
-  public int SetDDCipherForModule(CExoString moduleName) {
-    int retVal = NWNXLibPINVOKE.CAppManager_SetDDCipherForModule(swigCPtr, CExoString.getCPtr(moduleName));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return retVal;
   }
 
   public byte ReadProgressFromINI(byte m_nCampaign) {

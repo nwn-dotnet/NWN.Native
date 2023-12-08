@@ -11,6 +11,20 @@
 namespace NWN.Native.API {
 
 public static unsafe class NWNXLib {
+  public static int hydro_hex2bin(byte* bin, uint bin_maxlen, byte* hex, uint hex_len, byte* ignore, byte** hex_end_p) {
+    int retVal = NWNXLibPINVOKE.hydro_hex2bin(bin, bin_maxlen, hex, hex_len, ignore, (global::System.IntPtr)hex_end_p);
+    return retVal;
+  }
+
+  public static byte* hydro_bin2hex(byte* hex, uint hex_maxlen, byte* bin, uint bin_len) {
+    byte* retVal = NWNXLibPINVOKE.hydro_bin2hex(hex, hex_maxlen, bin, bin_len);
+    return retVal;
+  }
+
+  public static void sha1(NativeArray<byte> hval, NativeArray<byte> data, ulong len) {
+    NWNXLibPINVOKE.sha1(hval, data, len);
+  }
+
   public static Vector _OpAdd(Vector v1, Vector v2) {
     Vector ret = new Vector(NWNXLibPINVOKE._OpAdd(Vector.getCPtr(v1), Vector.getCPtr(v2)), true);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
@@ -32,6 +46,38 @@ public static unsafe class NWNXLib {
   public static uint OBJECT_INVALID {
     get {
       uint retVal = NWNXLibPINVOKE.OBJECT_INVALID_get();
+      return retVal;
+    }
+
+  }
+
+  public static uint MINCHAROBJID {
+    get {
+      uint retVal = NWNXLibPINVOKE.MINCHAROBJID_get();
+      return retVal;
+    }
+
+  }
+
+  public static uint MAXCHAROBJID {
+    get {
+      uint retVal = NWNXLibPINVOKE.MAXCHAROBJID_get();
+      return retVal;
+    }
+
+  }
+
+  public static uint MINOBJECTID {
+    get {
+      uint retVal = NWNXLibPINVOKE.MINOBJECTID_get();
+      return retVal;
+    }
+
+  }
+
+  public static uint MAXOBJECTID {
+    get {
+      uint retVal = NWNXLibPINVOKE.MAXOBJECTID_get();
       return retVal;
     }
 
@@ -352,6 +398,12 @@ public static unsafe class NWNXLib {
     return retVal;
   }
 
+  public static readonly int CSCRIPTCOMPILER_OPTIMIZE_DEAD_FUNCTIONS = NWNXLibPINVOKE.CSCRIPTCOMPILER_OPTIMIZE_DEAD_FUNCTIONS_get();
+  public static readonly int CSCRIPTCOMPILER_OPTIMIZE_FOLD_CONSTANTS = NWNXLibPINVOKE.CSCRIPTCOMPILER_OPTIMIZE_FOLD_CONSTANTS_get();
+  public static readonly int CSCRIPTCOMPILER_OPTIMIZE_MELD_INSTRUCTIONS = NWNXLibPINVOKE.CSCRIPTCOMPILER_OPTIMIZE_MELD_INSTRUCTIONS_get();
+  public static readonly int CSCRIPTCOMPILER_OPTIMIZE_NOTHING = NWNXLibPINVOKE.CSCRIPTCOMPILER_OPTIMIZE_NOTHING_get();
+  public static readonly int CSCRIPTCOMPILER_OPTIMIZE_EVERYTHING = NWNXLibPINVOKE.CSCRIPTCOMPILER_OPTIMIZE_EVERYTHING_get();
+  public static readonly int SHA1_DIGEST_SIZE = NWNXLibPINVOKE.SHA1_DIGEST_SIZE_get();
 }
 
 }

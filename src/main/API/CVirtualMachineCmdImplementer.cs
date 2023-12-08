@@ -112,6 +112,24 @@ public unsafe class CVirtualMachineCmdImplementer : global::System.IDisposable {
 
   }
 
+  public CVirtualMachine m_pVM {
+    set {
+      NWNXLibPINVOKE.CVirtualMachineCmdImplementer_m_pVM_set(swigCPtr, CVirtualMachine.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_m_pVM_get(swigCPtr);
+      CVirtualMachine ret = (cPtr == global::System.IntPtr.Zero) ? null : new CVirtualMachine(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public VMContext m_cCtx {
+    get {
+      VMContext ret = (VMContext)NWNXLibPINVOKE.CVirtualMachineCmdImplementer_m_cCtx_get(swigCPtr);
+      return ret;
+    } 
+  }
+
   public virtual void InitializeCommands() {
     NWNXLibPINVOKE.CVirtualMachineCmdImplementer_InitializeCommands(swigCPtr);
   }
@@ -206,6 +224,111 @@ public unsafe class CVirtualMachineCmdImplementer : global::System.IDisposable {
 
   public virtual void DebugGUIUpdate() {
     NWNXLibPINVOKE.CVirtualMachineCmdImplementer_DebugGUIUpdate(swigCPtr);
+  }
+
+  public int ExecuteCommandRandom(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandRandom(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandPrintString(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandPrintString(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandPrintFloat(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandPrintFloat(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandPrintInteger(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandPrintInteger(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandPrintObject(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandPrintObject(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandFloatToString(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandFloatToString(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandFloatToInt(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandFloatToInt(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandIntToFloat(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandIntToFloat(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandIntToHexString(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandIntToHexString(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandIntToString(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandIntToString(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandGetStringLength(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandGetStringLength(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandGetStringUpperCase(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandGetStringUpperCase(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandGetStringLowerCase(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandGetStringLowerCase(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandGetStringRight(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandGetStringRight(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandGetStringLeft(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandGetStringLeft(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandInsertString(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandInsertString(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandGetSubString(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandGetSubString(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandFindSubString(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandFindSubString(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandMath(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandMath(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandJsonShared(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandJsonShared(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandCassowaryShared(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineCmdImplementer_ExecuteCommandCassowaryShared(swigCPtr, nCommandId, nParameters);
+    return retVal;
   }
 
   public void _Destructor() {

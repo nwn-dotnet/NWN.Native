@@ -413,12 +413,12 @@ public unsafe class CNWFeat : global::System.IDisposable {
 
   }
 
-  public int m_nSpellId {
+  public uint m_nSpellId {
     set {
       NWNXLibPINVOKE.CNWFeat_m_nSpellId_set(swigCPtr, value);
     } 
     get {
-      int retVal = NWNXLibPINVOKE.CNWFeat_m_nSpellId_get(swigCPtr);
+      uint retVal = NWNXLibPINVOKE.CNWFeat_m_nSpellId_get(swigCPtr);
       return retVal;
     }
 

@@ -140,12 +140,7 @@ public unsafe class CExoResFile : CExoPackedFile {
   }
 
   public override int OpenFile() {
-    int retVal = NWNXLibPINVOKE.CExoResFile_OpenFile__SWIG_0(swigCPtr);
-    return retVal;
-  }
-
-  public override int OpenFile(byte* pCipher) {
-    int retVal = NWNXLibPINVOKE.CExoResFile_OpenFile__SWIG_1(swigCPtr, pCipher);
+    int retVal = NWNXLibPINVOKE.CExoResFile_OpenFile(swigCPtr);
     return retVal;
   }
 

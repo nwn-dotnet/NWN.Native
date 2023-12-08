@@ -260,50 +260,6 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
 
   }
 
-  public CExoString m_sDDResourceName {
-    set {
-      NWNXLibPINVOKE.CNWSModule_m_sDDResourceName_set(swigCPtr, CExoString.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_m_sDDResourceName_get(swigCPtr);
-      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public int m_bIsDDModule {
-    set {
-      NWNXLibPINVOKE.CNWSModule_m_bIsDDModule_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CNWSModule_m_bIsDDModule_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public int m_bIsDDDemoModule {
-    set {
-      NWNXLibPINVOKE.CNWSModule_m_bIsDDDemoModule_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CNWSModule_m_bIsDDDemoModule_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public int m_bIsDDModuleLoaded {
-    set {
-      NWNXLibPINVOKE.CNWSModule_m_bIsDDModuleLoaded_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CNWSModule_m_bIsDDModuleLoaded_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
   public CExoLocString m_lsModuleName {
     set {
       NWNXLibPINVOKE.CNWSModule_m_lsModuleName_set(swigCPtr, CExoLocString.getCPtr(value));
@@ -1141,14 +1097,13 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
 
   }
 
-  public SWIGTYPE_p_std__shared_ptrT_void_p_t m_sqlite3 {
+  public SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t m_sqlite3 {
     set {
-      NWNXLibPINVOKE.CNWSModule_m_sqlite3_set(swigCPtr, SWIGTYPE_p_std__shared_ptrT_void_p_t.getCPtr(value));
-      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+      NWNXLibPINVOKE.CNWSModule_m_sqlite3_set(swigCPtr, SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t.getCPtr(value));
     } 
     get {
-      SWIGTYPE_p_std__shared_ptrT_void_p_t ret = new SWIGTYPE_p_std__shared_ptrT_void_p_t(NWNXLibPINVOKE.CNWSModule_m_sqlite3_get(swigCPtr), true);
-      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_m_sqlite3_get(swigCPtr);
+      SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t(cPtr, false);
       return ret;
     } 
   }
@@ -1563,6 +1518,11 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
     return retVal;
   }
 
+  public int GetPlayerPartyControl() {
+    int retVal = NWNXLibPINVOKE.CNWSModule_GetPlayerPartyControl(swigCPtr);
+    return retVal;
+  }
+
   public void PostProcess() {
     NWNXLibPINVOKE.CNWSModule_PostProcess(swigCPtr);
   }
@@ -1622,12 +1582,6 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
 
   public void TimeStopSanityCheck() {
     NWNXLibPINVOKE.CNWSModule_TimeStopSanityCheck(swigCPtr);
-  }
-
-  public byte* GetFullCipher(CExoString sModuleResourceName) {
-    byte* retVal = NWNXLibPINVOKE.CNWSModule_GetFullCipher(swigCPtr, CExoString.getCPtr(sModuleResourceName));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return retVal;
   }
 
   public int FindTagPositionInTable(byte* szTag) {

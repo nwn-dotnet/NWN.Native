@@ -940,12 +940,6 @@ public unsafe class CServerExoApp : CBaseExoApp {
     return ret;
   }
 
-  public int SetDDCipherForModule(CExoString moduleName) {
-    int retVal = NWNXLibPINVOKE.CServerExoApp_SetDDCipherForModule(swigCPtr, CExoString.getCPtr(moduleName));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return retVal;
-  }
-
   public AdvertLUT GetNWSyncAdvertLUT() {
     AdvertLUT ret = new AdvertLUT(NWNXLibPINVOKE.CServerExoApp_GetNWSyncAdvertLUT(swigCPtr), false);
     return ret;

@@ -104,23 +104,23 @@ public unsafe class CExoTimers : global::System.IDisposable {
   public CExoTimers() : this(NWNXLibPINVOKE.new_CExoTimers(), true) {
   }
 
-  public uint GetLowResolutionTimer(int bForceSyncTimer) {
-    uint retVal = NWNXLibPINVOKE.CExoTimers_GetLowResolutionTimer__SWIG_0(swigCPtr, bForceSyncTimer);
+  public uint GetMillisecondTimer(int bForceSyncTimer) {
+    uint retVal = NWNXLibPINVOKE.CExoTimers_GetMillisecondTimer__SWIG_0(swigCPtr, bForceSyncTimer);
     return retVal;
   }
 
-  public uint GetLowResolutionTimer() {
-    uint retVal = NWNXLibPINVOKE.CExoTimers_GetLowResolutionTimer__SWIG_1(swigCPtr);
+  public uint GetMillisecondTimer() {
+    uint retVal = NWNXLibPINVOKE.CExoTimers_GetMillisecondTimer__SWIG_1(swigCPtr);
     return retVal;
   }
 
-  public ulong GetHighResolutionTimer(int bForceSyncTimer) {
-    ulong retVal = NWNXLibPINVOKE.CExoTimers_GetHighResolutionTimer__SWIG_0(swigCPtr, bForceSyncTimer);
+  public ulong GetMicrosecondTimer(int bForceSyncTimer) {
+    ulong retVal = NWNXLibPINVOKE.CExoTimers_GetMicrosecondTimer__SWIG_0(swigCPtr, bForceSyncTimer);
     return retVal;
   }
 
-  public ulong GetHighResolutionTimer() {
-    ulong retVal = NWNXLibPINVOKE.CExoTimers_GetHighResolutionTimer__SWIG_1(swigCPtr);
+  public ulong GetMicrosecondTimer() {
+    ulong retVal = NWNXLibPINVOKE.CExoTimers_GetMicrosecondTimer__SWIG_1(swigCPtr);
     return retVal;
   }
 

@@ -101,13 +101,13 @@ public unsafe class CScriptCompilerIncludeFileStackEntry : global::System.IDispo
     } 
   }
 
-  public CScriptSourceFile m_cSourceScript {
+  public CExoString m_sSourceScript {
     set {
-      NWNXLibPINVOKE.CScriptCompilerIncludeFileStackEntry_m_cSourceScript_set(swigCPtr, CScriptSourceFile.getCPtr(value));
+      NWNXLibPINVOKE.CScriptCompilerIncludeFileStackEntry_m_sSourceScript_set(swigCPtr, CExoString.getCPtr(value));
     } 
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompilerIncludeFileStackEntry_m_cSourceScript_get(swigCPtr);
-      CScriptSourceFile ret = (cPtr == global::System.IntPtr.Zero) ? null : new CScriptSourceFile(cPtr, false);
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompilerIncludeFileStackEntry_m_sSourceScript_get(swigCPtr);
+      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
       return ret;
     } 
   }

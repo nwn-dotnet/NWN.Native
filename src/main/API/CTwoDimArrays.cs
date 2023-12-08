@@ -164,1047 +164,13 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
 
   }
 
-  public C2DA m_pAppearanceTable {
+  public SWIGTYPE_p_p_C2DA m_p2DAs {
     set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pAppearanceTable_set(swigCPtr, C2DA.getCPtr(value));
+      NWNXLibPINVOKE.CTwoDimArrays_m_p2DAs_set(swigCPtr, SWIGTYPE_p_p_C2DA.getCPtr(value));
     } 
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pAppearanceTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pGenderTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pGenderTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pGenderTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pSurfaceMaterialTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pSurfaceMaterialTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pSurfaceMaterialTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pAreaTransitionTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pAreaTransitionTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pAreaTransitionTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPersistentVisualEffectTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPersistentVisualEffectTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPersistentVisualEffectTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pCreatureSpeedTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pCreatureSpeedTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pCreatureSpeedTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pDoorTypesTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pDoorTypesTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pDoorTypesTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pGenericDoorsTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pGenericDoorsTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pGenericDoorsTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPlaceablesTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPlaceablesTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPlaceablesTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pIPRPSpells {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPSpells_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPSpells_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pIPRPLightTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPLightTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPLightTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pIPRPColor {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPColor_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPColor_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pIPRPMelee {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPMelee_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPMelee_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pItemPropDefTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pItemPropDefTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pItemPropDefTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pItemPropsTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pItemPropsTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pItemPropsTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pCreatureSizeTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pCreatureSizeTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pCreatureSizeTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pArmorTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pArmorTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pArmorTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPortraitTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPortraitTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPortraitTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPartTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPartTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPartTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pArmorTypesTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pArmorTypesTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pArmorTypesTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pTileColorTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pTileColorTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pTileColorTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pLightColorTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pLightColorTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pLightColorTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pReplaceTextureTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pReplaceTextureTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pReplaceTextureTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pTailModelTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pTailModelTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pTailModelTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pWingModelTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pWingModelTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pWingModelTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pCloakModelTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pCloakModelTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pCloakModelTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pCursorTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pCursorTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pCursorTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pActionsTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pActionsTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pActionsTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pAmbientMusicTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pAmbientMusicTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pAmbientMusicTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pAmbientSoundTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pAmbientSoundTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pAmbientSoundTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pFootstepSoundsTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pFootstepSoundsTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pFootstepSoundsTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pAppearanceSoundsTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pAppearanceSoundsTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pAppearanceSoundsTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pWeaponSoundsTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pWeaponSoundsTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pWeaponSoundsTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pDefaultACSoundsTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pDefaultACSoundsTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pDefaultACSoundsTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pAmmunitionTypesTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pAmmunitionTypesTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pAmmunitionTypesTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pKeymapTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pKeymapTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pKeymapTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPlaceableSoundsTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPlaceableSoundsTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPlaceableSoundsTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pDamageLevelTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pDamageLevelTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pDamageLevelTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pEffectIconsTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pEffectIconsTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pEffectIconsTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pLoadHintsTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pLoadHintsTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pLoadHintsTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pSwearFilterTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pSwearFilterTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pSwearFilterTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPhenoTypeTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPhenoTypeTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPhenoTypeTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pIPRPVisualFxTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPVisualFxTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPVisualFxTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pWeatherTypesTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pWeatherTypesTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pWeatherTypesTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pProgFxTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pProgFxTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pProgFxTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pStateScriptsTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pStateScriptsTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pStateScriptsTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pVisualEffectTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pVisualEffectTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pVisualEffectTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pTrapTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pTrapTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pTrapTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pSpellSchoolTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pSpellSchoolTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pSpellSchoolTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPoisonTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPoisonTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPoisonTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pDiseaseTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pDiseaseTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pDiseaseTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pRepAdjustmentsTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pRepAdjustmentsTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pRepAdjustmentsTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pFractionalCRTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pFractionalCRTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pFractionalCRTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pCategoryTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pCategoryTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pCategoryTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pExcitedDurationTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pExcitedDurationTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pExcitedDurationTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pRestDurationTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pRestDurationTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pRestDurationTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pEncounterDifficultyTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pEncounterDifficultyTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pEncounterDifficultyTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pIPRPMonsterDamageTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPMonsterDamageTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPMonsterDamageTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pAssociatesAnimalCompanionTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pAssociatesAnimalCompanionTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pAssociatesAnimalCompanionTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pAssociatesFamiliarTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pAssociatesFamiliarTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pAssociatesFamiliarTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pIPRPDamageTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPDamageTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPDamageTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pSkillVsItemCostTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pSkillVsItemCostTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pSkillVsItemCostTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pIPRPBonusCostTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPBonusCostTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPBonusCostTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pIPRPSRCostTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPSRCostTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPSRCostTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pIPRPNeg5CostTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPNeg5CostTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPNeg5CostTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pIPRPArcSpell {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPArcSpell_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPArcSpell_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pEncumbranceTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pEncumbranceTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pEncumbranceTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPartsBelt {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPartsBelt_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPartsBelt_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPartsBicep {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPartsBicep_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPartsBicep_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPartsChest {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPartsChest_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPartsChest_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPartsFoot {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPartsFoot_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPartsFoot_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPartsForearm {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPartsForearm_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPartsForearm_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPartsHand {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPartsHand_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPartsHand_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPartsLegs {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPartsLegs_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPartsLegs_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPartsNeck {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPartsNeck_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPartsNeck_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPartsPelvis {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPartsPelvis_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPartsPelvis_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPartsShin {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPartsShin_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPartsShin_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPartsShoulder {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPartsShoulder_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPartsShoulder_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPartsRobe {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPartsRobe_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPartsRobe_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pItemValue {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pItemValue_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pItemValue_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPackages {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPackages_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPackages_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pRuleset {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pRuleset_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pRuleset_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pDamageTypes {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pDamageTypes_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pDamageTypes_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pDamageTypeGroups {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pDamageTypeGroups_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pDamageTypeGroups_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pXpBase {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pXpBase_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pXpBase_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pRangesTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pRangesTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pRangesTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pPolymorphTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pPolymorphTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pPolymorphTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pOnHitTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pOnHitTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pOnHitTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pOnHitSpellTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pOnHitSpellTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pOnHitSpellTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pOnHitDurationTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pOnHitDurationTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pOnHitDurationTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pDamageHitVisualTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pDamageHitVisualTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pDamageHitVisualTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pIPRPACModTypeTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPACModTypeTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPACModTypeTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pIPRPWeightIncTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPWeightIncTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPWeightIncTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pBodyBagTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pBodyBagTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pBodyBagTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public C2DA m_pIPRPFeatsTable {
-    set {
-      NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPFeatsTable_set(swigCPtr, C2DA.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_pIPRPFeatsTable_get(swigCPtr);
-      C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_m_p2DAs_get(swigCPtr);
+      SWIGTYPE_p_p_C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_C2DA(cPtr, false);
       return ret;
     } 
   }
@@ -1334,8 +300,677 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
     NWNXLibPINVOKE.CTwoDimArrays_Update2DACache(swigCPtr, CExoLinkedListC2DA.getCPtr(lstCached2DAs), nMaxCacheSize, C2DA.getCPtr(p2DA));
   }
 
+  public C2DA GetAppearanceTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetAppearanceTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetGenderTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetGenderTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetSurfaceMaterialTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetSurfaceMaterialTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetVisualEffectTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetVisualEffectTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPersistentVisualEffectTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPersistentVisualEffectTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetCreatureSpeedTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetCreatureSpeedTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetDoorTypesTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetDoorTypesTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetGenericDoorsTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetGenericDoorsTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPlaceablesTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPlaceablesTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetAreaTransitionTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetAreaTransitionTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetIPRPSpells() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetIPRPSpells(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetLightTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetLightTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetIPRPColor() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetIPRPColor(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetIPRPMelee() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetIPRPMelee(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetItemPropDefTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetItemPropDefTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetItemPropsTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetItemPropsTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetCreatureSizeTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetCreatureSizeTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetArmorTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetArmorTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetEncumbranceTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetEncumbranceTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPortraitTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPortraitTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPartsChest() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPartsChest(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetSpellSchoolTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetSpellSchoolTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetTrapTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetTrapTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetLightColorTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetLightColorTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetDamageTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetDamageTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPartsRobe() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPartsRobe(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetItemValueTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetItemValueTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPackagesTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPackagesTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetRulesetTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetRulesetTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetDamageTypesTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetDamageTypesTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetDamageTypeGroupsTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetDamageTypeGroupsTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPartTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPartTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetArmorTypesTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetArmorTypesTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetTileColorTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetTileColorTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetReplaceTextureTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetReplaceTextureTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetTailModelTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetTailModelTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetWingModelTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetWingModelTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetCloakModelTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetCloakModelTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetCursorTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetCursorTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetActionsTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetActionsTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetAmbientMusicTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetAmbientMusicTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetAmbientSoundTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetAmbientSoundTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetFootstepSoundsTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetFootstepSoundsTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetAppearanceSoundsTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetAppearanceSoundsTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetWeaponSoundsTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetWeaponSoundsTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetDefaultACSoundsTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetDefaultACSoundsTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetAmmunitionTypesTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetAmmunitionTypesTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetKeymapTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetKeymapTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPlaceableSoundsTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPlaceableSoundsTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetDamageLevelTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetDamageLevelTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetEffectIconsTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetEffectIconsTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetLoadHintsTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetLoadHintsTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetSwearFilterTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetSwearFilterTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPhenoTypeTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPhenoTypeTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetIPRPVisualFxTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetIPRPVisualFxTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetWeatherTypesTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetWeatherTypesTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetProgFxTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetProgFxTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetStateScriptsTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetStateScriptsTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPoisonTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPoisonTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetDiseaseTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetDiseaseTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetRepAdjustmentsTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetRepAdjustmentsTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetFractionalCRTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetFractionalCRTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetEncounterDifficultyTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetEncounterDifficultyTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetCategoryTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetCategoryTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetExcitedDurationTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetExcitedDurationTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetRestDurationTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetRestDurationTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPartsBelt() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPartsBelt(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPartsBicep() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPartsBicep(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPartsFoot() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPartsFoot(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPartsForearm() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPartsForearm(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPartsHand() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPartsHand(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPartsLegs() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPartsLegs(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPartsNeck() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPartsNeck(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPartsPelvis() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPartsPelvis(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPartsShin() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPartsShin(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPartsShoulder() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPartsShoulder(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetXpBase() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetXpBase(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetAssociatesAnimalCompanionTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetAssociatesAnimalCompanionTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetAssociatesFamiliarTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetAssociatesFamiliarTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetSkillVsItemCostTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetSkillVsItemCostTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetRangesTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetRangesTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetPolymorphTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPolymorphTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetDamageHitVisualTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetDamageHitVisualTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetBodyBagTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetBodyBagTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetIPRPFeatsTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetIPRPFeatsTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetMonsterDamageTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetMonsterDamageTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetOnHitTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetOnHitTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetOnHitSpellTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetOnHitSpellTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetOnHitDurationTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetOnHitDurationTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetACModTypeTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetACModTypeTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetWeightIncTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetWeightIncTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetArcaneSpellFailureTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetArcaneSpellFailureTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetItemPropBonusCostTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetItemPropBonusCostTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetItemPropSRTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetItemPropSRTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetItemPropNeg5CostTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetItemPropNeg5CostTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
   public void _Destructor() {
     NWNXLibPINVOKE.CTwoDimArrays__Destructor(swigCPtr);
+  }
+
+  public enum TwoDAIndex {
+    TwoDA_AppearanceTable,
+    TwoDA_GenderTable,
+    TwoDA_SurfaceMaterialTable,
+    TwoDA_AreaTransitionTable,
+    TwoDA_PersistentVisualEffectTable,
+    TwoDA_CreatureSpeedTable,
+    TwoDA_DoorTypesTable,
+    TwoDA_GenericDoorsTable,
+    TwoDA_PlaceablesTable,
+    TwoDA_IPRPSpells,
+    TwoDA_IPRPLightTable,
+    TwoDA_IPRPColor,
+    TwoDA_IPRPMelee,
+    TwoDA_ItemPropDefTable,
+    TwoDA_ItemPropsTable,
+    TwoDA_CreatureSizeTable,
+    TwoDA_ArmorTable,
+    TwoDA_PortraitTable,
+    TwoDA_PartTable,
+    TwoDA_ArmorTypesTable,
+    TwoDA_TileColorTable,
+    TwoDA_LightColorTable,
+    TwoDA_ReplaceTextureTable,
+    TwoDA_TailModelTable,
+    TwoDA_WingModelTable,
+    TwoDA_CloakModelTable,
+    TwoDA_CursorTable,
+    TwoDA_ActionsTable,
+    TwoDA_AmbientMusicTable,
+    TwoDA_AmbientSoundTable,
+    TwoDA_FootstepSoundsTable,
+    TwoDA_AppearanceSoundsTable,
+    TwoDA_WeaponSoundsTable,
+    TwoDA_DefaultACSoundsTable,
+    TwoDA_AmmunitionTypesTable,
+    TwoDA_KeymapTable,
+    TwoDA_PlaceableSoundsTable,
+    TwoDA_DamageLevelTable,
+    TwoDA_EffectIconsTable,
+    TwoDA_LoadHintsTable,
+    TwoDA_SwearFilterTable,
+    TwoDA_PhenoTypeTable,
+    TwoDA_IPRPVisualFxTable,
+    TwoDA_WeatherTypesTable,
+    TwoDA_ProgFxTable,
+    TwoDA_StateScriptsTable,
+    TwoDA_VisualEffectTable,
+    TwoDA_TrapTable,
+    TwoDA_SpellSchoolTable,
+    TwoDA_PoisonTable,
+    TwoDA_DiseaseTable,
+    TwoDA_RepAdjustmentsTable,
+    TwoDA_FractionalCRTable,
+    TwoDA_CategoryTable,
+    TwoDA_ExcitedDurationTable,
+    TwoDA_RestDurationTable,
+    TwoDA_EncounterDifficultyTable,
+    TwoDA_IPRPMonsterDamageTable,
+    TwoDA_AssociatesAnimalCompanionTable,
+    TwoDA_AssociatesFamiliarTable,
+    TwoDA_IPRPDamageTable,
+    TwoDA_SkillVsItemCostTable,
+    TwoDA_IPRPBonusCostTable,
+    TwoDA_IPRPSRCostTable,
+    TwoDA_IPRPNeg5CostTable,
+    TwoDA_IPRPArcSpell,
+    TwoDA_EncumbranceTable,
+    TwoDA_PartsBelt,
+    TwoDA_PartsBicep,
+    TwoDA_PartsChest,
+    TwoDA_PartsFoot,
+    TwoDA_PartsForearm,
+    TwoDA_PartsHand,
+    TwoDA_PartsLegs,
+    TwoDA_PartsNeck,
+    TwoDA_PartsPelvis,
+    TwoDA_PartsShin,
+    TwoDA_PartsShoulder,
+    TwoDA_PartsRobe,
+    TwoDA_ItemValue,
+    TwoDA_Packages,
+    TwoDA_Ruleset,
+    TwoDA_DamageTypes,
+    TwoDA_DamageTypeGroups,
+    TwoDA_XpBase,
+    TwoDA_RangesTable,
+    TwoDA_PolymorphTable,
+    TwoDA_OnHitTable,
+    TwoDA_OnHitSpellTable,
+    TwoDA_OnHitDurationTable,
+    TwoDA_DamageHitVisualTable,
+    TwoDA_IPRPACModTypeTable,
+    TwoDA_IPRPWeightIncTable,
+    TwoDA_BodyBagTable,
+    TwoDA_IPRPFeatsTable,
+    TWODA_COUNT
   }
 
 }

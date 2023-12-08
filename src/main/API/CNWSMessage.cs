@@ -429,6 +429,16 @@ public unsafe class CNWSMessage : CNWMessage {
     return retVal;
   }
 
+  public int SendServerToPlayerCamera_SetFlags(CNWSPlayer pPlayer, int nFlags) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_SetFlags(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nFlags);
+    return retVal;
+  }
+
+  public int SendServerToPlayerCamera_Attach(CNWSPlayer pPlayer, uint oidTarget, int bFindClearView) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerCamera_Attach(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidTarget, bFindClearView);
+    return retVal;
+  }
+
   public int SendServerToPlayerLogin_CharacterQuery(CNWSPlayer pPlayer, byte* nNumClasses, int* pClasses, byte* pLevels, uint* nXP) {
     int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerLogin_CharacterQuery(swigCPtr, CNWSPlayer.getCPtr(pPlayer), (global::System.IntPtr)nNumClasses, pClasses, pLevels, (global::System.IntPtr)nXP);
     return retVal;
@@ -554,6 +564,17 @@ public unsafe class CNWSMessage : CNWMessage {
 
   public int SendServerToPlayerUpdateFogAmount(byte nSunFogAmount, byte nMoonFogAmount, uint oidArea) {
     int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateFogAmount(swigCPtr, nSunFogAmount, nMoonFogAmount, oidArea);
+    return retVal;
+  }
+
+  public int SendServerToPlayerUpdateAreaLightColor(uint nType, uint nColor, uint oidArea, float fFadeTime) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateAreaLightColor(swigCPtr, nType, nColor, oidArea, fFadeTime);
+    return retVal;
+  }
+
+  public int SendServerToPlayerUpdateAreaLightDirection(uint nType, Vector vDirection, uint oidArea, float fFadeTime) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateAreaLightDirection(swigCPtr, nType, Vector.getCPtr(vDirection), oidArea, fFadeTime);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
 
@@ -763,6 +784,11 @@ public unsafe class CNWSMessage : CNWMessage {
 
   public int SendServerToPlayerUpdateItemHidden(CNWSPlayer pPlayer, CNWSItem pItem) {
     int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateItemHidden(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSItem.getCPtr(pItem));
+    return retVal;
+  }
+
+  public int SendServerToPlayerUpdateItemTextBubbleOverride(CNWSPlayer pPlayer, CNWSItem pItem) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerUpdateItemTextBubbleOverride(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSItem.getCPtr(pItem));
     return retVal;
   }
 
@@ -1713,6 +1739,11 @@ public unsafe class CNWSMessage : CNWMessage {
     return retVal;
   }
 
+  public int SendServerToPlayerMessage(uint nPlayerId, byte nMajor, byte nMinor, byte* pBuffer, uint nBufferSize) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerMessage(swigCPtr, nPlayerId, nMajor, nMinor, pBuffer, nBufferSize);
+    return retVal;
+  }
+
   public void AddDoorAppearanceToMessage(CNWSPlayer pPlayer, CNWSDoor pDoor) {
     NWNXLibPINVOKE.CNWSMessage_AddDoorAppearanceToMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSDoor.getCPtr(pDoor));
   }
@@ -1729,8 +1760,8 @@ public unsafe class CNWSMessage : CNWMessage {
     NWNXLibPINVOKE.CNWSMessage_AddTriggerGeometryToMessage(swigCPtr, CNWSTrigger.getCPtr(pTrigger));
   }
 
-  public void AddActiveItemPropertiesToMessage(CNWSItem pItem, CNWSCreature pCreature) {
-    NWNXLibPINVOKE.CNWSMessage_AddActiveItemPropertiesToMessage(swigCPtr, CNWSItem.getCPtr(pItem), CNWSCreature.getCPtr(pCreature));
+  public void AddActiveItemPropertiesToMessage(CNWSPlayer pPlayer, CNWSItem pItem, CNWSCreature pCreature) {
+    NWNXLibPINVOKE.CNWSMessage_AddActiveItemPropertiesToMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSItem.getCPtr(pItem), CNWSCreature.getCPtr(pCreature));
   }
 
   public int ComputeQuickbarItemUseCountUpdateRequired(CNWSObject pGameObject, CLastUpdateObject pLastUpdateObject) {
@@ -1849,11 +1880,6 @@ public unsafe class CNWSMessage : CNWMessage {
   public int SendServerToPlayerChat_DM_Whisper(uint nPlayerID, uint oidSpeaker, CExoString sSpeakerMessage) {
     int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerChat_DM_Whisper(swigCPtr, nPlayerID, oidSpeaker, CExoString.getCPtr(sSpeakerMessage));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return retVal;
-  }
-
-  public int SendServerToPlayerMessage(uint nPlayerId, byte nMajor, byte nMinor, byte* pBuffer, uint nBufferSize) {
-    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerMessage(swigCPtr, nPlayerId, nMajor, nMinor, pBuffer, nBufferSize);
     return retVal;
   }
 
@@ -1993,6 +2019,11 @@ public unsafe class CNWSMessage : CNWMessage {
 
   public int HandlePlayerToServerGuiEvent(CNWSPlayer pPlayer, byte nMinor) {
     int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerGuiEvent(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
+    return retVal;
+  }
+
+  public int HandlePlayerToServerCameraMessage(CNWSPlayer pPlayer, byte nMinor) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerCameraMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
     return retVal;
   }
 

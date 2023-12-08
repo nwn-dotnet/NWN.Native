@@ -245,19 +245,6 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
 
   }
 
-  public NativeArray<ushort> m_nUnalteredArmorModelPart {
-    set {
-      NWNXLibPINVOKE.CNWSItem_m_nUnalteredArmorModelPart_set(swigCPtr, value);
-    } 
-    get {
-      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSItem_m_nUnalteredArmorModelPart_get(swigCPtr);
-      NativeArray<ushort> retVal = new NativeArray<ushort>(arrayPtr, 19);
-
-      return retVal; // ushort[19]
-    }
-
-  }
-
   public uint m_oidPossessor {
     set {
       NWNXLibPINVOKE.CNWSItem_m_oidPossessor_set(swigCPtr, value);

@@ -147,50 +147,6 @@ public unsafe class CNWSTrigger : CNWSObject {
     } 
   }
 
-  public int m_nTriangles {
-    set {
-      NWNXLibPINVOKE.CNWSTrigger_m_nTriangles_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CNWSTrigger_m_nTriangles_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public int* m_pnTriangles {
-    set {
-      NWNXLibPINVOKE.CNWSTrigger_m_pnTriangles_set(swigCPtr, value);
-    } 
-    get {
-      int* retVal = NWNXLibPINVOKE.CNWSTrigger_m_pnTriangles_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public int m_nOutlineVertices {
-    set {
-      NWNXLibPINVOKE.CNWSTrigger_m_nOutlineVertices_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CNWSTrigger_m_nOutlineVertices_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public int* m_pnOutlineVertices {
-    set {
-      NWNXLibPINVOKE.CNWSTrigger_m_pnOutlineVertices_set(swigCPtr, value);
-    } 
-    get {
-      int* retVal = NWNXLibPINVOKE.CNWSTrigger_m_pnOutlineVertices_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
   public uint m_oidLastEntered {
     set {
       NWNXLibPINVOKE.CNWSTrigger_m_oidLastEntered_set(swigCPtr, value);

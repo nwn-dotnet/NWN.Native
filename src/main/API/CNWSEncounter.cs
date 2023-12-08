@@ -344,28 +344,6 @@ public unsafe class CNWSEncounter : CNWSObject {
 
   }
 
-  public int* m_pnOutlineVertices {
-    set {
-      NWNXLibPINVOKE.CNWSEncounter_m_pnOutlineVertices_set(swigCPtr, value);
-    } 
-    get {
-      int* retVal = NWNXLibPINVOKE.CNWSEncounter_m_pnOutlineVertices_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public int m_nNumOutlineVertices {
-    set {
-      NWNXLibPINVOKE.CNWSEncounter_m_nNumOutlineVertices_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CNWSEncounter_m_nNumOutlineVertices_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
   public float m_fMinActivateX {
     set {
       NWNXLibPINVOKE.CNWSEncounter_m_fMinActivateX_set(swigCPtr, value);

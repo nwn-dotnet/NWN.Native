@@ -293,11 +293,6 @@ public unsafe class CExoString : global::System.IDisposable {
     NWNXLibPINVOKE.CExoString_Format(swigCPtr, format);
   }
 
-  public int GetLength() {
-    int retVal = NWNXLibPINVOKE.CExoString_GetLength(swigCPtr);
-    return retVal;
-  }
-
   public void Insert(CExoString string_, int position) {
     NWNXLibPINVOKE.CExoString_Insert(swigCPtr, CExoString.getCPtr(string_), position);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
@@ -429,6 +424,20 @@ public unsafe class CExoString : global::System.IDisposable {
   public static CExoString FormatDuration(ulong span) {
     CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_FormatDuration__SWIG_4(span), true);
     return ret;
+  }
+
+  public int GetHash() {
+    int retVal = NWNXLibPINVOKE.CExoString_GetHash(swigCPtr);
+    return retVal;
+  }
+
+  public int GetLength() {
+    int retVal = NWNXLibPINVOKE.CExoString_GetLength(swigCPtr);
+    return retVal;
+  }
+
+  public void Clear() {
+    NWNXLibPINVOKE.CExoString_Clear(swigCPtr);
   }
 
   public void _Destructor() {

@@ -209,8 +209,18 @@ public unsafe class CNWSScriptVar : global::System.IDisposable {
     return ret;
   }
 
+  public bool HasCswy() {
+    bool ret = NWNXLibPINVOKE.CNWSScriptVar_HasCswy(swigCPtr);
+    return ret;
+  }
+
   public bool HasJson() {
     bool ret = NWNXLibPINVOKE.CNWSScriptVar_HasJson(swigCPtr);
+    return ret;
+  }
+
+  public bool IsEmpty() {
+    bool ret = NWNXLibPINVOKE.CNWSScriptVar_IsEmpty(swigCPtr);
     return ret;
   }
 

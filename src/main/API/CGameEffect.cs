@@ -367,8 +367,8 @@ public unsafe class CGameEffect : global::System.IDisposable {
     return ret;
   }
 
-  public int GetScriptEffectType() {
-    int retVal = NWNXLibPINVOKE.CGameEffect_GetScriptEffectType(swigCPtr);
+  public int GetScriptEffectType(int bAllTypes) {
+    int retVal = NWNXLibPINVOKE.CGameEffect_GetScriptEffectType(swigCPtr, bAllTypes);
     return retVal;
   }
 
@@ -412,7 +412,7 @@ public unsafe class CGameEffect : global::System.IDisposable {
   }
 
   public CExoString GetString(int nStorageLocation) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CGameEffect_GetString(swigCPtr, nStorageLocation), true);
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CGameEffect_GetString(swigCPtr, nStorageLocation), false);
     return ret;
   }
 
@@ -460,7 +460,7 @@ public unsafe class CGameEffect : global::System.IDisposable {
   }
 
   public CExoString GetCustomTag() {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CGameEffect_GetCustomTag(swigCPtr), true);
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CGameEffect_GetCustomTag(swigCPtr), false);
     return ret;
   }
 

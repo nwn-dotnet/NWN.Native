@@ -106,6 +106,10 @@ public unsafe class JsonEngineStructure : global::System.IDisposable {
     NWNXLibPINVOKE.JsonEngineStructure_Clear(swigCPtr);
   }
 
+  public void Unlink() {
+    NWNXLibPINVOKE.JsonEngineStructure_Unlink(swigCPtr);
+  }
+
 }
 
 }

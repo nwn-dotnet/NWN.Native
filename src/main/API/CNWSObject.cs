@@ -95,12 +95,12 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public CExoLocString m_sForGCC {
+  public static CExoLocString m_sForGCC {
     set {
-      NWNXLibPINVOKE.CNWSObject_m_sForGCC_set(swigCPtr, CExoLocString.getCPtr(value));
+      NWNXLibPINVOKE.CNWSObject_m_sForGCC_set(CExoLocString.getCPtr(value));
     } 
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSObject_m_sForGCC_get(swigCPtr);
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSObject_m_sForGCC_get();
       CExoLocString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoLocString(cPtr, false);
       return ret;
     } 
@@ -1129,14 +1129,13 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_std__shared_ptrT_void_p_t m_sqlite_db {
+  public SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t m_sqlite_db {
     set {
-      NWNXLibPINVOKE.CNWSObject_m_sqlite_db_set(swigCPtr, SWIGTYPE_p_std__shared_ptrT_void_p_t.getCPtr(value));
-      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+      NWNXLibPINVOKE.CNWSObject_m_sqlite_db_set(swigCPtr, SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t.getCPtr(value));
     } 
     get {
-      SWIGTYPE_p_std__shared_ptrT_void_p_t ret = new SWIGTYPE_p_std__shared_ptrT_void_p_t(NWNXLibPINVOKE.CNWSObject_m_sqlite_db_get(swigCPtr), true);
-      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSObject_m_sqlite_db_get(swigCPtr);
+      SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t(cPtr, false);
       return ret;
     } 
   }
@@ -1839,23 +1838,18 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     NWNXLibPINVOKE.CNWSObject_DoDamage(swigCPtr, nDamage);
   }
 
-  public virtual int DoDamageReduction(CNWSCreature pDamager, int nDamage, byte nDamagePower, int bSimulation, int bCombatDamage) {
-    int retVal = NWNXLibPINVOKE.CNWSObject_DoDamageReduction(swigCPtr, CNWSCreature.getCPtr(pDamager), nDamage, nDamagePower, bSimulation, bCombatDamage);
+  public virtual int DoDamageReduction(CNWSCreature pDamager, int nDamage, byte nDamagePower, int bSimulation, int bCombatDamage, int bRangedAttack) {
+    int retVal = NWNXLibPINVOKE.CNWSObject_DoDamageReduction(swigCPtr, CNWSCreature.getCPtr(pDamager), nDamage, nDamagePower, bSimulation, bCombatDamage, bRangedAttack);
     return retVal;
   }
 
-  public virtual int DoDamageResistance(CNWSCreature pDamager, int nDamage, uint nFlags, int bSimulation, int bCombatDamage, int bBaseWeaponDamage) {
-    int retVal = NWNXLibPINVOKE.CNWSObject_DoDamageResistance__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pDamager), nDamage, nFlags, bSimulation, bCombatDamage, bBaseWeaponDamage);
+  public virtual int DoDamageResistance(CNWSCreature pDamager, int nDamage, uint nFlags, int bSimulation, int bCombatDamage, int bBaseWeaponDamage, int bRangedAttack) {
+    int retVal = NWNXLibPINVOKE.CNWSObject_DoDamageResistance(swigCPtr, CNWSCreature.getCPtr(pDamager), nDamage, nFlags, bSimulation, bCombatDamage, bBaseWeaponDamage, bRangedAttack);
     return retVal;
   }
 
-  public virtual int DoDamageResistance(CNWSCreature pDamager, int nDamage, uint nFlags, int bSimulation, int bCombatDamage) {
-    int retVal = NWNXLibPINVOKE.CNWSObject_DoDamageResistance__SWIG_1(swigCPtr, CNWSCreature.getCPtr(pDamager), nDamage, nFlags, bSimulation, bCombatDamage);
-    return retVal;
-  }
-
-  public virtual int GetMaximumDamageResistanceVsDamageFlag(uint nDamageFlag, int* nBestIndex) {
-    int retVal = NWNXLibPINVOKE.CNWSObject_GetMaximumDamageResistanceVsDamageFlag(swigCPtr, nDamageFlag, nBestIndex);
+  public virtual int GetMaximumDamageResistanceVsDamageFlag(uint nDamageFlag, int* nBestIndex, int bRangedAttack) {
+    int retVal = NWNXLibPINVOKE.CNWSObject_GetMaximumDamageResistanceVsDamageFlag(swigCPtr, nDamageFlag, nBestIndex, bRangedAttack);
     return retVal;
   }
 
@@ -1895,6 +1889,11 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
 
   public int DoSpellImmunity(CNWSObject pCaster) {
     int retVal = NWNXLibPINVOKE.CNWSObject_DoSpellImmunity__SWIG_1(swigCPtr, CNWSObject.getCPtr(pCaster));
+    return retVal;
+  }
+
+  public int GetCasterLevel() {
+    int retVal = NWNXLibPINVOKE.CNWSObject_GetCasterLevel(swigCPtr);
     return retVal;
   }
 
@@ -2161,8 +2160,8 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     NWNXLibPINVOKE.CNWSObject_ReportOverflow__SWIG_1(swigCPtr, nOverflowFeedbackType, nTotal, nError);
   }
 
-  public SWIGTYPE_p_std__shared_ptrT_void_p_t GetObjectSqlDatabase() {
-    SWIGTYPE_p_std__shared_ptrT_void_p_t ret = new SWIGTYPE_p_std__shared_ptrT_void_p_t(NWNXLibPINVOKE.CNWSObject_GetObjectSqlDatabase(swigCPtr), true);
+  public SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t GetObjectSqlDatabase() {
+    SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t ret = new SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t(NWNXLibPINVOKE.CNWSObject_GetObjectSqlDatabase(swigCPtr), true);
     return ret;
   }
 

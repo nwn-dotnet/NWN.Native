@@ -354,12 +354,12 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
 
   }
 
-  public byte m_nStartingPackage {
+  public uint m_nStartingPackage {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nStartingPackage_set(swigCPtr, value);
     } 
     get {
-      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nStartingPackage_get(swigCPtr);
+      uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nStartingPackage_get(swigCPtr);
       return retVal;
     }
 
@@ -1553,7 +1553,7 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
     NWNXLibPINVOKE.CNWSCreatureStats_LevelDown(swigCPtr, CNWLevelStats.getCPtr(pLevelUpStats));
   }
 
-  public int LevelUpAutomatic(byte nClass, int bReadyAllSpells, byte nPackage) {
+  public int LevelUpAutomatic(byte nClass, int bReadyAllSpells, uint nPackage) {
     int retVal = NWNXLibPINVOKE.CNWSCreatureStats_LevelUpAutomatic(swigCPtr, nClass, bReadyAllSpells, nPackage);
     return retVal;
   }
@@ -1670,13 +1670,18 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
     return ret;
   }
 
+  public byte GetClassLevel(byte nMultiClass, int bUseNegativeLevel, int bIncludeCasterMultiplier) {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetClassLevel__SWIG_0(swigCPtr, nMultiClass, bUseNegativeLevel, bIncludeCasterMultiplier);
+    return retVal;
+  }
+
   public byte GetClassLevel(byte nMultiClass, int bUseNegativeLevel) {
-    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetClassLevel__SWIG_0(swigCPtr, nMultiClass, bUseNegativeLevel);
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetClassLevel__SWIG_1(swigCPtr, nMultiClass, bUseNegativeLevel);
     return retVal;
   }
 
   public byte GetClassLevel(byte nMultiClass) {
-    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetClassLevel__SWIG_1(swigCPtr, nMultiClass);
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetClassLevel__SWIG_2(swigCPtr, nMultiClass);
     return retVal;
   }
 
@@ -2676,6 +2681,30 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
   public byte GetSpellLikeAbilityCasterLevel(uint nSpellId) {
     byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellLikeAbilityCasterLevel(swigCPtr, nSpellId);
     return retVal;
+  }
+
+  public int GetSpellLikeAbilityCount() {
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellLikeAbilityCount(swigCPtr);
+    return retVal;
+  }
+
+  public uint GetSpellLikeAbilitySlotSpellId(uint nSlot) {
+    uint retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellLikeAbilitySlotSpellId(swigCPtr, nSlot);
+    return retVal;
+  }
+
+  public byte GetSpellLikeAbilitySlotCasterLevel(uint nSlot) {
+    byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellLikeAbilitySlotCasterLevel(swigCPtr, nSlot);
+    return retVal;
+  }
+
+  public int GetSpellLikeAbilitySlotReady(uint nSlot) {
+    int retVal = NWNXLibPINVOKE.CNWSCreatureStats_GetSpellLikeAbilitySlotReady(swigCPtr, nSlot);
+    return retVal;
+  }
+
+  public void SetSpellLikeAbilitySlotReady(uint nSlot, int bReady) {
+    NWNXLibPINVOKE.CNWSCreatureStats_SetSpellLikeAbilitySlotReady(swigCPtr, nSlot, bReady);
   }
 
   public float GetStatById(int nId) {

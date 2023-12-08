@@ -90,6 +90,28 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
     return !Equals(left, right);
   }
 
+  public ushort m_nResTypeSource {
+    set {
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nResTypeSource_set(swigCPtr, value);
+    } 
+    get {
+      ushort retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nResTypeSource_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public ushort m_nResTypeDebug {
+    set {
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nResTypeDebug_set(swigCPtr, value);
+    } 
+    get {
+      ushort retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_nResTypeDebug_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public CVirtualMachine m_pVMachine {
     set {
       NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pVMachine_set(swigCPtr, CVirtualMachine.getCPtr(value));
@@ -530,17 +552,6 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
     } 
   }
 
-  public CVirtualMachineDebugLoader m_pDebugLoader {
-    set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugLoader_set(swigCPtr, CVirtualMachineDebugLoader.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pDebugLoader_get(swigCPtr);
-      CVirtualMachineDebugLoader ret = (cPtr == global::System.IntPtr.Zero) ? null : new CVirtualMachineDebugLoader(cPtr, false);
-      return ret;
-    } 
-  }
-
   public CExoString m_sCurrentSourceFileName {
     set {
       NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_sCurrentSourceFileName_set(swigCPtr, CExoString.getCPtr(value));
@@ -552,13 +563,13 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
     } 
   }
 
-  public CScriptSourceFile m_pCurrentSourceScriptFile {
+  public CExoString m_sCurrentSourceScriptSource {
     set {
-      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pCurrentSourceScriptFile_set(swigCPtr, CScriptSourceFile.getCPtr(value));
+      NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_sCurrentSourceScriptSource_set(swigCPtr, CExoString.getCPtr(value));
     } 
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_pCurrentSourceScriptFile_get(swigCPtr);
-      CScriptSourceFile ret = (cPtr == global::System.IntPtr.Zero) ? null : new CScriptSourceFile(cPtr, false);
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_m_sCurrentSourceScriptSource_get(swigCPtr);
+      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
       return ret;
     } 
   }
@@ -574,7 +585,7 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
 
   }
 
-  public CVirtualMachineDebuggerInstance() : this(NWNXLibPINVOKE.new_CVirtualMachineDebuggerInstance(), true) {
+  public CVirtualMachineDebuggerInstance(ushort nScriptResType, ushort nDebugResType) : this(NWNXLibPINVOKE.new_CVirtualMachineDebuggerInstance(nScriptResType, nDebugResType), true) {
   }
 
   public int SpawnDebugger() {
@@ -601,6 +612,12 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
     return retVal;
   }
 
+  public static int VerifyDebugInfo(SWIGTYPE_p_std__shared_ptrT_DataView_t pDebugInfo) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_VerifyDebugInfo(SWIGTYPE_p_std__shared_ptrT_DataView_t.getCPtr(pDebugInfo));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return retVal;
+  }
+
   public int ReadIntegerFromInput(int* pnSize, int* pnInteger) {
     int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_ReadIntegerFromInput(swigCPtr, pnSize, pnInteger);
     return retVal;
@@ -621,8 +638,9 @@ public unsafe class CVirtualMachineDebuggerInstance : global::System.IDisposable
     return retVal;
   }
 
-  public int LoadDebugInfo(CVirtualMachineDebugLoader pDebugLoader) {
-    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_LoadDebugInfo(swigCPtr, CVirtualMachineDebugLoader.getCPtr(pDebugLoader));
+  public int LoadDebugInfo(SWIGTYPE_p_std__shared_ptrT_DataView_t pDebugData) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachineDebuggerInstance_LoadDebugInfo(swigCPtr, SWIGTYPE_p_std__shared_ptrT_DataView_t.getCPtr(pDebugData));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
 

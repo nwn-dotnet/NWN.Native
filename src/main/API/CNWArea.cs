@@ -629,6 +629,17 @@ public unsafe class CNWArea : global::System.IDisposable {
 
   }
 
+  public int m_bTileBorderDisabled {
+    set {
+      NWNXLibPINVOKE.CNWArea_m_bTileBorderDisabled_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWArea_m_bTileBorderDisabled_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public CNWArea() : this(NWNXLibPINVOKE.new_CNWArea(), true) {
   }
 

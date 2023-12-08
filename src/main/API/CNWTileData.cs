@@ -90,17 +90,6 @@ public unsafe class CNWTileData : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public CExoLinkedListCExoString m_pMethodStringList {
-    set {
-      NWNXLibPINVOKE.CNWTileData_m_pMethodStringList_set(swigCPtr, CExoLinkedListCExoString.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileData_m_pMethodStringList_get(swigCPtr);
-      CExoLinkedListCExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoLinkedListCExoString(cPtr, false);
-      return ret;
-    } 
-  }
-
   public CNWTileSurfaceMesh m_pSurfaceMesh {
     set {
       NWNXLibPINVOKE.CNWTileData_m_pSurfaceMesh_set(swigCPtr, CNWTileSurfaceMesh.getCPtr(value));
@@ -234,18 +223,6 @@ public unsafe class CNWTileData : global::System.IDisposable {
   }
 
   public CNWTileData() : this(NWNXLibPINVOKE.new_CNWTileData(), true) {
-  }
-
-  public int AddPropertyMethodString(uint nProperty, CExoString sMethodString) {
-    int retVal = NWNXLibPINVOKE.CNWTileData_AddPropertyMethodString(swigCPtr, nProperty, CExoString.getCPtr(sMethodString));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return retVal;
-  }
-
-  public CExoLinkedListCExoString GetPropertyMethodStringList(uint nProperty) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWTileData_GetPropertyMethodStringList(swigCPtr, nProperty);
-    CExoLinkedListCExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoLinkedListCExoString(cPtr, false);
-    return ret;
   }
 
   public CResRef GetModelResRef() {

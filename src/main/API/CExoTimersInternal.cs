@@ -144,23 +144,23 @@ public unsafe class CExoTimersInternal : global::System.IDisposable {
     } 
   }
 
-  public ulong m_nHighResTimerValue {
+  public ulong m_nUsecResTimerValue {
     set {
-      NWNXLibPINVOKE.CExoTimersInternal_m_nHighResTimerValue_set(swigCPtr, value);
+      NWNXLibPINVOKE.CExoTimersInternal_m_nUsecResTimerValue_set(swigCPtr, value);
     } 
     get {
-      ulong retVal = NWNXLibPINVOKE.CExoTimersInternal_m_nHighResTimerValue_get(swigCPtr);
+      ulong retVal = NWNXLibPINVOKE.CExoTimersInternal_m_nUsecResTimerValue_get(swigCPtr);
       return retVal;
     }
 
   }
 
-  public uint m_nLowResTimerValue {
+  public uint m_nMsecResimerValue {
     set {
-      NWNXLibPINVOKE.CExoTimersInternal_m_nLowResTimerValue_set(swigCPtr, value);
+      NWNXLibPINVOKE.CExoTimersInternal_m_nMsecResimerValue_set(swigCPtr, value);
     } 
     get {
-      uint retVal = NWNXLibPINVOKE.CExoTimersInternal_m_nLowResTimerValue_get(swigCPtr);
+      uint retVal = NWNXLibPINVOKE.CExoTimersInternal_m_nMsecResimerValue_get(swigCPtr);
       return retVal;
     }
 
@@ -191,23 +191,23 @@ public unsafe class CExoTimersInternal : global::System.IDisposable {
   public CExoTimersInternal() : this(NWNXLibPINVOKE.new_CExoTimersInternal(), true) {
   }
 
-  public uint GetLowResolutionTimerReal() {
-    uint retVal = NWNXLibPINVOKE.CExoTimersInternal_GetLowResolutionTimerReal(swigCPtr);
+  public uint GetMillisecondTimerReal() {
+    uint retVal = NWNXLibPINVOKE.CExoTimersInternal_GetMillisecondTimerReal(swigCPtr);
     return retVal;
   }
 
-  public ulong GetHighResolutionTimerReal() {
-    ulong retVal = NWNXLibPINVOKE.CExoTimersInternal_GetHighResolutionTimerReal(swigCPtr);
+  public ulong GetMicrosecondTimerReal() {
+    ulong retVal = NWNXLibPINVOKE.CExoTimersInternal_GetMicrosecondTimerReal(swigCPtr);
     return retVal;
   }
 
-  public uint GetLowResolutionTimer() {
-    uint retVal = NWNXLibPINVOKE.CExoTimersInternal_GetLowResolutionTimer(swigCPtr);
+  public uint GetMillisecondTimer() {
+    uint retVal = NWNXLibPINVOKE.CExoTimersInternal_GetMillisecondTimer(swigCPtr);
     return retVal;
   }
 
-  public ulong GetHighResolutionTimer() {
-    ulong retVal = NWNXLibPINVOKE.CExoTimersInternal_GetHighResolutionTimer(swigCPtr);
+  public ulong GetMicrosecondTimer() {
+    ulong retVal = NWNXLibPINVOKE.CExoTimersInternal_GetMicrosecondTimer(swigCPtr);
     return retVal;
   }
 

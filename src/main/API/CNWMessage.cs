@@ -332,18 +332,31 @@ public unsafe class CNWMessage : global::System.IDisposable {
     NWNXLibPINVOKE.CNWMessage_ClearReadMessage(swigCPtr);
   }
 
+  public void HandleExpectedTypeMismatch(CNWMessage.MessageType expect, CNWMessage.MessageType got) {
+    NWNXLibPINVOKE.CNWMessage_HandleExpectedTypeMismatch(swigCPtr, (int)expect, (int)got);
+  }
+
+  public void ExpectType(CNWMessage.MessageType t) {
+    NWNXLibPINVOKE.CNWMessage_ExpectType(swigCPtr, (int)t);
+  }
+
   public int ReadBOOL() {
     int retVal = NWNXLibPINVOKE.CNWMessage_ReadBOOL(swigCPtr);
     return retVal;
   }
 
+  public byte ReadBYTE(int nCount, int bPrefix) {
+    byte retVal = NWNXLibPINVOKE.CNWMessage_ReadBYTE__SWIG_0(swigCPtr, nCount, bPrefix);
+    return retVal;
+  }
+
   public byte ReadBYTE(int nCount) {
-    byte retVal = NWNXLibPINVOKE.CNWMessage_ReadBYTE__SWIG_0(swigCPtr, nCount);
+    byte retVal = NWNXLibPINVOKE.CNWMessage_ReadBYTE__SWIG_1(swigCPtr, nCount);
     return retVal;
   }
 
   public byte ReadBYTE() {
-    byte retVal = NWNXLibPINVOKE.CNWMessage_ReadBYTE__SWIG_1(swigCPtr);
+    byte retVal = NWNXLibPINVOKE.CNWMessage_ReadBYTE__SWIG_2(swigCPtr);
     return retVal;
   }
 
@@ -482,6 +495,11 @@ public unsafe class CNWMessage : global::System.IDisposable {
     return (void*)retVal;
   }
 
+  public SWIGTYPE_p_nlohmann__json ReadJSON() {
+    SWIGTYPE_p_nlohmann__json ret = new SWIGTYPE_p_nlohmann__json(NWNXLibPINVOKE.CNWMessage_ReadJSON(swigCPtr), true);
+    return ret;
+  }
+
   public int MessageReadOverflow(int bWarn) {
     int retVal = NWNXLibPINVOKE.CNWMessage_MessageReadOverflow__SWIG_0(swigCPtr, bWarn);
     return retVal;
@@ -523,16 +541,24 @@ public unsafe class CNWMessage : global::System.IDisposable {
     NWNXLibPINVOKE.CNWMessage_CreateWriteMessage__SWIG_3(swigCPtr);
   }
 
+  public void WriteType(CNWMessage.MessageType t) {
+    NWNXLibPINVOKE.CNWMessage_WriteType(swigCPtr, (int)t);
+  }
+
   public void WriteBOOL(int nBool) {
     NWNXLibPINVOKE.CNWMessage_WriteBOOL(swigCPtr, nBool);
   }
 
+  public void WriteBYTE(byte nByte, int nCount, int bPrefix) {
+    NWNXLibPINVOKE.CNWMessage_WriteBYTE__SWIG_0(swigCPtr, nByte, nCount, bPrefix);
+  }
+
   public void WriteBYTE(byte nByte, int nCount) {
-    NWNXLibPINVOKE.CNWMessage_WriteBYTE__SWIG_0(swigCPtr, nByte, nCount);
+    NWNXLibPINVOKE.CNWMessage_WriteBYTE__SWIG_1(swigCPtr, nByte, nCount);
   }
 
   public void WriteBYTE(byte nByte) {
-    NWNXLibPINVOKE.CNWMessage_WriteBYTE__SWIG_1(swigCPtr, nByte);
+    NWNXLibPINVOKE.CNWMessage_WriteBYTE__SWIG_2(swigCPtr, nByte);
   }
 
   public void WriteCHAR(byte nChar, int nCount) {
@@ -647,6 +673,11 @@ public unsafe class CNWMessage : global::System.IDisposable {
     NWNXLibPINVOKE.CNWMessage_WriteVOIDPtr(swigCPtr, (global::System.IntPtr)pVoidPtr, nSize);
   }
 
+  public void WriteJSON(SWIGTYPE_p_nlohmann__json json) {
+    NWNXLibPINVOKE.CNWMessage_WriteJSON(swigCPtr, SWIGTYPE_p_nlohmann__json.getCPtr(json));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
   public uint PeekAtWriteMessageSize() {
     uint retVal = NWNXLibPINVOKE.CNWMessage_PeekAtWriteMessageSize(swigCPtr);
     return retVal;
@@ -703,6 +734,25 @@ public unsafe class CNWMessage : global::System.IDisposable {
 
   public void _Destructor() {
     NWNXLibPINVOKE.CNWMessage__Destructor(swigCPtr);
+  }
+
+  public enum MessageType {
+    BITS = 1,
+    BOOL = 2,
+    BYTE = 3,
+    CHAR = 4,
+    WORD = 5,
+    SHORT = 6,
+    DWORD = 7,
+    INT = 8,
+    DWORD64 = 9,
+    INT64 = 10,
+    FLOAT = 11,
+    DOUBLE = 12,
+    RESREF = 13,
+    STRING = 14,
+    VOIDPTR = 15,
+    JSON = 16
   }
 
 }

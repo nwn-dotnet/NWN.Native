@@ -158,13 +158,13 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
 
   }
 
-  public CNWVirtualMachineCommands m_pVirtualMachineCommandImplementer {
+  public CNWSVirtualMachineCommands m_pVirtualMachineCommandImplementer {
     set {
-      NWNXLibPINVOKE.CServerExoAppInternal_m_pVirtualMachineCommandImplementer_set(swigCPtr, CNWVirtualMachineCommands.getCPtr(value));
+      NWNXLibPINVOKE.CServerExoAppInternal_m_pVirtualMachineCommandImplementer_set(swigCPtr, CNWSVirtualMachineCommands.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoAppInternal_m_pVirtualMachineCommandImplementer_get(swigCPtr);
-      CNWVirtualMachineCommands ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWVirtualMachineCommands(cPtr, false);
+      CNWSVirtualMachineCommands ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSVirtualMachineCommands(cPtr, false);
       return ret;
     } 
   }
@@ -774,6 +774,17 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
 
   }
 
+  public ulong m_nLastGameObjectUpdateDuration {
+    set {
+      NWNXLibPINVOKE.CServerExoAppInternal_m_nLastGameObjectUpdateDuration_set(swigCPtr, value);
+    } 
+    get {
+      ulong retVal = NWNXLibPINVOKE.CServerExoAppInternal_m_nLastGameObjectUpdateDuration_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public ulong m_nAutoSaveTimer {
     set {
       NWNXLibPINVOKE.CServerExoAppInternal_m_nAutoSaveTimer_set(swigCPtr, value);
@@ -1264,12 +1275,6 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
 
   public void DealWithLoadGameError(uint nLoadErr) {
     NWNXLibPINVOKE.CServerExoAppInternal_DealWithLoadGameError(swigCPtr, nLoadErr);
-  }
-
-  public int SetDDCipherForModule(CExoString moduleName) {
-    int retVal = NWNXLibPINVOKE.CServerExoAppInternal_SetDDCipherForModule(swigCPtr, CExoString.getCPtr(moduleName));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return retVal;
   }
 
   public CNWSModule GetModule() {

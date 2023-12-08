@@ -123,6 +123,17 @@ public unsafe class StackElement : global::System.IDisposable {
 
   }
 
+  public CExoString m_sString {
+    set {
+      NWNXLibPINVOKE.StackElement_m_sString_set(swigCPtr, CExoString.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.StackElement_m_sString_get(swigCPtr);
+      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
+      return ret;
+    } 
+  }
+
   public void* m_pStackPtr {
     set {
       NWNXLibPINVOKE.StackElement_m_pStackPtr_set(swigCPtr, (global::System.IntPtr)value);
@@ -134,7 +145,36 @@ public unsafe class StackElement : global::System.IDisposable {
 
   }
 
+  public byte m_nType {
+    set {
+      NWNXLibPINVOKE.StackElement_m_nType_set(swigCPtr, value);
+    } 
+    get {
+      byte retVal = NWNXLibPINVOKE.StackElement_m_nType_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public StackElement() : this(NWNXLibPINVOKE.new_StackElement(), true) {
+  }
+
+  public enum Type {
+    INVALID = 0x00,
+    INTEGER = 0x03,
+    FLOAT = 0x04,
+    STRING = 0x05,
+    OBJECT = 0x06,
+    ENGST0 = 0x10,
+    ENGST1 = 0x11,
+    ENGST2 = 0x12,
+    ENGST3 = 0x13,
+    ENGST4 = 0x14,
+    ENGST5 = 0x15,
+    ENGST6 = 0x16,
+    ENGST7 = 0x17,
+    ENGST8 = 0x18,
+    ENGST9 = 0x19
   }
 
 }

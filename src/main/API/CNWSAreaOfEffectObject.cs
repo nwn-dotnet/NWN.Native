@@ -223,12 +223,12 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
 
   }
 
-  public int m_nSpellLevel {
+  public int m_nSpellCasterLevel {
     set {
-      NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nSpellLevel_set(swigCPtr, value);
+      NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nSpellCasterLevel_set(swigCPtr, value);
     } 
     get {
-      int retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nSpellLevel_get(swigCPtr);
+      int retVal = NWNXLibPINVOKE.CNWSAreaOfEffectObject_m_nSpellCasterLevel_get(swigCPtr);
       return retVal;
     }
 
@@ -359,8 +359,8 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
     return ret;
   }
 
-  public void SetCreator(uint oidObject) {
-    NWNXLibPINVOKE.CNWSAreaOfEffectObject_SetCreator(swigCPtr, oidObject);
+  public void SetCreator(uint oidObject, int nCasterLevel, int nSpellId) {
+    NWNXLibPINVOKE.CNWSAreaOfEffectObject_SetCreator(swigCPtr, oidObject, nCasterLevel, nSpellId);
   }
 
   public override uint GetEffectSpellId() {

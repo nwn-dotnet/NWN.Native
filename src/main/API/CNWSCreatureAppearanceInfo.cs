@@ -279,17 +279,6 @@ public unsafe class CNWSCreatureAppearanceInfo : global::System.IDisposable {
 
   }
 
-  public int m_bForceArmorAppearanceUpdate {
-    set {
-      NWNXLibPINVOKE.CNWSCreatureAppearanceInfo_m_bForceArmorAppearanceUpdate_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CNWSCreatureAppearanceInfo_m_bForceArmorAppearanceUpdate_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
   public uint m_oidCloakItem {
     set {
       NWNXLibPINVOKE.CNWSCreatureAppearanceInfo_m_oidCloakItem_set(swigCPtr, value);

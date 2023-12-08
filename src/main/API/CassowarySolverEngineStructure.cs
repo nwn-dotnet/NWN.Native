@@ -90,11 +90,24 @@ public unsafe class CassowarySolverEngineStructure : global::System.IDisposable 
     return !Equals(left, right);
   }
 
-  public void _Destructor() {
-    NWNXLibPINVOKE.CassowarySolverEngineStructure__Destructor(swigCPtr);
+  public CassowarySolverEngineStructure() : this(NWNXLibPINVOKE.new_CassowarySolverEngineStructure(), true) {
   }
 
-  public CassowarySolverEngineStructure() : this(NWNXLibPINVOKE.new_CassowarySolverEngineStructure(), true) {
+  public bool IsEmpty() {
+    bool ret = NWNXLibPINVOKE.CassowarySolverEngineStructure_IsEmpty(swigCPtr);
+    return ret;
+  }
+
+  public void Clear() {
+    NWNXLibPINVOKE.CassowarySolverEngineStructure_Clear(swigCPtr);
+  }
+
+  public void Unlink() {
+    NWNXLibPINVOKE.CassowarySolverEngineStructure_Unlink(swigCPtr);
+  }
+
+  public void _Destructor() {
+    NWNXLibPINVOKE.CassowarySolverEngineStructure__Destructor(swigCPtr);
   }
 
 }

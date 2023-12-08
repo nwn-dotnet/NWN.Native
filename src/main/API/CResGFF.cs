@@ -157,17 +157,6 @@ public unsafe class CResGFF : CRes {
     } 
   }
 
-  public byte* m_pDDFileHeader {
-    set {
-      NWNXLibPINVOKE.CResGFF_m_pDDFileHeader_set(swigCPtr, value);
-    } 
-    get {
-      byte* retVal = NWNXLibPINVOKE.CResGFF_m_pDDFileHeader_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
   public uint m_nHeaderOffset {
     set {
       NWNXLibPINVOKE.CResGFF_m_nHeaderOffset_set(swigCPtr, value);

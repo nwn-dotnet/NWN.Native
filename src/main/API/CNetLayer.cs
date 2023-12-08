@@ -298,6 +298,11 @@ public unsafe class CNetLayer : global::System.IDisposable {
     return retVal;
   }
 
+  public void SetupConnectIdentity(CExoString sPlayerName, int nPlayerLanguage, uint nConnectionType, CExoString sCDKey, CExoString sLegacyCDKey) {
+    NWNXLibPINVOKE.CNetLayer_SetupConnectIdentity(swigCPtr, CExoString.getCPtr(sPlayerName), nPlayerLanguage, nConnectionType, CExoString.getCPtr(sCDKey), CExoString.getCPtr(sLegacyCDKey));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
   public int StartConnectToSession(uint nSessionId, CExoString sPlayerName, int nPlayerLanguage, CExoString sPassword, uint nTimeOut, uint nConnectionType, CExoString sCDKey, CExoString sLegacyCDKey, CExoString expectCryptoPublicKeyBase64) {
     int retVal = NWNXLibPINVOKE.CNetLayer_StartConnectToSession__SWIG_0(swigCPtr, nSessionId, CExoString.getCPtr(sPlayerName), nPlayerLanguage, CExoString.getCPtr(sPassword), nTimeOut, nConnectionType, CExoString.getCPtr(sCDKey), CExoString.getCPtr(sLegacyCDKey), CExoString.getCPtr(expectCryptoPublicKeyBase64));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
@@ -595,8 +600,8 @@ public unsafe class CNetLayer : global::System.IDisposable {
     return ret;
   }
 
-  public int ServerSatisfiesBuild(int nBuild, int nRevision) {
-    int retVal = NWNXLibPINVOKE.CNetLayer_ServerSatisfiesBuild(swigCPtr, nBuild, nRevision);
+  public int ServerSatisfiesBuild(int nBuild, int nRevision, int nPostfix) {
+    int retVal = NWNXLibPINVOKE.CNetLayer_ServerSatisfiesBuild(swigCPtr, nBuild, nRevision, nPostfix);
     return retVal;
   }
 

@@ -278,16 +278,6 @@ public unsafe class CNWTileSet : global::System.IDisposable {
     return retVal;
   }
 
-  public int ParseLine(byte* pLine) {
-    int retVal = NWNXLibPINVOKE.CNWTileSet_ParseLine(swigCPtr, pLine);
-    return retVal;
-  }
-
-  public int SetTileValue(byte* pVariable, byte* pValue) {
-    int retVal = NWNXLibPINVOKE.CNWTileSet_SetTileValue(swigCPtr, pVariable, pValue);
-    return retVal;
-  }
-
   public void UnloadTileSet() {
     NWNXLibPINVOKE.CNWTileSet_UnloadTileSet(swigCPtr);
   }

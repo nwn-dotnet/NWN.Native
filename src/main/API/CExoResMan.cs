@@ -278,24 +278,6 @@ public unsafe class CExoResMan : global::System.IDisposable {
     return retVal;
   }
 
-  public int AddResourceImageFile(CExoString sName, byte* pCipher, uint nPriority) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_AddResourceImageFile__SWIG_0(swigCPtr, CExoString.getCPtr(sName), pCipher, nPriority);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return retVal;
-  }
-
-  public int AddResourceImageFile(CExoString sName, byte* pCipher) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_AddResourceImageFile__SWIG_1(swigCPtr, CExoString.getCPtr(sName), pCipher);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return retVal;
-  }
-
-  public int AddResourceImageFile(CExoString sName) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_AddResourceImageFile__SWIG_2(swigCPtr, CExoString.getCPtr(sName));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return retVal;
-  }
-
   public int AddFixedKeyTableFile(CExoString sName, uint nPriority) {
     int retVal = NWNXLibPINVOKE.CExoResMan_AddFixedKeyTableFile__SWIG_0(swigCPtr, CExoString.getCPtr(sName), nPriority);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
@@ -416,12 +398,6 @@ public unsafe class CExoResMan : global::System.IDisposable {
 
   public int RemoveEncapsulatedResourceFile(CExoString sName) {
     int retVal = NWNXLibPINVOKE.CExoResMan_RemoveEncapsulatedResourceFile__SWIG_1(swigCPtr, CExoString.getCPtr(sName));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return retVal;
-  }
-
-  public int RemoveResourceImageFile(CExoString sName) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_RemoveResourceImageFile(swigCPtr, CExoString.getCPtr(sName));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
@@ -608,20 +584,14 @@ public unsafe class CExoResMan : global::System.IDisposable {
     NWNXLibPINVOKE.CExoResMan_RemoveFromToBeFreedList(swigCPtr, CRes.getCPtr(pRes));
   }
 
-  public int AddKeyTable(uint nPriority, CExoString sName, uint nTableType, byte* pCipher, int bDetectChanges) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_AddKeyTable__SWIG_0(swigCPtr, nPriority, CExoString.getCPtr(sName), nTableType, pCipher, bDetectChanges);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return retVal;
-  }
-
-  public int AddKeyTable(uint nPriority, CExoString sName, uint nTableType, byte* pCipher) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_AddKeyTable__SWIG_1(swigCPtr, nPriority, CExoString.getCPtr(sName), nTableType, pCipher);
+  public int AddKeyTable(uint nPriority, CExoString sName, uint nTableType, int bDetectChanges) {
+    int retVal = NWNXLibPINVOKE.CExoResMan_AddKeyTable__SWIG_0(swigCPtr, nPriority, CExoString.getCPtr(sName), nTableType, bDetectChanges);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
 
   public int AddKeyTable(uint nPriority, CExoString sName, uint nTableType) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_AddKeyTable__SWIG_2(swigCPtr, nPriority, CExoString.getCPtr(sName), nTableType);
+    int retVal = NWNXLibPINVOKE.CExoResMan_AddKeyTable__SWIG_1(swigCPtr, nPriority, CExoString.getCPtr(sName), nTableType);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
@@ -711,11 +681,6 @@ public unsafe class CExoResMan : global::System.IDisposable {
     return retVal;
   }
 
-  public int ServiceFromImage(CRes pRes) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromImage(swigCPtr, CRes.getCPtr(pRes));
-    return retVal;
-  }
-
   public int ServiceFromManifest(CRes pRes) {
     int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromManifest(swigCPtr, CRes.getCPtr(pRes));
     return retVal;
@@ -739,11 +704,6 @@ public unsafe class CExoResMan : global::System.IDisposable {
 
   public int ServiceFromResFileRaw(CRes pRes, int nSize, byte* pBuffer) {
     int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromResFileRaw(swigCPtr, CRes.getCPtr(pRes), nSize, pBuffer);
-    return retVal;
-  }
-
-  public int ServiceFromImageRaw(CRes pRes, int nSize, byte* pBuffer) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_ServiceFromImageRaw(swigCPtr, CRes.getCPtr(pRes), nSize, pBuffer);
     return retVal;
   }
 

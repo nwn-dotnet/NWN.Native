@@ -90,6 +90,55 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     return !Equals(left, right);
   }
 
+  public static CScriptCompilerAPI MakeDefaultAPI() {
+    CScriptCompilerAPI ret = new CScriptCompilerAPI(NWNXLibPINVOKE.CScriptCompiler_MakeDefaultAPI(), true);
+    return ret;
+  }
+
+  public CScriptCompilerAPI m_cAPI {
+    set {
+      NWNXLibPINVOKE.CScriptCompiler_m_cAPI_set(swigCPtr, CScriptCompilerAPI.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_cAPI_get(swigCPtr);
+      CScriptCompilerAPI ret = (cPtr == global::System.IntPtr.Zero) ? null : new CScriptCompilerAPI(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public ushort m_nResTypeSource {
+    set {
+      NWNXLibPINVOKE.CScriptCompiler_m_nResTypeSource_set(swigCPtr, value);
+    } 
+    get {
+      ushort retVal = NWNXLibPINVOKE.CScriptCompiler_m_nResTypeSource_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public ushort m_nResTypeCompiled {
+    set {
+      NWNXLibPINVOKE.CScriptCompiler_m_nResTypeCompiled_set(swigCPtr, value);
+    } 
+    get {
+      ushort retVal = NWNXLibPINVOKE.CScriptCompiler_m_nResTypeCompiled_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public ushort m_nResTypeDebug {
+    set {
+      NWNXLibPINVOKE.CScriptCompiler_m_nResTypeDebug_set(swigCPtr, value);
+    } 
+    get {
+      ushort retVal = NWNXLibPINVOKE.CScriptCompiler_m_nResTypeDebug_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public int m_nKeyWords {
     set {
       NWNXLibPINVOKE.CScriptCompiler_m_nKeyWords_set(swigCPtr, value);
@@ -289,68 +338,68 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
 
   }
 
-  public CExoArrayListInt32 m_pnTableInstructionFileReference {
+  public SWIGTYPE_p_std__vectorT_int_t m_pnTableInstructionFileReference {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pnTableInstructionFileReference_set(swigCPtr, CExoArrayListInt32.getCPtr(value));
+      NWNXLibPINVOKE.CScriptCompiler_m_pnTableInstructionFileReference_set(swigCPtr, SWIGTYPE_p_std__vectorT_int_t.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pnTableInstructionFileReference_get(swigCPtr);
-      CExoArrayListInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListInt32(cPtr, false);
+      SWIGTYPE_p_std__vectorT_int_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__vectorT_int_t(cPtr, false);
       return ret;
     } 
   }
 
-  public CExoArrayListInt32 m_pnTableInstructionLineNumber {
+  public SWIGTYPE_p_std__vectorT_int_t m_pnTableInstructionLineNumber {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pnTableInstructionLineNumber_set(swigCPtr, CExoArrayListInt32.getCPtr(value));
+      NWNXLibPINVOKE.CScriptCompiler_m_pnTableInstructionLineNumber_set(swigCPtr, SWIGTYPE_p_std__vectorT_int_t.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pnTableInstructionLineNumber_get(swigCPtr);
-      CExoArrayListInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListInt32(cPtr, false);
+      SWIGTYPE_p_std__vectorT_int_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__vectorT_int_t(cPtr, false);
       return ret;
     } 
   }
 
-  public CExoArrayListInt32 m_pnTableInstructionBinaryStart {
+  public SWIGTYPE_p_std__vectorT_int_t m_pnTableInstructionBinaryStart {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pnTableInstructionBinaryStart_set(swigCPtr, CExoArrayListInt32.getCPtr(value));
+      NWNXLibPINVOKE.CScriptCompiler_m_pnTableInstructionBinaryStart_set(swigCPtr, SWIGTYPE_p_std__vectorT_int_t.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pnTableInstructionBinaryStart_get(swigCPtr);
-      CExoArrayListInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListInt32(cPtr, false);
+      SWIGTYPE_p_std__vectorT_int_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__vectorT_int_t(cPtr, false);
       return ret;
     } 
   }
 
-  public CExoArrayListInt32 m_pnTableInstructionBinaryEnd {
+  public SWIGTYPE_p_std__vectorT_int_t m_pnTableInstructionBinaryEnd {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pnTableInstructionBinaryEnd_set(swigCPtr, CExoArrayListInt32.getCPtr(value));
+      NWNXLibPINVOKE.CScriptCompiler_m_pnTableInstructionBinaryEnd_set(swigCPtr, SWIGTYPE_p_std__vectorT_int_t.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pnTableInstructionBinaryEnd_get(swigCPtr);
-      CExoArrayListInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListInt32(cPtr, false);
+      SWIGTYPE_p_std__vectorT_int_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__vectorT_int_t(cPtr, false);
       return ret;
     } 
   }
 
-  public CExoArrayListInt32 m_pnTableInstructionBinaryFinal {
+  public SWIGTYPE_p_std__vectorT_int_t m_pnTableInstructionBinaryFinal {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pnTableInstructionBinaryFinal_set(swigCPtr, CExoArrayListInt32.getCPtr(value));
+      NWNXLibPINVOKE.CScriptCompiler_m_pnTableInstructionBinaryFinal_set(swigCPtr, SWIGTYPE_p_std__vectorT_int_t.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pnTableInstructionBinaryFinal_get(swigCPtr);
-      CExoArrayListInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListInt32(cPtr, false);
+      SWIGTYPE_p_std__vectorT_int_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__vectorT_int_t(cPtr, false);
       return ret;
     } 
   }
 
-  public CExoArrayListInt32 m_pnTableInstructionBinarySortedOrder {
+  public SWIGTYPE_p_std__vectorT_int_t m_pnTableInstructionBinarySortedOrder {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pnTableInstructionBinarySortedOrder_set(swigCPtr, CExoArrayListInt32.getCPtr(value));
+      NWNXLibPINVOKE.CScriptCompiler_m_pnTableInstructionBinarySortedOrder_set(swigCPtr, SWIGTYPE_p_std__vectorT_int_t.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pnTableInstructionBinarySortedOrder_get(swigCPtr);
-      CExoArrayListInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListInt32(cPtr, false);
+      SWIGTYPE_p_std__vectorT_int_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__vectorT_int_t(cPtr, false);
       return ret;
     } 
   }
@@ -377,103 +426,92 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
 
   }
 
-  public CExoArrayListInt32 m_pnSymbolTableVarType {
+  public SWIGTYPE_p_std__vectorT_int_t m_pnSymbolTableVarType {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pnSymbolTableVarType_set(swigCPtr, CExoArrayListInt32.getCPtr(value));
+      NWNXLibPINVOKE.CScriptCompiler_m_pnSymbolTableVarType_set(swigCPtr, SWIGTYPE_p_std__vectorT_int_t.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pnSymbolTableVarType_get(swigCPtr);
-      CExoArrayListInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListInt32(cPtr, false);
+      SWIGTYPE_p_std__vectorT_int_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__vectorT_int_t(cPtr, false);
       return ret;
     } 
   }
 
-  public CExoArrayListCExoString m_psSymbolTableVarName {
+  public VectorCExoString m_psSymbolTableVarName {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_psSymbolTableVarName_set(swigCPtr, CExoArrayListCExoString.getCPtr(value));
+      NWNXLibPINVOKE.CScriptCompiler_m_psSymbolTableVarName_set(swigCPtr, VectorCExoString.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_psSymbolTableVarName_get(swigCPtr);
-      CExoArrayListCExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListCExoString(cPtr, false);
+      VectorCExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new VectorCExoString(cPtr, false);
       return ret;
     } 
   }
 
-  public CExoArrayListCExoString m_psSymbolTableVarStructureName {
+  public VectorCExoString m_psSymbolTableVarStructureName {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_psSymbolTableVarStructureName_set(swigCPtr, CExoArrayListCExoString.getCPtr(value));
+      NWNXLibPINVOKE.CScriptCompiler_m_psSymbolTableVarStructureName_set(swigCPtr, VectorCExoString.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_psSymbolTableVarStructureName_get(swigCPtr);
-      CExoArrayListCExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListCExoString(cPtr, false);
+      VectorCExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new VectorCExoString(cPtr, false);
       return ret;
     } 
   }
 
-  public CExoArrayListInt32 m_pnSymbolTableVarStackLoc {
+  public SWIGTYPE_p_std__vectorT_int_t m_pnSymbolTableVarStackLoc {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pnSymbolTableVarStackLoc_set(swigCPtr, CExoArrayListInt32.getCPtr(value));
+      NWNXLibPINVOKE.CScriptCompiler_m_pnSymbolTableVarStackLoc_set(swigCPtr, SWIGTYPE_p_std__vectorT_int_t.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pnSymbolTableVarStackLoc_get(swigCPtr);
-      CExoArrayListInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListInt32(cPtr, false);
+      SWIGTYPE_p_std__vectorT_int_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__vectorT_int_t(cPtr, false);
       return ret;
     } 
   }
 
-  public CExoArrayListInt32 m_pnSymbolTableVarBegin {
+  public SWIGTYPE_p_std__vectorT_int_t m_pnSymbolTableVarBegin {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pnSymbolTableVarBegin_set(swigCPtr, CExoArrayListInt32.getCPtr(value));
+      NWNXLibPINVOKE.CScriptCompiler_m_pnSymbolTableVarBegin_set(swigCPtr, SWIGTYPE_p_std__vectorT_int_t.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pnSymbolTableVarBegin_get(swigCPtr);
-      CExoArrayListInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListInt32(cPtr, false);
+      SWIGTYPE_p_std__vectorT_int_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__vectorT_int_t(cPtr, false);
       return ret;
     } 
   }
 
-  public CExoArrayListInt32 m_pnSymbolTableVarEnd {
+  public SWIGTYPE_p_std__vectorT_int_t m_pnSymbolTableVarEnd {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pnSymbolTableVarEnd_set(swigCPtr, CExoArrayListInt32.getCPtr(value));
+      NWNXLibPINVOKE.CScriptCompiler_m_pnSymbolTableVarEnd_set(swigCPtr, SWIGTYPE_p_std__vectorT_int_t.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pnSymbolTableVarEnd_get(swigCPtr);
-      CExoArrayListInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListInt32(cPtr, false);
+      SWIGTYPE_p_std__vectorT_int_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__vectorT_int_t(cPtr, false);
       return ret;
     } 
   }
 
-  public CExoArrayListInt32 m_pnSymbolTableBinaryFinal {
+  public SWIGTYPE_p_std__vectorT_int_t m_pnSymbolTableBinaryFinal {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pnSymbolTableBinaryFinal_set(swigCPtr, CExoArrayListInt32.getCPtr(value));
+      NWNXLibPINVOKE.CScriptCompiler_m_pnSymbolTableBinaryFinal_set(swigCPtr, SWIGTYPE_p_std__vectorT_int_t.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pnSymbolTableBinaryFinal_get(swigCPtr);
-      CExoArrayListInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListInt32(cPtr, false);
+      SWIGTYPE_p_std__vectorT_int_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__vectorT_int_t(cPtr, false);
       return ret;
     } 
   }
 
-  public CExoArrayListInt32 m_pnSymbolTableBinarySortedOrder {
+  public SWIGTYPE_p_std__vectorT_int_t m_pnSymbolTableBinarySortedOrder {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_pnSymbolTableBinarySortedOrder_set(swigCPtr, CExoArrayListInt32.getCPtr(value));
+      NWNXLibPINVOKE.CScriptCompiler_m_pnSymbolTableBinarySortedOrder_set(swigCPtr, SWIGTYPE_p_std__vectorT_int_t.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pnSymbolTableBinarySortedOrder_get(swigCPtr);
-      CExoArrayListInt32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListInt32(cPtr, false);
+      SWIGTYPE_p_std__vectorT_int_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__vectorT_int_t(cPtr, false);
       return ret;
     } 
-  }
-
-  public int m_nDebugStatus {
-    set {
-      NWNXLibPINVOKE.CScriptCompiler_m_nDebugStatus_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CScriptCompiler_m_nDebugStatus_get(swigCPtr);
-      return retVal;
-    }
-
   }
 
   public int m_bCompileConditionalFile {
@@ -1330,17 +1368,6 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
 
   }
 
-  public int m_nDebugSymbolicOutput {
-    set {
-      NWNXLibPINVOKE.CScriptCompiler_m_nDebugSymbolicOutput_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CScriptCompiler_m_nDebugSymbolicOutput_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
   public int m_nGenerateDebuggerOutput {
     set {
       NWNXLibPINVOKE.CScriptCompiler_m_nGenerateDebuggerOutput_set(swigCPtr, value);
@@ -1363,12 +1390,12 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
 
   }
 
-  public int m_bOptimizeBinarySpace {
+  public uint m_nOptimizationFlags {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_bOptimizeBinarySpace_set(swigCPtr, value);
+      NWNXLibPINVOKE.CScriptCompiler_m_nOptimizationFlags_set(swigCPtr, value);
     } 
     get {
-      int retVal = NWNXLibPINVOKE.CScriptCompiler_m_bOptimizeBinarySpace_get(swigCPtr);
+      uint retVal = NWNXLibPINVOKE.CScriptCompiler_m_nOptimizationFlags_get(swigCPtr);
       return retVal;
     }
 
@@ -1429,15 +1456,15 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
 
   }
 
-  public int m_nBinaryCodeLength {
+  public SWIGTYPE_p_std__vectorT_int_t m_aOutputCodeInstructionBoundaries {
     set {
-      NWNXLibPINVOKE.CScriptCompiler_m_nBinaryCodeLength_set(swigCPtr, value);
+      NWNXLibPINVOKE.CScriptCompiler_m_aOutputCodeInstructionBoundaries_set(swigCPtr, SWIGTYPE_p_std__vectorT_int_t.getCPtr(value));
     } 
     get {
-      int retVal = NWNXLibPINVOKE.CScriptCompiler_m_nBinaryCodeLength_get(swigCPtr);
-      return retVal;
-    }
-
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_aOutputCodeInstructionBoundaries_get(swigCPtr);
+      SWIGTYPE_p_std__vectorT_int_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__vectorT_int_t(cPtr, false);
+      return ret;
+    } 
   }
 
   public byte* m_pchResolvedOutputBuffer {
@@ -1542,7 +1569,22 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     } 
   }
 
-  public CScriptCompiler() : this(NWNXLibPINVOKE.new_CScriptCompiler(), true) {
+  public uint m_nCapturedErrorStrRef {
+    set {
+      NWNXLibPINVOKE.CScriptCompiler_m_nCapturedErrorStrRef_set(swigCPtr, value);
+    } 
+    get {
+      uint retVal = NWNXLibPINVOKE.CScriptCompiler_m_nCapturedErrorStrRef_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public CScriptCompiler(ushort nSource, ushort nCompiled, ushort nDebug, CScriptCompilerAPI api) : this(NWNXLibPINVOKE.new_CScriptCompiler__SWIG_0(nSource, nCompiled, nDebug, CScriptCompilerAPI.getCPtr(api)), true) {
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public CScriptCompiler(ushort nSource, ushort nCompiled, ushort nDebug) : this(NWNXLibPINVOKE.new_CScriptCompiler__SWIG_1(nSource, nCompiled, nDebug), true) {
   }
 
   public void SetIdentifierSpecification(CExoString sLanguageSource) {
@@ -1555,20 +1597,8 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void SetCompileDebugLevel(int nValue) {
-    NWNXLibPINVOKE.CScriptCompiler_SetCompileDebugLevel(swigCPtr, nValue);
-  }
-
-  public void SetCompileSymbolicOutput(int nValue) {
-    NWNXLibPINVOKE.CScriptCompiler_SetCompileSymbolicOutput(swigCPtr, nValue);
-  }
-
   public void SetGenerateDebuggerOutput(int nValue) {
     NWNXLibPINVOKE.CScriptCompiler_SetGenerateDebuggerOutput(swigCPtr, nValue);
-  }
-
-  public void SetOptimizeBinaryCodeLength(int nValue) {
-    NWNXLibPINVOKE.CScriptCompiler_SetOptimizeBinaryCodeLength(swigCPtr, nValue);
   }
 
   public void SetAutomaticCleanUpAfterCompiles(int bValue) {
@@ -1692,8 +1722,8 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     return retVal;
   }
 
-  public int ParseCharacterPeriod() {
-    int retVal = NWNXLibPINVOKE.CScriptCompiler_ParseCharacterPeriod(swigCPtr);
+  public int ParseCharacterPeriod(int chNext) {
+    int retVal = NWNXLibPINVOKE.CScriptCompiler_ParseCharacterPeriod(swigCPtr, chNext);
     return retVal;
   }
 
@@ -1724,6 +1754,11 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
 
   public int ParseStringCharacter(int ch, int chNext, byte* pScript, int nScriptLength) {
     int retVal = NWNXLibPINVOKE.CScriptCompiler_ParseStringCharacter(swigCPtr, ch, chNext, pScript, nScriptLength);
+    return retVal;
+  }
+
+  public int ParseRawStringCharacter(int ch, int chNext) {
+    int retVal = NWNXLibPINVOKE.CScriptCompiler_ParseRawStringCharacter(swigCPtr, ch, chNext);
     return retVal;
   }
 
@@ -1905,6 +1940,34 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     return retVal;
   }
 
+  public void WriteByteSwap32(byte* buffer, int value) {
+    NWNXLibPINVOKE.CScriptCompiler_WriteByteSwap32(swigCPtr, buffer, value);
+  }
+
+  public int ReadByteSwap32(byte* buffer) {
+    int retVal = NWNXLibPINVOKE.CScriptCompiler_ReadByteSwap32(swigCPtr, buffer);
+    return retVal;
+  }
+
+  public byte* EmitInstruction(byte nOpCode, byte nAuxCode, int nDataSize) {
+    byte* retVal = NWNXLibPINVOKE.CScriptCompiler_EmitInstruction__SWIG_0(swigCPtr, nOpCode, nAuxCode, nDataSize);
+    return retVal;
+  }
+
+  public byte* EmitInstruction(byte nOpCode, byte nAuxCode) {
+    byte* retVal = NWNXLibPINVOKE.CScriptCompiler_EmitInstruction__SWIG_1(swigCPtr, nOpCode, nAuxCode);
+    return retVal;
+  }
+
+  public byte* EmitInstruction(byte nOpCode) {
+    byte* retVal = NWNXLibPINVOKE.CScriptCompiler_EmitInstruction__SWIG_2(swigCPtr, nOpCode);
+    return retVal;
+  }
+
+  public void EmitModifyStackPointer(int nModifyBy) {
+    NWNXLibPINVOKE.CScriptCompiler_EmitModifyStackPointer(swigCPtr, nModifyBy);
+  }
+
   public void StartLineNumberAtBinaryInstruction(int nFileReference, int nLineNumber, int nBinaryInstruction) {
     NWNXLibPINVOKE.CScriptCompiler_StartLineNumberAtBinaryInstruction(swigCPtr, nFileReference, nLineNumber, nBinaryInstruction);
   }
@@ -2028,6 +2091,16 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     return retVal;
   }
 
+  public int ConstantFoldNode(CScriptParseTreeNode pNode, int bForce) {
+    int retVal = NWNXLibPINVOKE.CScriptCompiler_ConstantFoldNode__SWIG_0(swigCPtr, CScriptParseTreeNode.getCPtr(pNode), bForce);
+    return retVal;
+  }
+
+  public int ConstantFoldNode(CScriptParseTreeNode pNode) {
+    int retVal = NWNXLibPINVOKE.CScriptCompiler_ConstantFoldNode__SWIG_1(swigCPtr, CScriptParseTreeNode.getCPtr(pNode));
+    return retVal;
+  }
+
   public void InitializeSwitchLabelList() {
     NWNXLibPINVOKE.CScriptCompiler_InitializeSwitchLabelList(swigCPtr);
   }
@@ -2049,10 +2122,6 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
   public int GenerateIdentifiersFromConstantVariables(CScriptParseTreeNode pNode) {
     int retVal = NWNXLibPINVOKE.CScriptCompiler_GenerateIdentifiersFromConstantVariables(swigCPtr, CScriptParseTreeNode.getCPtr(pNode));
     return retVal;
-  }
-
-  public void PrintBinaryAddress() {
-    NWNXLibPINVOKE.CScriptCompiler_PrintBinaryAddress(swigCPtr);
   }
 
   public int FoundReturnStatementOnAllBranches(CScriptParseTreeNode pNode) {
@@ -2116,6 +2185,16 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     return retVal;
   }
 
+  public byte* InstructionLookback(uint last) {
+    byte* retVal = NWNXLibPINVOKE.CScriptCompiler_InstructionLookback__SWIG_0(swigCPtr, last);
+    return retVal;
+  }
+
+  public byte* InstructionLookback() {
+    byte* retVal = NWNXLibPINVOKE.CScriptCompiler_InstructionLookback__SWIG_1(swigCPtr);
+    return retVal;
+  }
+
   public int InstallLoader() {
     int retVal = NWNXLibPINVOKE.CScriptCompiler_InstallLoader(swigCPtr);
     return retVal;
@@ -2157,6 +2236,15 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
 
   public int WriteResolvedOutput() {
     int retVal = NWNXLibPINVOKE.CScriptCompiler_WriteResolvedOutput(swigCPtr);
+    return retVal;
+  }
+
+  public void SetOptimizationFlags(uint nFlags) {
+    NWNXLibPINVOKE.CScriptCompiler_SetOptimizationFlags(swigCPtr, nFlags);
+  }
+
+  public uint GetOptimizationFlags() {
+    uint retVal = NWNXLibPINVOKE.CScriptCompiler_GetOptimizationFlags(swigCPtr);
     return retVal;
   }
 

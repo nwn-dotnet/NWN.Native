@@ -123,6 +123,9 @@ public unsafe class CScriptLocation : global::System.IDisposable {
 
   }
 
+  public CScriptLocation() : this(NWNXLibPINVOKE.new_CScriptLocation(), true) {
+  }
+
   public void CopyScriptLocation(CScriptLocation pLocation) {
     NWNXLibPINVOKE.CScriptLocation_CopyScriptLocation(swigCPtr, CScriptLocation.getCPtr(pLocation));
   }
@@ -137,7 +140,9 @@ public unsafe class CScriptLocation : global::System.IDisposable {
     return retVal;
   }
 
-  public CScriptLocation() : this(NWNXLibPINVOKE.new_CScriptLocation(), true) {
+  public int IsEmpty() {
+    int retVal = NWNXLibPINVOKE.CScriptLocation_IsEmpty(swigCPtr);
+    return retVal;
   }
 
 }

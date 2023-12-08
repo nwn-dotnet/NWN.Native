@@ -3826,8 +3826,13 @@ public unsafe class CNWSCreature : CNWSObject {
     return retVal;
   }
 
+  public uint GetDominatedCreatureId(int nAssociateIndex) {
+    uint retVal = NWNXLibPINVOKE.CNWSCreature_GetDominatedCreatureId__SWIG_0(swigCPtr, nAssociateIndex);
+    return retVal;
+  }
+
   public uint GetDominatedCreatureId() {
-    uint retVal = NWNXLibPINVOKE.CNWSCreature_GetDominatedCreatureId(swigCPtr);
+    uint retVal = NWNXLibPINVOKE.CNWSCreature_GetDominatedCreatureId__SWIG_1(swigCPtr);
     return retVal;
   }
 
@@ -4512,6 +4517,11 @@ public unsafe class CNWSCreature : CNWSObject {
 
   public void ReconcileAutoMapData() {
     NWNXLibPINVOKE.CNWSCreature_ReconcileAutoMapData(swigCPtr);
+  }
+
+  public int RetrieveAreaAutoMapDataIndex(uint oidArea) {
+    int retVal = NWNXLibPINVOKE.CNWSCreature_RetrieveAreaAutoMapDataIndex(swigCPtr, oidArea);
+    return retVal;
   }
 
   public void SetAllTilesExplored(uint oidArea, int bExplored) {

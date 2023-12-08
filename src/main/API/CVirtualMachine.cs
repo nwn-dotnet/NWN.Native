@@ -90,6 +90,39 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
     return !Equals(left, right);
   }
 
+  public ushort m_nResTypeSource {
+    set {
+      NWNXLibPINVOKE.CVirtualMachine_m_nResTypeSource_set(swigCPtr, value);
+    } 
+    get {
+      ushort retVal = NWNXLibPINVOKE.CVirtualMachine_m_nResTypeSource_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public ushort m_nResTypeCompiled {
+    set {
+      NWNXLibPINVOKE.CVirtualMachine_m_nResTypeCompiled_set(swigCPtr, value);
+    } 
+    get {
+      ushort retVal = NWNXLibPINVOKE.CVirtualMachine_m_nResTypeCompiled_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public ushort m_nResTypeDebug {
+    set {
+      NWNXLibPINVOKE.CVirtualMachine_m_nResTypeDebug_set(swigCPtr, value);
+    } 
+    get {
+      ushort retVal = NWNXLibPINVOKE.CVirtualMachine_m_nResTypeDebug_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public CScriptCompiler m_pJitCompiler {
     set {
       NWNXLibPINVOKE.CVirtualMachine_m_pJitCompiler_set(swigCPtr, CScriptCompiler.getCPtr(value));
@@ -309,17 +342,6 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
 
   }
 
-  public CVirtualMachineFile m_cVMFile {
-    set {
-      NWNXLibPINVOKE.CVirtualMachine_m_cVMFile_set(swigCPtr, CVirtualMachineFile.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachine_m_cVMFile_get(swigCPtr);
-      CVirtualMachineFile ret = (cPtr == global::System.IntPtr.Zero) ? null : new CVirtualMachineFile(cPtr, false);
-      return ret;
-    } 
-  }
-
   public CScriptLog m_pLog {
     set {
       NWNXLibPINVOKE.CVirtualMachine_m_pLog_set(swigCPtr, CScriptLog.getCPtr(value));
@@ -408,7 +430,7 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
     } 
   }
 
-  public CVirtualMachine() : this(NWNXLibPINVOKE.new_CVirtualMachine(), true) {
+  public CVirtualMachine(byte* sLanguageSource, byte* sOutputAlias, ushort nSource, ushort nCompiled, ushort nDebug) : this(NWNXLibPINVOKE.new_CVirtualMachine(sLanguageSource, sOutputAlias, nSource, nCompiled, nDebug), true) {
   }
 
   public int RunScript(CExoString psFileName, uint oid, int bOidValid, int nScriptEventID) {
@@ -520,7 +542,7 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
   }
 
   public int StackPushString(CExoString sString) {
-    int retVal = NWNXLibPINVOKE.CVirtualMachine_StackPushString(swigCPtr, CExoString.getCPtr(sString));
+    int retVal = NWNXLibPINVOKE.CVirtualMachine_StackPushString__SWIG_0(swigCPtr, CExoString.getCPtr(sString));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
@@ -549,14 +571,14 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
     NWNXLibPINVOKE.CVirtualMachine_DeleteScriptSituation(swigCPtr, (global::System.IntPtr)pScript);
   }
 
-  public int ExecuteCode(int* nInstructionPointer, SWIGTYPE_p_std__shared_ptrT_DataBlock_t pCode, CVirtualMachineDebuggingContext pDebugContext) {
-    int retVal = NWNXLibPINVOKE.CVirtualMachine_ExecuteCode__SWIG_0(swigCPtr, nInstructionPointer, SWIGTYPE_p_std__shared_ptrT_DataBlock_t.getCPtr(pCode), CVirtualMachineDebuggingContext.getCPtr(pDebugContext));
+  public int ExecuteCode(int* pInstructionPointer, SWIGTYPE_p_std__shared_ptrT_DataBlock_t pCode, CVirtualMachineDebuggingContext pDebugContext) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachine_ExecuteCode__SWIG_0(swigCPtr, pInstructionPointer, SWIGTYPE_p_std__shared_ptrT_DataBlock_t.getCPtr(pCode), CVirtualMachineDebuggingContext.getCPtr(pDebugContext));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
 
-  public int ExecuteCode(int* nInstructionPointer, SWIGTYPE_p_std__shared_ptrT_DataBlock_t pCode) {
-    int retVal = NWNXLibPINVOKE.CVirtualMachine_ExecuteCode__SWIG_1(swigCPtr, nInstructionPointer, SWIGTYPE_p_std__shared_ptrT_DataBlock_t.getCPtr(pCode));
+  public int ExecuteCode(int* pInstructionPointer, SWIGTYPE_p_std__shared_ptrT_DataBlock_t pCode) {
+    int retVal = NWNXLibPINVOKE.CVirtualMachine_ExecuteCode__SWIG_1(swigCPtr, pInstructionPointer, SWIGTYPE_p_std__shared_ptrT_DataBlock_t.getCPtr(pCode));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
@@ -566,13 +588,13 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
     return retVal;
   }
 
-  public void InitializeScript(CVirtualMachineScript pScript, SWIGTYPE_p_std__shared_ptrT_DataBlock_t pData, SWIGTYPE_p_std__shared_ptrT_DataBlock_t pDataNDB) {
-    NWNXLibPINVOKE.CVirtualMachine_InitializeScript__SWIG_0(swigCPtr, CVirtualMachineScript.getCPtr(pScript), SWIGTYPE_p_std__shared_ptrT_DataBlock_t.getCPtr(pData), SWIGTYPE_p_std__shared_ptrT_DataBlock_t.getCPtr(pDataNDB));
+  public void InitializeScript(CVirtualMachineScript pScript, SWIGTYPE_p_std__shared_ptrT_DataBlock_t pDataNCS, SWIGTYPE_p_std__shared_ptrT_DataBlock_t pDataNDB) {
+    NWNXLibPINVOKE.CVirtualMachine_InitializeScript__SWIG_0(swigCPtr, CVirtualMachineScript.getCPtr(pScript), SWIGTYPE_p_std__shared_ptrT_DataBlock_t.getCPtr(pDataNCS), SWIGTYPE_p_std__shared_ptrT_DataBlock_t.getCPtr(pDataNDB));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void InitializeScript(CVirtualMachineScript pScript, SWIGTYPE_p_std__shared_ptrT_DataBlock_t pData) {
-    NWNXLibPINVOKE.CVirtualMachine_InitializeScript__SWIG_1(swigCPtr, CVirtualMachineScript.getCPtr(pScript), SWIGTYPE_p_std__shared_ptrT_DataBlock_t.getCPtr(pData));
+  public void InitializeScript(CVirtualMachineScript pScript, SWIGTYPE_p_std__shared_ptrT_DataBlock_t pDataNCS) {
+    NWNXLibPINVOKE.CVirtualMachine_InitializeScript__SWIG_1(swigCPtr, CVirtualMachineScript.getCPtr(pScript), SWIGTYPE_p_std__shared_ptrT_DataBlock_t.getCPtr(pDataNCS));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 

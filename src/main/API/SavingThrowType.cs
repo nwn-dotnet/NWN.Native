@@ -31,7 +31,8 @@ public enum SavingThrowType {
   Good = 16,
   Evil = 17,
   Law = 18,
-  Chaos = 19
+  Chaos = 19,
+  Paralysis = 20
 }
 
 }

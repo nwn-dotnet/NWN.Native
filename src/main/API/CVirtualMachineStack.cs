@@ -123,17 +123,6 @@ public unsafe class CVirtualMachineStack : global::System.IDisposable {
 
   }
 
-  public byte* m_pchStackTypes {
-    set {
-      NWNXLibPINVOKE.CVirtualMachineStack_m_pchStackTypes_set(swigCPtr, value);
-    } 
-    get {
-      byte* retVal = NWNXLibPINVOKE.CVirtualMachineStack_m_pchStackTypes_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
   public StackElement m_pStackNodes {
     set {
       NWNXLibPINVOKE.CVirtualMachineStack_m_pStackNodes_set(swigCPtr, StackElement.getCPtr(value));

@@ -338,13 +338,13 @@ public unsafe class CNWRules : global::System.IDisposable {
 
   }
 
-  public UnorderedMapStringCachedRulesetEntry m_ruleset_2da_cache {
+  public SWIGTYPE_p_std__unordered_mapT_unsigned_long_CachedRulesetEntry_t m_ruleset_2da_cache {
     set {
-      NWNXLibPINVOKE.CNWRules_m_ruleset_2da_cache_set(swigCPtr, UnorderedMapStringCachedRulesetEntry.getCPtr(value));
+      NWNXLibPINVOKE.CNWRules_m_ruleset_2da_cache_set(swigCPtr, SWIGTYPE_p_std__unordered_mapT_unsigned_long_CachedRulesetEntry_t.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWRules_m_ruleset_2da_cache_get(swigCPtr);
-      UnorderedMapStringCachedRulesetEntry ret = (cPtr == global::System.IntPtr.Zero) ? null : new UnorderedMapStringCachedRulesetEntry(cPtr, false);
+      SWIGTYPE_p_std__unordered_mapT_unsigned_long_CachedRulesetEntry_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__unordered_mapT_unsigned_long_CachedRulesetEntry_t(cPtr, false);
       return ret;
     } 
   }
@@ -360,31 +360,6 @@ public unsafe class CNWRules : global::System.IDisposable {
 
   public int IsArcaneClass(byte nClass) {
     int retVal = NWNXLibPINVOKE.CNWRules_IsArcaneClass(swigCPtr, nClass);
-    return retVal;
-  }
-
-  public byte GetFeatExpansionLevel(ushort nFeat) {
-    byte retVal = NWNXLibPINVOKE.CNWRules_GetFeatExpansionLevel(swigCPtr, nFeat);
-    return retVal;
-  }
-
-  public byte GetSkillExpansionLevel(ushort nSkill) {
-    byte retVal = NWNXLibPINVOKE.CNWRules_GetSkillExpansionLevel(swigCPtr, nSkill);
-    return retVal;
-  }
-
-  public byte GetClassExpansionLevel(byte nClass) {
-    byte retVal = NWNXLibPINVOKE.CNWRules_GetClassExpansionLevel(swigCPtr, nClass);
-    return retVal;
-  }
-
-  public byte GetSpellExpansionLevel(uint nSpellId) {
-    byte retVal = NWNXLibPINVOKE.CNWRules_GetSpellExpansionLevel(swigCPtr, nSpellId);
-    return retVal;
-  }
-
-  public byte GetFamiliarExpansionLevel(byte nFamiliar, int bAnimalCompanion) {
-    byte retVal = NWNXLibPINVOKE.CNWRules_GetFamiliarExpansionLevel(swigCPtr, nFamiliar, bAnimalCompanion);
     return retVal;
   }
 
@@ -456,21 +431,18 @@ public unsafe class CNWRules : global::System.IDisposable {
     return retVal;
   }
 
-  public CExoString GetRulesetStringEntry(CExoString label, CExoString whenMissing) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CNWRules_GetRulesetStringEntry(swigCPtr, CExoString.getCPtr(label), CExoString.getCPtr(whenMissing)), true);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public CExoString GetRulesetStringEntry(ulong hashedLabel, byte* whenMissing) {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CNWRules_GetRulesetStringEntry(swigCPtr, hashedLabel, whenMissing), true);
     return ret;
   }
 
-  public int GetRulesetIntEntry(CExoString label, int whenMissing) {
-    int retVal = NWNXLibPINVOKE.CNWRules_GetRulesetIntEntry(swigCPtr, CExoString.getCPtr(label), whenMissing);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int GetRulesetIntEntry(ulong hashedLabel, int whenMissing) {
+    int retVal = NWNXLibPINVOKE.CNWRules_GetRulesetIntEntry(swigCPtr, hashedLabel, whenMissing);
     return retVal;
   }
 
-  public float GetRulesetFloatEntry(CExoString label, float whenMissing) {
-    float retVal = NWNXLibPINVOKE.CNWRules_GetRulesetFloatEntry(swigCPtr, CExoString.getCPtr(label), whenMissing);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public float GetRulesetFloatEntry(ulong hashedLabel, float whenMissing) {
+    float retVal = NWNXLibPINVOKE.CNWRules_GetRulesetFloatEntry(swigCPtr, hashedLabel, whenMissing);
     return retVal;
   }
 
@@ -506,8 +478,22 @@ public unsafe class CNWRules : global::System.IDisposable {
     NWNXLibPINVOKE.CNWRules_LoadDifficultyInfo(swigCPtr);
   }
 
+  public void LoadEncodingInfo() {
+    NWNXLibPINVOKE.CNWRules_LoadEncodingInfo(swigCPtr);
+  }
+
   public void LoadRulesetInfo() {
     NWNXLibPINVOKE.CNWRules_LoadRulesetInfo(swigCPtr);
+  }
+
+  public static ulong fnv1a(byte* s, uint l, ulong partial) {
+    ulong retVal = NWNXLibPINVOKE.CNWRules_fnv1a__SWIG_0(s, l, partial);
+    return retVal;
+  }
+
+  public static ulong fnv1a(byte* s, uint l) {
+    ulong retVal = NWNXLibPINVOKE.CNWRules_fnv1a__SWIG_1(s, l);
+    return retVal;
   }
 
   public void _Destructor() {
