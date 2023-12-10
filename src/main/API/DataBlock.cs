@@ -12,8 +12,10 @@ namespace NWN.Native.API {
 
 public unsafe class DataBlock : DataView {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
+  private bool swigCMemOwnDerived;
 
-  internal DataBlock(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.DataBlock_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal DataBlock(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.DataBlock_SWIGSmartPtrUpcast(cPtr), true) {
+    swigCMemOwnDerived = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -24,8 +26,8 @@ public unsafe class DataBlock : DataView {
   protected override void Dispose(bool disposing) {
     lock(this) {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
-        if (swigCMemOwn) {
-          swigCMemOwn = false;
+        if (swigCMemOwnDerived) {
+          swigCMemOwnDerived = false;
           NWNXLibPINVOKE.delete_DataBlock(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
@@ -99,35 +101,43 @@ public unsafe class DataBlock : DataView {
 
   public void* Data() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.DataBlock_Data(swigCPtr);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return (void*)retVal;
   }
 
   public void AllocateAtLeast(uint length) {
     NWNXLibPINVOKE.DataBlock_AllocateAtLeast(swigCPtr, length);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
   public void MarkUsed(uint length) {
     NWNXLibPINVOKE.DataBlock_MarkUsed(swigCPtr, length);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
   public void Prepend(void* payload, uint length, uint chunkSize) {
     NWNXLibPINVOKE.DataBlock_Prepend__SWIG_0(swigCPtr, (global::System.IntPtr)payload, length, chunkSize);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
   public void Prepend(void* payload, uint length) {
     NWNXLibPINVOKE.DataBlock_Prepend__SWIG_1(swigCPtr, (global::System.IntPtr)payload, length);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
   public void Append(void* payload, uint length, uint chunkSize) {
     NWNXLibPINVOKE.DataBlock_Append__SWIG_0(swigCPtr, (global::System.IntPtr)payload, length, chunkSize);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
   public void Append(void* payload, uint length) {
     NWNXLibPINVOKE.DataBlock_Append__SWIG_1(swigCPtr, (global::System.IntPtr)payload, length);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
   public void Compact() {
     NWNXLibPINVOKE.DataBlock_Compact(swigCPtr);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
 }

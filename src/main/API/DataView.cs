@@ -12,10 +12,10 @@ namespace NWN.Native.API {
 
 public unsafe class DataView : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
-  protected bool swigCMemOwn;
+  private bool swigCMemOwnBase;
 
   internal DataView(global::System.IntPtr cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
+    swigCMemOwnBase = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -35,8 +35,8 @@ public unsafe class DataView : global::System.IDisposable {
   protected virtual void Dispose(bool disposing) {
     lock(this) {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
-        if (swigCMemOwn) {
-          swigCMemOwn = false;
+        if (swigCMemOwnBase) {
+          swigCMemOwnBase = false;
           NWNXLibPINVOKE.delete_DataView(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
@@ -92,10 +92,10 @@ public unsafe class DataView : global::System.IDisposable {
 
   public unsafe class Shared : global::System.IDisposable {
     private global::System.Runtime.InteropServices.HandleRef swigCPtr;
-    protected bool swigCMemOwn;
+    private bool swigCMemOwnBase;
   
     internal Shared(global::System.IntPtr cPtr, bool cMemoryOwn) {
-      swigCMemOwn = cMemoryOwn;
+      swigCMemOwnBase = cMemoryOwn;
       swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
     }
   
@@ -115,8 +115,8 @@ public unsafe class DataView : global::System.IDisposable {
     protected virtual void Dispose(bool disposing) {
       lock(this) {
         if (swigCPtr.Handle != global::System.IntPtr.Zero) {
-          if (swigCMemOwn) {
-            swigCMemOwn = false;
+          if (swigCMemOwnBase) {
+            swigCMemOwnBase = false;
             NWNXLibPINVOKE.delete_DataView_Shared(swigCPtr);
           }
           swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
@@ -176,9 +176,11 @@ public unsafe class DataView : global::System.IDisposable {
     public void* m_data {
       set {
         NWNXLibPINVOKE.DataView_Shared_m_data_set(swigCPtr, (global::System.IntPtr)value);
+        if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       } 
       get {
           global::System.IntPtr retVal = NWNXLibPINVOKE.DataView_Shared_m_data_get(swigCPtr);
+        if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
           return (void*)retVal;
       }
   
@@ -187,9 +189,11 @@ public unsafe class DataView : global::System.IDisposable {
     public uint m_used {
       set {
         NWNXLibPINVOKE.DataView_Shared_m_used_set(swigCPtr, value);
+        if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       } 
       get {
         uint ret = NWNXLibPINVOKE.DataView_Shared_m_used_get(swigCPtr);
+        if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
         return ret;
       } 
     }
@@ -197,9 +201,11 @@ public unsafe class DataView : global::System.IDisposable {
     public uint m_allocated {
       set {
         NWNXLibPINVOKE.DataView_Shared_m_allocated_set(swigCPtr, value);
+        if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       } 
       get {
         uint ret = NWNXLibPINVOKE.DataView_Shared_m_allocated_get(swigCPtr);
+        if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
         return ret;
       } 
     }
@@ -207,33 +213,39 @@ public unsafe class DataView : global::System.IDisposable {
     public bool m_owned {
       set {
         NWNXLibPINVOKE.DataView_Shared_m_owned_set(swigCPtr, value);
+        if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       } 
       get {
         bool ret = NWNXLibPINVOKE.DataView_Shared_m_owned_get(swigCPtr);
+        if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
         return ret;
       } 
     }
   
   }
 
-  public SWIGTYPE_p_std__shared_ptrT_DataView__Shared_t m_shared {
+  public DataView.Shared m_shared {
     set {
-      NWNXLibPINVOKE.DataView_m_shared_set(swigCPtr, SWIGTYPE_p_std__shared_ptrT_DataView__Shared_t.getCPtr(value));
+      NWNXLibPINVOKE.DataView_m_shared_set(swigCPtr, DataView.Shared.getCPtr(value));
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.DataView_m_shared_get(swigCPtr);
-      SWIGTYPE_p_std__shared_ptrT_DataView__Shared_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__shared_ptrT_DataView__Shared_t(cPtr, false);
+      DataView.Shared ret = (cPtr == global::System.IntPtr.Zero) ? null : new DataView.Shared(cPtr, true);
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_std__shared_ptrT_DataView__Shared_t m_parent {
+  public DataView.Shared m_parent {
     set {
-      NWNXLibPINVOKE.DataView_m_parent_set(swigCPtr, SWIGTYPE_p_std__shared_ptrT_DataView__Shared_t.getCPtr(value));
+      NWNXLibPINVOKE.DataView_m_parent_set(swigCPtr, DataView.Shared.getCPtr(value));
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.DataView_m_parent_get(swigCPtr);
-      SWIGTYPE_p_std__shared_ptrT_DataView__Shared_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__shared_ptrT_DataView__Shared_t(cPtr, false);
+      DataView.Shared ret = (cPtr == global::System.IntPtr.Zero) ? null : new DataView.Shared(cPtr, true);
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       return ret;
     } 
   }
@@ -243,31 +255,39 @@ public unsafe class DataView : global::System.IDisposable {
 
   public void* Data() {
     global::System.IntPtr retVal = NWNXLibPINVOKE.DataView_Data(swigCPtr);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return (void*)retVal;
   }
 
   public uint Used() {
     uint ret = NWNXLibPINVOKE.DataView_Used(swigCPtr);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public uint Allocated() {
     uint ret = NWNXLibPINVOKE.DataView_Allocated(swigCPtr);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public SWIGTYPE_p_std__shared_ptrT_DataView_t View(uint offset, uint count) {
-    SWIGTYPE_p_std__shared_ptrT_DataView_t ret = new SWIGTYPE_p_std__shared_ptrT_DataView_t(NWNXLibPINVOKE.DataView_View(swigCPtr, offset, count), true);
+  public DataView View(uint offset, uint count) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.DataView_View(swigCPtr, offset, count);
+    DataView ret = (cPtr == global::System.IntPtr.Zero) ? null : new DataView(cPtr, true);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public SWIGTYPE_p_std__shared_ptrT_DataBlock_t MakeCopy() {
-    SWIGTYPE_p_std__shared_ptrT_DataBlock_t ret = new SWIGTYPE_p_std__shared_ptrT_DataBlock_t(NWNXLibPINVOKE.DataView_MakeCopy(swigCPtr), true);
+  public DataBlock MakeCopy() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.DataView_MakeCopy(swigCPtr);
+    DataBlock ret = (cPtr == global::System.IntPtr.Zero) ? null : new DataBlock(cPtr, true);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public bool empty() {
     bool ret = NWNXLibPINVOKE.DataView_empty(swigCPtr);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 

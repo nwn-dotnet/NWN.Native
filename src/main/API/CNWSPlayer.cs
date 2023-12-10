@@ -362,24 +362,24 @@ public unsafe class CNWSPlayer : CNWSClient {
   
   }
 
-  public SWIGTYPE_p_CExoArrayListT_CLastUpdateObject_p_t m_lstActiveObjectsLastUpdate {
+  public CExoArrayListCLastUpdateObjectPtr m_lstActiveObjectsLastUpdate {
     set {
-      NWNXLibPINVOKE.CNWSPlayer_m_lstActiveObjectsLastUpdate_set(swigCPtr, SWIGTYPE_p_CExoArrayListT_CLastUpdateObject_p_t.getCPtr(value));
+      NWNXLibPINVOKE.CNWSPlayer_m_lstActiveObjectsLastUpdate_set(swigCPtr, CExoArrayListCLastUpdateObjectPtr.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayer_m_lstActiveObjectsLastUpdate_get(swigCPtr);
-      SWIGTYPE_p_CExoArrayListT_CLastUpdateObject_p_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CExoArrayListT_CLastUpdateObject_p_t(cPtr, false);
+      CExoArrayListCLastUpdateObjectPtr ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListCLastUpdateObjectPtr(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_CExoArrayListT_CLastUpdatePartyObject_p_t m_lstActivePartyObjectsLastUpdate {
+  public CExoArrayListCLastUpdatePartyObjectPtr m_lstActivePartyObjectsLastUpdate {
     set {
-      NWNXLibPINVOKE.CNWSPlayer_m_lstActivePartyObjectsLastUpdate_set(swigCPtr, SWIGTYPE_p_CExoArrayListT_CLastUpdatePartyObject_p_t.getCPtr(value));
+      NWNXLibPINVOKE.CNWSPlayer_m_lstActivePartyObjectsLastUpdate_set(swigCPtr, CExoArrayListCLastUpdatePartyObjectPtr.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayer_m_lstActivePartyObjectsLastUpdate_get(swigCPtr);
-      SWIGTYPE_p_CExoArrayListT_CLastUpdatePartyObject_p_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CExoArrayListT_CLastUpdatePartyObject_p_t(cPtr, false);
+      CExoArrayListCLastUpdatePartyObjectPtr ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListCLastUpdatePartyObjectPtr(cPtr, false);
       return ret;
     } 
   }

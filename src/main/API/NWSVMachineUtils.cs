@@ -100,20 +100,21 @@ public unsafe class NWSVMachineUtils : global::System.IDisposable {
     return ret;
   }
 
-  public static SWIGTYPE_p_std__shared_ptrT_DataBlock_t SerializeToGff(ICGameObject o, int bSaveObjectState) {
-    SWIGTYPE_p_std__shared_ptrT_DataBlock_t ret = new SWIGTYPE_p_std__shared_ptrT_DataBlock_t(NWNXLibPINVOKE.NWSVMachineUtils_SerializeToGff(o == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : o.GetInterfaceCPtr(), bSaveObjectState), true);
+  public static DataBlock SerializeToGff(ICGameObject o, int bSaveObjectState) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWSVMachineUtils_SerializeToGff(o == null ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : o.GetInterfaceCPtr(), bSaveObjectState);
+    DataBlock ret = (cPtr == global::System.IntPtr.Zero) ? null : new DataBlock(cPtr, true);
     return ret;
   }
 
-  public static ICGameObject DeserializeFromGff(SWIGTYPE_p_std__shared_ptrT_DataView_t d, int bLoadObjectState, CScriptLocation loc, uint owner, CExoString sNewTag, int bObjectCopy) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWSVMachineUtils_DeserializeFromGff__SWIG_0(SWIGTYPE_p_std__shared_ptrT_DataView_t.getCPtr(d), bLoadObjectState, CScriptLocation.getCPtr(loc), owner, CExoString.getCPtr(sNewTag), bObjectCopy);
+  public static ICGameObject DeserializeFromGff(DataView d, int bLoadObjectState, CScriptLocation loc, uint owner, CExoString sNewTag, int bObjectCopy) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWSVMachineUtils_DeserializeFromGff__SWIG_0(DataView.getCPtr(d), bLoadObjectState, CScriptLocation.getCPtr(loc), owner, CExoString.getCPtr(sNewTag), bObjectCopy);
     CGameObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new CGameObject(cPtr, false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return (ICGameObject)ret;
   }
 
-  public static ICGameObject DeserializeFromGff(SWIGTYPE_p_std__shared_ptrT_DataView_t d, int bLoadObjectState, CScriptLocation loc, uint owner, CExoString sNewTag) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWSVMachineUtils_DeserializeFromGff__SWIG_1(SWIGTYPE_p_std__shared_ptrT_DataView_t.getCPtr(d), bLoadObjectState, CScriptLocation.getCPtr(loc), owner, CExoString.getCPtr(sNewTag));
+  public static ICGameObject DeserializeFromGff(DataView d, int bLoadObjectState, CScriptLocation loc, uint owner, CExoString sNewTag) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.NWSVMachineUtils_DeserializeFromGff__SWIG_1(DataView.getCPtr(d), bLoadObjectState, CScriptLocation.getCPtr(loc), owner, CExoString.getCPtr(sNewTag));
     CGameObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new CGameObject(cPtr, false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return (ICGameObject)ret;

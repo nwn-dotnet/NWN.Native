@@ -746,13 +746,13 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
 
   }
 
-  public SWIGTYPE_p_std__unordered_mapT_int_CNWSAreaGrassOverride_t m_areaGrassOverrides {
+  public UnorderedMapInt32CNWSAreaGrassOverride m_areaGrassOverrides {
     set {
-      NWNXLibPINVOKE.CNWSArea_m_areaGrassOverrides_set(swigCPtr, SWIGTYPE_p_std__unordered_mapT_int_CNWSAreaGrassOverride_t.getCPtr(value));
+      NWNXLibPINVOKE.CNWSArea_m_areaGrassOverrides_set(swigCPtr, UnorderedMapInt32CNWSAreaGrassOverride.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSArea_m_areaGrassOverrides_get(swigCPtr);
-      SWIGTYPE_p_std__unordered_mapT_int_CNWSAreaGrassOverride_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__unordered_mapT_int_CNWSAreaGrassOverride_t(cPtr, false);
+      UnorderedMapInt32CNWSAreaGrassOverride ret = (cPtr == global::System.IntPtr.Zero) ? null : new UnorderedMapInt32CNWSAreaGrassOverride(cPtr, false);
       return ret;
     } 
   }

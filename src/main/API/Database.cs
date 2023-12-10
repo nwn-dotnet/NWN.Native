@@ -12,10 +12,10 @@ namespace NWN.Native.API {
 
 public unsafe class Database : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
-  protected bool swigCMemOwn;
+  private bool swigCMemOwnBase;
 
   internal Database(global::System.IntPtr cPtr, bool cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
+    swigCMemOwnBase = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -35,8 +35,8 @@ public unsafe class Database : global::System.IDisposable {
   protected virtual void Dispose(bool disposing) {
     lock(this) {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
-        if (swigCMemOwn) {
-          swigCMemOwn = false;
+        if (swigCMemOwnBase) {
+          swigCMemOwnBase = false;
           NWNXLibPINVOKE.delete_Database(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
@@ -93,6 +93,7 @@ public unsafe class Database : global::System.IDisposable {
   public string m_label {
     get {
       string ret = NWNXLibPINVOKE.Database_m_label_get(swigCPtr);
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       return ret;
     } 
   }
@@ -100,6 +101,7 @@ public unsafe class Database : global::System.IDisposable {
   public string m_path {
     get {
       string ret = NWNXLibPINVOKE.Database_m_path_get(swigCPtr);
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       return ret;
     } 
   }
@@ -107,6 +109,7 @@ public unsafe class Database : global::System.IDisposable {
   public bool m_writeable {
     get {
       bool ret = NWNXLibPINVOKE.Database_m_writeable_get(swigCPtr);
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       return ret;
     } 
   }
@@ -114,9 +117,11 @@ public unsafe class Database : global::System.IDisposable {
   public bool m_delete_after_close {
     set {
       NWNXLibPINVOKE.Database_m_delete_after_close_set(swigCPtr, value);
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     } 
     get {
       bool ret = NWNXLibPINVOKE.Database_m_delete_after_close_get(swigCPtr);
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       return ret;
     } 
   }
@@ -124,9 +129,11 @@ public unsafe class Database : global::System.IDisposable {
   public bool m_authorizer_enabled {
     set {
       NWNXLibPINVOKE.Database_m_authorizer_enabled_set(swigCPtr, value);
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     } 
     get {
       bool ret = NWNXLibPINVOKE.Database_m_authorizer_enabled_get(swigCPtr);
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       return ret;
     } 
   }
@@ -146,18 +153,20 @@ public unsafe class Database : global::System.IDisposable {
   public bool m_transaction {
     set {
       NWNXLibPINVOKE.Database_m_transaction_set(swigCPtr, value);
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     } 
     get {
       bool ret = NWNXLibPINVOKE.Database_m_transaction_get(swigCPtr);
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       return ret;
     } 
   }
 
-  public Database(string identifier, string path, SWIGTYPE_p_std__shared_ptrT_DataView_t copyAtomically, Definition source) : this(NWNXLibPINVOKE.new_Database__SWIG_0(identifier, path, SWIGTYPE_p_std__shared_ptrT_DataView_t.getCPtr(copyAtomically), Definition.getCPtr(source)), true) {
+  public Database(string identifier, string path, DataView copyAtomically, Definition source) : this(NWNXLibPINVOKE.new_Database__SWIG_0(identifier, path, DataView.getCPtr(copyAtomically), Definition.getCPtr(source)), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public Database(string identifier, string path, SWIGTYPE_p_std__shared_ptrT_DataView_t copyAtomically) : this(NWNXLibPINVOKE.new_Database__SWIG_1(identifier, path, SWIGTYPE_p_std__shared_ptrT_DataView_t.getCPtr(copyAtomically)), true) {
+  public Database(string identifier, string path, DataView copyAtomically) : this(NWNXLibPINVOKE.new_Database__SWIG_1(identifier, path, DataView.getCPtr(copyAtomically)), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -167,6 +176,7 @@ public unsafe class Database : global::System.IDisposable {
 
   public void Setup() {
     NWNXLibPINVOKE.Database_Setup(swigCPtr);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
 }

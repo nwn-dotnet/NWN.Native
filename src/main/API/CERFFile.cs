@@ -285,9 +285,8 @@ public unsafe class CERFFile : global::System.IDisposable {
     return retVal;
   }
 
-  public int WriteResource(byte* szResName, ushort rtResType, SWIGTYPE_p_std__shared_ptrT_DataView_t pData) {
-    int retVal = NWNXLibPINVOKE.CERFFile_WriteResource__SWIG_2(swigCPtr, szResName, rtResType, SWIGTYPE_p_std__shared_ptrT_DataView_t.getCPtr(pData));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  public int WriteResource(byte* szResName, ushort rtResType, DataView pData) {
+    int retVal = NWNXLibPINVOKE.CERFFile_WriteResource__SWIG_2(swigCPtr, szResName, rtResType, DataView.getCPtr(pData));
     return retVal;
   }
 

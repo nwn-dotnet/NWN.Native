@@ -200,7 +200,7 @@ public unsafe class Definition : global::System.IDisposable {
   public Definition() : this(NWNXLibPINVOKE.new_Definition__SWIG_0(), true) {
   }
 
-  public Definition(byte* schema, SWIGTYPE_p_std__vectorT_NWSQLite__Migrations__Definition__MigrationDef_t migrations) : this(NWNXLibPINVOKE.new_Definition__SWIG_1(schema, SWIGTYPE_p_std__vectorT_NWSQLite__Migrations__Definition__MigrationDef_t.getCPtr(migrations)), true) {
+  public Definition(byte* schema, VectorNWSQLiteMigrationsDefinitionMigrationDef migrations) : this(NWNXLibPINVOKE.new_Definition__SWIG_1(schema, VectorNWSQLiteMigrationsDefinitionMigrationDef.getCPtr(migrations)), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -215,13 +215,13 @@ public unsafe class Definition : global::System.IDisposable {
 
   }
 
-  public SWIGTYPE_p_std__vectorT_NWSQLite__Migrations__Definition__MigrationDef_t m_migrations {
+  public VectorNWSQLiteMigrationsDefinitionMigrationDef m_migrations {
     set {
-      NWNXLibPINVOKE.Definition_m_migrations_set(swigCPtr, SWIGTYPE_p_std__vectorT_NWSQLite__Migrations__Definition__MigrationDef_t.getCPtr(value));
+      NWNXLibPINVOKE.Definition_m_migrations_set(swigCPtr, VectorNWSQLiteMigrationsDefinitionMigrationDef.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.Definition_m_migrations_get(swigCPtr);
-      SWIGTYPE_p_std__vectorT_NWSQLite__Migrations__Definition__MigrationDef_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__vectorT_NWSQLite__Migrations__Definition__MigrationDef_t(cPtr, false);
+      VectorNWSQLiteMigrationsDefinitionMigrationDef ret = (cPtr == global::System.IntPtr.Zero) ? null : new VectorNWSQLiteMigrationsDefinitionMigrationDef(cPtr, false);
       return ret;
     } 
   }

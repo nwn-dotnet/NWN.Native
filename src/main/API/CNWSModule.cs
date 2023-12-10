@@ -1097,13 +1097,15 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
 
   }
 
-  public SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t m_sqlite3 {
+  public Database m_sqlite3 {
     set {
-      NWNXLibPINVOKE.CNWSModule_m_sqlite3_set(swigCPtr, SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t.getCPtr(value));
+      NWNXLibPINVOKE.CNWSModule_m_sqlite3_set(swigCPtr, Database.getCPtr(value));
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_m_sqlite3_get(swigCPtr);
-      SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t(cPtr, false);
+      Database ret = (cPtr == global::System.IntPtr.Zero) ? null : new Database(cPtr, true);
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       return ret;
     } 
   }

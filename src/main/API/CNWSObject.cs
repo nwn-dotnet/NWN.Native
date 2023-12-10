@@ -1129,13 +1129,15 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t m_sqlite_db {
+  public Database m_sqlite_db {
     set {
-      NWNXLibPINVOKE.CNWSObject_m_sqlite_db_set(swigCPtr, SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t.getCPtr(value));
+      NWNXLibPINVOKE.CNWSObject_m_sqlite_db_set(swigCPtr, Database.getCPtr(value));
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSObject_m_sqlite_db_get(swigCPtr);
-      SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t(cPtr, false);
+      Database ret = (cPtr == global::System.IntPtr.Zero) ? null : new Database(cPtr, true);
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       return ret;
     } 
   }
@@ -2160,8 +2162,9 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     NWNXLibPINVOKE.CNWSObject_ReportOverflow__SWIG_1(swigCPtr, nOverflowFeedbackType, nTotal, nError);
   }
 
-  public SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t GetObjectSqlDatabase() {
-    SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t ret = new SWIGTYPE_p_std__shared_ptrT_NWSQLite__Database_t(NWNXLibPINVOKE.CNWSObject_GetObjectSqlDatabase(swigCPtr), true);
+  public Database GetObjectSqlDatabase() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSObject_GetObjectSqlDatabase(swigCPtr);
+    Database ret = (cPtr == global::System.IntPtr.Zero) ? null : new Database(cPtr, true);
     return ret;
   }
 

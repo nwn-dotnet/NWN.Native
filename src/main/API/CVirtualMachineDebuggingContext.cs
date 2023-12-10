@@ -137,10 +137,12 @@ public unsafe class CVirtualMachineDebuggingContext : global::System.IDisposable
   public CVirtualMachineDebuggerInstance m_pDebuggerInstance {
     set {
       NWNXLibPINVOKE.CVirtualMachineDebuggingContext_m_pDebuggerInstance_set(swigCPtr, CVirtualMachineDebuggerInstance.getCPtr(value));
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachineDebuggingContext_m_pDebuggerInstance_get(swigCPtr);
-      CVirtualMachineDebuggerInstance ret = (cPtr == global::System.IntPtr.Zero) ? null : new CVirtualMachineDebuggerInstance(cPtr, false);
+      CVirtualMachineDebuggerInstance ret = (cPtr == global::System.IntPtr.Zero) ? null : new CVirtualMachineDebuggerInstance(cPtr, true);
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
       return ret;
     } 
   }
