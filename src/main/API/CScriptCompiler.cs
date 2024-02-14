@@ -641,9 +641,9 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CScriptCompiler_m_pchToken_get(swigCPtr);
-      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 8192);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 65536);
 
-      return retVal; // byte[8192]
+      return retVal; // byte[65536]
     }
 
   }
