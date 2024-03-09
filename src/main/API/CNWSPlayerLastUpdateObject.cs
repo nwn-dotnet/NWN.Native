@@ -289,13 +289,13 @@ public unsafe class CNWSPlayerLastUpdateObject : global::System.IDisposable {
 
   }
 
-  public SWIGTYPE_p_CExoArrayListT_CNWVisibilityNode_t m_lstVisibilityList {
+  public CExoArrayListCNWVisibilityNode m_lstVisibilityList {
     set {
-      NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_lstVisibilityList_set(swigCPtr, SWIGTYPE_p_CExoArrayListT_CNWVisibilityNode_t.getCPtr(value));
+      NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_lstVisibilityList_set(swigCPtr, CExoArrayListCNWVisibilityNode.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayerLastUpdateObject_m_lstVisibilityList_get(swigCPtr);
-      SWIGTYPE_p_CExoArrayListT_CNWVisibilityNode_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CExoArrayListT_CNWVisibilityNode_t(cPtr, false);
+      CExoArrayListCNWVisibilityNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListCNWVisibilityNode(cPtr, false);
       return ret;
     } 
   }

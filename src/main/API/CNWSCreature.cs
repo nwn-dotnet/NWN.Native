@@ -1262,13 +1262,13 @@ public unsafe class CNWSCreature : CNWSObject {
 
   }
 
-  public SWIGTYPE_p_CExoArrayListT_CNWVisibilityNode_t m_pVisibleCreaturesList {
+  public CExoArrayListCNWVisibilityNode m_pVisibleCreaturesList {
     set {
-      NWNXLibPINVOKE.CNWSCreature_m_pVisibleCreaturesList_set(swigCPtr, SWIGTYPE_p_CExoArrayListT_CNWVisibilityNode_t.getCPtr(value));
+      NWNXLibPINVOKE.CNWSCreature_m_pVisibleCreaturesList_set(swigCPtr, CExoArrayListCNWVisibilityNode.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_m_pVisibleCreaturesList_get(swigCPtr);
-      SWIGTYPE_p_CExoArrayListT_CNWVisibilityNode_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CExoArrayListT_CNWVisibilityNode_t(cPtr, false);
+      CExoArrayListCNWVisibilityNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListCNWVisibilityNode(cPtr, false);
       return ret;
     } 
   }

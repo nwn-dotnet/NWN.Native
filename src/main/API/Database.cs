@@ -10,12 +10,12 @@
 
 namespace NWN.Native.API {
 
-public unsafe class Database : global::System.IDisposable {
+public unsafe class Database : SqliteDatabase {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
-  private bool swigCMemOwnBase;
+  private bool swigCMemOwnDerived;
 
-  internal Database(global::System.IntPtr cPtr, bool cMemoryOwn) {
-    swigCMemOwnBase = cMemoryOwn;
+  internal Database(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.Database_SWIGSmartPtrUpcast(cPtr), true) {
+    swigCMemOwnDerived = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -23,24 +23,16 @@ public unsafe class Database : global::System.IDisposable {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 
-  ~Database() {
-    Dispose(false);
-  }
-
-  public void Dispose() {
-    Dispose(true);
-    global::System.GC.SuppressFinalize(this);
-  }
-
-  protected virtual void Dispose(bool disposing) {
+  protected override void Dispose(bool disposing) {
     lock(this) {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
-        if (swigCMemOwnBase) {
-          swigCMemOwnBase = false;
+        if (swigCMemOwnDerived) {
+          swigCMemOwnDerived = false;
           NWNXLibPINVOKE.delete_Database(swigCPtr);
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
+      base.Dispose(disposing);
     }
   }
 
