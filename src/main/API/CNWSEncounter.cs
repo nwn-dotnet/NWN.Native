@@ -748,6 +748,11 @@ public unsafe class CNWSEncounter : CNWSObject {
     NWNXLibPINVOKE.CNWSEncounter_LoadFractionalCRData(swigCPtr);
   }
 
+  public override CExoLocString GetFirstName() {
+    CExoLocString ret = new CExoLocString(NWNXLibPINVOKE.CNWSEncounter_GetFirstName(swigCPtr), false);
+    return ret;
+  }
+
   public new void _Destructor() {
     NWNXLibPINVOKE.CNWSEncounter__Destructor(swigCPtr);
   }

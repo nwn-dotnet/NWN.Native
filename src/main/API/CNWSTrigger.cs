@@ -565,6 +565,11 @@ public unsafe class CNWSTrigger : CNWSObject {
     NWNXLibPINVOKE.CNWSTrigger_OnEnterTrap(swigCPtr, bForceSet);
   }
 
+  public override CExoLocString GetFirstName() {
+    CExoLocString ret = new CExoLocString(NWNXLibPINVOKE.CNWSTrigger_GetFirstName(swigCPtr), false);
+    return ret;
+  }
+
   public new void _Destructor() {
     NWNXLibPINVOKE.CNWSTrigger__Destructor(swigCPtr);
   }

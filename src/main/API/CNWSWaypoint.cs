@@ -183,6 +183,11 @@ public unsafe class CNWSWaypoint : CNWSObject {
     return retVal;
   }
 
+  public override CExoLocString GetFirstName() {
+    CExoLocString ret = new CExoLocString(NWNXLibPINVOKE.CNWSWaypoint_GetFirstName(swigCPtr), false);
+    return ret;
+  }
+
   public new void _Destructor() {
     NWNXLibPINVOKE.CNWSWaypoint__Destructor(swigCPtr);
   }

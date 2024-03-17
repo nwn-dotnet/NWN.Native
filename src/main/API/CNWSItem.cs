@@ -825,6 +825,11 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
     return retVal;
   }
 
+  public override CExoLocString GetFirstName() {
+    CExoLocString ret = new CExoLocString(NWNXLibPINVOKE.CNWSItem_GetFirstName(swigCPtr), false);
+    return ret;
+  }
+
   public new void _Destructor() {
     NWNXLibPINVOKE.CNWSItem__Destructor(swigCPtr);
   }

@@ -723,6 +723,11 @@ public unsafe class CNWSDoor : CNWSObject {
     return ret;
   }
 
+  public override CExoLocString GetFirstName() {
+    CExoLocString ret = new CExoLocString(NWNXLibPINVOKE.CNWSDoor_GetFirstName(swigCPtr), false);
+    return ret;
+  }
+
   public new void _Destructor() {
     NWNXLibPINVOKE.CNWSDoor__Destructor(swigCPtr);
   }

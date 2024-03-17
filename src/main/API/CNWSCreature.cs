@@ -5392,6 +5392,16 @@ public unsafe class CNWSCreature : CNWSObject {
     return retVal;
   }
 
+  public override CExoLocString GetFirstName() {
+    CExoLocString ret = new CExoLocString(NWNXLibPINVOKE.CNWSCreature_GetFirstName(swigCPtr), false);
+    return ret;
+  }
+
+  public override CExoLocString GetLastName() {
+    CExoLocString ret = new CExoLocString(NWNXLibPINVOKE.CNWSCreature_GetLastName(swigCPtr), false);
+    return ret;
+  }
+
   public new void _Destructor() {
     NWNXLibPINVOKE.CNWSCreature__Destructor(swigCPtr);
   }

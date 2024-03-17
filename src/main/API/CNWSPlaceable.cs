@@ -1029,6 +1029,11 @@ public unsafe class CNWSPlaceable : CNWSObject {
     NWNXLibPINVOKE.CNWSPlaceable_CalculateActionPoints(swigCPtr);
   }
 
+  public override CExoLocString GetFirstName() {
+    CExoLocString ret = new CExoLocString(NWNXLibPINVOKE.CNWSPlaceable_GetFirstName(swigCPtr), false);
+    return ret;
+  }
+
   public new void _Destructor() {
     NWNXLibPINVOKE.CNWSPlaceable__Destructor(swigCPtr);
   }
