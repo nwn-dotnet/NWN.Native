@@ -126,7 +126,7 @@ namespace NWN.Native.API
       return ReadFixedLengthString(cString.Pointer, cString.Length);
     }
 
-    private static int GetStringLength(byte* cString, int? maxLength = null)
+    public static int GetStringLength(byte* cString, int? maxLength = null)
     {
       byte* walk = cString;
       while (*walk != 0 && (maxLength == null || walk - cString < maxLength))
