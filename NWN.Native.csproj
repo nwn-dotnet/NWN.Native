@@ -25,4 +25,8 @@
       <Compile Remove="src\main\API\ICNWItem.cs" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="NWNX.NET" Version="1.0.1" />
+    </ItemGroup>
+
 </Project>
