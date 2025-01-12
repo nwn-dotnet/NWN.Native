@@ -200,17 +200,6 @@ public unsafe class CExtendedServerInfo : global::System.IDisposable {
 
   }
 
-  public byte m_nExpansionPacksRequired {
-    set {
-      NWNXLibPINVOKE.CExtendedServerInfo_m_nExpansionPacksRequired_set(swigCPtr, value);
-    } 
-    get {
-      byte retVal = NWNXLibPINVOKE.CExtendedServerInfo_m_nExpansionPacksRequired_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
   public CExoString m_sServerName {
     set {
       NWNXLibPINVOKE.CExtendedServerInfo_m_sServerName_set(swigCPtr, CExoString.getCPtr(value));

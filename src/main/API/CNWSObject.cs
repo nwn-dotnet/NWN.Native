@@ -1989,8 +1989,21 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     NWNXLibPINVOKE.CNWSObject_AddLoopingVisualEffect__SWIG_3(swigCPtr, nVisEffectID);
   }
 
+  public void RemoveLoopingVisualEffect(ushort nVisEffectID, uint oidOriginator, byte nBodyPart, ObjectVisualTransformData ovtd) {
+    NWNXLibPINVOKE.CNWSObject_RemoveLoopingVisualEffect__SWIG_0(swigCPtr, nVisEffectID, oidOriginator, nBodyPart, ObjectVisualTransformData.getCPtr(ovtd));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void RemoveLoopingVisualEffect(ushort nVisEffectID, uint oidOriginator, byte nBodyPart) {
+    NWNXLibPINVOKE.CNWSObject_RemoveLoopingVisualEffect__SWIG_1(swigCPtr, nVisEffectID, oidOriginator, nBodyPart);
+  }
+
+  public void RemoveLoopingVisualEffect(ushort nVisEffectID, uint oidOriginator) {
+    NWNXLibPINVOKE.CNWSObject_RemoveLoopingVisualEffect__SWIG_2(swigCPtr, nVisEffectID, oidOriginator);
+  }
+
   public void RemoveLoopingVisualEffect(ushort nVisEffectID) {
-    NWNXLibPINVOKE.CNWSObject_RemoveLoopingVisualEffect(swigCPtr, nVisEffectID);
+    NWNXLibPINVOKE.CNWSObject_RemoveLoopingVisualEffect__SWIG_3(swigCPtr, nVisEffectID);
   }
 
   public void BroadcastDialog(CExoString sSpokenString, float fRadius) {

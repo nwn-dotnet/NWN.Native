@@ -166,6 +166,18 @@ public unsafe class CExoTimersInternal : global::System.IDisposable {
 
   }
 
+  public SWIGTYPE_p_time_t m_nUnixTimestampValue {
+    set {
+      NWNXLibPINVOKE.CExoTimersInternal_m_nUnixTimestampValue_set(swigCPtr, SWIGTYPE_p_time_t.getCPtr(value));
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    } 
+    get {
+      SWIGTYPE_p_time_t ret = new SWIGTYPE_p_time_t(NWNXLibPINVOKE.CExoTimersInternal_m_nUnixTimestampValue_get(swigCPtr), true);
+      if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+      return ret;
+    } 
+  }
+
   public int m_bShutdown {
     set {
       NWNXLibPINVOKE.CExoTimersInternal_m_bShutdown_set(swigCPtr, value);
@@ -201,6 +213,11 @@ public unsafe class CExoTimersInternal : global::System.IDisposable {
     return retVal;
   }
 
+  public SWIGTYPE_p_time_t GetUnixTimestampReal() {
+    SWIGTYPE_p_time_t ret = new SWIGTYPE_p_time_t(NWNXLibPINVOKE.CExoTimersInternal_GetUnixTimestampReal(swigCPtr), true);
+    return ret;
+  }
+
   public uint GetMillisecondTimer() {
     uint retVal = NWNXLibPINVOKE.CExoTimersInternal_GetMillisecondTimer(swigCPtr);
     return retVal;
@@ -209,6 +226,11 @@ public unsafe class CExoTimersInternal : global::System.IDisposable {
   public ulong GetMicrosecondTimer() {
     ulong retVal = NWNXLibPINVOKE.CExoTimersInternal_GetMicrosecondTimer(swigCPtr);
     return retVal;
+  }
+
+  public SWIGTYPE_p_time_t GetUnixTimestamp() {
+    SWIGTYPE_p_time_t ret = new SWIGTYPE_p_time_t(NWNXLibPINVOKE.CExoTimersInternal_GetUnixTimestamp(swigCPtr), true);
+    return ret;
   }
 
   public void _Destructor() {

@@ -359,8 +359,28 @@ public unsafe class CNWSAreaOfEffectObject : CNWSObject {
     return ret;
   }
 
+  public void SetCreator(uint oidObject, int nCasterLevel, int nSpellId, byte nMulticlass, byte nMetaType, int nSaveDC, ushort nFeat, int bSpontaneous) {
+    NWNXLibPINVOKE.CNWSAreaOfEffectObject_SetCreator__SWIG_0(swigCPtr, oidObject, nCasterLevel, nSpellId, nMulticlass, nMetaType, nSaveDC, nFeat, bSpontaneous);
+  }
+
+  public void SetCreator(uint oidObject, int nCasterLevel, int nSpellId, byte nMulticlass, byte nMetaType, int nSaveDC, ushort nFeat) {
+    NWNXLibPINVOKE.CNWSAreaOfEffectObject_SetCreator__SWIG_1(swigCPtr, oidObject, nCasterLevel, nSpellId, nMulticlass, nMetaType, nSaveDC, nFeat);
+  }
+
+  public void SetCreator(uint oidObject, int nCasterLevel, int nSpellId, byte nMulticlass, byte nMetaType, int nSaveDC) {
+    NWNXLibPINVOKE.CNWSAreaOfEffectObject_SetCreator__SWIG_2(swigCPtr, oidObject, nCasterLevel, nSpellId, nMulticlass, nMetaType, nSaveDC);
+  }
+
+  public void SetCreator(uint oidObject, int nCasterLevel, int nSpellId, byte nMulticlass, byte nMetaType) {
+    NWNXLibPINVOKE.CNWSAreaOfEffectObject_SetCreator__SWIG_3(swigCPtr, oidObject, nCasterLevel, nSpellId, nMulticlass, nMetaType);
+  }
+
+  public void SetCreator(uint oidObject, int nCasterLevel, int nSpellId, byte nMulticlass) {
+    NWNXLibPINVOKE.CNWSAreaOfEffectObject_SetCreator__SWIG_4(swigCPtr, oidObject, nCasterLevel, nSpellId, nMulticlass);
+  }
+
   public void SetCreator(uint oidObject, int nCasterLevel, int nSpellId) {
-    NWNXLibPINVOKE.CNWSAreaOfEffectObject_SetCreator(swigCPtr, oidObject, nCasterLevel, nSpellId);
+    NWNXLibPINVOKE.CNWSAreaOfEffectObject_SetCreator__SWIG_5(swigCPtr, oidObject, nCasterLevel, nSpellId);
   }
 
   public override uint GetEffectSpellId() {

@@ -211,10 +211,21 @@ public unsafe class CRes : global::System.IDisposable {
 
   }
 
+  public CExoString m_sDebugLabel {
+    set {
+      NWNXLibPINVOKE.CRes_m_sDebugLabel_set(swigCPtr, CExoString.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CRes_m_sDebugLabel_get(swigCPtr);
+      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
+      return ret;
+    } 
+  }
+
   public CRes() : this(NWNXLibPINVOKE.new_CRes__SWIG_0(), true) {
   }
 
-  public CRes(RESID nNewID) : this(NWNXLibPINVOKE.new_CRes__SWIG_1(RESID.getCPtr(nNewID)), true) {
+  public CRes(RESID nNewID, CExoString sDebugLabel) : this(NWNXLibPINVOKE.new_CRes__SWIG_1(RESID.getCPtr(nNewID), CExoString.getCPtr(sDebugLabel)), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 

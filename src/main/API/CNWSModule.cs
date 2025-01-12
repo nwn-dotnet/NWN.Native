@@ -95,17 +95,6 @@ public unsafe class CNWSModule : ICGameObject, global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public CExoLinkedListNWModuleExpansion m_lstModuleExpansion {
-    set {
-      NWNXLibPINVOKE.CNWSModule_m_lstModuleExpansion_set(swigCPtr, CExoLinkedListNWModuleExpansion.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSModule_m_lstModuleExpansion_get(swigCPtr);
-      CExoLinkedListNWModuleExpansion ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoLinkedListNWModuleExpansion(cPtr, false);
-      return ret;
-    } 
-  }
-
   public CExoLinkedListNWModuleCutscene m_lstModuleCutScene {
     set {
       NWNXLibPINVOKE.CNWSModule_m_lstModuleCutScene_set(swigCPtr, CExoLinkedListNWModuleCutscene.getCPtr(value));

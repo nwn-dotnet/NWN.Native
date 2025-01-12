@@ -342,72 +342,6 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
 
   }
 
-  public CScriptLog m_pLog {
-    set {
-      NWNXLibPINVOKE.CVirtualMachine_m_pLog_set(swigCPtr, CScriptLog.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachine_m_pLog_get(swigCPtr);
-      CScriptLog ret = (cPtr == global::System.IntPtr.Zero) ? null : new CScriptLog(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public CExoArrayListCScriptLogPtr m_aScriptLog {
-    set {
-      NWNXLibPINVOKE.CVirtualMachine_m_aScriptLog_set(swigCPtr, CExoArrayListCScriptLogPtr.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachine_m_aScriptLog_get(swigCPtr);
-      CExoArrayListCScriptLogPtr ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListCScriptLogPtr(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public int m_bEnableScriptLogging {
-    set {
-      NWNXLibPINVOKE.CVirtualMachine_m_bEnableScriptLogging_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CVirtualMachine_m_bEnableScriptLogging_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public int m_bEnableScriptProfiling {
-    set {
-      NWNXLibPINVOKE.CVirtualMachine_m_bEnableScriptProfiling_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CVirtualMachine_m_bEnableScriptProfiling_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public uint m_nScriptStartTime {
-    set {
-      NWNXLibPINVOKE.CVirtualMachine_m_nScriptStartTime_set(swigCPtr, value);
-    } 
-    get {
-      uint retVal = NWNXLibPINVOKE.CVirtualMachine_m_nScriptStartTime_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public uint m_nScriptEndTime {
-    set {
-      NWNXLibPINVOKE.CVirtualMachine_m_nScriptEndTime_set(swigCPtr, value);
-    } 
-    get {
-      uint retVal = NWNXLibPINVOKE.CVirtualMachine_m_nScriptEndTime_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
   public uint m_nInstructionLimit {
     set {
       NWNXLibPINVOKE.CVirtualMachine_m_nInstructionLimit_set(swigCPtr, value);
@@ -647,13 +581,6 @@ public unsafe class CVirtualMachine : global::System.IDisposable {
   public int LoadScriptSituation_Internal(void** pScript, CResGFF pRes, CResStruct pStruct) {
     int retVal = NWNXLibPINVOKE.CVirtualMachine_LoadScriptSituation_Internal(swigCPtr, (global::System.IntPtr)pScript, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
     return retVal;
-  }
-
-  public CScriptLog GetScriptLog(CExoString sScript) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CVirtualMachine_GetScriptLog(swigCPtr, CExoString.getCPtr(sScript));
-    CScriptLog ret = (cPtr == global::System.IntPtr.Zero) ? null : new CScriptLog(cPtr, false);
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
   }
 
   public CVirtualMachineDebuggerInstance GetDebuggerInstance() {

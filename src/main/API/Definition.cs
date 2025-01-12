@@ -200,8 +200,19 @@ public unsafe class Definition : global::System.IDisposable {
   public Definition() : this(NWNXLibPINVOKE.new_Definition__SWIG_0(), true) {
   }
 
-  public Definition(byte* schema, VectorNWSQLiteMigrationsDefinitionMigrationDef migrations) : this(NWNXLibPINVOKE.new_Definition__SWIG_1(schema, VectorNWSQLiteMigrationsDefinitionMigrationDef.getCPtr(migrations)), true) {
+  public Definition(long user_version, byte* schema, VectorNWSQLiteMigrationsDefinitionMigrationDef migrations) : this(NWNXLibPINVOKE.new_Definition__SWIG_1(user_version, schema, VectorNWSQLiteMigrationsDefinitionMigrationDef.getCPtr(migrations)), true) {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public long m_user_version {
+    set {
+      NWNXLibPINVOKE.Definition_m_user_version_set(swigCPtr, value);
+    } 
+    get {
+      long retVal = NWNXLibPINVOKE.Definition_m_user_version_get(swigCPtr);
+      return retVal;
+    }
+
   }
 
   public byte* m_schema {

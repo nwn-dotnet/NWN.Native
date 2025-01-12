@@ -392,17 +392,6 @@ public unsafe class CResGFF : CRes {
 
   }
 
-  public int m_bReplaceExistingFields {
-    set {
-      NWNXLibPINVOKE.CResGFF_m_bReplaceExistingFields_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CResGFF_m_bReplaceExistingFields_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
   public int m_bValidationFailed {
     set {
       NWNXLibPINVOKE.CResGFF_m_bValidationFailed_set(swigCPtr, value);

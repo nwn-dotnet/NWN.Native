@@ -569,6 +569,17 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     } 
   }
 
+  public CExoString m_sGraphvizPath {
+    set {
+      NWNXLibPINVOKE.CScriptCompiler_m_sGraphvizPath_set(swigCPtr, CExoString.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_sGraphvizPath_get(swigCPtr);
+      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
+      return ret;
+    } 
+  }
+
   public int m_nLines {
     set {
       NWNXLibPINVOKE.CScriptCompiler_m_nLines_set(swigCPtr, value);
@@ -679,6 +690,17 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
       return retVal;
     }
 
+  }
+
+  public CExoString m_sCurrentFunction {
+    set {
+      NWNXLibPINVOKE.CScriptCompiler_m_sCurrentFunction_set(swigCPtr, CExoString.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_sCurrentFunction_get(swigCPtr);
+      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
+      return ret;
+    } 
   }
 
   public int m_bCompileIdentifierList {
@@ -810,6 +832,17 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
         global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_pcIncludeFileStack_get(swigCPtr);;
         CScriptCompilerIncludeFileStackEntryArray ret = (cPtr == global::System.IntPtr.Zero) ? null : new CScriptCompilerIncludeFileStackEntryArray(cPtr, false);
         return ret;
+    }
+
+  }
+
+  public int m_nMaxIncludeDepth {
+    set {
+      NWNXLibPINVOKE.CScriptCompiler_m_nMaxIncludeDepth_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CScriptCompiler_m_nMaxIncludeDepth_get(swigCPtr);
+      return retVal;
     }
 
   }
@@ -1051,6 +1084,17 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_sUndefinedIdentifier_get(swigCPtr);
+      CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public CExoString m_sParserErrorExtraInfo {
+    set {
+      NWNXLibPINVOKE.CScriptCompiler_m_sParserErrorExtraInfo_set(swigCPtr, CExoString.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_m_sParserErrorExtraInfo_get(swigCPtr);
       CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
       return ret;
     } 
@@ -1940,12 +1984,21 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     return retVal;
   }
 
+  public void WriteByteSwap16(byte* buffer, short value) {
+    NWNXLibPINVOKE.CScriptCompiler_WriteByteSwap16(swigCPtr, buffer, value);
+  }
+
   public void WriteByteSwap32(byte* buffer, int value) {
     NWNXLibPINVOKE.CScriptCompiler_WriteByteSwap32(swigCPtr, buffer, value);
   }
 
   public int ReadByteSwap32(byte* buffer) {
     int retVal = NWNXLibPINVOKE.CScriptCompiler_ReadByteSwap32(swigCPtr, buffer);
+    return retVal;
+  }
+
+  public short ReadByteSwap16(byte* buffer) {
+    short retVal = NWNXLibPINVOKE.CScriptCompiler_ReadByteSwap16(swigCPtr, buffer);
     return retVal;
   }
 
@@ -2099,6 +2152,12 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
   public int ConstantFoldNode(CScriptParseTreeNode pNode) {
     int retVal = NWNXLibPINVOKE.CScriptCompiler_ConstantFoldNode__SWIG_1(swigCPtr, CScriptParseTreeNode.getCPtr(pNode));
     return retVal;
+  }
+
+  public CScriptParseTreeNode TrimParseTree(CScriptParseTreeNode pNode) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CScriptCompiler_TrimParseTree(swigCPtr, CScriptParseTreeNode.getCPtr(pNode));
+    CScriptParseTreeNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new CScriptParseTreeNode(cPtr, false);
+    return ret;
   }
 
   public void InitializeSwitchLabelList() {

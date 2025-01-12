@@ -233,6 +233,17 @@ public unsafe class CExoKeyTable : global::System.IDisposable {
 
   }
 
+  public SWIGTYPE_p_f_p_CExoKeyTable_r_q_const__CResRef_unsigned_short__bool m_resourceAccessCheck {
+    set {
+      NWNXLibPINVOKE.CExoKeyTable_m_resourceAccessCheck_set(swigCPtr, SWIGTYPE_p_f_p_CExoKeyTable_r_q_const__CResRef_unsigned_short__bool.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoKeyTable_m_resourceAccessCheck_get(swigCPtr);
+      SWIGTYPE_p_f_p_CExoKeyTable_r_q_const__CResRef_unsigned_short__bool ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_f_p_CExoKeyTable_r_q_const__CResRef_unsigned_short__bool(cPtr, false);
+      return ret;
+    } 
+  }
+
   public int m_bAllowDynamicReload {
     set {
       NWNXLibPINVOKE.CExoKeyTable_m_bAllowDynamicReload_set(swigCPtr, value);
@@ -328,14 +339,20 @@ public unsafe class CExoKeyTable : global::System.IDisposable {
     return ret;
   }
 
+  public int BuildNewTable(uint nTableType, CExoString sName, uint nTableID, int bPopulateTable, SWIGTYPE_p_f_p_CExoKeyTable_r_q_const__CResRef_unsigned_short__bool accessCheck) {
+    int retVal = NWNXLibPINVOKE.CExoKeyTable_BuildNewTable__SWIG_0(swigCPtr, nTableType, CExoString.getCPtr(sName), nTableID, bPopulateTable, SWIGTYPE_p_f_p_CExoKeyTable_r_q_const__CResRef_unsigned_short__bool.getCPtr(accessCheck));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return retVal;
+  }
+
   public int BuildNewTable(uint nTableType, CExoString sName, uint nTableID, int bPopulateTable) {
-    int retVal = NWNXLibPINVOKE.CExoKeyTable_BuildNewTable__SWIG_0(swigCPtr, nTableType, CExoString.getCPtr(sName), nTableID, bPopulateTable);
+    int retVal = NWNXLibPINVOKE.CExoKeyTable_BuildNewTable__SWIG_1(swigCPtr, nTableType, CExoString.getCPtr(sName), nTableID, bPopulateTable);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
 
   public int BuildNewTable(uint nTableType, CExoString sName, uint nTableID) {
-    int retVal = NWNXLibPINVOKE.CExoKeyTable_BuildNewTable__SWIG_1(swigCPtr, nTableType, CExoString.getCPtr(sName), nTableID);
+    int retVal = NWNXLibPINVOKE.CExoKeyTable_BuildNewTable__SWIG_2(swigCPtr, nTableType, CExoString.getCPtr(sName), nTableID);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }

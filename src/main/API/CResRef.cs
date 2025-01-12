@@ -91,7 +91,7 @@ public unsafe class CResRef : global::System.IDisposable {
   }
 
 
-  public CResRef(string source) : this(source.GetNullTerminatedString()) {
+  public CResRef(string source) : this(NWNX.NET.Native.StringUtils.GetNullTerminatedString(source)) {
   }
 
   /// <summary>
@@ -99,30 +99,17 @@ public unsafe class CResRef : global::System.IDisposable {
   /// </summary>
   /// <returns>A C# string representing this ResRef.</returns>
   public override string ToString() {
-    return StringHelper.ReadNullTerminatedString(GetResRefStr());
+    return NWNX.NET.Native.StringUtils.ReadNullTerminatedString(GetResRefStr());
   }
-  public NativeArray<byte> m_resRefLowerCase {
-    set {
-      NWNXLibPINVOKE.CResRef_m_resRefLowerCase_set(swigCPtr, value);
-    } 
-    get {
-      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CResRef_m_resRefLowerCase_get(swigCPtr);
-      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16);
-
-      return retVal; // byte[16]
-    }
-
-  }
-
   public NativeArray<byte> m_resRef {
     set {
       NWNXLibPINVOKE.CResRef_m_resRef_set(swigCPtr, value);
     } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CResRef_m_resRef_get(swigCPtr);
-      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 16+1);
 
-      return retVal; // byte[16]
+      return retVal; // byte[16+1]
     }
 
   }
@@ -186,45 +173,36 @@ public unsafe class CResRef : global::System.IDisposable {
     return retVal;
   }
 
-  public int _OpNot() {
-    int retVal = NWNXLibPINVOKE.CResRef__OpNot(swigCPtr);
-    return retVal;
-  }
-
   public CResRef _OpAssign(CResRef cResRef) {
-    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef)), true);
+    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_0(swigCPtr, CResRef.getCPtr(cResRef)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public CResRef _OpAssign(NativeArray<byte> resRef) {
-    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_1(swigCPtr, resRef), true);
+    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_1(swigCPtr, resRef), false);
     return ret;
   }
 
   public CResRef _OpAssign(CExoString sName) {
-    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_2(swigCPtr, CExoString.getCPtr(sName)), true);
+    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_2(swigCPtr, CExoString.getCPtr(sName)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public CResRef _OpAssign(byte* pName) {
-    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_3(swigCPtr, pName), true);
+    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpAssign__SWIG_3(swigCPtr, pName), false);
     return ret;
   }
 
   public CResRef _OpIncrement(CExoString sName) {
-    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpIncrement(swigCPtr, CExoString.getCPtr(sName)), true);
+    CResRef ret = new CResRef(NWNXLibPINVOKE.CResRef__OpIncrement(swigCPtr, CExoString.getCPtr(sName)), false);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public void GetResRef(NativeArray<byte> resRef) {
-    NWNXLibPINVOKE.CResRef_GetResRef__SWIG_0(swigCPtr, resRef);
-  }
-
   public byte* GetResRef() {
-    byte* retVal = NWNXLibPINVOKE.CResRef_GetResRef__SWIG_1(swigCPtr);
+    byte* retVal = NWNXLibPINVOKE.CResRef_GetResRef(swigCPtr);
     return retVal;
   }
 
@@ -241,6 +219,14 @@ public unsafe class CResRef : global::System.IDisposable {
   public byte GetLength() {
     byte retVal = NWNXLibPINVOKE.CResRef_GetLength(swigCPtr);
     return retVal;
+  }
+
+  public void InitFromCharArray(byte* str, int size) {
+    NWNXLibPINVOKE.CResRef_InitFromCharArray__SWIG_0(swigCPtr, str, size);
+  }
+
+  public void InitFromCharArray(byte* str) {
+    NWNXLibPINVOKE.CResRef_InitFromCharArray__SWIG_1(swigCPtr, str);
   }
 
   public CResRef(CResRef other) : this(NWNXLibPINVOKE.new_CResRef__SWIG_5(CResRef.getCPtr(other)), true) {

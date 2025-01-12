@@ -266,13 +266,13 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
 
   }
 
-  public CExoArrayListCNetLayerPlayerCDKeyInfo m_lstKeys {
+  public CNetLayerPlayerCDKeyInfo m_cCDKey {
     set {
-      NWNXLibPINVOKE.CNetLayerPlayerInfo_m_lstKeys_set(swigCPtr, CExoArrayListCNetLayerPlayerCDKeyInfo.getCPtr(value));
+      NWNXLibPINVOKE.CNetLayerPlayerInfo_m_cCDKey_set(swigCPtr, CNetLayerPlayerCDKeyInfo.getCPtr(value));
     } 
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_lstKeys_get(swigCPtr);
-      CExoArrayListCNetLayerPlayerCDKeyInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListCNetLayerPlayerCDKeyInfo(cPtr, false);
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_cCDKey_get(swigCPtr);
+      CNetLayerPlayerCDKeyInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNetLayerPlayerCDKeyInfo(cPtr, false);
       return ret;
     } 
   }
@@ -305,17 +305,6 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
     } 
     get {
       int retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_bMstPasswordAuthorized_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public ushort m_nExpansionPacks {
-    set {
-      NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nExpansionPacks_set(swigCPtr, value);
-    } 
-    get {
-      ushort retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_m_nExpansionPacks_get(swigCPtr);
       return retVal;
     }
 
@@ -403,18 +392,8 @@ public unsafe class CNetLayerPlayerInfo : global::System.IDisposable {
     return retVal;
   }
 
-  public void AddCDKey(CExoString sPublic, CExoString sResponse) {
-    NWNXLibPINVOKE.CNetLayerPlayerInfo_AddCDKey(swigCPtr, CExoString.getCPtr(sPublic), CExoString.getCPtr(sResponse));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public int AllKeysAuthed(uint* nExpansionPacks) {
-    int retVal = NWNXLibPINVOKE.CNetLayerPlayerInfo_AllKeysAuthed(swigCPtr, (global::System.IntPtr)nExpansionPacks);
-    return retVal;
-  }
-
-  public void SetCDKey(int nIndex, CExoString sPublic, CExoString sResponse) {
-    NWNXLibPINVOKE.CNetLayerPlayerInfo_SetCDKey(swigCPtr, nIndex, CExoString.getCPtr(sPublic), CExoString.getCPtr(sResponse));
+  public void SetCDKey(CExoString sPublic, CExoString sResponse) {
+    NWNXLibPINVOKE.CNetLayerPlayerInfo_SetCDKey(swigCPtr, CExoString.getCPtr(sPublic), CExoString.getCPtr(sResponse));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 

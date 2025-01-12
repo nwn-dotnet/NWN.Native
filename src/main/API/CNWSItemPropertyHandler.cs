@@ -80,24 +80,24 @@ public unsafe class CNWSItemPropertyHandler : CItemPropertyApplierRemover {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_f_p_CNWSItem_p_CNWItemProperty_p_CNWSCreature_unsigned_int_int__int m_pApplyItemPropertyCommands {
+  public SWIGTYPE_p_m_CNWSItemPropertyHandler__f_p_CNWSItem_p_CNWItemProperty_p_CNWSCreature_unsigned_int_int__int m_pApplyItemPropertyCommands {
     set {
-      NWNXLibPINVOKE.CNWSItemPropertyHandler_m_pApplyItemPropertyCommands_set(swigCPtr, SWIGTYPE_p_p_f_p_CNWSItem_p_CNWItemProperty_p_CNWSCreature_unsigned_int_int__int.getCPtr(value));
+      NWNXLibPINVOKE.CNWSItemPropertyHandler_m_pApplyItemPropertyCommands_set(swigCPtr, SWIGTYPE_p_m_CNWSItemPropertyHandler__f_p_CNWSItem_p_CNWItemProperty_p_CNWSCreature_unsigned_int_int__int.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSItemPropertyHandler_m_pApplyItemPropertyCommands_get(swigCPtr);
-      SWIGTYPE_p_p_f_p_CNWSItem_p_CNWItemProperty_p_CNWSCreature_unsigned_int_int__int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_f_p_CNWSItem_p_CNWItemProperty_p_CNWSCreature_unsigned_int_int__int(cPtr, false);
+      SWIGTYPE_p_m_CNWSItemPropertyHandler__f_p_CNWSItem_p_CNWItemProperty_p_CNWSCreature_unsigned_int_int__int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_m_CNWSItemPropertyHandler__f_p_CNWSItem_p_CNWItemProperty_p_CNWSCreature_unsigned_int_int__int(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_p_f_p_CNWSItem_p_CNWItemProperty_p_CNWSCreature_unsigned_int__int m_pRemoveItemPropertyCommands {
+  public SWIGTYPE_p_m_CNWSItemPropertyHandler__f_p_CNWSItem_p_CNWItemProperty_p_CNWSCreature_unsigned_int__int m_pRemoveItemPropertyCommands {
     set {
-      NWNXLibPINVOKE.CNWSItemPropertyHandler_m_pRemoveItemPropertyCommands_set(swigCPtr, SWIGTYPE_p_p_f_p_CNWSItem_p_CNWItemProperty_p_CNWSCreature_unsigned_int__int.getCPtr(value));
+      NWNXLibPINVOKE.CNWSItemPropertyHandler_m_pRemoveItemPropertyCommands_set(swigCPtr, SWIGTYPE_p_m_CNWSItemPropertyHandler__f_p_CNWSItem_p_CNWItemProperty_p_CNWSCreature_unsigned_int__int.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSItemPropertyHandler_m_pRemoveItemPropertyCommands_get(swigCPtr);
-      SWIGTYPE_p_p_f_p_CNWSItem_p_CNWItemProperty_p_CNWSCreature_unsigned_int__int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_f_p_CNWSItem_p_CNWItemProperty_p_CNWSCreature_unsigned_int__int(cPtr, false);
+      SWIGTYPE_p_m_CNWSItemPropertyHandler__f_p_CNWSItem_p_CNWItemProperty_p_CNWSCreature_unsigned_int__int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_m_CNWSItemPropertyHandler__f_p_CNWSItem_p_CNWItemProperty_p_CNWSCreature_unsigned_int__int(cPtr, false);
       return ret;
     } 
   }

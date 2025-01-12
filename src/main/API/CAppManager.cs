@@ -112,35 +112,13 @@ public unsafe class CAppManager : global::System.IDisposable {
     } 
   }
 
-  public CNWTileSetManager m_pNWTileSetManager {
+  public SWIGTYPE_p_CNWTileSetManager m_pNWTileSetManager {
     set {
-      NWNXLibPINVOKE.CAppManager_m_pNWTileSetManager_set(swigCPtr, CNWTileSetManager.getCPtr(value));
+      NWNXLibPINVOKE.CAppManager_m_pNWTileSetManager_set(swigCPtr, SWIGTYPE_p_CNWTileSetManager.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CAppManager_m_pNWTileSetManager_get(swigCPtr);
-      CNWTileSetManager ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWTileSetManager(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public CObjectTableManager m_pClientObjectTableManager {
-    set {
-      NWNXLibPINVOKE.CAppManager_m_pClientObjectTableManager_set(swigCPtr, CObjectTableManager.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CAppManager_m_pClientObjectTableManager_get(swigCPtr);
-      CObjectTableManager ret = (cPtr == global::System.IntPtr.Zero) ? null : new CObjectTableManager(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public CObjectTableManager m_pServerObjectTableManager {
-    set {
-      NWNXLibPINVOKE.CAppManager_m_pServerObjectTableManager_set(swigCPtr, CObjectTableManager.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CAppManager_m_pServerObjectTableManager_get(swigCPtr);
-      CObjectTableManager ret = (cPtr == global::System.IntPtr.Zero) ? null : new CObjectTableManager(cPtr, false);
+      SWIGTYPE_p_CNWTileSetManager ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CNWTileSetManager(cPtr, false);
       return ret;
     } 
   }
@@ -225,12 +203,6 @@ public unsafe class CAppManager : global::System.IDisposable {
   public CAppManager() : this(NWNXLibPINVOKE.new_CAppManager(), true) {
   }
 
-  public CObjectTableManager GetObjectTableManager(uint dwClientServer) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CAppManager_GetObjectTableManager(swigCPtr, dwClientServer);
-    CObjectTableManager ret = (cPtr == global::System.IntPtr.Zero) ? null : new CObjectTableManager(cPtr, false);
-    return ret;
-  }
-
   public void DoSaveGameScreenShot(CExoString sFile) {
     NWNXLibPINVOKE.CAppManager_DoSaveGameScreenShot(swigCPtr, CExoString.getCPtr(sFile));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
@@ -299,6 +271,11 @@ public unsafe class CAppManager : global::System.IDisposable {
   public byte GetLanguageId() {
     byte retVal = NWNXLibPINVOKE.CAppManager_GetLanguageId(swigCPtr);
     return retVal;
+  }
+
+  public CExoString GetAdvancedVersionString() {
+    CExoString ret = new CExoString(NWNXLibPINVOKE.CAppManager_GetAdvancedVersionString(swigCPtr), true);
+    return ret;
   }
 
   public void _Destructor() {

@@ -145,17 +145,6 @@ public unsafe class CExoBase : global::System.IDisposable {
     } 
   }
 
-  public CExoRand m_pcExoRand {
-    set {
-      NWNXLibPINVOKE.CExoBase_m_pcExoRand_set(swigCPtr, CExoRand.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoBase_m_pcExoRand_get(swigCPtr);
-      CExoRand ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoRand(cPtr, false);
-      return ret;
-    } 
-  }
-
   public SWIGTYPE_p_CExoIdentity m_pcExoIdentity {
     set {
       NWNXLibPINVOKE.CExoBase_m_pcExoIdentity_set(swigCPtr, SWIGTYPE_p_CExoIdentity.getCPtr(value));
@@ -165,17 +154,6 @@ public unsafe class CExoBase : global::System.IDisposable {
       SWIGTYPE_p_CExoIdentity ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CExoIdentity(cPtr, false);
       return ret;
     } 
-  }
-
-  public uint m_nExpansionPacks {
-    set {
-      NWNXLibPINVOKE.CExoBase_m_nExpansionPacks_set(swigCPtr, value);
-    } 
-    get {
-      uint retVal = NWNXLibPINVOKE.CExoBase_m_nExpansionPacks_get(swigCPtr);
-      return retVal;
-    }
-
   }
 
   public CExoBaseInternal m_pcExoBaseInternal {

@@ -10,10 +10,12 @@
 
 namespace NWN.Native.API {
 
-public unsafe class CNWSPlayer : CNWSClient {
+public unsafe class CNWSPlayer : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
+  protected bool swigCMemOwn;
 
-  internal CNWSPlayer(global::System.IntPtr cPtr, bool cMemoryOwn) : base(NWNXLibPINVOKE.CNWSPlayer_SWIGUpcast(cPtr), cMemoryOwn) {
+  internal CNWSPlayer(global::System.IntPtr cPtr, bool cMemoryOwn) {
+    swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -21,7 +23,16 @@ public unsafe class CNWSPlayer : CNWSClient {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 
-  protected override void Dispose(bool disposing) {
+  ~CNWSPlayer() {
+    Dispose(false);
+  }
+
+  public void Dispose() {
+    Dispose(true);
+    global::System.GC.SuppressFinalize(this);
+  }
+
+  protected virtual void Dispose(bool disposing) {
     lock(this) {
       if (swigCPtr.Handle != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
@@ -30,7 +41,6 @@ public unsafe class CNWSPlayer : CNWSClient {
         }
         swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
       }
-      base.Dispose(disposing);
     }
   }
 
@@ -439,6 +449,28 @@ public unsafe class CNWSPlayer : CNWSClient {
 
   }
 
+  public uint m_nPlayerID {
+    set {
+      NWNXLibPINVOKE.CNWSPlayer_m_nPlayerID_set(swigCPtr, value);
+    } 
+    get {
+      uint retVal = NWNXLibPINVOKE.CNWSPlayer_m_nPlayerID_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public int m_nLanguage {
+    set {
+      NWNXLibPINVOKE.CNWSPlayer_m_nLanguage_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWSPlayer_m_nLanguage_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public byte m_nLoginState {
     set {
       NWNXLibPINVOKE.CNWSPlayer_m_nLoginState_set(swigCPtr, value);
@@ -769,6 +801,61 @@ public unsafe class CNWSPlayer : CNWSClient {
 
   }
 
+  public uint m_nLatencyLastPingRequest {
+    set {
+      NWNXLibPINVOKE.CNWSPlayer_m_nLatencyLastPingRequest_set(swigCPtr, value);
+    } 
+    get {
+      uint retVal = NWNXLibPINVOKE.CNWSPlayer_m_nLatencyLastPingRequest_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public uint m_nLatencyLastPingResponse {
+    set {
+      NWNXLibPINVOKE.CNWSPlayer_m_nLatencyLastPingResponse_set(swigCPtr, value);
+    } 
+    get {
+      uint retVal = NWNXLibPINVOKE.CNWSPlayer_m_nLatencyLastPingResponse_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public uint m_nLatestLatency {
+    set {
+      NWNXLibPINVOKE.CNWSPlayer_m_nLatestLatency_set(swigCPtr, value);
+    } 
+    get {
+      uint retVal = NWNXLibPINVOKE.CNWSPlayer_m_nLatestLatency_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public uint m_nSmoothedLatency {
+    set {
+      NWNXLibPINVOKE.CNWSPlayer_m_nSmoothedLatency_set(swigCPtr, value);
+    } 
+    get {
+      uint retVal = NWNXLibPINVOKE.CNWSPlayer_m_nSmoothedLatency_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public ExponentialSmoother m_cSmoothedLatency {
+    set {
+      NWNXLibPINVOKE.CNWSPlayer_m_cSmoothedLatency_set(swigCPtr, ExponentialSmoother.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayer_m_cSmoothedLatency_get(swigCPtr);
+      ExponentialSmoother ret = (cPtr == global::System.IntPtr.Zero) ? null : new ExponentialSmoother(cPtr, false);
+      return ret;
+    } 
+  }
+
   public CNWSPlayer(uint nPlayerID) : this(NWNXLibPINVOKE.new_CNWSPlayer(nPlayerID), true) {
   }
 
@@ -776,16 +863,8 @@ public unsafe class CNWSPlayer : CNWSClient {
     NWNXLibPINVOKE.CNWSPlayer_ClearPlayerOnDestroyGame(swigCPtr);
   }
 
-  public override CNWSPlayer AsNWSPlayer() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayer_AsNWSPlayer(swigCPtr);
-    CNWSPlayer ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSPlayer(cPtr, false);
-    return ret;
-  }
-
-  public override CNWSPlayer AsNWSDungeonMaster() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayer_AsNWSDungeonMaster(swigCPtr);
-    CNWSPlayer ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSPlayer(cPtr, false);
-    return ret;
+  public void Update() {
+    NWNXLibPINVOKE.CNWSPlayer_Update(swigCPtr);
   }
 
   public uint LoadLocalCharacter() {
@@ -991,7 +1070,21 @@ public unsafe class CNWSPlayer : CNWSClient {
     NWNXLibPINVOKE.CNWSPlayer_PossessCreature(swigCPtr, oidTarget, possessType);
   }
 
-  public new void _Destructor() {
+  public void HandleEchoResponse(void* pPayload, uint nSize) {
+    NWNXLibPINVOKE.CNWSPlayer_HandleEchoResponse(swigCPtr, (global::System.IntPtr)pPayload, nSize);
+  }
+
+  public uint GetNetworkLatency(bool bSmoothed) {
+    uint retVal = NWNXLibPINVOKE.CNWSPlayer_GetNetworkLatency__SWIG_0(swigCPtr, bSmoothed);
+    return retVal;
+  }
+
+  public uint GetNetworkLatency() {
+    uint retVal = NWNXLibPINVOKE.CNWSPlayer_GetNetworkLatency__SWIG_1(swigCPtr);
+    return retVal;
+  }
+
+  public void _Destructor() {
     NWNXLibPINVOKE.CNWSPlayer__Destructor(swigCPtr);
   }
 

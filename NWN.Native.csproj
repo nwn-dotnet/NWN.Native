@@ -1,28 +1,56 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFrameworks>netcoreapp3.1;net5.0;net6.0;net7.0;net8.0</TargetFrameworks>
-        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-        <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
-        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-        <PackageId>NWN.Native</PackageId>
-        <Authors>NWN.NET</Authors>
-        <PackageTags>Neverwinter Nights;NWN;</PackageTags>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <EnableDynamicLoading>true</EnableDynamicLoading>
-        <IncludeSymbols>true</IncludeSymbols>
-        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-        <RepositoryUrl>https://github.com/nwn-dotnet/NWN.Native</RepositoryUrl>
-        <RepositoryType>git</RepositoryType>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <EmbedUntrackedSources>true</EmbedUntrackedSources>
-        <PublishRepositoryUrl>true</PublishRepositoryUrl>
-        <NoWarn>108</NoWarn>
-    </PropertyGroup>
+  <!--Build-->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
 
-    <ItemGroup>
-      <Compile Remove="src\main\API\ICGameObject.cs" />
-      <Compile Remove="src\main\API\ICNWItem.cs" />
-    </ItemGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <SourceControlInformationFeatureSupported>true</SourceControlInformationFeatureSupported>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>108,109</NoWarn>
+    
+    <RootNamespace>NWN.Native.API</RootNamespace>
+  </PropertyGroup>
+
+  <!--Package-->
+  <PropertyGroup>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+    <PackageId>$(AssemblyName)</PackageId>
+    <Authors>NWN.NET</Authors>
+
+    <RepositoryUrl>https://github.com/nwn-dotnet/NWN.Native</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
+    <PackageTags>Neverwinter Nights;NWN;</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <!--Debug/Source Link-->
+  <PropertyGroup>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <DebugSymbols>true</DebugSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Compile Remove="src\main\API\ICGameObject.cs" />
+    <Compile Remove="src\main\API\ICNWItem.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All"/>
+    <PackageReference Include="NWNX.NET" Version="1.0.1" />
+  </ItemGroup>
 
 </Project>

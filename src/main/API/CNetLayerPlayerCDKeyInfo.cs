@@ -123,17 +123,6 @@ public unsafe class CNetLayerPlayerCDKeyInfo : global::System.IDisposable {
 
   }
 
-  public uint nExpansionPack {
-    set {
-      NWNXLibPINVOKE.CNetLayerPlayerCDKeyInfo_nExpansionPack_set(swigCPtr, value);
-    } 
-    get {
-      uint retVal = NWNXLibPINVOKE.CNetLayerPlayerCDKeyInfo_nExpansionPack_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
   public CNetLayerPlayerCDKeyInfo() : this(NWNXLibPINVOKE.new_CNetLayerPlayerCDKeyInfo(), true) {
   }
 

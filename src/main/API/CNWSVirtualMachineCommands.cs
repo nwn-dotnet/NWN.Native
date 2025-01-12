@@ -80,13 +80,13 @@ public unsafe class CNWSVirtualMachineCommands : CVirtualMachineCmdImplementer {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_f_int_int__int m_pVirtualMachineCommands {
+  public SWIGTYPE_p_m_CNWSVirtualMachineCommands__f_int_int__int m_pVirtualMachineCommands {
     set {
-      NWNXLibPINVOKE.CNWSVirtualMachineCommands_m_pVirtualMachineCommands_set(swigCPtr, SWIGTYPE_p_p_f_int_int__int.getCPtr(value));
+      NWNXLibPINVOKE.CNWSVirtualMachineCommands_m_pVirtualMachineCommands_set(swigCPtr, SWIGTYPE_p_m_CNWSVirtualMachineCommands__f_int_int__int.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSVirtualMachineCommands_m_pVirtualMachineCommands_get(swigCPtr);
-      SWIGTYPE_p_p_f_int_int__int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_f_int_int__int(cPtr, false);
+      SWIGTYPE_p_m_CNWSVirtualMachineCommands__f_int_int__int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_m_CNWSVirtualMachineCommands__f_int_int__int(cPtr, false);
       return ret;
     } 
   }
@@ -2553,6 +2553,11 @@ public unsafe class CNWSVirtualMachineCommands : CVirtualMachineCmdImplementer {
 
   public int ExecuteCommandNuiManagement(int nCommandId, int nParameters) {
     int retVal = NWNXLibPINVOKE.CNWSVirtualMachineCommands_ExecuteCommandNuiManagement(swigCPtr, nCommandId, nParameters);
+    return retVal;
+  }
+
+  public int ExecuteCommandNWNXFunctionManagement(int nCommandId, int nParameters) {
+    int retVal = NWNXLibPINVOKE.CNWSVirtualMachineCommands_ExecuteCommandNWNXFunctionManagement(swigCPtr, nCommandId, nParameters);
     return retVal;
   }
 

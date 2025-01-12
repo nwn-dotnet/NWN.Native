@@ -1108,6 +1108,17 @@ public unsafe class CNWSCreature : CNWSObject {
 
   }
 
+  public byte m_nPerceptionRange {
+    set {
+      NWNXLibPINVOKE.CNWSCreature_m_nPerceptionRange_set(swigCPtr, value);
+    } 
+    get {
+      byte retVal = NWNXLibPINVOKE.CNWSCreature_m_nPerceptionRange_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public uint m_oidLastPerception {
     set {
       NWNXLibPINVOKE.CNWSCreature_m_oidLastPerception_set(swigCPtr, value);
@@ -2241,6 +2252,17 @@ public unsafe class CNWSCreature : CNWSObject {
 
   }
 
+  public int m_bIsPolymorphed {
+    set {
+      NWNXLibPINVOKE.CNWSCreature_m_bIsPolymorphed_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWSCreature_m_bIsPolymorphed_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public NativeArray<uint> m_pPrePolymorphedItems {
     set {
       NWNXLibPINVOKE.CNWSCreature_m_pPrePolymorphedItems_set(swigCPtr, value);
@@ -2271,17 +2293,6 @@ public unsafe class CNWSCreature : CNWSObject {
     } 
     get {
       ushort retVal = NWNXLibPINVOKE.CNWSCreature_m_nPrePolymorphPortraitId_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public int m_bIsPolymorphed {
-    set {
-      NWNXLibPINVOKE.CNWSCreature_m_bIsPolymorphed_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CNWSCreature_m_bIsPolymorphed_get(swigCPtr);
       return retVal;
     }
 
@@ -2342,12 +2353,12 @@ public unsafe class CNWSCreature : CNWSObject {
 
   }
 
-  public short m_nPrePolymorphHP {
+  public ushort m_nPrePolymorphSoundSet {
     set {
-      NWNXLibPINVOKE.CNWSCreature_m_nPrePolymorphHP_set(swigCPtr, value);
+      NWNXLibPINVOKE.CNWSCreature_m_nPrePolymorphSoundSet_set(swigCPtr, value);
     } 
     get {
-      short retVal = NWNXLibPINVOKE.CNWSCreature_m_nPrePolymorphHP_get(swigCPtr);
+      ushort retVal = NWNXLibPINVOKE.CNWSCreature_m_nPrePolymorphSoundSet_get(swigCPtr);
       return retVal;
     }
 
@@ -2386,39 +2397,6 @@ public unsafe class CNWSCreature : CNWSObject {
 
   }
 
-  public ulong m_nPolymorphACBonusEffect {
-    set {
-      NWNXLibPINVOKE.CNWSCreature_m_nPolymorphACBonusEffect_set(swigCPtr, value);
-    } 
-    get {
-      ulong retVal = NWNXLibPINVOKE.CNWSCreature_m_nPolymorphACBonusEffect_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public ulong m_nPolymorphHPBonusEffect {
-    set {
-      NWNXLibPINVOKE.CNWSCreature_m_nPolymorphHPBonusEffect_set(swigCPtr, value);
-    } 
-    get {
-      ulong retVal = NWNXLibPINVOKE.CNWSCreature_m_nPolymorphHPBonusEffect_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
-  public int m_bHasPrePolymorphCreatureWeaponProficiency {
-    set {
-      NWNXLibPINVOKE.CNWSCreature_m_bHasPrePolymorphCreatureWeaponProficiency_set(swigCPtr, value);
-    } 
-    get {
-      int retVal = NWNXLibPINVOKE.CNWSCreature_m_bHasPrePolymorphCreatureWeaponProficiency_get(swigCPtr);
-      return retVal;
-    }
-
-  }
-
   public int m_bPolymorphing {
     set {
       NWNXLibPINVOKE.CNWSCreature_m_bPolymorphing_set(swigCPtr, value);
@@ -2436,6 +2414,107 @@ public unsafe class CNWSCreature : CNWSObject {
     } 
     get {
       int retVal = NWNXLibPINVOKE.CNWSCreature_m_bPolymorphLocked_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public int m_bPreviouslyPolymorphed {
+    set {
+      NWNXLibPINVOKE.CNWSCreature_m_bPreviouslyPolymorphed_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWSCreature_m_bPreviouslyPolymorphed_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public NativeArray<uint> m_pPolymorphedItems {
+    set {
+      NWNXLibPINVOKE.CNWSCreature_m_pPolymorphedItems_set(swigCPtr, value);
+    } 
+    get {
+      global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWSCreature_m_pPolymorphedItems_get(swigCPtr);
+      NativeArray<uint> retVal = new NativeArray<uint>(arrayPtr, 18);
+
+      return retVal; // uint[18]
+    }
+
+  }
+
+  public CCombatInformation m_pPrePolymorphCombatInformation {
+    set {
+      NWNXLibPINVOKE.CNWSCreature_m_pPrePolymorphCombatInformation_set(swigCPtr, CCombatInformation.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_m_pPrePolymorphCombatInformation_get(swigCPtr);
+      CCombatInformation ret = (cPtr == global::System.IntPtr.Zero) ? null : new CCombatInformation(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public short m_nPrePolymorphAC {
+    set {
+      NWNXLibPINVOKE.CNWSCreature_m_nPrePolymorphAC_set(swigCPtr, value);
+    } 
+    get {
+      short retVal = NWNXLibPINVOKE.CNWSCreature_m_nPrePolymorphAC_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public int m_nPrePolymorphBaseAttackBonus {
+    set {
+      NWNXLibPINVOKE.CNWSCreature_m_nPrePolymorphBaseAttackBonus_set(swigCPtr, value);
+    } 
+    get {
+      int retVal = NWNXLibPINVOKE.CNWSCreature_m_nPrePolymorphBaseAttackBonus_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public short m_nPrePolymorphMaxHP {
+    set {
+      NWNXLibPINVOKE.CNWSCreature_m_nPrePolymorphMaxHP_set(swigCPtr, value);
+    } 
+    get {
+      short retVal = NWNXLibPINVOKE.CNWSCreature_m_nPrePolymorphMaxHP_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public byte m_nPrePolymorphFortitude {
+    set {
+      NWNXLibPINVOKE.CNWSCreature_m_nPrePolymorphFortitude_set(swigCPtr, value);
+    } 
+    get {
+      byte retVal = NWNXLibPINVOKE.CNWSCreature_m_nPrePolymorphFortitude_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public byte m_nPrePolymorphReflex {
+    set {
+      NWNXLibPINVOKE.CNWSCreature_m_nPrePolymorphReflex_set(swigCPtr, value);
+    } 
+    get {
+      byte retVal = NWNXLibPINVOKE.CNWSCreature_m_nPrePolymorphReflex_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
+  public byte m_nPrePolymorphWill {
+    set {
+      NWNXLibPINVOKE.CNWSCreature_m_nPrePolymorphWill_set(swigCPtr, value);
+    } 
+    get {
+      byte retVal = NWNXLibPINVOKE.CNWSCreature_m_nPrePolymorphWill_get(swigCPtr);
       return retVal;
     }
 
@@ -3140,6 +3219,11 @@ public unsafe class CNWSCreature : CNWSObject {
     NWNXLibPINVOKE.CNWSCreature_ReadScriptsFromGff(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats));
   }
 
+  public int CheckForValidPolymorphEffectFromGFF(CResGFF pRes, CResStruct pStruct) {
+    int retVal = NWNXLibPINVOKE.CNWSCreature_CheckForValidPolymorphEffectFromGFF(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+    return retVal;
+  }
+
   public void ReadItemsFromGff(CResGFF pRes, CResStruct pGffStructWithCreatureStats, int bPreserveItemIDs, int bRunScripts) {
     NWNXLibPINVOKE.CNWSCreature_ReadItemsFromGff__SWIG_0(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pGffStructWithCreatureStats), bPreserveItemIDs, bRunScripts);
   }
@@ -3450,28 +3534,38 @@ public unsafe class CNWSCreature : CNWSObject {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public int EquipItem(uint nInventorySlot, CNWSItem pItem, int bApplyPropertyEffects, int bLoadingItem, int bRunEquipEvent) {
+    int retVal = NWNXLibPINVOKE.CNWSCreature_EquipItem__SWIG_0(swigCPtr, nInventorySlot, CNWSItem.getCPtr(pItem), bApplyPropertyEffects, bLoadingItem, bRunEquipEvent);
+    return retVal;
+  }
+
   public int EquipItem(uint nInventorySlot, CNWSItem pItem, int bApplyPropertyEffects, int bLoadingItem) {
-    int retVal = NWNXLibPINVOKE.CNWSCreature_EquipItem__SWIG_0(swigCPtr, nInventorySlot, CNWSItem.getCPtr(pItem), bApplyPropertyEffects, bLoadingItem);
+    int retVal = NWNXLibPINVOKE.CNWSCreature_EquipItem__SWIG_1(swigCPtr, nInventorySlot, CNWSItem.getCPtr(pItem), bApplyPropertyEffects, bLoadingItem);
     return retVal;
   }
 
   public int EquipItem(uint nInventorySlot, CNWSItem pItem, int bApplyPropertyEffects) {
-    int retVal = NWNXLibPINVOKE.CNWSCreature_EquipItem__SWIG_1(swigCPtr, nInventorySlot, CNWSItem.getCPtr(pItem), bApplyPropertyEffects);
+    int retVal = NWNXLibPINVOKE.CNWSCreature_EquipItem__SWIG_2(swigCPtr, nInventorySlot, CNWSItem.getCPtr(pItem), bApplyPropertyEffects);
     return retVal;
   }
 
   public int EquipItem(uint nInventorySlot, CNWSItem pItem) {
-    int retVal = NWNXLibPINVOKE.CNWSCreature_EquipItem__SWIG_2(swigCPtr, nInventorySlot, CNWSItem.getCPtr(pItem));
+    int retVal = NWNXLibPINVOKE.CNWSCreature_EquipItem__SWIG_3(swigCPtr, nInventorySlot, CNWSItem.getCPtr(pItem));
+    return retVal;
+  }
+
+  public int UnequipItem(CNWSItem pItem, int bUnequipWhilePolymorphed, int bRunUnequipEvent) {
+    int retVal = NWNXLibPINVOKE.CNWSCreature_UnequipItem__SWIG_0(swigCPtr, CNWSItem.getCPtr(pItem), bUnequipWhilePolymorphed, bRunUnequipEvent);
     return retVal;
   }
 
   public int UnequipItem(CNWSItem pItem, int bUnequipWhilePolymorphed) {
-    int retVal = NWNXLibPINVOKE.CNWSCreature_UnequipItem__SWIG_0(swigCPtr, CNWSItem.getCPtr(pItem), bUnequipWhilePolymorphed);
+    int retVal = NWNXLibPINVOKE.CNWSCreature_UnequipItem__SWIG_1(swigCPtr, CNWSItem.getCPtr(pItem), bUnequipWhilePolymorphed);
     return retVal;
   }
 
   public int UnequipItem(CNWSItem pItem) {
-    int retVal = NWNXLibPINVOKE.CNWSCreature_UnequipItem__SWIG_1(swigCPtr, CNWSItem.getCPtr(pItem));
+    int retVal = NWNXLibPINVOKE.CNWSCreature_UnequipItem__SWIG_2(swigCPtr, CNWSItem.getCPtr(pItem));
     return retVal;
   }
 
@@ -4714,6 +4808,10 @@ public unsafe class CNWSCreature : CNWSObject {
     return retVal;
   }
 
+  public void CleanUpOldPolymorphedItems() {
+    NWNXLibPINVOKE.CNWSCreature_CleanUpOldPolymorphedItems(swigCPtr);
+  }
+
   public void LoadQuickButtons(CResGFF pRes, CResStruct pStruct) {
     NWNXLibPINVOKE.CNWSCreature_LoadQuickButtons(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
   }
@@ -4926,16 +5024,6 @@ public unsafe class CNWSCreature : CNWSObject {
   public int UnPolymorph(CGameEffect pParentEffect) {
     int retVal = NWNXLibPINVOKE.CNWSCreature_UnPolymorph(swigCPtr, CGameEffect.getCPtr(pParentEffect));
     return retVal;
-  }
-
-  public CNWSCreRestorePolymorphData RemovePolymorphFromOutputCreature() {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSCreature_RemovePolymorphFromOutputCreature(swigCPtr);
-    CNWSCreRestorePolymorphData ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSCreRestorePolymorphData(cPtr, false);
-    return ret;
-  }
-
-  public void RestorePolymorphToOutputCreature(CNWSCreRestorePolymorphData polyData) {
-    NWNXLibPINVOKE.CNWSCreature_RestorePolymorphToOutputCreature(swigCPtr, CNWSCreRestorePolymorphData.getCPtr(polyData));
   }
 
   public int GetTurnResistanceHD() {

@@ -170,6 +170,12 @@ public unsafe class NWPlayerCharacterList_st : global::System.IDisposable {
   public NWPlayerCharacterList_st() : this(NWNXLibPINVOKE.new_NWPlayerCharacterList_st(), true) {
   }
 
+  public int _OpEquals(NWPlayerCharacterList_st stIn) {
+    int retVal = NWNXLibPINVOKE.NWPlayerCharacterList_st__OpEquals(swigCPtr, NWPlayerCharacterList_st.getCPtr(stIn));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return retVal;
+  }
+
 }
 
 }

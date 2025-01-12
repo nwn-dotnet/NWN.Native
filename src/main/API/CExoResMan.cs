@@ -243,13 +243,10 @@ public unsafe class CExoResMan : global::System.IDisposable {
 
   }
 
-  public CNWSync m_pNWSync {
-    set {
-      NWNXLibPINVOKE.CExoResMan_m_pNWSync_set(swigCPtr, CNWSync.getCPtr(value));
-    } 
+  public SWIGTYPE_p_NWSync__CNWSync m_cNWSync {
     get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoResMan_m_pNWSync_get(swigCPtr);
-      CNWSync ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSync(cPtr, false);
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CExoResMan_m_cNWSync_get(swigCPtr);
+      SWIGTYPE_p_NWSync__CNWSync ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_NWSync__CNWSync(cPtr, false);
       return ret;
     } 
   }
@@ -290,14 +287,20 @@ public unsafe class CExoResMan : global::System.IDisposable {
     return retVal;
   }
 
+  public int AddResourceDirectory(CExoString sName, uint nPriority, int bDetectChanges, SWIGTYPE_p_f_p_CExoKeyTable_r_q_const__CResRef_unsigned_short__bool accessCheck) {
+    int retVal = NWNXLibPINVOKE.CExoResMan_AddResourceDirectory__SWIG_0(swigCPtr, CExoString.getCPtr(sName), nPriority, bDetectChanges, SWIGTYPE_p_f_p_CExoKeyTable_r_q_const__CResRef_unsigned_short__bool.getCPtr(accessCheck));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return retVal;
+  }
+
   public int AddResourceDirectory(CExoString sName, uint nPriority, int bDetectChanges) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_AddResourceDirectory__SWIG_0(swigCPtr, CExoString.getCPtr(sName), nPriority, bDetectChanges);
+    int retVal = NWNXLibPINVOKE.CExoResMan_AddResourceDirectory__SWIG_1(swigCPtr, CExoString.getCPtr(sName), nPriority, bDetectChanges);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
 
   public int AddResourceDirectory(CExoString sName, uint nPriority) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_AddResourceDirectory__SWIG_1(swigCPtr, CExoString.getCPtr(sName), nPriority);
+    int retVal = NWNXLibPINVOKE.CExoResMan_AddResourceDirectory__SWIG_2(swigCPtr, CExoString.getCPtr(sName), nPriority);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
@@ -585,14 +588,20 @@ public unsafe class CExoResMan : global::System.IDisposable {
     NWNXLibPINVOKE.CExoResMan_RemoveFromToBeFreedList(swigCPtr, CRes.getCPtr(pRes));
   }
 
+  public int AddKeyTable(uint nPriority, CExoString sName, uint nTableType, int bDetectChanges, SWIGTYPE_p_f_p_CExoKeyTable_r_q_const__CResRef_unsigned_short__bool accessCheck) {
+    int retVal = NWNXLibPINVOKE.CExoResMan_AddKeyTable__SWIG_0(swigCPtr, nPriority, CExoString.getCPtr(sName), nTableType, bDetectChanges, SWIGTYPE_p_f_p_CExoKeyTable_r_q_const__CResRef_unsigned_short__bool.getCPtr(accessCheck));
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return retVal;
+  }
+
   public int AddKeyTable(uint nPriority, CExoString sName, uint nTableType, int bDetectChanges) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_AddKeyTable__SWIG_0(swigCPtr, nPriority, CExoString.getCPtr(sName), nTableType, bDetectChanges);
+    int retVal = NWNXLibPINVOKE.CExoResMan_AddKeyTable__SWIG_1(swigCPtr, nPriority, CExoString.getCPtr(sName), nTableType, bDetectChanges);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
 
   public int AddKeyTable(uint nPriority, CExoString sName, uint nTableType) {
-    int retVal = NWNXLibPINVOKE.CExoResMan_AddKeyTable__SWIG_1(swigCPtr, nPriority, CExoString.getCPtr(sName), nTableType);
+    int retVal = NWNXLibPINVOKE.CExoResMan_AddKeyTable__SWIG_2(swigCPtr, nPriority, CExoString.getCPtr(sName), nTableType);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
