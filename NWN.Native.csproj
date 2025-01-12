@@ -15,7 +15,7 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
     
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <NoWarn>108</NoWarn>
+    <NoWarn>108,109</NoWarn>
     
     <RootNamespace>NWN.Native.API</RootNamespace>
   </PropertyGroup>
