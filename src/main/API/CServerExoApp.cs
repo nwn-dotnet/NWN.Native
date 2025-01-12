@@ -94,14 +94,14 @@ public unsafe class CServerExoApp : CBaseExoApp {
   public CServerExoApp() : this(NWNXLibPINVOKE.new_CServerExoApp(), true) {
   }
 
-  public override int AdmitNetworkAddress(uint nProtocol, CExoString sAddress) {
-    int retVal = NWNXLibPINVOKE.CServerExoApp_AdmitNetworkAddress(swigCPtr, nProtocol, CExoString.getCPtr(sAddress));
+  public override int AdmitNetworkAddress(CExoString sAddress) {
+    int retVal = NWNXLibPINVOKE.CServerExoApp_AdmitNetworkAddress(swigCPtr, CExoString.getCPtr(sAddress));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
 
-  public override int SetNetworkAddressBan(uint nProtocol, CExoString sAddress, int bBanPlayer) {
-    int retVal = NWNXLibPINVOKE.CServerExoApp_SetNetworkAddressBan(swigCPtr, nProtocol, CExoString.getCPtr(sAddress), bBanPlayer);
+  public override int SetNetworkAddressBan(CExoString sAddress, int bBanPlayer) {
+    int retVal = NWNXLibPINVOKE.CServerExoApp_SetNetworkAddressBan(swigCPtr, CExoString.getCPtr(sAddress), bBanPlayer);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
@@ -139,10 +139,6 @@ public unsafe class CServerExoApp : CBaseExoApp {
 
   public void Shutdown(int bWarnLocals) {
     NWNXLibPINVOKE.CServerExoApp_Shutdown__SWIG_1(swigCPtr, bWarnLocals);
-  }
-
-  public void SetGameSpyReporting(int bEnabled) {
-    NWNXLibPINVOKE.CServerExoApp_SetGameSpyReporting(swigCPtr, bEnabled);
   }
 
   public override CServerInfo GetServerInfo() {
@@ -414,14 +410,9 @@ public unsafe class CServerExoApp : CBaseExoApp {
     return ret;
   }
 
-  public void* GetSysAdminList() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CServerExoApp_GetSysAdminList(swigCPtr);
-    return (void*)retVal;
-  }
-
-  public void* GetPlayerList() {
-    global::System.IntPtr retVal = NWNXLibPINVOKE.CServerExoApp_GetPlayerList(swigCPtr);
-    return (void*)retVal;
+  public SWIGTYPE_p_CExoArrayListT_CNWSPlayer_p_t GetPlayerList() {
+    SWIGTYPE_p_CExoArrayListT_CNWSPlayer_p_t ret = new SWIGTYPE_p_CExoArrayListT_CNWSPlayer_p_t(NWNXLibPINVOKE.CServerExoApp_GetPlayerList(swigCPtr), false);
+    return ret;
   }
 
   public CNWSMessage GetNWSMessage() {
@@ -486,9 +477,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
     return ret;
   }
 
-  public override int HandleMessage(uint nPlayerId, byte* pData, uint dwSize, int bRawMessage) {
-    int retVal = NWNXLibPINVOKE.CServerExoApp_HandleMessage(swigCPtr, nPlayerId, pData, dwSize, bRawMessage);
-    return retVal;
+  public override void HandleMessage(uint nPlayerId, byte* pData, uint dwSize) {
+    NWNXLibPINVOKE.CServerExoApp_HandleMessage(swigCPtr, nPlayerId, pData, dwSize);
   }
 
   public int Initialize() {
@@ -629,15 +619,9 @@ public unsafe class CServerExoApp : CBaseExoApp {
     return retVal;
   }
 
-  public CNWSClient GetClientObjectByPlayerId(uint nPlayerId, byte nClientType) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoApp_GetClientObjectByPlayerId__SWIG_0(swigCPtr, nPlayerId, nClientType);
-    CNWSClient ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSClient(cPtr, false);
-    return ret;
-  }
-
-  public CNWSClient GetClientObjectByPlayerId(uint nPlayerId) {
-    global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoApp_GetClientObjectByPlayerId__SWIG_1(swigCPtr, nPlayerId);
-    CNWSClient ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSClient(cPtr, false);
+  public CNWSPlayer GetClientObjectByPlayerId(uint nPlayerId) {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoApp_GetClientObjectByPlayerId(swigCPtr, nPlayerId);
+    CNWSPlayer ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWSPlayer(cPtr, false);
     return ret;
   }
 
@@ -654,14 +638,6 @@ public unsafe class CServerExoApp : CBaseExoApp {
     NWNXLibPINVOKE.CServerExoApp_InitiateModuleForPlayer(swigCPtr, (global::System.IntPtr)pPlayer);
   }
 
-  public override void HandleGameSpyToServerMessage(int nKeyId, void* pOutBuf, int nIndex) {
-    NWNXLibPINVOKE.CServerExoApp_HandleGameSpyToServerMessage__SWIG_0(swigCPtr, nKeyId, (global::System.IntPtr)pOutBuf, nIndex);
-  }
-
-  public override void HandleGameSpyToServerMessage(int nKeyId, void* pOutBuf) {
-    NWNXLibPINVOKE.CServerExoApp_HandleGameSpyToServerMessage__SWIG_1(swigCPtr, nKeyId, (global::System.IntPtr)pOutBuf);
-  }
-
   public override SWIGTYPE_p_CConnectionLib GetConnectionLib() {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoApp_GetConnectionLib(swigCPtr);
     SWIGTYPE_p_CConnectionLib ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CConnectionLib(cPtr, false);
@@ -672,11 +648,6 @@ public unsafe class CServerExoApp : CBaseExoApp {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoApp_GetCampaignDB(swigCPtr);
     SWIGTYPE_p_CCampaignDB ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CCampaignDB(cPtr, false);
     return ret;
-  }
-
-  public int GetPlayerAddressData(uint nConnectionId, uint* nProtocol, byte** pNetAddress1, byte** pNetAddress2, uint* nPort) {
-    int retVal = NWNXLibPINVOKE.CServerExoApp_GetPlayerAddressData(swigCPtr, nConnectionId, nProtocol, (global::System.IntPtr)pNetAddress1, (global::System.IntPtr)pNetAddress2, nPort);
-    return retVal;
   }
 
   public int GetFactionOfObject(uint oObject, int* nFaction) {
@@ -806,12 +777,12 @@ public unsafe class CServerExoApp : CBaseExoApp {
     return retVal;
   }
 
-  public void SetGameSpyEnabled(int b) {
-    NWNXLibPINVOKE.CServerExoApp_SetGameSpyEnabled(swigCPtr, b);
+  public void SetGamePostedToInternet(int b) {
+    NWNXLibPINVOKE.CServerExoApp_SetGamePostedToInternet(swigCPtr, b);
   }
 
-  public int GetGameSpyEnabled() {
-    int retVal = NWNXLibPINVOKE.CServerExoApp_GetGameSpyEnabled(swigCPtr);
+  public int GetGamePostedToInternet() {
+    int retVal = NWNXLibPINVOKE.CServerExoApp_GetGamePostedToInternet(swigCPtr);
     return retVal;
   }
 
@@ -821,10 +792,6 @@ public unsafe class CServerExoApp : CBaseExoApp {
     return retVal;
   }
 
-  public void AddSubNetProfileSendSize(uint nPlayerID, uint nSize) {
-    NWNXLibPINVOKE.CServerExoApp_AddSubNetProfileSendSize(swigCPtr, nPlayerID, nSize);
-  }
-
   public int GetCreatureDeathLogging() {
     int retVal = NWNXLibPINVOKE.CServerExoApp_GetCreatureDeathLogging(swigCPtr);
     return retVal;
@@ -832,15 +799,6 @@ public unsafe class CServerExoApp : CBaseExoApp {
 
   public void SetCreatureDeathLogging(int arg0) {
     NWNXLibPINVOKE.CServerExoApp_SetCreatureDeathLogging(swigCPtr, arg0);
-  }
-
-  public int GetHeartBeatLogging() {
-    int retVal = NWNXLibPINVOKE.CServerExoApp_GetHeartBeatLogging(swigCPtr);
-    return retVal;
-  }
-
-  public void SetHeartBeatLogging(int arg0) {
-    NWNXLibPINVOKE.CServerExoApp_SetHeartBeatLogging(swigCPtr, arg0);
   }
 
   public uint GetClientsRequiredToDisableCPUSleep() {

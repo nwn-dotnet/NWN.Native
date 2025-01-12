@@ -101,7 +101,7 @@ public unsafe class CNetLayer : global::System.IDisposable {
     } 
   }
 
-  public CNetLayer() : this(NWNXLibPINVOKE.new_CNetLayer(), true) {
+  public CNetLayer(CNetInstance arg0) : this(NWNXLibPINVOKE.new_CNetLayer((int)arg0), true) {
   }
 
   public int Initialize(CBaseExoApp pcExoApp) {
@@ -120,13 +120,13 @@ public unsafe class CNetLayer : global::System.IDisposable {
     return retVal;
   }
 
-  public int StartProtocol(uint nProtocol, uint nSendingAddress, uint nReceivingAddress, uint nInstance) {
-    int retVal = NWNXLibPINVOKE.CNetLayer_StartProtocol(swigCPtr, nProtocol, nSendingAddress, nReceivingAddress, nInstance);
+  public int StartUDP(uint nPort) {
+    int retVal = NWNXLibPINVOKE.CNetLayer_StartUDP(swigCPtr, nPort);
     return retVal;
   }
 
-  public int EndProtocol(uint nProtocol) {
-    int retVal = NWNXLibPINVOKE.CNetLayer_EndProtocol(swigCPtr, nProtocol);
+  public int EndUDP() {
+    int retVal = NWNXLibPINVOKE.CNetLayer_EndUDP(swigCPtr);
     return retVal;
   }
 
@@ -249,10 +249,6 @@ public unsafe class CNetLayer : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void SetUpPlayBackConnection() {
-    NWNXLibPINVOKE.CNetLayer_SetUpPlayBackConnection(swigCPtr);
-  }
-
   public void StartAddressTranslation(CExoString sInternetAddress) {
     NWNXLibPINVOKE.CNetLayer_StartAddressTranslation(swigCPtr, CExoString.getCPtr(sInternetAddress));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
@@ -345,16 +341,6 @@ public unsafe class CNetLayer : global::System.IDisposable {
     return retVal;
   }
 
-  public int GetNumberLocalAdapters(uint nProtocol) {
-    int retVal = NWNXLibPINVOKE.CNetLayer_GetNumberLocalAdapters(swigCPtr, nProtocol);
-    return retVal;
-  }
-
-  public CExoString GetLocalAdapterString(uint nProtocol, uint nAdapterNumber) {
-    CExoString ret = new CExoString(NWNXLibPINVOKE.CNetLayer_GetLocalAdapterString(swigCPtr, nProtocol, nAdapterNumber), true);
-    return ret;
-  }
-
   public void SetSessionInfoChanged(uint nSessionId, int bHasChanged) {
     NWNXLibPINVOKE.CNetLayer_SetSessionInfoChanged(swigCPtr, nSessionId, bHasChanged);
   }
@@ -387,13 +373,8 @@ public unsafe class CNetLayer : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public uint GetUDPRecievePort() {
-    uint retVal = NWNXLibPINVOKE.CNetLayer_GetUDPRecievePort(swigCPtr);
-    return retVal;
-  }
-
-  public uint GetPortBySessionId(uint nSessionId) {
-    uint retVal = NWNXLibPINVOKE.CNetLayer_GetPortBySessionId(swigCPtr, nSessionId);
+  public uint GetUDPPort() {
+    uint retVal = NWNXLibPINVOKE.CNetLayer_GetUDPPort(swigCPtr);
     return retVal;
   }
 
@@ -438,16 +419,6 @@ public unsafe class CNetLayer : global::System.IDisposable {
     return retVal;
   }
 
-  public int MessageArrived(uint nProtocol, uint nSocketId, uint nErrorCode, int bRemoveFromQueue) {
-    int retVal = NWNXLibPINVOKE.CNetLayer_MessageArrived__SWIG_0(swigCPtr, nProtocol, nSocketId, nErrorCode, bRemoveFromQueue);
-    return retVal;
-  }
-
-  public int MessageArrived(uint nProtocol, uint nSocketId, uint nErrorCode) {
-    int retVal = NWNXLibPINVOKE.CNetLayer_MessageArrived__SWIG_1(swigCPtr, nProtocol, nSocketId, nErrorCode);
-    return retVal;
-  }
-
   public void ProcessReceivedFrames(int bProcessReceivedMessage) {
     NWNXLibPINVOKE.CNetLayer_ProcessReceivedFrames__SWIG_0(swigCPtr, bProcessReceivedMessage);
   }
@@ -461,18 +432,14 @@ public unsafe class CNetLayer : global::System.IDisposable {
     return retVal;
   }
 
-  public int SendMessageToAddress(uint nConnectionId, byte* pData, uint nSize) {
-    int retVal = NWNXLibPINVOKE.CNetLayer_SendMessageToAddress(swigCPtr, nConnectionId, pData, nSize);
+  public int SendMessageToAddress(CNetConnectionId nConnectionId, byte* pData, uint nSize) {
+    int retVal = NWNXLibPINVOKE.CNetLayer_SendMessageToAddress(swigCPtr, CNetConnectionId.getCPtr(nConnectionId), pData, nSize);
+    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
 
   public int UpdateStatusLoop(uint nApplicationType) {
     int retVal = NWNXLibPINVOKE.CNetLayer_UpdateStatusLoop(swigCPtr, nApplicationType);
-    return retVal;
-  }
-
-  public int GetPlayerAddressData(uint nConnectionId, uint* nProtocol, byte** pNetAddress1, byte** pNetAddress2, uint* nPort) {
-    int retVal = NWNXLibPINVOKE.CNetLayer_GetPlayerAddressData(swigCPtr, nConnectionId, nProtocol, (global::System.IntPtr)pNetAddress1, (global::System.IntPtr)pNetAddress2, nPort);
     return retVal;
   }
 
@@ -489,11 +456,6 @@ public unsafe class CNetLayer : global::System.IDisposable {
     NWNXLibPINVOKE.CNetLayer_SetGameMasterPermission(swigCPtr, state);
   }
 
-  public int TranslateAddressFromString(byte* szAddress, uint* nProtocol, byte* pNetAddress1, byte* pNetAddress2, uint* nWPort) {
-    int retVal = NWNXLibPINVOKE.CNetLayer_TranslateAddressFromString(swigCPtr, szAddress, nProtocol, pNetAddress1, pNetAddress2, nWPort);
-    return retVal;
-  }
-
   public SWIGTYPE_p_CExoNet GetExoNet() {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CNetLayer_GetExoNet(swigCPtr);
     SWIGTYPE_p_CExoNet ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CExoNet(cPtr, false);
@@ -503,15 +465,6 @@ public unsafe class CNetLayer : global::System.IDisposable {
   public CExoString GetServerNetworkAddress() {
     CExoString ret = new CExoString(NWNXLibPINVOKE.CNetLayer_GetServerNetworkAddress(swigCPtr), true);
     return ret;
-  }
-
-  public void SetCurrentMasterServerInternetAddress(uint nAddress, uint nPort) {
-    NWNXLibPINVOKE.CNetLayer_SetCurrentMasterServerInternetAddress(swigCPtr, nAddress, nPort);
-  }
-
-  public uint GetSendUDPSocket() {
-    uint retVal = NWNXLibPINVOKE.CNetLayer_GetSendUDPSocket(swigCPtr);
-    return retVal;
   }
 
   public void ShutDownClientInterfaceWithReason(uint nReason, CExoString sReason) {
@@ -528,17 +481,8 @@ public unsafe class CNetLayer : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void SetExpansionPackReqd(ushort nExpansionPack) {
-    NWNXLibPINVOKE.CNetLayer_SetExpansionPackReqd(swigCPtr, nExpansionPack);
-  }
-
-  public ushort GetExpansionPackReqd() {
-    ushort retVal = NWNXLibPINVOKE.CNetLayer_GetExpansionPackReqd(swigCPtr);
-    return retVal;
-  }
-
-  public int PlayerIdToConnectionId(uint nPlayerId, uint* nConnectionId) {
-    int retVal = NWNXLibPINVOKE.CNetLayer_PlayerIdToConnectionId(swigCPtr, nPlayerId, nConnectionId);
+  public int PlayerIdToConnectionId(uint nPlayerId, CNetConnectionId nConnectionId) {
+    int retVal = NWNXLibPINVOKE.CNetLayer_PlayerIdToConnectionId(swigCPtr, nPlayerId, CNetConnectionId.getCPtr(nConnectionId));
     return retVal;
   }
 
@@ -565,11 +509,6 @@ public unsafe class CNetLayer : global::System.IDisposable {
 
   public int CloseStandardConnection(int nConnectonToClose) {
     int retVal = NWNXLibPINVOKE.CNetLayer_CloseStandardConnection(swigCPtr, nConnectonToClose);
-    return retVal;
-  }
-
-  public int GetIPBySessionId(uint nSessionId, CExoString sIPAddress) {
-    int retVal = NWNXLibPINVOKE.CNetLayer_GetIPBySessionId(swigCPtr, nSessionId, CExoString.getCPtr(sIPAddress));
     return retVal;
   }
 

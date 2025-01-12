@@ -80,24 +80,24 @@ public unsafe class CNWSEffectListHandler : CGameEffectApplierRemover {
     return !Equals(left, right);
   }
 
-  public SWIGTYPE_p_p_f_p_CNWSObject_p_CGameEffect_int__int m_pApplyEffectCommands {
+  public SWIGTYPE_p_m_CNWSEffectListHandler__f_p_CNWSObject_p_CGameEffect_int__int m_pApplyEffectCommands {
     set {
-      NWNXLibPINVOKE.CNWSEffectListHandler_m_pApplyEffectCommands_set(swigCPtr, SWIGTYPE_p_p_f_p_CNWSObject_p_CGameEffect_int__int.getCPtr(value));
+      NWNXLibPINVOKE.CNWSEffectListHandler_m_pApplyEffectCommands_set(swigCPtr, SWIGTYPE_p_m_CNWSEffectListHandler__f_p_CNWSObject_p_CGameEffect_int__int.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSEffectListHandler_m_pApplyEffectCommands_get(swigCPtr);
-      SWIGTYPE_p_p_f_p_CNWSObject_p_CGameEffect_int__int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_f_p_CNWSObject_p_CGameEffect_int__int(cPtr, false);
+      SWIGTYPE_p_m_CNWSEffectListHandler__f_p_CNWSObject_p_CGameEffect_int__int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_m_CNWSEffectListHandler__f_p_CNWSObject_p_CGameEffect_int__int(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_p_f_p_CNWSObject_p_CGameEffect__int m_pRemoveEffectCommands {
+  public SWIGTYPE_p_m_CNWSEffectListHandler__f_p_CNWSObject_p_CGameEffect__int m_pRemoveEffectCommands {
     set {
-      NWNXLibPINVOKE.CNWSEffectListHandler_m_pRemoveEffectCommands_set(swigCPtr, SWIGTYPE_p_p_f_p_CNWSObject_p_CGameEffect__int.getCPtr(value));
+      NWNXLibPINVOKE.CNWSEffectListHandler_m_pRemoveEffectCommands_set(swigCPtr, SWIGTYPE_p_m_CNWSEffectListHandler__f_p_CNWSObject_p_CGameEffect__int.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSEffectListHandler_m_pRemoveEffectCommands_get(swigCPtr);
-      SWIGTYPE_p_p_f_p_CNWSObject_p_CGameEffect__int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p_f_p_CNWSObject_p_CGameEffect__int(cPtr, false);
+      SWIGTYPE_p_m_CNWSEffectListHandler__f_p_CNWSObject_p_CGameEffect__int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_m_CNWSEffectListHandler__f_p_CNWSObject_p_CGameEffect__int(cPtr, false);
       return ret;
     } 
   }
@@ -1422,6 +1422,16 @@ public unsafe class CNWSEffectListHandler : CGameEffectApplierRemover {
 
   public int OnRemoveTimeStopImmunity(CNWSObject pObject, CGameEffect pEffect) {
     int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_OnRemoveTimeStopImmunity(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect));
+    return retVal;
+  }
+
+  public int CheckEffectAppliesToObject(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame, int bCheckDyingState) {
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_CheckEffectAppliesToObject__SWIG_0(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame, bCheckDyingState);
+    return retVal;
+  }
+
+  public int CheckEffectAppliesToObject(CNWSObject pObject, CGameEffect pEffect, int bLoadingGame) {
+    int retVal = NWNXLibPINVOKE.CNWSEffectListHandler_CheckEffectAppliesToObject__SWIG_1(swigCPtr, CNWSObject.getCPtr(pObject), CGameEffect.getCPtr(pEffect), bLoadingGame);
     return retVal;
   }
 

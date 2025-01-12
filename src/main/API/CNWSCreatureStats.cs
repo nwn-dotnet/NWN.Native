@@ -685,6 +685,17 @@ public unsafe class CNWSCreatureStats : global::System.IDisposable {
 
   }
 
+  public byte m_nACPolymorph {
+    set {
+      NWNXLibPINVOKE.CNWSCreatureStats_m_nACPolymorph_set(swigCPtr, value);
+    } 
+    get {
+      byte retVal = NWNXLibPINVOKE.CNWSCreatureStats_m_nACPolymorph_get(swigCPtr);
+      return retVal;
+    }
+
+  }
+
   public byte m_nBaseAttackBonus {
     set {
       NWNXLibPINVOKE.CNWSCreatureStats_m_nBaseAttackBonus_set(swigCPtr, value);

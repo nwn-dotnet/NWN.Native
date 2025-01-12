@@ -382,7 +382,10 @@ public unsafe class CCombatInformation : global::System.IDisposable {
 
   }
 
-  public CCombatInformation() : this(NWNXLibPINVOKE.new_CCombatInformation(), true) {
+  public CCombatInformation() : this(NWNXLibPINVOKE.new_CCombatInformation__SWIG_0(), true) {
+  }
+
+  public CCombatInformation(CCombatInformation m_ExistingCombatDataToCopy) : this(NWNXLibPINVOKE.new_CCombatInformation__SWIG_1(CCombatInformation.getCPtr(m_ExistingCombatDataToCopy)), true) {
   }
 
   public int SaveData(CResGFF pRes, CResStruct pStruct) {

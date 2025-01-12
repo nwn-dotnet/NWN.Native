@@ -268,6 +268,16 @@ public unsafe class CScriptParseTreeNode : global::System.IDisposable {
 
   }
 
+  public bool m_bAllowAsDefaultValueInFunctionDecl {
+    set {
+      NWNXLibPINVOKE.CScriptParseTreeNode_m_bAllowAsDefaultValueInFunctionDecl_set(swigCPtr, value);
+    } 
+    get {
+      bool ret = NWNXLibPINVOKE.CScriptParseTreeNode_m_bAllowAsDefaultValueInFunctionDecl_get(swigCPtr);
+      return ret;
+    } 
+  }
+
   public CScriptParseTreeNode() : this(NWNXLibPINVOKE.new_CScriptParseTreeNode(), true) {
   }
 

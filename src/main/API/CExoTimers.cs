@@ -124,6 +124,11 @@ public unsafe class CExoTimers : global::System.IDisposable {
     return retVal;
   }
 
+  public SWIGTYPE_p_time_t GetUnixTimestamp() {
+    SWIGTYPE_p_time_t ret = new SWIGTYPE_p_time_t(NWNXLibPINVOKE.CExoTimers_GetUnixTimestamp(swigCPtr), true);
+    return ret;
+  }
+
   public void _Destructor() {
     NWNXLibPINVOKE.CExoTimers__Destructor(swigCPtr);
   }

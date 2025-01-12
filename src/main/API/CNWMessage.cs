@@ -328,10 +328,6 @@ public unsafe class CNWMessage : global::System.IDisposable {
     return retVal;
   }
 
-  public void ClearReadMessage() {
-    NWNXLibPINVOKE.CNWMessage_ClearReadMessage(swigCPtr);
-  }
-
   public void HandleExpectedTypeMismatch(CNWMessage.MessageType expect, CNWMessage.MessageType got) {
     NWNXLibPINVOKE.CNWMessage_HandleExpectedTypeMismatch(swigCPtr, (int)expect, (int)got);
   }
@@ -500,23 +496,13 @@ public unsafe class CNWMessage : global::System.IDisposable {
     return ret;
   }
 
-  public int MessageReadOverflow(int bWarn) {
-    int retVal = NWNXLibPINVOKE.CNWMessage_MessageReadOverflow__SWIG_0(swigCPtr, bWarn);
-    return retVal;
-  }
-
   public int MessageReadOverflow() {
-    int retVal = NWNXLibPINVOKE.CNWMessage_MessageReadOverflow__SWIG_1(swigCPtr);
-    return retVal;
-  }
-
-  public int MessageReadUnderflow(int bWarn) {
-    int retVal = NWNXLibPINVOKE.CNWMessage_MessageReadUnderflow__SWIG_0(swigCPtr, bWarn);
+    int retVal = NWNXLibPINVOKE.CNWMessage_MessageReadOverflow(swigCPtr);
     return retVal;
   }
 
   public int MessageReadUnderflow() {
-    int retVal = NWNXLibPINVOKE.CNWMessage_MessageReadUnderflow__SWIG_1(swigCPtr);
+    int retVal = NWNXLibPINVOKE.CNWMessage_MessageReadUnderflow(swigCPtr);
     return retVal;
   }
 

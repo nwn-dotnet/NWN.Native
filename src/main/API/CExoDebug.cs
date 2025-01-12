@@ -127,10 +127,6 @@ public unsafe class CExoDebug : global::System.IDisposable {
     NWNXLibPINVOKE.CExoDebug_CloseLogFiles(swigCPtr);
   }
 
-  public void FlushErrorFile() {
-    NWNXLibPINVOKE.CExoDebug_FlushErrorFile(swigCPtr);
-  }
-
   public void FlushLogFile() {
     NWNXLibPINVOKE.CExoDebug_FlushLogFile(swigCPtr);
   }
@@ -145,17 +141,20 @@ public unsafe class CExoDebug : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public void Warning(int nLineNumber, byte* sFileName, byte* sComment, byte* sCond, byte* sAction) {
+    NWNXLibPINVOKE.CExoDebug_Warning__SWIG_0(swigCPtr, nLineNumber, sFileName, sComment, sCond, sAction);
+  }
+
+  public void Warning(int nLineNumber, byte* sFileName, byte* sComment, byte* sCond) {
+    NWNXLibPINVOKE.CExoDebug_Warning__SWIG_1(swigCPtr, nLineNumber, sFileName, sComment, sCond);
+  }
+
   public void Warning(int nLineNumber, byte* sFileName, byte* sComment) {
-    NWNXLibPINVOKE.CExoDebug_Warning__SWIG_0(swigCPtr, nLineNumber, sFileName, sComment);
+    NWNXLibPINVOKE.CExoDebug_Warning__SWIG_2(swigCPtr, nLineNumber, sFileName, sComment);
   }
 
   public void Warning(int nLineNumber, byte* sFileName) {
-    NWNXLibPINVOKE.CExoDebug_Warning__SWIG_1(swigCPtr, nLineNumber, sFileName);
-  }
-
-  public void WriteToErrorFile(CExoString sLogString) {
-    NWNXLibPINVOKE.CExoDebug_WriteToErrorFile(swigCPtr, CExoString.getCPtr(sLogString));
-    if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    NWNXLibPINVOKE.CExoDebug_Warning__SWIG_3(swigCPtr, nLineNumber, sFileName);
   }
 
   public void WriteToLogFile(CExoString sLogString) {

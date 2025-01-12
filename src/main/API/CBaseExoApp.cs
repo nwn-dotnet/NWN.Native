@@ -90,8 +90,8 @@ public unsafe class CBaseExoApp : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public virtual int AdmitNetworkAddress(uint nProtocol, CExoString sAddress) {
-    int retVal = NWNXLibPINVOKE.CBaseExoApp_AdmitNetworkAddress(swigCPtr, nProtocol, CExoString.getCPtr(sAddress));
+  public virtual int AdmitNetworkAddress(CExoString sAddress) {
+    int retVal = NWNXLibPINVOKE.CBaseExoApp_AdmitNetworkAddress(swigCPtr, CExoString.getCPtr(sAddress));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
@@ -102,8 +102,8 @@ public unsafe class CBaseExoApp : global::System.IDisposable {
     return retVal;
   }
 
-  public virtual int SetNetworkAddressBan(uint nProtocol, CExoString sAddress, int bBanPlayer) {
-    int retVal = NWNXLibPINVOKE.CBaseExoApp_SetNetworkAddressBan(swigCPtr, nProtocol, CExoString.getCPtr(sAddress), bBanPlayer);
+  public virtual int SetNetworkAddressBan(CExoString sAddress, int bBanPlayer) {
+    int retVal = NWNXLibPINVOKE.CBaseExoApp_SetNetworkAddressBan(swigCPtr, CExoString.getCPtr(sAddress), bBanPlayer);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
     return retVal;
   }
@@ -116,9 +116,8 @@ public unsafe class CBaseExoApp : global::System.IDisposable {
     NWNXLibPINVOKE.CBaseExoApp_PlayerListChange__SWIG_1(swigCPtr, nPlayerId, bEnter);
   }
 
-  public virtual int HandleMessage(uint nPlayerId, byte* pData, uint dwSize, int bRawMessage) {
-    int retVal = NWNXLibPINVOKE.CBaseExoApp_HandleMessage(swigCPtr, nPlayerId, pData, dwSize, bRawMessage);
-    return retVal;
+  public virtual void HandleMessage(uint nPlayerId, byte* pData, uint dwSize) {
+    NWNXLibPINVOKE.CBaseExoApp_HandleMessage(swigCPtr, nPlayerId, pData, dwSize);
   }
 
   public virtual float GetFPS() {
@@ -150,14 +149,6 @@ public unsafe class CBaseExoApp : global::System.IDisposable {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CBaseExoApp_GetExtendedServerInfo__SWIG_0(swigCPtr);
     CExtendedServerInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExtendedServerInfo(cPtr, false);
     return ret;
-  }
-
-  public virtual void HandleGameSpyToServerMessage(int nKeyId, void* pOutBuf, int nIndex) {
-    NWNXLibPINVOKE.CBaseExoApp_HandleGameSpyToServerMessage__SWIG_0(swigCPtr, nKeyId, (global::System.IntPtr)pOutBuf, nIndex);
-  }
-
-  public virtual void HandleGameSpyToServerMessage(int nKeyId, void* pOutBuf) {
-    NWNXLibPINVOKE.CBaseExoApp_HandleGameSpyToServerMessage__SWIG_1(swigCPtr, nKeyId, (global::System.IntPtr)pOutBuf);
   }
 
   public virtual SWIGTYPE_p_CConnectionLib GetConnectionLib() {

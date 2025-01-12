@@ -227,9 +227,8 @@ public unsafe class CNWSMessage : CNWMessage {
     return retVal;
   }
 
-  public int HandlePlayerToServerMessage(uint nPlayerId, byte* pBuffer, uint nBufferSize) {
-    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerMessage(swigCPtr, nPlayerId, pBuffer, nBufferSize);
-    return retVal;
+  public void HandlePlayerToServerMessage(uint nPlayerId, byte* pBuffer, uint nBufferSize) {
+    NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerMessage(swigCPtr, nPlayerId, pBuffer, nBufferSize);
   }
 
   public int HandlePlayerToServerModuleMessage(CNWSPlayer pPlayer, byte nMinor) {
@@ -239,11 +238,6 @@ public unsafe class CNWSMessage : CNWMessage {
 
   public int HandlePlayerToServerParty(CNWSPlayer pPlayer, byte nMinor) {
     int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerParty(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
-    return retVal;
-  }
-
-  public int HandlePlayerToServerServerChatMessage(CNWSPlayer pPlayer, byte nMinor) {
-    int retVal = NWNXLibPINVOKE.CNWSMessage_HandlePlayerToServerServerChatMessage(swigCPtr, CNWSPlayer.getCPtr(pPlayer), nMinor);
     return retVal;
   }
 
@@ -676,6 +670,16 @@ public unsafe class CNWSMessage : CNWMessage {
   public int SendServerToPlayerSoundObject_ChangePosition(CNWSPlayer pPlayer, uint oidSound, Vector vPos) {
     int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSoundObject_ChangePosition(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidSound, Vector.getCPtr(vPos));
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
+    return retVal;
+  }
+
+  public int SendServerToPlayerSoundObject_Create(CNWSPlayer pPlayer, CNWSSoundObject pSoundObject) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSoundObject_Create(swigCPtr, CNWSPlayer.getCPtr(pPlayer), CNWSSoundObject.getCPtr(pSoundObject));
+    return retVal;
+  }
+
+  public int SendServerToPlayerSoundObject_Destroy(CNWSPlayer pPlayer, uint oidSound) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_SendServerToPlayerSoundObject_Destroy(swigCPtr, CNWSPlayer.getCPtr(pPlayer), oidSound);
     return retVal;
   }
 
@@ -1618,12 +1622,8 @@ public unsafe class CNWSMessage : CNWMessage {
     return retVal;
   }
 
-  public void WriteGuiEffectIconsUpdate(CNWSCreature pCreature, CExoArrayListCEffectIconObjectPtr pLastUpdateEffectArray, int bSendNonPlayerBarIcons) {
-    NWNXLibPINVOKE.CNWSMessage_WriteGuiEffectIconsUpdate__SWIG_0(swigCPtr, CNWSCreature.getCPtr(pCreature), CExoArrayListCEffectIconObjectPtr.getCPtr(pLastUpdateEffectArray), bSendNonPlayerBarIcons);
-  }
-
-  public void WriteGuiEffectIconsUpdate(CNWSCreature pCreature, CExoArrayListCEffectIconObjectPtr pLastUpdateEffectArray) {
-    NWNXLibPINVOKE.CNWSMessage_WriteGuiEffectIconsUpdate__SWIG_1(swigCPtr, CNWSCreature.getCPtr(pCreature), CExoArrayListCEffectIconObjectPtr.getCPtr(pLastUpdateEffectArray));
+  public void WriteGuiEffectIconsUpdate(CNWSCreature pCreature, CExoArrayListCEffectIconObjectPtr pLastUpdateEffectArray, int bSendNonPlayerBarIcons, CNWSPlayer pPlayer) {
+    NWNXLibPINVOKE.CNWSMessage_WriteGuiEffectIconsUpdate(swigCPtr, CNWSCreature.getCPtr(pCreature), CExoArrayListCEffectIconObjectPtr.getCPtr(pLastUpdateEffectArray), bSendNonPlayerBarIcons, CNWSPlayer.getCPtr(pPlayer));
   }
 
   public int SendServerToPlayerPVP_Attitude_Change(uint nTargetPlayerId, uint nSourcePlayerId, int bNewAttitude) {

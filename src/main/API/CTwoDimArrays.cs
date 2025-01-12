@@ -486,6 +486,18 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
     return ret;
   }
 
+  public C2DA GetSavingThrowTypesTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetSavingThrowTypesTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
+  public C2DA GetIPRPSaveElementTable() {
+    global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetIPRPSaveElementTable(swigCPtr);
+    C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
+    return ret;
+  }
+
   public C2DA GetPartTable() {
     global::System.IntPtr cPtr = NWNXLibPINVOKE.CTwoDimArrays_GetPartTable(swigCPtr);
     C2DA ret = (cPtr == global::System.IntPtr.Zero) ? null : new C2DA(cPtr, false);
@@ -893,6 +905,8 @@ public unsafe class CTwoDimArrays : global::System.IDisposable {
     TwoDA_CreatureSizeTable,
     TwoDA_ArmorTable,
     TwoDA_PortraitTable,
+    TwoDA_SavingThrowTypesTable,
+    TwoDA_IPRPSaveElementTable,
     TwoDA_PartTable,
     TwoDA_ArmorTypesTable,
     TwoDA_TileColorTable,

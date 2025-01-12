@@ -336,8 +336,13 @@ public unsafe class C2DA : global::System.IDisposable {
     return retVal;
   }
 
+  public int Load2DArray(int optional) {
+    int retVal = NWNXLibPINVOKE.C2DA_Load2DArray__SWIG_0(swigCPtr, optional);
+    return retVal;
+  }
+
   public int Load2DArray() {
-    int retVal = NWNXLibPINVOKE.C2DA_Load2DArray(swigCPtr);
+    int retVal = NWNXLibPINVOKE.C2DA_Load2DArray__SWIG_1(swigCPtr);
     return retVal;
   }
 

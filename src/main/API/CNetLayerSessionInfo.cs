@@ -90,15 +90,15 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public uint m_nConnectionId {
+  public CNetConnectionId m_nConnectionId {
     set {
-      NWNXLibPINVOKE.CNetLayerSessionInfo_m_nConnectionId_set(swigCPtr, value);
+      NWNXLibPINVOKE.CNetLayerSessionInfo_m_nConnectionId_set(swigCPtr, CNetConnectionId.getCPtr(value));
     } 
     get {
-      uint retVal = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nConnectionId_get(swigCPtr);
-      return retVal;
-    }
-
+      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nConnectionId_get(swigCPtr);
+      CNetConnectionId ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNetConnectionId(cPtr, false);
+      return ret;
+    } 
   }
 
   public CExoString m_sSessionName {
@@ -110,17 +110,6 @@ public unsafe class CNetLayerSessionInfo : global::System.IDisposable {
       CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
       return ret;
     } 
-  }
-
-  public uint m_nProtocol {
-    set {
-      NWNXLibPINVOKE.CNetLayerSessionInfo_m_nProtocol_set(swigCPtr, value);
-    } 
-    get {
-      uint retVal = NWNXLibPINVOKE.CNetLayerSessionInfo_m_nProtocol_get(swigCPtr);
-      return retVal;
-    }
-
   }
 
   public uint m_nPort {

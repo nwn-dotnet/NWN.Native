@@ -90,12 +90,12 @@ public unsafe class CEffectIconObject : global::System.IDisposable {
     return !Equals(left, right);
   }
 
-  public byte m_nIcon {
+  public ushort m_nIcon {
     set {
       NWNXLibPINVOKE.CEffectIconObject_m_nIcon_set(swigCPtr, value);
     } 
     get {
-      byte retVal = NWNXLibPINVOKE.CEffectIconObject_m_nIcon_get(swigCPtr);
+      ushort retVal = NWNXLibPINVOKE.CEffectIconObject_m_nIcon_get(swigCPtr);
       return retVal;
     }
 

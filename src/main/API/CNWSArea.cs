@@ -140,17 +140,6 @@ public unsafe class CNWSArea : CNWArea, ICGameObject {
 
   }
 
-  public CExoLinkedListNWAreaExpansion m_lstExpansions {
-    set {
-      NWNXLibPINVOKE.CNWSArea_m_lstExpansions_set(swigCPtr, CExoLinkedListNWAreaExpansion.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSArea_m_lstExpansions_get(swigCPtr);
-      CExoLinkedListNWAreaExpansion ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoLinkedListNWAreaExpansion(cPtr, false);
-      return ret;
-    } 
-  }
-
   public CExoString m_sComments {
     set {
       NWNXLibPINVOKE.CNWSArea_m_sComments_set(swigCPtr, CExoString.getCPtr(value));
