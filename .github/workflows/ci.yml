@@ -75,7 +75,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Binaries
-          path: bin/Release/
+          path: NWN.Native/bin/Release/
           if-no-files-found: error
 
   release:
