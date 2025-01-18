@@ -10,13 +10,13 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     container:
       image: docker://nwnxee/builder:latest
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           path: "./repo"
           ssh-key: ${{ secrets.DEPLOY_KEY }}
@@ -24,7 +24,7 @@ jobs:
 
       - name: Load Environment Info
         id: "dotenv"
-        uses: falti/dotenv-action@v0.2.6
+        uses: falti/dotenv-action@v1
         with:
           path: "./repo/.env"
 
@@ -36,15 +36,15 @@ jobs:
         id: "revision"
         run: |
           NWNX_SHA=$(curl -u "u:${{github.token}}" https://api.github.com/repos/nwnxee/unified/git/ref/tags/${{ steps.dotenv.outputs.nwnx_tag }} | jq .object.sha | tr -d '"')
-          echo ::set-output name=nwnx_sha::$( echo $NWNX_SHA )
-          echo ::set-output name=nwnx_sha_short::$( echo $NWNX_SHA | cut -c1-8 )
+          echo "NWNX_SHA=$NWNX_SHA" >> "$GITHUB_OUTPUT"
+          echo "NWNX_SHA_SHORT=$(echo $NWNX_SHA | cut -c1-8)"
 
       - name: Checkout NWNX
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           path: "./nwnx"
           repository: "nwnxee/unified"
-          ref: ${{ steps.revision.outputs.nwnx_sha }}
+          ref: ${{ steps.revision.outputs.NWNX_SHA }}
 
       - name: Configure CMake
         working-directory: ./nwnx
@@ -65,10 +65,10 @@ jobs:
           fi
           ls -la ${GITHUB_WORKSPACE}/repo/src/main/API
 
-      - name: Setup .NET Core
-        uses: actions/setup-dotnet@v1
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.0.x'
+          global-json-file: global.json
 
       - name: Test Build
         run: |
@@ -78,9 +78,9 @@ jobs:
       - name: Load Game Version
         id: "version"
         run: |
-          echo "::set-output name=nwn_build::$(grep 'set(TARGET_NWN_BUILD ' ./nwnx/CMakeLists.txt | cut -d' ' -f2 | sed 's/)//')"
-          echo "::set-output name=nwn_build_revision::$(grep 'set(TARGET_NWN_BUILD_REVISION ' ./nwnx/CMakeLists.txt | cut -d' ' -f2 | sed 's/)//')"
-          echo "::set-output name=nwn_build_postfix::$(grep 'set(TARGET_NWN_BUILD_POSTFIX ' ./nwnx/CMakeLists.txt | cut -d' ' -f2 | sed 's/)//')"
+          echo "NWN_BUILD=$(grep 'set(TARGET_NWN_BUILD ' ./nwnx/CMakeLists.txt | cut -d' ' -f2 | sed 's/)//')"
+          echo "NWN_BUILD_REVISION=$(grep 'set(TARGET_NWN_BUILD_REVISION ' ./nwnx/CMakeLists.txt | cut -d' ' -f2 | sed 's/)//')"
+          echo "NWN_BUILD_POSTFIX=$(grep 'set(TARGET_NWN_BUILD_POSTFIX ' ./nwnx/CMakeLists.txt | cut -d' ' -f2 | sed 's/)//')"
 
       - name: Commit Changes
         run: |
@@ -89,5 +89,5 @@ jobs:
           git config user.email 10942655+jhett12321@users.noreply.github.com
           git add -A src/main/API/
           git diff-index --quiet HEAD src/main/API/ ||
-          git commit -m "Update APIs (NWNX: ${{ steps.revision.outputs.nwnx_sha_short }}, NWN: ${{ steps.version.outputs.nwn_build }}.${{ steps.version.outputs.nwn_build_revision }}-${{ steps.version.outputs.nwn_build_postfix }})." &&
+          git commit -m "Update APIs (NWNX: ${{ steps.revision.outputs.NWNX_SHA_SHORT }}, NWN: ${{ steps.version.outputs.NWN_BUILD }}.${{ steps.version.outputs.NWN_BUILD_REVISION }}-${{ steps.version.outputs.NWN_BUILD_POSTFIX }})." &&
           if [ ${{ github.event.inputs.tag }} != '' ]; then git tag ${{ github.event.inputs.tag }} && git push --atomic origin ${{ github.ref }} ${{ github.event.inputs.tag }}; else git push; fi;
