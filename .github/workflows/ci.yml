@@ -43,7 +43,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-    
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
@@ -70,7 +70,7 @@ jobs:
       - name: Build Release Binaries
         id: build
         run: dotnet build --configuration Release -p:Version=${{ steps.vars.outputs.version }}
-       
+
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -126,6 +126,6 @@ jobs:
 
       - name: NuGet Publish
         run: dotnet nuget push bin/Release/*.nupkg --api-key ${{ secrets.NUGET_KEY }} --source https://api.nuget.org/v3/index.json
-        
+
       - name: GitHub Publish
         run: dotnet nuget push bin/Release/*.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source https://nuget.pkg.github.com/nwn-dotnet/index.json

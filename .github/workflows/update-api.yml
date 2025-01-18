@@ -74,7 +74,7 @@ jobs:
         run: |
           cd ${GITHUB_WORKSPACE}/repo
           dotnet build --configuration Release
-      
+
       - name: Load Game Version
         id: "version"
         run: |
