@@ -36,8 +36,8 @@ jobs:
         id: "revision"
         run: |
           NWNX_SHA=$(curl -u "u:${{github.token}}" https://api.github.com/repos/nwnxee/unified/git/ref/tags/${{ steps.dotenv.outputs.nwnx_tag }} | jq .object.sha | tr -d '"')
-          echo "NWNX_SHA=$NWNX_SHA" >> "$GITHUB_OUTPUT"
-          echo "NWNX_SHA_SHORT=$(echo $NWNX_SHA | cut -c1-8)"
+          echo "NWNX_SHA=$NWNX_SHA" >> $GITHUB_OUTPUT
+          echo "NWNX_SHA_SHORT=$(echo $NWNX_SHA | cut -c1-8)" >> $GITHUB_OUTPUT
 
       - name: Checkout NWNX
         uses: actions/checkout@v4
@@ -78,9 +78,9 @@ jobs:
       - name: Load Game Version
         id: "version"
         run: |
-          echo "NWN_BUILD=$(grep 'set(TARGET_NWN_BUILD ' ./nwnx/CMakeLists.txt | cut -d' ' -f2 | sed 's/)//')"
-          echo "NWN_BUILD_REVISION=$(grep 'set(TARGET_NWN_BUILD_REVISION ' ./nwnx/CMakeLists.txt | cut -d' ' -f2 | sed 's/)//')"
-          echo "NWN_BUILD_POSTFIX=$(grep 'set(TARGET_NWN_BUILD_POSTFIX ' ./nwnx/CMakeLists.txt | cut -d' ' -f2 | sed 's/)//')"
+          echo "NWN_BUILD=$(grep 'set(TARGET_NWN_BUILD ' ./nwnx/CMakeLists.txt | cut -d' ' -f2 | sed 's/)//')" >> $GITHUB_OUTPUT
+          echo "NWN_BUILD_REVISION=$(grep 'set(TARGET_NWN_BUILD_REVISION ' ./nwnx/CMakeLists.txt | cut -d' ' -f2 | sed 's/)//')" >> $GITHUB_OUTPUT
+          echo "NWN_BUILD_POSTFIX=$(grep 'set(TARGET_NWN_BUILD_POSTFIX ' ./nwnx/CMakeLists.txt | cut -d' ' -f2 | sed 's/)//')" >> $GITHUB_OUTPUT
 
       - name: Commit Changes
         run: |
