@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NWN.Native", "NWN.Native.csproj", "{5574DFB4-8AC1-40B6-9A67-653BCA6CB0E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NWN.Native", "NWN.Native/NWN.Native.csproj", "{5574DFB4-8AC1-40B6-9A67-653BCA6CB0E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

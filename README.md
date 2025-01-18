@@ -128,9 +128,9 @@ public static unsafe string GetNSSContents(string scriptName)
 ```
 
 ## Function Hooking
-Function hooks require access to the `RequestHook` and `ReturnHook` delegates bootstrapped by the NWNX_DotNET plugin.
+Function hooks require usage of the `NWNX.NET` hook APIs.
 
-They are available in [NWN.Anvil](https://github.com/nwn-dotnet/Anvil) as a part of the `HookService`. For [NWN.Core](https://github.com/nwn-dotnet/NWN.Core) users, they can be found in `VM.RequestHook()` and `VM.ReturnHook()`.
+They are available in [NWN.Anvil](https://github.com/nwn-dotnet/Anvil) as a part of the `HookService`. For other users, they can be found as static functions in `NWNXAPI.RequestFunctionHook` and `NWNXAPI.ReturnFunctionHook`.
 
 To hook a function, you need to create a matching delegate in C# that matches the function stack EXACTLY. For any parameter type that is [non-blittable](https://docs.microsoft.com/en-us/dotnet/framework/interop/blittable-and-non-blittable-types), you must use System.IntPtr, or void* as the delegate parameter and resolve the proxy class by using `ClassName.FromPointer(ptr);`
 
@@ -242,8 +242,8 @@ public static unsafe class OnServerCharacterSaveEventFactory
   static OnServerCharacterSaveEventFactory()
   {
     delegate* unmanaged<void*, int, int> pHook = &OnSaveServerCharacter;
-    IntPtr hookPtr = VM.RequestHook(NativeLibrary.GetExport(NativeLibrary.GetMainProgramHandle(), "_ZN10CNWSPlayer19SaveServerCharacterEi"), (IntPtr)pHook, -1000000);
-    CallOriginal = Marshal.GetDelegateForFunctionPointer<SaveServerCharacterHook>(hookPtr);
+    FunctionHook* hook = NWNXAPI.RequestFunctionHook(NativeLibrary.GetExport(NativeLibrary.GetMainProgramHandle(), "_ZN10CNWSPlayer19SaveServerCharacterEi"), (IntPtr)pHook, -1000000);
+    CallOriginal = Marshal.GetDelegateForFunctionPointer<SaveServerCharacterHook>(hookPtr->m_trampoline);
   }
 
   internal delegate int SaveServerCharacterHook(void* pPlayer, int bBackupPlayer);

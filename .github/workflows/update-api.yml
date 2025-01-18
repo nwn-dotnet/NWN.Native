@@ -58,12 +58,12 @@ jobs:
 
       - name: Copy generated proxy classes
         run: |
-          rm -f ${GITHUB_WORKSPACE}/repo/src/main/API/*
-          cp -av ${GITHUB_WORKSPACE}/nwnx/Plugins/SWIG/SWIG_DotNET/out/*.cs ${GITHUB_WORKSPACE}/repo/src/main/API
-          if [ -z "$(ls -A ${GITHUB_WORKSPACE}/repo/src/main/API)" ]; then
+          rm -f ${GITHUB_WORKSPACE}/repo/NWN.Native/src/main/API/*
+          cp -av ${GITHUB_WORKSPACE}/nwnx/Plugins/SWIG/SWIG_DotNET/out/*.cs ${GITHUB_WORKSPACE}/repo/NWN.Native/src/main/API
+          if [ -z "$(ls -A ${GITHUB_WORKSPACE}/repo/NWN.Native/src/main/API)" ]; then
             exit 1
           fi
-          ls -la ${GITHUB_WORKSPACE}/repo/src/main/API
+          ls -la ${GITHUB_WORKSPACE}/repo/NWN.Native/src/main/API
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
@@ -74,7 +74,7 @@ jobs:
         run: |
           cd ${GITHUB_WORKSPACE}/repo
           dotnet build --configuration Release
-      
+
       - name: Load Game Version
         id: "version"
         run: |
@@ -87,7 +87,7 @@ jobs:
           cd ${GITHUB_WORKSPACE}/repo
           git config user.name jhett12321
           git config user.email 10942655+jhett12321@users.noreply.github.com
-          git add -A src/main/API/
-          git diff-index --quiet HEAD src/main/API/ ||
+          git add -A NWN.Native/src/main/API/
+          git diff-index --quiet HEAD NWN.Native/src/main/API/ ||
           git commit -m "Update APIs (NWNX: ${{ steps.revision.outputs.NWNX_SHA_SHORT }}, NWN: ${{ steps.version.outputs.NWN_BUILD }}.${{ steps.version.outputs.NWN_BUILD_REVISION }}-${{ steps.version.outputs.NWN_BUILD_POSTFIX }})." &&
           if [ ${{ github.event.inputs.tag }} != '' ]; then git tag ${{ github.event.inputs.tag }} && git push --atomic origin ${{ github.ref }} ${{ github.event.inputs.tag }}; else git push; fi;
