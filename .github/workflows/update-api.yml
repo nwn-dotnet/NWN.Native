@@ -68,7 +68,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          global-json-file: global.json
+          global-json-file: ./repo/global.json
 
       - name: Test Build
         run: |
