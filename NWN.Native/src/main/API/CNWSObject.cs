@@ -579,13 +579,13 @@ public unsafe class CNWSObject : ICGameObject, global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t m_lstLoopingVisualEffects {
+  public CExoArrayListCLoopingVisualEffect m_lstLoopingVisualEffects {
     set {
-      NWNXLibPINVOKE.CNWSObject_m_lstLoopingVisualEffects_set(swigCPtr, SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t.getCPtr(value));
+      NWNXLibPINVOKE.CNWSObject_m_lstLoopingVisualEffects_set(swigCPtr, CExoArrayListCLoopingVisualEffect.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSObject_m_lstLoopingVisualEffects_get(swigCPtr);
-      SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t(cPtr, false);
+      CExoArrayListCLoopingVisualEffect ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListCLoopingVisualEffect(cPtr, false);
       return ret;
     } 
   }

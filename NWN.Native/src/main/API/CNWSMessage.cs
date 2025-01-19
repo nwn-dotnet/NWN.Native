@@ -1792,12 +1792,12 @@ public unsafe class CNWSMessage : CNWMessage {
     return retVal;
   }
 
-  public void AssignVisualEffectLists(SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t pTargetList, SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t pSourceList) {
-    NWNXLibPINVOKE.CNWSMessage_AssignVisualEffectLists(swigCPtr, SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t.getCPtr(pTargetList), SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t.getCPtr(pSourceList));
+  public void AssignVisualEffectLists(CExoArrayListCLoopingVisualEffect pTargetList, CExoArrayListCLoopingVisualEffect pSourceList) {
+    NWNXLibPINVOKE.CNWSMessage_AssignVisualEffectLists(swigCPtr, CExoArrayListCLoopingVisualEffect.getCPtr(pTargetList), CExoArrayListCLoopingVisualEffect.getCPtr(pSourceList));
   }
 
-  public int CompareVisualEffectLists(SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t pSourceList1, SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t pSourceList2) {
-    int retVal = NWNXLibPINVOKE.CNWSMessage_CompareVisualEffectLists(swigCPtr, SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t.getCPtr(pSourceList1), SWIGTYPE_p_CExoArrayListT_CLoopingVisualEffect_t.getCPtr(pSourceList2));
+  public int CompareVisualEffectLists(CExoArrayListCLoopingVisualEffect pSourceList1, CExoArrayListCLoopingVisualEffect pSourceList2) {
+    int retVal = NWNXLibPINVOKE.CNWSMessage_CompareVisualEffectLists(swigCPtr, CExoArrayListCLoopingVisualEffect.getCPtr(pSourceList1), CExoArrayListCLoopingVisualEffect.getCPtr(pSourceList2));
     return retVal;
   }
 

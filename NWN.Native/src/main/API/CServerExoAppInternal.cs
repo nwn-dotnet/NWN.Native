@@ -400,13 +400,13 @@ public unsafe class CServerExoAppInternal : global::System.IDisposable {
 
   }
 
-  public SWIGTYPE_p_CExoArrayListT_CNWSPlayer_p_t m_lstPlayerList {
+  public CExoArrayListCNWSPlayerPtr m_lstPlayerList {
     set {
-      NWNXLibPINVOKE.CServerExoAppInternal_m_lstPlayerList_set(swigCPtr, SWIGTYPE_p_CExoArrayListT_CNWSPlayer_p_t.getCPtr(value));
+      NWNXLibPINVOKE.CServerExoAppInternal_m_lstPlayerList_set(swigCPtr, CExoArrayListCNWSPlayerPtr.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CServerExoAppInternal_m_lstPlayerList_get(swigCPtr);
-      SWIGTYPE_p_CExoArrayListT_CNWSPlayer_p_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CExoArrayListT_CNWSPlayer_p_t(cPtr, false);
+      CExoArrayListCNWSPlayerPtr ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoArrayListCNWSPlayerPtr(cPtr, false);
       return ret;
     } 
   }

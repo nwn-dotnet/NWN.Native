@@ -410,8 +410,8 @@ public unsafe class CServerExoApp : CBaseExoApp {
     return ret;
   }
 
-  public SWIGTYPE_p_CExoArrayListT_CNWSPlayer_p_t GetPlayerList() {
-    SWIGTYPE_p_CExoArrayListT_CNWSPlayer_p_t ret = new SWIGTYPE_p_CExoArrayListT_CNWSPlayer_p_t(NWNXLibPINVOKE.CServerExoApp_GetPlayerList(swigCPtr), false);
+  public CExoArrayListCNWSPlayerPtr GetPlayerList() {
+    CExoArrayListCNWSPlayerPtr ret = new CExoArrayListCNWSPlayerPtr(NWNXLibPINVOKE.CServerExoApp_GetPlayerList(swigCPtr), false);
     return ret;
   }
 
