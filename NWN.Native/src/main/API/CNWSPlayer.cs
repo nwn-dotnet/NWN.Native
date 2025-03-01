@@ -273,6 +273,17 @@ public unsafe class CNWSPlayer : global::System.IDisposable {
           } 
         }
       
+        public CExoString m_eventScript {
+          set {
+            NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_eventScript_set(swigCPtr, CExoString.getCPtr(value));
+          } 
+          get {
+            global::System.IntPtr cPtr = NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_eventScript_get(swigCPtr);
+            CExoString ret = (cPtr == global::System.IntPtr.Zero) ? null : new CExoString(cPtr, false);
+            return ret;
+          } 
+        }
+      
         public SWIGTYPE_p_std__vectorT_std__string_t m_bind_list {
           set {
             NWNXLibPINVOKE.CNWSPlayer_NuiState_WindowState_m_bind_list_set(swigCPtr, SWIGTYPE_p_std__vectorT_std__string_t.getCPtr(value));
