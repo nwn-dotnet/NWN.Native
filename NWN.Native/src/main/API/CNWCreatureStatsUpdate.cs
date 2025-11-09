@@ -393,9 +393,9 @@ public unsafe class CNWCreatureStatsUpdate : global::System.IDisposable {
     } 
     get {
       global::System.IntPtr arrayPtr = NWNXLibPINVOKE.CNWCreatureStatsUpdate_m_nNegativeLevels_get(swigCPtr);
-      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 3);
+      NativeArray<byte> retVal = new NativeArray<byte>(arrayPtr, 8);
 
-      return retVal; // byte[3]
+      return retVal; // byte[8]
     }
 
   }

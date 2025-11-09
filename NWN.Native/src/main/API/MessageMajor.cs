@@ -66,7 +66,10 @@ public enum MessageMajor {
   Resman = 0x34,
   GuiEvent = 0x35,
   Device = 0x36,
-  Nui = 0x37
+  Nui = 0x37,
+  SetShaderUniform = 0x38,
+  TargetingData = 0x39,
+  AudioStream = 0x40
 }
 
 }

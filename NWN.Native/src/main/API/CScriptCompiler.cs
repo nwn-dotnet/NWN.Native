@@ -2144,13 +2144,8 @@ public unsafe class CScriptCompiler : global::System.IDisposable {
     return retVal;
   }
 
-  public int ConstantFoldNode(CScriptParseTreeNode pNode, int bForce) {
-    int retVal = NWNXLibPINVOKE.CScriptCompiler_ConstantFoldNode__SWIG_0(swigCPtr, CScriptParseTreeNode.getCPtr(pNode), bForce);
-    return retVal;
-  }
-
   public int ConstantFoldNode(CScriptParseTreeNode pNode) {
-    int retVal = NWNXLibPINVOKE.CScriptCompiler_ConstantFoldNode__SWIG_1(swigCPtr, CScriptParseTreeNode.getCPtr(pNode));
+    int retVal = NWNXLibPINVOKE.CScriptCompiler_ConstantFoldNode(swigCPtr, CScriptParseTreeNode.getCPtr(pNode));
     return retVal;
   }
 

@@ -316,7 +316,7 @@ public unsafe class CExoString : global::System.IDisposable {
     return retVal;
   }
 
-  public void Insert(CExoString string_, uint position) {
+  public void Insert(CExoString string_, int position) {
     NWNXLibPINVOKE.CExoString_Insert(swigCPtr, CExoString.getCPtr(string_), position);
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
@@ -326,7 +326,7 @@ public unsafe class CExoString : global::System.IDisposable {
     return retVal;
   }
 
-  public CExoString Left(uint count) {
+  public CExoString Left(int count) {
     CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_Left(swigCPtr, count), true);
     return ret;
   }
@@ -336,17 +336,17 @@ public unsafe class CExoString : global::System.IDisposable {
     return ret;
   }
 
-  public CExoString Right(uint count) {
+  public CExoString Right(int count) {
     CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_Right(swigCPtr, count), true);
     return ret;
   }
 
-  public CExoString SubString(uint start, uint count) {
+  public CExoString SubString(int start, int count) {
     CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_SubString__SWIG_0(swigCPtr, start, count), true);
     return ret;
   }
 
-  public CExoString SubString(uint start) {
+  public CExoString SubString(int start) {
     CExoString ret = new CExoString(NWNXLibPINVOKE.CExoString_SubString__SWIG_1(swigCPtr, start), true);
     return ret;
   }
