@@ -90,6 +90,16 @@ public unsafe class CNetLayerWindow : global::System.IDisposable {
     return !Equals(left, right);
   }
 
+  public CNetInstance m_nInstance {
+    set {
+      NWNXLibPINVOKE.CNetLayerWindow_m_nInstance_set(swigCPtr, (int)value);
+    } 
+    get {
+      CNetInstance ret = (CNetInstance)NWNXLibPINVOKE.CNetLayerWindow_m_nInstance_get(swigCPtr);
+      return ret;
+    } 
+  }
+
   public int m_bInitialized {
     set {
       NWNXLibPINVOKE.CNetLayerWindow_m_bInitialized_set(swigCPtr, value);

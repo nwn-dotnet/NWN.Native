@@ -830,6 +830,11 @@ public unsafe class CNWSItem : CNWSObject, ICNWItem {
     return ret;
   }
 
+  public CExoLocString GetDescription(bool nIdentified) {
+    CExoLocString ret = new CExoLocString(NWNXLibPINVOKE.CNWSItem_GetDescription(swigCPtr, nIdentified), false);
+    return ret;
+  }
+
   public new void _Destructor() {
     NWNXLibPINVOKE.CNWSItem__Destructor(swigCPtr);
   }

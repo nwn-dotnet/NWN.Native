@@ -90,6 +90,13 @@ public unsafe class CNetLayer : global::System.IDisposable {
     return !Equals(left, right);
   }
 
+  public CNetInstance m_nInstance {
+    get {
+      CNetInstance ret = (CNetInstance)NWNXLibPINVOKE.CNetLayer_m_nInstance_get(swigCPtr);
+      return ret;
+    } 
+  }
+
   public SWIGTYPE_p_CNetLayerInternal m_pcNetLayerInternal {
     set {
       NWNXLibPINVOKE.CNetLayer_m_pcNetLayerInternal_set(swigCPtr, SWIGTYPE_p_CNetLayerInternal.getCPtr(value));

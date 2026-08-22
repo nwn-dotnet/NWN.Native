@@ -20683,6 +20683,9 @@ public unsafe class NWNXLibPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWSDoor_GetFirstName___")]
   public static extern global::System.IntPtr CNWSDoor_GetFirstName(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWSDoor_GetDescription___")]
+  public static extern global::System.IntPtr CNWSDoor_GetDescription(global::System.Runtime.InteropServices.HandleRef jarg1);
+
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWSDoor__Destructor___")]
   public static extern void CNWSDoor__Destructor(global::System.Runtime.InteropServices.HandleRef jarg1);
 
@@ -22749,6 +22752,9 @@ public unsafe class NWNXLibPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWSItem_GetFirstName___")]
   public static extern global::System.IntPtr CNWSItem_GetFirstName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWSItem_GetDescription___")]
+  public static extern global::System.IntPtr CNWSItem_GetDescription(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWSItem__Destructor___")]
   public static extern void CNWSItem__Destructor(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -25761,6 +25767,9 @@ public unsafe class NWNXLibPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWSPlaceable_GetFirstName___")]
   public static extern global::System.IntPtr CNWSPlaceable_GetFirstName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWSPlaceable_GetDescription___")]
+  public static extern global::System.IntPtr CNWSPlaceable_GetDescription(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWSPlaceable__Destructor___")]
   public static extern void CNWSPlaceable__Destructor(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -32066,6 +32075,9 @@ public unsafe class NWNXLibPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_delete_CNWVisibilityNode___")]
   public static extern void delete_CNWVisibilityNode(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNetLayer_m_nInstance_get___")]
+  public static extern int CNetLayer_m_nInstance_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNetLayer_m_pcNetLayerInternal_set___")]
   public static extern void CNetLayer_m_pcNetLayerInternal_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
@@ -32653,6 +32665,12 @@ public unsafe class NWNXLibPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNetLayerSessionInfo__Destructor___")]
   public static extern void CNetLayerSessionInfo__Destructor(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNetLayerWindow_m_nInstance_set___")]
+  public static extern void CNetLayerWindow_m_nInstance_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNetLayerWindow_m_nInstance_get___")]
+  public static extern int CNetLayerWindow_m_nInstance_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNetLayerWindow_m_bInitialized_set___")]
   public static extern void CNetLayerWindow_m_bInitialized_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
@@ -42753,6 +42771,18 @@ public unsafe class NWNXLibPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_delete_CNetConnectionId___")]
   public static extern void delete_CNetConnectionId(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNetPeer_m_address_set___")]
+  public static extern void CNetPeer_m_address_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNetPeer_m_address_get___")]
+  public static extern global::System.IntPtr CNetPeer_m_address_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_new_CNetPeer___")]
+  public static extern global::System.IntPtr new_CNetPeer();
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_delete_CNetPeer___")]
+  public static extern void delete_CNetPeer(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CExoArrayListCCombatInformationNodePtr_num_set___")]
   public static extern void CExoArrayListCCombatInformationNodePtr_num_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
