@@ -5641,6 +5641,90 @@ public unsafe class NWNXLibPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_C2DA__Destructor___")]
   public static extern void C2DA__Destructor(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_bStallServer_set___")]
+  public static extern void CNWReentrantServerStats_m_bStallServer_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_bStallServer_get___")]
+  public static extern int CNWReentrantServerStats_m_bStallServer_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_nStallEvent_set___")]
+  public static extern void CNWReentrantServerStats_m_nStallEvent_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_nStallEvent_get___")]
+  public static extern uint CNWReentrantServerStats_m_nStallEvent_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_nCompletedWork_set___")]
+  public static extern void CNWReentrantServerStats_m_nCompletedWork_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_nCompletedWork_get___")]
+  public static extern uint CNWReentrantServerStats_m_nCompletedWork_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_nTotalWork_set___")]
+  public static extern void CNWReentrantServerStats_m_nTotalWork_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_nTotalWork_get___")]
+  public static extern uint CNWReentrantServerStats_m_nTotalWork_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_bFirstRenderOfStall_set___")]
+  public static extern void CNWReentrantServerStats_m_bFirstRenderOfStall_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_bFirstRenderOfStall_get___")]
+  public static extern int CNWReentrantServerStats_m_bFirstRenderOfStall_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_bLastRenderOfStall_set___")]
+  public static extern void CNWReentrantServerStats_m_bLastRenderOfStall_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_bLastRenderOfStall_get___")]
+  public static extern int CNWReentrantServerStats_m_bLastRenderOfStall_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_cUUID_set___")]
+  public static extern void CNWReentrantServerStats_m_cUUID_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_cUUID_get___")]
+  public static extern global::System.IntPtr CNWReentrantServerStats_m_cUUID_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_sStallEvent_set___")]
+  public static extern void CNWReentrantServerStats_m_sStallEvent_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_sStallEvent_get___")]
+  public static extern global::System.IntPtr CNWReentrantServerStats_m_sStallEvent_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_sStallEvent2_set___")]
+  public static extern void CNWReentrantServerStats_m_sStallEvent2_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_sStallEvent2_get___")]
+  public static extern global::System.IntPtr CNWReentrantServerStats_m_sStallEvent2_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_sStallEvent3_set___")]
+  public static extern void CNWReentrantServerStats_m_sStallEvent3_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_sStallEvent3_get___")]
+  public static extern global::System.IntPtr CNWReentrantServerStats_m_sStallEvent3_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_nStallEventDWORD_set___")]
+  public static extern void CNWReentrantServerStats_m_nStallEventDWORD_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_nStallEventDWORD_get___")]
+  public static extern uint CNWReentrantServerStats_m_nStallEventDWORD_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_nStallEventDWORD2_set___")]
+  public static extern void CNWReentrantServerStats_m_nStallEventDWORD2_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_nStallEventDWORD2_get___")]
+  public static extern uint CNWReentrantServerStats_m_nStallEventDWORD2_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_nStallEventError_set___")]
+  public static extern void CNWReentrantServerStats_m_nStallEventError_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CNWReentrantServerStats_m_nStallEventError_get___")]
+  public static extern uint CNWReentrantServerStats_m_nStallEventError_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_new_CNWReentrantServerStats___")]
+  public static extern global::System.IntPtr new_CNWReentrantServerStats();
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_delete_CNWReentrantServerStats___")]
+  public static extern void delete_CNWReentrantServerStats(global::System.Runtime.InteropServices.HandleRef jarg1);
+
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CAppManager_m_pClientExoApp_set___")]
   public static extern void CAppManager_m_pClientExoApp_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 

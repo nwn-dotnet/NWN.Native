@@ -123,13 +123,13 @@ public unsafe class CAppManager : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_CNWReentrantServerStats m_pReentrantServerStats {
+  public CNWReentrantServerStats m_pReentrantServerStats {
     set {
-      NWNXLibPINVOKE.CAppManager_m_pReentrantServerStats_set(swigCPtr, SWIGTYPE_p_CNWReentrantServerStats.getCPtr(value));
+      NWNXLibPINVOKE.CAppManager_m_pReentrantServerStats_set(swigCPtr, CNWReentrantServerStats.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = NWNXLibPINVOKE.CAppManager_m_pReentrantServerStats_get(swigCPtr);
-      SWIGTYPE_p_CNWReentrantServerStats ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CNWReentrantServerStats(cPtr, false);
+      CNWReentrantServerStats ret = (cPtr == global::System.IntPtr.Zero) ? null : new CNWReentrantServerStats(cPtr, false);
       return ret;
     } 
   }
