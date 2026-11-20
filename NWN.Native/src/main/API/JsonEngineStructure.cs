@@ -97,6 +97,11 @@ public unsafe class JsonEngineStructure : global::System.IDisposable {
     if (NWNXLibPINVOKE.SWIGPendingException.Pending) throw NWNXLibPINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public ulong GetId() {
+    ulong retVal = NWNXLibPINVOKE.JsonEngineStructure_GetId(swigCPtr);
+    return retVal;
+  }
+
   public bool IsEmpty() {
     bool ret = NWNXLibPINVOKE.JsonEngineStructure_IsEmpty(swigCPtr);
     return ret;

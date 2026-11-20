@@ -93,6 +93,11 @@ public unsafe class CassowarySolverEngineStructure : global::System.IDisposable 
   public CassowarySolverEngineStructure() : this(NWNXLibPINVOKE.new_CassowarySolverEngineStructure(), true) {
   }
 
+  public ulong GetId() {
+    ulong retVal = NWNXLibPINVOKE.CassowarySolverEngineStructure_GetId(swigCPtr);
+    return retVal;
+  }
+
   public bool IsEmpty() {
     bool ret = NWNXLibPINVOKE.CassowarySolverEngineStructure_IsEmpty(swigCPtr);
     return ret;
@@ -104,6 +109,14 @@ public unsafe class CassowarySolverEngineStructure : global::System.IDisposable 
 
   public void Unlink() {
     NWNXLibPINVOKE.CassowarySolverEngineStructure_Unlink(swigCPtr);
+  }
+
+  public void SaveToGFF(CResGFF pRes, CResStruct pStruct) {
+    NWNXLibPINVOKE.CassowarySolverEngineStructure_SaveToGFF(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
+  }
+
+  public void LoadFromGff(CResGFF pRes, CResStruct pStruct) {
+    NWNXLibPINVOKE.CassowarySolverEngineStructure_LoadFromGff(swigCPtr, CResGFF.getCPtr(pRes), CResStruct.getCPtr(pStruct));
   }
 
   public void _Destructor() {

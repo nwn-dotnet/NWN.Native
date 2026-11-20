@@ -40598,6 +40598,9 @@ public unsafe class NWNXLibPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_delete_CassowarySolverEngineStructure___")]
   public static extern void delete_CassowarySolverEngineStructure(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CassowarySolverEngineStructure_GetId___")]
+  public static extern ulong CassowarySolverEngineStructure_GetId(global::System.Runtime.InteropServices.HandleRef jarg1);
+
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CassowarySolverEngineStructure_IsEmpty___")]
   public static extern bool CassowarySolverEngineStructure_IsEmpty(global::System.Runtime.InteropServices.HandleRef jarg1);
 
@@ -40606,6 +40609,12 @@ public unsafe class NWNXLibPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CassowarySolverEngineStructure_Unlink___")]
   public static extern void CassowarySolverEngineStructure_Unlink(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CassowarySolverEngineStructure_SaveToGFF___")]
+  public static extern void CassowarySolverEngineStructure_SaveToGFF(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CassowarySolverEngineStructure_LoadFromGff___")]
+  public static extern void CassowarySolverEngineStructure_LoadFromGff(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_CassowarySolverEngineStructure__Destructor___")]
   public static extern void CassowarySolverEngineStructure__Destructor(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -40998,6 +41007,9 @@ public unsafe class NWNXLibPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_delete_JsonEngineStructure___")]
   public static extern void delete_JsonEngineStructure(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_JsonEngineStructure_GetId___")]
+  public static extern ulong JsonEngineStructure_GetId(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("NWNX_SWIG_DotNET", EntryPoint="CSharp_NWNfNativefAPI_JsonEngineStructure_IsEmpty___")]
   public static extern bool JsonEngineStructure_IsEmpty(global::System.Runtime.InteropServices.HandleRef jarg1);
